@@ -33,8 +33,8 @@ export default function StoryAndCraft() {
         <div className="lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-6">
           <div className="p-6 rounded-2xl bg-[#1D1B19] border border-[#D7CCB9]/10 space-y-4">
             <div className="h-40 rounded-xl bg-[#25221F] flex flex-col justify-end p-4 border border-[#D7CCB9]/5">
-              <span className="text-[11px] font-mono text-[#C49A58]">ARCHITETTURA SOFTWARE</span>
-              <span className="font-serif text-lg text-[#F5F3EF]">Dario</span>
+              <span className="text-[11px] font-mono text-[#C49A58]">LATO STRUTTURALE</span>
+              <span className="font-serif text-lg text-[#F5F3EF]">Riccardo</span>
             </div>
             <p className="text-xs text-[#A39E93] leading-relaxed">
               Specializzato in Next.js, database distribuiti e infrastrutture ad alte prestazioni senza latenza.
@@ -43,8 +43,8 @@ export default function StoryAndCraft() {
 
           <div className="p-6 rounded-2xl bg-[#1D1B19] border border-[#D7CCB9]/10 space-y-4">
             <div className="h-40 rounded-xl bg-[#25221F] flex flex-col justify-end p-4 border border-[#D7CCB9]/5">
-              <span className="text-[11px] font-mono text-[#C49A58]">DESIGN & BRANDING</span>
-              <span className="font-serif text-lg text-[#F5F3EF]">Marco</span>
+              <span className="text-[11px] font-mono text-[#C49A58]">MESSA IN ATTO</span>
+              <span className="font-serif text-lg text-[#F5F3EF]">Mattia</span>
             </div>
             <p className="text-xs text-[#A39E93] leading-relaxed">
               Cura l&apos;identità di marca, la tipografia editoriale e le interazioni che rendono memorabile il prodotto.
