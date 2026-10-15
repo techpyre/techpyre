@@ -387,17 +387,16 @@ export default function ContactBox() {
                       {contact.formLabels.privacyNote}
                     </p>
 
-                    <div className="relative group/submit">
+                    <div className="relative p-[1.5px] rounded-sm overflow-hidden group cursor-pointer">
                       <span
                         aria-hidden="true"
-                        className="absolute -inset-[2px] rounded-sm bg-gradient-to-r from-[#B8860B]/50 via-[#C5A059]/70 to-[#B8860B]/50 blur-[5px] opacity-80 group-hover/submit:opacity-100 transition-opacity duration-300 pointer-events-none animate-pulse"
-                        style={{ animationDuration: "3.5s" }}
+                        className="absolute inset-[-150%] bg-[conic-gradient(from_0deg_at_50%_50%,transparent_0deg,transparent_260deg,#C5A059_310deg,#FFFFFF_345deg,#B8860B_360deg)] animate-[spin_3.5s_linear_infinite] pointer-events-none"
                       />
                       <motion.button
                         whileTap={{ scale: 0.98 }}
                         type="submit"
                         disabled={status === "submitting"}
-                        className="relative z-10 w-full py-3.5 px-6 rounded-sm bg-[#B8860B] hover:bg-[#9a7008] text-white font-sans text-xs sm:text-sm font-bold tracking-wide transition-all shadow-xs flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50 min-h-[44px]"
+                        className="relative z-10 w-full py-3.5 px-6 rounded-[1px] bg-[#B8860B] hover:bg-[#9a7008] text-white font-sans text-xs sm:text-sm font-bold tracking-wide transition-all shadow-xs flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50 min-h-[44px]"
                       >
                         {status === "submitting" ? (
                           <span>{contact.formLabels.submitting}</span>

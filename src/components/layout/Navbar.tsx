@@ -9,12 +9,11 @@ import TechPyreLogo from "@/components/ui/TechPyreLogo";
 /**
  * =====================================================================
  * COMPONENTE NAVBAR ISTITUZIONALE
- * - SU MOBILE: Barra volante indipendente (Floating Island Capsule) staccata
- *   dai bordi, con angoli definiti, bordo architettonico e ombra morbida
- * - SU DESKTOP: Intestazione classica a piena larghezza con bordi istituzionali
- * - ANIMAZIONE BIDIREZIONALE FLUIDA: sia in entrata che in uscita con curva
- *   armonica cubic-bezier(0.22, 1, 0.36, 1) per la massima morbidezza
- * - CTA CON AMBIENT GLOW: alone dorato tenue e prestigioso che invita all'azione
+ * - SU MOBILE: Barra volante indipendente (Floating Island) staccata dai bordi
+ * - SU DESKTOP: Intestazione classica a piena larghezza
+ * - ANIMAZIONE FLUIDA PIÙ LUNGA: durata estesa a 650ms con curva armonica
+ *   cubic-bezier(0.22, 1, 0.36, 1) sia per la scomparsa che per la ricomparsa
+ * - CTA CON BORDO SBRILLUCCICOSO: fascio di luce dorata continuo lungo il perimetro
  * =====================================================================
  */
 export default function Navbar() {
@@ -101,12 +100,12 @@ export default function Navbar() {
     <>
       {/* 
         HEADER CONTAINER:
-        - Su Mobile: Barra volante staccata dai bordi (inset-x-3.5 top-[safe-area+0.75rem]), rounded-sm, shadow-lg
-        - Su Desktop: Barra classica a piena larghezza (lg:inset-x-0 lg:top-0 lg:rounded-none lg:shadow-xs)
-        - Animazione fluida in entrambe le direzioni (comparsa e scomparsa)
+        - Su Mobile: Barra volante staccata dai bordi, rounded-sm, shadow-md
+        - Su Desktop: Barra classica a piena larghezza
+        - Animazione calibrata a 650ms per massima fluidità e peso visivo
       */}
       <header
-        className={`fixed z-50 bg-[#F8F7F4] border border-[#E8E2D5] transition-all duration-400 ease-[cubic-bezier(0.22,1,0.36,1)] 
+        className={`fixed z-50 bg-[#F8F7F4] border border-[#E8E2D5] transition-all duration-[650ms] ease-[cubic-bezier(0.22,1,0.36,1)] 
           /* Geometria Mobile: Isola Volante */
           top-[calc(env(safe-area-inset-top,0px)+0.75rem)] left-3.5 right-3.5 sm:left-6 sm:right-6 rounded-sm shadow-md shadow-black/6
           /* Geometria Desktop: Classica Piena Larghezza */
@@ -148,13 +147,13 @@ export default function Navbar() {
             </a>
           </nav>
 
-          {/* CTA con Ambient Glow + Hamburger */}
+          {/* CTA con Bordo Sbrilluccicoso + Hamburger */}
           <div className="flex items-center gap-2 sm:gap-3">
             <Button
               href={navigation.cta.href}
               variant="primary"
-              withGlow={true}
-              className="text-[11px] sm:text-xs px-3.5 sm:px-5 py-2 sm:py-2.5 font-bold whitespace-nowrap"
+              withShimmer={true}
+              className="text-[11px] sm:text-xs px-3 sm:px-5 py-2 sm:py-2.5 font-bold whitespace-nowrap"
             >
               <span className="sm:hidden">Incontro 30m</span>
               <span className="hidden sm:inline">{navigation.cta.label}</span>
@@ -202,7 +201,7 @@ export default function Navbar() {
             initial={{ opacity: 0, y: -8 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -8 }}
-            transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
+            transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
             className="fixed inset-0 z-40 bg-[#F8F7F4] pt-[calc(env(safe-area-inset-top,0px)+5.5rem)] px-6 pb-8 flex flex-col justify-between lg:hidden border-b border-[#E8E2D5] overflow-y-auto"
           >
             <div className="space-y-5 pt-2">
@@ -233,16 +232,15 @@ export default function Navbar() {
             </div>
 
             <div className="pt-5 border-t border-[#E8E2D5] space-y-3">
-              <div className="relative group/drawer-cta">
-                <div className="absolute -inset-1 rounded-sm bg-[#B8860B]/40 blur-xs group-hover/drawer-cta:bg-[#B8860B]/60 transition-colors pointer-events-none" />
-                <a
-                  href={navigation.cta.href}
-                  onClick={() => setMobileMenuOpen(false)}
-                  className="relative block text-center w-full py-3 bg-[#0A192F] text-white rounded-sm text-xs font-bold uppercase tracking-wider shadow-sm hover:bg-[#003366] transition-colors"
-                >
-                  {navigation.cta.label}
-                </a>
-              </div>
+              <Button
+                href={navigation.cta.href}
+                onClick={() => setMobileMenuOpen(false)}
+                variant="primary"
+                withShimmer={true}
+                className="w-full text-center"
+              >
+                {navigation.cta.label}
+              </Button>
               <div className="text-[10px] font-sans text-center text-[#5A6270]">
                 {brand.location}
               </div>
