@@ -252,7 +252,7 @@ export default function CaseStudies({ variant = "teaser" }: CaseStudiesProps) {
                   href={project.demoUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block aspect-[16/10] max-h-[260px] overflow-hidden bg-[#0A192F]/5 border-b border-[#E8E2D5] group/img relative"
+                  className="block w-full aspect-[16/10] sm:aspect-[16/9] overflow-hidden bg-[#0A192F]/5 border-b border-[#E8E2D5] group/img relative"
                   aria-label={`Apri demo di ${project.title}`}
                 >
                   {/* eslint-disable-next-line @next/next/no-img-element */}
