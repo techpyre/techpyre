@@ -110,6 +110,7 @@ export interface FounderConfig {
   role: string;
   ageBadge?: string;
   engineeringBadge?: string;
+  leadershipBadge?: string;
   manifesto: string[];
   quote: string;
   comparison: FounderComparison;

@@ -57,26 +57,31 @@ export default function FounderLetter() {
                   <div className="text-[10px] font-sans font-bold uppercase tracking-widest text-[#C5A059]">
                     PROFILO ESECUTIVO FONDATORE
                   </div>
-                  <h3 className="font-serif text-2xl sm:text-3xl text-white font-semibold">
-                    {founder.name}
-                  </h3>
+                  <div className="flex items-center gap-2.5 pt-0.5">
+                    <h3 className="font-serif text-2xl sm:text-3xl text-white font-semibold">
+                      {founder.name}
+                    </h3>
+                    <span className="text-[10px] font-mono font-bold text-[#C5A059] bg-[#C5A059]/15 border border-[#C5A059]/30 px-2 py-0.5 rounded-xs">
+                      18 Anni
+                    </span>
+                  </div>
                   <p className="text-xs font-sans text-[#CBD7E3] font-medium">
                     {founder.role}
                   </p>
                   <p className="text-xs font-sans text-[#C5A059] pt-1 leading-snug">
-                    {founder.engineeringBadge}
+                    {founder.leadershipBadge || founder.engineeringBadge}
                   </p>
                 </div>
 
                 {/* Garanzie Essenziali */}
                 <div className="pt-2.5 border-t border-white/10 space-y-1.5 text-xs font-sans text-[#A4B3C6]">
                   <div className="flex justify-between py-1 border-b border-white/5">
-                    <span className="text-white/60">CONTATTO DIRETTO:</span>
-                    <span className="text-white font-semibold">Telefono e WhatsApp personale</span>
+                    <span className="text-white/60">LEADERSHIP:</span>
+                    <span className="text-white font-semibold">Risponde Riccardo Granza (Capo Studio)</span>
                   </div>
                   <div className="flex justify-between py-1 border-b border-white/5">
-                    <span className="text-white/60">ETICA COMMERCIALE:</span>
-                    <span className="text-white font-semibold">Prezzo pattuito prima, zero extra</span>
+                    <span className="text-white/60">STRUTTURA:</span>
+                    <span className="text-white font-semibold">Processi di studio, zero freelance isolato</span>
                   </div>
                   <div className="flex justify-between py-1 border-b border-white/5">
                     <span className="text-white/60">STANDARD TECNICO:</span>

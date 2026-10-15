@@ -236,22 +236,23 @@ export const siteContent: SiteContent = {
   },
 
   founder: {
-    eyebrow: "RELAZIONE E RESPONSABILITÀ · LO STUDIO E IL METODO",
-    title: "Responsabilità diretta sul codice. Continuità operativa garantita.",
-    subtitle: "Manifesto professionale di Riccardo Granza, fondatore di TechPYRE.",
+    eyebrow: "VISIONE & LEADERSHIP · IL FONDATORE DELLO STUDIO",
+    title: "Ingegneria moderna senza compromessi. La determinazione di chi guida lo studio.",
+    subtitle: "Manifesto di visione e leadership di Riccardo Granza, fondatore e guida di TechPYRE.",
     name: "Riccardo Granza",
-    role: "Fondatore e Lead Software Engineer",
-    engineeringBadge:
-      "Nativo moderno dello sviluppo software · Zero debito tecnico legacy · Responsabilità diretta sull'architettura",
+    role: "Fondatore & Head of Studio",
+    ageBadge: "18 Anni · Fondatore e Capo dello Studio",
+    leadershipBadge:
+      "18 Anni · Visione, determinazione incrollabile e controllo rigoroso sui massimi standard dello studio.",
     manifesto: [
-      "Chi conduce un'impresa seria sa che la parola data, la precisione esecutiva e la tenuta del software contano più di qualsiasi presentazione commerciale patinata.",
-      "Nativo moderno dello sviluppo software, ho fondato TechPYRE per offrire alle aziende un'alternativa concreta all'inefficienza e alla dispersione delle agenzie tradizionali: strutture sovradimensionate con costi fissi elevati, che finiscono per delegare lo sviluppo a terzi su tecnologie obsolete e poco performanti.",
-      "In TechPYRE operiamo con zero debito tecnico legacy: progettiamo con i linguaggi e i framework che guidano i principali centri di ingegneria al mondo (Next.js nativo, TypeScript, architetture edge distribuite). Nessun 'lock-in' proprietario, nessun codice opaco né template riciclati.",
-      "Garantiamo la Continuità Operativa Assoluta: ogni progetto viene rilasciato con documentazione tecnica completa, pipeline CI/CD automatizzate e codice standardizzato che qualsiasi team di ingegneri potrà mantenere o scalare in futuro. Il cliente ha il vantaggio della responsabilità diretta senza alcun rischio di dipendenza da singola persona.",
-      "Il codice sorgente, l'infrastruttura cloud e i dati restano al 100% di proprietà dell'azienda committente fin dal primo rilascio.",
+      "Chi conduce un'impresa seria riconosce subito la differenza tra un apparato burocratico che disperde energie e una leadership determinata che punta dritta all'obiettivo.",
+      "Ho 18 anni. Per molti l'età è solo un dato anagrafico; per me è il moltiplicatore di una determinazione feroce, di una grinta instancabile e di una lucidità tecnica totale. Ho fondato TechPYRE e ne dirigo le operazioni per scardinare la mediocrità di un mercato dove agenzie sovradimensionate addebitano parcelle ingiustificate, finendo per delegare lo sviluppo a terzi su tecnologie già morte.",
+      "Come capo dello studio, non accetto compromessi sulla qualità esecutiva. TechPYRE non è un'avventura improvvisata: è uno studio di ingegneria del software strutturato con processi solidi, metodologie rigorose e standard adottati dalle migliori tech company al mondo: Next.js nativo, TypeScript puro, architetture cloud edge e zero debito tecnico legacy.",
+      "Pretendo per ogni committente ciò che le agenzie tradizionali non possono garantire: continuità operativa totale, rilascio di documentazione esecutiva esaustiva, codice standardizzato e pipeline automatizzate. L'azienda ha il vantaggio di rapportarsi con una figura di vertice energica e reattiva, con la sicurezza di un'infrastruttura ingegneristica completamente autonoma.",
+      "Il codice sorgente, l'infrastruttura e i dati restano al 100% di proprietà dell'azienda committente fin dal primo rilascio. Chi sceglie TechPYRE sceglie la determinazione di una realtà moderna che lavora con ambizione e rigore per far vincere i propri clienti sul mercato.",
     ],
     quote:
-      "«Nel B2B la reputazione si consolida con software stabile che non cede, consegne puntuali e processi ingegneristici che garantiscono autonomia all'azienda.»",
+      "«A 18 anni la mia ambizione e la mia determinazione sono chiare: guidare TechPYRE per renderlo il punto di riferimento delle imprese che pretendono software impeccabile, velocità di esecuzione e trasparenza assoluta.»",
     comparison: {
       legacyTitle: "La prassi delle agenzie tradizionali",
       legacyPoints: [
@@ -260,11 +261,11 @@ export const siteContent: SiteContent = {
         "Tariffe gravate da spese fisse di rappresentanza e riunioni sterili",
         "Codice trattenuto dall'agenzia con vincoli per ostacolare la migrazione",
       ],
-      techPyreTitle: "Il modello di partnership diretta di TechPYRE",
+      techPyreTitle: "Il modello di leadership e studio TechPYRE",
       techPyrePoints: [
-        "Interlocutore tecnico diretto: risponde Riccardo Granza su telefono e WhatsApp",
-        "Continuità operativa garantita: codice standard Next.js/TS e documentazione completa",
-        "Tariffe pattuite prima dell'inizio e fatturate a milestone verificate",
+        "Interlocutore diretto: risponde Riccardo Granza con la grinta e la reattività della guida dello studio",
+        "Metodologia di studio: processi codificati, zero debito legacy e codice Next.js/TS nativo",
+        "Continuità operativa garantita: documentazione esecutiva completa e pipeline CI/CD indipendenti",
         "Proprietà intellettuale integrale: repository e infrastruttura 100% dell'azienda",
       ],
     },
