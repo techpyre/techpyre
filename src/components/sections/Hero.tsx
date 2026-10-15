@@ -160,51 +160,58 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.25, ease: [0.22, 1, 0.36, 1] }}
           className="hidden sm:grid sm:grid-cols-3 gap-3.5 mt-8 sm:mt-12 pt-6 sm:pt-8 border-t border-[#E8E2D5]"
         >
-          <Link
-            href="/servizi"
-            className="p-3.5 rounded-sm bg-white border border-[#E8E2D5] hover:border-[#0B1E36] transition-all flex items-center justify-between group shadow-2xs"
-          >
-            <div className="space-y-0.5">
-              <span className="text-[9px] font-mono font-bold uppercase tracking-wider text-[#B8860B]">
-                [01] LISTINO & SIMULATORE
-              </span>
-              <div className="font-serif text-sm font-semibold text-[#0B1E36] group-hover:text-[#B8860B] transition-colors">
-                Servizi & Tariffe
+          <motion.div whileHover={{ y: -2 }} whileTap={{ scale: 0.98 }} transition={{ duration: 0.2 }}>
+            <Link
+              href="/servizi"
+              className="p-3.5 rounded-sm bg-white border border-[#E8E2D5] hover:border-[#B8860B] transition-all flex items-center justify-between group shadow-2xs hover:shadow-xs h-full"
+            >
+              <div className="space-y-0.5">
+                <span className="text-[9px] font-mono font-bold uppercase tracking-wider text-[#B8860B]">
+                  [01] LISTINO & SIMULATORE
+                </span>
+                <div className="font-serif text-sm font-semibold text-[#0B1E36] group-hover:text-[#B8860B] transition-colors">
+                  Servizi & Tariffe
+                </div>
               </div>
-            </div>
-            <ArrowRightIcon className="w-3.5 h-3.5 text-[#5A6270] group-hover:text-[#B8860B] group-hover:translate-x-0.5 transition-all shrink-0" />
-          </Link>
+              <ArrowRightIcon className="w-3.5 h-3.5 text-[#5A6270] group-hover:text-[#B8860B] group-hover:translate-x-1 transition-all shrink-0" />
+            </Link>
+          </motion.div>
 
-          <Link
-            href="/progetti"
-            className="p-3.5 rounded-sm bg-white border border-[#E8E2D5] hover:border-[#0B1E36] transition-all flex items-center justify-between group shadow-2xs"
-          >
-            <div className="space-y-0.5">
-              <span className="text-[9px] font-mono font-bold uppercase tracking-wider text-[#B8860B]">
-                [02] CASI STUDIO LIVE
-              </span>
-              <div className="font-serif text-sm font-semibold text-[#0B1E36] group-hover:text-[#B8860B] transition-colors">
-                Progetti & Codice GitHub
+          <motion.div whileHover={{ y: -2 }} whileTap={{ scale: 0.98 }} transition={{ duration: 0.2 }}>
+            <Link
+              href="/progetti"
+              className="p-3.5 rounded-sm bg-white border border-[#E8E2D5] hover:border-[#B8860B] transition-all flex items-center justify-between group shadow-2xs hover:shadow-xs h-full"
+            >
+              <div className="space-y-0.5">
+                <span className="text-[9px] font-mono font-bold uppercase tracking-wider text-[#B8860B]">
+                  [02] CASI STUDIO LIVE
+                </span>
+                <div className="font-serif text-sm font-semibold text-[#0B1E36] group-hover:text-[#B8860B] transition-colors">
+                  Progetti & Codice GitHub
+                </div>
               </div>
-            </div>
-            <ArrowRightIcon className="w-3.5 h-3.5 text-[#5A6270] group-hover:text-[#B8860B] group-hover:translate-x-0.5 transition-all shrink-0" />
-          </Link>
+              <ArrowRightIcon className="w-3.5 h-3.5 text-[#5A6270] group-hover:text-[#B8860B] group-hover:translate-x-1 transition-all shrink-0" />
+            </Link>
+          </motion.div>
 
-          <Link
-            href="/studio"
-            className="p-3.5 rounded-sm bg-white border border-[#E8E2D5] hover:border-[#0B1E36] transition-all flex items-center justify-between group shadow-2xs"
-          >
-            <div className="space-y-0.5">
-              <span className="text-[9px] font-mono font-bold uppercase tracking-wider text-[#B8860B]">
-                [03] METODO & AUTONOMIA
-              </span>
-              <div className="font-serif text-sm font-semibold text-[#0B1E36] group-hover:text-[#B8860B] transition-colors">
-                Lo Studio & Fondatore
+          <motion.div whileHover={{ y: -2 }} whileTap={{ scale: 0.98 }} transition={{ duration: 0.2 }}>
+            <Link
+              href="/studio"
+              className="p-3.5 rounded-sm bg-white border border-[#E8E2D5] hover:border-[#B8860B] transition-all flex items-center justify-between group shadow-2xs hover:shadow-xs h-full"
+            >
+              <div className="space-y-0.5">
+                <span className="text-[9px] font-mono font-bold uppercase tracking-wider text-[#B8860B]">
+                  [03] METODO & AUTONOMIA
+                </span>
+                <div className="font-serif text-sm font-semibold text-[#0B1E36] group-hover:text-[#B8860B] transition-colors">
+                  Lo Studio & Fondatore
+                </div>
               </div>
-            </div>
-            <ArrowRightIcon className="w-3.5 h-3.5 text-[#5A6270] group-hover:text-[#B8860B] group-hover:translate-x-0.5 transition-all shrink-0" />
-          </Link>
+              <ArrowRightIcon className="w-3.5 h-3.5 text-[#5A6270] group-hover:text-[#B8860B] group-hover:translate-x-1 transition-all shrink-0" />
+            </Link>
+          </motion.div>
         </motion.div>
+
       </div>
     </section>
   );

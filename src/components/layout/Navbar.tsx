@@ -1,8 +1,8 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { motion, AnimatePresence, useScroll } from "framer-motion";
 import { siteContent } from "@/config/siteContent";
 import Button from "@/components/ui/Button";
@@ -23,13 +23,59 @@ export default function Navbar() {
   const [isVisible, setIsVisible] = useState(true);
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [navbarDormantVisible, setNavbarDormantVisible] = useState(false);
 
   const { brand, navigation } = siteContent;
   const { scrollYProgress } = useScroll();
   const pathname = usePathname();
+  const router = useRouter();
+
+  const lastClickRef = useRef<{ href: string; time: number } | null>(null);
 
   // Link attivo: pagina corrente (le ancore della home, es. /#contatto, non vengono evidenziate)
   const isActive = (href: string) => !href.includes("#") && pathname === href;
+
+  // Quando la navbar è visibile per tot secondi a schermo fermo o se il menu è aperto,
+  // i pulsanti fluttuanti in basso a sinistra si sfumano in grigio/trasparente
+  const isMuted = mobileMenuOpen || navbarDormantVisible;
+
+  // Timer per la visibilità prolungata della navbar (dopo 3s di inattività)
+  useEffect(() => {
+    let dormantTimer: NodeJS.Timeout | null = null;
+    if (isVisible) {
+      dormantTimer = setTimeout(() => {
+        setNavbarDormantVisible(true);
+      }, 3000);
+    } else {
+      setNavbarDormantVisible(false);
+    }
+    return () => {
+      if (dormantTimer) clearTimeout(dormantTimer);
+    };
+  }, [isVisible]);
+
+  // Gestione click sui pulsanti volanti: se già sulla pagina o se cliccato due volte
+  // ad una distanza temporale corretta (tra 350ms e 6000ms, NON doppio click istantaneo), torna alla home
+  const handleFloatingClick = (e: React.MouseEvent, targetHref: string) => {
+    e.preventDefault();
+    const now = Date.now();
+    const last = lastClickRef.current;
+
+    const isAlreadyOnPage = pathname === targetHref;
+    const isSecondDeliberateClick =
+      last &&
+      last.href === targetHref &&
+      now - last.time >= 350 &&
+      now - last.time <= 6000;
+
+    if (isAlreadyOnPage || isSecondDeliberateClick) {
+      lastClickRef.current = null;
+      router.push("/");
+    } else {
+      lastClickRef.current = { href: targetHref, time: now };
+      router.push(targetHref);
+    }
+  };
 
   useEffect(() => {
     let lastScrollY = window.scrollY;
@@ -38,6 +84,7 @@ export default function Navbar() {
     const handleScrollUpdate = () => {
       const currentScrollY = window.scrollY;
 
+      setNavbarDormantVisible(false);
       setScrolled(currentScrollY > 20);
 
       // Se il menu a schermo intero è aperto, mantieni sempre visibile
@@ -69,6 +116,10 @@ export default function Navbar() {
       ticking = false;
     };
 
+    const handleInteraction = () => {
+      setNavbarDormantVisible(false);
+    };
+
     const onScroll = () => {
       if (!ticking) {
         window.requestAnimationFrame(handleScrollUpdate);
@@ -84,12 +135,15 @@ export default function Navbar() {
 
     window.addEventListener("scroll", onScroll, { passive: true });
     window.addEventListener("resize", handleResize, { passive: true });
+    window.addEventListener("pointerdown", handleInteraction, { passive: true });
 
     return () => {
       window.removeEventListener("scroll", onScroll);
       window.removeEventListener("resize", handleResize);
+      window.removeEventListener("pointerdown", handleInteraction);
     };
   }, [mobileMenuOpen]);
+
 
   // Blocca lo scroll del body quando il menu mobile è aperto
   useEffect(() => {
@@ -215,51 +269,58 @@ export default function Navbar() {
         - Dritti al punto, ergonomici, non ingombranti
         =====================================================================
       */}
-      <nav aria-label="Navigazione rapida pagine" className="fixed bottom-5 left-4 z-40 lg:hidden flex items-center gap-1.5">
-        <Link
-          href="/servizi"
-          aria-label="Vai a Servizi"
-          className={`w-11 h-11 flex flex-col items-center justify-center rounded-sm backdrop-blur-md transition-all shadow-xl shadow-black/25 active:scale-95 ${
-            pathname === "/servizi"
-              ? "bg-[#0A192F] border-2 border-[#C5A059] text-[#C5A059]"
-              : "bg-[#0A192F]/90 border border-white/15 text-white hover:border-[#C5A059]/40"
-          }`}
-        >
-          <ServicesIcon className="w-3.5 h-3.5 text-[#C5A059]" />
-          <span className="text-[8px] font-sans font-semibold text-[#CBD7E3] mt-0.5 leading-none">
-            Servizi
-          </span>
-        </Link>
-
-        <Link
-          href="/progetti"
-          aria-label="Vai a Progetti"
-          className={`w-11 h-11 flex flex-col items-center justify-center rounded-sm backdrop-blur-md transition-all shadow-xl shadow-black/25 active:scale-95 ${
-            pathname === "/progetti"
-              ? "bg-[#0A192F] border-2 border-[#C5A059] text-[#C5A059]"
-              : "bg-[#0A192F]/90 border border-white/15 text-white hover:border-[#C5A059]/40"
-          }`}
-        >
-          <ProjectsIcon className="w-3.5 h-3.5 text-[#C5A059]" />
-          <span className="text-[8px] font-sans font-semibold text-[#CBD7E3] mt-0.5 leading-none">
-            Progetti
-          </span>
-        </Link>
-
-        <Link
-          href="/studio"
-          aria-label="Vai a Studio"
-          className={`w-11 h-11 flex flex-col items-center justify-center rounded-sm backdrop-blur-md transition-all shadow-xl shadow-black/25 active:scale-95 ${
-            pathname === "/studio"
-              ? "bg-[#0A192F] border-2 border-[#C5A059] text-[#C5A059]"
-              : "bg-[#0A192F]/90 border border-white/15 text-white hover:border-[#C5A059]/40"
-          }`}
-        >
-          <StudioIcon className="w-3.5 h-3.5 text-[#C5A059]" />
-          <span className="text-[8px] font-sans font-semibold text-[#CBD7E3] mt-0.5 leading-none">
-            Studio
-          </span>
-        </Link>
+      {/* 
+        =====================================================================
+        FLOATING QUICK NAV (SOLO SU MOBILE) IN BASSO A SINISTRA
+        - 3 bottoni quadrati compatti per le pagine Servizi, Progetti, Studio
+        - Quando la navbar è visibile per tot secondi o il menu è aperto,
+          diventano grigi/trasparenti per indicare correlazione col menu
+        - Se cliccato 2 volte a distanza corretta (o se già attivi), tornano alla Home
+        =====================================================================
+      */}
+      <nav
+        aria-label="Navigazione rapida pagine"
+        className="fixed bottom-5 left-4 z-40 lg:hidden flex items-center gap-1.5"
+      >
+        {[
+          { href: "/servizi", label: "Servizi", Icon: ServicesIcon },
+          { href: "/progetti", label: "Progetti", Icon: ProjectsIcon },
+          { href: "/studio", label: "Studio", Icon: StudioIcon },
+        ].map(({ href, label, Icon }) => {
+          const isCurrent = pathname === href;
+          return (
+            <motion.button
+              key={href}
+              type="button"
+              whileTap={{ scale: 0.92 }}
+              onClick={(e) => handleFloatingClick(e, href)}
+              aria-label={`${label} — Tocca due volte per tornare alla Home`}
+              className={`w-11 h-11 flex flex-col items-center justify-center rounded-sm backdrop-blur-md shadow-xl shadow-black/25 cursor-pointer transition-all duration-500 ease-out relative ${
+                isMuted
+                  ? "opacity-35 grayscale contrast-75 bg-[#0A192F]/50 border border-white/5"
+                  : isCurrent
+                  ? "opacity-100 bg-[#0A192F] border-2 border-[#C5A059] text-[#C5A059]"
+                  : "opacity-100 bg-[#0A192F]/90 border border-white/15 text-white hover:border-[#C5A059]/40"
+              }`}
+            >
+              <Icon
+                className={`w-3.5 h-3.5 transition-colors ${
+                  isMuted ? "text-white/60" : isCurrent ? "text-[#C5A059]" : "text-[#CBD7E3]"
+                }`}
+              />
+              <span
+                className={`text-[8px] font-sans font-semibold mt-0.5 leading-none transition-colors ${
+                  isMuted ? "text-white/60" : isCurrent ? "text-[#C5A059]" : "text-[#CBD7E3]"
+                }`}
+              >
+                {label}
+              </span>
+              {isCurrent && !isMuted && (
+                <span className="absolute -top-1 -right-1 w-2 h-2 rounded-full bg-[#C5A059] shadow-xs" />
+              )}
+            </motion.button>
+          );
+        })}
       </nav>
 
       {/* 
@@ -290,56 +351,74 @@ export default function Navbar() {
         </Link>
       </div>
 
-      {/* Drawer di Navigazione Mobile a Schermo Intero */}
+      {/* 
+        =====================================================================
+        MENU MOBILE COMPATTO & NON INVASIVO (POPOVER DISCRETO)
+        - Non copre l'intero schermo (ridotto drasticamente di dimensioni)
+        - Ancorato direttamente sotto l'header della navbar in alto a destra
+        - Scrim leggero per chiusura immediata al tocco esterno
+        =====================================================================
+      */}
       <AnimatePresence>
         {mobileMenuOpen && (
-          <motion.div
-            initial={{ opacity: 0, y: -8 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -8 }}
-            transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
-            className="fixed inset-0 z-40 bg-[#F8F7F4] pt-[calc(env(safe-area-inset-top,0px)+5.5rem)] px-6 pb-8 flex flex-col justify-between lg:hidden border-b border-[#E8E2D5] overflow-y-auto"
-          >
-            <div className="space-y-5 pt-2">
-              <div className="text-[10px] font-sans uppercase font-bold tracking-widest text-[#B8860B] border-b border-[#E8E2D5] pb-2.5">
-                INDICE DI NAVIGAZIONE
+          <>
+            {/* Scrim semitrasparente leggero per chiusura rapida */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.2 }}
+              onClick={() => setMobileMenuOpen(false)}
+              className="fixed inset-0 bg-black/25 z-40 lg:hidden backdrop-blur-[2px]"
+            />
+
+            {/* Scheda compatta popover non invasiva */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.94, y: -6 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.94, y: -6 }}
+              transition={{ duration: 0.2, ease: [0.22, 1, 0.36, 1] }}
+              className="fixed top-[calc(env(safe-area-inset-top,0px)+3.85rem)] right-3.5 sm:right-6 w-60 sm:w-64 bg-white/98 backdrop-blur-xl rounded-sm border border-[#E8E2D5] shadow-2xl z-50 p-2.5 space-y-1.5"
+            >
+              <div className="flex items-center justify-between px-2 py-1 text-[9px] font-mono font-bold uppercase tracking-widest text-[#B8860B] border-b border-[#E8E2D5]/70">
+                <span>Navigazione</span>
+                <span className="text-[#5A6270] font-sans font-normal">TechPYRE</span>
               </div>
-              <nav className="flex flex-col space-y-2.5">
+
+              <nav className="flex flex-col space-y-0.5">
                 {navigation.links.map((link) => (
                   <Link
                     key={link.label}
                     href={link.href}
                     onClick={() => setMobileMenuOpen(false)}
                     aria-current={isActive(link.href) ? "page" : undefined}
-                    className={`flex items-center justify-between py-3 text-xl font-serif hover:text-[#B8860B] transition-colors border-b border-[#E8E2D5]/40 ${
-                      isActive(link.href) ? "text-[#B8860B]" : "text-[#0B1E36]"
+                    className={`flex items-center justify-between px-2.5 py-2 rounded-xs text-xs font-serif transition-colors ${
+                      isActive(link.href)
+                        ? "bg-[#0B1E36]/5 text-[#B8860B] font-bold"
+                        : "text-[#0B1E36] hover:bg-[#F8F7F4] hover:text-[#B8860B]"
                     }`}
                   >
                     <span>{link.label}</span>
-                    <ArrowRightIcon className="w-4 h-4 text-[#5A6270]" />
+                    <ArrowRightIcon className="w-3 h-3 text-[#5A6270]" />
                   </Link>
                 ))}
               </nav>
-            </div>
 
-            <div className="pt-5 border-t border-[#E8E2D5] space-y-3">
-              <Button
-                href={navigation.cta.href}
-                onClick={() => setMobileMenuOpen(false)}
-                variant="primary"
-                withShimmer={true}
-                className="w-full text-center py-3.5"
-              >
-                <span>{navigation.cta.label}</span>
-                <ArrowRightIcon className="w-3.5 h-3.5" />
-              </Button>
-              <div className="text-[10px] font-sans text-center text-[#5A6270]">
-                {brand.location}
+              <div className="pt-1.5 border-t border-[#E8E2D5]/70">
+                <Link
+                  href={navigation.cta.href}
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="w-full py-2 px-3 rounded-xs bg-[#0B1E36] hover:bg-[#B8860B] text-white text-[11px] font-sans font-bold flex items-center justify-center gap-1.5 transition-colors shadow-xs"
+                >
+                  <CalendarIcon className="w-3.5 h-3.5 text-[#C5A059]" />
+                  <span>{navigation.cta.label}</span>
+                </Link>
               </div>
-            </div>
-          </motion.div>
+            </motion.div>
+          </>
         )}
       </AnimatePresence>
+
     </>
   );
 }

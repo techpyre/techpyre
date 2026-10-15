@@ -315,101 +315,109 @@ export default function ContactBox() {
                 </span>
               </div>
             </motion.div>
-
-            {/* Singola riga contratta per il modulo email SOLO su mobile */}
-            <div className="lg:hidden">
-              <button
-                type="button"
-                onClick={() => setIsMobileFormOpen(!isMobileFormOpen)}
-                className="w-full py-3 px-4 rounded-sm bg-white border border-[#E8E2D5] hover:border-[#0B1E36] text-[#0B1E36] flex items-center justify-between text-xs font-sans font-semibold shadow-2xs transition-colors cursor-pointer"
-                aria-expanded={isMobileFormOpen}
-              >
-                <span className="flex items-center gap-2">
-                  <MailIcon className="w-4 h-4 text-[#B8860B]" />
-                  <span>Contattaci via email</span>
-                </span>
-                <ChevronDownIcon
-                  className={`w-4 h-4 text-[#5A6270] transition-transform duration-200 ${
-                    isMobileFormOpen ? "rotate-180" : ""
-                  }`}
-                />
-              </button>
-            </div>
           </div>
 
-          {/* Modulo di Contatto (Colonna Destra: sempre visibile su desktop, visibile solo se aperto su mobile) */}
+          {/* Modulo di Contatto Email Unificato & Omogeneo */}
           <motion.div
             initial={{ opacity: 0, y: 16 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.15 }}
-            className={`lg:col-span-7 bg-white p-5 sm:p-7 md:p-8 rounded-sm border border-[#E8E2D5] shadow-xs ${
-              !isMobileFormOpen ? "hidden lg:block" : "block"
-            }`}
+            className="lg:col-span-7 bg-white rounded-sm border border-[#E8E2D5] shadow-xs overflow-hidden transition-all duration-300"
           >
-            <AnimatePresence mode="wait">
-              {status === "success" ? (
-                <motion.div
-                  key="success"
-                  initial={{ opacity: 0, scale: 0.98 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  exit={{ opacity: 0 }}
-                  transition={{ duration: 0.3 }}
-                  className="space-y-4 text-left py-4"
-                >
-                  <div className="w-10 h-10 rounded-sm bg-emerald-100 border border-emerald-300 flex items-center justify-center text-emerald-800 text-lg font-bold">
-                    ✓
+            {/* Header del Modulo su Mobile: Singola riga interattiva perfettamente integrata nella scheda */}
+            <button
+              type="button"
+              onClick={() => setIsMobileFormOpen(!isMobileFormOpen)}
+              className="w-full p-4 lg:hidden flex items-center justify-between text-left cursor-pointer transition-colors hover:bg-[#F8F7F4]/60 select-none group"
+              aria-expanded={isMobileFormOpen}
+            >
+              <div className="flex items-center gap-3">
+                <div className="w-8 h-8 rounded-xs bg-[#B8860B]/10 flex items-center justify-center text-[#B8860B] shrink-0 group-hover:bg-[#B8860B]/15 transition-colors">
+                  <MailIcon className="w-4 h-4 text-[#B8860B]" />
+                </div>
+                <div>
+                  <div className="text-[10px] font-bold uppercase tracking-wider text-[#B8860B] leading-none mb-1">
+                    Modulo Email
                   </div>
-                  <div className="space-y-1">
-                    <h3 className="font-serif text-xl sm:text-2xl text-[#0B1E36] font-semibold">
-                      {contact.feedback.successTitle}
-                    </h3>
-                    <p className="text-xs sm:text-sm text-[#5A6270] leading-relaxed font-sans">
-                      {contact.feedback.successMessage}
-                    </p>
+                  <div className="font-serif text-base font-semibold text-[#0B1E36] leading-none">
+                    Contattaci via email
                   </div>
-                  <div className="pt-2">
-                    <button
-                      type="button"
-                      onClick={handleReset}
-                      className="py-2.5 px-4 rounded-sm bg-[#0B1E36] text-white text-xs font-semibold hover:bg-[#003366] transition-colors cursor-pointer"
-                    >
-                      {contact.feedback.successReset}
-                    </button>
-                  </div>
-                </motion.div>
-              ) : (
-                <motion.form
-                  key="form"
-                  onSubmit={handleSubmit}
-                  noValidate
-                  className="space-y-4"
-                >
-                  <div className="flex items-center justify-between border-b border-[#E8E2D5] pb-2.5">
-                    <div className="space-y-0.5">
-                      <div className="text-[10px] font-bold uppercase tracking-widest text-[#B8860B]">
-                        MODULO DI RICHIESTA DIRETTA
-                      </div>
-                      <div className="text-xs text-[#5A6270]">
-                        Riscontro garantito entro 2 ore direttamente da Riccardo Granza.
-                      </div>
-                    </div>
-                    <button
-                      type="button"
-                      onClick={() => setIsMobileFormOpen(false)}
-                      className="lg:hidden text-xs font-sans text-[#5A6270] hover:text-[#0B1E36] underline cursor-pointer shrink-0 ml-2"
-                    >
-                      Chiudi
-                    </button>
-                  </div>
+                </div>
+              </div>
+              <div className="w-7 h-7 rounded-xs bg-[#F8F7F4] border border-[#E8E2D5] flex items-center justify-center text-[#5A6270] shrink-0 ml-2 group-hover:border-[#0B1E36] transition-colors">
+                <ChevronDownIcon
+                  className={`w-4 h-4 text-[#5A6270] transition-transform duration-300 ${
+                    isMobileFormOpen ? "rotate-180 text-[#B8860B]" : ""
+                  }`}
+                />
+              </div>
+            </button>
 
+            {/* Header Istituzionale del Modulo su Desktop */}
+            <div className="hidden lg:block p-6 sm:p-7 md:p-8 pb-4 border-b border-[#E8E2D5]">
+              <div className="text-[10px] font-bold uppercase tracking-widest text-[#B8860B]">
+                MODULO DI RICHIESTA DIRETTA
+              </div>
+              <h3 className="font-serif text-xl sm:text-2xl text-[#0B1E36] font-semibold mt-1">
+                Scrivi allo Studio
+              </h3>
+              <div className="text-xs text-[#5A6270] mt-0.5">
+                Riscontro garantito entro 2 ore direttamente da Riccardo Granza.
+              </div>
+            </div>
 
-                  {status === "error" && (
-                    <div className="p-3 rounded-sm bg-rose-50 border border-rose-200 text-rose-800 text-xs">
-                      <div className="font-bold">{contact.feedback.errorTitle}</div>
-                      <div>{errorMessage}</div>
+            {/* Corpo del Modulo (visibile sempre su desktop, espandibile al tocco su mobile) */}
+            <div
+              className={`p-5 sm:p-7 md:p-8 ${
+                isMobileFormOpen ? "block border-t border-[#E8E2D5] lg:border-t-0" : "hidden lg:block"
+              } lg:pt-5`}
+            >
+              <AnimatePresence mode="wait">
+                {status === "success" ? (
+                  <motion.div
+                    key="success"
+                    initial={{ opacity: 0, scale: 0.98 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 0.3 }}
+                    className="space-y-4 text-left py-4"
+                  >
+                    <div className="w-10 h-10 rounded-sm bg-emerald-100 border border-emerald-300 flex items-center justify-center text-emerald-800 text-lg font-bold">
+                      ✓
                     </div>
-                  )}
+                    <div className="space-y-1">
+                      <h3 className="font-serif text-xl sm:text-2xl text-[#0B1E36] font-semibold">
+                        {contact.feedback.successTitle}
+                      </h3>
+                      <p className="text-xs sm:text-sm text-[#5A6270] leading-relaxed font-sans">
+                        {contact.feedback.successMessage}
+                      </p>
+                    </div>
+                    <div className="pt-2">
+                      <button
+                        type="button"
+                        onClick={handleReset}
+                        className="py-2.5 px-4 rounded-sm bg-[#0B1E36] text-white text-xs font-semibold hover:bg-[#003366] transition-colors cursor-pointer"
+                      >
+                        {contact.feedback.successReset}
+                      </button>
+                    </div>
+                  </motion.div>
+                ) : (
+                  <motion.form
+                    key="form"
+                    onSubmit={handleSubmit}
+                    noValidate
+                    className="space-y-4"
+                  >
+                    {status === "error" && (
+                      <div className="p-3 rounded-sm bg-rose-50 border border-rose-200 text-rose-800 text-xs">
+                        <div className="font-bold">{contact.feedback.errorTitle}</div>
+                        <div>{errorMessage}</div>
+                      </div>
+                    )}
+
 
                   {/* Nome e Cognome */}
                   <div className="space-y-1">
@@ -618,9 +626,11 @@ export default function ContactBox() {
                 </motion.form>
               )}
             </AnimatePresence>
-          </motion.div>
-        </div>
+          </div>
+        </motion.div>
       </div>
+    </div>
+
 
       <PrivacyModal
         isOpen={isPrivacyModalOpen}
