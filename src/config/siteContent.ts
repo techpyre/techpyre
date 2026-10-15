@@ -187,6 +187,7 @@ export const siteContent: SiteContent = {
           "Portale web custom reattivo con area riservata, listini riservati per partita IVA e sincronizzazione contabile immediata.",
         description:
           "Architettura dimostrativa per la gestione di cataloghi B2B riservati, listini personalizzati per cliente e fatturazione automatizzata.",
+        shortDescription: "Portale ordini riservato con cataloghi e listini dinamici per partita IVA.",
         metrics: [
           { label: "Largest Contentful Paint", value: "LCP < 0.4s", subtext: "Caricamento catalogo istantaneo" },
           { label: "Core Web Vitals", value: "100 / 100", subtext: "Punteggio massimo Google" },
@@ -223,6 +224,7 @@ export const siteContent: SiteContent = {
           "Infrastruttura statica su CDN edge globale: caricamento sub-secondo (0.3s), zero dispersioni di traffico e inoltro webhook istantaneo ai CRM.",
         description:
           "Sostituzione di un'infrastruttura legacy lenta con una web app statica/ibrida capace di reggere picchi di traffico da campagne adv senza perdita di lead.",
+        shortDescription: "Infrastruttura statica su CDN edge per azzerare le conversioni disperse da ads.",
         metrics: [
           { label: "Lighthouse Performance", value: "100 / 100", subtext: "Mobile & Desktop ottimizzati" },
           { label: "Time to First Byte", value: "TTFB < 50ms", subtext: "Distribuzione Edge Globale" },

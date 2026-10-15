@@ -91,6 +91,7 @@ export interface CaseStudyItem {
   businessProblem?: string;
   solution?: string;
   description: string;
+  shortDescription?: string;
   metrics: CaseStudyMetric[];
   stack: string[];
   highlights: string[];

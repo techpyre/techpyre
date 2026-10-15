@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState, useRef } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { siteContent } from "@/config/siteContent";
@@ -16,13 +16,33 @@ interface CaseStudiesProps {
 /**
  * =====================================================================
  * SEZIONE ARCHITETTURE & CASI STUDIO B2B
- * - "teaser" (Homepage): Ultra-leggero, screenshot reali della demo, 90% di parole in meno
+ * - "teaser" (Homepage): Scalato, limpido, senza benchmark ridondanti,
+ *   slider a scorrimento orizzontale singolo su mobile.
  * - "full" (/progetti): Schede complete con analisi tecnica approfondita
  * =====================================================================
  */
 export default function CaseStudies({ variant = "teaser" }: CaseStudiesProps) {
   const router = useRouter();
   const { caseStudies } = siteContent;
+  const [activeSlide, setActiveSlide] = useState(0);
+  const carouselRef = useRef<HTMLDivElement>(null);
+
+  const handleScroll = () => {
+    if (carouselRef.current) {
+      const scrollLeft = carouselRef.current.scrollLeft;
+      const cardWidth = carouselRef.current.clientWidth * 0.75;
+      const index = Math.round(scrollLeft / cardWidth);
+      setActiveSlide(Math.min(Math.max(index, 0), caseStudies.items.length - 1));
+    }
+  };
+
+  const scrollToSlide = (index: number) => {
+    if (carouselRef.current) {
+      const targetCard = carouselRef.current.children[index] as HTMLElement;
+      targetCard?.scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
+      setActiveSlide(index);
+    }
+  };
 
   const handleSelectCaseStudy = (serviceName: string, caseTitle: string) => {
     if (typeof window !== "undefined") {
@@ -39,19 +59,19 @@ export default function CaseStudies({ variant = "teaser" }: CaseStudiesProps) {
   };
 
   // =====================================================================
-  // VARIANTE HOME (TEASER): VISUALE, SCREENSHOT REALI E 90% DI PAROLE IN MENO
+  // VARIANTE HOME (TEASER): PULITA, IN SCALA, SENZA BENCHMARK, SLIDER MOBILE
   // =====================================================================
   if (variant === "teaser") {
     return (
-      <section id="progetti" className="py-10 sm:py-14 md:py-16 bg-[#F8F7F4] border-t border-[#E8E2D5]">
-        <div className="max-w-7xl mx-auto px-5 sm:px-6 md:px-12">
+      <section id="progetti" className="py-10 sm:py-14 bg-[#F8F7F4] border-t border-[#E8E2D5]">
+        <div className="max-w-5xl mx-auto px-5 sm:px-6 md:px-12">
           {/* Intestazione Sintetica */}
-          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-3 pb-6">
-            <div className="space-y-1">
-              <div className="text-[10px] sm:text-[11px] font-sans font-bold text-[#B8860B] uppercase tracking-widest">
+          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-3 pb-5">
+            <div className="space-y-0.5">
+              <div className="text-[10px] font-sans font-bold text-[#B8860B] uppercase tracking-widest">
                 ARCHITETTURE REFERENCE LIVE
               </div>
-              <h2 className="font-serif text-2xl sm:text-3xl text-[#14181F] font-normal tracking-tight">
+              <h2 className="font-serif text-xl sm:text-2xl text-[#14181F] font-normal tracking-tight">
                 Due architetture live. Nessun mockup astratto.
               </h2>
             </div>
@@ -64,51 +84,30 @@ export default function CaseStudies({ variant = "teaser" }: CaseStudiesProps) {
             </Link>
           </div>
 
-          {/* Griglia a 2 Schede Visive con Screenshot Reali delle Demo */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 items-stretch">
-            {caseStudies.items.map((project, idx) => (
-              <motion.div
+          {/* Griglia Desktop / Slider Mobile (1 card per volta con snap fluido) */}
+          <div
+            ref={carouselRef}
+            onScroll={handleScroll}
+            className="flex lg:grid lg:grid-cols-2 gap-4 sm:gap-6 overflow-x-auto lg:overflow-visible snap-x snap-mandatory scrollbar-none pb-3 pt-1 -mx-5 px-5 sm:mx-0 sm:px-0"
+          >
+            {caseStudies.items.map((project) => (
+              <div
                 key={project.id}
-                initial={{ opacity: 0, y: 16 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-30px" }}
-                transition={{ duration: 0.5, delay: idx * 0.1 }}
-                className="bg-white rounded-sm border border-[#E8E2D5] hover:border-[#0B1E36] transition-all shadow-xs overflow-hidden flex flex-col justify-between group"
+                className="w-[84vw] max-w-[340px] sm:w-[380px] lg:w-full shrink-0 snap-center bg-white rounded-sm border border-[#E8E2D5] hover:border-[#0B1E36] transition-all shadow-2xs hover:shadow-xs overflow-hidden flex flex-col justify-between group"
               >
-                {/* Header Finestra Browser */}
-                <div className="bg-[#0B1E36] px-3.5 py-2 flex items-center justify-between text-white/70 select-none">
-                  <div className="flex items-center gap-1.5">
-                    <span className="w-2.5 h-2.5 rounded-full bg-[#FF5F56]/90 inline-block" />
-                    <span className="w-2.5 h-2.5 rounded-full bg-[#FFBD2E]/90 inline-block" />
-                    <span className="w-2.5 h-2.5 rounded-full bg-[#27C93F]/90 inline-block" />
-                  </div>
-
-                  <div className="px-2.5 py-0.5 rounded-xs bg-white/10 text-[10px] font-mono text-[#F8F7F4]/90 flex items-center gap-1.5 border border-white/10 max-w-[200px] sm:max-w-xs truncate">
-                    <span className="text-emerald-400 text-xs">🔒</span>
-                    <span className="truncate">
-                      {project.demoUrl ? project.demoUrl.replace("https://", "") : "techpyre.eu"}
-                    </span>
-                  </div>
-
-                  <div className="flex items-center gap-1.5 text-[9px] font-mono text-emerald-400 font-semibold shrink-0">
-                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-                    <span className="hidden sm:inline">LIVE DEMO</span>
-                  </div>
-                </div>
-
-                {/* Screenshot Reale della Demo */}
+                {/* Preview Screenshot in Scala Ridotta (Senza barra MacOS) */}
                 <a
                   href={project.demoUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="relative block aspect-[16/10] overflow-hidden bg-[#0A192F]/5 group/img border-b border-[#E8E2D5]"
-                  aria-label={`Apri live demo di ${project.title}`}
+                  className="relative block aspect-[16/10] max-h-[180px] sm:max-h-[200px] overflow-hidden bg-[#0A192F]/5 group/img border-b border-[#E8E2D5]"
+                  aria-label={`Apri demo live di ${project.title}`}
                 >
                   {project.screenshotUrl ? (
                     // eslint-disable-next-line @next/next/no-img-element
                     <img
                       src={project.screenshotUrl}
-                      alt={`Screenshot reale live demo: ${project.title}`}
+                      alt={`Screenshot demo: ${project.title}`}
                       className="w-full h-full object-cover object-top transition-transform duration-500 group-hover/img:scale-[1.02]"
                       loading="lazy"
                     />
@@ -118,54 +117,46 @@ export default function CaseStudies({ variant = "teaser" }: CaseStudiesProps) {
                     </div>
                   )}
 
-                  {/* Overlay interattivo hover */}
-                  <div className="absolute inset-0 bg-[#0B1E36]/0 group-hover/img:bg-[#0B1E36]/15 transition-colors flex items-center justify-center">
+                  {/* Badge LIVE pulito e discreto in sovrimpressione */}
+                  <div className="absolute top-2.5 right-2.5 px-2 py-0.5 rounded-full bg-[#0B1E36]/80 backdrop-blur-xs text-[9px] font-mono text-emerald-400 font-semibold flex items-center gap-1 shadow-xs border border-white/10 pointer-events-none">
+                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+                    <span>LIVE</span>
+                  </div>
+
+                  {/* Hover overlay limpido */}
+                  <div className="absolute inset-0 bg-[#0B1E36]/0 group-hover/img:bg-[#0B1E36]/15 transition-colors flex items-center justify-center pointer-events-none">
                     <span className="opacity-0 group-hover/img:opacity-100 transition-opacity duration-200 py-1.5 px-3 rounded-xs bg-[#0B1E36] text-white font-sans text-xs font-semibold shadow-md flex items-center gap-1.5">
-                      <span>Apri Demo Live</span>
+                      <span>Apri Demo</span>
                       <ArrowUpRightIcon className="w-3.5 h-3.5" />
                     </span>
                   </div>
                 </a>
 
-                {/* Dettaglio Sintetico (90% parole in meno: solo titolo, 2 metriche e 2 bottoni) */}
-                <div className="p-4 sm:p-5 flex flex-col justify-between flex-1 gap-3.5">
+                {/* Contenuto Scheda: Limpido, Titolo, Descrizione Breve e 2 Bottoni (Senza Benchmark) */}
+                <div className="p-4 sm:p-5 flex flex-col justify-between flex-1 gap-3">
                   <div className="space-y-1">
                     <div className="text-[10px] font-mono font-bold uppercase tracking-wider text-[#B8860B]">
                       {project.tag}
                     </div>
-                    <h3 className="font-serif text-lg sm:text-xl text-[#0B1E36] font-semibold leading-snug">
+                    <h3 className="font-serif text-base sm:text-lg text-[#0B1E36] font-semibold leading-snug">
                       {project.title}
                     </h3>
-                  </div>
-
-                  {/* 2 Metriche Essenziali */}
-                  <div className="grid grid-cols-2 gap-2 pt-2 border-t border-[#E8E2D5]/70">
-                    {project.metrics.slice(0, 2).map((m, mIdx) => (
-                      <div
-                        key={mIdx}
-                        className="p-2 rounded-xs bg-[#F8F7F4] border border-[#E8E2D5] space-y-0.5"
-                      >
-                        <div className="text-[9px] font-sans font-bold uppercase tracking-wider text-[#5A6270] truncate">
-                          {m.label}
-                        </div>
-                        <div className="font-mono font-bold text-xs text-[#0B1E36]">
-                          {m.value}
-                        </div>
-                      </div>
-                    ))}
+                    <p className="text-xs text-[#5A6270] font-sans leading-relaxed pt-0.5 line-clamp-2">
+                      {project.shortDescription || project.description}
+                    </p>
                   </div>
 
                   {/* Bottoni Rapidi */}
-                  <div className="grid grid-cols-2 gap-2 pt-1">
+                  <div className="grid grid-cols-2 gap-2 pt-2 border-t border-[#E8E2D5]/70">
                     {project.demoUrl && (
                       <a
                         href={project.demoUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="py-2 px-3 rounded-sm bg-[#B8860B] hover:bg-[#9A7009] active:scale-[0.99] text-white font-sans text-xs font-semibold tracking-wide transition-all shadow-xs inline-flex items-center justify-center gap-1.5"
+                        className="py-2 px-3 rounded-sm bg-[#B8860B] hover:bg-[#9A7009] active:scale-[0.99] text-white font-sans text-xs font-semibold tracking-wide transition-all shadow-2xs inline-flex items-center justify-center gap-1.5"
                       >
                         <span>Live Demo</span>
-                        <ArrowUpRightIcon className="w-3.5 h-3.5" />
+                        <ArrowUpRightIcon className="w-3 h-3" />
                       </a>
                     )}
                     {project.repoUrl && (
@@ -173,16 +164,31 @@ export default function CaseStudies({ variant = "teaser" }: CaseStudiesProps) {
                         href={project.repoUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="py-2 px-3 rounded-sm bg-white border border-[#0B1E36]/20 hover:border-[#0B1E36] active:scale-[0.99] text-[#0B1E36] font-sans text-xs font-semibold tracking-wide transition-all inline-flex items-center justify-center gap-1.5"
+                        className="py-2 px-3 rounded-sm bg-white border border-[#E8E2D5] hover:border-[#0B1E36] active:scale-[0.99] text-[#0B1E36] font-sans text-xs font-semibold tracking-wide transition-all inline-flex items-center justify-center gap-1.5"
                       >
                         <GitHubIcon className="w-3.5 h-3.5" />
                         <span>GitHub</span>
-                        <ArrowUpRightIcon className="w-3.5 h-3.5" />
+                        <ArrowUpRightIcon className="w-3 h-3" />
                       </a>
                     )}
                   </div>
                 </div>
-              </motion.div>
+              </div>
+            ))}
+          </div>
+
+          {/* Indicatori Paginazione Mobile (Pallini Animati per Scorrimento Singolo) */}
+          <div className="lg:hidden flex items-center justify-center gap-1.5 pt-3">
+            {caseStudies.items.map((_, i) => (
+              <button
+                key={i}
+                type="button"
+                onClick={() => scrollToSlide(i)}
+                className={`h-1.5 rounded-full transition-all duration-300 ${
+                  activeSlide === i ? "w-6 bg-[#B8860B]" : "w-2 bg-[#D4CBB8]"
+                }`}
+                aria-label={`Visualizza progetto ${i + 1}`}
+              />
             ))}
           </div>
         </div>
@@ -237,26 +243,8 @@ export default function CaseStudies({ variant = "teaser" }: CaseStudiesProps) {
               transition={{ duration: 0.6, delay: idx * 0.12, ease: [0.22, 1, 0.36, 1] }}
               className="bg-white rounded-sm border border-[#E8E2D5] shadow-xs flex flex-col justify-between overflow-hidden relative group hover:border-[#0B1E36] transition-all duration-200"
             >
-              {/* Header Finestra Browser */}
-              <div className="bg-[#0B1E36] border-b border-[#0B1E36]/40 px-3.5 py-2.5 flex items-center justify-between text-white/70 select-none">
-                <div className="flex items-center gap-1.5">
-                  <span className="w-2.5 h-2.5 rounded-full bg-[#FF5F56]/90 inline-block" />
-                  <span className="w-2.5 h-2.5 rounded-full bg-[#FFBD2E]/90 inline-block" />
-                  <span className="w-2.5 h-2.5 rounded-full bg-[#27C93F]/90 inline-block" />
-                </div>
-
-                <div className="flex-1 max-w-xs mx-3 px-2.5 py-1 rounded-xs bg-white/10 text-[10px] font-mono text-[#F8F7F4]/90 flex items-center justify-center gap-1.5 truncate border border-white/10">
-                  <span className="text-emerald-400 text-xs">🔒</span>
-                  <span className="truncate">
-                    {project.demoUrl ? project.demoUrl.replace("https://", "") : "techpyre.eu"}
-                  </span>
-                </div>
-
-                <div className="flex items-center gap-1.5 text-[9px] font-mono text-emerald-400 font-semibold shrink-0">
-                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-                  <span className="hidden sm:inline">LIVE DEMO</span>
-                </div>
-              </div>
+              {/* Accento Superiore Pulito */}
+              <div className="h-[2px] w-full bg-[#B8860B]" />
 
               {/* Screenshot Reale della Demo */}
               {project.screenshotUrl && (
@@ -264,7 +252,7 @@ export default function CaseStudies({ variant = "teaser" }: CaseStudiesProps) {
                   href={project.demoUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block aspect-[16/10] overflow-hidden bg-[#0A192F]/5 border-b border-[#E8E2D5] group/img"
+                  className="block aspect-[16/10] max-h-[260px] overflow-hidden bg-[#0A192F]/5 border-b border-[#E8E2D5] group/img relative"
                   aria-label={`Apri demo di ${project.title}`}
                 >
                   {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -274,6 +262,10 @@ export default function CaseStudies({ variant = "teaser" }: CaseStudiesProps) {
                     className="w-full h-full object-cover object-top transition-transform duration-500 group-hover/img:scale-[1.02]"
                     loading="lazy"
                   />
+                  <div className="absolute top-3 right-3 px-2 py-0.5 rounded-full bg-[#0B1E36]/80 backdrop-blur-xs text-[9px] font-mono text-emerald-400 font-semibold flex items-center gap-1 shadow-xs border border-white/10 pointer-events-none">
+                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+                    <span>LIVE DEMO</span>
+                  </div>
                 </a>
               )}
 
