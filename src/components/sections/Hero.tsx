@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { siteContent } from "@/config/siteContent";
 import Button from "@/components/ui/Button";
@@ -63,14 +64,14 @@ export default function Hero() {
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-          className="flex flex-col sm:flex-row sm:items-center justify-between gap-1.5 pb-3 border-b border-[#E8E2D5] text-[10px] sm:text-[11px] font-sans font-bold tracking-wider uppercase text-[#5A6270]"
+          className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 text-[10px] sm:text-[11px] font-sans font-medium tracking-wider uppercase text-[#5A6270]/80"
         >
-          <div className="text-[#0B1E36]">{hero.badge}</div>
+          <div className="text-[#0B1E36]/80">{hero.badge}</div>
           <div>{brand.location}</div>
         </motion.div>
 
         {/* Griglia Principale: Headline & Scheda Patto di Fiducia */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-7 lg:gap-10 items-center pt-5 sm:pt-8">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center pt-6 sm:pt-10">
           {/* Colonna Testo Principale */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -132,13 +133,9 @@ export default function Hero() {
             transition={{ duration: 0.7, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
             className="lg:col-span-4"
           >
-            <div className="p-5 sm:p-6 rounded-sm bg-white border border-[#E8E2D5] shadow-xs space-y-3.5 relative">
-              <div className="absolute top-0 left-0 right-0 h-[2px] bg-[#B8860B]" />
+            <div className="pt-2 lg:pt-1 lg:pl-8 lg:border-l lg:border-[#E8E2D5] space-y-3 relative">
 
               <div className="space-y-0.5">
-                <div className="text-[10px] font-bold uppercase tracking-widest text-[#B8860B] font-sans">
-                  IL PATTO DI FIDUCIA
-                </div>
                 <h3 className="font-serif text-lg sm:text-xl text-[#0B1E36] font-semibold">
                   Costruito intorno a te
                 </h3>
@@ -159,14 +156,14 @@ export default function Hero() {
                 </div>
               </div>
 
-              <div className="pt-2 border-t border-[#E8E2D5]">
-                <a
-                  href="#storia"
-                  className="inline-flex items-center justify-center gap-1.5 w-full py-2.5 px-3 rounded-sm bg-[#F8F7F4] hover:bg-[#E8E2D5]/70 text-[#0B1E36] text-xs font-semibold tracking-wide transition-colors border border-[#E8E2D5] whitespace-nowrap"
+              <div className="pt-1">
+                <Link
+                  href="/studio"
+                  className="inline-flex items-center gap-1.5 py-1.5 text-[#0B1E36] hover:text-[#B8860B] text-xs font-semibold tracking-wide transition-colors whitespace-nowrap group"
                 >
                   <span>Leggi il profilo del fondatore</span>
-                  <ArrowRightIcon className="w-3.5 h-3.5 shrink-0" />
-                </a>
+                  <ArrowRightIcon className="w-3.5 h-3.5 shrink-0 transition-transform group-hover:translate-x-0.5" />
+                </Link>
               </div>
             </div>
           </motion.div>
@@ -178,14 +175,14 @@ export default function Hero() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-30px" }}
           transition={{ duration: 0.6, delay: 0.25, ease: [0.22, 1, 0.36, 1] }}
-          className="mt-8 sm:mt-12 border border-[#E8E2D5] bg-white rounded-sm divide-y sm:divide-y-0 sm:divide-x divide-[#E8E2D5] grid grid-cols-2 lg:grid-cols-4 shadow-xs"
+          className="mt-10 sm:mt-14 border-t border-[#E8E2D5] grid grid-cols-2 lg:grid-cols-4 gap-x-6"
         >
           {quickMetrics.map((metric, i) => (
             <div
               key={i}
-              className="p-3.5 sm:p-5 flex flex-col justify-between hover:bg-[#F8F7F4]/40 transition-colors"
+              className="py-4 sm:py-6 flex flex-col justify-between"
             >
-              <span className="text-[9px] sm:text-[10px] font-sans font-bold uppercase tracking-wider text-[#5A6270]">
+              <span className="text-[9px] sm:text-[10px] font-sans font-medium uppercase tracking-wider text-[#5A6270]/80">
                 {metric.label}
               </span>
               <div className="font-serif text-xl sm:text-2xl md:text-3xl font-bold text-[#0B1E36] my-1 sm:my-1.5">

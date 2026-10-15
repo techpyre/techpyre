@@ -22,15 +22,14 @@ export const siteContent: SiteContent = {
 
   navigation: {
     links: [
-      { label: "Listino Servizi", href: "#servizi" },
-      { label: "Architetture & Casi", href: "#progetti" },
-      { label: "Simulatore B2B", href: "#simulatore" },
-      { label: "Lo Studio", href: "#storia" },
-      { label: "Contatto Diretto", href: "#contatto" },
+      { label: "Servizi", href: "/servizi" },
+      { label: "Progetti", href: "/progetti" },
+      { label: "Studio", href: "/studio" },
+      { label: "Contatti", href: "/#contatto" },
     ],
     cta: {
       label: "Richiedi Incontro (30 min)",
-      href: "#contatto",
+      href: "/#contatto",
     },
   },
 
@@ -45,12 +44,12 @@ export const siteContent: SiteContent = {
       "Architetture web proprietarie, landing page ad alta resa commerciale ed ecosistemi B2B. Interlocutore tecnico diretto affiancato da continuità operativa garantita, codice standardizzato e zero debito tecnico legacy.",
     primaryCta: {
       label: "Richiedi Primo Colloquio Tecnico",
-      href: "#contatto",
+      href: "/#contatto",
       note: "Sessione conoscitiva di 30 minuti · Analisi preliminare senza vincoli",
     },
     secondaryCta: {
       label: "Consulta il Listino Prezzi",
-      href: "#servizi",
+      href: "/servizi",
     },
     pillars: [
       {
@@ -336,20 +335,20 @@ export const siteContent: SiteContent = {
       {
         title: "Patti e Principi",
         items: [
-          { label: "Listino Servizi B2B", href: "#servizi" },
-          { label: "Casi Studio & Architetture", href: "#progetti" },
-          { label: "Simulatore B2B", href: "#simulatore" },
-          { label: "Lo Studio & Metodo", href: "#storia" },
-          { label: "Colloquio 30m Gratuito", href: "#contatto" },
+          { label: "Listino Servizi B2B", href: "/servizi" },
+          { label: "Casi Studio & Architetture", href: "/progetti" },
+          { label: "Simulatore B2B", href: "/servizi#simulatore" },
+          { label: "Lo Studio & Metodo", href: "/studio" },
+          { label: "Colloquio 30m Gratuito", href: "/#contatto" },
         ],
       },
       {
         title: "Specifiche Operative",
         items: [
-          { label: "Audit Tecnico (70€/h)", href: "#servizi" },
-          { label: "Landing Page a 900€", href: "#servizi" },
-          { label: "Sito Corporate (2.000€–4.000€)", href: "#servizi" },
-          { label: "Web App & Ecosistema B2B", href: "#servizi" },
+          { label: "Audit Tecnico (70€/h)", href: "/servizi" },
+          { label: "Landing Page a 900€", href: "/servizi" },
+          { label: "Sito Corporate (2.000€–4.000€)", href: "/servizi" },
+          { label: "Web App & Ecosistema B2B", href: "/servizi" },
         ],
       },
       {

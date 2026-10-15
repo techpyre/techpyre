@@ -4,6 +4,8 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Button from "@/components/ui/Button";
 import { ArrowRightIcon } from "@/components/ui/Icons";
+import { requestContactPrefill } from "@/lib/contactPrefill";
+import { useRouter } from "next/navigation";
 
 /**
  * =====================================================================
@@ -69,6 +71,7 @@ const addonsList: AddonOption[] = [
 ];
 
 export default function ProjectEstimator() {
+  const router = useRouter();
   const [selectedService, setSelectedService] = useState<ServiceOption>(serviceOptions[1]);
   const [selectedAddons, setSelectedAddons] = useState<string[]>(["crm", "seo"]);
 
@@ -87,19 +90,11 @@ export default function ProjectEstimator() {
 
       const customMessage = `Configurazione dal Simulatore:\n- Servizio: ${selectedService.name}\n- Fascia economica: ${selectedService.basePrice}\n- Tempi stimati: ${selectedService.defaultTimeline}\n- Moduli opzionali selezionati: ${addonNames || "Nessun modulo aggiuntivo"}\n\nDesidero approfondire questa configurazione per la mia impresa con Riccardo Granza.`;
 
-      window.dispatchEvent(
-        new CustomEvent("techpyre:select-service-with-details", {
-          detail: {
-            serviceTitle: selectedService.name,
-            prefilledMessage: customMessage,
-          },
-        })
-      );
-
-      const contactSection = document.getElementById("contatto");
-      if (contactSection) {
-        contactSection.scrollIntoView({ behavior: "smooth" });
-      }
+      // Evento custom se il modulo è in pagina, altrimenti precompilato + navigazione a /#contatto
+      requestContactPrefill({
+        serviceTitle: selectedService.name,
+        prefilledMessage: customMessage,
+      }, (href) => router.push(href));
     }
   };
 

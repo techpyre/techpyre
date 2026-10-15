@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 
 interface ButtonProps {
   children: React.ReactNode;
@@ -77,6 +78,15 @@ export default function Button({
       </span>
     </div>
   );
+
+  // Link interni tra pagine (/servizi, /#contatto…) con navigazione client-side di Next.js
+  if (href && href.startsWith("/")) {
+    return (
+      <Link href={href} className="inline-block" onClick={onClick}>
+        {innerContent}
+      </Link>
+    );
+  }
 
   if (href) {
     return (

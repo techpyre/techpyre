@@ -6,6 +6,7 @@ import { siteContent } from "@/config/siteContent";
 import { ContactPayload, ContactApiResponse } from "@/types/content";
 import { ArrowRightIcon, WhatsAppIcon } from "@/components/ui/Icons";
 import PrivacyModal from "@/components/ui/PrivacyModal";
+import { consumeContactPrefill } from "@/lib/contactPrefill";
 
 /**
  * =====================================================================
@@ -67,6 +68,23 @@ export default function ContactBox() {
         handleSelectWithDetails as EventListener
       );
     };
+  }, []);
+
+  // Precompilato proveniente da un'altra pagina (Servizi, Simulatore, Progetti) via sessionStorage
+  useEffect(() => {
+    const prefill = consumeContactPrefill();
+    if (!prefill) return;
+    // Applicato dopo il mount (sessionStorage esiste solo sul client)
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setFormData((prev) => ({
+      ...prev,
+      service: prefill.serviceTitle,
+      message: prefill.prefilledMessage ?? prev.message,
+    }));
+    const timer = window.setTimeout(() => {
+      document.getElementById("contatto")?.scrollIntoView({ behavior: "smooth" });
+    }, 150);
+    return () => window.clearTimeout(timer);
   }, []);
 
   const validate = (): boolean => {

@@ -3,6 +3,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { siteContent } from "@/config/siteContent";
+import { requestContactPrefill } from "@/lib/contactPrefill";
+import { useRouter } from "next/navigation";
 import AnimatedLine from "@/components/ui/AnimatedLine";
 import { ArrowRightIcon, ArrowUpRightIcon, GitHubIcon } from "@/components/ui/Icons";
 
@@ -16,25 +18,18 @@ import { ArrowRightIcon, ArrowUpRightIcon, GitHubIcon } from "@/components/ui/Ic
  * =====================================================================
  */
 export default function CaseStudies() {
+  const router = useRouter();
   const { caseStudies } = siteContent;
 
   const handleSelectCaseStudy = (serviceName: string, caseTitle: string) => {
     if (typeof window !== "undefined") {
       const customMessage = `Richiesta Informazioni su Architettura Reference:\n- Riferimento: ${caseTitle}\n- Servizio correlato: ${serviceName}\n\nDesidero valutare un'architettura con analoghi requisiti di velocità, sicurezza e scalabilità per la mia impresa.`;
 
-      window.dispatchEvent(
-        new CustomEvent("techpyre:select-service-with-details", {
-          detail: {
-            serviceTitle: serviceName,
-            prefilledMessage: customMessage,
-          },
-        })
-      );
-
-      const contactEl = document.getElementById("contatto");
-      if (contactEl) {
-        contactEl.scrollIntoView({ behavior: "smooth" });
-      }
+      // Evento custom se il modulo è in pagina, altrimenti precompilato + navigazione a /#contatto
+      requestContactPrefill({
+        serviceTitle: serviceName,
+        prefilledMessage: customMessage,
+      }, (href) => router.push(href));
     }
   };
 

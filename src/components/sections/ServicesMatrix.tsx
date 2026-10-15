@@ -3,6 +3,8 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { siteContent } from "@/config/siteContent";
+import { requestContactPrefill } from "@/lib/contactPrefill";
+import { useRouter } from "next/navigation";
 import AnimatedLine from "@/components/ui/AnimatedLine";
 import { ServiceItem } from "@/types/content";
 import { ArrowRightIcon, ArrowDownIcon } from "@/components/ui/Icons";
@@ -17,22 +19,14 @@ import { ArrowRightIcon, ArrowDownIcon } from "@/components/ui/Icons";
  * =====================================================================
  */
 export default function ServicesMatrix() {
+  const router = useRouter();
   const { services } = siteContent;
   // Di default teniamo le schede chiuse per un colpo d'occhio immediato e pulito su mobile
   const [expandedId, setExpandedId] = useState<string | null>(null);
 
   const handleSelectService = (service: ServiceItem) => {
-    if (typeof window !== "undefined") {
-      window.dispatchEvent(
-        new CustomEvent("techpyre:select-service", {
-          detail: { serviceTitle: service.name, serviceId: service.id },
-        })
-      );
-      const contactEl = document.getElementById("contatto");
-      if (contactEl) {
-        contactEl.scrollIntoView({ behavior: "smooth" });
-      }
-    }
+    // Evento custom se il modulo è in pagina, altrimenti precompilato + navigazione a /#contatto
+    requestContactPrefill({ serviceTitle: service.name }, (href) => router.push(href));
   };
 
   const toggleExpand = (id: string) => {

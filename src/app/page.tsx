@@ -1,12 +1,13 @@
 import Navbar from "@/components/layout/Navbar";
 import Hero from "@/components/sections/Hero";
-import ServicesMatrix from "@/components/sections/ServicesMatrix";
-import CaseStudies from "@/components/sections/CaseStudies";
-import ProjectEstimator from "@/components/sections/ProjectEstimator";
-import FounderLetter from "@/components/sections/FounderLetter";
+import HomePreviews from "@/components/sections/HomePreviews";
 import ContactBox from "@/components/sections/ContactBox";
 import Footer from "@/components/layout/Footer";
 
+/**
+ * HOME: solo introduzione, accenni brevi alle pagine dedicate e modulo di contatto.
+ * Listino e simulatore → /servizi · Casi studio → /progetti · Fondatore → /studio
+ */
 export default function Home() {
   return (
     <>
@@ -14,10 +15,7 @@ export default function Home() {
       <div className="min-h-screen bg-[#F8F7F4] text-[#14181F]">
         <main id="main-content">
           <Hero />
-          <ServicesMatrix />
-          <CaseStudies />
-          <ProjectEstimator />
-          <FounderLetter />
+          <HomePreviews />
           <ContactBox />
         </main>
         <Footer />

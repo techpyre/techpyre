@@ -1,6 +1,8 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { motion, AnimatePresence, useScroll } from "framer-motion";
 import { siteContent } from "@/config/siteContent";
 import Button from "@/components/ui/Button";
@@ -24,6 +26,10 @@ export default function Navbar() {
 
   const { brand, navigation } = siteContent;
   const { scrollYProgress } = useScroll();
+  const pathname = usePathname();
+
+  // Link attivo: pagina corrente (le ancore della home, es. /#contatto, non vengono evidenziate)
+  const isActive = (href: string) => !href.includes("#") && pathname === href;
 
   useEffect(() => {
     let lastScrollY = window.scrollY;
@@ -119,25 +125,35 @@ export default function Navbar() {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 py-2.5 sm:py-3 lg:py-3.5 flex items-center justify-between">
           {/* Logo Tipografico Ufficiale */}
-          <a
-            href="#"
+          <Link
+            href="/"
+            onClick={() => {
+              if (pathname === "/") window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
             aria-label={`${brand.name} — Torna alla homepage`}
             className="focus:outline-none focus-visible:ring-2 focus-visible:ring-[#B8860B] rounded-xs"
           >
             <TechPyreLogo size="md" />
-          </a>
+          </Link>
 
           {/* Link di Navigazione Desktop */}
-          <nav className="hidden lg:flex items-center gap-6 xl:gap-8">
+          <nav className="hidden lg:flex items-center gap-8 xl:gap-10">
             {navigation.links.map((link) => (
-              <a
+              <Link
                 key={link.label}
                 href={link.href}
-                className="text-xs font-sans font-semibold tracking-wide text-[#5A6270] hover:text-[#0B1E36] transition-colors relative py-1 group"
+                aria-current={isActive(link.href) ? "page" : undefined}
+                className={`text-[13px] font-sans font-medium tracking-wide transition-colors relative py-1 group ${
+                  isActive(link.href) ? "text-[#0B1E36]" : "text-[#5A6270] hover:text-[#0B1E36]"
+                }`}
               >
                 <span>{link.label}</span>
-                <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-[#B8860B] transition-all duration-300 group-hover:w-full" />
-              </a>
+                <span
+                  className={`absolute bottom-0 left-0 h-[2px] bg-[#B8860B] transition-all duration-300 group-hover:w-full ${
+                    isActive(link.href) ? "w-full" : "w-0"
+                  }`}
+                />
+              </Link>
             ))}
           </nav>
 
@@ -200,8 +216,8 @@ export default function Navbar() {
         =====================================================================
       */}
       <div className="fixed bottom-5 right-4 z-40 lg:hidden">
-        <a
-          href="#contatto"
+        <Link
+          href="/#contatto"
           className="relative inline-flex p-[1.5px] rounded-sm overflow-hidden group cursor-pointer shadow-xl shadow-black/30 active:scale-95 transition-transform"
         >
           {/* Bordo sbrilluccicoso rotante */}
@@ -216,7 +232,7 @@ export default function Navbar() {
             <span className="whitespace-nowrap">Incontro 30m</span>
             <ArrowRightIcon className="w-3.5 h-3.5 text-[#C5A059] shrink-0 group-hover:translate-x-0.5 transition-transform" />
           </div>
-        </a>
+        </Link>
       </div>
 
       {/* Drawer di Navigazione Mobile a Schermo Intero */}
@@ -235,15 +251,18 @@ export default function Navbar() {
               </div>
               <nav className="flex flex-col space-y-2.5">
                 {navigation.links.map((link) => (
-                  <a
+                  <Link
                     key={link.label}
                     href={link.href}
                     onClick={() => setMobileMenuOpen(false)}
-                    className="flex items-center justify-between py-2.5 text-lg font-serif text-[#0B1E36] hover:text-[#B8860B] transition-colors border-b border-[#E8E2D5]/40"
+                    aria-current={isActive(link.href) ? "page" : undefined}
+                    className={`flex items-center justify-between py-3 text-xl font-serif hover:text-[#B8860B] transition-colors border-b border-[#E8E2D5]/40 ${
+                      isActive(link.href) ? "text-[#B8860B]" : "text-[#0B1E36]"
+                    }`}
                   >
                     <span>{link.label}</span>
                     <ArrowRightIcon className="w-4 h-4 text-[#5A6270]" />
-                  </a>
+                  </Link>
                 ))}
               </nav>
             </div>

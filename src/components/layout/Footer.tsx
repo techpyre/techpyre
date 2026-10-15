@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Link from "next/link";
 import { siteContent } from "@/config/siteContent";
 import AnimatedLine from "@/components/ui/AnimatedLine";
 import TechPyreLogo from "@/components/ui/TechPyreLogo";
@@ -82,6 +83,13 @@ export default function Footer() {
                         >
                           {link.label}
                         </a>
+                      ) : link.href.startsWith("/") ? (
+                        <Link
+                          href={link.href}
+                          className="text-[#A4B3C6] hover:text-[#C5A059] transition-colors block py-0.5"
+                        >
+                          {link.label}
+                        </Link>
                       ) : (
                         <a
                           href={link.href}
@@ -128,13 +136,13 @@ export default function Footer() {
           <div className="flex items-center gap-4 sm:gap-6 flex-wrap">
             <span>Codice proprietario senza lock-in</span>
             <span className="hidden md:inline">•</span>
-            <a
-              href="#contatto"
+            <Link
+              href="/#contatto"
               className="text-[#C5A059] hover:text-white font-bold transition-colors inline-flex items-center gap-1.5 whitespace-nowrap"
             >
               <span>Parla con {brand.founder}</span>
               <ArrowRightIcon className="w-3.5 h-3.5 shrink-0" />
-            </a>
+            </Link>
           </div>
         </div>
       </div>

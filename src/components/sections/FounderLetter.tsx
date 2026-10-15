@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { siteContent } from "@/config/siteContent";
 import Signature from "@/components/ui/Signature";
@@ -106,13 +107,13 @@ export default function FounderLetter() {
               {/* Box Contatto Rapido */}
               <div className="p-3.5 rounded-sm bg-[#C5A059]/10 border border-[#C5A059]/30 flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 text-xs font-sans">
                 <span className="text-white font-medium">Vuoi parlare direttamente con Riccardo?</span>
-                <a
-                  href="#contatto"
+                <Link
+                  href="/#contatto"
                   className="text-[#C5A059] hover:text-white font-bold transition-colors whitespace-nowrap inline-flex items-center gap-1.5 shrink-0 self-start sm:self-auto group"
                 >
                   <span>Invia messaggio</span>
                   <ArrowRightIcon className="w-3.5 h-3.5 shrink-0 transition-transform group-hover:translate-x-0.5" />
-                </a>
+                </Link>
               </div>
             </div>
 
