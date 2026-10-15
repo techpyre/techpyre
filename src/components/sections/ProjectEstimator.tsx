@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import Button from "@/components/ui/Button";
 import { ArrowRightIcon } from "@/components/ui/Icons";
 
@@ -10,6 +10,9 @@ import { ArrowRightIcon } from "@/components/ui/Icons";
  * SIMULATORE DI PROGETTO B2B & PREVENTIVATORE TRASPARENTE
  * Permette ai clienti di configurare la portata dell'intervento e visualizzare
  * immediatamente tempi e costi indicativi con interazioni animate e reattive.
+ * - Stato reattivo (useState) con aggiornamento dinamico in tempo reale
+ * - 4 Tier allineati al listino contrattuale
+ * - Visualizzazione immediata degli add-on nel prospetto di riepilogo
  * =====================================================================
  */
 interface ServiceOption {
@@ -22,40 +25,47 @@ interface ServiceOption {
 
 const serviceOptions: ServiceOption[] = [
   {
-    id: "consulenza",
-    name: "Consulenza & Audit",
-    basePrice: "30 min Free, poi 100€/ora",
+    id: "audit",
+    name: "Audit Tecnico & Consulenza Architetturale",
+    basePrice: "30 min Free, poi 70€ / ora",
     defaultTimeline: "Entro 48 ore",
-    description: "Analisi tecnica dell'infrastruttura, rimozione colli di bottiglia e roadmap operativa.",
+    description: "Analisi tecnica dell'infrastruttura, rimozione colli di bottiglia e roadmap tecnica esecutiva.",
   },
   {
     id: "landing",
     name: "Landing Page ad Alta Conversione",
-    basePrice: "500€ (Fisso)",
-    defaultTimeline: "5–7 giorni",
-    description: "Pagina singola ultra-veloce Next.js, copywriting persuasivo, integrazione moduli e CRM.",
+    basePrice: "900€ (Prezzo Fisso)",
+    defaultTimeline: "5–7 giorni lavorativi",
+    description: "Pagina singola ultra-veloce Next.js, copywriting persuasivo, integrazione moduli e webhook CRM.",
   },
   {
-    id: "blueprint",
-    name: "Blueprint Ingegneristico",
-    basePrice: "Da 1.500€ a 2.500€",
-    defaultTimeline: "10–14 giorni",
-    description: "Progetto esecutivo completo: architettura di sistema, wireframe, database schema e specifiche.",
+    id: "corporate",
+    name: "Sito Corporate & Architettura Avanzata",
+    basePrice: "Da 2.000€ a 4.000€",
+    defaultTimeline: "2–3 settimane",
+    description: "Sito multi-pagina Next.js ultra-rapido, SEO tecnica nativa, CMS headless e Blueprint architetturale incluso.",
   },
   {
     id: "ecosistema",
-    name: "Ecosistema Web Completo",
+    name: "Web Application & Ecosistema B2B Custom",
     basePrice: "Da 5.000€ a 15.000€",
     defaultTimeline: "4–8 settimane",
-    description: "Piattaforma web custom full-stack, area riservata B2B, database scalabile e pannello di gestione.",
+    description: "Piattaforma su misura, aree riservate (RBAC), integrazioni API/ERP, flussi Stripe B2B e architettura scalabile.",
   },
 ];
 
-const addonsList = [
+interface AddonOption {
+  id: string;
+  label: string;
+  cost: string;
+  includedInTiers?: string[];
+}
+
+const addonsList: AddonOption[] = [
   { id: "crm", label: "Integrazione Webhook CRM", cost: "Inclusa" },
-  { id: "auth", label: "Area Riservata a Ruoli (RBAC)", cost: "+ Valutata nel piano" },
+  { id: "auth", label: "Area Riservata a Ruoli (RBAC)", cost: "Inclusa in Web App" },
   { id: "seo", label: "Audit Core Web Vitals (< 300ms)", cost: "Inclusa" },
-  { id: "payment", label: "Flussi di Pagamento B2B Stripe", cost: "+ Valutata nel piano" },
+  { id: "payment", label: "Flussi di Pagamento B2B Stripe", cost: "Valutata nel piano" },
 ];
 
 export default function ProjectEstimator() {
@@ -75,7 +85,7 @@ export default function ProjectEstimator() {
         .filter(Boolean)
         .join(", ");
 
-      const customMessage = `Configurazione dal Simulatore:\n- Servizio: ${selectedService.name}\n- Fascia di investimento: ${selectedService.basePrice}\n- Tempi stimati: ${selectedService.defaultTimeline}\n- Opzioni selezionate: ${addonNames || "Nessuna opzione aggiuntiva"}\n\nDesidero approfondire questa configurazione per la mia impresa.`;
+      const customMessage = `Configurazione dal Simulatore:\n- Servizio: ${selectedService.name}\n- Fascia economica: ${selectedService.basePrice}\n- Tempi stimati: ${selectedService.defaultTimeline}\n- Moduli opzionali selezionati: ${addonNames || "Nessun modulo aggiuntivo"}\n\nDesidero approfondire questa configurazione per la mia impresa con Riccardo Granza.`;
 
       window.dispatchEvent(
         new CustomEvent("techpyre:select-service-with-details", {
@@ -112,11 +122,11 @@ export default function ProjectEstimator() {
               Configura il tuo progetto e verifica i parametri esecutivi.
             </h2>
             <p className="text-xs sm:text-sm text-[#5A6270] font-sans leading-relaxed">
-              Seleziona la tipologia di intervento per visualizzare costi indicativi, tempi certi e requisiti tecnici.
+              Seleziona la tipologia di intervento per visualizzare costi indicativi, tempi certi e requisiti tecnici in tempo reale.
             </p>
           </div>
 
-          <div className="text-xs font-mono text-[#5A6270] bg-white border border-[#E8E2D5] p-3 rounded-sm shrink-0 self-start md:self-auto">
+          <div className="text-xs font-mono text-[#5A6270] bg-white border border-[#E8E2D5] p-3 rounded-sm shrink-0 self-start md:self-auto shadow-2xs">
             <div className="text-[10px] font-sans uppercase font-bold text-[#5A6270]">GARANZIA DI PREZZO CERTO</div>
             <div className="text-[#0B1E36] font-bold text-xs sm:text-sm">Nessun costo occulto a consuntivo</div>
           </div>
@@ -139,23 +149,25 @@ export default function ProjectEstimator() {
                       type="button"
                       whileTap={{ scale: 0.98 }}
                       onClick={() => setSelectedService(opt)}
-                      className={`p-3.5 rounded-sm text-left border transition-all cursor-pointer relative min-h-[54px] ${
+                      className={`p-3.5 rounded-sm text-left border transition-all duration-200 cursor-pointer relative min-h-[58px] ${
                         isSelected
-                          ? "bg-[#0B1E36] text-white border-[#0B1E36] shadow-xs"
-                          : "bg-white text-[#14181F] border-[#E8E2D5] hover:border-[#B8860B]"
+                          ? "bg-[#0B1E36] text-white border-[#0B1E36] shadow-md ring-1 ring-[#0B1E36]"
+                          : "bg-white text-[#14181F] border-[#E8E2D5] hover:border-[#B8860B] hover:shadow-2xs"
                       }`}
                     >
-                      <div className="flex items-center justify-between pb-1">
+                      <div className="flex items-start justify-between gap-2 pb-1">
                         <span className="font-serif font-bold text-sm sm:text-base leading-snug">
                           {opt.name}
                         </span>
-                        {isSelected && (
-                          <span className="w-4 h-4 rounded-xs bg-[#B8860B] text-white text-[10px] flex items-center justify-center font-mono">
+                        {isSelected ? (
+                          <span className="w-4 h-4 rounded-xs bg-[#B8860B] text-white text-[10px] flex items-center justify-center font-mono shrink-0 mt-0.5">
                             ✓
                           </span>
+                        ) : (
+                          <span className="w-4 h-4 rounded-xs border border-[#E8E2D5] bg-[#F8F7F4] shrink-0 mt-0.5" />
                         )}
                       </div>
-                      <div className="text-xs font-mono font-semibold pt-0.5 text-[#B8860B]">
+                      <div className="text-xs font-mono font-bold pt-0.5 text-[#B8860B]">
                         {opt.basePrice}
                       </div>
                       <div
@@ -173,9 +185,14 @@ export default function ProjectEstimator() {
 
             {/* Step 2: Caratteristiche Accessorie */}
             <div className="space-y-2.5 pt-2">
-              <label className="block text-xs font-sans font-bold uppercase tracking-wider text-[#0B1E36]">
-                2. Requisiti e Integrazioni Opzionali
-              </label>
+              <div className="flex items-center justify-between">
+                <label className="block text-xs font-sans font-bold uppercase tracking-wider text-[#0B1E36]">
+                  2. Requisiti e Integrazioni Opzionali
+                </label>
+                <span className="text-[11px] text-[#5A6270] font-sans">
+                  {selectedAddons.length} selezionat{selectedAddons.length === 1 ? "o" : "i"}
+                </span>
+              </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                 {addonsList.map((addon) => {
                   const isChecked = selectedAddons.includes(addon.id);
@@ -183,15 +200,15 @@ export default function ProjectEstimator() {
                     <div
                       key={addon.id}
                       onClick={() => toggleAddon(addon.id)}
-                      className={`p-2.5 sm:p-3 rounded-sm border cursor-pointer flex items-center justify-between transition-colors ${
+                      className={`p-3 rounded-sm border cursor-pointer flex items-center justify-between transition-all duration-200 select-none ${
                         isChecked
-                          ? "bg-[#0B1E36]/5 border-[#B8860B] text-[#0B1E36]"
+                          ? "bg-[#0B1E36]/5 border-[#B8860B] shadow-2xs ring-1 ring-[#B8860B]/30"
                           : "bg-white border-[#E8E2D5] text-[#5A6270] hover:border-[#B8860B]"
                       }`}
                     >
                       <div className="flex items-center gap-2.5">
                         <div
-                          className={`w-4 h-4 rounded-xs border flex items-center justify-center text-[10px] font-mono transition-colors ${
+                          className={`w-4 h-4 rounded-xs border flex items-center justify-center text-[10px] font-mono transition-colors shrink-0 ${
                             isChecked
                               ? "bg-[#B8860B] border-[#B8860B] text-white"
                               : "border-[#E8E2D5] bg-white"
@@ -199,11 +216,15 @@ export default function ProjectEstimator() {
                         >
                           {isChecked ? "✓" : ""}
                         </div>
-                        <span className="text-xs font-sans font-medium text-[#14181F]">
+                        <span
+                          className={`text-xs font-sans font-medium transition-colors ${
+                            isChecked ? "text-[#0B1E36] font-bold" : "text-[#14181F]"
+                          }`}
+                        >
                           {addon.label}
                         </span>
                       </div>
-                      <span className="text-[10px] font-mono text-[#5A6270]">
+                      <span className="text-[10px] font-mono text-[#5A6270] shrink-0 pl-1">
                         {addon.cost}
                       </span>
                     </div>
@@ -230,29 +251,60 @@ export default function ProjectEstimator() {
                 </h3>
               </div>
 
-              {/* Dettagli della Configurazione Selezionata */}
-              <div className="p-3.5 rounded-sm bg-[#F8F7F4] border border-[#E8E2D5] space-y-2">
-                <div className="flex justify-between items-center text-xs">
-                  <span className="text-[#5A6270] font-sans">Soluzione Scelta:</span>
+              {/* Dettagli della Configurazione Selezionata con Aggiornamento Dinamico */}
+              <div className="p-4 rounded-sm bg-[#F8F7F4] border border-[#E8E2D5] space-y-2.5">
+                <div className="flex justify-between items-start gap-2 text-xs">
+                  <span className="text-[#5A6270] font-sans shrink-0">Soluzione Scelta:</span>
                   <span className="font-serif font-bold text-[#0B1E36] text-right">
                     {selectedService.name}
                   </span>
                 </div>
-                <div className="flex justify-between items-center text-xs border-t border-[#E8E2D5] pt-1.5">
+                <div className="flex justify-between items-center text-xs border-t border-[#E8E2D5] pt-2">
                   <span className="text-[#5A6270] font-sans">Fascia Economica:</span>
                   <span className="font-mono font-bold text-[#B8860B]">
                     {selectedService.basePrice}
                   </span>
                 </div>
-                <div className="flex justify-between items-center text-xs border-t border-[#E8E2D5] pt-1.5">
+                <div className="flex justify-between items-center text-xs border-t border-[#E8E2D5] pt-2">
                   <span className="text-[#5A6270] font-sans">Tempistica Stimata:</span>
                   <span className="font-sans font-semibold text-[#0B1E36]">
                     {selectedService.defaultTimeline}
                   </span>
                 </div>
+
+                {/* Sezione Add-on Selezionati Reattiva */}
+                <div className="border-t border-[#E8E2D5] pt-2 space-y-1">
+                  <div className="flex justify-between items-center text-xs">
+                    <span className="text-[#5A6270] font-sans">Moduli / Requisiti:</span>
+                    <span className="font-mono text-[11px] font-semibold text-[#0B1E36]">
+                      {selectedAddons.length} attiv{selectedAddons.length === 1 ? "o" : "i"}
+                    </span>
+                  </div>
+                  {selectedAddons.length > 0 ? (
+                    <div className="flex flex-wrap gap-1 pt-1">
+                      {selectedAddons.map((aId) => {
+                        const addon = addonsList.find((a) => a.id === aId);
+                        if (!addon) return null;
+                        return (
+                          <span
+                            key={aId}
+                            className="inline-flex items-center gap-1 text-[10px] font-sans px-2 py-0.5 rounded-xs bg-white border border-[#E8E2D5] text-[#0B1E36]"
+                          >
+                            <span className="text-[#B8860B] font-bold">▪</span>
+                            {addon.label}
+                          </span>
+                        );
+                      })}
+                    </div>
+                  ) : (
+                    <div className="text-[11px] text-[#8C95A6] italic font-sans pt-0.5">
+                      Nessun modulo aggiuntivo selezionato
+                    </div>
+                  )}
+                </div>
               </div>
 
-              {/* Note e Garanzie */}
+              {/* Note e Garanzie di Continuità */}
               <div className="space-y-1.5 text-xs font-sans text-[#5A6270]">
                 <div className="flex items-center gap-2 text-[#14181F] font-medium">
                   <span className="text-[#B8860B] font-bold">▪</span>
@@ -260,7 +312,11 @@ export default function ProjectEstimator() {
                 </div>
                 <div className="flex items-center gap-2 text-[#14181F] font-medium">
                   <span className="text-[#B8860B] font-bold">▪</span>
-                  <span>Proprietà integrale del codice sorgente rilasciato</span>
+                  <span>Proprietà integrale del codice sorgente su repository aziendale</span>
+                </div>
+                <div className="flex items-center gap-2 text-[#14181F] font-medium">
+                  <span className="text-[#B8860B] font-bold">▪</span>
+                  <span>Continuità garantita: documentazione tecnica e stack standard Next.js/TS</span>
                 </div>
               </div>
 
@@ -277,7 +333,7 @@ export default function ProjectEstimator() {
                   </span>
                 </Button>
                 <div className="text-[10px] text-center text-[#5A6270] pt-1.5 font-sans">
-                  Compila i dati nel modulo di contatto in calce
+                  Compila e pre-seleziona i dettagli nel modulo in calce
                 </div>
               </div>
             </motion.div>

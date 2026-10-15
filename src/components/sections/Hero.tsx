@@ -23,7 +23,7 @@ export default function Hero() {
       label: "CORE WEB VITALS",
       renderValue: () => (
         <span>
-          <AnimatedCounter value={99} />
+          <AnimatedCounter value={100} />
           <span className="text-[#5A6270] text-base font-normal"> / 100</span>
         </span>
       ),

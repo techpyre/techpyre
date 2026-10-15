@@ -63,8 +63,8 @@ export default function FounderLetter() {
                   <p className="text-xs font-sans text-[#CBD7E3] font-medium">
                     {founder.role}
                   </p>
-                  <p className="text-xs font-sans text-[#C5A059] pt-0.5">
-                    {founder.ageBadge}
+                  <p className="text-xs font-sans text-[#C5A059] pt-1 leading-snug">
+                    {founder.engineeringBadge}
                   </p>
                 </div>
 
@@ -81,6 +81,10 @@ export default function FounderLetter() {
                   <div className="flex justify-between py-1 border-b border-white/5">
                     <span className="text-white/60">STANDARD TECNICO:</span>
                     <span className="text-white font-semibold">Next.js / TypeScript nativo</span>
+                  </div>
+                  <div className="flex justify-between py-1 border-b border-white/5">
+                    <span className="text-white/60">CONTINUITÀ:</span>
+                    <span className="text-white font-semibold">CI/CD e documentazione esecutiva</span>
                   </div>
                   <div className="flex justify-between py-1 border-b border-white/5">
                     <span className="text-white/60">PROPRIETÀ CODICE:</span>

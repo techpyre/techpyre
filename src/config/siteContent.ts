@@ -3,8 +3,8 @@ import { SiteContent } from "@/types/content";
 /**
  * =====================================================================
  * UNICA FONTE DI VERITÀ (SINGLE SOURCE OF TRUTH)
- * Testi snelli, pragmatici ed essenziali.
- * Cambiando `brand.name`, il nome dello studio si aggiorna ovunque.
+ * Testi tecnici, pragmatici, orientati alla riduzione del rischio B2B.
+ * Aggiornamento Listino, Nuova Sezione Architetture e Continuità Operativa.
  * =====================================================================
  */
 export const siteContent: SiteContent = {
@@ -23,8 +23,9 @@ export const siteContent: SiteContent = {
   navigation: {
     links: [
       { label: "Listino Servizi", href: "#servizi" },
+      { label: "Architetture & Casi", href: "#progetti" },
       { label: "Simulatore B2B", href: "#simulatore" },
-      { label: "Il Fondatore", href: "#storia" },
+      { label: "Lo Studio", href: "#storia" },
       { label: "Contatto Diretto", href: "#contatto" },
     ],
     cta: {
@@ -41,7 +42,7 @@ export const siteContent: SiteContent = {
       line2: "",
     },
     subheadline:
-      "Architetture web proprietarie, landing page ad alta resa commerciale ed ecosistemi B2B. Unico referente tecnico, costi certi prima di iniziare e codice 100% di proprietà dell'azienda.",
+      "Architetture web proprietarie, landing page ad alta resa commerciale ed ecosistemi B2B. Interlocutore tecnico diretto affiancato da continuità operativa garantita, codice standardizzato e zero debito tecnico legacy.",
     primaryCta: {
       label: "Richiedi Primo Colloquio Tecnico",
       href: "#contatto",
@@ -54,21 +55,21 @@ export const siteContent: SiteContent = {
     pillars: [
       {
         id: "01",
-        title: "Responsabilità Diretta",
+        title: "Responsabilità & Continuità",
         description:
-          "Unico referente tecnico: risponde direttamente Riccardo Granza senza commerciali intermediari.",
+          "Interlocutore tecnico diretto con codice standardizzato (Next.js/TS) e documentazione tecnica completa per la piena autonomia aziendale.",
       },
       {
         id: "02",
         title: "Patti Chiari e Prezzo Certo",
         description:
-          "Importi definiti prima di iniziare le attività. Nessun canone occulto e codice 100% tuo.",
+          "Importi definiti prima di iniziare le attività. Nessun canone occulto e codice 100% di proprietà dell'azienda cliente.",
       },
       {
         id: "03",
         title: "Ingegneria Nativa",
         description:
-          "Next.js e TypeScript nativo per tempi di risposta sub-secondo (< 400ms) e manutenzione minima.",
+          "Next.js e TypeScript nativo per tempi di risposta sub-secondo (< 400ms), CI/CD automatizzata e zero debito tecnico.",
       },
     ],
   },
@@ -79,25 +80,25 @@ export const siteContent: SiteContent = {
     subtitle:
       "Specifiche definite, tempi certi e piena titolarità del codice rilasciato sul repository della tua azienda.",
     guarantee:
-      "Ogni importo concordato è definitivo. Repository e infrastruttura intestati interamente alla società cliente.",
+      "Ogni importo concordato è definitivo. Repository e infrastruttura intestati interamente alla società cliente con garanzia di continuità.",
     items: [
       {
-        id: "consulenza",
+        id: "audit-consulenza",
         number: "01",
-        name: "Consulenza Informatica & Marketing Digitale",
-        price: "Primi 30 min Gratuiti, poi 100€ / ora",
+        name: "Audit Tecnico & Consulenza Architetturale",
+        price: "Primi 30 min gratuiti, poi 70€ / ora",
         priceSubtext: "Prima sessione di inquadramento a costo zero",
         summary:
-          "Audit analitico dei sistemi esistenti, diagnosi delle inefficienze e piano di acquisizione clienti.",
+          "Audit analitico dei sistemi esistenti, diagnosi dei colli di bottiglia e roadmap tecnica esecutiva.",
         description:
-          "Confronto pragmatico per verificare le prestazioni dell'infrastruttura, risolvere colli di bottiglia commerciali o definire le specifiche prima di investimenti importanti.",
+          "Analisi tecnica approfondita dell'infrastruttura web o del software aziendale per identificare vulnerabilità, inefficienze di caricamento, problemi di scalabilità o definire le specifiche prima di investimenti rilevanti.",
         deliverables: [
           "Colloquio preliminare di 30 minuti gratuito",
-          "Audit tecnico su prestazioni, sicurezza e tracciamenti",
-          "Revisione della pipeline commerciale e conversioni",
-          "Relazione con le priorità di intervento operativo",
+          "Audit tecnico su prestazioni (Core Web Vitals), sicurezza e architettura",
+          "Analisi del debito tecnico e revisione dei flussi di conversione",
+          "Relazione tecnica con priorità di intervento e stime oggettive",
         ],
-        timing: "Pianificazione su appuntamento concordato",
+        timing: "Pianificazione entro 48 ore dalla richiesta",
         target:
           "Imprenditori e dirigenti che desiderano un parere tecnico indipendente e misurato.",
         ctaText: "Prenota i 30 Minuti Gratuiti",
@@ -106,97 +107,165 @@ export const siteContent: SiteContent = {
         id: "landing-page",
         number: "02",
         name: "Landing Page ad Alta Conversione",
-        price: "500€ (Prezzo Fisso)",
+        price: "900€ (Prezzo Fisso)",
         priceSubtext: "Consegna a corpo · Nessun canone periodico",
         summary:
-          "Pagina singola ultra-performante per acquisizione di lead qualificati e validazione di offerta.",
+          "Pagina singola ultra-performante per acquisizione di lead qualificati e validazione commerciale.",
         description:
-          "Sviluppata senza page builder pesanti. Codice nativo Next.js ultra-leggero, testi persuasivi e moduli integrati per una resa commerciale immediata.",
+          "Sviluppata senza page builder pesanti né CMS vulnerabili. Codice nativo Next.js ultra-leggero, testi persuasivi orientati alla conversione e integrazione webhook per una resa commerciale immediata.",
         deliverables: [
-          "Design su misura calibrato sull'identità aziendale",
+          "Design su misura calibrato sull'identità e sul posizionamento aziendale",
           "Frontend Next.js per risposta istantanea (< 400ms)",
-          "Integrazione moduli con notifica email immediata e CRM",
-          "Piena titolarità del codice sul repository dell'impresa",
+          "Integrazione moduli con notifica email immediata e webhook CRM",
+          "Piena titolarità del codice sorgente sul repository dell'impresa",
         ],
         timing: "Consegna online in 5–7 giorni lavorativi",
         target:
-          "Aziende che lanciano un servizio mirato o campagne Google/LinkedIn Ads.",
-        ctaText: "Richiedi la Landing Page a 500€",
+          "Aziende che lanciano un servizio mirato o campagne Google/LinkedIn Ads ad alto budget.",
+        ctaText: "Richiedi la Landing Page a 900€",
       },
       {
-        id: "blueprint",
+        id: "sito-corporate",
         number: "03",
-        name: "Blueprint Ingegneristico del Sito",
-        price: "Da 1.500€ a 2.500€",
-        priceSubtext: "Faldone esecutivo di proprietà dell'azienda",
+        name: "Sito Corporate & Architettura Avanzata",
+        price: "Da 2.000€ a 4.000€",
+        priceSubtext: "Fatturazione a milestone · Include Blueprint architetturale",
         summary:
-          "Il piano tecnico architetturale completo prima dello sviluppo: schemi dati, wireframe e preventivi analitici.",
+          "Sito multi-pagina ultra-veloce in Next.js, SEO tecnica nativa, CMS headless e design su misura.",
         description:
-          "La documentazione esecutiva completa del vostro software: liberi di affidarne lo sviluppo a noi o a chiunque altro, senza vincoli di dipendenza.",
+          "Architettura web istituzionale ad alte prestazioni per aziende che esigono autorevolezza e velocità. Include il Blueprint preliminare, rendering ibrido statico/server, gestione contenuti headless intuitiva e zero debito tecnico.",
         deliverables: [
-          "Documento formale dei requisiti e dell'architettura",
-          "Schema dati relazionale con criteri di sicurezza",
-          "Wireframe ad alta fedeltà di tutti i flussi utente",
-          "Stima esatta tempi e costi di sviluppo per milestone",
+          "Blueprint architetturale e wireframe preliminari inclusi nel piano",
+          "Sito multi-pagina in Next.js con performance Lighthouse 100/100",
+          "Pannello CMS Headless per aggiornamento autonomo dei contenuti",
+          "SEO tecnica nativa, dati strutturati Schema.org e OpenGraph completi",
+          "Piena proprietà del codice e rilascio su repository aziendale",
         ],
-        timing: "Consegna in 10–14 giorni lavorativi",
+        timing: "Consegna in 2–3 settimane lavorative",
         target:
-          "Aziende che pianificano piattaforme complesse, gestionali o portali ad alto traffico.",
-        ctaText: "Richiedi il Blueprint Tecnico",
+          "Imprese strutturate, studi professionali e brand B2B che vogliono posizionarsi come leader di settore.",
+        ctaText: "Richiedi Progetto Corporate",
       },
       {
         id: "ecosistema",
         number: "04",
-        name: "Sito Web ed Ecosistema Completo",
+        name: "Web Application & Ecosistema B2B Custom",
         price: "Da 5.000€ a 15.000€",
-        priceSubtext: "Fatturazione a stati di avanzamento verificati",
+        priceSubtext: "Sviluppo a sprint settimanali · Fatturazione a milestone",
         summary:
-          "Piattaforma aziendale su misura, area riservata B2B e web application custom con standard di sicurezza elevati.",
+          "Piattaforme su misura, aree riservate (RBAC), integrazioni API/ERP, flussi Stripe B2B e architettura scalabile.",
         description:
-          "Dalla progettazione alla messa in produzione. Infrastruttura resiliente per alti volumi, integrata con gestionali, CRM e flussi di pagamento.",
+          "Software enterprise proprietario calibrato sui processi operativi aziendali. Dai portali riservati per clienti/fornitori ai gestionali interni, con sicurezza di livello bancario e scalabilità edge.",
         deliverables: [
-          "Architettura Full-Stack su Next.js e TypeScript",
-          "Area riservata con autenticazione a ruoli sicura",
-          "Integrazione API con gestionali aziendali o Stripe",
-          "60 giorni di assistenza e monitoraggio post-rilascio",
+          "Architettura Full-Stack distribuita su Next.js, TypeScript e PostgreSQL",
+          "Area riservata con autenticazione avanzata a ruoli (RBAC)",
+          "Integrazione API bidirezionale con ERP/CRM e webhook dedicati",
+          "Flussi di pagamento B2B e fatturazione automatizzata Stripe",
+          "Garanzia di continuità operativa, CI/CD automatizzata e 60gg di supporto post-rilascio",
         ],
         timing: "Sviluppo a sprint settimanali (4–8 settimane)",
         target:
-          "Industrie manifatturiere, società di servizi e realtà strutturate.",
-        ctaText: "Esponi le Tue Esigenze",
+          "Industrie manifatturiere, distributori B2B e società che necessitano di digitalizzare flussi critici.",
+        ctaText: "Configura il Tuo Ecosistema",
+      },
+    ],
+  },
+
+  caseStudies: {
+    eyebrow: "ARCHITETTURE REFERENCE & CASI STUDIO",
+    title: "Ingegneria applicata e metriche oggettive.",
+    subtitle:
+      "Showcase di architetture dimostrative progettate secondo i massimi standard industriali: velocità estrema, zero debito tecnico e affidabilità continuativa.",
+    items: [
+      {
+        id: "portale-b2b",
+        tag: "REFERENCE B2B ARCHITECTURE",
+        title: "Ecosistema B2B & Portale Ordini Custom",
+        description:
+          "Architettura dimostrativa per la gestione di cataloghi B2B riservati, listini personalizzati per cliente e fatturazione automatizzata.",
+        metrics: [
+          { label: "Largest Contentful Paint", value: "LCP < 0.4s", subtext: "Caricamento catalogo istantaneo" },
+          { label: "Core Web Vitals", value: "100 / 100", subtext: "Punteggio massimo Google" },
+          { label: "Disponibilità Infrastruttura", value: "Zero Downtime", subtext: "Architettura edge ridondata" },
+        ],
+        stack: [
+          "Next.js App Router",
+          "TypeScript",
+          "PostgreSQL",
+          "Prisma",
+          "Stripe Webhook",
+          "Autenticazione RBAC",
+        ],
+        highlights: [
+          "Area riservata con controllo accessi a ruoli (Buyer, Agenti commerciali, Amministrazione)",
+          "Listini dinamici con scontistiche personalizzate per partita IVA e contratti a scaglioni",
+          "Sincronizzazione contabile e fatturazione automatica Stripe senza attrito manuale",
+          "Codice rigorosamente tipizzato e documentato secondo standard industriali OpenAPI",
+        ],
+        ctaText: "Richiedi un'Architettura B2B Simile",
+        prefillService: "Web Application & Ecosistema B2B Custom",
+      },
+      {
+        id: "infrastruttura-headless",
+        tag: "HIGH-CONVERSION INFRASTRUCTURE",
+        title: "Infrastruttura Headless ad Alta Conversione",
+        description:
+          "Sostituzione di un'infrastruttura legacy lenta con una web app statica/ibrida capace di reggere picchi di traffico da campagne adv senza perdita di lead.",
+        metrics: [
+          { label: "Lighthouse Performance", value: "100 / 100", subtext: "Mobile & Desktop ottimizzati" },
+          { label: "Time to First Byte", value: "TTFB < 50ms", subtext: "Distribuzione Edge Globale" },
+          { label: "Efficienza Acquisizione", value: "+68%", subtext: "Resa di conversione form" },
+        ],
+        stack: [
+          "Next.js",
+          "Tailwind CSS",
+          "Edge Caching",
+          "Webhook CRM",
+          "Zero Debito Legacy",
+        ],
+        highlights: [
+          "Eliminazione completa di plugin pesanti e vulnerabilità dei CMS monolitici tradizionali",
+          "Coda asincrona di failover: nessun lead perso anche in caso di disconnessione temporanea",
+          "Rendering statico pre-generato (SSG/ISR) per velocità sub-secondo da qualsiasi dispositivo",
+          "Integrazione diretta con CRM aziendali (HubSpot, Salesforce o database proprietari)",
+        ],
+        ctaText: "Valuta la Migrazione Headless",
+        prefillService: "Landing Page ad Alta Conversione",
       },
     ],
   },
 
   founder: {
-    eyebrow: "RELAZIONE E RESPONSABILITÀ · IL PROFILO DEL FONDATORE",
-    title: "Responsabilità diretta sul codice. Risponde il fondatore.",
+    eyebrow: "RELAZIONE E RESPONSABILITÀ · LO STUDIO E IL METODO",
+    title: "Responsabilità diretta sul codice. Continuità operativa garantita.",
     subtitle: "Manifesto professionale di Riccardo Granza, fondatore di TechPYRE.",
     name: "Riccardo Granza",
     role: "Fondatore e Lead Software Engineer",
-    ageBadge: "Diciotto anni. La serietà di chi garantisce ogni riga di codice in prima persona.",
+    engineeringBadge:
+      "Nativo moderno dello sviluppo software · Zero debito tecnico legacy · Responsabilità diretta sull'architettura",
     manifesto: [
-      "Chi conduce un'impresa seria sa che la parola data e la precisione esecutiva contano più di qualsiasi presentazione patinata.",
-      "Ho 18 anni e ho fondato questo studio per offrire un'alternativa concreta all'inefficienza di molte agenzie tradizionali: strutture sovradimensionate che addebitano parcelle elevate per sostenere uffici di rappresentanza, finendo per delegare lo sviluppo a terzi su tecnologie obsolete.",
-      "La mia giovane età è una garanzia tangibile per il committente: chi si affaccia sul mercato con il proprio nome e la propria reputazione ha un solo mezzo per affermarsi, ovvero garantire una qualità tecnica, una rapidità e un'attenzione scrupolosa che le grandi strutture non sono più in grado di esprimere.",
-      "In TechPYRE utilizziamo le architetture adottate dai migliori centri di ingegneria al mondo: Next.js nativo, TypeScript, reti edge distribuite. Il codice sorgente, l'infrastruttura e i dati restano al 100% di proprietà dell'azienda cliente.",
+      "Chi conduce un'impresa seria sa che la parola data, la precisione esecutiva e la tenuta del software contano più di qualsiasi presentazione commerciale patinata.",
+      "Nativo moderno dello sviluppo software, ho fondato TechPYRE per offrire alle aziende un'alternativa concreta all'inefficienza e alla dispersione delle agenzie tradizionali: strutture sovradimensionate con costi fissi elevati, che finiscono per delegare lo sviluppo a terzi su tecnologie obsolete e poco performanti.",
+      "In TechPYRE operiamo con zero debito tecnico legacy: progettiamo con i linguaggi e i framework che guidano i principali centri di ingegneria al mondo (Next.js nativo, TypeScript, architetture edge distribuite). Nessun 'lock-in' proprietario, nessun codice opaco né template riciclati.",
+      "Garantiamo la Continuità Operativa Assoluta: ogni progetto viene rilasciato con documentazione tecnica completa, pipeline CI/CD automatizzate e codice standardizzato che qualsiasi team di ingegneri potrà mantenere o scalare in futuro. Il cliente ha il vantaggio della responsabilità diretta senza alcun rischio di dipendenza da singola persona.",
+      "Il codice sorgente, l'infrastruttura cloud e i dati restano al 100% di proprietà dell'azienda committente fin dal primo rilascio.",
     ],
     quote:
-      "«La reputazione nel B2B si costruisce con software stabile che non cede, consegne puntuali e risultati economici concreti per l'azienda cliente.»",
+      "«Nel B2B la reputazione si consolida con software stabile che non cede, consegne puntuali e processi ingegneristici che garantiscono autonomia all'azienda.»",
     comparison: {
       legacyTitle: "La prassi delle agenzie tradizionali",
       legacyPoints: [
-        "Tempi di risposta lunghi mediati da commerciali non tecnici",
-        "Piattaforme obsolete e template riciclati tra committenti diversi",
+        "Tempi di risposta lunghi mediati da figure commerciali non tecniche",
+        "Piattaforme obsolete, plugin insicuri e template riciclati tra committenti diversi",
         "Tariffe gravate da spese fisse di rappresentanza e riunioni sterili",
         "Codice trattenuto dall'agenzia con vincoli per ostacolare la migrazione",
       ],
       techPyreTitle: "Il modello di partnership diretta di TechPYRE",
       techPyrePoints: [
-        "Contatto diretto con Riccardo Granza su telefono e WhatsApp",
-        "Codice proprietario su misura (Next.js e TypeScript nativo)",
+        "Interlocutore tecnico diretto: risponde Riccardo Granza su telefono e WhatsApp",
+        "Continuità operativa garantita: codice standard Next.js/TS e documentazione completa",
         "Tariffe pattuite prima dell'inizio e fatturate a milestone verificate",
-        "Proprietà intellettuale integrale: repository e server del cliente",
+        "Proprietà intellettuale integrale: repository e infrastruttura 100% dell'azienda",
       ],
     },
   },
@@ -220,7 +289,7 @@ export const siteContent: SiteContent = {
       submit: "Invia Richiesta Diretta al Fondatore",
       submitting: "Elaborazione in corso...",
       privacyNote:
-        "I dati forniti sono trattati con il massimo riserbo. Nessun invio promozionale non richiesto.",
+        "I dati forniti sono trattati con il massimo riserbo nel rispetto del GDPR. Nessun invio promozionale non richiesto.",
     },
     channels: [
       {
@@ -256,25 +325,26 @@ export const siteContent: SiteContent = {
 
   footer: {
     summary:
-      "Studio di ingegneria del software e consulenza tecnologica ad alte prestazioni. Architetture proprietarie, portali B2B e landing page commerciali con il rigore e la trasparenza propri della migliore consuetudine professionale.",
-    copyright: `© ${new Date().getFullYear()} TechPYRE STUDIO · Sviluppato e manutenuto con codice proprietario.`,
+      "Studio di ingegneria del software e consulenza tecnologica ad alte prestazioni. Architetture proprietarie, portali B2B e landing page commerciali con il rigore, la trasparenza e la continuità propri della migliore consuetudine ingegneristica.",
+    copyright: `© ${new Date().getFullYear()} TechPYRE STUDIO · Sviluppato e manutenuto con codice proprietario standard Next.js / TypeScript.`,
     links: [
       {
         title: "Patti e Principi",
         items: [
           { label: "Listino Servizi B2B", href: "#servizi" },
-          { label: "Il Fondatore", href: "#storia" },
+          { label: "Casi Studio & Architetture", href: "#progetti" },
           { label: "Simulatore B2B", href: "#simulatore" },
+          { label: "Lo Studio & Metodo", href: "#storia" },
           { label: "Colloquio 30m Gratuito", href: "#contatto" },
         ],
       },
       {
         title: "Specifiche Operative",
         items: [
-          { label: "Audit e Consulenza", href: "#servizi" },
-          { label: "Landing Page a 500€", href: "#servizi" },
-          { label: "Blueprint Architetturale", href: "#servizi" },
-          { label: "Ecosistema Completo", href: "#servizi" },
+          { label: "Audit Tecnico (70€/h)", href: "#servizi" },
+          { label: "Landing Page a 900€", href: "#servizi" },
+          { label: "Sito Corporate (2.000€–4.000€)", href: "#servizi" },
+          { label: "Web App & Ecosistema B2B", href: "#servizi" },
         ],
       },
       {
@@ -282,7 +352,7 @@ export const siteContent: SiteContent = {
         items: [
           { label: "riccardo.granza@techpyre.eu", href: "mailto:riccardo.granza@techpyre.eu" },
           { label: "WhatsApp: +39 379 115 9352", href: "https://wa.me/393791159352", isExternal: true },
-          { label: "Telefono Fondatore", href: "tel:+393791159352" },
+          { label: "Telefono: +39 379 115 9352", href: "tel:+393791159352" },
         ],
       },
     ],

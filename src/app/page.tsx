@@ -1,6 +1,7 @@
 import Navbar from "@/components/layout/Navbar";
 import Hero from "@/components/sections/Hero";
 import ServicesMatrix from "@/components/sections/ServicesMatrix";
+import CaseStudies from "@/components/sections/CaseStudies";
 import ProjectEstimator from "@/components/sections/ProjectEstimator";
 import FounderLetter from "@/components/sections/FounderLetter";
 import ContactBox from "@/components/sections/ContactBox";
@@ -14,6 +15,7 @@ export default function Home() {
         <main id="main-content">
           <Hero />
           <ServicesMatrix />
+          <CaseStudies />
           <ProjectEstimator />
           <FounderLetter />
           <ContactBox />

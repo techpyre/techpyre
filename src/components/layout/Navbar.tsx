@@ -128,7 +128,7 @@ export default function Navbar() {
           </a>
 
           {/* Link di Navigazione Desktop */}
-          <nav className="hidden lg:flex items-center gap-7 xl:gap-8">
+          <nav className="hidden lg:flex items-center gap-6 xl:gap-8">
             {navigation.links.map((link) => (
               <a
                 key={link.label}
@@ -139,12 +139,6 @@ export default function Navbar() {
                 <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-[#B8860B] transition-all duration-300 group-hover:w-full" />
               </a>
             ))}
-            <a
-              href="#simulatore"
-              className="text-xs font-sans font-bold tracking-wide text-[#B8860B] hover:text-[#0B1E36] transition-colors relative py-1"
-            >
-              Simulatore B2B
-            </a>
           </nav>
 
           {/* CTA Desktop & Hamburger Mobile */}
@@ -251,14 +245,6 @@ export default function Navbar() {
                     <ArrowRightIcon className="w-4 h-4 text-[#5A6270]" />
                   </a>
                 ))}
-                <a
-                  href="#simulatore"
-                  onClick={() => setMobileMenuOpen(false)}
-                  className="flex items-center justify-between py-2.5 text-lg font-serif text-[#B8860B] font-semibold border-b border-[#E8E2D5]/40"
-                >
-                  <span>Simulatore Preventivo B2B</span>
-                  <ArrowRightIcon className="w-4 h-4 text-[#B8860B]" />
-                </a>
               </nav>
             </div>
 

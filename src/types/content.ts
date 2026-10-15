@@ -77,13 +77,39 @@ export interface FounderComparison {
   techPyrePoints: string[];
 }
 
+export interface CaseStudyMetric {
+  label: string;
+  value: string;
+  subtext?: string;
+}
+
+export interface CaseStudyItem {
+  id: string;
+  tag: string;
+  title: string;
+  description: string;
+  metrics: CaseStudyMetric[];
+  stack: string[];
+  highlights: string[];
+  ctaText: string;
+  prefillService: string;
+}
+
+export interface CaseStudiesConfig {
+  eyebrow: string;
+  title: string;
+  subtitle: string;
+  items: CaseStudyItem[];
+}
+
 export interface FounderConfig {
   eyebrow: string;
   title: string;
   subtitle: string;
   name: string;
   role: string;
-  ageBadge: string;
+  ageBadge?: string;
+  engineeringBadge?: string;
   manifesto: string[];
   quote: string;
   comparison: FounderComparison;
@@ -145,6 +171,7 @@ export interface SiteContent {
   navigation: NavigationConfig;
   hero: HeroConfig;
   services: ServicesConfig;
+  caseStudies: CaseStudiesConfig;
   founder: FounderConfig;
   contact: ContactConfig;
   footer: FooterConfig;

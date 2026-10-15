@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { siteContent } from "@/config/siteContent";
 import { ContactPayload, ContactApiResponse } from "@/types/content";
 import { ArrowRightIcon, WhatsAppIcon } from "@/components/ui/Icons";
+import PrivacyModal from "@/components/ui/PrivacyModal";
 
 /**
  * =====================================================================
@@ -14,6 +15,7 @@ import { ArrowRightIcon, WhatsAppIcon } from "@/components/ui/Icons";
  * - Invia i dati alla route API (/api/contact) collegata ad Aruba SMTP
  * - Input con dimensione minima di 16px (text-base sm:text-sm) per impedire
  *   lo zoom automatico sgradevole su iOS Safari
+ * - Consenso informato GDPR con modale informativa privacy integrata
  * =====================================================================
  */
 export default function ContactBox() {
@@ -23,13 +25,15 @@ export default function ContactBox() {
     name: "",
     company: "",
     contact: "",
-    service: services.items[0]?.name || "Consulenza Informatica & Marketing Digitale",
+    service: services.items[0]?.name || "Audit Tecnico & Consulenza Architetturale",
     message: "",
   });
 
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
   const [errorMessage, setErrorMessage] = useState<string>("");
   const [validationErrors, setValidationErrors] = useState<Record<string, string>>({});
+  const [gdprAccepted, setGdprAccepted] = useState(false);
+  const [isPrivacyModalOpen, setIsPrivacyModalOpen] = useState(false);
 
   useEffect(() => {
     const handleSelectService = (event: CustomEvent<{ serviceTitle: string }>) => {
@@ -75,6 +79,9 @@ export default function ContactBox() {
     }
     if (!formData.message.trim() || formData.message.trim().length < 10) {
       errors.message = "Fornisci una descrizione minima di 10 caratteri per la richiesta.";
+    }
+    if (!gdprAccepted) {
+      errors.gdpr = "È necessario confermare l'accettazione della Privacy Policy per inviare la richiesta.";
     }
     setValidationErrors(errors);
     return Object.keys(errors).length === 0;
@@ -123,6 +130,7 @@ export default function ContactBox() {
     setValidationErrors({});
     setStatus("idle");
     setErrorMessage("");
+    setGdprAccepted(false);
   };
 
   return (
@@ -429,9 +437,56 @@ export default function ContactBox() {
 
                   {/* Privacy & Invio */}
                   <div className="pt-2 space-y-3">
-                    <p className="text-[11px] text-[#5A6270] leading-relaxed">
-                      {contact.formLabels.privacyNote}
-                    </p>
+                    {/* Checkbox Obbligatoria Consenso GDPR */}
+                    <div
+                      className={`p-3 rounded-sm border transition-colors ${
+                        validationErrors.gdpr
+                          ? "bg-rose-50/30 border-rose-400"
+                          : "bg-[#F8F7F4] border-[#E8E2D5]"
+                      }`}
+                    >
+                      <div className="flex items-start gap-2.5">
+                        <input
+                          type="checkbox"
+                          id="gdpr-consent"
+                          checked={gdprAccepted}
+                          onChange={(e) => {
+                            setGdprAccepted(e.target.checked);
+                            if (validationErrors.gdpr) {
+                              setValidationErrors((prev) => {
+                                const next = { ...prev };
+                                delete next.gdpr;
+                                return next;
+                              });
+                            }
+                          }}
+                          className="mt-0.5 w-4 h-4 rounded-xs border-[#E8E2D5] text-[#B8860B] focus:ring-[#B8860B] cursor-pointer shrink-0 accent-[#B8860B]"
+                          required
+                        />
+                        <label
+                          htmlFor="gdpr-consent"
+                          className="text-[11px] text-[#5A6270] leading-snug cursor-pointer select-none"
+                        >
+                          Dichiaro di aver preso visione e accetto la{" "}
+                          <button
+                            type="button"
+                            onClick={(e) => {
+                              e.preventDefault();
+                              setIsPrivacyModalOpen(true);
+                            }}
+                            className="text-[#0B1E36] font-bold underline decoration-[#B8860B] hover:text-[#B8860B] transition-colors inline"
+                          >
+                            Privacy Policy
+                          </button>{" "}
+                          per il trattamento dei dati personali ai sensi del GDPR (Reg. UE 2016/679).
+                        </label>
+                      </div>
+                      {validationErrors.gdpr && (
+                        <p className="text-[11px] text-rose-600 font-medium pt-1.5 pl-6.5">
+                          {validationErrors.gdpr}
+                        </p>
+                      )}
+                    </div>
 
                     <div className="relative p-[1.5px] rounded-sm overflow-hidden group cursor-pointer">
                       <span
@@ -454,6 +509,21 @@ export default function ContactBox() {
                         )}
                       </motion.button>
                     </div>
+
+                    <p className="text-[11px] text-[#5A6270] text-center leading-relaxed">
+                      Inviando la richiesta dichiari di aver letto e accettato la{" "}
+                      <button
+                        type="button"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          setIsPrivacyModalOpen(true);
+                        }}
+                        className="text-[#0B1E36] font-semibold underline decoration-[#B8860B] hover:text-[#B8860B]"
+                      >
+                        Privacy Policy
+                      </button>{" "}
+                      per il trattamento dei dati personali ai sensi del GDPR.
+                    </p>
                   </div>
                 </motion.form>
               )}
@@ -461,6 +531,11 @@ export default function ContactBox() {
           </motion.div>
         </div>
       </div>
+
+      <PrivacyModal
+        isOpen={isPrivacyModalOpen}
+        onClose={() => setIsPrivacyModalOpen(false)}
+      />
     </section>
   );
 }

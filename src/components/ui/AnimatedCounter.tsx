@@ -13,8 +13,10 @@ interface AnimatedCounterProps {
 /**
  * =====================================================================
  * COMPONENTE ANIMATED COUNTER
- * Incrementa dinamicamente un valore numerico quando entra nella viewport.
- * Trasmette precisione ingegneristica e dinamismo senza pesare sul rendering.
+ * - SSR Fallback: Renderizza il valore target reale nel markup statico
+ *   (es. 100 / 100, 100% Tua, < 2 Ore) per crawler, no-JS e SEO audit
+ * - Client Hydration: Avvia l'incremento fluido da 0 a target solo al
+ *   primo ingresso nella viewport (useInView) senza mai esporre "0" in SSR
  * =====================================================================
  */
 export default function AnimatedCounter({
@@ -24,22 +26,30 @@ export default function AnimatedCounter({
   className = "",
 }: AnimatedCounterProps) {
   const ref = useRef<HTMLSpanElement>(null);
-  const motionValue = useMotionValue(0);
+  const motionValue = useMotionValue(value);
   const springValue = useSpring(motionValue, {
-    damping: 35,
-    stiffness: 90,
+    damping: 32,
+    stiffness: 85,
   });
   const isInView = useInView(ref, { once: true, margin: "-40px" });
+  const hasAnimated = useRef(false);
 
   useEffect(() => {
-    if (isInView) {
-      motionValue.set(value);
+    // Solo dopo il mount sul client e quando entra in viewport:
+    // avviamo l'animazione da 0 a value per un effetto reattivo
+    if (isInView && !hasAnimated.current) {
+      hasAnimated.current = true;
+      motionValue.set(0);
+      const frameId = requestAnimationFrame(() => {
+        motionValue.set(value);
+      });
+      return () => cancelAnimationFrame(frameId);
     }
-  }, [motionValue, isInView, value]);
+  }, [isInView, motionValue, value]);
 
   useEffect(() => {
     const unsubscribe = springValue.on("change", (latest) => {
-      if (ref.current) {
+      if (ref.current && hasAnimated.current) {
         ref.current.textContent = `${prefix}${Math.round(latest)}${suffix}`;
       }
     });
@@ -48,7 +58,7 @@ export default function AnimatedCounter({
 
   return (
     <span ref={ref} className={className}>
-      {prefix}0{suffix}
+      {prefix}{value}{suffix}
     </span>
   );
 }
