@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { siteContent } from "@/config/siteContent";
@@ -40,6 +40,31 @@ export default function Hero() {
   const prevProject = () => {
     setProjectDirection(-1);
     setActiveProjectIndex((prev) => (prev - 1 + projects.length) % projects.length);
+  };
+
+  // Touch Swipe Gesture per passare da un progetto all'altro su mobile
+  const touchStartX = useRef<number | null>(null);
+  const touchStartY = useRef<number | null>(null);
+
+  const handleTouchStart = (e: React.TouchEvent) => {
+    touchStartX.current = e.touches[0].clientX;
+    touchStartY.current = e.touches[0].clientY;
+  };
+
+  const handleTouchEnd = (e: React.TouchEvent) => {
+    if (touchStartX.current === null) return;
+    const deltaX = e.changedTouches[0].clientX - touchStartX.current;
+    const deltaY = e.changedTouches[0].clientY - (touchStartY.current ?? 0);
+    // Se lo swipe è prevalentemente orizzontale e supera i 40px
+    if (Math.abs(deltaX) > 40 && Math.abs(deltaX) > Math.abs(deltaY)) {
+      if (deltaX < 0) {
+        nextProject();
+      } else {
+        prevProject();
+      }
+    }
+    touchStartX.current = null;
+    touchStartY.current = null;
   };
 
   // Stato Slider Verticale Servizi (Colonna Destra)
@@ -226,26 +251,28 @@ export default function Hero() {
                 </div>
 
                 <div className="flex items-center gap-2">
-                  {/* Frecce sopra/sotto per scorrimento verticale SU DESKTOP */}
-                  <div className="hidden lg:flex items-center gap-0.5 bg-white border border-[#E8E2D5] rounded-xs p-0.5 shadow-2xs">
+                  {/* Frecce navigazione: orizzontali su mobile (◀ ▶), verticali su desktop (▲ ▼) */}
+                  <div className="flex items-center gap-0.5 bg-white border border-[#E8E2D5] rounded-xs p-0.5 shadow-2xs">
                     <button
                       type="button"
                       onClick={prevProject}
-                      className="w-5 h-5 flex items-center justify-center hover:bg-[#F8F7F4] text-[#0B1E36] hover:text-[#B8860B] transition-colors rounded-xs cursor-pointer"
+                      className="w-6 h-6 lg:w-5 lg:h-5 flex items-center justify-center hover:bg-[#F8F7F4] text-[#0B1E36] hover:text-[#B8860B] transition-colors rounded-xs cursor-pointer active:scale-90"
                       aria-label="Progetto precedente"
                       title="Progetto precedente"
                     >
-                      <ChevronUpIcon className="w-3.5 h-3.5" />
+                      <ChevronLeftIcon className="w-3.5 h-3.5 lg:hidden" />
+                      <ChevronUpIcon className="w-3.5 h-3.5 hidden lg:block" />
                     </button>
                     <div className="w-[1px] h-3 bg-[#E8E2D5]" />
                     <button
                       type="button"
                       onClick={nextProject}
-                      className="w-5 h-5 flex items-center justify-center hover:bg-[#F8F7F4] text-[#0B1E36] hover:text-[#B8860B] transition-colors rounded-xs cursor-pointer"
+                      className="w-6 h-6 lg:w-5 lg:h-5 flex items-center justify-center hover:bg-[#F8F7F4] text-[#0B1E36] hover:text-[#B8860B] transition-colors rounded-xs cursor-pointer active:scale-90"
                       aria-label="Progetto successivo"
                       title="Progetto successivo"
                     >
-                      <ChevronDownIcon className="w-3.5 h-3.5" />
+                      <ChevronRightIcon className="w-3.5 h-3.5 lg:hidden" />
+                      <ChevronDownIcon className="w-3.5 h-3.5 hidden lg:block" />
                     </button>
                   </div>
 
@@ -265,8 +292,12 @@ export default function Hero() {
                 </div>
               </div>
 
-              {/* Riquadro Progetto: 1 alla volta, grande, limpido, a larghezza piena */}
-              <div className="w-full bg-white rounded-sm border border-[#E8E2D5] shadow-xs flex flex-col justify-between overflow-hidden relative group hover:border-[#0B1E36] transition-all flex-1 min-h-[460px]">
+              {/* Riquadro Progetto: 1 alla volta, grande, limpido, a larghezza piena con gesture swipe */}
+              <div
+                onTouchStart={handleTouchStart}
+                onTouchEnd={handleTouchEnd}
+                className="w-full bg-white rounded-sm border border-[#E8E2D5] shadow-xs flex flex-col justify-between overflow-hidden relative group hover:border-[#0B1E36] transition-all flex-1 min-h-[460px] touch-pan-y"
+              >
                 <AnimatePresence mode="wait">
                   <motion.div
                     key={currentProject.id}
@@ -351,6 +382,54 @@ export default function Hero() {
                             <ArrowUpRightIcon className="w-3 h-3" />
                           </a>
                         )}
+                      </div>
+
+                      {/* Passaggio da un progetto all'altro da mobile */}
+                      <div className="flex lg:hidden items-center justify-between pt-2.5 border-t border-[#E8E2D5]/80">
+                        <div className="flex items-center gap-1.5">
+                          <span className="text-[10px] font-mono uppercase tracking-wider text-[#5A6270]">
+                            Caso studio:
+                          </span>
+                          {projects.map((proj, idx) => (
+                            <button
+                              key={proj.id}
+                              type="button"
+                              onClick={() => {
+                                setProjectDirection(idx > activeProjectIndex ? 1 : -1);
+                                setActiveProjectIndex(idx);
+                              }}
+                              className={`h-6 px-2 text-[10px] font-mono rounded-xs transition-all border cursor-pointer ${
+                                idx === activeProjectIndex
+                                  ? "bg-[#0B1E36] text-white border-[#0B1E36] font-bold shadow-2xs"
+                                  : "bg-[#F8F7F4] text-[#5A6270] border-[#E8E2D5] hover:text-[#0B1E36]"
+                              }`}
+                              aria-label={`Visualizza caso studio ${idx + 1}: ${proj.title}`}
+                            >
+                              0{idx + 1}
+                            </button>
+                          ))}
+                        </div>
+
+                        <div className="flex items-center gap-1">
+                          <button
+                            type="button"
+                            onClick={prevProject}
+                            className="h-6 px-2.5 flex items-center gap-1 text-[10px] font-sans font-medium text-[#0B1E36] bg-[#F8F7F4] hover:bg-white border border-[#E8E2D5] rounded-xs active:scale-95 transition-all cursor-pointer"
+                            aria-label="Progetto precedente"
+                          >
+                            <ChevronLeftIcon className="w-3 h-3" />
+                            <span>Prec</span>
+                          </button>
+                          <button
+                            type="button"
+                            onClick={nextProject}
+                            className="h-6 px-2.5 flex items-center gap-1 text-[10px] font-sans font-medium text-[#0B1E36] bg-[#F8F7F4] hover:bg-white border border-[#E8E2D5] rounded-xs active:scale-95 transition-all cursor-pointer"
+                            aria-label="Progetto successivo"
+                          >
+                            <span>Succ</span>
+                            <ChevronRightIcon className="w-3 h-3" />
+                          </button>
+                        </div>
                       </div>
                     </div>
                   </motion.div>
