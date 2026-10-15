@@ -76,9 +76,9 @@ export default function Footer() {
                           <WhatsAppIcon className="w-3.5 h-3.5 text-[#25D366] shrink-0" />
                           <span>{link.label}</span>
                         </a>
-                      ) : link.href.startsWith("tel:") ? (
+                      ) : link.href.startsWith("tel:") || link.label.toLowerCase().includes("telefono") ? (
                         <a
-                          href={link.href}
+                          href="tel:+393791159352"
                           className="text-[#A4B3C6] hover:text-[#C5A059] font-medium transition-colors block py-0.5"
                         >
                           {link.label}

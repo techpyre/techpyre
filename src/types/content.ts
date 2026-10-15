@@ -87,6 +87,9 @@ export interface CaseStudyItem {
   id: string;
   tag: string;
   title: string;
+  clientName?: string;
+  businessProblem?: string;
+  solution?: string;
   description: string;
   metrics: CaseStudyMetric[];
   stack: string[];
@@ -98,6 +101,7 @@ export interface CaseStudyItem {
   /** Repository GitHub pubblico con il codice sorgente */
   repoUrl?: string;
 }
+
 
 export interface CaseStudiesConfig {
   eyebrow: string;

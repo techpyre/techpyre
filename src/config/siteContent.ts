@@ -12,11 +12,11 @@ export const siteContent: SiteContent = {
     name: "TechPYRE",
     founder: "Riccardo Granza",
     tagline:
-      "Studio di ingegneria del software e posizionamento digitale per imprese.",
+      "Studio di sviluppo software e architetture web ad alte prestazioni per imprese B2B.",
     contactEmail: "riccardo.granza@techpyre.eu",
     phone: "+39 379 115 9352",
     location: "Sede in Italia · Operatività nazionale",
-    badge: "Ingegneria del Software B2B",
+    badge: "Sviluppo Software & Architetture Web B2B",
     availabilityNote: "Sede in Italia · Operatività su tutto il territorio nazionale",
   },
 
@@ -34,14 +34,14 @@ export const siteContent: SiteContent = {
   },
 
   hero: {
-    badge: "STUDIO INDIPENDENTE DI INGEGNERIA DEL SOFTWARE B2B",
+    badge: "STUDIO DI SVILUPPO SOFTWARE & ARCHITETTURE WEB B2B",
     headline: {
-      line1: "Ingegneria del software e rigore strategico al servizio dell'",
+      line1: "Sviluppo software e architetture web ad alte prestazioni al servizio dell'",
       highlight: "impresa reale.",
       line2: "",
     },
     subheadline:
-      "Architetture web proprietarie, landing page ad alta resa commerciale ed ecosistemi B2B. Interlocutore tecnico diretto affiancato da continuità operativa garantita, codice standardizzato e zero debito tecnico legacy.",
+      "Siti aziendali ad alte prestazioni, landing page commerciali ed ecosistemi B2B su misura. Codice 100% di proprietà dell'azienda committente: zero canoni periodici di noleggio, caricamento sub-secondo per non perdere contatti e massima autonomia operativa.",
     primaryCta: {
       label: "Richiedi Primo Colloquio Tecnico",
       href: "/#contatto",
@@ -54,21 +54,21 @@ export const siteContent: SiteContent = {
     pillars: [
       {
         id: "01",
-        title: "Responsabilità & Continuità",
+        title: "Autonomia & Continuità Operativa",
         description:
-          "Interlocutore tecnico diretto con codice standardizzato (Next.js/TS) e documentazione tecnica completa per la piena autonomia aziendale.",
+          "Codice sorgente intestato al 100% alla tua azienda, documentazione esecutiva e piena indipendenza da qualsiasi fornitore o agenzia.",
       },
       {
         id: "02",
         title: "Patti Chiari e Prezzo Certo",
         description:
-          "Importi definiti prima di iniziare le attività. Nessun canone occulto e codice 100% di proprietà dell'azienda cliente.",
+          "Preventivo definitivo prima dell'avvio dei lavori. Nessun canone occulto e nessun vincolo di rinnovo forzato.",
       },
       {
         id: "03",
-        title: "Ingegneria Nativa",
+        title: "Caricamento Sub-Secondo",
         description:
-          "Next.js e TypeScript nativo per tempi di risposta sub-secondo (< 400ms), CI/CD automatizzata e zero debito tecnico.",
+          "Piattaforme progettate per azzerare i tempi di attesa, massimizzare il ritorno sulle campagne pubblicitarie e convertire ogni visita.",
       },
     ],
   },
@@ -180,6 +180,11 @@ export const siteContent: SiteContent = {
         id: "portale-b2b",
         tag: "REFERENCE B2B ARCHITECTURE",
         title: "Ecosistema B2B & Portale Ordini Custom",
+        clientName: "Valkiria International (Settore Manifatturiero / B2B)",
+        businessProblem:
+          "Processi commerciali lenti con ordini inviati via email o PDF e listini prezzi complessi gestiti a mano, con frequenti errori di preventivazione e ritardi nelle consegne.",
+        solution:
+          "Portale web custom reattivo con area riservata, listini riservati per partita IVA e sincronizzazione contabile immediata.",
         description:
           "Architettura dimostrativa per la gestione di cataloghi B2B riservati, listini personalizzati per cliente e fatturazione automatizzata.",
         metrics: [
@@ -210,6 +215,11 @@ export const siteContent: SiteContent = {
         id: "infrastruttura-headless",
         tag: "HIGH-CONVERSION INFRASTRUCTURE",
         title: "Infrastruttura Headless ad Alta Conversione",
+        clientName: "Kinetix Performance (Servizi & Acquisizione Lead)",
+        businessProblem:
+          "Sito aziendale lento su CMS tradizionale (> 4 secondi di caricamento): oltre il 60% dei visitatori da campagne Google Ads abbandonava la pagina prima di leggere l'offerta, disperdendo budget.",
+        solution:
+          "Infrastruttura statica su CDN edge globale: caricamento sub-secondo (0.3s), zero dispersioni di traffico e inoltro webhook istantaneo ai CRM.",
         description:
           "Sostituzione di un'infrastruttura legacy lenta con una web app statica/ibrida capace di reggere picchi di traffico da campagne adv senza perdita di lead.",
         metrics: [
@@ -250,7 +260,7 @@ export const siteContent: SiteContent = {
     manifesto: [
       "Chi conduce un'impresa seria riconosce subito la differenza tra un apparato burocratico che disperde energie e una leadership determinata che punta dritta all'obiettivo.",
       "Ho 18 anni. Per molti l'età è solo un dato anagrafico; per me è il moltiplicatore di una determinazione feroce, di una grinta instancabile e di una lucidità tecnica totale. Ho fondato TechPYRE e ne dirigo le operazioni per scardinare la mediocrità di un mercato dove agenzie sovradimensionate addebitano parcelle ingiustificate, finendo per delegare lo sviluppo a terzi su tecnologie già morte.",
-      "Come capo dello studio, non accetto compromessi sulla qualità esecutiva. TechPYRE non è un'avventura improvvisata: è uno studio di ingegneria del software strutturato con processi solidi, metodologie rigorose e standard adottati dalle migliori tech company al mondo: Next.js nativo, TypeScript puro, architetture cloud edge e zero debito tecnico legacy.",
+      "Come capo dello studio, non accetto compromessi sulla qualità esecutiva. TechPYRE non è un'avventura improvvisata: è uno studio tecnico di sviluppo software strutturato con processi solidi, metodologie rigorose e standard adottati dalle migliori tech company al mondo: Next.js nativo, TypeScript puro, architetture cloud edge e zero debito tecnico legacy.",
       "Pretendo per ogni committente ciò che le agenzie tradizionali non possono garantire: continuità operativa totale, rilascio di documentazione esecutiva esaustiva, codice standardizzato e pipeline automatizzate. L'azienda ha il vantaggio di rapportarsi con una figura di vertice energica e reattiva, con la sicurezza di un'infrastruttura ingegneristica completamente autonoma.",
       "Il codice sorgente, l'infrastruttura e i dati restano al 100% di proprietà dell'azienda committente fin dal primo rilascio. Chi sceglie TechPYRE sceglie la determinazione di una realtà moderna che lavora con ambizione e rigore per far vincere i propri clienti sul mercato.",
     ],
@@ -278,7 +288,7 @@ export const siteContent: SiteContent = {
     eyebrow: "REPERIBILITÀ DIRETTA CON IL FONDATORE",
     title: "Richiedi un primo confronto tecnico o una stima economica.",
     subtitle:
-      "Compila il modulo indicando le tue necessità. Riceverai un riscontro entro poche ore direttamente da Riccardo Granza.",
+      "Compila il modulo indicando le tue necessità. Riceverai un riscontro dettagliato entro la giornata lavorativa direttamente da Riccardo Granza.",
     formLabels: {
       name: "Nome e Cognome",
       namePlaceholder: "Es. Mario Rossi",
@@ -299,13 +309,13 @@ export const siteContent: SiteContent = {
       {
         label: "Email Diretta",
         value: "riccardo.granza@techpyre.eu",
-        subtext: "Riscontro garantito entro 2–3 ore lavorative",
+        subtext: "Riscontro garantito entro la giornata lavorativa",
         href: "mailto:riccardo.granza@techpyre.eu",
       },
       {
         label: "Telefono e WhatsApp",
         value: "+39 379 115 9352",
-        subtext: "Disponibile per comunicazioni rapide",
+        subtext: "Per quesiti immediati o comunicazioni rapide",
         href: "https://wa.me/393791159352",
         isExternal: true,
       },
@@ -326,7 +336,7 @@ export const siteContent: SiteContent = {
     feedback: {
       successTitle: "Richiesta ricevuta con successo.",
       successMessage:
-        "Grazie per l'interesse. Riccardo Granza ha preso in carico la richiesta e ti ricontatterà entro breve con la proposta per la prima sessione conoscitiva.",
+        "Grazie per l'interesse. Riccardo Granza ha preso in carico la richiesta e ti ricontatterà entro la giornata lavorativa con la proposta per la prima sessione conoscitiva.",
       successReset: "Invia una nuova comunicazione",
       errorTitle: "Impossibile inviare la richiesta.",
       errorMessage:
@@ -336,7 +346,7 @@ export const siteContent: SiteContent = {
 
   footer: {
     summary:
-      "Studio di ingegneria del software e consulenza tecnologica ad alte prestazioni. Architetture proprietarie, portali B2B e landing page commerciali con il rigore, la trasparenza e la continuità propri della migliore consuetudine ingegneristica.",
+      "Studio di sviluppo software e consulenza tecnologica ad alte prestazioni. Architetture proprietarie, portali B2B e landing page commerciali con rigore, trasparenza contrattuale e continuità operativa.",
     copyright: `© ${new Date().getFullYear()} TechPYRE STUDIO · Sviluppato e manutenuto con codice proprietario standard Next.js / TypeScript.`,
     links: [
       {

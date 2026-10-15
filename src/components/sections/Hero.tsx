@@ -42,7 +42,7 @@ export default function Hero() {
             className="lg:col-span-8 space-y-4"
           >
             <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-[3.85rem] text-[#14181F] font-normal tracking-tight leading-[1.12]">
-              <span>{hero.headline.line1} </span>
+              <span>{hero.headline.line1}</span>
               <span className="relative inline-block text-[#B8860B] italic font-serif">
                 {hero.headline.highlight}
                 <svg
@@ -113,28 +113,28 @@ export default function Hero() {
                   <span className="text-[#B8860B] font-bold">▪</span>
                   <span>
                     Interlocutore diretto: <strong className="text-[#0B1E36] font-semibold">{brand.founder}</strong>{" "}
-                    (<span className="text-[#B8860B] font-semibold">&lt; 2 ore</span>)
+                    (<span className="text-[#B8860B] font-semibold">riscontro in giornata</span>)
                   </span>
                 </div>
                 <div className="flex items-center gap-2 text-[#14181F]">
                   <span className="text-[#B8860B] font-bold">▪</span>
                   <span>
-                    Velocità garantita: <strong className="text-[#0B1E36] font-semibold">100/100</strong>{" "}
-                    <span className="text-[#B8860B] font-semibold">Core Web Vitals</span>
+                    Caricamento istantaneo: <strong className="text-[#0B1E36] font-semibold">sub-secondo</strong>{" "}
+                    (<span className="text-[#B8860B] font-semibold">zero clienti persi da ads</span>)
                   </span>
                 </div>
                 <div className="flex items-center gap-2 text-[#14181F]">
                   <span className="text-[#B8860B] font-bold">▪</span>
                   <span>
-                    Rilascio medio: <strong className="text-[#0B1E36] font-semibold">5–7 giorni</strong> a{" "}
-                    <span className="text-[#B8860B] font-semibold">prezzo certo</span>
+                    Tempi certi: <strong className="text-[#0B1E36] font-semibold">5–7 gg per landing</strong> ·{" "}
+                    <span className="text-[#B8860B] font-semibold">sprint a prezzo fisso</span>
                   </span>
                 </div>
                 <div className="flex items-center gap-2 text-[#14181F]">
                   <span className="text-[#B8860B] font-bold">▪</span>
                   <span>
-                    Proprietà codice: <strong className="text-[#0B1E36] font-semibold">100% dell&apos;azienda</strong>,{" "}
-                    <span className="text-[#B8860B] font-semibold">zero canoni</span>
+                    Proprietà integrale: <strong className="text-[#0B1E36] font-semibold">100% dell&apos;azienda</strong>{" "}
+                    (<span className="text-[#B8860B] font-semibold">zero canoni di noleggio</span>)
                   </span>
                 </div>
               </div>

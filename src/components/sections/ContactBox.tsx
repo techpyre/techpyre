@@ -202,119 +202,120 @@ export default function ContactBox() {
             className="lg:col-span-5 bg-white rounded-sm border border-[#E8E2D5] shadow-xs flex flex-col justify-between overflow-hidden h-full"
           >
             {/* Header del Box Allineato al Modulo Desktop */}
-            <div className="p-5 sm:p-7 lg:p-8 pb-4 border-b border-[#E8E2D5] space-y-0.5">
+            <div className="p-5 sm:p-6 lg:p-7 pb-4 border-b border-[#E8E2D5] space-y-0.5">
               <div className="text-[10px] font-bold uppercase tracking-widest text-[#B8860B]">
                 REPERIBILITÀ DIRETTA
               </div>
               <h3 className="font-serif text-xl sm:text-2xl text-[#0B1E36] font-semibold">
                 Il contatto con le persone
               </h3>
-              <p className="text-xs text-[#5A6270]">Nessun centralino, risponde Riccardo Granza</p>
+              <p className="text-xs text-[#5A6270]">
+                Nessun centralino o intermediario: risponde Riccardo Granza
+              </p>
             </div>
 
-            {/* Contenuto Canali con spaziatura flessibile */}
-            <div className="p-5 sm:p-7 lg:p-8 py-5 flex-1 flex flex-col justify-between space-y-4">
-              <div className="space-y-2.5 divide-y divide-[#E8E2D5]">
-                {contact.channels.map((channel, i) => {
-                  const isWhatsApp = channel.href.includes("wa.me");
-                  const isGitHub = channel.href.includes("github.com") || channel.label.toLowerCase().includes("github");
+            {/* Contenuto Canali con spaziatura armoniosa e bilanciata */}
+            <div className="p-5 sm:p-6 lg:p-7 flex-1 flex flex-col justify-between gap-5">
+              <div className="space-y-3.5">
+                {/* 01: Email Diretta */}
+                <div className="p-3.5 rounded-sm bg-[#F8F7F4]/80 border border-[#E8E2D5] space-y-1 hover:border-[#B8860B] transition-colors">
+                  <div className="text-[10px] font-bold uppercase tracking-wider text-[#5A6270] flex items-center gap-1.5">
+                    <MailIcon className="w-3.5 h-3.5 text-[#B8860B]" />
+                    <span>Email Diretta</span>
+                  </div>
+                  <a
+                    href="mailto:riccardo.granza@techpyre.eu"
+                    className="font-serif text-base sm:text-lg text-[#0B1E36] hover:text-[#B8860B] transition-colors font-semibold block break-all"
+                  >
+                    riccardo.granza@techpyre.eu
+                  </a>
+                  <div className="text-[11px] text-[#B8860B] font-medium font-sans">
+                    Riscontro garantito entro la giornata lavorativa
+                  </div>
+                </div>
 
-                  if (isWhatsApp) {
-                    return (
-                      <div
-                        key={i}
-                        className="pt-3 pb-3 space-y-2 rounded-sm bg-[#25D366]/5 border border-[#25D366]/30 p-3.5 my-2 shadow-2xs"
-                      >
-                        <div className="flex items-center justify-between">
-                          <span className="text-[10px] font-bold uppercase tracking-wider text-[#0d6938] flex items-center gap-1.5">
-                            <WhatsAppIcon className="w-3.5 h-3.5 text-[#25D366]" />
-                            CHAT DIRETTA WHATSAPP
-                          </span>
-                          <span className="inline-flex items-center gap-1 text-[10px] font-semibold text-[#0d6938] bg-[#25D366]/15 px-2 py-0.5 rounded-full">
-                            <span className="w-1.5 h-1.5 rounded-full bg-[#25D366] animate-pulse" />
-                            Risposta Rapida
-                          </span>
-                        </div>
+                {/* 02: WhatsApp & Telefono */}
+                <div className="p-3.5 rounded-sm bg-[#25D366]/5 border border-[#25D366]/30 space-y-2">
+                  <div className="flex items-center justify-between">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-[#0d6938] flex items-center gap-1.5">
+                      <WhatsAppIcon className="w-3.5 h-3.5 text-[#25D366]" />
+                      <span>WhatsApp & Telefono</span>
+                    </span>
+                    <span className="inline-flex items-center gap-1 text-[9px] font-semibold text-[#0d6938] bg-[#25D366]/15 px-2 py-0.5 rounded-full">
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#25D366] animate-pulse" />
+                      Canale Rapido
+                    </span>
+                  </div>
 
-                        <div className="font-serif text-lg text-[#0B1E36] font-bold">
-                          {channel.value}
-                        </div>
+                  <div className="font-serif text-base sm:text-lg text-[#0B1E36] font-bold">
+                    +39 379 115 9352
+                  </div>
 
-                        <p className="text-xs text-[#5A6270]">
-                          {channel.subtext} — Nessun filtro, conversazione immediata.
-                        </p>
+                  <p className="text-[11px] text-[#5A6270]">
+                    Per quesiti immediati o note operative sul progetto.
+                  </p>
 
-                        <a
-                          href={channel.href}
-                          target="_blank"
-                          rel="noreferrer"
-                          className="w-full py-2.5 px-4 rounded-sm bg-[#25D366] hover:bg-[#20ba59] active:scale-[0.99] text-white font-sans text-xs font-bold shadow-xs flex items-center justify-between transition-all group/wa cursor-pointer mt-1"
-                        >
-                          <span className="inline-flex items-center gap-2">
-                            <WhatsAppIcon className="w-4 h-4 fill-white" />
-                            <span>Scrivimi direttamente su WhatsApp</span>
-                          </span>
-                          <ArrowRightIcon className="w-4 h-4 transition-transform group-hover/wa:translate-x-1 shrink-0" />
-                        </a>
-                      </div>
-                    );
-                  }
+                  <a
+                    href="https://wa.me/393791159352"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="w-full py-2 px-3 rounded-sm bg-[#25D366] hover:bg-[#20ba59] active:scale-[0.99] text-white font-sans text-xs font-bold shadow-xs flex items-center justify-between transition-all group/wa cursor-pointer"
+                  >
+                    <span className="inline-flex items-center gap-2">
+                      <WhatsAppIcon className="w-3.5 h-3.5 fill-white" />
+                      <span>Avvia conversazione WhatsApp</span>
+                    </span>
+                    <ArrowRightIcon className="w-3.5 h-3.5 transition-transform group-hover/wa:translate-x-1 shrink-0" />
+                  </a>
+                </div>
 
-                  if (isGitHub) {
-                    return (
-                      <div key={i} className="pt-2.5 pb-2.5 space-y-1">
-                        <div className="text-[10px] font-bold uppercase tracking-wider text-[#5A6270]">
-                          {channel.label}
-                        </div>
-                        <a
-                          href={channel.href}
-                          target="_blank"
-                          rel="noreferrer"
-                          className="font-serif text-base sm:text-lg text-[#0B1E36] hover:text-[#B8860B] transition-colors inline-flex items-center gap-1.5 font-semibold group/gh"
-                        >
-                          <GitHubIcon className="w-4 h-4 text-[#0B1E36] group-hover/gh:text-[#B8860B] transition-colors" />
-                          <span>{channel.value}</span>
-                          <ArrowUpRightIcon className="w-3.5 h-3.5 text-[#5A6270] group-hover/gh:text-[#B8860B] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-                        </a>
-                        <div className="text-xs text-[#5A6270] font-sans">
-                          {channel.subtext}
-                        </div>
-                      </div>
-                    );
-                  }
+                {/* 03: Repository GitHub */}
+                <div className="p-3.5 rounded-sm bg-[#F8F7F4]/80 border border-[#E8E2D5] space-y-1 hover:border-[#0B1E36] transition-colors">
+                  <div className="text-[10px] font-bold uppercase tracking-wider text-[#5A6270] flex items-center gap-1.5">
+                    <GitHubIcon className="w-3.5 h-3.5 text-[#0B1E36]" />
+                    <span>Architetture Reference & GitHub</span>
+                  </div>
+                  <a
+                    href="https://github.com/techpyre"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="font-serif text-base sm:text-lg text-[#0B1E36] hover:text-[#B8860B] transition-colors inline-flex items-center gap-1.5 font-semibold group/gh"
+                  >
+                    <span>github.com/techpyre</span>
+                    <ArrowUpRightIcon className="w-3.5 h-3.5 text-[#5A6270] group-hover/gh:text-[#B8860B] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                  </a>
+                  <div className="text-[11px] text-[#5A6270] font-sans">
+                    Codice sorgente aperto e architetture dimostrative
+                  </div>
+                </div>
 
-                  return (
-                    <div key={i} className="pt-2.5 pb-2.5 first:pt-2 space-y-0.5">
-                      <div className="text-[10px] font-bold uppercase tracking-wider text-[#5A6270]">
-                        {channel.label}
-                      </div>
-                      {channel.href !== "#" ? (
-                        <a
-                          href={channel.href}
-                          target={channel.isExternal ? "_blank" : undefined}
-                          rel={channel.isExternal ? "noreferrer" : undefined}
-                          className="font-serif text-base sm:text-lg text-[#0B1E36] hover:text-[#B8860B] transition-colors block font-semibold break-all sm:break-normal"
-                        >
-                          {channel.value}
-                        </a>
-                      ) : (
-                        <div className="font-serif text-base sm:text-lg text-[#0B1E36] font-semibold">
-                          {channel.value}
-                        </div>
-                      )}
-                      <div className="text-xs text-[#B8860B] font-medium">
-                        {channel.subtext}
-                      </div>
-                    </div>
-                  );
-                })}
+                {/* 04: Orari & Reperibilità */}
+                <div className="p-3.5 rounded-sm bg-[#F8F7F4]/80 border border-[#E8E2D5] space-y-1">
+                  <div className="text-[10px] font-bold uppercase tracking-wider text-[#5A6270]">
+                    Orari di Reperibilità
+                  </div>
+                  <div className="font-serif text-base text-[#0B1E36] font-semibold">
+                    Lun — Ven · 08:30 — 19:30
+                  </div>
+                  <div className="text-[11px] text-[#5A6270] font-sans">
+                    Fuso orario di Roma · Sede in Italia · Operatività nazionale
+                  </div>
+                </div>
               </div>
 
-              <div className="pt-3 border-t border-[#E8E2D5] mt-auto">
-                <div className="p-3 rounded-sm bg-[#0B1E36]/5 border border-[#0B1E36]/10 flex items-center gap-2.5 text-xs text-[#0B1E36]">
-                  <span className="text-[#B8860B] font-bold shrink-0">▪</span>
+              {/* Riquadri Rassicuranti B2B a Fondo Scheda (Bilanciamento Visivo) */}
+              <div className="space-y-2 pt-2 border-t border-[#E8E2D5]">
+                <div className="p-3 rounded-sm bg-[#0B1E36]/5 border border-[#0B1E36]/10 flex items-start gap-2.5 text-xs text-[#0B1E36]">
+                  <span className="text-[#B8860B] font-bold shrink-0 mt-0.5">▪</span>
                   <span>
-                    <strong>Incontro in presenza?</strong> Disponibile per incontri presso la sede aziendale.
+                    <strong>Incontro in presenza?</strong> Disponibile per sessioni di lavoro strategiche e briefing tecnici presso la sede dell&apos;impresa committente.
+                  </span>
+                </div>
+
+                <div className="p-3 rounded-sm bg-[#B8860B]/5 border border-[#B8860B]/20 flex items-start gap-2.5 text-xs text-[#0B1E36]">
+                  <span className="text-[#B8860B] font-bold shrink-0 mt-0.5">▪</span>
+                  <span>
+                    <strong>Zero intermediari:</strong> Dialoghi esclusivamente con chi progetta l&apos;architettura e scrive il codice sorgente.
                   </span>
                 </div>
               </div>
@@ -367,7 +368,7 @@ export default function ContactBox() {
                 Scrivi allo Studio
               </h3>
               <p className="text-xs text-[#5A6270]">
-                Riscontro garantito entro 2 ore direttamente da Riccardo Granza.
+                Riscontro garantito entro la giornata lavorativa direttamente da Riccardo Granza.
               </p>
             </div>
 

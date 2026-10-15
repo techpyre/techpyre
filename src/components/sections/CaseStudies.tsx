@@ -77,22 +77,41 @@ export default function CaseStudies() {
               transition={{ duration: 0.6, delay: idx * 0.12, ease: [0.22, 1, 0.36, 1] }}
               className="bg-white rounded-sm border border-[#E8E2D5] shadow-xs flex flex-col justify-between overflow-hidden relative group hover:border-[#0B1E36] transition-all duration-200"
             >
-              {/* Accento superiore */}
-              <div className="h-[2px] w-full bg-[#B8860B]" />
+              {/* Browser Window Mockup Frame */}
+              <div className="bg-[#0B1E36] border-b border-[#0B1E36]/40 px-3.5 py-2.5 flex items-center justify-between text-white/70 select-none">
+                <div className="flex items-center gap-1.5">
+                  <span className="w-2.5 h-2.5 rounded-full bg-[#FF5F56]/90 inline-block" />
+                  <span className="w-2.5 h-2.5 rounded-full bg-[#FFBD2E]/90 inline-block" />
+                  <span className="w-2.5 h-2.5 rounded-full bg-[#27C93F]/90 inline-block" />
+                </div>
 
-              <div className="p-6 sm:p-7 md:p-8 space-y-5">
-                {/* Badge Tag & Titolo */}
+                <div className="flex-1 max-w-xs mx-3 px-2.5 py-1 rounded-xs bg-white/10 text-[10px] font-mono text-[#F8F7F4]/90 flex items-center justify-center gap-1.5 truncate border border-white/10">
+                  <span className="text-emerald-400 text-xs">🔒</span>
+                  <span className="truncate">{project.demoUrl ? project.demoUrl.replace("https://", "") : "techpyre.eu"}</span>
+                </div>
+
+                <div className="flex items-center gap-1.5 text-[9px] font-mono text-emerald-400 font-semibold shrink-0">
+                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+                  <span className="hidden sm:inline">LIVE DEMO</span>
+                </div>
+              </div>
+
+              {/* Contenuto della Scheda */}
+              <div className="p-5 sm:p-7 space-y-4">
+                {/* Badge Tag & Cliente */}
                 <div className="space-y-1.5">
-                  <div className="flex items-center justify-between gap-2">
-                    <span className="text-[10px] font-mono font-bold uppercase tracking-wider text-[#B8860B] bg-[#B8860B]/10 px-2.5 py-0.5 rounded-xs">
+                  <div className="flex flex-wrap items-center justify-between gap-2">
+                    <span className="text-[10px] font-mono font-bold uppercase tracking-wider text-[#B8860B] bg-[#B8860B]/10 px-2 py-0.5 rounded-xs">
                       {project.tag}
                     </span>
-                    <span className="text-[11px] font-mono text-[#5A6270]">
-                      Case Reference #{idx + 1}
-                    </span>
+                    {project.clientName && (
+                      <span className="text-[11px] font-sans font-medium text-[#5A6270]">
+                        {project.clientName}
+                      </span>
+                    )}
                   </div>
 
-                  <h3 className="font-serif text-xl sm:text-2xl text-[#0B1E36] font-semibold tracking-tight pt-1">
+                  <h3 className="font-serif text-xl sm:text-2xl text-[#0B1E36] font-semibold tracking-tight pt-0.5">
                     {project.title}
                   </h3>
 
@@ -101,12 +120,41 @@ export default function CaseStudies() {
                   </p>
                 </div>
 
+                {/* Box Problema di Business & Soluzione Applicata */}
+                {(project.businessProblem || project.solution) && (
+                  <div className="space-y-2 pt-1">
+                    {project.businessProblem && (
+                      <div className="p-3 rounded-sm bg-rose-50/50 border border-rose-200/70 text-xs font-sans space-y-1">
+                        <div className="text-[10px] font-bold uppercase tracking-wider text-rose-800 flex items-center gap-1.5">
+                          <span>⚠</span>
+                          <span>Problema di Business Reale</span>
+                        </div>
+                        <p className="text-[#333333] leading-relaxed text-[11px] sm:text-xs">
+                          {project.businessProblem}
+                        </p>
+                      </div>
+                    )}
+
+                    {project.solution && (
+                      <div className="p-3 rounded-sm bg-[#B8860B]/5 border border-[#B8860B]/25 text-xs font-sans space-y-1">
+                        <div className="text-[10px] font-bold uppercase tracking-wider text-[#B8860B] flex items-center gap-1.5">
+                          <span>✓</span>
+                          <span>Soluzione Applicata</span>
+                        </div>
+                        <p className="text-[#0B1E36] leading-relaxed text-[11px] sm:text-xs font-medium">
+                          {project.solution}
+                        </p>
+                      </div>
+                    )}
+                  </div>
+                )}
+
                 {/* Griglia Metriche Tecniche Verificate */}
                 <div className="grid grid-cols-3 gap-2 py-1">
                   {project.metrics.map((metric, mIdx) => (
                     <div
                       key={mIdx}
-                      className="p-2.5 rounded-sm bg-[#F8F7F4] border border-[#E8E2D5] space-y-0.5"
+                      className="p-2 sm:p-2.5 rounded-sm bg-[#F8F7F4] border border-[#E8E2D5] space-y-0.5"
                     >
                       <div className="text-[9px] font-sans font-bold uppercase tracking-wider text-[#5A6270] truncate">
                         {metric.label}
@@ -124,13 +172,13 @@ export default function CaseStudies() {
                 </div>
 
                 {/* Specifiche Architetturali (Punti Salienti) */}
-                <div className="space-y-2 border-t border-[#E8E2D5] pt-3.5">
+                <div className="space-y-1.5 border-t border-[#E8E2D5] pt-3">
                   <div className="text-[10px] font-bold uppercase tracking-wider text-[#0B1E36] font-sans">
                     Caratteristiche Ingegneristiche Chiave
                   </div>
-                  <ul className="space-y-1.5 text-xs text-[#5A6270] font-sans">
+                  <ul className="space-y-1 text-xs text-[#5A6270] font-sans">
                     {project.highlights.map((item, hIdx) => (
-                      <li key={hIdx} className="flex items-start gap-2">
+                      <li key={hIdx} className="flex items-start gap-1.5">
                         <span className="text-[#B8860B] font-bold shrink-0 mt-0.5">▪</span>
                         <span>{item}</span>
                       </li>
@@ -139,7 +187,7 @@ export default function CaseStudies() {
                 </div>
 
                 {/* Stack Tecnologico Certificato */}
-                <div className="space-y-2 border-t border-[#E8E2D5] pt-3.5">
+                <div className="space-y-1.5 border-t border-[#E8E2D5] pt-3">
                   <div className="text-[10px] font-bold uppercase tracking-wider text-[#0B1E36] font-sans">
                     Stack Architetturale Adottato
                   </div>
@@ -165,7 +213,7 @@ export default function CaseStudies() {
                         href={project.demoUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="py-2.5 px-4 rounded-sm bg-[#B8860B] hover:bg-[#9A7009] active:scale-[0.99] text-white font-sans text-xs font-semibold tracking-wide transition-all shadow-xs inline-flex items-center justify-center gap-2 group/demo"
+                        className="py-2 px-3 rounded-sm bg-[#B8860B] hover:bg-[#9A7009] active:scale-[0.99] text-white font-sans text-xs font-semibold tracking-wide transition-all shadow-xs inline-flex items-center justify-center gap-1.5 group/demo"
                       >
                         <span className="relative flex h-2 w-2 shrink-0" aria-hidden="true">
                           <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-60" />
@@ -180,10 +228,10 @@ export default function CaseStudies() {
                         href={project.repoUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="py-2.5 px-4 rounded-sm bg-white border border-[#0B1E36]/20 hover:border-[#0B1E36] active:scale-[0.99] text-[#0B1E36] font-sans text-xs font-semibold tracking-wide transition-all inline-flex items-center justify-center gap-2 group/repo"
+                        className="py-2 px-3 rounded-sm bg-white border border-[#0B1E36]/20 hover:border-[#0B1E36] active:scale-[0.99] text-[#0B1E36] font-sans text-xs font-semibold tracking-wide transition-all inline-flex items-center justify-center gap-1.5 group/repo"
                       >
                         <GitHubIcon className="w-3.5 h-3.5 shrink-0" />
-                        <span>Ispeziona Codice su GitHub</span>
+                        <span>Ispeziona su GitHub</span>
                         <ArrowUpRightIcon className="w-3.5 h-3.5 shrink-0 transition-transform group-hover/repo:translate-x-0.5 group-hover/repo:-translate-y-0.5" />
                       </a>
                     )}
@@ -191,8 +239,8 @@ export default function CaseStudies() {
                 )}
 
                 {project.demoUrl && (
-                  <p className="text-[10px] sm:text-[11px] text-[#5A6270] font-sans text-center sm:text-left">
-                    Sandbox pubblica senza login · azienda fittizia e dati simulati · codice open source
+                  <p className="text-[10px] text-[#5A6270] font-sans text-center sm:text-left">
+                    Sandbox pubblica senza registrazione · codice sorgente verificabile
                   </p>
                 )}
 
@@ -204,7 +252,7 @@ export default function CaseStudies() {
                   <button
                     type="button"
                     onClick={() => handleSelectCaseStudy(project.prefillService, project.title)}
-                    className="mt-2 w-full sm:w-auto py-2.5 px-4 rounded-sm bg-[#0B1E36] hover:bg-[#002244] active:scale-[0.99] text-white font-sans text-xs font-semibold tracking-wide transition-all shadow-xs inline-flex items-center justify-center gap-2 group/btn cursor-pointer"
+                    className="w-full sm:w-auto py-2.5 px-4 rounded-sm bg-[#0B1E36] hover:bg-[#002244] active:scale-[0.99] text-white font-sans text-xs font-semibold tracking-wide transition-all shadow-xs inline-flex items-center justify-center gap-2 group/btn cursor-pointer"
                   >
                     <span>{project.ctaText}</span>
                     <ArrowRightIcon className="w-3.5 h-3.5 shrink-0 transition-transform group-hover/btn:translate-x-1" />
