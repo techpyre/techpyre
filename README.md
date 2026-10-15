@@ -1,106 +1,84 @@
-# TechPYRE — B2B Web Engineering & Digital Consulting Platform
+<p align="center">
+  <a href="https://www.techpyre.eu" target="_blank" rel="noopener noreferrer">
+    <img src="https://raw.githubusercontent.com/techpyre/techpyre/main/public/icon-512.png" width="110" height="110" alt="TechPYRE Logo" style="border-radius: 20px;" />
+  </a>
+</p>
 
-Questo repository contiene il codice sorgente del portale B2B di **TechPYRE** (nome configurabile dinamicamente), studio di ingegneria del software e consulenza di marketing digitale fondato da **Riccardo Granza**.
+<h1 align="center">TechPYRE</h1>
 
-Il progetto non è una semplice vetrina, ma uno strumento di posizionamento ad alta conversione progettato con un'estetica istituzionale, umana e autorevole.
+<p align="center">
+  <strong>Studio Tecnico di Sviluppo Software & Architetture Web B2B ad Alte Prestazioni</strong><br />
+  <em>Siti web, portali ordini ed ecosistemi digitali costruiti su misura per l'impresa reale. Zero canoni nascosti, zero overhead d'agenzia.</em>
+</p>
 
----
-
-## 1. Filosofia Estetica: "Stile Mediolanum" & Anti-AI Design
-
-L'identità visiva del sito rifiuta categoricamente l'estetica dei template SaaS moderni e dei siti generati dall'intelligenza artificiale. Il punto di riferimento visivo e comunicativo è il **Private Banking italiano di alta fascia (es. Banca Mediolanum)**: lusso discreto, solidità patrimoniale, chiarezza espositiva e centralità assoluta della relazione umana (*"Costruito intorno a te"*).
-
-### 1.1 Cosa è SEVERAMENTE VIETATO (Pattern "Sospetto AI")
-* **Visual:** Vietati sfondi nero assoluto (`#000000`) con luci al neon, mesh gradients viola/ciano, Bento Grid forzate, glassmorphism pesante, icone 3D fluttuanti o illustrazioni vettoriali astratte.
-* **Copywriting:** Vietato il linguaggio "AI-ese". Sono bandite parole ed espressioni come: *"Nel panorama digitale odierno"*, *"Sblocca il tuo potenziale"*, *"Soluzioni a 360 gradi"*, *"Portiamo il tuo business al livello successivo"*, *"Sinergia"*, *"Rivoluziona"*, *"Crescita esponenziale"*. Il testo deve suonare scritto di pugno da un consulente umano esperto: asciutto, onesto, pragmatico e diretto.
-
-### 1.2 Sistema Visivo e Palette Colori (Istituzionale & Umano)
-Il design deve respirare attraverso spazi bianchi generosi, griglie editoriali rigorose (separate da filetti sottili `1px solid` a basso contrasto) e una palette cromatica che trasmetta fiducia, storicità e calore:
-* **Background Primario (Luce Calda):** Alabastro / Carta Istituzionale (`#F8F7F4`) — mai bianco ottico accecante (`#FFFFFF`), per non affaticare la lettura e dare una sensazione tattile, quasi cartacea.
-* **Background Secondario (Profondità Istituzionale):** Blu Notte Mediolanum (`#0A192F` o `#0D1F33`) — utilizzato per sezioni ad alto contrasto (es. Blueprint, Footer o sezioni di rottura) per trasmettere rigore bancario e affidabilità tecnica.
-* **Testo Primario:** Inchiostro Antracite (`#14181F`).
-* **Testo Secondario / Muted:** Grigio Ardesia Caldo (`#5A6270`).
-* **Accento Primario (Prestigio & Azione):** Blu Istituzionale Intenso (`#003366`) abbinato a dettagli in **Bronzo/Oro Antico** (`#B8860B` o `#C5A059`) per gli indicatori di valore, i bordi attivi e i micro-dettagli di lusso non ostentato.
-
-### 1.3 Tipografia
-Abbinamento ad alto contrasto tra autorevolezza classica e precisione ingegneristica:
-* **Headings (H1, H2, Citazioni):** Font Serif editoriale e scultoreo (*Playfair Display* o *Newsreader*). Trasmette cultura d'impresa, serietà e presenza umana.
-* **Body & UI:** Font Sans-Serif umanista e iper-leggibile (*Plus Jakarta Sans* o *Inter*).
-* **Prezzi, Dati & Specifiche Tecniche:** Font Monospace pulito (*JetBrains Mono*), per sottolineare la trasparenza numerica e il rigore ingegneristico.
+<p align="center">
+  <a href="https://www.techpyre.eu"><img src="https://img.shields.io/badge/Website-techpyre.eu-0B1E36?style=flat-square&logo=googlechrome&logoColor=white" alt="Website" /></a>
+  <a href="https://b2b-demo.techpyre.eu"><img src="https://img.shields.io/badge/Demo-Portale_B2B-B8860B?style=flat-square" alt="B2B Portal Demo" /></a>
+  <a href="https://headless-demo.techpyre.eu"><img src="https://img.shields.io/badge/Demo-Headless_LeadGen-003366?style=flat-square" alt="Headless Demo" /></a>
+  <img src="https://img.shields.io/badge/Status-Operativo-2ea44f?style=flat-square" alt="Status" />
+  <img src="https://img.shields.io/badge/HQ-Bergamo_%2F_Brescia-5A6270?style=flat-square" alt="HQ" />
+</p>
 
 ---
 
-## 2. Motion Design & Micro-interazioni
+## 🏛️ Chi Siamo
 
-Le animazioni (realizzate con **Framer Motion**) sono un pilastro fondamentale dell'esperienza utente, ma non devono essere "virtuosistiche" o circensi. Devono comunicare **peso, stabilità e precisione meccanica**.
+**TechPYRE** è uno studio indipendente di ingegneria del software fondato da **Riccardo Granza**. 
 
-1. **Fisica del Movimento:** Nessun effetto "molla" (spring) rimbalzante. Utilizzare esclusivamente curve di easing progressive e solenni: `cubic-bezier(0.22, 1, 0.36, 1)` con durate comprese tra `0.6s` e `0.9s`.
-2. **Grid Drawing:** Le linee divisorie delle sezioni e delle tabelle dei prezzi devono disegnarsi progressivamente (`scaleX: 0 -> 1` o `scaleY: 0 -> 1`) man mano che l'utente scorre la pagina.
-3. **Text Reveal:** I titoli principali devono emergere dal basso tramite maschere di ritaglio (`overflow-hidden` sul contenitore e traslazione `y: "100%" -> 0%`), dando l'impressione di una stampa tipografica che prende vita.
-4. **Interazioni Tattili (Hover):** 
-   * I pulsanti primari hanno un riempimento fluido dal basso verso l'alto al passaggio del mouse.
-   * Le righe del listino servizi si illuminano delicatamente cambiando contrasto e traslando il titolo di `8px` verso destra, segnalando reattività immediata.
+A differenza delle web agency generaliste che assemblano template lenti e impongono canoni di noleggio perpetui, TechPYRE progetta architetture web proprietarie ad alte prestazioni (Next.js, TypeScript, Cloudflare Edge) per PMI e aziende B2B.
+
+### Il Nostro Patto di Fiducia con l'Impresa
+* 👤 **Interlocutore Unico e Diretto:** Dialogo 1:1 con chi progetta, ingegnerizza e rilascia il codice (riscontro garantito in giornata lavorativa).
+* ⚡ **Caricamento Sub-Secondo:** Architetture statiche ed Edge con metriche Core Web Vitals 100/100, azzerando i contatti persi sui flussi pubblicitari.
+* ⏱️ **Tempi & Costi Certi:** Sprint a prezzo fisso (5–7 giorni per landing page, roadmap concordate per ecosistemi complessi).
+* 🔒 **Proprietà Integrale al 100%:** Codice standardizzato, ceduto interamente all'azienda, senza lock-in tecnologico né canoni di licenza forzati.
 
 ---
 
-## 3. Architettura Tecnica e Fattorizzazione del Codice
+## 🚀 Casi Studio & Architetture di Riferimento Open Source
 
-Il progetto è basato su **Next.js (App Router)** e **TypeScript** rigoroso (`strict: true`).
+Tutte le nostre architetture di riferimento sono navigabili dal vivo e ispezionabili direttamente su GitHub:
 
-### 3.1 Regola d'Oro: Disaccoppiamento Totale (Single Source of Truth)
-**È vietato hardcodare testi, prezzi, email o il nome dello studio all'interno dei componenti React (`.tsx`).**
-Tutto il contenuto testuale e i parametri di business devono risiedere in un unico file di configurazione fortemente tipizzato: `src/config/siteContent.ts`.
+| Progetto Reference | Ambito Applicativo | Stack Tecnologico | Live Demo | Repository |
+| :--- | :--- | :--- | :--- | :--- |
+| **Piattaforma Ufficiale TechPYRE** | Portale Istituzionale & Lead Engine | Next.js 16, React 19, Tailwind CSS, Framer Motion | [techpyre.eu ↗](https://www.techpyre.eu) | [techpyre/techpyre](https://github.com/techpyre/techpyre) |
+| **Valkiria Fluidodinamica B2B** | Portale Ordini B2B, Listini a Scaglioni & SDI | Next.js App Router, RBAC Deny-by-Default, Stripe SEPA/Cards, FatturaPA XML | [b2b-demo.techpyre.eu ↗](https://b2b-demo.techpyre.eu) | [techpyre-b2b-portal-reference ↗](https://github.com/techpyre/techpyre-b2b-portal-reference) |
+| **Headless LeadGen Engine** | Ingestion Contatti Resiliente & Chaos Failover | Cloudflare Edge, IndexedDB Client Queue, Server DLQ Retry Pipeline | [headless-demo.techpyre.eu ↗](https://headless-demo.techpyre.eu) | [techpyre-headless-leadgen-reference ↗](https://github.com/techpyre/techpyre-headless-leadgen-reference) |
 
-* **Cambio Nome Istantaneo:** La proprietà `brand.name` (attualmente impostata su `"TechPYRE"`) controlla dinamicamente Navbar, Hero, Footer, Copywriting, Metadata SEO e template delle email di contatto. Modificando quella singola riga in `siteContent.ts`, l'intero sito cambia identità senza toccare la UI.
-* **Manutenibilità:** Ogni sezione della pagina legge esclusivamente le proprie props dal file di configurazione, rendendo qualsiasi modifica a prezzi o testi una questione di secondi.
+---
 
-### 3.2 Albero delle Directory
-```text
-src/
-├── config/
-│   └── siteContent.ts          # UNICA FONTE DI VERITÀ: Brand, testi, prezzi, bio, contatti
-├── types/
-│   └── content.ts              # Interfacce TypeScript per siteContent e payload API
-├── components/
-│   ├── layout/
-│   │   ├── Navbar.tsx          # Navigazione sobria, sticky con blur minimale
-│   │   └── Footer.tsx          # Dati legali, contatti diretti, estetica scura istituzionale
-│   ├── sections/
-│   │   ├── Hero.tsx            # Posizionamento B2B, promessa di valore e CTA primaria
-│   │   ├── ServicesMatrix.tsx  # Listino prezzi trasparente in stile Private Banking
-│   │   ├── FounderLetter.tsx   # La storia di Riccardo Granza (focus umano e vision)
-│   │   └── ContactBox.tsx      # Modulo di contatto integrato con stati interattivi
-│   └── ui/
-│       ├── AnimatedLine.tsx    # Divisori animati allo scroll
-│       ├── RevealText.tsx      # Wrapper Framer Motion per la tipografia
-│       └── Button.tsx          # Componente bottone con micro-interazioni
-└── app/
-    ├── api/
-    │   └── contact/
-    │       └── route.ts        # Endpoint POST funzionante con fallback intelligente
-    ├── globals.css             # Setup Tailwind e variabili CSS per i colori
-    ├── layout.tsx              # Configurazione Font (Serif + Sans + Mono) e Metadata dinamici
-    └── page.tsx                # Assemblaggio pulito delle sezioni
+## 🛠️ Stack Tecnologico & Competenze Chiave
+
+```
+Frontend & Core:         Next.js (App Router, Turbopack, Server Actions), React 19, TypeScript
+Styling & UI:            Tailwind CSS v4, Framer Motion, Responsive Semantic Design
+Data & Backend:          PostgreSQL, Prisma ORM, REST API con validazione idempotente
+Resilienza & Edge:       Cloudflare Workers, Edge Caching, IndexedDB Offline Queues
+Pagamenti & Fisco:       Stripe API (3-D Secure, SEPA Direct Debit B2B), Webhook HMAC, Tracciato FatturaPA (SDI)
 ```
 
 ---
 
-## 4. Struttura dei Contenuti e Logica di Business (B2B)
+## 💼 Aree di Intervento per Aziende B2B
 
-Il sito si rivolge a imprenditori, PMI e decision-maker aziendali. La comunicazione punta sulla chiarezza contrattuale, sull'assenza di burocrazia e sul contatto diretto con chi scrive il codice e definisce la strategia.
-
-### 4.1 Listino Servizi e Prezzi (Trasparenza Totale)
-1. **Consulenza Informatica & Marketing Digitale:** Primi 30 min Gratuiti, poi 100€ / ora.
-2. **Landing Page ad Alta Conversione:** 500€ (Prezzo Fisso).
-3. **Blueprint Ingegneristico del Sito:** Da 1.500€ a 2.500€.
-4. **Sito Web / Ecosistema Completo:** Da 5.000€ a 15.000€ (salvo imprese titaniche).
-
-### 4.2 La Storia del Fondatore: Riccardo Granza
-Manifesto del Family Banker tecnologico: Riccardo Granza, neodiciottenne, neoimprenditore. Zero overhead d'agenzia, tecnologie moderne di livello enterprise a prezzo onesto, qualità artigianale e determinazione assoluta.
+1. **Siti Web & Ecosistemi Digitali Completi:** Progettazione e ingegnerizzazione da zero di siti aziendali ad alte prestazioni, con focus su autorevolezza, posizionamento e lead generation qualificata.
+2. **Portali Ordini B2B & Listini Complessi:** Sistemi riservati per clienti e reti vendita con calcolo dinamico degli sconti a scaglioni, gestione agenti, verifica fido e fatturazione elettronica.
+3. **Landing Page ad Alta Conversione:** Pagine di atterraggio verticali su singoli prodotti o servizi industriali, con caricamento istantaneo e form failover anti-perdita contatti.
+4. **Audit Tecnico & Refactoring Performance:** Analisi del debito tecnico, eliminazione di framework obsoleti o CMS lenti e migrazione a stack moderni a elevate prestazioni.
 
 ---
 
-## 5. Il Box di Contatto (Architettura Plug-and-Play)
-* Form con campi Nome, Azienda, Email/Telefono, Selettore Servizio (con sync dalle CTA del listino) e Messaggio.
-* Stati: `idle`, `submitting`, `success`, `error`.
-* API Route con Smart Fallback (latente di 800ms e log ordinato in console se SMTP non è impostato).
+## 📬 Contatti Diretti
+
+Per richieste di preventivo, audit preliminari o pianificazione di un primo colloquio conoscitivo di 30 minuti:
+
+* 🌐 **Sito Ufficiale:** [www.techpyre.eu](https://www.techpyre.eu)
+* ✉️ **Email:** [riccardogranza@gmail.com](mailto:riccardogranza@gmail.com)
+* 📱 **Telefono / WhatsApp:** [+39 379 115 9352](tel:+393791159352)
+* 📍 **Sede:** Bergamo / Brescia, Italia (operatività remota su tutto il territorio nazionale)
+
+---
+
+<p align="center">
+  <sub>© 2026 TechPYRE di Riccardo Granza · Tutti i diritti riservati.</sub>
+</p>
