@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { siteContent } from "@/config/siteContent";
 import { ContactPayload, ContactApiResponse } from "@/types/content";
+import { ArrowRightIcon, WhatsAppIcon } from "@/components/ui/Icons";
 
 /**
  * =====================================================================
@@ -170,30 +171,75 @@ export default function ContactBox() {
               </div>
 
               <div className="space-y-2.5 divide-y divide-[#E8E2D5] border-y border-[#E8E2D5] pt-1">
-                {contact.channels.map((channel, i) => (
-                  <div key={i} className="pt-2.5 pb-2.5 first:pt-2 space-y-0.5">
-                    <div className="text-[10px] font-bold uppercase tracking-wider text-[#5A6270]">
-                      {channel.label}
-                    </div>
-                    {channel.href !== "#" ? (
-                      <a
-                        href={channel.href}
-                        target={channel.isExternal ? "_blank" : undefined}
-                        rel={channel.isExternal ? "noreferrer" : undefined}
-                        className="font-serif text-base sm:text-lg text-[#0B1E36] hover:text-[#B8860B] transition-colors block font-semibold break-all sm:break-normal"
+                {contact.channels.map((channel, i) => {
+                  const isWhatsApp = channel.href.includes("wa.me");
+
+                  if (isWhatsApp) {
+                    return (
+                      <div
+                        key={i}
+                        className="pt-3 pb-3 space-y-2 rounded-sm bg-[#25D366]/5 border border-[#25D366]/30 p-3.5 my-2 shadow-2xs"
                       >
-                        {channel.value}
-                      </a>
-                    ) : (
-                      <div className="font-serif text-base sm:text-lg text-[#0B1E36] font-semibold">
-                        {channel.value}
+                        <div className="flex items-center justify-between">
+                          <span className="text-[10px] font-bold uppercase tracking-wider text-[#0d6938] flex items-center gap-1.5">
+                            <WhatsAppIcon className="w-3.5 h-3.5 text-[#25D366]" />
+                            CHAT DIRETTA WHATSAPP
+                          </span>
+                          <span className="inline-flex items-center gap-1 text-[10px] font-semibold text-[#0d6938] bg-[#25D366]/15 px-2 py-0.5 rounded-full">
+                            <span className="w-1.5 h-1.5 rounded-full bg-[#25D366] animate-pulse" />
+                            Risposta Rapida
+                          </span>
+                        </div>
+
+                        <div className="font-serif text-lg text-[#0B1E36] font-bold">
+                          {channel.value}
+                        </div>
+
+                        <p className="text-xs text-[#5A6270]">
+                          {channel.subtext} — Nessun filtro, conversazione immediata.
+                        </p>
+
+                        <a
+                          href={channel.href}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="w-full py-2.5 px-4 rounded-sm bg-[#25D366] hover:bg-[#20ba59] active:scale-[0.99] text-white font-sans text-xs font-bold shadow-xs flex items-center justify-between transition-all group/wa cursor-pointer mt-1"
+                        >
+                          <span className="inline-flex items-center gap-2">
+                            <WhatsAppIcon className="w-4 h-4 fill-white" />
+                            <span>Scrivimi direttamente su WhatsApp</span>
+                          </span>
+                          <ArrowRightIcon className="w-4 h-4 transition-transform group-hover/wa:translate-x-1 shrink-0" />
+                        </a>
                       </div>
-                    )}
-                    <div className="text-xs text-[#B8860B] font-medium">
-                      {channel.subtext}
+                    );
+                  }
+
+                  return (
+                    <div key={i} className="pt-2.5 pb-2.5 first:pt-2 space-y-0.5">
+                      <div className="text-[10px] font-bold uppercase tracking-wider text-[#5A6270]">
+                        {channel.label}
+                      </div>
+                      {channel.href !== "#" ? (
+                        <a
+                          href={channel.href}
+                          target={channel.isExternal ? "_blank" : undefined}
+                          rel={channel.isExternal ? "noreferrer" : undefined}
+                          className="font-serif text-base sm:text-lg text-[#0B1E36] hover:text-[#B8860B] transition-colors block font-semibold break-all sm:break-normal"
+                        >
+                          {channel.value}
+                        </a>
+                      ) : (
+                        <div className="font-serif text-base sm:text-lg text-[#0B1E36] font-semibold">
+                          {channel.value}
+                        </div>
+                      )}
+                      <div className="text-xs text-[#B8860B] font-medium">
+                        {channel.subtext}
+                      </div>
                     </div>
-                  </div>
-                ))}
+                  );
+                })}
               </div>
 
               <div className="p-3 rounded-sm bg-[#0B1E36]/5 border border-[#0B1E36]/10 flex items-center gap-2.5 text-xs text-[#0B1E36]">
@@ -403,7 +449,7 @@ export default function ContactBox() {
                         ) : (
                           <>
                             <span>{contact.formLabels.submit}</span>
-                            <span>→</span>
+                            <ArrowRightIcon className="w-4 h-4 shrink-0" />
                           </>
                         )}
                       </motion.button>

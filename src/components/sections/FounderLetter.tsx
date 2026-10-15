@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { siteContent } from "@/config/siteContent";
 import Signature from "@/components/ui/Signature";
+import { ArrowRightIcon, ArrowDownIcon } from "@/components/ui/Icons";
 
 /**
  * =====================================================================
@@ -94,13 +95,14 @@ export default function FounderLetter() {
               </div>
 
               {/* Box Contatto Rapido */}
-              <div className="p-3 rounded-sm bg-[#C5A059]/10 border border-[#C5A059]/30 flex items-center justify-between text-xs font-sans">
-                <span className="text-white">Vuoi parlare direttamente con Riccardo?</span>
+              <div className="p-3.5 rounded-sm bg-[#C5A059]/10 border border-[#C5A059]/30 flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 text-xs font-sans">
+                <span className="text-white font-medium">Vuoi parlare direttamente con Riccardo?</span>
                 <a
                   href="#contatto"
-                  className="text-[#C5A059] hover:text-white font-bold transition-colors underline underline-offset-4"
+                  className="text-[#C5A059] hover:text-white font-bold transition-colors whitespace-nowrap inline-flex items-center gap-1.5 shrink-0 self-start sm:self-auto group"
                 >
-                  Invia messaggio →
+                  <span>Invia messaggio</span>
+                  <ArrowRightIcon className="w-3.5 h-3.5 shrink-0 transition-transform group-hover:translate-x-0.5" />
                 </a>
               </div>
             </div>
@@ -117,7 +119,7 @@ export default function FounderLetter() {
               </div>
 
               {/* Paragrafi della Lettera: Core sempre visibile */}
-              <div className="space-y-3 text-[#CBD7E3] font-sans text-xs sm:text-sm md:text-base leading-relaxed">
+              <div className="space-y-3.5 text-[#CBD7E3] font-sans text-xs sm:text-sm md:text-base leading-relaxed">
                 {visibleParagraphs.map((para, i) => (
                   <p
                     key={i}
@@ -135,7 +137,7 @@ export default function FounderLetter() {
                       animate={{ height: "auto", opacity: 1 }}
                       exit={{ height: 0, opacity: 0 }}
                       transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
-                      className="overflow-hidden space-y-3"
+                      className="overflow-hidden space-y-3.5 pt-1"
                     >
                       {remainingParagraphs.map((para, i) => (
                         <p key={i}>{para}</p>
@@ -146,17 +148,22 @@ export default function FounderLetter() {
 
                 {/* Pulsante Toggle Manifesto */}
                 {remainingParagraphs.length > 0 && (
-                  <div className="pt-1">
+                  <div className="pt-2">
                     <button
                       type="button"
                       onClick={() => setShowFullManifesto(!showFullManifesto)}
-                      className="text-xs font-sans font-bold text-[#C5A059] hover:text-white transition-colors cursor-pointer flex items-center gap-1.5"
+                      className="text-xs font-sans font-bold text-[#C5A059] hover:text-white transition-colors cursor-pointer inline-flex items-center gap-1.5 whitespace-nowrap group"
                     >
                       <span>
                         {showFullManifesto
-                          ? "Comprimi lettura ↑"
-                          : "Leggi il manifesto integrale (altri paragrafi) ↓"}
+                          ? "Comprimi lettura"
+                          : "Leggi il manifesto integrale"}
                       </span>
+                      <ArrowDownIcon
+                        className={`w-3.5 h-3.5 transition-transform duration-300 ${
+                          showFullManifesto ? "rotate-180" : ""
+                        }`}
+                      />
                     </button>
                   </div>
                 )}

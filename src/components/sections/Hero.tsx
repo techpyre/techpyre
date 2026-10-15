@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { siteContent } from "@/config/siteContent";
 import Button from "@/components/ui/Button";
 import AnimatedCounter from "@/components/ui/AnimatedCounter";
+import { ArrowRightIcon } from "@/components/ui/Icons";
 
 /**
  * =====================================================================
@@ -107,7 +108,8 @@ export default function Hero() {
             <div className="pt-2 flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4">
               <div className="space-y-1">
                 <Button href={hero.primaryCta.href} variant="primary" className="w-full sm:w-auto">
-                  {hero.primaryCta.label} →
+                  <span>{hero.primaryCta.label}</span>
+                  <ArrowRightIcon className="w-3.5 h-3.5 shrink-0" />
                 </Button>
                 <div className="text-[10px] sm:text-[11px] text-[#5A6270] pl-1 font-sans">
                   {hero.primaryCta.note}
@@ -116,7 +118,8 @@ export default function Hero() {
 
               <div className="sm:self-start sm:pt-0">
                 <Button href={hero.secondaryCta.href} variant="secondary" className="w-full sm:w-auto">
-                  {hero.secondaryCta.label}
+                  <span>{hero.secondaryCta.label}</span>
+                  <ArrowRightIcon className="w-3.5 h-3.5 shrink-0 text-[#5A6270] group-hover:text-[#B8860B] transition-colors" />
                 </Button>
               </div>
             </div>
@@ -159,9 +162,10 @@ export default function Hero() {
               <div className="pt-2 border-t border-[#E8E2D5]">
                 <a
                   href="#storia"
-                  className="block text-center py-2 px-3 rounded-sm bg-[#F8F7F4] hover:bg-[#E8E2D5]/70 text-[#0B1E36] text-xs font-semibold tracking-wide transition-colors border border-[#E8E2D5]"
+                  className="inline-flex items-center justify-center gap-1.5 w-full py-2.5 px-3 rounded-sm bg-[#F8F7F4] hover:bg-[#E8E2D5]/70 text-[#0B1E36] text-xs font-semibold tracking-wide transition-colors border border-[#E8E2D5] whitespace-nowrap"
                 >
-                  Leggi il profilo del fondatore →
+                  <span>Leggi il profilo del fondatore</span>
+                  <ArrowRightIcon className="w-3.5 h-3.5 shrink-0" />
                 </a>
               </div>
             </div>

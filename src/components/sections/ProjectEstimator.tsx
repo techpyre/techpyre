@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Button from "@/components/ui/Button";
+import { ArrowRightIcon } from "@/components/ui/Icons";
 
 /**
  * =====================================================================
@@ -270,7 +271,10 @@ export default function ProjectEstimator() {
                   variant="primary"
                   className="w-full text-center text-xs py-3 justify-center"
                 >
-                  Trasferisci Configurazione al Modulo →
+                  <span className="inline-flex items-center gap-1.5 whitespace-nowrap">
+                    Trasferisci Configurazione al Modulo
+                    <ArrowRightIcon className="w-4 h-4 shrink-0" />
+                  </span>
                 </Button>
                 <div className="text-[10px] text-center text-[#5A6270] pt-1.5 font-sans">
                   Compila i dati nel modulo di contatto in calce

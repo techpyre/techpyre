@@ -4,6 +4,7 @@ import React from "react";
 import { siteContent } from "@/config/siteContent";
 import AnimatedLine from "@/components/ui/AnimatedLine";
 import TechPyreLogo from "@/components/ui/TechPyreLogo";
+import { ArrowRightIcon, WhatsAppIcon } from "@/components/ui/Icons";
 
 /**
  * =====================================================================
@@ -45,14 +46,26 @@ export default function Footer() {
                 <ul className="space-y-2 font-sans text-xs">
                   {col.items.map((link, i) => (
                     <li key={i}>
-                      <a
-                        href={link.href}
-                        target={link.isExternal ? "_blank" : undefined}
-                        rel={link.isExternal ? "noreferrer" : undefined}
-                        className="text-[#A4B3C6] hover:text-[#C5A059] transition-colors block py-0.5"
-                      >
-                        {link.label}
-                      </a>
+                      {link.href.includes("wa.me") ? (
+                        <a
+                          href={link.href}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="inline-flex items-center gap-1.5 text-emerald-400 hover:text-emerald-300 font-semibold transition-colors py-0.5"
+                        >
+                          <WhatsAppIcon className="w-3.5 h-3.5 text-[#25D366] shrink-0" />
+                          <span>{link.label}</span>
+                        </a>
+                      ) : (
+                        <a
+                          href={link.href}
+                          target={link.isExternal ? "_blank" : undefined}
+                          rel={link.isExternal ? "noreferrer" : undefined}
+                          className="text-[#A4B3C6] hover:text-[#C5A059] transition-colors block py-0.5"
+                        >
+                          {link.label}
+                        </a>
+                      )}
                     </li>
                   ))}
                 </ul>
@@ -72,9 +85,10 @@ export default function Footer() {
             <span className="hidden md:inline">•</span>
             <a
               href="#contatto"
-              className="text-[#C5A059] hover:text-white font-bold transition-colors"
+              className="text-[#C5A059] hover:text-white font-bold transition-colors inline-flex items-center gap-1.5 whitespace-nowrap"
             >
-              Parla con {brand.founder} →
+              <span>Parla con {brand.founder}</span>
+              <ArrowRightIcon className="w-3.5 h-3.5 shrink-0" />
             </a>
           </div>
         </div>

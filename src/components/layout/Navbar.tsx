@@ -5,15 +5,16 @@ import { motion, AnimatePresence, useScroll } from "framer-motion";
 import { siteContent } from "@/config/siteContent";
 import Button from "@/components/ui/Button";
 import TechPyreLogo from "@/components/ui/TechPyreLogo";
+import { ArrowRightIcon, CalendarIcon } from "@/components/ui/Icons";
 
 /**
  * =====================================================================
  * COMPONENTE NAVBAR ISTITUZIONALE
- * - SU MOBILE: Barra volante indipendente (Floating Island) staccata dai bordi
- * - SU DESKTOP: Intestazione classica a piena larghezza
- * - ANIMAZIONE FLUIDA PIÙ LUNGA: durata estesa a 650ms con curva armonica
- *   cubic-bezier(0.22, 1, 0.36, 1) sia per la scomparsa che per la ricomparsa
- * - CTA CON BORDO SBRILLUCCICOSO: fascio di luce dorata continuo lungo il perimetro
+ * - SU MOBILE: Isola volante compatta (solo Logo + Menu), con CTA spostata
+ *   in basso a destra in un Floating Action Button (FAB) ergonomico e tattile
+ * - SU DESKTOP: Intestazione classica a piena larghezza con CTA integrata
+ * - ANIMAZIONE FLUIDA (650ms) con curva armonica
+ * - FRECCE SVG: Nessun carattere unicode instabile
  * =====================================================================
  */
 export default function Navbar() {
@@ -100,9 +101,8 @@ export default function Navbar() {
     <>
       {/* 
         HEADER CONTAINER:
-        - Su Mobile: Barra volante staccata dai bordi, rounded-sm, shadow-md
-        - Su Desktop: Barra classica a piena larghezza
-        - Animazione calibrata a 650ms per massima fluidità e peso visivo
+        - Su Mobile: Barra volante essenziale (Logo + Hamburger)
+        - Su Desktop: Barra classica a piena larghezza con CTA inclusa
       */}
       <header
         className={`fixed z-50 bg-[#F8F7F4] border border-[#E8E2D5] transition-all duration-[650ms] ease-[cubic-bezier(0.22,1,0.36,1)] 
@@ -147,19 +147,22 @@ export default function Navbar() {
             </a>
           </nav>
 
-          {/* CTA con Bordo Sbrilluccicoso + Hamburger */}
-          <div className="flex items-center gap-2 sm:gap-3">
-            <Button
-              href={navigation.cta.href}
-              variant="primary"
-              withShimmer={true}
-              className="text-[11px] sm:text-xs px-3 sm:px-5 py-2 sm:py-2.5 font-bold whitespace-nowrap"
-            >
-              <span className="sm:hidden">Incontro 30m</span>
-              <span className="hidden sm:inline">{navigation.cta.label}</span>
-            </Button>
+          {/* CTA Desktop & Hamburger Mobile */}
+          <div className="flex items-center gap-3">
+            {/* CTA Desktop (Solo da 1024px in su) */}
+            <div className="hidden lg:block">
+              <Button
+                href={navigation.cta.href}
+                variant="primary"
+                withShimmer={true}
+                className="text-xs px-5 py-2.5 font-bold"
+              >
+                <span>{navigation.cta.label}</span>
+                <ArrowRightIcon className="w-3.5 h-3.5" />
+              </Button>
+            </div>
 
-            {/* Pulsante Hamburger Touch-Friendly */}
+            {/* Pulsante Hamburger Mobile Touch-Friendly */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="lg:hidden w-10 h-10 flex items-center justify-center text-[#0B1E36] hover:text-[#B8860B] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#B8860B] rounded-xs"
@@ -194,6 +197,34 @@ export default function Navbar() {
         />
       </header>
 
+      {/* 
+        =====================================================================
+        FLOATING ACTION BUTTON (SOLO SU MOBILE) IN BASSO A DESTRA
+        - Spostato dalla navbar all'angolo inferiore destro per massima ergonomia del pollice
+        - Bordo brillante rotante (Border Beam oro/diamante) per renderlo irresistibile al tocco
+        - Sempre accessibile durante lo scorrimento
+        =====================================================================
+      */}
+      <div className="fixed bottom-5 right-4 z-40 lg:hidden">
+        <a
+          href="#contatto"
+          className="relative inline-flex p-[1.5px] rounded-sm overflow-hidden group cursor-pointer shadow-xl shadow-black/30 active:scale-95 transition-transform"
+        >
+          {/* Bordo sbrilluccicoso rotante */}
+          <span
+            aria-hidden="true"
+            className="absolute inset-[-150%] bg-[conic-gradient(from_0deg_at_50%_50%,transparent_0deg,transparent_250deg,#C5A059_300deg,#FFFFFF_340deg,#B8860B_360deg)] animate-[spin_3s_linear_infinite] pointer-events-none"
+          />
+
+          {/* Corpo del FAB mobile */}
+          <div className="relative z-10 bg-[#0A192F] text-white px-4 py-3 rounded-[1px] flex items-center gap-2.5 font-sans font-bold text-xs tracking-wide">
+            <CalendarIcon className="w-4 h-4 text-[#C5A059] shrink-0" />
+            <span className="whitespace-nowrap">Incontro 30m</span>
+            <ArrowRightIcon className="w-3.5 h-3.5 text-[#C5A059] shrink-0 group-hover:translate-x-0.5 transition-transform" />
+          </div>
+        </a>
+      </div>
+
       {/* Drawer di Navigazione Mobile a Schermo Intero */}
       <AnimatePresence>
         {mobileMenuOpen && (
@@ -214,19 +245,19 @@ export default function Navbar() {
                     key={link.label}
                     href={link.href}
                     onClick={() => setMobileMenuOpen(false)}
-                    className="flex items-center justify-between py-2 text-lg font-serif text-[#0B1E36] hover:text-[#B8860B] transition-colors border-b border-[#E8E2D5]/40"
+                    className="flex items-center justify-between py-2.5 text-lg font-serif text-[#0B1E36] hover:text-[#B8860B] transition-colors border-b border-[#E8E2D5]/40"
                   >
                     <span>{link.label}</span>
-                    <span className="text-xs font-sans text-[#5A6270]">→</span>
+                    <ArrowRightIcon className="w-4 h-4 text-[#5A6270]" />
                   </a>
                 ))}
                 <a
                   href="#simulatore"
                   onClick={() => setMobileMenuOpen(false)}
-                  className="flex items-center justify-between py-2 text-lg font-serif text-[#B8860B] font-semibold border-b border-[#E8E2D5]/40"
+                  className="flex items-center justify-between py-2.5 text-lg font-serif text-[#B8860B] font-semibold border-b border-[#E8E2D5]/40"
                 >
                   <span>Simulatore Preventivo B2B</span>
-                  <span className="text-xs font-sans text-[#B8860B]">→</span>
+                  <ArrowRightIcon className="w-4 h-4 text-[#B8860B]" />
                 </a>
               </nav>
             </div>
@@ -237,9 +268,10 @@ export default function Navbar() {
                 onClick={() => setMobileMenuOpen(false)}
                 variant="primary"
                 withShimmer={true}
-                className="w-full text-center"
+                className="w-full text-center py-3.5"
               >
-                {navigation.cta.label}
+                <span>{navigation.cta.label}</span>
+                <ArrowRightIcon className="w-3.5 h-3.5" />
               </Button>
               <div className="text-[10px] font-sans text-center text-[#5A6270]">
                 {brand.location}

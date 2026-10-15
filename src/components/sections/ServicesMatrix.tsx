@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { siteContent } from "@/config/siteContent";
 import AnimatedLine from "@/components/ui/AnimatedLine";
 import { ServiceItem } from "@/types/content";
+import { ArrowRightIcon, ArrowDownIcon } from "@/components/ui/Icons";
 
 /**
  * =====================================================================
@@ -133,13 +134,13 @@ export default function ServicesMatrix() {
                       <motion.div
                         animate={{ rotate: isExpanded ? 180 : 0 }}
                         transition={{ duration: 0.25 }}
-                        className={`w-7 h-7 rounded-sm border flex items-center justify-center text-xs font-mono ${
+                        className={`w-7 h-7 rounded-sm border flex items-center justify-center font-mono ${
                           isExpanded
                             ? "bg-[#0B1E36] text-white border-[#0B1E36]"
                             : "bg-[#F8F7F4] text-[#0B1E36] border-[#E8E2D5]"
                         }`}
                       >
-                        ↓
+                        <ArrowDownIcon className="w-3.5 h-3.5" />
                       </motion.div>
                     </div>
                   </div>
@@ -216,7 +217,7 @@ export default function ServicesMatrix() {
                               className="w-full py-3 px-4 rounded-[1px] bg-[#0B1E36] hover:bg-[#003366] text-white font-sans text-xs sm:text-sm font-semibold tracking-wide transition-all shadow-xs flex items-center justify-between group/btn cursor-pointer min-h-[44px] relative z-10"
                             >
                               <span>{item.ctaText}</span>
-                              <span className="transition-transform group-hover/btn:translate-x-1">→</span>
+                              <ArrowRightIcon className="w-4 h-4 transition-transform group-hover/btn:translate-x-1 shrink-0" />
                             </motion.button>
                           </div>
                         </div>
