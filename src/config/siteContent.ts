@@ -204,7 +204,7 @@ export const siteContent: SiteContent = {
         ],
         ctaText: "Richiedi un'Architettura B2B Simile",
         prefillService: "Web Application & Ecosistema B2B Custom",
-        demoUrl: "https://techpyre-b2b-portal-reference.vercel.app",
+        demoUrl: "https://b2b-demo.techpyre.eu",
         repoUrl: "https://github.com/techpyre/techpyre-b2b-portal-reference",
       },
       {
@@ -233,7 +233,7 @@ export const siteContent: SiteContent = {
         ],
         ctaText: "Valuta la Migrazione Headless",
         prefillService: "Landing Page ad Alta Conversione",
-        demoUrl: "https://techpyre-headless-leadgen-reference.vercel.app",
+        demoUrl: "https://headless-demo.techpyre.eu",
         repoUrl: "https://github.com/techpyre/techpyre-headless-leadgen-reference",
       },
     ],
