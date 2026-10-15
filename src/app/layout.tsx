@@ -55,21 +55,30 @@ export const viewport: Viewport = {
  * =====================================================================
  */
 export const metadata: Metadata = {
-  title: `${siteContent.brand.name} — Studio di Ingegneria del Software B2B`,
+  title: "TechPYRE",
   description: siteContent.hero.subheadline,
   authors: [{ name: siteContent.brand.founder }],
   creator: siteContent.brand.name,
-  metadataBase: new URL("https://techpyre.com"),
+  metadataBase: new URL("https://www.techpyre.eu"),
+  icons: {
+    icon: [
+      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: "/favicon.ico", sizes: "any" },
+    ],
+    apple: [
+      { url: "/apple-icon.png", sizes: "180x180", type: "image/png" },
+    ],
+  },
   openGraph: {
-    title: `${siteContent.brand.name} — Ingegneria Software & Strategia Digitale`,
+    title: "TechPYRE",
     description: siteContent.hero.subheadline,
-    siteName: siteContent.brand.name,
+    siteName: "TechPYRE",
     locale: "it_IT",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: `${siteContent.brand.name} — Ingegneria Software B2B`,
+    title: "TechPYRE",
     description: siteContent.hero.subheadline,
   },
 };
