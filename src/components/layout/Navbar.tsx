@@ -9,11 +9,10 @@ import TechPyreLogo from "@/components/ui/TechPyreLogo";
 /**
  * =====================================================================
  * COMPONENTE NAVBAR (NAVIGAZIONE PRINCIPALE ISTITUZIONALE)
- * - Scomparsa automatica allo scroll verso il basso per massima leggibilità
- * - Ricomparsa immediata allo scroll verso l'alto
- * - Sfondo 100% opaco (#F8F7F4): nessun effetto semitrasparente che lasci
- *   trasparire i testi sottostanti
- * - Linea dorata di progressione lettura integrata
+ * - Supporto safe-area iOS completo: zero spazio vuoto tra navbar e barra di stato
+ * - Schermatura superiore antiriflesso (estensione continua dello sfondo #F8F7F4)
+ * - Transizione fluida e priva di scatti (soglia di scorrimento con isteresi)
+ * - Nessun ridimensionamento dell'altezza durante lo scroll (altezza costante)
  * - CTA "Incontro 30m" sempre visibile anche su mobile senza aprire il menu
  * =====================================================================
  */
@@ -25,32 +24,55 @@ export default function Navbar() {
   const { brand, navigation } = siteContent;
   const { scrollYProgress } = useScroll();
 
-  // Rileva direzione dello scroll per nascondere/mostrare la barra in modo intelligente
+  // Gestione avanzata dello scroll con buffer/isteresi per eliminare scatti e jitter
   useEffect(() => {
     let lastScrollY = window.scrollY;
+    let ticking = false;
 
-    const handleScroll = () => {
+    const updateNavbar = () => {
       const currentScrollY = window.scrollY;
-      setScrolled(currentScrollY > 20);
 
-      // Se il menu mobile è aperto, mantieni sempre visibile l'intestazione
+      // Ombreggiatura sottile senza variare l'altezza o il padding
+      setScrolled(currentScrollY > 15);
+
+      // Se il menu mobile è aperto, mantieni sempre visibile
       if (mobileMenuOpen) {
         setIsVisible(true);
+        ticking = false;
         return;
       }
 
-      // Se siamo vicini alla cima della pagina, mostra sempre
-      if (currentScrollY <= 30) {
+      // Se siamo vicini alla cima della pagina, sempre visibile
+      if (currentScrollY <= 45) {
         setIsVisible(true);
-      } else if (currentScrollY > lastScrollY && currentScrollY > 60) {
-        // Scroll verso il basso: scompare per dare respiro al contenuto
-        setIsVisible(false);
-      } else if (currentScrollY < lastScrollY) {
-        // Scroll verso l'alto: ricompare immediatamente
-        setIsVisible(true);
+        lastScrollY = currentScrollY;
+        ticking = false;
+        return;
       }
 
-      lastScrollY = currentScrollY <= 0 ? 0 : currentScrollY;
+      // Calcola lo scostamento
+      const delta = currentScrollY - lastScrollY;
+
+      // Richiede uno scorrimento intenzionale di almeno 16px per evitare scatti
+      if (Math.abs(delta) >= 16) {
+        if (delta > 0 && currentScrollY > 80) {
+          // Scroll verso il basso deliberato: nascondi con animazione fluida
+          setIsVisible(false);
+        } else if (delta < 0) {
+          // Scroll verso l'alto deliberato: mostra con grazia
+          setIsVisible(true);
+        }
+        lastScrollY = currentScrollY;
+      }
+
+      ticking = false;
+    };
+
+    const onScroll = () => {
+      if (!ticking) {
+        window.requestAnimationFrame(updateNavbar);
+        ticking = true;
+      }
     };
 
     const handleResize = () => {
@@ -59,11 +81,11 @@ export default function Navbar() {
       }
     };
 
-    window.addEventListener("scroll", handleScroll, { passive: true });
+    window.addEventListener("scroll", onScroll, { passive: true });
     window.addEventListener("resize", handleResize, { passive: true });
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("scroll", onScroll);
       window.removeEventListener("resize", handleResize);
     };
   }, [mobileMenuOpen]);
@@ -82,12 +104,27 @@ export default function Navbar() {
 
   return (
     <>
-      <header
-        className={`fixed top-0 left-0 right-0 z-50 bg-[#F8F7F4] border-b border-[#E8E2D5] transition-transform duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] ${
-          isVisible ? "translate-y-0" : "-translate-y-full"
-        } ${scrolled ? "py-2.5 shadow-sm" : "py-3.5 sm:py-4"}`}
+      <motion.header
+        initial={false}
+        animate={{
+          y: isVisible ? 0 : "-100%",
+        }}
+        transition={{
+          duration: 0.35,
+          ease: [0.22, 1, 0.36, 1],
+        }}
+        className={`fixed top-0 left-0 right-0 z-50 bg-[#F8F7F4] border-b border-[#E8E2D5] pt-[env(safe-area-inset-top,0px)] transition-shadow duration-300 ${
+          scrolled ? "shadow-sm" : ""
+        }`}
       >
-        <div className="max-w-7xl mx-auto px-5 sm:px-6 md:px-12 flex items-center justify-between">
+        {/* Schermatura superiore continua: estende lo sfondo solido di 380px sopra la navbar
+            impedendo qualunque fessura visibile con la status bar in caso di rimbalzo o scroll iOS */}
+        <div
+          aria-hidden="true"
+          className="absolute bottom-full left-0 right-0 h-96 bg-[#F8F7F4] pointer-events-none"
+        />
+
+        <div className="max-w-7xl mx-auto px-5 sm:px-6 md:px-12 py-3 sm:py-3.5 flex items-center justify-between">
           {/* Logo Tipografico Ufficiale */}
           <a
             href="#"
@@ -161,7 +198,7 @@ export default function Navbar() {
           style={{ scaleX: scrollYProgress, transformOrigin: "0%" }}
           className="absolute bottom-0 left-0 right-0 h-[2px] bg-[#B8860B] pointer-events-none"
         />
-      </header>
+      </motion.header>
 
       {/* Drawer di Navigazione Mobile a Schermo Intero */}
       <AnimatePresence>
@@ -171,9 +208,9 @@ export default function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -8 }}
             transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
-            className="fixed inset-0 z-40 bg-[#F8F7F4] pt-20 px-6 pb-8 flex flex-col justify-between lg:hidden border-b border-[#E8E2D5] overflow-y-auto"
+            className="fixed inset-0 z-40 bg-[#F8F7F4] pt-[calc(env(safe-area-inset-top,0px)+4.75rem)] px-6 pb-8 flex flex-col justify-between lg:hidden border-b border-[#E8E2D5] overflow-y-auto"
           >
-            <div className="space-y-5 pt-3">
+            <div className="space-y-5 pt-2">
               <div className="text-[10px] font-sans uppercase font-bold tracking-widest text-[#B8860B] border-b border-[#E8E2D5] pb-2.5">
                 INDICE DI NAVIGAZIONE
               </div>
