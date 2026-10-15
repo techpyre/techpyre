@@ -191,28 +191,30 @@ export default function ContactBox() {
           </p>
         </motion.div>
 
-        {/* Griglia Contatto: Canali & Modulo */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-start">
+        {/* Griglia Contatto: Canali & Modulo perfettamente allineati su desktop */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-stretch">
           {/* Canali Diretti (Colonna Sinistra) */}
-          <div className="lg:col-span-5 space-y-4">
-            <motion.div
-              initial={{ opacity: 0, y: 16 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-              className="p-5 sm:p-6 rounded-sm bg-white border border-[#E8E2D5] shadow-xs space-y-4"
-            >
-              <div className="space-y-0.5">
-                <div className="text-[10px] font-bold uppercase tracking-widest text-[#B8860B]">
-                  REPERIBILITÀ DIRETTA
-                </div>
-                <h3 className="font-serif text-lg sm:text-xl text-[#0B1E36] font-semibold">
-                  Il contatto con le persone
-                </h3>
-                <p className="text-xs text-[#5A6270]">Nessun centralino, risponde Riccardo Granza</p>
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            className="lg:col-span-5 bg-white rounded-sm border border-[#E8E2D5] shadow-xs flex flex-col justify-between overflow-hidden h-full"
+          >
+            {/* Header del Box Allineato al Modulo Desktop */}
+            <div className="p-5 sm:p-7 lg:p-8 pb-4 border-b border-[#E8E2D5] space-y-0.5">
+              <div className="text-[10px] font-bold uppercase tracking-widest text-[#B8860B]">
+                REPERIBILITÀ DIRETTA
               </div>
+              <h3 className="font-serif text-xl sm:text-2xl text-[#0B1E36] font-semibold">
+                Il contatto con le persone
+              </h3>
+              <p className="text-xs text-[#5A6270]">Nessun centralino, risponde Riccardo Granza</p>
+            </div>
 
-              <div className="space-y-2.5 divide-y divide-[#E8E2D5] border-y border-[#E8E2D5] pt-1">
+            {/* Contenuto Canali con spaziatura flessibile */}
+            <div className="p-5 sm:p-7 lg:p-8 py-5 flex-1 flex flex-col justify-between space-y-4">
+              <div className="space-y-2.5 divide-y divide-[#E8E2D5]">
                 {contact.channels.map((channel, i) => {
                   const isWhatsApp = channel.href.includes("wa.me");
                   const isGitHub = channel.href.includes("github.com") || channel.label.toLowerCase().includes("github");
@@ -272,7 +274,7 @@ export default function ContactBox() {
                         >
                           <GitHubIcon className="w-4 h-4 text-[#0B1E36] group-hover/gh:text-[#B8860B] transition-colors" />
                           <span>{channel.value}</span>
-                          <ArrowUpRightIcon className="w-3.5 h-3.5 text-[#5A6270] group-hover/gh:text-[#B8860B] group-hover/gh:translate-x-0.5 group-hover/gh:-translate-y-0.5 transition-transform" />
+                          <ArrowUpRightIcon className="w-3.5 h-3.5 text-[#5A6270] group-hover/gh:text-[#B8860B] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                         </a>
                         <div className="text-xs text-[#5A6270] font-sans">
                           {channel.subtext}
@@ -308,14 +310,16 @@ export default function ContactBox() {
                 })}
               </div>
 
-              <div className="p-3 rounded-sm bg-[#0B1E36]/5 border border-[#0B1E36]/10 flex items-center gap-2.5 text-xs text-[#0B1E36]">
-                <span className="text-[#B8860B] font-bold shrink-0">▪</span>
-                <span>
-                  <strong>Incontro in presenza?</strong> Disponibile per incontri presso la sede aziendale.
-                </span>
+              <div className="pt-3 border-t border-[#E8E2D5] mt-auto">
+                <div className="p-3 rounded-sm bg-[#0B1E36]/5 border border-[#0B1E36]/10 flex items-center gap-2.5 text-xs text-[#0B1E36]">
+                  <span className="text-[#B8860B] font-bold shrink-0">▪</span>
+                  <span>
+                    <strong>Incontro in presenza?</strong> Disponibile per incontri presso la sede aziendale.
+                  </span>
+                </div>
               </div>
-            </motion.div>
-          </div>
+            </div>
+          </motion.div>
 
           {/* Modulo di Contatto Email Unificato & Omogeneo */}
           <motion.div
@@ -323,7 +327,7 @@ export default function ContactBox() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.15 }}
-            className="lg:col-span-7 bg-white rounded-sm border border-[#E8E2D5] shadow-xs overflow-hidden transition-all duration-300"
+            className="lg:col-span-7 bg-white rounded-sm border border-[#E8E2D5] shadow-xs overflow-hidden h-full flex flex-col justify-between transition-all duration-300"
           >
             {/* Header del Modulo su Mobile: Singola riga interattiva perfettamente integrata nella scheda */}
             <button
@@ -355,24 +359,25 @@ export default function ContactBox() {
             </button>
 
             {/* Header Istituzionale del Modulo su Desktop */}
-            <div className="hidden lg:block p-6 sm:p-7 md:p-8 pb-4 border-b border-[#E8E2D5]">
+            <div className="hidden lg:block p-5 sm:p-7 lg:p-8 pb-4 border-b border-[#E8E2D5] space-y-0.5">
               <div className="text-[10px] font-bold uppercase tracking-widest text-[#B8860B]">
                 MODULO DI RICHIESTA DIRETTA
               </div>
-              <h3 className="font-serif text-xl sm:text-2xl text-[#0B1E36] font-semibold mt-1">
+              <h3 className="font-serif text-xl sm:text-2xl text-[#0B1E36] font-semibold">
                 Scrivi allo Studio
               </h3>
-              <div className="text-xs text-[#5A6270] mt-0.5">
+              <p className="text-xs text-[#5A6270]">
                 Riscontro garantito entro 2 ore direttamente da Riccardo Granza.
-              </div>
+              </p>
             </div>
 
             {/* Corpo del Modulo (visibile sempre su desktop, espandibile al tocco su mobile) */}
             <div
-              className={`p-5 sm:p-7 md:p-8 ${
-                isMobileFormOpen ? "block border-t border-[#E8E2D5] lg:border-t-0" : "hidden lg:block"
+              className={`p-5 sm:p-7 lg:p-8 flex-1 flex flex-col justify-between ${
+                isMobileFormOpen ? "block border-t border-[#E8E2D5] lg:border-t-0" : "hidden lg:flex"
               } lg:pt-5`}
             >
+
               <AnimatePresence mode="wait">
                 {status === "success" ? (
                   <motion.div
