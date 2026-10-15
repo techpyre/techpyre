@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: var(--font-serif), "EB Garamond", Garamond, Georgia, serif;
+  --font-sans: var(--font-sans), "Inter", system-ui, -apple-system, sans-serif;
+  --font-mono: var(--font-mono), "JetBrains Mono", ui-monospace, Menlo, Monaco, monospace;
+
+  --color-alabaster: #F8F7F4;
+  --color-alabaster-card: #FFFFFF;
+  --color-alabaster-border: #E8E2D5;
+  --color-mediolanum-blue: #0A192F;
+  --color-mediolanum-blue-deep: #0D1F33;
+  --color-mediolanum-blue-intense: #003366;
+  --color-bronze-gold: #B8860B;
+  --color-bronze-gold-accent: #C5A059;
+  --color-ink-anthracite: #14181F;
+  --color-slate-warm: #5A6270;
+}
+
+@layer base {
+  :root {
+    --bg-primary: #F8F7F4;
+    --bg-secondary: #0A192F;
+    --text-primary: #14181F;
+    --text-muted: #5A6270;
+    --border-subtle: #E8E2D5;
+    --accent-blue: #003366;
+    --accent-gold: #C5A059;
+  }
+
+  html {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    scroll-behavior: smooth;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    overflow-x: hidden;
+    min-height: 100vh;
+  }
+
+  /* Trama cartacea-istituzionale tattile impercettibile */
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 999;
+    opacity: 0.018;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.7' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  }
+
+  ::selection {
+    background-color: rgba(197, 160, 89, 0.25);
+    color: #0A192F;
+  }
+}
