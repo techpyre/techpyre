@@ -1,100 +1,101 @@
 import Link from "next/link";
-import { siteContent } from "@/config/siteContent";
 import { ArrowRightIcon } from "@/components/ui/Icons";
 
 /**
  * =====================================================================
- * ANTEPRIME HOME (SERVIZI · PROGETTI · STUDIO)
- * Solo un accenno: titolo, una frase e un link verso la pagina dedicata.
- * Nessun box, nessun badge: filetti sottili e molto respiro.
- * I prezzi sono gli stessi del listino, solo in forma compatta.
+ * ANTEPRIME HOME (SOLO DESKTOP: PROGETTI & STUDIO)
+ * - Su mobile è nascosto (hidden md:block) perché l'utente ha i bottoni
+ *   volanti dedicati in basso a sinistra.
+ * - Su desktop offre due approfondimenti concreti e con scopo, collegando
+ *   direttamente i Casi Studio e lo Studio/Fondatore.
  * =====================================================================
  */
-
-// Etichette compatte del listino (stessi importi di siteContent.services)
-const compactPricing: Record<string, { label: string; price: string }> = {
-  "audit-consulenza": { label: "Audit & consulenza", price: "30 min gratis, poi 70€/h" },
-  "landing-page": { label: "Landing page", price: "900€" },
-  "sito-corporate": { label: "Sito corporate", price: "2.000€ – 4.000€" },
-  ecosistema: { label: "Web app & ecosistema B2B", price: "5.000€ – 15.000€" },
-};
-
-function DiscoverLink({ href, children }: { href: string; children: React.ReactNode }) {
-  return (
-    <Link
-      href={href}
-      className="inline-flex items-center gap-1.5 text-sm font-sans font-semibold text-[#0B1E36] hover:text-[#B8860B] transition-colors group"
-    >
-      <span>{children}</span>
-      <ArrowRightIcon className="w-3.5 h-3.5 shrink-0 transition-transform group-hover:translate-x-0.5" />
-    </Link>
-  );
-}
-
 export default function HomePreviews() {
-  const { services, brand } = siteContent;
-
-  const previews = [
-    {
-      key: "servizi",
-      title: "Servizi",
-      text: "Quattro soluzioni chiare, con prezzo certo prima di iniziare.",
-      href: "/servizi",
-      cta: "Scopri i servizi",
-    },
-    {
-      key: "progetti",
-      title: "Progetti",
-      text: "Architetture reference con demo live e codice pubblico.",
-      href: "/progetti",
-      cta: "Scopri i progetti",
-    },
-    {
-      key: "studio",
-      title: "Studio",
-      text: `${brand.founder}, 18 anni, fondatore e capo dello studio.`,
-      href: "/studio",
-      cta: "Scopri lo studio",
-    },
-  ];
-
   return (
-    <section aria-label="In breve" className="py-14 sm:py-20 md:py-24 bg-[#F8F7F4]">
-      <div className="max-w-7xl mx-auto px-5 sm:px-6 md:px-12">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-y-10 lg:gap-x-14">
-          {previews.map((p) => (
-            <div key={p.key} className="pt-6 border-t border-[#E8E2D5] space-y-3">
-              <h2 className="font-serif text-2xl sm:text-[1.75rem] text-[#14181F] font-normal tracking-tight">
-                {p.title}
+    <section aria-label="Approfondimenti" className="hidden md:block py-16 lg:py-20 bg-[#F8F7F4] border-t border-[#E8E2D5]">
+      <div className="max-w-7xl mx-auto px-6 md:px-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14">
+          {/* Card Progetti Reference */}
+          <div className="bg-white p-7 lg:p-8 rounded-sm border border-[#E8E2D5] shadow-2xs flex flex-col justify-between space-y-5">
+            <div className="space-y-3">
+              <div className="flex items-center justify-between">
+                <span className="text-[10px] font-mono font-bold uppercase tracking-wider text-[#B8860B] bg-[#B8860B]/10 px-2 py-0.5 rounded-xs">
+                  INGEGNERIA VERIFICABILE
+                </span>
+                <span className="text-xs font-mono text-[#5A6270]">2 Casi Studio Live</span>
+              </div>
+
+              <h2 className="font-serif text-2xl lg:text-[1.75rem] text-[#0B1E36] font-semibold tracking-tight">
+                Architetture Reference & Casi Studio
               </h2>
-              <p className="text-sm sm:text-base text-[#5A6270] leading-relaxed font-sans max-w-sm">
-                {p.text}
+
+              <p className="text-sm text-[#5A6270] leading-relaxed font-sans">
+                Due ecosistemi B2B completi, pronti per essere testati senza autenticazione bloccante e con codice sorgente aperto su GitHub.
               </p>
 
-              {p.key === "servizi" && (
-                <ul className="pt-1 space-y-1.5 text-sm font-sans max-w-sm">
-                  {services.items.map((item) => {
-                    const compact = compactPricing[item.id];
-                    return (
-                      <li key={item.id} className="flex items-baseline justify-between gap-4">
-                        <span className="text-[#5A6270]">{compact?.label ?? item.name}</span>
-                        <span className="text-[#0B1E36] font-medium whitespace-nowrap">
-                          {compact?.price ?? item.price}
-                        </span>
-                      </li>
-                    );
-                  })}
-                </ul>
-              )}
-
-              <div className="pt-2 flex flex-wrap gap-x-6 gap-y-2">
-                <DiscoverLink href={p.href}>{p.cta}</DiscoverLink>
-                {p.key === "servizi" && (
-                  <DiscoverLink href="/servizi#simulatore">Stima il progetto</DiscoverLink>
-                )}
+              <div className="pt-2 space-y-2 border-t border-[#E8E2D5]/70 text-xs text-[#5A6270] font-sans">
+                <div className="flex items-start gap-2">
+                  <span className="text-[#B8860B] font-bold mt-0.5">▪</span>
+                  <span><strong>Valkiria Fluidodinamica:</strong> Portale ordini con RBAC, listini a scaglioni per P.IVA e webhook Stripe.</span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <span className="text-[#B8860B] font-bold mt-0.5">▪</span>
+                  <span><strong>Kinetix Robotics:</strong> Infrastruttura headless con coda failover dei lead (TTFB &lt; 50ms, +68% efficienza).</span>
+                </div>
               </div>
             </div>
-          ))}
+
+            <div className="pt-3 border-t border-[#E8E2D5]/80 flex items-center justify-between">
+              <Link
+                href="/progetti"
+                className="inline-flex items-center gap-2 text-xs font-sans font-semibold text-[#0B1E36] hover:text-[#B8860B] transition-colors group"
+              >
+                <span>Esplora i casi studio e il codice GitHub</span>
+                <ArrowRightIcon className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5" />
+              </Link>
+            </div>
+          </div>
+
+          {/* Card Studio & Metodo */}
+          <div className="bg-white p-7 lg:p-8 rounded-sm border border-[#E8E2D5] shadow-2xs flex flex-col justify-between space-y-5">
+            <div className="space-y-3">
+              <div className="flex items-center justify-between">
+                <span className="text-[10px] font-mono font-bold uppercase tracking-wider text-[#0B1E36] bg-[#0B1E36]/5 px-2 py-0.5 rounded-xs">
+                  DIREZIONE & LEADERSHIP
+                </span>
+                <span className="text-xs font-mono text-[#5A6270]">18 Anni · Head of Studio</span>
+              </div>
+
+              <h2 className="font-serif text-2xl lg:text-[1.75rem] text-[#0B1E36] font-semibold tracking-tight">
+                Lo Studio & Continuità Operativa
+              </h2>
+
+              <p className="text-sm text-[#5A6270] leading-relaxed font-sans">
+                Guidato da Riccardo Granza con determinazione feroce e rigore esecutivo. Zero debito tecnico legacy, codice Next.js/TS nativo e processi che garantiscono la piena autonomia dell&apos;azienda cliente.
+              </p>
+
+              <div className="pt-2 space-y-2 border-t border-[#E8E2D5]/70 text-xs text-[#5A6270] font-sans">
+                <div className="flex items-start gap-2">
+                  <span className="text-[#B8860B] font-bold mt-0.5">▪</span>
+                  <span><strong>Nessun intermediario:</strong> Interlocutore diretto al vertice dello studio via telefono e WhatsApp.</span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <span className="text-[#B8860B] font-bold mt-0.5">▪</span>
+                  <span><strong>Zero lock-in:</strong> Codice standardizzato, repository e cloud 100% intestati all&apos;azienda committente.</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="pt-3 border-t border-[#E8E2D5]/80 flex items-center justify-between">
+              <Link
+                href="/studio"
+                className="inline-flex items-center gap-2 text-xs font-sans font-semibold text-[#0B1E36] hover:text-[#B8860B] transition-colors group"
+              >
+                <span>Leggi il manifesto del fondatore</span>
+                <ArrowRightIcon className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5" />
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </section>

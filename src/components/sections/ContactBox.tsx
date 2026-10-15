@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { siteContent } from "@/config/siteContent";
 import { ContactPayload, ContactApiResponse } from "@/types/content";
-import { ArrowRightIcon, WhatsAppIcon } from "@/components/ui/Icons";
+import { ArrowRightIcon, WhatsAppIcon, MailIcon } from "@/components/ui/Icons";
 import PrivacyModal from "@/components/ui/PrivacyModal";
 import { consumeContactPrefill } from "@/lib/contactPrefill";
 
@@ -17,6 +17,7 @@ import { consumeContactPrefill } from "@/lib/contactPrefill";
  * - Input con dimensione minima di 16px (text-base sm:text-sm) per impedire
  *   lo zoom automatico sgradevole su iOS Safari
  * - Consenso informato GDPR con modale informativa privacy integrata
+ * - Form chiuso di default per ridurre il carico visivo, espandibile su richiesta
  * =====================================================================
  */
 export default function ContactBox() {
@@ -35,11 +36,13 @@ export default function ContactBox() {
   const [validationErrors, setValidationErrors] = useState<Record<string, string>>({});
   const [gdprAccepted, setGdprAccepted] = useState(false);
   const [isPrivacyModalOpen, setIsPrivacyModalOpen] = useState(false);
+  const [isFormOpen, setIsFormOpen] = useState(false);
 
   useEffect(() => {
     const handleSelectService = (event: CustomEvent<{ serviceTitle: string }>) => {
       if (event.detail && event.detail.serviceTitle) {
         setFormData((prev) => ({ ...prev, service: event.detail.serviceTitle }));
+        setIsFormOpen(true);
       }
     };
 
@@ -52,6 +55,7 @@ export default function ContactBox() {
           service: event.detail.serviceTitle,
           message: event.detail.prefilledMessage,
         }));
+        setIsFormOpen(true);
       }
     };
 
@@ -81,6 +85,7 @@ export default function ContactBox() {
       service: prefill.serviceTitle,
       message: prefill.prefilledMessage ?? prev.message,
     }));
+    setIsFormOpen(true);
     const timer = window.setTimeout(() => {
       document.getElementById("contatto")?.scrollIntoView({ behavior: "smooth" });
     }, 150);
@@ -316,6 +321,39 @@ export default function ContactBox() {
                     </button>
                   </div>
                 </motion.div>
+              ) : !isFormOpen ? (
+                <motion.div
+                  key="closed"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.2 }}
+                  className="space-y-4 py-2"
+                >
+                  <div className="space-y-1">
+                    <div className="text-[10px] font-bold uppercase tracking-widest text-[#B8860B]">
+                      MODULO DI RICHIESTA EMAIL
+                    </div>
+                    <h3 className="font-serif text-xl sm:text-2xl text-[#0B1E36] font-semibold">
+                      Preferisci inviare specifiche o un capitolato via email?
+                    </h3>
+                    <p className="text-xs sm:text-sm text-[#5A6270] leading-relaxed font-sans">
+                      Se hai requisiti complessi o preferisci formulare una richiesta scritta dettagliata, compila il modulo dedicato per ricevere un riscontro tecnico formale entro 2 ore.
+                    </p>
+                  </div>
+
+                  <div className="pt-2">
+                    <button
+                      type="button"
+                      onClick={() => setIsFormOpen(true)}
+                      className="w-full sm:w-auto py-3 px-5 rounded-sm bg-[#0B1E36] hover:bg-[#002244] active:scale-[0.99] text-white font-sans text-xs font-semibold tracking-wide shadow-xs flex items-center justify-center gap-2.5 transition-all cursor-pointer group"
+                    >
+                      <MailIcon className="w-4 h-4 text-[#C5A059] shrink-0" />
+                      <span>Apri modulo di richiesta email</span>
+                      <ArrowRightIcon className="w-3.5 h-3.5 shrink-0 transition-transform group-hover:translate-x-0.5" />
+                    </button>
+                  </div>
+                </motion.div>
               ) : (
                 <motion.form
                   key="form"
@@ -323,13 +361,22 @@ export default function ContactBox() {
                   noValidate
                   className="space-y-4"
                 >
-                  <div className="space-y-0.5 border-b border-[#E8E2D5] pb-2.5">
-                    <div className="text-[10px] font-bold uppercase tracking-widest text-[#B8860B]">
-                      MODULO DI RICHIESTA DIRETTA
+                  <div className="flex items-center justify-between border-b border-[#E8E2D5] pb-2.5">
+                    <div className="space-y-0.5">
+                      <div className="text-[10px] font-bold uppercase tracking-widest text-[#B8860B]">
+                        MODULO DI RICHIESTA DIRETTA
+                      </div>
+                      <div className="text-xs text-[#5A6270]">
+                        I campi contrassegnati con (*) sono necessari per un riscontro accurato.
+                      </div>
                     </div>
-                    <div className="text-xs text-[#5A6270]">
-                      I campi contrassegnati con (*) sono necessari per un riscontro accurato.
-                    </div>
+                    <button
+                      type="button"
+                      onClick={() => setIsFormOpen(false)}
+                      className="text-xs font-sans text-[#5A6270] hover:text-[#0B1E36] underline cursor-pointer shrink-0 ml-2"
+                    >
+                      Comprimi
+                    </button>
                   </div>
 
                   {status === "error" && (

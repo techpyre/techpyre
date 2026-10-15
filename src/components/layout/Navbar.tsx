@@ -7,7 +7,7 @@ import { motion, AnimatePresence, useScroll } from "framer-motion";
 import { siteContent } from "@/config/siteContent";
 import Button from "@/components/ui/Button";
 import TechPyreLogo from "@/components/ui/TechPyreLogo";
-import { ArrowRightIcon, CalendarIcon } from "@/components/ui/Icons";
+import { ArrowRightIcon, CalendarIcon, ServicesIcon, ProjectsIcon, StudioIcon } from "@/components/ui/Icons";
 
 /**
  * =====================================================================
@@ -209,6 +209,61 @@ export default function Navbar() {
 
       {/* 
         =====================================================================
+        FLOATING QUICK NAV (SOLO SU MOBILE) IN BASSO A SINISTRA
+        - 3 bottoni quadrati compatti per le pagine Servizi, Progetti, Studio
+        - Icone dedicate e nome esplicativo in piccolo sotto
+        - Dritti al punto, ergonomici, non ingombranti
+        =====================================================================
+      */}
+      <nav aria-label="Navigazione rapida pagine" className="fixed bottom-5 left-4 z-40 lg:hidden flex items-center gap-1.5">
+        <Link
+          href="/servizi"
+          aria-label="Vai a Servizi"
+          className={`w-11 h-11 flex flex-col items-center justify-center rounded-sm backdrop-blur-md transition-all shadow-xl shadow-black/25 active:scale-95 ${
+            pathname === "/servizi"
+              ? "bg-[#0A192F] border-2 border-[#C5A059] text-[#C5A059]"
+              : "bg-[#0A192F]/90 border border-white/15 text-white hover:border-[#C5A059]/40"
+          }`}
+        >
+          <ServicesIcon className="w-3.5 h-3.5 text-[#C5A059]" />
+          <span className="text-[8px] font-sans font-semibold text-[#CBD7E3] mt-0.5 leading-none">
+            Servizi
+          </span>
+        </Link>
+
+        <Link
+          href="/progetti"
+          aria-label="Vai a Progetti"
+          className={`w-11 h-11 flex flex-col items-center justify-center rounded-sm backdrop-blur-md transition-all shadow-xl shadow-black/25 active:scale-95 ${
+            pathname === "/progetti"
+              ? "bg-[#0A192F] border-2 border-[#C5A059] text-[#C5A059]"
+              : "bg-[#0A192F]/90 border border-white/15 text-white hover:border-[#C5A059]/40"
+          }`}
+        >
+          <ProjectsIcon className="w-3.5 h-3.5 text-[#C5A059]" />
+          <span className="text-[8px] font-sans font-semibold text-[#CBD7E3] mt-0.5 leading-none">
+            Progetti
+          </span>
+        </Link>
+
+        <Link
+          href="/studio"
+          aria-label="Vai a Studio"
+          className={`w-11 h-11 flex flex-col items-center justify-center rounded-sm backdrop-blur-md transition-all shadow-xl shadow-black/25 active:scale-95 ${
+            pathname === "/studio"
+              ? "bg-[#0A192F] border-2 border-[#C5A059] text-[#C5A059]"
+              : "bg-[#0A192F]/90 border border-white/15 text-white hover:border-[#C5A059]/40"
+          }`}
+        >
+          <StudioIcon className="w-3.5 h-3.5 text-[#C5A059]" />
+          <span className="text-[8px] font-sans font-semibold text-[#CBD7E3] mt-0.5 leading-none">
+            Studio
+          </span>
+        </Link>
+      </nav>
+
+      {/* 
+        =====================================================================
         FLOATING ACTION BUTTON (SOLO SU MOBILE) IN BASSO A DESTRA
         - Spostato dalla navbar all'angolo inferiore destro per massima ergonomia del pollice
         - Bordo brillante rotante (Border Beam oro/diamante) per renderlo irresistibile al tocco
@@ -227,7 +282,7 @@ export default function Navbar() {
           />
 
           {/* Corpo del FAB mobile */}
-          <div className="relative z-10 bg-[#0A192F] text-white px-4 py-3 rounded-[1px] flex items-center gap-2.5 font-sans font-bold text-xs tracking-wide">
+          <div className="relative z-10 bg-[#0A192F] text-white px-3.5 py-3 rounded-[1px] flex items-center gap-2 font-sans font-bold text-xs tracking-wide">
             <CalendarIcon className="w-4 h-4 text-[#C5A059] shrink-0" />
             <span className="whitespace-nowrap">Incontro 30m</span>
             <ArrowRightIcon className="w-3.5 h-3.5 text-[#C5A059] shrink-0 group-hover:translate-x-0.5 transition-transform" />
