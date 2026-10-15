@@ -55,7 +55,7 @@ export default function Hero() {
   ];
 
   return (
-    <section className="relative pt-20 pb-10 sm:pt-24 sm:pb-14 lg:pt-32 lg:pb-16 overflow-hidden bg-[#F8F7F4]">
+    <section className="relative pt-24 pb-10 sm:pt-28 sm:pb-14 lg:pt-32 lg:pb-16 overflow-hidden bg-[#F8F7F4]">
       <div className="max-w-7xl mx-auto px-5 sm:px-6 md:px-12 relative z-10">
         {/* Barra Istituzionale Top */}
         <motion.div

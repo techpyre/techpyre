@@ -8,12 +8,13 @@ import TechPyreLogo from "@/components/ui/TechPyreLogo";
 
 /**
  * =====================================================================
- * COMPONENTE NAVBAR ISTITUZIONALE (TECHPYRE)
- * - Supporto safe-area completo per iOS Safari (Dynamic Island / Notch)
- * - Schermatura superiore continua: nessun buco o spazio visibile sopra la barra
- * - Transizione fluida su compositor nativo (zero jitter o blocco durante lo scroll)
- * - Isteresi di scorrimento (soglia di 35px in discesa e 25px in salita)
- * - Sempre visibile nei primi 100px di pagina
+ * COMPONENTE NAVBAR ISTITUZIONALE
+ * - SU MOBILE: Barra volante indipendente (Floating Island Capsule) staccata
+ *   dai bordi, con angoli definiti, bordo architettonico e ombra morbida
+ * - SU DESKTOP: Intestazione classica a piena larghezza con bordi istituzionali
+ * - ANIMAZIONE BIDIREZIONALE FLUIDA: sia in entrata che in uscita con curva
+ *   armonica cubic-bezier(0.22, 1, 0.36, 1) per la massima morbidezza
+ * - CTA CON AMBIENT GLOW: alone dorato tenue e prestigioso che invita all'azione
  * =====================================================================
  */
 export default function Navbar() {
@@ -31,18 +32,17 @@ export default function Navbar() {
     const handleScrollUpdate = () => {
       const currentScrollY = window.scrollY;
 
-      // Ombreggiatura leggera allo scroll senza mutare l'altezza
       setScrolled(currentScrollY > 20);
 
-      // Se il menu a schermo intero è aperto, la barra resta sempre visibile
+      // Se il menu a schermo intero è aperto, mantieni sempre visibile
       if (mobileMenuOpen) {
         setIsVisible(true);
         ticking = false;
         return;
       }
 
-      // Protezione per i primi 100px e rimbalzo elastico superiore iOS (< 0)
-      if (currentScrollY <= 100) {
+      // Nei primi 90px della pagina rimane sempre visibile
+      if (currentScrollY <= 90) {
         setIsVisible(true);
         lastScrollY = Math.max(0, currentScrollY);
         ticking = false;
@@ -51,11 +51,11 @@ export default function Navbar() {
 
       const diff = currentScrollY - lastScrollY;
 
-      // Soglia di intenzione: 35px in discesa per nascondere, 25px in salita per mostrare
-      if (diff > 35) {
+      // Movimento intenzionale: 30px in discesa per nascondere, 20px in salita per mostrare
+      if (diff > 30) {
         setIsVisible(false);
         lastScrollY = currentScrollY;
-      } else if (diff < -25) {
+      } else if (diff < -20) {
         setIsVisible(true);
         lastScrollY = currentScrollY;
       }
@@ -85,7 +85,7 @@ export default function Navbar() {
     };
   }, [mobileMenuOpen]);
 
-  // Blocca lo scroll del body quando il drawer mobile è aperto
+  // Blocca lo scroll del body quando il menu mobile è aperto
   useEffect(() => {
     if (mobileMenuOpen) {
       document.body.style.overflow = "hidden";
@@ -99,19 +99,26 @@ export default function Navbar() {
 
   return (
     <>
+      {/* 
+        HEADER CONTAINER:
+        - Su Mobile: Barra volante staccata dai bordi (inset-x-3.5 top-[safe-area+0.75rem]), rounded-sm, shadow-lg
+        - Su Desktop: Barra classica a piena larghezza (lg:inset-x-0 lg:top-0 lg:rounded-none lg:shadow-xs)
+        - Animazione fluida in entrambe le direzioni (comparsa e scomparsa)
+      */}
       <header
-        className={`fixed top-0 left-0 right-0 z-50 bg-[#F8F7F4] border-b border-[#E8E2D5] pt-[env(safe-area-inset-top,0px)] transition-all duration-400 ease-[cubic-bezier(0.16,1,0.3,1)] ${
-          isVisible ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0 pointer-events-none"
-        } ${scrolled ? "shadow-sm" : ""}`}
+        className={`fixed z-50 bg-[#F8F7F4] border border-[#E8E2D5] transition-all duration-400 ease-[cubic-bezier(0.22,1,0.36,1)] 
+          /* Geometria Mobile: Isola Volante */
+          top-[calc(env(safe-area-inset-top,0px)+0.75rem)] left-3.5 right-3.5 sm:left-6 sm:right-6 rounded-sm shadow-md shadow-black/6
+          /* Geometria Desktop: Classica Piena Larghezza */
+          lg:top-0 lg:left-0 lg:right-0 lg:rounded-none lg:border-x-0 lg:border-t-0 lg:border-b lg:shadow-none
+          ${
+            isVisible
+              ? "translate-y-0 opacity-100 scale-100"
+              : "-translate-y-24 opacity-0 scale-[0.98] pointer-events-none"
+          } 
+          ${scrolled ? "shadow-lg shadow-black/8 lg:shadow-xs" : ""}`}
       >
-        {/* Scudo continuo superiore: copre 300px oltre la sommità della navbar,
-            garantendo che tra la navbar e la status bar o la tacca non ci sia MAI spazio trasparente */}
-        <div
-          aria-hidden="true"
-          className="absolute -top-[300px] left-0 right-0 h-[300px] bg-[#F8F7F4] pointer-events-none"
-        />
-
-        <div className="max-w-7xl mx-auto px-5 sm:px-6 md:px-12 py-3 sm:py-3.5 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 py-2.5 sm:py-3 lg:py-3.5 flex items-center justify-between">
           {/* Logo Tipografico Ufficiale */}
           <a
             href="#"
@@ -141,38 +148,39 @@ export default function Navbar() {
             </a>
           </nav>
 
-          {/* CTA Visibile Sempre (Mobile & Desktop) + Hamburger */}
+          {/* CTA con Ambient Glow + Hamburger */}
           <div className="flex items-center gap-2 sm:gap-3">
             <Button
               href={navigation.cta.href}
               variant="primary"
-              className="text-[11px] sm:text-xs px-3 sm:px-5 py-2 sm:py-2.5 font-bold shadow-xs whitespace-nowrap"
+              withGlow={true}
+              className="text-[11px] sm:text-xs px-3.5 sm:px-5 py-2 sm:py-2.5 font-bold whitespace-nowrap"
             >
               <span className="sm:hidden">Incontro 30m</span>
               <span className="hidden sm:inline">{navigation.cta.label}</span>
             </Button>
 
-            {/* Pulsante Hamburger con Target Touch 44x44px */}
+            {/* Pulsante Hamburger Touch-Friendly */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="lg:hidden w-11 h-11 flex items-center justify-center text-[#0B1E36] hover:text-[#B8860B] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#B8860B] rounded-xs"
+              className="lg:hidden w-10 h-10 flex items-center justify-center text-[#0B1E36] hover:text-[#B8860B] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#B8860B] rounded-xs"
               aria-label={mobileMenuOpen ? "Chiudi menu di navigazione" : "Apri menu di navigazione"}
               aria-expanded={mobileMenuOpen}
             >
-              <div className="w-6 h-5 flex flex-col justify-between items-end">
+              <div className="w-5 h-4 flex flex-col justify-between items-end">
                 <span
                   className={`h-[2px] bg-current transition-all duration-300 ${
-                    mobileMenuOpen ? "w-6 rotate-45 translate-y-2" : "w-6"
+                    mobileMenuOpen ? "w-5 rotate-45 translate-y-1.5" : "w-5"
                   }`}
                 />
                 <span
                   className={`h-[2px] bg-current transition-all duration-300 ${
-                    mobileMenuOpen ? "opacity-0" : "w-4"
+                    mobileMenuOpen ? "opacity-0" : "w-3.5"
                   }`}
                 />
                 <span
                   className={`h-[2px] bg-current transition-all duration-300 ${
-                    mobileMenuOpen ? "w-6 -rotate-45 -translate-y-2" : "w-5"
+                    mobileMenuOpen ? "w-5 -rotate-45 -translate-y-1.5" : "w-4.5"
                   }`}
                 />
               </div>
@@ -183,7 +191,7 @@ export default function Navbar() {
         {/* Filetto Sottile di Progressione Lettura */}
         <motion.div
           style={{ scaleX: scrollYProgress, transformOrigin: "0%" }}
-          className="absolute bottom-0 left-0 right-0 h-[2px] bg-[#B8860B] pointer-events-none"
+          className="absolute bottom-0 left-0 right-0 h-[2px] bg-[#B8860B] rounded-b-sm pointer-events-none"
         />
       </header>
 
@@ -194,8 +202,8 @@ export default function Navbar() {
             initial={{ opacity: 0, y: -8 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -8 }}
-            transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] }}
-            className="fixed inset-0 z-40 bg-[#F8F7F4] pt-[calc(env(safe-area-inset-top,0px)+4.75rem)] px-6 pb-8 flex flex-col justify-between lg:hidden border-b border-[#E8E2D5] overflow-y-auto"
+            transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
+            className="fixed inset-0 z-40 bg-[#F8F7F4] pt-[calc(env(safe-area-inset-top,0px)+5.5rem)] px-6 pb-8 flex flex-col justify-between lg:hidden border-b border-[#E8E2D5] overflow-y-auto"
           >
             <div className="space-y-5 pt-2">
               <div className="text-[10px] font-sans uppercase font-bold tracking-widest text-[#B8860B] border-b border-[#E8E2D5] pb-2.5">
@@ -225,13 +233,16 @@ export default function Navbar() {
             </div>
 
             <div className="pt-5 border-t border-[#E8E2D5] space-y-3">
-              <a
-                href={navigation.cta.href}
-                onClick={() => setMobileMenuOpen(false)}
-                className="block text-center w-full py-3 bg-[#0A192F] text-white rounded-sm text-xs font-bold uppercase tracking-wider shadow-sm hover:bg-[#003366] transition-colors"
-              >
-                {navigation.cta.label}
-              </a>
+              <div className="relative group/drawer-cta">
+                <div className="absolute -inset-1 rounded-sm bg-[#B8860B]/40 blur-xs group-hover/drawer-cta:bg-[#B8860B]/60 transition-colors pointer-events-none" />
+                <a
+                  href={navigation.cta.href}
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="relative block text-center w-full py-3 bg-[#0A192F] text-white rounded-sm text-xs font-bold uppercase tracking-wider shadow-sm hover:bg-[#003366] transition-colors"
+                >
+                  {navigation.cta.label}
+                </a>
+              </div>
               <div className="text-[10px] font-sans text-center text-[#5A6270]">
                 {brand.location}
               </div>

@@ -205,11 +205,15 @@ export default function ServicesMatrix() {
                             </div>
                           </div>
 
-                          <div>
+                          <div className="relative group/cta">
+                            <span
+                              aria-hidden="true"
+                              className="absolute -inset-[1.5px] rounded-sm bg-gradient-to-r from-[#B8860B]/40 via-[#C5A059]/60 to-[#B8860B]/40 blur-[3px] opacity-75 group-hover/cta:opacity-100 transition-opacity duration-300 pointer-events-none -z-10"
+                            />
                             <motion.button
                               whileTap={{ scale: 0.98 }}
                               onClick={() => handleSelectService(item)}
-                              className="w-full py-3 px-4 rounded-sm bg-[#0B1E36] hover:bg-[#003366] text-white font-sans text-xs sm:text-sm font-semibold tracking-wide transition-all shadow-xs flex items-center justify-between group/btn cursor-pointer min-h-[44px]"
+                              className="w-full py-3 px-4 rounded-sm bg-[#0B1E36] hover:bg-[#003366] text-white font-sans text-xs sm:text-sm font-semibold tracking-wide transition-all shadow-xs flex items-center justify-between group/btn cursor-pointer min-h-[44px] relative z-10"
                             >
                               <span>{item.ctaText}</span>
                               <span className="transition-transform group-hover/btn:translate-x-1">→</span>

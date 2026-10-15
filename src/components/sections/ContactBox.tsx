@@ -387,21 +387,28 @@ export default function ContactBox() {
                       {contact.formLabels.privacyNote}
                     </p>
 
-                    <motion.button
-                      whileTap={{ scale: 0.98 }}
-                      type="submit"
-                      disabled={status === "submitting"}
-                      className="w-full py-3.5 px-6 rounded-sm bg-[#B8860B] hover:bg-[#9a7008] text-white font-sans text-xs sm:text-sm font-bold tracking-wide transition-all shadow-xs flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50 min-h-[44px]"
-                    >
-                      {status === "submitting" ? (
-                        <span>{contact.formLabels.submitting}</span>
-                      ) : (
-                        <>
-                          <span>{contact.formLabels.submit}</span>
-                          <span>→</span>
-                        </>
-                      )}
-                    </motion.button>
+                    <div className="relative group/submit">
+                      <span
+                        aria-hidden="true"
+                        className="absolute -inset-[2px] rounded-sm bg-gradient-to-r from-[#B8860B]/50 via-[#C5A059]/70 to-[#B8860B]/50 blur-[5px] opacity-80 group-hover/submit:opacity-100 transition-opacity duration-300 pointer-events-none animate-pulse"
+                        style={{ animationDuration: "3.5s" }}
+                      />
+                      <motion.button
+                        whileTap={{ scale: 0.98 }}
+                        type="submit"
+                        disabled={status === "submitting"}
+                        className="relative z-10 w-full py-3.5 px-6 rounded-sm bg-[#B8860B] hover:bg-[#9a7008] text-white font-sans text-xs sm:text-sm font-bold tracking-wide transition-all shadow-xs flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50 min-h-[44px]"
+                      >
+                        {status === "submitting" ? (
+                          <span>{contact.formLabels.submitting}</span>
+                        ) : (
+                          <>
+                            <span>{contact.formLabels.submit}</span>
+                            <span>→</span>
+                          </>
+                        )}
+                      </motion.button>
+                    </div>
                   </div>
                 </motion.form>
               )}
