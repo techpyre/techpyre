@@ -5,56 +5,18 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { siteContent } from "@/config/siteContent";
 import Button from "@/components/ui/Button";
-import AnimatedCounter from "@/components/ui/AnimatedCounter";
 import { ArrowRightIcon } from "@/components/ui/Icons";
 
 /**
  * =====================================================================
  * SEZIONE HERO (INGRESSO & POSIZIONAMENTO ISTITUZIONALE)
- * - Animazioni orchestrate con Framer Motion (stagger e curve progressive)
- * - Contatori animati di precisione sui 4 KPI ingegneristici
- * - Layout fluido e asciutto: solo le informazioni decisive
+ * - Posizionamento asciutto: solo le informazioni decisive
+ * - Scheda "Costruito intorno a te" compatta con i 4 KPI contrattuali
+ * - 3 riquadri sintetici in una riga per le pagine dedicate
  * =====================================================================
  */
 export default function Hero() {
   const { hero, brand } = siteContent;
-
-  const quickMetrics = [
-    {
-      label: "CORE WEB VITALS",
-      renderValue: () => (
-        <span>
-          <AnimatedCounter value={100} />
-          <span className="text-[#5A6270] text-base font-normal"> / 100</span>
-        </span>
-      ),
-      note: "Velocità di risposta sub-secondo",
-    },
-    {
-      label: "TEMPO DI RILASCIO MEDIO",
-      renderValue: () => <span>5–7 Giorni</span>,
-      note: "Per landing page commerciali complete",
-    },
-    {
-      label: "PROPRIETÀ CODICE",
-      renderValue: () => (
-        <span>
-          <AnimatedCounter value={100} suffix="%" />
-          <span className="text-[#B8860B] font-serif italic ml-1">Tua</span>
-        </span>
-      ),
-      note: "Nessun canone di riscatto",
-    },
-    {
-      label: "RISPOSTA GARANTITA",
-      renderValue: () => (
-        <span>
-          &lt; <AnimatedCounter value={2} /> Ore
-        </span>
-      ),
-      note: "Linea diretta con il fondatore",
-    },
-  ];
 
   return (
     <section className="relative pt-24 pb-10 sm:pt-28 sm:pb-14 lg:pt-32 lg:pb-16 overflow-hidden bg-[#F8F7F4]">
@@ -127,137 +89,124 @@ export default function Hero() {
             </div>
           </motion.div>
 
-          {/* Scheda Istituzionale "Costruito intorno a te" con le 4 informazioni integrate */}
+          {/* Scheda Istituzionale "Costruito intorno a te" (Compatta e non espansa) */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
             className="lg:col-span-4"
           >
-            <div className="pt-2 lg:pt-1 lg:pl-8 lg:border-l lg:border-[#E8E2D5] space-y-4 relative">
+            <div className="p-5 sm:p-6 rounded-sm bg-white border border-[#E8E2D5] shadow-xs space-y-3.5 relative">
+              <div className="absolute top-0 left-0 right-0 h-[2px] bg-[#B8860B]" />
+
               <div className="space-y-0.5">
-                <span className="text-[10px] font-mono uppercase tracking-widest text-[#B8860B] font-bold">
-                  APPROCCIO DIRETTO
-                </span>
+                <div className="text-[10px] font-bold uppercase tracking-widest text-[#B8860B] font-sans">
+                  IL PATTO DI FIDUCIA
+                </div>
                 <h3 className="font-serif text-lg sm:text-xl text-[#0B1E36] font-semibold">
                   Costruito intorno a te
                 </h3>
               </div>
 
-              {/* Le 4 informazioni ingegneristiche chiave integrate qui */}
-              <div className="grid grid-cols-2 gap-2.5 pt-1">
-                <div className="p-2.5 rounded-sm bg-white border border-[#E8E2D5] shadow-2xs">
-                  <div className="text-[9px] font-sans font-bold uppercase tracking-wider text-[#5A6270]">
-                    Core Web Vitals
-                  </div>
-                  <div className="font-serif text-lg sm:text-xl font-bold text-[#0B1E36]">
-                    <AnimatedCounter value={100} />
-                    <span className="text-[#5A6270] text-xs font-normal"> / 100</span>
-                  </div>
-                  <div className="text-[9px] text-[#5A6270] font-sans truncate">Sub-secondo</div>
+              <div className="space-y-2 text-xs font-sans text-[#5A6270] pt-1">
+                <div className="flex items-center gap-2 text-[#14181F]">
+                  <span className="text-[#B8860B] font-bold">▪</span>
+                  <span>
+                    Interlocutore diretto: <strong className="text-[#0B1E36] font-semibold">{brand.founder}</strong>{" "}
+                    (<span className="text-[#B8860B] font-semibold">&lt; 2 ore</span>)
+                  </span>
                 </div>
-
-                <div className="p-2.5 rounded-sm bg-white border border-[#E8E2D5] shadow-2xs">
-                  <div className="text-[9px] font-sans font-bold uppercase tracking-wider text-[#5A6270]">
-                    Rilascio medio
-                  </div>
-                  <div className="font-serif text-lg sm:text-xl font-bold text-[#0B1E36]">
-                    5–7 gg
-                  </div>
-                  <div className="text-[9px] text-[#5A6270] font-sans truncate">Landing page</div>
+                <div className="flex items-center gap-2 text-[#14181F]">
+                  <span className="text-[#B8860B] font-bold">▪</span>
+                  <span>
+                    Velocità garantita: <strong className="text-[#0B1E36] font-semibold">100/100</strong>{" "}
+                    <span className="text-[#B8860B] font-semibold">Core Web Vitals</span>
+                  </span>
                 </div>
-
-                <div className="p-2.5 rounded-sm bg-white border border-[#E8E2D5] shadow-2xs">
-                  <div className="text-[9px] font-sans font-bold uppercase tracking-wider text-[#5A6270]">
-                    Proprietà codice
-                  </div>
-                  <div className="font-serif text-lg sm:text-xl font-bold text-[#0B1E36]">
-                    100%
-                    <span className="text-[#B8860B] italic text-xs ml-0.5">Tua</span>
-                  </div>
-                  <div className="text-[9px] text-[#5A6270] font-sans truncate">Zero canoni</div>
+                <div className="flex items-center gap-2 text-[#14181F]">
+                  <span className="text-[#B8860B] font-bold">▪</span>
+                  <span>
+                    Rilascio medio: <strong className="text-[#0B1E36] font-semibold">5–7 giorni</strong> a{" "}
+                    <span className="text-[#B8860B] font-semibold">prezzo certo</span>
+                  </span>
                 </div>
-
-                <div className="p-2.5 rounded-sm bg-white border border-[#E8E2D5] shadow-2xs">
-                  <div className="text-[9px] font-sans font-bold uppercase tracking-wider text-[#5A6270]">
-                    Risposta diretta
-                  </div>
-                  <div className="font-serif text-lg sm:text-xl font-bold text-[#0B1E36]">
-                    &lt; <AnimatedCounter value={2} />h
-                  </div>
-                  <div className="text-[9px] text-[#5A6270] font-sans truncate">Col fondatore</div>
+                <div className="flex items-center gap-2 text-[#14181F]">
+                  <span className="text-[#B8860B] font-bold">▪</span>
+                  <span>
+                    Proprietà codice: <strong className="text-[#0B1E36] font-semibold">100% dell&apos;azienda</strong>,{" "}
+                    <span className="text-[#B8860B] font-semibold">zero canoni</span>
+                  </span>
                 </div>
               </div>
 
-              <div className="pt-1 text-xs text-[#5A6270] flex items-center justify-between border-t border-[#E8E2D5]/80">
-                <span>Capo Studio: <strong>{brand.founder}</strong></span>
+              <div className="pt-2 border-t border-[#E8E2D5]">
                 <Link
                   href="/studio"
-                  className="inline-flex items-center gap-1 text-[#0B1E36] hover:text-[#B8860B] font-semibold text-xs transition-colors group"
+                  className="inline-flex items-center justify-center gap-1.5 w-full py-2 px-3 rounded-sm bg-[#F8F7F4] hover:bg-[#E8E2D5]/70 text-[#0B1E36] text-xs font-semibold tracking-wide transition-colors border border-[#E8E2D5] whitespace-nowrap group"
                 >
-                  <span>Profilo</span>
-                  <ArrowRightIcon className="w-3 h-3 group-hover:translate-x-0.5 transition-transform" />
+                  <span>Leggi il profilo dello studio</span>
+                  <ArrowRightIcon className="w-3.5 h-3.5 shrink-0 transition-transform group-hover:translate-x-0.5" />
                 </Link>
               </div>
             </div>
           </motion.div>
         </div>
 
-        {/* Accenno ai Servizi nello spazio liberato sotto l'introduzione */}
+        {/* 3 piccoli riquadri in una riga per invitare alle altre pagine (solo desktop/tablet, su mobile ci sono i bottoni volanti) */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-30px" }}
           transition={{ duration: 0.6, delay: 0.25, ease: [0.22, 1, 0.36, 1] }}
-          className="mt-10 sm:mt-14 pt-6 sm:pt-8 border-t border-[#E8E2D5]"
+          className="hidden sm:grid sm:grid-cols-3 gap-3.5 mt-8 sm:mt-12 pt-6 sm:pt-8 border-t border-[#E8E2D5]"
         >
-          <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2 pb-4">
-            <div>
-              <span className="text-[10px] font-sans font-bold uppercase tracking-widest text-[#B8860B]">
-                I QUATTRO FORMATI OPERATIVI
+          <Link
+            href="/servizi"
+            className="p-3.5 rounded-sm bg-white border border-[#E8E2D5] hover:border-[#0B1E36] transition-all flex items-center justify-between group shadow-2xs"
+          >
+            <div className="space-y-0.5">
+              <span className="text-[9px] font-mono font-bold uppercase tracking-wider text-[#B8860B]">
+                [01] LISTINO & SIMULATORE
               </span>
-              <h2 className="font-serif text-xl sm:text-2xl text-[#14181F] font-normal">
-                Soluzioni a prezzo certo prima dell&apos;inizio
-              </h2>
+              <div className="font-serif text-sm font-semibold text-[#0B1E36] group-hover:text-[#B8860B] transition-colors">
+                Servizi & Tariffe
+              </div>
             </div>
-            <Link
-              href="/servizi"
-              className="inline-flex items-center gap-1.5 text-xs font-sans font-semibold text-[#0B1E36] hover:text-[#B8860B] transition-colors shrink-0 group"
-            >
-              <span>Vedi listino completo e calcola preventivo</span>
-              <ArrowRightIcon className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5" />
-            </Link>
-          </div>
+            <ArrowRightIcon className="w-3.5 h-3.5 text-[#5A6270] group-hover:text-[#B8860B] group-hover:translate-x-0.5 transition-all shrink-0" />
+          </Link>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
-            {siteContent.services.items.map((srv) => (
-              <Link
-                key={srv.id}
-                href="/servizi"
-                className="p-4 rounded-sm bg-white border border-[#E8E2D5] hover:border-[#0B1E36] transition-all duration-150 flex flex-col justify-between group shadow-2xs"
-              >
-                <div className="space-y-1">
-                  <div className="flex items-center justify-between text-[11px] font-mono text-[#5A6270]">
-                    <span>[{srv.number}]</span>
-                    <ArrowRightIcon className="w-3 h-3 opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-all text-[#B8860B]" />
-                  </div>
-                  <div className="font-serif text-base text-[#0B1E36] font-semibold leading-snug group-hover:text-[#B8860B] transition-colors">
-                    {srv.name}
-                  </div>
-                  <p className="text-xs text-[#5A6270] font-sans line-clamp-2 pt-0.5">
-                    {srv.summary}
-                  </p>
-                </div>
-                <div className="pt-3 border-t border-[#E8E2D5]/60 mt-3">
-                  <div className="text-xs font-semibold text-[#0B1E36] font-mono">
-                    {srv.price}
-                  </div>
-                </div>
-              </Link>
-            ))}
-          </div>
+          <Link
+            href="/progetti"
+            className="p-3.5 rounded-sm bg-white border border-[#E8E2D5] hover:border-[#0B1E36] transition-all flex items-center justify-between group shadow-2xs"
+          >
+            <div className="space-y-0.5">
+              <span className="text-[9px] font-mono font-bold uppercase tracking-wider text-[#B8860B]">
+                [02] CASI STUDIO LIVE
+              </span>
+              <div className="font-serif text-sm font-semibold text-[#0B1E36] group-hover:text-[#B8860B] transition-colors">
+                Progetti & Codice GitHub
+              </div>
+            </div>
+            <ArrowRightIcon className="w-3.5 h-3.5 text-[#5A6270] group-hover:text-[#B8860B] group-hover:translate-x-0.5 transition-all shrink-0" />
+          </Link>
+
+          <Link
+            href="/studio"
+            className="p-3.5 rounded-sm bg-white border border-[#E8E2D5] hover:border-[#0B1E36] transition-all flex items-center justify-between group shadow-2xs"
+          >
+            <div className="space-y-0.5">
+              <span className="text-[9px] font-mono font-bold uppercase tracking-wider text-[#B8860B]">
+                [03] METODO & AUTONOMIA
+              </span>
+              <div className="font-serif text-sm font-semibold text-[#0B1E36] group-hover:text-[#B8860B] transition-colors">
+                Lo Studio & Fondatore
+              </div>
+            </div>
+            <ArrowRightIcon className="w-3.5 h-3.5 text-[#5A6270] group-hover:text-[#B8860B] group-hover:translate-x-0.5 transition-all shrink-0" />
+          </Link>
         </motion.div>
       </div>
     </section>
   );
 }
+

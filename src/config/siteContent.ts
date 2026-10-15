@@ -310,9 +310,16 @@ export const siteContent: SiteContent = {
         isExternal: true,
       },
       {
+        label: "Repository GitHub",
+        value: "github.com/techpyre",
+        subtext: "Codice aperto e architetture reference",
+        href: "https://github.com/techpyre",
+        isExternal: true,
+      },
+      {
         label: "Orari di Reperibilità",
         value: "Lun — Ven · 08:30 — 19:30",
-        subtext: "Fuso orario di Roma · Disponibilità per incontri in presenza",
+        subtext: "Fuso orario di Roma · Incontri anche in presenza",
         href: "#",
       },
     ],

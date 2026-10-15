@@ -4,9 +4,17 @@ import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { siteContent } from "@/config/siteContent";
 import { ContactPayload, ContactApiResponse } from "@/types/content";
-import { ArrowRightIcon, WhatsAppIcon, MailIcon } from "@/components/ui/Icons";
+import {
+  ArrowRightIcon,
+  WhatsAppIcon,
+  MailIcon,
+  GitHubIcon,
+  ArrowUpRightIcon,
+  ChevronDownIcon,
+} from "@/components/ui/Icons";
 import PrivacyModal from "@/components/ui/PrivacyModal";
 import { consumeContactPrefill } from "@/lib/contactPrefill";
+
 
 /**
  * =====================================================================
@@ -36,13 +44,13 @@ export default function ContactBox() {
   const [validationErrors, setValidationErrors] = useState<Record<string, string>>({});
   const [gdprAccepted, setGdprAccepted] = useState(false);
   const [isPrivacyModalOpen, setIsPrivacyModalOpen] = useState(false);
-  const [isFormOpen, setIsFormOpen] = useState(false);
+  const [isMobileFormOpen, setIsMobileFormOpen] = useState(false);
 
   useEffect(() => {
     const handleSelectService = (event: CustomEvent<{ serviceTitle: string }>) => {
       if (event.detail && event.detail.serviceTitle) {
         setFormData((prev) => ({ ...prev, service: event.detail.serviceTitle }));
-        setIsFormOpen(true);
+        setIsMobileFormOpen(true);
       }
     };
 
@@ -55,7 +63,7 @@ export default function ContactBox() {
           service: event.detail.serviceTitle,
           message: event.detail.prefilledMessage,
         }));
-        setIsFormOpen(true);
+        setIsMobileFormOpen(true);
       }
     };
 
@@ -85,12 +93,13 @@ export default function ContactBox() {
       service: prefill.serviceTitle,
       message: prefill.prefilledMessage ?? prev.message,
     }));
-    setIsFormOpen(true);
+    setIsMobileFormOpen(true);
     const timer = window.setTimeout(() => {
       document.getElementById("contatto")?.scrollIntoView({ behavior: "smooth" });
     }, 150);
     return () => window.clearTimeout(timer);
   }, []);
+
 
   const validate = (): boolean => {
     const errors: Record<string, string> = {};
@@ -154,7 +163,9 @@ export default function ContactBox() {
     setStatus("idle");
     setErrorMessage("");
     setGdprAccepted(false);
+    setIsMobileFormOpen(false);
   };
+
 
   return (
     <section id="contatto" className="py-12 sm:py-16 md:py-24 bg-[#F8F7F4] relative border-t border-[#E8E2D5]">
@@ -204,6 +215,7 @@ export default function ContactBox() {
               <div className="space-y-2.5 divide-y divide-[#E8E2D5] border-y border-[#E8E2D5] pt-1">
                 {contact.channels.map((channel, i) => {
                   const isWhatsApp = channel.href.includes("wa.me");
+                  const isGitHub = channel.href.includes("github.com") || channel.label.toLowerCase().includes("github");
 
                   if (isWhatsApp) {
                     return (
@@ -246,6 +258,29 @@ export default function ContactBox() {
                     );
                   }
 
+                  if (isGitHub) {
+                    return (
+                      <div key={i} className="pt-2.5 pb-2.5 space-y-1">
+                        <div className="text-[10px] font-bold uppercase tracking-wider text-[#5A6270]">
+                          {channel.label}
+                        </div>
+                        <a
+                          href={channel.href}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="font-serif text-base sm:text-lg text-[#0B1E36] hover:text-[#B8860B] transition-colors inline-flex items-center gap-1.5 font-semibold group/gh"
+                        >
+                          <GitHubIcon className="w-4 h-4 text-[#0B1E36] group-hover/gh:text-[#B8860B] transition-colors" />
+                          <span>{channel.value}</span>
+                          <ArrowUpRightIcon className="w-3.5 h-3.5 text-[#5A6270] group-hover/gh:text-[#B8860B] group-hover/gh:translate-x-0.5 group-hover/gh:-translate-y-0.5 transition-transform" />
+                        </a>
+                        <div className="text-xs text-[#5A6270] font-sans">
+                          {channel.subtext}
+                        </div>
+                      </div>
+                    );
+                  }
+
                   return (
                     <div key={i} className="pt-2.5 pb-2.5 first:pt-2 space-y-0.5">
                       <div className="text-[10px] font-bold uppercase tracking-wider text-[#5A6270]">
@@ -280,15 +315,37 @@ export default function ContactBox() {
                 </span>
               </div>
             </motion.div>
+
+            {/* Singola riga contratta per il modulo email SOLO su mobile */}
+            <div className="lg:hidden">
+              <button
+                type="button"
+                onClick={() => setIsMobileFormOpen(!isMobileFormOpen)}
+                className="w-full py-3 px-4 rounded-sm bg-white border border-[#E8E2D5] hover:border-[#0B1E36] text-[#0B1E36] flex items-center justify-between text-xs font-sans font-semibold shadow-2xs transition-colors cursor-pointer"
+                aria-expanded={isMobileFormOpen}
+              >
+                <span className="flex items-center gap-2">
+                  <MailIcon className="w-4 h-4 text-[#B8860B]" />
+                  <span>Contattaci via email</span>
+                </span>
+                <ChevronDownIcon
+                  className={`w-4 h-4 text-[#5A6270] transition-transform duration-200 ${
+                    isMobileFormOpen ? "rotate-180" : ""
+                  }`}
+                />
+              </button>
+            </div>
           </div>
 
-          {/* Modulo di Contatto (Colonna Destra) */}
+          {/* Modulo di Contatto (Colonna Destra: sempre visibile su desktop, visibile solo se aperto su mobile) */}
           <motion.div
             initial={{ opacity: 0, y: 16 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.15 }}
-            className="lg:col-span-7 bg-white p-5 sm:p-7 md:p-8 rounded-sm border border-[#E8E2D5] shadow-xs"
+            className={`lg:col-span-7 bg-white p-5 sm:p-7 md:p-8 rounded-sm border border-[#E8E2D5] shadow-xs ${
+              !isMobileFormOpen ? "hidden lg:block" : "block"
+            }`}
           >
             <AnimatePresence mode="wait">
               {status === "success" ? (
@@ -321,39 +378,6 @@ export default function ContactBox() {
                     </button>
                   </div>
                 </motion.div>
-              ) : !isFormOpen ? (
-                <motion.div
-                  key="closed"
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  exit={{ opacity: 0 }}
-                  transition={{ duration: 0.2 }}
-                  className="space-y-4 py-2"
-                >
-                  <div className="space-y-1">
-                    <div className="text-[10px] font-bold uppercase tracking-widest text-[#B8860B]">
-                      MODULO DI RICHIESTA EMAIL
-                    </div>
-                    <h3 className="font-serif text-xl sm:text-2xl text-[#0B1E36] font-semibold">
-                      Preferisci inviare specifiche o un capitolato via email?
-                    </h3>
-                    <p className="text-xs sm:text-sm text-[#5A6270] leading-relaxed font-sans">
-                      Se hai requisiti complessi o preferisci formulare una richiesta scritta dettagliata, compila il modulo dedicato per ricevere un riscontro tecnico formale entro 2 ore.
-                    </p>
-                  </div>
-
-                  <div className="pt-2">
-                    <button
-                      type="button"
-                      onClick={() => setIsFormOpen(true)}
-                      className="w-full sm:w-auto py-3 px-5 rounded-sm bg-[#0B1E36] hover:bg-[#002244] active:scale-[0.99] text-white font-sans text-xs font-semibold tracking-wide shadow-xs flex items-center justify-center gap-2.5 transition-all cursor-pointer group"
-                    >
-                      <MailIcon className="w-4 h-4 text-[#C5A059] shrink-0" />
-                      <span>Apri modulo di richiesta email</span>
-                      <ArrowRightIcon className="w-3.5 h-3.5 shrink-0 transition-transform group-hover:translate-x-0.5" />
-                    </button>
-                  </div>
-                </motion.div>
               ) : (
                 <motion.form
                   key="form"
@@ -367,17 +391,18 @@ export default function ContactBox() {
                         MODULO DI RICHIESTA DIRETTA
                       </div>
                       <div className="text-xs text-[#5A6270]">
-                        I campi contrassegnati con (*) sono necessari per un riscontro accurato.
+                        Riscontro garantito entro 2 ore direttamente da Riccardo Granza.
                       </div>
                     </div>
                     <button
                       type="button"
-                      onClick={() => setIsFormOpen(false)}
-                      className="text-xs font-sans text-[#5A6270] hover:text-[#0B1E36] underline cursor-pointer shrink-0 ml-2"
+                      onClick={() => setIsMobileFormOpen(false)}
+                      className="lg:hidden text-xs font-sans text-[#5A6270] hover:text-[#0B1E36] underline cursor-pointer shrink-0 ml-2"
                     >
-                      Comprimi
+                      Chiudi
                     </button>
                   </div>
+
 
                   {status === "error" && (
                     <div className="p-3 rounded-sm bg-rose-50 border border-rose-200 text-rose-800 text-xs">
