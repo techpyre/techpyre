@@ -8,12 +8,12 @@ import TechPyreLogo from "@/components/ui/TechPyreLogo";
 
 /**
  * =====================================================================
- * COMPONENTE NAVBAR (NAVIGAZIONE PRINCIPALE ISTITUZIONALE)
- * - Supporto safe-area iOS completo: zero spazio vuoto tra navbar e barra di stato
- * - Schermatura superiore antiriflesso (estensione continua dello sfondo #F8F7F4)
- * - Transizione fluida e priva di scatti (soglia di scorrimento con isteresi)
- * - Nessun ridimensionamento dell'altezza durante lo scroll (altezza costante)
- * - CTA "Incontro 30m" sempre visibile anche su mobile senza aprire il menu
+ * COMPONENTE NAVBAR ISTITUZIONALE (TECHPYRE)
+ * - Supporto safe-area completo per iOS Safari (Dynamic Island / Notch)
+ * - Schermatura superiore continua: nessun buco o spazio visibile sopra la barra
+ * - Transizione fluida su compositor nativo (zero jitter o blocco durante lo scroll)
+ * - Isteresi di scorrimento (soglia di 35px in discesa e 25px in salita)
+ * - Sempre visibile nei primi 100px di pagina
  * =====================================================================
  */
 export default function Navbar() {
@@ -24,44 +24,39 @@ export default function Navbar() {
   const { brand, navigation } = siteContent;
   const { scrollYProgress } = useScroll();
 
-  // Gestione avanzata dello scroll con buffer/isteresi per eliminare scatti e jitter
   useEffect(() => {
     let lastScrollY = window.scrollY;
     let ticking = false;
 
-    const updateNavbar = () => {
+    const handleScrollUpdate = () => {
       const currentScrollY = window.scrollY;
 
-      // Ombreggiatura sottile senza variare l'altezza o il padding
-      setScrolled(currentScrollY > 15);
+      // Ombreggiatura leggera allo scroll senza mutare l'altezza
+      setScrolled(currentScrollY > 20);
 
-      // Se il menu mobile è aperto, mantieni sempre visibile
+      // Se il menu a schermo intero è aperto, la barra resta sempre visibile
       if (mobileMenuOpen) {
         setIsVisible(true);
         ticking = false;
         return;
       }
 
-      // Se siamo vicini alla cima della pagina, sempre visibile
-      if (currentScrollY <= 45) {
+      // Protezione per i primi 100px e rimbalzo elastico superiore iOS (< 0)
+      if (currentScrollY <= 100) {
         setIsVisible(true);
-        lastScrollY = currentScrollY;
+        lastScrollY = Math.max(0, currentScrollY);
         ticking = false;
         return;
       }
 
-      // Calcola lo scostamento
-      const delta = currentScrollY - lastScrollY;
+      const diff = currentScrollY - lastScrollY;
 
-      // Richiede uno scorrimento intenzionale di almeno 16px per evitare scatti
-      if (Math.abs(delta) >= 16) {
-        if (delta > 0 && currentScrollY > 80) {
-          // Scroll verso il basso deliberato: nascondi con animazione fluida
-          setIsVisible(false);
-        } else if (delta < 0) {
-          // Scroll verso l'alto deliberato: mostra con grazia
-          setIsVisible(true);
-        }
+      // Soglia di intenzione: 35px in discesa per nascondere, 25px in salita per mostrare
+      if (diff > 35) {
+        setIsVisible(false);
+        lastScrollY = currentScrollY;
+      } else if (diff < -25) {
+        setIsVisible(true);
         lastScrollY = currentScrollY;
       }
 
@@ -70,7 +65,7 @@ export default function Navbar() {
 
     const onScroll = () => {
       if (!ticking) {
-        window.requestAnimationFrame(updateNavbar);
+        window.requestAnimationFrame(handleScrollUpdate);
         ticking = true;
       }
     };
@@ -104,24 +99,16 @@ export default function Navbar() {
 
   return (
     <>
-      <motion.header
-        initial={false}
-        animate={{
-          y: isVisible ? 0 : "-100%",
-        }}
-        transition={{
-          duration: 0.35,
-          ease: [0.22, 1, 0.36, 1],
-        }}
-        className={`fixed top-0 left-0 right-0 z-50 bg-[#F8F7F4] border-b border-[#E8E2D5] pt-[env(safe-area-inset-top,0px)] transition-shadow duration-300 ${
-          scrolled ? "shadow-sm" : ""
-        }`}
+      <header
+        className={`fixed top-0 left-0 right-0 z-50 bg-[#F8F7F4] border-b border-[#E8E2D5] pt-[env(safe-area-inset-top,0px)] transition-all duration-400 ease-[cubic-bezier(0.16,1,0.3,1)] ${
+          isVisible ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0 pointer-events-none"
+        } ${scrolled ? "shadow-sm" : ""}`}
       >
-        {/* Schermatura superiore continua: estende lo sfondo solido di 380px sopra la navbar
-            impedendo qualunque fessura visibile con la status bar in caso di rimbalzo o scroll iOS */}
+        {/* Scudo continuo superiore: copre 300px oltre la sommità della navbar,
+            garantendo che tra la navbar e la status bar o la tacca non ci sia MAI spazio trasparente */}
         <div
           aria-hidden="true"
-          className="absolute bottom-full left-0 right-0 h-96 bg-[#F8F7F4] pointer-events-none"
+          className="absolute -top-[300px] left-0 right-0 h-[300px] bg-[#F8F7F4] pointer-events-none"
         />
 
         <div className="max-w-7xl mx-auto px-5 sm:px-6 md:px-12 py-3 sm:py-3.5 flex items-center justify-between">
@@ -193,12 +180,12 @@ export default function Navbar() {
           </div>
         </div>
 
-        {/* Filetto Sottile di Progressione Lettura (Oro Bruciato) */}
+        {/* Filetto Sottile di Progressione Lettura */}
         <motion.div
           style={{ scaleX: scrollYProgress, transformOrigin: "0%" }}
           className="absolute bottom-0 left-0 right-0 h-[2px] bg-[#B8860B] pointer-events-none"
         />
-      </motion.header>
+      </header>
 
       {/* Drawer di Navigazione Mobile a Schermo Intero */}
       <AnimatePresence>
@@ -207,7 +194,7 @@ export default function Navbar() {
             initial={{ opacity: 0, y: -8 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -8 }}
-            transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
+            transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] }}
             className="fixed inset-0 z-40 bg-[#F8F7F4] pt-[calc(env(safe-area-inset-top,0px)+4.75rem)] px-6 pb-8 flex flex-col justify-between lg:hidden border-b border-[#E8E2D5] overflow-y-auto"
           >
             <div className="space-y-5 pt-2">
