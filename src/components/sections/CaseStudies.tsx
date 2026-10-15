@@ -4,7 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { siteContent } from "@/config/siteContent";
 import AnimatedLine from "@/components/ui/AnimatedLine";
-import { ArrowRightIcon } from "@/components/ui/Icons";
+import { ArrowRightIcon, ArrowUpRightIcon, GitHubIcon } from "@/components/ui/Icons";
 
 /**
  * =====================================================================
@@ -161,20 +161,60 @@ export default function CaseStudies() {
                 </div>
               </div>
 
-              {/* Barra Inferiore con Pulsante d'Azione */}
-              <div className="p-4 sm:p-5 bg-[#F8F7F4] border-t border-[#E8E2D5] flex items-center justify-between">
-                <span className="text-xs text-[#5A6270] font-sans hidden sm:inline">
-                  Proprietà codice 100% dell&apos;azienda
-                </span>
+              {/* Barra Inferiore: Live Demo + GitHub + Pulsante d'Azione */}
+              <div className="p-4 sm:p-5 bg-[#F8F7F4] border-t border-[#E8E2D5] space-y-3">
+                {(project.demoUrl || project.repoUrl) && (
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                    {project.demoUrl && (
+                      <a
+                        href={project.demoUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="py-2.5 px-4 rounded-sm bg-[#B8860B] hover:bg-[#9A7009] active:scale-[0.99] text-white font-sans text-xs font-semibold tracking-wide transition-all shadow-xs inline-flex items-center justify-center gap-2 group/demo"
+                      >
+                        <span className="relative flex h-2 w-2 shrink-0" aria-hidden="true">
+                          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-60" />
+                          <span className="relative inline-flex rounded-full h-2 w-2 bg-white" />
+                        </span>
+                        <span>Esplora Live Demo</span>
+                        <ArrowUpRightIcon className="w-3.5 h-3.5 shrink-0 transition-transform group-hover/demo:translate-x-0.5 group-hover/demo:-translate-y-0.5" />
+                      </a>
+                    )}
+                    {project.repoUrl && (
+                      <a
+                        href={project.repoUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="py-2.5 px-4 rounded-sm bg-white border border-[#0B1E36]/20 hover:border-[#0B1E36] active:scale-[0.99] text-[#0B1E36] font-sans text-xs font-semibold tracking-wide transition-all inline-flex items-center justify-center gap-2 group/repo"
+                      >
+                        <GitHubIcon className="w-3.5 h-3.5 shrink-0" />
+                        <span>Ispeziona Codice su GitHub</span>
+                        <ArrowUpRightIcon className="w-3.5 h-3.5 shrink-0 transition-transform group-hover/repo:translate-x-0.5 group-hover/repo:-translate-y-0.5" />
+                      </a>
+                    )}
+                  </div>
+                )}
 
-                <button
-                  type="button"
-                  onClick={() => handleSelectCaseStudy(project.prefillService, project.title)}
-                  className="w-full sm:w-auto py-2.5 px-4 rounded-sm bg-[#0B1E36] hover:bg-[#002244] active:scale-[0.99] text-white font-sans text-xs font-semibold tracking-wide transition-all shadow-xs inline-flex items-center justify-center gap-2 group/btn cursor-pointer"
-                >
-                  <span>{project.ctaText}</span>
-                  <ArrowRightIcon className="w-3.5 h-3.5 shrink-0 transition-transform group-hover/btn:translate-x-1" />
-                </button>
+                {project.demoUrl && (
+                  <p className="text-[10px] sm:text-[11px] text-[#5A6270] font-sans text-center sm:text-left">
+                    Sandbox pubblica senza login · azienda fittizia e dati simulati · codice open source
+                  </p>
+                )}
+
+                <div className="flex items-center justify-between gap-3 pt-1 border-t border-[#E8E2D5]">
+                  <span className="text-xs text-[#5A6270] font-sans hidden sm:inline">
+                    Proprietà codice 100% dell&apos;azienda
+                  </span>
+
+                  <button
+                    type="button"
+                    onClick={() => handleSelectCaseStudy(project.prefillService, project.title)}
+                    className="mt-2 w-full sm:w-auto py-2.5 px-4 rounded-sm bg-[#0B1E36] hover:bg-[#002244] active:scale-[0.99] text-white font-sans text-xs font-semibold tracking-wide transition-all shadow-xs inline-flex items-center justify-center gap-2 group/btn cursor-pointer"
+                  >
+                    <span>{project.ctaText}</span>
+                    <ArrowRightIcon className="w-3.5 h-3.5 shrink-0 transition-transform group-hover/btn:translate-x-1" />
+                  </button>
+                </div>
               </div>
             </motion.div>
           ))}

@@ -93,6 +93,10 @@ export interface CaseStudyItem {
   highlights: string[];
   ctaText: string;
   prefillService: string;
+  /** Sandbox interattiva pubblica (nessun login richiesto) */
+  demoUrl?: string;
+  /** Repository GitHub pubblico con il codice sorgente */
+  repoUrl?: string;
 }
 
 export interface CaseStudiesConfig {
