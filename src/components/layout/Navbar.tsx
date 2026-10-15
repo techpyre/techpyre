@@ -92,13 +92,16 @@ export default function Navbar() {
             </a>
           </nav>
 
-          {/* CTA Desktop & Hamburger Mobile */}
-          <div className="flex items-center gap-3">
-            <div className="hidden sm:block">
-              <Button href={navigation.cta.href} variant="primary" className="text-xs px-5 py-2.5">
-                {navigation.cta.label}
-              </Button>
-            </div>
+          {/* CTA Visibile Sempre (Mobile & Desktop) + Hamburger */}
+          <div className="flex items-center gap-2 sm:gap-3">
+            <Button
+              href={navigation.cta.href}
+              variant="primary"
+              className="text-[11px] sm:text-xs px-3 sm:px-5 py-2 sm:py-2.5 font-bold shadow-xs whitespace-nowrap"
+            >
+              <span className="sm:hidden">Incontro 30m</span>
+              <span className="hidden sm:inline">{navigation.cta.label}</span>
+            </Button>
 
             {/* Pulsante Hamburger con Target Touch 44x44px */}
             <button

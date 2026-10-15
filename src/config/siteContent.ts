@@ -14,8 +14,8 @@ export const siteContent: SiteContent = {
     founder: "Riccardo Granza",
     tagline:
       "Studio di ingegneria del software e posizionamento digitale per imprese.",
-    contactEmail: "riccardo@techpyre.com",
-    phone: "+39 340 000 0000",
+    contactEmail: "riccardo.granza@techpyre.eu",
+    phone: "+39 379 115 9352",
     location: "Sede in Italia · Operatività nazionale",
     badge: "Ingegneria del Software B2B",
     availabilityNote: "Sede in Italia · Operatività su tutto il territorio nazionale",
@@ -232,15 +232,15 @@ export const siteContent: SiteContent = {
     channels: [
       {
         label: "Indirizzo Email Diretto",
-        value: "riccardo@techpyre.com",
+        value: "riccardo.granza@techpyre.eu",
         subtext: "Riscontro garantito entro 2–3 ore lavorative",
-        href: "mailto:riccardo@techpyre.com",
+        href: "mailto:riccardo.granza@techpyre.eu",
       },
       {
         label: "Recapito Telefonico e WhatsApp",
-        value: "+39 340 000 0000",
+        value: "+39 379 115 9352",
         subtext: "Disponibile per brevi comunicazioni preliminari",
-        href: "https://wa.me/393400000000",
+        href: "https://wa.me/393791159352",
         isExternal: true,
       },
       {
@@ -257,7 +257,7 @@ export const siteContent: SiteContent = {
       successReset: "Invia una nuova comunicazione",
       errorTitle: "Comunicazione non riuscita per un inconveniente temporaneo.",
       errorMessage:
-        "Non è stato possibile inoltrare la richiesta a causa di un'anomalia di rete. È possibile inviare una comunicazione diretta all'indirizzo riccardo@techpyre.com o telefonare al numero +39 340 000 0000.",
+        "Non è stato possibile inoltrare la richiesta a causa di un'anomalia di rete. È possibile inviare una comunicazione diretta all'indirizzo riccardo.granza@techpyre.eu o telefonare al numero +39 379 115 9352.",
     },
   },
 
@@ -287,9 +287,9 @@ export const siteContent: SiteContent = {
       {
         title: "Recapiti Personali",
         items: [
-          { label: "riccardo@techpyre.com", href: "mailto:riccardo@techpyre.com" },
-          { label: "WhatsApp: +39 340 000 0000", href: "https://wa.me/393400000000", isExternal: true },
-          { label: "Telefono Fondatore", href: "tel:+393400000000" },
+          { label: "riccardo.granza@techpyre.eu", href: "mailto:riccardo.granza@techpyre.eu" },
+          { label: "WhatsApp: +39 379 115 9352", href: "https://wa.me/393791159352", isExternal: true },
+          { label: "Telefono Fondatore", href: "tel:+393791159352" },
         ],
       },
     ],
