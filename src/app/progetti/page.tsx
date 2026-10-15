@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default function ProgettiPage() {
   return (
     <PageShell>
-      <CaseStudies />
+      <CaseStudies variant="full" />
     </PageShell>
   );
 }

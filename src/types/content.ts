@@ -95,7 +95,9 @@ export interface CaseStudyItem {
   stack: string[];
   highlights: string[];
   ctaText: string;
-  prefillService: string;
+  prefillService?: string;
+  /** Screenshot reale dell'applicazione demo */
+  screenshotUrl?: string;
   /** Sandbox interattiva pubblica (nessun login richiesto) */
   demoUrl?: string;
   /** Repository GitHub pubblico con il codice sorgente */

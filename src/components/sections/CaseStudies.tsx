@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { siteContent } from "@/config/siteContent";
 import { requestContactPrefill } from "@/lib/contactPrefill";
@@ -8,16 +9,18 @@ import { useRouter } from "next/navigation";
 import AnimatedLine from "@/components/ui/AnimatedLine";
 import { ArrowRightIcon, ArrowUpRightIcon, GitHubIcon } from "@/components/ui/Icons";
 
+interface CaseStudiesProps {
+  variant?: "full" | "teaser";
+}
+
 /**
  * =====================================================================
- * SEZIONE ARCHITETTURE & CASI STUDIO B2B (#progetti)
- * - Dimostrazione tangibile di standard tecnici elevati e assenza di debito legacy
- * - Metriche oggettive (Lighthouse 100/100, LCP < 0.4s, TTFB < 50ms)
- * - Stack trasparente e punti salienti dell'ingegneria applicata
- * - CTA per richiedere un'architettura analoga per l'azienda committente
+ * SEZIONE ARCHITETTURE & CASI STUDIO B2B
+ * - "teaser" (Homepage): Ultra-leggero, screenshot reali della demo, 90% di parole in meno
+ * - "full" (/progetti): Schede complete con analisi tecnica approfondita
  * =====================================================================
  */
-export default function CaseStudies() {
+export default function CaseStudies({ variant = "teaser" }: CaseStudiesProps) {
   const router = useRouter();
   const { caseStudies } = siteContent;
 
@@ -25,18 +28,175 @@ export default function CaseStudies() {
     if (typeof window !== "undefined") {
       const customMessage = `Richiesta Informazioni su Architettura Reference:\n- Riferimento: ${caseTitle}\n- Servizio correlato: ${serviceName}\n\nDesidero valutare un'architettura con analoghi requisiti di velocità, sicurezza e scalabilità per la mia impresa.`;
 
-      // Evento custom se il modulo è in pagina, altrimenti precompilato + navigazione a /#contatto
-      requestContactPrefill({
-        serviceTitle: serviceName,
-        prefilledMessage: customMessage,
-      }, (href) => router.push(href));
+      requestContactPrefill(
+        {
+          serviceTitle: serviceName,
+          prefilledMessage: customMessage,
+        },
+        (href) => router.push(href)
+      );
     }
   };
 
+  // =====================================================================
+  // VARIANTE HOME (TEASER): VISUALE, SCREENSHOT REALI E 90% DI PAROLE IN MENO
+  // =====================================================================
+  if (variant === "teaser") {
+    return (
+      <section id="progetti" className="py-10 sm:py-14 md:py-16 bg-[#F8F7F4] border-t border-[#E8E2D5]">
+        <div className="max-w-7xl mx-auto px-5 sm:px-6 md:px-12">
+          {/* Intestazione Sintetica */}
+          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-3 pb-6">
+            <div className="space-y-1">
+              <div className="text-[10px] sm:text-[11px] font-sans font-bold text-[#B8860B] uppercase tracking-widest">
+                ARCHITETTURE REFERENCE LIVE
+              </div>
+              <h2 className="font-serif text-2xl sm:text-3xl text-[#14181F] font-normal tracking-tight">
+                Due architetture live. Nessun mockup astratto.
+              </h2>
+            </div>
+            <Link
+              href="/progetti"
+              className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#0B1E36] hover:text-[#B8860B] transition-colors font-sans group shrink-0"
+            >
+              <span>Vedi analisi tecnica completa</span>
+              <ArrowRightIcon className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" />
+            </Link>
+          </div>
+
+          {/* Griglia a 2 Schede Visive con Screenshot Reali delle Demo */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 items-stretch">
+            {caseStudies.items.map((project, idx) => (
+              <motion.div
+                key={project.id}
+                initial={{ opacity: 0, y: 16 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-30px" }}
+                transition={{ duration: 0.5, delay: idx * 0.1 }}
+                className="bg-white rounded-sm border border-[#E8E2D5] hover:border-[#0B1E36] transition-all shadow-xs overflow-hidden flex flex-col justify-between group"
+              >
+                {/* Header Finestra Browser */}
+                <div className="bg-[#0B1E36] px-3.5 py-2 flex items-center justify-between text-white/70 select-none">
+                  <div className="flex items-center gap-1.5">
+                    <span className="w-2.5 h-2.5 rounded-full bg-[#FF5F56]/90 inline-block" />
+                    <span className="w-2.5 h-2.5 rounded-full bg-[#FFBD2E]/90 inline-block" />
+                    <span className="w-2.5 h-2.5 rounded-full bg-[#27C93F]/90 inline-block" />
+                  </div>
+
+                  <div className="px-2.5 py-0.5 rounded-xs bg-white/10 text-[10px] font-mono text-[#F8F7F4]/90 flex items-center gap-1.5 border border-white/10 max-w-[200px] sm:max-w-xs truncate">
+                    <span className="text-emerald-400 text-xs">🔒</span>
+                    <span className="truncate">
+                      {project.demoUrl ? project.demoUrl.replace("https://", "") : "techpyre.eu"}
+                    </span>
+                  </div>
+
+                  <div className="flex items-center gap-1.5 text-[9px] font-mono text-emerald-400 font-semibold shrink-0">
+                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+                    <span className="hidden sm:inline">LIVE DEMO</span>
+                  </div>
+                </div>
+
+                {/* Screenshot Reale della Demo */}
+                <a
+                  href={project.demoUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="relative block aspect-[16/10] overflow-hidden bg-[#0A192F]/5 group/img border-b border-[#E8E2D5]"
+                  aria-label={`Apri live demo di ${project.title}`}
+                >
+                  {project.screenshotUrl ? (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img
+                      src={project.screenshotUrl}
+                      alt={`Screenshot reale live demo: ${project.title}`}
+                      className="w-full h-full object-cover object-top transition-transform duration-500 group-hover/img:scale-[1.02]"
+                      loading="lazy"
+                    />
+                  ) : (
+                    <div className="w-full h-full flex items-center justify-center text-xs text-[#5A6270]">
+                      Screenshot demo
+                    </div>
+                  )}
+
+                  {/* Overlay interattivo hover */}
+                  <div className="absolute inset-0 bg-[#0B1E36]/0 group-hover/img:bg-[#0B1E36]/15 transition-colors flex items-center justify-center">
+                    <span className="opacity-0 group-hover/img:opacity-100 transition-opacity duration-200 py-1.5 px-3 rounded-xs bg-[#0B1E36] text-white font-sans text-xs font-semibold shadow-md flex items-center gap-1.5">
+                      <span>Apri Demo Live</span>
+                      <ArrowUpRightIcon className="w-3.5 h-3.5" />
+                    </span>
+                  </div>
+                </a>
+
+                {/* Dettaglio Sintetico (90% parole in meno: solo titolo, 2 metriche e 2 bottoni) */}
+                <div className="p-4 sm:p-5 flex flex-col justify-between flex-1 gap-3.5">
+                  <div className="space-y-1">
+                    <div className="text-[10px] font-mono font-bold uppercase tracking-wider text-[#B8860B]">
+                      {project.tag}
+                    </div>
+                    <h3 className="font-serif text-lg sm:text-xl text-[#0B1E36] font-semibold leading-snug">
+                      {project.title}
+                    </h3>
+                  </div>
+
+                  {/* 2 Metriche Essenziali */}
+                  <div className="grid grid-cols-2 gap-2 pt-2 border-t border-[#E8E2D5]/70">
+                    {project.metrics.slice(0, 2).map((m, mIdx) => (
+                      <div
+                        key={mIdx}
+                        className="p-2 rounded-xs bg-[#F8F7F4] border border-[#E8E2D5] space-y-0.5"
+                      >
+                        <div className="text-[9px] font-sans font-bold uppercase tracking-wider text-[#5A6270] truncate">
+                          {m.label}
+                        </div>
+                        <div className="font-mono font-bold text-xs text-[#0B1E36]">
+                          {m.value}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+
+                  {/* Bottoni Rapidi */}
+                  <div className="grid grid-cols-2 gap-2 pt-1">
+                    {project.demoUrl && (
+                      <a
+                        href={project.demoUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="py-2 px-3 rounded-sm bg-[#B8860B] hover:bg-[#9A7009] active:scale-[0.99] text-white font-sans text-xs font-semibold tracking-wide transition-all shadow-xs inline-flex items-center justify-center gap-1.5"
+                      >
+                        <span>Live Demo</span>
+                        <ArrowUpRightIcon className="w-3.5 h-3.5" />
+                      </a>
+                    )}
+                    {project.repoUrl && (
+                      <a
+                        href={project.repoUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="py-2 px-3 rounded-sm bg-white border border-[#0B1E36]/20 hover:border-[#0B1E36] active:scale-[0.99] text-[#0B1E36] font-sans text-xs font-semibold tracking-wide transition-all inline-flex items-center justify-center gap-1.5"
+                      >
+                        <GitHubIcon className="w-3.5 h-3.5" />
+                        <span>GitHub</span>
+                        <ArrowUpRightIcon className="w-3.5 h-3.5" />
+                      </a>
+                    )}
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+    );
+  }
+
+  // =====================================================================
+  // VARIANTE COMPLETA (/progetti): ANALISI TECNICA APPROFONDITA
+  // =====================================================================
   return (
     <section id="progetti" className="py-12 sm:py-16 md:py-20 bg-[#F8F7F4] border-t border-[#E8E2D5]">
       <div className="max-w-7xl mx-auto px-5 sm:px-6 md:px-12">
-        {/* Intestazione Sezione con Animazione */}
+        {/* Intestazione Sezione */}
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -66,7 +226,7 @@ export default function CaseStudies() {
 
         <AnimatedLine className="mb-6 sm:mb-8" />
 
-        {/* Griglia dei 2 Casi Studio / Engineering Showcase */}
+        {/* Griglia Completa */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 items-stretch">
           {caseStudies.items.map((project, idx) => (
             <motion.div
@@ -77,7 +237,7 @@ export default function CaseStudies() {
               transition={{ duration: 0.6, delay: idx * 0.12, ease: [0.22, 1, 0.36, 1] }}
               className="bg-white rounded-sm border border-[#E8E2D5] shadow-xs flex flex-col justify-between overflow-hidden relative group hover:border-[#0B1E36] transition-all duration-200"
             >
-              {/* Browser Window Mockup Frame */}
+              {/* Header Finestra Browser */}
               <div className="bg-[#0B1E36] border-b border-[#0B1E36]/40 px-3.5 py-2.5 flex items-center justify-between text-white/70 select-none">
                 <div className="flex items-center gap-1.5">
                   <span className="w-2.5 h-2.5 rounded-full bg-[#FF5F56]/90 inline-block" />
@@ -87,7 +247,9 @@ export default function CaseStudies() {
 
                 <div className="flex-1 max-w-xs mx-3 px-2.5 py-1 rounded-xs bg-white/10 text-[10px] font-mono text-[#F8F7F4]/90 flex items-center justify-center gap-1.5 truncate border border-white/10">
                   <span className="text-emerald-400 text-xs">🔒</span>
-                  <span className="truncate">{project.demoUrl ? project.demoUrl.replace("https://", "") : "techpyre.eu"}</span>
+                  <span className="truncate">
+                    {project.demoUrl ? project.demoUrl.replace("https://", "") : "techpyre.eu"}
+                  </span>
                 </div>
 
                 <div className="flex items-center gap-1.5 text-[9px] font-mono text-emerald-400 font-semibold shrink-0">
@@ -96,9 +258,27 @@ export default function CaseStudies() {
                 </div>
               </div>
 
-              {/* Contenuto della Scheda */}
+              {/* Screenshot Reale della Demo */}
+              {project.screenshotUrl && (
+                <a
+                  href={project.demoUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block aspect-[16/10] overflow-hidden bg-[#0A192F]/5 border-b border-[#E8E2D5] group/img"
+                  aria-label={`Apri demo di ${project.title}`}
+                >
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={project.screenshotUrl}
+                    alt={`Screenshot live demo: ${project.title}`}
+                    className="w-full h-full object-cover object-top transition-transform duration-500 group-hover/img:scale-[1.02]"
+                    loading="lazy"
+                  />
+                </a>
+              )}
+
+              {/* Contenuto Approfondito */}
               <div className="p-5 sm:p-7 space-y-4">
-                {/* Badge Tag & Cliente */}
                 <div className="space-y-1.5">
                   <div className="flex flex-wrap items-center justify-between gap-2">
                     <span className="text-[10px] font-mono font-bold uppercase tracking-wider text-[#B8860B] bg-[#B8860B]/10 px-2 py-0.5 rounded-xs">
@@ -120,7 +300,7 @@ export default function CaseStudies() {
                   </p>
                 </div>
 
-                {/* Box Problema di Business & Soluzione Applicata */}
+                {/* Box Problema & Soluzione */}
                 {(project.businessProblem || project.solution) && (
                   <div className="space-y-2 pt-1">
                     {project.businessProblem && (
@@ -149,7 +329,7 @@ export default function CaseStudies() {
                   </div>
                 )}
 
-                {/* Griglia Metriche Tecniche Verificate */}
+                {/* Metriche */}
                 <div className="grid grid-cols-3 gap-2 py-1">
                   {project.metrics.map((metric, mIdx) => (
                     <div
@@ -171,7 +351,7 @@ export default function CaseStudies() {
                   ))}
                 </div>
 
-                {/* Specifiche Architetturali (Punti Salienti) */}
+                {/* Punti Salienti */}
                 <div className="space-y-1.5 border-t border-[#E8E2D5] pt-3">
                   <div className="text-[10px] font-bold uppercase tracking-wider text-[#0B1E36] font-sans">
                     Caratteristiche Ingegneristiche Chiave
@@ -186,7 +366,7 @@ export default function CaseStudies() {
                   </ul>
                 </div>
 
-                {/* Stack Tecnologico Certificato */}
+                {/* Stack */}
                 <div className="space-y-1.5 border-t border-[#E8E2D5] pt-3">
                   <div className="text-[10px] font-bold uppercase tracking-wider text-[#0B1E36] font-sans">
                     Stack Architetturale Adottato
@@ -204,7 +384,7 @@ export default function CaseStudies() {
                 </div>
               </div>
 
-              {/* Barra Inferiore: Live Demo + GitHub + Pulsante d'Azione */}
+              {/* Barra Inferiore */}
               <div className="p-4 sm:p-5 bg-[#F8F7F4] border-t border-[#E8E2D5] space-y-3">
                 {(project.demoUrl || project.repoUrl) && (
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
@@ -251,7 +431,7 @@ export default function CaseStudies() {
 
                   <button
                     type="button"
-                    onClick={() => handleSelectCaseStudy(project.prefillService, project.title)}
+                    onClick={() => handleSelectCaseStudy(project.prefillService || "", project.title)}
                     className="w-full sm:w-auto py-2.5 px-4 rounded-sm bg-[#0B1E36] hover:bg-[#002244] active:scale-[0.99] text-white font-sans text-xs font-semibold tracking-wide transition-all shadow-xs inline-flex items-center justify-center gap-2 group/btn cursor-pointer"
                   >
                     <span>{project.ctaText}</span>
@@ -266,3 +446,4 @@ export default function CaseStudies() {
     </section>
   );
 }
+

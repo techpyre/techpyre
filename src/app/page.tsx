@@ -15,7 +15,7 @@ export default function Home() {
       <div className="min-h-screen bg-[#F8F7F4] text-[#14181F]">
         <main id="main-content">
           <Hero />
-          <CaseStudies />
+          <CaseStudies variant="teaser" />
           <ContactBox />
         </main>
         <Footer />
