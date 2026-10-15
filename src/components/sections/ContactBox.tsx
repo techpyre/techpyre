@@ -8,16 +8,16 @@ import { ContactPayload, ContactApiResponse } from "@/types/content";
 /**
  * =====================================================================
  * BOX DI CONTATTO ISTITUZIONALE & MODULO DI RICHIESTA B2B
- * - Riceve eventi custom per pre-selezionare il servizio dal listino o simulatore
+ * - Riceve eventi custom per pre-selezionare il servizio da listino/simulatore
  * - Validazione front-end client-side immediata con messaggi d'errore chiari
- * - Invia i dati alla route API (/api/contact) con fallback sicuro anti-crash
- * - Input con dimensione minima di 16px su mobile per impedire lo zoom automatico su iOS
+ * - Invia i dati alla route API (/api/contact) collegata ad Aruba SMTP
+ * - Input con dimensione minima di 16px (text-base sm:text-sm) per impedire
+ *   lo zoom automatico sgradevole su iOS Safari
  * =====================================================================
  */
 export default function ContactBox() {
   const { contact, services, brand } = siteContent;
 
-  // Stato iniziale dei dati del modulo
   const [formData, setFormData] = useState<ContactPayload>({
     name: "",
     company: "",
@@ -30,7 +30,6 @@ export default function ContactBox() {
   const [errorMessage, setErrorMessage] = useState<string>("");
   const [validationErrors, setValidationErrors] = useState<Record<string, string>>({});
 
-  // Ascolta sia la selezione semplice da listino sia i dettagli dal simulatore interattivo
   useEffect(() => {
     const handleSelectService = (event: CustomEvent<{ serviceTitle: string }>) => {
       if (event.detail && event.detail.serviceTitle) {
@@ -65,7 +64,6 @@ export default function ContactBox() {
     };
   }, []);
 
-  // Validazione client-side prima dell'inoltro alla route API
   const validate = (): boolean => {
     const errors: Record<string, string> = {};
     if (!formData.name.trim() || formData.name.trim().length < 2) {
@@ -127,10 +125,16 @@ export default function ContactBox() {
   };
 
   return (
-    <section id="contatto" className="py-14 sm:py-16 md:py-24 bg-[#F8F7F4] relative border-t border-[#E8E2D5]">
+    <section id="contatto" className="py-12 sm:py-16 md:py-24 bg-[#F8F7F4] relative border-t border-[#E8E2D5]">
       <div className="max-w-7xl mx-auto px-5 sm:px-6 md:px-12">
-        {/* Intestazione Pragmatica */}
-        <div className="max-w-3xl space-y-2 pb-6 sm:pb-8">
+        {/* Intestazione */}
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-40px" }}
+          transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+          className="max-w-3xl space-y-1.5 pb-6 sm:pb-8"
+        >
           <div className="text-[10px] sm:text-[11px] font-sans font-bold text-[#B8860B] uppercase tracking-widest">
             {contact.eyebrow}
           </div>
@@ -142,26 +146,32 @@ export default function ContactBox() {
           <p className="text-xs sm:text-sm md:text-base text-[#5A6270] leading-relaxed font-sans">
             {contact.subtitle}
           </p>
-        </div>
+        </motion.div>
 
-        {/* Griglia Contatto: Canali & Modulo (Stacca su mobile, affiancata su desktop) */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 lg:gap-12 items-start">
+        {/* Griglia Contatto: Canali & Modulo */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-start">
           {/* Canali Diretti (Colonna Sinistra) */}
-          <div className="lg:col-span-5 space-y-4 sm:space-y-5">
-            <div className="p-5 sm:p-7 rounded-sm bg-white border border-[#E8E2D5] shadow-xs space-y-4 sm:space-y-5">
-              <div className="space-y-1">
+          <div className="lg:col-span-5 space-y-4">
+            <motion.div
+              initial={{ opacity: 0, y: 16 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              className="p-5 sm:p-6 rounded-sm bg-white border border-[#E8E2D5] shadow-xs space-y-4"
+            >
+              <div className="space-y-0.5">
                 <div className="text-[10px] font-bold uppercase tracking-widest text-[#B8860B]">
                   REPERIBILITÀ DIRETTA
                 </div>
                 <h3 className="font-serif text-lg sm:text-xl text-[#0B1E36] font-semibold">
                   Il contatto con le persone
                 </h3>
-                <p className="text-xs text-[#5A6270]">Nessun centralino, parli direttamente con noi</p>
+                <p className="text-xs text-[#5A6270]">Nessun centralino, risponde Riccardo Granza</p>
               </div>
 
-              <div className="space-y-3 divide-y divide-[#E8E2D5] border-y border-[#E8E2D5] pt-1">
+              <div className="space-y-2.5 divide-y divide-[#E8E2D5] border-y border-[#E8E2D5] pt-1">
                 {contact.channels.map((channel, i) => (
-                  <div key={i} className="pt-2.5 sm:pt-3 pb-2.5 sm:pb-3 first:pt-2.5 space-y-0.5">
+                  <div key={i} className="pt-2.5 pb-2.5 first:pt-2 space-y-0.5">
                     <div className="text-[10px] font-bold uppercase tracking-wider text-[#5A6270]">
                       {channel.label}
                     </div>
@@ -170,43 +180,48 @@ export default function ContactBox() {
                         href={channel.href}
                         target={channel.isExternal ? "_blank" : undefined}
                         rel={channel.isExternal ? "noreferrer" : undefined}
-                        className="font-serif text-base sm:text-lg md:text-xl text-[#0B1E36] hover:text-[#B8860B] transition-colors block font-semibold break-all sm:break-normal"
+                        className="font-serif text-base sm:text-lg text-[#0B1E36] hover:text-[#B8860B] transition-colors block font-semibold break-all sm:break-normal"
                       >
                         {channel.value}
                       </a>
                     ) : (
-                      <div className="font-serif text-base sm:text-lg md:text-xl text-[#0B1E36] font-semibold">
+                      <div className="font-serif text-base sm:text-lg text-[#0B1E36] font-semibold">
                         {channel.value}
                       </div>
                     )}
-                    <div className="text-xs text-[#B8860B] font-medium pt-0.5">
+                    <div className="text-xs text-[#B8860B] font-medium">
                       {channel.subtext}
                     </div>
                   </div>
                 ))}
               </div>
 
-              <div className="p-3 sm:p-3.5 rounded-sm bg-[#0B1E36]/5 border border-[#0B1E36]/10 flex items-center gap-3 text-xs text-[#0B1E36]">
+              <div className="p-3 rounded-sm bg-[#0B1E36]/5 border border-[#0B1E36]/10 flex items-center gap-2.5 text-xs text-[#0B1E36]">
                 <span className="text-[#B8860B] font-bold shrink-0">▪</span>
                 <span>
-                  <strong>Preferisci un confronto di persona?</strong> Fissiamo volentieri un incontro
-                  presso la sede della tua impresa.
+                  <strong>Incontro in presenza?</strong> Disponibile per incontri presso la sede aziendale.
                 </span>
               </div>
-            </div>
+            </motion.div>
           </div>
 
           {/* Modulo di Contatto (Colonna Destra) */}
-          <div className="lg:col-span-7 bg-white p-5 sm:p-7 md:p-9 rounded-sm border border-[#E8E2D5] shadow-xs">
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.15 }}
+            className="lg:col-span-7 bg-white p-5 sm:p-7 md:p-8 rounded-sm border border-[#E8E2D5] shadow-xs"
+          >
             <AnimatePresence mode="wait">
               {status === "success" ? (
                 <motion.div
                   key="success"
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
+                  initial={{ opacity: 0, scale: 0.98 }}
+                  animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0 }}
                   transition={{ duration: 0.3 }}
-                  className="space-y-5 text-left py-4 sm:py-6"
+                  className="space-y-4 text-left py-4"
                 >
                   <div className="w-10 h-10 rounded-sm bg-emerald-100 border border-emerald-300 flex items-center justify-center text-emerald-800 text-lg font-bold">
                     ✓
@@ -219,21 +234,34 @@ export default function ContactBox() {
                       {contact.feedback.successMessage}
                     </p>
                   </div>
-                  <div className="p-3.5 rounded-sm bg-[#F8F7F4] border border-[#E8E2D5] text-xs font-sans text-[#5A6270] space-y-0.5">
-                    <div>Recapito indicato: <strong className="text-[#0B1E36]">{formData.contact}</strong></div>
-                    <div>Servizio di interesse: <strong className="text-[#0B1E36]">{formData.service}</strong></div>
+                  <div className="pt-2">
+                    <button
+                      type="button"
+                      onClick={handleReset}
+                      className="py-2.5 px-4 rounded-sm bg-[#0B1E36] text-white text-xs font-semibold hover:bg-[#003366] transition-colors cursor-pointer"
+                    >
+                      {contact.feedback.successReset}
+                    </button>
                   </div>
-                  <button
-                    onClick={handleReset}
-                    className="px-5 py-3 rounded-sm bg-[#0B1E36] hover:bg-[#003366] text-white font-sans text-xs font-bold uppercase tracking-wider transition-colors cursor-pointer"
-                  >
-                    {contact.feedback.successReset}
-                  </button>
                 </motion.div>
               ) : (
-                <form key="form" onSubmit={handleSubmit} className="space-y-4 sm:space-y-5" noValidate>
+                <motion.form
+                  key="form"
+                  onSubmit={handleSubmit}
+                  noValidate
+                  className="space-y-4"
+                >
+                  <div className="space-y-0.5 border-b border-[#E8E2D5] pb-2.5">
+                    <div className="text-[10px] font-bold uppercase tracking-widest text-[#B8860B]">
+                      MODULO DI RICHIESTA DIRETTA
+                    </div>
+                    <div className="text-xs text-[#5A6270]">
+                      I campi contrassegnati con (*) sono necessari per un riscontro accurato.
+                    </div>
+                  </div>
+
                   {status === "error" && (
-                    <div className="p-3.5 rounded-sm bg-rose-50 border border-rose-200 text-rose-800 text-xs font-sans space-y-0.5">
+                    <div className="p-3 rounded-sm bg-rose-50 border border-rose-200 text-rose-800 text-xs">
                       <div className="font-bold">{contact.feedback.errorTitle}</div>
                       <div>{errorMessage}</div>
                     </div>
@@ -241,153 +269,144 @@ export default function ContactBox() {
 
                   {/* Nome e Cognome */}
                   <div className="space-y-1">
-                    <label className="block text-[11px] font-sans font-bold uppercase tracking-wider text-[#0B1E36]">
-                      {contact.formLabels.name} <span className="text-[#B8860B]">*</span>
+                    <label
+                      htmlFor="name"
+                      className="block text-xs font-sans font-bold uppercase tracking-wider text-[#0B1E36]"
+                    >
+                      {contact.formLabels.name} *
                     </label>
                     <input
                       type="text"
-                      required
-                      disabled={status === "submitting"}
+                      id="name"
                       value={formData.name}
-                      onChange={(e) => {
-                        setFormData({ ...formData, name: e.target.value });
-                        if (validationErrors.name) setValidationErrors((prev) => ({ ...prev, name: "" }));
-                      }}
+                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                       placeholder={contact.formLabels.namePlaceholder}
-                      className={`w-full px-4 py-3 rounded-sm bg-[#F8F7F4] border text-[#14181F] text-base sm:text-sm font-sans placeholder-[#5A6270]/50 focus:outline-none focus:border-[#0B1E36] focus:bg-white transition-all ${
-                        validationErrors.name ? "border-rose-400" : "border-[#E8E2D5]"
+                      className={`w-full px-3.5 py-2.5 rounded-sm border bg-[#F8F7F4]/40 text-[#14181F] text-base sm:text-sm focus:outline-none focus:ring-1 focus:ring-[#B8860B] transition-all ${
+                        validationErrors.name ? "border-rose-400 bg-rose-50/20" : "border-[#E8E2D5]"
                       }`}
+                      required
                     />
                     {validationErrors.name && (
-                      <p className="text-rose-600 text-[11px] pt-0.5">{validationErrors.name}</p>
+                      <p className="text-[11px] text-rose-600 font-medium">{validationErrors.name}</p>
                     )}
                   </div>
 
-                  {/* Azienda & Recapito */}
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+                  {/* Ragione Sociale & Contatto Diretto */}
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
                     <div className="space-y-1">
-                      <label className="block text-[11px] font-sans font-bold uppercase tracking-wider text-[#0B1E36]">
+                      <label
+                        htmlFor="company"
+                        className="block text-xs font-sans font-bold uppercase tracking-wider text-[#0B1E36]"
+                      >
                         {contact.formLabels.company}
                       </label>
                       <input
                         type="text"
-                        disabled={status === "submitting"}
+                        id="company"
                         value={formData.company}
-                        onChange={(e) => {
-                          setFormData({ ...formData, company: e.target.value });
-                        }}
+                        onChange={(e) => setFormData({ ...formData, company: e.target.value })}
                         placeholder={contact.formLabels.companyPlaceholder}
-                        className="w-full px-4 py-3 rounded-sm bg-[#F8F7F4] border border-[#E8E2D5] text-[#14181F] text-base sm:text-sm font-sans placeholder-[#5A6270]/50 focus:outline-none focus:border-[#0B1E36] focus:bg-white transition-all"
+                        className="w-full px-3.5 py-2.5 rounded-sm border border-[#E8E2D5] bg-[#F8F7F4]/40 text-[#14181F] text-base sm:text-sm focus:outline-none focus:ring-1 focus:ring-[#B8860B] transition-all"
                       />
                     </div>
 
                     <div className="space-y-1">
-                      <label className="block text-[11px] font-sans font-bold uppercase tracking-wider text-[#0B1E36]">
-                        {contact.formLabels.contact} <span className="text-[#B8860B]">*</span>
+                      <label
+                        htmlFor="contact"
+                        className="block text-xs font-sans font-bold uppercase tracking-wider text-[#0B1E36]"
+                      >
+                        {contact.formLabels.contact} *
                       </label>
                       <input
                         type="text"
-                        required
-                        disabled={status === "submitting"}
+                        id="contact"
                         value={formData.contact}
-                        onChange={(e) => {
-                          setFormData({ ...formData, contact: e.target.value });
-                          if (validationErrors.contact) setValidationErrors((prev) => ({ ...prev, contact: "" }));
-                        }}
+                        onChange={(e) => setFormData({ ...formData, contact: e.target.value })}
                         placeholder={contact.formLabels.contactPlaceholder}
-                        className={`w-full px-4 py-3 rounded-sm bg-[#F8F7F4] border text-[#14181F] text-base sm:text-sm font-sans placeholder-[#5A6270]/50 focus:outline-none focus:border-[#0B1E36] focus:bg-white transition-all ${
-                          validationErrors.contact ? "border-rose-400" : "border-[#E8E2D5]"
+                        className={`w-full px-3.5 py-2.5 rounded-sm border bg-[#F8F7F4]/40 text-[#14181F] text-base sm:text-sm focus:outline-none focus:ring-1 focus:ring-[#B8860B] transition-all ${
+                          validationErrors.contact ? "border-rose-400 bg-rose-50/20" : "border-[#E8E2D5]"
                         }`}
+                        required
                       />
                       {validationErrors.contact && (
-                        <p className="text-rose-600 text-[11px] pt-0.5">{validationErrors.contact}</p>
+                        <p className="text-[11px] text-rose-600 font-medium">{validationErrors.contact}</p>
                       )}
                     </div>
                   </div>
 
                   {/* Servizio di Interesse */}
-                  <div className="space-y-1.5">
-                    <label className="block text-[11px] font-sans font-bold uppercase tracking-wider text-[#0B1E36]">
+                  <div className="space-y-1">
+                    <label
+                      htmlFor="service"
+                      className="block text-xs font-sans font-bold uppercase tracking-wider text-[#0B1E36]"
+                    >
                       {contact.formLabels.service}
                     </label>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                      {services.items.map((item) => {
-                        const isSelected = formData.service === item.name;
-                        return (
-                          <button
-                            key={item.id}
-                            type="button"
-                            disabled={status === "submitting"}
-                            onClick={() => setFormData({ ...formData, service: item.name })}
-                            className={`p-2.5 sm:p-3 rounded-sm text-left border transition-all text-xs font-sans cursor-pointer flex items-center justify-between min-h-[44px] ${
-                              isSelected
-                                ? "border-[#0B1E36] bg-[#0B1E36] text-white font-semibold"
-                                : "border-[#E8E2D5] bg-[#F8F7F4] text-[#5A6270] hover:border-[#0B1E36]"
-                            }`}
-                          >
-                            <span className="line-clamp-1">{item.name}</span>
-                            <span
-                              className={`w-3.5 h-3.5 rounded-xs border flex items-center justify-center text-[9px] shrink-0 ml-1.5 font-bold ${
-                                isSelected ? "border-white bg-white text-[#0B1E36]" : "border-[#E8E2D5]"
-                              }`}
-                            >
-                              {isSelected ? "✓" : ""}
-                            </span>
-                          </button>
-                        );
-                      })}
-                    </div>
+                    <select
+                      id="service"
+                      value={formData.service}
+                      onChange={(e) => setFormData({ ...formData, service: e.target.value })}
+                      className="w-full px-3.5 py-2.5 rounded-sm border border-[#E8E2D5] bg-[#F8F7F4]/40 text-[#14181F] text-base sm:text-sm focus:outline-none focus:ring-1 focus:ring-[#B8860B] transition-all"
+                    >
+                      {services.items.map((srv) => (
+                        <option key={srv.id} value={srv.name}>
+                          {srv.name} — {srv.price}
+                        </option>
+                      ))}
+                      <option value="Altro / Progetto Speciale">Altro / Esigenza Speciale Personalizzata</option>
+                    </select>
                   </div>
 
                   {/* Messaggio */}
                   <div className="space-y-1">
-                    <label className="block text-[11px] font-sans font-bold uppercase tracking-wider text-[#0B1E36]">
-                      {contact.formLabels.message} <span className="text-[#B8860B]">*</span>
+                    <label
+                      htmlFor="message"
+                      className="block text-xs font-sans font-bold uppercase tracking-wider text-[#0B1E36]"
+                    >
+                      {contact.formLabels.message} *
                     </label>
                     <textarea
-                      rows={3}
-                      required
-                      disabled={status === "submitting"}
+                      id="message"
+                      rows={4}
                       value={formData.message}
-                      onChange={(e) => {
-                        setFormData({ ...formData, message: e.target.value });
-                        if (validationErrors.message) setValidationErrors((prev) => ({ ...prev, message: "" }));
-                      }}
+                      onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                       placeholder={contact.formLabels.messagePlaceholder}
-                      className={`w-full px-4 py-3 rounded-sm bg-[#F8F7F4] border text-[#14181F] text-base sm:text-sm font-sans placeholder-[#5A6270]/50 focus:outline-none focus:border-[#0B1E36] focus:bg-white transition-all resize-none ${
-                        validationErrors.message ? "border-rose-400" : "border-[#E8E2D5]"
+                      className={`w-full px-3.5 py-2.5 rounded-sm border bg-[#F8F7F4]/40 text-[#14181F] text-base sm:text-sm focus:outline-none focus:ring-1 focus:ring-[#B8860B] transition-all ${
+                        validationErrors.message ? "border-rose-400 bg-rose-50/20" : "border-[#E8E2D5]"
                       }`}
+                      required
                     />
                     {validationErrors.message && (
-                      <p className="text-rose-600 text-[11px] pt-0.5">{validationErrors.message}</p>
+                      <p className="text-[11px] text-rose-600 font-medium">{validationErrors.message}</p>
                     )}
                   </div>
 
-                  {/* Pulsante Invio */}
-                  <div className="pt-1 space-y-2">
-                    <button
-                      type="submit"
-                      disabled={status === "submitting"}
-                      className="w-full py-3.5 rounded-sm bg-[#0B1E36] hover:bg-[#003366] text-white font-sans text-xs sm:text-sm font-bold tracking-wide transition-all shadow-xs flex items-center justify-center gap-2 cursor-pointer disabled:opacity-60 min-h-[48px]"
-                    >
-                      {status === "submitting" ? (
-                        <>
-                          <span className="w-3.5 h-3.5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
-                          <span>{contact.formLabels.submitting}</span>
-                        </>
-                      ) : (
-                        <span>{contact.formLabels.submit} →</span>
-                      )}
-                    </button>
-
-                    <p className="text-[10px] sm:text-[11px] text-[#5A6270] text-center font-sans">
+                  {/* Privacy & Invio */}
+                  <div className="pt-2 space-y-3">
+                    <p className="text-[11px] text-[#5A6270] leading-relaxed">
                       {contact.formLabels.privacyNote}
                     </p>
+
+                    <motion.button
+                      whileTap={{ scale: 0.98 }}
+                      type="submit"
+                      disabled={status === "submitting"}
+                      className="w-full py-3.5 px-6 rounded-sm bg-[#B8860B] hover:bg-[#9a7008] text-white font-sans text-xs sm:text-sm font-bold tracking-wide transition-all shadow-xs flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50 min-h-[44px]"
+                    >
+                      {status === "submitting" ? (
+                        <span>{contact.formLabels.submitting}</span>
+                      ) : (
+                        <>
+                          <span>{contact.formLabels.submit}</span>
+                          <span>→</span>
+                        </>
+                      )}
+                    </motion.button>
                   </div>
-                </form>
+                </motion.form>
               )}
             </AnimatePresence>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

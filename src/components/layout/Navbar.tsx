@@ -1,29 +1,56 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, useScroll } from "framer-motion";
 import { siteContent } from "@/config/siteContent";
 import Button from "@/components/ui/Button";
 import TechPyreLogo from "@/components/ui/TechPyreLogo";
 
 /**
  * =====================================================================
- * COMPONENTE NAVBAR (NAVIGAZIONE PRINCIPALE)
- * - Riconosce automaticamente lo stato di scroll per applicare sfondo semitrasparente
- * - Gestisce il drawer mobile responsive per smartphone e tablet
- * - Blocca lo scroll del body quando il menu mobile è aperto per evitare glitch UX
+ * COMPONENTE NAVBAR (NAVIGAZIONE PRINCIPALE ISTITUZIONALE)
+ * - Scomparsa automatica allo scroll verso il basso per massima leggibilità
+ * - Ricomparsa immediata allo scroll verso l'alto
+ * - Sfondo 100% opaco (#F8F7F4): nessun effetto semitrasparente che lasci
+ *   trasparire i testi sottostanti
+ * - Linea dorata di progressione lettura integrata
+ * - CTA "Incontro 30m" sempre visibile anche su mobile senza aprire il menu
  * =====================================================================
  */
 export default function Navbar() {
+  const [isVisible, setIsVisible] = useState(true);
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const { brand, navigation } = siteContent;
+  const { scrollYProgress } = useScroll();
 
-  // Effetto per rilevare lo scroll della pagina e chiudere il menu mobile su schermi grandi
+  // Rileva direzione dello scroll per nascondere/mostrare la barra in modo intelligente
   useEffect(() => {
+    let lastScrollY = window.scrollY;
+
     const handleScroll = () => {
-      setScrolled(window.scrollY > 20);
+      const currentScrollY = window.scrollY;
+      setScrolled(currentScrollY > 20);
+
+      // Se il menu mobile è aperto, mantieni sempre visibile l'intestazione
+      if (mobileMenuOpen) {
+        setIsVisible(true);
+        return;
+      }
+
+      // Se siamo vicini alla cima della pagina, mostra sempre
+      if (currentScrollY <= 30) {
+        setIsVisible(true);
+      } else if (currentScrollY > lastScrollY && currentScrollY > 60) {
+        // Scroll verso il basso: scompare per dare respiro al contenuto
+        setIsVisible(false);
+      } else if (currentScrollY < lastScrollY) {
+        // Scroll verso l'alto: ricompare immediatamente
+        setIsVisible(true);
+      }
+
+      lastScrollY = currentScrollY <= 0 ? 0 : currentScrollY;
     };
 
     const handleResize = () => {
@@ -41,7 +68,7 @@ export default function Navbar() {
     };
   }, [mobileMenuOpen]);
 
-  // Blocca lo scroll della pagina quando il drawer mobile è aperto
+  // Blocca lo scroll del body quando il drawer mobile è aperto
   useEffect(() => {
     if (mobileMenuOpen) {
       document.body.style.overflow = "hidden";
@@ -56,11 +83,9 @@ export default function Navbar() {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          scrolled
-            ? "bg-[#F8F7F4]/98 backdrop-blur-md border-b border-[#E8E2D5] py-3 shadow-xs"
-            : "bg-[#F8F7F4]/90 backdrop-blur-xs py-4 sm:py-4.5 border-b border-[#E8E2D5]/70"
-        }`}
+        className={`fixed top-0 left-0 right-0 z-50 bg-[#F8F7F4] border-b border-[#E8E2D5] transition-transform duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] ${
+          isVisible ? "translate-y-0" : "-translate-y-full"
+        } ${scrolled ? "py-2.5 shadow-sm" : "py-3.5 sm:py-4"}`}
       >
         <div className="max-w-7xl mx-auto px-5 sm:px-6 md:px-12 flex items-center justify-between">
           {/* Logo Tipografico Ufficiale */}
@@ -72,7 +97,7 @@ export default function Navbar() {
             <TechPyreLogo size="md" />
           </a>
 
-          {/* Link di Navigazione Desktop (Visibili da 1024px in su) */}
+          {/* Link di Navigazione Desktop */}
           <nav className="hidden lg:flex items-center gap-7 xl:gap-8">
             {navigation.links.map((link) => (
               <a
@@ -130,29 +155,35 @@ export default function Navbar() {
             </button>
           </div>
         </div>
+
+        {/* Filetto Sottile di Progressione Lettura (Oro Bruciato) */}
+        <motion.div
+          style={{ scaleX: scrollYProgress, transformOrigin: "0%" }}
+          className="absolute bottom-0 left-0 right-0 h-[2px] bg-[#B8860B] pointer-events-none"
+        />
       </header>
 
       {/* Drawer di Navigazione Mobile a Schermo Intero */}
       <AnimatePresence>
         {mobileMenuOpen && (
           <motion.div
-            initial={{ opacity: 0, y: -12 }}
+            initial={{ opacity: 0, y: -8 }}
             animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -12 }}
+            exit={{ opacity: 0, y: -8 }}
             transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
-            className="fixed inset-0 z-40 bg-[#F8F7F4] pt-24 px-6 pb-10 flex flex-col justify-between lg:hidden border-b border-[#E8E2D5] overflow-y-auto"
+            className="fixed inset-0 z-40 bg-[#F8F7F4] pt-20 px-6 pb-8 flex flex-col justify-between lg:hidden border-b border-[#E8E2D5] overflow-y-auto"
           >
-            <div className="space-y-6 pt-4">
-              <div className="text-[11px] font-sans uppercase font-bold tracking-widest text-[#B8860B] border-b border-[#E8E2D5] pb-3">
+            <div className="space-y-5 pt-3">
+              <div className="text-[10px] font-sans uppercase font-bold tracking-widest text-[#B8860B] border-b border-[#E8E2D5] pb-2.5">
                 INDICE DI NAVIGAZIONE
               </div>
-              <nav className="flex flex-col space-y-3">
+              <nav className="flex flex-col space-y-2.5">
                 {navigation.links.map((link) => (
                   <a
                     key={link.label}
                     href={link.href}
                     onClick={() => setMobileMenuOpen(false)}
-                    className="flex items-center justify-between py-2 text-xl font-serif text-[#0B1E36] hover:text-[#B8860B] transition-colors border-b border-[#E8E2D5]/40"
+                    className="flex items-center justify-between py-2 text-lg font-serif text-[#0B1E36] hover:text-[#B8860B] transition-colors border-b border-[#E8E2D5]/40"
                   >
                     <span>{link.label}</span>
                     <span className="text-xs font-sans text-[#5A6270]">→</span>
@@ -161,7 +192,7 @@ export default function Navbar() {
                 <a
                   href="#simulatore"
                   onClick={() => setMobileMenuOpen(false)}
-                  className="flex items-center justify-between py-2 text-xl font-serif text-[#B8860B] font-semibold border-b border-[#E8E2D5]/40"
+                  className="flex items-center justify-between py-2 text-lg font-serif text-[#B8860B] font-semibold border-b border-[#E8E2D5]/40"
                 >
                   <span>Simulatore Preventivo B2B</span>
                   <span className="text-xs font-sans text-[#B8860B]">→</span>
@@ -169,15 +200,15 @@ export default function Navbar() {
               </nav>
             </div>
 
-            <div className="pt-6 border-t border-[#E8E2D5] space-y-3">
+            <div className="pt-5 border-t border-[#E8E2D5] space-y-3">
               <a
                 href={navigation.cta.href}
                 onClick={() => setMobileMenuOpen(false)}
-                className="block text-center w-full py-3.5 bg-[#0A192F] text-white rounded-sm text-xs font-bold uppercase tracking-wider shadow-sm hover:bg-[#003366] transition-colors"
+                className="block text-center w-full py-3 bg-[#0A192F] text-white rounded-sm text-xs font-bold uppercase tracking-wider shadow-sm hover:bg-[#003366] transition-colors"
               >
                 {navigation.cta.label}
               </a>
-              <div className="text-[11px] font-sans text-center text-[#5A6270]">
+              <div className="text-[10px] font-sans text-center text-[#5A6270]">
                 {brand.location}
               </div>
             </div>

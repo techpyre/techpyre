@@ -9,18 +9,17 @@ import { ServiceItem } from "@/types/content";
 /**
  * =====================================================================
  * MATRICE DEI SERVIZI & LISTINO TRASPARENTE B2B
- * - Esposizione tabellare dei 4 livelli di servizio con prezzi prefissati
- * - Righe interattive con hover translation e pannello espandibile
- * - Integrazione con il form di contatto: cliccando "Richiedi", compila
- *   automaticamente il servizio selezionato e scorre alla sezione #contatto.
+ * - Esposizione chiara dei 4 livelli di servizio con prezzi prefissati
+ * - Schede compatte con reveal progressivo per evitare scroll infinito su mobile
+ * - Animazioni fluide Framer Motion (stagger, accordion ad alta reattività)
+ * - Selezione diretta con precompilazione modulo di contatto
  * =====================================================================
  */
 export default function ServicesMatrix() {
   const { services } = siteContent;
-  // Di default teniamo aperta la prima scheda di consulenza per mostrare subito il contenuto
-  const [expandedId, setExpandedId] = useState<string | null>("consulenza");
+  // Di default teniamo le schede chiuse per un colpo d'occhio immediato e pulito su mobile
+  const [expandedId, setExpandedId] = useState<string | null>(null);
 
-  // Invia un evento custom per pre-selezionare il servizio nel form di contatto in calce
   const handleSelectService = (service: ServiceItem) => {
     if (typeof window !== "undefined") {
       window.dispatchEvent(
@@ -40,11 +39,17 @@ export default function ServicesMatrix() {
   };
 
   return (
-    <section id="servizi" className="py-14 sm:py-16 md:py-20 relative bg-[#F8F7F4] border-t border-[#E8E2D5]">
+    <section id="servizi" className="py-12 sm:py-16 md:py-20 relative bg-[#F8F7F4] border-t border-[#E8E2D5]">
       <div className="max-w-7xl mx-auto px-5 sm:px-6 md:px-12">
-        {/* Intestazione Sezione Pragmatica */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-5 sm:gap-6 pb-6">
-          <div className="max-w-3xl space-y-2">
+        {/* Intestazione Sezione con Animazione */}
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-40px" }}
+          transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+          className="flex flex-col md:flex-row md:items-end justify-between gap-4 sm:gap-6 pb-5 sm:pb-6"
+        >
+          <div className="max-w-3xl space-y-1.5">
             <div className="text-[10px] sm:text-[11px] font-sans font-bold text-[#B8860B] uppercase tracking-widest">
               {services.eyebrow}
             </div>
@@ -58,30 +63,34 @@ export default function ServicesMatrix() {
             </p>
           </div>
 
-          <div className="text-xs font-sans text-[#5A6270] bg-white border border-[#E8E2D5] p-3 rounded-sm shrink-0">
-            <div className="text-[10px] font-bold uppercase tracking-wider text-[#5A6270]">GARANZIA DI TRASPARENZA</div>
-            <div className="text-[#0B1E36] font-bold text-xs sm:text-sm">Fatturazione B2B a milestone</div>
+          <div className="text-xs font-sans text-[#5A6270] bg-white border border-[#E8E2D5] p-3 rounded-sm shrink-0 self-start md:self-auto">
+            <div className="text-[10px] font-bold uppercase tracking-wider text-[#5A6270]">TRASPARENZA</div>
+            <div className="text-[#0B1E36] font-bold text-xs sm:text-sm">Fatturazione a milestone certe</div>
           </div>
-        </div>
+        </motion.div>
 
         <AnimatedLine className="mb-6 sm:mb-8" />
 
         {/* Matrice dei Servizi con Tagli Architetturali */}
         <div className="space-y-3">
-          {services.items.map((item) => {
+          {services.items.map((item, index) => {
             const isExpanded = expandedId === item.id;
 
             return (
-              <div
+              <motion.div
                 key={item.id}
-                className={`rounded-sm border transition-all duration-200 bg-white overflow-hidden shadow-xs ${
+                initial={{ opacity: 0, y: 16 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-30px" }}
+                transition={{ duration: 0.5, delay: index * 0.08, ease: [0.22, 1, 0.36, 1] }}
+                className={`rounded-sm border transition-colors duration-200 bg-white overflow-hidden shadow-xs ${
                   isExpanded ? "border-[#B8860B] ring-1 ring-[#B8860B]/20" : "border-[#E8E2D5] hover:border-[#0B1E36]"
                 }`}
               >
                 {/* Riga Principale Interattiva */}
                 <div
                   onClick={() => toggleExpand(item.id)}
-                  className="p-4 sm:p-6 cursor-pointer flex flex-col lg:flex-row lg:items-center justify-between gap-4 sm:gap-6 group"
+                  className="p-4 sm:p-5 cursor-pointer flex flex-col lg:flex-row lg:items-center justify-between gap-3 sm:gap-6 group"
                   role="button"
                   tabIndex={0}
                   aria-expanded={isExpanded}
@@ -91,9 +100,9 @@ export default function ServicesMatrix() {
                     }
                   }}
                 >
-                  {/* Titolo e Indice senza bolle rotonde */}
-                  <div className="flex items-start gap-3 sm:gap-5 lg:max-w-2xl transition-transform duration-300 group-hover:translate-x-1 sm:group-hover:translate-x-2">
-                    <span className="font-mono text-xs sm:text-sm font-bold text-[#B8860B] pt-0.5 sm:pt-1 shrink-0">
+                  {/* Titolo e Indice */}
+                  <div className="flex items-start gap-3 sm:gap-4 lg:max-w-2xl transition-transform duration-200 group-hover:translate-x-1">
+                    <span className="font-mono text-xs sm:text-sm font-bold text-[#B8860B] pt-0.5 shrink-0">
                       [{item.number}]
                     </span>
                     <div>
@@ -106,8 +115,8 @@ export default function ServicesMatrix() {
                     </div>
                   </div>
 
-                  {/* Prezzo e Indicatore di Espansione (Adattabile su Mobile) */}
-                  <div className="flex items-center justify-between lg:justify-end gap-4 sm:gap-8 border-t lg:border-t-0 pt-3 lg:pt-0 border-[#E8E2D5]/60">
+                  {/* Prezzo e Indicatore di Espansione */}
+                  <div className="flex items-center justify-between lg:justify-end gap-3 sm:gap-6 border-t lg:border-t-0 pt-2.5 lg:pt-0 border-[#E8E2D5]/60">
                     <div className="text-left lg:text-right">
                       <div className="font-serif text-lg sm:text-xl md:text-2xl font-bold text-[#0B1E36]">
                         {item.price}
@@ -117,39 +126,42 @@ export default function ServicesMatrix() {
                       </div>
                     </div>
 
-                    <div className="flex items-center gap-2 sm:gap-3 shrink-0">
+                    <div className="flex items-center gap-2 shrink-0">
                       <span className="text-xs font-sans font-bold text-[#B8860B] group-hover:text-[#0B1E36] transition-colors hidden sm:inline-block">
-                        {isExpanded ? "Nascondi specifiche" : "Consulta scheda"}
+                        {isExpanded ? "Nascondi" : "Specifiche"}
                       </span>
-                      <div
-                        className={`w-6 h-6 rounded-sm border border-[#E8E2D5] flex items-center justify-center text-xs font-mono transition-transform duration-300 ${
+                      <motion.div
+                        animate={{ rotate: isExpanded ? 180 : 0 }}
+                        transition={{ duration: 0.25 }}
+                        className={`w-7 h-7 rounded-sm border flex items-center justify-center text-xs font-mono ${
                           isExpanded
-                            ? "rotate-180 bg-[#0B1E36] text-white border-[#0B1E36]"
-                            : "bg-[#F8F7F4] text-[#0B1E36]"
+                            ? "bg-[#0B1E36] text-white border-[#0B1E36]"
+                            : "bg-[#F8F7F4] text-[#0B1E36] border-[#E8E2D5]"
                         }`}
                       >
                         ↓
-                      </div>
+                      </motion.div>
                     </div>
                   </div>
                 </div>
 
-                {/* Scheda Tecnica Dettagliata Espandibile */}
-                <AnimatePresence>
+                {/* Scheda Tecnica Dettagliata Espandibile con Animazione Fluida */}
+                <AnimatePresence initial={false}>
                   {isExpanded && (
                     <motion.div
+                      key="details"
                       initial={{ height: 0, opacity: 0 }}
                       animate={{ height: "auto", opacity: 1 }}
                       exit={{ height: 0, opacity: 0 }}
                       transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
-                      className="overflow-hidden border-t border-[#E8E2D5] bg-[#F8F7F4]/60"
+                      className="overflow-hidden border-t border-[#E8E2D5] bg-[#F8F7F4]/50"
                     >
-                      <div className="p-5 sm:p-7 md:p-8 grid grid-cols-1 lg:grid-cols-12 gap-6">
+                      <div className="p-4 sm:p-6 grid grid-cols-1 lg:grid-cols-12 gap-5">
                         {/* Specifiche e Deliverables */}
-                        <div className="lg:col-span-7 space-y-4 sm:space-y-5">
+                        <div className="lg:col-span-7 space-y-3.5">
                           <div>
-                            <div className="text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-[#B8860B] mb-1.5 font-sans">
-                              SPECIFICA ESECUTIVA DEL SERVIZIO
+                            <div className="text-[10px] font-bold uppercase tracking-wider text-[#B8860B] mb-1 font-sans">
+                              SPECIFICA ESECUTIVA
                             </div>
                             <p className="text-xs sm:text-sm text-[#14181F] leading-relaxed font-sans">
                               {item.description}
@@ -157,12 +169,12 @@ export default function ServicesMatrix() {
                           </div>
 
                           <div>
-                            <div className="text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-[#0B1E36] mb-2 font-sans">
-                              COSA INCLUDE IL CONTRATTO:
+                            <div className="text-[10px] font-bold uppercase tracking-wider text-[#0B1E36] mb-1.5 font-sans">
+                              COSA INCLUDE:
                             </div>
-                            <ul className="space-y-2">
+                            <ul className="space-y-1.5">
                               {item.deliverables.map((del, i) => (
-                                <li key={i} className="flex items-start gap-2.5 text-xs sm:text-sm text-[#14181F]">
+                                <li key={i} className="flex items-start gap-2 text-xs sm:text-sm text-[#14181F]">
                                   <span className="text-[#B8860B] font-bold text-xs shrink-0 mt-0.5">▪</span>
                                   <span>{del}</span>
                                 </li>
@@ -172,20 +184,20 @@ export default function ServicesMatrix() {
                         </div>
 
                         {/* Tempistiche e CTA */}
-                        <div className="lg:col-span-5 flex flex-col justify-between border-t lg:border-t-0 lg:border-l border-[#E8E2D5] pt-5 lg:pt-0 lg:pl-6 space-y-4 sm:space-y-5">
-                          <div className="space-y-2.5 sm:space-y-3 text-xs font-sans">
-                            <div className="p-3 sm:p-3.5 rounded-sm bg-white border border-[#E8E2D5] space-y-0.5 sm:space-y-1">
-                              <span className="text-[#5A6270] uppercase block text-[9px] sm:text-[10px] font-bold tracking-wider">
-                                TEMPISTICHE DI RILASCIO:
+                        <div className="lg:col-span-5 flex flex-col justify-between border-t lg:border-t-0 lg:border-l border-[#E8E2D5] pt-4 lg:pt-0 lg:pl-5 space-y-3.5">
+                          <div className="space-y-2 text-xs font-sans">
+                            <div className="p-3 rounded-sm bg-white border border-[#E8E2D5] space-y-0.5">
+                              <span className="text-[#5A6270] uppercase block text-[9px] font-bold tracking-wider">
+                                TEMPISTICHE DI CONSEGNA:
                               </span>
                               <span className="text-[#0B1E36] font-bold text-xs sm:text-sm">
                                 {item.timing}
                               </span>
                             </div>
 
-                            <div className="p-3 sm:p-3.5 rounded-sm bg-white border border-[#E8E2D5] space-y-0.5 sm:space-y-1">
-                              <span className="text-[#5A6270] uppercase block text-[9px] sm:text-[10px] font-bold tracking-wider">
-                                TARGET AZIENDALE DI RIFERIMENTO:
+                            <div className="p-3 rounded-sm bg-white border border-[#E8E2D5] space-y-0.5">
+                              <span className="text-[#5A6270] uppercase block text-[9px] font-bold tracking-wider">
+                                TARGET DI RIFERIMENTO:
                               </span>
                               <span className="text-[#14181F] text-xs leading-relaxed block font-medium">
                                 {item.target}
@@ -194,31 +206,38 @@ export default function ServicesMatrix() {
                           </div>
 
                           <div>
-                            <button
+                            <motion.button
+                              whileTap={{ scale: 0.98 }}
                               onClick={() => handleSelectService(item)}
-                              className="w-full py-3 sm:py-3.5 px-5 sm:px-6 rounded-sm bg-[#0B1E36] hover:bg-[#003366] text-white font-sans text-xs sm:text-sm font-semibold tracking-wide transition-all shadow-xs flex items-center justify-between group/btn cursor-pointer min-h-[44px]"
+                              className="w-full py-3 px-4 rounded-sm bg-[#0B1E36] hover:bg-[#003366] text-white font-sans text-xs sm:text-sm font-semibold tracking-wide transition-all shadow-xs flex items-center justify-between group/btn cursor-pointer min-h-[44px]"
                             >
                               <span>{item.ctaText}</span>
                               <span className="transition-transform group-hover/btn:translate-x-1">→</span>
-                            </button>
+                            </motion.button>
                           </div>
                         </div>
                       </div>
                     </motion.div>
                   )}
                 </AnimatePresence>
-              </div>
+              </motion.div>
             );
           })}
         </div>
 
-        {/* Nota di Trasparenza in calce */}
-        <div className="mt-6 sm:mt-8 p-4 rounded-sm bg-white border border-[#E8E2D5] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2.5 sm:gap-3 text-xs font-sans text-[#5A6270]">
+        {/* Garanzia in calce */}
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+          className="mt-6 p-3.5 sm:p-4 rounded-sm bg-white border border-[#E8E2D5] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 text-xs font-sans text-[#5A6270]"
+        >
           <div>{services.guarantee}</div>
           <div className="text-[#0B1E36] font-bold">
-            Fatturazione B2B trasparente · Nessun vincolo forzato
+            Fatturazione B2B a stati di avanzamento · Nessun vincolo
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

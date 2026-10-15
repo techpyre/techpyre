@@ -1,77 +1,109 @@
 "use client";
 
 import React from "react";
+import { motion } from "framer-motion";
 import { siteContent } from "@/config/siteContent";
 import Button from "@/components/ui/Button";
-import RevealText from "@/components/ui/RevealText";
+import AnimatedCounter from "@/components/ui/AnimatedCounter";
 
 /**
  * =====================================================================
  * SEZIONE HERO (INGRESSO & POSIZIONAMENTO ISTITUZIONALE)
- * - Riconoscimento automatico viewport: headline fluida da mobile a 4K
- * - Scheda "Patto di Fiducia" con garanzie immediate per decision maker B2B
- * - Griglia metrica svizzera unificata (4 KPI oggettivi senza box rotonde)
+ * - Animazioni orchestrate con Framer Motion (stagger e curve progressive)
+ * - Contatori animati di precisione sui 4 KPI ingegneristici
+ * - Layout fluido e asciutto: solo le informazioni decisive
  * =====================================================================
  */
 export default function Hero() {
   const { hero, brand } = siteContent;
 
-  // Indicatori di prestazione oggettivi calcolati sugli standard di settore
   const quickMetrics = [
-    { label: "PRESTAZIONI CORE WEB VITALS", value: "99 / 100", note: "Velocità di caricamento sub-secondo" },
-    { label: "TEMPO DI RILASCIO MEDIO", value: "5–7 Giorni", note: "Per landing page commerciali complete" },
-    { label: "PROPRIETÀ INTELLETTUALE", value: "100% Tua", note: "Nessun canone forzato di riscatto" },
-    { label: "TEMPO DI RISPOSTA GARANTITO", value: "< 2 Ore", note: "Linea telefonica diretta con il fondatore" },
+    {
+      label: "CORE WEB VITALS",
+      renderValue: () => (
+        <span>
+          <AnimatedCounter value={99} />
+          <span className="text-[#5A6270] text-base font-normal"> / 100</span>
+        </span>
+      ),
+      note: "Velocità di risposta sub-secondo",
+    },
+    {
+      label: "TEMPO DI RILASCIO MEDIO",
+      renderValue: () => <span>5–7 Giorni</span>,
+      note: "Per landing page commerciali complete",
+    },
+    {
+      label: "PROPRIETÀ CODICE",
+      renderValue: () => (
+        <span>
+          <AnimatedCounter value={100} suffix="%" />
+          <span className="text-[#B8860B] font-serif italic ml-1">Tua</span>
+        </span>
+      ),
+      note: "Nessun canone di riscatto",
+    },
+    {
+      label: "RISPOSTA GARANTITA",
+      renderValue: () => (
+        <span>
+          &lt; <AnimatedCounter value={2} /> Ore
+        </span>
+      ),
+      note: "Linea diretta con il fondatore",
+    },
   ];
 
   return (
-    <section className="relative pt-20 pb-12 sm:pt-24 sm:pb-14 lg:pt-32 lg:pb-16 overflow-hidden bg-[#F8F7F4]">
+    <section className="relative pt-20 pb-10 sm:pt-24 sm:pb-14 lg:pt-32 lg:pb-16 overflow-hidden bg-[#F8F7F4]">
       <div className="max-w-7xl mx-auto px-5 sm:px-6 md:px-12 relative z-10">
-        {/* Barra Istituzionale Top (Pragmatica, scalabile su mobile e tablet) */}
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-4 border-b border-[#E8E2D5] text-[10px] sm:text-[11px] font-sans font-bold tracking-wider uppercase text-[#5A6270]">
-          <div className="text-[#0B1E36]">
-            {hero.badge}
-          </div>
-          <div>
-            {brand.location}
-          </div>
-        </div>
+        {/* Barra Istituzionale Top */}
+        <motion.div
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+          className="flex flex-col sm:flex-row sm:items-center justify-between gap-1.5 pb-3 border-b border-[#E8E2D5] text-[10px] sm:text-[11px] font-sans font-bold tracking-wider uppercase text-[#5A6270]"
+        >
+          <div className="text-[#0B1E36]">{hero.badge}</div>
+          <div>{brand.location}</div>
+        </motion.div>
 
-        {/* Griglia Principale: Headline & Scheda Valore */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center pt-6 sm:pt-8">
-          {/* Colonna Testo Principale (8 colonne su desktop, 12 su mobile) */}
-          <div className="lg:col-span-8 space-y-4 sm:space-y-5">
+        {/* Griglia Principale: Headline & Scheda Patto di Fiducia */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-7 lg:gap-10 items-center pt-5 sm:pt-8">
+          {/* Colonna Testo Principale */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
+            className="lg:col-span-8 space-y-4"
+          >
             <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-[3.85rem] text-[#14181F] font-normal tracking-tight leading-[1.12]">
-              <RevealText as="span">
-                {hero.headline.line1}
-              </RevealText>
-              <RevealText as="span" delay={0.12} className="mt-1">
-                <span className="relative inline-block text-[#B8860B] italic font-serif">
-                  {hero.headline.highlight}
-                  <svg
-                    className="absolute -bottom-1.5 left-0 w-full h-2.5 text-[#C5A059]/40"
-                    viewBox="0 0 200 9"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    preserveAspectRatio="none"
-                    aria-hidden="true"
-                  >
-                    <path
-                      d="M2.5 6.5C50 2.5 150 2 197.5 6.5"
-                      stroke="currentColor"
-                      strokeWidth="2.5"
-                      strokeLinecap="round"
-                    />
-                  </svg>
-                </span>
-              </RevealText>
+              <span>{hero.headline.line1} </span>
+              <span className="relative inline-block text-[#B8860B] italic font-serif">
+                {hero.headline.highlight}
+                <svg
+                  className="absolute -bottom-1.5 left-0 w-full h-2.5 text-[#C5A059]/40"
+                  viewBox="0 0 200 9"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  preserveAspectRatio="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M2.5 6.5C50 2.5 150 2 197.5 6.5"
+                    stroke="currentColor"
+                    strokeWidth="2.5"
+                    strokeLinecap="round"
+                  />
+                </svg>
+              </span>
             </h1>
 
             <p className="text-sm sm:text-base lg:text-lg text-[#5A6270] leading-relaxed max-w-2xl font-sans">
               {hero.subheadline}
             </p>
 
-            {/* Pulsanti di Azione Primari & Secondari */}
+            {/* Pulsanti di Azione */}
             <div className="pt-2 flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4">
               <div className="space-y-1">
                 <Button href={hero.primaryCta.href} variant="primary" className="w-full sm:w-auto">
@@ -88,14 +120,19 @@ export default function Hero() {
                 </Button>
               </div>
             </div>
-          </div>
+          </motion.div>
 
-          {/* Scheda Istituzionale "Costruito intorno a te" (4 colonne su desktop, piena larghezza su mobile) */}
-          <div className="lg:col-span-4">
-            <div className="p-6 sm:p-7 rounded-sm bg-white border border-[#E8E2D5] shadow-xs space-y-4 sm:space-y-5 relative">
+          {/* Scheda Istituzionale "Il Patto di Fiducia" (Compatta, scannabile e priva di prolissità) */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
+            className="lg:col-span-4"
+          >
+            <div className="p-5 sm:p-6 rounded-sm bg-white border border-[#E8E2D5] shadow-xs space-y-3.5 relative">
               <div className="absolute top-0 left-0 right-0 h-[2px] bg-[#B8860B]" />
 
-              <div className="space-y-1">
+              <div className="space-y-0.5">
                 <div className="text-[10px] font-bold uppercase tracking-widest text-[#B8860B] font-sans">
                   IL PATTO DI FIDUCIA
                 </div>
@@ -104,12 +141,7 @@ export default function Hero() {
                 </h3>
               </div>
 
-              <p className="text-xs sm:text-sm text-[#5A6270] leading-relaxed font-sans">
-                Rifiutiamo i pacchetti standardizzati e i contratti a scatola chiusa.
-                Pianifichiamo solo architetture digitali che portano valore effettivo e duraturo al conto economico della tua impresa.
-              </p>
-
-              <div className="pt-3 border-t border-[#E8E2D5] space-y-2 text-xs font-sans text-[#5A6270]">
+              <div className="space-y-2 text-xs font-sans text-[#5A6270] pt-1">
                 <div className="flex items-center gap-2 text-[#14181F] font-medium">
                   <span className="text-[#B8860B] font-bold">▪</span>
                   <span>Interlocutore diretto: {brand.founder}</span>
@@ -124,34 +156,43 @@ export default function Hero() {
                 </div>
               </div>
 
-              <div className="pt-1">
+              <div className="pt-2 border-t border-[#E8E2D5]">
                 <a
                   href="#storia"
-                  className="block text-center py-2.5 px-3 rounded-sm bg-[#F8F7F4] hover:bg-[#E8E2D5]/60 text-[#0B1E36] text-xs font-semibold tracking-wide transition-colors border border-[#E8E2D5]"
+                  className="block text-center py-2 px-3 rounded-sm bg-[#F8F7F4] hover:bg-[#E8E2D5]/70 text-[#0B1E36] text-xs font-semibold tracking-wide transition-colors border border-[#E8E2D5]"
                 >
-                  Leggi il manifesto del fondatore →
+                  Leggi il profilo del fondatore →
                 </a>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
 
-        {/* Nastro Metriche Istituzionali (2 colonne su mobile, 4 su desktop) */}
-        <div className="mt-10 sm:mt-12 border border-[#E8E2D5] bg-white rounded-sm divide-y sm:divide-y-0 sm:divide-x divide-[#E8E2D5] grid grid-cols-2 lg:grid-cols-4 shadow-xs">
-          {quickMetrics.map((qm, i) => (
-            <div key={i} className="p-4 sm:p-5 space-y-1">
-              <div className="text-[9px] sm:text-[10px] font-sans font-bold text-[#5A6270] uppercase tracking-wider">
-                {qm.label}
+        {/* Nastro Metriche Istituzionali con Animazione d'Ingresso */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-30px" }}
+          transition={{ duration: 0.6, delay: 0.25, ease: [0.22, 1, 0.36, 1] }}
+          className="mt-8 sm:mt-12 border border-[#E8E2D5] bg-white rounded-sm divide-y sm:divide-y-0 sm:divide-x divide-[#E8E2D5] grid grid-cols-2 lg:grid-cols-4 shadow-xs"
+        >
+          {quickMetrics.map((metric, i) => (
+            <div
+              key={i}
+              className="p-3.5 sm:p-5 flex flex-col justify-between hover:bg-[#F8F7F4]/40 transition-colors"
+            >
+              <span className="text-[9px] sm:text-[10px] font-sans font-bold uppercase tracking-wider text-[#5A6270]">
+                {metric.label}
+              </span>
+              <div className="font-serif text-xl sm:text-2xl md:text-3xl font-bold text-[#0B1E36] my-1 sm:my-1.5">
+                {metric.renderValue()}
               </div>
-              <div className="font-serif text-xl sm:text-2xl font-bold text-[#0B1E36]">
-                {qm.value}
-              </div>
-              <div className="text-[10px] sm:text-[11px] text-[#5A6270] font-sans">
-                {qm.note}
-              </div>
+              <span className="text-[10px] sm:text-xs text-[#5A6270] font-sans leading-tight">
+                {metric.note}
+              </span>
             </div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );
