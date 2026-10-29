@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Check, MapPin, Phone, ShieldCheck, Star, Award, Clock } from "lucide-react";
+import { Check, MapPin, Phone, ShieldCheck, Star, Award, Clock, ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { LeadConfig } from "@/types/lead";
 import InteractiveQuiz from "@/components/InteractiveQuiz";
@@ -26,18 +26,19 @@ export default function LocalLeadGen({ data }: TemplateProps) {
     <div className="min-h-screen bg-[#FFFFFF] text-stone-700 pb-28 md:pb-0 font-sans">
       {/* Header Sticky con Logo Adattivo e Contatto */}
       <header
-        className={`sticky top-[37px] z-40 backdrop-blur-md border-b transition-colors ${
+        className={`sticky top-[29px] sm:top-[36px] z-40 backdrop-blur-md border-b transition-colors ${
           isDarkHeader
             ? "bg-[#0E1013]/95 text-white border-zinc-800"
             : "bg-white/95 text-stone-800 border-stone-200"
         }`}
         style={theme.headerBgHex ? { backgroundColor: theme.headerBgHex } : undefined}
       >
-        <div className="demo-container h-20 flex items-center justify-between gap-4">
-          <div className="flex items-center gap-4">
+        <div className="demo-container h-15 sm:h-20 flex items-center justify-between gap-3">
+          <div className="flex items-center gap-3">
             <AdaptiveLogo
               src={content.logoLocalPath}
               alt={meta.companyName}
+              className="h-8 sm:h-10 w-auto object-contain"
               headerBgMode={theme.headerBgMode}
               logoBrightness={theme.logoBrightness}
               fallbackName={meta.companyName}
@@ -59,10 +60,11 @@ export default function LocalLeadGen({ data }: TemplateProps) {
             whileTap={{ scale: 0.98 }}
             href={`tel:${meta.phone.replace(/\s+/g, "")}`}
             style={{ backgroundColor: "var(--primary)" }}
-            className="demo-btn inline-flex items-center gap-2 px-4 py-2.5 rounded-lg text-white font-semibold text-xs sm:text-sm shadow-sm"
+            className="demo-btn inline-flex items-center gap-1.5 sm:gap-2 px-3 py-1.5 sm:px-4 sm:py-2.5 rounded-lg text-white font-semibold text-xs sm:text-sm shadow-sm shrink-0"
           >
-            <Phone className="w-4 h-4" />
-            <span>Chiama ora: {meta.phone}</span>
+            <Phone className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
+            <span className="hidden sm:inline">Chiama ora:</span>
+            <span>{meta.phone}</span>
           </motion.a>
         </div>
       </header>
@@ -124,6 +126,20 @@ export default function LocalLeadGen({ data }: TemplateProps) {
                   <strong className="text-stone-900 font-bold">{content.socialProof.mainStatValue}</strong>{" "}
                   {content.socialProof.mainStatLabel}
                 </span>
+              </div>
+
+              {/* CTA Immediata per Mobile (Sopra la piega, potente ma non invasiva) */}
+              <div className="pt-1 sm:hidden">
+                <motion.a
+                  whileHover={{ scale: 1.01 }}
+                  whileTap={{ scale: 0.98 }}
+                  href="#preventivo-rapido"
+                  style={{ backgroundColor: "var(--primary)" }}
+                  className="demo-btn w-full py-3 px-4 rounded-xl text-white font-bold text-xs sm:text-sm flex items-center justify-center gap-2 shadow-sm transition-all"
+                >
+                  <span>{content.ctaButtonText || "Calcola Preventivo Rapido"}</span>
+                  <ArrowRight className="w-4 h-4 shrink-0" />
+                </motion.a>
               </div>
             </motion.div>
 
@@ -315,22 +331,28 @@ export default function LocalLeadGen({ data }: TemplateProps) {
       {/* Footer Ufficiale con Firma TechPYRE */}
       <TechPyreFooter data={data} />
 
-      {/* Barra Fissa Mobile */}
-      <div className="fixed bottom-0 inset-x-0 z-40 md:hidden bg-white border-t border-stone-200 p-3 grid grid-cols-2 gap-3 shadow-[0_-8px_20px_rgba(0,0,0,0.06)]">
-        <a
-          href={`tel:${meta.phone.replace(/\s+/g, "")}`}
-          className="demo-btn flex items-center justify-center gap-2 py-3 px-4 rounded-lg bg-stone-900 text-white font-semibold text-xs"
-        >
-          <Phone className="w-4 h-4" />
-          <span>Chiama Ora</span>
-        </a>
-        <a
-          href="#preventivo-rapido"
-          style={{ backgroundColor: "var(--accent)" }}
-          className="demo-btn flex items-center justify-center gap-2 py-3 px-4 rounded-lg text-white font-semibold text-xs"
-        >
-          <span>Preventivo Rapido</span>
-        </a>
+      {/* Barra Fissa Mobile — Call To Action Potenziata ma Non Invasiva */}
+      <div className="fixed bottom-0 inset-x-0 z-40 md:hidden bg-white/95 backdrop-blur-md border-t border-stone-200/90 py-2.5 px-4 shadow-[0_-6px_24px_rgba(0,0,0,0.08)]">
+        <div className="grid grid-cols-12 gap-2.5 items-center">
+          {/* Secondario: Chiama Subito (4/12 = 33% larghezza) */}
+          <a
+            href={`tel:${meta.phone.replace(/\s+/g, "")}`}
+            className="col-span-4 flex items-center justify-center gap-1.5 py-3 px-2 rounded-xl bg-stone-100 hover:bg-stone-200 text-stone-900 font-semibold text-xs border border-stone-200/90 transition-colors active:scale-98"
+          >
+            <Phone className="w-3.5 h-3.5 text-stone-700 shrink-0" />
+            <span>Chiama</span>
+          </a>
+
+          {/* Primario: Preventivo Rapido con colore brand e freccia (8/12 = 67% larghezza) */}
+          <a
+            href="#preventivo-rapido"
+            style={{ backgroundColor: "var(--primary)" }}
+            className="col-span-8 flex items-center justify-center gap-2 py-3 px-3 rounded-xl text-white font-bold text-xs sm:text-sm shadow-md transition-all active:scale-98"
+          >
+            <span className="truncate">{content.ctaButtonText || "Preventivo Rapido"}</span>
+            <ArrowRight className="w-4 h-4 shrink-0" />
+          </a>
+        </div>
       </div>
     </div>
   );
