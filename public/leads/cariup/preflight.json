@@ -1,0 +1,87 @@
+{
+  "slug": "cariup",
+  "targetUrl": "https://metodo.cariup.it/",
+  "finalResolvedUrl": "https://metodo.cariup.it/",
+  "measuredResponseMs": 311,
+  "renderBlockingScripts": 7,
+  "estimatedMobileLcpSeconds": 5.3,
+  "mobileViewportAudit": {
+    "viewportWidth": 390,
+    "viewportHeight": 844,
+    "documentScrollWidth": 390,
+    "hasRealHorizontalOverflow": false,
+    "formVisibleAboveTheFold": false,
+    "firstFormTopPx": 7710,
+    "screensToReachForm": 9.1,
+    "visibleFormsCount": 1,
+    "cookieOrPopupCoverPercent": 56,
+    "visibleCtasAboveFold": [
+      "Gestisci preferenza",
+      "Rifiuta",
+      "Accetta tutto"
+    ],
+    "h1Text": "Dichiarazione di accessibilità"
+  },
+  "qualification": {
+    "isQualified": true,
+    "recommendedStrategy": "AGENCY_COEXISTENCE_OR_WHITELABEL",
+    "strategyReason": "Rilevata presenza di Web Agency / Funnel di Marketing esistente ma con pagina lenta (5.3s). Usa l'angolo \"Non tocchiamo chi vi segue le campagne: forniamo solo la pagina veloce 0.3s in White-Label\" (o proponi partnership White-Label all'agenzia rilevata).",
+    "disqualifiers": [],
+    "alreadyHasPerformantLanding": false,
+    "isDedicatedFunnelUrl": false,
+    "funnelBuilders": [],
+    "hasQuizAlready": false,
+    "navLinksCount": 10,
+    "formsCount": 1,
+    "isEcommerce": false,
+    "isLargeEnterpriseOrSpa": false,
+    "agencyDetection": {
+      "hasAgencyInvolved": true,
+      "detectedAgencyNames": [],
+      "detectedAgencyLinks": [
+        {
+          "href": "https://www.vivocreativo.com/it/",
+          "label": "credits"
+        }
+      ],
+      "martechSignals": [
+        "Meta Pixel"
+      ]
+    }
+  },
+  "extractedEmails": [
+    "info@cariup.it"
+  ],
+  "extractedPhones": [
+    "3219025484",
+    "+393490386119",
+    "+39 349 0386119",
+    "+393490836119",
+    "+39 349 0836119"
+  ],
+  "extractedVat": "04559010162",
+  "legalSnippets": [
+    "S.r.l. - P"
+  ],
+  "candidateLogoUrls": [
+    "https://metodo.cariup.it/assets/image/logo_cariup.png",
+    "https://metodo.cariup.it/assets/storage/Partner/1/logo-torri-nero-e-giallo-03.png",
+    "https://metodo.cariup.it/assets/storage/Partner/3/Tesla-Powerwall-Certified-Installer-Logo.png",
+    "https://metodo.cariup.it/assets/storage/Partner/2/Enphase_logo.svg.png"
+  ],
+  "candidateHeroUrls": [
+    "https://www.facebook.com/tr?id=1722321902548478&ev=PageView&noscript=1",
+    "https://metodo.cariup.it/assets/image/social-1.png",
+    "https://metodo.cariup.it/assets/image/social-4.png",
+    "https://metodo.cariup.it/assets/image/bg-top.jpg",
+    "https://metodo.cariup.it/assets/storage/pagebuilder/1774531837_home-01.jpg",
+    "https://metodo.cariup.it/assets/storage/pagebuilder/1774532057_home-02.jpg"
+  ],
+  "assetsDir": "/public/leads/metodo",
+  "searchKeyword": "fotovoltaico brescia",
+  "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&media_type=all&q=fotovoltaico%20brescia&search_type=keyword_unordered",
+  "adContextSnippet": ": 100%;\"> CariUp Sponsorizzato Hai già un impianto e vuoi capire se sta lavorando davvero al massimo? Inizia da un Check-Up Energetico CARIUP. <img class=\"x15mokao x1ga7v0g x16uus16 xbiv7yw x1ll5gia x19kjcj4 xh8yej3\" alt=\"\" referrerpolicy=\"origin-when-cross-origin\" src=\"https://scontent-fco2-1.xx.fbcdn.net/v/t39.35426-6/709036344_1672475973973677_4838798108346862389_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=105&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=rPWdfeBoUckQ7kNvwHEXo95&_nc_oc=Adq2p1QifHYV94U0zvLAoVKA4m",
+  "landingPageTitle": "Cariup - Specialisti del fotovoltaico",
+  "landingPageH1": "",
+  "landingPageMetaDescription": "Dal 2009 trasformiamo l’energia in valore per aziende e abitazioni. Operiamo tra Bergamo, Brescia e Monza Brianza con soluzioni su misura e un servizio completo, dalla progettazione e installazione al monitoraggio e manutenzione."
+}

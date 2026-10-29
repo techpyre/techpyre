@@ -1,0 +1,81 @@
+{
+  "slug": "ls-solution",
+  "targetUrl": "https://ls-solution.it/?utm_source=sponsorizzato&utm_medium=social&utm_campaign=pioggia",
+  "finalResolvedUrl": "https://ls-solution.it/?utm_source=sponsorizzato&utm_medium=social&utm_campaign=pioggia",
+  "measuredResponseMs": 853,
+  "renderBlockingScripts": 29,
+  "estimatedMobileLcpSeconds": 8.1,
+  "mobileViewportAudit": {
+    "viewportWidth": 576,
+    "viewportHeight": 1247,
+    "documentScrollWidth": 576,
+    "hasRealHorizontalOverflow": false,
+    "formVisibleAboveTheFold": false,
+    "firstFormTopPx": null,
+    "screensToReachForm": null,
+    "visibleFormsCount": 0,
+    "cookieOrPopupCoverPercent": 0,
+    "visibleCtasAboveFold": [
+      "Home",
+      "Chi Siamo",
+      "Servizi",
+      "Prodotti",
+      "Ecobonus",
+      "Progetti"
+    ],
+    "h1Text": "Fotovoltaico e Accumulo: Trasparenza Solare e Installazione in 1 Giorno"
+  },
+  "qualification": {
+    "isQualified": true,
+    "recommendedStrategy": "DIRECT_BUYER",
+    "strategyReason": "Azienda ideale per vendita diretta: paga le inserzioni Meta ma manda il traffico su un sito lento e dispersivo.",
+    "disqualifiers": [],
+    "alreadyHasPerformantLanding": false,
+    "isDedicatedFunnelUrl": false,
+    "funnelBuilders": [],
+    "hasQuizAlready": false,
+    "navLinksCount": 12,
+    "formsCount": 0,
+    "isEcommerce": false,
+    "isLargeEnterpriseOrSpa": false,
+    "agencyDetection": {
+      "hasAgencyInvolved": false,
+      "detectedAgencyNames": [],
+      "detectedAgencyLinks": [],
+      "martechSignals": [
+        "Google Tag Manager"
+      ]
+    }
+  },
+  "extractedEmails": [
+    "info@ls-solution.it"
+  ],
+  "extractedPhones": [
+    "3117711559",
+    "0770864567",
+    "0825124453",
+    "0825158671",
+    "0825193462"
+  ],
+  "extractedVat": "12448450960",
+  "legalSnippets": [],
+  "candidateLogoUrls": [
+    "https://ls-solution.it/wp-content/uploads/2026/03/LS-Solution-installatori-impianti-e-pannelli-fotovoltaicil-favicon-400-1-300x82.webp",
+    "https://ls-solution.it/wp-content/plugins/gdpr-cookie-compliance/dist/images/gdpr-logo.png"
+  ],
+  "candidateHeroUrls": [
+    "https://ls-solution.it/wp-content/uploads/2026/03/Progetto-senza-titolo-55.png",
+    "https://ls-solution.it/wp-content/uploads/2026/03/89100a65-5764-41bd-a0fc-f02d4b48b638.jpg",
+    "https://ls-solution.it/wp-content/uploads/2026/03/chi-siamo-LS-Solution.webp",
+    "https://ls-solution.it/wp-content/uploads/2026/03/Immagine-WhatsApp-2024-11-20-ore-20.41.57_f9ad63db.webp",
+    "https://ls-solution.it/wp-content/uploads/2026/04/WhatsApp-Image-2026-03-27-at-17.04.49-3.jpeg",
+    "https://ls-solution.it/wp-content/uploads/2026/03/manutenzione-impianti-fotovoltaici-pulizia.webp"
+  ],
+  "assetsDir": "/public/leads/ls-solution",
+  "searchKeyword": "fotovoltaico brescia",
+  "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&media_type=all&q=fotovoltaico%20brescia&search_type=keyword_unordered",
+  "adContextSnippet": "yle=\"left: 44px; transform: translate(calc(-50% - 4px), -50%);\"> <img class=\"x15mokao x1ga7v0g x16uus16 xbiv7yw x1ll5gia x19kjcj4 x642log\" alt=\"\" referrerpolicy=\"origin-when-cross-origin\" src=\"https://scontent-fco2-1.xx.fbcdn.net/v/t39.35426-6/855559722_1926527668317109_541919739238456222_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=104&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=2ISBnuO30l4Q7kNvwERHyeF&_nc_oc=AdoAa-orqg7Q29kkz-PitWN393nsoYXp1hPSVABxdfi",
+  "landingPageTitle": "LS Solution | Fotovoltaico e Accumulo",
+  "landingPageH1": "Fotovoltaico e Accumulo: Trasparenza Solare e Installazione in 1 Giorno",
+  "landingPageMetaDescription": "Fotovoltaico e accumulo con installazione in 1 giorno: soluzioni trasparenti per risparmiare energia e rendere la tua casa più efficiente."
+}

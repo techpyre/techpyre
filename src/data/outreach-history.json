@@ -178,5 +178,50 @@
     "subject": "Sulla vostra sponsorizzata Facebook a Trapani - Presentazione TechPyre",
     "messageId": "<c27780e6-428a-5c1c-f0c9-39791e49a64b@techpyre.eu>",
     "sentAt": "2026-10-29T09:22:49.219Z"
+  },
+  {
+    "slug": "cariup",
+    "companyName": "Cariup",
+    "recipient": "info@cariup.it",
+    "type": "INITIAL",
+    "subject": "Sulla vostra sponsorizzata Facebook a Brescia - Presentazione TechPyre",
+    "messageId": "<89be622d-751b-15d1-ed10-591b26469466@techpyre.eu>",
+    "sentAt": "2026-10-29T16:31:01.390Z"
+  },
+  {
+    "slug": "abitareinlegno",
+    "companyName": "AbitareIN Legno",
+    "recipient": "info@abitareinlegno.com",
+    "type": "INITIAL",
+    "subject": "Sulla vostra sponsorizzata Facebook a Brescia - Presentazione TechPyre",
+    "messageId": "<dbaf9e06-5722-26ef-e118-ecaa553f72a3@techpyre.eu>",
+    "sentAt": "2026-10-29T16:31:07.671Z"
+  },
+  {
+    "slug": "iecmanenti",
+    "companyName": "I.E.C. Manenti",
+    "recipient": "info@iecmanenti.it",
+    "type": "INITIAL",
+    "subject": "Sulla vostra sponsorizzata Facebook a Brescia - Presentazione TechPyre",
+    "messageId": "<e5afbdeb-b5e2-7063-6475-d0efac7af1c7@techpyre.eu>",
+    "sentAt": "2026-10-29T16:31:12.928Z"
+  },
+  {
+    "slug": "ls-solution",
+    "companyName": "LS Solution",
+    "recipient": "info@ls-solution.it",
+    "type": "INITIAL",
+    "subject": "Sulla vostra sponsorizzata Facebook - Presentazione TechPyre",
+    "messageId": "<1a794a2f-d6f7-88b9-d15c-d227a767a520@techpyre.eu>",
+    "sentAt": "2026-10-29T16:31:19.226Z"
+  },
+  {
+    "slug": "zaniniemaselli",
+    "companyName": "Zanini e Maselli",
+    "recipient": "info@zaniniemaselli.it",
+    "type": "INITIAL",
+    "subject": "Sulla vostra sponsorizzata Facebook a Brescia - Presentazione TechPyre",
+    "messageId": "<b724e6c6-9e29-b3ae-3098-458e2fe7552b@techpyre.eu>",
+    "sentAt": "2026-10-29T16:31:24.134Z"
   }
 ]

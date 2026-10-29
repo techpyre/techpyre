@@ -1,0 +1,79 @@
+{
+  "slug": "iecmanenti",
+  "targetUrl": "https://www.iecmanenti.it/landing",
+  "finalResolvedUrl": "https://www.iecmanenti.it/landing",
+  "measuredResponseMs": 572,
+  "renderBlockingScripts": 13,
+  "estimatedMobileLcpSeconds": 7.1,
+  "mobileViewportAudit": {
+    "viewportWidth": 390,
+    "viewportHeight": 844,
+    "documentScrollWidth": 390,
+    "hasRealHorizontalOverflow": false,
+    "formVisibleAboveTheFold": false,
+    "firstFormTopPx": 5374,
+    "screensToReachForm": 6.4,
+    "visibleFormsCount": 1,
+    "cookieOrPopupCoverPercent": 0,
+    "visibleCtasAboveFold": [
+      "SCOPRI GLI APPARTAMENTI",
+      "FISSA APPUNTAMENTO"
+    ],
+    "h1Text": "Nuovi Quadrilocali alle porte di Brescia"
+  },
+  "qualification": {
+    "isQualified": true,
+    "recommendedStrategy": "AGENCY_COEXISTENCE_OR_WHITELABEL",
+    "strategyReason": "Rilevata presenza di Web Agency / Funnel di Marketing esistente ma con pagina lenta (7.1s). Usa l'angolo \"Non tocchiamo chi vi segue le campagne: forniamo solo la pagina veloce 0.3s in White-Label\" (o proponi partnership White-Label all'agenzia rilevata).",
+    "disqualifiers": [],
+    "alreadyHasPerformantLanding": false,
+    "isDedicatedFunnelUrl": true,
+    "funnelBuilders": [],
+    "hasQuizAlready": false,
+    "navLinksCount": 0,
+    "formsCount": 1,
+    "isEcommerce": false,
+    "isLargeEnterpriseOrSpa": false,
+    "agencyDetection": {
+      "hasAgencyInvolved": true,
+      "detectedAgencyNames": [],
+      "detectedAgencyLinks": [],
+      "martechSignals": [
+        "Google Tag Manager"
+      ]
+    }
+  },
+  "extractedEmails": [
+    "info@iecmanenti.it"
+  ],
+  "extractedPhones": [
+    "065992337609",
+    "03795623",
+    "03795627",
+    "+393312341919",
+    "+39 331 2341919"
+  ],
+  "extractedVat": "00560590986",
+  "legalSnippets": [],
+  "candidateLogoUrls": [
+    "https://www.iecmanenti.it/images/logo/logo-iec-manenti-bianco.svg",
+    "https://www.iecmanenti.it/images/certificazioni/bollino-soa-laghi.png",
+    "https://www.iecmanenti.it/images/certificazioni/bollino-2023.png",
+    "https://www.iecmanenti.it/images/certificazioni/bollino-2024.png"
+  ],
+  "candidateHeroUrls": [
+    "https://www.iecmanenti.it/images/progetto-torbole-casaglia/img-appartamento-desktop.jpg",
+    "https://www.iecmanenti.it/images/progetto-torbole-casaglia/progetto-torbole-casaglia-tablet.jpg",
+    "https://www.iecmanenti.it/images/progetto-torbole-casaglia/progetto-torbole-casaglia-mobile.jpg",
+    "https://www.iecmanenti.it/images/Landing%20Quadrilocale/9.jpg",
+    "https://www.iecmanenti.it/images/Landing%20Quadrilocale/6.jpg",
+    "https://www.iecmanenti.it/images/Landing%20Quadrilocale/8.jpg"
+  ],
+  "assetsDir": "/public/leads/iecmanenti",
+  "searchKeyword": "fotovoltaico brescia",
+  "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&media_type=all&q=fotovoltaico%20brescia&search_type=keyword_unordered",
+  "adContextSnippet": "=\"width: 100%;\"> IEC Manenti Sponsorizzato Una casa nuova, progettata per essere vissuta ogni giorno. A Torbole Casaglia, a pochi minuti da Brescia, I.E.C. Manenti propone nuove abitazioni inserite in contesto residenziali tranquillo e immersi nel verde. 🏠 Quadrilocali in pronta consegna, con ambienti luminosi e spazi ben distribuiti, con giardino, portico o terrazza. Le soluzioni sono in classe energetica A4 e offrono impianto fotovoltaico, pompa di calore, gas free, riscaldamento a pavimento ",
+  "landingPageTitle": "Appartamenti e Ville a Torbole Casaglia - I.E.C. Manenti",
+  "landingPageH1": "Nuovi Quadrilocali alle porte di Brescia",
+  "landingPageMetaDescription": "Torbole Casaglia: nuovi Trilocali e Ville Bifamiliari in pronta consegna o in costruzione alle porte della Città di Brescia. Scopri il progetto residenziale."
+}

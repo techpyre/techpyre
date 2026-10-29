@@ -1,0 +1,76 @@
+{
+  "slug": "abitareinlegno",
+  "targetUrl": "https://abitareinlegno.com/",
+  "finalResolvedUrl": "https://abitareinlegno.com/",
+  "measuredResponseMs": 421,
+  "renderBlockingScripts": 4,
+  "estimatedMobileLcpSeconds": 5,
+  "mobileViewportAudit": {
+    "viewportWidth": 390,
+    "viewportHeight": 844,
+    "documentScrollWidth": 390,
+    "hasRealHorizontalOverflow": false,
+    "formVisibleAboveTheFold": false,
+    "firstFormTopPx": null,
+    "screensToReachForm": null,
+    "visibleFormsCount": 0,
+    "cookieOrPopupCoverPercent": 0,
+    "visibleCtasAboveFold": [
+      "RICHIEDI LA QUOTAZIONE",
+      "RICHIEDI INFORMAZIONI"
+    ],
+    "h1Text": ""
+  },
+  "qualification": {
+    "isQualified": true,
+    "recommendedStrategy": "AGENCY_COEXISTENCE_OR_WHITELABEL",
+    "strategyReason": "Rilevata presenza di Web Agency / Funnel di Marketing esistente ma con pagina lenta (5s). Usa l'angolo \"Non tocchiamo chi vi segue le campagne: forniamo solo la pagina veloce 0.3s in White-Label\" (o proponi partnership White-Label all'agenzia rilevata).",
+    "disqualifiers": [],
+    "alreadyHasPerformantLanding": false,
+    "isDedicatedFunnelUrl": false,
+    "funnelBuilders": [
+      "GoHighLevel"
+    ],
+    "hasQuizAlready": false,
+    "navLinksCount": 4,
+    "formsCount": 1,
+    "isEcommerce": false,
+    "isLargeEnterpriseOrSpa": false,
+    "agencyDetection": {
+      "hasAgencyInvolved": true,
+      "detectedAgencyNames": [],
+      "detectedAgencyLinks": [],
+      "martechSignals": [
+        "Google Tag Manager",
+        "CRM Marketing Automation"
+      ]
+    }
+  },
+  "extractedEmails": [
+    "info@abitareinlegno.com"
+  ],
+  "extractedPhones": [
+    "+39 030 2524571",
+    "3017920888"
+  ],
+  "extractedVat": "Non trovata",
+  "legalSnippets": [],
+  "candidateLogoUrls": [
+    "https://abitareinlegno.com/_astro/logo%20San%20Martino.C4AxESa6_1QlXoh.webp"
+  ],
+  "candidateHeroUrls": [
+    "https://www.abitareinlegno.com/assets/HomePage_orizzontale_img.jpg",
+    "https://abitareinlegno.com/_astro/HomePage_orizzontale_img.DE00189g_Z16aWzs.webp",
+    "https://abitareinlegno.com/_astro/HomePage_verticale_img.hpwplZ8P_1jeJ9X.webp",
+    "https://abitareinlegno.com/_astro/zona-giorno-r1-v3.C2uRDmG8_1tIP7P.webp",
+    "https://abitareinlegno.com/_astro/zona-giorno-s-r1.B113MiRR_1CR7rq.webp",
+    "https://abitareinlegno.com/_astro/matrimoniale-4.6Wxes6sD_2kMfvV.webp"
+  ],
+  "assetsDir": "/public/leads/abitareinlegno",
+  "searchKeyword": "fotovoltaico brescia",
+  "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&media_type=all&q=fotovoltaico%20brescia&search_type=keyword_unordered",
+  "adContextSnippet": "DaJcFjAKzw&oe=6AE94316\"> Via Marenzio 5 Sponsorizzato Dopo giornate intense, molte famiglie cercano soprattutto tranquillità. Un luogo fatto di luce, verde e privacy, dove abitare torni a essere naturale e confortevole. Marenzio 5 porta a Concesio quattro appartamenti esclusivi immersi in un contesto verde e residenziale vicino a Brescia. Un progetto di piccole dimensioni dove architettura contemporanea e natura convivono in armonia. 🌿 Ampi spazi esterni privati 🏡 Appartamenti con 3 camere da ",
+  "landingPageTitle": "AbitareIN Legno",
+  "landingPageH1": "",
+  "landingPageMetaDescription": "Abitare in Legno nasce dall’idea di unire tradizione e innovazione, scegliendo il legno come cuore del proprio abitare. Da sempre questo materiale accompagna l’uomo, dalle prime architetture ancestrali fino alle costruzioni più avanzate del presente. Oggi, grazie alle tecnologie costruttive moderne, il legno non è solo simbolo di bellezza e durabilità, ma anche di sostenibilità, comfort ed efficienza. Con le sue case in X-Lam, Abitare in Legno costruisce spazi che custodiscono la memoria del passato, rispettano l’ambiente e guardano al futuro: abitazioni solide, accoglienti e autentiche, capaci di dare forma a un nuovo modo di vivere."
+}
