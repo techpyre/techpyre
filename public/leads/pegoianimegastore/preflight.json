@@ -1,0 +1,73 @@
+{
+  "slug": "pegoianimegastore",
+  "targetUrl": "https://www.pegoianimegastore.it/regolamento-promozione-serramenti/",
+  "finalResolvedUrl": "https://www.pegoianimegastore.it/regolamento-promozione-serramenti/",
+  "measuredResponseMs": 1065,
+  "renderBlockingScripts": 12,
+  "estimatedMobileLcpSeconds": 8.9,
+  "mobileViewportAudit": {
+    "viewportWidth": 390,
+    "viewportHeight": 844,
+    "documentScrollWidth": 390,
+    "hasRealHorizontalOverflow": false,
+    "formVisibleAboveTheFold": false,
+    "firstFormTopPx": null,
+    "screensToReachForm": null,
+    "visibleFormsCount": 0,
+    "cookieOrPopupCoverPercent": 0,
+    "visibleCtasAboveFold": [
+      "Aiuti di stato"
+    ],
+    "h1Text": "Serramenti con RIMBORSO FINO A 500€"
+  },
+  "qualification": {
+    "isQualified": true,
+    "recommendedStrategy": "DIRECT_BUYER",
+    "strategyReason": "Azienda ideale per vendita diretta: paga le inserzioni Meta ma manda il traffico su un sito lento e dispersivo.",
+    "disqualifiers": [],
+    "alreadyHasPerformantLanding": false,
+    "isDedicatedFunnelUrl": false,
+    "funnelBuilders": [],
+    "hasQuizAlready": false,
+    "navLinksCount": 0,
+    "formsCount": 0,
+    "isEcommerce": false,
+    "isLargeEnterpriseOrSpa": false,
+    "agencyDetection": {
+      "hasAgencyInvolved": false,
+      "detectedAgencyNames": [],
+      "detectedAgencyLinks": [],
+      "martechSignals": [
+        "Heatmap/CRO Tracking"
+      ]
+    }
+  },
+  "extractedEmails": [
+    "preventivi@porteserramenti.com",
+    "preventivi@pegoianipavimenti.it"
+  ],
+  "extractedPhones": [
+    "3903021315",
+    "+39 030 2131510",
+    "02355830981",
+    "3786747724",
+    "0851709"
+  ],
+  "extractedVat": "02355830981",
+  "legalSnippets": [
+    "S.r.l. Via dei Ponticelli, 69 25014 Castenedolo (BS) · P"
+  ],
+  "candidateLogoUrls": [
+    "https://www.pegoianimegastore.it/wp-content/uploads/2023/03/pegoiani-megastore-logo400px.png"
+  ],
+  "candidateHeroUrls": [
+    "https://www.facebook.com/tr?id=937867477244608&#038;ev=PageView&#038;noscript=1&#038;cd%5Bpage_title%5D=Serramenti+con+RIMBORSO+FINO+A+500%E2%82%AC&#038;cd%5Bpost_type%5D=page&#038;cd%5Bpost_id%5D=775&#038;cd%5Bplugin%5D=PixelYourSite&#038;cd%5Buser_role%5D=guest&#038;cd%5Bevent_url%5D=www.pegoianimegastore.it%2Fregolamento-promozione-serramenti%2F"
+  ],
+  "assetsDir": "/public/leads/pegoianimegastore",
+  "searchKeyword": "isolamento termico brescia",
+  "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&media_type=all&q=isolamento%20termico%20brescia&search_type=keyword_unordered",
+  "adContextSnippet": "per compilare un modulo gratuito. Il questionario verrà analizzato da un nostro consulente esperto — oppure direttamente da me, Massimo Pegoiani — e ti chiameremo in giornata. Dopo il primo contatto, faremo una consulenza di analisi gratuita e ti prepareremo un preventivo personalizzato già comprensivo di tutto: ✅ Rimborso ﬁno a 500 euro su ogni prodotto acquistato ✅ Finanziamento a tasso zero ✅ Detrazione ﬁscale del 50% ✅ Servizi gratuiti ✅ Metodo chiavi in mano ✅ Paghi dopo due mesi Se sei arr",
+  "landingPageTitle": "Serramenti con RIMBORSO FINO A 500€ &#8211; Pegoiani Megastore",
+  "landingPageH1": "Serramenti con RIMBORSO FINO A 500€",
+  "landingPageMetaDescription": ""
+}

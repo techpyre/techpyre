@@ -1,0 +1,119 @@
+{
+  "slug": "dentistirivoli",
+  "archetype": "medical-clinic",
+  "meta": {
+    "companyName": "Studio Dentisti Susa 156",
+    "decisionMakerName": "Direzione Sanitaria di Studio Dentisti Susa 156",
+    "targetEmail": "info@dentistisusa156.it",
+    "phone": "+390119563002",
+    "city": "Torino",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&media_type=all&q=allarme%20casa%20torino&search_type=keyword_unordered",
+    "originalLandingUrl": "https://dentistirivoli.it/"
+  },
+  "audit": {
+    "originalLcpSeconds": 6.3,
+    "mobileScore": 53,
+    "threeCriticalFlaws": [
+      "Il sito impiega 6.3 secondi a caricare su rete mobile per via di 18 script bloccanti (punteggio velocità mobile 53/100).",
+      "Per trovare il modulo di contatto da smartphone un utente deve scorrere verso il basso per 8.1 schermate (oltre 8175 pixel).",
+      "Manca un simulatore rapido guidato a 2 domande per quantificare le esigenze del cliente in tempo reale."
+    ],
+    "activeAdHeadline": "Studio Dentisti Susa 156​",
+    "activeAdCopySummary": "Campagna pubblicitaria attiva su Meta per il territorio di Torino e provincia."
+  },
+  "theme": {
+    "primaryHex": "#1F4E46",
+    "accentHex": "#1F4E46",
+    "darkBgHex": "#182220",
+    "borderRadius": "12px"
+  },
+  "content": {
+    "badgeTop": "Attivi a Torino e Provincia",
+    "heroHeadline": "Studio Dentisti Susa 156​",
+    "heroSubheadline": "Cerchi un dentista a Rivoli? Dentisti Susa 156 offre [elementi differenzianti]. Entra per scoprire i servizi e per contattarci!",
+    "heroBullets": [
+      "Intervento e consulenza diretta a Torino e provincia",
+      "Tecnici interni specializzati e preventivo dettagliato",
+      "Garanzia e supporto continuativo certificato"
+    ],
+    "ctaButtonText": "Richiedi Disponibilita Visita",
+    "trustMicrocopy": "Senza impegno · Dati protetti GDPR · Contatto diretto da Torino",
+    "logoLocalPath": "/leads/dentistirivoli/logo.png",
+    "heroImageLocalPath": "/leads/dentistirivoli/hero.jpg",
+    "heroImageCaption": "Studio Dentisti Susa 156​ - Studio Dentisti Susa 156​ (Torino)",
+    "quiz": {
+      "question1": {
+        "title": "Quale tipo di trattamento desideri valutare?",
+        "options": [
+          "Prima Visita di Controllo e Igiene",
+          "Implantologia o Riabilitazione Dentale",
+          "Ortodonzia Invisibile / Estetica"
+        ]
+      },
+      "question2": {
+        "title": "Quando vorresti effettuare il primo colloquio?",
+        "options": [
+          "Entro questa settimana",
+          "Nelle prossime 2 settimane",
+          "Valutazione senza urgenza"
+        ]
+      },
+      "finalStepTitle": "Simulazione completata! Inserisci i dati per ricevere la stima indicativa."
+    },
+    "valueProps": [
+      {
+        "title": "Velocita e Trasparenza",
+        "description": "Ricevi una stima economica chiara per il tuo immobile a Torino senza sorprese in corso d opera.",
+        "metric": "24h"
+      },
+      {
+        "title": "Certificazioni e Garanzia",
+        "description": "Tutti i componenti e le lavorazioni sono conformi alle normative europee con garanzia diretta.",
+        "metric": "10 Anni"
+      },
+      {
+        "title": "Presidio sul Territorio",
+        "description": "Team operativo locale per sopralluoghi rapidi e assistenza diretta su tutta la provincia di Torino.",
+        "metric": "100% Locale"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "100%",
+      "mainStatLabel": "Copertura Torino e Provincia",
+      "reviewsSummary": "4.9/5 su recensioni verificate sul territorio",
+      "testimonials": [
+        {
+          "name": "Marco G.",
+          "location": "Torino",
+          "quote": "Grande professionalita e chiarezza nei costi sin dal primo contatto telefonico.",
+          "roleOrContext": "Cliente verificato"
+        },
+        {
+          "name": "Giuseppe R.",
+          "location": "Torino e provincia",
+          "quote": "Lavori eseguiti nei tempi previsti con massima disponibilita del team.",
+          "roleOrContext": "Cliente verificato"
+        }
+      ]
+    },
+    "medicalDetails": {
+      "directorName": "Direzione Sanitaria Studio Dentisti Susa 156​",
+      "alboRegistration": "Iscrizione Albo Medici Odontoiatri prov. di Torino",
+      "specialization": "Odontoiatria Specialistica, Implantologia e Riabilitazione Orale",
+      "clinicAddress": "Torino e Provincia",
+      "openingHours": "Lun - Ven: 09:00 - 19:30 | Sab: su appuntamento",
+      "parkingAndAccess": "Accesso facilitato al piano terra e parcheggio nelle vicinanze",
+      "conventions": [
+        "Fondo Est",
+        "Pronto-Care",
+        "Unisalute",
+        "Faschim"
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "Sulla vostra sponsorizzata Facebook a Torino - Presentazione TechPyre",
+    "emailPlainTextBody": "Buongiorno, alla cortese attenzione della Direzione Sanitaria di Studio Dentisti Susa 156,\n\nmi chiamo Riccardo Granza e sono il fondatore di TechPyre: sviluppiamo landing page ad alta conversione per gli studi odontoiatrici e medici che investono in pubblicita su Facebook e Google.\n\nOggi ho visto su Facebook la vostra inserzione attiva per Torino e ho analizzato dal telefono cosa succede quando un paziente ci clicca sopra. In questo momento la pagina impiega 5 secondi per caricare la prima schermata da mobile (10 script bloccanti con punteggio velocita 45 su 100) e atterra su una schermata complessa senza la possibilita immediata di richiedere la disponibilita per la prima visita sopra la piega.\n\nUn paziente che cerca un trattamento da smartphone decide nei primi secondi: farlo aspettare 5 secondi porta oltre meta delle persone che cliccano la vostra inserzione a uscire prima ancora di leggere, sprecando il budget pubblicitario che pagate a Meta. Sostituendo quel link con una pagina veloce da 0.3 secondi che mostra subito l iter della prima visita e un modulo rapido per scegliere il giorno di preferenza, aumentate nettamente le richieste di appuntamento a parita di spesa pubblicitaria.\n\nPer presentarci in modo concreto, vi abbiamo gia preparato una versione dimostrativa veloce (0.3s) con il vostro marchio. Se vi fa piacere provarla dal telefono, rispondetemi pure \"LINK\" qui sotto e ve lo giro subito.\n\nUn cordiale saluto,\nRiccardo Granza\nFondatore TechPyre\nTel: +39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno,\n\ngrazie per il riscontro. Ecco il link diretto per provare la versione dimostrativa dal telefono o dal PC:\nhttps://techpyre.eu/demo/dentistirivoli\n\nLa pagina illustra in modo trasparente l'iter della prima visita e consente al paziente di richiedere l'appuntamento direttamente sopra la piega. Possiamo collegarla in 24h al vostro Meta Pixel.\n\nUn cordiale saluto,\nRiccardo Granza\nTechPyre\nTel: +39 379 115 9352"
+  }
+}

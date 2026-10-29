@@ -1,0 +1,73 @@
+{
+  "slug": "lasceltaintelligente",
+  "targetUrl": "https://lasceltaintelligente.it/pausa/",
+  "finalResolvedUrl": "https://lasceltaintelligente.it/pausa/",
+  "measuredResponseMs": 505,
+  "renderBlockingScripts": 8,
+  "estimatedMobileLcpSeconds": 6.3,
+  "mobileViewportAudit": {
+    "viewportWidth": 390,
+    "viewportHeight": 844,
+    "documentScrollWidth": 390,
+    "hasRealHorizontalOverflow": false,
+    "formVisibleAboveTheFold": false,
+    "firstFormTopPx": 36559,
+    "screensToReachForm": 43.3,
+    "visibleFormsCount": 2,
+    "cookieOrPopupCoverPercent": 0,
+    "visibleCtasAboveFold": [
+      "ORDINA"
+    ],
+    "h1Text": "NON È INSONNIA. È UNA SVEGLIA INTERNA."
+  },
+  "qualification": {
+    "isQualified": true,
+    "recommendedStrategy": "DIRECT_BUYER",
+    "strategyReason": "Azienda ideale per vendita diretta: paga le inserzioni Meta ma manda il traffico su un sito lento e dispersivo.",
+    "disqualifiers": [],
+    "alreadyHasPerformantLanding": false,
+    "isDedicatedFunnelUrl": false,
+    "funnelBuilders": [],
+    "hasQuizAlready": false,
+    "navLinksCount": 0,
+    "formsCount": 2,
+    "isEcommerce": false,
+    "isLargeEnterpriseOrSpa": false,
+    "agencyDetection": {
+      "hasAgencyInvolved": false,
+      "detectedAgencyNames": [],
+      "detectedAgencyLinks": [],
+      "martechSignals": [
+        "Meta Pixel"
+      ]
+    }
+  },
+  "extractedEmails": [
+    "alet.assistenza@gmail.com"
+  ],
+  "extractedPhones": [
+    "0244414",
+    "0489944761"
+  ],
+  "extractedVat": "Non trovata",
+  "legalSnippets": [
+    "Titolare del Trattamento Ai sensi e per gli effetti di quanto previsto dall'articolo 4, paragrafo 1, numero 7), del Regolamento (UE) 2016/679, nonch&eacute; in conf",
+    "ditta individuale denominata \"\" iscritta al Registro delle Imprese tenuto dalla Camera di Commercio di Cuneo con numero REA , codice fiscale e partita IVA ,"
+  ],
+  "candidateLogoUrls": [],
+  "candidateHeroUrls": [
+    "https://lasceltaintelligente.it/wp-content/uploads/2026/10/exec-1e05c2a9-d31b-4ce3-8dcd-3422f78f8895-1024x1024.png",
+    "https://regnodelbenessere.it/wp-content/uploads/2026/10/exec-be701265-b1fa-42c8-b219-9575aab20e0b.png",
+    "https://convenienzaworld.it/wp-content/uploads/2026/10/exec-10244414-6908-457e-986d-20b6502756fb.png",
+    "https://convenienzaworld.it/wp-content/uploads/2026/10/exec-72843a47-56f3-440d-adce-408d9ba6a8e1.png",
+    "https://lasceltaintelligente.it/wp-content/uploads/2026/10/exec-7c2a9373-855f-40eb-a788-a2e2498233c8-1024x1024.png",
+    "https://lasceltaintelligente.it/wp-content/uploads/2026/10/exec-9d49f8b7-2f94-439e-bde8-6afcc3242459-1024x1024.png"
+  ],
+  "assetsDir": "/public/leads/lasceltaintelligente",
+  "searchKeyword": "allarme casa torino",
+  "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&media_type=all&q=allarme%20casa%20torino&search_type=keyword_unordered",
+  "adContextSnippet": "i sei svegliata. Ti sei scoperta. Due prove che puoi verificare stanotte. L’ora: se fosse l’età o lo stress, perché sempre in quella fascia? L’ordine: se hai le vampate, ti svegli perché arriva il caldo, o il caldo arriva dopo che eri già sveglia? Su 34 donne, nel 69% dei casi il risveglio viene prima. Ed è anche il motivo per cui le 155 euro erano buttate. La melatonina dice al corpo che ora è, non lo tiene giù — e per legge si ferma a 1 mg. Le gocce alle tre non ci sono più. La soia viene conv",
+  "landingPageTitle": "pausa &#8211; My WordPress",
+  "landingPageH1": "Non &egrave; insonnia. &Egrave; una sveglia interna.",
+  "landingPageMetaDescription": ""
+}

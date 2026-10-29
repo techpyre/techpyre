@@ -1,0 +1,73 @@
+{
+  "slug": "cantieriintasca",
+  "targetUrl": "https://cantieriintasca.com/landing",
+  "finalResolvedUrl": "https://cantieriintasca.com/landing-621623",
+  "measuredResponseMs": 955,
+  "renderBlockingScripts": 2,
+  "estimatedMobileLcpSeconds": 6.5,
+  "mobileViewportAudit": {
+    "viewportWidth": 390,
+    "viewportHeight": 844,
+    "documentScrollWidth": 390,
+    "hasRealHorizontalOverflow": false,
+    "formVisibleAboveTheFold": false,
+    "firstFormTopPx": null,
+    "screensToReachForm": null,
+    "visibleFormsCount": 0,
+    "cookieOrPopupCoverPercent": 0,
+    "visibleCtasAboveFold": [],
+    "h1Text": "ECCO IL METODO CANTIERI IN TASCA CHE +60 IMPRENDITORI IN EDILIZIA USANO PER TROVARE NUOVI CANTIERI QUANDO L’AGENDA È VUOTA, SCEGLIERE CLIENTI MIGLIORI E BATTERE GLI INCASSI DEGLI ANNI PRECEDENTI"
+  },
+  "qualification": {
+    "isQualified": true,
+    "recommendedStrategy": "AGENCY_COEXISTENCE_OR_WHITELABEL",
+    "strategyReason": "Rilevata presenza di Web Agency / Funnel di Marketing esistente ma con pagina lenta (6.5s). Usa l'angolo \"Non tocchiamo chi vi segue le campagne: forniamo solo la pagina veloce 0.3s in White-Label\" (o proponi partnership White-Label all'agenzia rilevata).",
+    "disqualifiers": [],
+    "alreadyHasPerformantLanding": false,
+    "isDedicatedFunnelUrl": true,
+    "funnelBuilders": [
+      "GoHighLevel"
+    ],
+    "hasQuizAlready": false,
+    "navLinksCount": 0,
+    "formsCount": 0,
+    "isEcommerce": false,
+    "isLargeEnterpriseOrSpa": false,
+    "agencyDetection": {
+      "hasAgencyInvolved": true,
+      "detectedAgencyNames": [],
+      "detectedAgencyLinks": [],
+      "martechSignals": [
+        "Meta Pixel",
+        "CRM Marketing Automation"
+      ]
+    }
+  },
+  "extractedEmails": [
+    "info@cantieriintasca.com"
+  ],
+  "extractedPhones": [
+    "0707040",
+    "0000001",
+    "00000026",
+    "00000040",
+    "0000000"
+  ],
+  "extractedVat": "Non trovata",
+  "legalSnippets": [],
+  "candidateLogoUrls": [],
+  "candidateHeroUrls": [
+    "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/ewFlNMkdBIDZ29XbJqfz/media/698893fc5f9399b361f997e7.webp",
+    "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/ewFlNMkdBIDZ29XbJqfz/media/7d0d0976-68ad-4b63-8c86-bc472134ef66.png",
+    "https://assets.cdn.filesafe.space/bupvNmqh3Ng9opZrbF48/media/695d348689c99d3d700c12d7.png",
+    "https://assets.cdn.filesafe.space/bupvNmqh3Ng9opZrbF48/media/695d3486b75f6f747e3f443b.png",
+    "https://assets.cdn.filesafe.space/bupvNmqh3Ng9opZrbF48/media/695d3486de2c1427363ae4a2.png"
+  ],
+  "assetsDir": "/public/leads/cantieriintasca",
+  "searchKeyword": "ristrutturazioni bologna",
+  "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&media_type=all&q=ristrutturazioni%20bologna&search_type=keyword_unordered",
+  "adContextSnippet": "8nfp6 xq9mrsl x1h4wwuj x117nqv4 xeuugli\">Cantieri in Tasca Sponsorizzato È davvero possibile trovare nuovi cantieri ben pagati senza portali o passaparola? Se me l'avessi chiesto 3 anni fa, avrei detto \"impossibile\". I clienti buoni arrivano solo col passaparola, giusto? Poi, la pubblicità è solo per grandi aziende… E sui social ci sono solo perditempo. Poi ho visto i numeri. ✅ 60+ imprenditori edili che generano cantieri ogni mese. ✅ €9.227.017 in lavori chiusi totali. ✅ Calendari programmati p",
+  "landingPageTitle": "",
+  "landingPageH1": "ECCO IL METODO CANTIERI IN TASCA che +60 imprenditori in edilizia usano per trovare nuovi cantieri quando l’agenda è vuota, SCEGLIERE CLIENTI MIGLIORI E BATTERE GLI INCASSI DEGLI ANNI PRECEDENTI",
+  "landingPageMetaDescription": ""
+}

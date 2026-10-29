@@ -1,0 +1,89 @@
+=====================================================================
+OUTBOUND PACK - FPC GROUP SRL (fpcgroupsrl)
+=====================================================================
+Titolare / Decision Maker : Direzione di FPC Group srl
+Email Target              : info@fpcgroupsrl.it
+Telefono / WhatsApp       : 3891009704
+Città                     : Bologna
+P.IVA                     : N/D
+LCP Sito Attuale          : 6.1s (Score Mobile: 54/100)
+URL Demo (Brand-Neutral)  : https://techpyre.eu/demo/fpcgroupsrl
+Strategia Qualifica       : DIRECT_BUYER
+Segnali MarTech / Agenzia : Google Tag Manager
+Agenzia Rilevata Footer   : Nessuna agenzia esterna firmata nel footer
+Check Anti-Spam 1ª Email  : 244 parole | Link: ✅ ZERO LINK (Inbox Sicura)
+
+---------------------------------------------------------------------
+1. PRIMA EMAIL AL TITOLARE (Plain-Text, Zero Link)
+---------------------------------------------------------------------
+A: info@fpcgroupsrl.it
+Oggetto: Sulla vostra sponsorizzata Facebook a Bologna - Presentazione TechPyre
+
+Buongiorno, alla cortese attenzione della Direzione di FPC Group srl,
+
+mi chiamo Riccardo Granza e sono il fondatore di TechPyre: realizziamo landing page ad alta velocita per le aziende che investono in campagne pubblicitarie su Facebook e Google.
+
+Oggi ho visto su Facebook la vostra campagna attiva per Bologna e ho effettuato una verifica tecnica aprendola dal telefono come farebbe un vostro potenziale cliente. Dai dati rilevati, la pagina impiega 5 secondi per caricare la prima schermata su rete mobile (punteggio velocita 45 su 100 con 10 script bloccanti), senza un modulo di preventivo rapido nella prima schermata.
+
+Il problema concreto e economico: chi clicca un annuncio su Facebook dal telefono decide nei primi 3 secondi se contattarvi o tornare a scorrere il feed. Mandare questo traffico pagato su una pagina che impiega 5 secondi ad aprirsi significa perdere oltre meta dei clic che pagate a Meta. Lavorare con noi vi permette di far atterrare i clienti in 0.3 secondi su una schermata pulita con un simulatore di preventivo a 2 domande subito visibile: in questo modo, a parita di budget pubblicitario, raddoppiate le richieste di contatto gia qualificate per esigenze e recapito telefonico.
+
+Per presentarci in modo concreto, vi abbiamo preparato una versione dimostrativa veloce (0.3s) con il vostro marchio e i vostri servizi. Se vi fa piacere provarla dal telefono, rispondetemi pure "LINK" qui sotto e ve lo invio subito.
+
+Un cordiale saluto,
+Riccardo Granza
+Fondatore TechPyre
+Tel: +39 379 115 9352
+
+---------------------------------------------------------------------
+2. FOLLOW-UP EMAIL (Quando risponde "LINK" o "SÌ")
+---------------------------------------------------------------------
+A: info@fpcgroupsrl.it
+Oggetto: Re: Sulla vostra sponsorizzata Facebook a Bologna - Presentazione TechPyre
+
+Buongiorno,
+
+grazie per il riscontro. Ecco il link diretto per provare la pagina dimostrativa dal telefono o dal PC:
+https://techpyre.eu/demo/fpcgroupsrl
+
+Provando a cliccare sulle 2 domande del simulatore guidato, all ultimo passaggio vedrete la scheda richiesta gia ordinata che vi arriverebbe in tempo reale su WhatsApp o via email a ogni clic della sponsorizzata.
+
+Un cordiale saluto,
+Riccardo Granza
+TechPyre
+Tel: +39 379 115 9352
+
+---------------------------------------------------------------------
+3. DM INSTAGRAM / FACEBOOK / WHATSAPP (+ public/leads/fpcgroupsrl/new-demo-mobile.png)
+---------------------------------------------------------------------
+Buongiorno Direzione, sono Riccardo Granza, fondatore di TechPyre (sviluppiamo landing page ad alta velocità per chi investe in campagne Meta). Ho visto la vostra sponsorizzata "Ristrutturazioni a Bologna | FPC Group SRL" su Facebook: dal telefono la pagina attuale impiega 6.1 secondi ad aprirsi. Per presentarci vi abbiamo preparato una versione dimostrativa istantanea (0.3s) con i vostri testi: le ho inviato i dettagli via email, se le fa piacere provarla dal telefono mi scriva pure qui e le giro il link!
+
+---------------------------------------------------------------------
+4. RISPOSTA ANTI-OBIEZIONE "CI SEGUE GIÀ UN'AGENZIA" (Coesistenza / White-Label)
+---------------------------------------------------------------------
+La capisco perfettamente, e infatti non vogliamo assolutamente sostituire l'agenzia che vi segue le campagne Facebook.
+
+Il nostro è un intervento puramente tecnico (anche in White-Label): forniamo alla vostra agenzia attuale la pagina veloce da 0.3s sul vostro dominio, già collegata al loro Pixel e GTM, così i clic che vi portano smettono di perdersi durante i 6.1 secondi di caricamento.
+
+Può girare direttamente anche a loro questo link di test (è completamente neutro, senza il nostro logo):
+
+https://techpyre.eu/demo/fpcgroupsrl
+
+---------------------------------------------------------------------
+5. PITCH B2B2B WHITE-LABEL DIRETTO ALL'AGENZIA (Se vuoi vendere all'Agenzia)
+---------------------------------------------------------------------
+Oggetto: Partnership tecnica White-Label su campagne Meta di FPC Group srl (6.1s -> 0.3s)
+
+Buongiorno,
+
+mi chiamo Riccardo Granza e sono il fondatore di TechPyre: siamo uno studio tecnico specializzato nello sviluppo di landing page Next.js ad altissima velocità (0.3s) in modalità White-Label per le Web Agency.
+
+Abbiamo notato che seguite il progetto digitale di FPC Group srl. Le creatività su Meta sono ben strutturate, ma la pagina attuale su cui atterra il traffico mobile impiega 6.1 secondi a caricare, penalizzando il tasso di conversione delle campagne.
+
+Abbiamo già preparato una versione Next.js da 0.3s per FPC Group srl completamente neutra (100% White-Label, zero riferimenti a TechPyre) con simulatore lead integrato: potete mostrarla direttamente al vostro cliente come upgrade vostro o collegarla in 24h al vostro GTM/CRM.
+
+Se vi fa piacere vedere la preview White-Label già pronta, rispondetemi pure 'LINK' e ve la giro subito.
+
+Un cordiale saluto,
+Riccardo Granza - Fondatore TechPyre
++39 379 115 9352
+=====================================================================

@@ -1,0 +1,72 @@
+{
+  "slug": "ilmattonesrl",
+  "targetUrl": "http://www.ilmattonesrl.it/",
+  "finalResolvedUrl": "https://www.ilmattonesrl.it/",
+  "measuredResponseMs": 2551,
+  "renderBlockingScripts": 19,
+  "estimatedMobileLcpSeconds": 14.6,
+  "mobileViewportAudit": {
+    "viewportWidth": 390,
+    "viewportHeight": 844,
+    "documentScrollWidth": 390,
+    "hasRealHorizontalOverflow": false,
+    "formVisibleAboveTheFold": false,
+    "firstFormTopPx": 13504,
+    "screensToReachForm": 16,
+    "visibleFormsCount": 1,
+    "cookieOrPopupCoverPercent": 0,
+    "visibleCtasAboveFold": [],
+    "h1Text": "RISTRUTTURAZIONI INTERNE ED ESTERNE A VERONA E PROVINCIA. Cambia ora la tua casa, il tuo bagno, i tuoi ambienti!"
+  },
+  "qualification": {
+    "isQualified": true,
+    "recommendedStrategy": "DIRECT_BUYER",
+    "strategyReason": "Azienda ideale per vendita diretta: paga le inserzioni Meta ma manda il traffico su un sito lento e dispersivo.",
+    "disqualifiers": [],
+    "alreadyHasPerformantLanding": false,
+    "isDedicatedFunnelUrl": false,
+    "funnelBuilders": [],
+    "hasQuizAlready": false,
+    "navLinksCount": 0,
+    "formsCount": 1,
+    "isEcommerce": false,
+    "isLargeEnterpriseOrSpa": false,
+    "agencyDetection": {
+      "hasAgencyInvolved": false,
+      "detectedAgencyNames": [],
+      "detectedAgencyLinks": [],
+      "martechSignals": []
+    }
+  },
+  "extractedEmails": [
+    "info.ilmattonesrl@gmail.com"
+  ],
+  "extractedPhones": [
+    "347593112",
+    "371673929",
+    "3144880734",
+    "0221937",
+    "328114269"
+  ],
+  "extractedVat": "Non trovata",
+  "legalSnippets": [],
+  "candidateLogoUrls": [
+    "https://www.ilmattonesrl.it/wp-content/uploads/2024/01/LOGO_BIG-2.png",
+    "https://www.ilmattonesrl.it/wp-content/uploads/2024/01/LOGO_BIGnero-2.png"
+  ],
+  "candidateHeroUrls": [
+    "https://www.ilmattonesrl.it/wp-content/uploads/2024/01/LOGO_BIG-2.png",
+    "https://www.ilmattonesrl.it/wp-content/uploads/2024/01/discutendo-modello-scaled.jpg",
+    "https://www.ilmattonesrl.it/wp-content/plugins/colibri-page-builder/extend-builder/assets/partials-images/tt6-hand-person-girl-woman-hair-photography-926515-pxhere-com-150x150.jpg",
+    "https://www.ilmattonesrl.it/wp-content/plugins/colibri-page-builder/extend-builder/assets/partials-images/tt4-stocksnap-1trsfnimk0-150x150.jpg",
+    "https://www.ilmattonesrl.it/wp-content/plugins/colibri-page-builder/extend-builder/assets/partials-images/tt5-hand-person-girl-woman-hair-photography-926515-pxhere-com-150x150.jpg",
+    "https://www.ilmattonesrl.it/wp-content/uploads/2025/12/13315.jpg"
+  ],
+  "assetsDir": "/public/leads/ilmattonesrl",
+  "searchKeyword": "ristrutturazione bagno verona",
+  "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&media_type=all&q=ristrutturazione%20bagno%20verona&search_type=keyword_unordered",
+  "adContextSnippet": "gNo_4s&_nc_zt=14&_nc_ht=scontent-fco2-1.xx&_nc_gid=LsiN9KZE0PgcXyvrSEEe9w&_nc_ss=72289&oh=00_AQQdGLqk2ahx2M-_pLGOSVnYz5Pidk6GDTSoEYWh6ZIQjw&oe=6AE94E13\"> IL Mattone SRL Sponsorizzato Stai pensando di ristrutturare casa o dare finalmente un nuovo volto al tuo bagno? Noi de IL MATTONE SRL siamo qui per questo! Da anni siamo un punto di riferimento a Verona e provincia per chi cerca professionalità, qualità e soluzioni su misura. Che si tratti di una ristrutturazione completa o solo del bagno, il n",
+  "landingPageTitle": "Il Mattone srl &ndash; Ristrutturazioni Verona &ndash; Ristrutturazione Bagni Verona",
+  "landingPageH1": "RISTRUTTURAZIONI INTERNE ED ESTERNE A VERONA E PROVINCIA. Cambia ora la tua casa, il tuo bagno, i tuoi ambienti!",
+  "landingPageMetaDescription": "Ristrutturazioni Verona - Ristrutturazioni Bagno Verona"
+}

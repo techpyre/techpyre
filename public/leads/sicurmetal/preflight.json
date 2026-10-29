@@ -1,0 +1,77 @@
+{
+  "slug": "sicurmetal",
+  "targetUrl": "https://www.sicurmetal.com/landing-page-porte/",
+  "finalResolvedUrl": "https://www.sicurmetal.com/landing-page-porte/",
+  "measuredResponseMs": 526,
+  "renderBlockingScripts": 21,
+  "estimatedMobileLcpSeconds": 6.9,
+  "mobileViewportAudit": {
+    "viewportWidth": 390,
+    "viewportHeight": 844,
+    "documentScrollWidth": 390,
+    "hasRealHorizontalOverflow": false,
+    "formVisibleAboveTheFold": false,
+    "firstFormTopPx": 8172,
+    "screensToReachForm": 9.7,
+    "visibleFormsCount": 1,
+    "cookieOrPopupCoverPercent": 0,
+    "visibleCtasAboveFold": [
+      "PROGETTI",
+      "PRODOTTI",
+      "RISTRUTTURAZIONI",
+      "CONTATTACI",
+      "NEWS"
+    ],
+    "h1Text": "PORTE BLINDATE E GRATE DI SICUREZZASU MISURA CERTIFICATE A ROMA"
+  },
+  "qualification": {
+    "isQualified": true,
+    "recommendedStrategy": "AGENCY_COEXISTENCE_OR_WHITELABEL",
+    "strategyReason": "Rilevata presenza di Web Agency / Funnel di Marketing esistente ma con pagina lenta (6.9s). Usa l'angolo \"Non tocchiamo chi vi segue le campagne: forniamo solo la pagina veloce 0.3s in White-Label\" (o proponi partnership White-Label all'agenzia rilevata).",
+    "disqualifiers": [],
+    "alreadyHasPerformantLanding": false,
+    "isDedicatedFunnelUrl": true,
+    "funnelBuilders": [],
+    "hasQuizAlready": false,
+    "navLinksCount": 8,
+    "formsCount": 1,
+    "isEcommerce": false,
+    "isLargeEnterpriseOrSpa": false,
+    "agencyDetection": {
+      "hasAgencyInvolved": true,
+      "detectedAgencyNames": [],
+      "detectedAgencyLinks": [],
+      "martechSignals": []
+    }
+  },
+  "extractedEmails": [
+    "info@sicurmetal.com"
+  ],
+  "extractedPhones": [
+    "020802384028",
+    "023179883111",
+    "021546526311",
+    "09152661006",
+    "+393929512873"
+  ],
+  "extractedVat": "17517251009",
+  "legalSnippets": [],
+  "candidateLogoUrls": [
+    "https://www.sicurmetal.com/wp-content/uploads/2025/10/sicurmetal-logo.webp"
+  ],
+  "candidateHeroUrls": [
+    "http://www.sicurmetal.com/wp-content/uploads/2025/10/ChatGPT-Image-30-ott-2025-19_36_02.webp",
+    "https://www.sicurmetal.com/wp-content/uploads/2025/11/2-1024x576.png",
+    "https://www.sicurmetal.com/wp-content/uploads/2026/03/WhatsApp-Image-2026-03-15-at-11.36.36-300x225.jpeg",
+    "https://www.sicurmetal.com/wp-content/uploads/2025/11/2-1-300x300.png",
+    "https://www.sicurmetal.com/wp-content/uploads/2025/11/586504a5c2d443f599ac15baa1250873-224x300.jpg",
+    "https://www.sicurmetal.com/wp-content/uploads/2025/11/1-1-300x300.png"
+  ],
+  "assetsDir": "/public/leads/sicurmetal",
+  "searchKeyword": "porte blindate roma",
+  "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&media_type=all&q=porte%20blindate%20roma&search_type=keyword_unordered",
+  "adContextSnippet": "h4wwuj x1fcty0u\" target=\"_blank\" href=\"https://www.facebook.com/sicurmetalroma/\"> Sicurmetal Roma Sponsorizzato 🔒 Tieni al sicuro la tua casa! Porte blindate vetrate certificate a Roma ✅👇 Noi di Sicurmental, con oltre 30 anni di esperienza, lavoriamo per garantirti solo il meglio: ✅ Selezionando per te solo i migliori materiali, di altissima qualità, per lavori che possano durare nel tempo ✅ Abbiamo una squadra di professionisti esperti con tantissima esperienza ✅ Gestiamo per te tutte le prat",
+  "landingPageTitle": "Porte Blindate Classe 4 & Grate a Roma: da 1600€ + Detrazione 50% e Tasso Zero",
+  "landingPageH1": "PORTE BLINDATE E GRATE DI SICUREZZA SU MISURA CERTIFICATE A ROMA",
+  "landingPageMetaDescription": "Massima sicurezza certificata (Classe 4), installazione su misura a Roma. Ottieni il preventivo gratis! Detrazione 50% e Finanziamento Tasso Zero."
+}

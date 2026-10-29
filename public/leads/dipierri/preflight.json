@@ -1,0 +1,58 @@
+{
+  "slug": "dipierri",
+  "targetUrl": "https://dipierri.it/lp/arcoveggio-56",
+  "finalResolvedUrl": "https://dipierri.it/lp/arcoveggio-56",
+  "measuredResponseMs": 429,
+  "renderBlockingScripts": 1,
+  "estimatedMobileLcpSeconds": 4.3,
+  "mobileViewportAudit": null,
+  "qualification": {
+    "isQualified": true,
+    "recommendedStrategy": "AGENCY_COEXISTENCE_OR_WHITELABEL",
+    "strategyReason": "Rilevata presenza di Web Agency / Funnel di Marketing esistente ma con pagina lenta (4.3s). Usa l'angolo \"Non tocchiamo chi vi segue le campagne: forniamo solo la pagina veloce 0.3s in White-Label\" (o proponi partnership White-Label all'agenzia rilevata).",
+    "disqualifiers": [],
+    "alreadyHasPerformantLanding": false,
+    "isDedicatedFunnelUrl": true,
+    "funnelBuilders": [],
+    "hasQuizAlready": false,
+    "navLinksCount": 0,
+    "formsCount": 1,
+    "isEcommerce": false,
+    "isLargeEnterpriseOrSpa": false,
+    "agencyDetection": {
+      "hasAgencyInvolved": true,
+      "detectedAgencyNames": [],
+      "detectedAgencyLinks": [],
+      "martechSignals": []
+    }
+  },
+  "extractedEmails": [
+    "immobiliare@dipierri.it",
+    "mario@esempio.it"
+  ],
+  "extractedPhones": [
+    "+39 051 6241342",
+    "02277901209",
+    "3933715936",
+    "3847054929",
+    "+390516241342"
+  ],
+  "extractedVat": "Non trovata",
+  "legalSnippets": [],
+  "candidateLogoUrls": [
+    "https://dipierri.it/assets/logo_original.webp",
+    "https://cdn.sanity.io/images/ulct0xek/production/940723c9ff1e91813796b91f69f302b95646ea2e-400x400.png?w=800&amp;fm=webp&amp;q=80"
+  ],
+  "candidateHeroUrls": [
+    "https://cdn.sanity.io/images/ulct0xek/production/eb09adeb64f35d38e135977e5ff8cd1ea8078ad5-2880x2160.webp?w=1200&amp;h=630&amp;fit=crop&amp;fm=jpg&amp;q=80",
+    "https://cdn.sanity.io/images/ulct0xek/production/eb09adeb64f35d38e135977e5ff8cd1ea8078ad5-2880x2160.webp?w=3840&amp;q=75&amp;fit=max&amp;auto=format",
+    "https://cdn.sanity.io/images/ulct0xek/production/a2ae581b31408b5fb5b1d6f5c9055e4595dc2c66-2400x1800.webp?w=3840&amp;q=75&amp;fit=max&amp;auto=format"
+  ],
+  "assetsDir": "/public/leads/dipierri",
+  "searchKeyword": "pompe di calore bologna",
+  "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&media_type=all&q=pompe%20di%20calore%20bologna&search_type=keyword_unordered",
+  "adContextSnippet": "h=00_AQSq0sze0EqAoKy9TX7SEhPxxgJKl0Lf3vKacYUa-wh3LQ&oe=6AE958C9\"> Gruppo Dipierri SpA Sponsorizzato A #Bologna, in Via dell’Arcoveggio 56/21, prende forma 𝑨𝒓𝒄𝒐𝒗𝒆𝒈𝒈𝒊𝒐𝟓𝟔: una nuova costruzione pensata per chi desidera una casa moderna, efficiente e ben collegata alla città. 𝐁𝐢𝐥𝐨𝐜𝐚𝐥𝐢, 𝐭𝐫𝐢𝐥𝐨𝐜𝐚𝐥𝐢, 𝐪𝐮𝐚𝐝𝐫𝐢𝐥𝐨𝐜𝐚𝐥𝐢 𝐞 𝐚𝐭𝐭𝐢𝐜𝐢 𝐢𝐧 𝐜𝐥𝐚𝐬𝐬𝐞 𝐞𝐧𝐞𝐫𝐠𝐞𝐭𝐢𝐜𝐚 𝐀𝟒, progettati per offrire comfort, funzionalità e qualità abitativa. 𝑳𝒂𝒔𝒄𝒊𝒂 𝒊 𝒕𝒖𝒐𝒊 ",
+  "landingPageTitle": "Arcoveggio 56 · Nuovi appartamenti in classe A4 a Bologna · Gruppo Dipierri",
+  "landingPageH1": "Dove il futuro prende casa",
+  "landingPageMetaDescription": "Bilocali, trilocali, quadrilocali e un attico esclusivo in via dell&#x27;Arcoveggio 56/21 a Bologna. Nuova costruzione in classe energetica A4: lascia un recapito per scoprire gli appartamenti disponibili."
+}

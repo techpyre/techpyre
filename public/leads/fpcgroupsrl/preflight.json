@@ -1,0 +1,75 @@
+{
+  "slug": "fpcgroupsrl",
+  "targetUrl": "https://www.fpcgroupsrl.it/",
+  "finalResolvedUrl": "https://www.fpcgroupsrl.it/",
+  "measuredResponseMs": 324,
+  "renderBlockingScripts": 29,
+  "estimatedMobileLcpSeconds": 6.1,
+  "mobileViewportAudit": {
+    "viewportWidth": 1560,
+    "viewportHeight": 3376,
+    "documentScrollWidth": 5338,
+    "hasRealHorizontalOverflow": true,
+    "formVisibleAboveTheFold": false,
+    "firstFormTopPx": null,
+    "screensToReachForm": null,
+    "visibleFormsCount": 0,
+    "cookieOrPopupCoverPercent": 0,
+    "visibleCtasAboveFold": [
+      "TUTTI I PROGETTI"
+    ],
+    "h1Text": ""
+  },
+  "qualification": {
+    "isQualified": true,
+    "recommendedStrategy": "DIRECT_BUYER",
+    "strategyReason": "Azienda ideale per vendita diretta: paga le inserzioni Meta ma manda il traffico su un sito lento e dispersivo.",
+    "disqualifiers": [],
+    "alreadyHasPerformantLanding": false,
+    "isDedicatedFunnelUrl": false,
+    "funnelBuilders": [],
+    "hasQuizAlready": false,
+    "navLinksCount": 0,
+    "formsCount": 0,
+    "isEcommerce": false,
+    "isLargeEnterpriseOrSpa": false,
+    "agencyDetection": {
+      "hasAgencyInvolved": false,
+      "detectedAgencyNames": [],
+      "detectedAgencyLinks": [],
+      "martechSignals": [
+        "Google Tag Manager"
+      ]
+    }
+  },
+  "extractedEmails": [
+    "info@fpcgroupsrl.it"
+  ],
+  "extractedPhones": [
+    "051 0956030",
+    "3891009704",
+    "389 1009704",
+    "00212373",
+    "00212374"
+  ],
+  "extractedVat": "Non trovata",
+  "legalSnippets": [],
+  "candidateLogoUrls": [
+    "https://www.fpcgroupsrl.it/assets/img/logo/logo-dark.png"
+  ],
+  "candidateHeroUrls": [
+    "https://www.fpcgroupsrl.it/assets/img/images/hero-about-11.jpg",
+    "https://www.fpcgroupsrl.it/assets/img/home-08/banner/banner-shape.png",
+    "https://www.fpcgroupsrl.it/assets/img/images/about-3.jpg",
+    "https://www.fpcgroupsrl.it/assets/img/images/about-2.jpg",
+    "https://www.fpcgroupsrl.it/assets/img/home-08/about/about-shape.png",
+    "https://www.fpcgroupsrl.it/assets/img/images/ristrutturazione%20massarenti-2-1.jpg"
+  ],
+  "assetsDir": "/public/leads/fpcgroupsrl",
+  "searchKeyword": "ristrutturazioni bologna",
+  "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&media_type=all&q=ristrutturazioni%20bologna&search_type=keyword_unordered",
+  "adContextSnippet": "yle=\"left: 44px; transform: translate(calc(-50% - 4px), -50%);\"> <img class=\"x15mokao x1ga7v0g x16uus16 xbiv7yw x1ll5gia x19kjcj4 x642log\" alt=\"\" referrerpolicy=\"origin-when-cross-origin\" src=\"https://scontent-fco2-1.xx.fbcdn.net/v/t39.35426-6/858017281_28926093950377504_1553824506107511103_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=108&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=j6qGwUPOJc8Q7kNvwFRSayk&_nc_oc=AdptKzp-K1nSO7S2M-QkzuOgtsdNqA2hXM19EuBMbY7ZLu5BuDnEu4HKnpbYeZRJPAY&_nc_zt=14&_nc_ht=scontent-fco2-1.xx",
+  "landingPageTitle": "Ristrutturazioni a Bologna | FPC Group SRL",
+  "landingPageH1": "",
+  "landingPageMetaDescription": "FPC Group SRL realizza ristrutturazioni edili a Bologna: appartamenti, bagni, interni ed esterni. Soluzioni su misura e preventivi gratuiti senza impegno."
+}

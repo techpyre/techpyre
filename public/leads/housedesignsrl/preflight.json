@@ -1,0 +1,81 @@
+{
+  "slug": "housedesignsrl",
+  "targetUrl": "https://housedesignsrl.it/",
+  "finalResolvedUrl": "https://housedesignsrl.it/",
+  "measuredResponseMs": 511,
+  "renderBlockingScripts": 16,
+  "estimatedMobileLcpSeconds": 6.8,
+  "mobileViewportAudit": {
+    "viewportWidth": 390,
+    "viewportHeight": 844,
+    "documentScrollWidth": 390,
+    "hasRealHorizontalOverflow": false,
+    "formVisibleAboveTheFold": false,
+    "firstFormTopPx": 15433,
+    "screensToReachForm": 18.3,
+    "visibleFormsCount": 1,
+    "cookieOrPopupCoverPercent": 56,
+    "visibleCtasAboveFold": [
+      "Accetta",
+      "Nega",
+      "Visualizza preferenze"
+    ],
+    "h1Text": ""
+  },
+  "qualification": {
+    "isQualified": true,
+    "recommendedStrategy": "AGENCY_COEXISTENCE_OR_WHITELABEL",
+    "strategyReason": "Rilevata presenza di Web Agency / Funnel di Marketing esistente ma con pagina lenta (6.8s). Usa l'angolo \"Non tocchiamo chi vi segue le campagne: forniamo solo la pagina veloce 0.3s in White-Label\" (o proponi partnership White-Label all'agenzia rilevata).",
+    "disqualifiers": [],
+    "alreadyHasPerformantLanding": false,
+    "isDedicatedFunnelUrl": false,
+    "funnelBuilders": [],
+    "hasQuizAlready": false,
+    "navLinksCount": 16,
+    "formsCount": 1,
+    "isEcommerce": false,
+    "isLargeEnterpriseOrSpa": false,
+    "agencyDetection": {
+      "hasAgencyInvolved": true,
+      "detectedAgencyNames": [
+        "Because Torino"
+      ],
+      "detectedAgencyLinks": [],
+      "martechSignals": []
+    }
+  },
+  "extractedEmails": [
+    "torino@housedesignsrl.it",
+    "commerciale@housedesignsrl.it"
+  ],
+  "extractedPhones": [
+    "09780600012",
+    "+390116202652",
+    "+390115503458",
+    "+3901118821054",
+    "3124657546"
+  ],
+  "extractedVat": "Non trovata",
+  "legalSnippets": [
+    "S.r.l. Corso Torino, 35 10023 Chieri (TO) | REA TO-1079824 | P"
+  ],
+  "candidateLogoUrls": [
+    "https://housedesignsrl.it/wp-content/uploads/2022/11/house-design_logo_homepage_Tavola-disegno-1_Tavola-disegno-1.png",
+    "https://housedesignsrl.it/wp-content/uploads/2022/11/logo-white.png"
+  ],
+  "candidateHeroUrls": [
+    "https://housedesignsrl.it/wp-content/uploads/2023/08/housedesign-titolari.jpg",
+    "https://housedesignsrl.it/wp-content/uploads/2025/02/Patrizia.jpg",
+    "https://housedesignsrl.it/wp-content/uploads/2025/02/Stefania.jpg",
+    "https://housedesignsrl.it/wp-content/uploads/2025/02/Giovanna.jpg",
+    "https://housedesignsrl.it/wp-content/uploads/2025/02/Chiara.jpg",
+    "https://housedesignsrl.it/wp-content/uploads/2025/02/Gaetano.jpg"
+  ],
+  "assetsDir": "/public/leads/housedesignsrl",
+  "searchKeyword": "porte blindate torino",
+  "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&media_type=all&q=porte%20blindate%20torino&search_type=keyword_unordered",
+  "adContextSnippet": "67kaAYOSjbqODw&oe=6AE93602\"> House Design Sponsorizzato La porta di casa è l'ultima cosa a cui si pensa — finché non diventa la più importante. 🔐 Cambiare la porta d'ingresso non è come cambiare una serratura. Una blindata ben scelta e ben posata lavora su più fronti: struttura, serratura, punti di chiusura, ma anche isolamento termico e acustico verso il pianerottolo. Sicurezza e comfort, nello stesso gesto. Se la tua porta d'ingresso ha qualche anno sulle spalle vieni a sbirciare nuove soluzi",
+  "landingPageTitle": "Chi siamo - House Design srl",
+  "landingPageH1": "",
+  "landingPageMetaDescription": "Una scelta sicura da 20 anni.Manca poco al 31 dicembre 2025!Approfitta ora delle detrazioni fiscali del 50% e ricevi una consulenza gratuita con il miglior"
+}

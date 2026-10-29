@@ -1,0 +1,84 @@
+{
+  "slug": "barattiantichita",
+  "targetUrl": "https://www.barattiantichita.it/",
+  "finalResolvedUrl": "https://www.barattiantichita.it/",
+  "measuredResponseMs": 1154,
+  "renderBlockingScripts": 5,
+  "estimatedMobileLcpSeconds": 8,
+  "mobileViewportAudit": {
+    "viewportWidth": 390,
+    "viewportHeight": 844,
+    "documentScrollWidth": 390,
+    "hasRealHorizontalOverflow": false,
+    "formVisibleAboveTheFold": false,
+    "firstFormTopPx": 13546,
+    "screensToReachForm": 16,
+    "visibleFormsCount": 2,
+    "cookieOrPopupCoverPercent": 40,
+    "visibleCtasAboveFold": [
+      "SCOPRI DI PIÙ",
+      "SCOPRI DI PIÙ",
+      "SCOPRI DI PIÙ",
+      "SCOPRI DI PIÙ",
+      "Continua senza accettare",
+      "Visualizza la nostra politica sui cookie",
+      "leggi maggiori dettagli sui cookie in questa pagina",
+      "Consenti solo i cookie essenziali"
+    ],
+    "h1Text": "Divani Chesterfield Vintage"
+  },
+  "qualification": {
+    "isQualified": true,
+    "recommendedStrategy": "DIRECT_BUYER",
+    "strategyReason": "Azienda ideale per vendita diretta: paga le inserzioni Meta ma manda il traffico su un sito lento e dispersivo.",
+    "disqualifiers": [],
+    "alreadyHasPerformantLanding": false,
+    "isDedicatedFunnelUrl": false,
+    "funnelBuilders": [],
+    "hasQuizAlready": false,
+    "navLinksCount": 8,
+    "formsCount": 2,
+    "isEcommerce": false,
+    "isLargeEnterpriseOrSpa": false,
+    "agencyDetection": {
+      "hasAgencyInvolved": false,
+      "detectedAgencyNames": [],
+      "detectedAgencyLinks": [],
+      "martechSignals": []
+    }
+  },
+  "extractedEmails": [
+    "info@barattiantichita.it"
+  ],
+  "extractedPhones": [
+    "062715263613",
+    "062007180418",
+    "080908222015",
+    "080908255016",
+    "0250121"
+  ],
+  "extractedVat": "02109530986",
+  "legalSnippets": [
+    "S.r.l. 25020 Corticelle Pieve - Dello (Brescia) - ITALY Via Dante Alighieri, 31 P"
+  ],
+  "candidateLogoUrls": [
+    "https://www.barattiantichita.it/images/baratti-antichita-logo-2020-white-horizontal.svg",
+    "https://www.barattiantichita.it/images/bbformigola-logo-white.svg",
+    "https://www.barattiantichita.it/images/locandapieve-logo-white.svg"
+  ],
+  "candidateHeroUrls": [
+    "https://www.barattiantichita.it/images/home-2019-1b.jpg",
+    "https://www.barattiantichita.it/images/17.jpg",
+    "https://www.barattiantichita.it/images/18.jpg",
+    "https://www.barattiantichita.it/images/19.jpg",
+    "https://www.barattiantichita.it/images/2019-gucci.jpg",
+    "https://www.barattiantichita.it/images/2019-pirelli.jpg"
+  ],
+  "assetsDir": "/public/leads/barattiantichita",
+  "searchKeyword": "arredamento brescia",
+  "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&media_type=all&q=arredamento%20brescia&search_type=keyword_unordered",
+  "adContextSnippet": "www.facebook.com/barattiantichita/\"> Baratti Antichità Sponsorizzato ✨𝐁𝐚𝐫𝐚𝐭𝐭𝐢 𝐀𝐧𝐭𝐢𝐜𝐡𝐢𝐭à: 𝐢𝐥 𝐩𝐢ù 𝐠𝐫𝐚𝐧𝐝𝐞 𝐦𝐚𝐠𝐚𝐳𝐳𝐢𝐧𝐨 𝐝𝐢 𝐂𝐡𝐞𝐬𝐭𝐞𝐫𝐟𝐢𝐞𝐥𝐝 𝐢𝐧 𝐈𝐭𝐚𝐥𝐢𝐚. Da oltre 50 anni la famiglia Baratti si occupa del commercio e del restauro di arredi d'epoca, importandoli da varie nazioni europee ed effettuandone poi il restauro nel laboratorio di Dello, in provincia di Brescia. 🇬🇧In questi ultimi 20 anni si sono specializzati nel noleggio e nella vendita del Che",
+  "landingPageTitle": "Divani Chesterfield - Mobili antichi - Tavelle e mattonelle in cotto antico - Baratti Antichità - Antiquariato Brescia",
+  "landingPageH1": "Divani Chesterfield Vintage",
+  "landingPageMetaDescription": "Baratti Antichità (Brescia) vende e restaura mobili d"
+}

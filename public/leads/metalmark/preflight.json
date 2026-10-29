@@ -1,0 +1,64 @@
+{
+  "slug": "metalmark",
+  "targetUrl": "https://metalmark.it/reparti/?utm_source=meta&utm_medium=paid&utm_campaign=boost%20settembre",
+  "finalResolvedUrl": "https://metalmark.it/reparti/?utm_source=meta&utm_medium=paid&utm_campaign=boost%20settembre",
+  "measuredResponseMs": 2339,
+  "renderBlockingScripts": 29,
+  "estimatedMobileLcpSeconds": 13.8,
+  "mobileViewportAudit": null,
+  "qualification": {
+    "isQualified": true,
+    "recommendedStrategy": "DIRECT_BUYER",
+    "strategyReason": "Azienda ideale per vendita diretta: paga le inserzioni Meta ma manda il traffico su un sito lento e dispersivo.",
+    "disqualifiers": [],
+    "alreadyHasPerformantLanding": false,
+    "isDedicatedFunnelUrl": false,
+    "funnelBuilders": [],
+    "hasQuizAlready": false,
+    "navLinksCount": 0,
+    "formsCount": 1,
+    "isEcommerce": false,
+    "isLargeEnterpriseOrSpa": false,
+    "agencyDetection": {
+      "hasAgencyInvolved": false,
+      "detectedAgencyNames": [],
+      "detectedAgencyLinks": [],
+      "martechSignals": [
+        "Google Tag Manager"
+      ]
+    }
+  },
+  "extractedEmails": [
+    "clienti@metalmark.it"
+  ],
+  "extractedPhones": [
+    "000001155129",
+    "3600450601",
+    "000000950571",
+    "3817605503",
+    "000000888268"
+  ],
+  "extractedVat": "00718120983",
+  "legalSnippets": [],
+  "candidateLogoUrls": [
+    "https://metalmark.it/wp-content/uploads/2024/10/metalmark-logo.png",
+    "https://metalmark.it/wp-content/uploads/2024/10/metalmark-logo-300x71.png",
+    "https://metalmark.it/wp-content/uploads/2026/02/wac-webalchilo-logo-200x64-1.png",
+    "https://metalmark.it/wp-content/uploads/2024/10/metalmark-logo-bianco-23.svg"
+  ],
+  "candidateHeroUrls": [
+    "https://metalmark.it/wp-content/uploads/2024/10/reparto-abbigliamento-metalmark.jpg",
+    "https://metalmark.it/wp-content/uploads/2024/10/intimo-donna-brescia-orzinuovi.jpg",
+    "https://metalmark.it/wp-content/uploads/2024/10/borse-donna-di-pelle-orzinuovi.jpg",
+    "https://metalmark.it/wp-content/uploads/2024/10/metalmark-orzinuovi-antinfortunistica.jpg",
+    "https://metalmark.it/wp-content/uploads/2024/10/seggiolini-passeggini-bambini.jpg",
+    "https://metalmark.it/wp-content/uploads/2024/10/padelle-pentole-antiaderenti.jpg"
+  ],
+  "assetsDir": "/public/leads/metalmark",
+  "searchKeyword": "isolamento termico brescia",
+  "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&media_type=all&q=isolamento%20termico%20brescia&search_type=keyword_unordered",
+  "adContextSnippet": "x1pahc9y x1ertn4p x13fuv20 x18b5jzi x1q0q8m5 x1t7ytsu xamhcws x1alpsbp xlxy82 xyumdvf x1nqv1ya x1s85apg xdk7pt x1x862rh x1rdy4ex x10l6tqk x3m8u43 x1xc55vz x1vjfegm\"> METALMARK.IT <div tab",
+  "landingPageTitle": "Reparti | Metalmark Store - Quantit&agrave;, Qualit&agrave;, Prezzo",
+  "landingPageH1": "",
+  "landingPageMetaDescription": "Scopri tutti i reparti di Metalmark a Orzinuovi: abbigliamento, giochi, antinfortunistica, casalinghi, biancheria, calzature e molto altro!"
+}

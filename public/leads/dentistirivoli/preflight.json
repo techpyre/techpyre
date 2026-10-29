@@ -1,0 +1,78 @@
+{
+  "slug": "dentistirivoli",
+  "targetUrl": "https://dentistirivoli.it/",
+  "finalResolvedUrl": "https://dentistirivoli.it/",
+  "measuredResponseMs": 379,
+  "renderBlockingScripts": 18,
+  "estimatedMobileLcpSeconds": 6.3,
+  "mobileViewportAudit": {
+    "viewportWidth": 468,
+    "viewportHeight": 1011,
+    "documentScrollWidth": 468,
+    "hasRealHorizontalOverflow": false,
+    "formVisibleAboveTheFold": false,
+    "firstFormTopPx": 8175,
+    "screensToReachForm": 8.1,
+    "visibleFormsCount": 1,
+    "cookieOrPopupCoverPercent": 0,
+    "visibleCtasAboveFold": [],
+    "h1Text": "Studio Dentisti Susa 156​"
+  },
+  "qualification": {
+    "isQualified": true,
+    "recommendedStrategy": "AGENCY_COEXISTENCE_OR_WHITELABEL",
+    "strategyReason": "Rilevata presenza di Web Agency / Funnel di Marketing esistente ma con pagina lenta (6.3s). Usa l'angolo \"Non tocchiamo chi vi segue le campagne: forniamo solo la pagina veloce 0.3s in White-Label\" (o proponi partnership White-Label all'agenzia rilevata).",
+    "disqualifiers": [],
+    "alreadyHasPerformantLanding": false,
+    "isDedicatedFunnelUrl": false,
+    "funnelBuilders": [],
+    "hasQuizAlready": false,
+    "navLinksCount": 22,
+    "formsCount": 1,
+    "isEcommerce": false,
+    "isLargeEnterpriseOrSpa": false,
+    "agencyDetection": {
+      "hasAgencyInvolved": true,
+      "detectedAgencyNames": [
+        "Ideandum"
+      ],
+      "detectedAgencyLinks": [],
+      "martechSignals": [
+        "Google Tag Manager"
+      ]
+    }
+  },
+  "extractedEmails": [
+    "info@dentistisusa156.it"
+  ],
+  "extractedPhones": [
+    "+390119563002",
+    "0119563002",
+    "01926684360",
+    "0565178",
+    "0196534"
+  ],
+  "extractedVat": "Non trovata",
+  "legalSnippets": [],
+  "candidateLogoUrls": [
+    "https://dentistirivoli.it/wp-content/uploads/Logo_Dentisti_Susa.png.webp",
+    "https://cdn.trustindex.io/assets/platform/Google/logo.svg",
+    "https://dentistirivoli.it/wp-content/uploads/logo-paro.webp",
+    "https://dentistirivoli.it/wp-content/uploads/logo-estraz-1024x213.webp"
+  ],
+  "candidateHeroUrls": [
+    "https://dentistirivoli.it/wp-content/uploads/Igene-piu-sbiancamento-pre-estate-susa-1.png",
+    "https://dentistirivoli.it/wp-content/uploads/Gallery-New-1.webp",
+    "https://dentistirivoli.it/wp-content/uploads/Gallery-New-2.webp",
+    "https://dentistirivoli.it/wp-content/uploads/Gallery-New-3.webp",
+    "https://dentistirivoli.it/wp-content/uploads/Gallery-New-4.webp",
+    "https://dentistirivoli.it/wp-content/uploads/Gallery-New-5.webp"
+  ],
+  "assetsDir": "/public/leads/dentistirivoli",
+  "searchKeyword": "allarme casa torino",
+  "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&media_type=all&q=allarme%20casa%20torino&search_type=keyword_unordered",
+  "adContextSnippet": "b=1-7&_nc_sid=c53f8f&_nc_ohc=ZRasggOYTnYQ7kNvwELxO5j&_nc_oc=AdpS-VBaWWzv0HWmquuGcffPMOYh9IZ0wbCKTlwBbDd-xOKq1FKOlX_LKY9IiwdU3ig&_nc_zt=14&_nc_ht=scontent-fco2-1.xx&_nc_gid=y3nVfOkf3xuymXe7cxJ_3g&_nc_ss=72289&oh=00_AQRo8GkMFHWyCYg-2Dw3vqUhYZydEhC_2AETOt7wecpnRg&oe=6AE93A8A\"> Studio Dentisti Susa 156 - Rivoli Sponsorizzato Gengive che sanguinano? Potrebbe essere un segnale d'allarme! La parodontologia ti aiuta a risolvere problemi gengivali e prevenire complicazioni più serie. Presso Dentisti Susa",
+  "landingPageTitle": "Dentisti Susa 156: Il tuo dentista a Rivoli",
+  "landingPageH1": "Studio Dentisti Susa 156​",
+  "landingPageMetaDescription": "Cerchi un dentista a Rivoli? Dentisti Susa 156 offre [elementi differenzianti]. Entra per scoprire i servizi e per contattarci!"
+}

@@ -1,0 +1,78 @@
+{
+  "slug": "russo-serramenti",
+  "targetUrl": "https://www.russo-serramenti.it/",
+  "finalResolvedUrl": "https://www.russo-serramenti.it/",
+  "measuredResponseMs": 1023,
+  "renderBlockingScripts": 19,
+  "estimatedMobileLcpSeconds": 8.8,
+  "mobileViewportAudit": {
+    "viewportWidth": 390,
+    "viewportHeight": 844,
+    "documentScrollWidth": 390,
+    "hasRealHorizontalOverflow": false,
+    "formVisibleAboveTheFold": false,
+    "firstFormTopPx": 7556,
+    "screensToReachForm": 9,
+    "visibleFormsCount": 1,
+    "cookieOrPopupCoverPercent": 0,
+    "visibleCtasAboveFold": [
+      "Accettare tutto",
+      "Salva le mie preferenze",
+      "Rifiuta tutto",
+      "Chiama",
+      "Whastapp",
+      "Email"
+    ],
+    "h1Text": ""
+  },
+  "qualification": {
+    "isQualified": true,
+    "recommendedStrategy": "AGENCY_COEXISTENCE_OR_WHITELABEL",
+    "strategyReason": "Rilevata presenza di Web Agency / Funnel di Marketing esistente ma con pagina lenta (8.8s). Usa l'angolo \"Non tocchiamo chi vi segue le campagne: forniamo solo la pagina veloce 0.3s in White-Label\" (o proponi partnership White-Label all'agenzia rilevata).",
+    "disqualifiers": [],
+    "alreadyHasPerformantLanding": false,
+    "isDedicatedFunnelUrl": false,
+    "funnelBuilders": [],
+    "hasQuizAlready": false,
+    "navLinksCount": 7,
+    "formsCount": 1,
+    "isEcommerce": false,
+    "isLargeEnterpriseOrSpa": false,
+    "agencyDetection": {
+      "hasAgencyInvolved": true,
+      "detectedAgencyNames": [
+        "OkSeo Web Agency Chiama Whastapp Email Ge"
+      ],
+      "detectedAgencyLinks": [],
+      "martechSignals": []
+    }
+  },
+  "extractedEmails": [
+    "russoserramenti@libero.it"
+  ],
+  "extractedPhones": [
+    "0506661",
+    "+393881823724",
+    "3881823724",
+    "388.1823724",
+    "3938818237"
+  ],
+  "extractedVat": "Non trovata",
+  "legalSnippets": [],
+  "candidateLogoUrls": [],
+  "candidateHeroUrls": [
+    "https://www.russo-serramenti.it/wp-content/uploads/2026/01/finestrabilico.png",
+    "https://www.russo-serramenti.it/wp-content/uploads/2026/01/cropped-RUSSO.png",
+    "https://www.russo-serramenti.it/wp-content/uploads/elementor/thumbs/alluminio-pp1eo8hj0czqyeufokh0v89zppp62huhx379th7lz4.jpg",
+    "https://www.russo-serramenti.it/wp-content/uploads/elementor/thumbs/portaaperta-qwb8p12od35w8d9le0rv5iw5kccx04hotmf19ns16o.jpg",
+    "https://www.russo-serramenti.it/wp-content/uploads/elementor/thumbs/tapparellealluminio-pp020n6lfl71xp4oqxltyqkgrx2lbj5dfiiy5wbaww.jpg",
+    "https://www.russo-serramenti.it/wp-content/uploads/2026/01/PersianeTorino-1.jpg"
+  ],
+  "assetsDir": "/public/leads/russo-serramenti",
+  "searchKeyword": "porte blindate torino",
+  "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&media_type=all&q=porte%20blindate%20torino&search_type=keyword_unordered",
+  "adContextSnippet": "s0 xw23nyj xo1l8bm x63nzvj x6lvj10 xq9mrsl x1h4wwuj xeuugli\"> Sponsorizzato 🏠Serramenti su misura a Torino e provincia a prezzi di fabbrica 👷‍♂️Presenza del titolare durante sopralluogo e posa . Da oltre 20 anni proponiamo soluzioni su misura per Torino e provincia, con prodotti di qualità, posa professionale e attenzione a ogni esigenza della casa. Ci occupiamo di: ✅ Serramenti in PVC e alluminio ✅ Finestre, portefinestre e finestre con ribalta ✅ Porte blindate certificate ✅ Porte interne mod",
+  "landingPageTitle": "Serramenti Torino in pvc , alluminio e legno - Russo Serramenti",
+  "landingPageH1": "RUSSO SERRAMENTI TORINO",
+  "landingPageMetaDescription": ""
+}

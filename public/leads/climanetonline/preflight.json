@@ -1,0 +1,80 @@
+{
+  "slug": "climanetonline",
+  "targetUrl": "http://www.climanetonline.it/",
+  "finalResolvedUrl": "https://climanetonline.it/",
+  "measuredResponseMs": 884,
+  "renderBlockingScripts": 30,
+  "estimatedMobileLcpSeconds": 8.3,
+  "mobileViewportAudit": {
+    "viewportWidth": 390,
+    "viewportHeight": 844,
+    "documentScrollWidth": 390,
+    "hasRealHorizontalOverflow": false,
+    "formVisibleAboveTheFold": false,
+    "firstFormTopPx": null,
+    "screensToReachForm": null,
+    "visibleFormsCount": 0,
+    "cookieOrPopupCoverPercent": 0,
+    "visibleCtasAboveFold": [
+      "Pompa di Calore Aria Acqua Full Electric",
+      "Bando a fondo perduto per impianti fotovoltaici"
+    ],
+    "h1Text": ""
+  },
+  "qualification": {
+    "isQualified": true,
+    "recommendedStrategy": "DIRECT_BUYER",
+    "strategyReason": "Azienda ideale per vendita diretta: paga le inserzioni Meta ma manda il traffico su un sito lento e dispersivo.",
+    "disqualifiers": [],
+    "alreadyHasPerformantLanding": false,
+    "isDedicatedFunnelUrl": false,
+    "funnelBuilders": [],
+    "hasQuizAlready": false,
+    "navLinksCount": 98,
+    "formsCount": 0,
+    "isEcommerce": false,
+    "isLargeEnterpriseOrSpa": false,
+    "agencyDetection": {
+      "hasAgencyInvolved": false,
+      "detectedAgencyNames": [],
+      "detectedAgencyLinks": [],
+      "martechSignals": [
+        "Google Tag Manager"
+      ]
+    }
+  },
+  "extractedEmails": [
+    "info@climanetonline.com",
+    "info@climanetonline.it"
+  ],
+  "extractedPhones": [
+    "0687195703",
+    "+390687195703",
+    "00814046",
+    "3935194800",
+    "3939866992"
+  ],
+  "extractedVat": "Non trovata",
+  "legalSnippets": [],
+  "candidateLogoUrls": [
+    "https://climanetonline.it/wp-content/uploads/2022/09/logo-climanet.webp",
+    "https://smart-widget-assets.ekomiapps.de/resources/ekomi_logo.png",
+    "https://climanetonline.it/wp-content/uploads/2022/09/logo-2-300x102.webp",
+    "https://climanetonline.it/wp-content/uploads/2023/06/today_logo.jpg"
+  ],
+  "candidateHeroUrls": [
+    "https://smart-widget-assets.ekomiapps.de/resources/ekomi_logo.png",
+    "https://climanetonline.it/wp-content/plugins/revslider/sr6/assets/assets/dummy.png",
+    "https://climanetonline.it/wp-content/uploads/2024/05/ico9.png",
+    "https://climanetonline.it/wp-content/uploads/2024/01/ico8.png",
+    "https://climanetonline.it/wp-content/uploads/2023/07/ico7.png",
+    "https://climanetonline.it/wp-content/uploads/2023/04/ico6.png"
+  ],
+  "assetsDir": "/public/leads/climanetonline",
+  "searchKeyword": "condizionatori padova",
+  "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&media_type=all&q=condizionatori%20padova&search_type=keyword_unordered",
+  "adContextSnippet": "\" style=\"width: 100%;\"> Climanet Sponsorizzato 🔥SOSTITUISCI il tuo vecchio impianto di climatizzatore con il TRIALSplit 3MXM52 A+++/A+++ #DAIKIN Approfitta dello Sconto termico 2.0 ed acquista ora il tuo nuovo TRIAL Split, al prezzo più basso del mercato 👉Perfera Trial 𝘀𝗽𝗹𝗶𝘁 𝟵.𝟬𝟬𝟬 𝗕𝗧𝗨 + 𝟵.𝟬𝟬𝟬 𝗕𝗧𝗨 + 9.000 BTU a 4.059 € con sconto diretto in fattura in caso di sostituzione 👉€. 4.600 in caso di nuova installazione Intelligenza artificiale e wi fi di serie Miglior test 2025 Alt",
+  "landingPageTitle": "Caldaie e Climatizzatori: Vendita e Manutenzione | Climanet Italia",
+  "landingPageH1": "",
+  "landingPageMetaDescription": "Caldaie e Climatizzatori: Vendita e Manutenzione: Climanet è presente a Roma, Torino, Milano, Firenze, Padova, Genova, Napoli, Perugia, Bologna."
+}

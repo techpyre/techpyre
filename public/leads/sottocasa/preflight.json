@@ -1,0 +1,78 @@
+{
+  "slug": "sottocasa",
+  "targetUrl": "https://www.sottocasa.agency/it/immobili/residenziali-in-vendita/verona/sona/rustico--casale-sa014/",
+  "finalResolvedUrl": "https://www.sottocasa.agency/it/immobili/residenziali-in-vendita/verona/sona/rustico--casale-sa014/",
+  "measuredResponseMs": 600,
+  "renderBlockingScripts": 39,
+  "estimatedMobileLcpSeconds": 7.2,
+  "mobileViewportAudit": {
+    "viewportWidth": 390,
+    "viewportHeight": 844,
+    "documentScrollWidth": 390,
+    "hasRealHorizontalOverflow": false,
+    "formVisibleAboveTheFold": false,
+    "firstFormTopPx": 10146,
+    "screensToReachForm": 12,
+    "visibleFormsCount": 2,
+    "cookieOrPopupCoverPercent": 0,
+    "visibleCtasAboveFold": [],
+    "h1Text": "SPLENDIDO RUSTICO CON CORTE PRIVATA"
+  },
+  "qualification": {
+    "isQualified": true,
+    "recommendedStrategy": "AGENCY_COEXISTENCE_OR_WHITELABEL",
+    "strategyReason": "Rilevata presenza di Web Agency / Funnel di Marketing esistente ma con pagina lenta (7.2s). Usa l'angolo \"Non tocchiamo chi vi segue le campagne: forniamo solo la pagina veloce 0.3s in White-Label\" (o proponi partnership White-Label all'agenzia rilevata).",
+    "disqualifiers": [],
+    "alreadyHasPerformantLanding": false,
+    "isDedicatedFunnelUrl": false,
+    "funnelBuilders": [],
+    "hasQuizAlready": false,
+    "navLinksCount": 23,
+    "formsCount": 2,
+    "isEcommerce": false,
+    "isLargeEnterpriseOrSpa": false,
+    "agencyDetection": {
+      "hasAgencyInvolved": true,
+      "detectedAgencyNames": [],
+      "detectedAgencyLinks": [
+        {
+          "href": "https://ewake.agency",
+          "label": "Credits"
+        }
+      ],
+      "martechSignals": [
+        "Google Tag Manager"
+      ]
+    }
+  },
+  "extractedEmails": [
+    "info@sottocasa.agency"
+  ],
+  "extractedPhones": [
+    "+390456450021",
+    "+39 045 6450021",
+    "+393667201561",
+    "0422003",
+    "3434323422"
+  ],
+  "extractedVat": "04741120234",
+  "legalSnippets": [],
+  "candidateLogoUrls": [
+    "https://www.sottocasa.agency/template/sottocasa/images/sotto-casa-bianca.png"
+  ],
+  "candidateHeroUrls": [
+    "https://www.sottocasa.agency/_upload/_big/1791627069.7597_6964.5.png",
+    "https://www.sottocasa.agency/template/sottocasa//images/loading.png",
+    "https://www.sottocasa.agency/template/sottocasa//images/sotto-casa.png",
+    "https://www.sottocasa.agency/_upload/_thumbs/immobili/230x153/1791627069.7597_6964.5.png",
+    "https://www.sottocasa.agency/_upload/_thumbs/immobili/230x153/1791627069.3035_6964.16.jpg",
+    "https://www.sottocasa.agency/_upload/_thumbs/immobili/230x153/1791627071.9182_6964.6.png"
+  ],
+  "assetsDir": "/public/leads/sottocasa",
+  "searchKeyword": "ristrutturazione bagno verona",
+  "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&media_type=all&q=ristrutturazione%20bagno%20verona&search_type=keyword_unordered",
+  "adContextSnippet": "-jpg_s60x60_tt6&_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=wMG-4mFq6OgQ7kNvwHOYEXU&_nc_oc=AdqxY5yrEyr-T0pezwZX_VD1p2r9X5EOY-TsnBytIXJ5JhYsbOjyBytDO-JCCP07AdI&_nc_zt=14&_nc_ht=scontent-fco2-1.xx&_nc_gid=LsiN9KZE0PgcXyvrSEEe9w&_nc_ss=72289&oh=00_AQQdZJiZIab1maetmDQQgkeiLFdoEFDzlsv6dJOMkawDTQ&oe=6AE93EBE\"> Sotto Casa srl Sponsorizzato 🏡 Sogni una casa al lago di Garda? Non brancolare nel buio, rivolgiti a Sotto Casa: da trent’anni selezioniamo i migliori immobili e vi aiutiamo a realizzare i vostr",
+  "landingPageTitle": "Splendido rustico con corte privata - SA014",
+  "landingPageH1": "Splendido rustico con corte privata",
+  "landingPageMetaDescription": "SA014 - In corte privata in un’ampia area verdeggiante di 450 mq nel centro storico di San Giorgio in Salici, piccola frazione di Sona, proponiamo in vendita un rustico"
+}

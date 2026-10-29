@@ -1,0 +1,76 @@
+{
+  "slug": "sicurmatica",
+  "targetUrl": "https://www.sicurmatica.com/",
+  "finalResolvedUrl": "https://www.sicurmatica.com/",
+  "measuredResponseMs": 1505,
+  "renderBlockingScripts": 42,
+  "estimatedMobileLcpSeconds": 10.6,
+  "mobileViewportAudit": {
+    "viewportWidth": 390,
+    "viewportHeight": 844,
+    "documentScrollWidth": 390,
+    "hasRealHorizontalOverflow": false,
+    "formVisibleAboveTheFold": false,
+    "firstFormTopPx": null,
+    "screensToReachForm": null,
+    "visibleFormsCount": 0,
+    "cookieOrPopupCoverPercent": 0,
+    "visibleCtasAboveFold": [],
+    "h1Text": ""
+  },
+  "qualification": {
+    "isQualified": true,
+    "recommendedStrategy": "DIRECT_BUYER",
+    "strategyReason": "Azienda ideale per vendita diretta: paga le inserzioni Meta ma manda il traffico su un sito lento e dispersivo.",
+    "disqualifiers": [],
+    "alreadyHasPerformantLanding": false,
+    "isDedicatedFunnelUrl": false,
+    "funnelBuilders": [],
+    "hasQuizAlready": false,
+    "navLinksCount": 26,
+    "formsCount": 1,
+    "isEcommerce": false,
+    "isLargeEnterpriseOrSpa": false,
+    "agencyDetection": {
+      "hasAgencyInvolved": false,
+      "detectedAgencyNames": [],
+      "detectedAgencyLinks": [],
+      "martechSignals": [
+        "Google Tag Manager",
+        "Meta Pixel"
+      ]
+    }
+  },
+  "extractedEmails": [
+    "info@sicurmatica.com"
+  ],
+  "extractedPhones": [
+    "3295244974",
+    "02850490984",
+    "+390309976486",
+    "030 9976486",
+    "0200017"
+  ],
+  "extractedVat": "02850490984",
+  "legalSnippets": [],
+  "candidateLogoUrls": [
+    "http://sicurmatica.com/wp-content/uploads/2024/11/logo-sicurmatica.svg",
+    "http://sicurmatica.com/wp-content/uploads/2024/11/logo-sicurmatica-white.svg",
+    "https://www.sicurmatica.com/wp-content/uploads/2024/11/logo-sicurmatica.svg"
+  ],
+  "candidateHeroUrls": [
+    "https://www.sicurmatica.com/wp-content/uploads/2025/08/2hp-loghi-new.jpg",
+    "https://www.facebook.com/tr?id=932952449747106&ev=PageView&noscript=1",
+    "https://www.sicurmatica.com/wp-content/plugins/revslider/sr6/assets/assets/dummy.png",
+    "https://www.sicurmatica.com/wp-content/uploads/2024/07/hp-estetica-1.jpg",
+    "https://www.sicurmatica.com/wp-content/uploads/2024/07/hp-estetica-2.jpg",
+    "https://www.sicurmatica.com/wp-content/uploads/2024/07/hp-estetica-3.jpg"
+  ],
+  "assetsDir": "/public/leads/sicurmatica",
+  "searchKeyword": "isolamento termico brescia",
+  "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&media_type=all&q=isolamento%20termico%20brescia&search_type=keyword_unordered",
+  "adContextSnippet": "yle=\"left: 44px; transform: translate(calc(-50% - 4px), -50%);\"> <img class=\"x15mokao x1ga7v0g x16uus16 xbiv7yw x1ll5gia x19kjcj4 x642log\" alt=\"\" referrerpolicy=\"origin-when-cross-origin\" src=\"https://scontent-fco2-1.xx.fbcdn.net/v/t39.35426-6/780074715_1368817858183201_6357468810484956309_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=0e8hMFDcSpgQ7kNvwEUug0N&_nc_oc=AdoSoxIhTF2vhElFXo5ZyZB13DZu4TL4qnUYmD3yNNbwbrBCi3M6QwKEB5lqhuFI21M&_nc_zt=14&_nc_ht=scontent-fco2-1.xx&",
+  "landingPageTitle": "Sicurmatica: soluzioni per serramenti, porte, automazioni e design",
+  "landingPageH1": "",
+  "landingPageMetaDescription": "Scopri Sicurmatica: leader in serramenti, automazione cancelli, porte e chiusure. Professionalità e innovazione al tuo servizio."
+}

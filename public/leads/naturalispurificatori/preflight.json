@@ -1,0 +1,65 @@
+{
+  "slug": "naturalispurificatori",
+  "targetUrl": "https://naturalispurificatori.it/purificatori_chat3/?regione=Toscana&provincia=Firenze&citta=Firenze&caid=120224299736770525&asid=120224299751660525&crid=58",
+  "finalResolvedUrl": "https://naturalispurificatori.it/purificatori_chat3/?regione=Toscana&provincia=Firenze&citta=Firenze&caid=120224299736770525&asid=120224299751660525&crid=58",
+  "measuredResponseMs": 285,
+  "renderBlockingScripts": 5,
+  "estimatedMobileLcpSeconds": 4.7,
+  "mobileViewportAudit": {
+    "viewportWidth": 980,
+    "viewportHeight": 2121,
+    "documentScrollWidth": 980,
+    "hasRealHorizontalOverflow": false,
+    "formVisibleAboveTheFold": false,
+    "firstFormTopPx": null,
+    "screensToReachForm": null,
+    "visibleFormsCount": 0,
+    "cookieOrPopupCoverPercent": 0,
+    "visibleCtasAboveFold": [],
+    "h1Text": ""
+  },
+  "qualification": {
+    "isQualified": true,
+    "recommendedStrategy": "DIRECT_BUYER",
+    "strategyReason": "Azienda ideale per vendita diretta: paga le inserzioni Meta ma manda il traffico su un sito lento e dispersivo.",
+    "disqualifiers": [],
+    "alreadyHasPerformantLanding": false,
+    "isDedicatedFunnelUrl": false,
+    "funnelBuilders": [],
+    "hasQuizAlready": true,
+    "navLinksCount": 0,
+    "formsCount": 1,
+    "isEcommerce": false,
+    "isLargeEnterpriseOrSpa": false,
+    "agencyDetection": {
+      "hasAgencyInvolved": false,
+      "detectedAgencyNames": [],
+      "detectedAgencyLinks": [],
+      "martechSignals": [
+        "Meta Pixel"
+      ]
+    }
+  },
+  "extractedEmails": [
+    "info@naturalispurificatori.it"
+  ],
+  "extractedPhones": [
+    "3266892029",
+    "03503041208"
+  ],
+  "extractedVat": "03503041208",
+  "legalSnippets": [],
+  "candidateLogoUrls": [
+    "https://naturalispurificatori.it/purificatori_chat3/assets/images/new_naturalis_logo.png"
+  ],
+  "candidateHeroUrls": [
+    "https://www.facebook.com/tr?id=272326689202937&ev=PageView&noscript=1"
+  ],
+  "assetsDir": "/public/leads/naturalispurificatori",
+  "searchKeyword": "depuratore acqua roma",
+  "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&media_type=all&q=depuratore%20acqua%20roma&search_type=keyword_unordered",
+  "adContextSnippet": "1pd3egz xeuugli\">Vedi dettagli dell'inserzione Naturalis Toscana Sponsorizzato <img class=\"x15mokao x1ga7v0g x16uus16 xbiv7yw x1ll5gia x19kjcj4 xh8yej3\" alt=\"\" referrerpolicy=\"origin-when-cross-origin\" src=\"https://scontent-fco2-1.xx.fbcdn.net/v/t39.35426-6/593254365_2157935441412263_1906799994923724495_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=109&ccb=1-7&_nc_sid=c53f8f&_n",
+  "landingPageTitle": "Purificatore d'acqua a costo ZERO",
+  "landingPageH1": "",
+  "landingPageMetaDescription": ""
+}

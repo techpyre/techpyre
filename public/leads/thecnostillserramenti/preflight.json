@@ -1,0 +1,77 @@
+{
+  "slug": "thecnostillserramenti",
+  "targetUrl": "https://thecnostillserramenti.it/",
+  "finalResolvedUrl": "https://thecnostillserramenti.it/",
+  "measuredResponseMs": 694,
+  "renderBlockingScripts": 4,
+  "estimatedMobileLcpSeconds": 6,
+  "mobileViewportAudit": {
+    "viewportWidth": 390,
+    "viewportHeight": 844,
+    "documentScrollWidth": 390,
+    "hasRealHorizontalOverflow": false,
+    "formVisibleAboveTheFold": false,
+    "firstFormTopPx": null,
+    "screensToReachForm": null,
+    "visibleFormsCount": 0,
+    "cookieOrPopupCoverPercent": 0,
+    "visibleCtasAboveFold": [
+      "SCOPRI DI PIÙ",
+      "Phone Number for calling",
+      "Email Address"
+    ],
+    "h1Text": "Porte e finestre a Monza Brianza"
+  },
+  "qualification": {
+    "isQualified": true,
+    "recommendedStrategy": "DIRECT_BUYER",
+    "strategyReason": "Azienda ideale per vendita diretta: paga le inserzioni Meta ma manda il traffico su un sito lento e dispersivo.",
+    "disqualifiers": [],
+    "alreadyHasPerformantLanding": false,
+    "isDedicatedFunnelUrl": false,
+    "funnelBuilders": [],
+    "hasQuizAlready": false,
+    "navLinksCount": 17,
+    "formsCount": 0,
+    "isEcommerce": false,
+    "isLargeEnterpriseOrSpa": false,
+    "agencyDetection": {
+      "hasAgencyInvolved": false,
+      "detectedAgencyNames": [],
+      "detectedAgencyLinks": [],
+      "martechSignals": []
+    }
+  },
+  "extractedEmails": [
+    "info@thecnostill.it"
+  ],
+  "extractedPhones": [
+    "+39 039 463625",
+    "000545641554",
+    "03790970960",
+    "+39039463625",
+    "000000000000"
+  ],
+  "extractedVat": "03790970960",
+  "legalSnippets": [
+    "S.p.A. Gestisci Consenso Per fornire le migliori esperienze, utilizziamo tecnologie come i cookie per memorizzare e/o accedere alle informazioni d"
+  ],
+  "candidateLogoUrls": [
+    "https://thecnostillserramenti.it/wp-content/uploads/2025/07/1-1.jpg"
+  ],
+  "candidateHeroUrls": [
+    "https://thecnostillserramenti.it/wp-content/uploads/2025/07/door-open.png",
+    "https://thecnostillserramenti.it/wp-content/uploads/2025/07/door-closed.png",
+    "https://thecnostillserramenti.it/wp-content/uploads/2025/07/pattern.png",
+    "https://thecnostillserramenti.it/wp-content/uploads/2025/07/mosquito-net.png",
+    "https://thecnostillserramenti.it/wp-content/uploads/2025/07/blind.png",
+    "https://thecnostillserramenti.it/wp-content/uploads/2025/07/window-1.png"
+  ],
+  "assetsDir": "/public/leads/thecnostillserramenti",
+  "searchKeyword": "porte finestre monza",
+  "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&media_type=all&q=porte%20finestre%20monza&search_type=keyword_unordered",
+  "adContextSnippet": "_nc_ht=scontent-fco2-1.xx&_nc_gid=hk1uHXWja1F6rEN8hNJFRg&_nc_ss=72289&oh=00_AQQEcLaK0ZKSWzzPkAv57T4fjF0Ie0i3zoyHEEkCURdUCw&oe=6AE95EC4\"> Thecno Still Sponsorizzato La tua porta di casa ti fa sentire davvero al sicuro? 🤔 ‼ Serrature superate, spifferi, rumori provenienti dall’esterno e una struttura poco resistente sono segnali che non dovrebbero essere ignorati ‼ Con una porta blindata migliori tutto questo in un solo intervento: 👉 Contattaci per scoprire quale porta blindata risponde meglio a",
+  "landingPageTitle": "Porte e finestre Monza e Brianza | Thecno Still SNC",
+  "landingPageH1": "Porte e finestre a Monza Brianza",
+  "landingPageMetaDescription": "Scopri le soluzioni su misura di Thecno Still per porte e finestre Monza e Brianza. Servizio completo dalla consulenza alla posa. Contattaci ora!"
+}

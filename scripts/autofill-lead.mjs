@@ -34,12 +34,18 @@ const email = p.extractedEmails?.[0] || '';
 // Filtra numeri fittizi o ripetuti (es. 3333333333, 3636363636)
 const validPhones = (p.extractedPhones || []).filter((ph) => {
   const digits = ph.replace(/\D/g, '');
-  if (digits.length < 6 || digits.length > 13) return false;
+  if (digits.length < 8 || digits.length > 13) return false;
   if (/^(\d)\1+$/.test(digits)) return false;
+  if (digits.startsWith('0000')) return false;
   return true;
 });
 
-const phone = validPhones.find((ph) => ph.includes('095') || ph.includes('091') || ph.includes('090') || ph.includes('0931') || ph.includes('0932')) || validPhones[0] || '+39 095 000000';
+// Preferisci cellulare italiano (3xx) o fisso italiano coerente
+const phone = validPhones.find((ph) => {
+  const d = ph.replace(/\D/g, '');
+  return d.startsWith('393') || (d.startsWith('3') && d.length === 10);
+}) || validPhones[0] || '+39 02 000000';
+
 const vat = p.extractedVat && p.extractedVat !== 'Non trovata' ? p.extractedVat : undefined;
 
 // Estrazione pulita del nome aziendale da H1, Title o Domain
@@ -56,24 +62,63 @@ if (!companyName || companyName.length < 3) {
 }
 companyName = companyName.slice(0, 45);
 
-// Rileva città siciliana
+// Rileva città/provincia in tutta Italia
 const corpus = [
-  p.landingPageTitle,
-  p.landingPageH1,
-  p.landingPageMetaDescription,
+  p.searchKeyword || '',
+  p.landingPageTitle || '',
+  p.landingPageH1 || '',
+  p.landingPageMetaDescription || '',
   ...(p.legalSnippets || []),
   phone,
 ].join(' ').toLowerCase();
 
-let city = 'Sicilia';
-if (corpus.includes('catania') || phone.includes('095')) city = 'Catania';
-else if (corpus.includes('palermo') || phone.includes('091')) city = 'Palermo';
-else if (corpus.includes('messina') || phone.includes('090')) city = 'Messina';
-else if (corpus.includes('siracusa') || phone.includes('0931')) city = 'Siracusa';
-else if (corpus.includes('trapani') || phone.includes('0923')) city = 'Trapani';
-else if (corpus.includes('ragusa') || phone.includes('0932')) city = 'Ragusa';
-else if (corpus.includes('agrigento') || phone.includes('0922')) city = 'Agrigento';
-else if (corpus.includes('caltanissetta') || phone.includes('0934')) city = 'Caltanissetta';
+const ITALIAN_CITIES = [
+  { name: 'Milano', matches: ['milano', 'monza', 'brianza', 'segrate', 'rho', 'sesto san giovanni', 'desio', 'legnano'] },
+  { name: 'Roma', matches: ['roma', 'pomezia', 'fiumicino', 'guidonia', 'tivoli', 'castelli romani'] },
+  { name: 'Torino', matches: ['torino', 'moncalieri', 'rivoli', 'collegno', 'settimo torinese', 'chieri'] },
+  { name: 'Brescia', matches: ['brescia', 'desenzano', 'montichiari', 'concesio', 'torbole', 'rovato', 'palazzolo'] },
+  { name: 'Bergamo', matches: ['bergamo', 'dalmine', 'treviglio', 'seriate'] },
+  { name: 'Verona', matches: ['verona', 'villafranca', 'san bonifacio', 'bussolengo'] },
+  { name: 'Bologna', matches: ['bologna', 'imola', 'casalecchio', 'san lazzaro'] },
+  { name: 'Firenze', matches: ['firenze', 'scandicci', 'sesto fiorentino', 'empoli', 'campi bisenzio'] },
+  { name: 'Padova', matches: ['padova', 'abano', 'cittadella', 'selvazzano'] },
+  { name: 'Treviso', matches: ['treviso', 'conegliano', 'castelfranco', 'montebelluna'] },
+  { name: 'Vicenza', matches: ['vicenza', 'bassano', 'schio', 'thiene', 'valdagno'] },
+  { name: 'Como', matches: ['como', 'cantù', 'erba', 'mariano comense'] },
+  { name: 'Varese', matches: ['varese', 'busto arsizio', 'gallarate', 'saronno'] },
+  { name: 'Modena', matches: ['modena', 'carpi', 'sassuolo', 'formigine'] },
+  { name: 'Parma', matches: ['parma', 'fidenza', 'salsomaggiore'] },
+  { name: 'Reggio Emilia', matches: ['reggio emilia', 'correggio', 'scandiano'] },
+  { name: 'Genova', matches: ['genova', 'rapallo', 'chiavari', 'sestri levante'] },
+  { name: 'Catania', matches: ['catania', 'acireale', 'misterbianco', 'paternò', 'gravina'] },
+  { name: 'Palermo', matches: ['palermo', 'bagheria', 'carini', 'monreale', 'partinico'] },
+  { name: 'Messina', matches: ['messina', 'barcellona', 'milazzo', 'taormina'] },
+  { name: 'Siracusa', matches: ['siracusa', 'noto', 'avola', 'lentini', 'flidia'] },
+  { name: 'Trapani', matches: ['trapani', 'marsala', 'mazara', 'alcamo', 'castelvetrano'] },
+  { name: 'Ragusa', matches: ['ragusa', 'vittoria', 'modica', 'comiso', 'giarratana'] },
+  { name: 'Caltanissetta', matches: ['caltanissetta', 'gela', 'niscemi', 'san cataldo'] },
+  { name: 'Agrigento', matches: ['agrigento', 'sciacca', 'licata', 'canicattì', 'favara'] },
+  { name: 'Napoli', matches: ['napoli', 'giugliano', 'pozzuoli', 'casoria', 'castellammare'] },
+  { name: 'Bari', matches: ['bari', 'altamura', 'molfetta', 'monopoli', 'bitonto'] },
+];
+
+let city = 'Italia';
+for (const item of ITALIAN_CITIES) {
+  if (item.matches.some((m) => corpus.includes(m))) {
+    city = item.name;
+    break;
+  }
+}
+if (city === 'Italia') {
+  // Prova a estrarre dal searchKeyword (es. "antifurto milano" -> "Milano")
+  const kw = (p.searchKeyword || '').toLowerCase();
+  for (const item of ITALIAN_CITIES) {
+    if (item.matches.some((m) => kw.includes(m))) {
+      city = item.name;
+      break;
+    }
+  }
+}
 
 // Archetipo
 let archetype = archetypeArg || 'local-leadgen';

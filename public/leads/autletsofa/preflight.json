@@ -1,0 +1,96 @@
+{
+  "slug": "autletsofa",
+  "targetUrl": "https://www.autletsofa.it/categoria-prodotto/promozioni/",
+  "finalResolvedUrl": "https://www.autletsofa.it/categoria-prodotto/promozioni/",
+  "measuredResponseMs": 942,
+  "renderBlockingScripts": 26,
+  "estimatedMobileLcpSeconds": 8.5,
+  "mobileViewportAudit": {
+    "viewportWidth": 576,
+    "viewportHeight": 1247,
+    "documentScrollWidth": 576,
+    "hasRealHorizontalOverflow": false,
+    "formVisibleAboveTheFold": true,
+    "firstFormTopPx": 2565,
+    "screensToReachForm": 2.1,
+    "visibleFormsCount": 2,
+    "cookieOrPopupCoverPercent": 0,
+    "visibleCtasAboveFold": [
+      "POLTRONE RELAX Poltrone Relax Lift",
+      "LETTI-MATERASSI Letti, Reti, Materassi, Guanciali",
+      "DIVANI Divani, Poltrone",
+      "Filtri di ricerca",
+      "TORNA ALLO SHOP",
+      "CONTINUA GLI ACQUISTI"
+    ],
+    "h1Text": "PROMOZIONI"
+  },
+  "qualification": {
+    "isQualified": true,
+    "recommendedStrategy": "DIRECT_BUYER",
+    "strategyReason": "Azienda ideale per vendita diretta: paga le inserzioni Meta ma manda il traffico su un sito lento e dispersivo.",
+    "disqualifiers": [],
+    "alreadyHasPerformantLanding": false,
+    "isDedicatedFunnelUrl": false,
+    "funnelBuilders": [],
+    "hasQuizAlready": false,
+    "navLinksCount": 0,
+    "formsCount": 4,
+    "isEcommerce": false,
+    "isLargeEnterpriseOrSpa": false,
+    "agencyDetection": {
+      "hasAgencyInvolved": false,
+      "detectedAgencyNames": [],
+      "detectedAgencyLinks": [],
+      "martechSignals": [
+        "Google Tag Manager"
+      ]
+    }
+  },
+  "extractedEmails": [
+    "rogno@autletsofa.it",
+    "bresso@autletsofa.it",
+    "brescia@autletsofa.it",
+    "garbagnate@autletsofa.it",
+    "desenzano@autletsofa.it",
+    "cermenate@autletsofa.it",
+    "busto@autletsofa.it",
+    "bergamo@autletsofa.it",
+    "rovato@autletsofa.it",
+    "info@palenitrasporti.com",
+    "ncnavacampanasrl@gmail.com",
+    "info@pflogistica.eu"
+  ],
+  "extractedPhones": [
+    "0000001",
+    "3932977320",
+    "04084710989",
+    "04155544",
+    "08350887477"
+  ],
+  "extractedVat": "Non trovata",
+  "legalSnippets": [
+    "S.p.A. Al fine di gestire le tue spese in modo responsabile, Findomestic ti ricorda, prima di sottoscrivere il contratto, di prendere visione di t",
+    "S.p.A., non in esclusiva"
+  ],
+  "candidateLogoUrls": [
+    "https://www.autletsofa.it/wp-content/uploads/2021/11/Autlet-sofa_un-divano-per-tutti-1-300x81.png",
+    "https://www.autletsofa.it/wp-content/uploads/2024/02/logo-contraffazione-300x300.jpg",
+    "https://www.autletsofa.it/wp-content/uploads/2025/11/findomestic-banca-logo-300x123.png"
+  ],
+  "candidateHeroUrls": [
+    "https://www.autletsofa.it/wp-content/uploads/2026/10/2.jpg",
+    "https://www.autletsofa.it/wp-content/uploads/2021/11/Autlet-sofa_un-divano-per-tutti-1-300x81.png",
+    "https://www.autletsofa.it/wp-content/uploads/2019/07/Divano-componibile-Silvia-300x300.jpg",
+    "https://www.autletsofa.it/wp-content/uploads/2025/10/Divano-schienali-traslanti-braccioli-regolabili-Erchie-300x300.jpg",
+    "https://www.autletsofa.it/wp-content/uploads/2025/10/Divano-Erchie-penisola-schienali-traslanti-300x300.jpg",
+    "https://www.autletsofa.it/wp-content/uploads/2024/06/Divano-componibile-Elvis-300x300.jpg"
+  ],
+  "assetsDir": "/public/leads/autletsofa",
+  "searchKeyword": "arredamento brescia",
+  "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&media_type=all&q=arredamento%20brescia&search_type=keyword_unordered",
+  "adContextSnippet": "class=\"xc26acl x78zum5 x2lwn1j xeuugli\" style=\"width: 100%;\"> Autlet Sofà Sponsorizzato 🎯 FUORI TUTTO FINO AL -60% 🎯 Cerchi il divano perfetto, una poltrona per il relax o un letto comodo? ✨ È il momento giusto per dare un nuovo look alla tua casa! Approfitta degli sconti fino al -60% su: ✅ Divani ✅ Divani relax ✅ Divani letto ✅ Poltrone ✅ Letti 🛋 10 Negozi in Lombardia 📍 Rogno (BG) 📍 Bergamo (BG) 📍 Bresso (MI) 📍 Garbagnate (MI) 📍 Brescia (BS) 📍 Desenzano del Garda (BS) 📍 Rovato (BS) \ud83d",
+  "landingPageTitle": "Promozioni | Autlet Sofà",
+  "landingPageH1": "Promozioni",
+  "landingPageMetaDescription": ""
+}

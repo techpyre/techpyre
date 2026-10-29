@@ -1,0 +1,78 @@
+{
+  "slug": "bottegadomus",
+  "targetUrl": "http://www.bottegadomus.it/",
+  "finalResolvedUrl": "https://www.bottegadomus.it/",
+  "measuredResponseMs": 1573,
+  "renderBlockingScripts": 36,
+  "estimatedMobileLcpSeconds": 10.9,
+  "mobileViewportAudit": {
+    "viewportWidth": 390,
+    "viewportHeight": 844,
+    "documentScrollWidth": 390,
+    "hasRealHorizontalOverflow": false,
+    "formVisibleAboveTheFold": false,
+    "firstFormTopPx": null,
+    "screensToReachForm": null,
+    "visibleFormsCount": 0,
+    "cookieOrPopupCoverPercent": 0,
+    "visibleCtasAboveFold": [
+      "TUTTI I PRODOTTI",
+      "Tutte le news",
+      "Camerette per bambini e ragazzi: guida completa alla scelta"
+    ],
+    "h1Text": ""
+  },
+  "qualification": {
+    "isQualified": true,
+    "recommendedStrategy": "AGENCY_COEXISTENCE_OR_WHITELABEL",
+    "strategyReason": "Rilevata presenza di Web Agency / Funnel di Marketing esistente ma con pagina lenta (10.9s). Usa l'angolo \"Non tocchiamo chi vi segue le campagne: forniamo solo la pagina veloce 0.3s in White-Label\" (o proponi partnership White-Label all'agenzia rilevata).",
+    "disqualifiers": [],
+    "alreadyHasPerformantLanding": false,
+    "isDedicatedFunnelUrl": false,
+    "funnelBuilders": [],
+    "hasQuizAlready": false,
+    "navLinksCount": 5,
+    "formsCount": 0,
+    "isEcommerce": false,
+    "isLargeEnterpriseOrSpa": false,
+    "agencyDetection": {
+      "hasAgencyInvolved": true,
+      "detectedAgencyNames": [
+        "SapereAudex Facebook Instagram Tiktok"
+      ],
+      "detectedAgencyLinks": [],
+      "martechSignals": []
+    }
+  },
+  "extractedEmails": [
+    "info@bottegadomus.it"
+  ],
+  "extractedPhones": [
+    "0063721",
+    "0063732",
+    "+393474646073"
+  ],
+  "extractedVat": "Non trovata",
+  "legalSnippets": [],
+  "candidateLogoUrls": [
+    "https://www.bottegadomus.it/wp-content/uploads/2023/02/logo-BottegaDomus.png",
+    "https://www.bottegadomus.it/wp-content/uploads/2023/02/logo1.jpg",
+    "https://www.bottegadomus.it/wp-content/uploads/2023/02/logo2.jpg",
+    "https://www.bottegadomus.it/wp-content/uploads/2023/02/logo3.jpg"
+  ],
+  "candidateHeroUrls": [
+    "https://www.bottegadomus.it/wp-content/uploads/2023/03/bottega-domus-video-arredobagno-torino.png",
+    "https://www.bottegadomus.it/wp-content/plugins/revslider/public/assets/assets/dummy.png",
+    "https://www.bottegadomus.it/wp-content/uploads/2023/03/bottega-domus-torino-accessori-bagno-copertina-370x250.jpg",
+    "https://www.bottegadomus.it/wp-content/uploads/2023/03/bottega-domus-torino-box-doccia-copertina-370x250.jpg",
+    "https://www.bottegadomus.it/wp-content/uploads/2023/03/bottega-domus-torino-mobile-bagno-copertina-370x250.jpg",
+    "https://www.bottegadomus.it/wp-content/uploads/2023/03/rubinetteria-bottega-domus-torino-copertina-370x250.jpg"
+  ],
+  "assetsDir": "/public/leads/bottegadomus",
+  "searchKeyword": "caldaie torino",
+  "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&media_type=all&q=caldaie%20torino&search_type=keyword_unordered",
+  "adContextSnippet": "ohc=r0aQzcJxPyIQ7kNvwHVqYOj&_nc_oc=AdoTBGXoXaiaamA8c27CYC40qWiZHM8xS74sVGj3rZG_CTbay7sMAHByjMrfr26Odk8&_nc_zt=14&_nc_ht=scontent-fco2-1.xx&_nc_gid=EQTvAAC3YgtDvUM3OczglA&_nc_ss=72289&oh=00_AQR7f7i4U0uUYaaC_obKtz2JNmOvDM1lhaIzvqt19j7nPA&oe=6AE939C4\"> Bottega Domus Sponsorizzato ✨ Tutto quello che cerchi per la tua casa, in un unico centro ✨ Da bottegadomus trovi: 🛁 Arredo bagno 🛋️ Arredo interno 🍽️ Cucine 🧱 Piastrelle 🚪 Porte 🔥 Termoidraulica Qualità, stile e prezzi davvero imbattibili 💥 C",
+  "landingPageTitle": "Showroom arredo bagno Torino | Bottega Domus",
+  "landingPageH1": "",
+  "landingPageMetaDescription": "Scopri lo showroom arredo bagno torino con sanitari e piastrelle; Trasforma il tuo bagno in uno spazio unico con le nostre soluzioni esclusive."
+}

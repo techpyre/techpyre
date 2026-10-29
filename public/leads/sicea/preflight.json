@@ -1,0 +1,71 @@
+{
+  "slug": "sicea",
+  "targetUrl": "https://www.sicea.com/",
+  "finalResolvedUrl": "https://www.sicea.com/",
+  "measuredResponseMs": 388,
+  "renderBlockingScripts": 20,
+  "estimatedMobileLcpSeconds": 6.4,
+  "mobileViewportAudit": {
+    "viewportWidth": 576,
+    "viewportHeight": 1247,
+    "documentScrollWidth": 576,
+    "hasRealHorizontalOverflow": false,
+    "formVisibleAboveTheFold": false,
+    "firstFormTopPx": null,
+    "screensToReachForm": null,
+    "visibleFormsCount": 0,
+    "cookieOrPopupCoverPercent": 0,
+    "visibleCtasAboveFold": [],
+    "h1Text": ""
+  },
+  "qualification": {
+    "isQualified": true,
+    "recommendedStrategy": "AGENCY_COEXISTENCE_OR_WHITELABEL",
+    "strategyReason": "Rilevata presenza di Web Agency / Funnel di Marketing esistente ma con pagina lenta (6.4s). Usa l'angolo \"Non tocchiamo chi vi segue le campagne: forniamo solo la pagina veloce 0.3s in White-Label\" (o proponi partnership White-Label all'agenzia rilevata).",
+    "disqualifiers": [],
+    "alreadyHasPerformantLanding": false,
+    "isDedicatedFunnelUrl": false,
+    "funnelBuilders": [],
+    "hasQuizAlready": false,
+    "navLinksCount": 24,
+    "formsCount": 0,
+    "isEcommerce": false,
+    "isLargeEnterpriseOrSpa": false,
+    "agencyDetection": {
+      "hasAgencyInvolved": true,
+      "detectedAgencyNames": [
+        "Altramarca Un solo interlocutore per le t"
+      ],
+      "detectedAgencyLinks": [],
+      "martechSignals": []
+    }
+  },
+  "extractedEmails": [
+    "segreteria@sicea.com",
+    "sicea-srl@legalmail.it"
+  ],
+  "extractedPhones": [
+    "049 626085",
+    "049 626828",
+    "03452880283",
+    "00547040303"
+  ],
+  "extractedVat": "03452880283",
+  "legalSnippets": [],
+  "candidateLogoUrls": [
+    "https://www.sicea.com/wp-content/themes/sicea/images/logo_colored.svg",
+    "https://www.sicea.com/wp-content/themes/sicea/images/logo_white.svg"
+  ],
+  "candidateHeroUrls": [
+    "https://www.sicea.com/wp-content/uploads/2024/07/Bramante_Milano_Marittima6pp-scaled.jpg",
+    "https://www.sicea.com/wp-content/uploads/2024/07/Piazza_de_Gasperi_Sicea_2024-02-1-scaled.jpg",
+    "https://www.sicea.com/wp-content/uploads/2024/07/sicea_restauro_Liviano_University-of-Padua-39-scaled.jpg"
+  ],
+  "assetsDir": "/public/leads/sicea",
+  "searchKeyword": "pompe di calore bologna",
+  "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&media_type=all&q=pompe%20di%20calore%20bologna&search_type=keyword_unordered",
+  "adContextSnippet": "n> Nel cuore di Bologna nasce il progetto per un nuovo ostello della gioventù. Sicea è stata scelta per riqualificare uno storico edificio, recuperando una scuola con convitto ormai in disuso. L'intervento non si limita a trasformare gli spazi esistenti, li ripensa per favorire la relazione tra persone e città. Al piano terra, reception, bar e coworking creano uno spazio aperto anche alla comunità locale. La corte interna diventa una vera piazza urbana, destinata a eventi, laboratori di cucina e",
+  "landingPageTitle": "HOME - Sicea | General Contractor Impresa costruzioni Padova",
+  "landingPageH1": "",
+  "landingPageMetaDescription": ""
+}

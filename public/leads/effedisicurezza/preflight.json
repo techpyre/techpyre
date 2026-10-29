@@ -1,0 +1,67 @@
+{
+  "slug": "effedisicurezza",
+  "targetUrl": "https://www.effedisicurezza.it/porte-blindate/",
+  "finalResolvedUrl": "https://www.effedisicurezza.it/porte-blindate/",
+  "measuredResponseMs": 2036,
+  "renderBlockingScripts": 16,
+  "estimatedMobileLcpSeconds": 12.6,
+  "mobileViewportAudit": null,
+  "qualification": {
+    "isQualified": true,
+    "recommendedStrategy": "AGENCY_COEXISTENCE_OR_WHITELABEL",
+    "strategyReason": "Rilevata presenza di Web Agency / Funnel di Marketing esistente ma con pagina lenta (12.6s). Usa l'angolo \"Non tocchiamo chi vi segue le campagne: forniamo solo la pagina veloce 0.3s in White-Label\" (o proponi partnership White-Label all'agenzia rilevata).",
+    "disqualifiers": [],
+    "alreadyHasPerformantLanding": false,
+    "isDedicatedFunnelUrl": false,
+    "funnelBuilders": [],
+    "hasQuizAlready": false,
+    "navLinksCount": 13,
+    "formsCount": 1,
+    "isEcommerce": false,
+    "isLargeEnterpriseOrSpa": false,
+    "agencyDetection": {
+      "hasAgencyInvolved": true,
+      "detectedAgencyNames": [],
+      "detectedAgencyLinks": [
+        {
+          "href": "https://obiettivoclienti.com/",
+          "label": "Site Web by Obiettivo Clienti"
+        }
+      ],
+      "martechSignals": [
+        "Google Tag Manager",
+        "Meta Pixel"
+      ]
+    }
+  },
+  "extractedEmails": [
+    "info@effedisicurezza.it"
+  ],
+  "extractedPhones": [
+    "0191008",
+    "080145988876",
+    "06.72650985",
+    "342 1547650",
+    "0545441"
+  ],
+  "extractedVat": "10581380580",
+  "legalSnippets": [],
+  "candidateLogoUrls": [
+    "https://www.effedisicurezza.it/wp-content/uploads/2020/04/logo-5.png"
+  ],
+  "candidateHeroUrls": [
+    "https://www.effedisicurezza.it/wp-content/uploads/elementor/thumbs/20191008_125220-scaled-q0emg3pbfgwq3g31b77ld0fcfuoigl48d7dn9igmeo.jpg",
+    "https://www.facebook.com/tr?id=4080145988876984&ev=PageView&noscript=1",
+    "https://www.facebook.com/tr?id=288911748957188&ev=PageView&noscript=1",
+    "https://www.effedisicurezza.it/wp-content/uploads/elementor/thumbs/20191008_125249-scaled-q0emg1tn1su5g85rm6ec80wf92xs16wroy2oayjer4.jpg",
+    "https://www.effedisicurezza.it/wp-content/uploads/elementor/thumbs/20191220_130341-scaled-q0emfy2aagp05sb884rty1ukvjgb6ehucfgqduozg0.jpg",
+    "https://www.effedisicurezza.it/wp-content/uploads/elementor/thumbs/20200604_162802-scaled-q0emfv8rpyl56yfboljy8kk73du7jb6nc1i9y0t5yo.jpg"
+  ],
+  "assetsDir": "/public/leads/effedisicurezza",
+  "searchKeyword": "porte blindate roma",
+  "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&media_type=all&q=porte%20blindate%20roma&search_type=keyword_unordered",
+  "adContextSnippet": "_ss=72289&oh=00_AQSoWotuT-5ms6rPob6rX4SS5mCxAtv8YwVYF-sfLj1teA&oe=6AE95844\"> Effedi Sicurezza di Franco Giuliani Sponsorizzato 🔐 Più sicurezza, più valore per la tua casa. Con Effedi Sicurezza trovi soluzioni su misura per proteggere e valorizzare i tuoi ambienti con qualità ed esperienza dal 1996. ✅ Porta blindata 1 anta da 1.450€ + IVA ✅ Porta blindata 2 ante da 1.600€ + IVA 🎁 Defender magnetico in omaggio Sopralluogo e consulenza, materiali di qualità e installazione professionale. 📍 Roma ",
+  "landingPageTitle": "Porte Blindate - Effedi Sicurezza",
+  "landingPageH1": "Porte Blindate",
+  "landingPageMetaDescription": ""
+}

@@ -1,0 +1,75 @@
+{
+  "slug": "v8serramenti",
+  "targetUrl": "https://v8serramenti.it/",
+  "finalResolvedUrl": "https://v8serramenti.it/",
+  "measuredResponseMs": 522,
+  "renderBlockingScripts": 5,
+  "estimatedMobileLcpSeconds": 5.6,
+  "mobileViewportAudit": {
+    "viewportWidth": 390,
+    "viewportHeight": 844,
+    "documentScrollWidth": 390,
+    "hasRealHorizontalOverflow": false,
+    "formVisibleAboveTheFold": true,
+    "firstFormTopPx": 3126,
+    "screensToReachForm": 3.7,
+    "visibleFormsCount": 1,
+    "cookieOrPopupCoverPercent": 69,
+    "visibleCtasAboveFold": [
+      "IMPOSTAZIONI COOKIE",
+      "RIFIUTA TUTTO",
+      "ACCETTA TUTTO"
+    ],
+    "h1Text": "Serramenti in legno, legno-alluminio e PVC. Risparmio energetico"
+  },
+  "qualification": {
+    "isQualified": true,
+    "recommendedStrategy": "DIRECT_BUYER",
+    "strategyReason": "Azienda ideale per vendita diretta: paga le inserzioni Meta ma manda il traffico su un sito lento e dispersivo.",
+    "disqualifiers": [],
+    "alreadyHasPerformantLanding": false,
+    "isDedicatedFunnelUrl": false,
+    "funnelBuilders": [],
+    "hasQuizAlready": false,
+    "navLinksCount": 13,
+    "formsCount": 3,
+    "isEcommerce": false,
+    "isLargeEnterpriseOrSpa": false,
+    "agencyDetection": {
+      "hasAgencyInvolved": false,
+      "detectedAgencyNames": [],
+      "detectedAgencyLinks": [],
+      "martechSignals": []
+    }
+  },
+  "extractedEmails": [
+    "info@v8serramenti.it"
+  ],
+  "extractedPhones": [
+    "+39 030 6373336",
+    "034083672883",
+    "3153600000",
+    "3934000681",
+    "03309100984"
+  ],
+  "extractedVat": "Non trovata",
+  "legalSnippets": [],
+  "candidateLogoUrls": [
+    "https://v8serramenti.it/themes/contrib/V8/logo.png"
+  ],
+  "candidateHeroUrls": [
+    "https://www.facebook.com/tr?id=+677034083672883&amp;ev=PageView&amp;noscript=1",
+    "https://v8serramenti.it/sites/default/files/styles/originale/public/images/2021/V8-banner-480.png.webp?itok=KANorWfe",
+    "https://v8serramenti.it/sites/default/files/styles/originale/public/images/2021/lorenzo-oksana-V8.png.webp?itok=ZzrzTMwR",
+    "https://v8serramenti.it/sites/default/files/styles/originale/public/images/2021/finestre-4stagioni-1700x648.jpg.webp?itok=MhIZpTmB",
+    "https://v8serramenti.it/sites/default/files/styles/gallery/public/images/2021/finestre-portefinestre.jpg.webp?itok=OpAdDPlw",
+    "https://v8serramenti.it/sites/default/files/styles/gallery/public/images/2021/Persiane%20in%20alluminio%20effetto%20legno%20a%20battente%20a%20lamella%20orientabile%20%28Chiari%29.jpg.webp?itok=TpzfUFzw"
+  ],
+  "assetsDir": "/public/leads/v8serramenti",
+  "searchKeyword": "infissi brescia",
+  "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&media_type=all&q=infissi%20brescia&search_type=keyword_unordered",
+  "adContextSnippet": "yle=\"left: 44px; transform: translate(calc(-50% - 4px), -50%);\"> <img class=\"x15mokao x1ga7v0g x16uus16 xbiv7yw x1ll5gia x19kjcj4 x642log\" alt=\"\" referrerpolicy=\"origin-when-cross-origin\" src=\"https://scontent-fco2-1.xx.fbcdn.net/v/t39.35426-6/854939670_2128767917732486_8788285223660024419_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=j5lQ_0gN_P8Q7kNvwHFzW7V&_nc_oc=AdpTzwPkLzxTU-s5uB0nXDsaDYybnSICp-7hn7qyNso61Zj49M3cL1-ubTjEQ6megS4&_nc_zt=14&_nc_ht=scontent-fco2-1.xx&",
+  "landingPageTitle": "Serramenti in legno, legno-alluminio e PVC. Risparmio energetico",
+  "landingPageH1": "Serramenti in legno, legno-alluminio e PVC. Risparmio energetico",
+  "landingPageMetaDescription": "V8 Serramenti: infissi in legno, legno-alluminio e PVC, porte interne in laminato o in legno, a risparmio energetico con detrazione; portoncini ingresso e porte blindate, ante esterne (persiane e scuri) in legno o in alluminio, scuretti interni, tapparelle avvolgibili in PVC e in alluminio, controtelai a monoblocco per cappotto termico predisposti per ante esterne o per avvolgibili, verande e vetrine per negozi. Vendita, consegna e posa in opera nella zona di Brescia e Lombardia."
+}

@@ -1,0 +1,80 @@
+{
+  "slug": "serramentigermena",
+  "targetUrl": "https://serramentigermena.com/",
+  "finalResolvedUrl": "https://serramentigermena.com/",
+  "measuredResponseMs": 1823,
+  "renderBlockingScripts": 10,
+  "estimatedMobileLcpSeconds": 11.8,
+  "mobileViewportAudit": {
+    "viewportWidth": 390,
+    "viewportHeight": 844,
+    "documentScrollWidth": 390,
+    "hasRealHorizontalOverflow": false,
+    "formVisibleAboveTheFold": false,
+    "firstFormTopPx": 9279,
+    "screensToReachForm": 11,
+    "visibleFormsCount": 1,
+    "cookieOrPopupCoverPercent": 0,
+    "visibleCtasAboveFold": [
+      "CONTATTACI",
+      "O CHIAMA IL 348 568 2339"
+    ],
+    "h1Text": "SERRAMENTI GERMENA."
+  },
+  "qualification": {
+    "isQualified": true,
+    "recommendedStrategy": "AGENCY_COEXISTENCE_OR_WHITELABEL",
+    "strategyReason": "Rilevata presenza di Web Agency / Funnel di Marketing esistente ma con pagina lenta (11.8s). Usa l'angolo \"Non tocchiamo chi vi segue le campagne: forniamo solo la pagina veloce 0.3s in White-Label\" (o proponi partnership White-Label all'agenzia rilevata).",
+    "disqualifiers": [],
+    "alreadyHasPerformantLanding": false,
+    "isDedicatedFunnelUrl": false,
+    "funnelBuilders": [],
+    "hasQuizAlready": false,
+    "navLinksCount": 6,
+    "formsCount": 2,
+    "isEcommerce": false,
+    "isLargeEnterpriseOrSpa": false,
+    "agencyDetection": {
+      "hasAgencyInvolved": true,
+      "detectedAgencyNames": [
+        "Sniper"
+      ],
+      "detectedAgencyLinks": [
+        {
+          "href": "https://www.sniperagency.it/",
+          "label": "Sniper"
+        }
+      ],
+      "martechSignals": []
+    }
+  },
+  "extractedEmails": [
+    "serramentigermena@libero.it"
+  ],
+  "extractedPhones": [
+    "06865905377",
+    "3769021158",
+    "3669286612",
+    "0386750011"
+  ],
+  "extractedVat": "Non trovata",
+  "legalSnippets": [],
+  "candidateLogoUrls": [
+    "https://serramentigermena.com/wp-content/uploads/2021/02/765704946-1.png"
+  ],
+  "candidateHeroUrls": [
+    "https://serramentigermena.com/wp-content/uploads/2021/02/765704946-1.png",
+    "https://serramentigermena.com/wp-content/uploads/2021/02/WhatsApp-Image-2021-02-23-at-14.55.55.jpeg",
+    "https://serramentigermena.com/wp-content/uploads/2021/02/WhatsApp-Image-2021-02-23-at-14.55.11-99999x500.jpeg",
+    "https://serramentigermena.com/wp-content/uploads/2021/02/WhatsApp-Image-2021-02-23-at-14.55.12-1-99999x500.jpeg",
+    "https://serramentigermena.com/wp-content/uploads/2021/02/WhatsApp-Image-2021-02-23-at-14.55.12-2-99999x500.jpeg",
+    "https://serramentigermena.com/wp-content/uploads/2021/02/WhatsApp-Image-2021-02-23-at-14.55.12-500x99999.jpeg"
+  ],
+  "assetsDir": "/public/leads/serramentigermena",
+  "searchKeyword": "porte blindate torino",
+  "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&media_type=all&q=porte%20blindate%20torino&search_type=keyword_unordered",
+  "adContextSnippet": "erramentiGermena/\"> Serramenti Germena Sponsorizzato 🔐 𝐋𝐞 𝐠𝐢𝐨𝐫𝐧𝐚𝐭𝐞 𝐬𝐢 𝐚𝐜𝐜𝐨𝐫𝐜𝐢𝐚𝐧𝐨 𝐞 𝐪𝐮𝐚𝐧𝐭𝐨 è 𝐩𝐫𝐨𝐭𝐞𝐭𝐭𝐚 𝐝𝐚𝐯𝐯𝐞𝐫𝐨 𝐥𝐚 𝐭𝐮𝐚 𝐜𝐚𝐬𝐚? Con più ore di buio, sentirsi al sicuro tra le proprie mura diventa ancora più importante. 𝐏𝐨𝐫𝐭𝐞 𝐞 𝐟𝐢𝐧𝐞𝐬𝐭𝐫𝐞 𝐬𝐨𝐧𝐨 𝐭𝐫𝐚 𝐢 𝐩𝐮𝐧𝐭𝐢 𝐝𝐚 𝐩𝐫𝐨𝐭𝐞𝐠𝐠𝐞𝐫𝐞 𝐜𝐨𝐧 𝐦𝐚𝐠𝐠𝐢𝐨𝐫𝐞 𝐚𝐭𝐭𝐞𝐧𝐳𝐢𝐨𝐧𝐞. Con inferiate di sicurezza e porte blindate, puoi 𝐚𝐮𝐦𝐞𝐧𝐭𝐚𝐫𝐞 𝐢𝐥 𝐥𝐢𝐯𝐞𝐥𝐥𝐨 𝐝𝐢 𝐩𝐫𝐨",
+  "landingPageTitle": "Serramenti Germena - Produzione di serramenti a Cavour",
+  "landingPageH1": "Serramenti germena.",
+  "landingPageMetaDescription": "Produciamo serramenti di ogni tipo dalle zanzariere alle inferiate, utilizzando materiali adatti ad ogni tipo di situazione ."
+}

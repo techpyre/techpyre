@@ -1,0 +1,64 @@
+{
+  "slug": "expobrescia",
+  "targetUrl": "http://www.expobrescia.com/",
+  "finalResolvedUrl": "https://www.expobrescia.com/",
+  "measuredResponseMs": 381,
+  "renderBlockingScripts": 18,
+  "estimatedMobileLcpSeconds": 6.3,
+  "mobileViewportAudit": null,
+  "qualification": {
+    "isQualified": true,
+    "recommendedStrategy": "DIRECT_BUYER",
+    "strategyReason": "Azienda ideale per vendita diretta: paga le inserzioni Meta ma manda il traffico su un sito lento e dispersivo.",
+    "disqualifiers": [],
+    "alreadyHasPerformantLanding": false,
+    "isDedicatedFunnelUrl": false,
+    "funnelBuilders": [],
+    "hasQuizAlready": false,
+    "navLinksCount": 6,
+    "formsCount": 1,
+    "isEcommerce": false,
+    "isLargeEnterpriseOrSpa": false,
+    "agencyDetection": {
+      "hasAgencyInvolved": false,
+      "detectedAgencyNames": [],
+      "detectedAgencyLinks": [],
+      "martechSignals": [
+        "Meta Pixel"
+      ]
+    }
+  },
+  "extractedEmails": [
+    "info@expobrescia.com",
+    "mario@rossi.com",
+    "expobrescia.srl@pec.it"
+  ],
+  "extractedPhones": [
+    "013280092916",
+    "029168656528",
+    "0245323",
+    "0029283",
+    "0260417"
+  ],
+  "extractedVat": "04607130988",
+  "legalSnippets": [],
+  "candidateLogoUrls": [
+    "https://www.expobrescia.com/wp-content/uploads/2025/07/cropped-Logo_ExpoBrescia.png",
+    "https://www.expobrescia.com/wp-content/themes/expobrescia/assets/img/logo-grafica.png"
+  ],
+  "candidateHeroUrls": [
+    "https://www.expobrescia.com/wp-content/uploads/2025/10/expo-brescia-preventivo-gratuito.png",
+    "https://www.expobrescia.com/wp-content/uploads/2025/10/expo-brescia-sopralluogo.png",
+    "https://www.expobrescia.com/wp-content/uploads/2025/10/expo-brescia-consegna-installazione.png",
+    "https://www.expobrescia.com/wp-content/uploads/2025/10/expo-brescia-post-vendita-assistenza.png",
+    "https://www.expobrescia.com/wp-content/uploads/2025/10/expo-brescia-smaltimento.png",
+    "https://www.expobrescia.com/wp-content/uploads/2025/10/expo-brescia-finanziamenti.png"
+  ],
+  "assetsDir": "/public/leads/expobrescia",
+  "searchKeyword": "isolamento termico brescia",
+  "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&media_type=all&q=isolamento%20termico%20brescia&search_type=keyword_unordered",
+  "adContextSnippet": "ELPw0xyvqcZICdf23eg3ZS8qI0e_b2qwZojbh4Ow&oe=6AE94195\"> Expo Brescia Sponsorizzato Le nostre porte blindate uniscono strutture rinforzate e serrature di ultima generazione a eccellenti prestazioni di isolamento termico e acustico. Dimentichi le chiavi? Non c'è problema: la nostra porta blindata può essere aperta con un codice personalizzato, un app, un impronta o una tessera key-less. Proteggi i tuoi spazi con soluzioni che non scendono a compromessi tra sicurezza ed estetica. Passa a trovarci pe",
+  "landingPageTitle": "Serramenti Brescia | Showroom infissi e porte | Expo Brescia",
+  "landingPageH1": "Serramenti, infissi e porte a Brescia: showroom Expo Brescia by Italserramenti da oltre 25 anni",
+  "landingPageMetaDescription": "Showroom di serramenti, infissi e porte a Brescia. Finestre in legno, PVC e alluminio, porte blindate. Preventivo gratuito e bonus fiscali"
+}
