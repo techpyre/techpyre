@@ -23,10 +23,13 @@
     ]
   },
   "theme": {
-    "primaryHex": "#2F5233",
-    "accentHex": "#D97706",
-    "darkBgHex": "#1C1917",
-    "borderRadius": "8px"
+    "primaryHex": "#602060",
+    "accentHex": "#e06080",
+    "darkBgHex": "#0F1113",
+    "borderRadius": "8px",
+    "secondaryHex": "#e06020",
+    "headerBgMode": "light",
+    "logoBrightness": "dark"
   },
   "content": {
     "badgeTop": "Il Centro Benessere del Legno · Vetro Termico e Restauro Infissi",

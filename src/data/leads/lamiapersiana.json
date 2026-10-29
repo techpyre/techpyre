@@ -23,10 +23,13 @@
     ]
   },
   "theme": {
-    "primaryHex": "#143642",
-    "accentHex": "#C86428",
-    "darkBgHex": "#142329",
-    "borderRadius": "8px"
+    "primaryHex": "#606040",
+    "accentHex": "#604040",
+    "darkBgHex": "#0F1113",
+    "borderRadius": "8px",
+    "secondaryHex": "#406060",
+    "headerBgMode": "light",
+    "logoBrightness": "dark"
   },
   "content": {
     "badgeTop": "Servizio Attivo in Tutta la Lombardia · Ritiro e Riconsegna Inclusi",

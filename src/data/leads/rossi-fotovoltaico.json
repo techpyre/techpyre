@@ -23,10 +23,13 @@
     ]
   },
   "theme": {
-    "primaryHex": "#1C2D42",
-    "accentHex": "#C2410C",
-    "darkBgHex": "#1C1917",
-    "borderRadius": "8px"
+    "primaryHex": "#60a060",
+    "accentHex": "#e060e0",
+    "darkBgHex": "#0F1113",
+    "borderRadius": "8px",
+    "secondaryHex": "#60a0e0",
+    "headerBgMode": "light",
+    "logoBrightness": "dark"
   },
   "content": {
     "badgeTop": "Attivi a Brescia, Lago di Garda e Franciacorta",

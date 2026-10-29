@@ -23,10 +23,13 @@
     ]
   },
   "theme": {
-    "primaryHex": "#18181B",
-    "accentHex": "#1E3A5F",
-    "darkBgHex": "#141619",
-    "borderRadius": "6px"
+    "primaryHex": "#008020",
+    "accentHex": "#802060",
+    "darkBgHex": "#0F1113",
+    "borderRadius": "8px",
+    "secondaryHex": "#802000",
+    "headerBgMode": "light",
+    "logoBrightness": "dark"
   },
   "content": {
     "badgeTop": "Automazione Industriale e Robotica · Bergamo",

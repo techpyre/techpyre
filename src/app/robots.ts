@@ -5,8 +5,8 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: "*",
       allow: "/",
-      disallow: ["/api/", "/demo/"],
+      disallow: ["/api/", "/admin/", "/demo/"],
     },
-    sitemap: "https://techpyre.eu/sitemap.xml",
+    sitemap: "https://www.techpyre.eu/sitemap.xml",
   };
 }

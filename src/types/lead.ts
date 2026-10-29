@@ -23,6 +23,10 @@ export interface LeadConfig {
     accentHex: string;
     darkBgHex: string;
     borderRadius: '0px' | '4px' | '6px' | '8px' | '12px' | '16px';
+    secondaryHex?: string;
+    headerBgMode?: 'light' | 'dark' | 'adaptive';
+    headerBgHex?: string;
+    logoBrightness?: 'dark' | 'light';
   };
   content: {
     badgeTop: string;

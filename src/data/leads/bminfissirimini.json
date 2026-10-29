@@ -23,10 +23,13 @@
     ]
   },
   "theme": {
-    "primaryHex": "#16335B",
-    "accentHex": "#B91C50",
-    "darkBgHex": "#18181B",
-    "borderRadius": "8px"
+    "primaryHex": "#c06040",
+    "accentHex": "#0080c0",
+    "darkBgHex": "#0F1113",
+    "borderRadius": "8px",
+    "secondaryHex": "#604020",
+    "headerBgMode": "light",
+    "logoBrightness": "dark"
   },
   "content": {
     "badgeTop": "Showroom di Oltre 400 mq a Rimini · Rivenditore QFort",

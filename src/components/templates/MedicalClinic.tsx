@@ -15,6 +15,8 @@ import {
   Stethoscope,
 } from "lucide-react";
 import { LeadConfig } from "@/types/lead";
+import AdaptiveLogo from "@/components/AdaptiveLogo";
+import TechPyreFooter from "@/components/TechPyreFooter";
 
 interface TemplateProps {
   data: LeadConfig;
@@ -83,22 +85,23 @@ export default function MedicalClinic({ data }: TemplateProps) {
       </div>
 
       {/* Header Clinico con Navigazione e CTA Prenotazione */}
-      <header className="sticky top-[37px] z-40 bg-[#FAF8F5]/95 backdrop-blur-md border-b border-[#E5DFD6]">
+      <header
+        className={`sticky top-[37px] z-40 backdrop-blur-md border-b transition-colors ${
+          data.theme.headerBgMode === "dark"
+            ? "bg-[#141A18]/95 text-white border-[#273531]"
+            : "bg-[#FAF8F5]/95 text-[#4A4642] border-[#E5DFD6]"
+        }`}
+        style={data.theme.headerBgHex ? { backgroundColor: data.theme.headerBgHex } : undefined}
+      >
         <div className="demo-container h-20 flex items-center justify-between gap-4">
           <div className="flex items-center gap-6">
-            {content.logoLocalPath ? (
-              <img
-                src={content.logoLocalPath}
-                alt={`${meta.companyName} Logo`}
-                width={160}
-                height={48}
-                className="h-10 w-auto object-contain"
-              />
-            ) : (
-              <span className="font-[family-name:var(--font-lora)] font-semibold text-xl text-[#1F2421] tracking-tight">
-                {meta.companyName}
-              </span>
-            )}
+            <AdaptiveLogo
+              src={content.logoLocalPath}
+              alt={meta.companyName}
+              headerBgMode={data.theme.headerBgMode}
+              logoBrightness={data.theme.logoBrightness}
+              fallbackName={meta.companyName}
+            />
 
             <nav className="hidden lg:flex items-center gap-6 text-sm text-[#57524E]">
               <a href="#trattamenti" className="hover:text-[#1F3A33] transition-colors">
@@ -593,19 +596,8 @@ export default function MedicalClinic({ data }: TemplateProps) {
         </div>
       </section>
 
-      {/* Footer Sanitario Conforme */}
-      <footer className="bg-[#1F2421] text-[#A8A29E] py-10 text-xs">
-        <div className="demo-container flex flex-col sm:flex-row items-center justify-between gap-4">
-          <div>
-            <strong className="text-white">{meta.companyName}</strong> · {meta.city}
-            {meta.vatNumber && meta.vatNumber !== "Non trovata"
-              ? ` · P.IVA ${meta.vatNumber}`
-              : ""}{" "}
-            · Dir. San. {medical.directorName} ({medical.alboRegistration})
-          </div>
-          <div>Segreteria Pazienti: {meta.phone}</div>
-        </div>
-      </footer>
+      {/* Footer Ufficiale con Firma TechPYRE */}
+      <TechPyreFooter data={data} />
     </div>
   );
 }

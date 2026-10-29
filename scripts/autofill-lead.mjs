@@ -219,6 +219,74 @@ TechPyre
 Tel: +39 379 115 9352`;
 }
 
+// Estrazione cromatica e contrasto adattivo del logo
+function extractDynamicTheme(leadSlug, isMed) {
+  const logoP = path.join(process.cwd(), 'public', 'leads', leadSlug, 'logo.png');
+  const heroP = path.join(process.cwd(), 'public', 'leads', leadSlug, 'hero.jpg');
+  
+  let isLight = false;
+  let logoBuf = fs.existsSync(logoP) ? fs.readFileSync(logoP) : null;
+  let heroBuf = fs.existsSync(heroP) ? fs.readFileSync(heroP) : null;
+
+  if (logoBuf) {
+    if (logoBuf.slice(0, 50).includes('<svg') || logoBuf.slice(0, 50).includes('<?xml')) {
+      const text = logoBuf.toString('utf8').toLowerCase();
+      isLight = (text.includes('#fff') || text.includes('white')) && !text.includes('#000') && !text.includes('black');
+    } else {
+      let sum = 0, count = 0;
+      for (let i = 0; i < Math.min(logoBuf.length, 6000); i += 4) {
+        sum += logoBuf[i];
+        count++;
+      }
+      isLight = (sum / count) > 170;
+    }
+  }
+
+  const targetBuf = (logoBuf && logoBuf.length > 5000) ? logoBuf : (heroBuf || logoBuf);
+  const buckets = {};
+  if (targetBuf) {
+    for (let i = 0; i < targetBuf.length - 3; i += 7) {
+      const r = targetBuf[i];
+      const g = targetBuf[i + 1];
+      const b = targetBuf[i + 2];
+      const max = Math.max(r, g, b);
+      const min = Math.min(r, g, b);
+      const sat = max === 0 ? 0 : (max - min) / max;
+      const lum = (0.299 * r + 0.587 * g + 0.114 * b) / 255;
+      
+      if (sat > 0.28 && lum > 0.15 && lum < 0.82) {
+        const qr = Math.round(r / 32) * 32;
+        const qg = Math.round(g / 32) * 32;
+        const qb = Math.round(b / 32) * 32;
+        const key = `${qr},${qg},${qb}`;
+        buckets[key] = (buckets[key] || 0) + 1;
+      }
+    }
+  }
+
+  const sorted = Object.entries(buckets).sort((a, b) => b[1] - a[1]);
+  const colors = sorted.slice(0, 3).map(([rgb]) => {
+    const [r, g, b] = rgb.split(',').map(Number);
+    return '#' + [r, g, b].map(x => Math.min(255, x).toString(16).padStart(2, '0')).join('');
+  });
+
+  const defaultPrimary = isMed ? '#1F4E46' : '#1C2D42';
+  const defaultAccent = isMed ? '#D97706' : '#C2410C';
+
+  return {
+    primaryHex: colors[0] || defaultPrimary,
+    secondaryHex: colors[1] || (isMed ? '#182220' : '#0F172A'),
+    accentHex: colors[2] || defaultAccent,
+    darkBgHex: isLight ? '#0B0D10' : (isMed ? '#141A18' : '#0F1113'),
+    borderRadius: isMed ? '12px' : '8px',
+    headerBgMode: isLight ? 'dark' : 'light',
+    headerBgHex: isLight ? '#0D0F12' : undefined,
+    logoBrightness: isLight ? 'light' : 'dark',
+  };
+}
+
+const dynamicTheme = extractDynamicTheme(slug, isMedical);
+
 const config = {
   slug,
   archetype,
@@ -239,19 +307,7 @@ const config = {
     activeAdHeadline: headline,
     activeAdCopySummary: `Campagna pubblicitaria attiva su Meta per il territorio di ${city} e provincia.`,
   },
-  theme: isMedical
-    ? {
-        primaryHex: '#1F4E46',
-        accentHex: '#1F4E46',
-        darkBgHex: '#182220',
-        borderRadius: '12px',
-      }
-    : {
-        primaryHex: '#1C2D42',
-        accentHex: '#C2410C',
-        darkBgHex: '#0F172A',
-        borderRadius: '8px',
-      },
+  theme: dynamicTheme,
   content: {
     badgeTop: `Attivi a ${city} e Provincia`,
     heroHeadline: headline,

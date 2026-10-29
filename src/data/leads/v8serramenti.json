@@ -22,10 +22,13 @@
     "activeAdCopySummary": "Campagna pubblicitaria attiva su Meta per il territorio di Brescia e provincia."
   },
   "theme": {
-    "primaryHex": "#1C2D42",
-    "accentHex": "#C2410C",
-    "darkBgHex": "#0F172A",
-    "borderRadius": "8px"
+    "primaryHex": "#6080e0",
+    "accentHex": "#6060e0",
+    "darkBgHex": "#0F1113",
+    "borderRadius": "8px",
+    "secondaryHex": "#40a040",
+    "headerBgMode": "light",
+    "logoBrightness": "dark"
   },
   "content": {
     "badgeTop": "Attivi a Brescia e Provincia",

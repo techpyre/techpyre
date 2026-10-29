@@ -18,6 +18,7 @@ import {
   Clock,
   Sparkles,
   Smartphone,
+  Eye,
 } from "lucide-react";
 import { LeadConfig } from "@/types/lead";
 
@@ -52,6 +53,26 @@ interface LeadItem {
     messageId: string;
   } | null;
   sendCount?: number;
+  visits?: {
+    slug: string;
+    companyName: string;
+    totalVisits: number;
+    uniqueSessions: number;
+    firstVisitAt: string;
+    lastVisitAt: string;
+    lastDevice: string;
+    lastDeviceType: string;
+    visits: Array<{
+      id: string;
+      timestamp: string;
+      formattedDate: string;
+      device: string;
+      deviceType: string;
+      referrer: string;
+      screen: string;
+      ip: string;
+    }>;
+  } | null;
 }
 
 export default function AdminPage() {
@@ -73,7 +94,8 @@ export default function AdminPage() {
   const [scoutingOutput, setScoutingOutput] = useState<string | null>(null);
 
   // Filter & UI State
-  const [filterStrategy, setFilterStrategy] = useState<"ALL" | "DIRECT" | "WHITELABEL">("ALL");
+  const [filterStrategy, setFilterStrategy] = useState<"ALL" | "DIRECT" | "WHITELABEL" | "VISITED" | "NOT_VISITED">("ALL");
+  const [showVisitsModal, setShowVisitsModal] = useState(false);
   const [expandedOutreach, setExpandedOutreach] = useState<Record<string, boolean>>({});
   const [sendingSlug, setSendingSlug] = useState<string | null>(null);
   const [sendResult, setSendResult] = useState<Record<string, { success: boolean; message: string }>>({});
@@ -283,6 +305,8 @@ export default function AdminPage() {
     const strat = l.preflight?.qualification?.recommendedStrategy;
     if (filterStrategy === "DIRECT") return strat === "DIRECT_BUYER";
     if (filterStrategy === "WHITELABEL") return strat === "AGENCY_COEXISTENCE_OR_WHITELABEL";
+    if (filterStrategy === "VISITED") return Boolean(l.visits && l.visits.totalVisits > 0);
+    if (filterStrategy === "NOT_VISITED") return !l.visits || l.visits.totalVisits === 0;
     return true;
   });
 
@@ -293,6 +317,8 @@ export default function AdminPage() {
   const agencyLeads = leads.filter(
     (l) => l.preflight?.qualification?.recommendedStrategy === "AGENCY_COEXISTENCE_OR_WHITELABEL"
   ).length;
+  const visitedLeads = leads.filter((l) => Boolean(l.visits && l.visits.totalVisits > 0)).length;
+  const totalVisitsCount = leads.reduce((acc, l) => acc + (l.visits?.totalVisits || 0), 0);
 
   return (
     <div className="min-h-screen bg-zinc-950 text-zinc-100 flex flex-col">
@@ -357,10 +383,26 @@ export default function AdminPage() {
             <div className="text-2xl font-bold text-purple-300">{agencyLeads}</div>
             <div className="text-[11px] text-zinc-500 mt-1">Coesistenza o B2B2B</div>
           </div>
-          <div className="bg-zinc-900/50 border border-zinc-800 rounded-xl p-4">
-            <div className="text-xs text-amber-400 mb-1">Velocita Guadagnata</div>
-            <div className="text-2xl font-bold text-amber-300">&gt; 10s &rarr; 0.3s</div>
-            <div className="text-[11px] text-zinc-500 mt-1">Next.js Edge SSG</div>
+          <div className="bg-zinc-900/50 border border-zinc-800 rounded-xl p-4 flex flex-col justify-between">
+            <div>
+              <div className="text-xs text-amber-400 mb-1 flex items-center justify-between">
+                <span>Visite Demo Rilevate</span>
+                <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+              </div>
+              <div className="text-2xl font-bold text-amber-300">
+                {visitedLeads} <span className="text-xs font-normal text-zinc-400">/ {totalLeads}</span>
+              </div>
+              <div className="text-[11px] text-zinc-500 mt-0.5">
+                {totalVisitsCount} visite totali
+              </div>
+            </div>
+            <button
+              type="button"
+              onClick={() => setShowVisitsModal(true)}
+              className="mt-2 text-[11px] text-amber-400 hover:text-amber-300 underline font-medium text-left cursor-pointer"
+            >
+              Log Visite Live &rarr;
+            </button>
           </div>
         </div>
 
@@ -443,7 +485,7 @@ export default function AdminPage() {
             </div>
 
             {/* Strategy Filter Tabs */}
-            <div className="flex items-center gap-1.5 p-1 rounded-xl bg-zinc-900 border border-zinc-800 text-xs">
+            <div className="flex flex-wrap items-center gap-1.5 p-1 rounded-xl bg-zinc-900 border border-zinc-800 text-xs">
               <button
                 onClick={() => setFilterStrategy("ALL")}
                 className={`px-3 py-1.5 rounded-lg font-medium transition-colors cursor-pointer ${
@@ -453,6 +495,27 @@ export default function AdminPage() {
                 }`}
               >
                 Tutti ({leads.length})
+              </button>
+              <button
+                onClick={() => setFilterStrategy("VISITED")}
+                className={`px-3 py-1.5 rounded-lg font-medium transition-colors cursor-pointer flex items-center gap-1.5 ${
+                  filterStrategy === "VISITED"
+                    ? "bg-emerald-500/20 text-emerald-300 border border-emerald-500/30"
+                    : "text-zinc-400 hover:text-zinc-200"
+                }`}
+              >
+                <Eye className="w-3.5 h-3.5" />
+                <span>Hanno Visitato ({visitedLeads})</span>
+              </button>
+              <button
+                onClick={() => setFilterStrategy("NOT_VISITED")}
+                className={`px-3 py-1.5 rounded-lg font-medium transition-colors cursor-pointer ${
+                  filterStrategy === "NOT_VISITED"
+                    ? "bg-zinc-800 text-white"
+                    : "text-zinc-400 hover:text-zinc-200"
+                }`}
+              >
+                In Attesa ({totalLeads - visitedLeads})
               </button>
               <button
                 onClick={() => setFilterStrategy("DIRECT")}
@@ -523,6 +586,19 @@ export default function AdminPage() {
                               <span>
                                 {item.lastSend.type === "FOLLOW_UP" ? "Follow-Up Inviato" : "1ª Email Inviata"}
                               </span>
+                            </span>
+                          )}
+                          {item.visits && item.visits.totalVisits > 0 ? (
+                            <span className="px-2 py-0.5 rounded-md bg-emerald-500/10 text-emerald-400 text-[11px] font-semibold border border-emerald-500/30 flex items-center gap-1.5 shadow-sm">
+                              <Eye className="w-3.5 h-3.5 text-emerald-400" />
+                              <span>
+                                {item.visits.totalVisits} {item.visits.totalVisits === 1 ? "Visita" : "Visite"} · {item.visits.lastDevice}
+                              </span>
+                            </span>
+                          ) : (
+                            <span className="px-2 py-0.5 rounded-md bg-zinc-800/80 text-zinc-400 text-[11px] font-medium border border-zinc-700/50 flex items-center gap-1">
+                              <Eye className="w-3 h-3 text-zinc-500" />
+                              <span>In attesa apertura</span>
                             </span>
                           )}
                           <span className="text-xs text-zinc-500">
@@ -722,6 +798,119 @@ export default function AdminPage() {
             </div>
           )}
         </section>
+
+        {/* Modal: Log Visite Demo in Tempo Reale */}
+        {showVisitsModal && (
+          <div className="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
+            <div className="bg-zinc-900 border border-zinc-800 rounded-2xl w-full max-w-3xl max-h-[85vh] flex flex-col shadow-2xl overflow-hidden">
+              <div className="p-5 border-b border-zinc-800 flex items-center justify-between">
+                <div className="flex items-center gap-2.5">
+                  <div className="w-8 h-8 rounded-lg bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400">
+                    <Eye className="w-4 h-4" />
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-base text-white">Log Visite Demo in Tempo Reale</h3>
+                    <p className="text-xs text-zinc-400">
+                      Monitoraggio aperture demo inviate via email o messaggio diretto.
+                    </p>
+                  </div>
+                </div>
+                <button
+                  onClick={() => setShowVisitsModal(false)}
+                  className="px-3 py-1.5 rounded-lg bg-zinc-800 hover:bg-zinc-700 text-xs text-zinc-300 transition-colors cursor-pointer"
+                >
+                  Chiudi
+                </button>
+              </div>
+
+              <div className="p-5 overflow-y-auto space-y-3 flex-1">
+                {(() => {
+                  const allEvents: Array<{
+                    slug: string;
+                    companyName: string;
+                    event: {
+                      id: string;
+                      timestamp: string;
+                      formattedDate: string;
+                      device: string;
+                      deviceType: string;
+                      referrer: string;
+                      screen: string;
+                      ip: string;
+                    };
+                  }> = [];
+
+                  for (const lead of leads) {
+                    if (lead.visits?.visits) {
+                      for (const ev of lead.visits.visits) {
+                        allEvents.push({
+                          slug: lead.slug,
+                          companyName: lead.config.meta.companyName,
+                          event: ev,
+                        });
+                      }
+                    }
+                  }
+
+                  // Ordina dalla piu recente
+                  allEvents.sort((a, b) => new Date(b.event.timestamp).getTime() - new Date(a.event.timestamp).getTime());
+
+                  if (allEvents.length === 0) {
+                    return (
+                      <div className="text-center py-12 text-zinc-500 text-xs space-y-2">
+                        <Smartphone className="w-8 h-8 mx-auto text-zinc-600 stroke-[1.5]" />
+                        <p className="font-medium text-zinc-400">Nessuna visita ancora registrata.</p>
+                        <p className="max-w-md mx-auto text-zinc-500 text-[11px]">
+                          Non appena un titolare aprira il link della demo inviato nella risposta &apos;LINK&apos;, la visita comparira qui con orario, modello di smartphone e provenienza.
+                        </p>
+                      </div>
+                    );
+                  }
+
+                  return allEvents.map((item, idx) => (
+                    <div
+                      key={item.event.id || idx}
+                      className="p-4 rounded-xl bg-zinc-950 border border-zinc-800 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs"
+                    >
+                      <div className="space-y-1">
+                        <div className="flex items-center gap-2">
+                          <span className="font-bold text-white text-sm">
+                            {item.companyName}
+                          </span>
+                          <span className="px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-[10px] font-semibold">
+                            {item.event.deviceType}
+                          </span>
+                        </div>
+                        <div className="flex flex-wrap items-center gap-3 text-zinc-400 text-[11px]">
+                          <span>Dispositivo: <strong className="text-zinc-300">{item.event.device}</strong></span>
+                          <span>&middot;</span>
+                          <span>Risoluzione: <strong className="text-zinc-300">{item.event.screen}</strong></span>
+                          <span>&middot;</span>
+                          <span>Origine: <strong className="text-zinc-300">{item.event.referrer}</strong></span>
+                        </div>
+                      </div>
+
+                      <div className="flex sm:flex-col items-center sm:items-end justify-between gap-1 text-[11px] shrink-0">
+                        <span className="font-mono text-emerald-400 font-medium">
+                          {item.event.formattedDate}
+                        </span>
+                        <a
+                          href={`/demo/${item.slug}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-zinc-400 hover:text-white underline flex items-center gap-1"
+                        >
+                          <span>Apri demo</span>
+                          <ExternalLink className="w-3 h-3" />
+                        </a>
+                      </div>
+                    </div>
+                  ));
+                })()}
+              </div>
+            </div>
+          </div>
+        )}
       </main>
     </div>
   );

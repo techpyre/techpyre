@@ -5,6 +5,7 @@ import { Lora, Plus_Jakarta_Sans } from "next/font/google";
 import { notFound } from "next/navigation";
 import { LeadConfig } from "@/types/lead";
 import DiagnosticBanner from "@/components/DiagnosticBanner";
+import DemoTracker from "@/components/DemoTracker";
 import LocalLeadGen from "@/components/templates/LocalLeadGen";
 import MedicalClinic from "@/components/templates/MedicalClinic";
 import B2BAuthority from "@/components/templates/B2BAuthority";
@@ -84,12 +85,16 @@ export default async function DemoPage({
         {
           "--primary": data.theme.primaryHex,
           "--accent": data.theme.accentHex,
+          "--secondary": data.theme.secondaryHex || data.theme.accentHex,
           "--dark-bg": data.theme.darkBgHex,
           "--radius": data.theme.borderRadius,
         } as React.CSSProperties
       }
       className={`${jakartaFont.variable} ${loraFont.variable} min-h-screen font-sans antialiased`}
     >
+      {/* Tracker Visite Demo in Tempo Reale */}
+      <DemoTracker slug={data.slug} companyName={data.meta.companyName} />
+
       {/* Barra Diagnostica Tecnica in alto */}
       <DiagnosticBanner data={data} />
 

@@ -1,14 +1,17 @@
 import React from "react";
-import { Check, MapPin, Phone, ShieldCheck, Star } from "lucide-react";
+import { Check, MapPin, Phone, ShieldCheck, Star, Award, Clock } from "lucide-react";
 import { LeadConfig } from "@/types/lead";
 import InteractiveQuiz from "@/components/InteractiveQuiz";
+import AdaptiveLogo from "@/components/AdaptiveLogo";
+import TechPyreFooter from "@/components/TechPyreFooter";
 
 interface TemplateProps {
   data: LeadConfig;
 }
 
 export default function LocalLeadGen({ data }: TemplateProps) {
-  const { meta, content } = data;
+  const { meta, content, theme } = data;
+  const isDarkHeader = theme.headerBgMode === "dark";
 
   const bullets: [string, string, string] = content.heroBullets || [
     `Sopralluogo tecnico e preventivo scritto a ${meta.city} e provincia`,
@@ -17,25 +20,32 @@ export default function LocalLeadGen({ data }: TemplateProps) {
   ];
 
   return (
-    <div className="min-h-screen bg-[#FFFFFF] text-stone-700 pb-20 md:pb-0">
-      {/* Header Sticky con Logo e Bottone "Chiama Ora" */}
-      <header className="sticky top-[37px] z-40 bg-white/95 backdrop-blur-md border-b border-stone-200">
+    <div className="min-h-screen bg-[#FFFFFF] text-stone-700 pb-20 md:pb-0 font-sans">
+      {/* Header Sticky con Logo Adattivo e Contatto */}
+      <header
+        className={`sticky top-[37px] z-40 backdrop-blur-md border-b transition-colors ${
+          isDarkHeader
+            ? "bg-[#0E1013]/95 text-white border-zinc-800"
+            : "bg-white/95 text-stone-800 border-stone-200"
+        }`}
+        style={theme.headerBgHex ? { backgroundColor: theme.headerBgHex } : undefined}
+      >
         <div className="demo-container h-20 flex items-center justify-between gap-4">
           <div className="flex items-center gap-4">
-            {content.logoLocalPath ? (
-              <img
-                src={content.logoLocalPath}
-                alt={`${meta.companyName} Logo`}
-                width={160}
-                height={48}
-                className="h-10 w-auto object-contain"
-              />
-            ) : (
-              <span className="font-[family-name:var(--font-jakarta)] font-extrabold text-xl text-stone-900 tracking-tight">
-                {meta.companyName}
-              </span>
-            )}
-            <span className="hidden md:inline-flex items-center gap-1.5 text-xs font-medium px-3 py-1 rounded-md bg-stone-100 text-stone-700">
+            <AdaptiveLogo
+              src={content.logoLocalPath}
+              alt={meta.companyName}
+              headerBgMode={theme.headerBgMode}
+              logoBrightness={theme.logoBrightness}
+              fallbackName={meta.companyName}
+            />
+            <span
+              className={`hidden md:inline-flex items-center gap-1.5 text-xs font-medium px-3 py-1 rounded-md border ${
+                isDarkHeader
+                  ? "bg-zinc-900 border-zinc-800 text-zinc-300"
+                  : "bg-stone-100 border-stone-200 text-stone-700"
+              }`}
+            >
               <MapPin className="w-3.5 h-3.5 text-stone-500" />
               Operativi a {meta.city} e provincia
             </span>
@@ -44,7 +54,7 @@ export default function LocalLeadGen({ data }: TemplateProps) {
           <a
             href={`tel:${meta.phone.replace(/\s+/g, "")}`}
             style={{ backgroundColor: "var(--primary)" }}
-            className="demo-btn inline-flex items-center gap-2 px-4 py-2.5 rounded-lg text-white font-semibold text-xs sm:text-sm"
+            className="demo-btn inline-flex items-center gap-2 px-4 py-2.5 rounded-lg text-white font-semibold text-xs sm:text-sm shadow-sm"
           >
             <Phone className="w-4 h-4" />
             <span>Chiama ora: {meta.phone}</span>
@@ -242,18 +252,8 @@ export default function LocalLeadGen({ data }: TemplateProps) {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-stone-900 text-stone-400 py-10 border-t border-stone-800 text-xs">
-        <div className="demo-container flex flex-col sm:flex-row items-center justify-between gap-4">
-          <div>
-            <strong className="text-white">{meta.companyName}</strong> · {meta.city}
-            {meta.vatNumber && meta.vatNumber !== "Non trovata"
-              ? ` · P.IVA ${meta.vatNumber}`
-              : ""}
-          </div>
-          <div>Recapito telefonico diretto: {meta.phone}</div>
-        </div>
-      </footer>
+      {/* Footer Ufficiale con Firma TechPYRE */}
+      <TechPyreFooter data={data} />
 
       {/* Barra Fissa Mobile */}
       <div className="fixed bottom-0 inset-x-0 z-40 md:hidden bg-white border-t border-stone-200 p-3 grid grid-cols-2 gap-3 shadow-[0_-8px_20px_rgba(0,0,0,0.06)]">

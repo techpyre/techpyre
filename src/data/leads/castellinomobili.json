@@ -23,10 +23,13 @@
     ]
   },
   "theme": {
-    "primaryHex": "#2E6F40",
-    "accentHex": "#1F4E2D",
-    "darkBgHex": "#1C1917",
-    "borderRadius": "8px"
+    "primaryHex": "#c08020",
+    "accentHex": "#a080e0",
+    "darkBgHex": "#0F1113",
+    "borderRadius": "8px",
+    "secondaryHex": "#ffa020",
+    "headerBgMode": "light",
+    "logoBrightness": "dark"
   },
   "content": {
     "badgeTop": "Showroom e Posa Qualificata a Beinette e Provincia di Cuneo",

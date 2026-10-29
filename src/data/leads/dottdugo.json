@@ -23,10 +23,13 @@
     "activeAdCopySummary": "Campagna pubblicitaria attiva su Meta per il territorio di Palermo e provincia."
   },
   "theme": {
-    "primaryHex": "#1F4E46",
-    "accentHex": "#1F4E46",
-    "darkBgHex": "#182220",
-    "borderRadius": "12px"
+    "primaryHex": "#c00000",
+    "accentHex": "#608000",
+    "darkBgHex": "#141A18",
+    "borderRadius": "12px",
+    "secondaryHex": "#800000",
+    "headerBgMode": "light",
+    "logoBrightness": "dark"
   },
   "content": {
     "badgeTop": "Attivi a Palermo e Provincia",

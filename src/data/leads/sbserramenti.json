@@ -23,10 +23,13 @@
     ]
   },
   "theme": {
-    "primaryHex": "#146C38",
-    "accentHex": "#146C38",
-    "darkBgHex": "#18181B",
-    "borderRadius": "8px"
+    "primaryHex": "#20e040",
+    "accentHex": "#008060",
+    "darkBgHex": "#0F1113",
+    "borderRadius": "8px",
+    "secondaryHex": "#20e060",
+    "headerBgMode": "light",
+    "logoBrightness": "dark"
   },
   "content": {
     "badgeTop": "Da Oltre 40 Anni a Pisa, Lucca, Viareggio e Livorno",

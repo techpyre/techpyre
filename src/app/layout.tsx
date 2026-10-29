@@ -56,13 +56,29 @@ export const viewport: Viewport = {
  */
 export const metadata: Metadata = {
   title: {
-    default: "TechPYRE — Ingegneria del Software & Soluzioni AI",
+    default: "TechPYRE — Ingegneria del Software & Landing Page ad Alte Prestazioni",
     template: "%s | TechPYRE",
   },
   description: siteContent.hero.subheadline,
   authors: [{ name: siteContent.brand.founder }],
   creator: siteContent.brand.name,
-  metadataBase: new URL("https://techpyre.eu"),
+  metadataBase: new URL("https://www.techpyre.eu"),
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: false,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  verification: {
+    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION,
+  },
   icons: {
     icon: [
       { url: "/icon.svg", type: "image/svg+xml" },
@@ -73,7 +89,7 @@ export const metadata: Metadata = {
     ],
   },
   openGraph: {
-    title: "TechPYRE — Ingegneria del Software & Soluzioni AI",
+    title: "TechPYRE — Ingegneria del Software & Landing Page ad Alte Prestazioni",
     description: siteContent.hero.subheadline,
     siteName: "TechPYRE",
     locale: "it_IT",
@@ -81,7 +97,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "TechPYRE — Ingegneria del Software & Soluzioni AI",
+    title: "TechPYRE — Ingegneria del Software & Landing Page ad Alte Prestazioni",
     description: siteContent.hero.subheadline,
   },
 };
@@ -105,7 +121,7 @@ export default function RootLayout({
       "@type": "Person",
       name: siteContent.brand.founder,
     },
-    url: "https://techpyre.eu",
+    url: "https://www.techpyre.eu",
     email: siteContent.brand.contactEmail,
     telephone: siteContent.brand.phone,
     address: {

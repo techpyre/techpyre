@@ -3,6 +3,7 @@ import fs from "fs";
 import path from "path";
 import { verifyAdminSession } from "@/lib/adminAuth";
 import { LeadConfig } from "@/types/lead";
+import { getAllVisits } from "@/lib/visitsStorage";
 
 export async function GET() {
   const isAuth = await verifyAdminSession();
@@ -34,6 +35,8 @@ export async function GET() {
       globalHistory = [];
     }
   }
+
+  const allVisits = getAllVisits();
 
   for (const file of files) {
     const slug = file.replace(/\.json$/, "");
@@ -84,6 +87,7 @@ export async function GET() {
         fullOutreachPack: outreachPack,
         lastSend,
         sendCount: leadHistory.length,
+        visits: allVisits[slug] || null,
       });
     } catch {
       // Ignora file malformati
@@ -95,6 +99,7 @@ export async function GET() {
 
   return NextResponse.json({
     leads,
+    allVisits,
     smtpConfigured: Boolean(process.env.SMTP_HOST || process.env.OUTBOUND_SMTP_HOST),
     smtpUser: process.env.SMTP_USER || process.env.OUTBOUND_SMTP_USER || "Non configurato",
   });

@@ -1,0 +1,50 @@
+{
+  "naturalispurificatori": {
+    "slug": "naturalispurificatori",
+    "companyName": "Naturalis Purificatori",
+    "totalVisits": 1,
+    "uniqueSessions": 1,
+    "firstVisitAt": "2026-10-29T23:22:36.159Z",
+    "lastVisitAt": "2026-10-29T23:22:36.159Z",
+    "lastDevice": "iPhone (iOS 17.4)",
+    "lastDeviceType": "Mobile",
+    "visits": [
+      {
+        "id": "vis_1793316156159_daoe1",
+        "timestamp": "2026-10-29T23:22:36.159Z",
+        "formattedDate": "30 Ott 2026, 00:22",
+        "device": "iPhone (iOS 17.4)",
+        "deviceType": "Mobile",
+        "referrer": "email (direct)",
+        "screen": "390x844",
+        "ip": "::1",
+        "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_4 like Mac OS X) AppleWebKit/605.1.15",
+        "isFirstVisit": true
+      }
+    ]
+  },
+  "barattiantichita": {
+    "slug": "barattiantichita",
+    "companyName": "Baratti Antichita",
+    "totalVisits": 1,
+    "uniqueSessions": 1,
+    "firstVisitAt": "2026-10-29T23:22:51.244Z",
+    "lastVisitAt": "2026-10-29T23:22:51.244Z",
+    "lastDevice": "iPhone (iOS 17.4)",
+    "lastDeviceType": "Mobile",
+    "visits": [
+      {
+        "id": "vis_1793316171244_p9zpu",
+        "timestamp": "2026-10-29T23:22:51.244Z",
+        "formattedDate": "30 Ott 2026, 00:22",
+        "device": "iPhone (iOS 17.4)",
+        "deviceType": "Mobile",
+        "referrer": "diretto / link email",
+        "screen": "390x844",
+        "ip": "::1",
+        "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4 Mobile/15E148 Safari/604.1",
+        "isFirstVisit": true
+      }
+    ]
+  }
+}

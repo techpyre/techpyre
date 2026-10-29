@@ -23,10 +23,13 @@
     ]
   },
   "theme": {
-    "primaryHex": "#1F4E46",
-    "accentHex": "#1F4E46",
-    "darkBgHex": "#1F2421",
-    "borderRadius": "16px"
+    "primaryHex": "#60c0e0",
+    "accentHex": "#004020",
+    "darkBgHex": "#141A18",
+    "borderRadius": "12px",
+    "secondaryHex": "#e08040",
+    "headerBgMode": "light",
+    "logoBrightness": "dark"
   },
   "content": {
     "badgeTop": "Centro Specializzato in Implantologia & Chirurgia Orale • Milano",
@@ -98,7 +101,13 @@
       "clinicAddress": "Via della Moscova 46, 20121 Milano (MM2 Moscova)",
       "openingHours": "Lunedì - Venerdì: 08:30 - 19:30 | Sabato: 09:00 - 13:30",
       "parkingAndAccess": "Accesso a piano terra privo di barriere architettoniche; parcheggio convenzionato per i pazienti a 50 metri.",
-      "conventions": ["FASI", "UniSalute", "Previmedical", "Pronto-Care", "Rateizzazione Tasso Zero"]
+      "conventions": [
+        "FASI",
+        "UniSalute",
+        "Previmedical",
+        "Pronto-Care",
+        "Rateizzazione Tasso Zero"
+      ]
     }
   },
   "outreach": {

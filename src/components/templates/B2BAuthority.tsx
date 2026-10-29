@@ -3,6 +3,8 @@
 import React, { useState } from "react";
 import { ArrowRight, Building2, Check, FileText, Lock, MapPin, Phone, RotateCcw, Shield } from "lucide-react";
 import { LeadConfig } from "@/types/lead";
+import AdaptiveLogo from "@/components/AdaptiveLogo";
+import TechPyreFooter from "@/components/TechPyreFooter";
 
 interface TemplateProps {
   data: LeadConfig;
@@ -57,22 +59,23 @@ export default function B2BAuthority({ data }: TemplateProps) {
   return (
     <div className="min-h-screen bg-[#FFFFFF] text-[#4B5563]">
       {/* Header Istituzionale B2B */}
-      <header className="sticky top-[37px] z-40 bg-white/95 backdrop-blur-md border-b border-zinc-200">
+      <header
+        className={`sticky top-[37px] z-40 backdrop-blur-md border-b transition-colors ${
+          data.theme.headerBgMode === "dark"
+            ? "bg-[#0E1013]/95 text-white border-zinc-800"
+            : "bg-white/95 text-zinc-800 border-zinc-200"
+        }`}
+        style={data.theme.headerBgHex ? { backgroundColor: data.theme.headerBgHex } : undefined}
+      >
         <div className="demo-container h-20 flex items-center justify-between gap-4">
           <div className="flex items-center gap-6">
-            {content.logoLocalPath ? (
-              <img
-                src={content.logoLocalPath}
-                alt={`${meta.companyName} Logo`}
-                width={160}
-                height={48}
-                className="h-9 md:h-10 w-auto object-contain"
-              />
-            ) : (
-              <span className="font-bold text-lg md:text-xl tracking-tight text-zinc-950">
-                {meta.companyName}
-              </span>
-            )}
+            <AdaptiveLogo
+              src={content.logoLocalPath}
+              alt={meta.companyName}
+              headerBgMode={data.theme.headerBgMode}
+              logoBrightness={data.theme.logoBrightness}
+              fallbackName={meta.companyName}
+            />
 
             <nav className="hidden lg:flex items-center gap-6 text-sm font-medium text-zinc-600">
               <a href="#casi-studio" className="hover:text-zinc-950 transition-colors">
@@ -556,18 +559,8 @@ export default function B2BAuthority({ data }: TemplateProps) {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-[#0F1113] text-zinc-500 py-8 border-t border-zinc-800/80 text-xs">
-        <div className="demo-container flex flex-col sm:flex-row items-center justify-between gap-4">
-          <div>
-            <strong className="text-zinc-300">{meta.companyName}</strong> · {meta.city}
-            {meta.vatNumber && meta.vatNumber !== "Non trovata"
-              ? ` · P.IVA ${meta.vatNumber}`
-              : ""}
-          </div>
-          <div>Contatto Ufficio Tecnico: {meta.phone}</div>
-        </div>
-      </footer>
+      {/* Footer Ufficiale con Firma TechPYRE */}
+      <TechPyreFooter data={data} />
     </div>
   );
 }

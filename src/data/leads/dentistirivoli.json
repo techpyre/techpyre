@@ -22,10 +22,13 @@
     "activeAdCopySummary": "Campagna pubblicitaria attiva su Meta per il territorio di Torino e provincia."
   },
   "theme": {
-    "primaryHex": "#1F4E46",
-    "accentHex": "#1F4E46",
-    "darkBgHex": "#182220",
-    "borderRadius": "12px"
+    "primaryHex": "#2080e0",
+    "accentHex": "#c06060",
+    "darkBgHex": "#141A18",
+    "borderRadius": "12px",
+    "secondaryHex": "#e04020",
+    "headerBgMode": "light",
+    "logoBrightness": "dark"
   },
   "content": {
     "badgeTop": "Attivi a Torino e Provincia",
