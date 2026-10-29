@@ -44,6 +44,14 @@ interface LeadItem {
   };
   outreachPackPreview: string | null;
   fullOutreachPack: string | null;
+  lastSend?: {
+    sentAt: string;
+    type: string;
+    recipient: string;
+    subject: string;
+    messageId: string;
+  } | null;
+  sendCount?: number;
 }
 
 export default function AdminPage() {
@@ -509,6 +517,14 @@ export default function AdminPage() {
                               White-Label / Agenzia
                             </span>
                           )}
+                          {item.lastSend && (
+                            <span className="px-2 py-0.5 rounded-md bg-blue-500/10 text-blue-400 text-[11px] font-semibold border border-blue-500/20 flex items-center gap-1">
+                              <CheckCircle2 className="w-3 h-3 text-blue-400" />
+                              <span>
+                                {item.lastSend.type === "FOLLOW_UP" ? "Follow-Up Inviato" : "1ª Email Inviata"}
+                              </span>
+                            </span>
+                          )}
                           <span className="text-xs text-zinc-500">
                             P.IVA: {item.config.meta.vatNumber || "N/D"}
                           </span>
@@ -614,25 +630,46 @@ export default function AdminPage() {
                       </div>
 
                       {/* 1-Click Send Button via Aruba SMTP */}
-                      <div className="flex items-center gap-2">
-                        <button
-                          type="button"
-                          disabled={sending}
-                          onClick={() => handleSendEmail(item.slug, false)}
-                          className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-emerald-500 hover:bg-emerald-600 disabled:opacity-50 text-xs font-semibold text-zinc-950 transition-all shadow-md shadow-emerald-500/10 cursor-pointer"
-                        >
-                          {sending ? (
-                            <>
-                              <div className="w-3 h-3 border-2 border-zinc-950 border-t-transparent rounded-full animate-spin" />
-                              <span>Invio...</span>
-                            </>
-                          ) : (
-                            <>
-                              <Send className="w-3 h-3" />
-                              <span>Invia 1ª Email SMTP</span>
-                            </>
-                          )}
-                        </button>
+                      <div className="flex flex-wrap items-center gap-2">
+                        {item.lastSend ? (
+                          <button
+                            type="button"
+                            disabled={sending}
+                            onClick={() => handleSendEmail(item.slug, true)}
+                            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-blue-600 hover:bg-blue-500 disabled:opacity-50 text-xs font-semibold text-white transition-all shadow-md shadow-blue-500/10 cursor-pointer"
+                          >
+                            {sending ? (
+                              <>
+                                <div className="w-3 h-3 border-2 border-white border-t-transparent rounded-full animate-spin" />
+                                <span>Invio...</span>
+                              </>
+                            ) : (
+                              <>
+                                <Send className="w-3 h-3" />
+                                <span>Invia Follow-Up col Link</span>
+                              </>
+                            )}
+                          </button>
+                        ) : (
+                          <button
+                            type="button"
+                            disabled={sending}
+                            onClick={() => handleSendEmail(item.slug, false)}
+                            className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-emerald-500 hover:bg-emerald-600 disabled:opacity-50 text-xs font-semibold text-zinc-950 transition-all shadow-md shadow-emerald-500/10 cursor-pointer"
+                          >
+                            {sending ? (
+                              <>
+                                <div className="w-3 h-3 border-2 border-zinc-950 border-t-transparent rounded-full animate-spin" />
+                                <span>Invio...</span>
+                              </>
+                            ) : (
+                              <>
+                                <Send className="w-3 h-3" />
+                                <span>Invia 1ª Email SMTP</span>
+                              </>
+                            )}
+                          </button>
+                        )}
                       </div>
                     </div>
 

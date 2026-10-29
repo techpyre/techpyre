@@ -1,0 +1,47 @@
+[
+  {
+    "slug": "lamiapersiana",
+    "companyName": "La Mia Persiana (Ipei Arredamenti)",
+    "recipient": "info@lamiapersiana.it",
+    "type": "INITIAL",
+    "subject": "Sulla vostra sponsorizzata Facebook \"Restauro Persiane e Finestre\" - TechPyre",
+    "messageId": "<c9d968b5-3165-4f76-8806-cf8892f3f85e@techpyre.eu>",
+    "sentAt": "2026-10-29T08:12:17.000Z"
+  },
+  {
+    "slug": "castellinomobili",
+    "companyName": "Castellino Mobili e Serramenti",
+    "recipient": "info@castellinomobili.it",
+    "type": "INITIAL",
+    "subject": "Sulla vostra sponsorizzata Facebook \"La nuova frontiera dei serramenti\" - TechPyre",
+    "messageId": "<560b77e8-ca45-4203-ac90-28e4694b419c@techpyre.eu>",
+    "sentAt": "2026-10-29T08:12:17.800Z"
+  },
+  {
+    "slug": "sbserramenti",
+    "companyName": "SB Serramenti S.r.l.",
+    "recipient": "info@sbserramenti.it",
+    "type": "INITIAL",
+    "subject": "Sulla vostra sponsorizzata Facebook \"Perché scegliere SB Serramenti?\" - TechPyre",
+    "messageId": "<c2825586-1d13-4ae3-9d18-971cfec63665@techpyre.eu>",
+    "sentAt": "2026-10-29T08:12:18.600Z"
+  },
+  {
+    "slug": "bminfissirimini",
+    "companyName": "BM Infissi di Massimo Bianchi",
+    "recipient": "info@bminfissirimini.com",
+    "type": "INITIAL",
+    "subject": "Sulla vostra sponsorizzata Facebook \"Showroom BM Infissi\" - TechPyre",
+    "messageId": "<799cfddc-0610-410a-bfa6-a320573e6583@techpyre.eu>",
+    "sentAt": "2026-10-29T08:12:19.400Z"
+  },
+  {
+    "slug": "ecorestaurosrl",
+    "companyName": "Ecorestauro S.r.l.",
+    "recipient": "preventivi@ecorestaurosrl.it",
+    "type": "INITIAL",
+    "subject": "Sulla vostra sponsorizzata Facebook \"Le tue finestre sono vecchie?\" - TechPyre",
+    "messageId": "<0bf63980-f74d-46a2-54da-ebb76a6783eb@techpyre.eu>",
+    "sentAt": "2026-10-29T08:12:20.200Z"
+  }
+]

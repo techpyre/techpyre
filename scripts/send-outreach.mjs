@@ -195,10 +195,38 @@ if (shouldSend) {
 
   const info = await transporter.sendMail({
     from: `"${fromName}" <${user}>`,
+    replyTo: user,
     to: lead.meta.targetEmail,
     subject,
     text,
   });
+
+  // Salva lo storico invio persistente per la Dashboard e i log
+  const historyPath = path.join(process.cwd(), 'src', 'data', 'outreach-history.json');
+  let history = [];
+  if (fs.existsSync(historyPath)) {
+    try {
+      history = JSON.parse(fs.readFileSync(historyPath, 'utf-8'));
+    } catch {
+      history = [];
+    }
+  }
+
+  const logEntry = {
+    slug: lead.slug,
+    companyName: lead.meta.companyName,
+    recipient: lead.meta.targetEmail,
+    type: isFollowUp ? 'FOLLOW_UP' : 'INITIAL',
+    subject,
+    messageId: info.messageId,
+    sentAt: new Date().toISOString(),
+  };
+
+  history.push(logEntry);
+  fs.writeFileSync(historyPath, JSON.stringify(history, null, 2), 'utf-8');
+
+  // Salva anche nella cartella pubblica del lead
+  fs.writeFileSync(path.join(outDir, 'last-send.json'), JSON.stringify(logEntry, null, 2), 'utf-8');
 
   console.log(`\n🚀 Email (${isFollowUp ? 'FOLLOW-UP' : 'INITIAL'}) inviata con successo! MessageId: ${info.messageId}`);
 }

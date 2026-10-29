@@ -15,8 +15,25 @@ export async function GET() {
     return NextResponse.json({ leads: [] });
   }
 
-  const files = fs.readdirSync(leadsDir).filter((f) => f.endsWith(".json"));
+  const files = fs.readdirSync(leadsDir).filter((f) => f.endsWith(".json") && f !== "outreach-history.json");
   const leads = [];
+
+  let globalHistory: Array<{
+    slug: string;
+    sentAt: string;
+    type: string;
+    recipient: string;
+    subject: string;
+    messageId: string;
+  }> = [];
+  const historyPath = path.join(process.cwd(), "src", "data", "outreach-history.json");
+  if (fs.existsSync(historyPath)) {
+    try {
+      globalHistory = JSON.parse(fs.readFileSync(historyPath, "utf-8"));
+    } catch {
+      globalHistory = [];
+    }
+  }
 
   for (const file of files) {
     const slug = file.replace(/\.json$/, "");
@@ -50,6 +67,9 @@ export async function GET() {
       const hasLogo = fs.existsSync(path.join(leadPublicDir, "logo.png"));
       const hasHero = fs.existsSync(path.join(leadPublicDir, "hero.jpg"));
 
+      const leadHistory = globalHistory.filter((h) => h.slug === slug);
+      const lastSend = leadHistory.length ? leadHistory[leadHistory.length - 1] : null;
+
       leads.push({
         slug,
         config,
@@ -62,6 +82,8 @@ export async function GET() {
         },
         outreachPackPreview: outreachPack ? outreachPack.slice(0, 1500) : null,
         fullOutreachPack: outreachPack,
+        lastSend,
+        sendCount: leadHistory.length,
       });
     } catch {
       // Ignora file malformati
