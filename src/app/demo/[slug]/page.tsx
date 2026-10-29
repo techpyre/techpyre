@@ -62,6 +62,10 @@ export async function generateMetadata({
   return {
     title: `${data.meta.companyName} - Proposta Architetturale CRO`,
     description: data.content.heroSubheadline,
+    generator: "TechPYRE High-Performance CRO Engine",
+    authors: [{ name: "TechPYRE", url: "https://techpyre.eu" }],
+    creator: "TechPYRE",
+    publisher: "TechPYRE",
     robots: {
       index: false,
       follow: false,

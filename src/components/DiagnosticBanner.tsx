@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
 import { LeadConfig } from "@/types/lead";
 
 interface DiagnosticBannerProps {
@@ -44,7 +45,8 @@ export default function DiagnosticBanner({ data }: DiagnosticBannerProps) {
             </span>
           </div>
 
-          <button
+          <motion.button
+            whileTap={{ scale: 0.97 }}
             type="button"
             onClick={() => setExpanded((prev) => !prev)}
             className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-zinc-800/90 hover:bg-zinc-700/90 text-zinc-200 border border-zinc-700/50 transition-colors text-[11px] font-medium cursor-pointer"
@@ -55,40 +57,48 @@ export default function DiagnosticBanner({ data }: DiagnosticBannerProps) {
             ) : (
               <ChevronDown className="w-3.5 h-3.5 text-zinc-400" />
             )}
-          </button>
+          </motion.button>
         </div>
       </div>
 
-      {expanded && (
-        <div className="bg-zinc-900 border-t border-zinc-800 py-5 text-xs">
-          <div className="demo-container grid grid-cols-1 md:grid-cols-12 gap-6 items-start">
-            <div className="md:col-span-5 space-y-2">
-              <div className="text-zinc-400 font-medium">
-                Inserzione attiva collegata a questa pagina
+      <AnimatePresence>
+        {expanded && (
+          <motion.div
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: "auto" }}
+            exit={{ opacity: 0, height: 0 }}
+            transition={{ duration: 0.25, ease: "easeInOut" }}
+            className="overflow-hidden bg-zinc-900 border-t border-zinc-800 text-xs"
+          >
+            <div className="demo-container py-5 grid grid-cols-1 md:grid-cols-12 gap-6 items-start">
+              <div className="md:col-span-5 space-y-2">
+                <div className="text-zinc-400 font-medium">
+                  Inserzione attiva collegata a questa pagina
+                </div>
+                <p className="text-white font-semibold text-sm leading-snug">
+                  &ldquo;{data.audit.activeAdHeadline}&rdquo;
+                </p>
+                <p className="text-zinc-400 leading-relaxed">
+                  {data.audit.activeAdCopySummary}
+                </p>
               </div>
-              <p className="text-white font-semibold text-sm leading-snug">
-                &ldquo;{data.audit.activeAdHeadline}&rdquo;
-              </p>
-              <p className="text-zinc-400 leading-relaxed">
-                {data.audit.activeAdCopySummary}
-              </p>
-            </div>
 
-            <div className="md:col-span-7 space-y-2 md:border-l md:border-zinc-800 md:pl-6">
-              <div className="text-zinc-400 font-medium">
-                3 aspetti migliorati rispetto alla pagina attuale
+              <div className="md:col-span-7 space-y-2 md:border-l md:border-zinc-800 md:pl-6">
+                <div className="text-zinc-400 font-medium">
+                  3 aspetti migliorati rispetto alla pagina attuale
+                </div>
+                <ol className="space-y-2 text-zinc-300 list-decimal list-inside">
+                  {data.audit.threeCriticalFlaws.map((flaw, idx) => (
+                    <li key={idx} className="leading-relaxed">
+                      {flaw}
+                    </li>
+                  ))}
+                </ol>
               </div>
-              <ol className="space-y-2 text-zinc-300 list-decimal list-inside">
-                {data.audit.threeCriticalFlaws.map((flaw, idx) => (
-                  <li key={idx} className="leading-relaxed">
-                    {flaw}
-                  </li>
-                ))}
-              </ol>
             </div>
-          </div>
-        </div>
-      )}
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }

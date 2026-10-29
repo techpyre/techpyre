@@ -1,5 +1,8 @@
+"use client";
+
 import React from "react";
 import { Check, MapPin, Phone, ShieldCheck, Star, Award, Clock } from "lucide-react";
+import { motion } from "framer-motion";
 import { LeadConfig } from "@/types/lead";
 import InteractiveQuiz from "@/components/InteractiveQuiz";
 import AdaptiveLogo from "@/components/AdaptiveLogo";
@@ -20,7 +23,7 @@ export default function LocalLeadGen({ data }: TemplateProps) {
   ];
 
   return (
-    <div className="min-h-screen bg-[#FFFFFF] text-stone-700 pb-20 md:pb-0 font-sans">
+    <div className="min-h-screen bg-[#FFFFFF] text-stone-700 pb-28 md:pb-0 font-sans">
       {/* Header Sticky con Logo Adattivo e Contatto */}
       <header
         className={`sticky top-[37px] z-40 backdrop-blur-md border-b transition-colors ${
@@ -51,14 +54,16 @@ export default function LocalLeadGen({ data }: TemplateProps) {
             </span>
           </div>
 
-          <a
+          <motion.a
+            whileHover={{ scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
             href={`tel:${meta.phone.replace(/\s+/g, "")}`}
             style={{ backgroundColor: "var(--primary)" }}
             className="demo-btn inline-flex items-center gap-2 px-4 py-2.5 rounded-lg text-white font-semibold text-xs sm:text-sm shadow-sm"
           >
             <Phone className="w-4 h-4" />
             <span>Chiama ora: {meta.phone}</span>
-          </a>
+          </motion.a>
         </div>
       </header>
 
@@ -66,37 +71,45 @@ export default function LocalLeadGen({ data }: TemplateProps) {
       <section className="demo-section bg-[#FAFAF9] border-b border-stone-200">
         <div className="demo-container">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
-            <div className="lg:col-span-6 space-y-6 pt-2">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-white border border-stone-200 text-xs font-semibold text-stone-800">
-                <span className="w-2 h-2 rounded-full bg-emerald-600" />
+            <motion.div
+              initial={{ opacity: 0, y: 14 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.45 }}
+              className="lg:col-span-6 space-y-6 pt-2"
+            >
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-white border border-stone-200 text-xs font-semibold text-stone-800 shadow-2xs">
+                <span className="w-2 h-2 rounded-full bg-emerald-600 animate-pulse" />
                 <span>{content.badgeTop}</span>
               </div>
 
-              <h1 className="demo-h1 font-[family-name:var(--font-jakarta)] font-extrabold text-stone-900">
+              <h1 className="demo-h1 font-[family-name:var(--font-jakarta)] font-extrabold text-stone-900 tracking-tight">
                 {content.heroHeadline}
               </h1>
 
-              <p className="demo-body text-stone-600">
+              <p className="demo-body text-stone-600 leading-relaxed text-base sm:text-lg">
                 {content.heroSubheadline}
               </p>
 
               {/* 3 Punti Chiave con spunta verde */}
               <ul className="space-y-3 pt-1">
                 {bullets.map((item, idx) => (
-                  <li
+                  <motion.li
                     key={idx}
+                    initial={{ opacity: 0, x: -10 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.35, delay: 0.1 + idx * 0.08 }}
                     className="flex items-start gap-3 text-[15px] sm:text-base font-medium text-stone-800"
                   >
                     <span className="w-5 h-5 rounded-full bg-emerald-600/12 text-emerald-700 flex items-center justify-center shrink-0 mt-0.5">
                       <Check className="w-3.5 h-3.5 stroke-[2.5]" />
                     </span>
                     <span>{item}</span>
-                  </li>
+                  </motion.li>
                 ))}
               </ul>
 
               {/* Box Recensioni Google Verificate */}
-              <div className="p-4 rounded-xl bg-white border border-stone-200 flex flex-wrap items-center justify-between gap-4">
+              <div className="p-4 rounded-xl bg-white border border-stone-200/90 shadow-2xs flex flex-wrap items-center justify-between gap-4">
                 <div className="flex items-center gap-3">
                   <div className="flex text-amber-500" aria-label="Valutazione 5 stelle">
                     {[...Array(5)].map((_, i) => (
@@ -108,16 +121,22 @@ export default function LocalLeadGen({ data }: TemplateProps) {
                   </span>
                 </div>
                 <span className="text-xs font-medium text-stone-600">
-                  <strong className="text-stone-900">{content.socialProof.mainStatValue}</strong>{" "}
+                  <strong className="text-stone-900 font-bold">{content.socialProof.mainStatValue}</strong>{" "}
                   {content.socialProof.mainStatLabel}
                 </span>
               </div>
-            </div>
+            </motion.div>
 
-            {/* Colonna Destra: Simulatore Preventivo a 3 Step (Esclusivo per Local LeadGen) */}
-            <div id="preventivo-rapido" className="lg:col-span-6">
+            {/* Colonna Destra: Simulatore Preventivo a 3 Step */}
+            <motion.div
+              id="preventivo-rapido"
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.15 }}
+              className="lg:col-span-6"
+            >
               <InteractiveQuiz data={data} />
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
@@ -126,8 +145,14 @@ export default function LocalLeadGen({ data }: TemplateProps) {
       <section className="demo-section bg-white border-b border-stone-200">
         <div className="demo-container">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center mb-16">
-            <div className="lg:col-span-7">
-              <figure className="rounded-xl overflow-hidden border border-stone-200 bg-stone-100 demo-shadow">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.98 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true, margin: "-40px" }}
+              transition={{ duration: 0.45 }}
+              className="lg:col-span-7"
+            >
+              <figure className="rounded-xl overflow-hidden border border-stone-200 bg-stone-100 shadow-sm">
                 <img
                   src={content.heroImageLocalPath}
                   alt={`${meta.companyName} - Intervento a ${meta.city}`}
@@ -137,48 +162,71 @@ export default function LocalLeadGen({ data }: TemplateProps) {
                   className="w-full aspect-[16/10] object-cover"
                 />
                 {content.heroImageCaption && (
-                  <figcaption className="px-5 py-3 bg-white border-t border-stone-200 text-xs text-stone-600 font-medium">
-                    {content.heroImageCaption}
+                  <figcaption className="px-5 py-3 bg-white border-t border-stone-200 text-xs text-stone-600 font-medium flex items-center justify-between">
+                    <span>{content.heroImageCaption}</span>
+                    <span className="text-emerald-700 font-semibold flex items-center gap-1 text-[11px]">
+                      <Check className="w-3.5 h-3.5 stroke-[2.5]" /> Installazione Certificata
+                    </span>
                   </figcaption>
                 )}
               </figure>
-            </div>
+            </motion.div>
 
-            <div className="lg:col-span-5 space-y-4">
+            <motion.div
+              initial={{ opacity: 0, y: 15 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-40px" }}
+              transition={{ duration: 0.45, delay: 0.1 }}
+              className="lg:col-span-5 space-y-4"
+            >
               <span
                 style={{ color: "var(--primary)" }}
                 className="text-xs font-bold uppercase tracking-wider block"
               >
                 Presenza diretta a {meta.city}
               </span>
-              <h2 className="demo-h2 font-[family-name:var(--font-jakarta)] font-extrabold text-stone-900">
+              <h2 className="demo-h2 font-[family-name:var(--font-jakarta)] font-extrabold text-stone-900 leading-tight">
                 Un unico referente tecnico dal sopralluogo alla posa in opera
               </h2>
-              <p className="demo-body text-stone-600">
+              <p className="demo-body text-stone-600 leading-relaxed">
                 A differenza dei portali nazionali che rivendono la tua richiesta a più ditte esterne, gestiamo ogni intervento con i nostri tecnici interni, garantendo tempi certi e assistenza diretta sul territorio.
               </p>
               <div className="pt-2">
-                <a
+                <motion.a
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
                   href="#preventivo-rapido"
                   style={{ backgroundColor: "var(--accent)" }}
-                  className="demo-btn inline-flex items-center gap-2 px-5 py-3 rounded-lg text-white font-semibold text-sm"
+                  className="demo-btn inline-flex items-center gap-2 px-5 py-3 rounded-lg text-white font-semibold text-sm shadow-sm"
                 >
                   <span>Calcola il tuo preventivo in 30 secondi</span>
-                </a>
+                </motion.a>
               </div>
-            </div>
+            </motion.div>
           </div>
 
           {/* 3 Garanzie Operative */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {content.valueProps.map((prop, idx) => (
-              <div
+              <motion.div
                 key={idx}
-                className="p-7 rounded-xl bg-[#FAFAF9] border border-stone-200 flex flex-col justify-between"
+                initial={{ opacity: 0, y: 15 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-40px" }}
+                transition={{ duration: 0.4, delay: idx * 0.1 }}
+                whileHover={{ y: -4, transition: { duration: 0.2 } }}
+                className="p-7 rounded-xl bg-[#FAFAF9] border border-stone-200/90 shadow-2xs flex flex-col justify-between"
               >
                 <div>
-                  <div className="w-10 h-10 rounded-lg bg-white border border-stone-200 flex items-center justify-center mb-5 text-stone-800">
-                    <ShieldCheck className="w-5 h-5" style={{ color: "var(--primary)" }} />
+                  <div className="flex items-center justify-between mb-5">
+                    <div className="w-10 h-10 rounded-lg bg-white border border-stone-200 flex items-center justify-center text-stone-800 shadow-2xs">
+                      <ShieldCheck className="w-5 h-5" style={{ color: "var(--primary)" }} />
+                    </div>
+                    {prop.metric && (
+                      <span className="text-xs font-bold px-2.5 py-1 rounded bg-stone-100 border border-stone-200 text-stone-800 font-mono">
+                        {prop.metric}
+                      </span>
+                    )}
                   </div>
                   <h3 className="demo-h3 font-[family-name:var(--font-jakarta)] font-bold text-stone-900 mb-2.5">
                     {prop.title}
@@ -192,13 +240,13 @@ export default function LocalLeadGen({ data }: TemplateProps) {
                   <Check className="w-4 h-4 stroke-[2.5]" />
                   <span>Garanzia scritta inclusa nel preventivo</span>
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Recensioni dei Clienti della Zona */}
+      {/* Recensioni dei Clienti della Zona - NO STOCK BULLSHIT */}
       <section className="demo-section bg-[#FAFAF9]">
         <div className="demo-container">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
@@ -207,14 +255,14 @@ export default function LocalLeadGen({ data }: TemplateProps) {
                 style={{ color: "var(--primary)" }}
                 className="text-xs font-bold uppercase tracking-wider block mb-2"
               >
-                Recensioni Verificate
+                Esperienze Reali sul Territorio
               </span>
               <h2 className="demo-h2 font-[family-name:var(--font-jakarta)] font-extrabold text-stone-900">
                 Cosa dicono i clienti di {meta.city} e provincia
               </h2>
             </div>
 
-            <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-lg bg-white border border-stone-200 text-sm font-semibold text-stone-900">
+            <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-lg bg-white border border-stone-200 text-sm font-semibold text-stone-900 shadow-2xs">
               <div className="flex text-amber-500">
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} className="w-4 h-4 fill-amber-500" />
@@ -226,27 +274,39 @@ export default function LocalLeadGen({ data }: TemplateProps) {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {content.socialProof.testimonials.map((t, idx) => (
-              <article
+              <motion.article
                 key={idx}
-                className="p-7 rounded-xl bg-white border border-stone-200 demo-shadow flex flex-col justify-between"
+                initial={{ opacity: 0, y: 15 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-40px" }}
+                transition={{ duration: 0.4, delay: idx * 0.1 }}
+                whileHover={{ y: -3, transition: { duration: 0.2 } }}
+                className="p-7 rounded-xl bg-white border border-stone-200/90 shadow-2xs flex flex-col justify-between"
               >
                 <div>
-                  <div className="flex text-amber-500 mb-4">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="w-4 h-4 fill-amber-500" />
-                    ))}
+                  <div className="flex items-center justify-between mb-4">
+                    <div className="flex text-amber-500">
+                      {[...Array(5)].map((_, i) => (
+                        <Star key={i} className="w-4 h-4 fill-amber-500" />
+                      ))}
+                    </div>
+                    {t.roleOrContext && (
+                      <span className="text-[11px] font-semibold text-emerald-800 bg-emerald-50 border border-emerald-200/70 px-2 py-0.5 rounded">
+                        {t.roleOrContext}
+                      </span>
+                    )}
                   </div>
-                  <p className="text-[15px] text-stone-700 leading-relaxed mb-6">
+                  <p className="text-[15px] text-stone-700 leading-relaxed mb-6 font-normal">
                     &ldquo;{t.quote}&rdquo;
                   </p>
                 </div>
                 <div className="pt-4 border-t border-stone-100 flex items-center justify-between text-xs">
                   <strong className="text-stone-900 font-bold">{t.name}</strong>
-                  <span className="text-stone-500 flex items-center gap-1">
-                    <MapPin className="w-3.5 h-3.5" /> {t.location}
+                  <span className="text-stone-500 flex items-center gap-1 font-medium">
+                    <MapPin className="w-3.5 h-3.5 text-stone-400" /> {t.location}
                   </span>
                 </div>
-              </article>
+              </motion.article>
             ))}
           </div>
         </div>

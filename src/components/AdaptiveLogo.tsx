@@ -22,6 +22,7 @@ export default function AdaptiveLogo({
   onContrastDetected,
 }: AdaptiveLogoProps) {
   const [hasError, setHasError] = useState(false);
+  // Inizializza con la prop se presente, ma consentiamo all'analisi pixel di correggere
   const [isLightLogo, setIsLightLogo] = useState<boolean>(logoBrightness === "light");
   const imgRef = useRef<HTMLImageElement>(null);
 
@@ -29,16 +30,11 @@ export default function AdaptiveLogo({
     if (logoBrightness === "light") {
       setIsLightLogo(true);
       onContrastDetected?.(true);
-    } else if (logoBrightness === "dark") {
-      setIsLightLogo(false);
-      onContrastDetected?.(false);
     }
   }, [logoBrightness, onContrastDetected]);
 
-  // Se non specificato esplicitamente, analizza il contrasto reale dell'immagine caricata
+  // Analizza i pixel reali dell'immagine per rilevare elementi bianchi/chiari su sfondo trasparente
   const handleImageLoad = () => {
-    if (logoBrightness) return; // Priorità alla configurazione salvata
-
     try {
       const img = imgRef.current;
       if (!img || img.naturalWidth === 0) return;
@@ -47,7 +43,7 @@ export default function AdaptiveLogo({
       const ctx = canvas.getContext("2d", { willReadFrequently: true });
       if (!ctx) return;
 
-      // Campiona a risoluzione ridotta per efficienza
+      // Campiona a 64x32 per accuratezza e leggerezza
       const sampleWidth = Math.min(64, img.naturalWidth);
       const sampleHeight = Math.min(32, img.naturalHeight);
       canvas.width = sampleWidth;
@@ -58,30 +54,46 @@ export default function AdaptiveLogo({
 
       let totalLum = 0;
       let visiblePixels = 0;
+      let whitePixels = 0;
+      let transparentPixels = 0;
 
       for (let i = 0; i < imgData.length; i += 4) {
         const a = imgData[i + 3];
-        // Considera solo pixel non trasparenti
-        if (a > 35) {
+        if (a < 35) {
+          transparentPixels++;
+        } else {
+          visiblePixels++;
           const r = imgData[i];
           const g = imgData[i + 1];
           const b = imgData[i + 2];
-          // Formula standard di luminanza percepita
           const lum = (0.299 * r + 0.587 * g + 0.114 * b) / 255;
           totalLum += lum;
-          visiblePixels++;
+          if (lum > 0.82) {
+            whitePixels++;
+          }
         }
       }
 
       if (visiblePixels > 0) {
         const avgLum = totalLum / visiblePixels;
-        // Se la luminanza media dei pixel visibili supera 0.60, il logo è prevalentemente chiaro/bianco
-        const detectedLight = avgLum > 0.60;
-        setIsLightLogo(detectedLight);
-        onContrastDetected?.(detectedLight);
+        const whiteRatio = whitePixels / visiblePixels;
+        const isTransparent = transparentPixels / (sampleWidth * sampleHeight) > 0.15;
+
+        // Rileva come "light" (cioè necessita sfondo scuro) se:
+        // 1. Ha elementi bianchi (>12%) su trasparenza (es. scritte/cornici bianche)
+        // 2. Oppure la luminanza media supera 0.60
+        const detectedLight = (isTransparent && whiteRatio > 0.12) || avgLum > 0.60;
+
+        if (detectedLight) {
+          setIsLightLogo(true);
+          onContrastDetected?.(true);
+        } else if (logoBrightness !== "light") {
+          setIsLightLogo(false);
+          onContrastDetected?.(false);
+        }
       }
     } catch {
-      // In caso di limitazioni CORS locali, mantieni fallback
+      // In caso di limitazioni browser/CORS locali, mantieni fallback
     }
   };
 
@@ -93,8 +105,9 @@ export default function AdaptiveLogo({
     );
   }
 
-  // Se l'header è in modalità scura, il logo chiaro è già perfetto.
-  // Se invece l'header è chiaro e il logo è chiaro/bianco, incapsuliamo il logo in un contenitore ad alto contrasto.
+  // Se l'header è scuro, il logo con elementi chiari risalta già magnificamente.
+  // Se invece l'header è chiaro e il logo contiene elementi bianchi/chiari,
+  // incapsuliamo il logo in un contenitore scuro ad alto contrasto per non renderli invisibili.
   const needsContrastPill = isLightLogo && headerBgMode !== "dark";
 
   if (needsContrastPill) {
@@ -105,6 +118,7 @@ export default function AdaptiveLogo({
           src={src}
           alt={alt}
           crossOrigin="anonymous"
+          onLoad={handleImageLoad}
           onError={() => setHasError(true)}
           className={`${className} filter drop-shadow-[0_1px_2px_rgba(0,0,0,0.5)]`}
         />

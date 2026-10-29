@@ -230,9 +230,11 @@ export async function runTrueMobileAuditAndScreenshot(url, screenshotPath, waitM
     });
 
     if (screenshotPath) {
+      await send('Runtime.evaluate', { expression: 'window.scrollTo(0, 0);' });
+      await new Promise((r) => setTimeout(r, 800));
       const shot = await send('Page.captureScreenshot', {
         format: 'png',
-        clip: { x: 0, y: 0, width: 390, height: 844, scale: 1 },
+        captureBeyondViewport: false,
       });
       fs.writeFileSync(screenshotPath, Buffer.from(shot.data, 'base64'));
     }

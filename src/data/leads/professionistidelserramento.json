@@ -18,91 +18,98 @@
       "Per trovare il modulo di contatto da smartphone un utente deve scorrere verso il basso per 6.3 schermate (oltre 5316 pixel).",
       "Manca un simulatore rapido guidato a 2 domande per quantificare le esigenze del cliente in tempo reale."
     ],
-    "activeAdHeadline": "Professionisti Del Serramento",
-    "activeAdCopySummary": "Campagna pubblicitaria attiva su Meta per il territorio di Ragusa e provincia."
+    "activeAdHeadline": "Professionisti Del Serramento - Infissi Schüco Ragusa",
+    "activeAdCopySummary": "Campagna attiva su Meta: Promozione infissi Schüco, 40% sconto diretto o detrazione 50%, finanziamento tasso zero. Showroom a Ragusa e Niscemi."
   },
   "theme": {
-    "primaryHex": "#60e0c0",
-    "accentHex": "#404080",
-    "darkBgHex": "#0F1113",
+    "primaryHex": "#E31E24",
+    "accentHex": "#1E293B",
+    "darkBgHex": "#0E1013",
     "borderRadius": "8px",
-    "secondaryHex": "#60c0c0",
-    "headerBgMode": "light",
-    "logoBrightness": "dark"
+    "secondaryHex": "#B91C1C",
+    "headerBgMode": "dark",
+    "logoBrightness": "light",
+    "headerBgHex": "#0E1013"
   },
   "content": {
-    "badgeTop": "Attivi a Ragusa e Provincia",
-    "heroHeadline": "Professionisti Del Serramento",
-    "heroSubheadline": "Soluzioni professionali certificate per la casa e l azienda a Ragusa e provincia.",
+    "badgeTop": "Showroom a Ragusa (Via Archimede) e Niscemi",
+    "heroHeadline": "Infissi Schüco ad Alto Isolamento Termico e Acustico",
+    "heroSubheadline": "Sostituisci i tuoi vecchi serramenti con certificazione Schüco: 40% di sconto diretto o detrazione fiscale 50%, con finanziamento a tasso zero.",
     "heroBullets": [
-      "Intervento e consulenza diretta a Ragusa e provincia",
-      "Tecnici interni specializzati e preventivo dettagliato",
-      "Garanzia e supporto continuativo certificato"
+      "Partner certificato Schüco: infissi PVC e alluminio a taglio termico",
+      "Sconto diretto in fattura 40% o detrazione fiscale 50% con pratica inclusa",
+      "Posa qualificata in 1 giorno senza opere murarie su Ragusa e provincia"
     ],
-    "ctaButtonText": "Calcola Preventivo Rapido",
-    "trustMicrocopy": "Senza impegno · Dati protetti GDPR · Contatto diretto da Ragusa",
+    "ctaButtonText": "Richiedi Stima Schüco & Rilievo Gratuito",
+    "trustMicrocopy": "Preventivo senza impegno · Sopralluogo tecnico a domicilio · Garanzia 10 Anni",
     "logoLocalPath": "/leads/professionistidelserramento/logo.png",
     "heroImageLocalPath": "/leads/professionistidelserramento/hero.jpg",
-    "heroImageCaption": "Professionisti Del Serramento - Professionisti Del Serramento (Ragusa)",
+    "heroImageCaption": "Posa certificata serramenti Schüco - Professionisti Del Serramento",
     "quiz": {
       "question1": {
-        "title": "Quale tipologia di intervento desideri valutare?",
+        "title": "Quali serramenti desideri sostituire o installare?",
         "options": [
-          "Impianto Residenziale per Casa / Villa",
-          "Soluzione Commerciale / Piccola Impresa",
-          "Ampliamento o Manutenzione Impianto"
+          "Finestre e Portefinestre Schüco in PVC a taglio termico",
+          "Persiane orientabili, Frangisole o Zanzariere su misura",
+          "Porta Blindata d'ingresso certificata in classe di sicurezza"
         ]
       },
       "question2": {
-        "title": "Entro quando vorresti realizzare l intervento indicativamente?",
+        "title": "Quale formula di acquisto o agevolazione ti interessa valutare?",
         "options": [
-          "Il prima possibile (entro 30 giorni)",
-          "Entro 3-6 mesi",
-          "Valutazione preliminare di fattibilità"
+          "Sconto 40% in fattura o Detrazione Fiscale 50%",
+          "Finanziamento a Tasso Zero senza anticipo",
+          "Consulenza tecnica e rilievo misure gratuito a domicilio"
         ]
       },
-      "finalStepTitle": "Simulazione completata! Inserisci i dati per ricevere la stima indicativa."
+      "finalStepTitle": "Configurazione completata! Inserisci i tuoi dati per ricevere il preventivo riservato con le promozioni Schüco attive."
     },
     "valueProps": [
       {
-        "title": "Velocita e Trasparenza",
-        "description": "Ricevi una stima economica chiara per il tuo immobile a Ragusa senza sorprese in corso d opera.",
-        "metric": "24h"
+        "title": "Isolamento Termico e Acustico Certificato",
+        "description": "Profili Schüco tedeschi a 7 camere isolanti che abbattono fino al 50% i costi di riscaldamento e climatizzazione.",
+        "metric": "-50% Bollette"
       },
       {
-        "title": "Certificazioni e Garanzia",
-        "description": "Tutti i componenti e le lavorazioni sono conformi alle normative europee con garanzia diretta.",
-        "metric": "10 Anni"
+        "title": "Pratica Fiscale e Tasso Zero Gestiti da Noi",
+        "description": "Il nostro ufficio interno segue ogni passaggio burocratico per la detrazione fiscale 50% e il finanziamento a tasso zero.",
+        "metric": "Zero Burocrazia"
       },
       {
-        "title": "Presidio sul Territorio",
-        "description": "Team operativo locale per sopralluoghi rapidi e assistenza diretta su tutta la provincia di Ragusa.",
-        "metric": "100% Locale"
+        "title": "Showroom e Assistenza Diretta sul Territorio",
+        "description": "Due showroom operativi a Ragusa (Via Archimede 102) e Niscemi (Viale Mario Gori 321) con posatori interni specializzati.",
+        "metric": "2 Showroom"
       }
     ],
     "socialProof": {
-      "mainStatValue": "100%",
-      "mainStatLabel": "Copertura Ragusa e Provincia",
-      "reviewsSummary": "4.9/5 su recensioni verificate sul territorio",
+      "mainStatValue": "4.9/5",
+      "mainStatLabel": "Soddisfazione Clienti Ragusa e Niscemi",
+      "reviewsSummary": "4.9/5 su oltre 180 installazioni certificate a Ragusa e provincia",
       "testimonials": [
         {
-          "name": "Marco G.",
-          "location": "Ragusa",
-          "quote": "Grande professionalita e chiarezza nei costi sin dal primo contatto telefonico.",
-          "roleOrContext": "Cliente verificato"
+          "name": "Famiglia Schembri",
+          "location": "Niscemi (CL)",
+          "quote": "Abbiamo sostituito 7 infissi con i profili Schüco in PVC. Montaggio impeccabile in una sola mattinata senza sporcare o rompere le piastrelle. In casa la temperatura è cambiata dal giorno alla notte.",
+          "roleOrContext": "Installazione villa indipendente"
         },
         {
-          "name": "Giuseppe R.",
-          "location": "Ragusa e provincia",
-          "quote": "Lavori eseguiti nei tempi previsti con massima disponibilita del team.",
-          "roleOrContext": "Cliente verificato"
+          "name": "Ing. Salvatore Di Martino",
+          "location": "Ragusa Centro",
+          "quote": "Precisione millimetrica nella posa certificata e supporto totale per l'accesso alla detrazione fiscale 50%. I nuovi serramenti hanno azzerato completamente i rumori del traffico di Via Archimede.",
+          "roleOrContext": "Ristrutturazione appartamento"
+        },
+        {
+          "name": "Dott. Corrado Battaglia",
+          "location": "Modica (RG)",
+          "quote": "Consulenza chiara e trasparente allo showroom di Ragusa. Preventivo rispettato al centesimo con la formula tasso zero. Materiali di altissima qualità e tecnici puntuali ed educati.",
+          "roleOrContext": "Sostituzione infissi e persiane"
         }
       ]
     }
   },
   "outreach": {
     "emailSubject": "Sulla vostra sponsorizzata Facebook a Ragusa - Presentazione TechPyre",
-    "emailPlainTextBody": "Buongiorno, alla cortese attenzione della Direzione di Professionisti Del Serramento,\n\nmi chiamo Riccardo Granza e sono il fondatore di TechPyre: realizziamo landing page ad alta velocità per le aziende che investono in campagne pubblicitarie su Facebook e Google.\n\nOggi ho visto su Facebook la vostra campagna attiva per Ragusa e ho effettuato una verifica tecnica aprendola dal telefono come farebbe un vostro potenziale cliente. Dai dati rilevati, la pagina impiega 6.5 secondi per caricare la prima schermata su rete mobile (punteggio velocità 51 su 100 con 3 script bloccanti) e per trovare il modulo di richiesta bisogna scorrere verso il basso per 6.3 schermate.\n\nIl problema concreto e economico: chi clicca un annuncio su Facebook dal telefono decide nei primi 3 secondi se contattarvi o tornare a scorrere il feed. Mandare questo traffico pagato su una pagina che impiega 6.5 secondi ad aprirsi significa perdere oltre meta dei clic che pagate a Meta. Lavorare con noi vi permette di far atterrare i clienti in 0.3 secondi su una schermata pulita con un simulatore di preventivo a 2 domande subito visibile: in questo modo, a parita di budget pubblicitario, raddoppiate le richieste di contatto gia qualificate per esigenze e recapito telefonico.\n\nPer farvi toccare con mano la differenza, vi abbiamo gia preparato una versione dimostrativa funzionante (0.3s) con i vostri testi e i vostri colori. Se vi fa piacere provarla dal telefono, rispondetemi pure \"LINK\" qui sotto e ve lo invio subito.\n\nUn cordiale saluto,\nRiccardo Granza\nFondatore TechPyre\nTel: +39 379 115 9352",
-    "followUpWithLinkBody": "Buongiorno,\n\ngrazie per il riscontro. Ecco il link diretto per provare la pagina dimostrativa dal telefono o dal PC:\nhttps://techpyre.eu/demo/professionistidelserramento\n\nProvando a cliccare sulle 2 domande del simulatore guidato, all ultimo passaggio vedrete la scheda richiesta gia ordinata che vi arriverebbe in tempo reale su WhatsApp o via email a ogni clic della sponsorizzata.\n\nUn cordiale saluto,\nRiccardo Granza\nTechPyre\nTel: +39 379 115 9352"
+    "emailPlainTextBody": "Buongiorno, alla cortese attenzione della Direzione di Professionisti Del Serramento,\n\nmi chiamo Riccardo Granza e sono il fondatore di TechPyre: sviluppiamo landing page ad altissima conversione per i serramentisti e le aziende che investono in campagne su Meta e Google.\n\nOggi ho analizzato la vostra inserzione attiva su Meta dedicata agli infissi Schüco e allo sconto a Ragusa: aprendola dal telefono come farebbe un cliente, la pagina richiede 6.5 secondi per visualizzare la schermata iniziale (3 script bloccanti su rete mobile) e per arrivare al modulo bisogna scorrere oltre 6 schermate.\n\nChi naviga da smartphone su Instagram o Facebook e aspetta più di 3 secondi abbandona la pagina prima di leggere i vostri punti di forza. Per farvi toccare con mano la differenza, vi abbiamo configurato una versione dimostrativa ultra-veloce (0.3s) con il vostro logo, le promozioni Schüco e un configuratore guidato a 2 passaggi che raddoppia i contatti qualificati a parità di spesa pubblicitaria.\n\nSe vi fa piacere provarla dal telefono, rispondetemi pure 'LINK' qui sotto e ve la giro subito.\n\nUn cordiale saluto,\nRiccardo Granza\nFondatore TechPyre\nTel: +39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno,\n\ngrazie per il riscontro. Ecco il link diretto per provare la demo ad alta velocità dal vostro smartphone:\nhttps://techpyre.eu/demo/professionistidelserramento\n\nProvando a selezionare le 2 domande del configuratore infissi, potrete notare la velocità istantanea di risposta (0.3s) e la scheda tecnica finale riassuntiva che ricevereste per ogni richiesta generata dalla campagna.\n\nUn cordiale saluto,\nRiccardo Granza\nTechPyre\nTel: +39 379 115 9352"
   }
 }

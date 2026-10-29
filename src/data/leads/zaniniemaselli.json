@@ -28,8 +28,9 @@
     "darkBgHex": "#0F1113",
     "borderRadius": "8px",
     "secondaryHex": "#608040",
-    "headerBgMode": "light",
-    "logoBrightness": "dark"
+    "headerBgMode": "dark",
+    "logoBrightness": "light",
+    "headerBgHex": "#0E1013"
   },
   "content": {
     "badgeTop": "Pompe di Calore & Efficienza a Brescia",
