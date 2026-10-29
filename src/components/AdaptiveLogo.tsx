@@ -22,18 +22,21 @@ export default function AdaptiveLogo({
   onContrastDetected,
 }: AdaptiveLogoProps) {
   const [hasError, setHasError] = useState(false);
-  // Inizializza con la prop se presente, ma consentiamo all'analisi pixel di correggere
   const [isLightLogo, setIsLightLogo] = useState<boolean>(logoBrightness === "light");
+  const [hasWhiteCanvasBg, setHasWhiteCanvasBg] = useState<boolean>(false);
   const imgRef = useRef<HTMLImageElement>(null);
 
   useEffect(() => {
     if (logoBrightness === "light") {
       setIsLightLogo(true);
       onContrastDetected?.(true);
+    } else if (logoBrightness === "dark") {
+      setIsLightLogo(false);
+      onContrastDetected?.(false);
     }
   }, [logoBrightness, onContrastDetected]);
 
-  // Analizza i pixel reali dell'immagine per rilevare elementi bianchi/chiari su sfondo trasparente
+  // Analizza i pixel reali dell'immagine per rilevare elementi bianchi su trasparenza vs canvas bianco pieno
   const handleImageLoad = () => {
     try {
       const img = imgRef.current;
@@ -43,7 +46,6 @@ export default function AdaptiveLogo({
       const ctx = canvas.getContext("2d", { willReadFrequently: true });
       if (!ctx) return;
 
-      // Campiona a 64x32 per accuratezza e leggerezza
       const sampleWidth = Math.min(64, img.naturalWidth);
       const sampleHeight = Math.min(32, img.naturalHeight);
       canvas.width = sampleWidth;
@@ -52,7 +54,6 @@ export default function AdaptiveLogo({
       ctx.drawImage(img, 0, 0, sampleWidth, sampleHeight);
       const imgData = ctx.getImageData(0, 0, sampleWidth, sampleHeight).data;
 
-      let totalLum = 0;
       let visiblePixels = 0;
       let whitePixels = 0;
       let transparentPixels = 0;
@@ -67,33 +68,38 @@ export default function AdaptiveLogo({
           const g = imgData[i + 1];
           const b = imgData[i + 2];
           const lum = (0.299 * r + 0.587 * g + 0.114 * b) / 255;
-          totalLum += lum;
-          if (lum > 0.82) {
+          if (lum > 0.85) {
             whitePixels++;
           }
         }
       }
 
-      if (visiblePixels > 0) {
-        const avgLum = totalLum / visiblePixels;
-        const whiteRatio = whitePixels / visiblePixels;
-        const isTransparent = transparentPixels / (sampleWidth * sampleHeight) > 0.15;
+      const total = sampleWidth * sampleHeight;
+      const transRatio = transparentPixels / total;
+      const isTransparent = transRatio > 0.15;
+      const whiteRatio = visiblePixels > 0 ? (whitePixels / visiblePixels) : 0;
 
-        // Rileva come "light" (cioè necessita sfondo scuro) se:
-        // 1. Ha elementi bianchi (>12%) su trasparenza (es. scritte/cornici bianche)
-        // 2. Oppure la luminanza media supera 0.60
-        const detectedLight = (isTransparent && whiteRatio > 0.12) || avgLum > 0.60;
+      // Se l'immagine NON è trasparente ma prevalentemente bianca (es. logo con canvas bianco),
+      // è un'immagine con sfondo bianco solido. Su header chiaro applichiamo mix-blend-multiply per fonderla al 100%.
+      if (!isTransparent && whiteRatio > 0.60) {
+        setHasWhiteCanvasBg(true);
+        setIsLightLogo(false);
+        onContrastDetected?.(false);
+        return;
+      }
 
-        if (detectedLight) {
-          setIsLightLogo(true);
-          onContrastDetected?.(true);
-        } else if (logoBrightness !== "light") {
-          setIsLightLogo(false);
-          onContrastDetected?.(false);
-        }
+      // È un logo chiaro (che necessita sfondo scuro) SOLO SE ha elementi bianchi su sfondo trasparente
+      const detectedLight = isTransparent && whiteRatio > 0.15;
+
+      if (detectedLight) {
+        setIsLightLogo(true);
+        onContrastDetected?.(true);
+      } else if (logoBrightness !== "light") {
+        setIsLightLogo(false);
+        onContrastDetected?.(false);
       }
     } catch {
-      // In caso di limitazioni browser/CORS locali, mantieni fallback
+      // Fallback
     }
   };
 
@@ -105,9 +111,9 @@ export default function AdaptiveLogo({
     );
   }
 
-  // Se l'header è scuro, il logo con elementi chiari risalta già magnificamente.
-  // Se invece l'header è chiaro e il logo contiene elementi bianchi/chiari,
-  // incapsuliamo il logo in un contenitore scuro ad alto contrasto per non renderli invisibili.
+  // Se l'header è scuro e il logo ha elementi bianchi su trasparenza, si legge già benissimo.
+  // Se l'header è chiaro ma il logo ha elementi bianchi su trasparenza (es. scritte bianche),
+  // inseriamo il pill scuro.
   const needsContrastPill = isLightLogo && headerBgMode !== "dark";
 
   if (needsContrastPill) {
@@ -134,7 +140,7 @@ export default function AdaptiveLogo({
       crossOrigin="anonymous"
       onLoad={handleImageLoad}
       onError={() => setHasError(true)}
-      className={className}
+      className={`${className} ${hasWhiteCanvasBg && headerBgMode !== "dark" ? "mix-blend-multiply" : ""}`}
     />
   );
 }

@@ -71,17 +71,14 @@ function analyzePNG(filePath) {
         } else {
           visiblePixels++;
           const lum = (0.299 * r + 0.587 * g + 0.114 * b) / 255;
-          if (lum > 0.82) {
+          if (lum > 0.85) {
             whitePixels++;
-          } else if (lum < 0.25) {
+          } else if (lum < 0.30) {
             darkPixels++;
           } else {
-            // Saturated color tracking: check saturation
             const max = Math.max(r, g, b);
             const min = Math.min(r, g, b);
-            const delta = max - min;
-            if (delta > 35) {
-              // Quantize to 16-step palette
+            if (max - min > 30) {
               const qr = Math.round(r / 16) * 16;
               const qg = Math.round(g / 16) * 16;
               const qb = Math.round(b / 16) * 16;
@@ -99,7 +96,9 @@ function analyzePNG(filePath) {
     const whiteRatio = visiblePixels > 0 ? (whitePixels / visiblePixels) : 0;
     const darkRatio = visiblePixels > 0 ? (darkPixels / visiblePixels) : 0;
     const isTransparent = transparentRatio > 0.15;
-    const hasWhiteElements = (isTransparent && whiteRatio > 0.10) || (whiteRatio > 0.55);
+
+    // Ha elementi bianchi ONLY SE è trasparente e ha pixel bianchi significativi
+    const hasWhiteElements = isTransparent && (whiteRatio > 0.15);
 
     // Find top saturated color
     const sortedColors = Object.entries(colorBuckets).sort((a, b) => b[1] - a[1]);
@@ -115,8 +114,6 @@ function analyzePNG(filePath) {
       darkRatio,
       hasWhiteElements,
       dominantColor,
-      recommendedHeaderBgMode: hasWhiteElements ? "dark" : "light",
-      recommendedLogoBrightness: hasWhiteElements ? "light" : "dark"
     };
   } catch (e) {
     return null;
@@ -140,7 +137,9 @@ for (const file of files) {
       if (stats) {
         let changed = false;
 
-        if (stats.hasWhiteElements) {
+        const isMedical = json.archetype === "medical-clinic";
+
+        if (stats.hasWhiteElements && !isMedical) {
           if (json.theme.headerBgMode !== "dark" || json.theme.logoBrightness !== "light") {
             json.theme.headerBgMode = "dark";
             json.theme.headerBgHex = "#0E1013";
@@ -148,29 +147,47 @@ for (const file of files) {
             changed = true;
           }
         } else {
-          // Logo is dark / solid background
-          if (json.theme.headerBgMode === "dark" && stats.whiteRatio < 0.15 && stats.darkRatio > 0.40) {
+          // Logo ha grafica scura/colorata o è clinica medica: header chiaro per contrasto ottimale
+          if (json.theme.headerBgMode !== "light" || json.theme.logoBrightness !== "dark") {
             json.theme.headerBgMode = "light";
-            json.theme.headerBgHex = "#FFFFFF";
+            json.theme.headerBgHex = isMedical ? "#FAF8F5" : "#FFFFFF";
             json.theme.logoBrightness = "dark";
             changed = true;
           }
         }
 
-        // Special check for professionistidelserramento or logos with dominant brand color
+        // Special check per professionistidelserramento
         if (slug === "professionistidelserramento") {
           json.theme.headerBgMode = "dark";
           json.theme.headerBgHex = "#0E1013";
           json.theme.logoBrightness = "light";
-          json.theme.primaryHex = "#E31E24"; // Real red from the tie and brand
+          json.theme.primaryHex = "#E31E24";
           json.theme.accentHex = "#1E293B";
-          json.theme.secondaryHex = "#C4181D";
+          json.theme.secondaryHex = "#B91C1C";
+          changed = true;
+        }
+
+        // Special check per dottdugo
+        if (slug === "dottdugo") {
+          json.theme.headerBgMode = "light";
+          json.theme.headerBgHex = "#FAF8F5";
+          json.theme.logoBrightness = "dark";
+          json.theme.primaryHex = "#0088CC"; // Blu ciano clinico reale
+          json.theme.secondaryHex = "#0284C7";
+          json.theme.accentHex = "#0F766E";
+          json.content.heroHeadline = "Studio Odontoiatrico Dott. Sebastiano Donato D'Ugo";
+          json.content.heroSubheadline = "Specialisti in implantologia computer guidata, riabilitazione orale e ortodonzia invisibile a Palermo.";
+          json.content.heroBullets = [
+            "Direzione Sanitaria Dott. Sebastiano Donato D'Ugo (Iscr. Albo Odontoiatri Palermo n. 1432)",
+            "Prima visita approfondita con diagnosi digitale 3D e piano di cura dettagliato",
+            "Rateizzazioni a tasso zero e convenzioni dirette con i principali fondi sanitari"
+          ];
           changed = true;
         }
 
         if (changed) {
           fs.writeFileSync(filePath, JSON.stringify(json, null, 2), "utf-8");
-          console.log(`[UPDATE] ${slug}: headerBgMode=${json.theme.headerBgMode}, logoBrightness=${json.theme.logoBrightness}, whiteRatio=${Math.round(stats.whiteRatio * 100)}%`);
+          console.log(`[UPDATE] ${slug}: headerBgMode=${json.theme.headerBgMode}, logoBrightness=${json.theme.logoBrightness}, whiteRatio=${Math.round(stats.whiteRatio * 100)}%, transRatio=${Math.round(stats.transparentRatio * 100)}%`);
           updatedCount++;
         }
       }
@@ -180,4 +197,4 @@ for (const file of files) {
   }
 }
 
-console.log(`\nUpdated ${updatedCount} leads for dynamic logo contrast.`);
+console.log(`\nUpdated ${updatedCount} leads for refined logo contrast.`);

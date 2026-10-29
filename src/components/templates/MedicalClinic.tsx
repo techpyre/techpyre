@@ -64,7 +64,7 @@ export default function MedicalClinic({ data }: TemplateProps) {
   };
 
   return (
-    <div className="min-h-screen bg-[#FAF8F5] text-[#4A4642] font-[family-name:var(--font-jakarta)]">
+    <div className="min-h-screen bg-[#FAF8F5] text-[#4A4642] font-[family-name:var(--font-jakarta)] pb-28 md:pb-0">
       {/* Barra Informativa Superiore: Direzione Sanitaria, Albo e Orari */}
       <div className="bg-[#F3EFEA] border-b border-[#E5DFD6] text-xs text-[#57524E]">
         <div className="demo-container py-2 flex flex-wrap items-center justify-between gap-3">
@@ -86,18 +86,19 @@ export default function MedicalClinic({ data }: TemplateProps) {
 
       {/* Header Clinico con Navigazione e CTA Prenotazione */}
       <header
-        className={`sticky top-[37px] z-40 backdrop-blur-md border-b transition-colors ${
+        className={`sticky top-[29px] sm:top-[36px] z-40 backdrop-blur-md border-b transition-colors ${
           data.theme.headerBgMode === "dark"
             ? "bg-[#141A18]/95 text-white border-[#273531]"
             : "bg-[#FAF8F5]/95 text-[#4A4642] border-[#E5DFD6]"
         }`}
         style={data.theme.headerBgHex ? { backgroundColor: data.theme.headerBgHex } : undefined}
       >
-        <div className="demo-container h-20 flex items-center justify-between gap-4">
-          <div className="flex items-center gap-6">
+        <div className="demo-container h-16 sm:h-20 flex items-center justify-between gap-3 sm:gap-4">
+          <div className="flex items-center gap-3 sm:gap-6">
             <AdaptiveLogo
               src={content.logoLocalPath}
               alt={meta.companyName}
+              className="h-10 sm:h-12 w-auto max-w-[160px] sm:max-w-[210px] object-contain"
               headerBgMode={data.theme.headerBgMode}
               logoBrightness={data.theme.logoBrightness}
               fallbackName={meta.companyName}
@@ -116,7 +117,7 @@ export default function MedicalClinic({ data }: TemplateProps) {
             </nav>
           </div>
 
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2 sm:gap-3">
             <a
               href={`tel:${meta.phone.replace(/\s+/g, "")}`}
               className="hidden sm:inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-white border border-[#D6CFC5] text-[#1F2421] font-medium text-xs sm:text-sm hover:border-[#1F4E46] transition-colors"
@@ -126,7 +127,8 @@ export default function MedicalClinic({ data }: TemplateProps) {
             </a>
             <a
               href="#prenota-colloquio"
-              className="demo-btn inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#1F4E46] text-white font-medium text-xs sm:text-sm"
+              style={{ backgroundColor: "var(--primary, #1F4E46)" }}
+              className="demo-btn inline-flex items-center gap-1.5 sm:gap-2 px-3.5 py-2 sm:px-5 sm:py-2.5 rounded-full text-white font-medium text-xs sm:text-sm shadow-sm"
             >
               <Calendar className="w-3.5 h-3.5" strokeWidth={1.5} />
               <span>Prenota Prima Visita</span>
@@ -598,6 +600,28 @@ export default function MedicalClinic({ data }: TemplateProps) {
 
       {/* Footer Ufficiale con Firma TechPYRE */}
       <TechPyreFooter data={data} />
+
+      {/* Barra Fissa Mobile Clinica — Call To Action Potenziata ma Non Invasiva */}
+      <div className="fixed bottom-0 inset-x-0 z-40 md:hidden bg-[#FAF8F5]/95 backdrop-blur-md border-t border-[#E5DFD6] py-2.5 px-4 shadow-[0_-6px_24px_rgba(0,0,0,0.08)]">
+        <div className="grid grid-cols-12 gap-2.5 items-center">
+          <a
+            href={`tel:${meta.phone.replace(/\s+/g, "")}`}
+            className="col-span-4 flex items-center justify-center gap-1.5 py-3 px-2 rounded-xl bg-white hover:bg-stone-50 text-[#1F2421] font-semibold text-xs border border-[#D6CFC5] transition-colors active:scale-98"
+          >
+            <Phone className="w-3.5 h-3.5 text-[#1F4E46] shrink-0" />
+            <span>Chiama</span>
+          </a>
+
+          <a
+            href="#prenota-colloquio"
+            style={{ backgroundColor: "var(--primary, #1F4E46)" }}
+            className="col-span-8 flex items-center justify-center gap-2 py-3 px-3 rounded-xl text-white font-bold text-xs sm:text-sm shadow-md transition-all active:scale-98"
+          >
+            <Calendar className="w-4 h-4 shrink-0" />
+            <span className="truncate">Prenota Prima Visita</span>
+          </a>
+        </div>
+      </div>
     </div>
   );
 }

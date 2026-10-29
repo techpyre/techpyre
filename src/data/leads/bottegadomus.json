@@ -27,9 +27,9 @@
     "darkBgHex": "#0F1113",
     "borderRadius": "8px",
     "secondaryHex": "#208060",
-    "headerBgMode": "dark",
-    "logoBrightness": "light",
-    "headerBgHex": "#0E1013"
+    "headerBgMode": "light",
+    "logoBrightness": "dark",
+    "headerBgHex": "#FFFFFF"
   },
   "content": {
     "badgeTop": "Attivi a Torino e Provincia",

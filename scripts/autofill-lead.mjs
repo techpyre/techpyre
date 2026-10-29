@@ -13,6 +13,7 @@
 import fs from 'fs';
 import path from 'path';
 import zlib from 'zlib';
+import { cleanLogo } from './clean-scraped-logos.mjs';
 
 const [,, slug, archetypeArg] = process.argv;
 if (!slug) {
@@ -169,6 +170,9 @@ function analyzeLogoPixels(leadSlug) {
   const logoPath = path.join(process.cwd(), 'public', 'leads', leadSlug, 'logo.png');
   if (!fs.existsSync(logoPath)) return null;
 
+  // Pulisce preventivamente se il logo ha uno sfondo bianco solido grossolano
+  cleanLogo(logoPath);
+
   try {
     const buf = fs.readFileSync(logoPath);
     if (buf.length < 24 || buf.readUInt32BE(0) !== 0x89504E47) return null;
@@ -256,7 +260,8 @@ function analyzeLogoPixels(leadSlug) {
     const total = width * height;
     const isTransparent = transparentPixels / total > 0.15;
     const whiteRatio = visiblePixels > 0 ? (whitePixels / visiblePixels) : 0;
-    const hasWhiteElements = (isTransparent && whiteRatio > 0.10) || (whiteRatio > 0.55);
+    // Necessita header scuro ONLY SE è trasparente con elementi grafici/scritte prevalentemente bianche
+    const hasWhiteElements = isTransparent && (whiteRatio > 0.15);
     const sorted = Object.entries(colorBuckets).sort((a, b) => b[1] - a[1]);
     const dominantColor = sorted.length > 0 ? sorted[0][0] : null;
 
@@ -270,17 +275,17 @@ function analyzeLogoPixels(leadSlug) {
 }
 
 const logoAnalysis = analyzeLogoPixels(slug);
-const isWhiteOnTransparent = logoAnalysis?.hasWhiteElements || false;
-const brandPrimary = logoAnalysis?.dominantColor || (isMedical ? '#1F4E46' : isInfissi ? '#B91C1C' : '#1E3A8A');
+const isWhiteOnTransparent = isMedical ? false : (logoAnalysis?.hasWhiteElements || false);
+const brandPrimary = logoAnalysis?.dominantColor || (isMedical ? '#0088CC' : isInfissi ? '#B91C1C' : '#1E3A8A');
 
 const theme = {
   primaryHex: brandPrimary,
-  accentHex: '#1E293B',
+  accentHex: isMedical ? '#0F766E' : '#1E293B',
   darkBgHex: isWhiteOnTransparent ? '#0E1013' : '#0F1113',
   borderRadius: isMedical ? '12px' : '8px',
   secondaryHex: brandPrimary,
   headerBgMode: isWhiteOnTransparent ? 'dark' : 'light',
-  headerBgHex: isWhiteOnTransparent ? '#0E1013' : '#FFFFFF',
+  headerBgHex: isWhiteOnTransparent ? '#0E1013' : (isMedical ? '#FAF8F5' : '#FFFFFF'),
   logoBrightness: isWhiteOnTransparent ? 'light' : 'dark',
 };
 

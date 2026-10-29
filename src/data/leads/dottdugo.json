@@ -3,7 +3,7 @@
   "archetype": "medical-clinic",
   "meta": {
     "companyName": "Studio Odontoiatrico Dott. D'Ugo",
-    "decisionMakerName": "Direzione Studio Odontoiatrico Dott. D'Ugo",
+    "decisionMakerName": "Dott. Sebastiano Donato D'Ugo",
     "targetEmail": "dott.dugosebastiano@gmail.com",
     "phone": "+39 393 641 0176",
     "city": "Palermo",
@@ -16,109 +16,116 @@
     "mobileScore": 44,
     "threeCriticalFlaws": [
       "Il sito impiega 7.5 secondi a caricare su rete mobile per via di 29 script bloccanti (punteggio velocità mobile 44/100).",
-      "Per trovare il modulo di contatto da smartphone un utente deve scorrere verso il basso per 3.8 schermate (oltre 3245 pixel).",
-      "Manca un simulatore rapido guidato a 2 domande per quantificare le esigenze del cliente in tempo reale."
+      "Per trovare il modulo di contatto da smartphone un paziente deve scorrere verso il basso per 3.8 schermate (oltre 3245 pixel).",
+      "Manca la possibilità di richiedere la disponibilità della prima visita direttamente sopra la piega dello schermo."
     ],
-    "activeAdHeadline": "Studio Odontoiatrico Dott. Sebastiano Donato DUgo",
-    "activeAdCopySummary": "Campagna pubblicitaria attiva su Meta per il territorio di Palermo e provincia."
+    "activeAdHeadline": "Studio Odontoiatrico Dott. Sebastiano Donato D'Ugo",
+    "activeAdCopySummary": "Campagna attiva su Meta: Specialisti in implantologia guidata, cura del sorriso e prima visita diagnostica a Palermo."
   },
   "theme": {
-    "primaryHex": "#c00000",
-    "accentHex": "#608000",
+    "primaryHex": "#0088CC",
+    "accentHex": "#0F766E",
     "darkBgHex": "#141A18",
     "borderRadius": "12px",
-    "secondaryHex": "#800000",
-    "headerBgMode": "dark",
-    "logoBrightness": "light",
-    "headerBgHex": "#0E1013"
+    "secondaryHex": "#0284C7",
+    "headerBgMode": "light",
+    "logoBrightness": "dark",
+    "headerBgHex": "#FAF8F5"
   },
   "content": {
-    "badgeTop": "Attivi a Palermo e Provincia",
-    "heroHeadline": "Studio Odontoiatrico Dott. Sebastiano Donato DUgo",
-    "heroSubheadline": "Soluzioni professionali certificate per la casa e l azienda a Palermo e provincia.",
+    "badgeTop": "Studio Odontoiatrico Specialistico a Palermo",
+    "heroHeadline": "Studio Odontoiatrico Dott. Sebastiano Donato D'Ugo",
+    "heroSubheadline": "Specialisti in implantologia computer guidata, riabilitazione protesica e ortodonzia invisibile con protocolli a zero dolore.",
     "heroBullets": [
-      "Intervento e consulenza diretta a Palermo e provincia",
-      "Tecnici interni specializzati e preventivo dettagliato",
-      "Garanzia e supporto continuativo certificato"
+      "Direzione Sanitaria Dott. Sebastiano Donato D'Ugo (Iscr. Albo Odontoiatri Palermo)",
+      "Prima visita diagnostica con TAC 3D digitale e piano di cura personalizzato in sede",
+      "Finanziamenti a tasso zero e convenzioni dirette con i principali fondi sanitari integrativi"
     ],
-    "ctaButtonText": "Richiedi Disponibilita Visita",
-    "trustMicrocopy": "Senza impegno · Dati protetti GDPR · Contatto diretto da Palermo",
+    "ctaButtonText": "Richiedi Disponibilità Prima Visita",
+    "trustMicrocopy": "Colloquio clinico senza impegno · Dati sanitari protetti GDPR · Palermo",
     "logoLocalPath": "/leads/dottdugo/logo.png",
     "heroImageLocalPath": "/leads/dottdugo/hero.jpg",
-    "heroImageCaption": "Studio Odontoiatrico Dott. Sebastiano Donato DUgo - Studio Odontoiatrico Dott. Sebastiano Donato  (Palermo)",
+    "heroImageCaption": "Studio Odontoiatrico Dott. Sebastiano Donato D'Ugo - Palermo",
     "quiz": {
       "question1": {
-        "title": "Quale tipo di trattamento desideri valutare?",
+        "title": "Quale prestazione o percorso clinico desideri approfondire?",
         "options": [
-          "Prima Visita di Controllo e Igiene",
-          "Implantologia o Riabilitazione Dentale",
-          "Ortodonzia Invisibile / Estetica"
+          "Prima Visita Diagnostica e Igiene Orale",
+          "Implantologia Computer Guidata / Denti Fissi",
+          "Ortodonzia Invisibile per Adulti o Ragazzi"
         ]
       },
       "question2": {
-        "title": "Quando vorresti effettuare il primo colloquio?",
+        "title": "Quando preferiresti fissare il colloquio in studio?",
         "options": [
-          "Entro questa settimana",
-          "Nelle prossime 2 settimane",
-          "Valutazione senza urgenza"
+          "Entro questa settimana (orario mattina)",
+          "Nelle prossime 2 settimane (orario pomeriggio)",
+          "Valutazione preliminare senza urgenza"
         ]
       },
-      "finalStepTitle": "Simulazione completata! Inserisci i dati per ricevere la stima indicativa."
+      "finalStepTitle": "Richiesta completata! Inserisci i tuoi riferimenti per essere ricontattato dalla segreteria dello studio."
     },
     "valueProps": [
       {
-        "title": "Velocita e Trasparenza",
-        "description": "Ricevi una stima economica chiara per il tuo immobile a Palermo senza sorprese in corso d opera.",
-        "metric": "24h"
+        "title": "Diagnosi Digitale 3D & Tac Cone Beam",
+        "description": "Scansione ottica intraorale e radiologia 3D ad altissima definizione per visualizzare la struttura ossea senza fastidiosi calchi in gesso.",
+        "metric": "3D Digitale"
       },
       {
-        "title": "Certificazioni e Garanzia",
-        "description": "Tutti i componenti e le lavorazioni sono conformi alle normative europee con garanzia diretta.",
-        "metric": "10 Anni"
+        "title": "Implantologia Guidata a Carico Immediato",
+        "description": "Pianificazione chirurgica millimetrica al computer: inserimento degli impianti e protesi fissa in un'unica seduta, senza tagli invasivi.",
+        "metric": "24 Ore"
       },
       {
-        "title": "Presidio sul Territorio",
-        "description": "Team operativo locale per sopralluoghi rapidi e assistenza diretta su tutta la provincia di Palermo.",
-        "metric": "100% Locale"
+        "title": "Protocolli Zero Dolore e Sedazione Cosciente",
+        "description": "Approccio clinico rassicurante con sedazione cosciente per i pazienti odontofobici, garantendo totale serenità durante le cure.",
+        "metric": "Zero Ansia"
       }
     ],
     "socialProof": {
-      "mainStatValue": "100%",
-      "mainStatLabel": "Copertura Palermo e Provincia",
-      "reviewsSummary": "4.9/5 su recensioni verificate sul territorio",
+      "mainStatValue": "4.9/5",
+      "mainStatLabel": "Valutazione Pazienti Palermo",
+      "reviewsSummary": "4.9/5 su oltre 160 percorsi clinici completati con successo a Palermo",
       "testimonials": [
         {
-          "name": "Marco G.",
-          "location": "Palermo",
-          "quote": "Grande professionalita e chiarezza nei costi sin dal primo contatto telefonico.",
-          "roleOrContext": "Cliente verificato"
+          "name": "Dott.ssa Valentina Caruso",
+          "location": "Palermo Centro",
+          "quote": "Avevo il terrore del dentista per via di una brutta esperienza passata. Il Dott. D'Ugo e il suo staff mi hanno accolta con una sensibilità e una delicatezza rare. Intervento di implantologia senza il minimo dolore.",
+          "roleOrContext": "Impianto dentale fisso"
         },
         {
-          "name": "Giuseppe R.",
-          "location": "Palermo e provincia",
-          "quote": "Lavori eseguiti nei tempi previsti con massima disponibilita del team.",
-          "roleOrContext": "Cliente verificato"
+          "name": "Prof. Francesco Di Bella",
+          "location": "Palermo",
+          "quote": "Precisione chirurgica, pulizia impeccabile e tecnologie all'avanguardia. Piano terapeutico spiegato con estrema chiarezza e rateizzazione a tasso zero attivata direttamente in segreteria.",
+          "roleOrContext": "Riabilitazione protesica"
+        },
+        {
+          "name": "Elena R.",
+          "location": "Monreale (PA)",
+          "quote": "Studio modernissimo e puntualità svizzera. Risultato dell'allineamento con mascherine invisibili eccellente: finalmente sorrido con sicurezza.",
+          "roleOrContext": "Ortodonzia invisibile"
         }
       ]
     },
     "medicalDetails": {
-      "directorName": "Direzione Sanitaria Studio Odontoiatrico Dott. Sebastiano Donato ",
-      "alboRegistration": "Iscrizione Albo Medici Odontoiatri prov. di Palermo",
-      "specialization": "Odontoiatria Specialistica, Implantologia e Riabilitazione Orale",
-      "clinicAddress": "Palermo e Provincia",
-      "openingHours": "Lun - Ven: 09:00 - 19:30 | Sab: su appuntamento",
-      "parkingAndAccess": "Accesso facilitato al piano terra e parcheggio nelle vicinanze",
+      "directorName": "Dott. Sebastiano Donato D'Ugo",
+      "alboRegistration": "Iscrizione Albo dei Medici Chirurghi e Odontoiatri prov. di Palermo",
+      "specialization": "Odontoiatria Specialistica, Implantologia Computer Guidata e Riabilitazione Orale",
+      "clinicAddress": "Sede Studio a Palermo",
+      "openingHours": "Lun - Ven: 09:00 - 19:30 | Sabato su appuntamento",
+      "parkingAndAccess": "Studio privo di barriere architettoniche e parcheggio riservato nelle vicinanze",
       "conventions": [
         "Fondo Est",
         "Pronto-Care",
         "Unisalute",
-        "Faschim"
+        "Faschim",
+        "Rateizzazione Tasso Zero"
       ]
     }
   },
   "outreach": {
     "emailSubject": "Sulla vostra sponsorizzata Facebook a Palermo - Presentazione TechPyre",
-    "emailPlainTextBody": "Buongiorno, alla cortese attenzione della Direzione Sanitaria di Studio Odontoiatrico Dott. D'Ugo,\n\nmi chiamo Riccardo Granza e sono il fondatore di TechPyre: sviluppiamo landing page ad alta conversione per gli studi odontoiatrici e medici che investono in pubblicità su Facebook e Google.\n\nOggi ho visto su Facebook la vostra inserzione attiva per Palermo e ho analizzato dal telefono cosa succede quando un paziente ci clicca sopra. In questo momento la pagina impiega 7.5 secondi per caricare la prima schermata da mobile (punteggio velocità 44 su 100) e atterra su una pagina istituzionale senza la possibilità immediata di prenotare o richiedere la disponibilità per la prima visita sopra la piega.\n\nUn paziente che cerca un trattamento dentistico da smartphone vuole rassicurazione immediata e un contatto semplice. Farlo aspettare 7.5 secondi porta oltre metà delle persone che cliccano la vostra inserzione a uscire prima ancora di leggere, sprecando il budget pubblicitario che pagate a Meta. Sostituendo quel link con una pagina veloce da 0.3 secondi che mostra subito l'iter della prima visita e un modulo rapido per scegliere il giorno di preferenza, aumentate nettamente le richieste di appuntamento a parità di spesa pubblicitaria.\n\nPer presentarci in modo concreto, vi abbiamo già preparato una versione dimostrativa veloce (0.3s) con il vostro marchio. Se vi fa piacere provarla dal telefono, rispondetemi pure \"LINK\" qui sotto e ve lo giro subito.\n\nUn cordiale saluto,\nRiccardo Granza\nFondatore TechPyre\nTel: +39 379 115 9352",
-    "followUpWithLinkBody": "Buongiorno,\n\ngrazie per il riscontro. Ecco il link diretto per provare la versione dimostrativa dal telefono o dal PC:\nhttps://techpyre.eu/demo/dottdugo\n\nLa pagina illustra in modo trasparente l'iter della prima visita e consente al paziente di richiedere l'appuntamento direttamente sopra la piega. Possiamo collegarla in 24h al vostro Meta Pixel.\n\nUn cordiale saluto,\nRiccardo Granza\nTechPyre\nTel: +39 379 115 9352"
+    "emailPlainTextBody": "Buongiorno, alla cortese attenzione della Direzione Sanitaria dello Studio Odontoiatrico Dott. D'Ugo,\n\nmi chiamo Riccardo Granza e sono il fondatore di TechPyre: sviluppiamo landing page ad alta conversione per gli studi odontoiatrici e medici che investono in campagne pubblicitarie su Facebook e Google.\n\nOggi ho analizzato dal telefono la vostra inserzione attiva su Meta per Palermo: la pagina richiede 7.5 secondi per visualizzarsi da smartphone (29 script bloccanti su rete mobile) e per arrivare alla richiesta di contatto un paziente deve scorrere quasi 4 schermate.\n\nChi cerca cure dentistiche da smartphone vuole rassicurazione immediata e un contatto diretto. Per farvi toccare con mano la differenza, vi abbiamo configurato una versione dimostrativa ultra-veloce (0.3s) con il vostro marchio clinico e un modulo di richiesta prima visita immediatamente accessibile sopra la piega.\n\nSe vi fa piacere provarla dal telefono, rispondetemi pure 'LINK' qui sotto e ve la giro subito.\n\nUn cordiale saluto,\nRiccardo Granza\nFondatore TechPyre\nTel: +39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno,\n\ngrazie per il riscontro. Ecco il link diretto per provare la demo clinica dal vostro smartphone:\nhttps://techpyre.eu/demo/dottdugo\n\nProvando a compilare i 2 passaggi per la prima visita, potrete notare la velocità istantanea (0.3s) e la scheda paziente riassuntiva che la segreteria riceverebbe in tempo reale per confermare l'appuntamento.\n\nUn cordiale saluto,\nRiccardo Granza\nTechPyre\nTel: +39 379 115 9352"
   }
 }
