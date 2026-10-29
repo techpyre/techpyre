@@ -22,7 +22,7 @@ export default function Footer() {
   const [isPrivacyModalOpen, setIsPrivacyModalOpen] = useState(false);
 
   return (
-    <footer className="bg-[#0A192F] text-[#F8F7F4] pt-12 sm:pt-14 pb-8 sm:pb-10 relative overflow-hidden border-t border-white/10">
+    <footer className="bg-[#0A192F] text-[#F8F7F4] pt-12 sm:pt-14 pb-28 sm:pb-12 relative overflow-hidden border-t border-white/10">
       <div className="max-w-7xl mx-auto px-5 sm:px-6 md:px-12 relative z-10 space-y-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-10">
           {/* Brand & Manifesto */}

@@ -1,0 +1,89 @@
+=====================================================================
+OUTBOUND PACK - BM INFISSI DI MASSIMO BIANCHI (bminfissirimini)
+=====================================================================
+Titolare / Decision Maker : Massimo Bianchi
+Email Target              : info@bminfissirimini.com
+Telefono / WhatsApp       : +39 0541 416124
+Città                     : Rimini
+P.IVA                     : 04766030409
+LCP Sito Attuale          : 5.4s (Score Mobile: 35/100)
+URL Demo (Brand-Neutral)  : https://techpyre.eu/demo/bminfissirimini
+Strategia Qualifica       : AGENCY_COEXISTENCE_OR_WHITELABEL
+Segnali MarTech / Agenzia : Google Tag Manager
+Agenzia Rilevata Footer   : STUDIO Catuogno Rimini (https://www.studiocatuogno.it/)
+Check Anti-Spam 1ª Email  : 289 parole | Link: ✅ ZERO LINK (Inbox Sicura)
+
+---------------------------------------------------------------------
+1. PRIMA EMAIL AL TITOLARE (Plain-Text, Zero Link)
+---------------------------------------------------------------------
+A: info@bminfissirimini.com
+Oggetto: Sulla vostra sponsorizzata Facebook "Showroom BM Infissi" - TechPyre
+
+Buongiorno Massimo,
+
+mi chiamo Riccardo Granza e sono il fondatore di TechPyre: sviluppiamo landing page ad alta conversione per le aziende che investono in pubblicità su Facebook e Google.
+
+Oggi ho visto la vostra sponsorizzata su Facebook dedicata allo Showroom BM Infissi di 400 mq a Rimini e ho fatto un test aprendo il link da telefono. La pagina attuale impiega 5.4 secondi a caricare (punteggio mobile 39 su 100 con 14 script bloccanti) e, appena si apre sullo smartphone, compare un popup di avviso tagliato a metà sulla destra che blocca tutta la schermata sopra una pagina istituzionale con 12 voci di menu, senza alcun modulo rapido per prenotare la visita in showroom o chiedere un preventivo.
+
+In concreto, chi clicca sulla vostra inserzione da telefono deve aspettare oltre 5 secondi, chiudere un popup rotto che esce dallo schermo e poi cercare da solo come contattarvi: così più della metà dei clic che pagate a Facebook abbandona la pagina prima ancora di vedere i vostri prodotti. Il motivo per cui vi conviene lavorare con noi (anche affiancandoci in totale trasparenza a chi vi segue già il sito o le campagne) è semplice: sostituiamo il link della sponsorizzata con una pagina dedicata che carica in 0.3 secondi e fa scegliere subito al cliente a cosa è interessato (infissi, porte, tapparelle o visita in showroom), consegnandovi il doppio delle richieste già qualificate con lo stesso budget pubblicitario.
+
+Per farle vedere il risultato senza impegno, abbiamo già preparato la versione dimostrativa da 0.3 secondi con il vostro logo e i vostri testi. Se le va di provarla dal telefono, mi risponda pure "LINK" qui sotto e glielo invio subito.
+
+Un cordiale saluto,
+Riccardo Granza
+Fondatore TechPyre
+Tel: +39 379 115 9352
+
+---------------------------------------------------------------------
+2. FOLLOW-UP EMAIL (Quando risponde "LINK" o "SÌ")
+---------------------------------------------------------------------
+A: info@bminfissirimini.com
+Oggetto: Re: Sulla vostra sponsorizzata Facebook "Showroom BM Infissi" - TechPyre
+
+Buongiorno Massimo,
+
+la ringrazio per la risposta. Ecco il link diretto per provare la pagina dal telefono o dal PC:
+https://techpyre.eu/demo/bminfissirimini
+
+Questo intervento può essere affiancato senza alcun attrito anche allo studio che vi segue già il sito o le campagne: noi forniamo solo la pagina veloce (0.3s) collegata al vostro Google Tag Manager.
+
+Un cordiale saluto,
+Riccardo Granza
+TechPyre
+Tel: +39 379 115 9352
+
+---------------------------------------------------------------------
+3. DM INSTAGRAM / FACEBOOK / WHATSAPP (+ public/leads/bminfissirimini/new-demo-mobile.png)
+---------------------------------------------------------------------
+Buongiorno Massimo, sono Riccardo Granza, fondatore di TechPyre (sviluppiamo landing page ad alta velocità per chi investe in campagne Meta). Ho visto la vostra sponsorizzata "Showroom BM Infissi: Oltre 400 mq di Esposizione a Rimini" su Facebook: dal telefono la pagina attuale impiega 5.4 secondi ad aprirsi. Per presentarci vi abbiamo preparato una versione dimostrativa istantanea (0.3s) con i vostri testi: le ho inviato i dettagli via email, se le fa piacere provarla dal telefono mi scriva pure qui e le giro il link!
+
+---------------------------------------------------------------------
+4. RISPOSTA ANTI-OBIEZIONE "CI SEGUE GIÀ UN'AGENZIA" (Coesistenza / White-Label)
+---------------------------------------------------------------------
+La capisco perfettamente, e infatti non vogliamo assolutamente sostituire l'agenzia che vi segue le campagne Facebook.
+
+Il nostro è un intervento puramente tecnico (anche in White-Label): forniamo alla vostra agenzia attuale la pagina veloce da 0.3s sul vostro dominio, già collegata al loro Pixel e GTM, così i clic che vi portano smettono di perdersi durante i 5.4 secondi di caricamento.
+
+Può girare direttamente anche a loro questo link di test (è completamente neutro, senza il nostro logo):
+
+https://techpyre.eu/demo/bminfissirimini
+
+---------------------------------------------------------------------
+5. PITCH B2B2B WHITE-LABEL DIRETTO ALL'AGENZIA (Se vuoi vendere all'Agenzia)
+---------------------------------------------------------------------
+Oggetto: Partnership tecnica White-Label su campagne Meta di BM Infissi di Massimo Bianchi (5.4s -> 0.3s)
+
+Buongiorno,
+
+mi chiamo Riccardo Granza e sono il fondatore di TechPyre: siamo uno studio tecnico specializzato nello sviluppo di landing page Next.js ad altissima velocità (0.3s) in modalità White-Label per le Web Agency.
+
+Abbiamo notato che seguite il progetto digitale di BM Infissi di Massimo Bianchi. Le creatività su Meta sono ben strutturate, ma la pagina attuale su cui atterra il traffico mobile impiega 5.4 secondi a caricare, penalizzando il tasso di conversione delle campagne.
+
+Abbiamo già preparato una versione Next.js da 0.3s per BM Infissi di Massimo Bianchi completamente neutra (100% White-Label, zero riferimenti a TechPyre) con simulatore lead integrato: potete mostrarla direttamente al vostro cliente come upgrade vostro o collegarla in 24h al vostro GTM/CRM.
+
+Se vi fa piacere vedere la preview White-Label già pronta, rispondetemi pure 'LINK' e ve la giro subito.
+
+Un cordiale saluto,
+Riccardo Granza - Fondatore TechPyre
++39 379 115 9352
+=====================================================================

@@ -55,11 +55,14 @@ export const viewport: Viewport = {
  * =====================================================================
  */
 export const metadata: Metadata = {
-  title: "TechPYRE",
+  title: {
+    default: "TechPYRE — Ingegneria del Software & Soluzioni AI",
+    template: "%s | TechPYRE",
+  },
   description: siteContent.hero.subheadline,
   authors: [{ name: siteContent.brand.founder }],
   creator: siteContent.brand.name,
-  metadataBase: new URL("https://www.techpyre.eu"),
+  metadataBase: new URL("https://techpyre.eu"),
   icons: {
     icon: [
       { url: "/icon.svg", type: "image/svg+xml" },
@@ -70,7 +73,7 @@ export const metadata: Metadata = {
     ],
   },
   openGraph: {
-    title: "TechPYRE",
+    title: "TechPYRE — Ingegneria del Software & Soluzioni AI",
     description: siteContent.hero.subheadline,
     siteName: "TechPYRE",
     locale: "it_IT",
@@ -78,7 +81,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "TechPYRE",
+    title: "TechPYRE — Ingegneria del Software & Soluzioni AI",
     description: siteContent.hero.subheadline,
   },
 };
@@ -86,7 +89,7 @@ export const metadata: Metadata = {
 /**
  * =====================================================================
  * ROOT LAYOUT
- * Inietta le variabili CSS dei font e applica lo sfondo pergamena istituzionale.
+ * Inietta le variabili CSS dei font, Schema.org e applica lo sfondo pergamena istituzionale.
  * =====================================================================
  */
 export default function RootLayout({
@@ -94,11 +97,37 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    name: siteContent.brand.name,
+    founder: {
+      "@type": "Person",
+      name: siteContent.brand.founder,
+    },
+    url: "https://techpyre.eu",
+    email: siteContent.brand.contactEmail,
+    telephone: siteContent.brand.phone,
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Milano",
+      addressCountry: "IT",
+    },
+    description: siteContent.hero.subheadline,
+    priceRange: "€€€",
+  };
+
   return (
     <html
       lang="it"
       className={`${serifFont.variable} ${sansFont.variable} ${monoFont.variable}`}
     >
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body className="font-sans antialiased bg-[#F8F7F4] text-[#14181F] selection:bg-[#B8860B]/20 selection:text-[#0B1E36]">
         {children}
       </body>

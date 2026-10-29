@@ -1,0 +1,44 @@
+{
+  "slug": "castellinomobili",
+  "targetUrl": "https://www.castellinomobili.it/serramenti/",
+  "finalResolvedUrl": "https://www.castellinomobili.it/serramenti/",
+  "measuredResponseMs": 226,
+  "renderBlockingScripts": 0,
+  "estimatedMobileLcpSeconds": 3.3,
+  "qualification": {
+    "isQualified": true,
+    "recommendedStrategy": "DIRECT_BUYER",
+    "strategyReason": "Azienda ideale per vendita diretta: paga le inserzioni Meta ma manda il traffico su un sito lento e dispersivo.",
+    "disqualifiers": [],
+    "alreadyHasPerformantLanding": false,
+    "isDedicatedFunnelUrl": false,
+    "funnelBuilders": [],
+    "hasQuizAlready": false,
+    "navLinksCount": 0,
+    "formsCount": 0,
+    "isEcommerce": false,
+    "isLargeEnterpriseOrSpa": false,
+    "agencyDetection": {
+      "hasAgencyInvolved": false,
+      "detectedAgencyNames": [],
+      "detectedAgencyLinks": [],
+      "martechSignals": []
+    }
+  },
+  "extractedEmails": [
+    "info@castellinomobili.it",
+    "castellino.mobili@pec.piupec.it"
+  ],
+  "extractedPhones": [
+    "+390171385338",
+    "+39 0171.385338",
+    "+393717760732",
+    "+39 371.7760732",
+    "0171.385338"
+  ],
+  "extractedVat": "00115460040",
+  "legalSnippets": [],
+  "candidateLogoUrls": [],
+  "candidateHeroUrls": [],
+  "assetsDir": "/public/leads/castellinomobili"
+}

@@ -3,32 +3,132 @@ import nodemailer from "nodemailer";
 import { siteContent } from "@/config/siteContent";
 import { ContactApiResponse, ContactPayload } from "@/types/content";
 
+function escapeHtml(str: string): string {
+  return str
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
+}
+
+function cleanHeader(str: string): string {
+  return str.replace(/[\r\n]+/g, " ").trim();
+}
+
 function isValidEmail(email: string): boolean {
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   return emailRegex.test(email);
 }
 
+function isValidContact(contact: string): boolean {
+  const trimmed = contact.trim();
+  if (isValidEmail(trimmed)) return true;
+  const digits = (trimmed.match(/\d/g) || []).length;
+  return digits >= 7 && /^[0-9+\s\-()./]{7,25}$/.test(trimmed);
+}
+
+// In-memory rate limiting per IP (5 richieste ogni 10 minuti)
+const ipRateLimit = new Map<string, { count: number; expiresAt: number }>();
+
+function isRateLimited(ip: string): boolean {
+  const now = Date.now();
+  const windowMs = 10 * 60 * 1000;
+  const maxRequests = 5;
+
+  // Pulizia periodica elementi scaduti per prevenire leak di memoria
+  if (ipRateLimit.size > 200) {
+    for (const [key, value] of ipRateLimit.entries()) {
+      if (now > value.expiresAt) ipRateLimit.delete(key);
+    }
+  }
+
+  const current = ipRateLimit.get(ip);
+  if (!current || now > current.expiresAt) {
+    ipRateLimit.set(ip, { count: 1, expiresAt: now + windowMs });
+    return false;
+  }
+
+  if (current.count >= maxRequests) {
+    return true;
+  }
+
+  current.count += 1;
+  return false;
+}
+
+// Transporter singleton con timeout espliciti
+let cachedTransporter: ReturnType<typeof nodemailer.createTransport> | null = null;
+
+function getTransporter(host: string, port: number, user: string, pass: string) {
+  if (!cachedTransporter) {
+    cachedTransporter = nodemailer.createTransport({
+      host,
+      port,
+      secure: port === 465,
+      auth: { user, pass },
+      connectionTimeout: 10000,
+      greetingTimeout: 10000,
+      socketTimeout: 15000,
+      pool: true,
+      maxConnections: 3,
+    });
+  }
+  return cachedTransporter;
+}
+
 export async function POST(request: NextRequest): Promise<NextResponse<ContactApiResponse>> {
   try {
+    const ip =
+      request.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ||
+      request.headers.get("x-real-ip") ||
+      "127.0.0.1";
+
+    if (isRateLimited(ip)) {
+      return NextResponse.json(
+        {
+          success: false,
+          message: "Troppe richieste inviate da questo dispositivo. Riprova tra 10 minuti.",
+        },
+        { status: 429 }
+      );
+    }
+
     const body = (await request.json()) as Partial<ContactPayload>;
-    const { name, company, contact, service, message } = body;
+    const { name, company, contact, service, message, website } = body;
+
+    // Honeypot anti-spam: se un bot compila il campo nascosto 'website', rispondi 200 senza inviare email
+    if (website && typeof website === "string" && website.trim().length > 0) {
+      return NextResponse.json(
+        {
+          success: true,
+          message: siteContent.contact.feedback.successMessage,
+          data: { timestamp: new Date().toISOString() },
+        },
+        { status: 200 }
+      );
+    }
 
     const errors: Record<string, string> = {};
 
-    if (!name || typeof name !== "string" || name.trim().length < 2) {
-      errors.name = "Inserisci un nome e cognome valido (minimo 2 caratteri).";
+    if (!name || typeof name !== "string" || name.trim().length < 2 || name.trim().length > 100) {
+      errors.name = "Inserisci un nome valido (tra 2 e 100 caratteri).";
     }
 
-    if (!contact || typeof contact !== "string" || contact.trim().length < 5) {
-      errors.contact = "Inserisci un recapito valido (email aziendale o telefono).";
+    if (!contact || typeof contact !== "string" || contact.trim().length < 5 || contact.trim().length > 120 || !isValidContact(contact)) {
+      errors.contact = "Inserisci un recapito valido (email aziendale valida o numero di telefono).";
     }
 
-    if (!service || typeof service !== "string" || service.trim().length === 0) {
+    if (!service || typeof service !== "string" || service.trim().length === 0 || service.trim().length > 100) {
       errors.service = "Seleziona uno dei servizi del listino.";
     }
 
-    if (!message || typeof message !== "string" || message.trim().length < 10) {
-      errors.message = "Fornisci una descrizione minima di 10 caratteri per la tua richiesta.";
+    if (!message || typeof message !== "string" || message.trim().length < 10 || message.trim().length > 5000) {
+      errors.message = "Fornisci una descrizione compresa tra 10 e 5000 caratteri per la tua richiesta.";
+    }
+
+    if (company && (typeof company !== "string" || company.trim().length > 100)) {
+      errors.company = "La ragione sociale non può superare 100 caratteri.";
     }
 
     if (Object.keys(errors).length > 0) {
@@ -42,13 +142,23 @@ export async function POST(request: NextRequest): Promise<NextResponse<ContactAp
       );
     }
 
+    const rawName = name!.trim();
+    const rawCompany = company ? company.trim() : "Non specificata";
+    const rawContact = contact!.trim();
+    const rawService = service!.trim();
+    const rawMessage = message!.trim();
+
     const sanitizedData: ContactPayload = {
-      name: name!.trim(),
-      company: company ? company.trim() : "Non specificata",
-      contact: contact!.trim(),
-      service: service!.trim(),
-      message: message!.trim(),
+      name: escapeHtml(rawName),
+      company: escapeHtml(rawCompany),
+      contact: escapeHtml(rawContact),
+      service: escapeHtml(rawService),
+      message: escapeHtml(rawMessage),
     };
+
+    const headerName = cleanHeader(rawName);
+    const headerCompany = cleanHeader(rawCompany);
+    const headerService = cleanHeader(rawService);
 
     const smtpHost = process.env.SMTP_HOST;
     const smtpUser = process.env.SMTP_USER;
@@ -71,18 +181,12 @@ export async function POST(request: NextRequest): Promise<NextResponse<ContactAp
       console.log(`Variabili SMTP non configurate in .env.local.`);
       console.log(`Il form ha simulato 800ms di elaborazione e ha registrato il contatto:`);
       console.log(`-------------------------------------------------------------`);
-      console.log(`Mittente     : ${sanitizedData.name}`);
-      console.log(`Azienda/Org  : ${sanitizedData.company}`);
-      console.log(`Recapito     : ${sanitizedData.contact}`);
-      console.log(`Servizio B2B : ${sanitizedData.service}`);
-      console.log(`Messaggio    :\n${sanitizedData.message}`);
+      console.log(`Mittente     : ${rawName}`);
+      console.log(`Azienda/Org  : ${rawCompany}`);
+      console.log(`Recapito     : ${rawContact}`);
+      console.log(`Servizio B2B : ${rawService}`);
+      console.log(`Messaggio    :\n${rawMessage}`);
       console.log(`-------------------------------------------------------------`);
-      console.log(`Per attivare la consegna reale delle email, imposta in .env.local:`);
-      console.log(`SMTP_HOST=smtp.tuoprovider.it`);
-      console.log(`SMTP_PORT=465`);
-      console.log(`SMTP_USER=tua-email@tuodominio.it`);
-      console.log(`SMTP_PASS=la-tua-password`);
-      console.log(`CONTACT_RECEIVER_EMAIL=${contactReceiver}`);
       console.log(`=============================================================\n`);
 
       return NextResponse.json(
@@ -98,18 +202,8 @@ export async function POST(request: NextRequest): Promise<NextResponse<ContactAp
       );
     }
 
-    // Modalità Produzione con Nodemailer
-    const transporter = nodemailer.createTransport({
-      host: smtpHost,
-      port: smtpPort,
-      secure: smtpPort === 465,
-      auth: {
-        user: smtpUser,
-        pass: smtpPass,
-      },
-    });
-
-    const isContactAnEmail = isValidEmail(sanitizedData.contact);
+    const transporter = getTransporter(smtpHost!, smtpPort, smtpUser!, smtpPass!);
+    const isContactAnEmail = isValidEmail(rawContact);
 
     const mailHtml = `
       <!DOCTYPE html>
@@ -133,7 +227,7 @@ export async function POST(request: NextRequest): Promise<NextResponse<ContactAp
       <body>
         <div class="container">
           <div class="header">
-            <h1>Nuova Richiesta di Progetto — ${siteContent.brand.name}</h1>
+            <h1>Nuova Richiesta di Progetto — ${escapeHtml(siteContent.brand.name)}</h1>
             <p>Ricevuto dal portale ufficiale B2B</p>
           </div>
           <div class="content">
@@ -163,7 +257,7 @@ export async function POST(request: NextRequest): Promise<NextResponse<ContactAp
             </div>
           </div>
           <div class="footer">
-            ${siteContent.brand.name} Studio · Linea Diretta con ${siteContent.brand.founder} · SLA: Risposta entro 2-3 ore lavorative
+            ${escapeHtml(siteContent.brand.name)} Studio · Linea Diretta con ${escapeHtml(siteContent.brand.founder)} · SLA: Risposta entro 24 ore lavorative
           </div>
         </div>
       </body>
@@ -173,13 +267,13 @@ export async function POST(request: NextRequest): Promise<NextResponse<ContactAp
     const mailText = `
 NUOVA RICHIESTA DI PROGETTO — ${siteContent.brand.name}
 -------------------------------------------------------------
-Mittente: ${sanitizedData.name}
-Azienda: ${sanitizedData.company}
-Recapito: ${sanitizedData.contact}
-Servizio: ${sanitizedData.service}
+Mittente: ${rawName}
+Azienda: ${rawCompany}
+Recapito: ${rawContact}
+Servizio: ${rawService}
 
 Dettagli:
-${sanitizedData.message}
+${rawMessage}
 -------------------------------------------------------------
 Inviato tramite ${siteContent.brand.name} Contact Form
     `;
@@ -187,8 +281,8 @@ Inviato tramite ${siteContent.brand.name} Contact Form
     await transporter.sendMail({
       from: `"${siteContent.brand.name} Web Engineering" <${smtpUser}>`,
       to: contactReceiver,
-      replyTo: isContactAnEmail ? sanitizedData.contact : undefined,
-      subject: `[${siteContent.brand.name}] Richiesta ${sanitizedData.service} — ${sanitizedData.company} (${sanitizedData.name})`,
+      replyTo: isContactAnEmail ? rawContact : undefined,
+      subject: `[${siteContent.brand.name}] Richiesta ${headerService} — ${headerCompany} (${headerName})`,
       text: mailText,
       html: mailHtml,
     });

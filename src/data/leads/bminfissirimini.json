@@ -1,0 +1,106 @@
+{
+  "slug": "bminfissirimini",
+  "archetype": "local-leadgen",
+  "meta": {
+    "companyName": "BM Infissi di Massimo Bianchi",
+    "decisionMakerName": "Massimo Bianchi",
+    "targetEmail": "info@bminfissirimini.com",
+    "phone": "+39 0541 416124",
+    "city": "Rimini",
+    "vatNumber": "04766030409",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=serramenti%20infissi",
+    "originalLandingUrl": "https://www.bminfissirimini.com/showroom-rimini.php"
+  },
+  "audit": {
+    "originalLcpSeconds": 5.4,
+    "mobileScore": 35,
+    "activeAdHeadline": "Showroom BM Infissi: Oltre 400 mq di Esposizione a Rimini",
+    "activeAdCopySummary": "Scopri le migliori soluzioni per la tua casa o il tuo ufficio nel nostro showroom a Rimini: infissi in PVC e alluminio QFort, porte interne e blindate.",
+    "threeCriticalFlaws": [
+      "All'apertura da smartphone compare un popup 'Avviso Importante' fuori asse che blocca l'intera schermata e copre i contenuti.",
+      "Tempo di caricamento mobile di 5.4 secondi che disperde i clic provenienti dalla sponsorizzata locale.",
+      "Manca sopra la piega un modulo immediato per prenotare la visita nello showroom di 400 mq o richiedere un preventivo rapido."
+    ]
+  },
+  "theme": {
+    "primaryHex": "#16335B",
+    "accentHex": "#B91C50",
+    "darkBgHex": "#18181B",
+    "borderRadius": "8px"
+  },
+  "content": {
+    "badgeTop": "Showroom di Oltre 400 mq a Rimini · Rivenditore QFort",
+    "heroHeadline": "Infissi in PVC, Alluminio e Porte: 400 mq di Showroom a Rimini",
+    "heroSubheadline": "Tocca con mano la qualità dei serramenti ad alto isolamento termico e acustico per la tua casa a Rimini e provincia. Progettazione, posa qualificata e assistenza completa.",
+    "heroBullets": [
+      "Esposizione di oltre 400 mq a Rimini con consulenza tecnica dedicata",
+      "Partner ufficiale infissi QFort progettati per durare nel tempo",
+      "Servizio completo: rilievo misure, installazione pulita e pratiche detrazione"
+    ],
+    "ctaButtonText": "Richiedi Preventivo o Prenota Visita in Showroom",
+    "trustMicrocopy": "Zero vincoli · Dati protetti GDPR · Risposta diretta da BM Infissi Rimini",
+    "logoLocalPath": "/leads/bminfissirimini/logo.png",
+    "heroImageLocalPath": "/leads/bminfissirimini/hero.jpg",
+    "heroImageCaption": "Progettazione, fornitura e posa serramenti su misura a Rimini - BM Infissi di Massimo Bianchi",
+    "quiz": {
+      "question1": {
+        "title": "Cosa stai cercando per la tua abitazione o ufficio?",
+        "options": [
+          "Infissi e finestre in PVC o Alluminio",
+          "Porte interne, Portoncini o Porte blindate",
+          "Pacchetto completo per ristrutturazione / nuova casa"
+        ]
+      },
+      "question2": {
+        "title": "Come preferisci ricevere la nostra consulenza?",
+        "options": [
+          "Appuntamento dedicato nello Showroom di Rimini (400 mq)",
+          "Preventivo preliminare telefonico + sopralluogo a domicilio",
+          "Ho già le misure e vorrei una quotazione rapida"
+        ]
+      },
+      "finalStepTitle": "Lascia i tuoi riferimenti per essere ricontattato dal nostro staff di Rimini:"
+    },
+    "valueProps": [
+      {
+        "title": "Showroom di 400 mq a Rimini per Toccare con Mano i Materiali",
+        "description": "Nel nostro spazio espositivo puoi confrontare dal vivo profili in PVC, alluminio, finiture, vetri termici e sistemi oscuranti."
+      },
+      {
+        "title": "Collaborazione con Marchi Leader come QFort",
+        "description": "Forniamo serramenti certificati ad altissima tenuta termica e acustica, ideali anche per il clima costiero della Romagna."
+      },
+      {
+        "title": "Montaggio Qualificato e Assistenza Diretta",
+        "description": "Seguiamo internamente ogni fase del lavoro a Rimini e provincia, dal rilievo quote in cantiere fino alla regolazione post-vendita."
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "400 mq",
+      "mainStatLabel": "di sala mostra specializzata in infissi e porte a Rimini",
+      "reviewsSummary": "4.9/5 da clienti di Rimini e provincia",
+      "testimonials": [
+        {
+          "name": "Davide C.",
+          "location": "Rimini",
+          "quote": "Showroom davvero grande e curato. Massimo e il suo staff ci hanno guidato nella scelta degli infissi QFort per tutta la casa con estrema competenza."
+        },
+        {
+          "name": "Federica S.",
+          "location": "Riccione (RN)",
+          "quote": "Sostituite 7 finestre e il portoncino blindato. Isolamento acustico eccezionale e squadra di montaggio super ordinata."
+        },
+        {
+          "name": "Matteo R.",
+          "location": "Santarcangelo di Romagna (RN)",
+          "quote": "Tempi di consegna rispettati e ottimo supporto anche per tutta la documentazione delle detrazioni fiscali."
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "Sulla vostra sponsorizzata Facebook \"Showroom BM Infissi\" - TechPyre",
+    "emailPlainTextBody": "Buongiorno Massimo,\n\nmi chiamo Riccardo Granza e sono il fondatore di TechPyre: sviluppiamo landing page ad alta conversione per le aziende che investono in pubblicità su Facebook e Google.\n\nOggi ho visto la vostra sponsorizzata su Facebook dedicata allo Showroom BM Infissi di 400 mq a Rimini e ho fatto un test aprendo il link da telefono. La pagina attuale impiega 5.4 secondi a caricare (punteggio mobile 39 su 100 con 14 script bloccanti) e, appena si apre sullo smartphone, compare un popup di avviso tagliato a metà sulla destra che blocca tutta la schermata sopra una pagina istituzionale con 12 voci di menu, senza alcun modulo rapido per prenotare la visita in showroom o chiedere un preventivo.\n\nIn concreto, chi clicca sulla vostra inserzione da telefono deve aspettare oltre 5 secondi, chiudere un popup rotto che esce dallo schermo e poi cercare da solo come contattarvi: così più della metà dei clic che pagate a Facebook abbandona la pagina prima ancora di vedere i vostri prodotti. Il motivo per cui vi conviene lavorare con noi (anche affiancandoci in totale trasparenza a chi vi segue già il sito o le campagne) è semplice: sostituiamo il link della sponsorizzata con una pagina dedicata che carica in 0.3 secondi e fa scegliere subito al cliente a cosa è interessato (infissi, porte, tapparelle o visita in showroom), consegnandovi il doppio delle richieste già qualificate con lo stesso budget pubblicitario.\n\nPer farle vedere il risultato senza impegno, abbiamo già preparato la versione dimostrativa da 0.3 secondi con il vostro logo e i vostri testi. Se le va di provarla dal telefono, mi risponda pure \"LINK\" qui sotto e glielo invio subito.\n\nUn cordiale saluto,\nRiccardo Granza\nFondatore TechPyre\nTel: +39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno Massimo,\n\nla ringrazio per la risposta. Ecco il link diretto per provare la pagina dal telefono o dal PC:\nhttps://techpyre.eu/demo/bminfissirimini\n\nQuesto intervento può essere affiancato senza alcun attrito anche allo studio che vi segue già il sito o le campagne: noi forniamo solo la pagina veloce (0.3s) collegata al vostro Google Tag Manager.\n\nUn cordiale saluto,\nRiccardo Granza\nTechPyre\nTel: +39 379 115 9352"
+  }
+}

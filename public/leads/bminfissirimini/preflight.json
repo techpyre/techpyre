@@ -1,0 +1,62 @@
+{
+  "slug": "bminfissirimini",
+  "targetUrl": "https://www.bminfissirimini.com/",
+  "finalResolvedUrl": "https://www.bminfissirimini.com/",
+  "measuredResponseMs": 271,
+  "renderBlockingScripts": 5,
+  "estimatedMobileLcpSeconds": 4.7,
+  "qualification": {
+    "isQualified": true,
+    "recommendedStrategy": "AGENCY_COEXISTENCE_OR_WHITELABEL",
+    "strategyReason": "Rilevata presenza di Web Agency / Funnel di Marketing esistente ma con pagina lenta (4.7s). Usa l'angolo \"Non tocchiamo chi vi segue le campagne: forniamo solo la pagina veloce 0.3s in White-Label\" (o proponi partnership White-Label all'agenzia rilevata).",
+    "disqualifiers": [],
+    "alreadyHasPerformantLanding": false,
+    "isDedicatedFunnelUrl": false,
+    "funnelBuilders": [],
+    "hasQuizAlready": false,
+    "navLinksCount": 12,
+    "formsCount": 0,
+    "isEcommerce": false,
+    "isLargeEnterpriseOrSpa": false,
+    "agencyDetection": {
+      "hasAgencyInvolved": true,
+      "detectedAgencyNames": [],
+      "detectedAgencyLinks": [
+        {
+          "href": "https://www.studiocatuogno.it/",
+          "label": "STUDIO Catuogno Rimini"
+        }
+      ],
+      "martechSignals": [
+        "Google Tag Manager"
+      ]
+    }
+  },
+  "extractedEmails": [
+    "info@bminfissirimini.com"
+  ],
+  "extractedPhones": [
+    "04766030409",
+    "+390541416124",
+    "+39 0541 416124",
+    "+393315347545",
+    "+39 331 5347545"
+  ],
+  "extractedVat": "04766030409",
+  "legalSnippets": [],
+  "candidateLogoUrls": [
+    "https://www.bminfissirimini.com/img/logo.png",
+    "https://www.bminfissirimini.com/img/logos/q-fort.png",
+    "https://www.bminfissirimini.com/img/logos/effetrade.png",
+    "https://www.bminfissirimini.com/img/logos/mito.png"
+  ],
+  "candidateHeroUrls": [
+    "https://www.bminfissirimini.com/img/demos/architecture-2/backgrounds/arch-plan-1.jpg",
+    "https://www.bminfissirimini.com/img/demos/architecture-2/backgrounds/arch-plan-2.jpg",
+    "https://www.bminfissirimini.com/img/home-1.jpg",
+    "https://www.bminfissirimini.com/img/home-2.jpg",
+    "https://www.bminfissirimini.com/img/demos/architecture-2/divider.jpg",
+    "https://www.bminfissirimini.com/img/gallery-1.jpg"
+  ],
+  "assetsDir": "/public/leads/bminfissirimini"
+}

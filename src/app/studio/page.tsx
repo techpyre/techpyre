@@ -4,7 +4,7 @@ import FounderLetter from "@/components/sections/FounderLetter";
 import { siteContent } from "@/config/siteContent";
 
 export const metadata: Metadata = {
-  title: "TechPYRE",
+  title: "Lo Studio & Metodo di Lavoro",
   description: siteContent.founder.subtitle,
   alternates: { canonical: "/studio" },
 };

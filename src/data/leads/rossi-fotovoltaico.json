@@ -1,0 +1,106 @@
+{
+  "slug": "rossi-fotovoltaico",
+  "archetype": "local-leadgen",
+  "meta": {
+    "companyName": "Rossi Impianti Solari S.r.l.",
+    "decisionMakerName": "Ing. Roberto Rossi",
+    "targetEmail": "r.rossi@rossiimpiantisolari.it",
+    "phone": "+39 030 987 6543",
+    "city": "Brescia",
+    "vatNumber": "04129870981",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?id=981273918273",
+    "originalLandingUrl": "https://www.rossiimpiantisolari.it/promo-fotovoltaico"
+  },
+  "audit": {
+    "originalLcpSeconds": 6.4,
+    "mobileScore": 34,
+    "activeAdHeadline": "Fotovoltaico Chiavi in Mano a Brescia con Detrazione 50% e Accumulo",
+    "activeAdCopySummary": "Taglia la bolletta fino all'80% con gli impianti fotovoltaici ad alta resa Rossi Impianti. Sopralluogo tecnico e gestione pratiche GSE inclusi.",
+    "threeCriticalFlaws": [
+      "Tempo di caricamento su rete mobile 4G di 6.4 secondi (oltre il 45% dei clic pubblicitari abbandona prima del rendering).",
+      "Form di contatto a 8 campi posizionato in fondo alla pagina, privo di pre-qualificazione su tipologia immobile e consumi.",
+      "Assenza sopra la piega di recensioni verificate sul territorio e garanzie sulle squadre di installazione interne."
+    ]
+  },
+  "theme": {
+    "primaryHex": "#1C2D42",
+    "accentHex": "#C2410C",
+    "darkBgHex": "#1C1917",
+    "borderRadius": "8px"
+  },
+  "content": {
+    "badgeTop": "Attivi a Brescia, Lago di Garda e Franciacorta",
+    "heroHeadline": "Fotovoltaico Chiavi in Mano a Brescia con Detrazione 50% e Accumulo",
+    "heroSubheadline": "Riduci fino all'80% i costi della bolletta elettrica con installatori interni abilitati FER e gestione integrale delle pratiche GSE ed ENEA. Calcola in 30 secondi la resa sul tuo tetto.",
+    "heroBullets": [
+      "Sopralluogo tecnico gratuito entro 5 giorni lavorativi in provincia di Brescia",
+      "Squadre di posa interne certificate (zero subappalti a ditte esterne)",
+      "Gestione completa pratiche GSE, E-Distribuzione e Detrazione Fiscale 50%"
+    ],
+    "ctaButtonText": "Richiedi Stima Risparmio e Sopralluogo Gratuito",
+    "trustMicrocopy": "Zero vincoli contrattuali • Dati protetti GDPR • Riscontro da un nostro ingegnere in 24h",
+    "logoLocalPath": "/leads/rossi-fotovoltaico/logo.png",
+    "heroImageLocalPath": "/leads/rossi-fotovoltaico/hero.jpg",
+    "heroImageCaption": "Installazione residenziale 6 kWp + Accumulo 15 kWh eseguita a Gussago (BS)",
+    "quiz": {
+      "question1": {
+        "title": "Su quale immobile desideri installare l'impianto fotovoltaico?",
+        "options": [
+          "Casa singola / Villetta indipendente",
+          "Bifamiliare o Villetta a schiera",
+          "Capannone / Immobile aziendale"
+        ]
+      },
+      "question2": {
+        "title": "Qual è la tua spesa media attuale in bolletta elettrica (bimestrale)?",
+        "options": [
+          "Tra 180 € e 300 € a bimestre",
+          "Tra 300 € e 500 € a bimestre",
+          "Oltre 500 € a bimestre (Consumo elevato)"
+        ]
+      },
+      "finalStepTitle": "A quale recapito possiamo inviarti il piano di rientro dell'investimento?"
+    },
+    "valueProps": [
+      {
+        "title": "Squadre di Installazione Interne (Zero Subappalti)",
+        "description": "Ogni cantiere a Brescia e provincia è seguito esclusivamente dai nostri tecnici abilitati FER, con posa certificata a regola d'arte in 48 ore lavorative."
+      },
+      {
+        "title": "Ufficio Pratiche GSE, ENEA ed E-Distribuzione Interno",
+        "description": "I nostri ingegneri gestiscono internamente collaudo, allaccio alla rete, contributo di scambio e pratica per la detrazione fiscale del 50%."
+      },
+      {
+        "title": "Garanzia 25 Anni sulla Produttività dei Moduli",
+        "description": "Installiamo solo pannelli monocristallini Tier-1 ad alta resa anche con luce diffusa e sistemi di accumulo al litio-ferro-fosfato garantiti."
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "480+",
+      "mainStatLabel": "impianti attivi a Brescia e provincia",
+      "reviewsSummary": "4.9/5 su 142+ recensioni Google",
+      "testimonials": [
+        {
+          "name": "Famiglia Guerini",
+          "location": "Desenzano del Garda (BS)",
+          "quote": "Impianto da 6 kWp con accumulo da 15 kWh installato in due giorni. Pratiche GSE gestite interamente dal loro studio tecnico, bolletta estiva e autunnale azzerata."
+        },
+        {
+          "name": "Marco Martinelli",
+          "location": "Gussago (BS)",
+          "quote": "Sopralluogo tecnico estremamente serio con l'Ing. Rossi. Nessun venditore insistente, preventivo analitico chiaro e lavoro sul tetto eseguito con estrema cura."
+        },
+        {
+          "name": "Officina Meccanica Fratelli B.",
+          "location": "Brescia Sud",
+          "quote": "Installato impianto da 40 kWp sulla copertura del capannone. Rientro dell'investimento previsto in 3 anni grazie all'autoconsumo diurno dei macchinari."
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "Sponsorizzata Meta \"Fotovoltaico Chiavi in Mano\" - per Roberto",
+    "emailPlainTextBody": "Ciao Roberto,\n\nho visto la vostra inserzione attiva su Facebook \"Fotovoltaico Chiavi in Mano a Brescia con Detrazione 50% e Accumulo\".\n\nAprendo la pagina dal telefono sotto rete mobile impiega 6.4 secondi a caricare e il modulo contatti è nascosto in fondo: chi clicca sull'annuncio spesso esce prima ancora di lasciare il numero.\n\nVi ho già preparato la versione veloce (0.3s) con i vostri testi e un simulatore di preventivo interattivo. Se ti va di provarla dal telefono, rispondimi 'LINK' qui sotto e te lo giro subito.\n\nUn saluto,\nRiccardo Granza\nTechPYRE",
+    "followUpWithLinkBody": "Ciao Roberto,\n\necco qui il link diretto per testare la pagina dal telefono o dal PC:\nhttps://techpyre.eu/demo/rossi-fotovoltaico\n\nProva a cliccare sulle 2 domande del simulatore: all'ultimo step vedrai esattamente la scheda strutturata (tipo immobile + fascia bolletta + telefono) che vi arriverebbe in tempo reale su WhatsApp o via mail a ogni clic della sponsorizzata.\n\nSe ti piace come gira, possiamo metterla attiva sul vostro dominio in 48 ore senza toccare il resto del sito.\n\nA presto,\nRiccardo Granza\n+39 379 115 9352"
+  }
+}

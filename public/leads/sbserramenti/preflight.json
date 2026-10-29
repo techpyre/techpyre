@@ -1,0 +1,54 @@
+{
+  "slug": "sbserramenti",
+  "targetUrl": "https://www.sbserramenti.it/",
+  "finalResolvedUrl": "https://www.sbserramenti.it/",
+  "measuredResponseMs": 392,
+  "renderBlockingScripts": 2,
+  "estimatedMobileLcpSeconds": 4.4,
+  "qualification": {
+    "isQualified": true,
+    "recommendedStrategy": "DIRECT_BUYER",
+    "strategyReason": "Azienda ideale per vendita diretta: paga le inserzioni Meta ma manda il traffico su un sito lento e dispersivo.",
+    "disqualifiers": [],
+    "alreadyHasPerformantLanding": false,
+    "isDedicatedFunnelUrl": false,
+    "funnelBuilders": [],
+    "hasQuizAlready": false,
+    "navLinksCount": 11,
+    "formsCount": 1,
+    "isEcommerce": false,
+    "isLargeEnterpriseOrSpa": false,
+    "agencyDetection": {
+      "hasAgencyInvolved": false,
+      "detectedAgencyNames": [],
+      "detectedAgencyLinks": [],
+      "martechSignals": [
+        "Meta Pixel"
+      ]
+    }
+  },
+  "extractedEmails": [
+    "info@sbserramenti.it"
+  ],
+  "extractedPhones": [
+    "050985786",
+    "03186702",
+    "050 985786",
+    "02314350501"
+  ],
+  "extractedVat": "02314350501",
+  "legalSnippets": [],
+  "candidateLogoUrls": [
+    "https://www.sbserramenti.it/wp-content/uploads/Logo-SB-color-1.webp",
+    "https://www.sbserramenti.it/wp-content/uploads/DEKRA-logo-1.png"
+  ],
+  "candidateHeroUrls": [
+    "https://www.sbserramenti.it/wp-content/uploads/2022/11/sb_entrata.jpg",
+    "https://www.facebook.com/tr?id=698557538734937&ev=PageView&noscript=1",
+    "https://www.sbserramenti.it/wp-content/uploads/2022/11/serramenti-schuco-c70.jpg",
+    "https://www.sbserramenti.it/wp-content/uploads/Immagine-post-blog-registrazione-marchio-300x200.jpg",
+    "https://www.sbserramenti.it/wp-content/uploads/promozione-autunno-2026-perrsone-che-brindano-con-bicchieri-di-vino-300x200.png",
+    "https://www.sbserramenti.it/wp-content/uploads/2022/11/servizi-265x300.jpg"
+  ],
+  "assetsDir": "/public/leads/sbserramenti"
+}

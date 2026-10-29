@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import Button from "@/components/ui/Button";
 import { ArrowRightIcon } from "@/components/ui/Icons";
 import { requestContactPrefill } from "@/lib/contactPrefill";
@@ -142,9 +142,11 @@ export default function ProjectEstimator() {
                     <motion.button
                       key={opt.id}
                       type="button"
+                      role="radio"
+                      aria-checked={isSelected}
                       whileTap={{ scale: 0.98 }}
                       onClick={() => setSelectedService(opt)}
-                      className={`p-3.5 rounded-sm text-left border transition-all duration-200 cursor-pointer relative min-h-[58px] ${
+                      className={`p-3.5 rounded-sm text-left border transition-[background-color,border-color,box-shadow,color] duration-200 cursor-pointer relative min-h-[58px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#B8860B] ${
                         isSelected
                           ? "bg-[#0B1E36] text-white border-[#0B1E36] shadow-md ring-1 ring-[#0B1E36]"
                           : "bg-white text-[#14181F] border-[#E8E2D5] hover:border-[#B8860B] hover:shadow-2xs"
@@ -188,14 +190,23 @@ export default function ProjectEstimator() {
                   {selectedAddons.length} selezionat{selectedAddons.length === 1 ? "o" : "i"}
                 </span>
               </div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2" role="group" aria-label="Requisiti opzionali">
                 {addonsList.map((addon) => {
                   const isChecked = selectedAddons.includes(addon.id);
                   return (
                     <div
                       key={addon.id}
+                      role="checkbox"
+                      aria-checked={isChecked}
+                      tabIndex={0}
                       onClick={() => toggleAddon(addon.id)}
-                      className={`p-3 rounded-sm border cursor-pointer flex items-center justify-between transition-all duration-200 select-none ${
+                      onKeyDown={(e) => {
+                        if (e.key === " " || e.key === "Enter") {
+                          e.preventDefault();
+                          toggleAddon(addon.id);
+                        }
+                      }}
+                      className={`p-3 rounded-sm border cursor-pointer flex items-center justify-between transition-[background-color,border-color,box-shadow] duration-200 select-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#B8860B] ${
                         isChecked
                           ? "bg-[#0B1E36]/5 border-[#B8860B] shadow-2xs ring-1 ring-[#B8860B]/30"
                           : "bg-white border-[#E8E2D5] text-[#5A6270] hover:border-[#B8860B]"

@@ -42,7 +42,7 @@ export default function Button({
     primary:
       "bg-[#0A192F] text-[#F8F7F4] hover:bg-[#002244] transition-colors duration-200",
     secondary:
-      "bg-white text-[#0B1E36] border border-[#E8E2D5] hover:border-[#B8860B] hover:text-[#B8860B] hover:bg-[#F8F7F4] transition-all duration-200 shadow-xs",
+      "bg-white text-[#0B1E36] border border-[#E8E2D5] hover:border-[#B8860B] hover:text-[#B8860B] hover:bg-[#F8F7F4] transition-[color,background-color,border-color,box-shadow] duration-200 shadow-xs",
     gold: "bg-[#B8860B] text-white hover:bg-[#9a7008] transition-colors duration-200",
     outline:
       "bg-transparent text-[#0A192F] border border-[#0A192F]/30 hover:border-[#0A192F] hover:bg-[#0A192F]/5 transition-colors duration-200",
@@ -53,7 +53,7 @@ export default function Button({
       {/* Bordo brillante sbrilluccicoso a fascio rotante continuo (1.5px netto) */}
       <span
         aria-hidden="true"
-        className="absolute inset-[-150%] bg-[conic-gradient(from_0deg_at_50%_50%,transparent_0deg,transparent_260deg,#C5A059_310deg,#FFFFFF_345deg,#B8860B_360deg)] animate-[spin_3.5s_linear_infinite] pointer-events-none"
+        className="absolute inset-[-150%] bg-[conic-gradient(from_0deg_at_50%_50%,transparent_0deg,transparent_260deg,#C5A059_310deg,#FFFFFF_345deg,#B8860B_360deg)] animate-[spin_3.5s_linear_infinite] motion-reduce:animate-none pointer-events-none"
       />
 
       {/* Corpo del pulsante nitido */}
@@ -82,7 +82,11 @@ export default function Button({
   // Link interni tra pagine (/servizi, /#contatto…) con navigazione client-side di Next.js
   if (href && href.startsWith("/")) {
     return (
-      <Link href={href} className="inline-block" onClick={onClick}>
+      <Link
+        href={href}
+        className="inline-block rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#B8860B] focus-visible:ring-offset-2"
+        onClick={onClick}
+      >
         {innerContent}
       </Link>
     );
@@ -90,7 +94,11 @@ export default function Button({
 
   if (href) {
     return (
-      <a href={href} className="inline-block" onClick={onClick}>
+      <a
+        href={href}
+        className="inline-block rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#B8860B] focus-visible:ring-offset-2"
+        onClick={onClick}
+      >
         {innerContent}
       </a>
     );
@@ -101,7 +109,7 @@ export default function Button({
       type={type}
       disabled={disabled}
       onClick={onClick}
-      className="inline-block bg-transparent p-0 border-0 cursor-pointer focus:outline-none"
+      className="inline-block bg-transparent p-0 border-0 cursor-pointer rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#B8860B] focus-visible:ring-offset-2"
     >
       {innerContent}
     </button>

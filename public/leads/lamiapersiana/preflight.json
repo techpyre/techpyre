@@ -1,0 +1,48 @@
+{
+  "slug": "lamiapersiana",
+  "targetUrl": "https://lamiapersiana.it/",
+  "finalResolvedUrl": "https://lamiapersiana.it/",
+  "measuredResponseMs": 6839,
+  "renderBlockingScripts": 8,
+  "estimatedMobileLcpSeconds": 30.4,
+  "qualification": {
+    "isQualified": true,
+    "recommendedStrategy": "DIRECT_BUYER",
+    "strategyReason": "Azienda ideale per vendita diretta: paga le inserzioni Meta ma manda il traffico su un sito lento e dispersivo.",
+    "disqualifiers": [],
+    "alreadyHasPerformantLanding": false,
+    "isDedicatedFunnelUrl": false,
+    "funnelBuilders": [],
+    "hasQuizAlready": false,
+    "navLinksCount": 3,
+    "formsCount": 0,
+    "isEcommerce": false,
+    "isLargeEnterpriseOrSpa": false,
+    "agencyDetection": {
+      "hasAgencyInvolved": false,
+      "detectedAgencyNames": [],
+      "detectedAgencyLinks": [],
+      "martechSignals": []
+    }
+  },
+  "extractedEmails": [],
+  "extractedPhones": [
+    "03793860135",
+    "+393884010508"
+  ],
+  "extractedVat": "03793860135",
+  "legalSnippets": [],
+  "candidateLogoUrls": [
+    "https://lamiapersiana.it/wp-content/uploads/2024/03/logo-lamiapersiana-8.png",
+    "https://lamiapersiana.it/wp-content/uploads/2024/03/logo-lamiapersiana-11-1.png"
+  ],
+  "candidateHeroUrls": [
+    "https://lamiapersiana.it/wp-content/uploads/2025/08/restauro-serramenti-lamiapersiana.jpg",
+    "https://lamiapersiana.it/wp-content/uploads/2025/08/4.jpg",
+    "https://lamiapersiana.it/wp-content/uploads/2025/08/6.jpg",
+    "https://lamiapersiana.it/wp-content/uploads/2025/08/7.jpg",
+    "https://lamiapersiana.it/wp-content/uploads/2025/08/8.jpg",
+    "https://lamiapersiana.it/wp-content/uploads/2025/08/9.jpg"
+  ],
+  "assetsDir": "/public/leads/lamiapersiana"
+}

@@ -5,7 +5,7 @@ import ProjectEstimator from "@/components/sections/ProjectEstimator";
 import { siteContent } from "@/config/siteContent";
 
 export const metadata: Metadata = {
-  title: "TechPYRE",
+  title: "Servizi & Tariffe B2B — Configuratore",
   description: siteContent.services.subtitle,
   alternates: { canonical: "/servizi" },
 };

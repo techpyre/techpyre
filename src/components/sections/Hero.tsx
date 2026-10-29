@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { siteContent } from "@/config/siteContent";
 import Button from "@/components/ui/Button";
@@ -231,18 +232,18 @@ export default function Hero() {
                     <button
                       type="button"
                       onClick={prevProject}
-                      className="w-6 h-6 lg:w-5 lg:h-5 flex items-center justify-center hover:bg-[#F8F7F4] text-[#0B1E36] hover:text-[#B8860B] transition-colors rounded-xs cursor-pointer active:scale-90"
+                      className="w-7 h-7 sm:w-6 sm:h-6 flex items-center justify-center hover:bg-[#F8F7F4] text-[#0B1E36] hover:text-[#B8860B] transition-colors rounded-xs cursor-pointer active:scale-90"
                       aria-label="Progetto precedente"
                       title="Progetto precedente"
                     >
                       <ChevronLeftIcon className="w-3.5 h-3.5 lg:hidden" />
                       <ChevronUpIcon className="w-3.5 h-3.5 hidden lg:block" />
                     </button>
-                    <div className="w-[1px] h-3 bg-[#E8E2D5]" />
+                    <div className="w-[1px] h-3.5 bg-[#E8E2D5]" />
                     <button
                       type="button"
                       onClick={nextProject}
-                      className="w-6 h-6 lg:w-5 lg:h-5 flex items-center justify-center hover:bg-[#F8F7F4] text-[#0B1E36] hover:text-[#B8860B] transition-colors rounded-xs cursor-pointer active:scale-90"
+                      className="w-7 h-7 sm:w-6 sm:h-6 flex items-center justify-center hover:bg-[#F8F7F4] text-[#0B1E36] hover:text-[#B8860B] transition-colors rounded-xs cursor-pointer active:scale-90"
                       aria-label="Progetto successivo"
                       title="Progetto successivo"
                     >
@@ -287,11 +288,13 @@ export default function Hero() {
                       aria-label={`Apri demo live di ${currentProject.title}`}
                     >
                       {currentProject.screenshotUrl ? (
-                        // eslint-disable-next-line @next/next/no-img-element
-                        <img
+                        <Image
                           src={currentProject.screenshotUrl}
                           alt={`Screenshot demo: ${currentProject.title}`}
-                          className="w-full h-full object-cover object-top block transition-transform duration-500 group-hover/img:scale-[1.02]"
+                          fill
+                          priority
+                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                          className="object-cover object-top block transition-transform duration-500 group-hover/img:scale-[1.02]"
                         />
                       ) : (
                         <div className="w-full h-full flex items-center justify-center text-xs text-[#5A6270]">
@@ -376,22 +379,22 @@ export default function Hero() {
                 </div>
 
                 <div className="flex items-center gap-2">
-                  {/* Frecce sopra/sotto per scorrimento verticale SU DESKTOP */}
-                  <div className="hidden lg:flex items-center gap-0.5 bg-white border border-[#E8E2D5] rounded-xs p-0.5 shadow-2xs">
+                  {/* Frecce sopra/sotto per scorrimento verticale SU DESKTOP E TABLET */}
+                  <div className="flex items-center gap-0.5 bg-white border border-[#E8E2D5] rounded-xs p-0.5 shadow-2xs">
                     <button
                       type="button"
                       onClick={prevService}
-                      className="w-5 h-5 flex items-center justify-center hover:bg-[#F8F7F4] text-[#0B1E36] hover:text-[#B8860B] transition-colors rounded-xs cursor-pointer"
+                      className="w-7 h-7 sm:w-6 sm:h-6 flex items-center justify-center hover:bg-[#F8F7F4] text-[#0B1E36] hover:text-[#B8860B] transition-colors rounded-xs cursor-pointer active:scale-90"
                       aria-label="Servizio precedente"
                       title="Servizio precedente"
                     >
                       <ChevronUpIcon className="w-3.5 h-3.5" />
                     </button>
-                    <div className="w-[1px] h-3 bg-[#E8E2D5]" />
+                    <div className="w-[1px] h-3.5 bg-[#E8E2D5]" />
                     <button
                       type="button"
                       onClick={nextService}
-                      className="w-5 h-5 flex items-center justify-center hover:bg-[#F8F7F4] text-[#0B1E36] hover:text-[#B8860B] transition-colors rounded-xs cursor-pointer"
+                      className="w-7 h-7 sm:w-6 sm:h-6 flex items-center justify-center hover:bg-[#F8F7F4] text-[#0B1E36] hover:text-[#B8860B] transition-colors rounded-xs cursor-pointer active:scale-90"
                       aria-label="Servizio successivo"
                       title="Servizio successivo"
                     >

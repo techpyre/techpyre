@@ -1,0 +1,109 @@
+{
+  "slug": "clinica-sorriso-milano",
+  "archetype": "medical-clinic",
+  "meta": {
+    "companyName": "Centro Odontoiatrico Sorriso Milano S.r.l.",
+    "decisionMakerName": "Dott. Alessandro Conti",
+    "targetEmail": "direzione@clinicasorrisomilano.it",
+    "phone": "+39 02 8765 4321",
+    "city": "Milano",
+    "vatNumber": "09876540962",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?id=445566778899",
+    "originalLandingUrl": "https://www.clinicasorrisomilano.it/implantologia-carico-immediato"
+  },
+  "audit": {
+    "originalLcpSeconds": 5.8,
+    "mobileScore": 39,
+    "activeAdHeadline": "Denti Fissi in 24 Ore a Milano con Implantologia Computer Guidata",
+    "activeAdCopySummary": "Torna a sorridere e masticare senza dolore grazie al protocollo a carico immediato con TAC 3D in sede e sedazione cosciente.",
+    "threeCriticalFlaws": [
+      "Caricamento mobile di 5.8 secondi che penalizza i pazienti che aprono l'annuncio da smartphone.",
+      "Assenza di un percorso di pre-valutazione empatico prima della richiesta dei recapiti personali.",
+      "Credenziali della Direzione Sanitaria, numero di iscrizione all'Albo e protocolli per pazienti odontofobici poco visibili."
+    ]
+  },
+  "theme": {
+    "primaryHex": "#1F4E46",
+    "accentHex": "#1F4E46",
+    "darkBgHex": "#1F2421",
+    "borderRadius": "16px"
+  },
+  "content": {
+    "badgeTop": "Centro Specializzato in Implantologia & Chirurgia Orale • Milano",
+    "heroHeadline": "Denti Fissi in 24 Ore a Milano con Implantologia Computer Guidata",
+    "heroSubheadline": "Ritrova il piacere di masticare e sorridere con naturalezza grazie alla diagnostica TAC 3D in sede e ai protocolli in sedazione cosciente, studiati per azzerare ansia e dolore post-operatorio.",
+    "ctaButtonText": "Richiedi Prima Visita Implantare con TAC 3D",
+    "trustMicrocopy": "Dati sanitari tutelati GDPR • Segreteria Pazienti di Milano attiva con riscontro entro 2 ore",
+    "logoLocalPath": "/leads/clinica-sorriso-milano/logo.png",
+    "heroImageLocalPath": "/leads/clinica-sorriso-milano/hero.jpg",
+    "quiz": {
+      "question1": {
+        "title": "Qual è l'esigenza clinica principale che desideri risolvere?",
+        "options": [
+          "Mancanza di più denti o riabilitazione di un'intera arcata",
+          "Sostituzione di una protesi mobile (dentiera) instabile",
+          "Riabilitazione di un singolo elemento dentale compromesso"
+        ]
+      },
+      "question2": {
+        "title": "Quale aspetto è più importante per la tua serenità?",
+        "options": [
+          "Sedazione cosciente con anestesista per non avvertire dolore",
+          "Tempistica rapida (protocollo carico immediato in 24 ore)",
+          "Piano di cura rateizzabile a tasso zero o convenzioni"
+        ]
+      },
+      "finalStepTitle": "A quale recapito la nostra segreteria può contattarti per fissare il colloquio?"
+    },
+    "valueProps": [
+      {
+        "title": "Chirurgia Computer Guidata Mininvasiva",
+        "description": "La pianificazione digitale su TAC Cone Beam 3D consente di inserire gli impianti senza incisioni estese, riducendo drasticamente gonfiore e tempi di guarigione."
+      },
+      {
+        "title": "Protocollo Zero Ansia con Sedazione Cosciente",
+        "description": "La presenza del medico anestesista dedicato permette anche ai pazienti più timorosi di affrontare la seduta in uno stato di profondo rilassamento."
+      },
+      {
+        "title": "Passaporto Implantare & Garanzia Certificata 10 Anni",
+        "description": "Impieghiamo esclusivamente componentistica in titanio medicale certificato CE con tracciabilità completa e richiami d'igiene programmati."
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "1.850+",
+      "mainStatLabel": "riabilitazioni implantari eseguite con successo a Milano",
+      "reviewsSummary": "4.9/5 su 290+ recensioni verificate",
+      "testimonials": [
+        {
+          "name": "Carla R.",
+          "location": "Milano (Porta Romana)",
+          "quote": "Rimandavo l'intervento da anni per timore del dolore. Con la sedazione cosciente non ho avvertito alcun fastidio e il giorno seguente avevo già la protesi fissa."
+        },
+        {
+          "name": "Gianluigi P.",
+          "location": "Monza",
+          "quote": "Ho finalmente sostituito la vecchia protesi mobile. Il Dott. Conti e l'intera equipe mi hanno accompagnato con chiarezza, umanità e grande rigore medico."
+        },
+        {
+          "name": "Elena V.",
+          "location": "Milano (Città Studi)",
+          "quote": "Ambienti luminosi e impeccabili, TAC 3D eseguita direttamente durante la prima visita e piano di cura illustrato voce per voce senza sorprese."
+        }
+      ]
+    },
+    "medicalDetails": {
+      "directorName": "Dott. Alessandro Conti",
+      "alboRegistration": "Iscr. Albo Provinciale degli Odontoiatri di Milano n. 4821",
+      "specialization": "Laurea in Odontoiatria e Protesi Dentaria - Perfezionato in Chirurgia Implantare Avanzata e Riabilitazioni a Carico Immediato.",
+      "clinicAddress": "Via della Moscova 46, 20121 Milano (MM2 Moscova)",
+      "openingHours": "Lunedì - Venerdì: 08:30 - 19:30 | Sabato: 09:00 - 13:30",
+      "parkingAndAccess": "Accesso a piano terra privo di barriere architettoniche; parcheggio convenzionato per i pazienti a 50 metri.",
+      "conventions": ["FASI", "UniSalute", "Previmedical", "Pronto-Care", "Rateizzazione Tasso Zero"]
+    }
+  },
+  "outreach": {
+    "emailSubject": "Sponsorizzata \"Denti Fissi in 24 Ore\" - per il Dott. Conti",
+    "emailPlainTextBody": "Buongiorno Dott. Conti,\n\nho visto la vostra sponsorizzata attiva su Facebook \"Denti Fissi in 24 Ore a Milano con Implantologia Computer Guidata\".\n\nDal telefono la pagina attuale impiega 5.8 secondi a caricarsi e chiede subito i dati senza accompagnare il paziente: sull'implantologia questo fa perdere molti contatti qualificati.\n\nVi ho già preparato la versione veloce (0.3s) con i vostri testi e un simulatore di preventivo interattivo. Se ti va di provarla dal telefono, rispondimi 'LINK' qui sotto e te lo giro subito.\n\nUn cordiale saluto,\nRiccardo Granza\nTechPYRE",
+    "followUpWithLinkBody": "Buongiorno Dott. Conti,\n\necco il link per provare la nuova pagina dal telefono:\nhttps://techpyre.eu/demo/clinica-sorriso-milano\n\nIl triage a 2 domande rassicura subito il paziente (situazione clinica + priorità sedazione/rate) e consegna alla vostra segreteria una scheda già pre-qualificata.\n\nResto a disposizione per mostrarvi come collegarla alle vostre campagne attuali.\n\nUn cordiale saluto,\nRiccardo Granza\n+39 379 115 9352"
+  }
+}

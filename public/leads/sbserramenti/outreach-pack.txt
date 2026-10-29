@@ -1,0 +1,89 @@
+=====================================================================
+OUTBOUND PACK - SB SERRAMENTI S.R.L. (sbserramenti)
+=====================================================================
+Titolare / Decision Maker : Direzione SB Serramenti
+Email Target              : info@sbserramenti.it
+Telefono / WhatsApp       : +39 050 985786
+Città                     : Ospedaletto (Pisa)
+P.IVA                     : 02314350501
+LCP Sito Attuale          : 4.5s (Score Mobile: 44/100)
+URL Demo (Brand-Neutral)  : https://techpyre.eu/demo/sbserramenti
+Strategia Qualifica       : DIRECT_BUYER
+Segnali MarTech / Agenzia : Meta Pixel
+Agenzia Rilevata Footer   : Nessuna agenzia esterna firmata nel footer
+Check Anti-Spam 1ª Email  : 299 parole | Link: ✅ ZERO LINK (Inbox Sicura)
+
+---------------------------------------------------------------------
+1. PRIMA EMAIL AL TITOLARE (Plain-Text, Zero Link)
+---------------------------------------------------------------------
+A: info@sbserramenti.it
+Oggetto: Sulla vostra sponsorizzata Facebook "Perché scegliere SB Serramenti?" - TechPyre
+
+Buongiorno, alla cortese attenzione della Direzione di SB Serramenti,
+
+mi chiamo Riccardo Granza e sono il fondatore di TechPyre: realizziamo landing page ad alta velocità per le aziende che fanno pubblicità su Facebook e Google.
+
+Oggi mi è apparsa su Facebook la vostra inserzione "Perché scegliere SB Serramenti? Da oltre 40 anni proponiamo porte e finestre" e ho testato la pagina su cui atterra chi clicca dal telefono. Dai dati rilevati, la pagina impiega 4.5 secondi ad aprirsi su rete mobile (punteggio velocità mobile 44 su 100 per via di 16 script bloccanti), il titolo principale sulle province di Pisa, Lucca, Viareggio e Livorno esce tagliato fuori dallo schermo a destra e l’utente atterra sulla Home Page generale con 11 voci di menu, senza un modulo di preventivo immediato nella prima schermata.
+
+Quando si fa pubblicità su Facebook, mandare i clic sulla Home Page del sito istituzionale con 4.5 secondi di attesa e il testo tagliato su mobile porta la maggior parte degli utenti a chiudere la pagina o a perdersi nel menu senza mai contattarvi. Il vantaggio di lavorare con noi è molto pratico: vi forniamo una pagina dedicata alle campagne che si apre in 0.3 secondi, elimina le distrazioni del menu e mette subito davanti al cliente un simulatore rapido (scelta del serramento + provincia tra Pisa, Lucca e Livorno + telefono). In questo modo trasformate molti più clic già pagati in appuntamenti reali nel vostro showroom di Ospedaletto, abbassando il costo di ogni contatto.
+
+Per mostrarvi concretamente il risultato, abbiamo già realizzato una versione dimostrativa veloce (0.3s) con i vostri contenuti e le vostre foto reali. Se vi fa piacere provarla dal telefono, rispondetemi pure "LINK" a questa email e ve lo giro subito.
+
+Un cordiale saluto,
+Riccardo Granza
+Fondatore TechPyre
+Tel: +39 379 115 9352
+
+---------------------------------------------------------------------
+2. FOLLOW-UP EMAIL (Quando risponde "LINK" o "SÌ")
+---------------------------------------------------------------------
+A: info@sbserramenti.it
+Oggetto: Re: Sulla vostra sponsorizzata Facebook "Perché scegliere SB Serramenti?" - TechPyre
+
+Buongiorno,
+
+grazie per il riscontro. Ecco il link diretto per provare la pagina dimostrativa dal telefono o dal PC:
+https://techpyre.eu/demo/sbserramenti
+
+Provando a selezionare la soluzione (es. PVC Schüco) e la provincia (Pisa / Lucca / Livorno) nel modulo in alto, all’ultimo passaggio vedrete la scheda contatto già pre-qualificata che riceverebbe il vostro showroom.
+
+Un cordiale saluto,
+Riccardo Granza
+TechPyre
+Tel: +39 379 115 9352
+
+---------------------------------------------------------------------
+3. DM INSTAGRAM / FACEBOOK / WHATSAPP (+ public/leads/sbserramenti/new-demo-mobile.png)
+---------------------------------------------------------------------
+Buongiorno Direzione, sono Riccardo Granza, fondatore di TechPyre (sviluppiamo landing page ad alta velocità per chi investe in campagne Meta). Ho visto la vostra sponsorizzata "Da Oltre 40 Anni Serramenti e Infissi a Pisa, Lucca, Viareggio e Livorno" su Facebook: dal telefono la pagina attuale impiega 4.5 secondi ad aprirsi. Per presentarci vi abbiamo preparato una versione dimostrativa istantanea (0.3s) con i vostri testi: le ho inviato i dettagli via email, se le fa piacere provarla dal telefono mi scriva pure qui e le giro il link!
+
+---------------------------------------------------------------------
+4. RISPOSTA ANTI-OBIEZIONE "CI SEGUE GIÀ UN'AGENZIA" (Coesistenza / White-Label)
+---------------------------------------------------------------------
+La capisco perfettamente, e infatti non vogliamo assolutamente sostituire l'agenzia che vi segue le campagne Facebook.
+
+Il nostro è un intervento puramente tecnico (anche in White-Label): forniamo alla vostra agenzia attuale la pagina veloce da 0.3s sul vostro dominio, già collegata al loro Pixel e GTM, così i clic che vi portano smettono di perdersi durante i 4.5 secondi di caricamento.
+
+Può girare direttamente anche a loro questo link di test (è completamente neutro, senza il nostro logo):
+
+https://techpyre.eu/demo/sbserramenti
+
+---------------------------------------------------------------------
+5. PITCH B2B2B WHITE-LABEL DIRETTO ALL'AGENZIA (Se vuoi vendere all'Agenzia)
+---------------------------------------------------------------------
+Oggetto: Partnership tecnica White-Label su campagne Meta di SB Serramenti S.r.l. (4.5s -> 0.3s)
+
+Buongiorno,
+
+mi chiamo Riccardo Granza e sono il fondatore di TechPyre: siamo uno studio tecnico specializzato nello sviluppo di landing page Next.js ad altissima velocità (0.3s) in modalità White-Label per le Web Agency.
+
+Abbiamo notato che seguite il progetto digitale di SB Serramenti S.r.l.. Le creatività su Meta sono ben strutturate, ma la pagina attuale su cui atterra il traffico mobile impiega 4.5 secondi a caricare, penalizzando il tasso di conversione delle campagne.
+
+Abbiamo già preparato una versione Next.js da 0.3s per SB Serramenti S.r.l. completamente neutra (100% White-Label, zero riferimenti a TechPyre) con simulatore lead integrato: potete mostrarla direttamente al vostro cliente come upgrade vostro o collegarla in 24h al vostro GTM/CRM.
+
+Se vi fa piacere vedere la preview White-Label già pronta, rispondetemi pure 'LINK' e ve la giro subito.
+
+Un cordiale saluto,
+Riccardo Granza - Fondatore TechPyre
++39 379 115 9352
+=====================================================================

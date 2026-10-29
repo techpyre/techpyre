@@ -45,11 +45,14 @@ export default function PrivacyModal({ isOpen, onClose }: PrivacyModalProps) {
 
           {/* Finestra di Dialogo */}
           <motion.div
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="privacy-modal-title"
             initial={{ opacity: 0, scale: 0.96, y: 12 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.96, y: 12 }}
             transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
-            className="relative w-full max-w-2xl bg-[#F8F7F4] border border-[#E8E2D5] rounded-sm shadow-2xl p-6 sm:p-8 max-h-[85vh] overflow-y-auto text-[#14181F] font-sans text-xs sm:text-sm space-y-5"
+            className="relative w-full max-w-2xl bg-[#F8F7F4] border border-[#E8E2D5] rounded-sm shadow-2xl p-6 sm:p-8 max-h-[85vh] overflow-y-auto overscroll-contain text-[#14181F] font-sans text-xs sm:text-sm space-y-5"
           >
             {/* Intestazione */}
             <div className="flex items-start justify-between border-b border-[#E8E2D5] pb-4">
@@ -57,7 +60,7 @@ export default function PrivacyModal({ isOpen, onClose }: PrivacyModalProps) {
                 <span className="text-[10px] font-bold uppercase tracking-widest text-[#B8860B] font-sans">
                   INFORMATIVA SULLA PRIVACY & NOTE LEGALI
                 </span>
-                <h3 className="font-serif text-xl sm:text-2xl text-[#0B1E36] font-semibold mt-1">
+                <h3 id="privacy-modal-title" className="font-serif text-xl sm:text-2xl text-[#0B1E36] font-semibold mt-1">
                   Trattamento Dati Personali (GDPR)
                 </h3>
                 <p className="text-xs text-[#5A6270] mt-0.5">

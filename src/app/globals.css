@@ -45,21 +45,158 @@
     min-height: 100vh;
   }
 
-  /* Trama cartacea-istituzionale tattile impercettibile */
-  body::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    width: 100vw;
-    height: 100vh;
-    pointer-events: none;
-    z-index: 999;
-    opacity: 0.018;
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.7' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
-  }
-
   ::selection {
     background-color: rgba(197, 160, 89, 0.25);
     color: #0A192F;
   }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ==========================================================================
+   OUTBOUND ENGINE — UNIVERSAL SENIOR UI/UX DESIGN SYSTEM (8pt Grid & Scale)
+   ========================================================================== */
+
+.demo-container {
+  width: 100%;
+  max-width: 1280px;
+  margin-inline: auto;
+  padding-inline: 24px;
+}
+
+@media (min-width: 768px) {
+  .demo-container {
+    padding-inline: 48px;
+  }
+}
+
+.demo-section {
+  padding-block: 48px;
+}
+
+@media (min-width: 768px) {
+  .demo-section {
+    padding-block: 80px;
+  }
+}
+
+/* Scala Tipografica Universale (Mobile -> Desktop) */
+.demo-h1 {
+  font-size: 2.25rem; /* 36px mobile */
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+@media (min-width: 1024px) {
+  .demo-h1 {
+    font-size: 3.25rem; /* 52px desktop (range 48-56px) */
+    line-height: 1.13;
+  }
+}
+
+.demo-h1-b2b {
+  font-size: 2.25rem;
+  line-height: 1.14;
+  letter-spacing: -0.03em;
+}
+
+@media (min-width: 1024px) {
+  .demo-h1-b2b {
+    font-size: 3.35rem;
+    line-height: 1.12;
+    letter-spacing: -0.03em;
+  }
+}
+
+.demo-h2 {
+  font-size: 1.75rem; /* 28px mobile */
+  line-height: 1.25;
+  letter-spacing: -0.015em;
+}
+
+@media (min-width: 1024px) {
+  .demo-h2 {
+    font-size: 2.25rem; /* 36px desktop */
+    line-height: 1.22;
+  }
+}
+
+.demo-h3 {
+  font-size: 1.25rem; /* 20px mobile */
+  line-height: 1.35;
+}
+
+@media (min-width: 1024px) {
+  .demo-h3 {
+    font-size: 1.5rem; /* 24px desktop */
+    line-height: 1.35;
+  }
+}
+
+.demo-body {
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 65ch;
+}
+
+@media (min-width: 768px) {
+  .demo-body {
+    font-size: 1.0625rem; /* 17px (range 16-18px) */
+    line-height: 1.65;
+  }
+}
+
+/* Ombre stratificate morbide (Zero ombre nere dure) */
+.demo-shadow {
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.03);
+}
+
+.demo-shadow-elevated {
+  box-shadow: 0 16px 40px -8px rgba(15, 23, 42, 0.07), 0 4px 10px -2px rgba(15, 23, 42, 0.04);
+}
+
+/* Micro-interazioni fisiche su bottoni (:hover e :focus-visible) */
+.demo-btn {
+  transition: transform 150ms cubic-bezier(0.22, 1, 0.36, 1), filter 150ms ease, background-color 150ms ease, border-color 150ms ease;
+}
+
+.demo-btn:hover:not(:disabled) {
+  transform: translateY(-1px);
+  filter: brightness(0.95);
+}
+
+.demo-btn:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.demo-btn:focus-visible {
+  outline: 2px solid var(--primary, #1E3A8A);
+  outline-offset: 2px;
+}
+
+/* Modern post-interaction form validation (:user-invalid / :user-valid) */
+.quiz-input:user-invalid {
+  border-color: #B91C1C !important;
+  background-color: rgba(185, 28, 28, 0.04);
+}
+
+.quiz-input:user-invalid + .quiz-error-msg {
+  display: flex;
+}
+
+.quiz-input:user-valid {
+  border-color: #15803D !important;
 }

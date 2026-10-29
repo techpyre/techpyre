@@ -45,39 +45,40 @@ export default function ContactBox() {
   const [gdprAccepted, setGdprAccepted] = useState(false);
   const [isPrivacyModalOpen, setIsPrivacyModalOpen] = useState(false);
   const [isMobileFormOpen, setIsMobileFormOpen] = useState(false);
+  const [honeypot, setHoneypot] = useState("");
 
   useEffect(() => {
-    const handleSelectService = (event: CustomEvent<{ serviceTitle: string }>) => {
-      if (event.detail && event.detail.serviceTitle) {
-        setFormData((prev) => ({ ...prev, service: event.detail.serviceTitle }));
+    const handleSelectService = (event: Event) => {
+      const customEvent = event as CustomEvent<{ serviceTitle: string }>;
+      if (customEvent.detail && customEvent.detail.serviceTitle) {
+        setFormData((prev) => ({ ...prev, service: customEvent.detail.serviceTitle }));
         setIsMobileFormOpen(true);
       }
     };
 
-    const handleSelectWithDetails = (
-      event: CustomEvent<{ serviceTitle: string; prefilledMessage: string }>
-    ) => {
-      if (event.detail) {
+    const handleSelectWithDetails = (event: Event) => {
+      const customEvent = event as CustomEvent<{ serviceTitle: string; prefilledMessage: string }>;
+      if (customEvent.detail) {
         setFormData((prev) => ({
           ...prev,
-          service: event.detail.serviceTitle,
-          message: event.detail.prefilledMessage,
+          service: customEvent.detail.serviceTitle,
+          message: customEvent.detail.prefilledMessage,
         }));
         setIsMobileFormOpen(true);
       }
     };
 
-    window.addEventListener("techpyre:select-service" as any, handleSelectService as EventListener);
+    window.addEventListener("techpyre:select-service", handleSelectService);
     window.addEventListener(
-      "techpyre:select-service-with-details" as any,
-      handleSelectWithDetails as EventListener
+      "techpyre:select-service-with-details",
+      handleSelectWithDetails
     );
 
     return () => {
-      window.removeEventListener("techpyre:select-service" as any, handleSelectService as EventListener);
+      window.removeEventListener("techpyre:select-service", handleSelectService);
       window.removeEventListener(
-        "techpyre:select-service-with-details" as any,
-        handleSelectWithDetails as EventListener
+        "techpyre:select-service-with-details",
+        handleSelectWithDetails
       );
     };
   }, []);
@@ -130,7 +131,7 @@ export default function ContactBox() {
       const response = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({ ...formData, website: honeypot }),
       });
 
       const data: ContactApiResponse = await response.json();
@@ -425,6 +426,18 @@ export default function ContactBox() {
                     )}
 
 
+                  {/* Honeypot anti-bot nascosto */}
+                  <input
+                    type="text"
+                    name="website"
+                    value={honeypot}
+                    onChange={(e) => setHoneypot(e.target.value)}
+                    tabIndex={-1}
+                    autoComplete="off"
+                    className="hidden pointer-events-none"
+                    aria-hidden="true"
+                  />
+
                   {/* Nome e Cognome */}
                   <div className="space-y-1">
                     <label
@@ -436,10 +449,13 @@ export default function ContactBox() {
                     <input
                       type="text"
                       id="name"
+                      name="name"
+                      autoComplete="name"
+                      spellCheck={false}
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                       placeholder={contact.formLabels.namePlaceholder}
-                      className={`w-full px-3.5 py-2.5 rounded-sm border bg-[#F8F7F4]/40 text-[#14181F] text-base sm:text-sm focus:outline-none focus:ring-1 focus:ring-[#B8860B] transition-all ${
+                      className={`w-full px-3.5 py-2.5 rounded-sm border bg-[#F8F7F4]/40 text-[#14181F] text-base sm:text-sm focus:outline-none focus:ring-1 focus:ring-[#B8860B] transition-[border-color,background-color,box-shadow] ${
                         validationErrors.name ? "border-rose-400 bg-rose-50/20" : "border-[#E8E2D5]"
                       }`}
                       required
@@ -461,10 +477,12 @@ export default function ContactBox() {
                       <input
                         type="text"
                         id="company"
+                        name="company"
+                        autoComplete="organization"
                         value={formData.company}
                         onChange={(e) => setFormData({ ...formData, company: e.target.value })}
                         placeholder={contact.formLabels.companyPlaceholder}
-                        className="w-full px-3.5 py-2.5 rounded-sm border border-[#E8E2D5] bg-[#F8F7F4]/40 text-[#14181F] text-base sm:text-sm focus:outline-none focus:ring-1 focus:ring-[#B8860B] transition-all"
+                        className="w-full px-3.5 py-2.5 rounded-sm border border-[#E8E2D5] bg-[#F8F7F4]/40 text-[#14181F] text-base sm:text-sm focus:outline-none focus:ring-1 focus:ring-[#B8860B] transition-[border-color,background-color,box-shadow]"
                       />
                     </div>
 
@@ -478,10 +496,13 @@ export default function ContactBox() {
                       <input
                         type="text"
                         id="contact"
+                        name="contact"
+                        autoComplete="email tel"
+                        inputMode={formData.contact.includes("@") ? "email" : "text"}
                         value={formData.contact}
                         onChange={(e) => setFormData({ ...formData, contact: e.target.value })}
                         placeholder={contact.formLabels.contactPlaceholder}
-                        className={`w-full px-3.5 py-2.5 rounded-sm border bg-[#F8F7F4]/40 text-[#14181F] text-base sm:text-sm focus:outline-none focus:ring-1 focus:ring-[#B8860B] transition-all ${
+                        className={`w-full px-3.5 py-2.5 rounded-sm border bg-[#F8F7F4]/40 text-[#14181F] text-base sm:text-sm focus:outline-none focus:ring-1 focus:ring-[#B8860B] transition-[border-color,background-color,box-shadow] ${
                           validationErrors.contact ? "border-rose-400 bg-rose-50/20" : "border-[#E8E2D5]"
                         }`}
                         required
@@ -502,9 +523,11 @@ export default function ContactBox() {
                     </label>
                     <select
                       id="service"
+                      name="service"
+                      autoComplete="off"
                       value={formData.service}
                       onChange={(e) => setFormData({ ...formData, service: e.target.value })}
-                      className="w-full px-3.5 py-2.5 rounded-sm border border-[#E8E2D5] bg-[#F8F7F4]/40 text-[#14181F] text-base sm:text-sm focus:outline-none focus:ring-1 focus:ring-[#B8860B] transition-all"
+                      className="w-full px-3.5 py-2.5 rounded-sm border border-[#E8E2D5] bg-[#F8F7F4]/40 text-[#14181F] text-base sm:text-sm focus:outline-none focus:ring-1 focus:ring-[#B8860B] transition-[border-color,background-color,box-shadow]"
                     >
                       {services.items.map((srv) => (
                         <option key={srv.id} value={srv.name}>
@@ -525,11 +548,12 @@ export default function ContactBox() {
                     </label>
                     <textarea
                       id="message"
+                      name="message"
                       rows={4}
                       value={formData.message}
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                       placeholder={contact.formLabels.messagePlaceholder}
-                      className={`w-full px-3.5 py-2.5 rounded-sm border bg-[#F8F7F4]/40 text-[#14181F] text-base sm:text-sm focus:outline-none focus:ring-1 focus:ring-[#B8860B] transition-all ${
+                      className={`w-full px-3.5 py-2.5 rounded-sm border bg-[#F8F7F4]/40 text-[#14181F] text-base sm:text-sm focus:outline-none focus:ring-1 focus:ring-[#B8860B] transition-[border-color,background-color,box-shadow] ${
                         validationErrors.message ? "border-rose-400 bg-rose-50/20" : "border-[#E8E2D5]"
                       }`}
                       required
@@ -553,6 +577,7 @@ export default function ContactBox() {
                         <input
                           type="checkbox"
                           id="gdpr-consent"
+                          name="gdpr-consent"
                           checked={gdprAccepted}
                           onChange={(e) => {
                             setGdprAccepted(e.target.checked);
@@ -595,13 +620,13 @@ export default function ContactBox() {
                     <div className="relative p-[1.5px] rounded-sm overflow-hidden group cursor-pointer">
                       <span
                         aria-hidden="true"
-                        className="absolute inset-[-150%] bg-[conic-gradient(from_0deg_at_50%_50%,transparent_0deg,transparent_260deg,#C5A059_310deg,#FFFFFF_345deg,#B8860B_360deg)] animate-[spin_3.5s_linear_infinite] pointer-events-none"
+                        className="absolute inset-[-150%] bg-[conic-gradient(from_0deg_at_50%_50%,transparent_0deg,transparent_260deg,#C5A059_310deg,#FFFFFF_345deg,#B8860B_360deg)] animate-[spin_3.5s_linear_infinite] motion-reduce:animate-none pointer-events-none"
                       />
                       <motion.button
                         whileTap={{ scale: 0.98 }}
                         type="submit"
                         disabled={status === "submitting"}
-                        className="relative z-10 w-full py-3.5 px-6 rounded-[1px] bg-[#B8860B] hover:bg-[#9a7008] text-white font-sans text-xs sm:text-sm font-bold tracking-wide transition-all shadow-xs flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50 min-h-[44px]"
+                        className="relative z-10 w-full py-3.5 px-6 rounded-[1px] bg-[#B8860B] hover:bg-[#9a7008] text-white font-sans text-xs sm:text-sm font-bold tracking-wide transition-colors shadow-xs flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50 min-h-[44px]"
                       >
                         {status === "submitting" ? (
                           <span>{contact.formLabels.submitting}</span>
@@ -615,18 +640,7 @@ export default function ContactBox() {
                     </div>
 
                     <p className="text-[11px] text-[#5A6270] text-center leading-relaxed">
-                      Inviando la richiesta dichiari di aver letto e accettato la{" "}
-                      <button
-                        type="button"
-                        onClick={(e) => {
-                          e.preventDefault();
-                          setIsPrivacyModalOpen(true);
-                        }}
-                        className="text-[#0B1E36] font-semibold underline decoration-[#B8860B] hover:text-[#B8860B]"
-                      >
-                        Privacy Policy
-                      </button>{" "}
-                      per il trattamento dei dati personali ai sensi del GDPR.
+                      Nessun vincolo o costo preventivo · Risposta tecnica diretta del Fondatore entro 24 ore lavorative
                     </p>
                   </div>
                 </motion.form>

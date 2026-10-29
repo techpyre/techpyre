@@ -1,0 +1,51 @@
+{
+  "slug": "ecorestaurosrl",
+  "targetUrl": "https://www.ecorestaurosrl.it/optin",
+  "finalResolvedUrl": "https://www.ecorestaurosrl.it/optin",
+  "measuredResponseMs": 2462,
+  "renderBlockingScripts": 15,
+  "estimatedMobileLcpSeconds": 14.3,
+  "qualification": {
+    "isQualified": true,
+    "recommendedStrategy": "AGENCY_COEXISTENCE_OR_WHITELABEL",
+    "strategyReason": "Rilevata presenza di Web Agency / Funnel di Marketing esistente ma con pagina lenta (14.3s). Usa l'angolo \"Non tocchiamo chi vi segue le campagne: forniamo solo la pagina veloce 0.3s in White-Label\" (o proponi partnership White-Label all'agenzia rilevata).",
+    "disqualifiers": [],
+    "alreadyHasPerformantLanding": false,
+    "isDedicatedFunnelUrl": true,
+    "funnelBuilders": [],
+    "hasQuizAlready": false,
+    "navLinksCount": 12,
+    "formsCount": 1,
+    "isEcommerce": false,
+    "isLargeEnterpriseOrSpa": false,
+    "agencyDetection": {
+      "hasAgencyInvolved": true,
+      "detectedAgencyNames": [],
+      "detectedAgencyLinks": [],
+      "martechSignals": [
+        "Meta Pixel"
+      ]
+    }
+  },
+  "extractedEmails": [
+    "preventivi@ecorestaurosrl.it"
+  ],
+  "extractedPhones": [
+    "3155447261",
+    "3360559319",
+    "+39051982980",
+    "051 982980",
+    "02960911200"
+  ],
+  "extractedVat": "02960911200",
+  "legalSnippets": [
+    "S.r.l. - Partita IVA 02960911200 - Privacy Policy e Cookies - Credits Questo sito utilizza i cookie"
+  ],
+  "candidateLogoUrls": [
+    "https://www.ecorestaurosrl.it/wp-content/uploads/2019/03/Ecorestauro_logo.jpg"
+  ],
+  "candidateHeroUrls": [
+    "https://www.facebook.com/tr?id=315544726142504&amp;ev=PageView%0A&amp;noscript=1"
+  ],
+  "assetsDir": "/public/leads/ecorestaurosrl"
+}

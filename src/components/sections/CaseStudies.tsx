@@ -2,6 +2,7 @@
 
 import React, { useState, useRef } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { siteContent } from "@/config/siteContent";
 import { requestContactPrefill } from "@/lib/contactPrefill";
@@ -104,12 +105,12 @@ export default function CaseStudies({ variant = "teaser" }: CaseStudiesProps) {
                   aria-label={`Apri demo live di ${project.title}`}
                 >
                   {project.screenshotUrl ? (
-                    // eslint-disable-next-line @next/next/no-img-element
-                    <img
+                    <Image
                       src={project.screenshotUrl}
                       alt={`Screenshot demo: ${project.title}`}
-                      className="w-full h-full object-cover object-top transition-transform duration-500 group-hover/img:scale-[1.02]"
-                      loading="lazy"
+                      fill
+                      sizes="(max-width: 768px) 84vw, 380px"
+                      className="object-cover object-top transition-transform duration-500 group-hover/img:scale-[1.02]"
                     />
                   ) : (
                     <div className="w-full h-full flex items-center justify-center text-xs text-[#5A6270]">
@@ -177,18 +178,22 @@ export default function CaseStudies({ variant = "teaser" }: CaseStudiesProps) {
             ))}
           </div>
 
-          {/* Indicatori Paginazione Mobile (Pallini Animati per Scorrimento Singolo) */}
-          <div className="lg:hidden flex items-center justify-center gap-1.5 pt-3">
+          {/* Indicatori Paginazione Mobile (Pallini Animati con Touch Area Conforme) */}
+          <div className="lg:hidden flex items-center justify-center gap-1 pt-3">
             {caseStudies.items.map((_, i) => (
               <button
                 key={i}
                 type="button"
                 onClick={() => scrollToSlide(i)}
-                className={`h-1.5 rounded-full transition-all duration-300 ${
-                  activeSlide === i ? "w-6 bg-[#B8860B]" : "w-2 bg-[#D4CBB8]"
-                }`}
+                className="p-2.5 flex items-center justify-center cursor-pointer min-h-[44px] min-w-[32px]"
                 aria-label={`Visualizza progetto ${i + 1}`}
-              />
+              >
+                <span
+                  className={`h-1.5 rounded-full transition-[width,background-color] duration-300 block ${
+                    activeSlide === i ? "w-6 bg-[#B8860B]" : "w-2 bg-[#D4CBB8]"
+                  }`}
+                />
+              </button>
             ))}
           </div>
         </div>
@@ -255,12 +260,12 @@ export default function CaseStudies({ variant = "teaser" }: CaseStudiesProps) {
                   className="block w-full aspect-[16/10] sm:aspect-[16/9] overflow-hidden bg-[#0A192F]/5 border-b border-[#E8E2D5] group/img relative"
                   aria-label={`Apri demo di ${project.title}`}
                 >
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
+                  <Image
                     src={project.screenshotUrl}
                     alt={`Screenshot live demo: ${project.title}`}
-                    className="w-full h-full object-cover object-top transition-transform duration-500 group-hover/img:scale-[1.02]"
-                    loading="lazy"
+                    fill
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                    className="object-cover object-top transition-transform duration-500 group-hover/img:scale-[1.02]"
                   />
                   <div className="absolute top-3 right-3 px-2 py-0.5 rounded-full bg-[#0B1E36]/80 backdrop-blur-xs text-[9px] font-mono text-emerald-400 font-semibold flex items-center gap-1 shadow-xs border border-white/10 pointer-events-none">
                     <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />

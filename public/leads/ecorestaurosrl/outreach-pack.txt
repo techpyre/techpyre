@@ -1,0 +1,89 @@
+=====================================================================
+OUTBOUND PACK - ECORESTAURO S.R.L. (ecorestaurosrl)
+=====================================================================
+Titolare / Decision Maker : Direzione Ecorestauro
+Email Target              : preventivi@ecorestaurosrl.it
+Telefono / WhatsApp       : +39 051 982980
+Città                     : Bologna e Provincia
+P.IVA                     : 02960911200
+LCP Sito Attuale          : 4.3s (Score Mobile: 38/100)
+URL Demo (Brand-Neutral)  : https://techpyre.eu/demo/ecorestaurosrl
+Strategia Qualifica       : AGENCY_COEXISTENCE_OR_WHITELABEL
+Segnali MarTech / Agenzia : Meta Pixel
+Agenzia Rilevata Footer   : Nessuna agenzia esterna firmata nel footer
+Check Anti-Spam 1ª Email  : 296 parole | Link: ✅ ZERO LINK (Inbox Sicura)
+
+---------------------------------------------------------------------
+1. PRIMA EMAIL AL TITOLARE (Plain-Text, Zero Link)
+---------------------------------------------------------------------
+A: preventivi@ecorestaurosrl.it
+Oggetto: Sulla vostra sponsorizzata Facebook "Le tue finestre sono vecchie?" - TechPyre
+
+Buongiorno, alla cortese attenzione della Direzione di Ecorestauro,
+
+mi chiamo Riccardo Granza e sono il fondatore di TechPyre: sviluppiamo landing page ad alta velocità per le aziende che investono in campagne pubblicitarie su Facebook e Google.
+
+Oggi ho visto su Facebook la vostra sponsorizzata "Le tue finestre sono vecchie e devi sostituirle? C’è una cosa che devi assolutamente sapere" che porta sulla vostra pagina optin per il coupon sconto del 10%. Aprendola da telefono, la pagina impiega 4.3 secondi a caricare (punteggio mobile 38 su 100) ma soprattutto ha un difetto grafico grave su smartphone: l’impaginazione è più larga dello schermo, quindi sia il titolo sia il bottone arancione "Accedi ORA" risultano tagliati a metà sul lato destro, sopra una pagina che mantiene ancora 12 link di navigazione.
+
+Voi avete già impostato bene l’idea dell’offerta con il coupon del 10%, ma se un utente clicca da telefono, aspetta oltre 4 secondi e si ritrova il titolo e il bottone di iscrizione tagliati fuori dallo schermo, percepisce un problema tecnico e chiude la pagina, facendovi perdere contatti già pagati. Il vantaggio diretto di lavorare con noi è che trasformiamo questa vostra pagina optin in una versione istantanea da 0.3 secondi, perfettamente impaginata per il pollice su smartphone e con 2 domande rapide di pre-qualifica (problema attuale degli scuri/finestre + numero di infissi) prima di sbloccare il coupon: così aumentate subito la percentuale di visitatori che lasciano il numero e sapete già in anticipo l’entità del lavoro da preventivare.
+
+Per mostrarvi la differenza in modo pratico, abbiamo già rifatto la vostra pagina in una versione dimostrativa da 0.3 secondi. Se vi fa piacere provarla dal telefono, rispondetemi pure "LINK" qui sotto e ve lo giro subito.
+
+Un cordiale saluto,
+Riccardo Granza
+Fondatore TechPyre
+Tel: +39 379 115 9352
+
+---------------------------------------------------------------------
+2. FOLLOW-UP EMAIL (Quando risponde "LINK" o "SÌ")
+---------------------------------------------------------------------
+A: preventivi@ecorestaurosrl.it
+Oggetto: Re: Sulla vostra sponsorizzata Facebook "Le tue finestre sono vecchie?" - TechPyre
+
+Buongiorno,
+
+grazie per il riscontro. Ecco il link diretto per provare la nuova pagina dal telefono o dal PC:
+https://techpyre.eu/demo/ecorestaurosrl
+
+Lavoriamo anche in modalità tecnica affiancata a chi vi segue già il marketing: forniamo la pagina veloce da 0.3s già integrata col vostro Meta Pixel.
+
+Un cordiale saluto,
+Riccardo Granza
+TechPyre
+Tel: +39 379 115 9352
+
+---------------------------------------------------------------------
+3. DM INSTAGRAM / FACEBOOK / WHATSAPP (+ public/leads/ecorestaurosrl/new-demo-mobile.png)
+---------------------------------------------------------------------
+Buongiorno Direzione, sono Riccardo Granza, fondatore di TechPyre (sviluppiamo landing page ad alta velocità per chi investe in campagne Meta). Ho visto la vostra sponsorizzata "Le Tue Finestre Sono Vecchie? Restaurale e Installa il Nuovo Vetro Termico Risparmiando fino al 30%" su Facebook: dal telefono la pagina attuale impiega 4.3 secondi ad aprirsi. Per presentarci vi abbiamo preparato una versione dimostrativa istantanea (0.3s) con i vostri testi: le ho inviato i dettagli via email, se le fa piacere provarla dal telefono mi scriva pure qui e le giro il link!
+
+---------------------------------------------------------------------
+4. RISPOSTA ANTI-OBIEZIONE "CI SEGUE GIÀ UN'AGENZIA" (Coesistenza / White-Label)
+---------------------------------------------------------------------
+La capisco perfettamente, e infatti non vogliamo assolutamente sostituire l'agenzia che vi segue le campagne Facebook.
+
+Il nostro è un intervento puramente tecnico (anche in White-Label): forniamo alla vostra agenzia attuale la pagina veloce da 0.3s sul vostro dominio, già collegata al loro Pixel e GTM, così i clic che vi portano smettono di perdersi durante i 4.3 secondi di caricamento.
+
+Può girare direttamente anche a loro questo link di test (è completamente neutro, senza il nostro logo):
+
+https://techpyre.eu/demo/ecorestaurosrl
+
+---------------------------------------------------------------------
+5. PITCH B2B2B WHITE-LABEL DIRETTO ALL'AGENZIA (Se vuoi vendere all'Agenzia)
+---------------------------------------------------------------------
+Oggetto: Partnership tecnica White-Label su campagne Meta di Ecorestauro S.r.l. (4.3s -> 0.3s)
+
+Buongiorno,
+
+mi chiamo Riccardo Granza e sono il fondatore di TechPyre: siamo uno studio tecnico specializzato nello sviluppo di landing page Next.js ad altissima velocità (0.3s) in modalità White-Label per le Web Agency.
+
+Abbiamo notato che seguite il progetto digitale di Ecorestauro S.r.l.. Le creatività su Meta sono ben strutturate, ma la pagina attuale su cui atterra il traffico mobile impiega 4.3 secondi a caricare, penalizzando il tasso di conversione delle campagne.
+
+Abbiamo già preparato una versione Next.js da 0.3s per Ecorestauro S.r.l. completamente neutra (100% White-Label, zero riferimenti a TechPyre) con simulatore lead integrato: potete mostrarla direttamente al vostro cliente come upgrade vostro o collegarla in 24h al vostro GTM/CRM.
+
+Se vi fa piacere vedere la preview White-Label già pronta, rispondetemi pure 'LINK' e ve la giro subito.
+
+Un cordiale saluto,
+Riccardo Granza - Fondatore TechPyre
++39 379 115 9352
+=====================================================================

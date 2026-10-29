@@ -1,0 +1,106 @@
+{
+  "slug": "ecorestaurosrl",
+  "archetype": "local-leadgen",
+  "meta": {
+    "companyName": "Ecorestauro S.r.l.",
+    "decisionMakerName": "Direzione Ecorestauro",
+    "targetEmail": "preventivi@ecorestaurosrl.it",
+    "phone": "+39 051 982980",
+    "city": "Bologna e Provincia",
+    "vatNumber": "02960911200",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=serramenti%20infissi",
+    "originalLandingUrl": "https://www.ecorestaurosrl.com/optin-vetro-termico"
+  },
+  "audit": {
+    "originalLcpSeconds": 4.3,
+    "mobileScore": 38,
+    "activeAdHeadline": "Le Tue Finestre Sono Vecchie? Restaurale e Installa il Nuovo Vetro Termico Risparmiando fino al 30%",
+    "activeAdCopySummary": "Non sempre serve sostituire gli infissi: rigeneriamo le tue finestre in legno a livello estetico e installiamo il nuovo vetro termico senza creare l'effetto sottovuoto e muffa.",
+    "threeCriticalFlaws": [
+      "Su smartphone i titoli principali e il bottone arancione 'Accedi ORA' escono fuori dal margine destro dello schermo.",
+      "Tempo di caricamento su rete mobile di 4.3 secondi a causa di immagini non compresse.",
+      "La pagina costringe a leggere un testo molto lungo prima di poter richiedere una valutazione tecnica o il buono sconto."
+    ]
+  },
+  "theme": {
+    "primaryHex": "#2F5233",
+    "accentHex": "#D97706",
+    "darkBgHex": "#1C1917",
+    "borderRadius": "8px"
+  },
+  "content": {
+    "badgeTop": "Il Centro Benessere del Legno · Vetro Termico e Restauro Infissi",
+    "heroHeadline": "Rigenera le Tue Finestre in Legno con il Nuovo Vetro Termico Senza Sostituirle",
+    "heroSubheadline": "Risparmia fino al 30% di energia ed evita il rischio di muffa e condensa causato dagli infissi ermetici in plastica. Scopri in 30 secondi se le tue finestre possono essere restaurate.",
+    "heroBullets": [
+      "Installazione di vetro termico isolante sui tuoi telai in legno esistenti",
+      "Riverniciatura completa o cambio colore (anche bicolore interno/esterno)",
+      "Zero opere murarie e coupon sconto del 10% riservato online"
+    ],
+    "ctaButtonText": "Richiedi Valutazione e Coupon Sconto 10%",
+    "trustMicrocopy": "Valutazione senza impegno · Dati protetti GDPR · Ecorestauro S.r.l.",
+    "logoLocalPath": "/leads/ecorestaurosrl/logo.png",
+    "heroImageLocalPath": "/leads/ecorestaurosrl/hero.jpg",
+    "heroImageCaption": "Intervento di riqualificazione energetica e restauro su finestre in legno - Ecorestauro S.r.l.",
+    "quiz": {
+      "question1": {
+        "title": "Qual è il problema principale delle tue finestre attuali?",
+        "options": [
+          "Entra freddo / spifferi e hanno ancora il vetro singolo o vecchio",
+          "La vernice esterna è rovinata o vorrei cambiare il colore",
+          "Entrambi: voglio isolarle termicamente e rimetterle a nuovo"
+        ]
+      },
+      "question2": {
+        "title": "Su quante finestre o portefinestre vorresti intervenire?",
+        "options": [
+          "Fino a 4 finestre",
+          "Da 5 a 8 finestre",
+          "Oltre 8 finestre"
+        ]
+      },
+      "finalStepTitle": "Dove possiamo inviarti la valutazione tecnica e il coupon sconto del 10%?"
+    },
+    "valueProps": [
+      {
+        "title": "Nuovo Vetro Termico Senza Effetto 'Sottovuoto' e Muffa",
+        "description": "Potenziamo la tenuta termica e acustica delle tue finestre mantenendo la naturale traspirabilità del legno e un microclima salubre in casa."
+      },
+      {
+        "title": "Restauro Estetico e Possibilità di Cambio Colore",
+        "description": "Possiamo sbiancare o laccare il lato interno delle tue finestre mantenendo il colore condominiale all'esterno, con cicli garantiti nel tempo."
+      },
+      {
+        "title": "Confronto Onesto prima di Spendere Migliaia di Euro",
+        "description": "Un nostro tecnico valuta lo stato reale del legno: se i tuoi infissi sono sani, li portiamo alle prestazioni moderne senza sostituirli."
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "-30%",
+      "mainStatLabel": "di dispersione energetica grazie al nuovo vetro termico su legno",
+      "reviewsSummary": "4.9/5 da clienti che hanno riqualificato i propri infissi",
+      "testimonials": [
+        {
+          "name": "Silvia M.",
+          "location": "Bologna",
+          "quote": "Ci avevano preventivato 14.000 euro per cambiare tutto in PVC. Con Ecorestauro abbiamo inserito i nuovi vetri termici e riverniciato il legno spendendo molto meno."
+        },
+        {
+          "name": "Alberto F.",
+          "location": "Modena",
+          "quote": "Hanno trasformato le nostre vecchie finestre scure facendole bianche all'interno e lasciando il legno fuori per il condominio. Risultato splendido."
+        },
+        {
+          "name": "Lucia G.",
+          "location": "Casalecchio di Reno (BO)",
+          "quote": "Niente più spifferi né rumore dalla strada, e soprattutto zero polvere di cantiere in casa."
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "Sulla vostra sponsorizzata Facebook \"Le tue finestre sono vecchie?\" - TechPyre",
+    "emailPlainTextBody": "Buongiorno, alla cortese attenzione della Direzione di Ecorestauro,\n\nmi chiamo Riccardo Granza e sono il fondatore di TechPyre: sviluppiamo landing page ad alta velocità per le aziende che investono in campagne pubblicitarie su Facebook e Google.\n\nOggi ho visto su Facebook la vostra sponsorizzata \"Le tue finestre sono vecchie e devi sostituirle? C’è una cosa che devi assolutamente sapere\" che porta sulla vostra pagina optin per il coupon sconto del 10%. Aprendola da telefono, la pagina impiega 4.3 secondi a caricare (punteggio mobile 38 su 100) ma soprattutto ha un difetto grafico grave su smartphone: l’impaginazione è più larga dello schermo, quindi sia il titolo sia il bottone arancione \"Accedi ORA\" risultano tagliati a metà sul lato destro, sopra una pagina che mantiene ancora 12 link di navigazione.\n\nVoi avete già impostato bene l’idea dell’offerta con il coupon del 10%, ma se un utente clicca da telefono, aspetta oltre 4 secondi e si ritrova il titolo e il bottone di iscrizione tagliati fuori dallo schermo, percepisce un problema tecnico e chiude la pagina, facendovi perdere contatti già pagati. Il vantaggio diretto di lavorare con noi è che trasformiamo questa vostra pagina optin in una versione istantanea da 0.3 secondi, perfettamente impaginata per il pollice su smartphone e con 2 domande rapide di pre-qualifica (problema attuale degli scuri/finestre + numero di infissi) prima di sbloccare il coupon: così aumentate subito la percentuale di visitatori che lasciano il numero e sapete già in anticipo l’entità del lavoro da preventivare.\n\nPer mostrarvi la differenza in modo pratico, abbiamo già rifatto la vostra pagina in una versione dimostrativa da 0.3 secondi. Se vi fa piacere provarla dal telefono, rispondetemi pure \"LINK\" qui sotto e ve lo giro subito.\n\nUn cordiale saluto,\nRiccardo Granza\nFondatore TechPyre\nTel: +39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno,\n\ngrazie per il riscontro. Ecco il link diretto per provare la nuova pagina dal telefono o dal PC:\nhttps://techpyre.eu/demo/ecorestaurosrl\n\nLavoriamo anche in modalità tecnica affiancata a chi vi segue già il marketing: forniamo la pagina veloce da 0.3s già integrata col vostro Meta Pixel.\n\nUn cordiale saluto,\nRiccardo Granza\nTechPyre\nTel: +39 379 115 9352"
+  }
+}

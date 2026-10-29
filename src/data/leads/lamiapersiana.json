@@ -1,0 +1,106 @@
+{
+  "slug": "lamiapersiana",
+  "archetype": "local-leadgen",
+  "meta": {
+    "companyName": "La Mia Persiana (Ipei Arredamenti)",
+    "decisionMakerName": "Emanuela Maria Dagasso",
+    "targetEmail": "info@lamiapersiana.it",
+    "phone": "+39 388 4010508",
+    "city": "Lombardia (Pavia, Milano, Bergamo, Brescia)",
+    "vatNumber": "03793860135",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=serramenti%20infissi",
+    "originalLandingUrl": "https://lamiapersiana.it/"
+  },
+  "audit": {
+    "originalLcpSeconds": 28.9,
+    "mobileScore": 18,
+    "activeAdHeadline": "Restauro Artigianale Finestre e Persiane in Legno in Tutta la Lombardia",
+    "activeAdCopySummary": "Ridiamo nuova vita alle tue persiane, finestre e portoncini in legno in tutta la Lombardia con ciclo di restauro artigianale garantito.",
+    "threeCriticalFlaws": [
+      "Tempo di risposta critico: il sito attuale impiega oltre 6.4 secondi solo per rispondere al primo byte (LCP mobile stimato oltre 20 secondi).",
+      "Su smartphone il titolo principale nella fascia verde scuro esce fuori dallo schermo sul lato destro.",
+      "Chi clicca sull'annuncio non può selezionare subito se deve restaurare persiane, finestre o scuri né il numero di battenti."
+    ]
+  },
+  "theme": {
+    "primaryHex": "#143642",
+    "accentHex": "#C86428",
+    "darkBgHex": "#142329",
+    "borderRadius": "8px"
+  },
+  "content": {
+    "badgeTop": "Servizio Attivo in Tutta la Lombardia · Ritiro e Riconsegna Inclusi",
+    "heroHeadline": "Restauro Artigianale di Persiane, Scuri e Finestre in Legno in Lombardia",
+    "heroSubheadline": "Riportiamo a nuovo i tuoi serramenti in legno senza sostituirli: sverniciatura ecologica, riparazione di falegnameria e verniciatura ad alta resistenza con ritiro e posa a domicilio.",
+    "heroBullets": [
+      "Operativi a Pavia, Milano, Bergamo, Brescia, Como, Varese, Lodi e Cremona",
+      "Smontaggio, trasporto in laboratorio e rimontaggio inclusi nel servizio",
+      "Risparmio concreto rispetto alla sostituzione con nuovi infissi"
+    ],
+    "ctaButtonText": "Richiedi Preventivo Gratuito per il Restauro",
+    "trustMicrocopy": "Senza impegno · Sopralluogo e valutazione gratuita in tutta la Lombardia",
+    "logoLocalPath": "/leads/lamiapersiana/logo.png",
+    "heroImageLocalPath": "/leads/lamiapersiana/hero.jpg",
+    "heroImageCaption": "Laboratorio artigianale di restauro persiane, finestre e portoncini in legno - La Mia Persiana",
+    "quiz": {
+      "question1": {
+        "title": "Quali serramenti in legno desideri far restaurare?",
+        "options": [
+          "Persiane o Scuri esterni in legno",
+          "Finestre in legno (con eventuale modifica vetrocamera)",
+          "Portoncino d'ingresso o pacchetto completo casa"
+        ]
+      },
+      "question2": {
+        "title": "Quanti elementi (persiane/finestre) sono da rigenerare?",
+        "options": [
+          "Da 1 a 4 elementi",
+          "Da 5 a 10 elementi",
+          "Oltre 10 elementi (Intera abitazione / Villa)"
+        ]
+      },
+      "finalStepTitle": "In quale provincia ti trovi e a quale numero possiamo inviarti il preventivo?"
+    },
+    "valueProps": [
+      {
+        "title": "Ciclo Completo di Sverniciatura e Ripristino in Falegnameria",
+        "description": "Rimuoviamo completamente la vecchia vernice deteriorata, sostituiamo le parti in legno ammalorate e applichiamo cicli all'acqua ad alta protezione UV."
+      },
+      {
+        "title": "Nessun Disagio in Casa né Opere Murarie",
+        "description": "Il nostro personale si occupa dello smontaggio, del ritiro presso la tua abitazione in Lombardia e della riconsegna con regolazione della ferramenta."
+      },
+      {
+        "title": "Valorizzazione del Legno Originale e Risparmio",
+        "description": "Mantieni il fascino e i vincoli estetici del legno massello spendendo molto meno rispetto all'acquisto di serramenti nuovi."
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "8 Province",
+      "mainStatLabel": "coperte con ritiro e riconsegna diretta in tutta la Lombardia",
+      "reviewsSummary": "4.9/5 da clienti in tutta la Lombardia",
+      "testimonials": [
+        {
+          "name": "Giorgio T.",
+          "location": "Pavia",
+          "quote": "Persiane di 30 anni tornate letteralmente come nuove. Puntuali nel ritiro e nella riconsegna, lavoro di falegnameria impeccabile."
+        },
+        {
+          "name": "Famiglia Riva",
+          "location": "Bergamo",
+          "quote": "Nel nostro centro storico non potevamo mettere il PVC. Con il restauro de La Mia Persiana abbiamo salvato gli scuri originali spendendo la metà."
+        },
+        {
+          "name": "Claudio M.",
+          "location": "Como",
+          "quote": "Hanno restaurato 12 persiane e il portoncino d'ingresso in legno massello. Finitura liscia al tatto e ferramenta rimessa a nuovo."
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "Sulla vostra sponsorizzata Facebook \"Restauro Persiane e Finestre\" - TechPyre",
+    "emailPlainTextBody": "Buongiorno Emanuela,\n\nmi chiamo Riccardo Granza e sono il fondatore di TechPyre, uno studio specializzato nella creazione di landing page ad alta conversione per le aziende che investono in pubblicità su Facebook e Google.\n\nOggi mi è uscita su Facebook la vostra sponsorizzata sul restauro di persiane e finestre in legno e ho provato ad aprirla dal telefono come farebbe un vostro potenziale cliente. Dai test tecnici che abbiamo effettuato, la pagina impiega 28.9 secondi a caricare su rete mobile (quasi mezzo minuto di schermo fermo perché carica l’intero sito vetrina con decine di elementi pesanti). Inoltre, appena si apre sullo smartphone, il titolo nella fascia blu esce fuori dallo schermo sul lato destro, c’è il banner dei cookie che copre la visuale e non c’è nessun modulo immediato per chiedere un preventivo senza dover scorrere tutta la pagina.\n\nIn pratica, oggi state pagando Facebook per ogni singolo clic, ma quando una pagina supera i 3 o 4 secondi di attesa da telefono, oltre il 60% delle persone chiude prima ancora di leggere cosa offrite. Lavorare con noi vi serve esattamente a bloccare questo spreco: sostituendo la pagina attuale con una landing page dedicata che si apre in 0.3 secondi (istantanea) e che presenta subito nella prima schermata un simulatore guidato in 3 clic (scelta tra persiane o finestre + numero di pezzi + recapito telefonico), a parità di soldi spesi in pubblicità potete raddoppiare le richieste di preventivo reali, ricevendo su WhatsApp contatti già filtrati e pronti da quotare.\n\nPer farle toccare con mano la differenza, abbiamo già costruito una versione dimostrativa funzionante con il vostro marchio e le vostre foto. Se le fa piacere provarla dal telefono, mi risponda pure \"LINK\" a questa email e glielo giro subito.\n\nUn cordiale saluto,\nRiccardo Granza\nFondatore TechPyre\nTel: +39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno Emanuela,\n\nla ringrazio per il riscontro. Ecco il link diretto per provare la pagina dal telefono o dal computer:\nhttps://techpyre.eu/demo/lamiapersiana\n\nProvi a cliccare sulle 2 domande del simulatore (persiane/finestre + numero di elementi): all’ultimo passaggio vedrà la scheda richiesta già ordinata che vi arriverebbe su WhatsApp al 388 4010508 a ogni clic della sponsorizzata, in 0.3 secondi invece di 28.9 secondi.\n\nResto a disposizione per qualsiasi domanda,\nRiccardo Granza\nTechPyre\nTel: +39 379 115 9352"
+  }
+}

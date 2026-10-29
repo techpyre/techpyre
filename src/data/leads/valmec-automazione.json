@@ -1,0 +1,124 @@
+{
+  "slug": "valmec-automazione",
+  "archetype": "b2b-authority",
+  "meta": {
+    "companyName": "Valmec Automazione Industriale S.r.l.",
+    "decisionMakerName": "Ing. Davide Valsecchi",
+    "targetEmail": "d.valsecchi@valmecautomazione.it",
+    "phone": "+39 035 456 7890",
+    "city": "Bergamo",
+    "vatNumber": "03216540168",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?id=778899001122",
+    "originalLandingUrl": "https://www.valmecautomazione.it/isole-robotizzate-saldatura"
+  },
+  "audit": {
+    "originalLcpSeconds": 7.1,
+    "mobileScore": 29,
+    "activeAdHeadline": "Isole Robotizzate di Saldatura e Asservimento Macchine CNC Chiavi in Mano",
+    "activeAdCopySummary": "Aumenta la produttività del reparto fino al 42% e accedi alle agevolazioni Transizione 5.0 con le celle robotizzate su misura Valmec.",
+    "threeCriticalFlaws": [
+      "LCP mobile di 7.1 secondi: i responsabili di stabilimento che cliccano da smartphone abbandonano prima del caricamento.",
+      "Form generico 'Contattaci' che non qualifica né il processo produttivo (saldatura, asservimento CNC, fine linea) né l'articolazione dei turni.",
+      "Assenza sopra la piega di metriche di Payback Period, OEE e conformità per l'accesso al credito d'imposta Transizione 5.0."
+    ]
+  },
+  "theme": {
+    "primaryHex": "#18181B",
+    "accentHex": "#1E3A5F",
+    "darkBgHex": "#141619",
+    "borderRadius": "6px"
+  },
+  "content": {
+    "badgeTop": "Automazione Industriale e Robotica · Bergamo",
+    "heroHeadline": "Isole Robotizzate di Saldatura e Asservimento Macchine CNC Chiavi in Mano",
+    "heroSubheadline": "Progettiamo, costruiamo e integriamo celle robotizzate custom che abbattono il costo pezzo e i fermi linea, con interconnessione nativa MES/ERP e perizia asseverata Transizione 5.0 inclusa.",
+    "ctaButtonText": "Richiedi Studio di Fattibilità e Analisi Tempo Ciclo",
+    "secondaryCtaText": "Esplora Casi Studio & KPI",
+    "trustMicrocopy": "Riservato a imprese manifatturiere (P.IVA) • Tutela NDA sui disegni tecnici • Ufficio Ingegneria interno",
+    "logoLocalPath": "/leads/valmec-automazione/logo.png",
+    "heroImageLocalPath": "/leads/valmec-automazione/hero.jpg",
+    "heroImageCaption": "Isola robotizzata di saldatura arco pulsato a doppia stazione rotante - Stabilimento di Dalmine (BG)",
+    "quiz": {
+      "question1": {
+        "title": "Quale processo produttivo intendete automatizzare in stabilimento?",
+        "options": [
+          "Saldatura robotizzata (MIG/MAG, TIG o Laser)",
+          "Asservimento centri di lavoro CNC / Torni automatici",
+          "Pallettizzazione, manipolazione e fine linea"
+        ]
+      },
+      "question2": {
+        "title": "Su quanti turni opera attualmente il reparto interessato?",
+        "options": [
+          "1 turno giornaliero (con colli di bottiglia su lotti ripetitivi)",
+          "2 turni (obiettivo: presidio operatore ridotto)",
+          "3 turni / Ciclo continuo H24"
+        ]
+      },
+      "finalStepTitle": "A quale referente tecnico inviamo lo studio preliminare di tempo ciclo e ROI?"
+    },
+    "valueProps": [
+      {
+        "title": "Simulazione 3D del Tempo Ciclo su Gemello Digitale",
+        "description": "Prima di avviare la carpenteria meccanica, validiamo al simulatore 3D layout, raggiungibilità torcia/pinza e tempo ciclo reale direttamente sui file STEP dei vostri particolari.",
+        "metric": "ACCURATEZZA CICLO ±1.5%"
+      },
+      {
+        "title": "Interconnessione MES/ERP e Perizia Transizione 5.0",
+        "description": "Consegniamo l'isola completa di telemetria energetica OPC-UA e documentazione tecnica asseverata per il recupero fiscale tramite credito d'imposta."
+      },
+      {
+        "title": "Service Tele-Diagnostico e Intervento On-Site in 12 Ore",
+        "description": "Il nostro polo ingegneristico di Bergamo garantisce assistenza remota immediata su PLC/Robot e reperibilità ricambi critici a magazzino."
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "-38%",
+      "mainStatLabel": "Riduzione media del costo industriale per singolo pezzo in 14 mesi",
+      "secondaryStats": [
+        {
+          "value": "-38%",
+          "label": "Riduzione media del costo industriale per singolo pezzo lavorato entro 14 mesi dall'avviamento"
+        },
+        {
+          "value": "+42%",
+          "label": "Incremento medio dell'indice OEE di reparto grazie all'azzeramento dei micro-fermi"
+        },
+        {
+          "value": "95+",
+          "label": "Celle robotizzate in esercizio continuo presso aziende manifatturiere in Lombardia e Veneto"
+        }
+      ],
+      "clientReferenceWall": [
+        "ISO 9001:2015 ENGINEERING",
+        "TRANSIZIONE 5.0 READY",
+        "DIRETTIVA MACCHINE CE",
+        "PROTOCOLLO OPC-UA / SIEMENS",
+        "PARTNER INTEGRATORE FANUC & ABB"
+      ],
+      "reviewsSummary": "95+ impianti industriali attivi nel Nord Italia",
+      "testimonials": [
+        {
+          "name": "Ing. M. Cattaneo - Direttore di Stabilimento",
+          "location": "Dalmine (BG)",
+          "quote": "L'isola di saldatura a doppia stazione progettata da Valmec ha eliminato le rilavorazioni sulle commesse ripetitive e liberato due saldatori specializzati per carpenteria speciale."
+        },
+        {
+          "name": "Torneria Meccanica R. S.p.A.",
+          "location": "Lumezzane (BS)",
+          "quote": "Cella robotizzata di asservimento su 3 centri CNC con controllo dimensionale ottico in linea. Consegnata e collaudata nel pieno rispetto del cronoprogramma."
+        },
+        {
+          "name": "Carpenteria Metallica V. S.r.l.",
+          "location": "Treviglio (BG)",
+          "quote": "Simulazione preliminare del tempo ciclo fedele al secondo rispetto alla resa reale in produzione. Supporto ineccepibile anche per la pratica Transizione 5.0."
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "Sponsorizzata \"Isole Robotizzate di Saldatura\" - per Davide",
+    "emailPlainTextBody": "Ciao Davide,\n\nho visto la vostra sponsorizzata attiva su Meta \"Isole Robotizzate di Saldatura e Asservimento Macchine CNC Chiavi in Mano\".\n\nAprendo la landing page da smartphone ci mette 7.1 secondi a caricare e mostra un form generico che non qualifica né il processo né i turni di lavoro.\n\nVi ho già preparato la versione veloce (0.3s) con i vostri testi e un simulatore di preventivo interattivo. Se ti va di provarla dal telefono, rispondimi 'LINK' qui sotto e te lo giro subito.\n\nUn saluto,\nRiccardo Granza\nTechPYRE",
+    "followUpWithLinkBody": "Ciao Davide,\n\necco il link per testare la demo ingegnerizzata per Valmec:\nhttps://techpyre.eu/demo/valmec-automazione\n\nProva a selezionare il processo (es. Saldatura / Asservimento CNC) e i turni nel configuratore: a fine test vedrai la scheda tecnica pre-qualificata che riceverebbe il vostro ufficio commerciale.\n\nSe vuoi, ci sentiamo 10 minuti in settimana per metterla live sulle vostre campagne.\n\nA presto,\nRiccardo Granza\n+39 379 115 9352"
+  }
+}

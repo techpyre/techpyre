@@ -4,7 +4,7 @@ import CaseStudies from "@/components/sections/CaseStudies";
 import { siteContent } from "@/config/siteContent";
 
 export const metadata: Metadata = {
-  title: "TechPYRE",
+  title: "Casi Studio & Architetture Reference",
   description: siteContent.caseStudies.subtitle,
   alternates: { canonical: "/progetti" },
 };

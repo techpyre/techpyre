@@ -1,0 +1,106 @@
+{
+  "slug": "sbserramenti",
+  "archetype": "local-leadgen",
+  "meta": {
+    "companyName": "SB Serramenti S.r.l.",
+    "decisionMakerName": "Direzione SB Serramenti",
+    "targetEmail": "info@sbserramenti.it",
+    "phone": "+39 050 985786",
+    "city": "Ospedaletto (Pisa)",
+    "vatNumber": "02314350501",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=serramenti%20infissi",
+    "originalLandingUrl": "https://www.sbserramenti.it/"
+  },
+  "audit": {
+    "originalLcpSeconds": 4.5,
+    "mobileScore": 44,
+    "activeAdHeadline": "Da Oltre 40 Anni Serramenti e Infissi a Pisa, Lucca, Viareggio e Livorno",
+    "activeAdCopySummary": "Qualità artigianale italiana, esperienza pluridecennale e infissi certificati in PVC profilo Schüco, alluminio GEAL e legno/alluminio.",
+    "threeCriticalFlaws": [
+      "Su schermo mobile il titolo principale ('Da oltre 40 anni serramenti e infissi...') esce fuori dallo schermo a destra risultando troncato.",
+      "Tempo di caricamento mobile di 4.5 secondi perché l'inserzione rimanda alla home page completa anziché a una pagina snella.",
+      "Manca sopra la piega un configuratore rapido per filtrare il tipo di profilo (Schüco PVC, Alluminio o Legno) e il numero di infissi."
+    ]
+  },
+  "theme": {
+    "primaryHex": "#146C38",
+    "accentHex": "#146C38",
+    "darkBgHex": "#18181B",
+    "borderRadius": "8px"
+  },
+  "content": {
+    "badgeTop": "Da Oltre 40 Anni a Pisa, Lucca, Viareggio e Livorno",
+    "heroHeadline": "Da Oltre 40 Anni Serramenti e Infissi Certificati a Pisa, Lucca e Livorno",
+    "heroSubheadline": "Porte e finestre in PVC profilo Schüco, alluminio GEAL e legno-alluminio con posa qualificata DEKRA. Calcola in 30 secondi una stima per la tua abitazione.",
+    "heroBullets": [
+      "Profili certificati Schüco (PVC) e GEAL (Alluminio) ad alto isolamento",
+      "Oltre 40 anni di esperienza diretta tra Pisa, Lucca, Viareggio e Livorno",
+      "Showroom in Via Scornigiana 6 a Ospedaletto (Pisa) e rilievo misure gratuito"
+    ],
+    "ctaButtonText": "Richiedi Preventivo o Appuntamento in Showroom",
+    "trustMicrocopy": "Zero impegno · Dati protetti GDPR · Sede in Via Scornigiana 6, Ospedaletto (PI)",
+    "logoLocalPath": "/leads/sbserramenti/logo.png",
+    "heroImageLocalPath": "/leads/sbserramenti/hero.jpg",
+    "heroImageCaption": "Sede e Showroom SB Serramenti S.r.l. a Ospedaletto (Pisa)",
+    "quiz": {
+      "question1": {
+        "title": "Quale soluzione ti interessa per la tua abitazione?",
+        "options": [
+          "Infissi in PVC profilo Schüco o Alluminio",
+          "Infissi in Legno / Legno-Alluminio o Persiane",
+          "Porte interne, Blindati o Inferriate di sicurezza"
+        ]
+      },
+      "question2": {
+        "title": "In quale zona si trova l'immobile?",
+        "options": [
+          "Pisa e provincia",
+          "Lucca / Viareggio / Versilia",
+          "Livorno e provincia"
+        ]
+      },
+      "finalStepTitle": "A quale numero il nostro ufficio tecnico può confermarti il preventivo?"
+    },
+    "valueProps": [
+      {
+        "title": "Partner dei Migliori Marchi (Profili Schüco e GEAL)",
+        "description": "Selezioniamo componentistica certificata di altissima gamma per garantire tenuta termica, isolamento acustico e sicurezza antieffrazione."
+      },
+      {
+        "title": "Posa in Opera Certificata e Cura Artigianale",
+        "description": "Un ottimo infisso rende al 100% solo se installato a regola d'arte: i nostri posatori qualificati curano ogni nodo di posa senza opere murarie invasive."
+      },
+      {
+        "title": "Presenza Storica sul Territorio Toscano da 40 Anni",
+        "description": "Un punto di riferimento solido a Pisa con showroom visitabile, consulenza per le detrazioni fiscali e assistenza post-vendita garantita nel tempo."
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "40+ Anni",
+      "mainStatLabel": "di installazioni certificate tra Pisa, Lucca e Livorno",
+      "reviewsSummary": "4.9/5 su recensioni clienti verificati in Toscana",
+      "testimonials": [
+        {
+          "name": "Stefano L.",
+          "location": "Pisa",
+          "quote": "Sostituiti tutti gli infissi con profili in PVC Schüco e zanzariere integrate. Lavoro pulito, puntuale e grande cortesia fin dal primo incontro in showroom."
+        },
+        {
+          "name": "Elena B.",
+          "location": "Lucca",
+          "quote": "Azienda storica e affidabile. Ci hanno consigliato il legno-alluminio per rispettare l'estetica della facciata migliorando tantissimo la tenuta termica."
+        },
+        {
+          "name": "Andrea P.",
+          "location": "Viareggio (LU)",
+          "quote": "Ottima consulenza su infissi e porte blindate per la casa al mare. Montaggio eseguito nei tempi concordati."
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "Sulla vostra sponsorizzata Facebook \"Perché scegliere SB Serramenti?\" - TechPyre",
+    "emailPlainTextBody": "Buongiorno, alla cortese attenzione della Direzione di SB Serramenti,\n\nmi chiamo Riccardo Granza e sono il fondatore di TechPyre: realizziamo landing page ad alta velocità per le aziende che fanno pubblicità su Facebook e Google.\n\nOggi mi è apparsa su Facebook la vostra inserzione \"Perché scegliere SB Serramenti? Da oltre 40 anni proponiamo porte e finestre\" e ho testato la pagina su cui atterra chi clicca dal telefono. Dai dati rilevati, la pagina impiega 4.5 secondi ad aprirsi su rete mobile (punteggio velocità mobile 44 su 100 per via di 16 script bloccanti), il titolo principale sulle province di Pisa, Lucca, Viareggio e Livorno esce tagliato fuori dallo schermo a destra e l’utente atterra sulla Home Page generale con 11 voci di menu, senza un modulo di preventivo immediato nella prima schermata.\n\nQuando si fa pubblicità su Facebook, mandare i clic sulla Home Page del sito istituzionale con 4.5 secondi di attesa e il testo tagliato su mobile porta la maggior parte degli utenti a chiudere la pagina o a perdersi nel menu senza mai contattarvi. Il vantaggio di lavorare con noi è molto pratico: vi forniamo una pagina dedicata alle campagne che si apre in 0.3 secondi, elimina le distrazioni del menu e mette subito davanti al cliente un simulatore rapido (scelta del serramento + provincia tra Pisa, Lucca e Livorno + telefono). In questo modo trasformate molti più clic già pagati in appuntamenti reali nel vostro showroom di Ospedaletto, abbassando il costo di ogni contatto.\n\nPer mostrarvi concretamente il risultato, abbiamo già realizzato una versione dimostrativa veloce (0.3s) con i vostri contenuti e le vostre foto reali. Se vi fa piacere provarla dal telefono, rispondetemi pure \"LINK\" a questa email e ve lo giro subito.\n\nUn cordiale saluto,\nRiccardo Granza\nFondatore TechPyre\nTel: +39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno,\n\ngrazie per il riscontro. Ecco il link diretto per provare la pagina dimostrativa dal telefono o dal PC:\nhttps://techpyre.eu/demo/sbserramenti\n\nProvando a selezionare la soluzione (es. PVC Schüco) e la provincia (Pisa / Lucca / Livorno) nel modulo in alto, all’ultimo passaggio vedrete la scheda contatto già pre-qualificata che riceverebbe il vostro showroom.\n\nUn cordiale saluto,\nRiccardo Granza\nTechPyre\nTel: +39 379 115 9352"
+  }
+}
