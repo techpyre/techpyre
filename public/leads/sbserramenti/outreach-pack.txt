@@ -11,7 +11,7 @@ URL Demo (Brand-Neutral)  : https://techpyre.eu/demo/sbserramenti
 Strategia Qualifica       : DIRECT_BUYER
 Segnali MarTech / Agenzia : Meta Pixel
 Agenzia Rilevata Footer   : Nessuna agenzia esterna firmata nel footer
-Check Anti-Spam 1ª Email  : 299 parole | Link: ✅ ZERO LINK (Inbox Sicura)
+Check Anti-Spam 1ª Email  : 275 parole | Link: ✅ ZERO LINK (Inbox Sicura)
 
 ---------------------------------------------------------------------
 1. PRIMA EMAIL AL TITOLARE (Plain-Text, Zero Link)
@@ -23,9 +23,9 @@ Buongiorno, alla cortese attenzione della Direzione di SB Serramenti,
 
 mi chiamo Riccardo Granza e sono il fondatore di TechPyre: realizziamo landing page ad alta velocità per le aziende che fanno pubblicità su Facebook e Google.
 
-Oggi mi è apparsa su Facebook la vostra inserzione "Perché scegliere SB Serramenti? Da oltre 40 anni proponiamo porte e finestre" e ho testato la pagina su cui atterra chi clicca dal telefono. Dai dati rilevati, la pagina impiega 4.5 secondi ad aprirsi su rete mobile (punteggio velocità mobile 44 su 100 per via di 16 script bloccanti), il titolo principale sulle province di Pisa, Lucca, Viareggio e Livorno esce tagliato fuori dallo schermo a destra e l’utente atterra sulla Home Page generale con 11 voci di menu, senza un modulo di preventivo immediato nella prima schermata.
+Oggi mi è apparsa su Facebook la vostra inserzione "Perché scegliere SB Serramenti? Da oltre 40 anni proponiamo porte e finestre" e ho testato la pagina su cui atterra chi clicca dal telefono. Dai dati rilevati, la pagina impiega 4.5 secondi ad aprirsi su rete mobile (punteggio velocità mobile 44 su 100 per via di 16 script bloccanti) e l’utente atterra sulla Home Page generale con 11 voci di menu, senza un modulo di preventivo immediato nella prima schermata.
 
-Quando si fa pubblicità su Facebook, mandare i clic sulla Home Page del sito istituzionale con 4.5 secondi di attesa e il testo tagliato su mobile porta la maggior parte degli utenti a chiudere la pagina o a perdersi nel menu senza mai contattarvi. Il vantaggio di lavorare con noi è molto pratico: vi forniamo una pagina dedicata alle campagne che si apre in 0.3 secondi, elimina le distrazioni del menu e mette subito davanti al cliente un simulatore rapido (scelta del serramento + provincia tra Pisa, Lucca e Livorno + telefono). In questo modo trasformate molti più clic già pagati in appuntamenti reali nel vostro showroom di Ospedaletto, abbassando il costo di ogni contatto.
+Quando si fa pubblicità su Facebook, mandare i clic sulla Home Page del sito istituzionale con 4.5 secondi di attesa porta la maggior parte degli utenti a chiudere la pagina o a perdersi nel menu senza mai contattarvi. Il vantaggio di lavorare con noi è molto pratico: vi forniamo una pagina dedicata alle campagne che si apre in 0.3 secondi, elimina le distrazioni del menu e mette subito davanti al cliente un simulatore rapido (scelta del serramento + provincia tra Pisa, Lucca e Livorno + telefono). In questo modo trasformate molti più clic già pagati in appuntamenti reali nel vostro showroom di Ospedaletto, abbassando il costo di ogni contatto.
 
 Per mostrarvi concretamente il risultato, abbiamo già realizzato una versione dimostrativa veloce (0.3s) con i vostri contenuti e le vostre foto reali. Se vi fa piacere provarla dal telefono, rispondetemi pure "LINK" a questa email e ve lo giro subito.
 

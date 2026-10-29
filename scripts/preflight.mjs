@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 import fs from 'fs';
 import path from 'path';
+import { runTrueMobileAuditAndScreenshot } from './mobile-audit-cdp.mjs';
 
 const [,, url, slug] = process.argv;
 if (!url || !slug) {
@@ -225,10 +226,11 @@ async function run() {
 
   // 5. DEALBREAKERS (Fattori che rendono il cliente NON disponibile a comprare)
   const isEcommerce =
-    lowerHtml.includes('cdn.shopify.com') ||
-    lowerHtml.includes('woocommerce-cart') ||
-    lowerHtml.includes('add_to_cart') ||
-    lowerHtml.includes('prestashop');
+    lowerHtml.includes('cdn.shopify.com/s/files') ||
+    lowerHtml.includes('/cart/checkout') ||
+    lowerHtml.includes('checkout.shopify.com') ||
+    cleanText.includes('Aggiungi al carrello') ||
+    cleanText.includes('Procedi al checkout');
 
   const isLargeEnterpriseOrSpa =
     /\bS\.p\.A\.\b/i.test(cleanText) ||
@@ -282,6 +284,19 @@ async function run() {
     }
   }
 
+  // 8. Esegui Audit Viewport Mobile Reale + Screenshot retina con emulazione iPhone via CDP
+  let mobileViewportAudit = null;
+  if (disqualifiers.length === 0) {
+    try {
+      mobileViewportAudit = await runTrueMobileAuditAndScreenshot(
+        finalUrl,
+        path.join(outDir, 'old-site-mobile.png')
+      );
+    } catch {
+      mobileViewportAudit = null;
+    }
+  }
+
   const report = {
     slug,
     targetUrl: url,
@@ -289,6 +304,7 @@ async function run() {
     measuredResponseMs: ttfbMs,
     renderBlockingScripts,
     estimatedMobileLcpSeconds,
+    mobileViewportAudit,
     qualification: {
       isQualified: disqualifiers.length === 0,
       recommendedStrategy,

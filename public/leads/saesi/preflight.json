@@ -1,0 +1,75 @@
+{
+  "slug": "saesi",
+  "targetUrl": "https://www.saesi.it/bando-regione-sicilia-2026/",
+  "finalResolvedUrl": "https://www.saesi.it/bando-regione-sicilia-2026/",
+  "measuredResponseMs": 1751,
+  "renderBlockingScripts": 54,
+  "estimatedMobileLcpSeconds": 11.6,
+  "mobileViewportAudit": {
+    "viewportWidth": 390,
+    "viewportHeight": 844,
+    "documentScrollWidth": 390,
+    "hasRealHorizontalOverflow": false,
+    "formVisibleAboveTheFold": false,
+    "firstFormTopPx": 5308,
+    "screensToReachForm": 6.3,
+    "visibleFormsCount": 1,
+    "cookieOrPopupCoverPercent": 0,
+    "visibleCtasAboveFold": [],
+    "h1Text": ""
+  },
+  "qualification": {
+    "isQualified": true,
+    "recommendedStrategy": "AGENCY_COEXISTENCE_OR_WHITELABEL",
+    "strategyReason": "Rilevata presenza di Web Agency / Funnel di Marketing esistente ma con pagina lenta (11.6s). Usa l'angolo \"Non tocchiamo chi vi segue le campagne: forniamo solo la pagina veloce 0.3s in White-Label\" (o proponi partnership White-Label all'agenzia rilevata).",
+    "disqualifiers": [],
+    "alreadyHasPerformantLanding": false,
+    "isDedicatedFunnelUrl": false,
+    "funnelBuilders": [],
+    "hasQuizAlready": false,
+    "navLinksCount": 12,
+    "formsCount": 1,
+    "isEcommerce": false,
+    "isLargeEnterpriseOrSpa": false,
+    "agencyDetection": {
+      "hasAgencyInvolved": true,
+      "detectedAgencyNames": [
+        "Antonio Nicosia Digital Marketing Special"
+      ],
+      "detectedAgencyLinks": [],
+      "martechSignals": [
+        "Google Tag Manager"
+      ]
+    }
+  },
+  "extractedEmails": [
+    "info@saesi.it"
+  ],
+  "extractedPhones": [
+    "3333333333",
+    "0260416",
+    "3636363636",
+    "+39095 2863847",
+    "095 2863847"
+  ],
+  "extractedVat": "05875050873",
+  "legalSnippets": [],
+  "candidateLogoUrls": [
+    "https://www.saesi.it/wp-content/uploads/2023/12/saesi-srls-logo-1-300x300.png"
+  ],
+  "candidateHeroUrls": [
+    "https://www.saesi.it/wp-content/uploads/2026/05/1_Bando-regione-Sicilia-1911-ottimizzata.webp",
+    "https://www.saesi.it/wp-content/uploads/2023/12/b8795bc3-2dd2-4167-b6b7-963e9bdd403b.png",
+    "https://www.saesi.it/wp-content/uploads/2026/05/3_Bando-regione-Sicilia-916-ottimizzata.webp",
+    "https://www.saesi.it/wp-content/uploads/2026/05/tabella.png",
+    "https://www.saesi.it/wp-content/uploads/2026/04/FusionSolar-Residential-Service-Primary-Certificate_img_v2.png",
+    "https://www.saesi.it/wp-content/uploads/2026/04/FusionSolar-Residential-Service-Professional-Certificate_img_v2.png"
+  ],
+  "assetsDir": "/public/leads/saesi",
+  "searchKeyword": "fotovoltaico sicilia",
+  "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&media_type=all&q=fotovoltaico%20sicilia&search_type=keyword_unordered",
+  "adContextSnippet": "\"white-space: pre-wrap;\"> 🌞 FOTOVOLTAICO E ACCUMULO A TASSO ZERO PER LE FAMIGLIE SICILIANE! 🌞 La Regione Siciliana e IRFIS hanno stanziato un fondo da 12 milioni di euro per azzerare le bollette elettriche. Se risiedi in Sicilia, questa è l'opportunità che stavi aspettando per installare un impianto fotovoltaico di nuova generazione a costo reale ZERO! 💡 Quali sono i vantaggi straordinari di questo bando? ✅ Finanziamento fino al 100% delle spese (impianto, batterie di accumulo, progettazione ",
+  "landingPageTitle": "SAESI | Bando | Regione Sicilia e IRFIS",
+  "landingPageH1": "",
+  "landingPageMetaDescription": "La Regione Siciliana ha pubblicato l’atteso Avviso Pubblico per il contrasto della povertà energetica (Art. 36 della Legge Regionale n. 1 del 5 gennaio 2026)."
+}

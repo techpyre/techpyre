@@ -1,0 +1,74 @@
+{
+  "slug": "dottdugo",
+  "targetUrl": "http://www.dottdugo.it/",
+  "finalResolvedUrl": "https://www.dottdugo.it/",
+  "measuredResponseMs": 677,
+  "renderBlockingScripts": 29,
+  "estimatedMobileLcpSeconds": 7.5,
+  "mobileViewportAudit": {
+    "viewportWidth": 390,
+    "viewportHeight": 844,
+    "documentScrollWidth": 390,
+    "hasRealHorizontalOverflow": false,
+    "formVisibleAboveTheFold": false,
+    "firstFormTopPx": 3245,
+    "screensToReachForm": 3.8,
+    "visibleFormsCount": 1,
+    "cookieOrPopupCoverPercent": 0,
+    "visibleCtasAboveFold": [
+      "Home",
+      "Su di noi",
+      "Servizi",
+      "Contatto"
+    ],
+    "h1Text": "Prenota la tua visita ora!"
+  },
+  "qualification": {
+    "isQualified": true,
+    "recommendedStrategy": "DIRECT_BUYER",
+    "strategyReason": "Azienda ideale per vendita diretta: paga le inserzioni Meta ma manda il traffico su un sito lento e dispersivo.",
+    "disqualifiers": [],
+    "alreadyHasPerformantLanding": false,
+    "isDedicatedFunnelUrl": false,
+    "funnelBuilders": [],
+    "hasQuizAlready": false,
+    "navLinksCount": 0,
+    "formsCount": 1,
+    "isEcommerce": false,
+    "isLargeEnterpriseOrSpa": false,
+    "agencyDetection": {
+      "hasAgencyInvolved": false,
+      "detectedAgencyNames": [],
+      "detectedAgencyLinks": [],
+      "martechSignals": []
+    }
+  },
+  "extractedEmails": [
+    "dott.dugosebastiano@gmail.com"
+  ],
+  "extractedPhones": [
+    "+39 393 641 0176",
+    "3936410176"
+  ],
+  "extractedVat": "06946060826",
+  "legalSnippets": [
+    "Studio Odontoiatrico Dott. Sebastiano Donato DUgo - Via Goethe 22 Palermo - P.IVA 06946060826 - Iscrizione Albo Odontoiatri Palermo n. 1506"
+  ],
+  "candidateLogoUrls": [
+    "https://impro.usercontent.one/appid/oneComWsb/domain/dottdugo.it/media/dottdugo.it/onewebmedia/FullLogo%20(1).png?withoutEnlargement&amp;resize=36,29",
+    "https://impro.usercontent.one/appid/oneComWsb/domain/dottdugo.it/media/dottdugo.it/onewebmedia/FullLogo%20(1).png?etag=W%2F%221234d-19d52c2cb58%22&amp;sourceContentType=image%2Fpng&amp;ignoreAspectRatio&amp;resize=443%2B354"
+  ],
+  "candidateHeroUrls": [
+    "https://impro.usercontent.one/appid/oneComWsb/domain/dottdugo.it/media/dottdugo.it/onewebmedia/LOGO%20SOCIAL%20NO%20SCRITTA.png?etag=null&amp;sourceContentType=image%2Fpng&amp;quality=85",
+    "https://www.dottdugo.it/onewebstatic/a90d67ab3e.png",
+    "https://www.dottdugo.it/onewebstatic/14274bdbcb.png",
+    "https://www.dottdugo.it/onewebstatic/fb531a231f.png"
+  ],
+  "assetsDir": "/public/leads/dottdugo",
+  "searchKeyword": "dentista palermo",
+  "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&media_type=all&q=dentista%20palermo&search_type=keyword_unordered",
+  "adContextSnippet": "mp;_nc_oc=Ado6v1Y2J_FOAjA7kaA8Yd11rEQjBEzcLifx8M-Ltk0ZKMLbsFZ92R2HwPXnCMDg9f0&_nc_zt=14&_nc_ht=scontent-fco2-1.xx&_nc_gid=DRbCxU86q5xr2rO0cSXFmg&_nc_ss=72289&oh=00_AQQU--aOALDzybzYKOpBTahg_yLMVsEtIocsQaFbOHPHkQ&oe=6AE8E31B\"> Studio Odontoiatrico Dott. Sebastiano Donato D'Ugo Sponsorizzato Quante volte hai rimandato l'appuntamento dal dentista? Non sei l'unico. Succede quasi a tutti, spesso per paura di sentirsi giudicati o di ricevere brutte notizie. Ma rimandare non risolve, anzi. Nel mio studi",
+  "landingPageTitle": "Studio Odontoiatrico Dott. Sebastiano Donato DUgo - Palermo",
+  "landingPageH1": "Studio Odontoiatrico Dott. Sebastiano Donato DUgo",
+  "landingPageMetaDescription": ""
+}

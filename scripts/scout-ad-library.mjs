@@ -9,6 +9,7 @@
 import fs from 'fs';
 import path from 'path';
 import { execFileSync } from 'child_process';
+import { runTrueMobileAuditAndScreenshot, fetchRenderedHtmlViaCdp } from './mobile-audit-cdp.mjs';
 
 const [,, keyword, maxLeadsArg] = process.argv;
 const maxLeads = Number(maxLeadsArg || 5);
@@ -31,9 +32,11 @@ if (!browserBin) {
 }
 
 const EXCLUDED_DOMAINS = [
+  'fb.com',
   'fb.me',
   'facebook.com',
   'instagram.com',
+  'typeform.com',
   'wa.me',
   'whatsapp.com',
   'm.me',
@@ -100,18 +103,7 @@ async function run() {
 
   console.log(`🔎 [Scout AI] Ricerca autonoma su Meta Ad Library per: "${keyword}"...`);
 
-  const domHtml = execFileSync(
-    browserBin,
-    [
-      '--headless=new',
-      '--disable-gpu',
-      '--no-first-run',
-      '--virtual-time-budget=6000',
-      '--dump-dom',
-      adLibUrl,
-    ],
-    { encoding: 'utf-8', maxBuffer: 50 * 1024 * 1024, stdio: ['ignore', 'pipe', 'ignore'] }
-  );
+  const domHtml = await fetchRenderedHtmlViaCdp(adLibUrl, 7000);
 
   // Estrai tutti i link esterni l.facebook.com/l.php?u=...
   const matches = [...domHtml.matchAll(/https:\/\/l\.facebook\.com\/l\.php\?u=([^"'&\s<>]+)/gi)];
@@ -211,23 +203,17 @@ async function run() {
         await downloadFile(preflight.candidateHeroUrls[0], path.join(leadDir, 'hero.jpg'));
       }
 
-      // Cattura screenshot mobile (390x844) della vecchia landing page
-      try {
-        execFileSync(
-          browserBin,
-          [
-            '--headless=new',
-            '--disable-gpu',
-            '--hide-scrollbars',
-            '--virtual-time-budget=4000',
-            '--window-size=390,844',
-            `--screenshot=${path.join(leadDir, 'old-site-mobile.png')}`,
+      // Se old-site-mobile.png non è ancora stato generato da preflight.mjs, scattalo con vera emulazione iPhone via CDP
+      const oldMobileShotPath = path.join(leadDir, 'old-site-mobile.png');
+      if (!fs.existsSync(oldMobileShotPath)) {
+        try {
+          preflight.mobileViewportAudit = await runTrueMobileAuditAndScreenshot(
             cand.landingUrl,
-          ],
-          { stdio: 'ignore', timeout: 15000 }
-        );
-      } catch {
-        // Ignora eventuale timeout screenshot su siti estremamente lenti
+            oldMobileShotPath
+          );
+        } catch {
+          // ignora eventuale timeout su siti irraggiungibili
+        }
       }
 
       fs.writeFileSync(preflightPath, JSON.stringify(preflight, null, 2), 'utf-8');

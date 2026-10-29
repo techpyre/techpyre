@@ -1,0 +1,85 @@
+{
+  "slug": "impiantifotovoltaicisicilia",
+  "targetUrl": "https://impiantifotovoltaicisicilia.net/",
+  "finalResolvedUrl": "https://impiantifotovoltaicisicilia.net/",
+  "measuredResponseMs": 1079,
+  "renderBlockingScripts": 19,
+  "estimatedMobileLcpSeconds": 9,
+  "mobileViewportAudit": {
+    "viewportWidth": 390,
+    "viewportHeight": 844,
+    "documentScrollWidth": 390,
+    "hasRealHorizontalOverflow": false,
+    "formVisibleAboveTheFold": false,
+    "firstFormTopPx": 14077,
+    "screensToReachForm": 16.7,
+    "visibleFormsCount": 1,
+    "cookieOrPopupCoverPercent": 0,
+    "visibleCtasAboveFold": [
+      "Vantaggi",
+      "Come Funziona",
+      "Promo",
+      "Incentivi",
+      "Gallery",
+      "Contatti",
+      "FAQ",
+      "Via Giuseppe La Farina, 165 - 98123 Messina"
+    ],
+    "h1Text": "Impianti Fotovoltaici in Sicilia: Risparmia Subito sulla Bolletta"
+  },
+  "qualification": {
+    "isQualified": true,
+    "recommendedStrategy": "DIRECT_BUYER",
+    "strategyReason": "Azienda ideale per vendita diretta: paga le inserzioni Meta ma manda il traffico su un sito lento e dispersivo.",
+    "disqualifiers": [],
+    "alreadyHasPerformantLanding": false,
+    "isDedicatedFunnelUrl": false,
+    "funnelBuilders": [],
+    "hasQuizAlready": false,
+    "navLinksCount": 0,
+    "formsCount": 1,
+    "isEcommerce": false,
+    "isLargeEnterpriseOrSpa": false,
+    "agencyDetection": {
+      "hasAgencyInvolved": false,
+      "detectedAgencyNames": [],
+      "detectedAgencyLinks": [],
+      "martechSignals": [
+        "Meta Pixel"
+      ]
+    }
+  },
+  "extractedEmails": [
+    "info@luxurygreen.net"
+  ],
+  "extractedPhones": [
+    "3377392391",
+    "080195612",
+    "080224518",
+    "080248016",
+    "080262695"
+  ],
+  "extractedVat": "03669050837",
+  "legalSnippets": [],
+  "candidateLogoUrls": [
+    "https://impiantifotovoltaicisicilia.net/wp-content/uploads/2026/05/impianti-fotovoltaici-sicilia-luxury-green-logo-desktop.png",
+    "https://impiantifotovoltaicisicilia.net/wp-content/uploads/2026/05/impianti-fotovoltaici-sicilia-luxury-green-logo.png",
+    "https://impiantifotovoltaicisicilia.net/wp-content/uploads/2026/05/impianti-fotovoltaici-sicilia-luxury-green-solax-power-logo.jpg",
+    "https://impiantifotovoltaicisicilia.net/wp-content/uploads/2026/05/impianti-fotovoltaici-sicilia-luxury-green-solar-huawei-logo.jpg"
+  ],
+  "candidateHeroUrls": [
+    "https://impiantifotovoltaicisicilia.net/wp-content/uploads/2026/05/impianti-fotovoltaici-sicilia-fb-img.jpg",
+    "https://www.facebook.com/tr?id=26686718194272528&ev=PageView&noscript=1",
+    "https://impiantifotovoltaicisicilia.net/wp-content/uploads/2026/05/impianti-fotovoltaici-sicilia-luxury-green-slide-1.jpg",
+    "https://impiantifotovoltaicisicilia.net/wp-content/uploads/2026/05/impianti-fotovoltaici-sicilia-luxury-green-slide-2.jpg",
+    "https://impiantifotovoltaicisicilia.net/wp-content/uploads/2026/05/impianti-fotovoltaici-sicilia-luxury-green-slide-3.jpg",
+    "https://impiantifotovoltaicisicilia.net/wp-content/uploads/2026/05/impianti-fotovoltaici-sicilia-luxury-green-slide-4.jpg"
+  ],
+  "assetsDir": "/public/leads/impiantifotovoltaicisicilia",
+  "searchKeyword": "fotovoltaico sicilia",
+  "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&media_type=all&q=fotovoltaico%20sicilia&search_type=keyword_unordered",
+  "adContextSnippet": "een\" class=\"_8nqq img\" src=\"https://scontent-fco2-1.xx.fbcdn.net/v/t39.35426-6/829189660_2570416723444446_1548089204650286947_n.jpg?stp=dst-jpg_s60x60_tt6&_nc_cat=102&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=Dku4kFqlDK4Q7kNvwGxx0rF&_nc_oc=AdqpxuMqRu8R8_76YrBxBMyDyPDbHHu5rXX5NLebY5c6F7k3kCe76Q6ReJUk1HIRTTg&_nc_zt=14&_nc_ht=scontent-fco2-1.xx&_nc_gid=00sQ-i80tEYa_5-LFH2THg&_nc_ss=72289&oh=00_AQRvkDrIeJf1_UW6Wqs-mDBHyANcO4rS9X5ktnvpk3atug&oe=6AE8D205\"> Luxury Green Sponsorizzato Passa al Fotovoltaico ☀️ Ridu",
+  "landingPageTitle": "Impianti Fotovoltaici Sicilia | Installazione e Preventivi Gratuiti",
+  "landingPageH1": "Impianti Fotovoltaici in Sicilia: Risparmia Subito sulla Bolletta",
+  "landingPageMetaDescription": "Installazione di impianti fotovoltaici in Sicilia per case e aziende. Soluzioni chiavi in mano, detrazioni fiscali incluse."
+}

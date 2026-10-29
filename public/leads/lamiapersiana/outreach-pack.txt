@@ -11,7 +11,7 @@ URL Demo (Brand-Neutral)  : https://techpyre.eu/demo/lamiapersiana
 Strategia Qualifica       : DIRECT_BUYER
 Segnali MarTech / Agenzia : Nessuno stack avanzato rilevato
 Agenzia Rilevata Footer   : Nessuna agenzia esterna firmata nel footer
-Check Anti-Spam 1ª Email  : 302 parole | Link: ✅ ZERO LINK (Inbox Sicura)
+Check Anti-Spam 1ª Email  : 290 parole | Link: ✅ ZERO LINK (Inbox Sicura)
 
 ---------------------------------------------------------------------
 1. PRIMA EMAIL AL TITOLARE (Plain-Text, Zero Link)
@@ -23,7 +23,7 @@ Buongiorno Emanuela,
 
 mi chiamo Riccardo Granza e sono il fondatore di TechPyre, uno studio specializzato nella creazione di landing page ad alta conversione per le aziende che investono in pubblicità su Facebook e Google.
 
-Oggi mi è uscita su Facebook la vostra sponsorizzata sul restauro di persiane e finestre in legno e ho provato ad aprirla dal telefono come farebbe un vostro potenziale cliente. Dai test tecnici che abbiamo effettuato, la pagina impiega 28.9 secondi a caricare su rete mobile (quasi mezzo minuto di schermo fermo perché carica l’intero sito vetrina con decine di elementi pesanti). Inoltre, appena si apre sullo smartphone, il titolo nella fascia blu esce fuori dallo schermo sul lato destro, c’è il banner dei cookie che copre la visuale e non c’è nessun modulo immediato per chiedere un preventivo senza dover scorrere tutta la pagina.
+Oggi mi è uscita su Facebook la vostra sponsorizzata sul restauro di persiane e finestre in legno e ho provato ad aprirla dal telefono come farebbe un vostro potenziale cliente. Dai test tecnici che abbiamo effettuato, la pagina impiega 28.9 secondi a caricare su rete mobile (quasi mezzo minuto di schermo fermo perché carica l’intero sito vetrina con decine di elementi pesanti). Inoltre, appena si apre sullo smartphone, c’è il banner dei cookie che copre la visuale e non c’è nessun modulo immediato per chiedere un preventivo senza dover scorrere tutta la pagina.
 
 In pratica, oggi state pagando Facebook per ogni singolo clic, ma quando una pagina supera i 3 o 4 secondi di attesa da telefono, oltre il 60% delle persone chiude prima ancora di leggere cosa offrite. Lavorare con noi vi serve esattamente a bloccare questo spreco: sostituendo la pagina attuale con una landing page dedicata che si apre in 0.3 secondi (istantanea) e che presenta subito nella prima schermata un simulatore guidato in 3 clic (scelta tra persiane o finestre + numero di pezzi + recapito telefonico), a parità di soldi spesi in pubblicità potete raddoppiare le richieste di preventivo reali, ricevendo su WhatsApp contatti già filtrati e pronti da quotare.
 

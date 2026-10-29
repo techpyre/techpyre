@@ -1,0 +1,74 @@
+{
+  "slug": "gedsolis",
+  "targetUrl": "https://www.gedsolis.it/",
+  "finalResolvedUrl": "https://www.gedsolis.it/",
+  "measuredResponseMs": 1335,
+  "renderBlockingScripts": 22,
+  "estimatedMobileLcpSeconds": 10,
+  "mobileViewportAudit": {
+    "viewportWidth": 576,
+    "viewportHeight": 1247,
+    "documentScrollWidth": 576,
+    "hasRealHorizontalOverflow": false,
+    "formVisibleAboveTheFold": false,
+    "firstFormTopPx": 8283,
+    "screensToReachForm": 6.6,
+    "visibleFormsCount": 1,
+    "cookieOrPopupCoverPercent": 0,
+    "visibleCtasAboveFold": [],
+    "h1Text": "Gli specialisti del fotovoltaico con accumulo"
+  },
+  "qualification": {
+    "isQualified": true,
+    "recommendedStrategy": "DIRECT_BUYER",
+    "strategyReason": "Azienda ideale per vendita diretta: paga le inserzioni Meta ma manda il traffico su un sito lento e dispersivo.",
+    "disqualifiers": [],
+    "alreadyHasPerformantLanding": false,
+    "isDedicatedFunnelUrl": false,
+    "funnelBuilders": [],
+    "hasQuizAlready": false,
+    "navLinksCount": 0,
+    "formsCount": 1,
+    "isEcommerce": false,
+    "isLargeEnterpriseOrSpa": false,
+    "agencyDetection": {
+      "hasAgencyInvolved": false,
+      "detectedAgencyNames": [],
+      "detectedAgencyLinks": [],
+      "martechSignals": []
+    }
+  },
+  "extractedEmails": [
+    "info@gedsolis.it"
+  ],
+  "extractedPhones": [
+    "+3904441152110",
+    "0901664367",
+    "3122568101",
+    "3626735223",
+    "0756618"
+  ],
+  "extractedVat": "04376180248",
+  "legalSnippets": [],
+  "candidateLogoUrls": [
+    "https://www.gedsolis.it/wp-content/uploads/2022/03/logo-GED.png",
+    "https://www.gedsolis.it/wp-content/uploads/2022/03/logo-GED-bianco.png",
+    "https://www.gedsolis.it/wp-content/uploads/2023/02/SolarEdge_logo_header_new_0-1024x207.png",
+    "https://www.gedsolis.it/wp-content/uploads/2023/02/Logo-della-Huawei-e1686835427316-1024x235.png"
+  ],
+  "candidateHeroUrls": [
+    "https://www.gedsolis.it/wp-content/uploads/2022/11/GED-SOLIS-share-picture.jpg",
+    "https://www.gedsolis.it/wp-content/uploads/2024/02/sunpower-hero-2-gedsolis-vicenza.jpg",
+    "https://www.gedsolis.it/wp-content/uploads/2024/02/google-ged-solis-5-stelle.png",
+    "https://www.gedsolis.it/wp-content/uploads/2024/02/ged-radius-img.jpg",
+    "https://www.gedsolis.it/wp-content/uploads/2024/02/check-ged-300x300.png",
+    "https://www.gedsolis.it/wp-content/uploads/2024/02/pcalore-grey.png"
+  ],
+  "assetsDir": "/public/leads/gedsolis",
+  "searchKeyword": "fotovoltaico sicilia",
+  "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&media_type=all&q=fotovoltaico%20sicilia&search_type=keyword_unordered",
+  "adContextSnippet": "_zt=14&_nc_ht=scontent-fco2-1.xx&_nc_gid=00sQ-i80tEYa_5-LFH2THg&_nc_ss=72289&oh=00_AQQaIb967vMmj5IUsILsxil4kQ5PvhCdteXmKtNBcZGUiQ&oe=6AE8E418\"> GED SOLIS Sponsorizzato Stop al caro vita: Il sole della Sicilia azzera la tua bolletta! ☀️ La crisi energetica continua a pesare sulle famiglie, ma la soluzione è sopra la tua testa. Passa al fotovoltaico con accumulo e produci la tua energia giorno e notte. 🔧 Qualità senza compromessi 💳 Finanziamento su misura: Non devi spendere tutto subito! 📍Insta",
+  "landingPageTitle": "Impianti Fotovoltaici con Accumulo - GED SOLIS",
+  "landingPageH1": "Gli specialisti del fotovoltaico con accumulo",
+  "landingPageMetaDescription": "Azienda Leader nell&#039;installazione di impianti fotovoltaici e batterie di accumulo. Sopralluogo gratuito e installazione in 1 giorno con pratiche incluse."
+}

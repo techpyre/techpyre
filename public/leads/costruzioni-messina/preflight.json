@@ -1,0 +1,68 @@
+{
+  "slug": "costruzioni-messina",
+  "targetUrl": "https://www.costruzioni-messina.it/privati/",
+  "finalResolvedUrl": "https://www.costruzioni-messina.it/privati/",
+  "measuredResponseMs": 419,
+  "renderBlockingScripts": 1,
+  "estimatedMobileLcpSeconds": 4.2,
+  "mobileViewportAudit": {
+    "viewportWidth": 390,
+    "viewportHeight": 844,
+    "documentScrollWidth": 390,
+    "hasRealHorizontalOverflow": false,
+    "formVisibleAboveTheFold": false,
+    "firstFormTopPx": 9956,
+    "screensToReachForm": 11.8,
+    "visibleFormsCount": 1,
+    "cookieOrPopupCoverPercent": 0,
+    "visibleCtasAboveFold": [],
+    "h1Text": "Ristruttura e riqualifica la tua casa con un unico interlocutore."
+  },
+  "qualification": {
+    "isQualified": true,
+    "recommendedStrategy": "DIRECT_BUYER",
+    "strategyReason": "Azienda ideale per vendita diretta: paga le inserzioni Meta ma manda il traffico su un sito lento e dispersivo.",
+    "disqualifiers": [],
+    "alreadyHasPerformantLanding": false,
+    "isDedicatedFunnelUrl": false,
+    "funnelBuilders": [],
+    "hasQuizAlready": false,
+    "navLinksCount": 3,
+    "formsCount": 1,
+    "isEcommerce": false,
+    "isLargeEnterpriseOrSpa": false,
+    "agencyDetection": {
+      "hasAgencyInvolved": false,
+      "detectedAgencyNames": [],
+      "detectedAgencyLinks": [],
+      "martechSignals": [
+        "Google Tag Manager"
+      ]
+    }
+  },
+  "extractedEmails": [
+    "info@costruzioni-messina.it"
+  ],
+  "extractedPhones": [
+    "+393522371940",
+    "04432790618"
+  ],
+  "extractedVat": "04432790618",
+  "legalSnippets": [],
+  "candidateLogoUrls": [],
+  "candidateHeroUrls": [
+    "https://www.costruzioni-messina.it/img/casa-riqualificata.webp",
+    "https://www.costruzioni-messina.it/img/serramento-vecchio.webp",
+    "https://www.costruzioni-messina.it/img/interno-da-ristrutturare.webp",
+    "https://www.costruzioni-messina.it/img/tecnico-consumi.webp",
+    "https://www.costruzioni-messina.it/img/prima-caldaia.webp",
+    "https://www.costruzioni-messina.it/img/prima-tetto.webp"
+  ],
+  "assetsDir": "/public/leads/costruzioni-messina",
+  "searchKeyword": "ristrutturazioni messina",
+  "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&media_type=all&q=ristrutturazioni%20messina&search_type=keyword_unordered",
+  "adContextSnippet": "euugli\" style=\"width: 100%;\"> Costruzioni Messina Sponsorizzato 🏡 Ristrutturare un immobile appena acquistato può sembrare un'impresa impossibile, vero? Le abitazioni degli anni '70 nascondono spesso insidie: muri che disperdono calore, vecchi infissi e impianti ormai arrivati al limite. ✨ Costruzioni Messina trasforma le tue idee nella casa dei tuoi sogni, gestendo tutto con un intervento unico. Valutiamo insieme le priorità e programmiamo i lavori nel giusto ordine logico. ☀️ Dal rifacimento ",
+  "landingPageTitle": "Ristrutturazione e riqualificazione energetica della casa in Veneto e Friuli | Costruzioni Messina",
+  "landingPageH1": "Ristruttura e riqualifica la tua casa con un unico interlocutore.",
+  "landingPageMetaDescription": "Isolamento, impianti, serramenti, pompa di calore, fotovoltaico e accumulo per la tua casa, con un unico interlocutore dall’analisi al collaudo. Sopralluogo gratuito in Veneto e Friuli Venezia Giulia."
+}

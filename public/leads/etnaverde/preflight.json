@@ -1,0 +1,76 @@
+{
+  "slug": "etnaverde",
+  "targetUrl": "https://smanapp.com/etna-verde",
+  "finalResolvedUrl": "https://smanapp.com/etna-verde",
+  "measuredResponseMs": 1111,
+  "renderBlockingScripts": 6,
+  "estimatedMobileLcpSeconds": 8.1,
+  "mobileViewportAudit": {
+    "viewportWidth": 390,
+    "viewportHeight": 844,
+    "documentScrollWidth": 390,
+    "hasRealHorizontalOverflow": false,
+    "formVisibleAboveTheFold": false,
+    "firstFormTopPx": null,
+    "screensToReachForm": null,
+    "visibleFormsCount": 0,
+    "cookieOrPopupCoverPercent": 0,
+    "visibleCtasAboveFold": [
+      "Diventa Partner",
+      "Scarica l'app"
+    ],
+    "h1Text": ""
+  },
+  "qualification": {
+    "isQualified": true,
+    "recommendedStrategy": "DIRECT_BUYER",
+    "strategyReason": "Azienda ideale per vendita diretta: paga le inserzioni Meta ma manda il traffico su un sito lento e dispersivo.",
+    "disqualifiers": [],
+    "alreadyHasPerformantLanding": false,
+    "isDedicatedFunnelUrl": false,
+    "funnelBuilders": [],
+    "hasQuizAlready": true,
+    "navLinksCount": 10,
+    "formsCount": 1,
+    "isEcommerce": false,
+    "isLargeEnterpriseOrSpa": false,
+    "agencyDetection": {
+      "hasAgencyInvolved": false,
+      "detectedAgencyNames": [],
+      "detectedAgencyLinks": [],
+      "martechSignals": [
+        "Heatmap/CRO Tracking"
+      ]
+    }
+  },
+  "extractedEmails": [
+    "etnaverde@libero.it"
+  ],
+  "extractedPhones": [
+    "+39 333 4824805",
+    "3334824805"
+  ],
+  "extractedVat": "02312900976",
+  "legalSnippets": [],
+  "candidateLogoUrls": [
+    "https://smanapp.com/wp-content/themes/smanapp-custom-theme/media/smanapp-logo.svg",
+    "https://smanapp.com/wp-content/themes/smanapp-custom-theme/media/review-suggest-green.svg",
+    "https://smanapp.com/wp-content/themes/smanapp-custom-theme/media/review-suggest-red.svg",
+    "https://smanapp.com/wp-content/themes/smanapp-custom-theme/media/smanapp-logo-white.svg"
+  ],
+  "candidateHeroUrls": [
+    "https://smanapp.com/wp-content/themes/smanapp-custom-theme/media/facebook-share-partner-logo.png",
+    "https://smanapp.com/pin-images/090cbe10677ad7539ecbe3348c9a2ea7.jpg",
+    "https://smanapp.com/pin-images/4e7c4319d3976b3353f6498f514c3f5e.jpg",
+    "https://smanapp.com/pin-images/cb7b344d00c95027a6a42038c2f31395.jpg",
+    "https://smanapp.com/pin-images/85f059f4f0d454c15431e5bc4ac37221.jpg",
+    "https://smanapp.com/pin-images/45de33cf859280f3857c2d727fb5b6b6.jpg"
+  ],
+  "assetsDir": "/public/leads/smanapp",
+  "searchKeyword": "ristrutturazioni catania",
+  "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&media_type=all&q=ristrutturazioni%20catania&search_type=keyword_unordered",
+  "adContextSnippet": "book.com/smanapp/\"> Smanapp Sponsorizzato 🏗️ ETNA VERDE – Azienda specializzata in sistemi di impermeabilizzazione e applicazione di Poliuretano, poliurea e fibre di carbonio. 💪 Quando si tratta di rinforzare, isolare o riqualificare, affidati ai professionisti del settore! Da anni ETNA VERDE, con sedi operative a Catania e Siracusa, realizza interventi ad alte prestazioni con materiali innovativi come poliuretano e fibre di carbonio, ideali per: ✅ Consolidamenti strutturali ✅ Isolamenti termi",
+  "landingPageTitle": "Etna Verde Multiservice - Ristrutturazioni e Servizi Edili Catania",
+  "landingPageH1": "Etna Verde Multiservice Catania",
+  "landingPageMetaDescription": ""
+}

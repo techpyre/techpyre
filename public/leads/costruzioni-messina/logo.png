@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Costruzioni Messina">
+  <!-- Ricostruzione del marchio reale (rombo oro con foro romboidale interno).
+       Proporzioni misurate sul logo: foro pari al 36,6% del lato del rombo.
+       Colori campionati dal file originale: oro #AD8248, fondo #393531.
+       Il rombo e' ingrandito rispetto al logo orizzontale per riempire il
+       quadrato della favicon e restare leggibile a 16px. -->
+  <rect width="64" height="64" fill="#393531"/>
+  <g transform="translate(32 32) rotate(45)">
+    <rect x="-21" y="-21" width="42" height="42" fill="#AD8248"/>
+    <rect x="-7.7" y="-7.7" width="15.4" height="15.4" fill="#393531"/>
+  </g>
+</svg>

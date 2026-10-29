@@ -1,0 +1,78 @@
+{
+  "slug": "gardenhousepalermo",
+  "targetUrl": "https://gardenhousepalermo.com/contatti",
+  "finalResolvedUrl": "https://www.gardenhousepalermo.com/contatti/",
+  "measuredResponseMs": 1817,
+  "renderBlockingScripts": 17,
+  "estimatedMobileLcpSeconds": 11.8,
+  "mobileViewportAudit": {
+    "viewportWidth": 576,
+    "viewportHeight": 1247,
+    "documentScrollWidth": 576,
+    "hasRealHorizontalOverflow": false,
+    "formVisibleAboveTheFold": true,
+    "firstFormTopPx": 2932,
+    "screensToReachForm": 2.4,
+    "visibleFormsCount": 1,
+    "cookieOrPopupCoverPercent": 0,
+    "visibleCtasAboveFold": [],
+    "h1Text": ""
+  },
+  "qualification": {
+    "isQualified": true,
+    "recommendedStrategy": "AGENCY_COEXISTENCE_OR_WHITELABEL",
+    "strategyReason": "Rilevata presenza di Web Agency / Funnel di Marketing esistente ma con pagina lenta (11.8s). Usa l'angolo \"Non tocchiamo chi vi segue le campagne: forniamo solo la pagina veloce 0.3s in White-Label\" (o proponi partnership White-Label all'agenzia rilevata).",
+    "disqualifiers": [],
+    "alreadyHasPerformantLanding": false,
+    "isDedicatedFunnelUrl": false,
+    "funnelBuilders": [],
+    "hasQuizAlready": false,
+    "navLinksCount": 0,
+    "formsCount": 4,
+    "isEcommerce": false,
+    "isLargeEnterpriseOrSpa": false,
+    "agencyDetection": {
+      "hasAgencyInvolved": true,
+      "detectedAgencyNames": [
+        "Home Azienda Manifesto Chi siamo i nostri"
+      ],
+      "detectedAgencyLinks": [],
+      "martechSignals": [
+        "Google Tag Manager",
+        "Meta Pixel"
+      ]
+    }
+  },
+  "extractedEmails": [
+    "customer@gardenhousepalermo.com",
+    "info@gardenhousepalermo.com",
+    "selezione@gardenhousepalermo.com"
+  ],
+  "extractedPhones": [
+    "+39 091 222072",
+    "091222072"
+  ],
+  "extractedVat": "03894710825",
+  "legalSnippets": [],
+  "candidateLogoUrls": [
+    "https://www.gardenhousepalermo.com/wp-content/uploads/2023/11/loghino-sticky.png",
+    "https://www.gardenhousepalermo.com/wp-content/uploads/2023/11/GH-ANTRACITE.png",
+    "https://www.gardenhousepalermo.com/wp-content/uploads/2023/11/GH-BIANCO.png",
+    "https://www.webagencypalermo.it/gruppo360/logocopyright.png"
+  ],
+  "candidateHeroUrls": [
+    "https://www.gardenhousepalermo.com/wp-content/uploads/2023/08/%C2%A9-Serafino-Geraci-fotografia-MK4_5330-Modifica-20052021-2048x1365-1.jpeg",
+    "https://www.facebook.com/tr?id=499925856165612&ev=PageView&noscript=1",
+    "https://www.gardenhousepalermo.com/wp-content/uploads/2023/08/antonio-lupi-simplo-lavabo-freestanding-800x800.jpg",
+    "https://www.gardenhousepalermo.com/wp-content/uploads/2024/02/atlas-concorde-boost-natural-kaolin-120x120-garden-house-offerta-3_risultato.webp",
+    "https://www.gardenhousepalermo.com/wp-content/uploads/2025/09/seconda-composizione-GH-873x800.webp",
+    "https://www.gardenhousepalermo.com/wp-content/uploads/2026/04/AtlasConcorde_Entice_004a_02_PaleOak-Elegant_ST_risultato-992x800.webp"
+  ],
+  "assetsDir": "/public/leads/gardenhousepalermo",
+  "searchKeyword": "infissi palermo",
+  "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&media_type=all&q=infissi%20palermo&search_type=keyword_unordered",
+  "adContextSnippet": "\"ad-library-dynamic-content-container\"> Garden House Palermo Sponsorizzato E' il momento giusto per cambiare i tuoi infissi! Prenota il tuo appuntamento qui: https://gardenhousepalermo.com/contatti <div clas",
+  "landingPageTitle": "Garden House Palermo - Infissi e Porte Oknoplast",
+  "landingPageH1": "Offerta Anniversario Oknoplast con Garden House",
+  "landingPageMetaDescription": ""
+}

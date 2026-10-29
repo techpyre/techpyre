@@ -1,0 +1,73 @@
+{
+  "slug": "professionistidelserramento",
+  "targetUrl": "https://www.professionistidelserramento.com/",
+  "finalResolvedUrl": "https://www.professionistidelserramento.com/",
+  "measuredResponseMs": 886,
+  "renderBlockingScripts": 3,
+  "estimatedMobileLcpSeconds": 6.5,
+  "mobileViewportAudit": {
+    "viewportWidth": 390,
+    "viewportHeight": 844,
+    "documentScrollWidth": 390,
+    "hasRealHorizontalOverflow": false,
+    "formVisibleAboveTheFold": false,
+    "firstFormTopPx": 5316,
+    "screensToReachForm": 6.3,
+    "visibleFormsCount": 1,
+    "cookieOrPopupCoverPercent": 0,
+    "visibleCtasAboveFold": [
+      "Home",
+      "Chi Siamo",
+      "I Nostri Progetti",
+      "Contatti"
+    ],
+    "h1Text": "Scopri le soluzioni di serramenti su misura per rendere la tua casa un luogo accogliente, sicuro e pieno di stile"
+  },
+  "qualification": {
+    "isQualified": true,
+    "recommendedStrategy": "DIRECT_BUYER",
+    "strategyReason": "Azienda ideale per vendita diretta: paga le inserzioni Meta ma manda il traffico su un sito lento e dispersivo.",
+    "disqualifiers": [],
+    "alreadyHasPerformantLanding": false,
+    "isDedicatedFunnelUrl": false,
+    "funnelBuilders": [],
+    "hasQuizAlready": false,
+    "navLinksCount": 4,
+    "formsCount": 1,
+    "isEcommerce": false,
+    "isLargeEnterpriseOrSpa": false,
+    "agencyDetection": {
+      "hasAgencyInvolved": false,
+      "detectedAgencyNames": [],
+      "detectedAgencyLinks": [],
+      "martechSignals": []
+    }
+  },
+  "extractedEmails": [
+    "info@professionistidelserramento.com"
+  ],
+  "extractedPhones": [
+    "+39 0933 364814",
+    "+39 328 0556097",
+    "0933364814"
+  ],
+  "extractedVat": "Non trovata",
+  "legalSnippets": [
+    "Professionisti Del Serramento - Viale Mario Gori 321 Niscemi (CL) e Via Archimede 102 Ragusa"
+  ],
+  "candidateLogoUrls": [
+    "https://irp.cdn-website.com/5218232e/dms3rep/multi/opt/logo-260w.png"
+  ],
+  "candidateHeroUrls": [
+    "https://irp.cdn-website.com//441dce08/dms3rep/multi/opt/empty_02-432w.png",
+    "https://irp.cdn-website.com/5218232e/dms3rep/multi/opt/stunning_house-432w.jpg",
+    "https://irp.cdn-website.com//441dce08/dms3rep/multi/opt/empty_02-640w.png"
+  ],
+  "assetsDir": "/public/leads/professionistidelserramento",
+  "searchKeyword": "infissi ragusa",
+  "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&media_type=all&q=infissi%20ragusa&search_type=keyword_unordered",
+  "adContextSnippet": "lwn1j xeuugli\" style=\"width: 100%;\"> Professionisti del Serramento Sponsorizzato 🏡 È arrivato il momento di sostituire i tuoi vecchi infissi! Approfitta della promozione esclusiva sugli infissi Schüco: 🔥 40% di sconto diretto 💰 Finanziamento a Tasso Zero 📄 Detrazione Fiscale del 50% 🔒 Più sicurezza per la tua famiglia 🌡️ Maggiore isolamento termico e acustico ⚡ Risparmio energetico e bollette più leggere Richiedi subito il tuo preventivo gratuito e senza impegno. 📍 Showroom Ragusa Via Arc",
+  "landingPageTitle": "Professionisti Del Serramento - Niscemi e Ragusa",
+  "landingPageH1": "Professionisti Del Serramento",
+  "landingPageMetaDescription": ""
+}

@@ -1,0 +1,76 @@
+{
+  "slug": "centroassistenzaascensori",
+  "targetUrl": "https://centroassistenzaascensori.it/",
+  "finalResolvedUrl": "https://centroassistenzaascensori.it/",
+  "measuredResponseMs": 366,
+  "renderBlockingScripts": 4,
+  "estimatedMobileLcpSeconds": 4.8,
+  "mobileViewportAudit": {
+    "viewportWidth": 390,
+    "viewportHeight": 844,
+    "documentScrollWidth": 390,
+    "hasRealHorizontalOverflow": false,
+    "formVisibleAboveTheFold": false,
+    "firstFormTopPx": null,
+    "screensToReachForm": null,
+    "visibleFormsCount": 0,
+    "cookieOrPopupCoverPercent": 0,
+    "visibleCtasAboveFold": [
+      "RICHIEDI IL PREVENTIVO",
+      "SITO WEB REALIZZATO DA CREATIVE AGENCY",
+      "SE SEI INTERESSATO SCRIVICI"
+    ],
+    "h1Text": "CENTRO ASSISTENZA ASCENSORI"
+  },
+  "qualification": {
+    "isQualified": true,
+    "recommendedStrategy": "AGENCY_COEXISTENCE_OR_WHITELABEL",
+    "strategyReason": "Rilevata presenza di Web Agency / Funnel di Marketing esistente ma con pagina lenta (4.8s). Usa l'angolo \"Non tocchiamo chi vi segue le campagne: forniamo solo la pagina veloce 0.3s in White-Label\" (o proponi partnership White-Label all'agenzia rilevata).",
+    "disqualifiers": [],
+    "alreadyHasPerformantLanding": false,
+    "isDedicatedFunnelUrl": false,
+    "funnelBuilders": [],
+    "hasQuizAlready": false,
+    "navLinksCount": 5,
+    "formsCount": 0,
+    "isEcommerce": false,
+    "isLargeEnterpriseOrSpa": false,
+    "agencyDetection": {
+      "hasAgencyInvolved": true,
+      "detectedAgencyNames": [
+        "CREATIVE AGENCY"
+      ],
+      "detectedAgencyLinks": [
+        {
+          "href": "http://www.multimediacreativeagency.com",
+          "label": "SITO WEB REALIZZATO DA CREATIVE AGENCY"
+        }
+      ],
+      "martechSignals": []
+    }
+  },
+  "extractedEmails": [
+    "centroassistenzaascensori@gmail.com"
+  ],
+  "extractedPhones": [
+    "+39 0934 1958013",
+    "09341958013"
+  ],
+  "extractedVat": "01904220850",
+  "legalSnippets": [],
+  "candidateLogoUrls": [
+    "https://centroassistenzaascensori.it/images/FB_IMG_1570318658489.jpg"
+  ],
+  "candidateHeroUrls": [
+    "https://uploads-ssl.webflow.com/5c6eb5400253230156de2bd6/5cdc268dd7274d5c05c6009a_Business%20SEO.jpg",
+    "https://centroassistenzaascensori.it/images/phone-call.png",
+    "https://centroassistenzaascensori.it/images/ASSISTENZA.png"
+  ],
+  "assetsDir": "/public/leads/centroassistenzaascensori",
+  "searchKeyword": "fotovoltaico sicilia",
+  "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&media_type=all&q=fotovoltaico%20sicilia&search_type=keyword_unordered",
+  "adContextSnippet": "xq9mrsl x1yc453h x1h4wwuj x1fcty0u\" target=\"_blank\" href=\"https://www.facebook.com/100053453032877/\"> Centro Assistenza Ascensori Srls Sponsorizzato Un ascensore vecchio non è necessariamente un ascensore da buttare. 🔧 Spesso bastano interventi mirati per ritrovare sicurezza, comfort e risparmio. L'ammodernamento selettivo permette di aggiornare solo i componenti che ne hanno bisogno, senza affrontare una sostituzione completa dell'impianto. Sicurezza, consumi energetici e comfort di marcia pos",
+  "landingPageTitle": "Centro Assistenza Ascensori - Installazione e Manutenzione Sicilia",
+  "landingPageH1": "Centro Assistenza Ascensori",
+  "landingPageMetaDescription": ""
+}

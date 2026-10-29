@@ -1,0 +1,83 @@
+{
+  "slug": "sistemycasa",
+  "targetUrl": "https://sistemycasa.com/",
+  "finalResolvedUrl": "https://sistemycasa.com/",
+  "measuredResponseMs": 842,
+  "renderBlockingScripts": 12,
+  "estimatedMobileLcpSeconds": 8.1,
+  "qualification": {
+    "isQualified": true,
+    "recommendedStrategy": "AGENCY_COEXISTENCE_OR_WHITELABEL",
+    "strategyReason": "Rilevata presenza di Web Agency / Funnel di Marketing esistente ma con pagina lenta (8.1s). Usa l'angolo \"Non tocchiamo chi vi segue le campagne: forniamo solo la pagina veloce 0.3s in White-Label\" (o proponi partnership White-Label all'agenzia rilevata).",
+    "disqualifiers": [],
+    "alreadyHasPerformantLanding": false,
+    "isDedicatedFunnelUrl": false,
+    "funnelBuilders": [],
+    "hasQuizAlready": false,
+    "navLinksCount": 3,
+    "formsCount": 2,
+    "isEcommerce": false,
+    "isLargeEnterpriseOrSpa": false,
+    "agencyDetection": {
+      "hasAgencyInvolved": true,
+      "detectedAgencyNames": [],
+      "detectedAgencyLinks": [
+        {
+          "href": "https://www.rifraf.it",
+          "label": "Web agency"
+        }
+      ],
+      "martechSignals": [
+        "Meta Pixel"
+      ]
+    }
+  },
+  "extractedEmails": [
+    "info@sistemycasa.com"
+  ],
+  "extractedPhones": [
+    "3381392879",
+    "3935182846",
+    "+393518284604",
+    "+390918901816",
+    "06772170822"
+  ],
+  "extractedVat": "Non trovata",
+  "legalSnippets": [
+    "s.r.l. - P"
+  ],
+  "candidateLogoUrls": [
+    "https://sistemycasa.com/image/catalog/SClogo.png"
+  ],
+  "candidateHeroUrls": [
+    "https://sistemycasa.com/image/cache/catalog/SClogo-300x300.png",
+    "https://sistemycasa.com/image/cache/catalog/slide/ronix_desk-835x450.jpg",
+    "https://sistemycasa.com/image/cache/catalog/slide/rabalux_ramira_desk-835x450.jpg",
+    "https://sistemycasa.com/image/cache/catalog/slide/slide_mapam-835x450.jpg",
+    "https://sistemycasa.com/image/cache/catalog/slide/slide_ajax-835x450.jpg",
+    "https://sistemycasa.com/image/cache/catalog/slide/slide_vtac-835x450.jpg"
+  ],
+  "assetsDir": "/public/leads/sistemycasa",
+  "searchKeyword": "fotovoltaico sicilia",
+  "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&media_type=all&q=fotovoltaico%20sicilia&search_type=keyword_unordered",
+  "adContextSnippet": "l\" style=\"left: 44px; transform: translate(calc(-50% - 4px), -50%);\"> <img class=\"x15mokao x1ga7v0g x16uus16 xbiv7yw x1ll5gia x19kjcj4 x642log\" alt=\"\" referrerpolicy=\"origin-when-cross-origin\" src=\"https://scontent-fco2-1.xx.fbcdn.net/v/t39.35426-6/709769480_2705395289842038_6013783708644036470_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=101&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=b9X5WGb1B6wQ7kNvwHZHDQi&_nc_oc=AdprIV9f1zIiMfOpTQegVyl2lpgzGYt8cCuq5P_fN2B0wCfuxy4Oa5fXUiFOfuORbfg&_nc_zt=14&_nc_ht=scontent-fco2-",
+  "landingPageTitle": "Sistemy Casa",
+  "landingPageH1": "",
+  "landingPageMetaDescription": "Sistemy Casa",
+  "mobileViewportAudit": {
+    "viewportWidth": 390,
+    "viewportHeight": 844,
+    "documentScrollWidth": 390,
+    "hasRealHorizontalOverflow": false,
+    "formVisibleAboveTheFold": false,
+    "firstFormTopPx": null,
+    "screensToReachForm": null,
+    "visibleFormsCount": 0,
+    "cookieOrPopupCoverPercent": 0,
+    "visibleCtasAboveFold": [
+      "Reload",
+      "Details"
+    ],
+    "h1Text": "This site can’t be reached"
+  }
+}
