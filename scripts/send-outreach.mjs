@@ -10,7 +10,52 @@
  */
 import fs from 'fs';
 import path from 'path';
+import tls from 'tls';
 import nodemailer from 'nodemailer';
+
+// Helper per sincronizzare la mail inviata nella cartella Posta Inviata (INBOX.Sent) di Aruba
+function appendToArubaSent(user, pass, rawEmail) {
+  return new Promise((resolve) => {
+    try {
+      const socket = tls.connect(993, 'imaps.aruba.it', () => {});
+      socket.setEncoding('utf-8');
+      let step = 0;
+      const timeout = setTimeout(() => {
+        try { socket.destroy(); } catch {}
+        resolve(false);
+      }, 7000);
+
+      socket.on('data', (data) => {
+        if (step === 0 && data.includes('* OK')) {
+          step = 1;
+          socket.write(`A1 LOGIN "${user}" "${pass}"\r\n`);
+        } else if (step === 1 && data.includes('A1 OK')) {
+          step = 2;
+          const len = Buffer.byteLength(rawEmail, 'utf-8');
+          socket.write(`A2 APPEND "INBOX.Sent" (\\Seen) {${len}}\r\n`);
+        } else if (step === 2 && data.includes('+')) {
+          step = 3;
+          socket.write(rawEmail + '\r\n');
+        } else if (step === 3 && data.includes('A2 OK')) {
+          step = 4;
+          clearTimeout(timeout);
+          socket.write('A3 LOGOUT\r\n');
+          resolve(true);
+        } else if (data.includes('NO') || data.includes('BAD')) {
+          clearTimeout(timeout);
+          resolve(false);
+        }
+      });
+
+      socket.on('error', () => {
+        clearTimeout(timeout);
+        resolve(false);
+      });
+    } catch {
+      resolve(false);
+    }
+  });
+}
 
 const args = process.argv.slice(2);
 const slug = args.find((a) => !a.startsWith('--'));
@@ -200,6 +245,25 @@ if (shouldSend) {
     subject,
     text,
   });
+
+  // Sincronizza immediatamente nella cartella "Posta Inviata" (INBOX.Sent) di Aruba
+  try {
+    const rawMessage = [
+      `From: "${fromName}" <${user}>`,
+      `To: ${lead.meta.targetEmail}`,
+      `Subject: ${subject}`,
+      `Date: ${new Date().toUTCString()}`,
+      `Message-ID: ${info.messageId}`,
+      `MIME-Version: 1.0`,
+      `Content-Type: text/plain; charset=utf-8`,
+      `Content-Transfer-Encoding: 8bit`,
+      ``,
+      text,
+    ].join('\r\n');
+    await appendToArubaSent(user, pass, rawMessage);
+  } catch {
+    // ignora se timeout
+  }
 
   // Salva lo storico invio persistente per la Dashboard e i log
   const historyPath = path.join(process.cwd(), 'src', 'data', 'outreach-history.json');
