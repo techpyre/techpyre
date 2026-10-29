@@ -1,0 +1,89 @@
+=====================================================================
+OUTBOUND PACK - STUDIO ODONTOIATRICO DOTT. D'UGO (dottdugo)
+=====================================================================
+Titolare / Decision Maker : Direzione Studio Odontoiatrico Dott. D'Ugo
+Email Target              : dott.dugosebastiano@gmail.com
+Telefono / WhatsApp       : +39 393 641 0176
+Città                     : Palermo
+P.IVA                     : 06946060826
+LCP Sito Attuale          : 7.5s (Score Mobile: 44/100)
+URL Demo (Brand-Neutral)  : https://techpyre.eu/demo/dottdugo
+Strategia Qualifica       : DIRECT_BUYER
+Segnali MarTech / Agenzia : Nessuno stack avanzato rilevato
+Agenzia Rilevata Footer   : Nessuna agenzia esterna firmata nel footer
+Check Anti-Spam 1ª Email  : 238 parole | Link: ✅ ZERO LINK (Inbox Sicura)
+
+---------------------------------------------------------------------
+1. PRIMA EMAIL AL TITOLARE (Plain-Text, Zero Link)
+---------------------------------------------------------------------
+A: dott.dugosebastiano@gmail.com
+Oggetto: Sulla vostra sponsorizzata Facebook a Palermo - Presentazione TechPyre
+
+Buongiorno, alla cortese attenzione della Direzione Sanitaria di Studio Odontoiatrico Dott. D'Ugo,
+
+mi chiamo Riccardo Granza e sono il fondatore di TechPyre: sviluppiamo landing page ad alta conversione per gli studi odontoiatrici e medici che investono in pubblicità su Facebook e Google.
+
+Oggi ho visto su Facebook la vostra inserzione attiva per Palermo e ho analizzato dal telefono cosa succede quando un paziente ci clicca sopra. In questo momento la pagina impiega 7.5 secondi per caricare la prima schermata da mobile (punteggio velocità 44 su 100) e atterra su una pagina istituzionale senza la possibilità immediata di prenotare o richiedere la disponibilità per la prima visita sopra la piega.
+
+Un paziente che cerca un trattamento dentistico da smartphone vuole rassicurazione immediata e un contatto semplice. Farlo aspettare 7.5 secondi porta oltre metà delle persone che cliccano la vostra inserzione a uscire prima ancora di leggere, sprecando il budget pubblicitario che pagate a Meta. Sostituendo quel link con una pagina veloce da 0.3 secondi che mostra subito l'iter della prima visita e un modulo rapido per scegliere il giorno di preferenza, aumentate nettamente le richieste di appuntamento a parità di spesa pubblicitaria.
+
+Per presentarci in modo concreto, vi abbiamo già preparato una versione dimostrativa veloce (0.3s) con il vostro marchio. Se vi fa piacere provarla dal telefono, rispondetemi pure "LINK" qui sotto e ve lo giro subito.
+
+Un cordiale saluto,
+Riccardo Granza
+Fondatore TechPyre
+Tel: +39 379 115 9352
+
+---------------------------------------------------------------------
+2. FOLLOW-UP EMAIL (Quando risponde "LINK" o "SÌ")
+---------------------------------------------------------------------
+A: dott.dugosebastiano@gmail.com
+Oggetto: Re: Sulla vostra sponsorizzata Facebook a Palermo - Presentazione TechPyre
+
+Buongiorno,
+
+grazie per il riscontro. Ecco il link diretto per provare la versione dimostrativa dal telefono o dal PC:
+https://techpyre.eu/demo/dottdugo
+
+La pagina illustra in modo trasparente l'iter della prima visita e consente al paziente di richiedere l'appuntamento direttamente sopra la piega. Possiamo collegarla in 24h al vostro Meta Pixel.
+
+Un cordiale saluto,
+Riccardo Granza
+TechPyre
+Tel: +39 379 115 9352
+
+---------------------------------------------------------------------
+3. DM INSTAGRAM / FACEBOOK / WHATSAPP (+ public/leads/dottdugo/new-demo-mobile.png)
+---------------------------------------------------------------------
+Buongiorno Direzione, sono Riccardo Granza, fondatore di TechPyre (sviluppiamo landing page ad alta velocità per chi investe in campagne Meta). Ho visto la vostra sponsorizzata "Studio Odontoiatrico Dott. Sebastiano Donato DUgo" su Facebook: dal telefono la pagina attuale impiega 7.5 secondi ad aprirsi. Per presentarci vi abbiamo preparato una versione dimostrativa istantanea (0.3s) con i vostri testi: le ho inviato i dettagli via email, se le fa piacere provarla dal telefono mi scriva pure qui e le giro il link!
+
+---------------------------------------------------------------------
+4. RISPOSTA ANTI-OBIEZIONE "CI SEGUE GIÀ UN'AGENZIA" (Coesistenza / White-Label)
+---------------------------------------------------------------------
+La capisco perfettamente, e infatti non vogliamo assolutamente sostituire l'agenzia che vi segue le campagne Facebook.
+
+Il nostro è un intervento puramente tecnico (anche in White-Label): forniamo alla vostra agenzia attuale la pagina veloce da 0.3s sul vostro dominio, già collegata al loro Pixel e GTM, così i clic che vi portano smettono di perdersi durante i 7.5 secondi di caricamento.
+
+Può girare direttamente anche a loro questo link di test (è completamente neutro, senza il nostro logo):
+
+https://techpyre.eu/demo/dottdugo
+
+---------------------------------------------------------------------
+5. PITCH B2B2B WHITE-LABEL DIRETTO ALL'AGENZIA (Se vuoi vendere all'Agenzia)
+---------------------------------------------------------------------
+Oggetto: Partnership tecnica White-Label su campagne Meta di Studio Odontoiatrico Dott. D'Ugo (7.5s -> 0.3s)
+
+Buongiorno,
+
+mi chiamo Riccardo Granza e sono il fondatore di TechPyre: siamo uno studio tecnico specializzato nello sviluppo di landing page Next.js ad altissima velocità (0.3s) in modalità White-Label per le Web Agency.
+
+Abbiamo notato che seguite il progetto digitale di Studio Odontoiatrico Dott. D'Ugo. Le creatività su Meta sono ben strutturate, ma la pagina attuale su cui atterra il traffico mobile impiega 7.5 secondi a caricare, penalizzando il tasso di conversione delle campagne.
+
+Abbiamo già preparato una versione Next.js da 0.3s per Studio Odontoiatrico Dott. D'Ugo completamente neutra (100% White-Label, zero riferimenti a TechPyre) con simulatore lead integrato: potete mostrarla direttamente al vostro cliente come upgrade vostro o collegarla in 24h al vostro GTM/CRM.
+
+Se vi fa piacere vedere la preview White-Label già pronta, rispondetemi pure 'LINK' e ve la giro subito.
+
+Un cordiale saluto,
+Riccardo Granza - Fondatore TechPyre
++39 379 115 9352
+=====================================================================

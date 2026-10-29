@@ -1,0 +1,77 @@
+{
+  "slug": "bricoterm",
+  "targetUrl": "https://bricoterm.it/",
+  "finalResolvedUrl": "https://bricoterm.it/",
+  "measuredResponseMs": 564,
+  "renderBlockingScripts": 56,
+  "estimatedMobileLcpSeconds": 7,
+  "mobileViewportAudit": {
+    "viewportWidth": 390,
+    "viewportHeight": 844,
+    "documentScrollWidth": 390,
+    "hasRealHorizontalOverflow": false,
+    "formVisibleAboveTheFold": false,
+    "firstFormTopPx": 6206,
+    "screensToReachForm": 5.0,
+    "visibleFormsCount": 1,
+    "cookieOrPopupCoverPercent": 0,
+    "visibleCtasAboveFold": [
+      "Il Gruppo",
+      "Punti vendita"
+    ],
+    "h1Text": "Bricoterm Termoidraulica - Climatizzazione - Solare - Ferramenta"
+  },
+  "qualification": {
+    "isQualified": true,
+    "recommendedStrategy": "DIRECT_BUYER",
+    "strategyReason": "Azienda ideale per vendita diretta: paga le inserzioni Meta ma manda il traffico su un sito lento e dispersivo.",
+    "disqualifiers": [],
+    "alreadyHasPerformantLanding": false,
+    "isDedicatedFunnelUrl": false,
+    "funnelBuilders": [],
+    "hasQuizAlready": false,
+    "navLinksCount": 9,
+    "formsCount": 4,
+    "isEcommerce": false,
+    "isLargeEnterpriseOrSpa": false,
+    "agencyDetection": {
+      "hasAgencyInvolved": false,
+      "detectedAgencyNames": [],
+      "detectedAgencyLinks": [],
+      "martechSignals": []
+    }
+  },
+  "extractedEmails": [
+    "info@bricoterm.it"
+  ],
+  "extractedPhones": [
+    "3909231818",
+    "0923 1818483",
+    "07737201439",
+    "+3909231818483",
+    "0923.1818483"
+  ],
+  "extractedVat": "02303030817",
+  "legalSnippets": [],
+  "candidateLogoUrls": [
+    "https://bricoterm.it/wp-content/uploads/2021/04/bricoterm_logo-esteso.jpg",
+    "https://bricoterm.it/wp-content/uploads/2021/04/bricoterm_logo1.jpg",
+    "https://bricoterm.it/wp-content/uploads/2021/04/logo_video_brico_solo3-300x159.png",
+    "https://bricoterm.it/wp-content/uploads/2021/04/YouTube-Logo-120px-300x73.png"
+  ],
+  "candidateHeroUrls": [
+    "https://bricoterm.it/wp-content/uploads/2020/03/home-FB.jpg",
+    "https://bricoterm.it/wp-content/uploads/2020/03/CHAFFOTEAUX-Caldaia-CX-GREEN-EU-300x300.jpg",
+    "https://bricoterm.it/wp-content/uploads/2020/03/CHAFFOTEAUX-Mira-Advance-Link-300x300.jpg",
+    "https://bricoterm.it/wp-content/uploads/2020/03/ARIANEXT-LITE-M-LINK-300x300.jpg",
+    "https://bricoterm.it/wp-content/uploads/2020/03/AQUANEXT-PLUS-300x300.jpg",
+    "https://bricoterm.it/wp-content/uploads/2020/03/AVENIR-PLUS-LNX-OUTDOOR-300x300.jpg"
+  ],
+  "assetsDir": "/public/leads/bricoterm",
+  "searchKeyword": "fotovoltaico trapani",
+  "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&media_type=all&q=fotovoltaico%20trapani&search_type=keyword_unordered",
+  "adContextSnippet": "x1pahc9y x1ertn4p x13fuv20 x18b5jzi x1q0q8m5 x1t7ytsu xamhcws x1alpsbp xlxy82 xyumdvf x1nqv1ya x1s85apg xdk7pt x1x862rh x1rdy4ex x10l6tqk x3m8u43 x1xc55vz x1vjfegm\"> BRICOTERM.IT <div class=\"_4ik4 _4ik5\" style=\"line-height: 14px; max-height:",
+  "landingPageTitle": "Bricoterm Termoidraulica - Elettricità - Ferramenta | Trapani Marsala Mazara",
+  "landingPageH1": "",
+  "landingPageMetaDescription": "Bricoterm è il punto di riferimento per tutti i professionisti del settore termoidraulico, ma anche la soluzione più economica e vincente per il fai da te."
+}

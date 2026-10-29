@@ -43,5 +43,140 @@
     "subject": "Sulla vostra sponsorizzata Facebook \"Le tue finestre sono vecchie?\" - TechPyre",
     "messageId": "<0bf63980-f74d-46a2-54da-ebb76a6783eb@techpyre.eu>",
     "sentAt": "2026-10-29T08:12:20.200Z"
+  },
+  {
+    "slug": "saesi",
+    "companyName": "SAESI",
+    "recipient": "info@saesi.it",
+    "type": "INITIAL",
+    "subject": "Sulla vostra sponsorizzata Facebook a Catania - Presentazione TechPyre",
+    "messageId": "<be7b46c1-c5c3-22f9-5835-1aed6ac4ff9d@techpyre.eu>",
+    "sentAt": "2026-10-29T09:15:01.185Z"
+  },
+  {
+    "slug": "sistemycasa",
+    "companyName": "Sistemy Casa",
+    "recipient": "info@sistemycasa.com",
+    "type": "INITIAL",
+    "subject": "Sulla vostra sponsorizzata Facebook a Palermo - Presentazione TechPyre",
+    "messageId": "<f76b50ed-22d3-7114-3264-7a74e5036bb1@techpyre.eu>",
+    "sentAt": "2026-10-29T09:15:04.443Z"
+  },
+  {
+    "slug": "replanet",
+    "companyName": "Replanet",
+    "recipient": "info@replanet.it",
+    "type": "INITIAL",
+    "subject": "Sulla vostra sponsorizzata Facebook a Catania - Presentazione TechPyre",
+    "messageId": "<0161b3ec-ce1a-c9dc-fddd-fb37dc278c8d@techpyre.eu>",
+    "sentAt": "2026-10-29T09:15:07.764Z"
+  },
+  {
+    "slug": "impiantifotovoltaicisicilia",
+    "companyName": "Luxury Green",
+    "recipient": "info@luxurygreen.net",
+    "type": "INITIAL",
+    "subject": "Sulla vostra sponsorizzata Facebook a Sicilia - Presentazione TechPyre",
+    "messageId": "<979ba09b-0ed3-0903-8509-ee23845c8bb9@techpyre.eu>",
+    "sentAt": "2026-10-29T09:15:10.896Z"
+  },
+  {
+    "slug": "gedsolis",
+    "companyName": "Ged Solis",
+    "recipient": "info@gedsolis.it",
+    "type": "INITIAL",
+    "subject": "Sulla vostra sponsorizzata Facebook a Messina - Presentazione TechPyre",
+    "messageId": "<8ee40dfb-7087-5dda-ecf0-f0608521f3cf@techpyre.eu>",
+    "sentAt": "2026-10-29T09:15:13.972Z"
+  },
+  {
+    "slug": "desideriodicasa",
+    "companyName": "Desiderio Di Casa",
+    "recipient": "liberta@desideriodicasa.it",
+    "type": "INITIAL",
+    "subject": "Sulla vostra sponsorizzata Facebook a Palermo - Presentazione TechPyre",
+    "messageId": "<9ccd36c4-cab6-13fe-f755-df7c5a8dc725@techpyre.eu>",
+    "sentAt": "2026-10-29T09:15:17.004Z"
+  },
+  {
+    "slug": "gardenhousepalermo",
+    "companyName": "Garden House Palermo",
+    "recipient": "customer@gardenhousepalermo.com",
+    "type": "INITIAL",
+    "subject": "Sulla vostra sponsorizzata Facebook a Palermo - Presentazione TechPyre",
+    "messageId": "<de20f013-4228-53b8-41b3-6b00def3dc59@techpyre.eu>",
+    "sentAt": "2026-10-29T09:15:20.173Z"
+  },
+  {
+    "slug": "militoinfissilegno",
+    "companyName": "Milito Infissi in Legno",
+    "recipient": "info@militoinfissilegno.com",
+    "type": "INITIAL",
+    "subject": "Sulla vostra sponsorizzata Facebook a Ragusa - Presentazione TechPyre",
+    "messageId": "<580c43b0-8153-6869-ff2b-ebe3653203d8@techpyre.eu>",
+    "sentAt": "2026-10-29T09:15:23.287Z"
+  },
+  {
+    "slug": "infissivaccaro",
+    "companyName": "Infissi in PVC, Alluminio e Legno",
+    "recipient": "info@infissivaccaro.it",
+    "type": "INITIAL",
+    "subject": "Sulla vostra sponsorizzata Facebook a Palermo - Presentazione TechPyre",
+    "messageId": "<1a59f558-1b4f-5d47-1378-80aaf974cd79@techpyre.eu>",
+    "sentAt": "2026-10-29T09:15:26.375Z"
+  },
+  {
+    "slug": "etnaverde",
+    "companyName": "Etna Verde Multiservice Catania",
+    "recipient": "etnaverde@libero.it",
+    "type": "INITIAL",
+    "subject": "Sulla vostra sponsorizzata Facebook a Catania - Presentazione TechPyre",
+    "messageId": "<ad510fc6-ca75-8515-1233-628fe721942b@techpyre.eu>",
+    "sentAt": "2026-10-29T09:15:29.545Z"
+  },
+  {
+    "slug": "dottdugo",
+    "companyName": "Studio Odontoiatrico Dott. D'Ugo",
+    "recipient": "dott.dugosebastiano@gmail.com",
+    "type": "INITIAL",
+    "subject": "Sulla vostra sponsorizzata Facebook a Palermo - Presentazione TechPyre",
+    "messageId": "<6211f393-29af-3733-151d-bb773d3cbd9d@techpyre.eu>",
+    "sentAt": "2026-10-29T09:15:32.658Z"
+  },
+  {
+    "slug": "costruzioni-messina",
+    "companyName": "Costruzioni Messina",
+    "recipient": "info@costruzioni-messina.it",
+    "type": "INITIAL",
+    "subject": "Sulla vostra sponsorizzata Facebook a Messina - Presentazione TechPyre",
+    "messageId": "<d06a8e9b-f45b-ae40-a479-ac12871a6680@techpyre.eu>",
+    "sentAt": "2026-10-29T09:15:35.736Z"
+  },
+  {
+    "slug": "centroassistenzaascensori",
+    "companyName": "Centro Assistenza Ascensori",
+    "recipient": "centroassistenzaascensori@gmail.com",
+    "type": "INITIAL",
+    "subject": "Sulla vostra sponsorizzata Facebook a Caltanissetta - Presentazione TechPyre",
+    "messageId": "<0314f4fc-50c9-db95-f827-1fe575446bcb@techpyre.eu>",
+    "sentAt": "2026-10-29T09:15:38.865Z"
+  },
+  {
+    "slug": "professionistidelserramento",
+    "companyName": "Professionisti Del Serramento",
+    "recipient": "info@professionistidelserramento.com",
+    "type": "INITIAL",
+    "subject": "Sulla vostra sponsorizzata Facebook a Ragusa - Presentazione TechPyre",
+    "messageId": "<ce09d225-6748-12a4-355c-ff8b8714ec08@techpyre.eu>",
+    "sentAt": "2026-10-29T09:15:42.003Z"
+  },
+  {
+    "slug": "bricoterm",
+    "companyName": "Bricoterm Termoidraulica",
+    "recipient": "info@bricoterm.it",
+    "type": "INITIAL",
+    "subject": "Sulla vostra sponsorizzata Facebook a Trapani - Presentazione TechPyre",
+    "messageId": "<c27780e6-428a-5c1c-f0c9-39791e49a64b@techpyre.eu>",
+    "sentAt": "2026-10-29T09:22:49.219Z"
   }
 ]
