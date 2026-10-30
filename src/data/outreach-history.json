@@ -1052,5 +1052,185 @@
     "subject": "tempo di caricamento sito da cellulare (Odontosalute)",
     "messageId": "<0712badf-67cf-7de5-9ca2-54455ed88765@techpyre.eu>",
     "sentAt": "2026-10-30T17:34:50.872Z"
+  },
+  {
+    "slug": "sayagency",
+    "companyName": "Say S.p.A.",
+    "recipient": "info@sayagency.com",
+    "type": "INITIAL",
+    "subject": "in merito alla vostra ricerca per sviluppo landing page (Say S.p.A.)",
+    "messageId": "<c2f28464-3793-06a7-9bb3-7dfe67c1ff47@techpyre.eu>",
+    "sentAt": "2026-10-30T17:41:11.876Z"
+  },
+  {
+    "slug": "eos-solutions",
+    "companyName": "EOS Solutions SpA",
+    "recipient": "info@eos-solutions.it",
+    "type": "INITIAL",
+    "subject": "in merito alla vostra ricerca per sviluppo landing page (EOS Solutions SpA)",
+    "messageId": "<8a7a4bec-2ebb-2ac1-ed04-7d4e2e27124a@techpyre.eu>",
+    "sentAt": "2026-10-30T17:41:15.508Z"
+  },
+  {
+    "slug": "vdagroup",
+    "companyName": "VDA Group SpA",
+    "recipient": "info@vdagroup.com",
+    "type": "INITIAL",
+    "subject": "in merito alla vostra ricerca per sviluppo landing page (VDA Group SpA)",
+    "messageId": "<88913378-7a95-01e6-98ac-434a2200aff7@techpyre.eu>",
+    "sentAt": "2026-10-30T17:41:18.777Z"
+  },
+  {
+    "slug": "thebrandcompany",
+    "companyName": "The Brand Company S.p.A.",
+    "recipient": "info@thebrandcompany.it",
+    "type": "INITIAL",
+    "subject": "in merito alla vostra ricerca per sviluppo landing page (The Brand Company S.p.A.)",
+    "messageId": "<763834d4-b20d-753e-9e04-e90498816678@techpyre.eu>",
+    "sentAt": "2026-10-30T17:41:22.291Z"
+  },
+  {
+    "slug": "shurity",
+    "companyName": "Shurity Italia S.R.L.",
+    "recipient": "info@shurity.it",
+    "type": "INITIAL",
+    "subject": "in merito alla vostra ricerca per sviluppo landing page (Shurity Italia S.R.L.)",
+    "messageId": "<7ec6f64d-24ab-20d2-d615-6db63f0804a4@techpyre.eu>",
+    "sentAt": "2026-10-30T17:41:27.074Z"
+  },
+  {
+    "slug": "spheragroup",
+    "companyName": "Sphera Group SRL",
+    "recipient": "info@spheragroup.it",
+    "type": "INITIAL",
+    "subject": "in merito alla vostra ricerca per sviluppo landing page (Sphera Group SRL)",
+    "messageId": "<d620e2b8-1cff-812b-e66c-bd4bb96f9e11@techpyre.eu>",
+    "sentAt": "2026-10-30T17:41:34.826Z"
+  },
+  {
+    "slug": "blossomcommunication",
+    "companyName": "Blossom Communication",
+    "recipient": "hello@blossomcommunication.com",
+    "type": "INITIAL",
+    "subject": "in merito alla vostra ricerca per sviluppo landing page (Blossom Communication)",
+    "messageId": "<a6af7ac6-0ffe-e682-4d18-eb0bb2a654d0@techpyre.eu>",
+    "sentAt": "2026-10-30T17:41:37.732Z"
+  },
+  {
+    "slug": "protocollicreativi",
+    "companyName": "Protocolli Creativi",
+    "recipient": "info@protocollicreativi.it",
+    "type": "INITIAL",
+    "subject": "in merito alla vostra ricerca per sviluppo landing page (Protocolli Creativi)",
+    "messageId": "<f2f6eb4a-e54a-33a8-dd6f-f51d040e3a22@techpyre.eu>",
+    "sentAt": "2026-10-30T17:41:40.234Z"
+  },
+  {
+    "slug": "hintogroup",
+    "companyName": "Hinto Group",
+    "recipient": "info@hintogroup.eu",
+    "type": "INITIAL",
+    "subject": "in merito alla vostra ricerca per sviluppo landing page (Hinto Group)",
+    "messageId": "<67f2abe4-f800-575a-df69-25a53f225a86@techpyre.eu>",
+    "sentAt": "2026-10-30T17:41:43.659Z"
+  },
+  {
+    "slug": "bitmetrica",
+    "companyName": "Bitmetrica",
+    "recipient": "info@bitmetrica.it",
+    "type": "INITIAL",
+    "subject": "in merito alla vostra ricerca per sviluppo landing page (Bitmetrica)",
+    "messageId": "<494f536a-4e3f-204b-d9ee-7eeed3c4a113@techpyre.eu>",
+    "sentAt": "2026-10-30T17:41:47.065Z"
+  },
+  {
+    "slug": "principiadv",
+    "companyName": "Principi ADV",
+    "recipient": "info@principiadv.com",
+    "type": "INITIAL",
+    "subject": "in merito alla vostra ricerca per sviluppo landing page (Principi ADV)",
+    "messageId": "<a5cfbe71-2a8c-ebc5-cfba-59ad0ebd3915@techpyre.eu>",
+    "sentAt": "2026-10-30T17:41:49.677Z"
+  },
+  {
+    "slug": "verycontent",
+    "companyName": "Very Content Srl",
+    "recipient": "info@verycontent.it",
+    "type": "INITIAL",
+    "subject": "in merito alla vostra ricerca per sviluppo landing page (Very Content Srl)",
+    "messageId": "<e8f4873b-9534-51b3-307c-963e3c99d7c3@techpyre.eu>",
+    "sentAt": "2026-10-30T17:41:54.250Z"
+  },
+  {
+    "slug": "mgpg",
+    "companyName": "MPG Studio",
+    "recipient": "info@mgpg.it",
+    "type": "INITIAL",
+    "subject": "in merito alla vostra ricerca per sviluppo landing page (MPG Studio)",
+    "messageId": "<4b1c69a2-5ea9-7a76-1115-aca9a5613a5c@techpyre.eu>",
+    "sentAt": "2026-10-30T17:41:58.550Z"
+  },
+  {
+    "slug": "boongaweb",
+    "companyName": "Boonga Web",
+    "recipient": "info@boongaweb.com",
+    "type": "INITIAL",
+    "subject": "in merito alla vostra ricerca per sviluppo landing page (Boonga Web)",
+    "messageId": "<96c78de1-fcb5-6349-2a6b-e34f8e002fba@techpyre.eu>",
+    "sentAt": "2026-10-30T17:42:01.165Z"
+  },
+  {
+    "slug": "noonic",
+    "companyName": "Noonic",
+    "recipient": "info@noonic.com",
+    "type": "INITIAL",
+    "subject": "in merito alla vostra ricerca per sviluppo landing page (Noonic)",
+    "messageId": "<b9c22bcb-2d25-3a76-097b-6e260f25ec4f@techpyre.eu>",
+    "sentAt": "2026-10-30T17:42:05.323Z"
+  },
+  {
+    "slug": "artworkstudios",
+    "companyName": "Artwork Studios",
+    "recipient": "info@artworkstudios.it",
+    "type": "INITIAL",
+    "subject": "in merito alla vostra ricerca per sviluppo landing page (Artwork Studios)",
+    "messageId": "<a37f7ac2-68ed-4e2d-c375-d74233b3e5f0@techpyre.eu>",
+    "sentAt": "2026-10-30T17:42:08.226Z"
+  },
+  {
+    "slug": "noviia",
+    "companyName": "Novia Digital",
+    "recipient": "info@noviia.com",
+    "type": "INITIAL",
+    "subject": "in merito alla vostra ricerca per sviluppo landing page (Novia Digital)",
+    "messageId": "<8d3252a0-46ab-8ba4-945c-1fc759b47d7a@techpyre.eu>",
+    "sentAt": "2026-10-30T17:42:10.923Z"
+  },
+  {
+    "slug": "cri-art",
+    "companyName": "Cri-Art Digital Studio",
+    "recipient": "info@cri-art.it",
+    "type": "INITIAL",
+    "subject": "in merito alla vostra ricerca per sviluppo landing page (Cri-Art Digital Studio)",
+    "messageId": "<3de2d194-5d93-60d7-6f67-9c3311d08ac7@techpyre.eu>",
+    "sentAt": "2026-10-30T17:42:20.046Z"
+  },
+  {
+    "slug": "squaloweb",
+    "companyName": "Squalo Web",
+    "recipient": "info@squaloweb.it",
+    "type": "INITIAL",
+    "subject": "in merito alla vostra ricerca per sviluppo landing page (Squalo Web)",
+    "messageId": "<3602791e-654b-a29c-1e85-f2d8504e1bf6@techpyre.eu>",
+    "sentAt": "2026-10-30T17:42:23.183Z"
+  },
+  {
+    "slug": "seventyseven",
+    "companyName": "Seventy Seven Srl",
+    "recipient": "info@seventyseven.biz",
+    "type": "INITIAL",
+    "subject": "in merito alla vostra ricerca per sviluppo landing page (Seventy Seven Srl)",
+    "messageId": "<ede6a15f-b683-d3ff-cd35-ea62ceb9a3e8@techpyre.eu>",
+    "sentAt": "2026-10-30T17:42:26.773Z"
   }
 ]

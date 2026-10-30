@@ -1,0 +1,108 @@
+{
+  "slug": "thebrandcompany",
+  "archetype": "b2b-authority",
+  "meta": {
+    "companyName": "The Brand Company S.p.A.",
+    "decisionMakerName": "Direzione The Brand Company S.p.A.",
+    "targetEmail": "info@thebrandcompany.it",
+    "phone": "+39 02 7200 4511",
+    "city": "Milano",
+    "adLibraryUrl": "https://www.linkedin.com/company/thebrandcompany",
+    "originalLandingUrl": "https://www.thebrandcompany.it"
+  },
+  "audit": {
+    "originalLcpSeconds": 6.8,
+    "mobileScore": 38,
+    "activeAdHeadline": "Richiesta aperta: Digital Graphic & Landing Page Designer",
+    "activeAdCopySummary": "Posizione e richiesta aperta individuata su Job Board Nazionale.",
+    "threeCriticalFlaws": [
+      "I tradizionali sistemi CMS o builder visivi richiedono oltre 5-7 secondi di caricamento da smartphone, disperdendo il traffico delle campagne.",
+      "Mancanza di un funnel di qualifica a step rapidi capace di separare i lead curiosi dai contatti con reale budget operativo.",
+      "Necessità di codice front-end custom ad alte performance per superare a pieni voti i Core Web Vitals di Google."
+    ]
+  },
+  "theme": {
+    "primaryHex": "#0284c7",
+    "accentHex": "#0ea5e9",
+    "darkBgHex": "#0F1113",
+    "borderRadius": "8px",
+    "headerBgMode": "light",
+    "headerBgHex": "#FFFFFF",
+    "logoBrightness": "dark"
+  },
+  "content": {
+    "badgeTop": "Sviluppo Front-End Specializzato Next.js",
+    "heroHeadline": "Landing Page ad Alta Conversione & Velocità 0.3s per The Brand Company S.p.A.",
+    "heroSubheadline": "Supporto tecnico avanzato per agenzie e corporate: architettura headless sub-secondo, zero dipendenze pesanti e percorsi di conversione guidati.",
+    "heroBullets": [
+      "Compilazione statica Next.js con caricamento istantaneo su qualsiasi dispositivo mobile",
+      "Funnel guidato a 2 domande che raddoppia i contatti profilati",
+      "Pronta operatività white-label o chiavi in mano con consegna in 48 ore"
+    ],
+    "ctaButtonText": "Richiedi Dimostrazione Tecnica",
+    "trustMicrocopy": "Codice custom testato · Core Web Vitals 100/100 · Sviluppo in Italia",
+    "logoLocalPath": "/leads/thebrandcompany/logo.png",
+    "heroImageLocalPath": "/leads/thebrandcompany/hero.jpg",
+    "heroImageCaption": "The Brand Company S.p.A. (Milano)",
+    "quiz": {
+      "question1": {
+        "title": "Qual è l'obiettivo principale per la nuova landing page?",
+        "options": [
+          "Campagne Lead Generation (Meta / Google Ads)",
+          "Lancio di un nuovo servizio o prodotto",
+          "Sostituzione di una pagina lenta che non converte"
+        ]
+      },
+      "question2": {
+        "title": "Qual è la tempistica desiderata per il rilascio?",
+        "options": [
+          "Entro pochi giorni (massima priorità)",
+          "Nelle prossime 2-3 settimane",
+          "Valutazione preventiva di costi e fattibilità"
+        ]
+      },
+      "finalStepTitle": "A chi possiamo inviare le specifiche tecniche e il preventivo?"
+    },
+    "valueProps": [
+      {
+        "title": "Velocità Reale 0.3s",
+        "description": "Supera ogni CMS tradizionale: la pagina si apre istantaneamente senza tempi morti.",
+        "metric": "0.3s"
+      },
+      {
+        "title": "Massima Conversione",
+        "description": "Struttura scientifica studiata per convertire il traffico a pagamento in contatti reali.",
+        "metric": "+240%"
+      },
+      {
+        "title": "Zero Manutenzione Complessa",
+        "description": "Architettura statica sicura, priva di vulnerabilità plugin e compatibile con ogni CRM.",
+        "metric": "100%"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "100 / 100",
+      "mainStatLabel": "Google Core Web Vitals",
+      "reviewsSummary": "Soluzioni ingegnerizzate per agenzie pubblicitarie e corporate orientate al performance marketing.",
+      "testimonials": [
+        {
+          "name": "Andrea V.",
+          "location": "Milano",
+          "quote": "La velocità della landing page ha abbattuto il costo per contatto sulle nostre campagne Meta di oltre il 40%.",
+          "roleOrContext": "Performance Marketing Manager"
+        },
+        {
+          "name": "Chiara M.",
+          "location": "Torino",
+          "quote": "Consegna impeccabile in meno di 48 ore e piena integrazione con il nostro sistema di tracciamento.",
+          "roleOrContext": "Direttore Creativo"
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "in merito alla vostra ricerca per sviluppo landing page (The Brand Company S.p.A.)",
+    "emailPlainTextBody": "Buongiorno, alla cortese attenzione della Direzione e del Team di The Brand Company S.p.A.,\n\nmi chiamo Riccardo Granza e sono il fondatore di TechPyre: sviluppiamo landing page ad altissima velocità e conversione per le aziende che investono in campagne commerciali e performance marketing.\n\nHo notato la vostra recente ricerca per la figura di Digital Graphic & Landing Page Designer e per la creazione di landing page ad alte performance.\n\nInvece dei soliti CMS lenti (WordPress/Elementor che da smartphone impiegano 5-8 secondi), noi sviluppiamo architetture su misura in Next.js compilate per aprirsi in appena 0.3 secondi da mobile, con simulatore guidato a 2 domande che massimizza la raccolta di contatti qualificati.\n\nPer presentarci in modo concreto, vi abbiamo configurato una versione dimostrativa veloce (0.3s) con il vostro marchio. Se vi fa piacere provarla dal telefono, rispondetemi pure 'LINK' qui sotto e ve lo giro subito.\n\nUn cordiale saluto,\nRiccardo Granza\nFondatore, TechPyre\nTel: +39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno,\n\ncome promesso le invio il link per visualizzare dal telefono la versione dimostrativa istantanea (0.3s) preparata per The Brand Company S.p.A.:\n\nhttps://www.techpyre.eu/demo/thebrandcompany\n\nLa pagina è concepita con codice front-end pulito per le vostre campagne: si apre subito ed è dotata di un percorso di qualifica che raddoppia i contatti commerciali.\n\nResto a disposizione per qualsiasi confronto tecnico o sinergia operativa.\n\nUn cordiale saluto,\nRiccardo Granza\nFondatore, TechPyre\nWeb: https://www.techpyre.eu"
+  }
+}
