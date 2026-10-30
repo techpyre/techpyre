@@ -16,7 +16,6 @@
   <a href="https://b2b-demo.techpyre.eu"><img src="https://img.shields.io/badge/Demo-Portale_B2B-B8860B?style=flat-square" alt="B2B Portal Demo" /></a>
   <a href="https://headless-demo.techpyre.eu"><img src="https://img.shields.io/badge/Demo-Headless_LeadGen-003366?style=flat-square" alt="Headless Demo" /></a>
   <img src="https://img.shields.io/badge/Status-Operativo-2ea44f?style=flat-square" alt="Status" />
-  <img src="https://img.shields.io/badge/HQ-Bergamo_%2F_Brescia-5A6270?style=flat-square" alt="HQ" />
 </p>
 
 ---
