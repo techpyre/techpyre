@@ -72,9 +72,9 @@ Pagamenti & Fisco:       Stripe API (3-D Secure, SEPA Direct Debit B2B), Webhook
 Per richieste di preventivo, audit preliminari o pianificazione di un primo colloquio conoscitivo di 30 minuti:
 
 * 🌐 **Sito Ufficiale:** [www.techpyre.eu](https://www.techpyre.eu)
-* ✉️ **Email:** [riccardogranza@gmail.com](mailto:riccardogranza@gmail.com)
+* ✉️ **Email:** [riccardo.granza@techpyre.eu](mailto:riccardo.granza@techpyre.eu)
 * 📱 **Telefono / WhatsApp:** [+39 379 115 9352](tel:+393791159352)
-* 📍 **Sede:** Bergamo / Brescia, Italia (operatività remota su tutto il territorio nazionale)
+* 📍 **Sede:** Sicilia, Italia (operatività remota su tutto il territorio nazionale)
 
 ---
 
