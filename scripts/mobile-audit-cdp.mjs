@@ -65,11 +65,21 @@ export async function runTrueMobileAuditAndScreenshot(url, screenshotPath, waitM
     });
 
     const baseHttp = wsUrl.replace(/^ws:\/\//, 'http://').replace(/\/devtools\/browser\/.*$/, '');
-    let targets = await fetch(`${baseHttp}/json/list`).then((r) => r.json()).catch(() => []);
-    let pageTarget = targets.find((t) => t.type === 'page');
-    if (!pageTarget) {
-      // Se nessun target aperto, creane uno nuovo
-      pageTarget = await fetch(`${baseHttp}/json/new`).then((r) => r.json()).catch(() => null);
+    let pageTarget = null;
+    for (let attempt = 0; attempt < 12; attempt++) {
+      try {
+        const targets = await fetch(`${baseHttp}/json/list`).then((r) => r.json());
+        pageTarget = targets.find((t) => t.type === 'page');
+        if (pageTarget?.webSocketDebuggerUrl) break;
+      } catch {}
+      try {
+        const created = await fetch(`${baseHttp}/json/new?about:blank`, { method: 'PUT' }).then((r) => r.json());
+        if (created?.webSocketDebuggerUrl) {
+          pageTarget = created;
+          break;
+        }
+      } catch {}
+      await new Promise((r) => setTimeout(r, 250));
     }
     if (!pageTarget?.webSocketDebuggerUrl) {
       throw new Error('Nessun target pagina trovato in CDP.');
@@ -289,10 +299,21 @@ export async function fetchRenderedHtmlViaCdp(url, waitMs = 5000) {
     });
 
     const baseHttp = wsUrl.replace(/^ws:\/\//, 'http://').replace(/\/devtools\/browser\/.*$/, '');
-    let targets = await fetch(`${baseHttp}/json/list`).then((r) => r.json()).catch(() => []);
-    let pageTarget = targets.find((t) => t.type === 'page');
-    if (!pageTarget) {
-      pageTarget = await fetch(`${baseHttp}/json/new`).then((r) => r.json()).catch(() => null);
+    let pageTarget = null;
+    for (let attempt = 0; attempt < 12; attempt++) {
+      try {
+        const targets = await fetch(`${baseHttp}/json/list`).then((r) => r.json());
+        pageTarget = targets.find((t) => t.type === 'page');
+        if (pageTarget?.webSocketDebuggerUrl) break;
+      } catch {}
+      try {
+        const created = await fetch(`${baseHttp}/json/new?about:blank`, { method: 'PUT' }).then((r) => r.json());
+        if (created?.webSocketDebuggerUrl) {
+          pageTarget = created;
+          break;
+        }
+      } catch {}
+      await new Promise((r) => setTimeout(r, 250));
     }
     if (!pageTarget?.webSocketDebuggerUrl) {
       throw new Error('Nessun target pagina trovato in CDP.');

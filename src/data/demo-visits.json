@@ -166,5 +166,101 @@
         "isFirstVisit": true
       }
     ]
+  },
+  "infissimpm": {
+    "slug": "infissimpm",
+    "companyName": "MPM Infissi Certificati",
+    "totalVisits": 1,
+    "uniqueSessions": 1,
+    "firstVisitAt": "2026-10-30T11:29:49.071Z",
+    "lastVisitAt": "2026-10-30T11:29:49.071Z",
+    "lastDevice": "Apple Mac (Desktop)",
+    "lastDeviceType": "Desktop",
+    "visits": [
+      {
+        "id": "vis_1793359789071_fb97y",
+        "timestamp": "2026-10-30T11:29:49.071Z",
+        "formattedDate": "30 Ott 2026, 12:29",
+        "device": "Apple Mac (Desktop)",
+        "deviceType": "Desktop",
+        "referrer": "diretto / link email",
+        "screen": "390x844",
+        "ip": "::1",
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.0.0 Safari/537.36",
+        "isFirstVisit": true
+      }
+    ]
+  },
+  "montagnastudidentistici": {
+    "slug": "montagnastudidentistici",
+    "companyName": "Montagna Dentisti del Veronese",
+    "totalVisits": 1,
+    "uniqueSessions": 1,
+    "firstVisitAt": "2026-10-30T11:29:53.017Z",
+    "lastVisitAt": "2026-10-30T11:29:53.017Z",
+    "lastDevice": "Apple Mac (Desktop)",
+    "lastDeviceType": "Desktop",
+    "visits": [
+      {
+        "id": "vis_1793359793017_6t2y9",
+        "timestamp": "2026-10-30T11:29:53.017Z",
+        "formattedDate": "30 Ott 2026, 12:29",
+        "device": "Apple Mac (Desktop)",
+        "deviceType": "Desktop",
+        "referrer": "diretto / link email",
+        "screen": "390x844",
+        "ip": "::1",
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.0.0 Safari/537.36",
+        "isFirstVisit": true
+      }
+    ]
+  },
+  "veronafinestre": {
+    "slug": "veronafinestre",
+    "companyName": "Verona Finestre",
+    "totalVisits": 1,
+    "uniqueSessions": 1,
+    "firstVisitAt": "2026-10-30T11:51:05.926Z",
+    "lastVisitAt": "2026-10-30T11:51:05.926Z",
+    "lastDevice": "iPhone (iOS 17.4)",
+    "lastDeviceType": "Mobile",
+    "visits": [
+      {
+        "id": "vis_1793361065926_bl2ms",
+        "timestamp": "2026-10-30T11:51:05.926Z",
+        "formattedDate": "30 Ott 2026, 12:51",
+        "device": "iPhone (iOS 17.4)",
+        "deviceType": "Mobile",
+        "referrer": "diretto / link email",
+        "screen": "390x844",
+        "ip": "::1",
+        "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4 Mobile/15E148 Safari/604.1",
+        "isFirstVisit": true
+      }
+    ]
+  },
+  "csmdiegoceliinfissi": {
+    "slug": "csmdiegoceliinfissi",
+    "companyName": "CSM infissi Roma di Diego Celi",
+    "totalVisits": 1,
+    "uniqueSessions": 1,
+    "firstVisitAt": "2026-10-30T11:51:16.940Z",
+    "lastVisitAt": "2026-10-30T11:51:16.940Z",
+    "lastDevice": "iPhone (iOS 17.4)",
+    "lastDeviceType": "Mobile",
+    "visits": [
+      {
+        "id": "vis_1793361076940_i6oao",
+        "timestamp": "2026-10-30T11:51:16.940Z",
+        "formattedDate": "30 Ott 2026, 12:51",
+        "device": "iPhone (iOS 17.4)",
+        "deviceType": "Mobile",
+        "referrer": "diretto / link email",
+        "screen": "390x844",
+        "ip": "::1",
+        "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4 Mobile/15E148 Safari/604.1",
+        "isFirstVisit": true
+      }
+    ]
   }
 }
