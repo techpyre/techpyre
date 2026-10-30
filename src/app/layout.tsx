@@ -126,7 +126,9 @@ export default function RootLayout({
     telephone: siteContent.brand.phone,
     address: {
       "@type": "PostalAddress",
-      addressLocality: "Milano",
+      streetAddress: "Via Carrubara Vico III n. 3",
+      addressLocality: "Pagliara",
+      addressRegion: "ME",
       addressCountry: "IT",
     },
     description: siteContent.hero.subheadline,

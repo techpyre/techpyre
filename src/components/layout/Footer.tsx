@@ -39,21 +39,15 @@ export default function Footer() {
               <span>{brand.location}</span>
             </div>
 
-            {/* 
-              =====================================================================
-              DATI FISCALI & SOCIETARI B2B (INVISIBILE AL PUBBLICO - PRONTO PER COMPILAZIONE)
-              Decommentare e compilare quando saranno disponibili i dati fiscali ufficiali:
-              =====================================================================
-            */}
-            {/*
-            <div className="text-[11px] font-mono text-[#A4B3C6]/80 pt-2 border-t border-white/10 flex flex-wrap gap-x-3 gap-y-1">
-              <span>P.IVA: [INSERIRE_PIVA]</span>
+            <div className="text-[11px] font-sans text-[#A4B3C6]/85 pt-2.5 border-t border-white/10 flex flex-wrap items-center gap-x-3 gap-y-1">
+              <span>
+                <strong className="text-white/90 font-medium">P.IVA:</strong> In stato di costituzione
+              </span>
               <span className="text-[#C5A059]">·</span>
-              <span>Sede Operativa: [CITTÀ], Italia</span>
-              <span className="text-[#C5A059]">·</span>
-              <span>PEC: [INSERIRE_PEC]</span>
+              <span>
+                <strong className="text-white/90 font-medium">Sede Operativa:</strong> Via Carrubara Vico III n. 3, Pagliara (Messina)
+              </span>
             </div>
-            */}
           </div>
 
           {/* Colonne di Navigazione */}

@@ -85,7 +85,7 @@ export default function PrivacyModal({ isOpen, onClose }: PrivacyModalProps) {
                   1. Titolare del Trattamento
                 </h4>
                 <p>
-                  Il titolare del trattamento dei dati è <strong>TechPYRE Studio</strong> di Riccardo Granza, con sede in Italia. Per qualsiasi richiesta, rettifica o cancellazione è possibile scrivere direttamente all&apos;indirizzo email:{" "}
+                  Il titolare del trattamento dei dati è <strong>TechPYRE Studio</strong> di Riccardo Granza, con sede operativa in Via Carrubara Vico III n. 3, Pagliara (Messina) — P.IVA in stato di costituzione. Per qualsiasi richiesta, rettifica o cancellazione è possibile scrivere direttamente all&apos;indirizzo email:{" "}
                   <a
                     href="mailto:riccardo.granza@techpyre.eu"
                     className="text-[#B8860B] font-semibold underline hover:text-[#0B1E36]"
