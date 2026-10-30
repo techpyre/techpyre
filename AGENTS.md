@@ -2,9 +2,9 @@
 
 # This is NOT the Next.js you know
 
-This version has breaking changes - APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` (resolved from this file's directory; in monorepos the `next` package may not be visible from the repo root) before writing any code. Heed deprecation notices.
+This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` (resolved from this file's directory; in monorepos the `next` package may not be visible from the repo root) before writing any code. Heed deprecation notices.
 
-This block is written and re-added by `next dev` - verify at `node_modules/next/dist/server/lib/generate-agent-files.js`. Removing it from a diff only re-creates the uncommitted change; committing it with your work keeps the tree clean.
+This block is written and re-added by `next dev` — verify at `node_modules/next/dist/server/lib/generate-agent-files.js`. Removing it from a diff only re-creates the uncommitted change; committing it with your work keeps the tree clean.
 
 <!-- END:nextjs-agent-rules -->
 
@@ -22,3 +22,7 @@ This block is written and re-added by `next dev` - verify at `node_modules/next/
    - Zero link cliccabili (`http://` o `https://` vietati nel primo messaggio).
    - Cita il titolo esatto della loro inserzione attiva su Meta e il tempo di caricamento reale in secondi.
    - Chiudi con l'invito cortese: *"Per presentarci in modo concreto, vi abbiamo preparato una versione dimostrativa veloce (0.3s) con i vostri testi e un simulatore di preventivo. Se vi fa piacere provarla dal telefono, rispondetemi pure 'LINK' qui sotto e ve lo giro subito."*
+5. **Filtro di Qualifica LCP Elevato (Urgenza e Dolore Commerciale Acuto):**
+   - Cerca e qualifica prioritariamente aziende con un **LCP su rete mobile pari o superiore a 5.0 secondi** (range ideale: 6.0s - 14.0s).
+   - I bersagli ottimali sono siti WordPress, Elementor, Divi, Wix, Joomla o e-commerce/vetrine non ottimizzate con decine di script bloccanti e immagini non compresse: per loro il contrasto tra i loro 6-10 secondi e i **0.3 secondi** di TechPyre genera un impatto emotivo e commerciale devastante.
+   - Salta o scarta siti che caricano già rapidamente (< 4.0s): per loro il margine di miglioramento non giustifica a sufficienza l'investimento.
