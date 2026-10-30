@@ -827,5 +827,230 @@
     "subject": "tempo di caricamento sito da cellulare (Gitab SRL)",
     "messageId": "<3a54486f-e078-e94d-3540-e9453c264e2d@techpyre.eu>",
     "sentAt": "2026-10-30T11:49:43.154Z"
+  },
+  {
+    "slug": "oknamilano",
+    "companyName": "Okna Milano",
+    "recipient": "ordini@oknamilano.it",
+    "type": "INITIAL",
+    "subject": "tempo di caricamento sito da cellulare (Okna Milano)",
+    "messageId": "<a842e0ab-3ed2-4931-d4c6-cb0d1ac580a6@techpyre.eu>",
+    "sentAt": "2026-10-30T17:28:29.855Z"
+  },
+  {
+    "slug": "wrappinginteriordesign",
+    "companyName": "CERBERUS",
+    "recipient": "info@cerberusmilano.com",
+    "type": "INITIAL",
+    "subject": "tempo di caricamento sito da cellulare (CERBERUS)",
+    "messageId": "<334a0cd7-294d-126a-a9d1-a8a551e11c78@techpyre.eu>",
+    "sentAt": "2026-10-30T17:28:37.598Z"
+  },
+  {
+    "slug": "omniamultiservizi",
+    "companyName": "Omnia",
+    "recipient": "omniamultiservicesrls@gmail.com",
+    "type": "INITIAL",
+    "subject": "tempo di caricamento sito da cellulare (Omnia)",
+    "messageId": "<55acadac-5939-f4d1-b6a9-b62f533dd677@techpyre.eu>",
+    "sentAt": "2026-10-30T17:28:53.462Z"
+  },
+  {
+    "slug": "fotovoltaicoeasy",
+    "companyName": "FotovoltaicoEasy",
+    "recipient": "info@fotovoltaicoeasy.it",
+    "type": "INITIAL",
+    "subject": "tempo di caricamento sito da cellulare (FotovoltaicoEasy)",
+    "messageId": "<1b84ffa3-86fd-a045-86e2-811bbe6efafd@techpyre.eu>",
+    "sentAt": "2026-10-30T17:29:30.806Z"
+  },
+  {
+    "slug": "isartidelweb",
+    "companyName": "I Sarti del web | Web Agency a Bologna",
+    "recipient": "info@isartidelweb.it",
+    "type": "INITIAL",
+    "subject": "tempo di caricamento sito da cellulare (I Sarti del web | Web Agency a Bologna)",
+    "messageId": "<10d89102-3417-230c-0e28-c09b8ef89805@techpyre.eu>",
+    "sentAt": "2026-10-30T17:30:09.862Z"
+  },
+  {
+    "slug": "linktr",
+    "companyName": "Linktree",
+    "recipient": "info@sartidelweb.it",
+    "type": "INITIAL",
+    "subject": "tempo di caricamento sito da cellulare (Linktree)",
+    "messageId": "<0a28442a-60a2-9192-8094-4922144c3555@techpyre.eu>",
+    "sentAt": "2026-10-30T17:30:15.364Z"
+  },
+  {
+    "slug": "pfportefinestre",
+    "companyName": "P.F. Portefinestre Srl",
+    "recipient": "info@pfportefinestre.it",
+    "type": "INITIAL",
+    "subject": "tempo di caricamento sito da cellulare (P.F. Portefinestre Srl)",
+    "messageId": "<21299c91-0123-ed9d-6711-fa22f934c2bc@techpyre.eu>",
+    "sentAt": "2026-10-30T17:30:18.052Z"
+  },
+  {
+    "slug": "dimensione-web",
+    "companyName": "Dimensione Web",
+    "recipient": "info@dimensione-web.com",
+    "type": "INITIAL",
+    "subject": "tempo di caricamento sito da cellulare (Dimensione Web)",
+    "messageId": "<be6de2aa-68c4-6500-e348-08f0a110df2c@techpyre.eu>",
+    "sentAt": "2026-10-30T17:30:21.194Z"
+  },
+  {
+    "slug": "pmpserramenti",
+    "companyName": "PMP Serramenti",
+    "recipient": "thomas.giacinto@yahoo.com",
+    "type": "INITIAL",
+    "subject": "tempo di caricamento sito da cellulare (PMP Serramenti)",
+    "messageId": "<d4f7c7a7-e1cc-4366-0052-d60048295790@techpyre.eu>",
+    "sentAt": "2026-10-30T17:30:25.748Z"
+  },
+  {
+    "slug": "mvpcostruzioni",
+    "companyName": "MVP Costruzioni",
+    "recipient": "info@mvpcostruzioni.com",
+    "type": "INITIAL",
+    "subject": "tempo di caricamento sito da cellulare (MVP Costruzioni)",
+    "messageId": "<19a1a770-a625-c5a0-3acc-aa6909c3cab7@techpyre.eu>",
+    "sentAt": "2026-10-30T17:30:55.608Z"
+  },
+  {
+    "slug": "scafiparma",
+    "companyName": "Sca.Fi. Serramenti",
+    "recipient": "info@scafiparma.com",
+    "type": "INITIAL",
+    "subject": "tempo di caricamento sito da cellulare (Sca.Fi. Serramenti)",
+    "messageId": "<dad0ab59-f3e2-ac3e-a079-6641d1ecec68@techpyre.eu>",
+    "sentAt": "2026-10-30T17:31:24.805Z"
+  },
+  {
+    "slug": "casa-living",
+    "companyName": "Casa Living",
+    "recipient": "info@casa-living.it",
+    "type": "INITIAL",
+    "subject": "tempo di caricamento sito da cellulare (Casa Living)",
+    "messageId": "<2db9d008-cc66-3184-a591-708d37e6bbee@techpyre.eu>",
+    "sentAt": "2026-10-30T17:31:56.847Z"
+  },
+  {
+    "slug": "promo",
+    "companyName": "Promo Futura Serramenti",
+    "recipient": "commerciale@futuraserramenti.it",
+    "type": "INITIAL",
+    "subject": "tempo di caricamento sito da cellulare (Promo Futura Serramenti)",
+    "messageId": "<bd4fdd37-62c3-c068-8b44-a7a2c8108719@techpyre.eu>",
+    "sentAt": "2026-10-30T17:32:00.571Z"
+  },
+  {
+    "slug": "spazioagostini",
+    "companyName": "Spazio Agostini",
+    "recipient": "info@spazioagostini.com",
+    "type": "INITIAL",
+    "subject": "tempo di caricamento sito da cellulare (Spazio Agostini)",
+    "messageId": "<709d4726-9fb5-251f-2258-3e475aa5319d@techpyre.eu>",
+    "sentAt": "2026-10-30T17:32:04.849Z"
+  },
+  {
+    "slug": "ristrutturarepro",
+    "companyName": "Ristrutturarepro",
+    "recipient": "info@ristrutturarepro.it",
+    "type": "INITIAL",
+    "subject": "tempo di caricamento sito da cellulare (Ristrutturarepro)",
+    "messageId": "<1051a7a9-76e8-20cf-9941-043ef6f6c7c8@techpyre.eu>",
+    "sentAt": "2026-10-30T17:32:40.625Z"
+  },
+  {
+    "slug": "interiorlive",
+    "companyName": "Interiorlive",
+    "recipient": "interiorlivefirenze@gmail.com",
+    "type": "INITIAL",
+    "subject": "tempo di caricamento sito da cellulare (Interiorlive)",
+    "messageId": "<e5a48436-9b12-0d9c-4e3e-ffab457c6097@techpyre.eu>",
+    "sentAt": "2026-10-30T17:33:05.829Z"
+  },
+  {
+    "slug": "ediliziapoint",
+    "companyName": "EdiliziaPoint",
+    "recipient": "info@ediliziapoint.it",
+    "type": "INITIAL",
+    "subject": "tempo di caricamento sito da cellulare (EdiliziaPoint)",
+    "messageId": "<078afa25-fe9e-d472-6a57-1d50cd078525@techpyre.eu>",
+    "sentAt": "2026-10-30T17:33:08.668Z"
+  },
+  {
+    "slug": "piovanizubani",
+    "companyName": "Dentista Brescia",
+    "recipient": "info@centrodentisticopiovanizubani.it",
+    "type": "INITIAL",
+    "subject": "tempo di caricamento sito da cellulare (Dentista Brescia)",
+    "messageId": "<69189bb8-aee2-f824-90f0-209653a4a243@techpyre.eu>",
+    "sentAt": "2026-10-30T17:33:27.695Z"
+  },
+  {
+    "slug": "centroodontoiatricobresciano",
+    "companyName": "Centroodontoiatricobresciano",
+    "recipient": "info@centroodontoiatricobresciano.it",
+    "type": "INITIAL",
+    "subject": "tempo di caricamento sito da cellulare (Centroodontoiatricobresciano)",
+    "messageId": "<042f198a-243a-c4ba-efd3-ec486e8ce9fb@techpyre.eu>",
+    "sentAt": "2026-10-30T17:33:30.720Z"
+  },
+  {
+    "slug": "giovannaperona",
+    "companyName": "Giovanna Perona",
+    "recipient": "info@giovannaperona.it",
+    "type": "INITIAL",
+    "subject": "tempo di caricamento sito da cellulare (Giovanna Perona)",
+    "messageId": "<447a7f95-2d64-4f73-835f-9d4abfb7b620@techpyre.eu>",
+    "sentAt": "2026-10-30T17:33:51.782Z"
+  },
+  {
+    "slug": "studiodentisticobdg",
+    "companyName": "Studio Dentistico BdG",
+    "recipient": "info@studiodentisticobdg.it",
+    "type": "INITIAL",
+    "subject": "tempo di caricamento sito da cellulare (Studio Dentistico BdG)",
+    "messageId": "<2025bceb-b7d6-6a44-8870-1c50f9d72f4d@techpyre.eu>",
+    "sentAt": "2026-10-30T17:33:58.431Z"
+  },
+  {
+    "slug": "centroodontoiatricomontagna",
+    "companyName": "Centro Odontoiatrico Montagna",
+    "recipient": "info@montagnastefano.it",
+    "type": "INITIAL",
+    "subject": "tempo di caricamento sito da cellulare (Centro Odontoiatrico Montagna)",
+    "messageId": "<daa08983-ac58-14f8-f2be-6d2841b58a3b@techpyre.eu>",
+    "sentAt": "2026-10-30T17:34:07.825Z"
+  },
+  {
+    "slug": "andreagrassi",
+    "companyName": "Laboratorio A++ 2026 &#8211; Andrea Grassi",
+    "recipient": "info@ekis.it",
+    "type": "INITIAL",
+    "subject": "tempo di caricamento sito da cellulare (Laboratorio A++ 2026 &#8211; Andrea Grassi)",
+    "messageId": "<6e6fae8e-b24a-1452-2de7-032a559738d6@techpyre.eu>",
+    "sentAt": "2026-10-30T17:34:16.046Z"
+  },
+  {
+    "slug": "padovadentalcenter",
+    "companyName": "Padova Dental Center",
+    "recipient": "info@padovadentalcenter.it",
+    "type": "INITIAL",
+    "subject": "tempo di caricamento sito da cellulare (Padova Dental Center)",
+    "messageId": "<e7a9b1dd-8d86-effe-131f-cdb1ad99d246@techpyre.eu>",
+    "sentAt": "2026-10-30T17:34:48.098Z"
+  },
+  {
+    "slug": "odontosalute",
+    "companyName": "Odontosalute",
+    "recipient": "padova@odontosalute.it",
+    "type": "INITIAL",
+    "subject": "tempo di caricamento sito da cellulare (Odontosalute)",
+    "messageId": "<0712badf-67cf-7de5-9ca2-54455ed88765@techpyre.eu>",
+    "sentAt": "2026-10-30T17:34:50.872Z"
   }
 ]

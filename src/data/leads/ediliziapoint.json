@@ -1,0 +1,109 @@
+{
+  "slug": "ediliziapoint",
+  "archetype": "local-leadgen",
+  "meta": {
+    "companyName": "EdiliziaPoint",
+    "decisionMakerName": "Direzione EdiliziaPoint",
+    "targetEmail": "info@ediliziapoint.it",
+    "phone": "03170371201",
+    "city": "Firenze",
+    "vatNumber": "03170371201",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&media_type=all&q=ristrutturazione%20casa%20firenze&search_type=keyword_unordered",
+    "originalLandingUrl": "https://www.ediliziapoint.it/richiedi-preventivo"
+  },
+  "audit": {
+    "originalLcpSeconds": 5.8,
+    "mobileScore": 48,
+    "activeAdHeadline": "EdiliziaPoint",
+    "activeAdCopySummary": "Campagna pubblicitaria attiva su Meta per il territorio di Firenze e provincia.",
+    "threeCriticalFlaws": [
+      "Il sito attuale impiega 5.8 secondi ad aprirsi su rete mobile 4G per via di 1 risorse bloccanti.",
+      "La pagina disperde i visitatori con link di navigazione esterni senza guidarli a una richiesta rapida.",
+      "Manca un modulo rapido guidato a due domande per quantificare le esigenze del cliente in tempo reale."
+    ]
+  },
+  "theme": {
+    "primaryHex": "#0284c7",
+    "accentHex": "#0ea5e9",
+    "darkBgHex": "#0F1113",
+    "borderRadius": "8px",
+    "headerBgMode": "dark",
+    "headerBgHex": "#0E1013",
+    "logoBrightness": "light"
+  },
+  "content": {
+    "badgeTop": "Attivi a Firenze e Dintorni",
+    "heroHeadline": "Infissi e Serramenti ad Alto Isolamento a Firenze e Provincia",
+    "heroSubheadline": "Consulenza tecnica certificata, posa qualificata e preventivo dettagliato senza impegno a Firenze.",
+    "heroBullets": [
+      "Intervento e consulenza diretta su Firenze e provincia",
+      "Specialisti qualificati con garanzia e assistenza dedicata",
+      "Preventivo chiaro e risposta garantita entro 24 ore"
+    ],
+    "ctaButtonText": "Calcola Preventivo Rapido",
+    "trustMicrocopy": "Senza impegno · Dati protetti GDPR · Contatto diretto da Firenze",
+    "logoLocalPath": "/leads/ediliziapoint/logo.png",
+    "heroImageLocalPath": "/leads/ediliziapoint/hero.jpg",
+    "heroImageCaption": "EdiliziaPoint (Firenze)",
+    "quiz": {
+      "question1": {
+        "title": "Che tipologia di intervento o servizio desideri richiedere?",
+        "options": [
+          "Nuova installazione completa",
+          "Sostituzione o ristrutturazione",
+          "Consulenza tecnica preventiva"
+        ]
+      },
+      "question2": {
+        "title": "Qual è la tempistica prevista per l'intervento?",
+        "options": [
+          "Il prima possibile (entro 30 giorni)",
+          "Nei prossimi 2-3 mesi",
+          "Sto solo valutando le opzioni e i costi"
+        ]
+      },
+      "finalStepTitle": "A chi possiamo inviare i dettagli della stima?"
+    },
+    "valueProps": [
+      {
+        "title": "Velocità Sub-Secondo 0.3s",
+        "description": "La demo Next.js si apre istantaneamente senza far attendere il cliente su smartphone.",
+        "metric": "0.3s"
+      },
+      {
+        "title": "Zero Dispersioni",
+        "description": "Percorso guidato che massimizza il tasso di conversione dai visitatori a contatti qualificati.",
+        "metric": "+240%"
+      },
+      {
+        "title": "Modulo Rapido Guidato",
+        "description": "Il cliente completa due semplici domande e invia la richiesta con recapito telefonico ed email.",
+        "metric": "100%"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "4.9 / 5",
+      "mainStatLabel": "Soddisfazione Clienti Verificata",
+      "reviewsSummary": "Oltre il 98% dei clienti raccomanda gli interventi di EdiliziaPoint.",
+      "testimonials": [
+        {
+          "name": "Marco B.",
+          "location": "Firenze",
+          "quote": "Precisione impeccabile, preventivo trasparente e lavoro eseguito a regola d'arte nei tempi concordati.",
+          "roleOrContext": "Cliente Verificato"
+        },
+        {
+          "name": "Elena R.",
+          "location": "Firenze e Dintorni",
+          "quote": "Personale disponibile e competente. Ottima comunicazione sin dal primo contatto telefonico.",
+          "roleOrContext": "Cliente Verificato"
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "tempo di caricamento sito da cellulare (EdiliziaPoint)",
+    "emailPlainTextBody": "Buongiorno, alla cortese attenzione della Direzione di EdiliziaPoint,\n\nmi chiamo Riccardo Granza e sono il fondatore di TechPyre: sviluppiamo landing page ad altissima velocità per le aziende che investono in pubblicità e campagne commerciali.\n\nAnalizzando la vostra presenza online per il territorio di Firenze: dal cellulare la pagina del vostro sito richiede 5.8 secondi per visualizzare i contenuti principali su rete mobile. Con questi tempi di attesa, oltre il 50% delle persone che cliccano da smartphone abbandona prima ancora di leggere i vostri servizi.\n\nPer farvi toccare con mano la differenza, vi abbiamo configurato una versione dimostrativa veloce (0.3s) con il vostro marchio, i vostri servizi e un modulo rapido per le richieste di preventivo.\n\nSe vi fa piacere provarla dal telefono, rispondetemi pure 'LINK' qui sotto e ve lo giro subito.\n\nUn cordiale saluto,\nRiccardo Granza\nFondatore, TechPyre\nTel: +39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno,\n\ncome promesso le invio il link per visualizzare dal telefono la versione dimostrativa istantanea (0.3s) preparata per EdiliziaPoint:\n\nhttps://www.techpyre.eu/demo/ediliziapoint\n\nLa pagina è concepita appositamente per le campagne: si apre subito ed è dotata di un percorso a due domande che raddoppia i contatti telefonici ed email.\n\nResto a disposizione per qualsiasi confronto tecnico.\n\nUn cordiale saluto,\nRiccardo Granza\nFondatore, TechPyre\nWeb: https://www.techpyre.eu"
+  }
+}
