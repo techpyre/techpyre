@@ -7,6 +7,8 @@ export interface BrandConfig {
   location: string;
   badge: string;
   availabilityNote: string;
+  headquarters?: string;
+  vatNumber?: string;
 }
 
 export interface NavItem {
