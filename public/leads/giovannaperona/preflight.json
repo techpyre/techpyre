@@ -1,0 +1,80 @@
+{
+  "slug": "giovannaperona",
+  "targetUrl": "https://www.giovannaperona.it/dentista-san-pietro-in-cariano/",
+  "finalResolvedUrl": "https://www.giovannaperona.it/dentista-san-pietro-in-cariano/",
+  "measuredResponseMs": 6087,
+  "renderBlockingScripts": 46,
+  "estimatedMobileLcpSeconds": 28,
+  "mobileViewportAudit": {
+    "viewportWidth": 390,
+    "viewportHeight": 844,
+    "documentScrollWidth": 390,
+    "hasRealHorizontalOverflow": false,
+    "formVisibleAboveTheFold": false,
+    "firstFormTopPx": 736,
+    "screensToReachForm": 0.9,
+    "visibleFormsCount": 2,
+    "cookieOrPopupCoverPercent": 0,
+    "visibleCtasAboveFold": [
+      "STUDIO PERONA",
+      "VANTAGGI",
+      "SERVIZI",
+      "CASI CLINICI",
+      "BLOG",
+      "CONTATTI",
+      "PRENOTA ONLINE",
+      "ABILITA"
+    ],
+    "h1Text": "Giovanna Perona"
+  },
+  "qualification": {
+    "isQualified": true,
+    "recommendedStrategy": "AGENCY_COEXISTENCE_OR_WHITELABEL",
+    "strategyReason": "Rilevata presenza di Web Agency / Funnel di Marketing esistente ma con pagina lenta (28s). Usa l'angolo \"Non tocchiamo chi vi segue le campagne: forniamo solo la pagina veloce 0.3s in White-Label\" (o proponi partnership White-Label all'agenzia rilevata).",
+    "disqualifiers": [],
+    "alreadyHasPerformantLanding": false,
+    "isDedicatedFunnelUrl": false,
+    "funnelBuilders": [],
+    "hasQuizAlready": false,
+    "navLinksCount": 22,
+    "formsCount": 2,
+    "isEcommerce": false,
+    "isLargeEnterpriseOrSpa": false,
+    "agencyDetection": {
+      "hasAgencyInvolved": true,
+      "detectedAgencyNames": [
+        "Mercurio Servizi Su questo sito Web utili"
+      ],
+      "detectedAgencyLinks": [],
+      "martechSignals": [
+        "Meta Pixel"
+      ]
+    }
+  },
+  "extractedEmails": [
+    "info@giovannaperona.it"
+  ],
+  "extractedPhones": [
+    "0720842",
+    "0873331",
+    "+390456801521",
+    "02557700230",
+    "04158545"
+  ],
+  "extractedVat": "02557700230",
+  "legalSnippets": [],
+  "candidateLogoUrls": [],
+  "candidateHeroUrls": [
+    "https://www.giovannaperona.it/wp-content/uploads/2020/12/finanziamenti2-300x251.jpg",
+    "https://www.giovannaperona.it/wp-content/plugins/smart-cookie-kit/res/empty.gif",
+    "https://www.giovannaperona.it/wp-content/uploads/2020/12/prenota-agenda.png",
+    "https://www.giovannaperona.it/wp-content/uploads/2021/03/we-are-funnel-300x56.png"
+  ],
+  "assetsDir": "/public/leads/giovannaperona",
+  "searchKeyword": "dentista verona",
+  "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&media_type=all&q=dentista%20verona&search_type=keyword_unordered",
+  "adContextSnippet": "e=\"width: 100%;\"> Dott.ssa Giovanna Perona - Ortodontista Sponsorizzato Il sorriso che Beatrice desiderava, oggi è realtà. ✨ Un trattamento con allineatori trasparenti, discreto e veloce, le ha permesso di raggiungere il risultato che desiderava. 🦷 E vedere la sua felicità davanti al nuovo sorriso rende felici anche noi. Brava Beatrice! ✨ Vuoi trasformare anche il tuo sorriso? Passa in studio per saperne di più! 📍 Via G. Pascoli, 6, San Pietro in Cariano VR 📞 045 680 1521 - Direttore Sanitari",
+  "landingPageTitle": "Dentista San Pietro in Cariano | Contatti | Studio Dottoressa Perona",
+  "landingPageH1": "Giovanna Perona",
+  "landingPageMetaDescription": "Cerchi un dentista a San Pietro in Cariano? Prenota una visita ortodontica presso lo studio dentistico Perona."
+}

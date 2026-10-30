@@ -1,0 +1,64 @@
+{
+  "slug": "lp",
+  "targetUrl": "https://lp.studioassociatobonetti.it/",
+  "finalResolvedUrl": "https://lp.studioassociatobonetti.it/",
+  "measuredResponseMs": 1076,
+  "renderBlockingScripts": 1,
+  "estimatedMobileLcpSeconds": 6.7,
+  "mobileViewportAudit": {
+    "viewportWidth": 390,
+    "viewportHeight": 844,
+    "documentScrollWidth": 390,
+    "hasRealHorizontalOverflow": false,
+    "formVisibleAboveTheFold": false,
+    "firstFormTopPx": null,
+    "screensToReachForm": null,
+    "visibleFormsCount": 0,
+    "cookieOrPopupCoverPercent": 0,
+    "visibleCtasAboveFold": [
+      "Inizia il test",
+      "Accetta tutti",
+      "Rifiuta tutti",
+      "Personalizza"
+    ],
+    "h1Text": "Scopri il tuo livello di salute orale"
+  },
+  "qualification": {
+    "isQualified": true,
+    "recommendedStrategy": "AGENCY_COEXISTENCE_OR_WHITELABEL",
+    "strategyReason": "Rilevata presenza di Web Agency / Funnel di Marketing esistente ma con pagina lenta (6.7s). Usa l'angolo \"Non tocchiamo chi vi segue le campagne: forniamo solo la pagina veloce 0.3s in White-Label\" (o proponi partnership White-Label all'agenzia rilevata).",
+    "disqualifiers": [],
+    "alreadyHasPerformantLanding": false,
+    "isDedicatedFunnelUrl": true,
+    "funnelBuilders": [],
+    "hasQuizAlready": false,
+    "navLinksCount": 0,
+    "formsCount": 0,
+    "isEcommerce": false,
+    "isLargeEnterpriseOrSpa": false,
+    "agencyDetection": {
+      "hasAgencyInvolved": true,
+      "detectedAgencyNames": [],
+      "detectedAgencyLinks": [],
+      "martechSignals": []
+    }
+  },
+  "extractedEmails": [],
+  "extractedPhones": [
+    "308667236",
+    "308679540"
+  ],
+  "extractedVat": "Non trovata",
+  "legalSnippets": [],
+  "candidateLogoUrls": [],
+  "candidateHeroUrls": [
+    "https://storage.googleapis.com/gpt-engineer-file-uploads/0ZP7577ibVd4q61ZEcNiYF3O8Gy1/social-images/social-1768308667236-lavora-con-noi_noi.jpg"
+  ],
+  "assetsDir": "/public/leads/lp",
+  "searchKeyword": "dentista verona",
+  "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&media_type=all&q=dentista%20verona&search_type=keyword_unordered",
+  "adContextSnippet": "x1pahc9y x1ertn4p x13fuv20 x18b5jzi x1q0q8m5 x1t7ytsu xamhcws x1alpsbp xlxy82 xyumdvf x1nqv1ya x1s85apg xdk7pt x1x862rh x1rdy4ex x10l6tqk x3m8u43 x1xc55vz x1vjfegm\"> STUDIOASSOCIATOBONETTI.IT <div class=\"_4ik4 _4ik5\" style=\"li",
+  "landingPageTitle": "Studio Dentistico Bonetti & Partners",
+  "landingPageH1": "",
+  "landingPageMetaDescription": "Dentista a Castelnuovo del Garda (VR). Metodo B: da 40 anni dedichiamo tempo e cura ai nostri pazienti."
+}

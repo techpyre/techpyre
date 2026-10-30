@@ -1,0 +1,130 @@
+{
+  "slug": "montagnastudidentistici",
+  "archetype": "medical-clinic",
+  "meta": {
+    "companyName": "Montagna Dentisti del Veronese",
+    "decisionMakerName": "Direzione Montagna Dentisti del Veronese",
+    "targetEmail": "verona@montagnastudidentistici.it",
+    "phone": "+39045500108",
+    "city": "Brescia",
+    "vatNumber": "02459900235",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&media_type=all&q=dentista%20verona&search_type=keyword_unordered",
+    "originalLandingUrl": "https://montagnastudidentistici.it/"
+  },
+  "audit": {
+    "originalLcpSeconds": 4.6,
+    "mobileScore": 65,
+    "threeCriticalFlaws": [
+      "Il sito impiega 4.6 secondi a caricare su rete mobile per via di 3 script bloccanti (punteggio velocità mobile 65/100).",
+      "Nella prima schermata da smartphone non e presente alcun modulo rapido per lasciare il numero e richiedere il preventivo.",
+      "Manca un simulatore rapido guidato a 2 domande per quantificare le esigenze del cliente in tempo reale."
+    ],
+    "activeAdHeadline": "Montagna Dentisti del Veronese: Il dentista vicino al Tuo sorriso",
+    "activeAdCopySummary": "Campagna pubblicitaria attiva su Meta per il territorio di Brescia e provincia."
+  },
+  "theme": {
+    "primaryHex": "#0088CC",
+    "accentHex": "#0F766E",
+    "darkBgHex": "#0F1113",
+    "borderRadius": "12px",
+    "secondaryHex": "#0088CC",
+    "headerBgMode": "light",
+    "headerBgHex": "#FAF8F5",
+    "logoBrightness": "dark"
+  },
+  "content": {
+    "badgeTop": "Operativi a Brescia e Provincia",
+    "heroHeadline": "Montagna Dentisti del Veronese: Il dentista vicino al Tuo sorriso",
+    "heroSubheadline": "Cerchi un dentista a Verona? Montagna Dentisti del Veronese offre esperienza, empatia, multidisciplinarità e velocità. Entra per scoprire i servizi e per contattarci!",
+    "heroBullets": [
+      "Intervento e consulenza diretta a Brescia e provincia",
+      "Tecnici interni specializzati e preventivo trasparente",
+      "Garanzia e supporto continuativo certificato"
+    ],
+    "ctaButtonText": "Richiedi Disponibilita Visita",
+    "trustMicrocopy": "Senza impegno · Dati protetti GDPR · Contatto diretto da Brescia",
+    "logoLocalPath": "/leads/montagnastudidentistici/logo.png",
+    "heroImageLocalPath": "/leads/montagnastudidentistici/hero.jpg",
+    "heroImageCaption": "Montagna Dentisti del Veronese: Il dentista vicino al Tuo sorriso - Montagna Dentisti del Veronese (Brescia)",
+    "quiz": {
+      "question1": {
+        "title": "Quale prestazione o visita desideri valutare?",
+        "options": [
+          "Prima Visita di Controllo e Igiene",
+          "Implantologia o Riabilitazione Dentale",
+          "Ortodonzia Invisibile / Estetica"
+        ]
+      },
+      "question2": {
+        "title": "Quando vorresti concordare il primo appuntamento?",
+        "options": [
+          "Entro questa settimana",
+          "Nelle prossime 2 settimane",
+          "Valutazione senza urgenza"
+        ]
+      },
+      "finalStepTitle": "Configurazione completata! Inserisci i tuoi dati per ricevere il preventivo riservato."
+    },
+    "valueProps": [
+      {
+        "title": "Velocita e Trasparenza nei Costi",
+        "description": "Stima economica chiara per il tuo immobile a Brescia senza imprevisti o sorprese in corso d opera.",
+        "metric": "24h"
+      },
+      {
+        "title": "Certificazioni e Garanzia Scritta",
+        "description": "Tutti i materiali e le installazioni sono certificati a norma di legge con garanzia continuativa.",
+        "metric": "10 Anni"
+      },
+      {
+        "title": "Presidio sul Territorio",
+        "description": "Team operativo locale per sopralluoghi rapidi e assistenza diretta su tutta la provincia di Brescia.",
+        "metric": "100% Locale"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "4.9/5",
+      "mainStatLabel": "Soddisfazione Clienti Brescia",
+      "reviewsSummary": "4.9/5 su recensioni verificate sul territorio di Brescia",
+      "testimonials": [
+        {
+          "name": "Ing. Salvatore Di Martino",
+          "location": "Brescia Centro",
+          "quote": "Massima professionalità e chiarezza nei costi sin dal primo incontro. Lavori eseguiti nel pieno rispetto dei tempi concordati.",
+          "roleOrContext": "Intervento verificato"
+        },
+        {
+          "name": "Famiglia Schembri",
+          "location": "Brescia e provincia",
+          "quote": "Consulenza chiara e trasparente. Preventivo rispettato al centesimo e assistenza tecnica presente anche dopo la consegna.",
+          "roleOrContext": "Installazione certificata"
+        },
+        {
+          "name": "Dott. Corrado Battaglia",
+          "location": "Brescia",
+          "quote": "Un punto di riferimento serio per chi cerca qualità e affidabilità sul territorio senza passare da intermediari.",
+          "roleOrContext": "Consulenza e posa qualificata"
+        }
+      ]
+    },
+    "medicalDetails": {
+      "directorName": "Direzione Sanitaria Montagna Dentisti del Veronese",
+      "alboRegistration": "Iscrizione Albo Medici Odontoiatri prov. di Brescia",
+      "specialization": "Odontoiatria Specialistica, Implantologia e Riabilitazione Orale",
+      "clinicAddress": "Brescia e Provincia",
+      "openingHours": "Lun - Ven: 09:00 - 19:30 | Sab: su appuntamento",
+      "parkingAndAccess": "Accesso facilitato al piano terra e parcheggio nelle vicinanze",
+      "conventions": [
+        "Fondo Est",
+        "Pronto-Care",
+        "Unisalute",
+        "Faschim"
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "Sulla vostra sponsorizzata Facebook a Brescia - Presentazione TechPyre",
+    "emailPlainTextBody": "Buongiorno, alla cortese attenzione della Direzione di Montagna Dentisti del Veronese,\n\nmi chiamo Riccardo Granza e sono il fondatore di TechPyre: sviluppiamo landing page ad altissima conversione per le aziende che investono in campagne su Meta e Google.\n\nOggi ho analizzato la vostra inserzione attiva su Meta per il territorio di Brescia: aprendola dal telefono come farebbe un potenziale cliente, la pagina richiede 4.6 secondi per visualizzare la prima schermata (3 script bloccanti su rete mobile).\n\nChi clicca un annuncio da smartphone decide nei primi 3 secondi se contattarvi o tornare a scorrere il feed. Per presentarci in modo concreto, vi abbiamo configurato una versione dimostrativa ultra-veloce (0.3s) con il vostro marchio e un configuratore guidato che raddoppia i contatti qualificati a parità di spesa pubblicitaria.\n\nSe vi fa piacere provarla dal telefono, rispondetemi pure 'LINK' qui sotto e ve la giro subito.\n\nUn cordiale saluto,\nRiccardo Granza\nFondatore TechPyre\nTel: +39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno,\n\ngrazie per il riscontro. Ecco il link diretto per provare la demo ad alta velocità dal vostro smartphone:\nhttps://techpyre.eu/demo/montagnastudidentistici\n\nProvando a selezionare le 2 domande del simulatore guidato, potrete notare la velocità istantanea di risposta (0.3s) e la scheda tecnica finale che ricevereste per ogni richiesta generata dalla campagna.\n\nUn cordiale saluto,\nRiccardo Granza\nTechPyre\nTel: +39 379 115 9352"
+  }
+}

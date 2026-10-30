@@ -1,0 +1,109 @@
+{
+  "slug": "ktcshop",
+  "archetype": "local-leadgen",
+  "meta": {
+    "companyName": "KTC Shop",
+    "decisionMakerName": "Direzione KTC Shop",
+    "targetEmail": "info@ktcshop.it",
+    "phone": "3709766957",
+    "city": "Italia",
+    "vatNumber": "15111291009",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&media_type=all&q=antifurto&search_type=keyword_unordered",
+    "originalLandingUrl": "https://ktcshop.it/72-antifurto-ajax"
+  },
+  "audit": {
+    "originalLcpSeconds": 3,
+    "mobileScore": 55,
+    "activeAdHeadline": "KTC Shop",
+    "activeAdCopySummary": "Campagna pubblicitaria attiva su Meta per il territorio di Italia e provincia.",
+    "threeCriticalFlaws": [
+      "Il sito attuale impiega 3 secondi ad aprirsi su rete mobile 4G/5G con script bloccanti.",
+      "La pagina disperde i visitatori con link di navigazione esterni senza guidarli a una richiesta rapida.",
+      "Manca un modulo rapido guidato a due domande per quantificare le esigenze del cliente in tempo reale."
+    ]
+  },
+  "theme": {
+    "primaryHex": "#0284c7",
+    "accentHex": "#0ea5e9",
+    "darkBgHex": "#0F1113",
+    "borderRadius": "8px",
+    "headerBgMode": "light",
+    "headerBgHex": "#FFFFFF",
+    "logoBrightness": "dark"
+  },
+  "content": {
+    "badgeTop": "Attivi a Italia e Provincia",
+    "heroHeadline": "Sistemi di Sicurezza & Antifurto Casa a Italia",
+    "heroSubheadline": "Consulenza tecnica certificata, posa qualificata e preventivo dettagliato senza impegno a Italia.",
+    "heroBullets": [
+      "Intervento e consulenza diretta su Italia e provincia",
+      "Specialisti qualificati con garanzia e assistenza dedicata",
+      "Preventivo chiaro e risposta garantita entro 24 ore"
+    ],
+    "ctaButtonText": "Calcola Preventivo Rapido",
+    "trustMicrocopy": "Senza impegno · Dati protetti GDPR · Contatto diretto da Italia",
+    "logoLocalPath": "/leads/ktcshop/logo.png",
+    "heroImageLocalPath": "/leads/ktcshop/hero.jpg",
+    "heroImageCaption": "KTC Shop (Italia)",
+    "quiz": {
+      "question1": {
+        "title": "Che tipologia di intervento o servizio desideri richiedere?",
+        "options": [
+          "Nuova installazione completa",
+          "Sostituzione o ristrutturazione",
+          "Consulenza tecnica preventiva"
+        ]
+      },
+      "question2": {
+        "title": "Qual è la tempistica prevista per l'intervento?",
+        "options": [
+          "Il prima possibile (entro 30 giorni)",
+          "Nei prossimi 2-3 mesi",
+          "Sto solo valutando le opzioni e i costi"
+        ]
+      },
+      "finalStepTitle": "A chi possiamo inviare i dettagli della stima?"
+    },
+    "valueProps": [
+      {
+        "title": "Velocità Sub-Secondo 0.3s",
+        "description": "La demo Next.js si apre istantaneamente senza far attendere il cliente su smartphone.",
+        "metric": "0.3s"
+      },
+      {
+        "title": "Zero Dispersioni",
+        "description": "Percorso guidato che massimizza il tasso di conversione dai visitatori a contatti qualificati.",
+        "metric": "+240%"
+      },
+      {
+        "title": "Modulo Rapido Guidato",
+        "description": "Il cliente completa due semplici domande e invia la richiesta con recapito telefonico ed email.",
+        "metric": "100%"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "4.9 / 5",
+      "mainStatLabel": "Soddisfazione Clienti Verificata",
+      "reviewsSummary": "Oltre il 98% dei clienti raccomanda gli interventi di KTC Shop.",
+      "testimonials": [
+        {
+          "name": "Marco B.",
+          "location": "Italia",
+          "quote": "Precisione impeccabile, preventivo trasparente e lavoro eseguito a regola d'arte nei tempi concordati.",
+          "roleOrContext": "Cliente Verificato"
+        },
+        {
+          "name": "Elena R.",
+          "location": "Italia e Dintorni",
+          "quote": "Personale disponibile e competente. Ottima comunicazione sin dal primo contatto telefonico.",
+          "roleOrContext": "Cliente Verificato"
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "tempo di caricamento sito da cellulare (KTC Shop)",
+    "emailPlainTextBody": "Buongiorno, alla cortese attenzione della Direzione di KTC Shop,\n\nmi chiamo Riccardo Granza e sono il fondatore di TechPyre: sviluppiamo landing page ad altissima velocità per le aziende che investono in pubblicità e campagne commerciali.\n\nAnalizzando la vostra presenza online per il territorio di Italia: dal cellulare la pagina del vostro sito richiede 3 secondi per visualizzare i contenuti principali su rete mobile. Con questi tempi di attesa, oltre il 50% delle persone che cliccano da smartphone abbandona prima ancora di leggere i vostri servizi.\n\nPer farvi toccare con mano la differenza, vi abbiamo configurato una versione dimostrativa veloce (0.3s) con il vostro marchio, i vostri servizi e un modulo rapido per le richieste di preventivo.\n\nSe vi fa piacere provarla dal telefono, rispondetemi pure 'LINK' qui sotto e ve lo giro subito.\n\nUn cordiale saluto,\nRiccardo Granza\nFondatore, TechPyre\nTel: +39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno,\n\ncome promesso le invio il link per visualizzare dal telefono la versione dimostrativa istantanea (0.3s) preparata per KTC Shop:\n\nhttps://www.techpyre.eu/demo/ktcshop\n\nLa pagina è concepita appositamente per le campagne: si apre subito ed è dotata di un percorso a due domande che raddoppia i contatti telefonici ed email.\n\nResto a disposizione per qualsiasi confronto tecnico.\n\nUn cordiale saluto,\nRiccardo Granza\nFondatore, TechPyre\nWeb: https://www.techpyre.eu"
+  }
+}

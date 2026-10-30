@@ -1,0 +1,89 @@
+=====================================================================
+OUTBOUND PACK - MONTAGNA DENTISTI DEL VERONESE (montagnastudidentistici)
+=====================================================================
+Titolare / Decision Maker : Direzione Montagna Dentisti del Veronese
+Email Target              : verona@montagnastudidentistici.it
+Telefono / WhatsApp       : +39045500108
+Città                     : Brescia
+P.IVA                     : 02459900235
+LCP Sito Attuale          : 4.6s (Score Mobile: 65/100)
+URL Demo (Brand-Neutral)  : https://techpyre.eu/demo/montagnastudidentistici
+Strategia Qualifica       : AGENCY_COEXISTENCE_OR_WHITELABEL
+Segnali MarTech / Agenzia : Google Tag Manager
+Agenzia Rilevata Footer   : Esperti di Marketing Odontoiatrico e Mana
+Check Anti-Spam 1ª Email  : 155 parole | Link: ✅ ZERO LINK (Inbox Sicura)
+
+---------------------------------------------------------------------
+1. PRIMA EMAIL AL TITOLARE (Plain-Text, Zero Link)
+---------------------------------------------------------------------
+A: verona@montagnastudidentistici.it
+Oggetto: Sulla vostra sponsorizzata Facebook a Brescia - Presentazione TechPyre
+
+Buongiorno, alla cortese attenzione della Direzione di Montagna Dentisti del Veronese,
+
+mi chiamo Riccardo Granza e sono il fondatore di TechPyre: sviluppiamo landing page ad altissima conversione per le aziende che investono in campagne su Meta e Google.
+
+Oggi ho analizzato la vostra inserzione attiva su Meta per il territorio di Brescia: aprendola dal telefono come farebbe un potenziale cliente, la pagina richiede 4.6 secondi per visualizzare la prima schermata (3 script bloccanti su rete mobile).
+
+Chi clicca un annuncio da smartphone decide nei primi 3 secondi se contattarvi o tornare a scorrere il feed. Per presentarci in modo concreto, vi abbiamo configurato una versione dimostrativa ultra-veloce (0.3s) con il vostro marchio e un configuratore guidato che raddoppia i contatti qualificati a parità di spesa pubblicitaria.
+
+Se vi fa piacere provarla dal telefono, rispondetemi pure 'LINK' qui sotto e ve la giro subito.
+
+Un cordiale saluto,
+Riccardo Granza
+Fondatore TechPyre
+Tel: +39 379 115 9352
+
+---------------------------------------------------------------------
+2. FOLLOW-UP EMAIL (Quando risponde "LINK" o "SÌ")
+---------------------------------------------------------------------
+A: verona@montagnastudidentistici.it
+Oggetto: Re: Sulla vostra sponsorizzata Facebook a Brescia - Presentazione TechPyre
+
+Buongiorno,
+
+grazie per il riscontro. Ecco il link diretto per provare la demo ad alta velocità dal vostro smartphone:
+https://techpyre.eu/demo/montagnastudidentistici
+
+Provando a selezionare le 2 domande del simulatore guidato, potrete notare la velocità istantanea di risposta (0.3s) e la scheda tecnica finale che ricevereste per ogni richiesta generata dalla campagna.
+
+Un cordiale saluto,
+Riccardo Granza
+TechPyre
+Tel: +39 379 115 9352
+
+---------------------------------------------------------------------
+3. DM INSTAGRAM / FACEBOOK / WHATSAPP (+ public/leads/montagnastudidentistici/new-demo-mobile.png)
+---------------------------------------------------------------------
+Buongiorno Direzione, sono Riccardo Granza, fondatore di TechPyre (sviluppiamo landing page ad alta velocità per chi investe in campagne Meta). Ho visto la vostra sponsorizzata "Montagna Dentisti del Veronese: Il dentista vicino al Tuo sorriso" su Facebook: dal telefono la pagina attuale impiega 4.6 secondi ad aprirsi. Per presentarci vi abbiamo preparato una versione dimostrativa istantanea (0.3s) con i vostri testi: le ho inviato i dettagli via email, se le fa piacere provarla dal telefono mi scriva pure qui e le giro il link!
+
+---------------------------------------------------------------------
+4. RISPOSTA ANTI-OBIEZIONE "CI SEGUE GIÀ UN'AGENZIA" (Coesistenza / White-Label)
+---------------------------------------------------------------------
+La capisco perfettamente, e infatti non vogliamo assolutamente sostituire l'agenzia che vi segue le campagne Facebook.
+
+Il nostro è un intervento puramente tecnico (anche in White-Label): forniamo alla vostra agenzia attuale la pagina veloce da 0.3s sul vostro dominio, già collegata al loro Pixel e GTM, così i clic che vi portano smettono di perdersi durante i 4.6 secondi di caricamento.
+
+Può girare direttamente anche a loro questo link di test (è completamente neutro, senza il nostro logo):
+
+https://techpyre.eu/demo/montagnastudidentistici
+
+---------------------------------------------------------------------
+5. PITCH B2B2B WHITE-LABEL DIRETTO ALL'AGENZIA (Se vuoi vendere all'Agenzia)
+---------------------------------------------------------------------
+Oggetto: Partnership tecnica White-Label su campagne Meta di Montagna Dentisti del Veronese (4.6s -> 0.3s)
+
+Buongiorno,
+
+mi chiamo Riccardo Granza e sono il fondatore di TechPyre: siamo uno studio tecnico specializzato nello sviluppo di landing page Next.js ad altissima velocità (0.3s) in modalità White-Label per le Web Agency.
+
+Abbiamo notato che seguite il progetto digitale di Montagna Dentisti del Veronese. Le creatività su Meta sono ben strutturate, ma la pagina attuale su cui atterra il traffico mobile impiega 4.6 secondi a caricare, penalizzando il tasso di conversione delle campagne.
+
+Abbiamo già preparato una versione Next.js da 0.3s per Montagna Dentisti del Veronese completamente neutra (100% White-Label, zero riferimenti a TechPyre) con simulatore lead integrato: potete mostrarla direttamente al vostro cliente come upgrade vostro o collegarla in 24h al vostro GTM/CRM.
+
+Se vi fa piacere vedere la preview White-Label già pronta, rispondetemi pure 'LINK' e ve la giro subito.
+
+Un cordiale saluto,
+Riccardo Granza - Fondatore TechPyre
++39 379 115 9352
+=====================================================================

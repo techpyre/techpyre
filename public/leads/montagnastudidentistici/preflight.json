@@ -1,0 +1,80 @@
+{
+  "slug": "montagnastudidentistici",
+  "targetUrl": "https://montagnastudidentistici.it/",
+  "finalResolvedUrl": "https://montagnastudidentistici.it/",
+  "measuredResponseMs": 378,
+  "renderBlockingScripts": 3,
+  "estimatedMobileLcpSeconds": 4.6,
+  "mobileViewportAudit": {
+    "viewportWidth": 468,
+    "viewportHeight": 1011,
+    "documentScrollWidth": 468,
+    "hasRealHorizontalOverflow": false,
+    "formVisibleAboveTheFold": false,
+    "firstFormTopPx": null,
+    "screensToReachForm": null,
+    "visibleFormsCount": 0,
+    "cookieOrPopupCoverPercent": 0,
+    "visibleCtasAboveFold": [
+      "Scopri di più"
+    ],
+    "h1Text": "Montagna Dentisti del Veronese: Il dentista vicino al Tuo sorriso"
+  },
+  "qualification": {
+    "isQualified": true,
+    "recommendedStrategy": "AGENCY_COEXISTENCE_OR_WHITELABEL",
+    "strategyReason": "Rilevata presenza di Web Agency / Funnel di Marketing esistente ma con pagina lenta (4.6s). Usa l'angolo \"Non tocchiamo chi vi segue le campagne: forniamo solo la pagina veloce 0.3s in White-Label\" (o proponi partnership White-Label all'agenzia rilevata).",
+    "disqualifiers": [],
+    "alreadyHasPerformantLanding": false,
+    "isDedicatedFunnelUrl": false,
+    "funnelBuilders": [],
+    "hasQuizAlready": false,
+    "navLinksCount": 30,
+    "formsCount": 24,
+    "isEcommerce": false,
+    "isLargeEnterpriseOrSpa": false,
+    "agencyDetection": {
+      "hasAgencyInvolved": true,
+      "detectedAgencyNames": [
+        "Esperti di Marketing Odontoiatrico e Mana"
+      ],
+      "detectedAgencyLinks": [],
+      "martechSignals": [
+        "Google Tag Manager"
+      ]
+    }
+  },
+  "extractedEmails": [
+    "verona@montagnastudidentistici.it"
+  ],
+  "extractedPhones": [
+    "+39045500108",
+    "0038768",
+    "00000040",
+    "00000057",
+    "00000033"
+  ],
+  "extractedVat": "02459900235",
+  "legalSnippets": [],
+  "candidateLogoUrls": [
+    "https://montagnastudidentistici.it/wp-content/uploads/Montagna-Logo-2-1024x195.webp",
+    "https://cdn.trustindex.io/assets/platform/Google/logo.svg",
+    "https://montagnastudidentistici.it/wp-content/uploads/logo_cral_network-ok.webp",
+    "https://montagnastudidentistici.it/wp-content/uploads/Montagna-Logo-2-Neg-1024x196.webp"
+  ],
+  "candidateHeroUrls": [
+    "https://montagnastudidentistici.it/wp-content/uploads/Montagna-Shared.webp",
+    "https://montagnastudidentistici.it/wp-content/uploads/Montagna-Pittogramma-Neg.webp",
+    "https://montagnastudidentistici.it/wp-content/uploads/Esperienza-300x300.webp",
+    "https://montagnastudidentistici.it/wp-content/uploads/Empatia-300x300.webp",
+    "https://montagnastudidentistici.it/wp-content/uploads/Multidisciplinarieta-300x300.webp",
+    "https://montagnastudidentistici.it/wp-content/uploads/Velocita-300x300.webp"
+  ],
+  "assetsDir": "/public/leads/montagnastudidentistici",
+  "searchKeyword": "dentista verona",
+  "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&media_type=all&q=dentista%20verona&search_type=keyword_unordered",
+  "adContextSnippet": "-Py2iUUsgZPIcbeLDMXRIqznbC8Bi5YCK-gcOJxYIvBGmZjgWf6VelDwurPNo&_nc_zt=14&_nc_ht=scontent-fco2-1.xx&_nc_gid=DictEN9qS30VqzSdSLP8zg&_nc_ss=72289&oh=00_AQRXSCc-g3wKkPeTw3Jfx-xW3SM3umDVSaC3eTvY9BvZyA&oe=6AEA4701\"> Montagna - Dentisti del Veronese Sponsorizzato \"Dente del giudizio? È ora di cambiare prospettiva!\" ✨ Pamela è arrivata da noi con qualche dubbio, ma ha trovato un ambiente familiare e un team pronto a metterla totalmente a proprio agio. La precisione del Dott. Zeno e il sorriso della nostr",
+  "landingPageTitle": "Montagna Dentisti Del Veronese: Il Tuo Dentista A Verona",
+  "landingPageH1": "Montagna Dentisti del Veronese: Il dentista vicino al Tuo sorriso",
+  "landingPageMetaDescription": "Cerchi un dentista a Verona? Montagna Dentisti del Veronese offre esperienza, empatia, multidisciplinarità e velocità. Entra per scoprire i servizi e per contattarci!"
+}
