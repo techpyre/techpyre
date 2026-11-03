@@ -205,13 +205,13 @@ export default function ContactBox() {
             {/* Header del Box Allineato al Modulo Desktop */}
             <div className="p-5 sm:p-6 lg:p-7 pb-4 border-b border-[#E8E2D5] space-y-0.5">
               <div className="text-[10px] font-bold uppercase tracking-widest text-[#B8860B]">
-                REPERIBILITÀ DIRETTA
+                DIREZIONE TECNICA &amp; ARCHITETTURA
               </div>
               <h3 className="font-serif text-xl sm:text-2xl text-[#0B1E36] font-semibold">
-                Il contatto con le persone
+                Canali Diretti dello Studio
               </h3>
               <p className="text-xs text-[#5A6270]">
-                Nessun centralino o intermediario: risponde Riccardo Granza
+                Nessun filtro commerciale: dialoghi con Riccardo Granza, Architetto di Sistemi Digitali
               </p>
             </div>
 
@@ -309,14 +309,14 @@ export default function ContactBox() {
                 <div className="p-3 rounded-sm bg-[#0B1E36]/5 border border-[#0B1E36]/10 flex items-start gap-2.5 text-xs text-[#0B1E36]">
                   <span className="text-[#B8860B] font-bold shrink-0 mt-0.5">▪</span>
                   <span>
-                    <strong>Incontro in presenza?</strong> Disponibile per sessioni di lavoro strategiche e briefing tecnici presso la sede dell&apos;impresa committente.
+                    <strong>Infrastruttura già esistente?</strong> Integriamo GTM Server-Side, pipeline CRM e portali operativi sui vostri gestionali/ERP attuali senza interrompere l&apos;operatività.
                   </span>
                 </div>
 
                 <div className="p-3 rounded-sm bg-[#B8860B]/5 border border-[#B8860B]/20 flex items-start gap-2.5 text-xs text-[#0B1E36]">
                   <span className="text-[#B8860B] font-bold shrink-0 mt-0.5">▪</span>
                   <span>
-                    <strong>Zero intermediari:</strong> Dialoghi esclusivamente con chi progetta l&apos;architettura e scrive il codice sorgente.
+                    <strong>Zero gestione social:</strong> Non siamo un fornitore di contenuti creativi. Ingegnerizziamo esclusivamente l&apos;infrastruttura di conversione, il dato e l&apos;automazione RevOps.
                   </span>
                 </div>
               </div>
@@ -344,10 +344,10 @@ export default function ContactBox() {
                 </div>
                 <div>
                   <div className="text-[10px] font-bold uppercase tracking-wider text-[#B8860B] leading-none mb-1">
-                    Modulo Email
+                    Diagnosi Architetturale
                   </div>
                   <div className="font-serif text-base font-semibold text-[#0B1E36] leading-none">
-                    Contattaci via email
+                    Richiedi valutazione tecnica
                   </div>
                 </div>
               </div>
@@ -363,13 +363,13 @@ export default function ContactBox() {
             {/* Header Istituzionale del Modulo su Desktop */}
             <div className="hidden lg:block p-5 sm:p-7 lg:p-8 pb-4 border-b border-[#E8E2D5] space-y-0.5">
               <div className="text-[10px] font-bold uppercase tracking-widest text-[#B8860B]">
-                MODULO DI RICHIESTA DIRETTA
+                PRE-QUALIFICA B2B · SESSIONE DI DIAGNOSI ARCHITETTURALE
               </div>
               <h3 className="font-serif text-xl sm:text-2xl text-[#0B1E36] font-semibold">
-                Scrivi allo Studio
+                Sottoponi la tua Infrastruttura
               </h3>
               <p className="text-xs text-[#5A6270]">
-                Riscontro garantito entro la giornata lavorativa direttamente da Riccardo Granza.
+                Analisi tecnica preliminare di performance, tracking Server-Side e flussi CRM con riscontro entro la giornata lavorativa.
               </p>
             </div>
 
@@ -640,7 +640,7 @@ export default function ContactBox() {
                     </div>
 
                     <p className="text-[11px] text-[#5A6270] text-center leading-relaxed">
-                      Nessun vincolo o costo preventivo · Risposta tecnica diretta del Fondatore entro 24 ore lavorative
+                      Sessione tecnica di valutazione · Riscontro diretto dell&apos;Architetto di Sistemi entro 24 ore lavorative
                     </p>
                   </div>
                 </motion.form>

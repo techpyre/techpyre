@@ -3,8 +3,8 @@ import { SiteContent } from "@/types/content";
 /**
  * =====================================================================
  * UNICA FONTE DI VERITÀ (SINGLE SOURCE OF TRUTH)
- * Testi tecnici, pragmatici, orientati alla riduzione del rischio B2B.
- * Aggiornamento Listino, Nuova Sezione Architetture e Continuità Operativa.
+ * Posizionamento: TechPyre — Studio di Ingegneria ed Ecosistemi Digitali
+ * Digital Systems & Growth Engineering Studio | High-Ticket B2B
  * =====================================================================
  */
 export const siteContent: SiteContent = {
@@ -12,241 +12,239 @@ export const siteContent: SiteContent = {
     name: "TechPYRE",
     founder: "Riccardo Granza",
     tagline:
-      "Studio di sviluppo software e architetture web ad alte prestazioni per imprese B2B.",
+      "Studio di Ingegneria ed Ecosistemi Digitali. Progettiamo infrastrutture web proprietarie, architetture di conversione, data engineering e automazione RevOps per imprese B2B.",
     contactEmail: "riccardo.granza@techpyre.eu",
     phone: "+39 379 115 9352",
     location: "Pagliara (Messina) · Operatività nazionale",
     headquarters: "Via Carrubara Vico III n. 3, 98027 Pagliara (Messina)",
     vatNumber: "In stato di costituzione",
-    badge: "Sviluppo Software & Architetture Web B2B",
+    badge: "STUDIO DI INGEGNERIA ED ECOSISTEMI DIGITALI B2B",
     availabilityNote: "Sede in Italia · Operatività su tutto il territorio nazionale",
   },
 
   navigation: {
     links: [
-      { label: "Servizi", href: "/servizi" },
-      { label: "Progetti", href: "/progetti" },
+      { label: "Pilastri", href: "/servizi" },
+      { label: "Architetture", href: "/progetti" },
       { label: "Studio", href: "/studio" },
-      { label: "Contatti", href: "/#contatto" },
+      { label: "Diagnosi", href: "/#contatto" },
     ],
     cta: {
-      label: "Richiedi Incontro (30 min)",
+      label: "Sessione di Diagnosi Architetturale",
       href: "/#contatto",
     },
   },
 
   hero: {
-    badge: "STUDIO DI SVILUPPO SOFTWARE & ARCHITETTURE WEB B2B",
+    badge: "STUDIO DI INGEGNERIA ED ECOSISTEMI DIGITALI · DIGITAL SYSTEMS & GROWTH ENGINEERING",
     headline: {
-      line1: "Sviluppo software e architetture web ad alte prestazioni al servizio dell'",
-      highlight: "impresa reale.",
+      line1: "Ingegnerizziamo ecosistemi digitali proprietari per l'acquisizione B2B e l'",
+      highlight: "efficienza operativa.",
       line2: "",
     },
     subheadline:
-      "Siti aziendali ad alte prestazioni, landing page commerciali ed ecosistemi B2B su misura. Codice 100% di proprietà dell'azienda committente: zero canoni periodici di noleggio, caricamento sub-secondo per non perdere contatti e massima autonomia operativa.",
+      "Il 95% delle presenze online aziendali è un costo morto scollegato dai ricavi. Progettiamo infrastrutture web in Next.js/TypeScript a latenza zero, tracciamento dati Server-Side e pipeline di automazione CRM (RevOps) che trasformano il traffico in fatturato misurabile. Codice e dati al 100% di proprietà dell'impresa.",
     primaryCta: {
-      label: "Richiedi Primo Colloquio Tecnico",
+      label: "Richiedi Sessione di Diagnosi Architetturale",
       href: "/#contatto",
-      note: "Sessione conoscitiva di 30 minuti · Analisi preliminare senza vincoli",
+      note: "Valutazione ingegneristica di 30 minuti · Analisi di infrastruttura, tracking e flussi CRM",
     },
     secondaryCta: {
-      label: "Consulta il Listino Prezzi",
+      label: "Esplora i 4 Pilastri Architetturali",
       href: "/servizi",
     },
     pillars: [
       {
         id: "01",
-        title: "Autonomia & Continuità Operativa",
+        title: "Ecosistemi Digitali Proprietari",
         description:
-          "Codice sorgente intestato al 100% alla tua azienda, documentazione esecutiva e piena indipendenza da qualsiasi fornitore o agenzia.",
+          "Codice sorgente Next.js/TypeScript e infrastruttura dati intestati al 100% all'azienda committente. Zero lock-in contrattuale e indipendenza tecnica assoluta.",
       },
       {
         id: "02",
-        title: "Patti Chiari e Prezzo Certo",
+        title: "Ingegneria dei Dati & Server-Side",
         description:
-          "Preventivo definitivo prima dell'avvio dei lavori. Nessun canone occulto e nessun vincolo di rinnovo forzato.",
+          "Superamento strutturale di ad-blocker e restrizioni cookie tramite GTM Server-Side, GA4 custom events e attribuzione millimetrica del ROI pubblicitario.",
       },
       {
         id: "03",
-        title: "Caricamento Sub-Secondo",
+        title: "Latenza Zero & Automazione RevOps",
         description:
-          "Piattaforme progettate per azzerare i tempi di attesa, massimizzare il ritorno sulle campagne pubblicitarie e convertire ogni visita.",
+          "Caricamento sub-secondo (< 400ms) su rete Edge globale integrato nativamente con HubSpot e CRM custom per azzerare il data-entry manuale.",
       },
     ],
   },
 
   services: {
-    eyebrow: "LISTINO B2B · TRASPARENZA CONTRATTUALE",
-    title: "Quattro soluzioni chiare. Tariffe certe prima dell'inizio.",
+    eyebrow: "ARCHITETTURA D'OFFERTA · I 4 PILASTRI INGEGNERISTICI",
+    title: "Quattro pilastri architetturali. Un unico ecosistema integrato.",
     subtitle:
-      "Specifiche definite, tempi certi e piena titolarità del codice rilasciato sul repository della tua azienda.",
+      "Non vendiamo ore di sviluppo né vetrine statiche. Ingegnerizziamo l'infrastruttura di acquisizione, l'intelligenza del dato e l'automazione dei processi commerciali con titolarità integrale del codice.",
     guarantee:
-      "Ogni importo concordato è definitivo. Repository e infrastruttura intestati interamente alla società cliente con garanzia di continuità.",
+      "Modello trasparente CapEx (Setup Infrastrutturale a milestone certe) + OpEx opzionale (Growth Engineering & Continuità). Repository e dati intestati al 100% alla società cliente.",
     items: [
       {
-        id: "audit-consulenza",
+        id: "infrastrutture-conversione",
         number: "01",
-        name: "Audit Tecnico & Consulenza Architetturale",
-        price: "Primi 30 min gratuiti, poi 70€ / ora",
-        priceSubtext: "Prima sessione di inquadramento a costo zero",
+        name: "Infrastrutture Web & Architetture di Conversione",
+        price: "Da 900€ a 4.000€",
+        priceSubtext: "900€ Landing System · 2.000€–4.000€ Piattaforma Corporate",
         summary:
-          "Audit analitico dei sistemi esistenti, diagnosi dei colli di bottiglia e roadmap tecnica esecutiva.",
+          "Sviluppo di piattaforme web e landing system in Next.js/TypeScript progettati per tempi di caricamento istantanei, SEO tecnica/programmatica e massimizzazione matematica dei tassi di conversione (CRO).",
         description:
-          "Analisi tecnica approfondita dell'infrastruttura web o del software aziendale per identificare vulnerabilità, inefficienze di caricamento, problemi di scalabilità o definire le specifiche prima di investimenti rilevanti.",
+          "Le piattaforme monolitiche tradizionali disperdono oltre il 50% del budget pubblicitario a causa di tempi di caricamento superiori ai 3 secondi e architetture informative prive di logica commerciale. Sostituiamo i vecchi CMS con infrastrutture frontend in Next.js e TypeScript distribuite su rete Edge globale, ingegnerizzate per azzerare l'attrito cognitivo e massimizzare la resa di ogni singolo clic.",
         deliverables: [
-          "Colloquio preliminare di 30 minuti gratuito",
-          "Audit tecnico su prestazioni (Core Web Vitals), sicurezza e architettura",
-          "Analisi del debito tecnico e revisione dei flussi di conversione",
-          "Relazione tecnica con priorità di intervento e stime oggettive",
+          "Architettura di conversione in Next.js / TypeScript con tempo di risposta sub-secondo (LCP < 0.4s)",
+          "SEO tecnica nativa, alberatura semantica, dati strutturati Schema.org e indicizzazione programmatica",
+          "Pannello Headless decoupled per il controllo autonomo dei contenuti senza degradare le prestazioni",
+          "Cessione integrale del codice sorgente sul repository GitHub dell'impresa committente",
         ],
-        timing: "Pianificazione entro 48 ore dalla richiesta",
+        timing: "5–7 giorni (Landing System) · 2–3 settimane (Piattaforma)",
         target:
-          "Imprenditori e dirigenti che desiderano un parere tecnico indipendente e misurato.",
-        ctaText: "Prenota i 30 Minuti Gratuiti",
+          "PMI strutturate e aziende B2B con campagne Google/Meta/LinkedIn attive o necessità di posizionamento istituzionale autorevole.",
+        ctaText: "Richiedi Diagnosi sull'Infrastruttura Web",
       },
       {
-        id: "landing-page",
+        id: "portali-ecosistemi-b2b",
         number: "02",
-        name: "Landing Page ad Alta Conversione",
-        price: "900€ (Prezzo Fisso)",
-        priceSubtext: "Consegna a corpo · Nessun canone periodico",
-        summary:
-          "Pagina singola ultra-performante per acquisizione di lead qualificati e validazione commerciale.",
-        description:
-          "Sviluppata senza page builder pesanti né CMS vulnerabili. Codice nativo Next.js ultra-leggero, testi persuasivi orientati alla conversione e integrazione webhook per una resa commerciale immediata.",
-        deliverables: [
-          "Design su misura calibrato sull'identità e sul posizionamento aziendale",
-          "Frontend Next.js per risposta istantanea (< 400ms)",
-          "Integrazione moduli con notifica email immediata e webhook CRM",
-          "Piena titolarità del codice sorgente sul repository dell'impresa",
-        ],
-        timing: "Consegna online in 5–7 giorni lavorativi",
-        target:
-          "Aziende che lanciano un servizio mirato o campagne Google/LinkedIn Ads ad alto budget.",
-        ctaText: "Richiedi la Landing Page a 900€",
-      },
-      {
-        id: "sito-corporate",
-        number: "03",
-        name: "Sito Corporate & Architettura Avanzata",
-        price: "Da 2.000€ a 4.000€",
-        priceSubtext: "Fatturazione a milestone · Include Blueprint architetturale",
-        summary:
-          "Sito multi-pagina ultra-veloce in Next.js, SEO tecnica nativa, CMS headless e design su misura.",
-        description:
-          "Architettura web istituzionale ad alte prestazioni per aziende che esigono autorevolezza e velocità. Include il Blueprint preliminare, rendering ibrido statico/server, gestione contenuti headless intuitiva e zero debito tecnico.",
-        deliverables: [
-          "Blueprint architetturale e wireframe preliminari inclusi nel piano",
-          "Sito multi-pagina in Next.js con performance Lighthouse 100/100",
-          "Pannello CMS Headless per aggiornamento autonomo dei contenuti",
-          "SEO tecnica nativa, dati strutturati Schema.org e OpenGraph completi",
-          "Piena proprietà del codice e rilascio su repository aziendale",
-        ],
-        timing: "Consegna in 2–3 settimane lavorative",
-        target:
-          "Imprese strutturate, studi professionali e brand B2B che vogliono posizionarsi come leader di settore.",
-        ctaText: "Richiedi Progetto Corporate",
-      },
-      {
-        id: "ecosistema",
-        number: "04",
-        name: "Web Application & Ecosistema B2B Custom",
+        name: "Portali Operativi Custom & Ecosistemi B2B",
         price: "Da 5.000€ a 15.000€",
         priceSubtext: "Sviluppo a sprint settimanali · Fatturazione a milestone",
         summary:
-          "Piattaforme su misura, aree riservate (RBAC), integrazioni API/ERP, flussi Stripe B2B e architettura scalabile.",
+          "Applicazioni web su misura, aree riservate clienti/fornitori, cataloghi dinamici e portali operativi che digitalizzano e snelliscono il lavoro interno ed esterno dell'azienda.",
         description:
-          "Software enterprise proprietario calibrato sui processi operativi aziendali. Dai portali riservati per clienti/fornitori ai gestionali interni, con sicurezza di livello bancario e scalabilità edge.",
+          "Quando ordini, listini riservati, documentazioni tecniche e preventivazioni vengono gestiti tramite fogli di calcolo, email o PDF statici, l'azienda subisce errori operativi e colli di bottiglia amministrativi. Progettiamo applicazioni web full-stack proprietarie che centralizzano le operazioni tra azienda, rete vendita, distributori e clienti finali.",
         deliverables: [
-          "Architettura Full-Stack distribuita su Next.js, TypeScript e PostgreSQL",
-          "Area riservata con autenticazione avanzata a ruoli (RBAC)",
-          "Integrazione API bidirezionale con ERP/CRM e webhook dedicati",
-          "Flussi di pagamento B2B e fatturazione automatizzata Stripe",
-          "Garanzia di continuità operativa, CI/CD automatizzata e 60gg di supporto post-rilascio",
+          "Applicazione Full-Stack proprietaria su architettura Next.js, TypeScript e database relazionale PostgreSQL",
+          "Aree riservate multi-livello con controllo accessi basato sui ruoli (RBAC: Buyer, Agenti, Amministrazione)",
+          "Cataloghi B2B dinamici con listini personalizzati per partita IVA, scontistiche a scaglioni e riordino rapido",
+          "Sincronizzazione API bidirezionale con gestionali/ERP esistenti e flussi di pagamento/fatturazione Stripe B2B",
         ],
         timing: "Sviluppo a sprint settimanali (4–8 settimane)",
         target:
-          "Industrie manifatturiere, distributori B2B e società che necessitano di digitalizzare flussi critici.",
-        ctaText: "Configura il Tuo Ecosistema",
+          "Aziende manifatturiere, distributori B2B e imprese di servizi che necessitano di digitalizzare processi operativi critici.",
+        ctaText: "Valuta l'Ingegnerizzazione del Portale B2B",
+      },
+      {
+        id: "data-engineering-tracking",
+        number: "03",
+        name: "Data Engineering, Server-Side Tracking & Analytics",
+        price: "Da 1.200€ a 3.000€",
+        priceSubtext: "Setup infrastruttura dati · Audit preliminare incluso",
+        summary:
+          "Superamento dei limiti di cookie e ad-blocker. Implementazione di tracciamenti avanzati (GA4 custom events, GTM Server-Side) e dashboard direzionali per tracciare il ROI reale di ogni singolo euro investito.",
+        description:
+          "I tracciamenti client-side standard perdono oggi tra il 30% e il 55% delle conversioni reali a causa di blocchi browser (ITP/Safari), ad-blocker e consensi cookie mal configurati, costringendo il management a prendere decisioni alla cieca. Costruiamo infrastrutture di raccolta dati proprietarie di prima parte (First-Party Data) che restituiscono visibilità chirurgica sull'intero ciclo di acquisizione.",
+        deliverables: [
+          "Infrastruttura Google Tag Manager Server-Side su cloud dedicato con dominio di prima parte",
+          "Architettura eventi custom su GA4, Meta Conversions API (CAPI) e LinkedIn/Google Enhanced Conversions",
+          "Riconciliazione del dato tra clic pubblicitario, lead generato e opportunità chiusa a contratto nel CRM",
+          "Dashboard direzionale di Business Intelligence per il monitoraggio in tempo reale di CAC, CPL e ROI",
+        ],
+        timing: "Consegna e validazione dati in 7–10 giorni lavorativi",
+        target:
+          "Imprenditori e Direttori Commerciali che investono in acquisizione a pagamento ed esigono attribuzione certa del ritorno sull'investimento.",
+        ctaText: "Richiedi Audit sull'Infrastruttura Dati",
+      },
+      {
+        id: "automazione-revops-crm",
+        number: "04",
+        name: "Automazione Commerciale & Integrazione CRM (RevOps)",
+        price: "Da 1.500€ a 4.500€",
+        priceSubtext: "Architettura pipeline B2B · Integrazione HubSpot / CRM Custom",
+        summary:
+          "Connessione diretta tra l'infrastruttura web e la rete vendita (HubSpot e CRM custom). Cattura, arricchimento e qualificazione automatica dei lead, eliminando il data-entry manuale e i colli di bottiglia commerciali.",
+        description:
+          "Un lead B2B contattato dopo 24 ore ha una probabilità di chiusura inferiore dell'80% rispetto a uno gestito nei primi 5 minuti. Eliminiamo la frattura tra marketing e vendite ingegnerizzando pipeline RevOps automatizzate: dal momento in cui il prospect interagisce con l'ecosistema web, il dato viene validato, arricchito con informazioni societarie, classificato per priorità e assegnato istantaneamente al commerciale competente.",
+        deliverables: [
+          "Integrazione nativa bidirezionale via API/Webhook tra ecosistema web, HubSpot o CRM proprietari",
+          "Flussi automatizzati di lead capture, arricchimento dati B2B, lead scoring e qualificazione pre-chiamata",
+          "Notifiche operative istantanee alla rete vendita con contesto completo dell'interazione del prospect",
+          "Eliminazione del data-entry manuale, sequenze di follow-up automatizzate e tracciamento della pipeline",
+        ],
+        timing: "Implementazione e collaudo in 1–2 settimane lavorative",
+        target:
+          "Direzioni Commerciali e reti vendita B2B che vogliono azzerare i tempi di presa in carico dei lead e scalare le conversioni.",
+        ctaText: "Ingegnerizza la Pipeline Commerciale",
       },
     ],
   },
 
   caseStudies: {
-    eyebrow: "ARCHITETTURE REFERENCE & CASI STUDIO",
-    title: "Ingegneria applicata e metriche oggettive.",
+    eyebrow: "ARCHITETTURE REFERENCE & ECOSISTEMI DIMOSTRATIVI",
+    title: "Ingegneria applicata, latenza zero e metriche verificabili.",
     subtitle:
-      "Showcase di architetture dimostrative progettate secondo i massimi standard industriali: velocità estrema, zero debito tecnico e affidabilità continuativa.",
+      "Ecosistemi dimostrativi progettati secondo rigorosi standard industriali: infrastrutture Next.js/TypeScript, automazione dei flussi operativi e totale assenza di debito tecnico legacy.",
     items: [
       {
         id: "portale-b2b",
-        tag: "REFERENCE B2B ARCHITECTURE",
+        tag: "PILASTRO 02 · PORTALE OPERATIVO & ECOSISTEMA B2B",
         title: "Ecosistema B2B & Portale Ordini Custom",
-        clientName: "Valkiria International (Settore Manifatturiero / B2B)",
+        clientName: "Valkiria International (Architettura Reference Manifatturiero B2B)",
         businessProblem:
-          "Processi commerciali lenti con ordini inviati via email o PDF e listini prezzi complessi gestiti a mano, con frequenti errori di preventivazione e ritardi nelle consegne.",
+          "Processi commerciali frammentati con ordini trasmessi via email o PDF, listini complessi gestiti manualmente su fogli di calcolo, errori ricorrenti di preventivazione e colli di bottiglia amministrativi.",
         solution:
-          "Portale web custom reattivo con area riservata, listini riservati per partita IVA e sincronizzazione contabile immediata.",
+          "Portale operativo B2B proprietario con area riservata RBAC, listini dinamici per partita IVA, riordino automatizzato e sincronizzazione contabile in tempo reale.",
         description:
-          "Architettura dimostrativa per la gestione di cataloghi B2B riservati, listini personalizzati per cliente e fatturazione automatizzata.",
-        shortDescription: "Portale ordini riservato con cataloghi e listini dinamici per partita IVA.",
+          "Architettura reference per la digitalizzazione dei processi d'ordine B2B, gestione di cataloghi riservati, scontistiche contrattuali personalizzate e riconciliazione amministrativa automatica.",
+        shortDescription: "Portale operativo B2B con listini dinamici per partita IVA, controllo accessi RBAC e automazione ordini.",
         metrics: [
-          { label: "Largest Contentful Paint", value: "LCP < 0.4s", subtext: "Caricamento catalogo istantaneo" },
-          { label: "Core Web Vitals", value: "100 / 100", subtext: "Punteggio massimo Google" },
-          { label: "Disponibilità Infrastruttura", value: "Zero Downtime", subtext: "Architettura edge ridondata" },
+          { label: "Largest Contentful Paint", value: "LCP < 0.4s", subtext: "Latenza zero su catalogo" },
+          { label: "Core Web Vitals", value: "100 / 100", subtext: "Efficienza architetturale" },
+          { label: "Continuità Operativa", value: "Zero Downtime", subtext: "Infrastruttura Edge ridondata" },
         ],
         stack: [
           "Next.js App Router",
           "TypeScript",
           "PostgreSQL",
-          "Prisma",
-          "Stripe Webhook",
+          "Prisma ORM",
+          "Stripe B2B Webhook",
           "Autenticazione RBAC",
         ],
         highlights: [
-          "Area riservata con controllo accessi a ruoli (Buyer, Agenti commerciali, Amministrazione)",
-          "Listini dinamici con scontistiche personalizzate per partita IVA e contratti a scaglioni",
-          "Sincronizzazione contabile e fatturazione automatica Stripe senza attrito manuale",
-          "Codice rigorosamente tipizzato e documentato secondo standard industriali OpenAPI",
+          "Area riservata con controllo accessi granulare (Buyer aziendali, Rete Agenti, Direzione Amministrativa)",
+          "Listini dinamici calcolati in tempo reale per partita IVA, accordi quadro e scaglioni di volume",
+          "Automazione del ciclo attivo e sincronizzazione via webhook senza data-entry manuale",
+          "Codice sorgente tipizzato e documentato secondo standard industriali OpenAPI",
         ],
-        ctaText: "Richiedi un'Architettura B2B Simile",
-        prefillService: "Web Application & Ecosistema B2B Custom",
+        ctaText: "Richiedi un Ecosistema Operativo Simile",
+        prefillService: "Portali Operativi Custom & Ecosistemi B2B",
         screenshotUrl: "/images/demos/b2b-demo.png",
         demoUrl: "https://b2b-demo.techpyre.eu",
         repoUrl: "https://github.com/techpyre/techpyre-b2b-portal-reference",
       },
       {
         id: "infrastruttura-headless",
-        tag: "HIGH-CONVERSION INFRASTRUCTURE",
-        title: "Infrastruttura Headless ad Alta Conversione",
-        clientName: "Kinetix Performance (Servizi & Acquisizione Lead)",
+        tag: "PILASTRO 01 + 04 · ARCHITETTURA DI CONVERSIONE & REVOPS",
+        title: "Infrastruttura di Conversione & Pipeline RevOps",
+        clientName: "Kinetix Performance (Architettura Reference Acquisizione B2B)",
         businessProblem:
-          "Sito aziendale lento su CMS tradizionale (> 4 secondi di caricamento): oltre il 60% dei visitatori da campagne Google Ads abbandonava la pagina prima di leggere l'offerta, disperdendo budget.",
+          "Piattaforma legacy monolitica con oltre 5 secondi di caricamento mobile e tracciamento client-side bloccato: oltre il 60% del traffico pagato abbandonava prima del rendering e i lead acquisiti venivano lavorati con ore di ritardo.",
         solution:
-          "Infrastruttura statica su CDN edge globale: caricamento sub-secondo (0.3s), zero dispersioni di traffico e inoltro webhook istantaneo ai CRM.",
+          "Infrastruttura di conversione in Next.js su CDN Edge globale (0.3s), tracking Server-Side e iniezione istantanea dei lead qualificati nel CRM della rete vendita.",
         description:
-          "Sostituzione di un'infrastruttura legacy lenta con una web app statica/ibrida capace di reggere picchi di traffico da campagne adv senza perdita di lead.",
-        shortDescription: "Infrastruttura statica su CDN edge per azzerare le conversioni disperse da ads.",
+          "Sostituzione di una vetrina statica ad alta dispersione con un'architettura di conversione ad alte prestazioni collegata direttamente alla pipeline commerciale aziendale.",
+        shortDescription: "Infrastruttura Next.js a latenza zero (0.3s) con tracking Server-Side e automazione webhook verso il CRM.",
         metrics: [
-          { label: "Lighthouse Performance", value: "100 / 100", subtext: "Mobile & Desktop ottimizzati" },
+          { label: "Lighthouse Performance", value: "100 / 100", subtext: "Architettura Mobile & Desktop" },
           { label: "Time to First Byte", value: "TTFB < 50ms", subtext: "Distribuzione Edge Globale" },
-          { label: "Efficienza Acquisizione", value: "+68%", subtext: "Modello verificabile in demo" },
+          { label: "Resa di Conversione", value: "+68%", subtext: "Abbattimento dispersione traffico" },
         ],
         stack: [
           "Next.js",
-          "Tailwind CSS",
+          "TypeScript",
           "Edge Caching",
-          "Webhook CRM",
-          "Zero Debito Legacy",
+          "Server-Side Tracking",
+          "Webhook CRM / RevOps",
         ],
         highlights: [
-          "Eliminazione completa di plugin pesanti e vulnerabilità dei CMS monolitici tradizionali",
-          "Coda asincrona di failover: nessun lead perso anche in caso di disconnessione temporanea",
-          "Rendering statico pre-generato (SSG/ISR) per velocità sub-secondo da qualsiasi dispositivo",
-          "Integrazione diretta con CRM aziendali (HubSpot, Salesforce o database proprietari)",
+          "Rimozione totale di page-builder, plugin vulnerabili e colli di bottiglia di rendering",
+          "Coda asincrona di failover per garantire zero perdita di dati anche in caso di picchi di traffico",
+          "Pre-rendering ibrido (SSG/ISR) per caricamento istantaneo su rete mobile in meno di 400 millisecondi",
+          "Qualificazione automatica del lead e instradamento diretto su HubSpot e database proprietari",
         ],
-        ctaText: "Valuta la Migrazione Headless",
-        prefillService: "Landing Page ad Alta Conversione",
+        ctaText: "Valuta l'Architettura di Conversione",
+        prefillService: "Infrastrutture Web & Architetture di Conversione",
         screenshotUrl: "/images/demos/headless-demo.png",
         demoUrl: "https://headless-demo.techpyre.eu",
         repoUrl: "https://github.com/techpyre/techpyre-headless-leadgen-reference",
@@ -255,127 +253,127 @@ export const siteContent: SiteContent = {
   },
 
   founder: {
-    eyebrow: "VISIONE & LEADERSHIP · IL FONDATORE DELLO STUDIO",
-    title: "Ingegneria moderna senza compromessi. La determinazione di chi guida lo studio.",
-    subtitle: "Manifesto di visione e leadership di Riccardo Granza, fondatore e guida di TechPYRE.",
+    eyebrow: "DIREZIONE TECNICA · ARCHITETTURA DI SISTEMI DIGITALI",
+    title: "Perché il 95% delle presenze online aziendali è un costo morto. E come lo trasformiamo in un asset.",
+    subtitle: "Tesi strategica, metodo ingegneristico in 4 fasi e posizionamento di Riccardo Granza, Architetto di Sistemi Digitali e fondatore di TechPYRE.",
     name: "Riccardo Granza",
-    role: "Fondatore & Head of Studio",
-    ageBadge: "18 Anni · Fondatore e Capo dello Studio",
+    role: "Fondatore & Architetto di Sistemi Digitali",
+    ageBadge: "Digital Systems Architect · Direzione Tecnica",
     leadershipBadge:
-      "18 Anni · Visione, determinazione incrollabile e controllo rigoroso sui massimi standard dello studio.",
+      "Approccio First-Principles · Ingegneria del software, architettura dei dati e automazione dei processi commerciali B2B.",
     manifesto: [
-      "Chi conduce un'impresa seria riconosce subito la differenza tra un apparato burocratico che disperde energie e una leadership determinata che punta dritta all'obiettivo.",
-      "Ho 18 anni. Per molti l'età è solo un dato anagrafico; per me è il moltiplicatore di una determinazione feroce, di una grinta instancabile e di una lucidità tecnica totale. Ho fondato TechPYRE e ne dirigo le operazioni per scardinare la mediocrità di un mercato dove agenzie sovradimensionate addebitano parcelle ingiustificate, finendo per delegare lo sviluppo a terzi su tecnologie già morte.",
-      "Come capo dello studio, non accetto compromessi sulla qualità esecutiva. TechPYRE non è un'avventura improvvisata: è uno studio tecnico di sviluppo software strutturato con processi solidi, metodologie rigorose e standard adottati dalle migliori tech company al mondo: Next.js nativo, TypeScript puro, architetture cloud edge e zero debito tecnico legacy.",
-      "Pretendo per ogni committente ciò che le agenzie tradizionali non possono garantire: continuità operativa totale, rilascio di documentazione esecutiva esaustiva, codice standardizzato e pipeline automatizzate. L'azienda ha il vantaggio di rapportarsi con una figura di vertice energica e reattiva, con la sicurezza di un'infrastruttura ingegneristica completamente autonoma.",
-      "Il codice sorgente, l'infrastruttura e i dati restano al 100% di proprietà dell'azienda committente fin dal primo rilascio. Chi sceglie TechPYRE sceglie la determinazione di una realtà moderna che lavora con ambizione e rigore per far vincere i propri clienti sul mercato.",
+      "Nell'era dei generatori basati su intelligenza artificiale e dei page-builder No-Code, commissionare una semplice vetrina statica equivale a immobilizzare capitale in un passivo di bilancio. Una pagina scollegata dai sistemi informativi dell'azienda, che impiega sei secondi a caricarsi su rete mobile e perde metà dei dati di tracciamento a causa dei blocchi browser, non è un asset commerciale: è un attrito operativo che brucia budget pubblicitario e credibilità.",
+      "Ho fondato TechPYRE con una tesi ingegneristica precisa: unire l'ingegneria informatica pura — stack moderno Next.js e TypeScript, sicurezza strutturale, latenza zero su rete Edge — con l'ingegneria della conversione, del dato Server-Side e dell'automazione commerciale (RevOps). Come Architetto di Sistemi Digitali, progetto ecosistemi proprietari in cui piattaforma web, tracciamento analitico e CRM operano come un unico organismo sincronizzato.",
+      "Rifiutiamo il bloatware, i temi preconfezionati e i modelli di fornitura basati sulla vendita di ore o canoni di locazione del codice. Al nostro interno utilizziamo l'intelligenza artificiale non come surrogato economico per produrre artefatti mediocri, ma come acceleratore ingegneristico nei processi di analisi, testing e automazione. Questo ci consente di comprimere i tempi di rilascio da mesi a poche settimane, consegnando alle PMI strutturate infrastrutture di livello enterprise con un ritorno sull'investimento matematicamente verificabile.",
+      "Il nostro metodo operativo si articola in quattro fasi sequenziali: (1) Audit Architetturale & Mappatura dei Flussi per isolare dispersioni di traffico e colli di bottiglia commerciali; (2) Ingegnerizzazione & Sviluppo Infrastrutturale con codice custom, GTM Server-Side e integrazione CRM; (3) Deploy, Stress-Test & Integrazione Operativa a latenza zero; (4) Growth Engineering & Ottimizzazione Continua basata su telemetria GA4, test statistici e scalabilità evolutiva.",
+      "Ogni riga di codice sorgente, ogni container di tracciamento e ogni pipeline dati viene rilasciata sul repository ufficiale dell'azienda committente fin dal primo giorno. Chi sceglie TechPYRE acquisisce un'infrastruttura digitale proprietaria costruita per generare margine, efficienza e vantaggio competitivo misurabile.",
     ],
     quote:
-      "«A 18 anni la mia ambizione e la mia determinazione sono chiare: guidare TechPYRE per renderlo il punto di riferimento delle imprese che pretendono software impeccabile, velocità di esecuzione e trasparenza assoluta.»",
+      "«Un'infrastruttura digitale ha valore solo se riduce il costo di acquisizione cliente, restituisce la proprietà integrale del dato o elimina un collo di bottiglia operativo. Tutto il resto è rumore estetico.»",
     comparison: {
-      legacyTitle: "La prassi delle agenzie tradizionali",
+      legacyTitle: "Fornitori Tradizionali & Soluzioni No-Code / Low-Cost",
       legacyPoints: [
-        "Tempi di risposta lunghi mediati da figure commerciali non tecniche",
-        "Piattaforme obsolete, plugin insicuri e template riciclati tra committenti diversi",
-        "Tariffe gravate da spese fisse di rappresentanza e riunioni sterili",
-        "Codice trattenuto dall'agenzia con vincoli per ostacolare la migrazione",
+        "Proprietà e Qualità del Codice: CMS monolitici gonfi di plugin, template condivisi o piattaforme No-Code a noleggio con lock-in tecnico e vulnerabilità croniche",
+        "Tracciamento Dati e Privacy: Pixel client-side elementari che perdono fino al 50% delle conversioni reali per via di ad-blocker e restrizioni ITP/cookie",
+        "Integrazione Processi (CRM/RevOps): Moduli di contatto isolati che inviano semplici email, costringendo il team commerciale al data-entry manuale e a ritardi di ore",
+        "Performance, Scalabilità e ROI: Tempi di caricamento superiori a 4–8 secondi su mobile che bruciano budget pubblicitario senza metriche di impatto sul fatturato",
       ],
-      techPyreTitle: "Il modello di leadership e studio TechPYRE",
+      techPyreTitle: "TechPYRE — Studio di Ingegneria ed Ecosistemi Digitali",
       techPyrePoints: [
-        "Interlocutore diretto: risponde Riccardo Granza con la grinta e la reattività della guida dello studio",
-        "Metodologia di studio: processi codificati, zero debito legacy e codice Next.js/TS nativo",
-        "Continuità operativa garantita: documentazione esecutiva completa e pipeline CI/CD indipendenti",
-        "Proprietà intellettuale integrale: repository e infrastruttura 100% dell'azienda",
+        "Proprietà e Qualità del Codice: Architettura custom in Next.js/TypeScript intestata al 100% all'azienda su repository GitHub proprietario, zero debito legacy",
+        "Tracciamento Dati e Privacy: Data engineering di prima parte con GTM Server-Side, GA4 custom events e Conversions API per un'attribuzione certa del ROI",
+        "Integrazione Processi (CRM/RevOps): Sincronizzazione bidirezionale via API/Webhook con HubSpot e CRM custom per qualificazione, arricchimento e assegnazione istantanea dei lead",
+        "Performance, Scalabilità e ROI: Infrastruttura Edge a latenza zero (LCP < 0.4s) progettata per massimizzare il tasso di conversione e il ritorno sull'investimento B2B",
       ],
     },
   },
 
   contact: {
-    eyebrow: "REPERIBILITÀ DIRETTA CON IL FONDATORE",
-    title: "Richiedi un primo confronto tecnico o una stima economica.",
+    eyebrow: "VALUTAZIONE TECNICA · ACCESSO DIRETTO ALL'ARCHITETTO DI SISTEMI",
+    title: "Richiedi una Sessione di Diagnosi Architetturale.",
     subtitle:
-      "Compila il modulo indicando le tue necessità. Riceverai un riscontro dettagliato entro la giornata lavorativa direttamente da Riccardo Granza.",
+      "Sottoponi la tua attuale infrastruttura digitale a un'analisi ingegneristica preliminare. Esamineremo metriche di caricamento, dispersione dei tracciamenti e colli di bottiglia nella pipeline CRM direttamente con Riccardo Granza.",
     formLabels: {
-      name: "Nome e Cognome",
-      namePlaceholder: "Es. Mario Rossi",
-      company: "Ragione Sociale / Impresa",
-      companyPlaceholder: "Es. Meccanica Industriale S.r.l.",
-      contact: "Email Aziendale o Telefono",
-      contactPlaceholder: "Es. m.rossi@meccanicaindustriale.it oppure 340 1234567",
-      service: "Servizio di interesse primario",
-      message: "Descrizione del progetto",
+      name: "Nome, Cognome e Ruolo Aziendale",
+      namePlaceholder: "Es. Marco Ferri — CEO / Direttore Commerciale",
+      company: "Ragione Sociale e Settore B2B",
+      companyPlaceholder: "Es. Siderurgica Lombarda S.r.l. (Manifatturiero)",
+      contact: "Email Aziendale o Recapito Diretto",
+      contactPlaceholder: "Es. m.ferri@azienda.it oppure +39 340 1234567",
+      service: "Pilastro Architetturale di Interesse Primario",
+      message: "Infrastruttura Attuale e Collo di Bottiglia Principale",
       messagePlaceholder:
-        "Descrivi sinteticamente lo stato attuale dei sistemi, gli obiettivi e i tempi previsti...",
-      submit: "Invia Richiesta Diretta al Fondatore",
-      submitting: "Elaborazione in corso...",
+        "Indica lo stack attuale (CMS, CRM in uso, campagne attive) e la criticità principale da risolvere (dispersione lead, lentezza mobile, assenza di tracciamento ROI o processi manuali)...",
+      submit: "Richiedi Sessione di Diagnosi Architetturale",
+      submitting: "Trasmissione specifica tecnica in corso...",
       privacyNote:
-        "I dati forniti sono trattati con il massimo riserbo nel rispetto del GDPR. Nessun invio promozionale non richiesto.",
+        "I dati aziendali trasmessi sono protetti da riservatezza professionale e trattati nel rigoroso rispetto del GDPR (Reg. UE 2016/679).",
     },
     channels: [
       {
-        label: "Email Diretta",
+        label: "Email Direzione Tecnica",
         value: "riccardo.granza@techpyre.eu",
-        subtext: "Riscontro garantito entro la giornata lavorativa",
+        subtext: "Riscontro analitico entro la giornata lavorativa",
         href: "mailto:riccardo.granza@techpyre.eu",
       },
       {
-        label: "Telefono e WhatsApp",
+        label: "Linea Diretta & WhatsApp B2B",
         value: "+39 379 115 9352",
-        subtext: "Per quesiti immediati o comunicazioni rapide",
+        subtext: "Comunicazioni operative dirette con il Fondatore",
         href: "https://wa.me/393791159352",
         isExternal: true,
       },
       {
-        label: "Repository GitHub",
+        label: "Repository & Architetture Reference",
         value: "github.com/techpyre",
-        subtext: "Codice aperto e architetture reference",
+        subtext: "Ispezione pubblica della qualità del codice sorgente",
         href: "https://github.com/techpyre",
         isExternal: true,
       },
       {
-        label: "Orari di Reperibilità",
+        label: "Operatività dello Studio",
         value: "Lun — Ven · 08:30 — 19:30",
-        subtext: "Fuso orario di Roma · Incontri anche in presenza",
+        subtext: "Fuso orario di Roma · Sessioni da remoto o presso la sede cliente",
         href: "#",
       },
     ],
     feedback: {
-      successTitle: "Richiesta ricevuta con successo.",
+      successTitle: "Richiesta di Diagnosi Architetturale registrata.",
       successMessage:
-        "Grazie per l'interesse. Riccardo Granza ha preso in carico la richiesta e ti ricontatterà entro la giornata lavorativa con la proposta per la prima sessione conoscitiva.",
-      successReset: "Invia una nuova comunicazione",
-      errorTitle: "Impossibile inviare la richiesta.",
+        "La specifica preliminare è stata acquisita. Riccardo Granza esaminerà i parametri indicati e ti contatterà entro la giornata lavorativa per pianificare la Sessione di Diagnosi Architetturale.",
+      successReset: "Invia una nuova specifica tecnica",
+      errorTitle: "Anomalia di trasmissione rilevata.",
       errorMessage:
-        "Si è verificato un inconveniente di rete. Puoi scrivere direttamente a riccardo.granza@techpyre.eu o chiamare il +39 379 115 9352.",
+        "Non è stato possibile recapitare il modulo. Contatta direttamente la direzione tecnica a riccardo.granza@techpyre.eu o al numero +39 379 115 9352.",
     },
   },
 
   footer: {
     summary:
-      "Studio di sviluppo software e consulenza tecnologica ad alte prestazioni. Architetture proprietarie, portali B2B e landing page commerciali con rigore, trasparenza contrattuale e continuità operativa.",
-    copyright: `© ${new Date().getFullYear()} TechPYRE STUDIO · Sviluppato e manutenuto con codice proprietario standard Next.js / TypeScript.`,
+      "Studio di Ingegneria ed Ecosistemi Digitali (Digital Systems & Growth Engineering Studio). Progettiamo infrastrutture web ad alte prestazioni, portali operativi B2B, data engineering Server-Side e automazione RevOps con proprietà integrale del codice.",
+    copyright: `© ${new Date().getFullYear()} TechPYRE — Studio di Ingegneria ed Ecosistemi Digitali · Architettura proprietaria Next.js / TypeScript.`,
     links: [
       {
-        title: "Patti e Principi",
+        title: "Architettura & Metodo",
         items: [
-          { label: "Listino Servizi B2B", href: "/servizi" },
-          { label: "Casi Studio & Architetture", href: "/progetti" },
-          { label: "Simulatore B2B", href: "/servizi#simulatore" },
-          { label: "Lo Studio & Metodo", href: "/studio" },
-          { label: "Colloquio 30m Gratuito", href: "/#contatto" },
+          { label: "I 4 Pilastri Architetturali", href: "/servizi" },
+          { label: "Ecosistemi Reference Live", href: "/progetti" },
+          { label: "Configuratore Architetturale", href: "/servizi#simulatore" },
+          { label: "Tesi Strategica & Metodo", href: "/studio" },
+          { label: "Sessione di Diagnosi (30m)", href: "/#contatto" },
         ],
       },
       {
-        title: "Specifiche Operative",
+        title: "Pilastri d'Offerta",
         items: [
-          { label: "Audit Tecnico (70€/h)", href: "/servizi" },
-          { label: "Landing Page a 900€", href: "/servizi" },
-          { label: "Sito Corporate (2.000€–4.000€)", href: "/servizi" },
-          { label: "Web App & Ecosistema B2B", href: "/servizi" },
+          { label: "Infrastrutture Web & Conversione", href: "/servizi" },
+          { label: "Portali Operativi & Ecosistemi B2B", href: "/servizi" },
+          { label: "Data Engineering & Server-Side", href: "/servizi" },
+          { label: "Automazione Commerciale & RevOps", href: "/servizi" },
         ],
       },
       {
-        title: "Recapiti Personali",
+        title: "Direzione Tecnica",
         items: [
           { label: "riccardo.granza@techpyre.eu", href: "mailto:riccardo.granza@techpyre.eu" },
           { label: "WhatsApp: +39 379 115 9352", href: "https://wa.me/393791159352", isExternal: true },

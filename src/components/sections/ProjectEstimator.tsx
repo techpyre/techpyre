@@ -27,32 +27,32 @@ interface ServiceOption {
 
 const serviceOptions: ServiceOption[] = [
   {
-    id: "audit",
-    name: "Audit Tecnico & Consulenza Architetturale",
-    basePrice: "30 min Free, poi 70€ / ora",
-    defaultTimeline: "Entro 48 ore",
-    description: "Analisi tecnica dell'infrastruttura, rimozione colli di bottiglia e roadmap tecnica esecutiva.",
+    id: "infrastrutture-conversione",
+    name: "Infrastrutture Web & Architetture di Conversione",
+    basePrice: "Da 900€ a 4.000€",
+    defaultTimeline: "5–7 gg / 2–3 settimane",
+    description: "Piattaforme web e landing system in Next.js/TypeScript a latenza zero, SEO programmatica e massimizzazione CRO.",
   },
   {
-    id: "landing",
-    name: "Landing Page ad Alta Conversione",
-    basePrice: "900€ (Prezzo Fisso)",
-    defaultTimeline: "5–7 giorni lavorativi",
-    description: "Pagina singola ultra-veloce Next.js, copywriting persuasivo, integrazione moduli e webhook CRM.",
-  },
-  {
-    id: "corporate",
-    name: "Sito Corporate & Architettura Avanzata",
-    basePrice: "Da 2.000€ a 4.000€",
-    defaultTimeline: "2–3 settimane",
-    description: "Sito multi-pagina Next.js ultra-rapido, SEO tecnica nativa, CMS headless e Blueprint architetturale incluso.",
-  },
-  {
-    id: "ecosistema",
-    name: "Web Application & Ecosistema B2B Custom",
+    id: "portali-ecosistemi-b2b",
+    name: "Portali Operativi Custom & Ecosistemi B2B",
     basePrice: "Da 5.000€ a 15.000€",
-    defaultTimeline: "4–8 settimane",
-    description: "Piattaforma su misura, aree riservate (RBAC), integrazioni API/ERP, flussi Stripe B2B e architettura scalabile.",
+    defaultTimeline: "4–8 settimane (a sprint)",
+    description: "Applicazioni web su misura, aree riservate RBAC clienti/fornitori, cataloghi dinamici e portali operativi B2B.",
+  },
+  {
+    id: "data-engineering-tracking",
+    name: "Data Engineering, Server-Side Tracking & Analytics",
+    basePrice: "Da 1.200€ a 3.000€",
+    defaultTimeline: "7–10 giorni lavorativi",
+    description: "GTM Server-Side, GA4 custom events, Conversions API e dashboard direzionali per tracciare il ROI reale.",
+  },
+  {
+    id: "automazione-revops-crm",
+    name: "Automazione Commerciale & Integrazione CRM (RevOps)",
+    basePrice: "Da 1.500€ a 4.500€",
+    defaultTimeline: "1–2 settimane lavorative",
+    description: "Connessione diretta tra ecosistema web e rete vendita (HubSpot/CRM custom), qualificazione e lead scoring automatico.",
   },
 ];
 
@@ -64,10 +64,10 @@ interface AddonOption {
 }
 
 const addonsList: AddonOption[] = [
-  { id: "crm", label: "Integrazione Webhook CRM", cost: "Inclusa" },
-  { id: "auth", label: "Area Riservata a Ruoli (RBAC)", cost: "Inclusa in Web App" },
-  { id: "seo", label: "Audit Core Web Vitals (< 300ms)", cost: "Inclusa" },
-  { id: "payment", label: "Flussi di Pagamento B2B Stripe", cost: "Valutata nel piano" },
+  { id: "crm", label: "Integrazione API/Webhook HubSpot o CRM Custom", cost: "Inclusa in RevOps" },
+  { id: "auth", label: "Area Riservata Multi-Ruolo (RBAC)", cost: "Inclusa in Portali B2B" },
+  { id: "seo", label: "Container GTM Server-Side & First-Party Data", cost: "Incluso in Data Eng." },
+  { id: "payment", label: "Ottimizzazione Latenza Zero (LCP < 0.4s)", cost: "Standard Nativo" },
 ];
 
 export default function ProjectEstimator() {
@@ -111,19 +111,19 @@ export default function ProjectEstimator() {
         >
           <div className="space-y-1.5 max-w-2xl">
             <div className="text-[10px] sm:text-[11px] font-sans font-bold text-[#B8860B] uppercase tracking-widest">
-              SIMULATORE B2B · TRASPARENZA PREVENTIVA
+              CONFIGURATORE ARCHITETTURALE B2B · PARAMETRI DI INVESTIMENTO
             </div>
             <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl text-[#14181F] font-normal tracking-tight">
-              Configura il tuo progetto e verifica i parametri esecutivi.
+              Configura il tuo ecosistema e verifica i parametri esecutivi.
             </h2>
             <p className="text-xs sm:text-sm text-[#5A6270] font-sans leading-relaxed">
-              Seleziona la tipologia di intervento per visualizzare costi indicativi, tempi certi e requisiti tecnici in tempo reale.
+              Seleziona il pilastro architetturale primario e i moduli di integrazione per stimare investimento CapEx, tempistiche di rilascio e specifiche tecniche.
             </p>
           </div>
 
           <div className="text-xs font-mono text-[#5A6270] bg-white border border-[#E8E2D5] p-3 rounded-sm shrink-0 self-start md:self-auto shadow-2xs">
-            <div className="text-[10px] font-sans uppercase font-bold text-[#5A6270]">GARANZIA DI PREZZO CERTO</div>
-            <div className="text-[#0B1E36] font-bold text-xs sm:text-sm">Nessun costo occulto a consuntivo</div>
+            <div className="text-[10px] font-sans uppercase font-bold text-[#5A6270]">MODELLO CAPEX + OPEX</div>
+            <div className="text-[#0B1E36] font-bold text-xs sm:text-sm">Investimento certo a milestone · Zero lock-in</div>
           </div>
         </motion.div>
 
@@ -314,15 +314,15 @@ export default function ProjectEstimator() {
               <div className="space-y-1.5 text-xs font-sans text-[#5A6270]">
                 <div className="flex items-center gap-2 text-[#14181F] font-medium">
                   <span className="text-[#B8860B] font-bold">▪</span>
-                  <span>Incontro conoscitivo preliminare di 30 min gratuito</span>
+                  <span>Sessione di Diagnosi Architetturale preliminare (30 min)</span>
                 </div>
                 <div className="flex items-center gap-2 text-[#14181F] font-medium">
                   <span className="text-[#B8860B] font-bold">▪</span>
-                  <span>Proprietà integrale del codice sorgente su repository aziendale</span>
+                  <span>Proprietà integrale di codice sorgente e container dati</span>
                 </div>
                 <div className="flex items-center gap-2 text-[#14181F] font-medium">
                   <span className="text-[#B8860B] font-bold">▪</span>
-                  <span>Continuità garantita: documentazione tecnica e stack standard Next.js/TS</span>
+                  <span>Stack enterprise Next.js/TypeScript, GTM Server-Side e CRM API</span>
                 </div>
               </div>
 

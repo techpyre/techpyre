@@ -276,7 +276,7 @@ export default function Navbar() {
           {/* Corpo del FAB mobile */}
           <div className="relative z-10 bg-[#0A192F] text-white px-3.5 py-3 rounded-[1px] flex items-center gap-2 font-sans font-bold text-xs tracking-wide min-h-[44px]">
             <CalendarIcon className="w-4 h-4 text-[#C5A059] shrink-0" />
-            <span className="whitespace-nowrap">Incontro 30m</span>
+            <span className="whitespace-nowrap">Diagnosi 30m</span>
             <ArrowRightIcon className="w-3.5 h-3.5 text-[#C5A059] shrink-0 group-hover:translate-x-0.5 transition-transform" />
           </div>
         </Link>

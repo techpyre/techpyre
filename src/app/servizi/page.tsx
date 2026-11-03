@@ -5,7 +5,7 @@ import ProjectEstimator from "@/components/sections/ProjectEstimator";
 import { siteContent } from "@/config/siteContent";
 
 export const metadata: Metadata = {
-  title: "Servizi & Tariffe B2B — Configuratore",
+  title: "I 4 Pilastri Architetturali & Configuratore B2B",
   description: siteContent.services.subtitle,
   alternates: { canonical: "/servizi" },
 };

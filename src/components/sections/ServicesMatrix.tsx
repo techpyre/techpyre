@@ -59,8 +59,8 @@ export default function ServicesMatrix() {
           </div>
 
           <div className="text-xs font-sans text-[#5A6270] bg-white border border-[#E8E2D5] p-3 rounded-sm shrink-0 self-start md:self-auto">
-            <div className="text-[10px] font-bold uppercase tracking-wider text-[#5A6270]">TRASPARENZA</div>
-            <div className="text-[#0B1E36] font-bold text-xs sm:text-sm">Fatturazione a milestone certe</div>
+            <div className="text-[10px] font-bold uppercase tracking-wider text-[#5A6270]">MODELLO IBRIDO B2B</div>
+            <div className="text-[#0B1E36] font-bold text-xs sm:text-sm">Setup CapEx a milestone + Growth Retainer</div>
           </div>
         </motion.div>
 
@@ -156,7 +156,7 @@ export default function ServicesMatrix() {
                         <div className="lg:col-span-7 space-y-3.5">
                           <div>
                             <div className="text-[10px] font-bold uppercase tracking-wider text-[#B8860B] mb-1 font-sans">
-                              SPECIFICA ESECUTIVA
+                              PROBLEMA AZIENDALE &amp; APPROCCIO INGEGNERISTICO
                             </div>
                             <p className="text-xs sm:text-sm text-[#14181F] leading-relaxed font-sans">
                               {item.description}
@@ -165,7 +165,7 @@ export default function ServicesMatrix() {
 
                           <div>
                             <div className="text-[10px] font-bold uppercase tracking-wider text-[#0B1E36] mb-1.5 font-sans">
-                              COSA INCLUDE:
+                              DELIVERABLE &amp; IMPATTO DI BUSINESS MISURABILE:
                             </div>
                             <ul className="space-y-1.5">
                               {item.deliverables.map((del, i) => (
@@ -234,7 +234,7 @@ export default function ServicesMatrix() {
         >
           <div>{services.guarantee}</div>
           <div className="text-[#0B1E36] font-bold">
-            Fatturazione B2B a stati di avanzamento · Nessun vincolo
+            Piena titolarità del codice sorgente · Zero lock-in
           </div>
         </motion.div>
       </div>

@@ -64,7 +64,7 @@ export default function FounderLetter() {
 
               <div className="space-y-1">
                 <span className="text-[10px] font-sans font-bold uppercase tracking-widest text-[#B8860B]">
-                  PROFILO ESECUTIVO FONDATORE
+                  ARCHITETTO DI SISTEMI DIGITALI
                 </span>
                 <div className="flex items-center gap-2.5 pt-0.5">
                   <h2 className="font-serif text-2xl sm:text-3xl text-white font-semibold">
@@ -82,24 +82,24 @@ export default function FounderLetter() {
               {/* Garanzie e Reperibilità Istituzionale */}
               <div className="pt-3 border-t border-white/10 space-y-2 text-xs font-sans">
                 <div className="flex justify-between py-1 border-b border-white/5">
-                  <span className="text-white/60">INTERLOCUTORE:</span>
-                  <span className="text-white font-semibold text-right">Riccardo Granza (Unico riferimento)</span>
+                  <span className="text-white/60">DIREZIONE TECNICA:</span>
+                  <span className="text-white font-semibold text-right">Riccardo Granza (Digital Systems Architect)</span>
                 </div>
                 <div className="flex justify-between py-1 border-b border-white/5">
-                  <span className="text-white/60">REPERIBILITÀ:</span>
-                  <span className="text-[#B8860B] font-semibold text-right">Riscontro entro la giornata</span>
+                  <span className="text-white/60">STACK INGEGNERISTICO:</span>
+                  <span className="text-white font-semibold text-right">Next.js / TypeScript / PostgreSQL</span>
                 </div>
                 <div className="flex justify-between py-1 border-b border-white/5">
-                  <span className="text-white/60">STANDARD:</span>
-                  <span className="text-white font-semibold text-right">Next.js / TypeScript nativo</span>
+                  <span className="text-white/60">DATA &amp; REVOPS:</span>
+                  <span className="text-[#B8860B] font-semibold text-right">GTM Server-Side / GA4 / CRM API</span>
                 </div>
                 <div className="flex justify-between py-1 border-b border-white/5">
-                  <span className="text-white/60">PROPRIETÀ:</span>
-                  <span className="text-white font-semibold text-right">100% dell&apos;Azienda (Zero noleggi)</span>
+                  <span className="text-white/60">PROPRIETÀ ASSET:</span>
+                  <span className="text-white font-semibold text-right">100% dell&apos;Azienda (Zero lock-in)</span>
                 </div>
                 <div className="flex justify-between py-1 border-b border-white/5">
-                  <span className="text-white/60">CONTINUITÀ:</span>
-                  <span className="text-white font-semibold text-right">CI/CD e documentazione su repo</span>
+                  <span className="text-white/60">METODO OPERATIVO:</span>
+                  <span className="text-white font-semibold text-right">Audit · Build · Deploy · Growth</span>
                 </div>
               </div>
 
@@ -114,7 +114,7 @@ export default function FounderLetter() {
                   href="/#contatto"
                   className="w-full py-2.5 px-4 rounded-sm bg-[#B8860B] hover:bg-[#9A7009] active:scale-[0.99] text-white font-sans text-xs font-semibold tracking-wide transition-all shadow-2xs inline-flex items-center justify-center gap-2 group"
                 >
-                  <span>Invia messaggio diretto a Riccardo</span>
+                  <span>Richiedi Diagnosi Architetturale</span>
                   <ArrowRightIcon className="w-3.5 h-3.5 shrink-0 transition-transform group-hover:translate-x-1" />
                 </Link>
               </div>
@@ -136,10 +136,10 @@ export default function FounderLetter() {
 
             <div className="space-y-1">
               <span className="text-[10px] font-mono font-bold uppercase tracking-wider text-[#B8860B]">
-                MANIFESTO DELLO STUDIO
+                TESI STRATEGICA &amp; METODO INGEGNERISTICO IN 4 FASI
               </span>
               <h2 className="font-serif text-2xl sm:text-3xl text-[#14181F] font-normal tracking-tight">
-                La Responsabilità Diretta sul Codice
+                Dalla Vetrina Statica all&apos;Ecosistema Digitale Proprietario
               </h2>
             </div>
 
@@ -196,7 +196,7 @@ export default function FounderLetter() {
 
             {/* Firma Autografa Vettoriale (Stile Inchiostro su Carta) */}
             <div className="pt-4 border-t border-[#E8E2D5]">
-              <Signature name={founder.name} role={`Fondatore · ${brand.name}`} />
+              <Signature name={founder.name} role={`Architetto di Sistemi Digitali · ${brand.name}`} />
             </div>
           </motion.div>
         </div>
@@ -213,21 +213,21 @@ export default function FounderLetter() {
         >
           <div className="max-w-2xl space-y-1 mb-6">
             <span className="text-[10px] font-mono font-bold uppercase tracking-widest text-[#B8860B]">
-              IL CONFRONTO DI MERCATO
+              COMPARAZIONE ARCHITETTURALE
             </span>
             <h3 className="font-serif text-xl sm:text-2xl md:text-3xl text-[#14181F] font-normal">
-              Perché le aziende scelgono la nostra partnership
+              TechPYRE vs. Alternative di Mercato
             </h3>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 items-stretch">
-            {/* Agenzie Tradizionali */}
+            {/* Approccio Tradizionale / Low-Cost */}
             <div className="p-5 sm:p-6 rounded-sm bg-white border border-[#E8E2D5] space-y-3 shadow-2xs">
               <div className="flex items-center justify-between border-b border-[#E8E2D5] pb-2.5">
                 <span className="text-[10px] sm:text-[11px] font-mono uppercase font-bold text-[#5A6270]">
-                  L&apos;APPROCCIO TRADIZIONALE
+                  APPROCCIO TRADIZIONALE &amp; NO-CODE
                 </span>
-                <span className="text-rose-600 text-xs font-mono font-bold">✕ Web Agency standard</span>
+                <span className="text-rose-600 text-xs font-mono font-bold">✕ Fornitori generalisti / Low-Cost</span>
               </div>
               <ul className="space-y-2 text-xs font-sans text-[#5A6270]">
                 {founder.comparison.legacyPoints.map((point, i) => (
@@ -244,9 +244,9 @@ export default function FounderLetter() {
               <div className="absolute top-0 left-0 right-0 h-[2px] bg-[#B8860B]" />
               <div className="flex items-center justify-between border-b border-[#E8E2D5] pb-2.5">
                 <span className="text-[10px] sm:text-[11px] font-mono uppercase font-bold text-[#B8860B]">
-                  IL MODELLO TECHPYRE
+                  INGEGNERIA DIGITALE TECHPYRE
                 </span>
-                <span className="text-emerald-700 text-xs font-mono font-bold">✓ Studio Tecnico</span>
+                <span className="text-emerald-700 text-xs font-mono font-bold">✓ Ecosistema Proprietario</span>
               </div>
               <ul className="space-y-2 text-xs font-sans text-[#14181F]">
                 {founder.comparison.techPyrePoints.map((point, i) => (

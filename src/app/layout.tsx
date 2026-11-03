@@ -56,10 +56,11 @@ export const viewport: Viewport = {
  */
 export const metadata: Metadata = {
   title: {
-    default: "TechPYRE — Ingegneria del Software & Landing Page ad Alte Prestazioni",
+    default: "TechPYRE — Studio di Ingegneria ed Ecosistemi Digitali | Architetture Web, Data & RevOps B2B",
     template: "%s | TechPYRE",
   },
-  description: siteContent.hero.subheadline,
+  description:
+    "TechPYRE progetta e ingegnerizza ecosistemi digitali proprietari per imprese B2B: infrastrutture web Next.js/TypeScript a latenza zero, portali operativi custom, tracking Server-Side e automazione CRM (RevOps).",
   authors: [{ name: siteContent.brand.founder }],
   creator: siteContent.brand.name,
   metadataBase: new URL("https://www.techpyre.eu"),
@@ -89,16 +90,18 @@ export const metadata: Metadata = {
     ],
   },
   openGraph: {
-    title: "TechPYRE — Ingegneria del Software & Landing Page ad Alte Prestazioni",
-    description: siteContent.hero.subheadline,
+    title: "TechPYRE — Studio di Ingegneria ed Ecosistemi Digitali (B2B)",
+    description:
+      "Infrastrutture web ad alte prestazioni, portali operativi B2B, data engineering Server-Side e automazione commerciale RevOps. Codice e dati al 100% di proprietà dell'impresa.",
     siteName: "TechPYRE",
     locale: "it_IT",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "TechPYRE — Ingegneria del Software & Landing Page ad Alte Prestazioni",
-    description: siteContent.hero.subheadline,
+    title: "TechPYRE — Studio di Ingegneria ed Ecosistemi Digitali (B2B)",
+    description:
+      "Infrastrutture web ad alte prestazioni, portali operativi B2B, data engineering Server-Side e automazione commerciale RevOps. Codice e dati al 100% di proprietà dell'impresa.",
   },
 };
 

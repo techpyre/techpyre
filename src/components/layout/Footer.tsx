@@ -38,7 +38,7 @@ export default function Footer() {
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-xs bg-white/5 border border-white/10 text-xs font-sans text-[#CBD7E3]">
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
               <span>
-                Fondatore: <strong className="text-white font-semibold">{brand.founder}</strong>
+                Architetto di Sistemi: <strong className="text-white font-semibold">{brand.founder}</strong>
               </span>
               <span className="text-[#C5A059]">·</span>
               <span className="text-[#A4B3C6]">Operatività Nazionale</span>

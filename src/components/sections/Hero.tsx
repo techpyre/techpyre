@@ -112,7 +112,7 @@ export default function Hero() {
             <div className="pt-2 flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4">
               <div className="space-y-1">
                 <Button href={hero.primaryCta.href} variant="primary" className="w-full sm:w-auto">
-                  <span className="sm:hidden">Richiedi primo colloquio (30 min)</span>
+                  <span className="sm:hidden">Richiedi Diagnosi Architetturale</span>
                   <span className="hidden sm:inline">{hero.primaryCta.label}</span>
                   <ArrowRightIcon className="w-3.5 h-3.5 shrink-0" />
                 </Button>
@@ -142,10 +142,10 @@ export default function Hero() {
 
               <div className="space-y-0.5">
                 <div className="text-[10px] font-bold uppercase tracking-widest text-[#B8860B] font-sans">
-                  IL PATTO DI FIDUCIA
+                  STANDARD ARCHITETTURALE B2B
                 </div>
                 <h3 className="font-serif text-lg sm:text-xl text-[#0B1E36] font-semibold">
-                  Costruito intorno a te
+                  Ecosistemi Digitali Proprietari
                 </h3>
               </div>
 
@@ -153,29 +153,29 @@ export default function Hero() {
                 <div className="flex items-center gap-2 text-[#14181F]">
                   <span className="text-[#B8860B] font-bold">▪</span>
                   <span>
-                    Interlocutore diretto: <strong className="text-[#0B1E36] font-semibold">{brand.founder}</strong>{" "}
-                    (<span className="text-[#B8860B] font-semibold">riscontro in giornata</span>)
+                    Architetto di sistemi: <strong className="text-[#0B1E36] font-semibold">{brand.founder}</strong>{" "}
+                    (<span className="text-[#B8860B] font-semibold">direzione tecnica diretta</span>)
                   </span>
                 </div>
                 <div className="flex items-center gap-2 text-[#14181F]">
                   <span className="text-[#B8860B] font-bold">▪</span>
                   <span>
-                    Caricamento istantaneo: <strong className="text-[#0B1E36] font-semibold">sub-secondo</strong>{" "}
-                    (<span className="text-[#B8860B] font-semibold">zero clienti persi da ads</span>)
+                    Latenza zero: <strong className="text-[#0B1E36] font-semibold">LCP &lt; 0.4s</strong>{" "}
+                    (<span className="text-[#B8860B] font-semibold">zero dispersione traffico adv</span>)
                   </span>
                 </div>
                 <div className="flex items-center gap-2 text-[#14181F]">
                   <span className="text-[#B8860B] font-bold">▪</span>
                   <span>
-                    Tempi certi: <strong className="text-[#0B1E36] font-semibold">5–7 gg per landing</strong> ·{" "}
-                    <span className="text-[#B8860B] font-semibold">sprint a prezzo fisso</span>
+                    Data &amp; RevOps: <strong className="text-[#0B1E36] font-semibold">GTM Server-Side</strong> ·{" "}
+                    <span className="text-[#B8860B] font-semibold">automazione pipeline CRM</span>
                   </span>
                 </div>
                 <div className="flex items-center gap-2 text-[#14181F]">
                   <span className="text-[#B8860B] font-bold">▪</span>
                   <span>
                     Proprietà integrale: <strong className="text-[#0B1E36] font-semibold">100% dell&apos;azienda</strong>{" "}
-                    (<span className="text-[#B8860B] font-semibold">zero canoni di noleggio</span>)
+                    (<span className="text-[#B8860B] font-semibold">zero lock-in o noleggi</span>)
                   </span>
                 </div>
               </div>
@@ -186,7 +186,7 @@ export default function Hero() {
                   href="/studio"
                   className="inline-flex items-center justify-center gap-2 w-full py-2.5 px-4 rounded-sm bg-[#0B1E36] hover:bg-[#142944] active:scale-[0.99] text-[#F8F7F4] text-xs font-semibold tracking-wide transition-all shadow-xs border border-[#0B1E36] whitespace-nowrap group"
                 >
-                  <span>Leggi il profilo dello studio</span>
+                  <span>Esplora tesi strategica e metodo</span>
                   <ArrowRightIcon className="w-3.5 h-3.5 text-[#B8860B] shrink-0 transition-transform group-hover:translate-x-1" />
                 </Link>
               </div>
@@ -371,7 +371,7 @@ export default function Hero() {
               <div className="flex items-center justify-between pb-2">
                 <div className="flex items-center gap-2">
                   <span className="text-[10px] font-mono font-bold uppercase tracking-wider text-[#B8860B]">
-                    [01] SERVIZI & TARIFFE B2B
+                    [01] I 4 PILASTRI ARCHITETTURALI
                   </span>
                   <span className="text-[10px] font-mono text-[#5A6270]">
                     ({activeServiceIndex + 1}/{serviceList.length})
@@ -409,7 +409,7 @@ export default function Hero() {
                     title="Vai alla pagina con il listino completo e il simulatore"
                   >
                     <span className="hidden sm:inline font-sans text-[11px] text-[#5A6270] group-hover:text-[#0B1E36] transition-colors">
-                      Listino completo
+                      Tutti i pilastri
                     </span>
                     <span className="w-6 h-6 rounded-xs bg-white border border-[#E8E2D5] group-hover:border-[#0B1E36] group-hover:bg-[#F8F7F4] flex items-center justify-center transition-all shadow-2xs">
                       <ArrowUpRightIcon className="w-3.5 h-3.5 text-[#0B1E36] group-hover:text-[#B8860B] transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
@@ -433,7 +433,7 @@ export default function Hero() {
                     <div className="space-y-3">
                       <div className="flex items-center justify-between">
                         <span className="text-[10px] font-mono font-bold uppercase tracking-wider text-[#B8860B]">
-                          [{currentService.number}] PIANO OPERATIVO
+                          [{currentService.number}] PILASTRO ARCHITETTURALE
                         </span>
                         <span className="text-[10px] font-mono text-[#5A6270] bg-[#F8F7F4] border border-[#E8E2D5] px-2 py-0.5 rounded-xs">
                           {currentService.timing}
@@ -480,7 +480,7 @@ export default function Hero() {
                         href="/servizi"
                         className="w-full py-2.5 px-4 rounded-sm bg-[#B8860B] hover:bg-[#9A7009] active:scale-[0.99] text-white font-sans text-xs font-semibold tracking-wide transition-all shadow-2xs inline-flex items-center justify-center gap-2 group/btn"
                       >
-                        <span>Configura e calcola preventivo</span>
+                        <span>Configura architettura e parametri</span>
                         <ArrowRightIcon className="w-3.5 h-3.5 shrink-0 transition-transform group-hover/btn:translate-x-1" />
                       </Link>
                     </div>

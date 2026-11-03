@@ -4,7 +4,7 @@ import CaseStudies from "@/components/sections/CaseStudies";
 import { siteContent } from "@/config/siteContent";
 
 export const metadata: Metadata = {
-  title: "Casi Studio & Architetture Reference",
+  title: "Architetture Reference & Ecosistemi Dimostrativi B2B",
   description: siteContent.caseStudies.subtitle,
   alternates: { canonical: "/progetti" },
 };
