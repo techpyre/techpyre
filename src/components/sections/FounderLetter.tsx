@@ -136,10 +136,10 @@ export default function FounderLetter() {
 
             <div className="space-y-1">
               <span className="text-[10px] font-mono font-bold uppercase tracking-wider text-[#B8860B]">
-                TESI STRATEGICA &amp; METODO INGEGNERISTICO IN 4 FASI
+                LO STUDIO &amp; IL METODO IN 4 FASI
               </span>
               <h2 className="font-serif text-2xl sm:text-3xl text-[#14181F] font-normal tracking-tight">
-                Dalla Vetrina Statica all&apos;Ecosistema Digitale Proprietario
+                Dalla Vetrina Statica all&apos;Ecosistema Proprietario
               </h2>
             </div>
 
@@ -223,11 +223,11 @@ export default function FounderLetter() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 items-stretch">
             {/* Approccio Tradizionale / Low-Cost */}
             <div className="p-5 sm:p-6 rounded-sm bg-white border border-[#E8E2D5] space-y-3 shadow-2xs">
-              <div className="flex items-center justify-between border-b border-[#E8E2D5] pb-2.5">
+              <div className="flex flex-wrap items-center justify-between gap-1 border-b border-[#E8E2D5] pb-2.5">
                 <span className="text-[10px] sm:text-[11px] font-mono uppercase font-bold text-[#5A6270]">
-                  APPROCCIO TRADIZIONALE &amp; NO-CODE
+                  APPROCCIO TRADIZIONALE
                 </span>
-                <span className="text-rose-600 text-xs font-mono font-bold">✕ Fornitori generalisti / Low-Cost</span>
+                <span className="text-rose-600 text-xs font-mono font-bold">✕ Standard / Low-Cost</span>
               </div>
               <ul className="space-y-2 text-xs font-sans text-[#5A6270]">
                 {founder.comparison.legacyPoints.map((point, i) => (
@@ -242,9 +242,9 @@ export default function FounderLetter() {
             {/* Modello TechPYRE */}
             <div className="p-5 sm:p-6 rounded-sm bg-white border-2 border-[#B8860B] space-y-3 shadow-xs relative">
               <div className="absolute top-0 left-0 right-0 h-[2px] bg-[#B8860B]" />
-              <div className="flex items-center justify-between border-b border-[#E8E2D5] pb-2.5">
+              <div className="flex flex-wrap items-center justify-between gap-1 border-b border-[#E8E2D5] pb-2.5">
                 <span className="text-[10px] sm:text-[11px] font-mono uppercase font-bold text-[#B8860B]">
-                  INGEGNERIA DIGITALE TECHPYRE
+                  MODELLO TECHPYRE
                 </span>
                 <span className="text-emerald-700 text-xs font-mono font-bold">✓ Ecosistema Proprietario</span>
               </div>

@@ -35,7 +35,7 @@ export default function ContactBox() {
     name: "",
     company: "",
     contact: "",
-    service: services.items[0]?.name || "Audit Tecnico & Consulenza Architetturale",
+    service: services.items[0]?.name || "Infrastrutture Web & Architetture di Conversione",
     message: "",
   });
 

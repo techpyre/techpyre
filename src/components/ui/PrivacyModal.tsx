@@ -104,7 +104,7 @@ export default function PrivacyModal({ isOpen, onClose }: PrivacyModalProps) {
                   I dati conferiti spontaneamente dall&apos;utente tramite i moduli di richiesta (Nome, Ragione Sociale, Email Aziendale, Recapito Telefonico e dettagli del progetto) sono trattati esclusivamente per:
                 </p>
                 <ul className="list-disc pl-5 space-y-0.5 pt-0.5">
-                  <li>Dare riscontro a richieste di preventivo, audit preliminari o sessioni conoscitive;</li>
+                  <li>Dare riscontro a richieste di Sessione di Diagnosi, preventivi o analisi tecniche;</li>
                   <li>Definire le specifiche tecniche e commerciali pattuite tra le parti;</li>
                   <li>Adempiere agli obblighi legali, amministrativi e fiscali connessi alla prestazione.</li>
                 </ul>
