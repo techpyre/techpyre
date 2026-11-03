@@ -1,0 +1,18 @@
+{
+  "slug": "valmo",
+  "targetUrl": "https://www.valmo.it",
+  "searchKeyword": "lavorazioni meccaniche padova",
+  "measuredResponseMs": 1264,
+  "renderBlockingScripts": 21,
+  "estimatedMobileLcpSeconds": 12.8,
+  "extractedEmails": [
+    "valmosnc@libero.it",
+    "info@valmo.it"
+  ],
+  "extractedPhones": [
+    "+39 049 604088",
+    "0000000",
+    "0220902"
+  ],
+  "extractedVat": "00209070283"
+}

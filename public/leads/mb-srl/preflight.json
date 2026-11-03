@@ -1,0 +1,18 @@
+{
+  "slug": "mb-srl",
+  "targetUrl": "http://www.mb-srl.com",
+  "searchKeyword": "carpenteria metallica brescia",
+  "measuredResponseMs": 2995,
+  "renderBlockingScripts": 25,
+  "estimatedMobileLcpSeconds": 12.8,
+  "extractedEmails": [
+    "boschettimb@gmail.com",
+    "info@mb-srl.com"
+  ],
+  "extractedPhones": [
+    "+39 338 2163275",
+    "+390309961444",
+    "+39 030 9961444"
+  ],
+  "extractedVat": "03384680983"
+}

@@ -1,0 +1,90 @@
+=====================================================================
+OUTBOUND PACK - FEDERICI UBALDO (macchinepercucirebologna)
+=====================================================================
+Titolare / Decision Maker : Direzione Federici Ubaldo
+Email Target              : federiciubaldo@inwind.it
+Telefono / WhatsApp       : +39 051 221876
+Città                     : Bologna
+P.IVA                     : 02228011207
+LCP Sito Attuale          : 8.6s (Score Mobile: 32/100)
+URL Demo (Brand-Neutral)  : https://www.techpyre.eu/demo/macchinepercucirebologna
+Strategia Qualifica       : DIRECT_BUYER
+Segnali MarTech / Agenzia : Nessuno stack avanzato rilevato
+Agenzia Rilevata Footer   : Nessuna agenzia esterna firmata nel footer
+Check Anti-Spam 1ª Email  : 165 parole | Link: ✅ ZERO LINK (Inbox Sicura)
+
+---------------------------------------------------------------------
+1. PRIMA EMAIL AL TITOLARE (Plain-Text, Zero Link)
+---------------------------------------------------------------------
+A: federiciubaldo@inwind.it
+Oggetto: Infrastruttura web e resa campagne di Federici Ubaldo (8.6s su mobile)
+
+Buongiorno, alla cortese attenzione della Direzione di Federici Ubaldo,
+
+mi chiamo Riccardo Granza e sono il fondatore di TechPyre Studio: progettiamo infrastrutture web ad alte prestazioni, tracciamenti Server-Side e automazioni CRM per le aziende B2B che investono in campagne su Meta e Google.
+
+Analizzando la vostra pagina "Federici Ubaldo: Ingegneria, Forniture e Soluzioni", abbiamo rilevato che su smartphone impiega 8.6 secondi a caricarsi, senza pre-qualifica dei contatti ne invio automatico al CRM: questo disperde oltre meta dei clic pubblicitari e fino al 50% dei dati di conversione.
+
+Per presentarci in modo concreto, abbiamo ingegnerizzato una versione dimostrativa istantanea (0.3s) in Next.js con i vostri contenuti, qualificatore contatti e predisposizione CRM/Server-Side (fornita a corpo da 900 euro, zero canoni di noleggio e 100% di proprieta del codice). Se vi fa piacere provarla dal telefono, rispondetemi pure 'LINK' qui sotto e ve lo giro subito.
+
+Un cordiale saluto,
+Riccardo Granza
+Fondatore & Architetto di Sistemi Digitali · TechPyre Studio
+Tel & WhatsApp B2B: +39 379 115 9352
+
+---------------------------------------------------------------------
+2. FOLLOW-UP EMAIL (Quando risponde "LINK" o "SÌ")
+---------------------------------------------------------------------
+A: federiciubaldo@inwind.it
+Oggetto: Re: Infrastruttura web e resa campagne di Federici Ubaldo (8.6s su mobile)
+
+Buongiorno,
+
+grazie per il riscontro. Ecco il link diretto per testare dal telefono l'infrastruttura dimostrativa da 0.3s progettata per Federici Ubaldo:
+
+https://www.techpyre.eu/demo/macchinepercucirebologna
+
+Questa architettura in Next.js/TypeScript elimina i 8.6 secondi di attesa su mobile, integra la pre-qualifica della richiesta ed e gia predisposta per il tracciamento Server-Side (GTM / Meta CAPI) e l'invio diretto via API/Webhook al vostro CRM (soluzione chiavi in mano a partire da 900 euro a corpo, zero canoni di noleggio e piena proprieta del codice).
+
+Se desiderate approfondire come integrarla nei vostri flussi commerciali, sono a disposizione per una breve Sessione di Diagnosi Architetturale di 30 minuti.
+
+Un cordiale saluto,
+Riccardo Granza
+Fondatore & Architetto di Sistemi Digitali · TechPyre Studio
+https://www.techpyre.eu · Tel & WhatsApp B2B: +39 379 115 9352
+
+---------------------------------------------------------------------
+3. DM INSTAGRAM / FACEBOOK / WHATSAPP (+ public/leads/macchinepercucirebologna/new-demo-mobile.png)
+---------------------------------------------------------------------
+Buongiorno Direzione, sono Riccardo Granza, fondatore di TechPyre Studio (progettiamo infrastrutture web in Next.js, tracciamenti Server-Side e automazioni CRM per aziende B2B). Ho analizzato la vostra pagina "Federici Ubaldo: Ingegneria, Forniture e Soluzioni B2B a Bologna": da smartphone impiega 8.6 secondi ad aprirsi. Per presentarci vi abbiamo ingegnerizzato una versione dimostrativa istantanea (0.3s) con pre-qualifica lead e predisposizione CRM: le ho inviato i dettagli via email, se le fa piacere provarla dal telefono mi scriva pure qui e le giro il link!
+
+---------------------------------------------------------------------
+4. RISPOSTA ANTI-OBIEZIONE "CI SEGUE GIÀ UN'AGENZIA" (Coesistenza / White-Label)
+---------------------------------------------------------------------
+La capisco perfettamente, e infatti non sostituiamo in alcun modo l'agenzia che vi segue le campagne pubblicitarie.
+
+Il nostro e un intervento puramente ingegneristico (anche in White-Label): forniamo alla vostra agenzia l'infrastruttura Next.js da 0.3s sul vostro dominio, con tracciamento Server-Side (GTM / Meta CAPI) e collegamento diretto API/Webhook al vostro CRM, cosi i clic che vi portano smettono di disperdersi durante i 8.6 secondi di caricamento.
+
+Puo girare direttamente anche a loro questo link di test:
+
+https://www.techpyre.eu/demo/macchinepercucirebologna
+
+---------------------------------------------------------------------
+5. PITCH B2B2B WHITE-LABEL DIRETTO ALL'AGENZIA (Se vuoi vendere all'Agenzia)
+---------------------------------------------------------------------
+Oggetto: Partnership tecnica White-Label su infrastruttura web e Server-Side di Federici Ubaldo (8.6s -> 0.3s)
+
+Buongiorno,
+
+mi chiamo Riccardo Granza e sono il fondatore di TechPyre Studio: siamo uno studio di ingegneria digitale specializzato nello sviluppo di infrastrutture Next.js (< 0.4s), Server-Side Tracking (GTM / Meta CAPI) e integrazioni CRM in modalita White-Label per le Web e Performance Agency.
+
+Abbiamo notato che seguite il progetto digitale di Federici Ubaldo. Le creativita sono ben strutturate, ma la pagina attuale su cui atterra il traffico mobile impiega 8.6 secondi a caricare, penalizzando il tasso di conversione e la raccolta dati.
+
+Abbiamo gia ingegnerizzato una versione Next.js da 0.3s per Federici Ubaldo pronta in White-Label con qualificatore lead e predisposizione GTM Server-Side/CRM: potete mostrarla direttamente al vostro cliente come upgrade tecnico o collegarla al vostro stack.
+
+Se vi fa piacere vedere l'anteprima gia pronta, rispondetemi pure 'LINK' e ve la giro subito.
+
+Un cordiale saluto,
+Riccardo Granza · Fondatore & Architetto di Sistemi Digitali · TechPyre Studio
+Tel & WhatsApp B2B: +39 379 115 9352
+=====================================================================

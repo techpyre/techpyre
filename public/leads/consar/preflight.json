@@ -1,0 +1,17 @@
+{
+  "slug": "consar",
+  "targetUrl": "http://www.consar.it",
+  "searchKeyword": "macchinari industriali bologna",
+  "measuredResponseMs": 576,
+  "renderBlockingScripts": 36,
+  "estimatedMobileLcpSeconds": 10.8,
+  "extractedEmails": [
+    "consar@consar.it"
+  ],
+  "extractedPhones": [
+    "+39 0544 469111",
+    "003905444691",
+    "0544 469111"
+  ],
+  "extractedVat": "00175490390"
+}

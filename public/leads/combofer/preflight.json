@@ -1,0 +1,17 @@
+{
+  "slug": "combofer",
+  "targetUrl": "http://www.combofer.it",
+  "searchKeyword": "carpenteria metallica brescia",
+  "measuredResponseMs": 1155,
+  "renderBlockingScripts": 14,
+  "estimatedMobileLcpSeconds": 12.1,
+  "extractedEmails": [
+    "info@combofer.com"
+  ],
+  "extractedPhones": [
+    "+39 030 800699",
+    "003903080069",
+    "030.800699"
+  ],
+  "extractedVat": "03556860983"
+}

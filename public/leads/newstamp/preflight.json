@@ -1,0 +1,17 @@
+{
+  "slug": "newstamp",
+  "targetUrl": "http://www.newstamp.it",
+  "searchKeyword": "lavorazioni meccaniche padova",
+  "measuredResponseMs": 5162,
+  "renderBlockingScripts": 8,
+  "estimatedMobileLcpSeconds": 12.8,
+  "extractedEmails": [
+    "newstamp@newstamp.it"
+  ],
+  "extractedPhones": [
+    "+39 0425 702333",
+    "0425702333",
+    "0425 702333"
+  ],
+  "extractedVat": "01164970293"
+}
