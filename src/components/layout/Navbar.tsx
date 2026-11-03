@@ -38,33 +38,45 @@ export default function Navbar() {
 
   useEffect(() => {
     let lastScrollY = window.scrollY;
+    let accumulatedDiff = 0;
 
     const handleScrollUpdate = () => {
       const currentScrollY = window.scrollY;
-      setScrolled(currentScrollY > 20);
+      setScrolled(currentScrollY > 16);
 
-      // Se il menu a schermo intero è aperto, mantieni sempre visibile
+      // Se il menu mobile è aperto, mantieni sempre visibile
       if (mobileMenuOpen) {
         setIsVisible(true);
+        lastScrollY = currentScrollY;
+        accumulatedDiff = 0;
         return;
       }
 
-      // Nei primi 90px della pagina rimane sempre visibile
-      if (currentScrollY <= 90) {
+      // Nei primi 70px della pagina rimane sempre visibile
+      if (currentScrollY <= 70) {
         setIsVisible(true);
         lastScrollY = Math.max(0, currentScrollY);
+        accumulatedDiff = 0;
         return;
       }
 
-      const diff = currentScrollY - lastScrollY;
+      const delta = currentScrollY - lastScrollY;
+      lastScrollY = currentScrollY;
 
-      // Movimento intenzionale: 30px in discesa per nascondere, 20px in salita per mostrare
-      if (diff > 30) {
+      // Se cambia direzione di scroll, azzera l'accumulatore per una risposta immediata
+      if ((delta > 0 && accumulatedDiff < 0) || (delta < 0 && accumulatedDiff > 0)) {
+        accumulatedDiff = 0;
+      }
+
+      accumulatedDiff += delta;
+
+      // Soglia calibrata: 28px in discesa per nascondere, 12px in salita per riapparire subito
+      if (accumulatedDiff > 28) {
         setIsVisible(false);
-        lastScrollY = currentScrollY;
-      } else if (diff < -20) {
+        accumulatedDiff = 0;
+      } else if (accumulatedDiff < -12) {
         setIsVisible(true);
-        lastScrollY = currentScrollY;
+        accumulatedDiff = 0;
       }
     };
 
@@ -97,23 +109,51 @@ export default function Navbar() {
 
   return (
     <>
+      {/* Filetto di progressione lettura persistente a bordo schermo quando la navbar si ritrae */}
+      <div
+        className={`fixed top-0 left-0 right-0 h-[2px] bg-[#E8E2D5]/50 z-50 pointer-events-none transition-opacity duration-500 ${
+          !isVisible && scrolled ? "opacity-100" : "opacity-0"
+        }`}
+      >
+        <motion.div
+          style={{ scaleX: scrollYProgress, transformOrigin: "0%" }}
+          className="h-full bg-[#B8860B]"
+        />
+      </div>
+
       {/* 
         HEADER CONTAINER:
-        - Su Mobile: Barra volante essenziale (Logo + Hamburger)
-        - Su Desktop: Barra classica a piena larghezza con CTA inclusa
+        - Animazione Framer Motion calibrata: scorrimento verticale fluido e presente (0.52s)
+          senza scatti né restringimenti orizzontali invasivi.
       */}
-      <header
-        className={`fixed z-50 bg-[#F8F7F4] border border-[#E8E2D5] transition-[transform,opacity,box-shadow] duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] 
+      <motion.header
+        initial={false}
+        animate={{
+          y: isVisible ? "0%" : "-118%",
+          opacity: isVisible ? 1 : 0,
+        }}
+        transition={{
+          y: {
+            duration: isVisible ? 0.46 : 0.54,
+            ease: [0.22, 1, 0.36, 1],
+          },
+          opacity: {
+            duration: isVisible ? 0.32 : 0.44,
+            delay: isVisible ? 0 : 0.06,
+            ease: [0.22, 1, 0.36, 1],
+          },
+        }}
+        className={`fixed z-50 bg-[#F8F7F4]/95 backdrop-blur-md border border-[#E8E2D5] transition-[box-shadow,border-color,background-color] duration-300
           /* Geometria Mobile: Isola Volante */
-          top-[calc(env(safe-area-inset-top,0px)+0.75rem)] left-3.5 right-3.5 sm:left-6 sm:right-6 rounded-sm shadow-md shadow-black/6
+          top-[calc(env(safe-area-inset-top,0px)+0.75rem)] left-3.5 right-3.5 sm:left-6 sm:right-6 rounded-sm
           /* Geometria Desktop: Classica Piena Larghezza */
-          lg:top-0 lg:left-0 lg:right-0 lg:rounded-none lg:border-x-0 lg:border-t-0 lg:border-b lg:shadow-none
+          lg:top-0 lg:left-0 lg:right-0 lg:rounded-none lg:border-x-0 lg:border-t-0 lg:border-b
+          ${!isVisible ? "pointer-events-none" : ""}
           ${
-            isVisible
-              ? "translate-y-0 opacity-100 scale-100"
-              : "-translate-y-24 opacity-0 scale-[0.98] pointer-events-none"
-          } 
-          ${scrolled ? "shadow-lg shadow-black/8 lg:shadow-xs" : ""}`}
+            scrolled
+              ? "shadow-lg shadow-[#0B1E36]/8 border-[#D8CFC0] lg:shadow-sm lg:shadow-[#0B1E36]/5"
+              : "shadow-md shadow-black/5 lg:shadow-none"
+          }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 py-2.5 sm:py-3 lg:py-3.5 flex items-center justify-between">
           {/* Logo Tipografico Ufficiale */}
@@ -197,7 +237,7 @@ export default function Navbar() {
           style={{ scaleX: scrollYProgress, transformOrigin: "0%" }}
           className="absolute bottom-0 left-0 right-0 h-[2px] bg-[#B8860B] rounded-b-sm pointer-events-none"
         />
-      </header>
+      </motion.header>
 
       {/* 
         FLOATING QUICK NAV (SOLO SU MOBILE) IN BASSO A SINISTRA
