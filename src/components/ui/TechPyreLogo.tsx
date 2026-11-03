@@ -23,13 +23,13 @@ export default function TechPyreLogo({
 
   return (
     <div
-      className={`inline-flex items-baseline font-sans font-extrabold tracking-tight select-none ${sizeClasses[size]} ${className}`}
+      className={`inline-flex items-baseline font-serif font-bold tracking-tight select-none ${sizeClasses[size]} ${className}`}
     >
       <span className={isDark ? "text-white" : "text-[#14181F]"}>
         Tech
       </span>
       <span className="text-[#B8860B]">
-        PYRE
+        Pyre
       </span>
     </div>
   );

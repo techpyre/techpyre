@@ -121,7 +121,7 @@ export default function ProjectEstimator() {
             </p>
           </div>
 
-          <div className="text-xs font-mono text-[#5A6270] bg-white border border-[#E8E2D5] p-3 rounded-sm shrink-0 self-start md:self-auto shadow-2xs">
+          <div className="text-xs font-sans text-[#5A6270] bg-white border border-[#E8E2D5] p-3 rounded-sm shrink-0 self-start md:self-auto shadow-2xs">
             <div className="text-[10px] font-sans uppercase font-bold text-[#5A6270]">PREZZO CHIARO</div>
             <div className="text-[#0B1E36] font-bold text-xs sm:text-sm">Preventivo chiuso prima dell&apos;avvio</div>
           </div>
@@ -157,14 +157,14 @@ export default function ProjectEstimator() {
                           {opt.name}
                         </span>
                         {isSelected ? (
-                          <span className="w-4 h-4 rounded-xs bg-[#B8860B] text-white text-[10px] flex items-center justify-center font-mono shrink-0 mt-0.5">
+                          <span className="w-4 h-4 rounded-xs bg-[#B8860B] text-white text-[10px] flex items-center justify-center font-sans font-bold shrink-0 mt-0.5">
                             ✓
                           </span>
                         ) : (
                           <span className="w-4 h-4 rounded-xs border border-[#E8E2D5] bg-[#F8F7F4] shrink-0 mt-0.5" />
                         )}
                       </div>
-                      <div className="text-xs font-mono font-bold pt-0.5 text-[#B8860B]">
+                      <div className="text-sm font-serif font-bold pt-0.5 text-[#B8860B]">
                         {opt.basePrice}
                       </div>
                       <div
@@ -214,7 +214,7 @@ export default function ProjectEstimator() {
                     >
                       <div className="flex items-center gap-2.5">
                         <div
-                          className={`w-4 h-4 rounded-xs border flex items-center justify-center text-[10px] font-mono transition-colors shrink-0 ${
+                          className={`w-4 h-4 rounded-xs border flex items-center justify-center text-[10px] font-sans font-bold transition-colors shrink-0 ${
                             isChecked
                               ? "bg-[#B8860B] border-[#B8860B] text-white"
                               : "border-[#E8E2D5] bg-white"
@@ -230,7 +230,7 @@ export default function ProjectEstimator() {
                           {addon.label}
                         </span>
                       </div>
-                      <span className="text-[10px] font-mono text-[#5A6270] shrink-0 pl-1">
+                      <span className="text-[10px] font-sans font-medium text-[#5A6270] shrink-0 pl-1">
                         {addon.cost}
                       </span>
                     </div>
@@ -267,7 +267,7 @@ export default function ProjectEstimator() {
                 </div>
                 <div className="flex justify-between items-center text-xs border-t border-[#E8E2D5] pt-2">
                   <span className="text-[#5A6270] font-sans">Fascia Economica:</span>
-                  <span className="font-mono font-bold text-[#B8860B]">
+                  <span className="font-serif text-sm font-bold text-[#B8860B]">
                     {selectedService.basePrice}
                   </span>
                 </div>
@@ -282,7 +282,7 @@ export default function ProjectEstimator() {
                 <div className="border-t border-[#E8E2D5] pt-2 space-y-1">
                   <div className="flex justify-between items-center text-xs">
                     <span className="text-[#5A6270] font-sans">Moduli / Requisiti:</span>
-                    <span className="font-mono text-[11px] font-semibold text-[#0B1E36]">
+                    <span className="font-sans text-[11px] font-semibold text-[#0B1E36]">
                       {selectedAddons.length} attiv{selectedAddons.length === 1 ? "o" : "i"}
                     </span>
                   </div>

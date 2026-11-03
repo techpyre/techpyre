@@ -305,20 +305,11 @@ export default function Navbar() {
         <Link
           href="/#contatto"
           aria-label="Richiedi incontro di 30 minuti"
-          className="relative inline-flex p-[1.5px] rounded-sm overflow-hidden group cursor-pointer shadow-xl shadow-black/30 active:scale-95 transition-transform"
+          className="inline-flex rounded-sm bg-[#0A192F] hover:bg-[#142944] border border-[#C5A059]/60 text-white px-3.5 py-3 items-center gap-2 font-sans font-bold text-xs tracking-wide min-h-[44px] shadow-xl shadow-black/30 active:scale-95 transition-all group cursor-pointer"
         >
-          {/* Bordo sbrilluccicoso rotante */}
-          <span
-            aria-hidden="true"
-            className="absolute inset-[-150%] bg-[conic-gradient(from_0deg_at_50%_50%,transparent_0deg,transparent_250deg,#C5A059_300deg,#FFFFFF_340deg,#B8860B_360deg)] animate-[spin_3s_linear_infinite] motion-reduce:animate-none pointer-events-none"
-          />
-
-          {/* Corpo del FAB mobile */}
-          <div className="relative z-10 bg-[#0A192F] text-white px-3.5 py-3 rounded-[1px] flex items-center gap-2 font-sans font-bold text-xs tracking-wide min-h-[44px]">
-            <CalendarIcon className="w-4 h-4 text-[#C5A059] shrink-0" />
-            <span className="whitespace-nowrap">Diagnosi 30m</span>
-            <ArrowRightIcon className="w-3.5 h-3.5 text-[#C5A059] shrink-0 group-hover:translate-x-0.5 transition-transform" />
-          </div>
+          <CalendarIcon className="w-4 h-4 text-[#C5A059] shrink-0" />
+          <span className="whitespace-nowrap">Diagnosi 30m</span>
+          <ArrowRightIcon className="w-3.5 h-3.5 text-[#C5A059] shrink-0 group-hover:translate-x-0.5 transition-transform" />
         </Link>
       </div>
 
@@ -342,9 +333,9 @@ export default function Navbar() {
               transition={{ duration: 0.2, ease: [0.22, 1, 0.36, 1] }}
               className="fixed top-[calc(env(safe-area-inset-top,0px)+3.85rem)] right-3.5 sm:right-6 w-60 sm:w-64 bg-white/98 backdrop-blur-xl rounded-sm border border-[#E8E2D5] shadow-2xl z-50 p-2.5 space-y-1.5"
             >
-              <div className="flex items-center justify-between px-2 py-1 text-[9px] font-mono font-bold uppercase tracking-widest text-[#B8860B] border-b border-[#E8E2D5]/70">
+              <div className="flex items-center justify-between px-2 py-1 text-[9px] font-sans font-bold uppercase tracking-widest text-[#B8860B] border-b border-[#E8E2D5]/70">
                 <span>Navigazione</span>
-                <span className="text-[#5A6270] font-sans font-normal">TechPYRE</span>
+                <span className="text-[#5A6270] font-serif font-semibold">TechPyre</span>
               </div>
 
               <nav className="flex flex-col space-y-0.5" aria-label="Menu mobile">

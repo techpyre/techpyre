@@ -2,8 +2,8 @@
 
 @theme {
   --font-serif: var(--font-serif), "EB Garamond", Garamond, Georgia, serif;
-  --font-sans: var(--font-sans), "Inter", system-ui, -apple-system, sans-serif;
-  --font-mono: var(--font-mono), "JetBrains Mono", ui-monospace, Menlo, Monaco, monospace;
+  --font-sans: var(--font-sans), "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-mono: var(--font-sans), "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
 
   --color-alabaster: #F8F7F4;
   --color-alabaster-card: #FFFFFF;

@@ -9,7 +9,7 @@ import { SiteContent } from "@/types/content";
  */
 export const siteContent: SiteContent = {
   brand: {
-    name: "TechPYRE",
+    name: "TechPyre",
     founder: "Riccardo Granza",
     tagline:
       "Studio di Ingegneria ed Ecosistemi Digitali per imprese B2B.",
@@ -255,7 +255,7 @@ export const siteContent: SiteContent = {
   founder: {
     eyebrow: "DIREZIONE TECNICA · LO STUDIO E IL METODO",
     title: "Perché il 95% dei siti aziendali è un costo morto. E come lo trasformiamo in un asset.",
-    subtitle: "Posizionamento e metodo di lavoro di Riccardo Granza, Architetto di Sistemi Digitali e fondatore di TechPYRE.",
+    subtitle: "Posizionamento e metodo di lavoro di Riccardo Granza, Architetto di Sistemi Digitali e fondatore di TechPyre.",
     name: "Riccardo Granza",
     role: "Fondatore & Architetto di Sistemi Digitali",
     ageBadge: "Architetto di Sistemi Digitali",
@@ -263,8 +263,8 @@ export const siteContent: SiteContent = {
       "Ingegneria del software, controllo dei dati e automazione dei processi commerciali per imprese B2B.",
     manifesto: [
       "Oggi commissionare una semplice vetrina statica significa immobilizzare budget in un costo morto. Una pagina scollegata dai processi aziendali, che impiega sei secondi a caricarsi sul telefono e perde metà dei tracciamenti, brucia investimenti pubblicitari e opportunità commerciali.",
-      "Ho fondato TechPYRE con un obiettivo preciso: unire lo sviluppo software ad alte prestazioni con il tracciamento dei dati e l'automazione della rete vendita. Progettiamo ecosistemi digitali in cui piattaforma web, analisi del ROI e CRM lavorano come un unico sistema sincronizzato.",
-      "Non vendiamo ore di lavoro né template a noleggio. Utilizziamo l'intelligenza artificiale come acceleratore ingegneristico interno per consegnare in poche settimane infrastrutture di livello enterprise, riducendo tempi e costi per le PMI strutturate.",
+      "Ho fondato TechPyre con un obiettivo preciso: unire lo sviluppo software ad alte prestazioni con il tracciamento dei dati e l'automazione della rete vendita. Progettiamo ecosistemi digitali in cui piattaforma web, analisi del ROI e CRM lavorano come un unico sistema sincronizzato.",
+      "Non vendiamo ore di lavoro né template a noleggio. Grazie a un metodo ingegneristico collaudato e ad architetture modulari proprietarie, consegniamo in poche settimane infrastrutture di livello enterprise, riducendo tempi e costi per le PMI strutturate.",
       "Lavoriamo in 4 fasi chiare: (1) Audit dei flussi attuali e delle dispersioni di traffico; (2) Sviluppo dell'infrastruttura, del tracciamento Server-Side e dei collegamenti CRM; (3) Messa online a latenza zero; (4) Ottimizzazione continua basata sui dati reali di vendita.",
       "Ogni riga di codice e ogni dato raccolto restano al 100% di proprietà della tua azienda fin dal primo giorno, garantendo piena indipendenza tecnica e un ritorno sull'investimento misurabile.",
     ],
@@ -278,7 +278,7 @@ export const siteContent: SiteContent = {
         "Processi e CRM: Moduli che inviano semplici email, costringendo i commerciali a copiare i dati a mano",
         "Prestazioni e ROI: Caricamenti lenti (4-8 secondi su mobile) che disperdono il budget pubblicitario",
       ],
-      techPyreTitle: "TechPYRE · Studio di Ingegneria Digitale",
+      techPyreTitle: "TechPyre · Studio di Ingegneria Digitale",
       techPyrePoints: [
         "Proprietà e Codice: Architettura proprietaria intestata al 100% all'azienda, zero canoni di locazione",
         "Tracciamento Dati: Infrastruttura Server-Side per misurare il ritorno reale di ogni campagna",
@@ -351,7 +351,7 @@ export const siteContent: SiteContent = {
   footer: {
     summary:
       "Studio di Ingegneria ed Ecosistemi Digitali. Infrastrutture web ad alte prestazioni, portali operativi B2B, tracciamento Server-Side e automazione CRM con proprietà del codice al 100%.",
-    copyright: `© ${new Date().getFullYear()} TechPYRE · Studio di Ingegneria ed Ecosistemi Digitali.`,
+    copyright: `© ${new Date().getFullYear()} TechPyre · Studio di Ingegneria ed Ecosistemi Digitali.`,
     links: [
       {
         title: "Navigazione",

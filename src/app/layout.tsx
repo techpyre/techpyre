@@ -1,35 +1,27 @@
 import type { Metadata, Viewport } from "next";
-import { EB_Garamond, Inter, JetBrains_Mono } from "next/font/google";
+import { EB_Garamond, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import { siteContent } from "@/config/siteContent";
 
 /**
  * =====================================================================
- * CONFIGURAZIONE FONT GLOBALI
- * - Serif: EB Garamond (organico, scultoreo, tradizione tipografica italiana)
- * - Sans: Inter (sobrio, iper-leggibile su schermi mobile e desktop)
- * - Mono: JetBrains Mono (dati tecnici, prezzi e codici)
+ * CONFIGURAZIONE FONT GLOBALI (EDITORIALE & UMANISTA, ZERO FONT ROBOTICI)
+ * - Serif: EB Garamond (tradizione tipografica classica, autorevole e calda)
+ * - Sans: Plus Jakarta Sans (umanista, naturale e iper-leggibile, mai freddo)
  * =====================================================================
  */
 const serifFont = EB_Garamond({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800"],
+  weight: ["400", "500", "600", "700"],
   style: ["normal", "italic"],
   variable: "--font-serif",
   display: "swap",
 });
 
-const sansFont = Inter({
+const sansFont = Plus_Jakarta_Sans({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
   variable: "--font-sans",
-  display: "swap",
-});
-
-const monoFont = JetBrains_Mono({
-  subsets: ["latin"],
-  weight: ["400", "500"],
-  variable: "--font-mono",
   display: "swap",
 });
 
@@ -141,7 +133,7 @@ export default function RootLayout({
   return (
     <html
       lang="it"
-      className={`${serifFont.variable} ${sansFont.variable} ${monoFont.variable}`}
+      className={`${serifFont.variable} ${sansFont.variable}`}
     >
       <head>
         <script

@@ -218,10 +218,10 @@ export default function Hero() {
               {/* Barra esterna poco fuori dal riquadro */}
               <div className="flex items-center justify-between pb-2">
                 <div className="flex items-center gap-2">
-                  <span className="text-[10px] font-mono font-bold uppercase tracking-wider text-[#B8860B]">
-                    [02] CASI STUDIO REFERENCE
+                  <span className="text-[10px] font-sans font-bold uppercase tracking-wider text-[#B8860B]">
+                    CASI STUDIO REFERENCE
                   </span>
-                  <span className="text-[10px] font-mono text-[#5A6270]">
+                  <span className="text-[10px] font-sans font-medium text-[#5A6270]">
                     ({activeProjectIndex + 1}/{projects.length})
                   </span>
                 </div>
@@ -303,7 +303,7 @@ export default function Hero() {
                       )}
 
                       {/* Badge LIVE */}
-                      <div className="absolute top-2.5 right-2.5 px-2 py-0.5 rounded-full bg-[#0B1E36]/80 backdrop-blur-xs text-[9px] font-mono text-emerald-400 font-semibold flex items-center gap-1 shadow-xs border border-white/10 pointer-events-none">
+                      <div className="absolute top-2.5 right-2.5 px-2 py-0.5 rounded-full bg-[#0B1E36]/80 backdrop-blur-xs text-[9px] font-sans tracking-wider text-emerald-400 font-semibold flex items-center gap-1 shadow-xs border border-white/10 pointer-events-none">
                         <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
                         <span>LIVE</span>
                       </div>
@@ -320,7 +320,7 @@ export default function Hero() {
                     {/* Contenuto Scheda: Esattamente come prima */}
                     <div className="p-4 sm:p-5 flex flex-col justify-between flex-1 gap-3">
                       <div className="space-y-1">
-                        <div className="text-[10px] font-mono font-bold uppercase tracking-wider text-[#B8860B]">
+                        <div className="text-[10px] font-sans font-bold uppercase tracking-wider text-[#B8860B]">
                           {currentProject.tag}
                         </div>
                         <h3 className="font-serif text-base sm:text-lg text-[#0B1E36] font-semibold leading-snug">
@@ -370,10 +370,10 @@ export default function Hero() {
               {/* Barra esterna allineata alla colonna sinistra */}
               <div className="flex items-center justify-between pb-2">
                 <div className="flex items-center gap-2">
-                  <span className="text-[10px] font-mono font-bold uppercase tracking-wider text-[#B8860B]">
-                    [01] SERVIZI B2B
+                  <span className="text-[10px] font-sans font-bold uppercase tracking-wider text-[#B8860B]">
+                    SERVIZI B2B
                   </span>
-                  <span className="text-[10px] font-mono text-[#5A6270]">
+                  <span className="text-[10px] font-sans font-medium text-[#5A6270]">
                     ({activeServiceIndex + 1}/{serviceList.length})
                   </span>
                 </div>
@@ -432,10 +432,10 @@ export default function Hero() {
                   >
                     <div className="space-y-3">
                       <div className="flex items-center justify-between">
-                        <span className="text-[10px] font-mono font-bold uppercase tracking-wider text-[#B8860B]">
-                          [{currentService.number}] SERVIZIO B2B
+                        <span className="text-[10px] font-sans font-bold uppercase tracking-wider text-[#B8860B]">
+                          SERVIZIO {currentService.number} · OFFERTA B2B
                         </span>
-                        <span className="text-[10px] font-mono text-[#5A6270] bg-[#F8F7F4] border border-[#E8E2D5] px-2 py-0.5 rounded-xs">
+                        <span className="text-[10px] font-sans font-medium text-[#5A6270] bg-[#F8F7F4] border border-[#E8E2D5] px-2 py-0.5 rounded-xs">
                           {currentService.timing}
                         </span>
                       </div>
@@ -445,7 +445,7 @@ export default function Hero() {
                           {currentService.name}
                         </h3>
                         <div className="flex items-baseline gap-2 pt-1.5">
-                          <span className="text-base sm:text-lg font-bold text-[#B8860B] font-mono">
+                          <span className="text-lg sm:text-xl font-bold text-[#B8860B] font-serif">
                             {currentService.price}
                           </span>
                           <span className="text-xs text-[#5A6270] font-sans">
@@ -460,7 +460,7 @@ export default function Hero() {
 
                       {/* Deliverables / Caratteristiche Chiave */}
                       <div className="space-y-1.5 pt-2 border-t border-[#E8E2D5]/70">
-                        <div className="text-[10px] font-mono font-bold uppercase tracking-wider text-[#0B1E36]/70">
+                        <div className="text-[10px] font-sans font-bold uppercase tracking-wider text-[#0B1E36]/70">
                           DELIVERABLE CONTRATTUALI:
                         </div>
                         <ul className="space-y-1 text-xs font-sans text-[#14181F]">

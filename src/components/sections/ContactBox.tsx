@@ -617,27 +617,21 @@ export default function ContactBox() {
                       )}
                     </div>
 
-                    <div className="relative p-[1.5px] rounded-sm overflow-hidden group cursor-pointer">
-                      <span
-                        aria-hidden="true"
-                        className="absolute inset-[-150%] bg-[conic-gradient(from_0deg_at_50%_50%,transparent_0deg,transparent_260deg,#C5A059_310deg,#FFFFFF_345deg,#B8860B_360deg)] animate-[spin_3.5s_linear_infinite] motion-reduce:animate-none pointer-events-none"
-                      />
-                      <motion.button
-                        whileTap={{ scale: 0.98 }}
-                        type="submit"
-                        disabled={status === "submitting"}
-                        className="relative z-10 w-full py-3.5 px-6 rounded-[1px] bg-[#B8860B] hover:bg-[#9a7008] text-white font-sans text-xs sm:text-sm font-bold tracking-wide transition-colors shadow-xs flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50 min-h-[44px]"
-                      >
-                        {status === "submitting" ? (
-                          <span>{contact.formLabels.submitting}</span>
-                        ) : (
-                          <>
-                            <span>{contact.formLabels.submit}</span>
-                            <ArrowRightIcon className="w-4 h-4 shrink-0" />
-                          </>
-                        )}
-                      </motion.button>
-                    </div>
+                    <motion.button
+                      whileTap={{ scale: 0.98 }}
+                      type="submit"
+                      disabled={status === "submitting"}
+                      className="w-full py-3.5 px-6 rounded-sm bg-[#B8860B] hover:bg-[#9a7008] text-white font-sans text-xs sm:text-sm font-bold tracking-wide transition-colors shadow-xs flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50 min-h-[44px]"
+                    >
+                      {status === "submitting" ? (
+                        <span>{contact.formLabels.submitting}</span>
+                      ) : (
+                        <>
+                          <span>{contact.formLabels.submit}</span>
+                          <ArrowRightIcon className="w-4 h-4 shrink-0" />
+                        </>
+                      )}
+                    </motion.button>
 
                     <p className="text-[11px] text-[#5A6270] text-center leading-relaxed">
                       Nessun vincolo preventivo · Riscontro diretto del Fondatore entro 24 ore lavorative

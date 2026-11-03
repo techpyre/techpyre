@@ -119,7 +119,7 @@ export default function CaseStudies({ variant = "teaser" }: CaseStudiesProps) {
                   )}
 
                   {/* Badge LIVE pulito e discreto in sovrimpressione */}
-                  <div className="absolute top-2.5 right-2.5 px-2 py-0.5 rounded-full bg-[#0B1E36]/80 backdrop-blur-xs text-[9px] font-mono text-emerald-400 font-semibold flex items-center gap-1 shadow-xs border border-white/10 pointer-events-none">
+                  <div className="absolute top-2.5 right-2.5 px-2 py-0.5 rounded-full bg-[#0B1E36]/80 backdrop-blur-xs text-[9px] font-sans tracking-wider text-emerald-400 font-semibold flex items-center gap-1 shadow-xs border border-white/10 pointer-events-none">
                     <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
                     <span>LIVE</span>
                   </div>
@@ -136,7 +136,7 @@ export default function CaseStudies({ variant = "teaser" }: CaseStudiesProps) {
                 {/* Contenuto Scheda: Limpido, Titolo, Descrizione Breve e 2 Bottoni (Senza Benchmark) */}
                 <div className="p-4 sm:p-5 flex flex-col justify-between flex-1 gap-3">
                   <div className="space-y-1">
-                    <div className="text-[10px] font-mono font-bold uppercase tracking-wider text-[#B8860B]">
+                    <div className="text-[10px] font-sans font-bold uppercase tracking-wider text-[#B8860B]">
                       {project.tag}
                     </div>
                     <h3 className="font-serif text-base sm:text-lg text-[#0B1E36] font-semibold leading-snug">
@@ -229,7 +229,7 @@ export default function CaseStudies({ variant = "teaser" }: CaseStudiesProps) {
             </p>
           </div>
 
-          <div className="text-xs font-mono text-[#5A6270] bg-white border border-[#E8E2D5] p-3 rounded-sm shrink-0 self-start md:self-auto shadow-2xs">
+          <div className="text-xs font-sans text-[#5A6270] bg-white border border-[#E8E2D5] p-3 rounded-sm shrink-0 self-start md:self-auto shadow-2xs">
             <div className="text-[10px] font-sans uppercase font-bold text-[#5A6270]">VERIFICA PRESTAZIONALE</div>
             <div className="text-[#0B1E36] font-bold text-xs sm:text-sm">Metriche certificate su Web Edge</div>
           </div>
@@ -267,7 +267,7 @@ export default function CaseStudies({ variant = "teaser" }: CaseStudiesProps) {
                     sizes="(max-width: 1024px) 100vw, 50vw"
                     className="object-cover object-top transition-transform duration-500 group-hover/img:scale-[1.02]"
                   />
-                  <div className="absolute top-3 right-3 px-2 py-0.5 rounded-full bg-[#0B1E36]/80 backdrop-blur-xs text-[9px] font-mono text-emerald-400 font-semibold flex items-center gap-1 shadow-xs border border-white/10 pointer-events-none">
+                  <div className="absolute top-3 right-3 px-2 py-0.5 rounded-full bg-[#0B1E36]/80 backdrop-blur-xs text-[9px] font-sans tracking-wider text-emerald-400 font-semibold flex items-center gap-1 shadow-xs border border-white/10 pointer-events-none">
                     <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
                     <span>LIVE DEMO</span>
                   </div>
@@ -278,7 +278,7 @@ export default function CaseStudies({ variant = "teaser" }: CaseStudiesProps) {
               <div className="p-5 sm:p-7 space-y-4">
                 <div className="space-y-1.5">
                   <div className="flex flex-wrap items-center justify-between gap-2">
-                    <span className="text-[10px] font-mono font-bold uppercase tracking-wider text-[#B8860B] bg-[#B8860B]/10 px-2 py-0.5 rounded-xs">
+                    <span className="text-[10px] font-sans font-bold uppercase tracking-wider text-[#B8860B] bg-[#B8860B]/10 px-2 py-0.5 rounded-xs">
                       {project.tag}
                     </span>
                     {project.clientName && (
@@ -336,7 +336,7 @@ export default function CaseStudies({ variant = "teaser" }: CaseStudiesProps) {
                       <div className="text-[9px] font-sans font-bold uppercase tracking-wider text-[#5A6270] truncate">
                         {metric.label}
                       </div>
-                      <div className="font-mono font-bold text-xs sm:text-sm text-[#0B1E36]">
+                      <div className="font-serif font-bold text-sm sm:text-base text-[#0B1E36]">
                         {metric.value}
                       </div>
                       {metric.subtext && (
@@ -372,7 +372,7 @@ export default function CaseStudies({ variant = "teaser" }: CaseStudiesProps) {
                     {project.stack.map((tech, tIdx) => (
                       <span
                         key={tIdx}
-                        className="text-[10px] font-mono px-2 py-0.5 rounded-xs bg-[#0B1E36]/5 border border-[#0B1E36]/10 text-[#0B1E36] font-medium"
+                        className="text-[10px] font-sans px-2 py-0.5 rounded-xs bg-[#0B1E36]/5 border border-[#0B1E36]/10 text-[#0B1E36] font-semibold"
                       >
                         {tech}
                       </span>

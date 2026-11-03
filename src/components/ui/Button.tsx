@@ -17,9 +17,8 @@ interface ButtonProps {
 /**
  * =====================================================================
  * COMPONENTE BOTTONE ISTITUZIONALE
- * - Bordo brillante sbrilluccicoso (Border Beam) rotante per CTA principali
- * - Stile secondario sobrio ed elegante, privo di effetti di riempimento invasivi
- * - Transizioni nitide e ponderate
+ * - Stile sobrio, solido e umano (ispirato al Private Banking tradizionale)
+ * - Zero fasci luminosi rotanti o pattern artificiali da template AI
  * =====================================================================
  */
 export default function Button({
@@ -30,44 +29,18 @@ export default function Button({
   className = "",
   type = "button",
   disabled = false,
-  withShimmer,
 }: ButtonProps) {
-  // Il bordo sbrilluccicoso è attivo per la variante primaria e gold
-  const hasShimmer =
-    withShimmer !== undefined ? withShimmer : variant === "primary" || variant === "gold";
-
-  const isShimmerActive = hasShimmer && !disabled;
-
   const variantStyles = {
     primary:
-      "bg-[#0A192F] text-[#F8F7F4] hover:bg-[#002244] transition-colors duration-200",
+      "bg-[#0B1E36] text-[#F8F7F4] border border-[#0B1E36] hover:bg-[#142944] shadow-2xs transition-colors duration-200",
     secondary:
-      "bg-white text-[#0B1E36] border border-[#E8E2D5] hover:border-[#B8860B] hover:text-[#B8860B] hover:bg-[#F8F7F4] transition-[color,background-color,border-color,box-shadow] duration-200 shadow-xs",
-    gold: "bg-[#B8860B] text-white hover:bg-[#9a7008] transition-colors duration-200",
+      "bg-white text-[#0B1E36] border border-[#E8E2D5] hover:border-[#B8860B] hover:text-[#B8860B] hover:bg-[#F8F7F4] transition-colors duration-200 shadow-2xs",
+    gold: "bg-[#B8860B] text-white border border-[#B8860B] hover:bg-[#9a7008] shadow-2xs transition-colors duration-200",
     outline:
       "bg-transparent text-[#0A192F] border border-[#0A192F]/30 hover:border-[#0A192F] hover:bg-[#0A192F]/5 transition-colors duration-200",
   };
 
-  const innerContent = isShimmerActive ? (
-    <div className="relative inline-flex p-[1.5px] rounded-sm overflow-hidden group cursor-pointer transition-transform duration-200 hover:scale-[1.01] active:scale-[0.99]">
-      {/* Bordo brillante sbrilluccicoso a fascio rotante continuo (1.5px netto) */}
-      <span
-        aria-hidden="true"
-        className="absolute inset-[-150%] bg-[conic-gradient(from_0deg_at_50%_50%,transparent_0deg,transparent_260deg,#C5A059_310deg,#FFFFFF_345deg,#B8860B_360deg)] animate-[spin_3.5s_linear_infinite] motion-reduce:animate-none pointer-events-none"
-      />
-
-      {/* Corpo del pulsante nitido */}
-      <div
-        className={`relative z-10 w-full h-full inline-flex items-center justify-center gap-2 px-5 sm:px-6 py-2.5 sm:py-3 text-xs sm:text-sm font-sans font-semibold tracking-wide rounded-[1px] ${
-          variantStyles[variant]
-        } ${disabled ? "opacity-50 cursor-not-allowed" : ""} ${className}`}
-      >
-        <span className="relative z-10 flex items-center gap-2 whitespace-nowrap">
-          {children}
-        </span>
-      </div>
-    </div>
-  ) : (
+  const innerContent = (
     <div
       className={`relative inline-flex items-center justify-center gap-2 px-5 sm:px-6 py-2.5 sm:py-3 text-xs sm:text-sm font-sans font-semibold tracking-wide rounded-sm cursor-pointer group active:scale-[0.99] ${
         variantStyles[variant]

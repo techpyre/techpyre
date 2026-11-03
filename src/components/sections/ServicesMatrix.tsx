@@ -97,8 +97,8 @@ export default function ServicesMatrix() {
                 >
                   {/* Titolo e Indice */}
                   <div className="flex items-start gap-3 sm:gap-4 lg:max-w-2xl transition-transform duration-200 group-hover:translate-x-1">
-                    <span className="font-mono text-xs sm:text-sm font-bold text-[#B8860B] pt-0.5 shrink-0">
-                      [{item.number}]
+                    <span className="font-serif italic text-base sm:text-lg font-bold text-[#B8860B] pt-0.5 shrink-0">
+                      {item.number}.
                     </span>
                     <div>
                       <h3 className="font-serif text-lg sm:text-xl md:text-2xl text-[#0B1E36] font-semibold leading-snug">
@@ -128,7 +128,7 @@ export default function ServicesMatrix() {
                       <motion.div
                         animate={{ rotate: isExpanded ? 180 : 0 }}
                         transition={{ duration: 0.25 }}
-                        className={`w-7 h-7 rounded-sm border flex items-center justify-center font-mono ${
+                        className={`w-7 h-7 rounded-sm border flex items-center justify-center font-sans ${
                           isExpanded
                             ? "bg-[#0B1E36] text-white border-[#0B1E36]"
                             : "bg-[#F8F7F4] text-[#0B1E36] border-[#E8E2D5]"
@@ -200,20 +200,14 @@ export default function ServicesMatrix() {
                             </div>
                           </div>
 
-                          <div className="relative p-[1.5px] rounded-sm overflow-hidden group cursor-pointer">
-                            <span
-                              aria-hidden="true"
-                              className="absolute inset-[-150%] bg-[conic-gradient(from_0deg_at_50%_50%,transparent_0deg,transparent_260deg,#C5A059_310deg,#FFFFFF_345deg,#B8860B_360deg)] animate-[spin_3.5s_linear_infinite] pointer-events-none"
-                            />
-                            <motion.button
-                              whileTap={{ scale: 0.98 }}
-                              onClick={() => handleSelectService(item)}
-                              className="w-full py-3 px-4 rounded-[1px] bg-[#0B1E36] hover:bg-[#003366] text-white font-sans text-xs sm:text-sm font-semibold tracking-wide transition-all shadow-xs flex items-center justify-between group/btn cursor-pointer min-h-[44px] relative z-10"
-                            >
-                              <span>{item.ctaText}</span>
-                              <ArrowRightIcon className="w-4 h-4 transition-transform group-hover/btn:translate-x-1 shrink-0" />
-                            </motion.button>
-                          </div>
+                          <motion.button
+                            whileTap={{ scale: 0.98 }}
+                            onClick={() => handleSelectService(item)}
+                            className="w-full py-3 px-4 rounded-sm bg-[#0B1E36] hover:bg-[#142944] text-white font-sans text-xs sm:text-sm font-semibold tracking-wide transition-all shadow-xs flex items-center justify-between group/btn cursor-pointer min-h-[44px]"
+                          >
+                            <span>{item.ctaText}</span>
+                            <ArrowRightIcon className="w-4 h-4 transition-transform group-hover/btn:translate-x-1 shrink-0 text-[#B8860B]" />
+                          </motion.button>
                         </div>
                       </div>
                     </motion.div>

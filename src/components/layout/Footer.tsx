@@ -93,7 +93,7 @@ export default function Footer() {
 
               <div className="space-y-3 font-sans text-xs">
                 <div>
-                  <span className="text-[10px] font-mono text-[#C5A059]/90 uppercase tracking-wider block">
+                  <span className="text-[10px] font-sans font-semibold text-[#C5A059]/90 uppercase tracking-wider block">
                     Sede Operativa
                   </span>
                   <p className="text-[#F8F7F4] font-medium leading-relaxed pt-0.5">
@@ -103,7 +103,7 @@ export default function Footer() {
                 </div>
 
                 <div>
-                  <span className="text-[10px] font-mono text-[#C5A059]/90 uppercase tracking-wider block">
+                  <span className="text-[10px] font-sans font-semibold text-[#C5A059]/90 uppercase tracking-wider block">
                     Dati Fiscali
                   </span>
                   <p className="text-[#A4B3C6] pt-0.5">
@@ -112,7 +112,7 @@ export default function Footer() {
                 </div>
 
                 <div className="space-y-1 pt-0.5">
-                  <span className="text-[10px] font-mono text-[#C5A059]/90 uppercase tracking-wider block">
+                  <span className="text-[10px] font-sans font-semibold text-[#C5A059]/90 uppercase tracking-wider block">
                     Contatto Rapido
                   </span>
                   <a
@@ -142,7 +142,7 @@ export default function Footer() {
         <div className="pt-2 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-4 text-xs font-sans text-[#A4B3C6]">
           <div className="space-y-1.5">
             <div className="flex flex-wrap items-center gap-x-2.5 gap-y-1 text-xs text-[#CBD7E3]">
-              <span>© {currentYear} TechPYRE STUDIO di Riccardo Granza</span>
+              <span>© {currentYear} TechPyre Studio di Riccardo Granza</span>
               <span className="text-[#C5A059]">·</span>
               <span>Sede Operativa: Via Carrubara Vico III n. 3, Pagliara (Messina)</span>
               <span className="text-[#C5A059]">·</span>
