@@ -14,22 +14,22 @@ export default function TechPyreLogo({
   size = "md",
 }: TechPyreLogoProps) {
   const sizeClasses = {
-    sm: "text-lg",
-    md: "text-2xl",
-    lg: "text-3xl",
+    sm: "text-base",
+    md: "text-xl",
+    lg: "text-2xl",
   };
 
   const isDark = variant === "dark";
 
   return (
     <div
-      className={`inline-flex items-baseline font-serif font-bold tracking-tight select-none ${sizeClasses[size]} ${className}`}
+      className={`inline-flex items-baseline font-sans font-extrabold tracking-tight select-none ${sizeClasses[size]} ${className}`}
     >
       <span className={isDark ? "text-white" : "text-[#14181F]"}>
         Tech
       </span>
       <span className="text-[#B8860B]">
-        Pyre
+        PYRE
       </span>
     </div>
   );
