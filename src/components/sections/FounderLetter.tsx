@@ -82,24 +82,24 @@ export default function FounderLetter() {
               {/* Garanzie e Reperibilità Istituzionale */}
               <div className="pt-3 border-t border-white/10 space-y-2 text-xs font-sans">
                 <div className="flex justify-between py-1 border-b border-white/5">
-                  <span className="text-white/60">DIREZIONE TECNICA:</span>
-                  <span className="text-white font-semibold text-right">Riccardo Granza (Digital Systems Architect)</span>
+                  <span className="text-white/60">REFERENTE:</span>
+                  <span className="text-white font-semibold text-right">Riccardo Granza</span>
                 </div>
                 <div className="flex justify-between py-1 border-b border-white/5">
-                  <span className="text-white/60">STACK INGEGNERISTICO:</span>
-                  <span className="text-white font-semibold text-right">Next.js / TypeScript / PostgreSQL</span>
+                  <span className="text-white/60">REPERIBILITÀ:</span>
+                  <span className="text-[#B8860B] font-semibold text-right">Riscontro in giornata</span>
                 </div>
                 <div className="flex justify-between py-1 border-b border-white/5">
-                  <span className="text-white/60">DATA &amp; REVOPS:</span>
-                  <span className="text-[#B8860B] font-semibold text-right">GTM Server-Side / GA4 / CRM API</span>
+                  <span className="text-white/60">FOCUS:</span>
+                  <span className="text-white font-semibold text-right">Web, Dati &amp; Automazione CRM</span>
                 </div>
                 <div className="flex justify-between py-1 border-b border-white/5">
-                  <span className="text-white/60">PROPRIETÀ ASSET:</span>
-                  <span className="text-white font-semibold text-right">100% dell&apos;Azienda (Zero lock-in)</span>
+                  <span className="text-white/60">PROPRIETÀ:</span>
+                  <span className="text-white font-semibold text-right">100% Aziendale (Zero canoni)</span>
                 </div>
                 <div className="flex justify-between py-1 border-b border-white/5">
-                  <span className="text-white/60">METODO OPERATIVO:</span>
-                  <span className="text-white font-semibold text-right">Audit · Build · Deploy · Growth</span>
+                  <span className="text-white/60">METODO:</span>
+                  <span className="text-white font-semibold text-right">Audit · Sviluppo · Rilascio · Crescita</span>
                 </div>
               </div>
 

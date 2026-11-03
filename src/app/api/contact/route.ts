@@ -176,7 +176,7 @@ export async function POST(request: NextRequest): Promise<NextResponse<ContactAp
       await new Promise((resolve) => setTimeout(resolve, 800));
 
       console.log(`\n=============================================================`);
-      console.log(`[${siteContent.brand.name} CONTACT API — MODALITÀ COLLAUDO / ZERO-CONFIG]`);
+      console.log(`[${siteContent.brand.name} CONTACT API · MODALITÀ COLLAUDO / ZERO-CONFIG]`);
       console.log(`=============================================================`);
       console.log(`Variabili SMTP non configurate in .env.local.`);
       console.log(`Il form ha simulato 800ms di elaborazione e ha registrato il contatto:`);
@@ -227,7 +227,7 @@ export async function POST(request: NextRequest): Promise<NextResponse<ContactAp
       <body>
         <div class="container">
           <div class="header">
-            <h1>Nuova Richiesta di Progetto — ${escapeHtml(siteContent.brand.name)}</h1>
+            <h1>Nuova Richiesta di Progetto · ${escapeHtml(siteContent.brand.name)}</h1>
             <p>Ricevuto dal portale ufficiale B2B</p>
           </div>
           <div class="content">
@@ -265,7 +265,7 @@ export async function POST(request: NextRequest): Promise<NextResponse<ContactAp
     `;
 
     const mailText = `
-NUOVA RICHIESTA DI PROGETTO — ${siteContent.brand.name}
+NUOVA RICHIESTA DI PROGETTO · ${siteContent.brand.name}
 -------------------------------------------------------------
 Mittente: ${rawName}
 Azienda: ${rawCompany}
@@ -282,7 +282,7 @@ Inviato tramite ${siteContent.brand.name} Contact Form
       from: `"${siteContent.brand.name} Web Engineering" <${smtpUser}>`,
       to: contactReceiver,
       replyTo: isContactAnEmail ? rawContact : undefined,
-      subject: `[${siteContent.brand.name}] Richiesta ${headerService} — ${headerCompany} (${headerName})`,
+      subject: `[${siteContent.brand.name}] Richiesta ${headerService} · ${headerCompany} (${headerName})`,
       text: mailText,
       html: mailHtml,
     });

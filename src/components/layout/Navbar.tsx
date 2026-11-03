@@ -123,7 +123,7 @@ export default function Navbar() {
               if (pathname === "/") window.scrollTo({ top: 0, behavior: "smooth" });
             }}
             className="flex items-center gap-2 group cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#B8860B] rounded-xs"
-            aria-label="TechPYRE — Torna alla pagina iniziale"
+            aria-label="TechPYRE · Torna alla pagina iniziale"
           >
             <TechPyreLogo size="md" />
           </Link>

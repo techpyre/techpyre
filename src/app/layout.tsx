@@ -56,11 +56,11 @@ export const viewport: Viewport = {
  */
 export const metadata: Metadata = {
   title: {
-    default: "TechPYRE — Studio di Ingegneria ed Ecosistemi Digitali | Architetture Web, Data & RevOps B2B",
+    default: "TechPYRE | Studio di Ingegneria ed Ecosistemi Digitali B2B",
     template: "%s | TechPYRE",
   },
   description:
-    "TechPYRE progetta e ingegnerizza ecosistemi digitali proprietari per imprese B2B: infrastrutture web Next.js/TypeScript a latenza zero, portali operativi custom, tracking Server-Side e automazione CRM (RevOps).",
+    "TechPYRE progetta ecosistemi digitali proprietari per imprese B2B: infrastrutture web ad alte prestazioni, portali operativi custom, tracciamento Server-Side e automazione CRM.",
   authors: [{ name: siteContent.brand.founder }],
   creator: siteContent.brand.name,
   metadataBase: new URL("https://www.techpyre.eu"),
@@ -90,18 +90,18 @@ export const metadata: Metadata = {
     ],
   },
   openGraph: {
-    title: "TechPYRE — Studio di Ingegneria ed Ecosistemi Digitali (B2B)",
+    title: "TechPYRE | Studio di Ingegneria ed Ecosistemi Digitali B2B",
     description:
-      "Infrastrutture web ad alte prestazioni, portali operativi B2B, data engineering Server-Side e automazione commerciale RevOps. Codice e dati al 100% di proprietà dell'impresa.",
+      "Infrastrutture web ad alte prestazioni, portali operativi B2B, tracciamento Server-Side e automazione CRM. Codice e dati al 100% di proprietà dell'impresa.",
     siteName: "TechPYRE",
     locale: "it_IT",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "TechPYRE — Studio di Ingegneria ed Ecosistemi Digitali (B2B)",
+    title: "TechPYRE | Studio di Ingegneria ed Ecosistemi Digitali B2B",
     description:
-      "Infrastrutture web ad alte prestazioni, portali operativi B2B, data engineering Server-Side e automazione commerciale RevOps. Codice e dati al 100% di proprietà dell'impresa.",
+      "Infrastrutture web ad alte prestazioni, portali operativi B2B, tracciamento Server-Side e automazione CRM. Codice e dati al 100% di proprietà dell'impresa.",
   },
 };
 

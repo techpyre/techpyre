@@ -29,30 +29,30 @@ const serviceOptions: ServiceOption[] = [
   {
     id: "infrastrutture-conversione",
     name: "Infrastrutture Web & Architetture di Conversione",
-    basePrice: "Da 900€ a 4.000€",
-    defaultTimeline: "5–7 gg / 2–3 settimane",
-    description: "Piattaforme web e landing system in Next.js/TypeScript a latenza zero, SEO programmatica e massimizzazione CRO.",
+    basePrice: "A partire da 900€",
+    defaultTimeline: "Da 5 giorni lavorativi",
+    description: "Piattaforme web e landing system in Next.js per caricamento istantaneo e conversione contatti.",
   },
   {
     id: "portali-ecosistemi-b2b",
     name: "Portali Operativi Custom & Ecosistemi B2B",
-    basePrice: "Da 5.000€ a 15.000€",
-    defaultTimeline: "4–8 settimane (a sprint)",
-    description: "Applicazioni web su misura, aree riservate RBAC clienti/fornitori, cataloghi dinamici e portali operativi B2B.",
+    basePrice: "A partire da 5.000€",
+    defaultTimeline: "Da 4 settimane (a sprint)",
+    description: "Applicazioni web su misura, aree riservate clienti/fornitori, cataloghi dinamici e portali operativi.",
   },
   {
     id: "data-engineering-tracking",
     name: "Data Engineering, Server-Side Tracking & Analytics",
-    basePrice: "Da 1.200€ a 3.000€",
-    defaultTimeline: "7–10 giorni lavorativi",
-    description: "GTM Server-Side, GA4 custom events, Conversions API e dashboard direzionali per tracciare il ROI reale.",
+    basePrice: "A partire da 1.200€",
+    defaultTimeline: "7-10 giorni lavorativi",
+    description: "Tracciamento Server-Side, GA4 avanzato e dashboard per misurare il ritorno reale delle campagne.",
   },
   {
     id: "automazione-revops-crm",
     name: "Automazione Commerciale & Integrazione CRM (RevOps)",
-    basePrice: "Da 1.500€ a 4.500€",
-    defaultTimeline: "1–2 settimane lavorative",
-    description: "Connessione diretta tra ecosistema web e rete vendita (HubSpot/CRM custom), qualificazione e lead scoring automatico.",
+    basePrice: "A partire da 1.500€",
+    defaultTimeline: "1-2 settimane lavorative",
+    description: "Collegamento diretto tra sito e rete vendita (HubSpot/CRM), qualificazione e invio automatico dei lead.",
   },
 ];
 
@@ -64,10 +64,10 @@ interface AddonOption {
 }
 
 const addonsList: AddonOption[] = [
-  { id: "crm", label: "Integrazione API/Webhook HubSpot o CRM Custom", cost: "Inclusa in RevOps" },
-  { id: "auth", label: "Area Riservata Multi-Ruolo (RBAC)", cost: "Inclusa in Portali B2B" },
-  { id: "seo", label: "Container GTM Server-Side & First-Party Data", cost: "Incluso in Data Eng." },
-  { id: "payment", label: "Ottimizzazione Latenza Zero (LCP < 0.4s)", cost: "Standard Nativo" },
+  { id: "crm", label: "Collegamento HubSpot / CRM", cost: "Su misura" },
+  { id: "auth", label: "Area Riservata Clienti/Agenti", cost: "Inclusa in Portali" },
+  { id: "seo", label: "Tracciamento Server-Side", cost: "Incluso in Data" },
+  { id: "payment", label: "Caricamento Istantaneo (< 0.4s)", cost: "Incluso" },
 ];
 
 export default function ProjectEstimator() {
@@ -111,19 +111,19 @@ export default function ProjectEstimator() {
         >
           <div className="space-y-1.5 max-w-2xl">
             <div className="text-[10px] sm:text-[11px] font-sans font-bold text-[#B8860B] uppercase tracking-widest">
-              CONFIGURATORE ARCHITETTURALE B2B · PARAMETRI DI INVESTIMENTO
+              SIMULATORE B2B · STIMA TRASPARENTE
             </div>
             <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl text-[#14181F] font-normal tracking-tight">
-              Configura il tuo ecosistema e verifica i parametri esecutivi.
+              Configura il servizio e verifica tempi e costi.
             </h2>
             <p className="text-xs sm:text-sm text-[#5A6270] font-sans leading-relaxed">
-              Seleziona il pilastro architetturale primario e i moduli di integrazione per stimare investimento CapEx, tempistiche di rilascio e specifiche tecniche.
+              Seleziona il servizio principale e i moduli opzionali per visualizzare i parametri del progetto in tempo reale.
             </p>
           </div>
 
           <div className="text-xs font-mono text-[#5A6270] bg-white border border-[#E8E2D5] p-3 rounded-sm shrink-0 self-start md:self-auto shadow-2xs">
-            <div className="text-[10px] font-sans uppercase font-bold text-[#5A6270]">MODELLO CAPEX + OPEX</div>
-            <div className="text-[#0B1E36] font-bold text-xs sm:text-sm">Investimento certo a milestone · Zero lock-in</div>
+            <div className="text-[10px] font-sans uppercase font-bold text-[#5A6270]">PREZZO CHIARO</div>
+            <div className="text-[#0B1E36] font-bold text-xs sm:text-sm">Preventivo chiuso prima dell&apos;avvio</div>
           </div>
         </motion.div>
 
@@ -314,15 +314,15 @@ export default function ProjectEstimator() {
               <div className="space-y-1.5 text-xs font-sans text-[#5A6270]">
                 <div className="flex items-center gap-2 text-[#14181F] font-medium">
                   <span className="text-[#B8860B] font-bold">▪</span>
-                  <span>Sessione di Diagnosi Architetturale preliminare (30 min)</span>
+                  <span>Sessione di Diagnosi preliminare (30 min)</span>
                 </div>
                 <div className="flex items-center gap-2 text-[#14181F] font-medium">
                   <span className="text-[#B8860B] font-bold">▪</span>
-                  <span>Proprietà integrale di codice sorgente e container dati</span>
+                  <span>Proprietà integrale di codice e dati aziendali</span>
                 </div>
                 <div className="flex items-center gap-2 text-[#14181F] font-medium">
                   <span className="text-[#B8860B] font-bold">▪</span>
-                  <span>Stack enterprise Next.js/TypeScript, GTM Server-Side e CRM API</span>
+                  <span>Zero canoni di noleggio o vincoli futuri</span>
                 </div>
               </div>
 

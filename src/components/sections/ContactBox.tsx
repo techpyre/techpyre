@@ -205,13 +205,13 @@ export default function ContactBox() {
             {/* Header del Box Allineato al Modulo Desktop */}
             <div className="p-5 sm:p-6 lg:p-7 pb-4 border-b border-[#E8E2D5] space-y-0.5">
               <div className="text-[10px] font-bold uppercase tracking-widest text-[#B8860B]">
-                DIREZIONE TECNICA &amp; ARCHITETTURA
+                REPERIBILITÀ DIRETTA
               </div>
               <h3 className="font-serif text-xl sm:text-2xl text-[#0B1E36] font-semibold">
                 Canali Diretti dello Studio
               </h3>
               <p className="text-xs text-[#5A6270]">
-                Nessun filtro commerciale: dialoghi con Riccardo Granza, Architetto di Sistemi Digitali
+                Nessun intermediario: risponde direttamente Riccardo Granza
               </p>
             </div>
 
@@ -296,7 +296,7 @@ export default function ContactBox() {
                     Orari di Reperibilità
                   </div>
                   <div className="font-serif text-base text-[#0B1E36] font-semibold">
-                    Lun — Ven · 08:30 — 19:30
+                    Lun - Ven · 08:30 - 19:30
                   </div>
                   <div className="text-[11px] text-[#5A6270] font-sans">
                     Fuso orario di Roma · Sede in Italia · Operatività nazionale
@@ -309,14 +309,14 @@ export default function ContactBox() {
                 <div className="p-3 rounded-sm bg-[#0B1E36]/5 border border-[#0B1E36]/10 flex items-start gap-2.5 text-xs text-[#0B1E36]">
                   <span className="text-[#B8860B] font-bold shrink-0 mt-0.5">▪</span>
                   <span>
-                    <strong>Infrastruttura già esistente?</strong> Integriamo GTM Server-Side, pipeline CRM e portali operativi sui vostri gestionali/ERP attuali senza interrompere l&apos;operatività.
+                    <strong>Sistemi già attivi?</strong> Integriamo tracciamenti e portali sui tuoi gestionali o CRM attuali senza fermare il lavoro.
                   </span>
                 </div>
 
                 <div className="p-3 rounded-sm bg-[#B8860B]/5 border border-[#B8860B]/20 flex items-start gap-2.5 text-xs text-[#0B1E36]">
                   <span className="text-[#B8860B] font-bold shrink-0 mt-0.5">▪</span>
                   <span>
-                    <strong>Zero gestione social:</strong> Non siamo un fornitore di contenuti creativi. Ingegnerizziamo esclusivamente l&apos;infrastruttura di conversione, il dato e l&apos;automazione RevOps.
+                    <strong>Zero intermediari:</strong> Parli direttamente con chi progetta il sistema e segue l&apos;intero sviluppo.
                   </span>
                 </div>
               </div>
@@ -363,13 +363,13 @@ export default function ContactBox() {
             {/* Header Istituzionale del Modulo su Desktop */}
             <div className="hidden lg:block p-5 sm:p-7 lg:p-8 pb-4 border-b border-[#E8E2D5] space-y-0.5">
               <div className="text-[10px] font-bold uppercase tracking-widest text-[#B8860B]">
-                PRE-QUALIFICA B2B · SESSIONE DI DIAGNOSI ARCHITETTURALE
+                RICHIESTA DIRETTA · SESSIONE DI DIAGNOSI
               </div>
               <h3 className="font-serif text-xl sm:text-2xl text-[#0B1E36] font-semibold">
-                Sottoponi la tua Infrastruttura
+                Scrivi allo Studio
               </h3>
               <p className="text-xs text-[#5A6270]">
-                Analisi tecnica preliminare di performance, tracking Server-Side e flussi CRM con riscontro entro la giornata lavorativa.
+                Riscontro garantito entro la giornata lavorativa direttamente da Riccardo Granza.
               </p>
             </div>
 
@@ -531,7 +531,7 @@ export default function ContactBox() {
                     >
                       {services.items.map((srv) => (
                         <option key={srv.id} value={srv.name}>
-                          {srv.name} — {srv.price}
+                          {srv.name} · {srv.price}
                         </option>
                       ))}
                       <option value="Altro / Progetto Speciale">Altro / Esigenza Speciale Personalizzata</option>
@@ -640,7 +640,7 @@ export default function ContactBox() {
                     </div>
 
                     <p className="text-[11px] text-[#5A6270] text-center leading-relaxed">
-                      Sessione tecnica di valutazione · Riscontro diretto dell&apos;Architetto di Sistemi entro 24 ore lavorative
+                      Nessun vincolo preventivo · Riscontro diretto del Fondatore entro 24 ore lavorative
                     </p>
                   </div>
                 </motion.form>
