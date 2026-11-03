@@ -4,7 +4,7 @@ import tls from "tls";
 import nodemailer from "nodemailer";
 import { UserProfile } from "./adminAuth";
 import { getUserSmtp } from "./userSmtpStorage";
-import { LeadConfig } from "@/types/lead";
+import { loadLeadConfig, saveLeadConfig } from "./leadsStorage";
 
 function appendToArubaSent(user: string, pass: string, rawEmail: string): Promise<boolean> {
   return new Promise((resolve) => {
@@ -108,23 +108,45 @@ export async function sendLeadOutreach({
   slug,
   isFollowUp = false,
   user,
+  customRecipient,
+  customSubject,
+  customBody,
 }: {
   slug: string;
   isFollowUp?: boolean;
   user: UserProfile;
+  customRecipient?: string;
+  customSubject?: string;
+  customBody?: string;
 }): Promise<{
   success: boolean;
   messageId: string;
   message: string;
   sentBy: string;
 }> {
-  // 1. Carica LeadConfig
-  const leadPath = path.join(process.cwd(), "src", "data", "leads", `${slug}.json`);
-  if (!fs.existsSync(leadPath)) {
+  // 1. Carica LeadConfig (da src/data/leads o da /tmp/techpyre-leads)
+  const lead = loadLeadConfig(slug);
+  if (!lead) {
     throw new Error(`Lead [${slug}] non trovato nel database.`);
   }
 
-  const lead = JSON.parse(fs.readFileSync(leadPath, "utf-8")) as LeadConfig;
+  // Se l'operatore ha modificato destinatario, oggetto o corpo nella console, aggiorna il lead
+  if (customRecipient && customRecipient.trim()) {
+    lead.meta.targetEmail = customRecipient.trim();
+  }
+  if (customSubject && customSubject.trim()) {
+    lead.outreach.emailSubject = customSubject.trim().replace(/^Re:\s*/i, "");
+  }
+  if (customBody && customBody.trim()) {
+    if (isFollowUp) {
+      lead.outreach.followUpWithLinkBody = customBody.trim();
+    } else {
+      lead.outreach.emailPlainTextBody = customBody.trim();
+    }
+  }
+  if (customRecipient || customSubject || customBody) {
+    saveLeadConfig(slug, lead);
+  }
 
   // 2. Determina credenziali SMTP in base all'utente attivo
   const userSmtp = getUserSmtp(user.username);

@@ -2,9 +2,9 @@ import { NextResponse } from "next/server";
 import fs from "fs";
 import path from "path";
 import { getAdminSession } from "@/lib/adminAuth";
-import { LeadConfig } from "@/types/lead";
 import { getAllVisits } from "@/lib/visitsStorage";
 import { getOutreachHistory } from "@/lib/emailService";
+import { listAllLeadConfigs } from "@/lib/leadsStorage";
 
 export async function GET() {
   const user = await getAdminSession();
@@ -12,15 +12,7 @@ export async function GET() {
     return NextResponse.json({ error: "Accesso non autorizzato" }, { status: 401 });
   }
 
-  const leadsDir = path.join(process.cwd(), "src", "data", "leads");
-  if (!fs.existsSync(leadsDir)) {
-    return NextResponse.json({ leads: [], allVisits: {} });
-  }
-
-  const files = fs
-    .readdirSync(leadsDir)
-    .filter((f) => f.endsWith(".json") && f !== "outreach-history.json" && f !== "leads-status.json");
-
+  const allConfigs = listAllLeadConfigs();
   const leads = [];
   const globalHistory = getOutreachHistory();
   const allVisits = getAllVisits();
@@ -34,11 +26,8 @@ export async function GET() {
     } catch {}
   }
 
-  for (const file of files) {
-    const slug = file.replace(/\.json$/, "");
-    const filePath = path.join(leadsDir, file);
+  for (const { slug, config } of allConfigs) {
     try {
-      const config = JSON.parse(fs.readFileSync(filePath, "utf-8")) as LeadConfig;
       const leadPublicDir = path.join(process.cwd(), "public", "leads", slug);
 
       let preflight = null;
@@ -49,8 +38,14 @@ export async function GET() {
         } catch {}
       }
 
-      const hasLogo = fs.existsSync(path.join(leadPublicDir, "logo.png"));
-      const hasHero = fs.existsSync(path.join(leadPublicDir, "hero.jpg"));
+      const logoPath = config.content?.logoLocalPath || "";
+      const heroPath = config.content?.heroImageLocalPath || "";
+      const hasLogo =
+        logoPath.startsWith("http") ||
+        fs.existsSync(path.join(leadPublicDir, "logo.png"));
+      const hasHero =
+        heroPath.startsWith("http") ||
+        fs.existsSync(path.join(leadPublicDir, "hero.jpg"));
 
       const leadHistory = globalHistory.filter((h) => h.slug === slug);
       const lastSend = leadHistory.length ? leadHistory[leadHistory.length - 1] : null;

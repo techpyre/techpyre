@@ -9,7 +9,8 @@ export async function POST(request: Request) {
   }
 
   try {
-    const { slug, isFollowUp } = await request.json();
+    const { slug, isFollowUp, customRecipient, customSubject, customBody } =
+      await request.json();
     if (!slug) {
       return NextResponse.json({ error: "Slug lead mancante" }, { status: 400 });
     }
@@ -18,6 +19,9 @@ export async function POST(request: Request) {
       slug,
       isFollowUp: Boolean(isFollowUp),
       user,
+      customRecipient,
+      customSubject,
+      customBody,
     });
 
     return NextResponse.json(result);

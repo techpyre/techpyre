@@ -4,11 +4,14 @@ import type { Metadata } from "next";
 import { Lora, Plus_Jakarta_Sans } from "next/font/google";
 import { notFound } from "next/navigation";
 import { LeadConfig } from "@/types/lead";
+import { loadLeadConfig } from "@/lib/leadsStorage";
 import DiagnosticBanner from "@/components/DiagnosticBanner";
 import DemoTracker from "@/components/DemoTracker";
 import LocalLeadGen from "@/components/templates/LocalLeadGen";
 import MedicalClinic from "@/components/templates/MedicalClinic";
 import B2BAuthority from "@/components/templates/B2BAuthority";
+
+export const dynamicParams = true;
 
 const jakartaFont = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -26,14 +29,7 @@ const loraFont = Lora({
 });
 
 function getLeadData(slug: string): LeadConfig | null {
-  const safeSlug = slug.replace(/[^a-zA-Z0-9-_]/g, "");
-  const filePath = path.join(process.cwd(), "src", "data", "leads", `${safeSlug}.json`);
-  if (!fs.existsSync(filePath)) return null;
-  try {
-    return JSON.parse(fs.readFileSync(filePath, "utf-8")) as LeadConfig;
-  } catch {
-    return null;
-  }
+  return loadLeadConfig(slug);
 }
 
 export async function generateStaticParams() {

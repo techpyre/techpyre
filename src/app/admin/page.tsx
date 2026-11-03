@@ -1,31 +1,28 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import Link from "next/link";
 import {
-  Lock,
   Search,
   Send,
   ExternalLink,
-  Zap,
-  Building,
   CheckCircle2,
   AlertCircle,
   LogOut,
   Mail,
-  Clock,
-  Sparkles,
   Smartphone,
   Eye,
   Settings,
   RefreshCw,
-  MessageSquare,
-  Flame,
-  User,
-  KeyRound,
-  Filter,
+  Lock,
+  Copy,
   Check,
   Globe,
+  ArrowUpRight,
+  SlidersHorizontal,
+  X,
 } from "lucide-react";
+import TechPyreLogo from "@/components/ui/TechPyreLogo";
 import { LeadConfig } from "@/types/lead";
 
 interface UserProfile {
@@ -81,8 +78,27 @@ interface LeadItem {
   statusNotes?: string | null;
 }
 
+interface DiscoveredLeadSummary {
+  slug: string;
+  companyName: string;
+  targetEmail: string;
+  city: string;
+  lcp: number;
+  demoUrl: string;
+}
+
+const B2B_PRESETS = [
+  { label: "Automazione Industriale · Brescia", query: "automazione industriale brescia" },
+  { label: "Macchinari Industriali · Bergamo", query: "macchinari industriali bergamo" },
+  { label: "Carpenteria Metallica · Vicenza", query: "carpenteria metallica vicenza" },
+  { label: "Forniture Industriali · Milano", query: "forniture industriali milano" },
+  { label: "Impianti Fotovoltaici · Padova", query: "impianti fotovoltaici padova" },
+  { label: "Serramenti Alluminio · Bologna", query: "serramenti alluminio bologna" },
+  { label: "Clinica Odontoiatrica · Verona", query: "clinica odontoiatrica verona" },
+];
+
 export default function AdminPage() {
-  // Auth state
+  // Autenticazione
   const [isAuthenticated, setIsAuthenticated] = useState<boolean | null>(null);
   const [currentUser, setCurrentUser] = useState<UserProfile | null>(null);
   const [usernameInput, setUsernameInput] = useState("");
@@ -90,25 +106,40 @@ export default function AdminPage() {
   const [loginError, setLoginError] = useState("");
   const [loadingLogin, setLoadingLogin] = useState(false);
 
-  // Leads & Data
+  // Dati Lead & Filtri
   const [leads, setLeads] = useState<LeadItem[]>([]);
   const [loadingLeads, setLoadingLeads] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
   const [activeTab, setActiveTab] = useState<"ALL" | "READY" | "SENT" | "VISITED" | "REPLIED">("ALL");
+  const [archetypeFilter, setArchetypeFilter] = useState<"ALL" | "b2b-authority" | "local-leadgen" | "medical-clinic">("ALL");
 
-  // Scout State
+  // Motore di Scouting B2B
   const [keyword, setKeyword] = useState("automazione industriale brescia");
   const [maxLeads, setMaxLeads] = useState(5);
   const [scoutingRunning, setScoutingRunning] = useState(false);
-  const [scoutMessage, setScoutMessage] = useState<string | null>(null);
+  const [scoutStatus, setScoutStatus] = useState<{
+    type: "info" | "success" | "error";
+    text: string;
+  } | null>(null);
+  const [lastDiscovered, setLastDiscovered] = useState<DiscoveredLeadSummary[]>([]);
 
-  // Email Sending & Modals
+  // Composer Email & Invio
   const [sendingSlug, setSendingSlug] = useState<string | null>(null);
-  const [sendResult, setSendResult] = useState<{ [slug: string]: { success: boolean; message: string } }>({});
-  const [previewLead, setPreviewLead] = useState<LeadItem | null>(null);
+  const [sendResult, setSendResult] = useState<{
+    [slug: string]: { success: boolean; message: string };
+  }>({});
+  const [composerLead, setComposerLead] = useState<LeadItem | null>(null);
+  const [composerMode, setComposerMode] = useState<"INITIAL" | "FOLLOWUP">("INITIAL");
+  const [composerRecipient, setComposerRecipient] = useState("");
+  const [composerSubject, setComposerSubject] = useState("");
+  const [composerBody, setComposerBody] = useState("");
+  const [copiedSlug, setCopiedSlug] = useState<string | null>(null);
+  const [copiedEmailBody, setCopiedEmailBody] = useState(false);
+
+  // Dettaglio Visite Demo
   const [visitsDetailLead, setVisitsDetailLead] = useState<LeadItem | null>(null);
 
-  // SMTP Settings Modal
+  // Configurazione SMTP
   const [showSmtpModal, setShowSmtpModal] = useState(false);
   const [smtpConfigured, setSmtpConfigured] = useState(false);
   const [smtpHost, setSmtpHost] = useState("");
@@ -119,7 +150,10 @@ export default function AdminPage() {
   const [senderEmail, setSenderEmail] = useState("");
   const [testingSmtp, setTestingSmtp] = useState(false);
   const [savingSmtp, setSavingSmtp] = useState(false);
-  const [smtpFeedback, setSmtpFeedback] = useState<{ type: "success" | "error"; text: string } | null>(null);
+  const [smtpFeedback, setSmtpFeedback] = useState<{
+    type: "success" | "error";
+    text: string;
+  } | null>(null);
 
   useEffect(() => {
     checkAuth();
@@ -129,7 +163,7 @@ export default function AdminPage() {
     try {
       const res = await fetch("/api/admin/auth");
       const data = await res.json();
-      setIsAuthenticated(data.authenticated);
+      setIsAuthenticated(Boolean(data.authenticated));
       if (data.authenticated && data.user) {
         setCurrentUser(data.user);
         fetchLeads();
@@ -155,7 +189,7 @@ export default function AdminPage() {
       });
       const data = await res.json();
       if (!res.ok) {
-        setLoginError(data.error || "Credenziali non corrette.");
+        setLoginError(data.error || "Credenziali non valide.");
         setLoadingLogin(false);
         return;
       }
@@ -164,15 +198,10 @@ export default function AdminPage() {
       fetchLeads();
       fetchProfile();
     } catch {
-      setLoginError("Errore durante il login.");
+      setLoginError("Errore di comunicazione con il server.");
     } finally {
       setLoadingLogin(false);
     }
-  }
-
-  function handleQuickLogin(user: string, pass: string) {
-    setUsernameInput(user);
-    setPasswordInput(pass);
   }
 
   async function handleLogout() {
@@ -206,7 +235,7 @@ export default function AdminPage() {
       const res = await fetch("/api/admin/profile");
       const data = await res.json();
       if (data.smtpDetails) {
-        setSmtpConfigured(data.smtpConfigured);
+        setSmtpConfigured(Boolean(data.smtpConfigured));
         setSmtpHost(data.smtpDetails.smtpHost || "");
         setSmtpPort(String(data.smtpDetails.smtpPort || 465));
         setSmtpUser(data.smtpDetails.smtpUser || "");
@@ -237,21 +266,27 @@ export default function AdminPage() {
       });
       const data = await res.json();
       if (!res.ok) {
-        setSmtpFeedback({ type: "error", text: data.error || "Verifica SMTP fallita." });
+        setSmtpFeedback({
+          type: "error",
+          text: data.error || "Verifica connessione SMTP non riuscita.",
+        });
       } else {
         setSmtpFeedback({
           type: "success",
           text: testOnly
-            ? "Connessione SMTP verificata con successo!"
-            : "Credenziali email salvate e pronte all'uso!",
+            ? "Connessione SMTP verificata correttamente."
+            : "Parametri SMTP salvati nel profilo.",
         });
         if (!testOnly) {
           setSmtpConfigured(true);
-          setTimeout(() => setShowSmtpModal(false), 1500);
+          setTimeout(() => setShowSmtpModal(false), 1200);
         }
       }
     } catch {
-      setSmtpFeedback({ type: "error", text: "Errore di comunicazione col server." });
+      setSmtpFeedback({
+        type: "error",
+        text: "Errore di connessione al server.",
+      });
     } finally {
       setTestingSmtp(false);
       setSavingSmtp(false);
@@ -262,7 +297,11 @@ export default function AdminPage() {
     e.preventDefault();
     if (!keyword.trim()) return;
     setScoutingRunning(true);
-    setScoutMessage(`Ricerca lead in corso per: "${keyword}"...`);
+    setLastDiscovered([]);
+    setScoutStatus({
+      type: "info",
+      text: `Analisi directory B2B, estrazione contatti/P.IVA e compilazione demo Next.js per "${keyword.trim()}"...`,
+    });
     try {
       const res = await fetch("/api/admin/scout", {
         method: "POST",
@@ -270,74 +309,168 @@ export default function AdminPage() {
         body: JSON.stringify({ keyword: keyword.trim(), maxLeads }),
       });
       const data = await res.json();
-      if (data.success) {
-        setScoutMessage(
-          `Completato! ${data.discovered?.length || 0} nuove aziende qualificate.`
-        );
-        fetchLeads();
+      if (res.ok && data.success) {
+        const list: DiscoveredLeadSummary[] = data.discovered || [];
+        setLastDiscovered(list);
+        if (list.length > 0) {
+          setScoutStatus({
+            type: "success",
+            text: `Operazione completata: ${list.length} nuove aziende qualificate e ${list.length} demo 0.3s generate.`,
+          });
+          setActiveTab("READY");
+          await fetchLeads();
+        } else {
+          setScoutStatus({
+            type: "error",
+            text: `Nessuna nuova azienda non ancora presente a sistema trovata per "${keyword.trim()}". Prova a specificare un'altra provincia o inserisci direttamente il dominio del sito aziendale (es. nomeazienda.it).`,
+          });
+        }
       } else {
-        setScoutMessage(`Errore: ${data.error || "Impossibile completare la ricerca"}`);
+        setScoutStatus({
+          type: "error",
+          text: data.error || "Impossibile completare la ricerca.",
+        });
       }
     } catch (err: unknown) {
-      const msg = err instanceof Error ? err.message : "Errore di connessione";
-      setScoutMessage(`Errore: ${msg}`);
+      const msg = err instanceof Error ? err.message : "Errore di rete";
+      setScoutStatus({ type: "error", text: `Errore: ${msg}` });
     } finally {
       setScoutingRunning(false);
     }
   }
 
-  async function handleSendEmail(slug: string, isFollowUp = false) {
+  function openEmailComposer(lead: LeadItem, defaultFollowUp = false) {
+    const mode = defaultFollowUp ? "FOLLOWUP" : "INITIAL";
+    setComposerLead(lead);
+    setComposerMode(mode);
+    setComposerRecipient(lead.config.meta.targetEmail);
+    setComposerSubject(
+      mode === "FOLLOWUP"
+        ? `Re: ${lead.config.outreach.emailSubject}`
+        : lead.config.outreach.emailSubject
+    );
+    setComposerBody(
+      mode === "FOLLOWUP"
+        ? lead.config.outreach.followUpWithLinkBody
+        : lead.config.outreach.emailPlainTextBody
+    );
+    setCopiedEmailBody(false);
+  }
+
+  function switchComposerMode(mode: "INITIAL" | "FOLLOWUP") {
+    if (!composerLead) return;
+    setComposerMode(mode);
+    setComposerSubject(
+      mode === "FOLLOWUP"
+        ? `Re: ${composerLead.config.outreach.emailSubject}`
+        : composerLead.config.outreach.emailSubject
+    );
+    setComposerBody(
+      mode === "FOLLOWUP"
+        ? composerLead.config.outreach.followUpWithLinkBody
+        : composerLead.config.outreach.emailPlainTextBody
+    );
+  }
+
+  async function handleSendEmail(
+    slug: string,
+    isFollowUp = false,
+    overrides?: {
+      customRecipient?: string;
+      customSubject?: string;
+      customBody?: string;
+    }
+  ) {
     setSendingSlug(slug);
-    setSendResult((prev) => ({ ...prev, [slug]: { success: false, message: "" } }));
+    setSendResult((prev) => ({
+      ...prev,
+      [slug]: { success: false, message: "" },
+    }));
     try {
       const res = await fetch("/api/admin/send", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ slug, isFollowUp }),
+        body: JSON.stringify({
+          slug,
+          isFollowUp,
+          customRecipient: overrides?.customRecipient,
+          customSubject: overrides?.customSubject,
+          customBody: overrides?.customBody,
+        }),
       });
       const data = await res.json();
       if (res.ok && data.success) {
         setSendResult((prev) => ({
           ...prev,
-          [slug]: { success: true, message: data.message || "Email inviata!" },
+          [slug]: {
+            success: true,
+            message: data.message || "Email inviata correttamente.",
+          },
         }));
-        fetchLeads();
+        await fetchLeads();
+        if (composerLead?.slug === slug) {
+          setComposerLead(null);
+        }
       } else {
         setSendResult((prev) => ({
           ...prev,
-          [slug]: { success: false, message: data.error || "Errore durante l'invio" },
+          [slug]: {
+            success: false,
+            message: data.error || "Errore durante l'invio.",
+          },
         }));
       }
     } catch {
       setSendResult((prev) => ({
         ...prev,
-        [slug]: { success: false, message: "Errore di connessione al server" },
+        [slug]: {
+          success: false,
+          message: "Errore di comunicazione con il server SMTP.",
+        },
       }));
     } finally {
       setSendingSlug(null);
     }
   }
 
-  // KPIs
+  function copyDemoUrl(slug: string) {
+    const url = `https://www.techpyre.eu/demo/${slug}`;
+    navigator.clipboard.writeText(url);
+    setCopiedSlug(slug);
+    setTimeout(() => setCopiedSlug(null), 1800);
+  }
+
+  function copyComposerText() {
+    navigator.clipboard.writeText(composerBody);
+    setCopiedEmailBody(true);
+    setTimeout(() => setCopiedEmailBody(false), 1800);
+  }
+
+  // Metriche Esecutive
   const totalLeadsCount = leads.length;
   const sentCount = leads.filter((l) => (l.sendCount || 0) > 0).length;
   const readyCount = leads.filter((l) => (l.sendCount || 0) === 0).length;
   const visitedCount = leads.filter((l) => (l.visits?.totalVisits || 0) > 0).length;
   const repliedCount = leads.filter((l) => l.hasReplied).length;
 
-  // Filtered Leads
+  // Filtro Lead
   const filteredLeads = leads.filter((lead) => {
-    // Search query filter
+    if (archetypeFilter !== "ALL" && lead.config.archetype !== archetypeFilter) {
+      return false;
+    }
+
     if (searchQuery.trim()) {
       const q = searchQuery.toLowerCase().trim();
       const matchName = lead.config.meta.companyName.toLowerCase().includes(q);
       const matchCity = lead.config.meta.city.toLowerCase().includes(q);
       const matchEmail = lead.config.meta.targetEmail.toLowerCase().includes(q);
       const matchSlug = lead.slug.toLowerCase().includes(q);
-      if (!matchName && !matchCity && !matchEmail && !matchSlug) return false;
+      const matchVat = (lead.config.meta.vatNumber || "").toLowerCase().includes(q);
+      if (!matchName && !matchCity && !matchEmail && !matchSlug && !matchVat) {
+        return false;
+      }
     }
 
-    // Tab filter
     if (activeTab === "READY") return (lead.sendCount || 0) === 0;
     if (activeTab === "SENT") return (lead.sendCount || 0) > 0 && !lead.hasReplied;
     if (activeTab === "VISITED") return (lead.visits?.totalVisits || 0) > 0;
@@ -346,673 +479,790 @@ export default function AdminPage() {
     return true;
   });
 
-  // 1. Schermata di Login con 3 Profili
-  if (!isAuthenticated) {
+  // Stato caricamento iniziale sessione
+  if (isAuthenticated === null) {
     return (
-      <div className="min-h-screen bg-[#07090E] text-white flex flex-col justify-center items-center px-4 py-12 relative overflow-hidden">
-        {/* Background glow subtle */}
-        <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-96 h-96 bg-blue-600/10 rounded-full blur-[120px] pointer-events-none" />
-
-        <div className="w-full max-w-md bg-[#0D121D] border border-white/10 rounded-2xl p-8 shadow-2xl relative z-10 backdrop-blur-xl">
-          <div className="flex items-center gap-3 mb-6">
-            <div className="w-10 h-10 rounded-xl bg-blue-600/20 border border-blue-500/30 flex items-center justify-center text-blue-400">
-              <Zap className="w-5 h-5" />
-            </div>
-            <div>
-              <h1 className="text-xl font-bold tracking-tight text-white flex items-center gap-2">
-                Tech<span className="text-blue-500">PYRE</span>
-                <span className="text-xs uppercase px-2 py-0.5 bg-blue-500/20 text-blue-300 rounded-full font-mono">
-                  Studio
-                </span>
-              </h1>
-              <p className="text-xs text-white/50">Studio di Ingegneria ed Ecosistemi Digitali · B2B Engine</p>
-            </div>
-          </div>
-
-          <form onSubmit={handleLogin} className="space-y-4">
-            <div>
-              <label className="block text-xs font-medium text-white/70 mb-1.5 flex items-center gap-1.5">
-                <User className="w-3.5 h-3.5 text-blue-400" />
-                Username Profilo
-              </label>
-              <input
-                type="text"
-                value={usernameInput}
-                onChange={(e) => setUsernameInput(e.target.value)}
-                placeholder="es. riccardogranza"
-                required
-                className="w-full bg-[#121826] border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-blue-500 transition-colors"
-              />
-            </div>
-
-            <div>
-              <label className="block text-xs font-medium text-white/70 mb-1.5 flex items-center gap-1.5">
-                <KeyRound className="w-3.5 h-3.5 text-blue-400" />
-                Password
-              </label>
-              <input
-                type="password"
-                value={passwordInput}
-                onChange={(e) => setPasswordInput(e.target.value)}
-                placeholder="Inserisci la password"
-                required
-                className="w-full bg-[#121826] border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-blue-500 transition-colors"
-              />
-            </div>
-
-            {loginError && (
-              <div className="flex items-center gap-2 text-xs text-rose-400 bg-rose-500/10 border border-rose-500/20 p-3 rounded-xl">
-                <AlertCircle className="w-4 h-4 shrink-0" />
-                <span>{loginError}</span>
-              </div>
-            )}
-
-            <button
-              type="submit"
-              disabled={loadingLogin}
-              className="w-full bg-blue-600 hover:bg-blue-500 text-white font-medium py-3 rounded-xl text-sm transition-all shadow-lg shadow-blue-600/25 flex items-center justify-center gap-2 disabled:opacity-50"
-            >
-              {loadingLogin ? (
-                <>
-                  <RefreshCw className="w-4 h-4 animate-spin" />
-                  Accesso in corso...
-                </>
-              ) : (
-                <>
-                  <Lock className="w-4 h-4" />
-                  Accedi alla Dashboard
-                </>
-              )}
-            </button>
-          </form>
-
-          {/* Quick profile selectors per comodità */}
-          <div className="mt-8 pt-6 border-t border-white/5">
-            <p className="text-[11px] uppercase tracking-wider text-white/40 font-mono mb-3">
-              Profili autorizzati:
-            </p>
-            <div className="grid grid-cols-1 gap-2">
-              <button
-                type="button"
-                onClick={() => handleQuickLogin("riccardogranza", "5149")}
-                className="text-left px-3 py-2 rounded-lg bg-white/[0.03] hover:bg-white/[0.07] border border-white/5 text-xs text-white/80 transition-all flex items-center justify-between group"
-              >
-                <span>
-                  <strong>Riccardo Granza</strong>{" "}
-                  <span className="text-blue-400">(Admin)</span>
-                </span>
-                <span className="text-[10px] text-white/30 font-mono group-hover:text-white/60">
-                  5149
-                </span>
-              </button>
-              <button
-                type="button"
-                onClick={() => handleQuickLogin("mattiabarb", "2111")}
-                className="text-left px-3 py-2 rounded-lg bg-white/[0.03] hover:bg-white/[0.07] border border-white/5 text-xs text-white/80 transition-all flex items-center justify-between group"
-              >
-                <span>
-                  <strong>Mattia Barb</strong>{" "}
-                  <span className="text-white/50">(Member)</span>
-                </span>
-                <span className="text-[10px] text-white/30 font-mono group-hover:text-white/60">
-                  2111
-                </span>
-              </button>
-              <button
-                type="button"
-                onClick={() => handleQuickLogin("andreadibella", "5445")}
-                className="text-left px-3 py-2 rounded-lg bg-emerald-500/10 hover:bg-emerald-500/20 border border-emerald-500/20 text-xs text-emerald-300 transition-all flex items-center justify-between group"
-              >
-                <span>
-                  <strong>Andrea Di Bella</strong>{" "}
-                  <span className="text-emerald-400 font-medium">(Outbound Speciale)</span>
-                </span>
-                <span className="text-[10px] text-emerald-300/50 font-mono group-hover:text-emerald-200">
-                  5445
-                </span>
-              </button>
-            </div>
-          </div>
+      <div className="min-h-screen bg-[#F8F7F4] text-[#14181F] flex items-center justify-center">
+        <div className="flex items-center gap-2.5 text-xs font-mono uppercase tracking-widest text-[#5A6270]">
+          <RefreshCw className="w-3.5 h-3.5 animate-spin text-[#B8860B]" />
+          <span>Verifica sessione operativa...</span>
         </div>
       </div>
     );
   }
 
-  // 2. Dashboard Principale
-  const isSpecialFriend = currentUser?.username === "andreadibella";
+  // 1. SCHERMATA DI ACCESSO RISERVATO (Zero profili pubblici, zero password esposte, estetica Carta Istituzionale)
+  if (!isAuthenticated) {
+    return (
+      <div className="min-h-screen bg-[#F8F7F4] text-[#14181F] flex flex-col justify-between px-4 py-8 sm:px-8">
+        {/* Top bar minimale */}
+        <header className="max-w-6xl w-full mx-auto flex items-center justify-between border-b border-[#E8E2D5] pb-4">
+          <Link href="/" className="inline-flex items-center gap-2.5">
+            <TechPyreLogo variant="light" size="sm" />
+            <span className="text-[10px] font-mono uppercase tracking-widest text-[#5A6270] border-l border-[#E8E2D5] pl-2.5">
+              Studio di Ingegneria ed Ecosistemi Digitali
+            </span>
+          </Link>
+          <Link
+            href="/"
+            className="text-xs font-sans text-[#5A6270] hover:text-[#0B1E36] transition-colors"
+          >
+            Torna al sito istituzionale →
+          </Link>
+        </header>
 
-  return (
-    <div className="min-h-screen bg-[#07090E] text-white font-sans selection:bg-blue-600 selection:text-white pb-24">
-      {/* Top Navbar */}
-      <header className="sticky top-0 z-40 bg-[#0B0F17]/90 backdrop-blur-xl border-b border-white/10 px-4 lg:px-8 py-3.5">
-        <div className="max-w-7xl mx-auto flex items-center justify-between gap-4">
-          {/* Logo Brand */}
-          <div className="flex items-center gap-3">
-            <div className="w-9 h-9 rounded-xl bg-blue-600 flex items-center justify-center text-white shadow-lg shadow-blue-600/30">
-              <Zap className="w-5 h-5" />
-            </div>
-            <div>
-              <div className="flex items-center gap-2">
-                <span className="font-bold tracking-tight text-white text-base">
-                  Tech<span className="text-blue-500">PYRE</span> Studio
-                </span>
-                <span className="text-[10px] font-mono uppercase bg-white/10 px-2 py-0.5 rounded text-white/70">
-                  B2B Outbound
-                </span>
+        {/* Box di Autenticazione Istituzionale */}
+        <main className="my-auto py-12">
+          <div className="max-w-md w-full mx-auto bg-white border border-[#E8E2D5] p-8 sm:p-10 shadow-[0_12px_32px_-12px_rgba(11,30,54,0.07)]">
+            <div className="border-b border-[#E8E2D5] pb-5 mb-6">
+              <div className="inline-flex items-center gap-1.5 text-[10px] font-mono uppercase tracking-widest text-[#B8860B] mb-2">
+                <Lock className="w-3 h-3" />
+                <span>Accesso Riservato · Direzione &amp; Operazioni</span>
               </div>
-              <p className="text-[11px] text-white/40">Studio di Ingegneria ed Ecosistemi Digitali</p>
+              <h1 className="font-serif text-2xl sm:text-3xl text-[#14181F] font-normal tracking-tight">
+                Portale Operativo B2B
+              </h1>
+              <p className="text-xs text-[#5A6270] mt-1 leading-relaxed">
+                Inserisci le tue credenziali personali per accedere al registro diagnosi, generazione demo e invio outbound.
+              </p>
             </div>
+
+            <form onSubmit={handleLogin} className="space-y-4">
+              <div>
+                <label
+                  htmlFor="admin-username"
+                  className="block text-[11px] font-mono uppercase tracking-wider text-[#5A6270] mb-1.5"
+                >
+                  Identificativo Operatore
+                </label>
+                <input
+                  id="admin-username"
+                  type="text"
+                  autoComplete="username"
+                  value={usernameInput}
+                  onChange={(e) => setUsernameInput(e.target.value)}
+                  placeholder="Nome utente"
+                  required
+                  className="w-full bg-[#F8F7F4] border border-[#E8E2D5] px-3.5 py-2.5 text-base sm:text-sm text-[#14181F] placeholder-[#5A6270]/50 focus:outline-none focus:border-[#0B1E36] focus:bg-white transition-colors"
+                />
+              </div>
+
+              <div>
+                <label
+                  htmlFor="admin-password"
+                  className="block text-[11px] font-mono uppercase tracking-wider text-[#5A6270] mb-1.5"
+                >
+                  Codice di Accesso
+                </label>
+                <input
+                  id="admin-password"
+                  type="password"
+                  autoComplete="current-password"
+                  value={passwordInput}
+                  onChange={(e) => setPasswordInput(e.target.value)}
+                  placeholder="••••••••"
+                  required
+                  className="w-full bg-[#F8F7F4] border border-[#E8E2D5] px-3.5 py-2.5 text-base sm:text-sm text-[#14181F] placeholder-[#5A6270]/50 focus:outline-none focus:border-[#0B1E36] focus:bg-white transition-colors"
+                />
+              </div>
+
+              {loginError && (
+                <div className="flex items-center gap-2 text-xs text-red-800 bg-red-50 border border-red-200 px-3.5 py-2.5">
+                  <AlertCircle className="w-4 h-4 shrink-0 text-red-700" />
+                  <span>{loginError}</span>
+                </div>
+              )}
+
+              <div className="pt-2">
+                <button
+                  type="submit"
+                  disabled={loadingLogin}
+                  className="w-full bg-[#0B1E36] hover:bg-[#142d4c] text-white font-medium py-3 px-5 text-xs uppercase tracking-wider font-mono transition-colors flex items-center justify-center gap-2 disabled:opacity-50 cursor-pointer"
+                >
+                  {loadingLogin ? (
+                    <>
+                      <RefreshCw className="w-3.5 h-3.5 animate-spin" />
+                      <span>Verifica credenziali...</span>
+                    </>
+                  ) : (
+                    <span>Accedi al Portale Operativo</span>
+                  )}
+                </button>
+              </div>
+            </form>
+          </div>
+        </main>
+
+        {/* Footer minimale */}
+        <footer className="max-w-6xl w-full mx-auto border-t border-[#E8E2D5] pt-4 flex flex-col sm:flex-row items-center justify-between gap-2 text-[11px] text-[#5A6270]">
+          <span>TechPYRE Studio · Via Carrubara Vico III n. 3, 98027 Pagliara (ME)</span>
+          <span className="font-mono">Accesso protetto da sessione crittografata HTTP-Only</span>
+        </footer>
+      </div>
+    );
+  }
+
+  // 2. CONSOLE OPERATIVA B2B (Estetica Private Banking & Carta Istituzionale)
+  return (
+    <div className="min-h-screen bg-[#F8F7F4] text-[#14181F] font-sans pb-20">
+      {/* Filetto Oro Superiore */}
+      <div className="h-[2px] w-full bg-[#B8860B]" />
+
+      {/* Header Istituzionale */}
+      <header className="sticky top-0 z-30 bg-[#F8F7F4]/95 backdrop-blur-md border-b border-[#E8E2D5]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
+          <div className="flex items-center gap-3">
+            <Link href="/" className="flex items-center gap-2">
+              <TechPyreLogo variant="light" size="sm" />
+            </Link>
+            <span className="text-[#E8E2D5] select-none">|</span>
+            <span className="text-[11px] font-mono uppercase tracking-wider text-[#0B1E36] font-semibold">
+              Console Outbound B2B
+            </span>
           </div>
 
-          {/* User Profile Badge & Quick Settings */}
-          <div className="flex items-center gap-3">
-            {/* Active User Badge */}
-            <div className="hidden sm:flex items-center gap-2.5 px-3 py-1.5 rounded-xl bg-white/[0.04] border border-white/10">
-              <div
-                className={`w-2.5 h-2.5 rounded-full ${
-                  isSpecialFriend ? "bg-emerald-400" : "bg-blue-400"
-                } animate-pulse`}
-              />
-              <div className="text-left">
-                <p className="text-xs font-semibold text-white leading-tight">
-                  {currentUser?.displayName}
-                </p>
-                <p className="text-[10px] text-white/40 leading-tight">
-                  {currentUser?.roleLabel}
-                </p>
-              </div>
+          <div className="flex items-center gap-2 sm:gap-3">
+            {/* Operatore Attivo */}
+            <div className="hidden md:flex items-center gap-2 px-3 py-1.5 bg-white border border-[#E8E2D5] text-xs">
+              <span className="w-2 h-2 rounded-full bg-[#0B1E36]" />
+              <span className="font-medium text-[#14181F]">
+                {currentUser?.displayName}
+              </span>
+              <span className="text-[#5A6270] font-mono text-[10px] uppercase">
+                · {currentUser?.roleLabel}
+              </span>
             </div>
 
-            {/* Impostazioni Email Personali */}
+            {/* Configurazione SMTP */}
             <button
+              type="button"
               onClick={() => {
                 setShowSmtpModal(true);
                 setSmtpFeedback(null);
               }}
-              className={`flex items-center gap-2 px-3 py-1.5 rounded-xl text-xs font-medium transition-all ${
-                isSpecialFriend && !smtpConfigured
-                  ? "bg-amber-500/20 text-amber-300 border border-amber-500/40 animate-bounce"
-                  : "bg-white/[0.05] hover:bg-white/[0.1] text-white/80 border border-white/10"
-              }`}
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-white hover:bg-[#0B1E36] hover:text-white text-[#14181F] border border-[#E8E2D5] text-xs font-medium transition-colors cursor-pointer"
             >
-              <Settings className="w-3.5 h-3.5" />
-              <span>
-                {isSpecialFriend && !smtpConfigured
-                  ? "⚠️ Configura la tua Email"
-                  : "Impostazioni Email"}
-              </span>
+              <Settings className="w-3.5 h-3.5 text-[#B8860B]" />
+              <span className="hidden sm:inline">Parametri SMTP</span>
             </button>
 
-            {/* Refresh */}
+            {/* Ricarica Registro */}
             <button
+              type="button"
               onClick={fetchLeads}
               disabled={loadingLeads}
-              title="Aggiorna Dati"
-              className="p-2 rounded-xl bg-white/[0.05] hover:bg-white/[0.1] text-white/70 border border-white/10 transition-colors"
+              title="Aggiorna registro"
+              className="p-2 bg-white hover:bg-[#0B1E36] hover:text-white text-[#14181F] border border-[#E8E2D5] transition-colors cursor-pointer"
             >
-              <RefreshCw className={`w-4 h-4 ${loadingLeads ? "animate-spin" : ""}`} />
+              <RefreshCw
+                className={`w-3.5 h-3.5 ${loadingLeads ? "animate-spin" : ""}`}
+              />
             </button>
 
-            {/* Logout */}
+            {/* Esci */}
             <button
+              type="button"
               onClick={handleLogout}
-              title="Disconnetti"
-              className="p-2 rounded-xl bg-white/[0.05] hover:bg-rose-500/20 hover:text-rose-400 text-white/70 border border-white/10 transition-colors"
+              title="Chiudi sessione"
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-white hover:bg-red-900 hover:text-white text-[#5A6270] border border-[#E8E2D5] text-xs font-medium transition-colors cursor-pointer"
             >
-              <LogOut className="w-4 h-4" />
+              <LogOut className="w-3.5 h-3.5" />
+              <span className="hidden sm:inline">Esci</span>
             </button>
           </div>
         </div>
       </header>
 
-      {/* Main Container */}
-      <main className="max-w-7xl mx-auto px-4 lg:px-8 pt-8 space-y-8">
-        {/* Banner Speciale per Andrea Di Bella */}
-        {isSpecialFriend && (
-          <div className="bg-gradient-to-r from-emerald-950/40 via-[#0E1522] to-blue-950/30 border border-emerald-500/30 rounded-2xl p-5 shadow-xl flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
-            <div className="space-y-1">
-              <div className="flex items-center gap-2">
-                <span className="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 text-[11px] font-mono font-semibold uppercase">
-                  Area Partner Andrea
-                </span>
-                <span className="text-xs text-white/50">· Cerca qualsiasi settore in Italia</span>
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 space-y-6">
+        {/* Intestazione Direzionale + Ledger 5 KPI */}
+        <section className="bg-white border border-[#E8E2D5]">
+          <div className="p-5 sm:p-6 border-b border-[#E8E2D5] flex flex-col md:flex-row md:items-end justify-between gap-4">
+            <div>
+              <div className="text-[10px] font-mono uppercase tracking-widest text-[#B8860B] mb-1">
+                TechPyre Studio · Pipeline Commerciale &amp; Diagnosi Tecnica
               </div>
-              <h2 className="text-base font-semibold text-white">
-                Cerca aziende da contattare con la tua casella email
-              </h2>
-              <p className="text-xs text-white/60">
-                Inserisci la parola chiave (es. <em>ristoranti firenze</em>, <em>fotovoltaico brescia</em> o <em>dentisti torino</em>). Le email partiranno direttamente dal tuo indirizzo personale.
-              </p>
+              <h1 className="font-serif text-2xl sm:text-3xl text-[#14181F] font-normal tracking-tight">
+                Registro Ecosistemi Demo &amp; Campagne Outbound
+              </h1>
             </div>
+            <div className="flex items-center gap-3 text-xs text-[#5A6270]">
+              <Link
+                href="/"
+                target="_blank"
+                className="inline-flex items-center gap-1 text-[#0B1E36] hover:underline font-medium"
+              >
+                <span>techpyre.eu</span>
+                <ArrowUpRight className="w-3.5 h-3.5" />
+              </Link>
+              <span>·</span>
+              <Link
+                href="/servizi"
+                target="_blank"
+                className="inline-flex items-center gap-1 text-[#0B1E36] hover:underline font-medium"
+              >
+                <span>Listino &amp; Simulatore</span>
+                <ArrowUpRight className="w-3.5 h-3.5" />
+              </Link>
+            </div>
+          </div>
+
+          {/* 5-KPI Executive Ledger (Cliccabili per filtrare) */}
+          <div className="grid grid-cols-2 lg:grid-cols-5 divide-y sm:divide-y-0 sm:divide-x divide-[#E8E2D5]">
             <button
-              onClick={() => {
-                setShowSmtpModal(true);
-                setSmtpFeedback(null);
-              }}
-              className="shrink-0 px-4 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-semibold shadow-lg shadow-emerald-600/30 transition-all flex items-center gap-2"
+              type="button"
+              onClick={() => setActiveTab("ALL")}
+              className={`p-4 sm:p-5 text-left transition-colors cursor-pointer ${
+                activeTab === "ALL" ? "bg-[#0B1E36] text-white" : "hover:bg-[#F8F7F4]"
+              }`}
             >
-              <Mail className="w-3.5 h-3.5" />
-              {smtpConfigured ? "Gestisci Email Personale" : "Imposta la tua Email"}
+              <div
+                className={`text-[10px] font-mono uppercase tracking-wider ${
+                  activeTab === "ALL" ? "text-[#C5A059]" : "text-[#5A6270]"
+                }`}
+              >
+                01 · Totale a Sistema
+              </div>
+              <div className="font-serif text-2xl sm:text-3xl mt-1">
+                {totalLeadsCount}
+              </div>
+              <div
+                className={`text-[11px] mt-0.5 ${
+                  activeTab === "ALL" ? "text-white/70" : "text-[#5A6270]"
+                }`}
+              >
+                Aziende con demo pronta
+              </div>
             </button>
-          </div>
-        )}
 
-        {/* Executive KPI Stats Cards */}
-        <section className="grid grid-cols-2 md:grid-cols-5 gap-3 sm:gap-4">
-          <div className="bg-[#0E131F] border border-white/10 rounded-2xl p-4 sm:p-5 relative overflow-hidden">
-            <div className="flex items-center justify-between text-white/50 mb-2">
-              <span className="text-xs font-medium uppercase tracking-wider">Totale Lead</span>
-              <Building className="w-4 h-4 text-blue-400" />
-            </div>
-            <div className="text-2xl sm:text-3xl font-bold text-white tracking-tight">
-              {totalLeadsCount}
-            </div>
-            <p className="text-[11px] text-white/40 mt-1">Aziende nel database</p>
-          </div>
+            <button
+              type="button"
+              onClick={() => setActiveTab("READY")}
+              className={`p-4 sm:p-5 text-left transition-colors cursor-pointer ${
+                activeTab === "READY" ? "bg-[#0B1E36] text-white" : "hover:bg-[#F8F7F4]"
+              }`}
+            >
+              <div
+                className={`text-[10px] font-mono uppercase tracking-wider ${
+                  activeTab === "READY" ? "text-[#C5A059]" : "text-[#B8860B]"
+                }`}
+              >
+                02 · Da Contattare
+              </div>
+              <div className="font-serif text-2xl sm:text-3xl mt-1">
+                {readyCount}
+              </div>
+              <div
+                className={`text-[11px] mt-0.5 ${
+                  activeTab === "READY" ? "text-white/70" : "text-[#5A6270]"
+                }`}
+              >
+                In attesa di 1° invio
+              </div>
+            </button>
 
-          <div className="bg-[#0E131F] border border-white/10 rounded-2xl p-4 sm:p-5 relative overflow-hidden">
-            <div className="flex items-center justify-between text-white/50 mb-2">
-              <span className="text-xs font-medium uppercase tracking-wider">Da Contattare</span>
-              <Sparkles className="w-4 h-4 text-amber-400" />
-            </div>
-            <div className="text-2xl sm:text-3xl font-bold text-amber-400 tracking-tight">
-              {readyCount}
-            </div>
-            <p className="text-[11px] text-white/40 mt-1">Demo pronte per l&apos;invio</p>
-          </div>
+            <button
+              type="button"
+              onClick={() => setActiveTab("SENT")}
+              className={`p-4 sm:p-5 text-left transition-colors cursor-pointer ${
+                activeTab === "SENT" ? "bg-[#0B1E36] text-white" : "hover:bg-[#F8F7F4]"
+              }`}
+            >
+              <div
+                className={`text-[10px] font-mono uppercase tracking-wider ${
+                  activeTab === "SENT" ? "text-[#C5A059]" : "text-[#5A6270]"
+                }`}
+              >
+                03 · 1° Contatto Inviato
+              </div>
+              <div className="font-serif text-2xl sm:text-3xl mt-1">
+                {sentCount}
+              </div>
+              <div
+                className={`text-[11px] mt-0.5 ${
+                  activeTab === "SENT" ? "text-white/70" : "text-[#5A6270]"
+                }`}
+              >
+                Email plain-text consegnate
+              </div>
+            </button>
 
-          <div className="bg-[#0E131F] border border-white/10 rounded-2xl p-4 sm:p-5 relative overflow-hidden">
-            <div className="flex items-center justify-between text-white/50 mb-2">
-              <span className="text-xs font-medium uppercase tracking-wider">Email Inviate</span>
-              <Send className="w-4 h-4 text-blue-400" />
-            </div>
-            <div className="text-2xl sm:text-3xl font-bold text-blue-400 tracking-tight">
-              {sentCount}
-            </div>
-            <p className="text-[11px] text-white/40 mt-1">Outbound 1° contatto</p>
-          </div>
+            <button
+              type="button"
+              onClick={() => setActiveTab("VISITED")}
+              className={`p-4 sm:p-5 text-left transition-colors cursor-pointer ${
+                activeTab === "VISITED" ? "bg-[#0B1E36] text-white" : "hover:bg-[#F8F7F4]"
+              }`}
+            >
+              <div
+                className={`text-[10px] font-mono uppercase tracking-wider ${
+                  activeTab === "VISITED" ? "text-[#C5A059]" : "text-emerald-800"
+                }`}
+              >
+                04 · Demo Ispezionate
+              </div>
+              <div className="font-serif text-2xl sm:text-3xl mt-1">
+                {visitedCount}
+              </div>
+              <div
+                className={`text-[11px] mt-0.5 ${
+                  activeTab === "VISITED" ? "text-white/70" : "text-[#5A6270]"
+                }`}
+              >
+                Aperture rilevate dal link
+              </div>
+            </button>
 
-          <div className="bg-[#0E131F] border border-emerald-500/20 rounded-2xl p-4 sm:p-5 relative overflow-hidden">
-            <div className="flex items-center justify-between text-emerald-400/70 mb-2">
-              <span className="text-xs font-medium uppercase tracking-wider flex items-center gap-1.5">
-                <Flame className="w-3.5 h-3.5 text-emerald-400 animate-pulse" />
-                Demo Visitate
-              </span>
-              <Eye className="w-4 h-4 text-emerald-400" />
-            </div>
-            <div className="text-2xl sm:text-3xl font-bold text-emerald-400 tracking-tight">
-              {visitedCount}
-            </div>
-            <p className="text-[11px] text-emerald-400/60 mt-1">Aperture dimostrate dal telefono</p>
-          </div>
-
-          <div className="col-span-2 md:col-span-1 bg-[#0E131F] border border-purple-500/20 rounded-2xl p-4 sm:p-5 relative overflow-hidden">
-            <div className="flex items-center justify-between text-purple-400/70 mb-2">
-              <span className="text-xs font-medium uppercase tracking-wider">Risposte</span>
-              <MessageSquare className="w-4 h-4 text-purple-400" />
-            </div>
-            <div className="text-2xl sm:text-3xl font-bold text-purple-400 tracking-tight">
-              {repliedCount}
-            </div>
-            <p className="text-[11px] text-purple-400/60 mt-1">Prospect interessati</p>
+            <button
+              type="button"
+              onClick={() => setActiveTab("REPLIED")}
+              className={`col-span-2 lg:col-span-1 p-4 sm:p-5 text-left transition-colors cursor-pointer ${
+                activeTab === "REPLIED" ? "bg-[#0B1E36] text-white" : "hover:bg-[#F8F7F4]"
+              }`}
+            >
+              <div
+                className={`text-[10px] font-mono uppercase tracking-wider ${
+                  activeTab === "REPLIED" ? "text-[#C5A059]" : "text-[#0B1E36]"
+                }`}
+              >
+                05 · Trattative Attive
+              </div>
+              <div className="font-serif text-2xl sm:text-3xl mt-1">
+                {repliedCount}
+              </div>
+              <div
+                className={`text-[11px] mt-0.5 ${
+                  activeTab === "REPLIED" ? "text-white/70" : "text-[#5A6270]"
+                }`}
+              >
+                Hanno risposto all&apos;email
+              </div>
+            </button>
           </div>
         </section>
 
-        {/* Sezione Scouting / Ricerca Aziende B2B High-Ticket */}
-        <section className="bg-[#0E131F] border border-white/10 rounded-2xl p-6 shadow-xl">
-          <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
+        {/* Modulo di Ricerca B2B & Generazione Demo Automatica */}
+        <section className="bg-white border border-[#E8E2D5] p-5 sm:p-6">
+          <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-3 mb-4">
             <div>
-              <h2 className="text-base font-semibold text-white flex items-center gap-2">
-                <Search className="w-4 h-4 text-blue-400" />
-                Scouting Aziende B2B High-Ticket &amp; Generazione Ecosistemi Demo (0.3s)
+              <div className="text-[10px] font-mono uppercase tracking-widest text-[#B8860B]">
+                Scouting &amp; Compilazione Automatica (Locale &amp; Remoto)
+              </div>
+              <h2 className="font-serif text-xl text-[#14181F] font-normal">
+                Individua Nuove Aziende B2B o Analizza un Dominio Diretto
               </h2>
-              <p className="text-xs text-white/50 mt-0.5">
-                Individua PMI strutturate, industrie manifatturiere, distributori B2B e aziende con siti lenti (&gt; 5.0s), calcola i 3 danni economici (LCP, Server-Side, CRM) e genera demo + email.
-              </p>
             </div>
+            <p className="text-xs text-[#5A6270] max-w-xl">
+              Inserisci un settore + città (es. <em>automazione industriale brescia</em>) oppure incolla direttamente il dominio di un&apos;azienda (es. <em>tecnologicbrescia.it</em>) per generare subito demo 0.3s ed email.
+            </p>
           </div>
 
-          {/* Preset Rapidi Verticali B2B */}
+          {/* Selettori Rapidi Settori B2B */}
           <div className="flex flex-wrap items-center gap-1.5 mb-4">
-            <span className="text-[11px] text-white/40 mr-1 font-mono uppercase">Target B2B:</span>
-            {[
-              "automazione industriale brescia",
-              "macchinari industriali bergamo",
-              "carpenteria metallica vicenza",
-              "distributori forniture b2b milano",
-              "impianti fotovoltaici industriali",
-              "serramenti alluminio bologna",
-              "clinica odontoiatrica verona",
-            ].map((preset) => (
+            <span className="text-[10px] font-mono uppercase tracking-wider text-[#5A6270] mr-1">
+              Verticali B2B:
+            </span>
+            {B2B_PRESETS.map((item) => (
               <button
-                key={preset}
+                key={item.query}
                 type="button"
-                onClick={() => setKeyword(preset)}
-                className={`px-2.5 py-1 rounded-lg text-[11px] border transition-colors ${
-                  keyword === preset
-                    ? "bg-blue-600/20 border-blue-500/40 text-blue-300 font-medium"
-                    : "bg-white/[0.03] border-white/10 text-white/60 hover:text-white hover:bg-white/[0.07]"
+                onClick={() => setKeyword(item.query)}
+                className={`px-2.5 py-1 text-[11px] border transition-colors cursor-pointer ${
+                  keyword === item.query
+                    ? "bg-[#0B1E36] text-white border-[#0B1E36] font-medium"
+                    : "bg-[#F8F7F4] text-[#5A6270] border-[#E8E2D5] hover:border-[#0B1E36] hover:text-[#14181F]"
                 }`}
               >
-                {preset}
+                {item.label}
               </button>
             ))}
           </div>
 
-          <form onSubmit={handleStartScouting} className="flex flex-col sm:flex-row gap-3">
+          <form
+            onSubmit={handleStartScouting}
+            className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5"
+          >
             <div className="flex-1 relative">
-              <Search className="w-4 h-4 text-white/40 absolute left-3.5 top-1/2 -translate-y-1/2" />
+              <Search className="w-4 h-4 text-[#5A6270] absolute left-3.5 top-1/2 -translate-y-1/2" />
               <input
                 type="text"
                 value={keyword}
                 onChange={(e) => setKeyword(e.target.value)}
-                placeholder="es. automazione industriale brescia, macchinari b2b padova, fotovoltaico industriale..."
+                placeholder="Settore e città (es. carpenteria metallica vicenza) oppure dominio diretto (es. azienda.it)..."
                 required
-                className="w-full bg-[#121826] border border-white/10 rounded-xl pl-10 pr-4 py-3 text-sm text-white placeholder-white/30 focus:outline-none focus:border-blue-500 transition-colors"
+                className="w-full bg-[#F8F7F4] border border-[#E8E2D5] pl-10 pr-4 py-2.5 text-base sm:text-sm text-[#14181F] placeholder-[#5A6270]/60 focus:outline-none focus:border-[#0B1E36] focus:bg-white transition-colors"
               />
             </div>
 
-            <div className="w-full sm:w-36">
+            <div className="w-full sm:w-40">
               <select
                 value={maxLeads}
                 onChange={(e) => setMaxLeads(Number(e.target.value))}
-                className="w-full bg-[#121826] border border-white/10 rounded-xl px-3 py-3 text-sm text-white focus:outline-none focus:border-blue-500 transition-colors"
+                aria-label="Numero massimo aziende"
+                className="w-full bg-[#F8F7F4] border border-[#E8E2D5] px-3 py-2.5 text-base sm:text-sm text-[#14181F] focus:outline-none focus:border-[#0B1E36] focus:bg-white transition-colors"
               >
-                <option value={3}>3 Aziende</option>
-                <option value={5}>5 Aziende</option>
-                <option value={10}>10 Aziende</option>
+                <option value={3}>Target: 3 aziende</option>
+                <option value={5}>Target: 5 aziende</option>
+                <option value={10}>Target: 10 aziende</option>
               </select>
             </div>
 
             <button
               type="submit"
               disabled={scoutingRunning}
-              className="bg-blue-600 hover:bg-blue-500 text-white font-medium px-6 py-3 rounded-xl text-sm transition-all shadow-lg shadow-blue-600/25 flex items-center justify-center gap-2 disabled:opacity-50 shrink-0"
+              className="bg-[#0B1E36] hover:bg-[#142d4c] text-white font-mono uppercase tracking-wider text-xs px-6 py-3 transition-colors flex items-center justify-center gap-2 disabled:opacity-50 shrink-0 cursor-pointer"
             >
               {scoutingRunning ? (
                 <>
-                  <RefreshCw className="w-4 h-4 animate-spin" />
-                  Ricerca in corso...
+                  <RefreshCw className="w-3.5 h-3.5 animate-spin text-[#C5A059]" />
+                  <span>Ricerca e Compilazione...</span>
                 </>
               ) : (
-                <>
-                  <Sparkles className="w-4 h-4" />
-                  Avvia Ricerca
-                </>
+                <span>Avvia Ricerca e Genera Demo</span>
               )}
             </button>
           </form>
 
-          {scoutMessage && (
+          {/* Esito Ricerca + Accesso Immediato alle Nuove Demo */}
+          {scoutStatus && (
             <div
-              className={`mt-4 p-3 rounded-xl text-xs flex items-center gap-2 ${
-                scoutMessage.includes("Errore")
-                  ? "bg-rose-500/10 text-rose-300 border border-rose-500/20"
-                  : "bg-blue-500/10 text-blue-300 border border-blue-500/20"
+              className={`mt-4 p-4 border text-xs ${
+                scoutStatus.type === "error"
+                  ? "bg-red-50 border-red-200 text-red-900"
+                  : scoutStatus.type === "success"
+                  ? "bg-[#F8F7F4] border-[#B8860B]/50 text-[#14181F]"
+                  : "bg-[#F8F7F4] border-[#E8E2D5] text-[#5A6270]"
               }`}
             >
-              <CheckCircle2 className="w-4 h-4 shrink-0" />
-              <span>{scoutMessage}</span>
+              <div className="flex items-center justify-between gap-2">
+                <div className="flex items-center gap-2 font-medium">
+                  {scoutStatus.type === "error" ? (
+                    <AlertCircle className="w-4 h-4 text-red-700 shrink-0" />
+                  ) : (
+                    <CheckCircle2 className="w-4 h-4 text-[#B8860B] shrink-0" />
+                  )}
+                  <span>{scoutStatus.text}</span>
+                </div>
+                <button
+                  type="button"
+                  onClick={() => {
+                    setScoutStatus(null);
+                    setLastDiscovered([]);
+                  }}
+                  className="text-[#5A6270] hover:text-[#14181F]"
+                >
+                  <X className="w-4 h-4" />
+                </button>
+              </div>
+
+              {lastDiscovered.length > 0 && (
+                <div className="mt-3 pt-3 border-t border-[#E8E2D5] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2.5">
+                  {lastDiscovered.map((item) => (
+                    <div
+                      key={item.slug}
+                      className="bg-white border border-[#E8E2D5] p-3 flex items-center justify-between gap-2"
+                    >
+                      <div className="min-w-0">
+                        <div className="font-semibold text-[#14181F] truncate">
+                          {item.companyName}
+                        </div>
+                        <div className="text-[11px] text-[#5A6270] truncate">
+                          {item.city} · {item.targetEmail}
+                        </div>
+                        <div className="text-[10px] font-mono text-[#B8860B] mt-0.5">
+                          LCP {item.lcp}s → 0.3s
+                        </div>
+                      </div>
+                      <a
+                        href={item.demoUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="shrink-0 px-2.5 py-1.5 bg-[#0B1E36] text-white text-[11px] font-mono uppercase tracking-wider hover:bg-[#142d4c] transition-colors inline-flex items-center gap-1"
+                      >
+                        <span>Demo</span>
+                        <ExternalLink className="w-3 h-3" />
+                      </a>
+                    </div>
+                  ))}
+                </div>
+              )}
             </div>
           )}
         </section>
 
-        {/* Tab & Filtri Lead */}
-        <section className="space-y-4">
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-white/10 pb-4">
-            {/* Filtri a Schede Chiari */}
-            <div className="flex items-center gap-2 overflow-x-auto pb-1 sm:pb-0 scrollbar-none">
-              <button
-                onClick={() => setActiveTab("ALL")}
-                className={`px-3.5 py-1.5 rounded-xl text-xs font-medium transition-all shrink-0 ${
-                  activeTab === "ALL"
-                    ? "bg-blue-600 text-white shadow-md shadow-blue-600/30"
-                    : "bg-white/[0.04] text-white/60 hover:text-white hover:bg-white/[0.08]"
-                }`}
-              >
-                Tutti ({totalLeadsCount})
-              </button>
-
-              <button
-                onClick={() => setActiveTab("READY")}
-                className={`px-3.5 py-1.5 rounded-xl text-xs font-medium transition-all shrink-0 flex items-center gap-1.5 ${
-                  activeTab === "READY"
-                    ? "bg-amber-600 text-white shadow-md shadow-amber-600/30"
-                    : "bg-white/[0.04] text-white/60 hover:text-white hover:bg-white/[0.08]"
-                }`}
-              >
-                <Sparkles className="w-3 h-3 text-amber-400" />
-                Da Contattare ({readyCount})
-              </button>
-
-              <button
-                onClick={() => setActiveTab("SENT")}
-                className={`px-3.5 py-1.5 rounded-xl text-xs font-medium transition-all shrink-0 flex items-center gap-1.5 ${
-                  activeTab === "SENT"
-                    ? "bg-blue-500 text-white shadow-md shadow-blue-500/30"
-                    : "bg-white/[0.04] text-white/60 hover:text-white hover:bg-white/[0.08]"
-                }`}
-              >
-                <Send className="w-3 h-3" />
-                Email Inviata ({sentCount})
-              </button>
-
-              <button
-                onClick={() => setActiveTab("VISITED")}
-                className={`px-3.5 py-1.5 rounded-xl text-xs font-medium transition-all shrink-0 flex items-center gap-1.5 ${
-                  activeTab === "VISITED"
-                    ? "bg-emerald-600 text-white shadow-md shadow-emerald-600/30"
-                    : "bg-white/[0.04] text-white/60 hover:text-white hover:bg-white/[0.08]"
-                }`}
-              >
-                <Flame className="w-3 h-3 text-emerald-400" />
-                Demo Visitata ({visitedCount})
-              </button>
-
-              <button
-                onClick={() => setActiveTab("REPLIED")}
-                className={`px-3.5 py-1.5 rounded-xl text-xs font-medium transition-all shrink-0 flex items-center gap-1.5 ${
-                  activeTab === "REPLIED"
-                    ? "bg-purple-600 text-white shadow-md shadow-purple-600/30"
-                    : "bg-white/[0.04] text-white/60 hover:text-white hover:bg-white/[0.08]"
-                }`}
-              >
-                <MessageSquare className="w-3 h-3 text-purple-400" />
-                Ha Risposto ({repliedCount})
-              </button>
+        {/* Registro Operativo Lead (Tabella & Controlli di Ricerca) */}
+        <section className="bg-white border border-[#E8E2D5]">
+          {/* Barra Filtri */}
+          <div className="p-4 sm:p-5 border-b border-[#E8E2D5] flex flex-col lg:flex-row lg:items-center justify-between gap-3">
+            {/* Tabs Stato */}
+            <div className="flex flex-wrap items-center gap-1.5">
+              {[
+                { id: "ALL", label: `Tutti (${totalLeadsCount})` },
+                { id: "READY", label: `Da Contattare (${readyCount})` },
+                { id: "SENT", label: `1° Contatto Inviato (${sentCount})` },
+                { id: "VISITED", label: `Demo Aperte (${visitedCount})` },
+                { id: "REPLIED", label: `Risposte (${repliedCount})` },
+              ].map((t) => (
+                <button
+                  key={t.id}
+                  type="button"
+                  onClick={() =>
+                    setActiveTab(
+                      t.id as "ALL" | "READY" | "SENT" | "VISITED" | "REPLIED"
+                    )
+                  }
+                  className={`px-3 py-1.5 text-xs font-mono uppercase tracking-wider border transition-colors cursor-pointer ${
+                    activeTab === t.id
+                      ? "bg-[#0B1E36] text-white border-[#0B1E36]"
+                      : "bg-[#F8F7F4] text-[#5A6270] border-[#E8E2D5] hover:text-[#14181F]"
+                  }`}
+                >
+                  {t.label}
+                </button>
+              ))}
             </div>
 
-            {/* Ricerca per Nome / Città */}
-            <div className="relative w-full sm:w-64">
-              <Filter className="w-3.5 h-3.5 text-white/40 absolute left-3 top-1/2 -translate-y-1/2" />
-              <input
-                type="text"
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                placeholder="Filtra per azienda o città..."
-                className="w-full bg-[#121826] border border-white/10 rounded-xl pl-9 pr-3 py-1.5 text-xs text-white placeholder-white/30 focus:outline-none focus:border-blue-500 transition-colors"
-              />
+            {/* Filtro Archetipo + Ricerca Testuale */}
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2">
+              <div className="relative">
+                <SlidersHorizontal className="w-3.5 h-3.5 text-[#5A6270] absolute left-3 top-1/2 -translate-y-1/2 pointer-events-none" />
+                <select
+                  value={archetypeFilter}
+                  onChange={(e) =>
+                    setArchetypeFilter(
+                      e.target.value as
+                        | "ALL"
+                        | "b2b-authority"
+                        | "local-leadgen"
+                        | "medical-clinic"
+                    )
+                  }
+                  aria-label="Filtra per archetipo"
+                  className="w-full sm:w-auto bg-[#F8F7F4] border border-[#E8E2D5] pl-8 pr-7 py-1.5 text-xs text-[#14181F] focus:outline-none focus:border-[#0B1E36]"
+                >
+                  <option value="ALL">Tutti i modelli ({leads.length})</option>
+                  <option value="b2b-authority">B2B / Manifattura</option>
+                  <option value="local-leadgen">Impianti / Edilizia</option>
+                  <option value="medical-clinic">Cliniche Mediche</option>
+                </select>
+              </div>
+
+              <div className="relative w-full sm:w-64">
+                <Search className="w-3.5 h-3.5 text-[#5A6270] absolute left-3 top-1/2 -translate-y-1/2" />
+                <input
+                  type="text"
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  placeholder="Cerca ragione sociale, città, email..."
+                  className="w-full bg-[#F8F7F4] border border-[#E8E2D5] pl-8 pr-3 py-1.5 text-base sm:text-xs text-[#14181F] placeholder-[#5A6270]/60 focus:outline-none focus:border-[#0B1E36] focus:bg-white"
+                />
+              </div>
             </div>
           </div>
 
-          {/* Lista Lead (Cards eleganti ed essenziali) */}
-          <div className="space-y-3">
-            {loadingLeads ? (
-              <div className="p-12 text-center text-white/40 space-y-3">
-                <RefreshCw className="w-6 h-6 animate-spin mx-auto text-blue-500" />
-                <p className="text-xs">Caricamento lead in corso...</p>
-              </div>
-            ) : filteredLeads.length === 0 ? (
-              <div className="p-12 text-center text-white/40 bg-[#0E131F] border border-white/5 rounded-2xl">
-                <Building className="w-8 h-8 mx-auto text-white/20 mb-2" />
-                <p className="text-sm font-medium text-white/60">Nessun lead trovato per questo filtro.</p>
-                <p className="text-xs text-white/30 mt-1">
-                  Prova a selezionare &quot;Tutti&quot; o esegui una nuova ricerca in alto.
-                </p>
-              </div>
-            ) : (
-              filteredLeads.map((lead) => {
+          {/* Elenco / Tabella Architetturale dei Lead */}
+          {loadingLeads ? (
+            <div className="p-12 text-center text-xs font-mono uppercase tracking-widest text-[#5A6270] flex items-center justify-center gap-2">
+              <RefreshCw className="w-4 h-4 animate-spin text-[#B8860B]" />
+              <span>Caricamento registro lead...</span>
+            </div>
+          ) : filteredLeads.length === 0 ? (
+            <div className="p-12 text-center space-y-2">
+              <p className="font-serif text-lg text-[#14181F]">
+                Nessuna azienda corrisponde ai criteri selezionati.
+              </p>
+              <p className="text-xs text-[#5A6270]">
+                Modifica il filtro di ricerca oppure utilizza il modulo superiore per generare nuove demo B2B.
+              </p>
+            </div>
+          ) : (
+            <div className="divide-y divide-[#E8E2D5]">
+              {filteredLeads.map((lead) => {
                 const isSent = (lead.sendCount || 0) > 0;
                 const visits = lead.visits?.totalVisits || 0;
                 const hasReplied = Boolean(lead.hasReplied);
                 const sendStatus = sendResult[lead.slug];
+                const archetypeLabel =
+                  lead.config.archetype === "b2b-authority"
+                    ? "B2B Authority"
+                    : lead.config.archetype === "medical-clinic"
+                    ? "Clinica Medica"
+                    : "Lead Generation";
 
                 return (
                   <div
                     key={lead.slug}
-                    className={`bg-[#0E131F] border rounded-2xl p-4 sm:p-5 transition-all ${
+                    className={`p-4 sm:p-5 transition-colors ${
                       hasReplied
-                        ? "border-purple-500/40 bg-purple-950/10 shadow-lg shadow-purple-950/20"
+                        ? "bg-[#F8F7F4]"
                         : visits > 0
-                        ? "border-emerald-500/40 bg-emerald-950/10 shadow-lg shadow-emerald-950/20"
-                        : isSent
-                        ? "border-blue-500/20"
-                        : "border-white/10 hover:border-white/20"
+                        ? "bg-[#FAF9F5]"
+                        : "bg-white hover:bg-[#F8F7F4]/60"
                     }`}
                   >
                     <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
-                      {/* Dati Azienda & Velocità */}
-                      <div className="flex items-start gap-3.5">
-                        <div className="w-12 h-12 rounded-xl bg-white/[0.04] border border-white/10 p-1 flex items-center justify-center shrink-0 overflow-hidden">
-                          {lead.hasAssets.hasLogo ? (
-                            // eslint-disable-next-line @next/next/no-img-element
-                            <img
-                              src={`/leads/${lead.slug}/logo.png`}
-                              alt={lead.config.meta.companyName}
-                              className="w-full h-full object-contain"
-                            />
+                      {/* Colonna Sinistra: Identità Azienda, Contatti & Metriche */}
+                      <div className="space-y-1.5 min-w-0 flex-1">
+                        <div className="flex flex-wrap items-center gap-2">
+                          <h3 className="font-serif text-lg sm:text-xl text-[#14181F] font-medium tracking-tight">
+                            {lead.config.meta.companyName}
+                          </h3>
+
+                          <span className="text-xs text-[#5A6270]">
+                            · {lead.config.meta.city}
+                          </span>
+
+                          <span className="px-2 py-0.5 text-[10px] font-mono uppercase tracking-wider bg-[#F8F7F4] border border-[#E8E2D5] text-[#5A6270]">
+                            {archetypeLabel}
+                          </span>
+
+                          {/* Stato Lead Sobrio */}
+                          {hasReplied ? (
+                            <span className="px-2 py-0.5 text-[10px] font-mono uppercase tracking-wider bg-[#0B1E36] text-[#C5A059] font-semibold">
+                              Risposta Ricevuta
+                            </span>
+                          ) : visits > 0 ? (
+                            <span className="px-2 py-0.5 text-[10px] font-mono uppercase tracking-wider bg-emerald-900 text-white font-semibold">
+                              Demo Aperta ({visits}x)
+                            </span>
+                          ) : isSent ? (
+                            <span className="px-2 py-0.5 text-[10px] font-mono uppercase tracking-wider bg-[#E8E2D5]/70 text-[#14181F]">
+                              1ª Email Inviata
+                            </span>
                           ) : (
-                            <Building className="w-5 h-5 text-white/30" />
+                            <span className="px-2 py-0.5 text-[10px] font-mono uppercase tracking-wider border border-[#B8860B]/50 text-[#B8860B]">
+                              Pronto per Invio
+                            </span>
                           )}
                         </div>
 
-                        <div className="space-y-1">
-                          <div className="flex flex-wrap items-center gap-2">
-                            <h3 className="font-semibold text-white text-sm sm:text-base">
-                              {lead.config.meta.companyName}
-                            </h3>
+                        {/* Riga Metadati Tecnici e Recapiti */}
+                        <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-[#5A6270]">
+                          <span className="inline-flex items-center gap-1.5 font-mono text-[11px] text-[#14181F]">
+                            <Mail className="w-3.5 h-3.5 text-[#B8860B]" />
+                            {lead.config.meta.targetEmail}
+                          </span>
 
-                            {/* Badge Stato Chiaro */}
-                            {hasReplied ? (
-                              <span className="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-purple-500/20 text-purple-300 border border-purple-500/30 flex items-center gap-1">
-                                <MessageSquare className="w-3 h-3" />
-                                Ha Risposto!
-                              </span>
-                            ) : visits > 0 ? (
-                              <span className="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 flex items-center gap-1">
-                                <Flame className="w-3 h-3" />
-                                Demo Aperta ({visits}x)
-                              </span>
-                            ) : isSent ? (
-                              <span className="px-2 py-0.5 rounded-full text-[10px] font-medium bg-blue-500/10 text-blue-300 border border-blue-500/20 flex items-center gap-1">
-                                <Check className="w-3 h-3" />
-                                Inviata
-                              </span>
-                            ) : (
-                              <span className="px-2 py-0.5 rounded-full text-[10px] font-medium bg-amber-500/10 text-amber-300 border border-amber-500/20">
-                                Da Contattare
-                              </span>
-                            )}
-
-                            <span className="text-xs text-white/40">· {lead.config.meta.city}</span>
-                          </div>
-
-                          <div className="flex flex-wrap items-center gap-3 text-xs text-white/60">
-                            <span className="flex items-center gap-1">
-                              <Mail className="w-3 h-3 text-white/40" />
-                              <strong className="text-white/80">{lead.config.meta.targetEmail}</strong>
+                          {lead.config.meta.phone && (
+                            <span className="inline-flex items-center gap-1 font-mono text-[11px]">
+                              <Smartphone className="w-3.5 h-3.5 text-[#5A6270]" />
+                              {lead.config.meta.phone}
                             </span>
-                            {lead.config.meta.phone && (
-                              <span className="flex items-center gap-1">
-                                <Smartphone className="w-3 h-3 text-white/40" />
-                                {lead.config.meta.phone}
-                              </span>
-                            )}
-                            <a
-                              href={lead.config.meta.originalLandingUrl}
-                              target="_blank"
-                              rel="noreferrer"
-                              className="text-white/40 hover:text-white flex items-center gap-1 transition-colors"
-                            >
-                              <Globe className="w-3 h-3" />
-                              Sito originale
-                              <ExternalLink className="w-2.5 h-2.5" />
-                            </a>
-                          </div>
-
-                          {/* Velocità e Flaw */}
-                          <div className="flex items-center gap-2 pt-1 text-xs">
-                            <span className="px-2 py-0.5 rounded bg-rose-500/10 text-rose-300 font-mono text-[11px] border border-rose-500/20">
-                              Attuale: {lead.config.audit.originalLcpSeconds}s
-                            </span>
-                            <span className="text-white/30">→</span>
-                            <span className="px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-300 font-mono text-[11px] border border-emerald-500/20 font-semibold">
-                              TechPyre: 0.3s
-                            </span>
-                          </div>
-
-                          {/* Note su risposte se presenti */}
-                          {lead.statusNotes && (
-                            <p className="text-xs text-purple-300 bg-purple-950/30 border border-purple-500/20 p-2 rounded-lg mt-2">
-                              💬 <strong>Nota Risposta:</strong> {lead.statusNotes}
-                            </p>
                           )}
+
+                          {lead.config.meta.vatNumber &&
+                            lead.config.meta.vatNumber !== "Non trovata" && (
+                              <span className="font-mono text-[11px]">
+                                P.IVA {lead.config.meta.vatNumber}
+                              </span>
+                            )}
+
+                          <a
+                            href={lead.config.meta.originalLandingUrl}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="inline-flex items-center gap-1 text-[#0B1E36] hover:underline"
+                          >
+                            <Globe className="w-3 h-3" />
+                            <span>Sito attuale</span>
+                            <ExternalLink className="w-2.5 h-2.5" />
+                          </a>
+
+                          <span className="font-mono text-[11px] px-2 py-0.5 bg-[#F8F7F4] border border-[#E8E2D5] text-[#14181F]">
+                            LCP Mobile:{" "}
+                            <strong className="text-red-800">
+                              {lead.config.audit.originalLcpSeconds}s
+                            </strong>{" "}
+                            → <strong className="text-emerald-800">0.3s</strong>
+                          </span>
                         </div>
+
+                        {/* eventuale nota trattativa */}
+                        {lead.statusNotes && (
+                          <div className="mt-2 px-3 py-2 bg-white border-l-2 border-[#B8860B] text-xs text-[#14181F]">
+                            <strong className="font-mono uppercase text-[10px] tracking-wider text-[#B8860B] mr-2">
+                              Nota Trattativa:
+                            </strong>
+                            {lead.statusNotes}
+                          </div>
+                        )}
                       </div>
 
-                      {/* Azioni Rapide */}
-                      <div className="flex flex-wrap items-center gap-2 lg:self-center shrink-0 pt-2 lg:pt-0 border-t lg:border-t-0 border-white/5">
-                        {/* 1. Vedi Demo */}
+                      {/* Colonna Destra: Azioni Operative */}
+                      <div className="flex flex-wrap items-center gap-2 shrink-0 pt-2 lg:pt-0 border-t lg:border-t-0 border-[#E8E2D5]">
+                        {/* 1. Apri Demo Live */}
                         <a
                           href={`/demo/${lead.slug}`}
                           target="_blank"
                           rel="noreferrer"
-                          className="px-3.5 py-2 rounded-xl bg-white/[0.05] hover:bg-white/[0.1] text-white text-xs font-medium border border-white/10 transition-all flex items-center gap-1.5"
+                          className="px-3 py-2 bg-[#F8F7F4] hover:bg-[#0B1E36] hover:text-white text-[#14181F] border border-[#E8E2D5] text-xs font-medium transition-colors inline-flex items-center gap-1.5"
                         >
-                          <Smartphone className="w-3.5 h-3.5 text-blue-400" />
-                          Vedi Demo
-                          <ExternalLink className="w-3 h-3 opacity-50" />
+                          <span>Apri Demo</span>
+                          <ExternalLink className="w-3 h-3" />
                         </a>
 
-                        {/* 2. Dettagli Visite (se visitato) */}
+                        {/* 2. Copia Link Demo */}
+                        <button
+                          type="button"
+                          onClick={() => copyDemoUrl(lead.slug)}
+                          className="px-3 py-2 bg-[#F8F7F4] hover:bg-[#0B1E36] hover:text-white text-[#14181F] border border-[#E8E2D5] text-xs font-medium transition-colors inline-flex items-center gap-1.5 cursor-pointer"
+                        >
+                          {copiedSlug === lead.slug ? (
+                            <>
+                              <Check className="w-3.5 h-3.5 text-emerald-700" />
+                              <span>Link Copiato</span>
+                            </>
+                          ) : (
+                            <>
+                              <Copy className="w-3.5 h-3.5" />
+                              <span>Copia Link</span>
+                            </>
+                          )}
+                        </button>
+
+                        {/* 3. Log Visite (se presenti) */}
                         {visits > 0 && (
                           <button
+                            type="button"
                             onClick={() => setVisitsDetailLead(lead)}
-                            className="px-3 py-2 rounded-xl bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-300 text-xs font-medium border border-emerald-500/30 transition-all flex items-center gap-1.5"
+                            className="px-3 py-2 bg-emerald-950/5 hover:bg-emerald-900 hover:text-white text-emerald-900 border border-emerald-800/30 text-xs font-mono uppercase tracking-wider transition-colors inline-flex items-center gap-1.5 cursor-pointer"
                           >
                             <Eye className="w-3.5 h-3.5" />
-                            Dettagli Visite ({visits})
+                            <span>Visite ({visits})</span>
                           </button>
                         )}
 
-                        {/* 3. Anteprima Email */}
+                        {/* 4. Revisiona / Modifica Email */}
                         <button
-                          onClick={() => setPreviewLead(lead)}
-                          className="px-3 py-2 rounded-xl bg-white/[0.05] hover:bg-white/[0.1] text-white/70 hover:text-white text-xs font-medium border border-white/10 transition-all flex items-center gap-1.5"
+                          type="button"
+                          onClick={() => openEmailComposer(lead, isSent)}
+                          className="px-3 py-2 bg-white hover:bg-[#F8F7F4] text-[#0B1E36] border border-[#0B1E36]/30 text-xs font-medium transition-colors inline-flex items-center gap-1.5 cursor-pointer"
                         >
-                          <Mail className="w-3.5 h-3.5" />
-                          Leggi Email
+                          <Mail className="w-3.5 h-3.5 text-[#B8860B]" />
+                          <span>Ispeziona / Modifica Email</span>
                         </button>
 
-                        {/* 4. Invia Email */}
+                        {/* 5. Invia Subito */}
                         <button
+                          type="button"
                           onClick={() => handleSendEmail(lead.slug, isSent)}
                           disabled={sendingSlug === lead.slug}
-                          className={`px-4 py-2 rounded-xl text-xs font-semibold transition-all flex items-center gap-1.5 shadow-md ${
+                          className={`px-4 py-2 text-xs font-mono uppercase tracking-wider transition-colors inline-flex items-center gap-1.5 cursor-pointer disabled:opacity-50 ${
                             isSent
-                              ? "bg-white/[0.06] hover:bg-white/[0.12] text-white/80 border border-white/10"
-                              : "bg-blue-600 hover:bg-blue-500 text-white shadow-blue-600/30"
-                          } disabled:opacity-50`}
+                              ? "bg-[#F8F7F4] hover:bg-[#0B1E36] hover:text-white text-[#14181F] border border-[#E8E2D5]"
+                              : "bg-[#0B1E36] hover:bg-[#142d4c] text-white"
+                          }`}
                         >
                           {sendingSlug === lead.slug ? (
                             <>
                               <RefreshCw className="w-3.5 h-3.5 animate-spin" />
-                              Invio in corso...
+                              <span>Invio...</span>
                             </>
                           ) : (
                             <>
                               <Send className="w-3.5 h-3.5" />
-                              {isSent ? "Reinvia / Follow-up" : "Invia 1ª Email"}
+                              <span>
+                                {isSent ? "Invia Follow-up col Link" : "Invia 1ª Email"}
+                              </span>
                             </>
                           )}
                         </button>
@@ -1020,68 +1270,226 @@ export default function AdminPage() {
                     </div>
 
                     {/* Feedback Invio Inline */}
-                    {sendStatus && (
+                    {sendStatus && sendStatus.message && (
                       <div
-                        className={`mt-3 p-2.5 rounded-xl text-xs flex items-center gap-2 ${
+                        className={`mt-3 px-3.5 py-2 border text-xs flex items-center gap-2 ${
                           sendStatus.success
-                            ? "bg-emerald-500/10 text-emerald-300 border border-emerald-500/20"
-                            : "bg-rose-500/10 text-rose-300 border border-rose-500/20"
+                            ? "bg-emerald-50 border-emerald-200 text-emerald-900"
+                            : "bg-red-50 border-red-200 text-red-900"
                         }`}
                       >
                         {sendStatus.success ? (
-                          <CheckCircle2 className="w-4 h-4 shrink-0" />
+                          <CheckCircle2 className="w-4 h-4 shrink-0 text-emerald-700" />
                         ) : (
-                          <AlertCircle className="w-4 h-4 shrink-0" />
+                          <AlertCircle className="w-4 h-4 shrink-0 text-red-700" />
                         )}
                         <span>{sendStatus.message}</span>
                       </div>
                     )}
                   </div>
                 );
-              })
-            )}
-          </div>
+              })}
+            </div>
+          )}
         </section>
       </main>
 
-      {/* MODAL 1: Impostazioni Email Personali (per Andrea Di Bella o chiunque altro) */}
-      {showSmtpModal && (
-        <div className="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
-          <div className="bg-[#0E131F] border border-white/10 rounded-2xl max-w-lg w-full p-6 shadow-2xl space-y-4 max-h-[90vh] overflow-y-auto">
-            <div className="flex items-center justify-between border-b border-white/10 pb-3">
-              <div className="flex items-center gap-2.5">
-                <div className="w-8 h-8 rounded-lg bg-blue-600/20 text-blue-400 flex items-center justify-center">
-                  <Mail className="w-4 h-4" />
+      {/* MODAL 1: Composer & Revisione Email (con modifica live di Destinatario, Oggetto e Corpo) */}
+      {composerLead && (
+        <div className="fixed inset-0 z-50 bg-[#0B1E36]/60 backdrop-blur-xs flex items-center justify-center p-4">
+          <div className="bg-white border border-[#E8E2D5] max-w-2xl w-full p-6 sm:p-8 shadow-2xl space-y-5 max-h-[92vh] overflow-y-auto">
+            <div className="flex items-start justify-between border-b border-[#E8E2D5] pb-4">
+              <div>
+                <div className="text-[10px] font-mono uppercase tracking-widest text-[#B8860B]">
+                  Revisione &amp; Invio Diretto SMTP · {composerLead.config.meta.companyName}
                 </div>
-                <div>
-                  <h3 className="text-base font-bold text-white">Configurazione Email Personale</h3>
-                  <p className="text-xs text-white/50">Profilo: {currentUser?.displayName}</p>
-                </div>
+                <h3 className="font-serif text-2xl text-[#14181F] font-normal mt-0.5">
+                  Configurazione Messaggio Outbound
+                </h3>
               </div>
               <button
-                onClick={() => setShowSmtpModal(false)}
-                className="text-white/40 hover:text-white text-sm"
+                type="button"
+                onClick={() => setComposerLead(null)}
+                className="text-[#5A6270] hover:text-[#14181F] p-1"
               >
-                ✕
+                <X className="w-5 h-5" />
               </button>
             </div>
 
-            <p className="text-xs text-white/60">
-              Imposta qui i parametri della tua casella di posta per fare in modo che le email di presentazione vengano inviate direttamente dal tuo indirizzo personale.
-            </p>
+            {/* Switcher 1° Contatto vs Follow-up con Link */}
+            <div className="grid grid-cols-2 border border-[#E8E2D5] bg-[#F8F7F4] p-1 gap-1">
+              <button
+                type="button"
+                onClick={() => switchComposerMode("INITIAL")}
+                className={`py-2 px-3 text-xs font-mono uppercase tracking-wider transition-colors cursor-pointer ${
+                  composerMode === "INITIAL"
+                    ? "bg-[#0B1E36] text-white font-semibold"
+                    : "text-[#5A6270] hover:text-[#14181F]"
+                }`}
+              >
+                1. Primo Contatto (Zero Link · Anti-Spam)
+              </button>
+              <button
+                type="button"
+                onClick={() => switchComposerMode("FOLLOWUP")}
+                className={`py-2 px-3 text-xs font-mono uppercase tracking-wider transition-colors cursor-pointer ${
+                  composerMode === "FOLLOWUP"
+                    ? "bg-[#0B1E36] text-white font-semibold"
+                    : "text-[#5A6270] hover:text-[#14181F]"
+                }`}
+              >
+                2. Follow-Up con Link Demo
+              </button>
+            </div>
 
-            {/* Presets rapidi */}
-            <div className="flex flex-wrap gap-1.5 pt-1">
-              <span className="text-[10px] text-white/40 self-center mr-1">Presets:</span>
+            <div className="space-y-3 text-xs">
+              <div>
+                <label className="block text-[10px] font-mono uppercase tracking-wider text-[#5A6270] mb-1">
+                  Destinatario Email
+                </label>
+                <input
+                  type="email"
+                  value={composerRecipient}
+                  onChange={(e) => setComposerRecipient(e.target.value)}
+                  className="w-full bg-[#F8F7F4] border border-[#E8E2D5] px-3 py-2 text-base sm:text-xs font-mono text-[#14181F] focus:outline-none focus:border-[#0B1E36] focus:bg-white"
+                />
+              </div>
+
+              <div>
+                <label className="block text-[10px] font-mono uppercase tracking-wider text-[#5A6270] mb-1">
+                  Oggetto Email
+                </label>
+                <input
+                  type="text"
+                  value={composerSubject}
+                  onChange={(e) => setComposerSubject(e.target.value)}
+                  className="w-full bg-[#F8F7F4] border border-[#E8E2D5] px-3 py-2 text-base sm:text-xs text-[#14181F] font-medium focus:outline-none focus:border-[#0B1E36] focus:bg-white"
+                />
+              </div>
+
+              <div>
+                <div className="flex items-center justify-between mb-1">
+                  <label className="text-[10px] font-mono uppercase tracking-wider text-[#5A6270]">
+                    Corpo del Messaggio (Testo Puro)
+                  </label>
+                  <button
+                    type="button"
+                    onClick={copyComposerText}
+                    className="inline-flex items-center gap-1 text-[11px] text-[#0B1E36] hover:underline cursor-pointer"
+                  >
+                    {copiedEmailBody ? (
+                      <>
+                        <Check className="w-3 h-3 text-emerald-700" />
+                        <span>Testo copiato</span>
+                      </>
+                    ) : (
+                      <>
+                        <Copy className="w-3 h-3" />
+                        <span>Copia testo</span>
+                      </>
+                    )}
+                  </button>
+                </div>
+                <textarea
+                  rows={12}
+                  value={composerBody}
+                  onChange={(e) => setComposerBody(e.target.value)}
+                  className="w-full bg-[#F8F7F4] border border-[#E8E2D5] p-3.5 text-base sm:text-xs text-[#14181F] font-sans leading-relaxed focus:outline-none focus:border-[#0B1E36] focus:bg-white"
+                />
+              </div>
+            </div>
+
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pt-4 border-t border-[#E8E2D5]">
+              <span className="text-[11px] font-mono text-[#5A6270]">
+                {composerMode === "INITIAL"
+                  ? "Verifica Anti-Spam: 0 link presenti · Pronto per l'invio"
+                  : `Include link diretto: https://www.techpyre.eu/demo/${composerLead.slug}`}
+              </span>
+
+              <div className="flex items-center gap-2">
+                <button
+                  type="button"
+                  onClick={() => setComposerLead(null)}
+                  className="px-4 py-2.5 border border-[#E8E2D5] text-xs text-[#5A6270] hover:text-[#14181F] cursor-pointer"
+                >
+                  Annulla
+                </button>
+                <button
+                  type="button"
+                  disabled={sendingSlug === composerLead.slug}
+                  onClick={() =>
+                    handleSendEmail(
+                      composerLead.slug,
+                      composerMode === "FOLLOWUP",
+                      {
+                        customRecipient: composerRecipient,
+                        customSubject: composerSubject,
+                        customBody: composerBody,
+                      }
+                    )
+                  }
+                  className="px-5 py-2.5 bg-[#0B1E36] hover:bg-[#142d4c] text-white text-xs font-mono uppercase tracking-wider inline-flex items-center gap-2 cursor-pointer disabled:opacity-50"
+                >
+                  <Send className="w-3.5 h-3.5" />
+                  <span>
+                    {sendingSlug === composerLead.slug
+                      ? "Invio in corso..."
+                      : composerMode === "FOLLOWUP"
+                      ? "Invia Follow-Up Ora"
+                      : "Invia 1ª Email Ora"}
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* MODAL 2: Configurazione Parametri SMTP */}
+      {showSmtpModal && (
+        <div className="fixed inset-0 z-50 bg-[#0B1E36]/60 backdrop-blur-xs flex items-center justify-center p-4">
+          <div className="bg-white border border-[#E8E2D5] max-w-lg w-full p-6 sm:p-8 shadow-2xl space-y-4 max-h-[90vh] overflow-y-auto">
+            <div className="flex items-start justify-between border-b border-[#E8E2D5] pb-3">
+              <div>
+                <div className="text-[10px] font-mono uppercase tracking-widest text-[#B8860B]">
+                  Profilo Operatore: {currentUser?.displayName}
+                </div>
+                <h3 className="font-serif text-xl text-[#14181F] font-normal">
+                  Parametri Server di Posta (SMTP)
+                </h3>
+              </div>
+              <button
+                type="button"
+                onClick={() => setShowSmtpModal(false)}
+                className="text-[#5A6270] hover:text-[#14181F]"
+              >
+                <X className="w-5 h-5" />
+              </button>
+            </div>
+
+            <div className="flex flex-wrap items-center gap-1.5 text-xs">
+              <span className="text-[10px] font-mono uppercase text-[#5A6270] mr-1">
+                Preconfigurazioni:
+              </span>
+              <button
+                type="button"
+                onClick={() => {
+                  setSmtpHost("smtps.aruba.it");
+                  setSmtpPort("465");
+                }}
+                className="px-2.5 py-1 bg-[#F8F7F4] border border-[#E8E2D5] hover:border-[#0B1E36] text-[11px]"
+              >
+                Aruba (465 SSL)
+              </button>
               <button
                 type="button"
                 onClick={() => {
                   setSmtpHost("smtp.gmail.com");
                   setSmtpPort("465");
                 }}
-                className="px-2 py-0.5 rounded bg-white/5 hover:bg-white/10 text-[11px] text-white/70"
+                className="px-2.5 py-1 bg-[#F8F7F4] border border-[#E8E2D5] hover:border-[#0B1E36] text-[11px]"
               >
-                Gmail
+                Gmail / Google Workspace
               </button>
               <button
                 type="button"
@@ -1089,102 +1497,89 @@ export default function AdminPage() {
                   setSmtpHost("smtp.office365.com");
                   setSmtpPort("587");
                 }}
-                className="px-2 py-0.5 rounded bg-white/5 hover:bg-white/10 text-[11px] text-white/70"
+                className="px-2.5 py-1 bg-[#F8F7F4] border border-[#E8E2D5] hover:border-[#0B1E36] text-[11px]"
               >
-                Outlook / 365
-              </button>
-              <button
-                type="button"
-                onClick={() => {
-                  setSmtpHost("smtps.aruba.it");
-                  setSmtpPort("465");
-                }}
-                className="px-2 py-0.5 rounded bg-white/5 hover:bg-white/10 text-[11px] text-white/70"
-              >
-                Aruba
+                Microsoft 365
               </button>
             </div>
 
-            <div className="space-y-3 pt-2">
-              <div className="grid grid-cols-3 gap-2">
+            <div className="space-y-3 pt-1">
+              <div className="grid grid-cols-3 gap-2.5">
                 <div className="col-span-2">
-                  <label className="block text-[11px] font-medium text-white/70 mb-1">
-                    Server SMTP Host *
+                  <label className="block text-[10px] font-mono uppercase tracking-wider text-[#5A6270] mb-1">
+                    Host SMTP *
                   </label>
                   <input
                     type="text"
                     value={smtpHost}
                     onChange={(e) => setSmtpHost(e.target.value)}
-                    placeholder="es. smtp.gmail.com"
-                    className="w-full bg-[#121826] border border-white/10 rounded-xl px-3 py-2 text-xs text-white focus:outline-none focus:border-blue-500"
+                    placeholder="smtps.aruba.it"
+                    className="w-full bg-[#F8F7F4] border border-[#E8E2D5] px-3 py-2 text-base sm:text-xs text-[#14181F] focus:outline-none focus:border-[#0B1E36]"
                   />
                 </div>
                 <div>
-                  <label className="block text-[11px] font-medium text-white/70 mb-1">
+                  <label className="block text-[10px] font-mono uppercase tracking-wider text-[#5A6270] mb-1">
                     Porta *
                   </label>
                   <input
                     type="text"
                     value={smtpPort}
                     onChange={(e) => setSmtpPort(e.target.value)}
-                    placeholder="465 o 587"
-                    className="w-full bg-[#121826] border border-white/10 rounded-xl px-3 py-2 text-xs text-white focus:outline-none focus:border-blue-500"
+                    placeholder="465"
+                    className="w-full bg-[#F8F7F4] border border-[#E8E2D5] px-3 py-2 text-base sm:text-xs text-[#14181F] focus:outline-none focus:border-[#0B1E36]"
                   />
                 </div>
               </div>
 
               <div>
-                <label className="block text-[11px] font-medium text-white/70 mb-1">
-                  Email / Username *
+                <label className="block text-[10px] font-mono uppercase tracking-wider text-[#5A6270] mb-1">
+                  Account Email / Utente SMTP *
                 </label>
                 <input
                   type="email"
                   value={smtpUser}
                   onChange={(e) => setSmtpUser(e.target.value)}
-                  placeholder="la-tua-email@dominio.it"
-                  className="w-full bg-[#121826] border border-white/10 rounded-xl px-3 py-2 text-xs text-white focus:outline-none focus:border-blue-500"
+                  placeholder="riccardo.granza@techpyre.eu"
+                  className="w-full bg-[#F8F7F4] border border-[#E8E2D5] px-3 py-2 text-base sm:text-xs text-[#14181F] focus:outline-none focus:border-[#0B1E36]"
                 />
               </div>
 
               <div>
-                <label className="block text-[11px] font-medium text-white/70 mb-1 flex items-center justify-between">
-                  <span>Password / Password per le app *</span>
-                  <span className="text-[10px] text-blue-400">
-                    (Per Gmail crea una App Password)
-                  </span>
+                <label className="block text-[10px] font-mono uppercase tracking-wider text-[#5A6270] mb-1">
+                  Password SMTP / App Password *
                 </label>
                 <input
                   type="password"
                   value={smtpPass}
                   onChange={(e) => setSmtpPass(e.target.value)}
-                  placeholder="Inserisci la password SMTP"
-                  className="w-full bg-[#121826] border border-white/10 rounded-xl px-3 py-2 text-xs text-white focus:outline-none focus:border-blue-500"
+                  placeholder="••••••••"
+                  className="w-full bg-[#F8F7F4] border border-[#E8E2D5] px-3 py-2 text-base sm:text-xs text-[#14181F] focus:outline-none focus:border-[#0B1E36]"
                 />
               </div>
 
-              <div className="grid grid-cols-2 gap-2">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
                 <div>
-                  <label className="block text-[11px] font-medium text-white/70 mb-1">
-                    Nome Mittente
+                  <label className="block text-[10px] font-mono uppercase tracking-wider text-[#5A6270] mb-1">
+                    Nome Visualizzato Mittente
                   </label>
                   <input
                     type="text"
                     value={senderName}
                     onChange={(e) => setSenderName(e.target.value)}
-                    placeholder="es. Andrea Di Bella"
-                    className="w-full bg-[#121826] border border-white/10 rounded-xl px-3 py-2 text-xs text-white focus:outline-none focus:border-blue-500"
+                    placeholder="Riccardo Granza · TechPyre Studio"
+                    className="w-full bg-[#F8F7F4] border border-[#E8E2D5] px-3 py-2 text-base sm:text-xs text-[#14181F] focus:outline-none focus:border-[#0B1E36]"
                   />
                 </div>
                 <div>
-                  <label className="block text-[11px] font-medium text-white/70 mb-1">
-                    Email Mittente
+                  <label className="block text-[10px] font-mono uppercase tracking-wider text-[#5A6270] mb-1">
+                    Indirizzo Risposta (Reply-To)
                   </label>
                   <input
                     type="email"
                     value={senderEmail}
                     onChange={(e) => setSenderEmail(e.target.value)}
-                    placeholder="Se diversa da user"
-                    className="w-full bg-[#121826] border border-white/10 rounded-xl px-3 py-2 text-xs text-white focus:outline-none focus:border-blue-500"
+                    placeholder="riccardo.granza@techpyre.eu"
+                    className="w-full bg-[#F8F7F4] border border-[#E8E2D5] px-3 py-2 text-base sm:text-xs text-[#14181F] focus:outline-none focus:border-[#0B1E36]"
                   />
                 </div>
               </div>
@@ -1192,147 +1587,104 @@ export default function AdminPage() {
 
             {smtpFeedback && (
               <div
-                className={`p-3 rounded-xl text-xs flex items-center gap-2 ${
+                className={`p-3 border text-xs flex items-center gap-2 ${
                   smtpFeedback.type === "success"
-                    ? "bg-emerald-500/10 text-emerald-300 border border-emerald-500/20"
-                    : "bg-rose-500/10 text-rose-300 border border-rose-500/20"
+                    ? "bg-emerald-50 border-emerald-200 text-emerald-900"
+                    : "bg-red-50 border-red-200 text-red-900"
                 }`}
               >
                 {smtpFeedback.type === "success" ? (
-                  <CheckCircle2 className="w-4 h-4 shrink-0" />
+                  <CheckCircle2 className="w-4 h-4 shrink-0 text-emerald-700" />
                 ) : (
-                  <AlertCircle className="w-4 h-4 shrink-0" />
+                  <AlertCircle className="w-4 h-4 shrink-0 text-red-700" />
                 )}
                 <span>{smtpFeedback.text}</span>
               </div>
             )}
 
-            <div className="flex items-center justify-end gap-2 pt-3 border-t border-white/10">
+            <div className="flex items-center justify-end gap-2 pt-3 border-t border-[#E8E2D5]">
               <button
                 type="button"
                 onClick={() => handleSaveSmtp(true)}
                 disabled={testingSmtp || savingSmtp || !smtpHost || !smtpUser || !smtpPass}
-                className="px-3 py-2 rounded-xl bg-white/5 hover:bg-white/10 text-white text-xs font-medium transition-colors disabled:opacity-40"
+                className="px-4 py-2 bg-[#F8F7F4] border border-[#E8E2D5] hover:border-[#0B1E36] text-xs font-medium text-[#14181F] disabled:opacity-40 cursor-pointer"
               >
-                {testingSmtp ? "Test in corso..." : "Testa Connessione"}
+                {testingSmtp ? "Verifica in corso..." : "Verifica Connessione"}
               </button>
-
               <button
                 type="button"
                 onClick={() => handleSaveSmtp(false)}
                 disabled={testingSmtp || savingSmtp || !smtpHost || !smtpUser || !smtpPass}
-                className="px-4 py-2 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold shadow-lg shadow-blue-600/30 transition-all disabled:opacity-40"
+                className="px-5 py-2 bg-[#0B1E36] hover:bg-[#142d4c] text-white text-xs font-mono uppercase tracking-wider disabled:opacity-40 cursor-pointer"
               >
-                {savingSmtp ? "Salvataggio..." : "Salva Credenziali"}
+                {savingSmtp ? "Salvataggio..." : "Salva Parametri"}
               </button>
             </div>
           </div>
         </div>
       )}
 
-      {/* MODAL 2: Anteprima Email */}
-      {previewLead && (
-        <div className="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
-          <div className="bg-[#0E131F] border border-white/10 rounded-2xl max-w-xl w-full p-6 shadow-2xl space-y-4 max-h-[90vh] overflow-y-auto">
-            <div className="flex items-center justify-between border-b border-white/10 pb-3">
-              <div>
-                <h3 className="text-base font-bold text-white">Anteprima Email di Presentazione</h3>
-                <p className="text-xs text-white/50">{previewLead.config.meta.companyName}</p>
-              </div>
-              <button
-                onClick={() => setPreviewLead(null)}
-                className="text-white/40 hover:text-white text-sm"
-              >
-                ✕
-              </button>
-            </div>
-
-            <div className="space-y-3 text-xs">
-              <div>
-                <span className="text-white/40">Destinatario:</span>{" "}
-                <strong className="text-white">{previewLead.config.meta.targetEmail}</strong>
-              </div>
-              <div>
-                <span className="text-white/40">Oggetto:</span>{" "}
-                <strong className="text-blue-400">{previewLead.config.outreach.emailSubject}</strong>
-              </div>
-              <div className="border border-white/10 bg-[#07090E] p-4 rounded-xl text-white/90 whitespace-pre-wrap font-sans leading-relaxed">
-                {previewLead.config.outreach.emailPlainTextBody}
-              </div>
-            </div>
-
-            <div className="flex items-center justify-between pt-3 border-t border-white/10">
-              <span className="text-[11px] text-white/40">
-                Regola Anti-Spam: 0 link · Tono professionale · Firma automatica
-              </span>
-              <button
-                onClick={() => {
-                  handleSendEmail(previewLead.slug, false);
-                  setPreviewLead(null);
-                }}
-                className="px-4 py-2 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold shadow-lg shadow-blue-600/30 transition-all flex items-center gap-1.5"
-              >
-                <Send className="w-3.5 h-3.5" />
-                Invia Questa Email Ora
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
-
-      {/* MODAL 3: Dettagli Visite Demo Tracker */}
+      {/* MODAL 3: Telemetria Aperture Demo */}
       {visitsDetailLead && visitsDetailLead.visits && (
-        <div className="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
-          <div className="bg-[#0E131F] border border-emerald-500/30 rounded-2xl max-w-xl w-full p-6 shadow-2xl space-y-4 max-h-[90vh] overflow-y-auto">
-            <div className="flex items-center justify-between border-b border-white/10 pb-3">
-              <div className="flex items-center gap-2">
-                <Flame className="w-5 h-5 text-emerald-400 animate-pulse" />
-                <div>
-                  <h3 className="text-base font-bold text-white">Log Visite dal Telefono</h3>
-                  <p className="text-xs text-emerald-400 font-medium">
-                    {visitsDetailLead.config.meta.companyName}
-                  </p>
+        <div className="fixed inset-0 z-50 bg-[#0B1E36]/60 backdrop-blur-xs flex items-center justify-center p-4">
+          <div className="bg-white border border-[#E8E2D5] max-w-xl w-full p-6 sm:p-8 shadow-2xl space-y-4 max-h-[90vh] overflow-y-auto">
+            <div className="flex items-start justify-between border-b border-[#E8E2D5] pb-3">
+              <div>
+                <div className="text-[10px] font-mono uppercase tracking-widest text-[#B8860B]">
+                  Telemetria Accessi Demo · {visitsDetailLead.config.meta.companyName}
                 </div>
+                <h3 className="font-serif text-xl text-[#14181F] font-normal">
+                  Storico Ispezioni Link Dimostrativo
+                </h3>
               </div>
               <button
+                type="button"
                 onClick={() => setVisitsDetailLead(null)}
-                className="text-white/40 hover:text-white text-sm"
+                className="text-[#5A6270] hover:text-[#14181F]"
               >
-                ✕
+                <X className="w-5 h-5" />
               </button>
             </div>
 
             <div className="grid grid-cols-2 gap-3 text-xs">
-              <div className="bg-white/5 p-3 rounded-xl border border-white/5">
-                <span className="text-white/40 block">Totale Aperture:</span>
-                <span className="text-xl font-bold text-white">
+              <div className="bg-[#F8F7F4] p-3.5 border border-[#E8E2D5]">
+                <span className="text-[10px] font-mono uppercase text-[#5A6270] block">
+                  Totale Aperture
+                </span>
+                <span className="font-serif text-2xl text-[#14181F]">
                   {visitsDetailLead.visits.totalVisits}
                 </span>
               </div>
-              <div className="bg-white/5 p-3 rounded-xl border border-white/5">
-                <span className="text-white/40 block">Dispositivo Rilevato:</span>
-                <span className="text-sm font-semibold text-emerald-300">
-                  {visitsDetailLead.visits.lastDevice || "Smartphone"}
+              <div className="bg-[#F8F7F4] p-3.5 border border-[#E8E2D5]">
+                <span className="text-[10px] font-mono uppercase text-[#5A6270] block">
+                  Ultimo Dispositivo
+                </span>
+                <span className="font-mono text-xs font-semibold text-[#0B1E36] mt-1 block">
+                  {visitsDetailLead.visits.lastDevice || "Dispositivo Mobile / Desktop"}
                 </span>
               </div>
             </div>
 
             <div className="space-y-2">
-              <h4 className="text-xs font-semibold text-white/70">Storico eventi di apertura:</h4>
-              <div className="space-y-1.5 max-h-60 overflow-y-auto pr-1">
+              <div className="text-[10px] font-mono uppercase tracking-wider text-[#5A6270]">
+                Cronologia Sessioni:
+              </div>
+              <div className="divide-y divide-[#E8E2D5] border border-[#E8E2D5] max-h-60 overflow-y-auto">
                 {visitsDetailLead.visits.visits?.map((v, i) => (
                   <div
                     key={v.id || i}
-                    className="p-2.5 rounded-lg bg-white/[0.03] border border-white/5 text-xs flex items-center justify-between"
+                    className="p-3 bg-white text-xs flex items-center justify-between"
                   >
                     <div>
-                      <div className="text-white/80 font-medium">{v.formattedDate || v.timestamp}</div>
-                      <div className="text-[11px] text-white/40">
-                        {v.device} · {v.screen}
+                      <div className="font-mono text-[11px] text-[#14181F] font-medium">
+                        {v.formattedDate || v.timestamp}
+                      </div>
+                      <div className="text-[11px] text-[#5A6270]">
+                        {v.device} · Schermo {v.screen}
                       </div>
                     </div>
-                    <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300">
-                      APERTO
+                    <span className="text-[10px] font-mono uppercase px-2 py-0.5 bg-emerald-950/10 text-emerald-900">
+                      Visitato
                     </span>
                   </div>
                 ))}
