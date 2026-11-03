@@ -323,7 +323,7 @@ export async function fetchPageSpeedMetrics(
     let proc: ReturnType<typeof spawn> | null = null;
     let ws: WebSocket | null = null;
     try {
-      proc = spawn(browserBin, [
+      proc = spawn(/*turbopackIgnore: true*/ browserBin, [
         "--headless=new",
         "--disable-gpu",
         "--no-first-run",
