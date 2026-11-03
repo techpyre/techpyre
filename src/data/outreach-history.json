@@ -1232,5 +1232,185 @@
     "subject": "in merito alla vostra ricerca per sviluppo landing page (Seventy Seven Srl)",
     "messageId": "<ede6a15f-b683-d3ff-cd35-ea62ceb9a3e8@techpyre.eu>",
     "sentAt": "2026-10-30T17:42:26.773Z"
+  },
+  {
+    "slug": "tecnopress",
+    "companyName": "Tecno Press",
+    "recipient": "info@tecnopress.net",
+    "type": "INITIAL",
+    "subject": "Infrastruttura web e resa campagne di Tecno Press (8.6s su mobile)",
+    "messageId": "<814c2122-22ef-b602-fc84-78a0f60fb56e@techpyre.eu>",
+    "sentAt": "2026-11-03T17:26:00.024Z"
+  },
+  {
+    "slug": "tecnologicbrescia",
+    "companyName": "TECNOLOGIC srl",
+    "recipient": "info@tecnologicbrescia.it",
+    "type": "INITIAL",
+    "subject": "Infrastruttura web e resa campagne di TECNOLOGIC srl (10.6s su mobile)",
+    "messageId": "<881c6d1a-ee68-9369-34a6-b1b10805242e@techpyre.eu>",
+    "sentAt": "2026-11-03T17:26:02.514Z"
+  },
+  {
+    "slug": "campetella",
+    "companyName": "Campetella Robotic Center",
+    "recipient": "marketing@campetella.it",
+    "type": "INITIAL",
+    "subject": "Infrastruttura web e resa campagne di Campetella Robotic Center (9.2s su mobile)",
+    "messageId": "<0c9c7b0f-1eef-fb7d-a3ed-05ebb9a9037f@techpyre.eu>",
+    "sentAt": "2026-11-03T17:26:04.564Z"
+  },
+  {
+    "slug": "icel",
+    "companyName": "Icel Sistemi Elettrici",
+    "recipient": "info@icelsistemielettrici.it",
+    "type": "INITIAL",
+    "subject": "Infrastruttura web e resa campagne di Icel Sistemi Elettrici (12.3s su mobile)",
+    "messageId": "<732555e3-918c-dd56-476c-4422334d8757@techpyre.eu>",
+    "sentAt": "2026-11-03T17:26:06.576Z"
+  },
+  {
+    "slug": "forel-brescia",
+    "companyName": "FOR.EL. srl",
+    "recipient": "info@for-el.it",
+    "type": "INITIAL",
+    "subject": "Infrastruttura web e resa campagne di FOR.EL. srl (10.8s su mobile)",
+    "messageId": "<b54e0c31-593e-a936-e043-52d89436ef5e@techpyre.eu>",
+    "sentAt": "2026-11-03T17:26:08.602Z"
+  },
+  {
+    "slug": "grupporozzoni",
+    "companyName": "Officine Meccaniche Rozzoni",
+    "recipient": "info@grupporozzoni.com",
+    "type": "INITIAL",
+    "subject": "Infrastruttura web e resa campagne di Officine Meccaniche Rozzoni (8.6s su mobile)",
+    "messageId": "<8b36e6e1-8e97-1801-c4c8-be91c18d088e@techpyre.eu>",
+    "sentAt": "2026-11-03T17:26:10.714Z"
+  },
+  {
+    "slug": "limaplastics",
+    "companyName": "LIMA  -  Industrial Plastics  Solutions",
+    "recipient": "info@limaplastics.com",
+    "type": "INITIAL",
+    "subject": "Infrastruttura web e resa campagne di LIMA  -  Industrial Plastics  Solutions (7.7s su mobile)",
+    "messageId": "<cd2a9e0d-fdba-60e1-3998-5109c63dc5d3@techpyre.eu>",
+    "sentAt": "2026-11-03T17:26:12.669Z"
+  },
+  {
+    "slug": "gobboascensori",
+    "companyName": "Aeg Gobbo Ascensori Elevatori",
+    "recipient": "aeg@gobboascensori.it",
+    "type": "INITIAL",
+    "subject": "Infrastruttura web e resa campagne di Aeg Gobbo Ascensori Elevatori (10.6s su mobile)",
+    "messageId": "<ff4415b9-33cc-2df7-b22e-b5aec8e6d248@techpyre.eu>",
+    "sentAt": "2026-11-03T17:26:14.713Z"
+  },
+  {
+    "slug": "greifenbergteleferiche",
+    "companyName": "Greifenberg Teleferiche Sas",
+    "recipient": "info@greifenberg.it",
+    "type": "INITIAL",
+    "subject": "Infrastruttura web e resa campagne di Greifenberg Teleferiche Sas (7.6s su mobile)",
+    "messageId": "<4a25ee63-57be-5817-ce4b-a59a083feacb@techpyre.eu>",
+    "sentAt": "2026-11-03T17:26:16.747Z"
+  },
+  {
+    "slug": "lattoneriafrassi",
+    "companyName": "Lattoneria Frassi",
+    "recipient": "info@frassi.com",
+    "type": "INITIAL",
+    "subject": "Infrastruttura web e resa campagne di Lattoneria Frassi (8.3s su mobile)",
+    "messageId": "<96ab1d89-8734-fc23-9446-0a2bca309a52@techpyre.eu>",
+    "sentAt": "2026-11-03T17:26:18.823Z"
+  },
+  {
+    "slug": "gitiessecarpenteriesrl",
+    "companyName": "Gitiesse Carpenterie Srl",
+    "recipient": "info@gitiessecarpenterie.com",
+    "type": "INITIAL",
+    "subject": "Infrastruttura web e resa campagne di Gitiesse Carpenterie Srl (10.5s su mobile)",
+    "messageId": "<73e05f16-8200-3e58-b978-fea025dfb272@techpyre.eu>",
+    "sentAt": "2026-11-03T17:26:20.860Z"
+  },
+  {
+    "slug": "romicarpenteria",
+    "companyName": "RO.MI srl",
+    "recipient": "info@romicarpenteria.it",
+    "type": "INITIAL",
+    "subject": "Infrastruttura web e resa campagne di RO.MI srl (8.5s su mobile)",
+    "messageId": "<707adad5-d152-2885-a144-955a87d1ff26@techpyre.eu>",
+    "sentAt": "2026-11-03T17:26:22.836Z"
+  },
+  {
+    "slug": "amkporte",
+    "companyName": "Amk Blindati - Porte e Serramenti",
+    "recipient": "info@amkblindati.com",
+    "type": "INITIAL",
+    "subject": "Infrastruttura web e resa campagne di Amk Blindati - Porte e Serramenti (7.7s su mobile)",
+    "messageId": "<ccfbf972-88f9-51f7-ac59-c9a6cb2aa43d@techpyre.eu>",
+    "sentAt": "2026-11-03T17:26:24.933Z"
+  },
+  {
+    "slug": "officinameccanicapakei",
+    "companyName": "Pakei S.r.l",
+    "recipient": "pakei@nsoft.it",
+    "type": "INITIAL",
+    "subject": "Infrastruttura web e resa campagne di Pakei S.r.l (7.4s su mobile)",
+    "messageId": "<4a6bd935-57f0-1490-bf8b-8f3abf3e1064@techpyre.eu>",
+    "sentAt": "2026-11-03T17:26:26.968Z"
+  },
+  {
+    "slug": "dynamicservicewaterjet",
+    "companyName": "DYNAMIC SERVICE - TAGLIO WATERJET",
+    "recipient": "info@dynamicservicesrl.it",
+    "type": "INITIAL",
+    "subject": "Infrastruttura web e resa campagne di DYNAMIC SERVICE - TAGLIO WATERJET (12.8s su mobile)",
+    "messageId": "<41ad6c00-8db2-40ee-b5df-67df1b553d86@techpyre.eu>",
+    "sentAt": "2026-11-03T17:26:28.967Z"
+  },
+  {
+    "slug": "riello",
+    "companyName": "S.T.A. di Perazzolo S.r.l. - Riscaldamento",
+    "recipient": "info@stadiperazzolo.it",
+    "type": "INITIAL",
+    "subject": "Infrastruttura web e resa campagne di S.T.A. di Perazzolo S.r.l. - Riscaldamento (11.7s su mobile)",
+    "messageId": "<68d9fb6b-3663-d60a-9255-a4551c236ffd@techpyre.eu>",
+    "sentAt": "2026-11-03T17:26:31.696Z"
+  },
+  {
+    "slug": "gsigroup",
+    "companyName": "G.S.I. GROUP",
+    "recipient": "info@gsigroup.it",
+    "type": "INITIAL",
+    "subject": "Infrastruttura web e resa campagne di G.S.I. GROUP (9s su mobile)",
+    "messageId": "<bf8d25c0-183d-db00-6377-951de2ca7898@techpyre.eu>",
+    "sentAt": "2026-11-03T17:26:33.702Z"
+  },
+  {
+    "slug": "cazzinmassimo",
+    "companyName": "Impianti Elettrici Cazzin Massimo",
+    "recipient": "info@cazzinmassimo.it",
+    "type": "INITIAL",
+    "subject": "Infrastruttura web e resa campagne di Impianti Elettrici Cazzin Massimo (12.8s su mobile)",
+    "messageId": "<b2c2fc6b-00f9-cbf1-861f-8fc72c71258e@techpyre.eu>",
+    "sentAt": "2026-11-03T17:26:35.754Z"
+  },
+  {
+    "slug": "matrapadova",
+    "companyName": "Ma.Tra.",
+    "recipient": "giulio.matra@gmail.com",
+    "type": "INITIAL",
+    "subject": "Infrastruttura web e resa campagne di Ma.Tra. (12.8s su mobile)",
+    "messageId": "<f012b370-c665-3be6-f1a2-0e8b06b19109@techpyre.eu>",
+    "sentAt": "2026-11-03T17:26:37.771Z"
+  },
+  {
+    "slug": "ecosystempadova",
+    "companyName": "Ecosystem",
+    "recipient": "info@ecosystempadova.it",
+    "type": "INITIAL",
+    "subject": "Infrastruttura web e resa campagne di Ecosystem (12.8s su mobile)",
+    "messageId": "<864feb64-4d25-f75f-6051-d7f914d2282c@techpyre.eu>",
+    "sentAt": "2026-11-03T17:26:39.781Z"
   }
 ]

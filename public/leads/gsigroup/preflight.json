@@ -1,0 +1,18 @@
+{
+  "slug": "gsigroup",
+  "targetUrl": "http://www.gsigroup.it",
+  "searchKeyword": "impianti fotovoltaici padova",
+  "measuredResponseMs": 786,
+  "renderBlockingScripts": 8,
+  "estimatedMobileLcpSeconds": 9,
+  "extractedEmails": [
+    "info@gsigroup.it",
+    "utente@dominio.com"
+  ],
+  "extractedPhones": [
+    "+39 041 5700088",
+    "3114536280",
+    "0486930"
+  ],
+  "extractedVat": "01925770271"
+}
