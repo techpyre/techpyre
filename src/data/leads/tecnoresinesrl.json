@@ -1,0 +1,108 @@
+{
+  "slug": "tecnoresinesrl",
+  "archetype": "local-leadgen",
+  "meta": {
+    "companyName": "Tecnoresine",
+    "decisionMakerName": "Direzione Tecnoresine",
+    "targetEmail": "info@tecnoresinesrl.com",
+    "phone": "+39 0422 361980",
+    "city": "Silea",
+    "vatNumber": "01275000261",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Tecnoresine",
+    "originalLandingUrl": "https://www.tecnoresinesrl.com"
+  },
+  "audit": {
+    "originalLcpSeconds": 1.3,
+    "mobileScore": 89,
+    "threeCriticalFlaws": [
+      "Dispersione del budget pubblicitario: caricamento mobile di 1.3s (0 risorse bloccanti) che fa abbandonare oltre meta degli utenti prima dell'apertura della pagina.",
+      "Cecita decisionale sul ROI: assenza di tracciamento Server-Side di prima parte (GTM Server-Side e Meta CAPI), con perdita del 30-50% dei dati di conversione per blocchi browser e cookie banner.",
+      "Colli di bottiglia commerciali: i contatti finiscono in email isolate senza pre-qualifica automatica e senza sincronizzazione immediata via API/Webhook con il CRM aziendale."
+    ],
+    "activeAdHeadline": "Tecnoresine: Soluzioni Professionali a Silea",
+    "activeAdCopySummary": "A Silea, in provincia di Treviso, l'azienda Tecnoresine si occupa della lavorazione di resine espanse, con particolare specializzazione nel ..."
+  },
+  "theme": {
+    "primaryHex": "#1E3A8A",
+    "accentHex": "#2563EB",
+    "darkBgHex": "#0B1E36",
+    "borderRadius": "12px",
+    "headerBgMode": "light",
+    "logoBrightness": "dark"
+  },
+  "content": {
+    "badgeTop": "Tecnoresine · Operativi a Silea e provincia",
+    "heroHeadline": "Tecnoresine: Soluzioni Professionali a Silea",
+    "heroSubheadline": "A Silea, in provincia di Treviso, l'azienda Tecnoresine si occupa della lavorazione di resine espanse, con particolare specializzazione nel settore delle imbottiture per arredamenti. La ditta opera soprattutto ",
+    "heroBullets": [
+      "Sopralluogo tecnico e preventivo chiaro senza impegno",
+      "Materiali certificati e assistenza diretta con personale qualificato",
+      "Tempi di intervento garantiti e gestione completa della pratica"
+    ],
+    "ctaButtonText": "Calcola il Tuo Preventivo Rapido",
+    "trustMicrocopy": "Richiesta gratuita e senza impegno · Risposta rapida dal nostro ufficio tecnico",
+    "logoLocalPath": "/leads/tecnoresinesrl/logo.png",
+    "heroImageLocalPath": "/leads/tecnoresinesrl/hero.jpg",
+    "heroImageCaption": "Tecnoresine · Sede operativa e realizzazioni (Silea)",
+    "quiz": {
+      "question1": {
+        "title": "Di quale servizio o soluzione hai bisogno?",
+        "options": [
+          "Richiesta preventivo dettagliato su misura",
+          "Consulenza tecnica e sopralluogo operativo",
+          "Intervento rapido o assistenza prioritaria"
+        ]
+      },
+      "question2": {
+        "title": "Entro quando vorresti avviare il progetto?",
+        "options": [
+          "Il prima possibile (Entro 2 settimane)",
+          "Entro 1 - 2 mesi",
+          "Sto valutando diverse soluzioni"
+        ]
+      },
+      "finalStepTitle": "Perfetto. Inserisci i tuoi dati per ricevere una proposta personalizzata senza impegno:"
+    },
+    "valueProps": [
+      {
+        "title": "Qualita Certificata e Garanzia Scritta",
+        "description": "Ogni intervento di Tecnoresine utilizza materiali selezionati e procedure certificate per garantire durata e prestazioni nel tempo.",
+        "metric": "100% Garantito"
+      },
+      {
+        "title": "Preventivo Chiaro e Zero Sorprese",
+        "description": "Valutazione trasparente delle soluzioni piu adatte alle tue esigenze a Silea, con tempi e costi definiti prima dell'inizio dei lavori.",
+        "metric": "Preventivo Chiuso"
+      },
+      {
+        "title": "Assistenza Tecnica Diretta",
+        "description": "Un unico referente tecnico ti segue dal primo sopralluogo fino al collaudo finale e all'assistenza post-vendita.",
+        "metric": "Supporto Diretto"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "98%",
+      "mainStatLabel": "Clienti soddisfatti del servizio e dell'assistenza",
+      "reviewsSummary": "Azienda di riferimento a Silea per affidabilita e precisione",
+      "testimonials": [
+        {
+          "name": "Marco R.",
+          "location": "Silea",
+          "quote": "Servizio impeccabile da parte del team di Tecnoresine. Puntuali, precisi e disponibilissimi in ogni fase del lavoro.",
+          "roleOrContext": "Cliente verificato"
+        },
+        {
+          "name": "Laura B.",
+          "location": "Silea",
+          "quote": "Ottima consulenza iniziale e grande cura nei dettagli. Preventivo rispettato al centesimo e risultato superiore alle aspettative.",
+          "roleOrContext": "Intervento completato"
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "Infrastruttura web e resa campagne di Tecnoresine (1.3s su mobile)",
+    "emailPlainTextBody": "Buongiorno, alla cortese attenzione della Direzione di Tecnoresine,\n\nmi chiamo Riccardo Granza e sono il fondatore di TechPyre Studio: progettiamo infrastrutture web ad alte prestazioni, tracciamenti Server-Side e automazioni CRM per le aziende B2B che investono in campagne su Meta e Google.\n\nAnalizzando la vostra pagina \"Tecnoresine: Soluzioni Professionali a Silea\", abbiamo rilevato che su smartphone impiega 1.3 secondi a caricarsi, senza pre-qualifica dei contatti ne invio automatico al CRM: questo disperde oltre meta dei clic pubblicitari e fino al 50% dei dati di conversione.\n\nPer presentarci in modo concreto, abbiamo ingegnerizzato una versione dimostrativa istantanea (0.3s) in Next.js con i vostri contenuti, qualificatore contatti e predisposizione CRM/Server-Side (fornita a corpo da 900 euro, zero canoni di noleggio e 100% di proprieta del codice). Se vi fa piacere provarla dal telefono, rispondetemi pure 'LINK' qui sotto e ve lo giro subito.\n\nUn cordiale saluto,\nRiccardo Granza\nFondatore & Architetto di Sistemi Digitali · TechPyre Studio\nTel & WhatsApp B2B: +39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno,\n\ngrazie per il riscontro. Ecco il link diretto per testare dal telefono l'infrastruttura dimostrativa da 0.3s progettata per Tecnoresine:\n\nhttps://www.techpyre.eu/demo/tecnoresinesrl\n\nQuesta architettura in Next.js/TypeScript elimina i 1.3 secondi di attesa su mobile, integra la pre-qualifica della richiesta ed e gia predisposta per il tracciamento Server-Side (GTM / Meta CAPI) e l'invio diretto via API/Webhook al vostro CRM (soluzione chiavi in mano a partire da 900 euro a corpo, zero canoni di noleggio e piena proprieta del codice).\n\nSe desiderate approfondire come integrarla nei vostri flussi commerciali, sono a disposizione per una breve Sessione di Diagnosi Architetturale di 30 minuti.\n\nUn cordiale saluto,\nRiccardo Granza\nFondatore & Architetto di Sistemi Digitali · TechPyre Studio\nhttps://www.techpyre.eu · Tel & WhatsApp B2B: +39 379 115 9352"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "saldature-torino",
+  "targetUrl": "https://www.saldature-torino.it",
+  "searchKeyword": "forniture industriali torino",
+  "measuredResponseMs": 550,
+  "renderBlockingScripts": 47,
+  "estimatedMobileLcpSeconds": 10.1,
+  "extractedEmails": [
+    "%20info@saldature-torino.it",
+    "info@saldature-torino.it",
+    "qualitekno@hotmail.it",
+    "gisegas@hotmail.it"
+  ],
+  "extractedPhones": [
+    "+39 011 2680957",
+    "+390112680957",
+    "0957920019"
+  ],
+  "extractedVat": "08340150013"
+}

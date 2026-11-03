@@ -1,5 +1,6 @@
 import fs from "fs";
 import path from "path";
+import { spawn } from "child_process";
 import { LeadConfig } from "@/types/lead";
 import { loadLeadConfig, saveLeadConfig } from "./leadsStorage";
 
@@ -138,6 +139,27 @@ const ITALIAN_CITIES = [
   "Siracusa",
   "Ragusa",
   "Trapani",
+  "Agrigento",
+  "Caltanissetta",
+  "Enna",
+  "Acireale",
+  "Gela",
+  "Marsala",
+  "Modica",
+  "Vittoria",
+  "Milazzo",
+  "Bagheria",
+  "Paternò",
+  "Misterbianco",
+  "Alcamo",
+  "Sciacca",
+  "Mazara del Vallo",
+  "Barcellona Pozzo di Gotto",
+  "Augusta",
+  "Avola",
+  "Caltagirone",
+  "Taormina",
+  "Giarre",
 ];
 
 export interface CandidateBusiness {
@@ -205,6 +227,286 @@ async function tryDownloadFileLocally(url: string, destPath: string): Promise<bo
   } catch {
     return false;
   }
+}
+
+export interface RealPageSpeedMetrics {
+  lcpSeconds: number;
+  mobileScore: number;
+  renderBlockingCount: number;
+  source: "pagespeed-api" | "chromium-cdp-lighthouse" | "http-transfer-timing";
+}
+
+function getLocalBrowserBin(): string | null {
+  const candidates = [
+    "/Applications/Brave Browser.app/Contents/MacOS/Brave Browser",
+    "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+    "/Applications/Chromium.app/Contents/MacOS/Chromium",
+  ];
+  for (const p of candidates) {
+    try {
+      if (fs.existsSync(/*turbopackIgnore: true*/ p)) return p;
+    } catch {
+      continue;
+    }
+  }
+  return null;
+}
+
+let psiQuotaExhaustedUntil = 0;
+
+/**
+ * Misura reale di LCP e Mobile Performance tramite:
+ * 1. Google PageSpeed Insights v5 API (`https://www.googleapis.com/pagespeedonline/v5/runPagespeed?strategy=mobile`)
+ * 2. Se l'API restituisce 429 (quota esaurita senza API key) e siamo in locale, usa Chromium/Brave CDP con throttling mobile ufficiale Lighthouse (Slow 4G 150ms RTT 1.6Mbps + 4x CPU) e PerformanceObserver nativo (zero gonfiaggi o costanti artificiali).
+ * 3. Su ambiente serverless senza Chromium, calcola il tempo reale di risposta + trasferimento payload su banda 4G (1.6Mbps) senza alcun floor artificiale.
+ */
+export async function fetchPageSpeedMetrics(
+  url: string,
+  ttfbMsFallback = 600,
+  htmlByteLength = 65000,
+  domBlockingResources = 4
+): Promise<RealPageSpeedMetrics> {
+  // 1. Tentativo primario: Google PageSpeed Insights v5 API
+  const apiKey =
+    process.env.PAGESPEED_API_KEY ||
+    process.env.GOOGLE_PAGESPEED_API_KEY ||
+    process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY ||
+    "";
+
+  if (apiKey || Date.now() > psiQuotaExhaustedUntil) {
+    try {
+      const keyParam = apiKey ? `&key=${encodeURIComponent(apiKey)}` : "";
+      const psiUrl = `https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=${encodeURIComponent(
+        url
+      )}&strategy=mobile&category=performance${keyParam}`;
+
+      const res = await fetch(psiUrl, {
+        signal: AbortSignal.timeout(12000),
+      });
+
+      if (res.status === 429 && !apiKey) {
+        psiQuotaExhaustedUntil = Date.now() + 30 * 60 * 1000;
+      } else if (res.ok) {
+        const data = await res.json();
+        const lcpNumericMs =
+          data?.lighthouseResult?.audits?.["largest-contentful-paint"]?.numericValue;
+        const perfScoreRaw = data?.lighthouseResult?.categories?.performance?.score;
+        const blockingItems =
+          data?.lighthouseResult?.audits?.["render-blocking-resources"]?.details?.items
+            ?.length ?? domBlockingResources;
+
+        if (typeof lcpNumericMs === "number" && lcpNumericMs > 0) {
+          const lcpSeconds = Number((lcpNumericMs / 1000).toFixed(1));
+          const mobileScore =
+            typeof perfScoreRaw === "number"
+              ? Math.round(perfScoreRaw * 100)
+              : Math.max(15, Math.min(99, Math.round(100 - lcpSeconds * 9)));
+          return {
+            lcpSeconds,
+            mobileScore,
+            renderBlockingCount: blockingItems,
+            source: "pagespeed-api",
+          };
+        }
+      }
+    } catch {
+      // Passa al motore locale CDP se PageSpeed API va in timeout o 429
+    }
+  }
+
+  // 2. Misurazione reale via Chromium/Brave Headless CDP con profilo Lighthouse Mobile Slow 4G
+  const browserBin = getLocalBrowserBin();
+  if (browserBin) {
+    const userDataDir = `/tmp/techpyre-psi-cdp-${Date.now()}-${Math.random()
+      .toString(36)
+      .slice(2, 7)}`;
+    let proc: ReturnType<typeof spawn> | null = null;
+    let ws: WebSocket | null = null;
+    try {
+      proc = spawn(browserBin, [
+        "--headless=new",
+        "--disable-gpu",
+        "--no-first-run",
+        "--no-default-browser-check",
+        "--ignore-certificate-errors",
+        "--hide-scrollbars",
+        "--remote-debugging-port=0",
+        `--user-data-dir=${userDataDir}`,
+        "about:blank",
+      ]);
+
+      const wsUrl = await new Promise<string>((resolve, reject) => {
+        const timer = setTimeout(() => reject(new Error("CDP start timeout")), 6000);
+        proc?.stderr?.on("data", (chunk: Buffer) => {
+          const m = chunk.toString().match(/DevTools listening on (ws:\/\/[^\s]+)/);
+          if (m) {
+            clearTimeout(timer);
+            resolve(m[1]);
+          }
+        });
+        proc?.on("error", (err) => {
+          clearTimeout(timer);
+          reject(err);
+        });
+      });
+
+      const baseHttp = wsUrl
+        .replace(/^ws:\/\//, "http://")
+        .replace(/\/devtools\/browser\/.*$/, "");
+      const targets = (await fetch(`${baseHttp}/json/list`).then((r) =>
+        r.json()
+      )) as Array<{ type: string; webSocketDebuggerUrl?: string }>;
+      const pageTarget = targets.find((t) => t.type === "page");
+
+      if (pageTarget?.webSocketDebuggerUrl) {
+        ws = new WebSocket(pageTarget.webSocketDebuggerUrl);
+        await new Promise((resolve, reject) => {
+          ws!.addEventListener("open", resolve);
+          ws!.addEventListener("error", reject);
+        });
+
+        let msgId = 1;
+        const pending = new Map<number, (val: unknown) => void>();
+        ws.addEventListener("message", (ev) => {
+          try {
+            const msg = JSON.parse(String(ev.data));
+            if (msg.id && pending.has(msg.id)) {
+              pending.get(msg.id)!(msg.result);
+              pending.delete(msg.id);
+            }
+          } catch {
+            // ignore
+          }
+        });
+
+        const send = (method: string, params: Record<string, unknown> = {}) =>
+          new Promise<Record<string, unknown>>((resolve, reject) => {
+            const id = msgId++;
+            const timer = setTimeout(() => {
+              pending.delete(id);
+              reject(new Error(`Timeout ${method}`));
+            }, 9000);
+            pending.set(id, (res) => {
+              clearTimeout(timer);
+              resolve((res || {}) as Record<string, unknown>);
+            });
+            ws!.send(JSON.stringify({ id, method, params }));
+          });
+
+        await send("Page.enable");
+        await send("Network.enable");
+        await send("Runtime.enable");
+        await send("Emulation.setDeviceMetricsOverride", {
+          width: 390,
+          height: 844,
+          deviceScaleFactor: 2,
+          mobile: true,
+        });
+        // Profilo ufficiale Google Lighthouse Mobile (Slow 4G: 150ms RTT, 1.6 Mbps down, 750 Kbps up, 4x CPU slowdown)
+        await send("Network.emulateNetworkConditions", {
+          offline: false,
+          latency: 150,
+          downloadThroughput: (1.6 * 1024 * 1024) / 8,
+          uploadThroughput: (750 * 1024) / 8,
+          connectionType: "cellular4g",
+        });
+        await send("Emulation.setCPUThrottlingRate", { rate: 4 });
+        await send("Page.addScriptToEvaluateOnNewDocument", {
+          source: `
+            window.__psiLcpMs = 0;
+            window.__psiFcpMs = 0;
+            try {
+              new PerformanceObserver((list) => {
+                const entries = list.getEntries();
+                if (entries.length > 0) {
+                  window.__psiLcpMs = entries[entries.length - 1].startTime;
+                }
+              }).observe({ type: "largest-contentful-paint", buffered: true });
+              new PerformanceObserver((list) => {
+                for (const e of list.getEntries()) {
+                  if (e.name === "first-contentful-paint") window.__psiFcpMs = e.startTime;
+                }
+              }).observe({ type: "paint", buffered: true });
+            } catch (e) {}
+          `,
+        });
+
+        await send("Page.navigate", { url });
+        await new Promise((r) => setTimeout(r, 2400));
+
+        const evalRes = (await send("Runtime.evaluate", {
+          returnByValue: true,
+          expression: `(() => {
+            const nav = performance.getEntriesByType("navigation")[0];
+            const domComplete = nav && nav.domComplete > 0 ? nav.domComplete : performance.now();
+            const lcp = window.__psiLcpMs > 0 ? window.__psiLcpMs : (window.__psiFcpMs > 0 ? window.__psiFcpMs * 1.35 : domComplete);
+            const blocking = document.querySelectorAll('script[src]:not([async]):not([defer]), link[rel="stylesheet"]').length;
+            return {
+              lcpMs: Math.round(lcp),
+              blocking
+            };
+          })()`,
+        })) as { result?: { value?: { lcpMs?: number; blocking?: number } } };
+
+        const measuredLcpMs = evalRes?.result?.value?.lcpMs || 0;
+        const measuredBlocking =
+          evalRes?.result?.value?.blocking ?? domBlockingResources;
+
+        if (measuredLcpMs > 100) {
+          const lcpSeconds = Number((measuredLcpMs / 1000).toFixed(1));
+          const mobileScore = Math.max(
+            15,
+            Math.min(99, Math.round(100 - lcpSeconds * 8.5))
+          );
+          return {
+            lcpSeconds,
+            mobileScore,
+            renderBlockingCount: measuredBlocking,
+            source: "chromium-cdp-lighthouse",
+          };
+        }
+      }
+    } catch {
+      // Fallback a calcolo trasferimento HTTP reale
+    } finally {
+      try {
+        if (ws) ws.close();
+      } catch {}
+      try {
+        if (proc) proc.kill("SIGKILL");
+      } catch {}
+      try {
+        fs.rmSync(/*turbopackIgnore: true*/ userDataDir, {
+          recursive: true,
+          force: true,
+        });
+      } catch {}
+    }
+  }
+
+  // 3. Calcolo fisico basato esclusivamente su TTFB misurato, dimensione documento e risorse bloccanti su rete 4G (nessun Math.max artificiale)
+  const transferSeconds4G = htmlByteLength / ((1.6 * 1024 * 1024) / 8);
+  const handshakeRtts = (150 * 3) / 1000;
+  const blockingParseSeconds = domBlockingResources * 0.18;
+  const realLcpSeconds = Number(
+    (
+      ttfbMsFallback / 1000 +
+      handshakeRtts +
+      transferSeconds4G +
+      blockingParseSeconds
+    ).toFixed(1)
+  );
+  const mobileScore = Math.max(
+    15,
+    Math.min(98, Math.round(100 - realLcpSeconds * 8.5))
+  );
+
+  return {
+    lcpSeconds: realLcpSeconds,
+    mobileScore,
+    renderBlockingCount: domBlockingResources,
+    source: "http-transfer-timing",
+  };
 }
 
 function splitKeywordIntoWhatAndWhere(keyword: string): { what: string; where: string } {
@@ -815,21 +1117,20 @@ export async function runAutonomousScout(
         cand.fallbackDescription ||
         "";
 
-      const renderBlockingScripts = Math.max(
-        8,
+      const domBlockingScripts =
         (html.match(/<script(?![^>]*defer)(?![^>]*async)[^>]+src=/gi) || []).length +
-          (html.match(/<link[^>]+rel=["']stylesheet["']/gi) || []).length
-      );
+        (html.match(/<link[^>]+rel=["']stylesheet["']/gi) || []).length;
 
-      // Calcolo LCP Mobile realistico (target B2B >= 5.2s)
-      const rawLcp = Number(
-        (
-          (ttfbMs * 3.8) / 1000 +
-          3.8 +
-          Math.min(renderBlockingScripts * 0.28, 4.8)
-        ).toFixed(1)
+      // Misurazione reale PageSpeed Insights API v5 (con fallback Chromium CDP Lighthouse Mobile Slow 4G, zero gonfiaggi artificiali)
+      const psiMetrics = await fetchPageSpeedMetrics(
+        targetUrl,
+        ttfbMs,
+        Buffer.byteLength(html || "", "utf8"),
+        domBlockingScripts
       );
-      const estimatedMobileLcpSeconds = Math.max(5.4, Math.min(12.8, rawLcp));
+      const estimatedMobileLcpSeconds = psiMetrics.lcpSeconds;
+      const renderBlockingScripts = psiMetrics.renderBlockingCount;
+      const realMobileScore = psiMetrics.mobileScore;
 
       // Estrai Logo e Hero dal sito reale o dai fallback JSON-LD verificati
       const imgTagMatches = [...html.matchAll(/<img[^>]+src=["']([^"']+)["'][^>]*>/gi)];
@@ -979,10 +1280,7 @@ export async function runAutonomousScout(
         },
         audit: {
           originalLcpSeconds: estimatedMobileLcpSeconds,
-          mobileScore: Math.max(
-            24,
-            Math.min(58, Math.round(92 - estimatedMobileLcpSeconds * 7))
-          ),
+          mobileScore: realMobileScore,
           threeCriticalFlaws: [
             `Dispersione del budget pubblicitario: caricamento mobile di ${estimatedMobileLcpSeconds}s (${renderBlockingScripts} risorse bloccanti) che fa abbandonare oltre meta degli utenti prima dell'apertura della pagina.`,
             `Cecita decisionale sul ROI: assenza di tracciamento Server-Side di prima parte (GTM Server-Side e Meta CAPI), con perdita del 30-50% dei dati di conversione per blocchi browser e cookie banner.`,

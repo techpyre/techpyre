@@ -1,0 +1,16 @@
+{
+  "slug": "silcait",
+  "targetUrl": "https://www.silcait.com",
+  "searchKeyword": "carpenteria metallica verona",
+  "measuredResponseMs": 255,
+  "renderBlockingScripts": 1,
+  "estimatedMobileLcpSeconds": 5,
+  "extractedEmails": [
+    "info@silcait.com"
+  ],
+  "extractedPhones": [
+    "+39 0442 538441",
+    "02359600232"
+  ],
+  "extractedVat": "02359600232"
+}

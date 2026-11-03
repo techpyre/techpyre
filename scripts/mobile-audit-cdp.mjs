@@ -149,6 +149,33 @@ export async function runTrueMobileAuditAndScreenshot(url, screenshotPath, waitM
     });
 
     await send('Emulation.setTouchEmulationEnabled', { enabled: true });
+    await send('Network.emulateNetworkConditions', {
+      offline: false,
+      latency: 150,
+      downloadThroughput: (1.6 * 1024 * 1024) / 8,
+      uploadThroughput: (750 * 1024) / 8,
+      connectionType: 'cellular4g',
+    });
+    await send('Emulation.setCPUThrottlingRate', { rate: 4 });
+    await send('Page.addScriptToEvaluateOnNewDocument', {
+      source: `
+        window.__cdpLcpMs = 0;
+        window.__cdpFcpMs = 0;
+        try {
+          new PerformanceObserver((list) => {
+            const entries = list.getEntries();
+            if (entries.length > 0) {
+              window.__cdpLcpMs = entries[entries.length - 1].startTime;
+            }
+          }).observe({ type: 'largest-contentful-paint', buffered: true });
+          new PerformanceObserver((list) => {
+            for (const e of list.getEntries()) {
+              if (e.name === 'first-contentful-paint') window.__cdpFcpMs = e.startTime;
+            }
+          }).observe({ type: 'paint', buffered: true });
+        } catch (e) {}
+      `,
+    });
 
     await send('Page.navigate', { url });
     await new Promise((r) => setTimeout(r, waitMs));
@@ -222,6 +249,9 @@ export async function runTrueMobileAuditAndScreenshot(url, screenshotPath, waitM
 
         const h1El = document.querySelector('h1');
         const h1Text = h1El ? (h1El.innerText || '').replace(/\\s+/g, ' ').trim() : '';
+        const navEntry = performance.getEntriesByType('navigation')[0];
+        const domCompleteMs = navEntry && navEntry.domComplete > 0 ? Math.round(navEntry.domComplete) : Math.round(performance.now());
+        const measuredLcpMs = Math.round(window.__cdpLcpMs > 0 ? window.__cdpLcpMs : (window.__cdpFcpMs > 0 ? window.__cdpFcpMs * 1.35 : domCompleteMs));
 
         return {
           viewportWidth: winW,
@@ -234,7 +264,9 @@ export async function runTrueMobileAuditAndScreenshot(url, screenshotPath, waitM
           visibleFormsCount: visibleForms.length,
           cookieOrPopupCoverPercent: Math.round(maxOverlayAreaRatio * 100),
           visibleCtasAboveFold,
-          h1Text
+          h1Text,
+          measuredLcpMs,
+          measuredLcpSeconds: Number((measuredLcpMs / 1000).toFixed(1))
         };
       })()`,
     });

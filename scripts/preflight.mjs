@@ -82,11 +82,50 @@ async function run() {
       /(?:Titolare del trattamento|Rappresentante legale|Amministratore\s+Unico|S\.r\.l\.|S\.n\.c\.|S\.p\.A\.|ditta individuale)[^.<]{0,140}/gi
     ) || [];
 
-  // 2. Calcolo LCP Mobile stimato
-  const renderBlockingScripts = (html.match(/<script(?![^>]*defer)(?![^>]*async)[^>]+src=/gi) || []).length;
-  const estimatedMobileLcpSeconds = Number(
-    ((ttfbMs * 3.8) / 1000 + 2.4 + Math.min(renderBlockingScripts * 0.25, 2.5)).toFixed(1)
-  );
+  // 2. Calcolo LCP Mobile reale via Google PageSpeed Insights v5 API (con fallback al trasferimento reale / CDP, zero gonfiaggi artificiali)
+  let renderBlockingScripts =
+    (html.match(/<script(?![^>]*defer)(?![^>]*async)[^>]+src=/gi) || []).length +
+    (html.match(/<link[^>]+rel=["']stylesheet["']/gi) || []).length;
+  let estimatedMobileLcpSeconds = 0;
+
+  try {
+    const apiKey =
+      process.env.PAGESPEED_API_KEY ||
+      process.env.GOOGLE_PAGESPEED_API_KEY ||
+      '';
+    const keyParam = apiKey ? `&key=${encodeURIComponent(apiKey)}` : '';
+    const psiRes = await fetch(
+      `https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=${encodeURIComponent(
+        finalUrl
+      )}&strategy=mobile&category=performance${keyParam}`,
+      { signal: AbortSignal.timeout(12000) }
+    );
+    if (psiRes.ok) {
+      const psiData = await psiRes.json();
+      const lcpNumericMs =
+        psiData?.lighthouseResult?.audits?.['largest-contentful-paint']?.numericValue;
+      const blockingItems =
+        psiData?.lighthouseResult?.audits?.['render-blocking-resources']?.details?.items
+          ?.length;
+      if (typeof lcpNumericMs === 'number' && lcpNumericMs > 0) {
+        estimatedMobileLcpSeconds = Number((lcpNumericMs / 1000).toFixed(1));
+      }
+      if (typeof blockingItems === 'number') {
+        renderBlockingScripts = blockingItems;
+      }
+    }
+  } catch {
+    // Fallback al timing reale
+  }
+
+  if (!estimatedMobileLcpSeconds) {
+    const transferSeconds4G = Buffer.byteLength(html, 'utf8') / ((1.6 * 1024 * 1024) / 8);
+    const handshakeRtts = (150 * 3) / 1000;
+    const blockingParseSeconds = renderBlockingScripts * 0.18;
+    estimatedMobileLcpSeconds = Number(
+      (ttfbMs / 1000 + handshakeRtts + transferSeconds4G + blockingParseSeconds).toFixed(1)
+    );
+  }
 
   // 3. RILEVAMENTO LANDING PAGE GIA' PERFORMANTE / FUNNEL BUILDER DEDICATO
   const funnelBuilders = [];
@@ -290,6 +329,9 @@ async function run() {
         finalUrl,
         path.join(outDir, 'old-site-mobile.png')
       );
+      if (mobileViewportAudit?.measuredLcpSeconds && mobileViewportAudit.measuredLcpSeconds > 0) {
+        estimatedMobileLcpSeconds = mobileViewportAudit.measuredLcpSeconds;
+      }
     } catch {
       mobileViewportAudit = null;
     }
