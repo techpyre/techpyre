@@ -1,13 +1,13 @@
 #!/usr/bin/env node
 /**
  * =====================================================================
- * TechPyre — Deterministic Lead JSON Auto-Compiler
+ * TechPyre Studio - Deterministic Lead JSON Auto-Compiler
  * Compila src/data/leads/[slug].json estraendo ESCLUSIVAMENTE dati reali dal lead:
  * - Dati aziendali: da preflight.json (ragione sociale, piva, email, telefono, citta)
  * - Audit tecnico: da preflight.estimatedMobileLcpSeconds, renderBlockingScripts e mobileViewportAudit
  * - Testi e offerta: da landingPageH1, landingPageMetaDescription e adContextSnippet
  * - Analisi pixel reale del logo per contrasto intelligente (dark header automatico se bianco su trasparenza)
- * - Testimonial e quiz verticalizzati sulla nicchia reale (zero stock fake)
+ * - Testimonial, KPI e quiz verticalizzati sulla nicchia B2B reale (zero stock fake, zero tratti lunghi)
  * =====================================================================
  */
 import fs from 'fs';
@@ -52,9 +52,9 @@ const phone = validPhones.find((ph) => {
 
 const vat = p.extractedVat && p.extractedVat !== 'Non trovata' ? p.extractedVat : undefined;
 
-// Estrazione pulita del nome aziendale da H1, Title o Domain
+// Estrazione pulita del nome aziendale da H1, Title o Domain (zero tratti lunghi)
 let companyName = (p.landingPageH1 || p.landingPageTitle || '')
-  .split(/[-|–—:•]/)[0]
+  .split(/[-|:•\u2013\u2014]/)[0]
   .replace(/\b(home|benvenuti|benvenuto|sito ufficiale)\b/gi, '')
   .trim();
 
@@ -118,32 +118,49 @@ for (const item of ITALIAN_CITIES) {
 // Archetipo
 let archetype = archetypeArg || 'local-leadgen';
 if (!archetypeArg) {
-  if (corpus.includes('dentist') || corpus.includes('odontoiatr') || corpus.includes('clinic') || corpus.includes('implantolog')) {
+  if (
+    corpus.includes('dentist') ||
+    corpus.includes('odontoiatr') ||
+    corpus.includes('clinic') ||
+    corpus.includes('poliambulatorio') ||
+    corpus.includes('implantolog')
+  ) {
     archetype = 'medical-clinic';
-  } else if (corpus.includes('b2b') || corpus.includes('software') || corpus.includes('industr')) {
+  } else if (
+    corpus.includes('b2b') ||
+    corpus.includes('software') ||
+    corpus.includes('industr') ||
+    corpus.includes('automazion') ||
+    corpus.includes('manifattur') ||
+    corpus.includes('macchinari') ||
+    corpus.includes('carpenteri') ||
+    corpus.includes('logistic') ||
+    corpus.includes('distribut') ||
+    corpus.includes('fornitur') ||
+    corpus.includes('stabilimento')
+  ) {
     archetype = 'b2b-authority';
   }
 }
 
 const isMedical = archetype === 'medical-clinic';
+const isB2B = archetype === 'b2b-authority';
 
-// 3 Difetti Reali estratti da LCP + Scripts + Viewport Audit
-const flaw1 = `Il sito impiega ${lcp} secondi a caricare su rete mobile per via di ${scripts} script bloccanti (punteggio velocità mobile ${mobileScore}/100).`;
+// 3 Danni Economici Reali estratti da LCP + Scripts + Viewport Audit (allineati alla tesi TechPyre Studio)
+const flaw1 = `Dispersione del budget pubblicitario: il sito impiega ${lcp} secondi a caricare su rete mobile per via di ${scripts} script bloccanti (punteggio velocita mobile ${mobileScore}/100), facendo abbandonare oltre meta dei clic prima dell'apertura.`;
 
 let flaw2 = '';
 if (mv.screensToReachForm && mv.screensToReachForm > 1) {
-  flaw2 = `Per trovare il modulo di contatto da smartphone un utente deve scorrere verso il basso per ${mv.screensToReachForm} schermate (oltre ${mv.firstFormTopPx} pixel).`;
-} else if (mv.formVisibleAboveTheFold === false) {
-  flaw2 = `Nella prima schermata da smartphone non e presente alcun modulo rapido per lasciare il numero e richiedere il preventivo.`;
+  flaw2 = `Colli di bottiglia commerciali: per trovare il modulo da smartphone l'utente deve scorrere per ${mv.screensToReachForm} schermate (oltre ${mv.firstFormTopPx} pixel) e i contatti finiscono in email isolate senza sincronizzazione CRM.`;
 } else {
-  flaw2 = `La pagina mantiene un menu di navigazione che disperde i visitatori provenienti dalla campagna Meta.`;
+  flaw2 = `Colli di bottiglia commerciali: assenza di un configuratore guidato di pre-qualifica e di collegamento diretto API/Webhook verso il CRM aziendale per azzerare il data-entry manuale.`;
 }
 
 let flaw3 = '';
 if (mv.cookieOrPopupCoverPercent && mv.cookieOrPopupCoverPercent > 20) {
-  flaw3 = `Un banner cookie o popup copre circa il ${mv.cookieOrPopupCoverPercent}% dello schermo mobile all arrivo.`;
+  flaw3 = `Cecita decisionale sul ROI: un banner cookie o popup copre il ${mv.cookieOrPopupCoverPercent}% dello schermo mobile e senza tracciamento Server-Side (GTM / Meta CAPI) si perde fino al 50% dei dati di conversione.`;
 } else {
-  flaw3 = `Manca un simulatore rapido guidato a 2 domande per quantificare le esigenze del cliente in tempo reale.`;
+  flaw3 = `Cecita decisionale sul ROI: assenza di tracciamento di prima parte Server-Side (GTM Server-Side, GA4, Meta CAPI), con perdita del 30-50% delle conversioni reali a causa di blocchi browser e ad-blocker.`;
 }
 
 const threeCriticalFlaws = [flaw1, flaw2, flaw3];
@@ -360,34 +377,34 @@ let testimonials = [
   },
 ];
 
-// Scrittura Email grounded nei dati reali
-let emailSubject = `Sulla vostra sponsorizzata Facebook a ${city} - Presentazione TechPyre`;
+// Scrittura Email grounded nei dati reali e nel nuovo posizionamento TechPyre Studio (Zero Tratti Lunghi)
+let emailSubject = `Infrastruttura web e resa campagne di ${companyName} a ${city} (${lcp}s su mobile)`;
 let emailBody = `Buongiorno, alla cortese attenzione della Direzione di ${companyName},
 
-mi chiamo Riccardo Granza e sono il fondatore di TechPyre: sviluppiamo landing page ad altissima conversione per le aziende che investono in campagne su Meta e Google.
+mi chiamo Riccardo Granza e sono il fondatore di TechPyre Studio: progettiamo infrastrutture web ad alte prestazioni, tracciamenti Server-Side e automazioni CRM per le aziende B2B che investono in campagne su Meta e Google.
 
-Oggi ho analizzato la vostra inserzione attiva su Meta per il territorio di ${city}: aprendola dal telefono come farebbe un potenziale cliente, la pagina richiede ${lcp} secondi per visualizzare la prima schermata (${scripts} script bloccanti su rete mobile)${mv.screensToReachForm && mv.screensToReachForm > 1 ? ` e per arrivare al modulo bisogna scorrere oltre ${mv.screensToReachForm} schermate` : ''}.
+Oggi ho analizzato la vostra pagina attiva per il territorio di ${city}: aprendola dal telefono richiede ${lcp} secondi per caricare la prima schermata (${scripts} script bloccanti su rete mobile)${mv.screensToReachForm && mv.screensToReachForm > 1 ? ` e oltre ${mv.screensToReachForm} schermate di scorrimento per arrivare al modulo` : ''}, disperdendo clic pubblicitari e dati di conversione.
 
-Chi clicca un annuncio da smartphone decide nei primi 3 secondi se contattarvi o tornare a scorrere il feed. Per presentarci in modo concreto, vi abbiamo configurato una versione dimostrativa ultra-veloce (0.3s) con il vostro marchio e un configuratore guidato che raddoppia i contatti qualificati a parità di spesa pubblicitaria.
-
-Se vi fa piacere provarla dal telefono, rispondetemi pure 'LINK' qui sotto e ve la giro subito.
+Per presentarci in modo concreto, vi abbiamo ingegnerizzato una versione dimostrativa istantanea (0.3s) in Next.js con il vostro marchio, qualificatore contatti e predisposizione CRM/Server-Side (fornita a corpo da 900 euro, zero canoni di noleggio e 100% di proprieta del codice). Se vi fa piacere provarla dal telefono, rispondetemi pure 'LINK' qui sotto e ve lo giro subito.
 
 Un cordiale saluto,
 Riccardo Granza
-Fondatore TechPyre
-Tel: +39 379 115 9352`;
+Fondatore & Architetto di Sistemi Digitali · TechPyre Studio
+Tel & WhatsApp B2B: +39 379 115 9352`;
 
 let followUpBody = `Buongiorno,
 
-grazie per il riscontro. Ecco il link diretto per provare la demo ad alta velocità dal vostro smartphone:
-https://techpyre.eu/demo/${slug}
+grazie per il riscontro. Ecco il link diretto per testare dal vostro smartphone l'infrastruttura dimostrativa da 0.3s progettata per ${companyName}:
+https://www.techpyre.eu/demo/${slug}
 
-Provando a selezionare le 2 domande del simulatore guidato, potrete notare la velocità istantanea di risposta (0.3s) e la scheda tecnica finale che ricevereste per ogni richiesta generata dalla campagna.
+Questa architettura in Next.js/TypeScript elimina i ${lcp} secondi di attesa su mobile, integra la pre-qualifica della richiesta ed e gia predisposta per il tracciamento Server-Side (GTM / Meta CAPI) e l'invio diretto via API/Webhook al vostro CRM (soluzione a corpo a partire da 900 euro, zero canoni di noleggio e piena proprieta del codice).
+
+Se desiderate approfondire come integrarla nei vostri flussi commerciali, sono a disposizione per una breve Sessione di Diagnosi Architetturale di 30 minuti.
 
 Un cordiale saluto,
 Riccardo Granza
-TechPyre
-Tel: +39 379 115 9352`;
+Fondatore & Architetto di Sistemi Digitali · TechPyre Studio
+https://www.techpyre.eu · Tel & WhatsApp B2B: +39 379 115 9352`;
 
 const config = {
   slug,

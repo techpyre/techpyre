@@ -31,20 +31,20 @@ export default function TechPyreFooter({ data }: TechPyreFooterProps) {
           </div>
         </div>
 
-        {/* Riga Unica di Copyright e Firma Discreta TechPYRE */}
+        {/* Riga Unica di Copyright e Firma Discreta TechPYRE Studio */}
         <div className="pt-6 border-t border-stone-800/80 flex flex-col sm:flex-row items-center justify-between gap-3 text-[11px] text-stone-500">
           <div>
             © {currentYear} {meta.companyName}. Tutti i diritti riservati.
           </div>
           <div className="flex items-center gap-1.5 text-stone-500">
-            <span>Architettura ad alte prestazioni:</span>
+            <span>Infrastruttura Next.js, Server-Side &amp; CRM:</span>
             <a
-              href="https://techpyre.eu"
+              href="https://www.techpyre.eu"
               target="_blank"
               rel="noopener noreferrer"
               className="text-stone-400 hover:text-stone-200 transition-colors font-medium underline underline-offset-2"
             >
-              TechPYRE
+              TechPYRE Studio
             </a>
           </div>
         </div>
@@ -55,7 +55,7 @@ export default function TechPyreFooter({ data }: TechPyreFooterProps) {
         className="hidden"
         aria-hidden="true"
         dangerouslySetInnerHTML={{
-          __html: "<!-- TechPYRE High-Performance CRO Architecture (https://techpyre.eu) -->",
+          __html: "<!-- TechPYRE Studio · Studio di Ingegneria ed Ecosistemi Digitali (https://www.techpyre.eu) -->",
         }}
       />
     </footer>

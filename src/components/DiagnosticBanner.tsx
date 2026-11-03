@@ -52,7 +52,7 @@ export default function DiagnosticBanner({ data }: DiagnosticBannerProps) {
       <div className="demo-container py-2 hidden sm:flex items-center justify-between gap-4">
         <div className="flex items-center gap-2.5">
           <span className="px-2 py-0.5 rounded text-[10px] font-semibold bg-zinc-800/90 text-zinc-300 border border-zinc-700/60 uppercase tracking-wider">
-            Audit Tecnico Riservato
+            Diagnosi Architetturale B2B
           </span>
           <span className="font-semibold text-white tracking-tight">
             {data.meta.companyName}
@@ -73,7 +73,7 @@ export default function DiagnosticBanner({ data }: DiagnosticBannerProps) {
             </span>
             <span className="text-zinc-600">→</span>
             <span className="text-zinc-300">
-              Versione TechPYRE:{" "}
+              Ecosistema TechPYRE:{" "}
               <strong className="text-emerald-400 font-semibold font-mono">
                 0.3s
               </strong>
@@ -86,7 +86,7 @@ export default function DiagnosticBanner({ data }: DiagnosticBannerProps) {
             onClick={() => setExpanded((prev) => !prev)}
             className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-zinc-800/90 hover:bg-zinc-700/90 text-zinc-200 border border-zinc-700/50 transition-colors text-[11px] font-medium cursor-pointer"
           >
-            <span>Note Tecniche Audit ({data.audit.threeCriticalFlaws.length})</span>
+            <span>Diagnosi Flussi ({data.audit.threeCriticalFlaws.length})</span>
             {expanded ? (
               <ChevronUp className="w-3.5 h-3.5 text-zinc-400" />
             ) : (
@@ -108,7 +108,7 @@ export default function DiagnosticBanner({ data }: DiagnosticBannerProps) {
             <div className="demo-container py-4 sm:py-5 grid grid-cols-1 md:grid-cols-12 gap-5 sm:gap-6 items-start">
               <div className="md:col-span-5 space-y-1.5">
                 <div className="text-zinc-400 font-medium text-[11px]">
-                  Inserzione attiva collegata a questa pagina
+                  Pagina / Campagna analizzata (Next.js · Server-Side · CRM)
                 </div>
                 <p className="text-white font-semibold text-xs sm:text-sm leading-snug">
                   &ldquo;{data.audit.activeAdHeadline}&rdquo;
@@ -120,7 +120,7 @@ export default function DiagnosticBanner({ data }: DiagnosticBannerProps) {
 
               <div className="md:col-span-7 space-y-1.5 md:border-l md:border-zinc-800 md:pl-6">
                 <div className="text-zinc-400 font-medium text-[11px]">
-                  3 aspetti migliorati rispetto alla pagina attuale
+                  3 criticità economiche e tecniche risolte in questa architettura (da 900€ a corpo · 0 canoni)
                 </div>
                 <ol className="space-y-1.5 text-zinc-300 text-[11px] sm:text-xs list-decimal list-inside">
                   {data.audit.threeCriticalFlaws.map((flaw, idx) => (

@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * =====================================================================
- * TechPYRE Outbound Engine — Autonomous Meta Ad Library Scout
+ * TechPYRE Studio · B2B Outbound Engine - Autonomous Meta Ad Library Scout
  * Eseguito direttamente dall'Agente AI senza intervento umano nel browser:
  *   node scripts/scout-ad-library.mjs "<keyword>" [maxLeads=5]
  * =====================================================================

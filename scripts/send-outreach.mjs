@@ -103,18 +103,22 @@ if (fs.existsSync(preflightPath)) {
   }
 }
 
-const baseUrl = process.env.NEXT_PUBLIC_DEMO_DOMAIN || 'https://techpyre.eu';
+const baseUrl = process.env.NEXT_PUBLIC_DEMO_DOMAIN || 'https://www.techpyre.eu';
 const demoUrl = `${baseUrl}/demo/${lead.slug}`;
 
-const words = lead.outreach.emailPlainTextBody.trim().split(/\s+/).filter(Boolean).length;
-const hasLinksInInitial = /https?:\/\//i.test(lead.outreach.emailPlainTextBody);
+const cleanEmailBody = (lead.outreach.emailPlainTextBody || '').replace(/[\u2013\u2014]/g, '-');
+const cleanFollowUpBody = (lead.outreach.followUpWithLinkBody || '').replace(/[\u2013\u2014]/g, '-');
+const cleanSubject = (lead.outreach.emailSubject || '').replace(/[\u2013\u2014]/g, '-');
+
+const words = cleanEmailBody.trim().split(/\s+/).filter(Boolean).length;
+const hasLinksInInitial = /https?:\/\//i.test(cleanEmailBody);
 
 const firstName =
   lead.meta.decisionMakerName
     .replace(/^(?:Ing\.|Dott\.ssa|Dott\.|Arch\.|Geom\.|Sig\.|Avv\.)\s*/i, '')
     .split(/\s+/)[0] || '';
 
-const dmText = `Buongiorno ${firstName}, sono Riccardo Granza, fondatore di TechPyre (sviluppiamo landing page ad alta velocità per chi investe in campagne Meta). Ho visto la vostra sponsorizzata "${lead.audit.activeAdHeadline}" su Facebook: dal telefono la pagina attuale impiega ${lead.audit.originalLcpSeconds} secondi ad aprirsi. Per presentarci vi abbiamo preparato una versione dimostrativa istantanea (0.3s) con i vostri testi: le ho inviato i dettagli via email, se le fa piacere provarla dal telefono mi scriva pure qui e le giro il link!`;
+const dmText = `Buongiorno ${firstName}, sono Riccardo Granza, fondatore di TechPyre Studio (progettiamo infrastrutture web in Next.js, tracciamenti Server-Side e automazioni CRM per aziende B2B). Ho analizzato la vostra pagina "${lead.audit.activeAdHeadline}": da smartphone impiega ${lead.audit.originalLcpSeconds} secondi ad aprirsi. Per presentarci vi abbiamo ingegnerizzato una versione dimostrativa istantanea (0.3s) con pre-qualifica lead e predisposizione CRM: le ho inviato i dettagli via email, se le fa piacere provarla dal telefono mi scriva pure qui e le giro il link!`;
 
 const qualificationStrategy =
   preflight?.qualification?.recommendedStrategy || 'DIRECT_BUYER';
@@ -126,28 +130,28 @@ const martechSignals =
   preflight?.qualification?.agencyDetection?.martechSignals || [];
 
 const agencyObjectionReply = [
-  `La capisco perfettamente, e infatti non vogliamo assolutamente sostituire l'agenzia che vi segue le campagne Facebook.`,
-  `Il nostro è un intervento puramente tecnico (anche in White-Label): forniamo alla vostra agenzia attuale la pagina veloce da 0.3s sul vostro dominio, già collegata al loro Pixel e GTM, così i clic che vi portano smettono di perdersi durante i ${lead.audit.originalLcpSeconds} secondi di caricamento.`,
-  `Può girare direttamente anche a loro questo link di test (è completamente neutro, senza il nostro logo):`,
+  `La capisco perfettamente, e infatti non sostituiamo in alcun modo l'agenzia che vi segue le campagne pubblicitarie.`,
+  `Il nostro e un intervento puramente ingegneristico (anche in White-Label): forniamo alla vostra agenzia l'infrastruttura Next.js da 0.3s sul vostro dominio, con tracciamento Server-Side (GTM / Meta CAPI) e collegamento diretto API/Webhook al vostro CRM, cosi i clic che vi portano smettono di disperdersi durante i ${lead.audit.originalLcpSeconds} secondi di caricamento.`,
+  `Puo girare direttamente anche a loro questo link di test:`,
   `${demoUrl}`,
 ].join('\n\n');
 
 const whiteLabelAgencyPitch = [
-  `Oggetto: Partnership tecnica White-Label su campagne Meta di ${lead.meta.companyName} (${lead.audit.originalLcpSeconds}s -> 0.3s)`,
+  `Oggetto: Partnership tecnica White-Label su infrastruttura web e Server-Side di ${lead.meta.companyName} (${lead.audit.originalLcpSeconds}s -> 0.3s)`,
   ``,
   `Buongiorno,`,
   ``,
-  `mi chiamo Riccardo Granza e sono il fondatore di TechPyre: siamo uno studio tecnico specializzato nello sviluppo di landing page Next.js ad altissima velocità (0.3s) in modalità White-Label per le Web Agency.`,
+  `mi chiamo Riccardo Granza e sono il fondatore di TechPyre Studio: siamo uno studio di ingegneria digitale specializzato nello sviluppo di infrastrutture Next.js (< 0.4s), Server-Side Tracking (GTM / Meta CAPI) e integrazioni CRM in modalita White-Label per le Web e Performance Agency.`,
   ``,
-  `Abbiamo notato che seguite il progetto digitale di ${lead.meta.companyName}. Le creatività su Meta sono ben strutturate, ma la pagina attuale su cui atterra il traffico mobile impiega ${lead.audit.originalLcpSeconds} secondi a caricare, penalizzando il tasso di conversione delle campagne.`,
+  `Abbiamo notato che seguite il progetto digitale di ${lead.meta.companyName}. Le creativita sono ben strutturate, ma la pagina attuale su cui atterra il traffico mobile impiega ${lead.audit.originalLcpSeconds} secondi a caricare, penalizzando il tasso di conversione e la raccolta dati.`,
   ``,
-  `Abbiamo già preparato una versione Next.js da 0.3s per ${lead.meta.companyName} completamente neutra (100% White-Label, zero riferimenti a TechPyre) con simulatore lead integrato: potete mostrarla direttamente al vostro cliente come upgrade vostro o collegarla in 24h al vostro GTM/CRM.`,
+  `Abbiamo gia ingegnerizzato una versione Next.js da 0.3s per ${lead.meta.companyName} pronta in White-Label con qualificatore lead e predisposizione GTM Server-Side/CRM: potete mostrarla direttamente al vostro cliente come upgrade tecnico o collegarla al vostro stack.`,
   ``,
-  `Se vi fa piacere vedere la preview White-Label già pronta, rispondetemi pure 'LINK' e ve la giro subito.`,
+  `Se vi fa piacere vedere l'anteprima gia pronta, rispondetemi pure 'LINK' e ve la giro subito.`,
   ``,
   `Un cordiale saluto,`,
-  `Riccardo Granza - Fondatore TechPyre`,
-  `+39 379 115 9352`,
+  `Riccardo Granza · Fondatore & Architetto di Sistemi Digitali · TechPyre Studio`,
+  `Tel & WhatsApp B2B: +39 379 115 9352`,
 ].join('\n');
 
 const packContent = [
@@ -221,7 +225,7 @@ if (shouldSend) {
   const port = Number(process.env.OUTBOUND_SMTP_PORT || process.env.SMTP_PORT || 587);
   const user = process.env.OUTBOUND_SMTP_USER || process.env.SMTP_USER;
   const pass = process.env.OUTBOUND_SMTP_PASS || process.env.SMTP_PASS;
-  const fromName = process.env.OUTBOUND_FROM_NAME || 'Riccardo Granza - TechPYRE';
+  const fromName = process.env.OUTBOUND_FROM_NAME || 'Riccardo Granza · TechPyre Studio';
 
   if (!host || !user || !pass || host.includes('tuoprovider')) {
     console.log('\nℹ️  SMTP non configurato per invio reale (modalità Dry-Run completata).');
@@ -235,8 +239,8 @@ if (shouldSend) {
     auth: { user, pass },
   });
 
-  const subject = isFollowUp ? `Re: ${lead.outreach.emailSubject}` : lead.outreach.emailSubject;
-  const text = isFollowUp ? lead.outreach.followUpWithLinkBody : lead.outreach.emailPlainTextBody;
+  const subject = isFollowUp ? `Re: ${cleanSubject}` : cleanSubject;
+  const text = isFollowUp ? cleanFollowUpBody : cleanEmailBody;
 
   const info = await transporter.sendMail({
     from: `"${fromName}" <${user}>`,

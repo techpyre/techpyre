@@ -113,12 +113,10 @@ async function run() {
     lowerHtml.includes('calcola il tuo preventivo') ||
     lowerHtml.includes('simulatore');
 
-  // Una pagina è "già una landing page performante" se:
-  // - LCP < 2.6s ED ha già un form o funnel builder
-  // - Oppure usa un Funnel Builder dedicato (ClickFunnels/GoHighLevel/Unbounce) con LCP < 3.5s
+  // Una pagina e "gia performante" se ha LCP < 4.0s (il target TechPyre Studio richiede LCP >= 5.0s)
   const alreadyHasPerformantLanding =
-    (estimatedMobileLcpSeconds < 2.6 && (formsCount > 0 || isDedicatedFunnelUrl)) ||
-    (funnelBuilders.length > 0 && estimatedMobileLcpSeconds < 3.5);
+    estimatedMobileLcpSeconds < 4.0 ||
+    (funnelBuilders.length > 0 && estimatedMobileLcpSeconds < 4.5);
 
   // Se la sottopagina della campagna non ha email o P.IVA nel footer, controlla anche la Home Page principale
   let combinedHtml = html;
@@ -233,21 +231,21 @@ async function run() {
     cleanText.includes('Procedi al checkout');
 
   const isLargeEnterpriseOrSpa =
-    /\bS\.p\.A\.\b/i.test(cleanText) ||
-    /\bSocietà per Azioni\b/i.test(cleanText) ||
-    /\bNumero Verde\s+800\b/i.test(cleanText);
+    /\bNumero Verde\s+800\b/i.test(cleanText) && finalEmails.length === 0;
 
   const disqualifiers = [];
   if (isMessagingFunnel) disqualifiers.push('Funnel solo WhatsApp/Messenger senza sito');
-  if (alreadyHasPerformantLanding) disqualifiers.push(`Ha già una landing page performante (${estimatedMobileLcpSeconds}s)`);
-  if (isEcommerce) disqualifiers.push('E-commerce con carrello (non Lead Generation)');
-  if (isLargeEnterpriseOrSpa) disqualifiers.push('Struttura S.p.A. / Corporate con ufficio acquisti bloccato');
+  if (alreadyHasPerformantLanding) disqualifiers.push(`Pagina gia veloce (${estimatedMobileLcpSeconds}s < 4.0s)`);
+  if (isEcommerce) disqualifiers.push('E-commerce B2C con carrello (non B2B / Lead Generation)');
+  if (isLargeEnterpriseOrSpa) disqualifiers.push('Call center Numero Verde 800 senza email dirette');
   if (finalEmails.length === 0 && finalPhones.length === 0) disqualifiers.push('Nessun contatto diretto (email/telefono) reperibile');
 
   // 6. STRATEGIA CONSIGLIATA (Direct vs White-Label / Co-existence vs Skip)
   let recommendedStrategy = 'DIRECT_BUYER';
   let strategyReason =
-    'Azienda ideale per vendita diretta: paga le inserzioni Meta ma manda il traffico su un sito lento e dispersivo.';
+    'Azienda B2B ideale per vendita diretta: sito lento su mobile (' +
+    estimatedMobileLcpSeconds +
+    's), privo di tracciamento Server-Side e senza automazione verso il CRM.';
 
   if (disqualifiers.length > 0) {
     recommendedStrategy = 'DISQUALIFIED_SKIP';
@@ -255,9 +253,9 @@ async function run() {
   } else if (hasAgencyInvolved) {
     recommendedStrategy = 'AGENCY_COEXISTENCE_OR_WHITELABEL';
     strategyReason =
-      'Rilevata presenza di Web Agency / Funnel di Marketing esistente ma con pagina lenta (' +
+      'Rilevata presenza di Web Agency / Funnel esistente ma con pagina lenta (' +
       estimatedMobileLcpSeconds +
-      's). Usa l\'angolo "Non tocchiamo chi vi segue le campagne: forniamo solo la pagina veloce 0.3s in White-Label" (o proponi partnership White-Label all\'agenzia rilevata).';
+      's). Usa l\'angolo "Non sostituiamo chi vi segue le campagne: forniamo l\'infrastruttura Next.js da 0.3s con Server-Side Tracking e collegamento CRM".';
   }
 
   // 7. Estrazione URL candidati per Logo e Hero dal DOM statico

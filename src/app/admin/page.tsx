@@ -97,7 +97,7 @@ export default function AdminPage() {
   const [activeTab, setActiveTab] = useState<"ALL" | "READY" | "SENT" | "VISITED" | "REPLIED">("ALL");
 
   // Scout State
-  const [keyword, setKeyword] = useState("infissi torino");
+  const [keyword, setKeyword] = useState("automazione industriale brescia");
   const [maxLeads, setMaxLeads] = useState(5);
   const [scoutingRunning, setScoutingRunning] = useState(false);
   const [scoutMessage, setScoutMessage] = useState<string | null>(null);
@@ -362,10 +362,10 @@ export default function AdminPage() {
               <h1 className="text-xl font-bold tracking-tight text-white flex items-center gap-2">
                 Tech<span className="text-blue-500">PYRE</span>
                 <span className="text-xs uppercase px-2 py-0.5 bg-blue-500/20 text-blue-300 rounded-full font-mono">
-                  Engine
+                  Studio
                 </span>
               </h1>
-              <p className="text-xs text-white/50">Outbound Intelligence Platform</p>
+              <p className="text-xs text-white/50">Studio di Ingegneria ed Ecosistemi Digitali · B2B Engine</p>
             </div>
           </div>
 
@@ -494,13 +494,13 @@ export default function AdminPage() {
             <div>
               <div className="flex items-center gap-2">
                 <span className="font-bold tracking-tight text-white text-base">
-                  Tech<span className="text-blue-500">PYRE</span>
+                  Tech<span className="text-blue-500">PYRE</span> Studio
                 </span>
                 <span className="text-[10px] font-mono uppercase bg-white/10 px-2 py-0.5 rounded text-white/70">
-                  Admin
+                  B2B Outbound
                 </span>
               </div>
-              <p className="text-[11px] text-white/40">Outbound Intelligence Engine</p>
+              <p className="text-[11px] text-white/40">Studio di Ingegneria ed Ecosistemi Digitali</p>
             </div>
           </div>
 
@@ -658,18 +658,45 @@ export default function AdminPage() {
           </div>
         </section>
 
-        {/* Sezione Scouting / Ricerca Aziende */}
+        {/* Sezione Scouting / Ricerca Aziende B2B High-Ticket */}
         <section className="bg-[#0E131F] border border-white/10 rounded-2xl p-6 shadow-xl">
-          <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-5">
+          <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
             <div>
               <h2 className="text-base font-semibold text-white flex items-center gap-2">
                 <Search className="w-4 h-4 text-blue-400" />
-                Trova Nuove Aziende &amp; Genera Demo Automatiche
+                Scouting Aziende B2B High-Ticket &amp; Generazione Ecosistemi Demo (0.3s)
               </h2>
               <p className="text-xs text-white/50 mt-0.5">
-                Cerca su qualsiasi nicchia o città in Italia: il motore individua le aziende, calcola i tempi di caricamento reali e prepara la demo.
+                Individua PMI strutturate, industrie manifatturiere, distributori B2B e aziende con siti lenti (&gt; 5.0s), calcola i 3 danni economici (LCP, Server-Side, CRM) e genera demo + email.
               </p>
             </div>
+          </div>
+
+          {/* Preset Rapidi Verticali B2B */}
+          <div className="flex flex-wrap items-center gap-1.5 mb-4">
+            <span className="text-[11px] text-white/40 mr-1 font-mono uppercase">Target B2B:</span>
+            {[
+              "automazione industriale brescia",
+              "macchinari industriali bergamo",
+              "carpenteria metallica vicenza",
+              "distributori forniture b2b milano",
+              "impianti fotovoltaici industriali",
+              "serramenti alluminio bologna",
+              "clinica odontoiatrica verona",
+            ].map((preset) => (
+              <button
+                key={preset}
+                type="button"
+                onClick={() => setKeyword(preset)}
+                className={`px-2.5 py-1 rounded-lg text-[11px] border transition-colors ${
+                  keyword === preset
+                    ? "bg-blue-600/20 border-blue-500/40 text-blue-300 font-medium"
+                    : "bg-white/[0.03] border-white/10 text-white/60 hover:text-white hover:bg-white/[0.07]"
+                }`}
+              >
+                {preset}
+              </button>
+            ))}
           </div>
 
           <form onSubmit={handleStartScouting} className="flex flex-col sm:flex-row gap-3">
@@ -679,7 +706,7 @@ export default function AdminPage() {
                 type="text"
                 value={keyword}
                 onChange={(e) => setKeyword(e.target.value)}
-                placeholder="es. infissi brescia, dentista verona, fotovoltaico bergamo..."
+                placeholder="es. automazione industriale brescia, macchinari b2b padova, fotovoltaico industriale..."
                 required
                 className="w-full bg-[#121826] border border-white/10 rounded-xl pl-10 pr-4 py-3 text-sm text-white placeholder-white/30 focus:outline-none focus:border-blue-500 transition-colors"
               />

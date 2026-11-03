@@ -148,12 +148,12 @@ export async function sendLeadOutreach({
       `Ciao ${user.displayName}! Prima di inviare email, configura le tue credenziali SMTP personali cliccando su "Impostazioni Email" in alto.`
     );
   } else {
-    // Default TechPyre per Admin e Member
+    // Default TechPyre Studio per Admin e Member
     host = process.env.OUTBOUND_SMTP_HOST || process.env.SMTP_HOST || "";
     port = Number(process.env.OUTBOUND_SMTP_PORT || process.env.SMTP_PORT || 465);
     smtpUser = process.env.OUTBOUND_SMTP_USER || process.env.SMTP_USER || "";
     smtpPass = process.env.OUTBOUND_SMTP_PASS || process.env.SMTP_PASS || "";
-    senderName = process.env.OUTBOUND_FROM_NAME || `${user.displayName} - TechPyre`;
+    senderName = process.env.OUTBOUND_FROM_NAME || `${user.displayName} · TechPyre Studio`;
     senderEmail = smtpUser;
   }
 
@@ -163,24 +163,31 @@ export async function sendLeadOutreach({
     );
   }
 
-  // 3. Prepara il testo dell'email
-  const subject = isFollowUp
+  // 3. Prepara il testo dell'email (rimuovendo eventuali tratti lunghi residui per conformita aziendale)
+  const rawSubject = isFollowUp
     ? `Re: ${lead.outreach.emailSubject}`
     : lead.outreach.emailSubject;
+  const subject = rawSubject.replace(/[—–]/g, "-");
 
-  let text = isFollowUp
-    ? lead.outreach.followUpWithLinkBody
-    : lead.outreach.emailPlainTextBody;
+  let text = (
+    isFollowUp
+      ? lead.outreach.followUpWithLinkBody
+      : lead.outreach.emailPlainTextBody
+  ).replace(/[—–]/g, "-");
 
-  // Personalizza la presentazione in apertura se l'invio è fatto da un altro operatore (es. Andrea Di Bella)
+  // Personalizza la presentazione in apertura se l'invio e fatto da un altro operatore (es. Andrea Di Bella)
   if (user.username !== "riccardogranza" && senderName) {
     text = text.replace(
-      /mi chiamo Riccardo Granza e sono il fondatore di TechPyre/gi,
-      `mi chiamo ${senderName} e collaboro con TechPyre`
+      /mi chiamo Riccardo Granza e sono il fondatore di TechPyre(?:\s+Studio)?/gi,
+      `mi chiamo ${senderName} e collaboro con TechPyre Studio`
     );
     text = text.replace(
-      /Riccardo Granza\s*-\s*Fondatore TechPyre/gi,
-      `${senderName}`
+      /Riccardo Granza\s*[-·]\s*Fondatore[^\n]*/gi,
+      `${senderName} · TechPyre Studio`
+    );
+    text = text.replace(
+      /Fondatore & Architetto di Sistemi Digitali · TechPyre Studio/gi,
+      `TechPyre Studio · Studio di Ingegneria ed Ecosistemi Digitali`
     );
     text = text.replace(/Riccardo Granza/gi, senderName);
   }

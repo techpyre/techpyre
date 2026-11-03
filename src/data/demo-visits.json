@@ -262,5 +262,101 @@
         "isFirstVisit": true
       }
     ]
+  },
+  "giovannaperona": {
+    "slug": "giovannaperona",
+    "companyName": "Giovanna Perona",
+    "totalVisits": 1,
+    "uniqueSessions": 1,
+    "firstVisitAt": "2026-10-30T17:35:29.070Z",
+    "lastVisitAt": "2026-10-30T17:35:29.070Z",
+    "lastDevice": "iPhone (iOS 17.4)",
+    "lastDeviceType": "Mobile",
+    "visits": [
+      {
+        "id": "vis_1793381729070_llru7",
+        "timestamp": "2026-10-30T17:35:29.070Z",
+        "formattedDate": "30 Ott 2026, 18:35",
+        "device": "iPhone (iOS 17.4)",
+        "deviceType": "Mobile",
+        "referrer": "diretto / link email",
+        "screen": "390x844",
+        "ip": "::1",
+        "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4 Mobile/15E148 Safari/604.1",
+        "isFirstVisit": true
+      }
+    ]
+  },
+  "oknamilano": {
+    "slug": "oknamilano",
+    "companyName": "Okna Milano",
+    "totalVisits": 1,
+    "uniqueSessions": 1,
+    "firstVisitAt": "2026-10-30T17:35:36.554Z",
+    "lastVisitAt": "2026-10-30T17:35:36.554Z",
+    "lastDevice": "iPhone (iOS 17.4)",
+    "lastDeviceType": "Mobile",
+    "visits": [
+      {
+        "id": "vis_1793381736554_divo1",
+        "timestamp": "2026-10-30T17:35:36.554Z",
+        "formattedDate": "30 Ott 2026, 18:35",
+        "device": "iPhone (iOS 17.4)",
+        "deviceType": "Mobile",
+        "referrer": "diretto / link email",
+        "screen": "390x844",
+        "ip": "::1",
+        "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4 Mobile/15E148 Safari/604.1",
+        "isFirstVisit": true
+      }
+    ]
+  },
+  "sayagency": {
+    "slug": "sayagency",
+    "companyName": "Say S.p.A.",
+    "totalVisits": 1,
+    "uniqueSessions": 1,
+    "firstVisitAt": "2026-10-30T17:42:17.582Z",
+    "lastVisitAt": "2026-10-30T17:42:17.582Z",
+    "lastDevice": "iPhone (iOS 17.4)",
+    "lastDeviceType": "Mobile",
+    "visits": [
+      {
+        "id": "vis_1793382137582_3ngou",
+        "timestamp": "2026-10-30T17:42:17.582Z",
+        "formattedDate": "30 Ott 2026, 18:42",
+        "device": "iPhone (iOS 17.4)",
+        "deviceType": "Mobile",
+        "referrer": "diretto / link email",
+        "screen": "390x844",
+        "ip": "::1",
+        "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4 Mobile/15E148 Safari/604.1",
+        "isFirstVisit": true
+      }
+    ]
+  },
+  "blossomcommunication": {
+    "slug": "blossomcommunication",
+    "companyName": "Blossom Communication",
+    "totalVisits": 1,
+    "uniqueSessions": 1,
+    "firstVisitAt": "2026-10-30T17:42:25.072Z",
+    "lastVisitAt": "2026-10-30T17:42:25.072Z",
+    "lastDevice": "iPhone (iOS 17.4)",
+    "lastDeviceType": "Mobile",
+    "visits": [
+      {
+        "id": "vis_1793382145072_eoecu",
+        "timestamp": "2026-10-30T17:42:25.072Z",
+        "formattedDate": "30 Ott 2026, 18:42",
+        "device": "iPhone (iOS 17.4)",
+        "deviceType": "Mobile",
+        "referrer": "diretto / link email",
+        "screen": "390x844",
+        "ip": "::1",
+        "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4 Mobile/15E148 Safari/604.1",
+        "isFirstVisit": true
+      }
+    ]
   }
 }
