@@ -1287,9 +1287,16 @@ export async function runAutonomousScout(
           !low.endsWith(".svg") &&
           !low.includes("sentry") &&
           !low.includes("wix") &&
+          !low.includes("prestashop.") &&
           !low.includes("example.") &&
           !low.includes("azienda.it") &&
           !low.includes("tuamail") &&
+          !low.includes("email@") &&
+          !low.includes("your@") &&
+          !low.includes("nome@") &&
+          !low.includes("doe.com") &&
+          !low.includes("john@") &&
+          !low.includes("mail.it") &&
           !low.includes("email.it") &&
           !low.includes("domain.") &&
           !low.includes("qq.com") &&
@@ -1405,17 +1412,37 @@ export async function runAutonomousScout(
         }
       }
 
-      // Costruisci nome azienda pulito (senza tratti lunghi)
+      // Costruisci nome azienda pulito (senza tratti lunghi ne titoli generici di sottopagine come "Contatti", "Home", "Preventivo")
+      const ogSiteName =
+        html.match(
+          /<meta[^>]+property=["']og:site_name["'][^>]+content=["']([^"']+)["']/i
+        )?.[1] || "";
+
+      const titleSegments = pageTitle
+        .split(/[-|•:\u2013\u2014]/)
+        .map((s) => s.trim())
+        .filter(
+          (s) =>
+            s.length >= 3 &&
+            !/^(home|homepage|contatti|contattaci|preventivo|richiedi preventivo|chi siamo|referenze|servizi|prodotti|benvenuti|sito ufficiale|welcome|index)$/i.test(
+              s
+            )
+        );
+
       const rawName = (
         cand.fallbackName ||
-        pageTitle.split(/[-|•:\u2013\u2014]/)[0] ||
+        (ogSiteName.length >= 3 && ogSiteName.length <= 42 ? ogSiteName : "") ||
+        titleSegments[0] ||
         ""
       )
         .replace(/[—–]/g, "-")
+        .replace(/\b(homepage di|benvenuti in|sito ufficiale)\b/gi, "")
         .trim();
 
       const companyName =
-        rawName.length >= 3 && rawName.length <= 45
+        rawName.length >= 3 &&
+        rawName.length <= 42 &&
+        !/^(contatti|home|preventivo|servizi|chi siamo)$/i.test(rawName)
           ? rawName
           : slug
               .split("-")

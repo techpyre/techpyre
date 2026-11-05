@@ -1,0 +1,17 @@
+{
+  "slug": "nexeta",
+  "targetUrl": "http://www.nexeta.com/contatti",
+  "searchKeyword": "inserzionisti B2B Meta Ad Library",
+  "measuredResponseMs": 1092,
+  "renderBlockingScripts": 32,
+  "estimatedMobileLcpSeconds": 7.6,
+  "extractedEmails": [
+    "info@nexeta.com"
+  ],
+  "extractedPhones": [
+    "3053775288",
+    "3158847450",
+    "3053776549"
+  ],
+  "extractedVat": "Non trovata"
+}
