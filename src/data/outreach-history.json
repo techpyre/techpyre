@@ -2663,5 +2663,455 @@
     "subject": "Infrastruttura web e resa campagne di Carpenteria Manzanese Mittone Srl (2.4s su mobile)",
     "messageId": "<d38324c2-a1c5-b53a-ccdf-d3c1344dabc6@techpyre.eu>",
     "sentAt": "2026-11-03T18:34:51.213Z"
+  },
+  {
+    "slug": "energiaeprogetti",
+    "companyName": "ENERGIA & PROGETTI SRL",
+    "recipient": "info@energiaprogetti-tv.it",
+    "type": "INITIAL",
+    "subject": "Infrastruttura web e resa campagne di ENERGIA & PROGETTI SRL (4s su mobile)",
+    "messageId": "<fcd94e2f-d5c0-e9e1-847d-91270a3f0537@techpyre.eu>",
+    "sentAt": "2026-11-05T11:17:14.060Z"
+  },
+  {
+    "slug": "pvservices",
+    "companyName": "PV Services Srl",
+    "recipient": "info@pvservices.it",
+    "type": "INITIAL",
+    "subject": "Infrastruttura web e resa campagne di PV Services Srl (5.4s su mobile)",
+    "messageId": "<9b625fd7-abfb-78cb-a8f2-790784e4c414@techpyre.eu>",
+    "sentAt": "2026-11-05T11:17:17.304Z"
+  },
+  {
+    "slug": "idraulicobraga",
+    "companyName": "Gruppo Braga Impianti",
+    "recipient": "info@bragagroup.it",
+    "type": "INITIAL",
+    "subject": "Infrastruttura web e resa campagne di Gruppo Braga Impianti (4.3s su mobile)",
+    "messageId": "<b841f102-d0d5-09eb-f723-ecc82bcb1777@techpyre.eu>",
+    "sentAt": "2026-11-05T11:17:20.688Z"
+  },
+  {
+    "slug": "fotovoltaicoaziendeincentivi2026",
+    "companyName": "Seges Fotovoltaico Aziende",
+    "recipient": "riccardoraponi@segesit.it",
+    "type": "INITIAL",
+    "subject": "Infrastruttura web e resa campagne di Seges Fotovoltaico Aziende (3.6s su mobile)",
+    "messageId": "<da95c531-c7ae-051c-f4d0-23818e5011a2@techpyre.eu>",
+    "sentAt": "2026-11-05T11:17:23.980Z"
+  },
+  {
+    "slug": "stockserramenti",
+    "companyName": "Stock Serramenti Verona",
+    "recipient": "info@stockserramenti.com",
+    "type": "INITIAL",
+    "subject": "Infrastruttura web e resa campagne di Stock Serramenti Verona (3.2s su mobile)",
+    "messageId": "<6bf58719-9bdf-e336-8853-c217b66de599@techpyre.eu>",
+    "sentAt": "2026-11-05T11:17:27.254Z"
+  },
+  {
+    "slug": "tecno2srl",
+    "companyName": "Tecno2",
+    "recipient": "info@tecno2srl.com",
+    "type": "INITIAL",
+    "subject": "Infrastruttura web e resa campagne di Tecno2 (7.8s su mobile)",
+    "messageId": "<b6946c6e-aeb8-5264-8786-3dbcd6f1ea5f@techpyre.eu>",
+    "sentAt": "2026-11-05T11:17:30.543Z"
+  },
+  {
+    "slug": "fataserramenti",
+    "companyName": "Fata Serramenti",
+    "recipient": "info@fataserramenti.com",
+    "type": "INITIAL",
+    "subject": "Infrastruttura web e resa campagne di Fata Serramenti (19.2s su mobile)",
+    "messageId": "<d185ab11-39de-c643-2bee-0e02d3dc393d@techpyre.eu>",
+    "sentAt": "2026-11-05T11:17:33.862Z"
+  },
+  {
+    "slug": "fapesgroup",
+    "companyName": "Fapes Group Serramenti",
+    "recipient": "privacy@fapesgroup.it",
+    "type": "INITIAL",
+    "subject": "Infrastruttura web e resa campagne di Fapes Group Serramenti (4.7s su mobile)",
+    "messageId": "<2a5bc3cd-af41-b484-d0a7-e97cceaebc3c@techpyre.eu>",
+    "sentAt": "2026-11-05T11:17:37.090Z"
+  },
+  {
+    "slug": "finestreitalianeroma",
+    "companyName": "Finestre Italiane Roma",
+    "recipient": "info@finestreitalianeroma.it",
+    "type": "INITIAL",
+    "subject": "Infrastruttura web e resa campagne di Finestre Italiane Roma (14.9s su mobile)",
+    "messageId": "<80f851cb-646d-df4d-ca97-50cc712be34f@techpyre.eu>",
+    "sentAt": "2026-11-05T11:17:40.406Z"
+  },
+  {
+    "slug": "20km",
+    "companyName": "Pubblicami 20km",
+    "recipient": "support@pubblicami.com",
+    "type": "INITIAL",
+    "subject": "Infrastruttura web e resa campagne di Pubblicami 20km (3.6s su mobile)",
+    "messageId": "<c394e57b-5673-9ac1-d1cb-9dac4aaa69fa@techpyre.eu>",
+    "sentAt": "2026-11-05T11:17:43.659Z"
+  },
+  {
+    "slug": "corsicef",
+    "companyName": "Davante Automazione PLC",
+    "recipient": "info@davante.it",
+    "type": "INITIAL",
+    "subject": "Infrastruttura web e resa campagne di Davante Automazione PLC (4.9s su mobile)",
+    "messageId": "<dfd17e14-00a7-524a-813a-93bf4885c22e@techpyre.eu>",
+    "sentAt": "2026-11-05T11:17:46.916Z"
+  },
+  {
+    "slug": "itsmeccatronicapuglia",
+    "companyName": "ITS Meccatronica Puglia",
+    "recipient": "info@itsmeccatronicapuglia.it",
+    "type": "INITIAL",
+    "subject": "Infrastruttura web e resa campagne di ITS Meccatronica Puglia (5.8s su mobile)",
+    "messageId": "<d6bded14-5e9d-2378-81db-eae383fff4ff@techpyre.eu>",
+    "sentAt": "2026-11-05T11:17:50.212Z"
+  },
+  {
+    "slug": "bolognaautomazioni",
+    "companyName": "Bologna Automazioni",
+    "recipient": "info@bolognaautomazioni.it",
+    "type": "INITIAL",
+    "subject": "Infrastruttura web e resa campagne di Bologna Automazioni (7.3s su mobile)",
+    "messageId": "<c354443a-bb5d-9118-1788-93c50239f255@techpyre.eu>",
+    "sentAt": "2026-11-05T11:17:53.552Z"
+  },
+  {
+    "slug": "afad",
+    "companyName": "Afad",
+    "recipient": "info@afad.it",
+    "type": "INITIAL",
+    "subject": "Infrastruttura web e resa campagne di Afad (14.4s su mobile)",
+    "messageId": "<168b2454-2733-caaa-aaf4-2f0ad9901e19@techpyre.eu>",
+    "sentAt": "2026-11-05T11:17:56.811Z"
+  },
+  {
+    "slug": "stival-ottorino",
+    "companyName": "Stival Ottorino Srl",
+    "recipient": "amministrazione@stival.it",
+    "type": "INITIAL",
+    "subject": "Infrastruttura web e resa campagne di Stival Ottorino Srl (6.2s su mobile)",
+    "messageId": "<a106417d-7b48-5776-9f2c-98cc92f2fd78@techpyre.eu>",
+    "sentAt": "2026-11-05T11:18:00.130Z"
+  },
+  {
+    "slug": "euromac",
+    "companyName": "Euromac Macchine Industriali",
+    "recipient": "info@euromac.it",
+    "type": "INITIAL",
+    "subject": "Infrastruttura web e resa campagne di Euromac Macchine Industriali (13.3s su mobile)",
+    "messageId": "<93b61592-636e-ac4b-56a8-8a05647d1d28@techpyre.eu>",
+    "sentAt": "2026-11-05T11:18:03.409Z"
+  },
+  {
+    "slug": "torino",
+    "companyName": "Circolo Lettori Torino",
+    "recipient": "novello@circololettori.it",
+    "type": "INITIAL",
+    "subject": "Infrastruttura web e resa campagne di Circolo Lettori Torino (4s su mobile)",
+    "messageId": "<5795d4de-3eb9-e21a-5b2e-3cb0aea863fa@techpyre.eu>",
+    "sentAt": "2026-11-05T11:18:06.708Z"
+  },
+  {
+    "slug": "itsnovitas",
+    "companyName": "Fondazione ITS Novitas",
+    "recipient": "fondazionenovitas@gmail.com",
+    "type": "INITIAL",
+    "subject": "Infrastruttura web e resa campagne di Fondazione ITS Novitas (14.3s su mobile)",
+    "messageId": "<d70485a3-f4e6-52e1-89ec-5d0dc0eb41d1@techpyre.eu>",
+    "sentAt": "2026-11-05T11:18:09.896Z"
+  },
+  {
+    "slug": "ilsoppalco",
+    "companyName": "Il Soppalco Industriale",
+    "recipient": "info@ilsoppalco.it",
+    "type": "INITIAL",
+    "subject": "Infrastruttura web e resa campagne di Il Soppalco Industriale (4.5s su mobile)",
+    "messageId": "<79d78944-5150-9f5c-711a-22be4e38db5c@techpyre.eu>",
+    "sentAt": "2026-11-05T11:18:13.120Z"
+  },
+  {
+    "slug": "imetsaws",
+    "companyName": "IMET",
+    "recipient": "imet@imetsaws.com",
+    "type": "INITIAL",
+    "subject": "Infrastruttura web e resa campagne di IMET (4s su mobile)",
+    "messageId": "<2f15f2d9-7725-8b5c-3285-77fed2ef74ee@techpyre.eu>",
+    "sentAt": "2026-11-05T11:18:16.378Z"
+  },
+  {
+    "slug": "recruiting-azienda",
+    "companyName": "SB Cutting Lavorazioni",
+    "recipient": "info@sbcutting.it",
+    "type": "INITIAL",
+    "subject": "Infrastruttura web e resa campagne di SB Cutting Lavorazioni (8.5s su mobile)",
+    "messageId": "<11af64b0-e68f-66f4-e527-dd0b15704b87@techpyre.eu>",
+    "sentAt": "2026-11-05T11:18:19.609Z"
+  },
+  {
+    "slug": "prosystemitalia",
+    "companyName": "ProSystem Italia",
+    "recipient": "info@prosystemitalia.com",
+    "type": "INITIAL",
+    "subject": "Infrastruttura web e resa campagne di ProSystem Italia (3s su mobile)",
+    "messageId": "<fb2a4003-7853-a306-2eed-6342860bc704@techpyre.eu>",
+    "sentAt": "2026-11-05T11:18:22.845Z"
+  },
+  {
+    "slug": "nvallestimenti",
+    "companyName": "NV Allestimenti",
+    "recipient": "info@nvallestimenti.com",
+    "type": "INITIAL",
+    "subject": "Infrastruttura web e resa campagne di NV Allestimenti (4.8s su mobile)",
+    "messageId": "<b3015a98-a2f0-4405-4f8e-6023e1c9f207@techpyre.eu>",
+    "sentAt": "2026-11-05T11:18:26.199Z"
+  },
+  {
+    "slug": "decabstrutture",
+    "companyName": "DE.C.A.B. Strutture srl",
+    "recipient": "info@decabstrutture.it",
+    "type": "INITIAL",
+    "subject": "Infrastruttura web e resa campagne di DE.C.A.B. Strutture srl (6.5s su mobile)",
+    "messageId": "<b0511628-5c4f-c5a9-de3c-ad67abe632f8@techpyre.eu>",
+    "sentAt": "2026-11-05T11:18:29.515Z"
+  },
+  {
+    "slug": "fortigiorgio",
+    "companyName": "Forti Giorgio",
+    "recipient": "info@fortigiorgio.com",
+    "type": "INITIAL",
+    "subject": "Infrastruttura web e resa campagne di Forti Giorgio (13.6s su mobile)",
+    "messageId": "<24509781-b0f6-5cf6-c1bb-3a73f0f54605@techpyre.eu>",
+    "sentAt": "2026-11-05T11:18:32.779Z"
+  },
+  {
+    "slug": "iscomformazione",
+    "companyName": "Corso Base di Carpenteria e Saldatura Mattina",
+    "recipient": "alessio.cortelloni@iscomformazione.it",
+    "type": "INITIAL",
+    "subject": "Infrastruttura web e resa campagne di Corso Base di Carpenteria e Saldatura Mattina (6.3s su mobile)",
+    "messageId": "<a743c71b-0379-cad3-e998-a6c75c17a10f@techpyre.eu>",
+    "sentAt": "2026-11-05T11:18:36.107Z"
+  },
+  {
+    "slug": "trademybusiness",
+    "companyName": "Trademybusiness",
+    "recipient": "info@trademybusiness.com",
+    "type": "INITIAL",
+    "subject": "Infrastruttura web e resa campagne di Trademybusiness (1.1s su mobile)",
+    "messageId": "<dea767b0-8b8f-d936-c982-0c5ec9eb0dba@techpyre.eu>",
+    "sentAt": "2026-11-05T11:18:39.387Z"
+  },
+  {
+    "slug": "cazzolettimacchinari",
+    "companyName": "Cazzoletti Macchinari",
+    "recipient": "info@cazzolettimacchinari.it",
+    "type": "INITIAL",
+    "subject": "Infrastruttura web e resa campagne di Cazzoletti Macchinari (2.1s su mobile)",
+    "messageId": "<24fe15bf-2cb9-2e8f-8e0a-49a61c882094@techpyre.eu>",
+    "sentAt": "2026-11-05T11:18:42.660Z"
+  },
+  {
+    "slug": "cat-eu",
+    "companyName": "Industrial Discount Macchinari",
+    "recipient": "info@industrialdiscount.com",
+    "type": "INITIAL",
+    "subject": "Infrastruttura web e resa campagne di Industrial Discount Macchinari (7.2s su mobile)",
+    "messageId": "<f8e70de2-e8fd-c826-806d-adf2cacd9208@techpyre.eu>",
+    "sentAt": "2026-11-05T11:18:45.869Z"
+  },
+  {
+    "slug": "amsoluzioni",
+    "companyName": "AM Soluzioni Industriali",
+    "recipient": "info@amsoluzioni.it",
+    "type": "INITIAL",
+    "subject": "Infrastruttura web e resa campagne di AM Soluzioni Industriali (5.4s su mobile)",
+    "messageId": "<f17aaf61-98cf-bb7b-1cb3-b08fc35667bd@techpyre.eu>",
+    "sentAt": "2026-11-05T11:18:49.109Z"
+  },
+  {
+    "slug": "samab",
+    "companyName": "Samab Macchinari",
+    "recipient": "info@samab.it",
+    "type": "INITIAL",
+    "subject": "Infrastruttura web e resa campagne di Samab Macchinari (11.9s su mobile)",
+    "messageId": "<a4e2f010-66ea-daea-6f0b-164a65f4d561@techpyre.eu>",
+    "sentAt": "2026-11-05T11:18:52.336Z"
+  },
+  {
+    "slug": "gestionalesulweb",
+    "companyName": "Gestionale Sul Web",
+    "recipient": "info@gestionalesulweb.it",
+    "type": "INITIAL",
+    "subject": "Infrastruttura web e resa campagne di Gestionale Sul Web (3.4s su mobile)",
+    "messageId": "<8971e2bf-8e3a-c918-ccbe-ddd675b28b2d@techpyre.eu>",
+    "sentAt": "2026-11-05T11:18:55.618Z"
+  },
+  {
+    "slug": "so-smart",
+    "companyName": "So Smart ERP",
+    "recipient": "sales@so-smart.com",
+    "type": "INITIAL",
+    "subject": "Infrastruttura web e resa campagne di So Smart ERP (3.1s su mobile)",
+    "messageId": "<59967269-f8ef-81bf-7f3b-9b294b758f9e@techpyre.eu>",
+    "sentAt": "2026-11-05T11:18:58.859Z"
+  },
+  {
+    "slug": "systemaweb",
+    "companyName": "Systema Web ERP",
+    "recipient": "info@systemaweb.it",
+    "type": "INITIAL",
+    "subject": "Infrastruttura web e resa campagne di Systema Web ERP (3.4s su mobile)",
+    "messageId": "<0d651a76-1541-c55e-2b67-135bc11420b3@techpyre.eu>",
+    "sentAt": "2026-11-05T11:19:02.177Z"
+  },
+  {
+    "slug": "logikasoftware",
+    "companyName": "Logika Software",
+    "recipient": "info@logikasoftware.it",
+    "type": "INITIAL",
+    "subject": "Infrastruttura web e resa campagne di Logika Software (10.3s su mobile)",
+    "messageId": "<1ea3d329-d122-c924-aac0-4fe8e9efc4ed@techpyre.eu>",
+    "sentAt": "2026-11-05T11:19:05.474Z"
+  },
+  {
+    "slug": "startyerp",
+    "companyName": "Starty ERP",
+    "recipient": "starty@startyitalia.com",
+    "type": "INITIAL",
+    "subject": "Infrastruttura web e resa campagne di Starty ERP (3.2s su mobile)",
+    "messageId": "<745ed01a-024b-ee2e-841e-72261baafd73@techpyre.eu>",
+    "sentAt": "2026-11-05T11:19:08.927Z"
+  },
+  {
+    "slug": "innovaadv",
+    "companyName": "Innova Software & Web",
+    "recipient": "info@innovaadv.it",
+    "type": "INITIAL",
+    "subject": "Infrastruttura web e resa campagne di Innova Software & Web (6s su mobile)",
+    "messageId": "<7c124425-73db-45b7-66e1-b3f3d679d20e@techpyre.eu>",
+    "sentAt": "2026-11-05T11:19:12.198Z"
+  },
+  {
+    "slug": "odoo",
+    "companyName": "Odoo Italia",
+    "recipient": "carj@odoo.com",
+    "type": "INITIAL",
+    "subject": "Infrastruttura web e resa campagne di Odoo Italia (2.7s su mobile)",
+    "messageId": "<a923a6a0-9e10-aef2-6938-f13f5c7d503c@techpyre.eu>",
+    "sentAt": "2026-11-05T11:19:15.482Z"
+  },
+  {
+    "slug": "wearequantico",
+    "companyName": "Quantico Business",
+    "recipient": "info@wearequantico.it",
+    "type": "INITIAL",
+    "subject": "Infrastruttura web e resa campagne di Quantico Business (6.1s su mobile)",
+    "messageId": "<10b0da52-7581-27a6-afcc-7cb7d35dc4fc@techpyre.eu>",
+    "sentAt": "2026-11-05T11:19:18.751Z"
+  },
+  {
+    "slug": "abcstrategie",
+    "companyName": "ABC Strategie",
+    "recipient": "info@abcstrategie.it",
+    "type": "INITIAL",
+    "subject": "Infrastruttura web e resa campagne di ABC Strategie (1.5s su mobile)",
+    "messageId": "<f0de2da3-1eb3-38d8-e454-51f9abc33db2@techpyre.eu>",
+    "sentAt": "2026-11-05T11:19:21.970Z"
+  },
+  {
+    "slug": "ortopediachessa",
+    "companyName": "Ortopedia Chessa",
+    "recipient": "info@ortopediachessa.it",
+    "type": "INITIAL",
+    "subject": "Infrastruttura web e resa campagne di Ortopedia Chessa (4.9s su mobile)",
+    "messageId": "<4698f62b-c82a-817f-8a9f-5cc52d967dc3@techpyre.eu>",
+    "sentAt": "2026-11-05T11:19:25.265Z"
+  },
+  {
+    "slug": "aquablock",
+    "companyName": "AquaBlock Sistemi",
+    "recipient": "info@aquablock.it",
+    "type": "INITIAL",
+    "subject": "Infrastruttura web e resa campagne di AquaBlock Sistemi (5.5s su mobile)",
+    "messageId": "<0a9fa2d1-2163-68a2-d0e2-67e7c364abbf@techpyre.eu>",
+    "sentAt": "2026-11-05T11:19:28.585Z"
+  },
+  {
+    "slug": "tammarometalli",
+    "companyName": "Tammaro Metalli",
+    "recipient": "info@tammarometalli.it",
+    "type": "INITIAL",
+    "subject": "Infrastruttura web e resa campagne di Tammaro Metalli (13.6s su mobile)",
+    "messageId": "<2aafe831-98b9-430e-d4ee-2e76aaef776d@techpyre.eu>",
+    "sentAt": "2026-11-05T11:19:31.824Z"
+  },
+  {
+    "slug": "immerenergy",
+    "companyName": "ImmerEnergy Fotovoltaico",
+    "recipient": "privacy@immergas.com",
+    "type": "INITIAL",
+    "subject": "Infrastruttura web e resa campagne di ImmerEnergy Fotovoltaico (6.9s su mobile)",
+    "messageId": "<e437f292-8cc1-e9c3-b051-15ecf8b2f107@techpyre.eu>",
+    "sentAt": "2026-11-05T11:19:35.115Z"
+  },
+  {
+    "slug": "projetcover",
+    "companyName": "Projet Cover Coperture",
+    "recipient": "info@projetcover.it",
+    "type": "INITIAL",
+    "subject": "Infrastruttura web e resa campagne di Projet Cover Coperture (3.2s su mobile)",
+    "messageId": "<ffae9bf1-be49-08a4-d43d-4d28a1f11814@techpyre.eu>",
+    "sentAt": "2026-11-05T11:19:38.376Z"
+  },
+  {
+    "slug": "annunci",
+    "companyName": "Studio Tecnico Stefano Cenere",
+    "recipient": "info@stefanocenere.it",
+    "type": "INITIAL",
+    "subject": "Infrastruttura web e resa campagne di Studio Tecnico Stefano Cenere (2.3s su mobile)",
+    "messageId": "<97fff740-7684-aeed-9a09-dfd5b3020c9a@techpyre.eu>",
+    "sentAt": "2026-11-05T11:19:41.655Z"
+  },
+  {
+    "slug": "ecolamp",
+    "companyName": "Ecolamp ExtraVoltaico",
+    "recipient": "logistica@ecolamp.it",
+    "type": "INITIAL",
+    "subject": "Infrastruttura web e resa campagne di Ecolamp ExtraVoltaico (4.2s su mobile)",
+    "messageId": "<f71af119-5712-4fa3-533f-871e6817cad1@techpyre.eu>",
+    "sentAt": "2026-11-05T11:19:45.026Z"
+  },
+  {
+    "slug": "blulineservizi",
+    "companyName": "Blu Line Servizi Industriali",
+    "recipient": "info@blulineservizi.it",
+    "type": "INITIAL",
+    "subject": "Infrastruttura web e resa campagne di Blu Line Servizi Industriali (7.6s su mobile)",
+    "messageId": "<ffaa51be-5360-9513-6bc9-0072acbaf4ba@techpyre.eu>",
+    "sentAt": "2026-11-05T11:19:48.354Z"
+  },
+  {
+    "slug": "samimanutenzioni",
+    "companyName": "Sami Manutenzioni Industriali",
+    "recipient": "info@samimanutenzioni.it",
+    "type": "INITIAL",
+    "subject": "Infrastruttura web e resa campagne di Sami Manutenzioni Industriali (10.7s su mobile)",
+    "messageId": "<b3cafea1-6e96-80c8-578f-41bf5174a354@techpyre.eu>",
+    "sentAt": "2026-11-05T11:19:51.670Z"
+  },
+  {
+    "slug": "indipendenza",
+    "companyName": "GTech Energy",
+    "recipient": "info@gtechenergy.it",
+    "type": "INITIAL",
+    "subject": "Infrastruttura web e resa campagne di GTech Energy (2.2s su mobile)",
+    "messageId": "<46a26caf-6348-4220-075a-494f85d55385@techpyre.eu>",
+    "sentAt": "2026-11-05T11:19:54.852Z"
   }
 ]

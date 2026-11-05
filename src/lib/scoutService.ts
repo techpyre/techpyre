@@ -172,6 +172,209 @@ export interface CandidateBusiness {
   fallbackDescription?: string;
   fallbackLogoUrl?: string;
   fallbackHeroUrl?: string;
+  candidateAdLibraryUrl?: string;
+  candidateAdSnippet?: string;
+}
+
+export async function discoverMetaAdLibraryBusinesses(
+  keywords: string | string[],
+  limit = 20
+): Promise<CandidateBusiness[]> {
+  const browserBin = getLocalBrowserBin();
+  if (!browserBin) return [];
+
+  const kwList = Array.isArray(keywords) ? keywords : [keywords];
+  const seenHosts = new Set<string>();
+  const candidates: CandidateBusiness[] = [];
+
+  const userDataDir = `/tmp/techpyre-adlib-${Date.now()}-${Math.random()
+    .toString(36)
+    .slice(2, 7)}`;
+  let proc: ReturnType<typeof spawn> | null = null;
+  let ws: WebSocket | null = null;
+
+  try {
+    proc = spawn(/*turbopackIgnore: true*/ browserBin, [
+      "--headless=new",
+      "--disable-gpu",
+      "--no-first-run",
+      "--no-default-browser-check",
+      "--hide-scrollbars",
+      "--remote-debugging-port=0",
+      `--user-data-dir=${userDataDir}`,
+      "about:blank",
+    ]);
+
+    const wsUrl = await new Promise<string>((resolve, reject) => {
+      const timer = setTimeout(() => reject(new Error("CDP timeout")), 10000);
+      proc?.stderr?.on("data", (chunk: Buffer) => {
+        const m = chunk.toString().match(/DevTools listening on (ws:\/\/[^\s]+)/);
+        if (m) {
+          clearTimeout(timer);
+          resolve(m[1]);
+        }
+      });
+      proc?.on("error", (err) => {
+        clearTimeout(timer);
+        reject(err);
+      });
+    });
+
+    const baseHttp = wsUrl
+      .replace(/^ws:\/\//, "http://")
+      .replace(/\/devtools\/browser\/.*$/, "");
+    const targets = (await fetch(`${baseHttp}/json/list`).then((r) =>
+      r.json()
+    )) as Array<{ type: string; webSocketDebuggerUrl?: string }>;
+    const pageTarget = targets.find((t) => t.type === "page");
+
+    if (pageTarget?.webSocketDebuggerUrl) {
+      ws = new WebSocket(pageTarget.webSocketDebuggerUrl);
+      await new Promise((resolve, reject) => {
+        ws!.addEventListener("open", resolve);
+        ws!.addEventListener("error", reject);
+      });
+
+      let msgId = 1;
+      const pending = new Map<number, (val: unknown) => void>();
+      ws.addEventListener("message", (ev) => {
+        try {
+          const msg = JSON.parse(String(ev.data));
+          if (msg.id && pending.has(msg.id)) {
+            pending.get(msg.id)!(msg.result);
+            pending.delete(msg.id);
+          }
+        } catch {
+          // ignore
+        }
+      });
+
+      const send = (method: string, params: Record<string, unknown> = {}) =>
+        new Promise<Record<string, unknown>>((resolve, reject) => {
+          const id = msgId++;
+          const timer = setTimeout(() => {
+            pending.delete(id);
+            reject(new Error(`Timeout ${method}`));
+          }, 18000);
+          pending.set(id, (res) => {
+            clearTimeout(timer);
+            resolve((res || {}) as Record<string, unknown>);
+          });
+          ws!.send(JSON.stringify({ id, method, params }));
+        });
+
+      await send("Page.enable");
+      await send("Network.enable");
+      await send("Runtime.enable");
+      await send("Network.setUserAgentOverride", {
+        userAgent:
+          "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+        platform: "MacIntel",
+        acceptLanguage: "it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7",
+      });
+
+      for (const keyword of kwList) {
+        if (candidates.length >= limit) break;
+        const adLibUrl = `https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&media_type=all&q=${encodeURIComponent(
+          keyword
+        )}&search_type=keyword_unordered`;
+
+        try {
+          await send("Page.navigate", { url: adLibUrl });
+          await new Promise((r) => setTimeout(r, 4200));
+          for (let s = 0; s < 3; s++) {
+            await send("Runtime.evaluate", {
+              expression: "window.scrollBy(0, 3500);",
+            });
+            await new Promise((r) => setTimeout(r, 1100));
+          }
+
+          const evalRes = (await send("Runtime.evaluate", {
+            returnByValue: true,
+            expression: "document.documentElement.outerHTML",
+          })) as { result?: { value?: string } };
+          const domHtml = evalRes?.result?.value || "";
+          if (!domHtml) continue;
+
+          const matches = [
+            ...domHtml.matchAll(
+              /https?:\\?\/\\?\/l\.facebook\.com\\?\/l\.php\?u=([^"'&\s<>\\]+)/gi
+            ),
+          ];
+
+          for (const m of matches) {
+            let decoded: string;
+            try {
+              decoded = decodeURIComponent(m[1]);
+            } catch {
+              continue;
+            }
+
+            let parsed: URL;
+            try {
+              parsed = new URL(decoded);
+            } catch {
+              continue;
+            }
+
+            const host = parsed.hostname.toLowerCase();
+            if (
+              EXCLUDED_DOMAINS.some((ex) => host.includes(ex)) ||
+              host.includes("fb.me") ||
+              host.includes("fb.com") ||
+              host.includes("linktr.ee") ||
+              host.includes("bit.ly") ||
+              host.includes("calendly.com") ||
+              host.includes("forms.gle") ||
+              host.includes("shopify.com")
+            ) {
+              continue;
+            }
+            if (seenHosts.has(host)) continue;
+            seenHosts.add(host);
+
+            const slugCheck = slugifyDomain(host);
+            if (!slugCheck || loadLeadConfig(slugCheck)) continue;
+
+            const idx = m.index || 0;
+            const windowHtml = domHtml.slice(
+              Math.max(0, idx - 1800),
+              Math.min(domHtml.length, idx + 800)
+            );
+            const contextText = stripTags(windowHtml).slice(0, 350);
+
+            candidates.push({
+              targetUrl: decoded,
+              fallbackDescription: contextText || keyword,
+              candidateAdLibraryUrl: adLibUrl,
+              candidateAdSnippet: contextText || undefined,
+            });
+
+            if (candidates.length >= limit) break;
+          }
+        } catch {
+          continue;
+        }
+      }
+    }
+  } catch {
+    // ignore
+  } finally {
+    try {
+      if (ws) ws.close();
+    } catch {}
+    try {
+      if (proc) proc.kill("SIGKILL");
+    } catch {}
+    try {
+      fs.rmSync(/*turbopackIgnore: true*/ userDataDir, {
+        recursive: true,
+        force: true,
+      });
+    } catch {}
+  }
+
+  return candidates;
 }
 
 export function slugifyDomain(input: string): string {
@@ -959,7 +1162,8 @@ function buildQuizForKeyword(
 
 export async function runAutonomousScout(
   keyword: string,
-  maxLeads = 5
+  maxLeads = 5,
+  options?: { preferAdLibrary?: boolean; customCandidates?: CandidateBusiness[] }
 ): Promise<{
   success: boolean;
   discovered: Array<{
@@ -971,7 +1175,14 @@ export async function runAutonomousScout(
     demoUrl: string;
   }>;
 }> {
-  const candidates = await discoverItalianBusinesses(keyword, maxLeads * 3);
+  let candidates: CandidateBusiness[] = [];
+  if (options?.customCandidates && options.customCandidates.length > 0) {
+    candidates = options.customCandidates;
+  } else if (options?.preferAdLibrary) {
+    candidates = await discoverMetaAdLibraryBusinesses(keyword, maxLeads * 4);
+  } else {
+    candidates = await discoverItalianBusinesses(keyword, maxLeads * 3);
+  }
   const discovered: Array<{
     slug: string;
     companyName: string;
@@ -1038,19 +1249,25 @@ export async function runAutonomousScout(
         combinedHtml.match(/[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/g) || [];
 
       if (initialEmails.length === 0 && !cand.fallbackEmail && !isPagineGialleUrl) {
-        try {
-          const contactRes = await fetch(new URL("/contatti", parsedUrl.origin).href, {
-            headers: {
-              "User-Agent":
-                "Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15",
-            },
-            signal: AbortSignal.timeout(4500),
-          });
-          if (contactRes.ok) {
-            combinedHtml += "\n" + (await contactRes.text());
+        for (const subPath of ["/", "/contatti", "/privacy-policy"]) {
+          if (subPath === "/" && parsedUrl.pathname === "/") continue;
+          try {
+            const subRes = await fetch(new URL(subPath, parsedUrl.origin).href, {
+              headers: {
+                "User-Agent":
+                  "Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15",
+              },
+              signal: AbortSignal.timeout(4000),
+            });
+            if (subRes.ok) {
+              combinedHtml += "\n" + (await subRes.text());
+              if (/[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/.test(combinedHtml)) {
+                break;
+              }
+            }
+          } catch {
+            // ignora
           }
-        } catch {
-          // ignora
         }
       }
 
@@ -1061,6 +1278,7 @@ export async function runAutonomousScout(
 
       const emails = [...new Set(extractedEmails)].filter((e) => {
         const low = e.toLowerCase();
+        const domainPart = low.split("@")[1] || "";
         return (
           !low.endsWith(".png") &&
           !low.endsWith(".jpg") &&
@@ -1070,23 +1288,22 @@ export async function runAutonomousScout(
           !low.includes("sentry") &&
           !low.includes("wix") &&
           !low.includes("example.") &&
+          !low.includes("azienda.it") &&
+          !low.includes("tuamail") &&
+          !low.includes("email.it") &&
+          !low.includes("domain.") &&
+          !low.includes("qq.com") &&
           !low.includes("pec.") &&
           !low.includes("legalmail.") &&
           !low.includes("arubapec.") &&
           !low.includes("postecert.") &&
           !low.includes("wordpress") &&
-          !low.includes("u00")
+          !low.includes("u00") &&
+          /\.(it|com|eu|net|org|info|srl|biz)$/i.test(domainPart)
         );
       });
 
-      // Se il sito ha dominio proprio valido ma nasconde l'email dietro un form, usa info@[dominio]
-      if (emails.length === 0 && !isPagineGialleUrl) {
-        const cleanHost = parsedUrl.hostname.replace(/^www\./i, "").toLowerCase();
-        if (cleanHost.includes(".")) {
-          emails.push(`info@${cleanHost}`);
-        }
-      }
-
+      // Se non abbiamo trovato email sul sito o /contatti, non inventare info@: scarta il candidato per evitare bounce 550/556
       if (emails.length === 0) continue;
 
       const phones = [

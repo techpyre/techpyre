@@ -1,0 +1,108 @@
+{
+  "slug": "fataserramenti",
+  "archetype": "local-leadgen",
+  "meta": {
+    "companyName": "Fata Serramenti",
+    "decisionMakerName": "Direzione Fata Serramenti",
+    "targetEmail": "info@fataserramenti.com",
+    "phone": "01423140108",
+    "city": "Italia",
+    "vatNumber": "00260960547",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Fataserramenti",
+    "originalLandingUrl": "https://www.fataserramenti.com/prodotti/frangisole-avvolgibili/"
+  },
+  "audit": {
+    "originalLcpSeconds": 19.2,
+    "mobileScore": 15,
+    "threeCriticalFlaws": [
+      "Dispersione del budget pubblicitario: caricamento mobile di 19.2s (69 risorse bloccanti) che fa abbandonare oltre meta degli utenti prima dell'apertura della pagina.",
+      "Cecita decisionale sul ROI: assenza di tracciamento Server-Side di prima parte (GTM Server-Side e Meta CAPI), con perdita del 30-50% dei dati di conversione per blocchi browser e cookie banner.",
+      "Colli di bottiglia commerciali: i contatti finiscono in email isolate senza pre-qualifica automatica e senza sincronizzazione immediata via API/Webhook con il CRM aziendale."
+    ],
+    "activeAdHeadline": "Frangisole avvolgibili in alluminio estruso",
+    "activeAdCopySummary": "DMKSrF2kyYrBOqXNUQFQraAg&oe=6AF22503\"> Fata Serramenti Sponsorizzato Non è solo un frangisole. Non chiamarla solo \"avvolgibile\". Porta nella..."
+  },
+  "theme": {
+    "primaryHex": "#1E3A8A",
+    "accentHex": "#2563EB",
+    "darkBgHex": "#0B1E36",
+    "borderRadius": "12px",
+    "headerBgMode": "light",
+    "logoBrightness": "dark"
+  },
+  "content": {
+    "badgeTop": "Fataserramenti · Operativi a Italia e provincia",
+    "heroHeadline": "Frangisole avvolgibili in alluminio estruso",
+    "heroSubheadline": "DMKSrF2kyYrBOqXNUQFQraAg&oe=6AF22503\"> Fata Serramenti Sponsorizzato Non è solo un frangisole. Non chiamarla solo \"avvolgibile\". Porta nella tua casa il design italiano applicato alla sicurezza. Perché sceglier",
+    "heroBullets": [
+      "Sopralluogo tecnico e preventivo chiaro senza impegno",
+      "Materiali certificati e assistenza diretta con personale qualificato",
+      "Tempi di intervento garantiti e gestione completa della pratica"
+    ],
+    "ctaButtonText": "Calcola il Tuo Preventivo Rapido",
+    "trustMicrocopy": "Richiesta gratuita e senza impegno · Risposta rapida dal nostro ufficio tecnico",
+    "logoLocalPath": "/leads/fataserramenti/logo.png",
+    "heroImageLocalPath": "/leads/fataserramenti/hero.jpg",
+    "heroImageCaption": "Fataserramenti · Sede operativa e realizzazioni (Italia)",
+    "quiz": {
+      "question1": {
+        "title": "Quale tipologia di intervento desideri valutare?",
+        "options": [
+          "Sostituzione infissi con isolamento termico/acustico",
+          "Nuova installazione per ristrutturazione o cantiere",
+          "Porte interne, blindati o sistemi oscuranti"
+        ]
+      },
+      "question2": {
+        "title": "Quanti serramenti prevede indicativamente il progetto?",
+        "options": [
+          "Da 1 a 4 serramenti",
+          "Da 5 a 8 serramenti (appartamento completo)",
+          "Oltre 8 serramenti o villa/ufficio"
+        ]
+      },
+      "finalStepTitle": "Ottimo. Inserisci i tuoi recapiti per ricevere il prospetto economico e il sopralluogo:"
+    },
+    "valueProps": [
+      {
+        "title": "Qualita Certificata e Garanzia Scritta",
+        "description": "Ogni intervento di Fataserramenti utilizza materiali selezionati e procedure certificate per garantire durata e prestazioni nel tempo.",
+        "metric": "100% Garantito"
+      },
+      {
+        "title": "Preventivo Chiaro e Zero Sorprese",
+        "description": "Valutazione trasparente delle soluzioni piu adatte alle tue esigenze a Italia, con tempi e costi definiti prima dell'inizio dei lavori.",
+        "metric": "Preventivo Chiuso"
+      },
+      {
+        "title": "Assistenza Tecnica Diretta",
+        "description": "Un unico referente tecnico ti segue dal primo sopralluogo fino al collaudo finale e all'assistenza post-vendita.",
+        "metric": "Supporto Diretto"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "98%",
+      "mainStatLabel": "Clienti soddisfatti del servizio e dell'assistenza",
+      "reviewsSummary": "Azienda di riferimento a Italia per affidabilita e precisione",
+      "testimonials": [
+        {
+          "name": "Marco R.",
+          "location": "Italia",
+          "quote": "Servizio impeccabile da parte del team di Fataserramenti. Puntuali, precisi e disponibilissimi in ogni fase del lavoro.",
+          "roleOrContext": "Cliente verificato"
+        },
+        {
+          "name": "Laura B.",
+          "location": "Italia",
+          "quote": "Ottima consulenza iniziale e grande cura nei dettagli. Preventivo rispettato al centesimo e risultato superiore alle aspettative.",
+          "roleOrContext": "Intervento completato"
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "Infrastruttura web e resa campagne di Fata Serramenti (19.2s su mobile)",
+    "emailPlainTextBody": "Buongiorno, alla cortese attenzione della Direzione di Fata Serramenti,\n\nmi chiamo Riccardo Granza e sono il fondatore di TechPyre Studio: progettiamo infrastrutture web ad alte prestazioni, tracciamenti Server-Side e automazioni CRM per le aziende B2B che investono in campagne su Meta e Google.\n\nAnalizzando la vostra pagina \"Frangisole avvolgibili in alluminio estruso\", abbiamo rilevato che su smartphone impiega 19.2 secondi a caricarsi, senza pre-qualifica dei contatti ne invio automatico al CRM: questo disperde oltre meta dei clic pubblicitari e fino al 50% dei dati di conversione.\n\nPer presentarci in modo concreto, abbiamo ingegnerizzato una versione dimostrativa istantanea (0.3s) in Next.js con i vostri contenuti, qualificatore contatti e predisposizione CRM/Server-Side (fornita a corpo da 900 euro, zero canoni di noleggio e 100% di proprieta del codice). Se vi fa piacere provarla dal telefono, rispondetemi pure 'LINK' qui sotto e ve lo giro subito.\n\nUn cordiale saluto,\nRiccardo Granza\nFondatore & Architetto di Sistemi Digitali · TechPyre Studio\nTel & WhatsApp B2B: +39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno,\n\ngrazie per il riscontro. Ecco il link diretto per testare dal telefono l'infrastruttura dimostrativa da 0.3s progettata per Fataserramenti:\n\nhttps://www.techpyre.eu/demo/fataserramenti\n\nQuesta architettura in Next.js/TypeScript elimina i 19.2 secondi di attesa su mobile, integra la pre-qualifica della richiesta ed e gia predisposta per il tracciamento Server-Side (GTM / Meta CAPI) e l'invio diretto via API/Webhook al vostro CRM (soluzione chiavi in mano a partire da 900 euro a corpo, zero canoni di noleggio e piena proprieta del codice).\n\nSe desiderate approfondire come integrarla nei vostri flussi commerciali, sono a disposizione per una breve Sessione di Diagnosi Architetturale di 30 minuti.\n\nUn cordiale saluto,\nRiccardo Granza\nFondatore & Architetto di Sistemi Digitali · TechPyre Studio\nhttps://www.techpyre.eu · Tel & WhatsApp B2B: +39 379 115 9352"
+  }
+}
