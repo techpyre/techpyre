@@ -2,11 +2,43 @@ import fs from "fs";
 import path from "path";
 import tls from "tls";
 import nodemailer from "nodemailer";
+import { InboundReplyClassification, LeadConfig } from "@/types/lead";
 import { UserProfile } from "./adminAuth";
 import { getUserSmtp } from "./userSmtpStorage";
 import { loadLeadConfig, saveLeadConfig } from "./leadsStorage";
+import { buildMultiStepOutreach } from "./scoutService";
 
-function appendToArubaSent(user: string, pass: string, rawEmail: string): Promise<boolean> {
+export const DAILY_FIRST_TOUCH_LIMIT = 35;
+
+export interface OutreachLogEntry {
+  slug: string;
+  companyName: string;
+  recipient: string;
+  type: "STEP_1" | "STEP_2" | "STEP_3" | "STEP_4" | "INITIAL" | "FOLLOW_UP";
+  stepNumber?: 1 | 2 | 3 | 4;
+  subject: string;
+  messageId: string;
+  sentAt: string;
+  sentBy?: string;
+  requiresFollowUpCall?: boolean;
+  phoneToCall?: string;
+}
+
+export interface InboundClassificationResult {
+  classification: InboundReplyClassification;
+  isHotLead: boolean;
+  stopAutomatedSequence: boolean;
+  nextLeadStatus: NonNullable<LeadConfig["meta"]["status"]>;
+  operatorActionRequired: string;
+  suggestedReplySubject?: string;
+  suggestedReplyBody?: string;
+}
+
+function appendToArubaSent(
+  user: string,
+  pass: string,
+  rawEmail: string
+): Promise<boolean> {
   return new Promise((resolve) => {
     try {
       const socket = tls.connect({ host: "imaps.aruba.it", port: 993 }, () => {});
@@ -56,16 +88,7 @@ function getOutreachHistoryPath(): { primary: string; fallback: string } {
   return { primary, fallback };
 }
 
-export function getOutreachHistory(): Array<{
-  slug: string;
-  companyName: string;
-  recipient: string;
-  type: string;
-  subject: string;
-  messageId: string;
-  sentAt: string;
-  sentBy?: string;
-}> {
+export function getOutreachHistory(): OutreachLogEntry[] {
   const { primary, fallback } = getOutreachHistoryPath();
   if (fs.existsSync(/*turbopackIgnore: true*/ primary)) {
     try {
@@ -80,57 +103,320 @@ export function getOutreachHistory(): Array<{
   return [];
 }
 
-export function saveOutreachLog(logEntry: {
-  slug: string;
-  companyName: string;
-  recipient: string;
-  type: string;
-  subject: string;
-  messageId: string;
-  sentAt: string;
-  sentBy?: string;
-}) {
+export function saveOutreachLog(logEntry: OutreachLogEntry) {
   const { primary, fallback } = getOutreachHistoryPath();
-  let list = getOutreachHistory();
+  const list = getOutreachHistory();
   list.push(logEntry);
   const jsonStr = JSON.stringify(list, null, 2);
 
   try {
-    fs.writeFileSync(primary, jsonStr, "utf-8");
+    fs.writeFileSync(/*turbopackIgnore: true*/ primary, jsonStr, "utf-8");
   } catch {}
 
   try {
-    fs.writeFileSync(fallback, jsonStr, "utf-8");
+    fs.writeFileSync(/*turbopackIgnore: true*/ fallback, jsonStr, "utf-8");
   } catch {}
+}
+
+/**
+ * DIRETTIVA 7.1: Pacing, Business Hours (08:30-17:30 Lun-Ven Europe/Rome), Rate Limiting (max 30-35 First Touch/giorno) & Jitter
+ */
+export function checkRomeBusinessHours(now = new Date()): {
+  allowed: boolean;
+  reason?: string;
+} {
+  const formatter = new Intl.DateTimeFormat("en-US", {
+    timeZone: "Europe/Rome",
+    weekday: "short",
+    hour: "2-digit",
+    minute: "2-digit",
+    hour12: false,
+  });
+  const parts = formatter.formatToParts(now);
+  const weekday = parts.find((p) => p.type === "weekday")?.value || "Mon";
+  const hour = Number(parts.find((p) => p.type === "hour")?.value || "10");
+  const minute = Number(parts.find((p) => p.type === "minute")?.value || "0");
+
+  if (weekday === "Sat" || weekday === "Sun") {
+    return {
+      allowed: false,
+      reason:
+        "Invio bloccato dal protocollo Deliverability: fuori dai giorni lavorativi (consentito solo Lun-Ven 08:30-17:30 ora di Roma).",
+    };
+  }
+
+  const totalMinutes = hour * 60 + minute;
+  const openMinutes = 8 * 60 + 30; // 08:30
+  const closeMinutes = 17 * 60 + 30; // 17:30
+
+  if (totalMinutes < openMinutes || totalMinutes > closeMinutes) {
+    return {
+      allowed: false,
+      reason: `Invio bloccato dal protocollo Deliverability: orario attuale fuori dalla finestra lavorativa 08:30-17:30 (ora di Roma).`,
+    };
+  }
+
+  return { allowed: true };
+}
+
+export function getTodayFirstTouchCountForSender(senderKey: string): number {
+  const todayIsoPrefix = new Date().toISOString().slice(0, 10);
+  const history = getOutreachHistory();
+  return history.filter((item) => {
+    const isToday = item.sentAt.startsWith(todayIsoPrefix);
+    const isFirstTouch = item.type === "STEP_1" || item.type === "INITIAL";
+    const matchesSender = !item.sentBy || item.sentBy.includes(senderKey);
+    return isToday && isFirstTouch && matchesSender;
+  }).length;
+}
+
+export async function applyDeliverabilityJitter(
+  minMs = 2400,
+  maxMs = 6800
+): Promise<number> {
+  const delay = Math.floor(minMs + Math.random() * (maxMs - minMs));
+  await new Promise((resolve) => setTimeout(resolve, delay));
+  return delay;
+}
+
+/**
+ * DIRETTIVA 7.2: CLASSIFICATORE RISPOSTE (PLAYBOOK OPERATIVO)
+ */
+export function classifyInboundReply(
+  replyText: string,
+  replySubject = "",
+  lead?: LeadConfig
+): InboundClassificationResult {
+  const combined = `${replySubject || ""}\n${replyText || ""}`.toLowerCase();
+  const slug = lead?.slug || "azienda-demo";
+  const companyName = lead?.meta?.companyName || "la vostra azienda";
+  const targetEmail = lead?.meta?.targetEmail || "casella aziendale";
+  const demoUrl = `https://www.techpyre.eu/demo/${slug}`;
+  const firstName = lead?.meta?.decisionMakerFirstName || "";
+  const greeting = firstName ? `Buongiorno ${firstName},` : `Buongiorno,`;
+  const baseSubject = `Re: ${(lead?.outreach?.emailSubject || `Segnalazione tecnica ${companyName}`).replace(/^Re:\s*/i, "")}`;
+
+  // 1. AUTO_REPLY_OR_TICKET
+  const isTicketingSystem =
+    /abbiamo preso in carico|presa in carico|ticket\s*#|richiesta\s*#|numero di ticket|helpdesk|zendesk|freshdesk|jira|servizio clienti automatico|risposta automatica di supporto|do not reply|non rispondere a questo messaggio/i.test(
+      combined
+    );
+
+  const isOutOfOffice =
+    /assente dall'ufficio|fuori sede|out of office|in ferie|chiusura aziendale|tornero in ufficio|automatic reply|risposta automatica/i.test(
+      combined
+    );
+
+  if (isTicketingSystem || isOutOfOffice) {
+    if (isTicketingSystem) {
+      if (lead) {
+        lead.meta.status = "INVALID_TICKET_INBOX";
+        saveLeadConfig(lead.slug, lead);
+      }
+      return {
+        classification: "AUTO_REPLY_OR_TICKET",
+        isHotLead: false,
+        stopAutomatedSequence: true,
+        nextLeadStatus: "INVALID_TICKET_INBOX",
+        operatorActionRequired: `Rilevato bot di ticketing su ${targetEmail}. Lead marcato come INVALID_TICKET_INBOX e spostato in coda per ricerca manuale del titolare (${companyName}) su LinkedIn.`,
+      };
+    }
+
+    return {
+      classification: "AUTO_REPLY_OR_TICKET",
+      isHotLead: false,
+      stopAutomatedSequence: false,
+      nextLeadStatus: lead?.meta?.status || "CONTACTED_STEP_1",
+      operatorActionRequired:
+        "Risposta automatica Out-Of-Office rilevata. Non conteggiare come lead convertito; ripianificare il follow-up al rientro.",
+    };
+  }
+
+  // 2. UNSUBSCRIBE_OR_NO
+  if (
+    /\b(cancellami|cancellate|rimuovete|rimuovere|unsubscribe|non siamo interessati|non mi interessa|non ci interessa|non contattateci|basta mail|diffida|gdpr cancellazione)\b/i.test(
+      combined
+    )
+  ) {
+    if (lead) {
+      lead.meta.status = "BLACKLISTED";
+      saveLeadConfig(lead.slug, lead);
+    }
+    return {
+      classification: "UNSUBSCRIBE_OR_NO",
+      isHotLead: false,
+      stopAutomatedSequence: true,
+      nextLeadStatus: "BLACKLISTED",
+      operatorActionRequired:
+        "Richiesta di disiscrizione/rifiuto esplicito. Sequenza fermata immediatamente e contatto spostato in BLACKLISTED.",
+    };
+  }
+
+  // 3. SKEPTICAL_OR_OBJECTION (Interesse dubbioso: "Quanto costa?", "Siamo già seguiti", "Non so se ci serve adesso")
+  const isPriceQuestion =
+    /quanto costa|che costo|prezzo|prezzi|preventivo|listino|budget|investimento/i.test(
+      combined
+    );
+  const isAgencyObjection =
+    /siamo gia seguiti|ci segue gia|abbiamo gia un'agenzia|abbiamo un'agenzia|nostra agenzia|web agency|fornitore attuale|chi ci segue/i.test(
+      combined
+    );
+  const isTimingOrSkeptical =
+    /non so se ci serve|in questo momento|piu avanti|cosa fate esattamente|come funziona|spiegami meglio|dubbio/i.test(
+      combined
+    );
+
+  if (isPriceQuestion || isAgencyObjection || isTimingOrSkeptical) {
+    if (lead) {
+      lead.meta.status = "HOT_LEAD";
+      saveLeadConfig(lead.slug, lead);
+    }
+
+    const lcpVal = lead?.audit?.originalLcpSeconds ?? 6.5;
+    let objectionValidation = `Capisco perfettamente il punto.`;
+    if (isPriceQuestion) {
+      objectionValidation = `Ottima domanda: l'intervento dipende solo da quali flussi commerciali volete automatizzare oltre alla velocita mobile, per cui preferisco evitare listini standardizzati prima di avervi mostrato il funzionamento reale.`;
+    } else if (isAgencyObjection) {
+      objectionValidation = `Ha perfettamente senso, e infatti non sostituiamo chi vi segue oggi il marketing: lavoriamo sul livello ingegneristico sottostante (anche in affiancamento ai vostri referenti attuali) per azzerare i ${lcpVal}s di caricamento mobile.`;
+    } else if (isTimingOrSkeptical) {
+      objectionValidation = `Comprensibile, ed e proprio per non farvi perdere tempo in valutazioni astratte che abbiamo gia costruito il prototipo funzionante sulla vostra pagina attuale.`;
+    }
+
+    const suggestedReplyBody = [
+      greeting,
+      ``,
+      objectionValidation,
+      ``,
+      `Qui potete vedere direttamente dal telefono il prototipo da 0.3 secondi gia pronto per ${companyName}:`,
+      demoUrl,
+      ``,
+      `Se vi fa piacere, facciamo 10 minuti di condivisione schermo tra martedi e giovedi (oppure vi registro un breve video Loom di 2 minuti) per mostrarvi l'architettura applicata al vostro caso e darvi un quadro preciso. Cosa preferite?`,
+      ``,
+      `Un cordiale saluto,`,
+      `Riccardo Granza · TechPyre Studio`,
+      `WhatsApp diretto: +39 379 115 9352`,
+    ].join("\n");
+
+    return {
+      classification: "SKEPTICAL_OR_OBJECTION",
+      isHotLead: true,
+      stopAutomatedSequence: true,
+      nextLeadStatus: "HOT_LEAD",
+      operatorActionRequired:
+        "LEAD CALDO CON OBIEZIONE/DOMANDA: Sequenza automatica fermata. Invia la risposta su misura qui sotto (zero listini prezzi o muri di testo, focus su call di 10 min o Loom di 2 min).",
+      suggestedReplySubject: baseSubject,
+      suggestedReplyBody,
+    };
+  }
+
+  // 4. POSITIVE_REQUEST_LINK (Richiesta link demo o apertura al confronto)
+  if (lead) {
+    lead.meta.status = "HOT_LEAD";
+    saveLeadConfig(lead.slug, lead);
+  }
+
+  const step2Body =
+    lead?.outreach?.step2FollowUpLink?.body ||
+    lead?.outreach?.followUpWithLinkBody ||
+    [
+      greeting,
+      ``,
+      `vi lascio qui sotto il link della demo da 0.3 secondi preparata per ${companyName}, completa di filtro pre-qualifica contatti:`,
+      ``,
+      demoUrl,
+      ``,
+      `Avete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?`,
+      ``,
+      `Riccardo Granza · TechPyre Studio`,
+      `+39 379 115 9352`,
+    ].join("\n");
+
+  return {
+    classification: "POSITIVE_REQUEST_LINK",
+    isHotLead: true,
+    stopAutomatedSequence: true,
+    nextLeadStatus: "HOT_LEAD",
+    operatorActionRequired:
+      "PRIORITA ALTA - RISPOSTA POSITIVA: Sequenza automatica fermata. Invia subito lo Step 2 col link della demo live.",
+    suggestedReplySubject: baseSubject,
+    suggestedReplyBody: step2Body,
+  };
 }
 
 export async function sendLeadOutreach({
   slug,
+  stepNumber,
   isFollowUp = false,
   user,
   customRecipient,
   customSubject,
   customBody,
+  bypassBusinessHoursCheck = false,
+  bypassRateLimitCheck = false,
+  applyJitter = true,
 }: {
   slug: string;
+  stepNumber?: 1 | 2 | 3 | 4;
   isFollowUp?: boolean;
   user: UserProfile;
   customRecipient?: string;
   customSubject?: string;
   customBody?: string;
+  bypassBusinessHoursCheck?: boolean;
+  bypassRateLimitCheck?: boolean;
+  applyJitter?: boolean;
 }): Promise<{
   success: boolean;
   messageId: string;
   message: string;
   sentBy: string;
+  stepNumber: 1 | 2 | 3 | 4;
+  requiresFollowUpCall: boolean;
+  phoneToCall?: string;
 }> {
-  // 1. Carica LeadConfig (da src/data/leads o da /tmp/techpyre-leads)
   const lead = loadLeadConfig(slug);
   if (!lead) {
     throw new Error(`Lead [${slug}] non trovato nel database.`);
   }
 
-  // Se l'operatore ha modificato destinatario, oggetto o corpo nella console, aggiorna il lead
+  if (
+    lead.meta.status === "BLACKLISTED" ||
+    lead.meta.status === "INVALID_TICKET_INBOX"
+  ) {
+    throw new Error(
+      `Invio bloccato: il lead [${slug}] si trova nello stato ${lead.meta.status}.`
+    );
+  }
+
+  // Assicura che i 4 step siano presenti anche per i lead generati prima del refactoring
+  if (!lead.outreach.step1FirstTouch || !lead.outreach.step2FollowUpLink) {
+    const regenerated = buildMultiStepOutreach({
+      slug: lead.slug,
+      companyName: lead.meta.companyName,
+      decisionMaker: {
+        fullName:
+          lead.meta.decisionMakerName &&
+          !lead.meta.decisionMakerName.startsWith("Direzione ") &&
+          !lead.meta.decisionMakerName.startsWith("Titolare ")
+            ? lead.meta.decisionMakerName
+            : null,
+        firstName: lead.meta.decisionMakerFirstName || null,
+        role: lead.meta.decisionMakerRole || null,
+      },
+      isGenericInbox: lead.meta.isGenericInbox ?? true,
+      estimatedMobileLcpSeconds: lead.audit.originalLcpSeconds,
+      renderBlockingScripts: lead.audit.renderBlockingCount || 8,
+      runsAds: lead.audit.runsAds ?? true,
+    });
+    lead.outreach = regenerated;
+  }
+
+  const resolvedStep: 1 | 2 | 3 | 4 = stepNumber
+    ? stepNumber
+    : isFollowUp
+    ? 2
+    : 1;
+
   if (customRecipient && customRecipient.trim()) {
     lead.meta.targetEmail = customRecipient.trim();
   }
@@ -138,17 +424,41 @@ export async function sendLeadOutreach({
     lead.outreach.emailSubject = customSubject.trim().replace(/^Re:\s*/i, "");
   }
   if (customBody && customBody.trim()) {
-    if (isFollowUp) {
-      lead.outreach.followUpWithLinkBody = customBody.trim();
-    } else {
+    if (resolvedStep === 1) {
       lead.outreach.emailPlainTextBody = customBody.trim();
+      if (lead.outreach.step1FirstTouch) {
+        lead.outreach.step1FirstTouch.body = customBody.trim();
+      }
+    } else if (resolvedStep === 2) {
+      lead.outreach.followUpWithLinkBody = customBody.trim();
+      if (lead.outreach.step2FollowUpLink) {
+        lead.outreach.step2FollowUpLink.body = customBody.trim();
+      }
+    } else if (resolvedStep === 3 && lead.outreach.step3ValueDropAndCallTrigger) {
+      lead.outreach.step3ValueDropAndCallTrigger.body = customBody.trim();
+    } else if (resolvedStep === 4 && lead.outreach.step4Breakup) {
+      lead.outreach.step4Breakup.body = customBody.trim();
     }
   }
-  if (customRecipient || customSubject || customBody) {
-    saveLeadConfig(slug, lead);
+  saveLeadConfig(slug, lead);
+
+  // DIRETTIVA 7.1: Controllo fascia oraria lavorativa (08:30-17:30 Lun-Ven Roma) e Rate Limit giornaliero (35 First Touch/giorno)
+  if (!bypassBusinessHoursCheck) {
+    const hoursCheck = checkRomeBusinessHours();
+    if (!hoursCheck.allowed) {
+      throw new Error(hoursCheck.reason);
+    }
   }
 
-  // 2. Determina credenziali SMTP in base all'utente attivo
+  if (resolvedStep === 1 && !bypassRateLimitCheck) {
+    const sentToday = getTodayFirstTouchCountForSender(user.username);
+    if (sentToday >= DAILY_FIRST_TOUCH_LIMIT) {
+      throw new Error(
+        `Limite giornaliero di deliverability raggiunto (${sentToday}/${DAILY_FIRST_TOUCH_LIMIT} nuovi First Touch inviati oggi per ${user.username}). Riprendi domani tra le 08:30 e le 17:30.`
+      );
+    }
+  }
+
   const userSmtp = getUserSmtp(user.username);
 
   let host = "";
@@ -170,12 +480,12 @@ export async function sendLeadOutreach({
       `Ciao ${user.displayName}! Prima di inviare email, configura le tue credenziali SMTP personali cliccando su "Impostazioni Email" in alto.`
     );
   } else {
-    // Default TechPyre Studio per Admin e Member
     host = process.env.OUTBOUND_SMTP_HOST || process.env.SMTP_HOST || "";
     port = Number(process.env.OUTBOUND_SMTP_PORT || process.env.SMTP_PORT || 465);
     smtpUser = process.env.OUTBOUND_SMTP_USER || process.env.SMTP_USER || "";
     smtpPass = process.env.OUTBOUND_SMTP_PASS || process.env.SMTP_PASS || "";
-    senderName = process.env.OUTBOUND_FROM_NAME || `${user.displayName} · TechPyre Studio`;
+    senderName =
+      process.env.OUTBOUND_FROM_NAME || `${user.displayName} · TechPyre Studio`;
     senderEmail = smtpUser;
   }
 
@@ -185,43 +495,39 @@ export async function sendLeadOutreach({
     );
   }
 
-  // 3. Prepara il testo dell'email (rimuovendo eventuali tratti lunghi residui per conformita aziendale)
-  const rawSubject = isFollowUp
-    ? `Re: ${lead.outreach.emailSubject}`
-    : lead.outreach.emailSubject;
-  const subject = rawSubject.replace(/[—–]/g, "-");
+  const stepMap = {
+    1: lead.outreach.step1FirstTouch!,
+    2: lead.outreach.step2FollowUpLink!,
+    3: lead.outreach.step3ValueDropAndCallTrigger!,
+    4: lead.outreach.step4Breakup!,
+  };
+  const activeStep = stepMap[resolvedStep];
 
-  let text = (
-    isFollowUp
-      ? lead.outreach.followUpWithLinkBody
-      : lead.outreach.emailPlainTextBody
-  ).replace(/[—–]/g, "-");
+  const subject = activeStep.subject.replace(/[—–]/g, "-");
+  let text = activeStep.body.replace(/[—–]/g, "-");
 
-  // Personalizza la presentazione in apertura se l'invio e fatto da un altro operatore (es. Andrea Di Bella)
   if (user.username !== "riccardogranza" && senderName) {
-    text = text.replace(
-      /mi chiamo Riccardo Granza e sono il fondatore di TechPyre(?:\s+Studio)?/gi,
-      `mi chiamo ${senderName} e collaboro con TechPyre Studio`
-    );
-    text = text.replace(
-      /Riccardo Granza\s*[-·]\s*Fondatore[^\n]*/gi,
-      `${senderName} · TechPyre Studio`
-    );
-    text = text.replace(
-      /Fondatore & Architetto di Sistemi Digitali · TechPyre Studio/gi,
-      `TechPyre Studio · Studio di Ingegneria ed Ecosistemi Digitali`
-    );
     text = text.replace(/Riccardo Granza/gi, senderName);
   }
 
-  // Regola Anti-Spam rigorosa per la prima email: ZERO link
-  if (!isFollowUp && /https?:\/\//i.test(text)) {
-    throw new Error(
-      "Blocco Anti-Spam di sicurezza: la prima email contiene un link cliccabile. Rimuovilo prima di inviare."
-    );
+  // Regola Anti-Spam rigorosa per lo Step 1 (First Touch): ZERO link, ZERO prezzi, ZERO 'LINK'
+  if (resolvedStep === 1) {
+    if (/https?:\/\//i.test(text)) {
+      throw new Error(
+        "Blocco Anti-Spam di sicurezza: lo Step 1 (First Touch) contiene un link cliccabile. Rimuovilo prima di inviare."
+      );
+    }
+    if (/\b900\s*euro\b|\b900€\b|\bzero canoni\b/i.test(text)) {
+      throw new Error(
+        "Violazione Zero-Fluff Protocol: lo Step 1 non deve contenere prezzi ('900 euro') o 'zero canoni'."
+      );
+    }
   }
 
-  // 4. Invia tramite Nodemailer
+  if (applyJitter) {
+    await applyDeliverabilityJitter(1800, 4800);
+  }
+
   const transporter = nodemailer.createTransport({
     host,
     port,
@@ -241,7 +547,6 @@ export async function sendLeadOutreach({
     text,
   });
 
-  // 5. Se account Aruba di TechPyre, sincronizza in INBOX.Sent
   if (host.includes("aruba.it")) {
     try {
       const rawMessage = [
@@ -260,16 +565,28 @@ export async function sendLeadOutreach({
     } catch {}
   }
 
-  // 6. Salva audit log dell'invio
-  const logEntry = {
+  const statusByStep: Record<1 | 2 | 3 | 4, NonNullable<LeadConfig["meta"]["status"]>> = {
+    1: "CONTACTED_STEP_1",
+    2: "CONTACTED_STEP_2",
+    3: "CONTACTED_STEP_3",
+    4: "CONTACTED_STEP_4",
+  };
+  lead.meta.status = statusByStep[resolvedStep];
+  saveLeadConfig(slug, lead);
+
+  const requiresFollowUpCall = Boolean(activeStep.requiresFollowUpCall);
+  const logEntry: OutreachLogEntry = {
     slug: lead.slug,
     companyName: lead.meta.companyName,
     recipient: lead.meta.targetEmail,
-    type: isFollowUp ? "FOLLOW_UP" : "INITIAL",
+    type: `STEP_${resolvedStep}`,
+    stepNumber: resolvedStep,
     subject,
     messageId: info.messageId,
     sentAt: new Date().toISOString(),
     sentBy: `${user.displayName} (${user.username})`,
+    requiresFollowUpCall,
+    phoneToCall: requiresFollowUpCall ? lead.meta.phone : undefined,
   };
 
   saveOutreachLog(logEntry);
@@ -277,7 +594,12 @@ export async function sendLeadOutreach({
   return {
     success: true,
     messageId: info.messageId,
-    message: `Email inviata con successo a ${lead.meta.targetEmail} da ${senderName}!`,
+    message: requiresFollowUpCall
+      ? `Step ${resolvedStep} inviato a ${lead.meta.targetEmail}. AZIONE RICHIESTA: Esegui chiamata telefonica di 45s al numero ${lead.meta.phone}!`
+      : `Step ${resolvedStep} inviato con successo a ${lead.meta.targetEmail} da ${senderName}!`,
     sentBy: senderName,
+    stepNumber: resolvedStep,
+    requiresFollowUpCall,
+    phoneToCall: requiresFollowUpCall ? lead.meta.phone : undefined,
   };
 }

@@ -1,19 +1,50 @@
+export type InboundReplyClassification =
+  | 'AUTO_REPLY_OR_TICKET'
+  | 'POSITIVE_REQUEST_LINK'
+  | 'SKEPTICAL_OR_OBJECTION'
+  | 'UNSUBSCRIBE_OR_NO';
+
+export interface OutreachStep {
+  dayOffset: number;
+  subject: string;
+  body: string;
+  inThread: boolean;
+  requiresFollowUpCall?: boolean;
+}
+
 export interface LeadConfig {
   slug: string;
   archetype: 'local-leadgen' | 'medical-clinic' | 'b2b-authority';
   meta: {
     companyName: string;
-    decisionMakerName: string; // Estratto da Privacy Policy / Chi Siamo / LinkedIn
+    decisionMakerName: string; // Estratto da Privacy Policy / Chi Siamo / Team o ricavato da email nominale
+    decisionMakerFirstName?: string | null;
+    decisionMakerRole?: string | null;
+    isGenericInbox?: boolean;
+    emailScore?: number;
     targetEmail: string;
     phone: string;
     city: string;
     vatNumber?: string;
     adLibraryUrl: string;
     originalLandingUrl: string;
+    status?:
+      | 'NEW'
+      | 'CONTACTED_STEP_1'
+      | 'CONTACTED_STEP_2'
+      | 'CONTACTED_STEP_3'
+      | 'CONTACTED_STEP_4'
+      | 'HOT_LEAD'
+      | 'INVALID_TICKET_INBOX'
+      | 'MANUAL_LINKEDIN_QUEUE'
+      | 'BLACKLISTED';
   };
   audit: {
     originalLcpSeconds: number;
     mobileScore: number; // 0-100
+    renderBlockingCount?: number;
+    runsAds?: boolean;
+    detectedTrackingSignals?: string[];
     activeAdHeadline: string;
     activeAdCopySummary: string;
     threeCriticalFlaws: [string, string, string];
@@ -65,7 +96,11 @@ export interface LeadConfig {
   };
   outreach: {
     emailSubject: string;
-    emailPlainTextBody: string; // Zero link, CTA di risposta "LINK"
-    followUpWithLinkBody: string; // La risposta pronta quando il cliente scrive "SÌ / LINK"
+    emailPlainTextBody: string; // Alias retrocompatibile di step1FirstTouch.body (Zero link, 65-85 parole)
+    followUpWithLinkBody: string; // Alias retrocompatibile di step2FollowUpLink.body
+    step1FirstTouch?: OutreachStep; // Giorno 1: Diagnosi tecnica + proposta invio demo (zero link)
+    step2FollowUpLink?: OutreachStep; // Giorno 4 (In-Thread o su risposta positiva): Link demo live 0.3s + invito call 10 min
+    step3ValueDropAndCallTrigger?: OutreachStep; // Giorno 8 (In-Thread): Focus collo di bottiglia + requiresFollowUpCall: true
+    step4Breakup?: OutreachStep; // Giorno 13 (In-Thread): Breakup cortese senza pressione
   };
 }

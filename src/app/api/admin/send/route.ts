@@ -9,8 +9,15 @@ export async function POST(request: Request) {
   }
 
   try {
-    const { slug, isFollowUp, customRecipient, customSubject, customBody } =
-      await request.json();
+    const {
+      slug,
+      isFollowUp,
+      stepNumber,
+      customRecipient,
+      customSubject,
+      customBody,
+      bypassBusinessHours,
+    } = await request.json();
     if (!slug) {
       return NextResponse.json({ error: "Slug lead mancante" }, { status: 400 });
     }
@@ -18,10 +25,12 @@ export async function POST(request: Request) {
     const result = await sendLeadOutreach({
       slug,
       isFollowUp: Boolean(isFollowUp),
+      stepNumber: stepNumber ? (Number(stepNumber) as 1 | 2 | 3 | 4) : undefined,
       user,
       customRecipient,
       customSubject,
       customBody,
+      bypassBusinessHoursCheck: Boolean(bypassBusinessHours),
     });
 
     return NextResponse.json(result);
