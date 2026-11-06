@@ -28,6 +28,8 @@ export interface LeadConfig {
     vatNumber?: string;
     adLibraryUrl: string;
     originalLandingUrl: string;
+    lastSentMessageId?: string;
+    threadMessageIds?: string[];
     status?:
       | 'NEW'
       | 'CONTACTED_STEP_1'

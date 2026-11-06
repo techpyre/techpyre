@@ -9,7 +9,11 @@
     "city": "Milano",
     "vatNumber": "09876540962",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?id=445566778899",
-    "originalLandingUrl": "https://www.clinicasorrisomilano.it/implantologia-carico-immediato"
+    "originalLandingUrl": "https://www.clinicasorrisomilano.it/implantologia-carico-immediato",
+    "isGenericInbox": true,
+    "emailScore": 75,
+    "decisionMakerFirstName": "Alessandro",
+    "decisionMakerRole": "Titolare"
   },
   "audit": {
     "originalLcpSeconds": 5.8,
@@ -20,7 +24,12 @@
       "Caricamento mobile di 5.8 secondi che penalizza i pazienti che aprono l'annuncio da smartphone.",
       "Assenza di un percorso di pre-valutazione empatico prima della richiesta dei recapiti personali.",
       "Credenziali della Direzione Sanitaria, numero di iscrizione all'Albo e protocolli per pazienti odontofobici poco visibili."
-    ]
+    ],
+    "runsAds": true,
+    "detectedTrackingSignals": [
+      "Meta Ad Library"
+    ],
+    "renderBlockingCount": 8
   },
   "theme": {
     "primaryHex": "#60c0e0",
@@ -111,8 +120,36 @@
     }
   },
   "outreach": {
-    "emailSubject": "Sponsorizzata \"Denti Fissi in 24 Ore\" - per il Dott. Conti",
-    "emailPlainTextBody": "Buongiorno Dott. Conti,\n\nho visto la vostra sponsorizzata attiva su Facebook \"Denti Fissi in 24 Ore a Milano con Implantologia Computer Guidata\".\n\nDal telefono la pagina attuale impiega 5.8 secondi a caricarsi e chiede subito i dati senza accompagnare il paziente: sull'implantologia questo fa perdere molti contatti qualificati.\n\nVi ho già preparato la versione veloce (0.3s) con i vostri testi e un simulatore di preventivo interattivo. Se ti va di provarla dal telefono, rispondimi 'LINK' qui sotto e te lo giro subito.\n\nUn cordiale saluto,\nRiccardo Granza\nTechPYRE",
-    "followUpWithLinkBody": "Buongiorno,\n\ngrazie per il riscontro. Ecco il link diretto per testare dal vostro smartphone l'infrastruttura dimostrativa da 0.3s progettata per Centro Odontoiatrico Sorriso Milano S.r.l.:\n\nhttps://www.techpyre.eu/demo/clinica-sorriso-milano\n\nQuesta architettura in Next.js/TypeScript elimina i 5.8 secondi di attesa su mobile, integra la pre-qualifica della richiesta ed e gia predisposta per il tracciamento Server-Side (GTM / Meta CAPI) e l'invio diretto via API/Webhook al vostro CRM (soluzione a corpo a partire da 900 euro, zero canoni di noleggio e piena proprieta del codice).\n\nSe desiderate approfondire come integrarla nei vostri flussi commerciali, sono a disposizione per una breve Sessione di Diagnosi Architetturale di 30 minuti.\n\nUn cordiale saluto,\nRiccardo Granza\nFondatore & Architetto di Sistemi Digitali · TechPyre Studio\nhttps://www.techpyre.eu · Tel & WhatsApp B2B: +39 379 115 9352"
+    "emailSubject": "Per Dott. Alessandro Conti · dispersione clic mobile e tempi di caricamento di Centro Odontoiatrico Sorriso Milano S.r.l. (5.8s)",
+    "emailPlainTextBody": "Buongiorno Alessandro,\n\nda un test sul sito di Centro Odontoiatrico Sorriso Milano S.r.l., da smartphone impiega 5.8 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Centro Odontoiatrico Sorriso Milano S.r.l. che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza · TechPyre\n+39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno Alessandro,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Centro Odontoiatrico Sorriso Milano S.r.l., completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/clinica-sorriso-milano\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza · TechPyre Studio\n+39 379 115 9352",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "Per Dott. Alessandro Conti · dispersione clic mobile e tempi di caricamento di Centro Odontoiatrico Sorriso Milano S.r.l. (5.8s)",
+      "body": "Buongiorno Alessandro,\n\nda un test sul sito di Centro Odontoiatrico Sorriso Milano S.r.l., da smartphone impiega 5.8 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Centro Odontoiatrico Sorriso Milano S.r.l. che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza · TechPyre\n+39 379 115 9352",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: Per Dott. Alessandro Conti · dispersione clic mobile e tempi di caricamento di Centro Odontoiatrico Sorriso Milano S.r.l. (5.8s)",
+      "body": "Buongiorno Alessandro,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Centro Odontoiatrico Sorriso Milano S.r.l., completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/clinica-sorriso-milano\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza · TechPyre Studio\n+39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: Per Dott. Alessandro Conti · dispersione clic mobile e tempi di caricamento di Centro Odontoiatrico Sorriso Milano S.r.l. (5.8s)",
+      "body": "Buongiorno Alessandro,\n\nOltre a tagliare i 5.8 secondi su mobile, l'infrastruttura recupera il 40% delle conversioni tramite Server-Side Tracking.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza · TechPyre Studio",
+      "inThread": true,
+      "requiresFollowUpCall": true
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: Per Dott. Alessandro Conti · dispersione clic mobile e tempi di caricamento di Centro Odontoiatrico Sorriso Milano S.r.l. (5.8s)",
+      "body": "Buongiorno Alessandro,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Centro Odontoiatrico Sorriso Milano S.r.l. non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/clinica-sorriso-milano) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza · TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
   }
 }

@@ -510,7 +510,7 @@ export async function fetchPageSpeedMetrics(
 /**
  * DIRETTIVA 2: MOTORE DI SCORING EMAIL & BLOCCO CASELLE DI TICKETING
  */
-const EMAIL_LOCAL_PART_BLACKLIST = [
+export const HARD_BLOCKED_EMAIL_PREFIXES = [
   "assistenza",
   "support",
   "supporto",
@@ -540,7 +540,35 @@ const EMAIL_LOCAL_PART_BLACKLIST = [
   "postmaster",
   "abuse",
   "reclami",
+  "clienti",
+  "servizioclienti",
 ];
+
+const EMAIL_LOCAL_PART_BLACKLIST = HARD_BLOCKED_EMAIL_PREFIXES;
+
+export function isHardBlockedEmail(rawEmail: string): boolean {
+  if (!rawEmail || !rawEmail.includes("@")) return true;
+  const email = rawEmail.trim().toLowerCase();
+  const [localPart, domainPart] = email.split("@");
+  if (!localPart || !domainPart) return true;
+  if (
+    domainPart.includes("pec.") ||
+    domainPart.includes("legalmail.") ||
+    domainPart.includes("arubapec.") ||
+    domainPart.includes("postecert.") ||
+    domainPart.includes("paginegialle.")
+  ) {
+    return true;
+  }
+  return HARD_BLOCKED_EMAIL_PREFIXES.some(
+    (bad) =>
+      localPart === bad ||
+      localPart.startsWith(`${bad}.`) ||
+      localPart.startsWith(`${bad}_`) ||
+      localPart.startsWith(`${bad}-`) ||
+      localPart.includes(bad)
+  );
+}
 
 const GENERIC_INBOX_PREFIXES = new Set([
   "info",
@@ -609,6 +637,48 @@ const FREE_MAIL_DOMAINS = new Set([
   "yahoo.com",
   "icloud.com",
   "inwind.it",
+]);
+
+const ITALIAN_FIRST_NAMES = new Set([
+  "alessandro", "alessandra", "alessio", "alessia", "alberto", "aldo", "alfio", "alfonso", "alfredo",
+  "alice", "amedeo", "andrea", "angela", "angelica", "angelo", "anna", "annalisa", "annamaria",
+  "antonella", "antonello", "antonio", "antonino", "arianna", "armando", "arturo", "attilio", "augusto",
+  "aurelio", "barbara", "beatrice", "benedetta", "benedetto", "bernardo", "biagio", "bianca", "bruno",
+  "calogero", "camilla", "carla", "carlo", "carmela", "carmelo", "carmine", "carolina", "cateno",
+  "caterina", "cecilia", "cesare", "chiara", "cinzia", "ciro", "clara", "claudia", "claudio",
+  "concetta", "corrado", "cosimo", "cristian", "cristiana", "cristiano", "cristina", "damiano",
+  "daniela", "daniele", "danilo", "dario", "davide", "debora", "deborah", "denis", "diego", "dino",
+  "domenica", "domenico", "donatella", "donato", "edoardo", "egidio", "elena", "eleonora", "eliana",
+  "elisa", "elisabetta", "elia", "emanuela", "emanuele", "emilia", "emiliano", "emilio", "enea",
+  "enrica", "enrico", "enza", "enzo", "erika", "ermanno", "ernesto", "ettore", "eugenio", "ezio",
+  "fabiana", "fabiano", "fabio", "fabrizio", "fausto", "federica", "federico", "felice", "ferdinando",
+  "fernando", "filippo", "fiorella", "fiorenzo", "flavia", "flavio", "franca", "francesca", "francesco",
+  "franco", "fulvio", "gabriele", "gabriella", "gaetano", "gastone", "gennaro", "gerardo", "germano",
+  "giacomo", "giada", "giampaolo", "giampiero", "giancarlo", "gianfranco", "gianluca", "gianluigi",
+  "gianmarco", "gianmaria", "gianna", "gianni", "gianpaolo", "gianpiero", "gigi", "gilda", "gino",
+  "gioele", "giorgia", "giorgio", "giovanna", "giovanni", "giulia", "giuliana", "giuliano", "giulio",
+  "giuseppa", "giuseppe", "giuseppina", "giusy", "gloria", "grazia", "graziano", "graziella", "gregorio",
+  "guido", "iacopo", "ignazio", "ilaria", "ilario", "irene", "ivano", "ivan", "jacopo", "jessica",
+  "katia", "lara", "laura", "lauro", "leonardo", "leone", "letizia", "libero", "lidia", "liliana",
+  "lina", "lino", "livia", "livio", "loredana", "lorenza", "lorenzo", "loris", "luca", "lucia",
+  "luciana", "luciano", "lucio", "lucrezia", "luigi", "luigia", "luigina", "luisa", "manuela",
+  "manuele", "mara", "marcella", "marcello", "marco", "margherita", "maria", "marianna", "mariano",
+  "marilena", "marina", "marino", "mario", "marisa", "marta", "martina", "marzio", "massimiliano",
+  "massimo", "matilde", "matteo", "mattia", "maura", "maurizio", "mauro", "melissa", "michela",
+  "michele", "milena", "miriam", "mirko", "mirco", "monica", "moreno", "nadia", "natale",
+  "natalia", "nazzareno", "nello", "nicola", "nicole", "nicoletta", "nicolo", "nino", "noemi",
+  "nunzia", "nunzio", "olga", "omar", "orazio", "orietta", "orlando", "ornella", "oscar", "osvaldo",
+  "ottavio", "pamela", "paola", "paolo", "pasquale", "patrizia", "patrizio", "piera", "piergiorgio",
+  "pierluigi", "piero", "pietro", "pino", "primo", "rachele", "raffaele", "raffaella", "raimondo",
+  "rebecca", "remo", "renata", "renato", "renzo", "riccardo", "rina", "rino", "rita", "roberta",
+  "roberto", "rocco", "rodolfo", "romano", "romina", "rosa", "rosalba", "rosalia", "rosanna",
+  "rosaria", "rosario", "ruggero", "sabina", "sabrina", "salvatore", "samuele", "sandra",
+  "sandro", "santa", "sante", "santi", "santo", "sara", "saverio", "sebastiano", "serena", "sergio",
+  "silvana", "silvano", "silvia", "silvio", "simona", "simone", "simonetta", "sofia", "sonia",
+  "stefania", "stefano", "stella", "susanna", "tania", "tiziana", "tiziano", "tommaso", "toni",
+  "tonino", "tullio", "ugo", "umberto", "valentina", "valentino", "valeria", "valerio",
+  "vanessa", "vanna", "vanni", "vasco", "veronica", "vincenza", "vincenzo", "virginia", "vito",
+  "vittoria", "vittorio", "viviana", "walter", "wanda", "william", "yuri", "zeno",
 ]);
 
 export function selectBestDecisionMakerEmail(
@@ -686,17 +756,29 @@ export function selectBestDecisionMakerEmail(
       score -= 10;
     }
 
+    const dotParts = localPart.split(".");
     const isNominalDotPattern =
       /^[a-z]{2,15}\.[a-z]{2,18}$/i.test(localPart) &&
-      !localPart.split(".").some((part) => GENERIC_INBOX_PREFIXES.has(part));
+      ITALIAN_FIRST_NAMES.has(dotParts[0]) &&
+      !dotParts.some(
+        (part) =>
+          GENERIC_INBOX_PREFIXES.has(part) ||
+          DECISION_MAKER_STOPWORDS.has(part) ||
+          cleanCompanyDomain.includes(part)
+      );
 
     const isInitialDotSurnamePattern =
       /^[a-z]\.[a-z]{3,18}$/i.test(localPart) &&
-      !GENERIC_INBOX_PREFIXES.has(localPart.split(".")[1]);
+      !GENERIC_INBOX_PREFIXES.has(dotParts[1]) &&
+      !DECISION_MAKER_STOPWORDS.has(dotParts[1]) &&
+      !cleanCompanyDomain.includes(dotParts[1]);
 
     const isSingleProperName =
       /^[a-z]{3,13}$/i.test(localPart) &&
+      ITALIAN_FIRST_NAMES.has(localPart) &&
       !GENERIC_INBOX_PREFIXES.has(localPart) &&
+      !DECISION_MAKER_STOPWORDS.has(localPart) &&
+      !cleanCompanyDomain.includes(localPart) &&
       !EMAIL_LOCAL_PART_BLACKLIST.includes(localPart);
 
     if (isNominalDotPattern || isInitialDotSurnamePattern) {
@@ -852,6 +934,75 @@ const DECISION_MAKER_STOPWORDS = new Set([
   "ottobre",
   "novembre",
   "dicembre",
+  "sistemi",
+  "soluzioni",
+  "tecnologie",
+  "energie",
+  "rinnovabili",
+  "fotovoltaico",
+  "solare",
+  "infissi",
+  "finestre",
+  "persiane",
+  "porte",
+  "alluminio",
+  "legno",
+  "acciaio",
+  "ferro",
+  "metallica",
+  "metalliche",
+  "costruzioni",
+  "edilizia",
+  "progettazione",
+  "installazione",
+  "manutenzione",
+  "produzione",
+  "realizzazione",
+  "informativa",
+  "consenso",
+  "interessato",
+  "garante",
+  "regolamento",
+  "europeo",
+  "unione",
+  "europea",
+  "nostro",
+  "nostra",
+  "vostro",
+  "vostra",
+  "questo",
+  "questa",
+  "essere",
+  "avere",
+  "presso",
+  "anche",
+  "solo",
+  "dopo",
+  "prima",
+  "sempre",
+  "tutto",
+  "tutta",
+  "ogni",
+  "altro",
+  "altra",
+  "qualita",
+  "esperienza",
+  "sicurezza",
+  "preventivo",
+  "gratuito",
+  "richiedi",
+  "scopri",
+  "contattaci",
+  "chiamaci",
+  "scrivici",
+  "seguici",
+  "telefono",
+  "cellulare",
+  "email",
+  "indirizzo",
+  "orari",
+  "apertura",
+  "chiusura",
   ...ITALIAN_CITIES.map((c) => c.toLowerCase()),
 ]);
 
@@ -868,6 +1019,7 @@ function isValidItalianFullName(first: string, last: string): boolean {
   if (lClean.length < 3 || lClean.length > 15) return false;
   if (!/^[A-ZÀÈÉÌÒÙ][a-zàèéìòù']+$/.test(fClean)) return false;
   if (!/^[A-ZÀÈÉÌÒÙ][a-zàèéìòù']+$/.test(lClean)) return false;
+  if (!ITALIAN_FIRST_NAMES.has(fClean.toLowerCase())) return false;
   if (DECISION_MAKER_STOPWORDS.has(fClean.toLowerCase())) return false;
   if (DECISION_MAKER_STOPWORDS.has(lClean.toLowerCase())) return false;
   if (fClean.toLowerCase() === lClean.toLowerCase()) return false;
@@ -883,27 +1035,27 @@ export function extractDecisionMakerFromHtml(
   const rolePatterns: Array<{ regex: RegExp; defaultRole: string }> = [
     {
       regex:
-        /\b(?:Legale\s+Rappresentante|Rappresentante\s+Legale|nella\s+persona\s+del\s+suo\s+legale\s+rappresentante(?:\s+pro\s+tempore)?)\s*(?:[:,-]|\bdi|\bè|\bsig\.?|\bdott\.?|\bing\.?|\bgeom\.?|\barch\.?)*\s*([A-ZÀÈÉÌÒÙ][a-zàèéìòù]{2,14})\s+([A-ZÀÈÉÌÒÙ][a-zàèéìòù]{2,14})\b/g,
+        /\b(?:Legale\s+Rappresentante|Rappresentante\s+Legale|nella\s+persona\s+del\s+(?:suo\s+)?legale\s+rappresentante(?:\s+pro[- ]tempore)?)\s*(?:[:,-]|\bdi|\bè|\bsig\.?|\bdott\.?|\bing\.?|\bgeom\.?|\barch\.?)*\s*([A-ZÀÈÉÌÒÙ][A-Za-zàèéìòù]{2,14})\s+([A-ZÀÈÉÌÒÙ][A-Za-zàèéìòù]{2,14})\b/gi,
       defaultRole: "Legale Rappresentante",
     },
     {
       regex:
-        /\b(?:Amministratore\s+Unico|Amministratore\s+Delegato|Presidente\s+del\s+CdA)\s*(?:[:,-]|\bdi|\bè|\bsig\.?|\bdott\.?|\bing\.?|\bgeom\.?|\barch\.?)*\s*([A-ZÀÈÉÌÒÙ][a-zàèéìòù]{2,14})\s+([A-ZÀÈÉÌÒÙ][a-zàèéìòù]{2,14})\b/g,
+        /\b(?:Amministratore\s+Unico|Amministratore\s+Delegato|Presidente\s+del\s+CdA|Amministratore)\s*(?:[:,-]|\bdi|\bè|\bsig\.?|\bdott\.?|\bing\.?|\bgeom\.?|\barch\.?)*\s*([A-ZÀÈÉÌÒÙ][A-Za-zàèéìòù]{2,14})\s+([A-ZÀÈÉÌÒÙ][A-Za-zàèéìòù]{2,14})\b/gi,
       defaultRole: "Amministratore",
     },
     {
       regex:
-        /\b(?:nella\s+persona\s+di|Titolare\s+del\s+trattamento(?:\s+dei\s+dati)?\s+è)\s*(?:[:,-]|\bsig\.?|\bdott\.?|\bing\.?|\bgeom\.?|\barch\.?)*\s*([A-ZÀÈÉÌÒÙ][a-zàèéìòù]{2,14})\s+([A-ZÀÈÉÌÒÙ][a-zàèéìòù]{2,14})\b/g,
+        /\b(?:nella\s+persona\s+di|Titolare\s+del\s+trattamento(?:\s+dei\s+dati(?:\s+personali)?)?\s*(?:è|:|-))\s*(?:[:,-]|\bsig\.?|\bdott\.?|\bing\.?|\bgeom\.?|\barch\.?)*\s*([A-ZÀÈÉÌÒÙ][A-Za-zàèéìòù]{2,14})\s+([A-ZÀÈÉÌÒÙ][A-Za-zàèéìòù]{2,14})\b/gi,
       defaultRole: "Titolare",
     },
     {
       regex:
-        /\b(?:Fondatore|Co-Founder|Founder|CEO|Titolare|Direttore\s+Generale|Direttore\s+Commerciale)\s*(?:[:,-]|\bsig\.?|\bdott\.?|\bing\.?|\bgeom\.?|\barch\.?)*\s*([A-ZÀÈÉÌÒÙ][a-zàèéìòù]{2,14})\s+([A-ZÀÈÉÌÒÙ][a-zàèéìòù]{2,14})\b/g,
+        /\b(?:Fondatore|Co-Founder|Founder|CEO|Titolare|Direttore\s+Generale|Direttore\s+Commerciale)\s*(?:[:,-]|\bsig\.?|\bdott\.?|\bing\.?|\bgeom\.?|\barch\.?)*\s*([A-ZÀÈÉÌÒÙ][A-Za-zàèéìòù]{2,14})\s+([A-ZÀÈÉÌÒÙ][A-Za-zàèéìòù]{2,14})\b/gi,
       defaultRole: "Titolare",
     },
     {
       regex:
-        /\b(?:Dott\.ssa|Dott\.|Ing\.|Geom\.|Arch\.)\s+([A-ZÀÈÉÌÒÙ][a-zàèéìòù]{2,14})\s+([A-ZÀÈÉÌÒÙ][a-zàèéìòù]{2,14})\b/g,
+        /\b(?:Dott\.ssa|Dott\.|Ing\.|Geom\.|Arch\.|Sig\.ra|Sig\.)\s+([A-ZÀÈÉÌÒÙ][A-Za-zàèéìòù]{2,14})\s+([A-ZÀÈÉÌÒÙ][A-Za-zàèéìòù]{2,14})\b/g,
       defaultRole: "Direzione Tecnica",
     },
   ];
@@ -1131,6 +1283,229 @@ export function buildMultiStepOutreach({
     step3ValueDropAndCallTrigger,
     step4Breakup,
   };
+}
+
+/**
+ * PATCH CRITICA 1: MIGRAZIONE AUTOMATICA DEI LEAD STORICI (BACKWARD COMPATIBILITY & PURGE)
+ * - Verifica e rigenera i campi della sequenza 4-step (`step1FirstTouch`..`step4Breakup`), `runsAds`, `threeCriticalFlaws`.
+ * - Scarta / marca come `INVALID_TICKET_INBOX` qualsiasi lead storico la cui `targetEmail` rientri in `HARD_BLOCKED_EMAIL_PREFIXES`
+ *   (a meno che non sia disponibile un'email valida alternativa in `preflight.json`).
+ * - Esegue pulizia e re-scoring dell'email e del `decisionMakerName` (rimuovendo falsi positivi o arricchendo da email nominale).
+ */
+export function migrateOldLeadConfig(
+  lead: LeadConfig,
+  persistIfChanged = false
+): LeadConfig {
+  if (!lead || !lead.meta || !lead.audit || !lead.outreach) {
+    return lead;
+  }
+
+  let changed = false;
+
+  // 1. Raccolta email candidate (incluso eventuale preflight.json salvato in public/leads/[slug]/preflight.json)
+  const rawEmails: string[] = [];
+  if (lead.meta.targetEmail) {
+    rawEmails.push(lead.meta.targetEmail);
+  }
+
+  let preflightSignals: string[] = [];
+  try {
+    const preflightPath = path.join(
+      process.cwd(),
+      "public",
+      "leads",
+      lead.slug,
+      "preflight.json"
+    );
+    if (fs.existsSync(/*turbopackIgnore: true*/ preflightPath)) {
+      const preflight = JSON.parse(
+        fs.readFileSync(/*turbopackIgnore: true*/ preflightPath, "utf-8")
+      );
+      if (Array.isArray(preflight?.extractedEmails)) {
+        for (const e of preflight.extractedEmails) {
+          if (typeof e === "string" && !rawEmails.includes(e)) {
+            rawEmails.push(e);
+          }
+        }
+      }
+      if (Array.isArray(preflight?.qualification?.agencyDetection?.martechSignals)) {
+        preflightSignals = preflight.qualification.agencyDetection.martechSignals;
+      }
+    }
+  } catch {
+    // ignora errori di lettura preflight
+  }
+
+  // 2. Re-scoring dell'indirizzo email e verifica Hard Blacklist
+  const companyDomain = lead.meta.originalLandingUrl || "";
+  const scored = selectBestDecisionMakerEmail(rawEmails, companyDomain);
+
+  if (isHardBlockedEmail(lead.meta.targetEmail)) {
+    if (scored.bestEmail && !isHardBlockedEmail(scored.bestEmail)) {
+      // Trovata email sostitutiva valida dal preflight del dominio!
+      lead.meta.targetEmail = scored.bestEmail;
+      lead.meta.isGenericInbox = scored.isGeneric;
+      lead.meta.emailScore = scored.score;
+      changed = true;
+    } else {
+      // Nessuna email valida superstite: metti il lead in INVALID_TICKET_INBOX
+      if (
+        lead.meta.status !== "INVALID_TICKET_INBOX" &&
+        lead.meta.status !== "BLACKLISTED"
+      ) {
+        lead.meta.status = "INVALID_TICKET_INBOX";
+        lead.meta.emailScore = 0;
+        changed = true;
+      }
+    }
+  } else if (scored.bestEmail) {
+    if (
+      scored.bestEmail !== lead.meta.targetEmail ||
+      lead.meta.isGenericInbox === undefined ||
+      lead.meta.emailScore === undefined
+    ) {
+      lead.meta.targetEmail = scored.bestEmail;
+      lead.meta.isGenericInbox = scored.isGeneric;
+      lead.meta.emailScore = scored.score;
+      changed = true;
+    }
+  }
+
+  // 3. Pulizia e re-scoring del Decision Maker Name (stop a falsi positivi o vecchi placeholder)
+  const currentDm = (lead.meta.decisionMakerName || "").trim();
+  const isPlaceholderDm =
+    !currentDm ||
+    currentDm.startsWith("Direzione ") ||
+    currentDm.startsWith("Titolare ");
+
+  let hasStopwordInDm = false;
+  if (!isPlaceholderDm) {
+    const dmParts = currentDm
+      .replace(/^(?:Ing\.|Dott\.ssa|Dott\.|Arch\.|Geom\.|Sig\.|Avv\.)\s*/i, "")
+      .trim()
+      .split(/\s+/);
+    if (
+      dmParts.length < 2 ||
+      dmParts.length > 3 ||
+      dmParts.some((w) => DECISION_MAKER_STOPWORDS.has(w.toLowerCase()))
+    ) {
+      hasStopwordInDm = true;
+    }
+  }
+
+  if (isPlaceholderDm || hasStopwordInDm || lead.meta.decisionMakerFirstName === undefined) {
+    const extractedFromEmail = extractDecisionMakerFromHtml("", lead.meta.targetEmail);
+    if (extractedFromEmail.fullName) {
+      lead.meta.decisionMakerName = extractedFromEmail.fullName;
+      lead.meta.decisionMakerFirstName = extractedFromEmail.firstName;
+      lead.meta.decisionMakerRole = extractedFromEmail.role || "Direzione";
+      changed = true;
+    } else if (!isPlaceholderDm && !hasStopwordInDm) {
+      const cleanParts = currentDm
+        .replace(/^(?:Ing\.|Dott\.ssa|Dott\.|Arch\.|Geom\.|Sig\.|Avv\.)\s*/i, "")
+        .trim()
+        .split(/\s+/);
+      lead.meta.decisionMakerFirstName = cleanParts[0] || null;
+      lead.meta.decisionMakerRole = lead.meta.decisionMakerRole || "Titolare";
+      changed = true;
+    } else {
+      const fallbackDm = `Direzione ${lead.meta.companyName}`;
+      if (
+        lead.meta.decisionMakerName !== fallbackDm ||
+        lead.meta.decisionMakerFirstName !== null
+      ) {
+        lead.meta.decisionMakerName = fallbackDm;
+        lead.meta.decisionMakerFirstName = null;
+        lead.meta.decisionMakerRole = "Direzione Aziendale";
+        changed = true;
+      }
+    }
+  }
+
+  // 4. Verifica `runsAds`, `detectedTrackingSignals`, `renderBlockingCount` e `threeCriticalFlaws`
+  if (lead.audit.runsAds === undefined) {
+    const cameFromAdLib =
+      Boolean(lead.meta.adLibraryUrl && lead.meta.adLibraryUrl.includes("facebook.com/ads/library")) ||
+      preflightSignals.length > 0;
+    lead.audit.runsAds = cameFromAdLib;
+    lead.audit.detectedTrackingSignals =
+      preflightSignals.length > 0
+        ? preflightSignals
+        : cameFromAdLib
+        ? ["Meta Ad Library"]
+        : [];
+    changed = true;
+  }
+
+  if (!lead.audit.renderBlockingCount) {
+    lead.audit.renderBlockingCount = 8;
+    changed = true;
+  }
+
+  const lcpVal = lead.audit.originalLcpSeconds || 6.5;
+  const blockingCount = lead.audit.renderBlockingCount || 8;
+  const expectedFlaws: [string, string, string] = lead.audit.runsAds
+    ? [
+        `Dispersione del Traffico Mobile (${lcpVal}s LCP): oltre metà degli utenti che cliccano su un'inserzione da smartphone abbandona la pagina prima dell'apertura per via di ${blockingCount} blocchi di rendering`,
+        `Perdita Dati di Conversione (Assenza Server-Side): i pixel standard lato browser perdono fino al 40-50% delle conversioni reali per blocchi iOS, cookie banner e ad-blocker`,
+        `Collo di Bottiglia Commerciale: le richieste finiscono in email isolate senza pre-qualifica né invio istantaneo al CRM della rete vendita`,
+      ]
+    : [
+        `Abbandono Preventivi da Mobile (${lcpVal}s LCP): i potenziali clienti B2B che visitano il sito da smartphone attendono ${lcpVal} secondi a causa di ${blockingCount} risorse bloccanti prima di vedere l'offerta`,
+        `Assenza di Qualifica Commerciale Automatica: i visitatori atterrano su moduli generici che inviano semplici email isolate, costringendo il team a filtrare e ricopiare i dati a mano`,
+        `Scollegamento dal Flusso Vendite (CRM): manca un collegamento automatico che classifichi il cliente per tipologia di intervento e notifichi subito il referente commerciale`,
+      ];
+
+  if (
+    !lead.audit.threeCriticalFlaws ||
+    (!lead.audit.runsAds &&
+      lead.audit.threeCriticalFlaws.some((f) => /campagne|inserzion|clic pagat/i.test(f)))
+  ) {
+    lead.audit.threeCriticalFlaws = expectedFlaws;
+    changed = true;
+  }
+
+  // 5. Verifica o rigenerazione dei 4 Step Outreach (Zero-Fluff Protocol)
+  const hasLegacyCopy =
+    !lead.outreach.step1FirstTouch ||
+    !lead.outreach.step2FollowUpLink ||
+    !lead.outreach.step3ValueDropAndCallTrigger ||
+    !lead.outreach.step4Breakup ||
+    /mi chiamo|900\s*euro|zero canoni|rispondetemi pure ['"]?link['"]?/i.test(
+      lead.outreach.emailPlainTextBody || ""
+    ) ||
+    (!lead.audit.runsAds &&
+      /clic pagati|campagne/i.test(lead.outreach.emailPlainTextBody || ""));
+
+  if (hasLegacyCopy) {
+    const cleanFullName =
+      lead.meta.decisionMakerName &&
+      !lead.meta.decisionMakerName.startsWith("Direzione ") &&
+      !lead.meta.decisionMakerName.startsWith("Titolare ")
+        ? lead.meta.decisionMakerName
+        : null;
+
+    lead.outreach = buildMultiStepOutreach({
+      slug: lead.slug,
+      companyName: lead.meta.companyName,
+      decisionMaker: {
+        fullName: cleanFullName,
+        firstName: lead.meta.decisionMakerFirstName ?? null,
+        role: lead.meta.decisionMakerRole ?? null,
+      },
+      isGenericInbox: lead.meta.isGenericInbox ?? true,
+      estimatedMobileLcpSeconds: lcpVal,
+      renderBlockingScripts: blockingCount,
+      runsAds: Boolean(lead.audit.runsAds),
+    });
+    changed = true;
+  }
+
+  if (changed && persistIfChanged) {
+    saveLeadConfig(lead.slug, lead);
+  }
+
+  return lead;
 }
 
 export async function discoverMetaAdLibraryBusinesses(
@@ -1497,28 +1872,44 @@ export async function discoverItalianBusinesses(
             ...html.matchAll(/<a[^>]+href=["'](https?:\/\/[^"'\s<>]+)["']/gi),
           ].map((m) => m[1]);
 
-          let externalSiteUrl = "";
-          for (const link of allLinks) {
-            try {
-              const parsedLink = new URL(link);
-              const host = parsedLink.hostname.toLowerCase();
-              if (EXCLUDED_DOMAINS.some((ex) => host.includes(ex))) continue;
-              externalSiteUrl = parsedLink.origin;
-              break;
-            } catch {
-              continue;
+          // Se c'è un'email aziendale con dominio proprietario nel JSON-LD, usiamola come bussola primaria per evitare link a banner/partner (es. riello.it)
+          let proprietaryEmailDomain = "";
+          if (ldEmail && ldEmail.includes("@")) {
+            const candidateDom = ldEmail.split("@")[1]?.toLowerCase().trim();
+            if (
+              candidateDom &&
+              !FREE_MAIL_DOMAINS.has(candidateDom) &&
+              !/pec\.|legalmail\.|arubapec\.|postecert\.|paginegialle\./i.test(candidateDom)
+            ) {
+              proprietaryEmailDomain = candidateDom;
             }
           }
 
-          // Se non c'è link esterno ma c'è un'email su dominio proprietario, ricava il dominio proprietario
-          if (!externalSiteUrl && ldEmail && ldEmail.includes("@")) {
-            const emailDomain = ldEmail.split("@")[1]?.toLowerCase().trim();
-            if (
-              emailDomain &&
-              !FREE_MAIL_DOMAINS.has(emailDomain) &&
-              !/pec\.|legalmail\.|arubapec\.|postecert\./i.test(emailDomain)
-            ) {
-              externalSiteUrl = `https://www.${emailDomain}`;
+          let externalSiteUrl = "";
+          if (proprietaryEmailDomain) {
+            const matchingLink = allLinks.find((l) => {
+              try {
+                return new URL(l).hostname.toLowerCase().includes(proprietaryEmailDomain);
+              } catch {
+                return false;
+              }
+            });
+            externalSiteUrl = matchingLink
+              ? new URL(matchingLink).origin
+              : `https://www.${proprietaryEmailDomain}`;
+          }
+
+          if (!externalSiteUrl) {
+            for (const link of allLinks) {
+              try {
+                const parsedLink = new URL(link);
+                const host = parsedLink.hostname.toLowerCase();
+                if (EXCLUDED_DOMAINS.some((ex) => host.includes(ex))) continue;
+                externalSiteUrl = parsedLink.origin;
+                break;
+              } catch {
+                continue;
+              }
             }
           }
 
@@ -1870,13 +2261,30 @@ export async function runAutonomousScout(
       }
 
       // DIRETTIVA 2.1: Scraping proattivo multi-pagina SEMPRE in parallelo con Promise.allSettled e timeout 3500ms
-      const subpagePaths = [
-        "/contatti",
-        "/chi-siamo",
-        "/azienda",
-        "/team",
-        "/privacy-policy",
-      ];
+      const dynamicInternalLinks = [
+        ...html.matchAll(/href=["']([^"'#?]+(?:privacy|informativa|chi-siamo|contatt|azienda|team)[^"'#?]*)["']/gi),
+      ]
+        .map((m) => m[1])
+        .filter((href) => {
+          try {
+            const u = new URL(href, parsedUrl.origin);
+            return u.hostname === parsedUrl.hostname;
+          } catch {
+            return false;
+          }
+        })
+        .slice(0, 4);
+
+      const subpagePaths = Array.from(
+        new Set([
+          "/contatti",
+          "/chi-siamo",
+          "/azienda",
+          "/team",
+          "/privacy-policy",
+          ...dynamicInternalLinks,
+        ])
+      );
       const subpageResults = await Promise.allSettled(
         subpagePaths.map(async (subPath) => {
           const subUrl = new URL(subPath, parsedUrl.origin).href;

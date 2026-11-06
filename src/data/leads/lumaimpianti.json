@@ -3,13 +3,17 @@
   "archetype": "b2b-authority",
   "meta": {
     "companyName": "Luma Impianti Sas",
-    "decisionMakerName": "Direzione Luma Impianti Sas",
+    "decisionMakerName": "Luca Bonato",
     "targetEmail": "luca.bonato@lumaimpianti.com",
     "phone": "+39 045 6661604",
     "city": "Buttapietra",
     "vatNumber": "03669820239",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Luma%20Impianti%20Sas",
-    "originalLandingUrl": "http://www.lumaimpianti.com"
+    "originalLandingUrl": "http://www.lumaimpianti.com",
+    "isGenericInbox": false,
+    "emailScore": 90,
+    "decisionMakerFirstName": "Luca",
+    "decisionMakerRole": "Direzione"
   },
   "audit": {
     "originalLcpSeconds": 12.8,
@@ -20,7 +24,12 @@
       "Colli di bottiglia commerciali: i contatti finiscono in email isolate senza pre-qualifica automatica e senza sincronizzazione immediata via API/Webhook con il CRM aziendale."
     ],
     "activeAdHeadline": "Luma Impianti S.a.s. - Impianti elettrici Verona e provincia",
-    "activeAdCopySummary": "Luma Impianti elettrici a Verona - installazione e manutenzione impianti elettrici industriali e civili a Verona e provincia."
+    "activeAdCopySummary": "Luma Impianti elettrici a Verona - installazione e manutenzione impianti elettrici industriali e civili a Verona e provincia.",
+    "runsAds": true,
+    "detectedTrackingSignals": [
+      "Meta Ad Library"
+    ],
+    "renderBlockingCount": 8
   },
   "theme": {
     "primaryHex": "#0B1E36",
@@ -122,8 +131,36 @@
     }
   },
   "outreach": {
-    "emailSubject": "Infrastruttura web e resa campagne di Luma Impianti Sas (12.8s su mobile)",
-    "emailPlainTextBody": "Buongiorno, alla cortese attenzione della Direzione di Luma Impianti Sas,\n\nmi chiamo Riccardo Granza e sono il fondatore di TechPyre Studio: progettiamo infrastrutture web ad alte prestazioni, tracciamenti Server-Side e automazioni CRM per le aziende B2B che investono in campagne su Meta e Google.\n\nAnalizzando la vostra pagina \"Luma Impianti S.a.s. - Impianti elettrici Verona e\", abbiamo rilevato che su smartphone impiega 12.8 secondi a caricarsi, senza pre-qualifica dei contatti ne invio automatico al CRM: questo disperde oltre meta dei clic pubblicitari e fino al 50% dei dati di conversione.\n\nPer presentarci in modo concreto, abbiamo ingegnerizzato una versione dimostrativa istantanea (0.3s) in Next.js con i vostri contenuti, qualificatore contatti e predisposizione CRM/Server-Side (fornita a corpo da 900 euro, zero canoni di noleggio e 100% di proprieta del codice). Se vi fa piacere provarla dal telefono, rispondetemi pure 'LINK' qui sotto e ve lo giro subito.\n\nUn cordiale saluto,\nRiccardo Granza\nFondatore & Architetto di Sistemi Digitali · TechPyre Studio\nTel & WhatsApp B2B: +39 379 115 9352",
-    "followUpWithLinkBody": "Buongiorno,\n\ngrazie per il riscontro. Ecco il link diretto per testare dal telefono l'infrastruttura dimostrativa da 0.3s progettata per Luma Impianti Sas:\n\nhttps://www.techpyre.eu/demo/lumaimpianti\n\nQuesta architettura in Next.js/TypeScript elimina i 12.8 secondi di attesa su mobile, integra la pre-qualifica della richiesta ed e gia predisposta per il tracciamento Server-Side (GTM / Meta CAPI) e l'invio diretto via API/Webhook al vostro CRM (soluzione chiavi in mano a partire da 900 euro a corpo, zero canoni di noleggio e piena proprieta del codice).\n\nSe desiderate approfondire come integrarla nei vostri flussi commerciali, sono a disposizione per una breve Sessione di Diagnosi Architetturale di 30 minuti.\n\nUn cordiale saluto,\nRiccardo Granza\nFondatore & Architetto di Sistemi Digitali · TechPyre Studio\nhttps://www.techpyre.eu · Tel & WhatsApp B2B: +39 379 115 9352"
+    "emailSubject": "Luma Impianti Sas · dispersione clic mobile e tempi di caricamento di Luma Impianti Sas (12.8s)",
+    "emailPlainTextBody": "Buongiorno Luca,\n\nda un test sul sito di Luma Impianti Sas, da smartphone impiega 12.8 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Luma Impianti Sas che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza · TechPyre\n+39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno Luca,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Luma Impianti Sas, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/lumaimpianti\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza · TechPyre Studio\n+39 379 115 9352",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "Luma Impianti Sas · dispersione clic mobile e tempi di caricamento di Luma Impianti Sas (12.8s)",
+      "body": "Buongiorno Luca,\n\nda un test sul sito di Luma Impianti Sas, da smartphone impiega 12.8 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Luma Impianti Sas che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza · TechPyre\n+39 379 115 9352",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: Luma Impianti Sas · dispersione clic mobile e tempi di caricamento di Luma Impianti Sas (12.8s)",
+      "body": "Buongiorno Luca,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Luma Impianti Sas, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/lumaimpianti\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza · TechPyre Studio\n+39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: Luma Impianti Sas · dispersione clic mobile e tempi di caricamento di Luma Impianti Sas (12.8s)",
+      "body": "Buongiorno Luca,\n\nOltre a tagliare i 12.8 secondi su mobile, l'infrastruttura recupera il 40% delle conversioni tramite Server-Side Tracking.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza · TechPyre Studio",
+      "inThread": true,
+      "requiresFollowUpCall": true
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: Luma Impianti Sas · dispersione clic mobile e tempi di caricamento di Luma Impianti Sas (12.8s)",
+      "body": "Buongiorno Luca,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Luma Impianti Sas non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/lumaimpianti) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza · TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
   }
 }

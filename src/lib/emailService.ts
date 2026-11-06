@@ -1,12 +1,25 @@
 import fs from "fs";
 import path from "path";
 import tls from "tls";
-import nodemailer from "nodemailer";
+import nodemailer, { SendMailOptions } from "nodemailer";
 import { InboundReplyClassification, LeadConfig } from "@/types/lead";
 import { UserProfile } from "./adminAuth";
 import { getUserSmtp } from "./userSmtpStorage";
 import { loadLeadConfig, saveLeadConfig } from "./leadsStorage";
-import { buildMultiStepOutreach } from "./scoutService";
+import {
+  buildMultiStepOutreach,
+  isHardBlockedEmail,
+  migrateOldLeadConfig,
+} from "./scoutService";
+
+export function formatMimeMessageId(rawId?: string | null): string | null {
+  if (!rawId) return null;
+  const trimmed = rawId.trim();
+  if (!trimmed) return null;
+  return trimmed.startsWith("<") && trimmed.endsWith(">")
+    ? trimmed
+    : `<${trimmed.replace(/^<+|>+$/g, "")}>`;
+}
 
 export const DAILY_FIRST_TOUCH_LIMIT = 35;
 
@@ -374,9 +387,24 @@ export async function sendLeadOutreach({
   requiresFollowUpCall: boolean;
   phoneToCall?: string;
 }> {
-  const lead = loadLeadConfig(slug);
-  if (!lead) {
+  const rawLead = loadLeadConfig(slug);
+  if (!rawLead) {
     throw new Error(`Lead [${slug}] non trovato nel database.`);
+  }
+
+  // PATCH CRITICA 1: Esegui migrazione automatica e purge caselle bloccate prima di qualsiasi invio
+  const lead = migrateOldLeadConfig(rawLead, true);
+
+  if (customRecipient && customRecipient.trim()) {
+    lead.meta.targetEmail = customRecipient.trim().toLowerCase();
+  }
+
+  if (isHardBlockedEmail(lead.meta.targetEmail)) {
+    lead.meta.status = "INVALID_TICKET_INBOX";
+    saveLeadConfig(slug, lead);
+    throw new Error(
+      `Invio bloccato da Hard Blacklist: l'indirizzo [${lead.meta.targetEmail}] appartiene a una casella di ticketing/privacy/PEC. Lead marcato come INVALID_TICKET_INBOX.`
+    );
   }
 
   if (
@@ -417,11 +445,21 @@ export async function sendLeadOutreach({
     ? 2
     : 1;
 
-  if (customRecipient && customRecipient.trim()) {
-    lead.meta.targetEmail = customRecipient.trim();
-  }
   if (customSubject && customSubject.trim()) {
-    lead.outreach.emailSubject = customSubject.trim().replace(/^Re:\s*/i, "");
+    const cleanBaseSubj = customSubject.trim().replace(/^Re:\s*/i, "");
+    lead.outreach.emailSubject = cleanBaseSubj;
+    if (lead.outreach.step1FirstTouch) {
+      lead.outreach.step1FirstTouch.subject = cleanBaseSubj;
+    }
+    if (lead.outreach.step2FollowUpLink) {
+      lead.outreach.step2FollowUpLink.subject = `Re: ${cleanBaseSubj}`;
+    }
+    if (lead.outreach.step3ValueDropAndCallTrigger) {
+      lead.outreach.step3ValueDropAndCallTrigger.subject = `Re: ${cleanBaseSubj}`;
+    }
+    if (lead.outreach.step4Breakup) {
+      lead.outreach.step4Breakup.subject = `Re: ${cleanBaseSubj}`;
+    }
   }
   if (customBody && customBody.trim()) {
     if (resolvedStep === 1) {
@@ -503,7 +541,18 @@ export async function sendLeadOutreach({
   };
   const activeStep = stepMap[resolvedStep];
 
-  const subject = activeStep.subject.replace(/[—–]/g, "-");
+  const baseOriginalSubject = (
+    lead.outreach.step1FirstTouch?.subject ||
+    lead.outreach.emailSubject ||
+    `${lead.meta.companyName} · tempi di caricamento mobile`
+  )
+    .replace(/^Re:\s*/i, "")
+    .replace(/[—–]/g, "-");
+
+  const isThreadedReply = Boolean(activeStep.inThread || resolvedStep > 1);
+  const subject = isThreadedReply
+    ? `Re: ${baseOriginalSubject}`
+    : baseOriginalSubject;
   let text = activeStep.body.replace(/[—–]/g, "-");
 
   if (user.username !== "riccardogranza" && senderName) {
@@ -524,6 +573,27 @@ export async function sendLeadOutreach({
     }
   }
 
+  // PATCH CRITICA 2: SMTP THREADING REALE (Message-ID, In-Reply-To & References)
+  let parentMessageId = formatMimeMessageId(lead.meta.lastSentMessageId);
+  if (!parentMessageId && isThreadedReply) {
+    const previousLogs = getOutreachHistory().filter(
+      (h) => h.slug === lead.slug && h.messageId
+    );
+    if (previousLogs.length > 0) {
+      parentMessageId = formatMimeMessageId(
+        previousLogs[previousLogs.length - 1].messageId
+      );
+    }
+  }
+
+  const existingRefs = (lead.meta.threadMessageIds || [])
+    .map((id) => formatMimeMessageId(id))
+    .filter((id): id is string => Boolean(id));
+  if (parentMessageId && !existingRefs.includes(parentMessageId)) {
+    existingRefs.push(parentMessageId);
+  }
+  const referencesHeaderValue = existingRefs.join(" ");
+
   if (applyJitter) {
     await applyDeliverabilityJitter(1800, 4800);
   }
@@ -539,31 +609,55 @@ export async function sendLeadOutreach({
     connectionTimeout: 15000,
   });
 
-  const info = await transporter.sendMail({
+  const mailOptions: SendMailOptions = {
     from: `"${senderName}" <${senderEmail || smtpUser}>`,
     replyTo: senderEmail || smtpUser,
     to: lead.meta.targetEmail,
     subject,
     text,
-  });
+  };
+
+  if (isThreadedReply && parentMessageId) {
+    mailOptions.inReplyTo = parentMessageId;
+    mailOptions.references = referencesHeaderValue || parentMessageId;
+    mailOptions.headers = {
+      "In-Reply-To": parentMessageId,
+      References: referencesHeaderValue || parentMessageId,
+    };
+  }
+
+  const info = await transporter.sendMail(mailOptions);
+  const sentMessageId =
+    formatMimeMessageId(info.messageId) || `<${Date.now()}.${lead.slug}@techpyre.eu>`;
 
   if (host.includes("aruba.it")) {
     try {
-      const rawMessage = [
+      const mimeHeaders = [
         `From: "${senderName}" <${senderEmail || smtpUser}>`,
         `To: ${lead.meta.targetEmail}`,
         `Subject: ${subject}`,
         `Date: ${new Date().toUTCString()}`,
-        `Message-ID: ${info.messageId}`,
+        `Message-ID: ${sentMessageId}`,
+      ];
+      if (isThreadedReply && parentMessageId) {
+        mimeHeaders.push(`In-Reply-To: ${parentMessageId}`);
+        mimeHeaders.push(`References: ${referencesHeaderValue || parentMessageId}`);
+      }
+      mimeHeaders.push(
         `MIME-Version: 1.0`,
         `Content-Type: text/plain; charset=utf-8`,
         `Content-Transfer-Encoding: 8bit`,
         ``,
-        text,
-      ].join("\r\n");
-      await appendToArubaSent(smtpUser, smtpPass, rawMessage);
+        text
+      );
+      await appendToArubaSent(smtpUser, smtpPass, mimeHeaders.join("\r\n"));
     } catch {}
   }
+
+  // Salva il Message-ID catturato sul lead per garantire il threading degli step successivi
+  lead.meta.lastSentMessageId = sentMessageId;
+  const updatedThreadIds = new Set([...existingRefs, sentMessageId]);
+  lead.meta.threadMessageIds = Array.from(updatedThreadIds);
 
   const statusByStep: Record<1 | 2 | 3 | 4, NonNullable<LeadConfig["meta"]["status"]>> = {
     1: "CONTACTED_STEP_1",
@@ -582,7 +676,7 @@ export async function sendLeadOutreach({
     type: `STEP_${resolvedStep}`,
     stepNumber: resolvedStep,
     subject,
-    messageId: info.messageId,
+    messageId: sentMessageId,
     sentAt: new Date().toISOString(),
     sentBy: `${user.displayName} (${user.username})`,
     requiresFollowUpCall,
@@ -593,9 +687,9 @@ export async function sendLeadOutreach({
 
   return {
     success: true,
-    messageId: info.messageId,
+    messageId: sentMessageId,
     message: requiresFollowUpCall
-      ? `Step ${resolvedStep} inviato a ${lead.meta.targetEmail}. AZIONE RICHIESTA: Esegui chiamata telefonica di 45s al numero ${lead.meta.phone}!`
+      ? `Step ${resolvedStep} inviato in-thread a ${lead.meta.targetEmail}. AZIONE RICHIESTA: Esegui chiamata telefonica di 45s al numero ${lead.meta.phone}!`
       : `Step ${resolvedStep} inviato con successo a ${lead.meta.targetEmail} da ${senderName}!`,
     sentBy: senderName,
     stepNumber: resolvedStep,

@@ -9,7 +9,11 @@
     "city": "Brescia",
     "vatNumber": "04129870981",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?id=981273918273",
-    "originalLandingUrl": "https://www.rossiimpiantisolari.it/promo-fotovoltaico"
+    "originalLandingUrl": "https://www.rossiimpiantisolari.it/promo-fotovoltaico",
+    "isGenericInbox": false,
+    "emailScore": 90,
+    "decisionMakerFirstName": "Roberto",
+    "decisionMakerRole": "Titolare"
   },
   "audit": {
     "originalLcpSeconds": 6.4,
@@ -20,7 +24,12 @@
       "Tempo di caricamento su rete mobile 4G di 6.4 secondi (oltre il 45% dei clic pubblicitari abbandona prima del rendering).",
       "Form di contatto a 8 campi posizionato in fondo alla pagina, privo di pre-qualificazione su tipologia immobile e consumi.",
       "Assenza sopra la piega di recensioni verificate sul territorio e garanzie sulle squadre di installazione interne."
-    ]
+    ],
+    "runsAds": true,
+    "detectedTrackingSignals": [
+      "Meta Ad Library"
+    ],
+    "renderBlockingCount": 8
   },
   "theme": {
     "primaryHex": "#60a060",
@@ -102,8 +111,36 @@
     }
   },
   "outreach": {
-    "emailSubject": "Sponsorizzata Meta \"Fotovoltaico Chiavi in Mano\" - per Roberto",
-    "emailPlainTextBody": "Ciao Roberto,\n\nho visto la vostra inserzione attiva su Facebook \"Fotovoltaico Chiavi in Mano a Brescia con Detrazione 50% e Accumulo\".\n\nAprendo la pagina dal telefono sotto rete mobile impiega 6.4 secondi a caricare e il modulo contatti è nascosto in fondo: chi clicca sull'annuncio spesso esce prima ancora di lasciare il numero.\n\nVi ho già preparato la versione veloce (0.3s) con i vostri testi e un simulatore di preventivo interattivo. Se ti va di provarla dal telefono, rispondimi 'LINK' qui sotto e te lo giro subito.\n\nUn saluto,\nRiccardo Granza\nTechPYRE",
-    "followUpWithLinkBody": "Buongiorno,\n\ngrazie per il riscontro. Ecco il link diretto per testare dal vostro smartphone l'infrastruttura dimostrativa da 0.3s progettata per Rossi Impianti Solari S.r.l.:\n\nhttps://www.techpyre.eu/demo/rossi-fotovoltaico\n\nQuesta architettura in Next.js/TypeScript elimina i 6.4 secondi di attesa su mobile, integra la pre-qualifica della richiesta ed e gia predisposta per il tracciamento Server-Side (GTM / Meta CAPI) e l'invio diretto via API/Webhook al vostro CRM (soluzione a corpo a partire da 900 euro, zero canoni di noleggio e piena proprieta del codice).\n\nSe desiderate approfondire come integrarla nei vostri flussi commerciali, sono a disposizione per una breve Sessione di Diagnosi Architetturale di 30 minuti.\n\nUn cordiale saluto,\nRiccardo Granza\nFondatore & Architetto di Sistemi Digitali · TechPyre Studio\nhttps://www.techpyre.eu · Tel & WhatsApp B2B: +39 379 115 9352"
+    "emailSubject": "Rossi Impianti Solari S.r.l. · dispersione clic mobile e tempi di caricamento di Rossi Impianti Solari S.r.l. (6.4s)",
+    "emailPlainTextBody": "Buongiorno Roberto,\n\nda un test sul sito di Rossi Impianti Solari S.r.l., da smartphone impiega 6.4 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Rossi Impianti Solari S.r.l. che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza · TechPyre\n+39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno Roberto,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Rossi Impianti Solari S.r.l., completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/rossi-fotovoltaico\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza · TechPyre Studio\n+39 379 115 9352",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "Rossi Impianti Solari S.r.l. · dispersione clic mobile e tempi di caricamento di Rossi Impianti Solari S.r.l. (6.4s)",
+      "body": "Buongiorno Roberto,\n\nda un test sul sito di Rossi Impianti Solari S.r.l., da smartphone impiega 6.4 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Rossi Impianti Solari S.r.l. che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza · TechPyre\n+39 379 115 9352",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: Rossi Impianti Solari S.r.l. · dispersione clic mobile e tempi di caricamento di Rossi Impianti Solari S.r.l. (6.4s)",
+      "body": "Buongiorno Roberto,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Rossi Impianti Solari S.r.l., completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/rossi-fotovoltaico\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza · TechPyre Studio\n+39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: Rossi Impianti Solari S.r.l. · dispersione clic mobile e tempi di caricamento di Rossi Impianti Solari S.r.l. (6.4s)",
+      "body": "Buongiorno Roberto,\n\nOltre a tagliare i 6.4 secondi su mobile, l'infrastruttura recupera il 40% delle conversioni tramite Server-Side Tracking.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza · TechPyre Studio",
+      "inThread": true,
+      "requiresFollowUpCall": true
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: Rossi Impianti Solari S.r.l. · dispersione clic mobile e tempi di caricamento di Rossi Impianti Solari S.r.l. (6.4s)",
+      "body": "Buongiorno Roberto,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Rossi Impianti Solari S.r.l. non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/rossi-fotovoltaico) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza · TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
   }
 }

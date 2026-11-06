@@ -3,13 +3,17 @@
   "archetype": "medical-clinic",
   "meta": {
     "companyName": "Studio Odontoiatrico Dott. D'Ugo",
-    "decisionMakerName": "Dott. Sebastiano Donato D'Ugo",
+    "decisionMakerName": "Dott Dugosebastiano",
     "targetEmail": "dott.dugosebastiano@gmail.com",
     "phone": "+39 393 641 0176",
     "city": "Palermo",
     "vatNumber": "06946060826",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&media_type=all&q=dentista%20palermo&search_type=keyword_unordered",
-    "originalLandingUrl": "http://www.dottdugo.it/"
+    "originalLandingUrl": "http://www.dottdugo.it/",
+    "isGenericInbox": false,
+    "emailScore": 50,
+    "decisionMakerFirstName": "Dott",
+    "decisionMakerRole": "Direzione"
   },
   "audit": {
     "originalLcpSeconds": 7.5,
@@ -20,7 +24,12 @@
       "Manca la possibilità di richiedere la disponibilità della prima visita direttamente sopra la piega dello schermo."
     ],
     "activeAdHeadline": "Studio Odontoiatrico Dott. Sebastiano Donato D'Ugo",
-    "activeAdCopySummary": "Campagna attiva su Meta: Specialisti in implantologia guidata, cura del sorriso e prima visita diagnostica a Palermo."
+    "activeAdCopySummary": "Campagna attiva su Meta: Specialisti in implantologia guidata, cura del sorriso e prima visita diagnostica a Palermo.",
+    "runsAds": true,
+    "detectedTrackingSignals": [
+      "Meta Ad Library"
+    ],
+    "renderBlockingCount": 8
   },
   "theme": {
     "primaryHex": "#0088CC",
@@ -124,8 +133,36 @@
     }
   },
   "outreach": {
-    "emailSubject": "Sulla vostra sponsorizzata Facebook a Palermo - Presentazione TechPyre",
-    "emailPlainTextBody": "Buongiorno, alla cortese attenzione della Direzione Sanitaria dello Studio Odontoiatrico Dott. D'Ugo,\n\nmi chiamo Riccardo Granza e sono il fondatore di TechPyre Studio: progettiamo infrastrutture web ad alte prestazioni, tracciamenti Server-Side e automazioni CRM per le aziende B2B che investono in campagne su Meta e Google.\n\nOggi ho analizzato dal telefono la vostra inserzione attiva su Meta per Palermo: la pagina richiede 7.5 secondi per visualizzarsi da smartphone (29 script bloccanti su rete mobile) e per arrivare alla richiesta di contatto un paziente deve scorrere quasi 4 schermate.\n\nChi cerca cure dentistiche da smartphone vuole rassicurazione immediata e un contatto diretto. Per farvi toccare con mano la differenza, vi abbiamo configurato una versione dimostrativa ultra-veloce (0.3s) con il vostro marchio clinico e un modulo di richiesta prima visita immediatamente accessibile sopra la piega.\n\nSe vi fa piacere provarla dal telefono, rispondetemi pure 'LINK' qui sotto e ve la giro subito.\n\nUn cordiale saluto,\nRiccardo Granza\nFondatore & Architetto di Sistemi Digitali · TechPyre Studio\nTel: +39 379 115 9352",
-    "followUpWithLinkBody": "Buongiorno,\n\ngrazie per il riscontro. Ecco il link diretto per testare dal vostro smartphone l'infrastruttura dimostrativa da 0.3s progettata per Studio Odontoiatrico Dott. D'Ugo:\n\nhttps://www.techpyre.eu/demo/dottdugo\n\nQuesta architettura in Next.js/TypeScript elimina i 7.5 secondi di attesa su mobile, integra la pre-qualifica della richiesta ed e gia predisposta per il tracciamento Server-Side (GTM / Meta CAPI) e l'invio diretto via API/Webhook al vostro CRM (soluzione a corpo a partire da 900 euro, zero canoni di noleggio e piena proprieta del codice).\n\nSe desiderate approfondire come integrarla nei vostri flussi commerciali, sono a disposizione per una breve Sessione di Diagnosi Architetturale di 30 minuti.\n\nUn cordiale saluto,\nRiccardo Granza\nFondatore & Architetto di Sistemi Digitali · TechPyre Studio\nhttps://www.techpyre.eu · Tel & WhatsApp B2B: +39 379 115 9352"
+    "emailSubject": "Studio Odontoiatrico Dott. D'Ugo · dispersione clic mobile e tempi di caricamento di Studio Odontoiatrico Dott. D'Ugo (7.5s)",
+    "emailPlainTextBody": "Buongiorno Dott,\n\nda un test sul sito di Studio Odontoiatrico Dott. D'Ugo, da smartphone impiega 7.5 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Studio Odontoiatrico Dott. D'Ugo che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza · TechPyre\n+39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno Dott,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Studio Odontoiatrico Dott. D'Ugo, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/dottdugo\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza · TechPyre Studio\n+39 379 115 9352",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "Studio Odontoiatrico Dott. D'Ugo · dispersione clic mobile e tempi di caricamento di Studio Odontoiatrico Dott. D'Ugo (7.5s)",
+      "body": "Buongiorno Dott,\n\nda un test sul sito di Studio Odontoiatrico Dott. D'Ugo, da smartphone impiega 7.5 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Studio Odontoiatrico Dott. D'Ugo che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza · TechPyre\n+39 379 115 9352",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: Studio Odontoiatrico Dott. D'Ugo · dispersione clic mobile e tempi di caricamento di Studio Odontoiatrico Dott. D'Ugo (7.5s)",
+      "body": "Buongiorno Dott,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Studio Odontoiatrico Dott. D'Ugo, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/dottdugo\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza · TechPyre Studio\n+39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: Studio Odontoiatrico Dott. D'Ugo · dispersione clic mobile e tempi di caricamento di Studio Odontoiatrico Dott. D'Ugo (7.5s)",
+      "body": "Buongiorno Dott,\n\nOltre a tagliare i 7.5 secondi su mobile, l'infrastruttura recupera il 40% delle conversioni tramite Server-Side Tracking.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza · TechPyre Studio",
+      "inThread": true,
+      "requiresFollowUpCall": true
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: Studio Odontoiatrico Dott. D'Ugo · dispersione clic mobile e tempi di caricamento di Studio Odontoiatrico Dott. D'Ugo (7.5s)",
+      "body": "Buongiorno Dott,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Studio Odontoiatrico Dott. D'Ugo non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/dottdugo) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza · TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
   }
 }

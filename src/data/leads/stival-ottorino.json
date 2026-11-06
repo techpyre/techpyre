@@ -9,7 +9,11 @@
     "city": "Italia",
     "vatNumber": "01496030931",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Stival%20Ottorino%20LP",
-    "originalLandingUrl": "https://stival-ottorino.it/"
+    "originalLandingUrl": "https://stival-ottorino.it/",
+    "isGenericInbox": true,
+    "emailScore": 5,
+    "decisionMakerFirstName": null,
+    "decisionMakerRole": "Direzione Aziendale"
   },
   "audit": {
     "originalLcpSeconds": 6.2,
@@ -20,7 +24,12 @@
       "Colli di bottiglia commerciali: i contatti finiscono in email isolate senza pre-qualifica automatica e senza sincronizzazione immediata via API/Webhook con il CRM aziendale."
     ],
     "activeAdHeadline": "Sistemi e nastri trasportatori su misura per la tua movimentazione interna",
-    "activeAdCopySummary": "wn1j xeuugli\" style=\"width: 100%;\"> Stival Ottorino Sponsorizzato Se la tua produzione subisce continui rallentamenti, fermi macchina imprev..."
+    "activeAdCopySummary": "wn1j xeuugli\" style=\"width: 100%;\"> Stival Ottorino Sponsorizzato Se la tua produzione subisce continui rallentamenti, fermi macchina imprev...",
+    "runsAds": true,
+    "detectedTrackingSignals": [
+      "Meta Ad Library"
+    ],
+    "renderBlockingCount": 8
   },
   "theme": {
     "primaryHex": "#0B1E36",
@@ -122,8 +131,36 @@
     }
   },
   "outreach": {
-    "emailSubject": "Infrastruttura web e resa campagne di Stival Ottorino Srl (6.2s su mobile)",
-    "emailPlainTextBody": "Buongiorno, alla cortese attenzione della Direzione di Stival Ottorino Srl,\n\nmi chiamo Riccardo Granza e sono il fondatore di TechPyre Studio: progettiamo infrastrutture web ad alte prestazioni, tracciamenti Server-Side e automazioni CRM per le aziende B2B che investono in campagne su Meta e Google.\n\nAnalizzando la vostra pagina \"Sistemi e nastri trasportatori su misura per la tu\", abbiamo rilevato che su smartphone impiega 6.2 secondi a caricarsi, senza pre-qualifica dei contatti ne invio automatico al CRM: questo disperde oltre meta dei clic pubblicitari e fino al 50% dei dati di conversione.\n\nPer presentarci in modo concreto, abbiamo ingegnerizzato una versione dimostrativa istantanea (0.3s) in Next.js con i vostri contenuti, qualificatore contatti e predisposizione CRM/Server-Side (fornita a corpo da 900 euro, zero canoni di noleggio e 100% di proprieta del codice). Se vi fa piacere provarla dal telefono, rispondetemi pure 'LINK' qui sotto e ve lo giro subito.\n\nUn cordiale saluto,\nRiccardo Granza\nFondatore & Architetto di Sistemi Digitali · TechPyre Studio\nTel & WhatsApp B2B: +39 379 115 9352",
-    "followUpWithLinkBody": "Buongiorno,\n\ngrazie per il riscontro. Ecco il link diretto per testare dal telefono l'infrastruttura dimostrativa da 0.3s progettata per Stival Ottorino LP:\n\nhttps://www.techpyre.eu/demo/stival-ottorino\n\nQuesta architettura in Next.js/TypeScript elimina i 6.2 secondi di attesa su mobile, integra la pre-qualifica della richiesta ed e gia predisposta per il tracciamento Server-Side (GTM / Meta CAPI) e l'invio diretto via API/Webhook al vostro CRM (soluzione chiavi in mano a partire da 900 euro a corpo, zero canoni di noleggio e piena proprieta del codice).\n\nSe desiderate approfondire come integrarla nei vostri flussi commerciali, sono a disposizione per una breve Sessione di Diagnosi Architetturale di 30 minuti.\n\nUn cordiale saluto,\nRiccardo Granza\nFondatore & Architetto di Sistemi Digitali · TechPyre Studio\nhttps://www.techpyre.eu · Tel & WhatsApp B2B: +39 379 115 9352"
+    "emailSubject": "Stival Ottorino Srl · dispersione clic mobile e tempi di caricamento di Stival Ottorino Srl (6.2s)",
+    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di Stival Ottorino Srl, da smartphone impiega 6.2 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Stival Ottorino Srl che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza · TechPyre\n+39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Stival Ottorino Srl, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/stival-ottorino\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza · TechPyre Studio\n+39 379 115 9352",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "Stival Ottorino Srl · dispersione clic mobile e tempi di caricamento di Stival Ottorino Srl (6.2s)",
+      "body": "Buongiorno,\n\nda un test sul sito di Stival Ottorino Srl, da smartphone impiega 6.2 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Stival Ottorino Srl che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza · TechPyre\n+39 379 115 9352",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: Stival Ottorino Srl · dispersione clic mobile e tempi di caricamento di Stival Ottorino Srl (6.2s)",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Stival Ottorino Srl, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/stival-ottorino\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza · TechPyre Studio\n+39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: Stival Ottorino Srl · dispersione clic mobile e tempi di caricamento di Stival Ottorino Srl (6.2s)",
+      "body": "Buongiorno,\n\nOltre a tagliare i 6.2 secondi su mobile, l'infrastruttura recupera il 40% delle conversioni tramite Server-Side Tracking.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza · TechPyre Studio",
+      "inThread": true,
+      "requiresFollowUpCall": true
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: Stival Ottorino Srl · dispersione clic mobile e tempi di caricamento di Stival Ottorino Srl (6.2s)",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Stival Ottorino Srl non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/stival-ottorino) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza · TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
   }
 }

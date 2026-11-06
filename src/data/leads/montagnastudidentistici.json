@@ -9,7 +9,11 @@
     "city": "Brescia",
     "vatNumber": "02459900235",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&media_type=all&q=dentista%20verona&search_type=keyword_unordered",
-    "originalLandingUrl": "https://montagnastudidentistici.it/"
+    "originalLandingUrl": "https://montagnastudidentistici.it/",
+    "isGenericInbox": false,
+    "emailScore": 80,
+    "decisionMakerFirstName": null,
+    "decisionMakerRole": "Direzione Aziendale"
   },
   "audit": {
     "originalLcpSeconds": 4.6,
@@ -20,7 +24,12 @@
       "Manca un simulatore rapido guidato a 2 domande per quantificare le esigenze del cliente in tempo reale."
     ],
     "activeAdHeadline": "Montagna Dentisti del Veronese: Il dentista vicino al Tuo sorriso",
-    "activeAdCopySummary": "Campagna pubblicitaria attiva su Meta per il territorio di Brescia e provincia."
+    "activeAdCopySummary": "Campagna pubblicitaria attiva su Meta per il territorio di Brescia e provincia.",
+    "runsAds": true,
+    "detectedTrackingSignals": [
+      "Google Tag Manager"
+    ],
+    "renderBlockingCount": 8
   },
   "theme": {
     "primaryHex": "#0088CC",
@@ -123,8 +132,36 @@
     }
   },
   "outreach": {
-    "emailSubject": "Sulla vostra sponsorizzata Facebook a Brescia - Presentazione TechPyre",
-    "emailPlainTextBody": "Buongiorno, alla cortese attenzione della Direzione di Montagna Dentisti del Veronese,\n\nmi chiamo Riccardo Granza e sono il fondatore di TechPyre Studio: progettiamo infrastrutture web ad alte prestazioni, tracciamenti Server-Side e automazioni CRM per le aziende B2B che investono in campagne su Meta e Google.\n\nOggi ho analizzato la vostra inserzione attiva su Meta per il territorio di Brescia: aprendola dal telefono come farebbe un potenziale cliente, la pagina richiede 4.6 secondi per visualizzare la prima schermata (3 script bloccanti su rete mobile).\n\nChi clicca un annuncio da smartphone decide nei primi 3 secondi se contattarvi o tornare a scorrere il feed. Per presentarci in modo concreto, vi abbiamo configurato una versione dimostrativa ultra-veloce (0.3s) con il vostro marchio e un configuratore guidato che raddoppia i contatti qualificati a parità di spesa pubblicitaria.\n\nSe vi fa piacere provarla dal telefono, rispondetemi pure 'LINK' qui sotto e ve la giro subito.\n\nUn cordiale saluto,\nRiccardo Granza\nFondatore & Architetto di Sistemi Digitali · TechPyre Studio\nTel: +39 379 115 9352",
-    "followUpWithLinkBody": "Buongiorno,\n\ngrazie per il riscontro. Ecco il link diretto per testare dal vostro smartphone l'infrastruttura dimostrativa da 0.3s progettata per Montagna Dentisti del Veronese:\n\nhttps://www.techpyre.eu/demo/montagnastudidentistici\n\nQuesta architettura in Next.js/TypeScript elimina i 4.6 secondi di attesa su mobile, integra la pre-qualifica della richiesta ed e gia predisposta per il tracciamento Server-Side (GTM / Meta CAPI) e l'invio diretto via API/Webhook al vostro CRM (soluzione a corpo a partire da 900 euro, zero canoni di noleggio e piena proprieta del codice).\n\nSe desiderate approfondire come integrarla nei vostri flussi commerciali, sono a disposizione per una breve Sessione di Diagnosi Architetturale di 30 minuti.\n\nUn cordiale saluto,\nRiccardo Granza\nFondatore & Architetto di Sistemi Digitali · TechPyre Studio\nhttps://www.techpyre.eu · Tel & WhatsApp B2B: +39 379 115 9352"
+    "emailSubject": "Montagna Dentisti del Veronese · dispersione clic mobile e tempi di caricamento di Montagna Dentisti del Veronese (4.6s)",
+    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di Montagna Dentisti del Veronese, da smartphone impiega 4.6 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Montagna Dentisti del Veronese che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza · TechPyre\n+39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Montagna Dentisti del Veronese, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/montagnastudidentistici\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza · TechPyre Studio\n+39 379 115 9352",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "Montagna Dentisti del Veronese · dispersione clic mobile e tempi di caricamento di Montagna Dentisti del Veronese (4.6s)",
+      "body": "Buongiorno,\n\nda un test sul sito di Montagna Dentisti del Veronese, da smartphone impiega 4.6 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Montagna Dentisti del Veronese che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza · TechPyre\n+39 379 115 9352",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: Montagna Dentisti del Veronese · dispersione clic mobile e tempi di caricamento di Montagna Dentisti del Veronese (4.6s)",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Montagna Dentisti del Veronese, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/montagnastudidentistici\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza · TechPyre Studio\n+39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: Montagna Dentisti del Veronese · dispersione clic mobile e tempi di caricamento di Montagna Dentisti del Veronese (4.6s)",
+      "body": "Buongiorno,\n\nOltre a tagliare i 4.6 secondi su mobile, l'infrastruttura recupera il 40% delle conversioni tramite Server-Side Tracking.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza · TechPyre Studio",
+      "inThread": true,
+      "requiresFollowUpCall": true
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: Montagna Dentisti del Veronese · dispersione clic mobile e tempi di caricamento di Montagna Dentisti del Veronese (4.6s)",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Montagna Dentisti del Veronese non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/montagnastudidentistici) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza · TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
   }
 }

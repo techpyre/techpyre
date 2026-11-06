@@ -210,31 +210,70 @@ if (shouldSend) {
       ? step4Body
       : step1Body;
 
-  const info = await transporter.sendMail({
+  const formatMsgId = (id) => {
+    if (!id) return null;
+    const t = String(id).trim();
+    if (!t) return null;
+    return t.startsWith('<') && t.endsWith('>') ? t : `<${t.replace(/^<+|>+$/g, '')}>`;
+  };
+
+  let parentMessageId = formatMsgId(lead.meta.lastSentMessageId);
+  const existingRefs = Array.isArray(lead.meta.threadMessageIds)
+    ? lead.meta.threadMessageIds.map(formatMsgId).filter(Boolean)
+    : [];
+  if (parentMessageId && !existingRefs.includes(parentMessageId)) {
+    existingRefs.push(parentMessageId);
+  }
+  const referencesHeader = existingRefs.join(' ');
+
+  const mailOptions = {
     from: `"${fromName}" <${user}>`,
     replyTo: user,
     to: lead.meta.targetEmail,
     subject,
     text,
-  });
+  };
+
+  if (stepNumber > 1 && parentMessageId) {
+    mailOptions.inReplyTo = parentMessageId;
+    mailOptions.references = referencesHeader || parentMessageId;
+    mailOptions.headers = {
+      'In-Reply-To': parentMessageId,
+      References: referencesHeader || parentMessageId,
+    };
+  }
+
+  const info = await transporter.sendMail(mailOptions);
+  const sentMessageId = formatMsgId(info.messageId) || `<${Date.now()}.${lead.slug}@techpyre.eu>`;
 
   try {
-    const rawMessage = [
+    const rawHeaders = [
       `From: "${fromName}" <${user}>`,
       `To: ${lead.meta.targetEmail}`,
       `Subject: ${subject}`,
       `Date: ${new Date().toUTCString()}`,
-      `Message-ID: ${info.messageId}`,
+      `Message-ID: ${sentMessageId}`,
+    ];
+    if (stepNumber > 1 && parentMessageId) {
+      rawHeaders.push(`In-Reply-To: ${parentMessageId}`);
+      rawHeaders.push(`References: ${referencesHeader || parentMessageId}`);
+    }
+    rawHeaders.push(
       `MIME-Version: 1.0`,
       `Content-Type: text/plain; charset=utf-8`,
       `Content-Transfer-Encoding: 8bit`,
       ``,
-      text,
-    ].join('\r\n');
-    await appendToArubaSent(user, pass, rawMessage);
+      text
+    );
+    await appendToArubaSent(user, pass, rawHeaders.join('\r\n'));
   } catch {
     // ignora se timeout
   }
+
+  lead.meta.lastSentMessageId = sentMessageId;
+  lead.meta.threadMessageIds = Array.from(new Set([...existingRefs, sentMessageId]));
+  lead.meta.status = `CONTACTED_STEP_${stepNumber}`;
+  fs.writeFileSync(leadPath, JSON.stringify(lead, null, 2) + '\n', 'utf-8');
 
   const historyPath = path.join(process.cwd(), 'src', 'data', 'outreach-history.json');
   let history = [];

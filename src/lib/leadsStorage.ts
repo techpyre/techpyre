@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import { LeadConfig } from "@/types/lead";
+import { migrateOldLeadConfig } from "./scoutService";
 
 const LOCAL_LEADS_DIR = path.join(process.cwd(), "src", "data", "leads");
 const TMP_LEADS_DIR = path.join("/tmp", "techpyre-leads");
@@ -46,9 +47,10 @@ export function loadLeadConfig(slug: string): LeadConfig | null {
   for (const filePath of candidates) {
     try {
       if (fs.existsSync(/*turbopackIgnore: true*/ filePath)) {
-        return JSON.parse(
+        const rawLead = JSON.parse(
           fs.readFileSync(/*turbopackIgnore: true*/ filePath, "utf-8")
         ) as LeadConfig;
+        return migrateOldLeadConfig(rawLead, true);
       }
     } catch {
       continue;
@@ -79,7 +81,8 @@ export function listAllLeadConfigs(): Array<{ slug: string; config: LeadConfig }
             /*turbopackIgnore: true*/ path.join(LOCAL_LEADS_DIR, file),
             "utf-8"
           );
-          map.set(slug, JSON.parse(raw) as LeadConfig);
+          const migrated = migrateOldLeadConfig(JSON.parse(raw) as LeadConfig, false);
+          map.set(slug, migrated);
         } catch {
           continue;
         }
@@ -102,7 +105,8 @@ export function listAllLeadConfigs(): Array<{ slug: string; config: LeadConfig }
             /*turbopackIgnore: true*/ path.join(TMP_LEADS_DIR, file),
             "utf-8"
           );
-          map.set(slug, JSON.parse(raw) as LeadConfig);
+          const migrated = migrateOldLeadConfig(JSON.parse(raw) as LeadConfig, false);
+          map.set(slug, migrated);
         } catch {
           continue;
         }
