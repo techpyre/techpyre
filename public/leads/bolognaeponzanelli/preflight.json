@@ -1,0 +1,31 @@
+{
+  "slug": "bolognaeponzanelli",
+  "targetUrl": "https://www.bolognaeponzanelli.it",
+  "searchKeyword": "automazione industriale bologna",
+  "measuredResponseMs": 2355,
+  "renderBlockingScripts": 85,
+  "estimatedMobileLcpSeconds": 19,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@bolognaeponzanelli.it",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@bolognaeponzanelli.it",
+    "info@bolognaeponzanelli.it",
+    "info@bolognaeponzanelli.it"
+  ],
+  "extractedPhones": [
+    "00000057",
+    "3333333333",
+    "0620116"
+  ],
+  "extractedVat": "00059670117"
+}

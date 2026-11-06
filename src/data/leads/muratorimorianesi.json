@@ -4,14 +4,14 @@
   "meta": {
     "companyName": "Muratori Morianesi Societa cooperativa",
     "decisionMakerName": "Bottaini Federico",
-    "targetEmail": "bottaini.federico@gmail.com",
+    "targetEmail": "info@muratorimorianesi.it",
     "phone": "+393333449329",
     "city": "Lucca",
     "vatNumber": "02611730462",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Muratori%20Morianesi%20Societa%20cooperativa",
     "originalLandingUrl": "https://muratorimorianesi.it/",
-    "isGenericInbox": false,
-    "emailScore": 50,
+    "isGenericInbox": true,
+    "emailScore": 35,
     "decisionMakerFirstName": "Bottaini",
     "decisionMakerRole": "Direzione"
   },

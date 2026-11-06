@@ -1,0 +1,37 @@
+{
+  "slug": "globalsystemimpianti",
+  "targetUrl": "https://www.globalsystemimpianti.com",
+  "searchKeyword": "impianti fotovoltaici palermo",
+  "measuredResponseMs": 468,
+  "renderBlockingScripts": 0,
+  "estimatedMobileLcpSeconds": 5.1,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "ufficiotecnico@globalsystemimpianti.com",
+    "isGeneric": true,
+    "score": 38
+  },
+  "extractedEmails": [
+    "info@globalsystemimpianti.com",
+    "globalsystemimpianti.srl@gmail.com",
+    "info@globalsystemimpianti.com",
+    "globalsystemimpianti.srl@gmail.com",
+    "ufficiotecnico@globalsystemimpianti.com",
+    "amministrazione@globalsystemimpianti.com",
+    "info@globalsystemimpianti.com",
+    "globalsystemimpianti.srl@gmail.com",
+    "globalsystemimpianti.srl@gmail.com"
+  ],
+  "extractedPhones": [
+    "3434084301",
+    "000000999",
+    "000009999"
+  ],
+  "extractedVat": "06859320829"
+}

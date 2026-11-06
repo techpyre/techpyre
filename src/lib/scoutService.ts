@@ -696,8 +696,15 @@ export function selectBestDecisionMakerEmail(
   const scoredCandidates: Array<{ email: string; score: number; isGeneric: boolean }> = [];
 
   for (const raw of rawEmails) {
-    const email = raw
+    let decodedRaw = raw;
+    try {
+      decodedRaw = decodeURIComponent(raw);
+    } catch {
+      decodedRaw = raw.replace(/%20/gi, "");
+    }
+    const email = decodedRaw
       .trim()
+      .replace(/^(?:%20|\s)+/gi, "")
       .replace(/^[0-9]+(?=[a-zA-Z])/, "")
       .toLowerCase();
 
@@ -2170,7 +2177,11 @@ function buildQuizForKeyword(
 export async function runAutonomousScout(
   keyword: string,
   maxLeads = 5,
-  options?: { preferAdLibrary?: boolean; customCandidates?: CandidateBusiness[] }
+  options?: {
+    preferAdLibrary?: boolean;
+    customCandidates?: CandidateBusiness[];
+    minLcpSeconds?: number;
+  }
 ): Promise<{
   success: boolean;
   discovered: Array<{
@@ -2382,6 +2393,11 @@ export async function runAutonomousScout(
       const estimatedMobileLcpSeconds = psiMetrics.lcpSeconds;
       const renderBlockingScripts = psiMetrics.renderBlockingCount;
       const realMobileScore = psiMetrics.mobileScore;
+
+      const minLcpRequired = options?.minLcpSeconds ?? 4.5;
+      if (estimatedMobileLcpSeconds < minLcpRequired) {
+        continue;
+      }
 
       const imgTagMatches = [...html.matchAll(/<img[^>]+src=["']([^"']+)["'][^>]*>/gi)];
       const candidateLogoUrls: string[] = cand.fallbackLogoUrl

@@ -1,0 +1,30 @@
+{
+  "slug": "siemimpianti",
+  "targetUrl": "https://www.siemimpianti.it",
+  "searchKeyword": "automazione industriale bologna",
+  "measuredResponseMs": 3242,
+  "renderBlockingScripts": 42,
+  "estimatedMobileLcpSeconds": 11.5,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@siemimpianti.it",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@siemimpianti.it",
+    "info@siemimpianti.it"
+  ],
+  "extractedPhones": [
+    "025114155251",
+    "04025140403",
+    "+39 0547 699124"
+  ],
+  "extractedVat": "04025140403"
+}

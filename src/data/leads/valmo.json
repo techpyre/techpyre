@@ -4,14 +4,14 @@
   "meta": {
     "companyName": "Val-Mo",
     "decisionMakerName": "Direzione Val-Mo",
-    "targetEmail": "valmosnc@libero.it",
+    "targetEmail": "info@valmo.it",
     "phone": "+39 049 604088",
     "city": "Padova",
     "vatNumber": "00209070283",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Val-Mo",
     "originalLandingUrl": "https://www.valmo.it",
-    "isGenericInbox": false,
-    "emailScore": 40,
+    "isGenericInbox": true,
+    "emailScore": 35,
     "decisionMakerFirstName": null,
     "decisionMakerRole": "Direzione Aziendale"
   },

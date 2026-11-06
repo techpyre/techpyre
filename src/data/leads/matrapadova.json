@@ -4,14 +4,14 @@
   "meta": {
     "companyName": "Ma.Tra.",
     "decisionMakerName": "Giulio Matra",
-    "targetEmail": "giulio.matra@gmail.com",
+    "targetEmail": "info@matrapd.it",
     "phone": "+39 049 600731",
     "city": "Padova",
     "vatNumber": "00815320288",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Ma.Tra.",
     "originalLandingUrl": "https://www.matrapadova.it",
-    "isGenericInbox": false,
-    "emailScore": 50,
+    "isGenericInbox": true,
+    "emailScore": 5,
     "decisionMakerFirstName": "Giulio",
     "decisionMakerRole": "Direzione"
   },

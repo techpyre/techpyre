@@ -1,0 +1,37 @@
+{
+  "slug": "olimpoedilizia",
+  "targetUrl": "https://www.olimpoedilizia.com",
+  "searchKeyword": "impianti fotovoltaici palermo",
+  "measuredResponseMs": 950,
+  "renderBlockingScripts": 2,
+  "estimatedMobileLcpSeconds": 10,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "olimpoedilizia@libero.it",
+    "isGeneric": true,
+    "score": -2
+  },
+  "extractedEmails": [
+    "olimpoedilizia@libero.it",
+    "olimpoedilizia@libero.it",
+    "olimpoedilizia@libero.it",
+    "olimpoedilizia@libero.it",
+    "olimpoedilizia@libero.it",
+    "olimpoedilizia@libero.it",
+    "olimpoedilizia@libero.it",
+    "olimpoedilizia@libero.it",
+    "olimpoedilizia@libero.it"
+  ],
+  "extractedPhones": [
+    "06594580",
+    "0107254587",
+    "000000999"
+  ],
+  "extractedVat": "05115380825"
+}

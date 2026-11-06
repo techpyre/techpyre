@@ -4,14 +4,14 @@
   "meta": {
     "companyName": "Projet Cover Coperture",
     "decisionMakerName": "Direzione Projet Cover Coperture",
-    "targetEmail": "projetcover@emailsec.it",
+    "targetEmail": "info@projetcover.it",
     "phone": "+390438656866",
     "city": "Padova",
     "vatNumber": "03705070260",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Projetcover",
     "originalLandingUrl": "https://www.projetcover.it/",
-    "isGenericInbox": false,
-    "emailScore": 50,
+    "isGenericInbox": true,
+    "emailScore": 35,
     "decisionMakerFirstName": null,
     "decisionMakerRole": "Direzione Aziendale"
   },

@@ -1,0 +1,30 @@
+{
+  "slug": "sia-srl",
+  "targetUrl": "https://sia-srl.com",
+  "searchKeyword": "automazione industriale bologna",
+  "measuredResponseMs": 2499,
+  "renderBlockingScripts": 44,
+  "estimatedMobileLcpSeconds": 11.1,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@sia-srl.com",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@sia-srl.com",
+    "info@sia-srl.com"
+  ],
+  "extractedPhones": [
+    "0120417",
+    "+39 071 976746",
+    "+39 071 7501911"
+  ],
+  "extractedVat": "Non trovata"
+}

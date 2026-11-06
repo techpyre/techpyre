@@ -4,13 +4,13 @@
   "meta": {
     "companyName": "House Design srl",
     "decisionMakerName": "Direzione House Design srl",
-    "targetEmail": "torino@housedesignsrl.it",
+    "targetEmail": "commerciale@housedesignsrl.it",
     "phone": "3124657546",
     "city": "Torino",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&media_type=all&q=porte%20blindate%20torino&search_type=keyword_unordered",
     "originalLandingUrl": "https://housedesignsrl.it/",
-    "isGenericInbox": false,
-    "emailScore": 80,
+    "isGenericInbox": true,
+    "emailScore": 45,
     "decisionMakerFirstName": null,
     "decisionMakerRole": "Direzione Aziendale"
   },

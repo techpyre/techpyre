@@ -1,0 +1,32 @@
+{
+  "slug": "exaltoenergia",
+  "targetUrl": "https://www.exaltoenergia.it",
+  "searchKeyword": "impianti fotovoltaici palermo",
+  "measuredResponseMs": 3700,
+  "renderBlockingScripts": 37,
+  "estimatedMobileLcpSeconds": 11.7,
+  "runsAds": true,
+  "detectedTrackingSignals": [
+    "Google Ads / GTM"
+  ],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@exaltoenergia.it",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@exaltoenergia.it",
+    "exaltoenergia@pec.it"
+  ],
+  "extractedPhones": [
+    "3333333333",
+    "00000000",
+    "0462004"
+  ],
+  "extractedVat": "05735180829"
+}

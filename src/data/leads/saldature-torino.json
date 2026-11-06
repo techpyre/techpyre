@@ -4,14 +4,14 @@
   "meta": {
     "companyName": "Gise Gas",
     "decisionMakerName": "Direzione Gise Gas",
-    "targetEmail": "%20info@saldature-torino.it",
+    "targetEmail": "info@saldature-torino.it",
     "phone": "+39 011 2680957",
     "city": "Torino",
     "vatNumber": "08340150013",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Gise%20Gas",
     "originalLandingUrl": "https://www.saldature-torino.it",
     "isGenericInbox": true,
-    "emailScore": 38,
+    "emailScore": 35,
     "decisionMakerFirstName": null,
     "decisionMakerRole": "Direzione Aziendale"
   },

@@ -4,14 +4,14 @@
   "meta": {
     "companyName": "G.S.I. GROUP",
     "decisionMakerName": "Direzione G.S.I. GROUP",
-    "targetEmail": "utente@dominio.com",
+    "targetEmail": "info@gsigroup.it",
     "phone": "+39 041 5700088",
     "city": "Mirano",
     "vatNumber": "01925770271",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=G.S.I.%20GROUP",
     "originalLandingUrl": "http://www.gsigroup.it",
-    "isGenericInbox": false,
-    "emailScore": 50,
+    "isGenericInbox": true,
+    "emailScore": 35,
     "decisionMakerFirstName": null,
     "decisionMakerRole": "Direzione Aziendale"
   },

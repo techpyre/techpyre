@@ -346,26 +346,63 @@ async function cmdScout(flags) {
     .map((s) => s.trim())
     .filter(Boolean);
   const count = Number(flags.count || 3);
-  const minLcp = Number(flags["min-lcp"] || 5.0);
+  const minLcp = Number(flags["min-lcp"] || 4.8);
   const autoSend = Boolean(flags.send);
+  const bypassHours = Boolean(flags.force);
+  const preferAdLibrary = Boolean(flags.adlib);
   const user = getDefaultUser(flags.user);
 
   console.log(
-    `🚀 Avvio Scouting Autonomo TechPyre: keywords=[${keywords.join(
-      ", "
-    )}], target=${count}, minLcp=${minLcp}s, autoSend=${autoSend}`
+    `🚀 Avvio Scouting Autonomo TechPyre: keywords=[${keywords.length}], target=${count}, minLcp=${minLcp}s, autoSend=${autoSend}`
   );
 
-  const result = await runAutonomousScout({
-    keywords,
-    targetCount: count,
-    minLcp,
-    autoSend,
-    user,
-  });
+  const allDiscovered = [];
+  const allSent = [];
 
-  console.log("\n✅ RISULTATO SCOUTING:");
-  console.log(JSON.stringify(result, null, 2));
+  for (const kw of keywords) {
+    if (allDiscovered.length >= count) break;
+    const needed = count - allDiscovered.length;
+    console.log(`\n🔎 Ricerca keyword: "${kw}" (necessari ancora ${needed} lead)...`);
+
+    const res = await runAutonomousScout(kw, needed, {
+      preferAdLibrary,
+      minLcpSeconds: minLcp,
+    });
+
+    for (const lead of res.discovered || []) {
+      allDiscovered.push(lead);
+      console.log(
+        `  ✅ Qualificato: [${lead.slug}] ${lead.companyName} (${lead.city}) · LCP: ${lead.lcp}s · Email: ${lead.targetEmail} · Titolare: ${lead.decisionMakerName} · Ads: ${lead.runsAds ? "SÌ" : "NO"}`
+      );
+
+      if (autoSend) {
+        try {
+          const sendRes = await sendLeadOutreach({
+            slug: lead.slug,
+            stepNumber: 1,
+            user,
+            bypassBusinessHoursCheck: bypassHours,
+            applyJitter: true,
+          });
+          allSent.push({
+            slug: lead.slug,
+            email: lead.targetEmail,
+            messageId: sendRes.messageId,
+          });
+          console.log(`     📨 Step 1 inviato -> ${lead.targetEmail} (${sendRes.messageId})`);
+        } catch (err) {
+          console.error(`     ⚠️ Invio saltato per [${lead.slug}]: ${err.message}`);
+        }
+      }
+    }
+  }
+
+  console.log("\n================================================================================");
+  console.log(
+    `🎯 RIEPILOGO SCOUTING: ${allDiscovered.length}/${count} lead generati | ${allSent.length} email Step 1 inviate`
+  );
+  console.log("================================================================================");
+  console.log(JSON.stringify({ discovered: allDiscovered, sent: allSent }, null, 2));
 }
 
 async function cmdDryRun(flags) {

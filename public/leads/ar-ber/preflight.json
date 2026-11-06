@@ -1,0 +1,32 @@
+{
+  "slug": "ar-ber",
+  "targetUrl": "https://www.ar-ber.com",
+  "searchKeyword": "lavorazioni meccaniche brescia",
+  "measuredResponseMs": 430,
+  "renderBlockingScripts": 46,
+  "estimatedMobileLcpSeconds": 9.4,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "arber@ar-ber.com",
+    "isGeneric": true,
+    "score": 38
+  },
+  "extractedEmails": [
+    "arber@ar-ber.com",
+    "arber@ar-ber.com",
+    "arber@ar-ber.com",
+    "arber@ar-ber.com"
+  ],
+  "extractedPhones": [
+    "0250404",
+    "026021010494",
+    "0260130"
+  ],
+  "extractedVat": "00860330174"
+}

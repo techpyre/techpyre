@@ -1,0 +1,40 @@
+{
+  "slug": "amkblindati",
+  "targetUrl": "https://www.amkblindati.com",
+  "searchKeyword": "carpenteria metallica vicenza",
+  "measuredResponseMs": 2651,
+  "renderBlockingScripts": 9,
+  "estimatedMobileLcpSeconds": 5.7,
+  "runsAds": true,
+  "detectedTrackingSignals": [
+    "Google Ads / GTM"
+  ],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@amkblindati.com",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@amkblindati.com",
+    "info@amkblindati.com",
+    "info@amkblindati.com",
+    "info@amkblindati.com",
+    "info@amkblindati.com",
+    "info@amkblindati.com",
+    "info@amkblindati.com",
+    "info@amkblindati.com",
+    "info@amkblindati.com",
+    "info@amkblindati.com"
+  ],
+  "extractedPhones": [
+    "03728408",
+    "3307661078",
+    "046116578"
+  ],
+  "extractedVat": "03666920230"
+}

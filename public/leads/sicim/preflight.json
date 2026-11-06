@@ -1,0 +1,37 @@
+{
+  "slug": "sicim",
+  "targetUrl": "http://www.sicim.it",
+  "searchKeyword": "carpenteria metallica catania",
+  "measuredResponseMs": 2855,
+  "renderBlockingScripts": 34,
+  "estimatedMobileLcpSeconds": 10.1,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": "Cristina Brancati",
+    "firstName": "Cristina",
+    "role": "Direzione"
+  },
+  "emailSelection": {
+    "bestEmail": "cristina.brancati@sicim.it",
+    "isGeneric": false,
+    "score": 90
+  },
+  "extractedEmails": [
+    "cristina.brancati@sicim.it",
+    "chiara.brancati@sicim.it",
+    "a.milazzo@sicim.it",
+    "sicim@sicim.it",
+    "cristina.brancati@sicim.it",
+    "chiara.brancati@sicim.it",
+    "a.milazzo@sicim.it",
+    "sicim@sicim.it",
+    "sicim@sicim.it"
+  ],
+  "extractedPhones": [
+    "0662248",
+    "0777488",
+    "0746837"
+  ],
+  "extractedVat": "00141590877"
+}

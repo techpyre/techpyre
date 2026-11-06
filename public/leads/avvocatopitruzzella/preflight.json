@@ -1,0 +1,37 @@
+{
+  "slug": "avvocatopitruzzella",
+  "targetUrl": "http://www.avvocatopitruzzella.it",
+  "searchKeyword": "impianti fotovoltaici palermo",
+  "measuredResponseMs": 1893,
+  "renderBlockingScripts": 47,
+  "estimatedMobileLcpSeconds": 11.4,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": "Laura Cuti",
+    "firstName": "Laura",
+    "role": "Titolare"
+  },
+  "emailSelection": {
+    "bestEmail": "info.studiolegalepitruzzella@gmail.com",
+    "isGeneric": true,
+    "score": -2
+  },
+  "extractedEmails": [
+    "info.studiolegalepitruzzella@gmail.com",
+    "info.studiolegalepitruzzella@gmail.com",
+    "info.studiolegalepitruzzella@gmail.com",
+    "info.studiolegalepitruzzella@gmail.com",
+    "info.studiolegalepitruzzella@gmail.com",
+    "info.studiolegalepitruzzella@gmail.com",
+    "info.studiolegalepitruzzella@gmail.com",
+    "info.studiolegalepitruzzella@gmail.com",
+    "info.studiolegalepitruzzella@gmail.com"
+  ],
+  "extractedPhones": [
+    "+39091364143",
+    "+39 091 364143",
+    "000542547203"
+  ],
+  "extractedVat": "05026030824"
+}

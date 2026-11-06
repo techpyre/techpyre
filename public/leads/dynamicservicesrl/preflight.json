@@ -1,0 +1,45 @@
+{
+  "slug": "dynamicservicesrl",
+  "targetUrl": "https://www.dynamicservicesrl.it",
+  "searchKeyword": "carpenteria metallica vicenza",
+  "measuredResponseMs": 660,
+  "renderBlockingScripts": 64,
+  "estimatedMobileLcpSeconds": 13.1,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@dynamicservicesrl.it",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@dynamicservicesrl.it",
+    "info@dynamicservicesrl.it",
+    "info@dynamicservicesrl.it",
+    "info@dynamicservicesrl.it",
+    "info@dynamicservicesrl.it",
+    "info@dynamicservicesrl.it",
+    "info@dynamicservicesrl.it",
+    "info@dynamicservicesrl.it",
+    "info@dynamicservicesrl.it",
+    "info@dynamicservicesrl.it",
+    "info@dynamicservicesrl.it",
+    "info@dynamicservicesrl.it",
+    "info@dynamicservicesrl.it",
+    "info@dynamicservicesrl.it",
+    "info@dynamicservicesrl.it",
+    "info@dynamicservicesrl.it",
+    "info@dynamicservicesrl.it"
+  ],
+  "extractedPhones": [
+    "0809358",
+    "0651114",
+    "0423.985083"
+  ],
+  "extractedVat": "04171750260"
+}

@@ -4,14 +4,14 @@
   "meta": {
     "companyName": "T2D Laterizi e Costruzioni",
     "decisionMakerName": "Direzione T2D Laterizi e Costruzioni",
-    "targetEmail": "tecnico@t2d.it",
+    "targetEmail": "commerciale@t2d.it",
     "phone": "0557-17657999",
     "city": "Milano",
     "vatNumber": "04472680232",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=T2D",
     "originalLandingUrl": "https://tinyurl.com/T2DTRISP",
-    "isGenericInbox": false,
-    "emailScore": 50,
+    "isGenericInbox": true,
+    "emailScore": 15,
     "decisionMakerFirstName": null,
     "decisionMakerRole": "Direzione Aziendale"
   },

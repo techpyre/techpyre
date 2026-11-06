@@ -1,0 +1,35 @@
+{
+  "slug": "messinaagostinoinfissi",
+  "targetUrl": "https://www.messinaagostinoinfissi.com",
+  "searchKeyword": "serramenti messina",
+  "measuredResponseMs": 379,
+  "renderBlockingScripts": 22,
+  "estimatedMobileLcpSeconds": 5.2,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "messinaagostino@libero.it",
+    "isGeneric": true,
+    "score": -2
+  },
+  "extractedEmails": [
+    "messinaagostino@libero.it",
+    "messinaagostino@libero.it",
+    "messinaagostino@libero.it",
+    "messinaagostino@libero.it",
+    "messinaagostino@libero.it",
+    "messinaagostino@libero.it",
+    "messinaagostino@libero.it"
+  ],
+  "extractedPhones": [
+    "0328475",
+    "355879718",
+    "000000999"
+  ],
+  "extractedVat": "01841160813"
+}

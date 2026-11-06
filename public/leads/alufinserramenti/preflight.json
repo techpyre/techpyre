@@ -1,0 +1,31 @@
+{
+  "slug": "alufinserramenti",
+  "targetUrl": "http://www.alufinserramenti.it",
+  "searchKeyword": "serramenti messina",
+  "measuredResponseMs": 1782,
+  "renderBlockingScripts": 24,
+  "estimatedMobileLcpSeconds": 6.9,
+  "runsAds": true,
+  "detectedTrackingSignals": [
+    "Meta Pixel"
+  ],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "alufinserramenti@gmail.com",
+    "isGeneric": true,
+    "score": -2
+  },
+  "extractedEmails": [
+    "alufinserramenti@gmail.com"
+  ],
+  "extractedPhones": [
+    "3496178326",
+    "+393348862851",
+    "0886588"
+  ],
+  "extractedVat": "03342090838"
+}

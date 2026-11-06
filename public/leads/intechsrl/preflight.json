@@ -1,0 +1,37 @@
+{
+  "slug": "intechsrl",
+  "targetUrl": "https://www.intechsrl.biz",
+  "searchKeyword": "automazione industriale bologna",
+  "measuredResponseMs": 2438,
+  "renderBlockingScripts": 9,
+  "estimatedMobileLcpSeconds": 5.8,
+  "runsAds": true,
+  "detectedTrackingSignals": [
+    "Google Ads / GTM"
+  ],
+  "decisionMaker": {
+    "fullName": "Matteo Cavini",
+    "firstName": "Matteo",
+    "role": "Direzione"
+  },
+  "emailSelection": {
+    "bestEmail": "matteo.cavini@intechsrl.biz",
+    "isGeneric": false,
+    "score": 90
+  },
+  "extractedEmails": [
+    "matteo.cavini@intechsrl.biz",
+    "matteo.cavini@intechsrl.biz",
+    "commerciale@intechsrl.biz",
+    "info@intechsrl.biz",
+    "technical-dept@intechsrl.biz",
+    "info@intechsrl.biz",
+    "info@intechsrl.biz"
+  ],
+  "extractedPhones": [
+    "+390542640007",
+    "+39 0542 640007",
+    "09090909091"
+  ],
+  "extractedVat": "02394181206"
+}

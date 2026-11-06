@@ -1,0 +1,34 @@
+{
+  "slug": "coelpa",
+  "targetUrl": "https://www.coelpa.it",
+  "searchKeyword": "impianti fotovoltaici palermo",
+  "measuredResponseMs": 2034,
+  "renderBlockingScripts": 34,
+  "estimatedMobileLcpSeconds": 9.7,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "coelpasrl@virgilio.it",
+    "isGeneric": true,
+    "score": -2
+  },
+  "extractedEmails": [
+    "coelpasrl@virgilio.it",
+    "coelpasrl@pec.it",
+    "coelpasrl@virgilio.it",
+    "coelpasrl@pec.it",
+    "coelpasrl@virgilio.it",
+    "coelpasrl@virgilio.it"
+  ],
+  "extractedPhones": [
+    "043196757",
+    "0132779375",
+    "00000057"
+  ],
+  "extractedVat": "06286840829"
+}

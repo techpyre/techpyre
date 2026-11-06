@@ -4,13 +4,13 @@
   "meta": {
     "companyName": "Di Pierri Immobiliare",
     "decisionMakerName": "Direzione Di Pierri Immobiliare",
-    "targetEmail": "immobiliare@dipierri.it",
+    "targetEmail": "mario@esempio.it",
     "phone": "3933715936",
     "city": "Bologna",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&media_type=all&q=pompe%20di%20calore%20bologna&search_type=keyword_unordered",
     "originalLandingUrl": "https://dipierri.it/lp/arcoveggio-56",
     "isGenericInbox": false,
-    "emailScore": 80,
+    "emailScore": 50,
     "decisionMakerFirstName": null,
     "decisionMakerRole": "Direzione Aziendale"
   },

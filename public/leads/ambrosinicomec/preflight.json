@@ -1,0 +1,31 @@
+{
+  "slug": "ambrosinicomec",
+  "targetUrl": "https://www.ambrosinicomec.it",
+  "searchKeyword": "lavorazioni meccaniche brescia",
+  "measuredResponseMs": 5170,
+  "renderBlockingScripts": 49,
+  "estimatedMobileLcpSeconds": 15.7,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@ambrosinicomec.it",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@ambrosinicomec.it",
+    "info@ambrosinicomec.it",
+    "info@ambrosinicomec.it"
+  ],
+  "extractedPhones": [
+    "3333333333",
+    "00.66666666",
+    "000000000"
+  ],
+  "extractedVat": "02703560983"
+}

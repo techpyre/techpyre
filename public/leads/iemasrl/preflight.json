@@ -1,0 +1,40 @@
+{
+  "slug": "iemasrl",
+  "targetUrl": "https://www.iemasrl.com",
+  "searchKeyword": "automazione industriale bologna",
+  "measuredResponseMs": 624,
+  "renderBlockingScripts": 7,
+  "estimatedMobileLcpSeconds": 5.3,
+  "runsAds": true,
+  "detectedTrackingSignals": [
+    "Google Ads / GTM"
+  ],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "commerciale@iemasrl.com",
+    "isGeneric": true,
+    "score": 45
+  },
+  "extractedEmails": [
+    "info@iemasrl.com",
+    "info@iemasrl.com",
+    "info@iemasrl.com",
+    "info@iemasrl.com",
+    "info@iemasrl.com",
+    "info@iemasrl.com",
+    "commerciale@iemasrl.com",
+    "commerciale@iemasrl.com",
+    "info@iemasrl.com",
+    "info@iemasrl.com"
+  ],
+  "extractedPhones": [
+    "0241125",
+    "0241108",
+    "01673831200"
+  ],
+  "extractedVat": "01673831200"
+}

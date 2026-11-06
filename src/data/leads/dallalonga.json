@@ -4,14 +4,14 @@
   "meta": {
     "companyName": "Dalla Longa Srl",
     "decisionMakerName": "Direzione Dalla Longa Srl",
-    "targetEmail": "%20info@dallalonga.it",
+    "targetEmail": "info@dallalonga.it",
     "phone": "00362503394",
     "city": "Italia",
     "vatNumber": "00877770966",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Dalla%20Longa%20Srl",
     "originalLandingUrl": "https://www.dallalonga.it/contatti/",
     "isGenericInbox": true,
-    "emailScore": 38,
+    "emailScore": 35,
     "decisionMakerFirstName": null,
     "decisionMakerRole": "Direzione Aziendale"
   },

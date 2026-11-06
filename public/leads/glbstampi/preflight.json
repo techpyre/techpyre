@@ -1,0 +1,43 @@
+{
+  "slug": "glbstampi",
+  "targetUrl": "http://www.glbstampi.it",
+  "searchKeyword": "lavorazioni meccaniche brescia",
+  "measuredResponseMs": 1205,
+  "renderBlockingScripts": 45,
+  "estimatedMobileLcpSeconds": 10.4,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@glbstampi.it",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@glbstampi.it",
+    "info@glbstampi.it",
+    "info@glbstampi.it",
+    "info@glbstampi.it",
+    "GLB-Esterno-center-top-700x700@2x.jpg",
+    "GLB-Esterno-center-top-700x700@2x.jpg",
+    "GLB-stampi-center-top-700x700@2x.jpg",
+    "GLB-stampi-center-top-700x700@2x.jpg",
+    "info@glbstampi.it",
+    "info@glbstampi.it",
+    "GLB-Esterno-center-top-700x700@2x.jpg",
+    "GLB-Esterno-center-top-700x700@2x.jpg",
+    "GLB-stampi-center-top-700x700@2x.jpg",
+    "GLB-stampi-center-top-700x700@2x.jpg",
+    "info@glbstampi.it"
+  ],
+  "extractedPhones": [
+    "065382391",
+    "061936210",
+    "083731213"
+  ],
+  "extractedVat": "01516030986"
+}

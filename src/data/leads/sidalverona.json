@@ -4,14 +4,14 @@
   "meta": {
     "companyName": "Sidal",
     "decisionMakerName": "Direzione Sidal",
-    "targetEmail": "sidalsas@libero.it",
+    "targetEmail": "info@sidalsrl.com",
     "phone": "+39 045 8701010",
     "city": "Quinto di Valpantena",
     "vatNumber": "02852570239",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Sidal",
     "originalLandingUrl": "https://sidalverona.it",
-    "isGenericInbox": false,
-    "emailScore": 40,
+    "isGenericInbox": true,
+    "emailScore": 5,
     "decisionMakerFirstName": null,
     "decisionMakerRole": "Direzione Aziendale"
   },

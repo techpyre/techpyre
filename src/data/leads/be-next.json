@@ -23,7 +23,7 @@
       "Cecita decisionale sul ROI: assenza di tracciamento Server-Side di prima parte (GTM Server-Side e Meta CAPI), con perdita del 30-50% dei dati di conversione per blocchi browser e cookie banner.",
       "Colli di bottiglia commerciali: i contatti finiscono in email isolate senza pre-qualifica automatica e senza sincronizzazione immediata via API/Webhook con il CRM aziendale."
     ],
-    "activeAdHeadline": "SOLUZIONI PER L&#8217;EFFICIENZA ENERGETICA",
+    "activeAdHeadline": "SOLUZIONI PER L'EFFICIENZA ENERGETICA",
     "activeAdCopySummary": "Be Next offre tutte le soluzioni per il risparmio energetico: impianti fotovoltaici e termici, pompe di calore e progettazione illuminotecni...",
     "runsAds": true,
     "detectedTrackingSignals": [
@@ -41,7 +41,7 @@
   },
   "content": {
     "badgeTop": "Be Next srl · Divisione Tecnica & Commesse B2B (Roma)",
-    "heroHeadline": "SOLUZIONI PER L&#8217;EFFICIENZA ENERGETICA",
+    "heroHeadline": "SOLUZIONI PER L'EFFICIENZA ENERGETICA",
     "heroSubheadline": "Be Next offre tutte le soluzioni per il risparmio energetico: impianti fotovoltaici e termici, pompe di calore e progettazione illuminotecnica.",
     "heroBullets": [
       "Studio di fattibilita tecnica e capitolato con tempi di consegna certi",

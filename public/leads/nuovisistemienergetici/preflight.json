@@ -1,0 +1,36 @@
+{
+  "slug": "nuovisistemienergetici",
+  "targetUrl": "http://www.nuovisistemienergetici.it",
+  "searchKeyword": "impianti fotovoltaici palermo",
+  "measuredResponseMs": 1177,
+  "renderBlockingScripts": 34,
+  "estimatedMobileLcpSeconds": 8.3,
+  "runsAds": true,
+  "detectedTrackingSignals": [
+    "Meta Pixel",
+    "Google Ads / GTM"
+  ],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@nuovisistemienergetici.it",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "sdevformev@gmail.com",
+    "sdevformev@gmail.com",
+    "sdevformev@gmail.com",
+    "sdevformev@gmail.com",
+    "info@nuovisistemienergetici.it"
+  ],
+  "extractedPhones": [
+    "3718792475",
+    "0000000",
+    "0803121"
+  ],
+  "extractedVat": "06533050826"
+}

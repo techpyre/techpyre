@@ -1,0 +1,54 @@
+{
+  "slug": "gbmlavorazioni",
+  "targetUrl": "https://www.gbmlavorazioni.it",
+  "searchKeyword": "lavorazioni meccaniche brescia",
+  "measuredResponseMs": 726,
+  "renderBlockingScripts": 18,
+  "estimatedMobileLcpSeconds": 5.2,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "commerciale@gbmlavorazioni.it",
+    "isGeneric": true,
+    "score": 45
+  },
+  "extractedEmails": [
+    "commerciale@gbmlavorazioni.it",
+    "commerciale@gbmlavorazioni.it",
+    "tecnico@gbmlavorazioni.it",
+    "xport@gbmlavorazioni.it",
+    "info@gbmlavorazioni.com",
+    "info@gbmlavorazioni.com",
+    "commerciale@gbmlavorazioni.it",
+    "commerciale@gbmlavorazioni.it",
+    "commerciale@gbmlavorazioni.it",
+    "amministrazione@gbmlavorazioni.it",
+    "export@gbmlavorazioni.it",
+    "info@gbmlavorazioni.com",
+    "info@gbmlavorazioni.com",
+    "commerciale@gbmlavorazioni.it",
+    "commerciale@gbmlavorazioni.it",
+    "tecnico@gbmlavorazioni.it",
+    "xport@gbmlavorazioni.it",
+    "info@gbmlavorazioni.com",
+    "info@gbmlavorazioni.com",
+    "commerciale@gbmlavorazioni.it",
+    "commerciale@gbmlavorazioni.it",
+    "tecnico@gbmlavorazioni.it",
+    "xport@gbmlavorazioni.it",
+    "info@gbmlavorazioni.com",
+    "info@gbmlavorazioni.com",
+    "commerciale@gbmlavorazioni.it"
+  ],
+  "extractedPhones": [
+    "000000999",
+    "000009999",
+    "0941791"
+  ],
+  "extractedVat": "03106500980"
+}

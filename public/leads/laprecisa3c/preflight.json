@@ -1,0 +1,33 @@
+{
+  "slug": "laprecisa3c",
+  "targetUrl": "https://www.laprecisa3c.it",
+  "searchKeyword": "lavorazioni meccaniche brescia",
+  "measuredResponseMs": 4608,
+  "renderBlockingScripts": 14,
+  "estimatedMobileLcpSeconds": 8,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "commerciale@laprecisa3c.it",
+    "isGeneric": true,
+    "score": 45
+  },
+  "extractedEmails": [
+    "commerciale@laprecisa3c.it",
+    "commerciale@laprecisa3c.it",
+    "commerciale@laprecisa3c.it",
+    "commerciale@laprecisa3c.it",
+    "laprecisa3c@libero.it"
+  ],
+  "extractedPhones": [
+    "030831719",
+    "+39 030 831719",
+    "01704420981"
+  ],
+  "extractedVat": "01704420981"
+}

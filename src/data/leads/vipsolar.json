@@ -4,14 +4,14 @@
   "meta": {
     "companyName": "Vip Energy",
     "decisionMakerName": "Direzione Vip Energy",
-    "targetEmail": "tecnico@vip-energy.it",
+    "targetEmail": "info@vipsolar.it",
     "phone": "+39 045 4725445",
     "city": "Verona",
     "vatNumber": "11092350013",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Vip%20Energy",
     "originalLandingUrl": "http://www.vipsolar.it",
-    "isGenericInbox": false,
-    "emailScore": 50,
+    "isGenericInbox": true,
+    "emailScore": 35,
     "decisionMakerFirstName": null,
     "decisionMakerRole": "Direzione Aziendale"
   },

@@ -1,0 +1,35 @@
+{
+  "slug": "elettrogammaimpianti",
+  "targetUrl": "https://www.elettrogammaimpianti.com",
+  "searchKeyword": "automazione industriale bologna",
+  "measuredResponseMs": 3625,
+  "renderBlockingScripts": 14,
+  "estimatedMobileLcpSeconds": 7.8,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@elettrogammaimpianti.com",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@elettrogammaimpianti.com",
+    "info@elettrogammaimpianti.com",
+    "info@elettrogammaimpianti.com",
+    "info@elettrogammaimpianti.com",
+    "amministrazione@elettrogammaimpianti.com",
+    "info@elettrogammaimpianti.com",
+    "info@elettrogammaimpianti.com"
+  ],
+  "extractedPhones": [
+    "0100101",
+    "051 713086",
+    "3661532801"
+  ],
+  "extractedVat": "00863591202"
+}

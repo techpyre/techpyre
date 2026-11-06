@@ -1,0 +1,32 @@
+{
+  "slug": "renoimpianti",
+  "targetUrl": "http://www.renoimpianti.it",
+  "searchKeyword": "automazione industriale bologna",
+  "measuredResponseMs": 1033,
+  "renderBlockingScripts": 24,
+  "estimatedMobileLcpSeconds": 5.9,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "cavicchi@renoimpianti.it",
+    "isGeneric": true,
+    "score": 38
+  },
+  "extractedEmails": [
+    "cavicchi@renoimpianti.it",
+    "cavicchi@renoimpianti.it",
+    "cavicchi@renoimpianti.it",
+    "cavicchi@renoimpianti.it"
+  ],
+  "extractedPhones": [
+    "348 9491049",
+    "3289906067",
+    "+39 348 9491049"
+  ],
+  "extractedVat": "03033501200"
+}

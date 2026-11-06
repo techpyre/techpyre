@@ -1,0 +1,58 @@
+{
+  "slug": "metallicagarzetti",
+  "targetUrl": "http://www.metallicagarzetti.com",
+  "searchKeyword": "lavorazioni meccaniche brescia",
+  "measuredResponseMs": 2614,
+  "renderBlockingScripts": 39,
+  "estimatedMobileLcpSeconds": 10.6,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "%20%20info@metallicagarzetti.com",
+    "isGeneric": true,
+    "score": 38
+  },
+  "extractedEmails": [
+    "info@metallicagarzetti.com",
+    "info@metallicagarzetti.com",
+    "info@metallicagarzetti.com",
+    "info@metallicagarzetti.com",
+    "info@metallicagarzetti.com",
+    "info@metallicagarzetti.com",
+    "info@metallicagarzetti.com",
+    "info@metallicagarzetti.com",
+    "info@metallicagarzetti.com",
+    "%20%20info@metallicagarzetti.com",
+    "info@metallicagarzetti.com",
+    "info@metallicagarzetti.com",
+    "info@metallicagarzetti.com",
+    "info@metallicagarzetti.com",
+    "info@metallicagarzetti.com",
+    "info@metallicagarzetti.com",
+    "info@metallicagarzetti.com",
+    "info@metallicagarzetti.com",
+    "info@metallicagarzetti.com",
+    "info@metallicagarzetti.com",
+    "info@metallicagarzetti.com",
+    "info@metallicagarzetti.com",
+    "info@metallicagarzetti.com",
+    "info@metallicagarzetti.com",
+    "info@metallicagarzetti.com",
+    "info@metallicagarzetti.com",
+    "info@metallicagarzetti.com",
+    "info@metallicagarzetti.com",
+    "info@metallicagarzetti.com",
+    "info@metallicagarzetti.com"
+  ],
+  "extractedPhones": [
+    "030.7188525",
+    "030.7080807",
+    "300041266"
+  ],
+  "extractedVat": "02719550986"
+}

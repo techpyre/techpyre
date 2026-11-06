@@ -1,0 +1,41 @@
+{
+  "slug": "foker",
+  "targetUrl": "http://www.foker.it",
+  "searchKeyword": "lavorazioni meccaniche brescia",
+  "measuredResponseMs": 617,
+  "renderBlockingScripts": 5,
+  "estimatedMobileLcpSeconds": 5.2,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@foker.it",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@foker.it",
+    "info@foker.it",
+    "info@foker.it",
+    "info@foker.it",
+    "info@foker.it",
+    "info@foker.it",
+    "info@foker.it",
+    "info@foker.it",
+    "info@foker.it",
+    "info@foker.it",
+    "info@foker.it",
+    "info@foker.it",
+    "info@foker.it"
+  ],
+  "extractedPhones": [
+    "3420061604",
+    "07894000962",
+    "+39 030 2629749"
+  ],
+  "extractedVat": "07894000962"
+}

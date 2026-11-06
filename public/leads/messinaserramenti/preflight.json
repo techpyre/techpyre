@@ -1,0 +1,30 @@
+{
+  "slug": "messinaserramenti",
+  "targetUrl": "https://messinaserramenti.it",
+  "searchKeyword": "serramenti messina",
+  "measuredResponseMs": 6368,
+  "renderBlockingScripts": 40,
+  "estimatedMobileLcpSeconds": 15.8,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@messinaserramenti.it",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@messinaserramenti.it",
+    "info@messinaserramenti.it"
+  ],
+  "extractedPhones": [
+    "0100101",
+    "+390774363722",
+    "0774 363722"
+  ],
+  "extractedVat": "03273300586"
+}

@@ -9,6 +9,7 @@
     "lint": "eslint",
     "generate:favicons": "node scripts/generate-favicons.mjs",
     "tp": "node scripts/techpyre-cli.mjs",
+    "gui": "node techpyre-gui.mjs",
     "dryrun": "node scripts/test-scout-dryrun.mjs",
     "scout": "node scripts/scout-ad-library.mjs",
     "preflight": "node scripts/preflight.mjs",
