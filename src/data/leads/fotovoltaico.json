@@ -13,7 +13,9 @@
     "isGenericInbox": false,
     "emailScore": 80,
     "decisionMakerFirstName": null,
-    "decisionMakerRole": "Direzione Aziendale"
+    "decisionMakerRole": "Direzione Aziendale",
+    "status": "INVALID_TICKET_INBOX",
+    "notes": "Auto-responder da contact@nettbureau.com (aggregatore scandinavo)."
   },
   "audit": {
     "originalLcpSeconds": 2.8,

@@ -19,7 +19,8 @@
       "<0bf63980-f74d-46a2-54da-ebb76a6783eb@techpyre.eu>",
       "<51b001e4-f8cf-ceb1-1755-9f87fe56200a@techpyre.eu>"
     ],
-    "status": "CONTACTED_STEP_2"
+    "status": "BLACKLISTED",
+    "notes": "Ha risposto il 30/10 Elena specificando di non essere interessata."
   },
   "audit": {
     "originalLcpSeconds": 4.3,

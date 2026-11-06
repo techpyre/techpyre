@@ -18,7 +18,8 @@
       "<0fd1b4a2-aad7-4a74-0158-20b6cca9efe1@techpyre.eu>",
       "<b9c3065c-72b0-c76a-70bb-6c83f5adf1d2@techpyre.eu>"
     ],
-    "status": "CONTACTED_STEP_2"
+    "status": "INVALID_TICKET_INBOX",
+    "notes": "Indirizzo commerciale@housedesignsrl.it inesistente (bounce postmaster)."
   },
   "audit": {
     "originalLcpSeconds": 6.8,

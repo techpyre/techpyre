@@ -548,15 +548,30 @@ const EMAIL_LOCAL_PART_BLACKLIST = HARD_BLOCKED_EMAIL_PREFIXES;
 
 export function isHardBlockedEmail(rawEmail: string): boolean {
   if (!rawEmail || !rawEmail.includes("@")) return true;
-  const email = rawEmail.trim().toLowerCase();
-  const [localPart, domainPart] = email.split("@");
-  if (!localPart || !domainPart) return true;
+  let email = rawEmail.trim().toLowerCase();
+  try {
+    email = decodeURIComponent(email);
+  } catch {}
+  email = email.replace(/^[\s%20]+/gi, "");
+  const [localPart, rawDomain] = email.split("@");
+  if (!localPart || !rawDomain) return true;
+  const domainPart = rawDomain.replace(/^www\./i, "");
+
   if (
     domainPart.includes("pec.") ||
     domainPart.includes("legalmail.") ||
     domainPart.includes("arubapec.") ||
     domainPart.includes("postecert.") ||
-    domainPart.includes("paginegialle.")
+    domainPart.includes("paginegialle.") ||
+    domainPart.includes("esempio.") ||
+    domainPart.includes("example.") ||
+    domainPart.includes("test.com") ||
+    domainPart.includes("rossi.com") ||
+    domainPart.includes("doe.com") ||
+    localPart === "test" ||
+    localPart === "nome" ||
+    localPart === "your" ||
+    (localPart === "mario" && (domainPart.includes("rossi") || domainPart.includes("esempio")))
   ) {
     return true;
   }
@@ -712,8 +727,13 @@ export function selectBestDecisionMakerEmail(
     if (seen.has(email)) continue;
     seen.add(email);
 
-    const [localPart, domainPart] = email.split("@");
-    if (!localPart || !domainPart || localPart.length < 2) continue;
+    const [localPart, rawDomainPart] = email.split("@");
+    if (!localPart || !rawDomainPart || localPart.length < 2) continue;
+    const domainPart = rawDomainPart.replace(/^www\./i, "");
+    const normalizedEmail = `${localPart}@${domainPart}`;
+
+    if (seen.has(normalizedEmail)) continue;
+    seen.add(normalizedEmail);
 
     // Scarta file statici, placeholder e TLD non validi
     if (
@@ -723,7 +743,10 @@ export function selectBestDecisionMakerEmail(
       domainPart.includes("wix") ||
       domainPart.includes("prestashop") ||
       domainPart.includes("example.") ||
+      domainPart.includes("esempio.") ||
       domainPart.includes("azienda.it") ||
+      domainPart.includes("test.com") ||
+      domainPart.includes("rossi.com") ||
       domainPart.includes("doe.com") ||
       domainPart.includes("mail.it") ||
       domainPart.includes("email.it") ||
@@ -736,7 +759,9 @@ export function selectBestDecisionMakerEmail(
       localPart === "email" ||
       localPart === "nome" ||
       localPart === "john" ||
+      localPart === "test" ||
       localPart === "user" ||
+      (localPart === "mario" && (domainPart.includes("rossi") || domainPart.includes("esempio"))) ||
       localPart.includes("u00")
     ) {
       continue;
@@ -818,7 +843,7 @@ export function selectBestDecisionMakerEmail(
       isGeneric = true;
     }
 
-    scoredCandidates.push({ email, score, isGeneric });
+    scoredCandidates.push({ email: normalizedEmail, score, isGeneric });
   }
 
   if (scoredCandidates.length === 0) {

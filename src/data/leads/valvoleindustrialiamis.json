@@ -13,7 +13,9 @@
     "isGenericInbox": false,
     "emailScore": 50,
     "decisionMakerFirstName": null,
-    "decisionMakerRole": "Direzione Aziendale"
+    "decisionMakerRole": "Direzione Aziendale",
+    "status": "INVALID_TICKET_INBOX",
+    "notes": "Autoresponder da amis@amis.it: casella in dismissione."
   },
   "audit": {
     "originalLcpSeconds": 23.8,

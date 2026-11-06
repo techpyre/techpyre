@@ -13,7 +13,9 @@
     "isGenericInbox": true,
     "emailScore": 35,
     "decisionMakerFirstName": null,
-    "decisionMakerRole": "Direzione Aziendale"
+    "decisionMakerRole": "Direzione Aziendale",
+    "status": "INVALID_TICKET_INBOX",
+    "notes": "Autoresponder da valmosnc@libero.it: indirizzo mail non piu valido."
   },
   "audit": {
     "originalLcpSeconds": 12.8,

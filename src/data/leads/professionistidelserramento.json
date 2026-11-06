@@ -18,7 +18,8 @@
       "<db028838-7140-ff26-7da2-c23654b8e3ba@techpyre.eu>",
       "<73a7f0f4-a854-c0f4-689f-b7ba060b6997@techpyre.eu>"
     ],
-    "status": "CONTACTED_STEP_2"
+    "status": "HOT_LEAD",
+    "notes": "Ha risposto il 29/10 chiedendo dati aziendali e portfolio di lavori realizzati."
   },
   "audit": {
     "originalLcpSeconds": 6.5,

@@ -16,7 +16,7 @@
       "<9d6ac0c1-00ef-fcaf-273c-ca531914726c@techpyre.eu>",
       "<bf57b5a1-2905-f925-daa4-c7f64874ca03@techpyre.eu>"
     ],
-    "status": "CONTACTED_STEP_2"
+    "status": "INVALID_TICKET_INBOX"
   },
   "audit": {
     "originalLcpSeconds": 3.5,

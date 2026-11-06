@@ -5429,5 +5429,41 @@
     "sentAt": "2026-11-06T16:29:42.281Z",
     "sentBy": "Riccardo Granza (riccardogranza)",
     "requiresFollowUpCall": false
+  },
+  {
+    "slug": "dimat",
+    "companyName": "Dimat",
+    "recipient": "info@dimat.it",
+    "type": "STEP_2",
+    "stepNumber": 2,
+    "subject": "Re: Dimat · dispersione clic mobile e tempi di caricamento di Dimat (3.8s)",
+    "messageId": "<8a927bda-34d2-c684-e23d-74a9257893ff@techpyre.eu>",
+    "sentAt": "2026-11-06T16:33:36.586Z",
+    "sentBy": "Riccardo Granza (riccardogranza)",
+    "requiresFollowUpCall": false
+  },
+  {
+    "slug": "dipierri",
+    "companyName": "Di Pierri Immobiliare",
+    "recipient": "immobiliare@dipierri.it",
+    "type": "STEP_2",
+    "stepNumber": 2,
+    "subject": "Re: Di Pierri Immobiliare · dispersione clic mobile e tempi di caricamento di Di Pierri Immobiliare (4.3s)",
+    "messageId": "<bcd4f56e-1ae0-a081-751d-1ae714882c5a@techpyre.eu>",
+    "sentAt": "2026-11-06T16:34:08.917Z",
+    "sentBy": "Riccardo Granza (riccardogranza)",
+    "requiresFollowUpCall": false
+  },
+  {
+    "slug": "expobrescia",
+    "companyName": "Expo Brescia",
+    "recipient": "info@expobrescia.com",
+    "type": "STEP_2",
+    "stepNumber": 2,
+    "subject": "Re: Expo Brescia · dispersione clic mobile e tempi di caricamento di Expo Brescia (6.3s)",
+    "messageId": "<627a32ba-da98-4afe-8acc-a3e73aa2cb56@techpyre.eu>",
+    "sentAt": "2026-11-06T16:34:11.118Z",
+    "sentBy": "Riccardo Granza (riccardogranza)",
+    "requiresFollowUpCall": false
   }
 ]

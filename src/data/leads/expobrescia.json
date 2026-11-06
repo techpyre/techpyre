@@ -4,7 +4,7 @@
   "meta": {
     "companyName": "Expo Brescia",
     "decisionMakerName": "Direzione Expo Brescia",
-    "targetEmail": "mario@rossi.com",
+    "targetEmail": "info@expobrescia.com",
     "phone": "013280092916",
     "city": "Brescia",
     "vatNumber": "04607130988",
@@ -14,10 +14,11 @@
     "emailScore": 50,
     "decisionMakerFirstName": null,
     "decisionMakerRole": "Direzione Aziendale",
-    "lastSentMessageId": "<fb013e23-04cd-1449-4f16-feeb39e2b351@techpyre.eu>",
+    "lastSentMessageId": "<627a32ba-da98-4afe-8acc-a3e73aa2cb56@techpyre.eu>",
     "threadMessageIds": [
       "<149fe5c6-b86a-1bcc-8751-c9496c92537c@techpyre.eu>",
-      "<fb013e23-04cd-1449-4f16-feeb39e2b351@techpyre.eu>"
+      "<fb013e23-04cd-1449-4f16-feeb39e2b351@techpyre.eu>",
+      "<627a32ba-da98-4afe-8acc-a3e73aa2cb56@techpyre.eu>"
     ],
     "status": "CONTACTED_STEP_2"
   },

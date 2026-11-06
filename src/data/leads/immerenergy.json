@@ -13,7 +13,8 @@
     "status": "INVALID_TICKET_INBOX",
     "emailScore": 0,
     "decisionMakerFirstName": null,
-    "decisionMakerRole": "Direzione Aziendale"
+    "decisionMakerRole": "Direzione Aziendale",
+    "notes": "Indirizzo privacy@immergas.com bloccato da gateway Sophos."
   },
   "audit": {
     "originalLcpSeconds": 6.9,

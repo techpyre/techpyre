@@ -13,7 +13,9 @@
     "isGenericInbox": false,
     "emailScore": 80,
     "decisionMakerFirstName": null,
-    "decisionMakerRole": "Direzione Aziendale"
+    "decisionMakerRole": "Direzione Aziendale",
+    "status": "INVALID_TICKET_INBOX",
+    "notes": "Ticketing bot Zendesk [WY190XP65EX]."
   },
   "audit": {
     "originalLcpSeconds": 5.2,

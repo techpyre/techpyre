@@ -19,7 +19,8 @@
       "<0099b17a-77a8-defb-4a0d-0d0f718caaf6@techpyre.eu>",
       "<6a679693-3c4f-0f70-4ce0-3ab75552e685@techpyre.eu>"
     ],
-    "status": "CONTACTED_STEP_2"
+    "status": "INVALID_TICKET_INBOX",
+    "notes": "Autoresponder Odoo comunicazioni@blindhome.it."
   },
   "audit": {
     "originalLcpSeconds": 5,
