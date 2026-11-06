@@ -763,6 +763,11 @@ export function selectBestDecisionMakerEmail(
       score -= 10;
     }
 
+    const domainRoot = cleanCompanyDomain.split(".")[0];
+    if (domainRoot && domainRoot.length >= 4 && localPart.includes(domainRoot)) {
+      score += 20;
+    }
+
     const dotParts = localPart.split(".");
     const isNominalDotPattern =
       /^[a-z]{2,15}\.[a-z]{2,18}$/i.test(localPart) &&

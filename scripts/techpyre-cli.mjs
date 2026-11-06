@@ -585,6 +585,7 @@ async function cmdSend(positional, flags) {
           stepNumber,
           user,
           bypassBusinessHoursCheck: bypassHours,
+          bypassRateLimitCheck: bypassHours,
           applyJitter: true,
         });
         console.log(`  ✅ [${slug}] ${res.message} (${res.messageId})`);
@@ -609,6 +610,7 @@ async function cmdSend(positional, flags) {
     stepNumber,
     user,
     bypassBusinessHoursCheck: bypassHours,
+    bypassRateLimitCheck: bypassHours,
     applyJitter: false,
   });
   console.log(`\n✅ ${res.message}`);

@@ -7,17 +7,19 @@
     "decisionMakerFirstName": null,
     "decisionMakerRole": "Direzione Aziendale",
     "isGenericInbox": true,
-    "emailScore": -2,
-    "targetEmail": "arteinfissibambara@gmail.com",
+    "emailScore": 18,
+    "targetEmail": "arteinfissibombara@gmail.com",
     "phone": "0665443",
     "city": "Messina",
     "vatNumber": "03441710831",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Arte%20Infissi",
     "originalLandingUrl": "https://www.arteinfissibombara.it",
     "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<8d910fe6-6e38-349e-be0b-f3109638e71a@techpyre.eu>",
+    "lastSentMessageId": "<5a521af7-7e28-94e8-68fb-ce3df4bee2c2@techpyre.eu>",
     "threadMessageIds": [
-      "<8d910fe6-6e38-349e-be0b-f3109638e71a@techpyre.eu>"
+      "<8d910fe6-6e38-349e-be0b-f3109638e71a@techpyre.eu>",
+      "<2b24b892-757a-427c-7a36-8737afbe0a62@techpyre.eu>",
+      "<5a521af7-7e28-94e8-68fb-ce3df4bee2c2@techpyre.eu>"
     ]
   },
   "audit": {
