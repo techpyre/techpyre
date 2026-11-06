@@ -8,6 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "generate:favicons": "node scripts/generate-favicons.mjs",
+    "tp": "node scripts/techpyre-cli.mjs",
+    "dryrun": "node scripts/test-scout-dryrun.mjs",
     "scout": "node scripts/scout-ad-library.mjs",
     "preflight": "node scripts/preflight.mjs",
     "outreach": "node scripts/send-outreach.mjs"
