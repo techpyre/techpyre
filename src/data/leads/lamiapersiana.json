@@ -13,7 +13,13 @@
     "isGenericInbox": true,
     "emailScore": 35,
     "decisionMakerFirstName": "Emanuela",
-    "decisionMakerRole": "Titolare"
+    "decisionMakerRole": "Titolare",
+    "lastSentMessageId": "<91f2f5ea-44a9-366d-c686-ac512c25a6ed@techpyre.eu>",
+    "threadMessageIds": [
+      "<c9d968b5-3165-4f76-8806-cf8892f3f85e@techpyre.eu>",
+      "<91f2f5ea-44a9-366d-c686-ac512c25a6ed@techpyre.eu>"
+    ],
+    "status": "CONTACTED_STEP_2"
   },
   "audit": {
     "originalLcpSeconds": 28.9,

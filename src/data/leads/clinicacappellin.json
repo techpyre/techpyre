@@ -13,12 +13,18 @@
     "isGenericInbox": true,
     "emailScore": 35,
     "decisionMakerFirstName": null,
-    "decisionMakerRole": "Direzione Aziendale"
+    "decisionMakerRole": "Direzione Aziendale",
+    "lastSentMessageId": "<60f00cb7-85b7-dab8-715e-9848c73d6fd6@techpyre.eu>",
+    "threadMessageIds": [
+      "<61014d05-c302-2dea-aef4-5f04cc6178cd@techpyre.eu>",
+      "<60f00cb7-85b7-dab8-715e-9848c73d6fd6@techpyre.eu>"
+    ],
+    "status": "CONTACTED_STEP_2"
   },
   "audit": {
     "originalLcpSeconds": 7.3,
     "mobileScore": 45,
-    "activeAdHeadline": "Denti Fissi - Clinica dentale Cappellin",
+    "activeAdHeadline": "Denti Fissi &#8211; Clinica dentale Cappellin",
     "activeAdCopySummary": "Campagna pubblicitaria attiva su Meta per il territorio di Torino e provincia.",
     "threeCriticalFlaws": [
       "Il sito attuale impiega 7.3 secondi ad aprirsi su rete mobile 4G per via di 7 risorse bloccanti.",

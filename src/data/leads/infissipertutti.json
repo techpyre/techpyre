@@ -12,12 +12,18 @@
     "isGenericInbox": true,
     "emailScore": 35,
     "decisionMakerFirstName": null,
-    "decisionMakerRole": "Direzione Aziendale"
+    "decisionMakerRole": "Direzione Aziendale",
+    "lastSentMessageId": "<e0d2d4ab-d227-0edb-e108-c08cf537ea25@techpyre.eu>",
+    "threadMessageIds": [
+      "<ead8d00e-656b-364b-769c-d263a74f6f2c@techpyre.eu>",
+      "<e0d2d4ab-d227-0edb-e108-c08cf537ea25@techpyre.eu>"
+    ],
+    "status": "CONTACTED_STEP_2"
   },
   "audit": {
     "originalLcpSeconds": 3.1,
     "mobileScore": 55,
-    "activeAdHeadline": "Contatti - Infissi Per Tutti",
+    "activeAdHeadline": "Contatti &#8211; Infissi Per Tutti",
     "activeAdCopySummary": "Campagna pubblicitaria attiva su Meta per il territorio di Italia e provincia.",
     "threeCriticalFlaws": [
       "Il sito attuale impiega 3.1 secondi ad aprirsi su rete mobile 4G/5G con script bloccanti.",

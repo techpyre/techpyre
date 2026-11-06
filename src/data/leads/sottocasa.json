@@ -11,7 +11,13 @@
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&media_type=all&q=ristrutturazione%20bagno%20verona&search_type=keyword_unordered",
     "originalLandingUrl": "https://www.sottocasa.agency/it/immobili/residenziali-in-vendita/verona/sona/rustico--casale-sa014/",
     "decisionMakerFirstName": null,
-    "decisionMakerRole": "Direzione Aziendale"
+    "decisionMakerRole": "Direzione Aziendale",
+    "lastSentMessageId": "<620afcfc-ab3f-ae76-bd70-c7e5a1326f14@techpyre.eu>",
+    "threadMessageIds": [
+      "<c9e34203-0ad6-c373-ae3c-ac7bc2ef0deb@techpyre.eu>",
+      "<620afcfc-ab3f-ae76-bd70-c7e5a1326f14@techpyre.eu>"
+    ],
+    "status": "CONTACTED_STEP_2"
   },
   "audit": {
     "originalLcpSeconds": 7.2,

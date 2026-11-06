@@ -573,6 +573,22 @@ async function cmdSend(positional, flags) {
       return lastStep === stepNumber - 1;
     });
 
+    const firstSentMap = new Map();
+    for (const h of history) {
+      if (
+        !firstSentMap.has(h.slug) &&
+        (h.type === "INITIAL" || h.type === "STEP_1" || h.stepNumber === 1 || !h.stepNumber)
+      ) {
+        firstSentMap.set(h.slug, new Date(h.sentAt || 0).getTime());
+      }
+    }
+
+    eligible.sort((a, b) => {
+      const timeA = firstSentMap.get(a.slug) || Number.MAX_SAFE_INTEGER;
+      const timeB = firstSentMap.get(b.slug) || Number.MAX_SAFE_INTEGER;
+      return timeA - timeB;
+    });
+
     const toSend = eligible.slice(0, batchCount);
     console.log(
       `📨 Invio Batch Step ${stepNumber}: ${toSend.length} lead selezionati (su ${eligible.length} idonei)...`
