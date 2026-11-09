@@ -1,0 +1,41 @@
+{
+  "slug": "eib",
+  "targetUrl": "http://www.eib.it",
+  "searchKeyword": "automazione industriale brescia",
+  "measuredResponseMs": 4484,
+  "renderBlockingScripts": 55,
+  "estimatedMobileLcpSeconds": 15.5,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@eib.it",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@eib.it",
+    "info@eib.it",
+    "info@eib.it",
+    "info@eib.it",
+    "certificata@pec.eib.it",
+    "certificata@pec.eib.it",
+    "info@eib.it",
+    "info@eib.it",
+    "info@eib.it",
+    "info@eib.it",
+    "certificata@pec.eib.it",
+    "certificata@pec.eib.it",
+    "info@eib.it"
+  ],
+  "extractedPhones": [
+    "003903411694",
+    "0341 1694240",
+    "02777170131"
+  ],
+  "extractedVat": "02777170131"
+}

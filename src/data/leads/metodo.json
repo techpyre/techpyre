@@ -13,7 +13,9 @@
     "isGenericInbox": true,
     "emailScore": 5,
     "decisionMakerFirstName": null,
-    "decisionMakerRole": "Direzione Aziendale"
+    "decisionMakerRole": "Direzione Aziendale",
+    "status": "CONTACTED_STEP_2",
+    "notes": "Gia inviato Step 2 tramite scheda cariup (info@cariup.it)."
   },
   "audit": {
     "originalLcpSeconds": 3.1,

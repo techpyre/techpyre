@@ -1,0 +1,150 @@
+{
+  "slug": "bortolettoserramenti",
+  "archetype": "local-leadgen",
+  "meta": {
+    "companyName": "Bortoletto Serramenti",
+    "decisionMakerName": "Direzione Bortoletto Serramenti",
+    "decisionMakerFirstName": null,
+    "decisionMakerRole": "Direzione Aziendale",
+    "isGenericInbox": true,
+    "emailScore": 8,
+    "targetEmail": "luca.p@ocalab.it",
+    "phone": "00062240288",
+    "city": "Padova",
+    "vatNumber": "00062240288",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Bortoletto%20Serramenti",
+    "originalLandingUrl": "https://www.bortolettoserramenti.com",
+    "status": "CONTACTED_STEP_1",
+    "lastSentMessageId": "<ab1edcdc-42e4-9e4e-c6e2-dc470e347630@techpyre.eu>",
+    "threadMessageIds": [
+      "<ab1edcdc-42e4-9e4e-c6e2-dc470e347630@techpyre.eu>"
+    ]
+  },
+  "audit": {
+    "originalLcpSeconds": 13.5,
+    "mobileScore": 15,
+    "renderBlockingCount": 55,
+    "runsAds": true,
+    "detectedTrackingSignals": [
+      "Google Ads / GTM"
+    ],
+    "threeCriticalFlaws": [
+      "Dispersione del budget pubblicitario: caricamento mobile di 13.5s (55 risorse bloccanti) che fa abbandonare oltre meta degli utenti prima dell'apertura della pagina.",
+      "Cecita decisionale sul ROI: assenza di tracciamento Server-Side di prima parte (GTM Server-Side e Meta CAPI), con perdita del 30-50% dei dati di conversione per blocchi browser e cookie banner.",
+      "Colli di bottiglia commerciali: i contatti finiscono in email isolate senza pre-qualifica automatica e senza sincronizzazione immediata via API/Webhook con il CRM aziendale."
+    ],
+    "activeAdHeadline": "BORTOLETTO SERRAMENTI",
+    "activeAdCopySummary": "Dal 1957 progettiamo e produciamo a Padova finestre, alzanti, scuri e porte su misura. Vieni a trovarci in showroom: ti aiutiamo a scegliere..."
+  },
+  "theme": {
+    "primaryHex": "#1E3A8A",
+    "accentHex": "#2563EB",
+    "darkBgHex": "#0B1E36",
+    "borderRadius": "12px",
+    "headerBgMode": "light",
+    "logoBrightness": "dark"
+  },
+  "content": {
+    "badgeTop": "Bortoletto Serramenti · Operativi a Padova e provincia",
+    "heroHeadline": "BORTOLETTO SERRAMENTI",
+    "heroSubheadline": "Dal 1957 progettiamo e produciamo a Padova finestre, alzanti, scuri e porte su misura. Vieni a trovarci in showroom: ti aiutiamo a scegliere quelli giusti.",
+    "heroBullets": [
+      "Sopralluogo tecnico e preventivo chiaro senza impegno",
+      "Materiali certificati e assistenza diretta con personale qualificato",
+      "Tempi di intervento garantiti e gestione completa della pratica"
+    ],
+    "ctaButtonText": "Calcola il Tuo Preventivo Rapido",
+    "trustMicrocopy": "Richiesta gratuita e senza impegno · Risposta rapida dal nostro ufficio tecnico",
+    "logoLocalPath": "/leads/bortolettoserramenti/logo.png",
+    "heroImageLocalPath": "/leads/bortolettoserramenti/hero.jpg",
+    "heroImageCaption": "Bortoletto Serramenti · Sede operativa e realizzazioni (Padova)",
+    "quiz": {
+      "question1": {
+        "title": "Quale tipologia di intervento desideri valutare?",
+        "options": [
+          "Sostituzione infissi con isolamento termico/acustico",
+          "Nuova installazione per ristrutturazione o cantiere",
+          "Porte interne, blindati o sistemi oscuranti"
+        ]
+      },
+      "question2": {
+        "title": "Quanti serramenti prevede indicativamente il progetto?",
+        "options": [
+          "Da 1 a 4 serramenti",
+          "Da 5 a 8 serramenti (appartamento completo)",
+          "Oltre 8 serramenti o villa/ufficio"
+        ]
+      },
+      "finalStepTitle": "Ottimo. Inserisci i tuoi recapiti per ricevere il prospetto economico e il sopralluogo:"
+    },
+    "valueProps": [
+      {
+        "title": "Qualita Certificata e Garanzia Scritta",
+        "description": "Ogni intervento di Bortoletto Serramenti utilizza materiali selezionati e procedure certificate per garantire durata e prestazioni nel tempo.",
+        "metric": "100% Garantito"
+      },
+      {
+        "title": "Preventivo Chiaro e Zero Sorprese",
+        "description": "Valutazione trasparente delle soluzioni piu adatte alle tue esigenze a Padova, con tempi e costi definiti prima dell'inizio dei lavori.",
+        "metric": "Preventivo Chiuso"
+      },
+      {
+        "title": "Assistenza Tecnica Diretta",
+        "description": "Un unico referente tecnico ti segue dal primo sopralluogo fino al collaudo finale e all'assistenza post-vendita.",
+        "metric": "Supporto Diretto"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "98%",
+      "mainStatLabel": "Clienti soddisfatti del servizio e dell'assistenza",
+      "reviewsSummary": "Azienda di riferimento a Padova per affidabilita e precisione",
+      "testimonials": [
+        {
+          "name": "Marco R.",
+          "location": "Padova",
+          "quote": "Servizio impeccabile da parte del team di Bortoletto Serramenti. Puntuali, precisi e disponibilissimi in ogni fase del lavoro.",
+          "roleOrContext": "Cliente verificato"
+        },
+        {
+          "name": "Laura B.",
+          "location": "Padova",
+          "quote": "Ottima consulenza iniziale e grande cura nei dettagli. Preventivo rispettato al centesimo e risultato superiore alle aspettative.",
+          "roleOrContext": "Intervento completato"
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "Bortoletto Serramenti · dispersione clic mobile e tempi di caricamento di Bortoletto Serramenti (13.5s)",
+    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di Bortoletto Serramenti, da smartphone impiega 13.5 secondi ad aprirsi per 55 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Bortoletto Serramenti che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza · TechPyre\n+39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Bortoletto Serramenti, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/bortolettoserramenti\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza · TechPyre Studio\n+39 379 115 9352",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "Bortoletto Serramenti · dispersione clic mobile e tempi di caricamento di Bortoletto Serramenti (13.5s)",
+      "body": "Buongiorno,\n\nda un test sul sito di Bortoletto Serramenti, da smartphone impiega 13.5 secondi ad aprirsi per 55 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Bortoletto Serramenti che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza · TechPyre\n+39 379 115 9352",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: Bortoletto Serramenti · dispersione clic mobile e tempi di caricamento di Bortoletto Serramenti (13.5s)",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Bortoletto Serramenti, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/bortolettoserramenti\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza · TechPyre Studio\n+39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: Bortoletto Serramenti · dispersione clic mobile e tempi di caricamento di Bortoletto Serramenti (13.5s)",
+      "body": "Buongiorno,\n\nOltre a tagliare i 13.5 secondi su mobile, l'infrastruttura recupera il 40% delle conversioni tramite Server-Side Tracking.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza · TechPyre Studio",
+      "inThread": true,
+      "requiresFollowUpCall": true
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: Bortoletto Serramenti · dispersione clic mobile e tempi di caricamento di Bortoletto Serramenti (13.5s)",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Bortoletto Serramenti non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/bortolettoserramenti) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza · TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

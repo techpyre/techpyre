@@ -1,0 +1,31 @@
+{
+  "slug": "for-el",
+  "targetUrl": "https://www.for-el.it",
+  "searchKeyword": "automazione industriale brescia",
+  "measuredResponseMs": 496,
+  "renderBlockingScripts": 20,
+  "estimatedMobileLcpSeconds": 5.1,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@for-el.it",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@for-el.it",
+    "info@for-el.it",
+    "info@for-el.it"
+  ],
+  "extractedPhones": [
+    "000000999",
+    "000009999",
+    "0000000"
+  ],
+  "extractedVat": "01473170171"
+}

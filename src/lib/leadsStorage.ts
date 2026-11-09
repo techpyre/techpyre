@@ -40,8 +40,8 @@ export function loadLeadConfig(slug: string): LeadConfig | null {
 
   // Controlla prima in /tmp (eventuali lead appena generati da remoto) e poi in src/data/leads
   const candidates = [
-    path.join(TMP_LEADS_DIR, `${safeSlug}.json`),
     path.join(LOCAL_LEADS_DIR, `${safeSlug}.json`),
+    path.join(TMP_LEADS_DIR, `${safeSlug}.json`),
   ];
 
   for (const filePath of candidates) {
@@ -100,6 +100,7 @@ export function listAllLeadConfigs(): Array<{ slug: string; config: LeadConfig }
         .filter((f) => f.endsWith(".json"));
       for (const file of tmpFiles) {
         const slug = file.replace(/\.json$/, "");
+        if (map.has(slug)) continue;
         try {
           const raw = fs.readFileSync(
             /*turbopackIgnore: true*/ path.join(TMP_LEADS_DIR, file),

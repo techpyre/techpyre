@@ -1,0 +1,32 @@
+{
+  "slug": "lasinox",
+  "targetUrl": "http://www.lasinox.it",
+  "searchKeyword": "carpenteria metallica vicenza",
+  "measuredResponseMs": 4238,
+  "renderBlockingScripts": 32,
+  "estimatedMobileLcpSeconds": 10.8,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@lasinox.it",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@lasinox.it",
+    "info@lasinox.it",
+    "info@lasinox.it",
+    "info@lasinox.it"
+  ],
+  "extractedPhones": [
+    "02707330243",
+    "+39 0445 576423",
+    "+39 0445 576808"
+  ],
+  "extractedVat": "02707330243"
+}

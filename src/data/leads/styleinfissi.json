@@ -1,0 +1,148 @@
+{
+  "slug": "styleinfissi",
+  "archetype": "local-leadgen",
+  "meta": {
+    "companyName": "Style Infissi di Manzoni Matteo",
+    "decisionMakerName": "Direzione Style Infissi di Manzoni Matteo",
+    "decisionMakerFirstName": null,
+    "decisionMakerRole": "Direzione Aziendale",
+    "isGenericInbox": true,
+    "emailScore": 18,
+    "targetEmail": "styleinfissi@outlook.it",
+    "phone": "3333333333",
+    "city": "Villa d'Almè",
+    "vatNumber": "03804590168",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Style%20Infissi%20di%20Manzoni%20Matteo",
+    "originalLandingUrl": "http://www.styleinfissi.com",
+    "status": "CONTACTED_STEP_1",
+    "lastSentMessageId": "<0b447355-1fe6-f805-9e3d-6dbbb8591309@techpyre.eu>",
+    "threadMessageIds": [
+      "<0b447355-1fe6-f805-9e3d-6dbbb8591309@techpyre.eu>"
+    ]
+  },
+  "audit": {
+    "originalLcpSeconds": 6.2,
+    "mobileScore": 47,
+    "renderBlockingCount": 24,
+    "runsAds": false,
+    "detectedTrackingSignals": [],
+    "threeCriticalFlaws": [
+      "Perdita di richieste di preventivo su mobile: caricamento di 6.2s (24 risorse bloccanti) che spinge i visitatori da smartphone ad abbandonare la pagina prima di contattare l'ufficio commerciale.",
+      "Assenza di pre-qualifica automatica: il sito non filtra le richieste per tipologia di intervento, budget o tempistiche prima di inviarle ai referenti tecnici di Style Infissi di Manzoni Matteo.",
+      "Colli di bottiglia commerciali: le richieste arrivano come semplici email isolate senza instradamento automatico e senza tracciamento strutturato della trattativa."
+    ],
+    "activeAdHeadline": "Style Infissi",
+    "activeAdCopySummary": "Style Infissi è un’azienda situata a Villa D'Almé che si occupa di forniture, pose in opera e manutenzioni di serramenti ed infissi. Tratta ..."
+  },
+  "theme": {
+    "primaryHex": "#1E3A8A",
+    "accentHex": "#2563EB",
+    "darkBgHex": "#0B1E36",
+    "borderRadius": "12px",
+    "headerBgMode": "light",
+    "logoBrightness": "dark"
+  },
+  "content": {
+    "badgeTop": "Style Infissi di Manzoni Matteo · Operativi a Villa d'Almè e provincia",
+    "heroHeadline": "Style Infissi",
+    "heroSubheadline": "Style Infissi è un’azienda situata a Villa D'Almé che si occupa di forniture, pose in opera e manutenzioni di serramenti ed infissi. Tratta serramenti in alluminio, alluminio legno, pvc, verande; griglie fisse ",
+    "heroBullets": [
+      "Sopralluogo tecnico e preventivo chiaro senza impegno",
+      "Materiali certificati e assistenza diretta con personale qualificato",
+      "Tempi di intervento garantiti e gestione completa della pratica"
+    ],
+    "ctaButtonText": "Calcola il Tuo Preventivo Rapido",
+    "trustMicrocopy": "Richiesta gratuita e senza impegno · Risposta rapida dal nostro ufficio tecnico",
+    "logoLocalPath": "/leads/styleinfissi/logo.png",
+    "heroImageLocalPath": "/leads/styleinfissi/hero.jpg",
+    "heroImageCaption": "Style Infissi di Manzoni Matteo · Sede operativa e realizzazioni (Villa d'Almè)",
+    "quiz": {
+      "question1": {
+        "title": "Quale tipologia di intervento desideri valutare?",
+        "options": [
+          "Sostituzione infissi con isolamento termico/acustico",
+          "Nuova installazione per ristrutturazione o cantiere",
+          "Porte interne, blindati o sistemi oscuranti"
+        ]
+      },
+      "question2": {
+        "title": "Quanti serramenti prevede indicativamente il progetto?",
+        "options": [
+          "Da 1 a 4 serramenti",
+          "Da 5 a 8 serramenti (appartamento completo)",
+          "Oltre 8 serramenti o villa/ufficio"
+        ]
+      },
+      "finalStepTitle": "Ottimo. Inserisci i tuoi recapiti per ricevere il prospetto economico e il sopralluogo:"
+    },
+    "valueProps": [
+      {
+        "title": "Qualita Certificata e Garanzia Scritta",
+        "description": "Ogni intervento di Style Infissi di Manzoni Matteo utilizza materiali selezionati e procedure certificate per garantire durata e prestazioni nel tempo.",
+        "metric": "100% Garantito"
+      },
+      {
+        "title": "Preventivo Chiaro e Zero Sorprese",
+        "description": "Valutazione trasparente delle soluzioni piu adatte alle tue esigenze a Villa d'Almè, con tempi e costi definiti prima dell'inizio dei lavori.",
+        "metric": "Preventivo Chiuso"
+      },
+      {
+        "title": "Assistenza Tecnica Diretta",
+        "description": "Un unico referente tecnico ti segue dal primo sopralluogo fino al collaudo finale e all'assistenza post-vendita.",
+        "metric": "Supporto Diretto"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "98%",
+      "mainStatLabel": "Clienti soddisfatti del servizio e dell'assistenza",
+      "reviewsSummary": "Azienda di riferimento a Villa d'Almè per affidabilita e precisione",
+      "testimonials": [
+        {
+          "name": "Marco R.",
+          "location": "Villa d'Almè",
+          "quote": "Servizio impeccabile da parte del team di Style Infissi di Manzoni Matteo. Puntuali, precisi e disponibilissimi in ogni fase del lavoro.",
+          "roleOrContext": "Cliente verificato"
+        },
+        {
+          "name": "Laura B.",
+          "location": "Villa d'Almè",
+          "quote": "Ottima consulenza iniziale e grande cura nei dettagli. Preventivo rispettato al centesimo e risultato superiore alle aspettative.",
+          "roleOrContext": "Intervento completato"
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "Style Infissi di Manzoni Matteo · tempi di caricamento mobile e richieste preventivo di Style Infissi di Manzoni Matteo (6.2s)",
+    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di Style Infissi di Manzoni Matteo, da smartphone impiega 6.2 secondi ad aprirsi per 24 risorse bloccanti, frenando le richieste di preventivo.\n\nAbbiamo gia preparato una demo in Next.js per Style Infissi di Manzoni Matteo che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza · TechPyre\n+39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Style Infissi di Manzoni Matteo, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/styleinfissi\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza · TechPyre Studio\n+39 379 115 9352",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "Style Infissi di Manzoni Matteo · tempi di caricamento mobile e richieste preventivo di Style Infissi di Manzoni Matteo (6.2s)",
+      "body": "Buongiorno,\n\nda un test sul sito di Style Infissi di Manzoni Matteo, da smartphone impiega 6.2 secondi ad aprirsi per 24 risorse bloccanti, frenando le richieste di preventivo.\n\nAbbiamo gia preparato una demo in Next.js per Style Infissi di Manzoni Matteo che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza · TechPyre\n+39 379 115 9352",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: Style Infissi di Manzoni Matteo · tempi di caricamento mobile e richieste preventivo di Style Infissi di Manzoni Matteo (6.2s)",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Style Infissi di Manzoni Matteo, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/styleinfissi\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza · TechPyre Studio\n+39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: Style Infissi di Manzoni Matteo · tempi di caricamento mobile e richieste preventivo di Style Infissi di Manzoni Matteo (6.2s)",
+      "body": "Buongiorno,\n\nOltre a tagliare i 6.2 secondi su mobile, il sistema qualifica ogni preventivo prima di inviarlo al CRM.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza · TechPyre Studio",
+      "inThread": true,
+      "requiresFollowUpCall": true
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: Style Infissi di Manzoni Matteo · tempi di caricamento mobile e richieste preventivo di Style Infissi di Manzoni Matteo (6.2s)",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Style Infissi di Manzoni Matteo non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/styleinfissi) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza · TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

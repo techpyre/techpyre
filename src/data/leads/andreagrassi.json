@@ -2,8 +2,8 @@
   "slug": "andreagrassi",
   "archetype": "medical-clinic",
   "meta": {
-    "companyName": "Laboratorio A++ 2026 &#8211; Andrea Grassi",
-    "decisionMakerName": "Direzione Laboratorio A++ 2026 &#8211; Andrea Grassi",
+    "companyName": "Ekis · Andrea Grassi",
+    "decisionMakerName": "Direzione Ekis · Andrea Grassi",
     "targetEmail": "info@ekis.it",
     "phone": "01882890351",
     "city": "Verona",
@@ -13,7 +13,13 @@
     "isGenericInbox": true,
     "emailScore": 5,
     "decisionMakerFirstName": null,
-    "decisionMakerRole": "Direzione Aziendale"
+    "decisionMakerRole": "Direzione Aziendale",
+    "lastSentMessageId": "<0d73f9c6-e5b5-59b6-50cf-6e742cbf1b7c@techpyre.eu>",
+    "threadMessageIds": [
+      "<6e6fae8e-b24a-1452-2de7-032a559738d6@techpyre.eu>",
+      "<0d73f9c6-e5b5-59b6-50cf-6e742cbf1b7c@techpyre.eu>"
+    ],
+    "status": "CONTACTED_STEP_2"
   },
   "audit": {
     "originalLcpSeconds": 11.9,
@@ -111,34 +117,34 @@
     }
   },
   "outreach": {
-    "emailSubject": "Laboratorio A++ 2026 &#8211; Andrea Grassi · dispersione clic mobile e tempi di caricamento di Laboratorio A++ 2026 &#8211; Andrea Grassi (11.9s)",
-    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di Laboratorio A++ 2026 &#8211; Andrea Grassi, da smartphone impiega 11.9 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Laboratorio A++ 2026 &#8211; Andrea Grassi che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza · TechPyre\n+39 379 115 9352",
-    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Laboratorio A++ 2026 &#8211; Andrea Grassi, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/andreagrassi\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza · TechPyre Studio\n+39 379 115 9352",
+    "emailSubject": "Ekis · Andrea Grassi · dispersione clic mobile e tempi di caricamento di Ekis · Andrea Grassi (11.9s)",
+    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di Ekis · Andrea Grassi, da smartphone impiega 11.9 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Ekis · Andrea Grassi che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza · TechPyre\n+39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Ekis · Andrea Grassi, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/andreagrassi\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza · TechPyre Studio\n+39 379 115 9352",
     "step1FirstTouch": {
       "dayOffset": 1,
-      "subject": "Laboratorio A++ 2026 &#8211; Andrea Grassi · dispersione clic mobile e tempi di caricamento di Laboratorio A++ 2026 &#8211; Andrea Grassi (11.9s)",
-      "body": "Buongiorno,\n\nda un test sul sito di Laboratorio A++ 2026 &#8211; Andrea Grassi, da smartphone impiega 11.9 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Laboratorio A++ 2026 &#8211; Andrea Grassi che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza · TechPyre\n+39 379 115 9352",
+      "subject": "Ekis · Andrea Grassi · dispersione clic mobile e tempi di caricamento di Ekis · Andrea Grassi (11.9s)",
+      "body": "Buongiorno,\n\nda un test sul sito di Ekis · Andrea Grassi, da smartphone impiega 11.9 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Ekis · Andrea Grassi che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza · TechPyre\n+39 379 115 9352",
       "inThread": false,
       "requiresFollowUpCall": false
     },
     "step2FollowUpLink": {
       "dayOffset": 4,
-      "subject": "Re: Laboratorio A++ 2026 &#8211; Andrea Grassi · dispersione clic mobile e tempi di caricamento di Laboratorio A++ 2026 &#8211; Andrea Grassi (11.9s)",
-      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Laboratorio A++ 2026 &#8211; Andrea Grassi, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/andreagrassi\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza · TechPyre Studio\n+39 379 115 9352",
+      "subject": "Re: Ekis · Andrea Grassi · dispersione clic mobile e tempi di caricamento di Ekis · Andrea Grassi (11.9s)",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Ekis · Andrea Grassi, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/andreagrassi\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza · TechPyre Studio\n+39 379 115 9352",
       "inThread": true,
       "requiresFollowUpCall": false
     },
     "step3ValueDropAndCallTrigger": {
       "dayOffset": 8,
-      "subject": "Re: Laboratorio A++ 2026 &#8211; Andrea Grassi · dispersione clic mobile e tempi di caricamento di Laboratorio A++ 2026 &#8211; Andrea Grassi (11.9s)",
+      "subject": "Re: Ekis · Andrea Grassi · dispersione clic mobile e tempi di caricamento di Ekis · Andrea Grassi (11.9s)",
       "body": "Buongiorno,\n\nOltre a tagliare i 11.9 secondi su mobile, l'infrastruttura recupera il 40% delle conversioni tramite Server-Side Tracking.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza · TechPyre Studio",
       "inThread": true,
       "requiresFollowUpCall": true
     },
     "step4Breakup": {
       "dayOffset": 13,
-      "subject": "Re: Laboratorio A++ 2026 &#8211; Andrea Grassi · dispersione clic mobile e tempi di caricamento di Laboratorio A++ 2026 &#8211; Andrea Grassi (11.9s)",
-      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Laboratorio A++ 2026 &#8211; Andrea Grassi non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/andreagrassi) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza · TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
+      "subject": "Re: Ekis · Andrea Grassi · dispersione clic mobile e tempi di caricamento di Ekis · Andrea Grassi (11.9s)",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Ekis · Andrea Grassi non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/andreagrassi) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza · TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
       "inThread": true,
       "requiresFollowUpCall": false
     }

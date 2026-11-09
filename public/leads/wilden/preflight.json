@@ -1,0 +1,29 @@
+{
+  "slug": "wilden",
+  "targetUrl": "https://www.wilden.it",
+  "searchKeyword": "impianti aspirazione milano",
+  "measuredResponseMs": 380,
+  "renderBlockingScripts": 62,
+  "estimatedMobileLcpSeconds": 12.2,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "sales@wilden.it",
+    "isGeneric": true,
+    "score": 45
+  },
+  "extractedEmails": [
+    "info@wilden.it"
+  ],
+  "extractedPhones": [
+    "+390308980009",
+    "+39 030 8981550",
+    "+39 030 881081"
+  ],
+  "extractedVat": "01809180985"
+}

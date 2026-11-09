@@ -1,0 +1,41 @@
+{
+  "slug": "richinimpianti",
+  "targetUrl": "http://www.richinimpianti.it",
+  "searchKeyword": "automazione industriale brescia",
+  "measuredResponseMs": 387,
+  "renderBlockingScripts": 39,
+  "estimatedMobileLcpSeconds": 8.5,
+  "runsAds": true,
+  "detectedTrackingSignals": [
+    "Google Ads / GTM"
+  ],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@richinimpianti.it",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@richinimpianti.it",
+    "info@richinimpianti.it",
+    "info@richinimpianti.it",
+    "info@richinimpianti.it",
+    "info@richinimpianti.it",
+    "info@richinimpianti.it",
+    "info@richinimpianti.it",
+    "info@richinimpianti.it",
+    "info@richinimpianti.it",
+    "info@richinimpianti.it",
+    "info@richinimpianti.it"
+  ],
+  "extractedPhones": [
+    "0543252",
+    "00403400989",
+    "+39 0364 368919"
+  ],
+  "extractedVat": "00403400989"
+}

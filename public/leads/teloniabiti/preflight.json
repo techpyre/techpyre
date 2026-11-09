@@ -1,0 +1,57 @@
+{
+  "slug": "teloniabiti",
+  "targetUrl": "https://teloniabiti.com",
+  "searchKeyword": "coperture industriali treviso",
+  "measuredResponseMs": 1470,
+  "renderBlockingScripts": 60,
+  "estimatedMobileLcpSeconds": 12.9,
+  "runsAds": true,
+  "detectedTrackingSignals": [
+    "Google Ads / GTM"
+  ],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "infocover@teloniabiti.com",
+    "isGeneric": true,
+    "score": 38
+  },
+  "extractedEmails": [
+    "infocover@teloniabiti.com",
+    "infocover@teloniabiti.com",
+    "infocover@teloniabiti.com",
+    "infocover@teloniabiti.com",
+    "infocover@teloniabiti.com",
+    "amministrazione@teloniabiti.com",
+    "infocover@teloniabiti.com",
+    "infocover@teloniabiti.com",
+    "infocover@teloniabiti.com",
+    "infocover@teloniabiti.com",
+    "infocover@teloniabiti.com",
+    "infocover@teloniabiti.com",
+    "infocover@teloniabiti.com",
+    "infocover@teloniabiti.com",
+    "infocover@teloniabiti.com",
+    "infocover@teloniabiti.com",
+    "infocover@teloniabiti.com",
+    "infocover@teloniabiti.com",
+    "infocover@teloniabiti.com",
+    "amministrazione@teloniabiti.com",
+    "infocover@teloniabiti.com",
+    "infocover@teloniabiti.com",
+    "infocover@teloniabiti.com",
+    "infocover@teloniabiti.com",
+    "infocover@teloniabiti.com",
+    "infocover@teloniabiti.com",
+    "infocover@teloniabiti.com"
+  ],
+  "extractedPhones": [
+    "03766640266",
+    "3017276122",
+    "079352709583"
+  ],
+  "extractedVat": "03766640266"
+}

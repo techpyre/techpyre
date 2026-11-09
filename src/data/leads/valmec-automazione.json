@@ -13,7 +13,9 @@
     "isGenericInbox": false,
     "emailScore": 90,
     "decisionMakerFirstName": "Davide",
-    "decisionMakerRole": "Titolare"
+    "decisionMakerRole": "Titolare",
+    "status": "INVALID_TICKET_INBOX",
+    "notes": "Dominio email privo di record DNS/MX."
   },
   "audit": {
     "originalLcpSeconds": 7.1,

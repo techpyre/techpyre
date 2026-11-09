@@ -13,7 +13,9 @@
     "isGenericInbox": true,
     "emailScore": 5,
     "decisionMakerFirstName": null,
-    "decisionMakerRole": "Direzione Aziendale"
+    "decisionMakerRole": "Direzione Aziendale",
+    "status": "INVALID_TICKET_INBOX",
+    "notes": "Duplicato di amkblindati (stessa email info@amkblindati.com)."
   },
   "audit": {
     "originalLcpSeconds": 7.7,

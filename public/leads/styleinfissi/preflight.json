@@ -1,0 +1,44 @@
+{
+  "slug": "styleinfissi",
+  "targetUrl": "http://www.styleinfissi.com",
+  "searchKeyword": "infissi bergamo",
+  "measuredResponseMs": 511,
+  "renderBlockingScripts": 24,
+  "estimatedMobileLcpSeconds": 6.2,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "styleinfissi@outlook.it",
+    "isGeneric": true,
+    "score": 18
+  },
+  "extractedEmails": [
+    "styleinfissi@outlook.it",
+    "styleinfissi@outlook.it",
+    "styleinfissi@outlook.it",
+    "styleinfissi@outlook.it",
+    "styleinfissi@outlook.it",
+    "styleinfissi@outlook.it",
+    "styleinfissi@outlook.it",
+    "styleinfissi@outlook.it",
+    "styleinfissi@outlook.it",
+    "styleinfissi@outlook.it",
+    "styleinfissi@outlook.it",
+    "styleinfissi@outlook.it",
+    "styleinfissi@outlook.it",
+    "styleinfissi@outlook.it",
+    "styleinfissi@outlook.it",
+    "styleinfissi@outlook.it"
+  ],
+  "extractedPhones": [
+    "3333333333",
+    "0823149",
+    "338 8855172"
+  ],
+  "extractedVat": "03804590168"
+}

@@ -12,7 +12,14 @@
     "isGenericInbox": true,
     "emailScore": 35,
     "decisionMakerFirstName": null,
-    "decisionMakerRole": "Direzione Aziendale"
+    "decisionMakerRole": "Direzione Aziendale",
+    "lastSentMessageId": "<c85f4817-81db-a3ae-d1cb-a7b8014c4489@techpyre.eu>",
+    "threadMessageIds": [
+      "<3de2d194-5d93-60d7-6f67-9c3311d08ac7@techpyre.eu>",
+      "<c85f4817-81db-a3ae-d1cb-a7b8014c4489@techpyre.eu>"
+    ],
+    "status": "INVALID_TICKET_INBOX",
+    "notes": "Casella email restituisce 550 No Such User."
   },
   "audit": {
     "originalLcpSeconds": 6.8,

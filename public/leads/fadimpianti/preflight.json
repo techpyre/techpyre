@@ -1,0 +1,43 @@
+{
+  "slug": "fadimpianti",
+  "targetUrl": "https://www.fadimpianti.com",
+  "searchKeyword": "automazione industriale brescia",
+  "measuredResponseMs": 4031,
+  "renderBlockingScripts": 43,
+  "estimatedMobileLcpSeconds": 13,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@fadimpianti.com",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@fadimpianti.com",
+    "info@fadimpianti.com",
+    "info@fadimpianti.com",
+    "info@fadimpianti.com",
+    "info@fadimpianti.com",
+    "info@fadimpianti.com",
+    "info@fadimpianti.com",
+    "info@fadimpianti.com",
+    "info@fadimpianti.com",
+    "info@fadimpianti.com",
+    "info@fadimpianti.com",
+    "info@fadimpianti.com",
+    "info@fadimpianti.com",
+    "info@fadimpianti.com",
+    "info@fadimpianti.com"
+  ],
+  "extractedPhones": [
+    "0110908",
+    "04207430",
+    "+39 0364 896015"
+  ],
+  "extractedVat": "02063640987"
+}

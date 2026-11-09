@@ -1,0 +1,35 @@
+{
+  "slug": "serramentivg",
+  "targetUrl": "https://www.serramentivg.it",
+  "searchKeyword": "serramenti padova",
+  "measuredResponseMs": 852,
+  "renderBlockingScripts": 64,
+  "estimatedMobileLcpSeconds": 13.7,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@serramentivg.it",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@serramentivg.it",
+    "info@serramentivg.it",
+    "info@serramentivg.it",
+    "info@serramentivg.it",
+    "info@serramentivg.it",
+    "info@serramentivg.it",
+    "info@serramentivg.it"
+  ],
+  "extractedPhones": [
+    "00000021",
+    "3626735223",
+    "05589290286"
+  ],
+  "extractedVat": "05589290286"
+}

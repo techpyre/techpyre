@@ -1,0 +1,54 @@
+{
+  "slug": "sadeco",
+  "targetUrl": "http://www.sadeco.it",
+  "searchKeyword": "coperture industriali treviso",
+  "measuredResponseMs": 683,
+  "renderBlockingScripts": 34,
+  "estimatedMobileLcpSeconds": 7.7,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@sadeco.it",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@sadeco.it",
+    "info@sadeco.it",
+    "info@sadeco.it",
+    "sadecosrl@legalmail.it",
+    "sadecosrl@legalmail.it",
+    "info@sadeco.it",
+    "info@sadeco.it",
+    "info@sadeco.it",
+    "sadecosrl@legalmail.it",
+    "sadecosrl@legalmail.it",
+    "info@sadeco.it",
+    "info@sadeco.it",
+    "info@sadeco.it",
+    "sadecosrl@legalmail.it",
+    "sadecosrl@legalmail.it",
+    "info@sadeco.it",
+    "info@sadeco.it",
+    "info@sadeco.it",
+    "sadecosrl@legalmail.it",
+    "sadecosrl@legalmail.it",
+    "info@sadeco.it",
+    "info@sadeco.it",
+    "info@sadeco.it",
+    "sadecosrl@legalmail.it",
+    "sadecosrl@legalmail.it",
+    "info@sadeco.it"
+  ],
+  "extractedPhones": [
+    "041 0995098",
+    "041 0995099",
+    "3290252614"
+  ],
+  "extractedVat": "02904950272"
+}

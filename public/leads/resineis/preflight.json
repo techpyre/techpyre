@@ -1,0 +1,33 @@
+{
+  "slug": "resineis",
+  "targetUrl": "https://resineis.it",
+  "searchKeyword": "impianti fotovoltaici modena",
+  "measuredResponseMs": 370,
+  "renderBlockingScripts": 121,
+  "estimatedMobileLcpSeconds": 23.2,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@resineis.it",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@resineis.it",
+    "info@resineis.it",
+    "info@resineis.it",
+    "info@resineis.it",
+    "info@resineis.it"
+  ],
+  "extractedPhones": [
+    "341356138",
+    "0029341",
+    "364511960"
+  ],
+  "extractedVat": "04144240365"
+}

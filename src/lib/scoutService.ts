@@ -82,6 +82,15 @@ const EXCLUDED_DOMAINS = [
   "reportaziende.it",
   "infoimprese.it",
   "trovanumeri.com",
+  "tim.it",
+  "telecomitalia.it",
+  "vodafone.it",
+  "fastweb.it",
+  "windtre.it",
+  "enel.com",
+  "eni.com",
+  "poste.it",
+  "ktcshop.it",
 ];
 
 const ITALIAN_CITIES = [
@@ -568,7 +577,9 @@ export function isHardBlockedEmail(rawEmail: string): boolean {
     domainPart.includes("test.com") ||
     domainPart.includes("rossi.com") ||
     domainPart.includes("doe.com") ||
+    domainPart.includes("mailservice.") ||
     localPart === "test" ||
+    localPart === "mymail" ||
     localPart === "nome" ||
     localPart === "your" ||
     (localPart === "mario" && (domainPart.includes("rossi") || domainPart.includes("esempio")))
@@ -724,8 +735,6 @@ export function selectBestDecisionMakerEmail(
       .toLowerCase();
 
     if (!email.includes("@")) continue;
-    if (seen.has(email)) continue;
-    seen.add(email);
 
     const [localPart, rawDomainPart] = email.split("@");
     if (!localPart || !rawDomainPart || localPart.length < 2) continue;
@@ -748,6 +757,7 @@ export function selectBestDecisionMakerEmail(
       domainPart.includes("test.com") ||
       domainPart.includes("rossi.com") ||
       domainPart.includes("doe.com") ||
+      domainPart.includes("mailservice.") ||
       domainPart.includes("mail.it") ||
       domainPart.includes("email.it") ||
       domainPart.includes("tuamail") ||
@@ -756,6 +766,7 @@ export function selectBestDecisionMakerEmail(
       domainPart.includes("arubapec.") ||
       domainPart.includes("postecert.") ||
       localPart === "your" ||
+      localPart === "mymail" ||
       localPart === "email" ||
       localPart === "nome" ||
       localPart === "john" ||
@@ -2370,6 +2381,23 @@ export async function runAutonomousScout(
       }
 
       const targetEmail = emailSelection.bestEmail;
+      const emailDomainToVerify = targetEmail.split("@")[1];
+      if (!emailDomainToVerify) continue;
+      try {
+        const dohRes = await fetch(
+          `https://dns.google/resolve?name=${encodeURIComponent(emailDomainToVerify)}&type=MX`,
+          { signal: AbortSignal.timeout(3000) }
+        ).then((r) => r.json());
+        const hasValidMx =
+          dohRes &&
+          Array.isArray(dohRes.Answer) &&
+          dohRes.Answer.some((a: { type?: number; data?: string }) => a.type === 15 && a.data && a.data !== "0 .");
+        if (!hasValidMx) {
+          continue;
+        }
+      } catch {
+        // Se DoH non risponde in tempo, proseguiamo
+      }
       const isGenericInbox = emailSelection.isGeneric;
 
       // DIRETTIVA 3: Estrazione reale del Decision Maker

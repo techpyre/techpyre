@@ -1,0 +1,33 @@
+{
+  "slug": "renovambiente",
+  "targetUrl": "https://www.renovambiente.it",
+  "searchKeyword": "coperture industriali treviso",
+  "measuredResponseMs": 399,
+  "renderBlockingScripts": 39,
+  "estimatedMobileLcpSeconds": 8.6,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@renovambiente.it",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@renovambiente.it",
+    "info@renovambiente.it",
+    "renovambiente@pec.it",
+    "renovambiente@pec.it",
+    "info@renovambiente.it"
+  ],
+  "extractedPhones": [
+    "0220707",
+    "0221027",
+    "0221103"
+  ],
+  "extractedVat": "04127190272"
+}

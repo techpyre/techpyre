@@ -1,0 +1,31 @@
+{
+  "slug": "vrecinzioni",
+  "targetUrl": "https://www.vrecinzioni.it",
+  "searchKeyword": "carpenteria metallica vicenza",
+  "measuredResponseMs": 305,
+  "renderBlockingScripts": 28,
+  "estimatedMobileLcpSeconds": 5.9,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@vrecinzioni.it",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@covolo.it",
+    "info@covolo.it",
+    "info@covolo.it",
+    "info@vrecinzioni.it"
+  ],
+  "extractedPhones": [
+    "03997330240",
+    "+39 0444 580006"
+  ],
+  "extractedVat": "03997330240"
+}

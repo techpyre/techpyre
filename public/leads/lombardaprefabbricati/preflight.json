@@ -1,0 +1,31 @@
+{
+  "slug": "lombardaprefabbricati",
+  "targetUrl": "http://www.lombardaprefabbricati.it",
+  "searchKeyword": "prefabbricati brescia",
+  "measuredResponseMs": 6860,
+  "renderBlockingScripts": 39,
+  "estimatedMobileLcpSeconds": 15.7,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@lombardaprefabbricati.it",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@lombardaprefabbricati.it",
+    "info@lombardaprefabbricati.it",
+    "info@lombardaprefabbricati.it"
+  ],
+  "extractedPhones": [
+    "00693720989",
+    "307502869",
+    "06452395"
+  ],
+  "extractedVat": "00693720989"
+}

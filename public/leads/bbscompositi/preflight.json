@@ -1,0 +1,36 @@
+{
+  "slug": "bbscompositi",
+  "targetUrl": "http://www.bbscompositi.it",
+  "searchKeyword": "impianti aspirazione milano",
+  "measuredResponseMs": 5010,
+  "renderBlockingScripts": 42,
+  "estimatedMobileLcpSeconds": 13.5,
+  "runsAds": true,
+  "detectedTrackingSignals": [
+    "Google Ads / GTM"
+  ],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@bbscompositi.it",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@bbscompositi.it",
+    "info@bbscompositi.it",
+    "info@bbscompositi.it",
+    "info@bbscompositi.it",
+    "info@bbscompositi.it",
+    "info@bbscompositi.it"
+  ],
+  "extractedPhones": [
+    "0587217",
+    "0522 506088",
+    "01403350356"
+  ],
+  "extractedVat": "01403350356"
+}

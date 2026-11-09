@@ -362,9 +362,10 @@ async function cmdScout(flags) {
   for (const kw of keywords) {
     if (allDiscovered.length >= count) break;
     const needed = count - allDiscovered.length;
-    console.log(`\n🔎 Ricerca keyword: "${kw}" (necessari ancora ${needed} lead)...`);
+    const perKwLimit = keywords.length > 1 ? Math.min(needed, 6) : needed;
+    console.log(`\n🔎 Ricerca keyword: "${kw}" (target keyword: ${perKwLimit}, necessari totali: ${needed})...`);
 
-    const res = await runAutonomousScout(kw, needed, {
+    const res = await runAutonomousScout(kw, perKwLimit, {
       preferAdLibrary,
       minLcpSeconds: minLcp,
     });
@@ -382,6 +383,7 @@ async function cmdScout(flags) {
             stepNumber: 1,
             user,
             bypassBusinessHoursCheck: bypassHours,
+            bypassRateLimitCheck: bypassHours,
             applyJitter: true,
           });
           allSent.push({
@@ -554,12 +556,23 @@ async function cmdSend(positional, flags) {
     const all = listAllLeadConfigs();
     const history = getOutreachHistory();
     const sentStepMap = new Map();
+    const sentEmailStepSet = new Set();
     for (const h of history) {
-      const s = h.stepNumber || (h.type === "FOLLOW_UP" ? 2 : 1);
+      const s =
+        h.stepNumber ||
+        (h.type === "FOLLOW_UP" ||
+        h.type === "STEP_2" ||
+        h.type === "FOLLOW_UP_CREDENTIALS_AND_OFFER"
+          ? 2
+          : 1);
       const prev = sentStepMap.get(h.slug) || 0;
       if (s > prev) sentStepMap.set(h.slug, s);
+      if (h.recipient && s >= stepNumber) {
+        sentEmailStepSet.add(String(h.recipient).trim().toLowerCase());
+      }
     }
 
+    const seenBatchEmails = new Set();
     const eligible = all.filter(({ slug, config }) => {
       if (
         config.meta.status === "BLACKLISTED" ||
@@ -568,9 +581,15 @@ async function cmdSend(positional, flags) {
       ) {
         return false;
       }
-      if (isHardBlockedEmail(config.meta.targetEmail)) return false;
+      if (stepNumber === 2 && config.meta.status === "CONTACTED_STEP_2") return false;
+      if (stepNumber === 1 && config.meta.status && config.meta.status !== "NEW") return false;
+      const email = String(config.meta.targetEmail || "").trim().toLowerCase();
+      if (isHardBlockedEmail(email)) return false;
+      if (sentEmailStepSet.has(email) || seenBatchEmails.has(email)) return false;
       const lastStep = sentStepMap.get(slug) || 0;
-      return lastStep === stepNumber - 1;
+      if (lastStep !== stepNumber - 1) return false;
+      seenBatchEmails.add(email);
+      return true;
     });
 
     const firstSentMap = new Map();

@@ -1,0 +1,41 @@
+{
+  "slug": "intermobel",
+  "targetUrl": "http://www.intermobel.it",
+  "searchKeyword": "carpenteria metallica vicenza",
+  "measuredResponseMs": 804,
+  "renderBlockingScripts": 61,
+  "estimatedMobileLcpSeconds": 12.8,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": "Lucio Carretta",
+    "firstName": "Lucio",
+    "role": "Titolare"
+  },
+  "emailSelection": {
+    "bestEmail": "intermobel@intermobel.it",
+    "isGeneric": true,
+    "score": 58
+  },
+  "extractedEmails": [
+    "intermobel@intermobel.it",
+    "intermobel@intermobel.it",
+    "intermobel@intermobel.it",
+    "intermobel@intermobel.it",
+    "intermobel@intermobel.it",
+    "intermobel@intermobel.it",
+    "intermobel@intermobel.it",
+    "intermobel@intermobel.it",
+    "intermobel@intermobel.it",
+    "intermobel@intermobel.it",
+    "intermobel@intermobel.it",
+    "intermobel@intermobel.it",
+    "intermobel@intermobel.it"
+  ],
+  "extractedPhones": [
+    "3140148346",
+    "3138883828",
+    "3138596998"
+  ],
+  "extractedVat": "00642830244"
+}

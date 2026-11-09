@@ -1,0 +1,52 @@
+{
+  "slug": "gruppoclima",
+  "targetUrl": "https://www.gruppoclima.it",
+  "searchKeyword": "climatizzazione bologna",
+  "measuredResponseMs": 350,
+  "renderBlockingScripts": 63,
+  "estimatedMobileLcpSeconds": 13.8,
+  "runsAds": true,
+  "detectedTrackingSignals": [
+    "Google Ads / GTM"
+  ],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "amministrazione@gruppoclima.it",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "clienti.bologna@gruppoclima.it",
+    "clienti.bologna@gruppoclima.it",
+    "clienti.bologna@gruppoclima.it",
+    "clienti.bologna@gruppoclima.it",
+    "clienti.bologna@gruppoclima.it",
+    "clienti.bologna@gruppoclima.it",
+    "clienti.bologna@gruppoclima.it",
+    "clienti.bologna@gruppoclima.it",
+    "clienti.bologna@gruppoclima.it",
+    "clienti.bologna@gruppoclima.it",
+    "clienti.bologna@gruppoclima.it",
+    "amministrazione@gruppoclima.it",
+    "gruppoclima@pec.it",
+    "amministrazione@gruppoclima.it",
+    "gruppoclima@pec.it",
+    "clienti.bologna@gruppoclima.it",
+    "clienti.bologna@gruppoclima.it",
+    "clienti.bologna@gruppoclima.it",
+    "clienti.bologna@gruppoclima.it",
+    "clienti.bologna@gruppoclima.it",
+    "clienti.bologna@gruppoclima.it",
+    "clienti@gruppoclima.it"
+  ],
+  "extractedPhones": [
+    "051727480",
+    "051 727480",
+    "03619871209"
+  ],
+  "extractedVat": "03619871209"
+}

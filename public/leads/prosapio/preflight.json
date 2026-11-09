@@ -1,0 +1,59 @@
+{
+  "slug": "prosapio",
+  "targetUrl": "https://www.prosapio.it",
+  "searchKeyword": "climatizzazione bologna",
+  "measuredResponseMs": 367,
+  "renderBlockingScripts": 49,
+  "estimatedMobileLcpSeconds": 10.3,
+  "runsAds": true,
+  "detectedTrackingSignals": [
+    "Google Ads / GTM"
+  ],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "andrea@hione.it",
+    "isGeneric": false,
+    "score": 50
+  },
+  "extractedEmails": [
+    "andrea@hione.it",
+    "info@prosapio.it",
+    "info@prosapio.it",
+    "info@prosapio.it",
+    "prosapio.pratichetecniche@legalmail.it",
+    "prosapio.patrick.service@legalmail.it",
+    "info@prosapio.it",
+    "info@prosapio.it",
+    "info@prosapio.it",
+    "prosapio.pratichetecniche@legalmail.it",
+    "prosapio.patrick.service@legalmail.it",
+    "info@prosapio.it",
+    "info@prosapio.it",
+    "prosapio.pratichetecniche@legalmail.it",
+    "prosapio.patrick.service@legalmail.it",
+    "info@prosapio.it",
+    "info@prosapio.it",
+    "prosapio.pratichetecniche@legalmail.it",
+    "prosapio.patrick.service@legalmail.it",
+    "info@prosapio.it",
+    "info@prosapio.it",
+    "info@prosapio.it",
+    "prosapio.pratichetecniche@legalmail.it",
+    "prosapio.patrick.service@legalmail.it",
+    "info@prosapio.it",
+    "info@prosapio.it",
+    "prosapio.pratichetecniche@legalmail.it",
+    "prosapio.patrick.service@legalmail.it",
+    "preventivi@prosapio.it"
+  ],
+  "extractedPhones": [
+    "+390516259167",
+    "02995001209",
+    "06423628"
+  ],
+  "extractedVat": "02995001209"
+}

@@ -1,0 +1,34 @@
+{
+  "slug": "tosoni",
+  "targetUrl": "http://www.tosoni.it",
+  "searchKeyword": "automazione industriale brescia",
+  "measuredResponseMs": 2101,
+  "renderBlockingScripts": 48,
+  "estimatedMobileLcpSeconds": 11.8,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@tosoni.it",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@tosoni.it",
+    "info@tosoni.it",
+    "info@tosoni.it",
+    "info@tosoni.it",
+    "info@tosoni.it",
+    "info@tosoni.it"
+  ],
+  "extractedPhones": [
+    "00492140173",
+    "399406136",
+    "+39 030 2584777"
+  ],
+  "extractedVat": "00492140173"
+}

@@ -1,0 +1,29 @@
+{
+  "slug": "sicurfer",
+  "targetUrl": "http://www.sicurfer.com",
+  "searchKeyword": "porte sezionali verona",
+  "measuredResponseMs": 2202,
+  "renderBlockingScripts": 22,
+  "estimatedMobileLcpSeconds": 7.9,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@sicurfer.com",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@sicurfer.com",
+    "info@sicurfer.com"
+  ],
+  "extractedPhones": [
+    "0100101",
+    "+39 045 7514297"
+  ],
+  "extractedVat": "03810550230"
+}

@@ -1,0 +1,29 @@
+{
+  "slug": "panciroliimpiantielettrici",
+  "targetUrl": "http://www.panciroliimpiantielettrici.it",
+  "searchKeyword": "impianti elettrici parma",
+  "measuredResponseMs": 1631,
+  "renderBlockingScripts": 24,
+  "estimatedMobileLcpSeconds": 6.5,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "panciroliandreaecsas@gmail.com",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "panciroliandreaecsas@gmail.com"
+  ],
+  "extractedPhones": [
+    "003905212706",
+    "02002950349",
+    "015240356"
+  ],
+  "extractedVat": "02002950349"
+}

@@ -2,9 +2,9 @@
   "slug": "limaplastics",
   "archetype": "b2b-authority",
   "meta": {
-    "companyName": "LIMA  -  Industrial Plastics  Solutions",
-    "decisionMakerName": "Direzione LIMA  -  Industrial Plastics  Solutions",
-    "targetEmail": "mymail@mailservice.com",
+    "companyName": "LIMA Industrial Plastics",
+    "decisionMakerName": "Direzione LIMA Industrial Plastics",
+    "targetEmail": "info@limaplastics.com",
     "phone": "+39 035 0590105",
     "city": "Bolgare",
     "vatNumber": "01672890165",
@@ -13,7 +13,13 @@
     "isGenericInbox": false,
     "emailScore": 50,
     "decisionMakerFirstName": null,
-    "decisionMakerRole": "Direzione Aziendale"
+    "decisionMakerRole": "Direzione Aziendale",
+    "lastSentMessageId": "<fe59bd8b-f167-5ec5-c29c-cec059186945@techpyre.eu>",
+    "threadMessageIds": [
+      "<cd2a9e0d-fdba-60e1-3998-5109c63dc5d3@techpyre.eu>",
+      "<fe59bd8b-f167-5ec5-c29c-cec059186945@techpyre.eu>"
+    ],
+    "status": "CONTACTED_STEP_2"
   },
   "audit": {
     "originalLcpSeconds": 7.7,

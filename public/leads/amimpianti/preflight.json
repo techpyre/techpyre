@@ -1,0 +1,44 @@
+{
+  "slug": "amimpianti",
+  "targetUrl": "https://www.amimpianti.info",
+  "searchKeyword": "impianti elettrici parma",
+  "measuredResponseMs": 2839,
+  "renderBlockingScripts": 45,
+  "estimatedMobileLcpSeconds": 12.2,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@amimpianti.info",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@amimpianti.info",
+    "info@amimpianti.info",
+    "amimpianti@info.it",
+    "info@amimpianti.info",
+    "info@amimpianti.info",
+    "amimpianti@info.it",
+    "info@amimpianti.info",
+    "info@amimpianti.info",
+    "amimpianti@info.it",
+    "info@amimpianti.info",
+    "info@amimpianti.info",
+    "amimpianti@info.it",
+    "info@amimpianti.info",
+    "info@amimpianti.info",
+    "amimpianti@info.it",
+    "info@amimpianti.info"
+  ],
+  "extractedPhones": [
+    "393 9985569",
+    "052520432200",
+    "+39 393 9985569"
+  ],
+  "extractedVat": "02005220344"
+}

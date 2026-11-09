@@ -1,0 +1,44 @@
+{
+  "slug": "bieffedue",
+  "targetUrl": "https://www.bieffedue.it",
+  "searchKeyword": "impianti elettrici parma",
+  "measuredResponseMs": 1433,
+  "renderBlockingScripts": 80,
+  "estimatedMobileLcpSeconds": 19,
+  "runsAds": true,
+  "detectedTrackingSignals": [
+    "Google Ads / GTM"
+  ],
+  "decisionMaker": {
+    "fullName": "Claudio Fornari",
+    "firstName": "Claudio",
+    "role": "Titolare"
+  },
+  "emailSelection": {
+    "bestEmail": "info@bieffedue.it",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@bieffedue.it",
+    "info@bieffedue.it",
+    "info@bieffedue.it",
+    "assistenza@bieffedue.it",
+    "info@bieffedue.it",
+    "info@bieffedue.it",
+    "info@bieffedue.it",
+    "info@bieffedue.it",
+    "info@bieffedue.it",
+    "info@bieffedue.it",
+    "info@bieffedue.it",
+    "info@bieffedue.it",
+    "info@bieffedue.it",
+    "info@bieffedue.it"
+  ],
+  "extractedPhones": [
+    "092797215365",
+    "0839802",
+    "0982.26460982"
+  ],
+  "extractedVat": "01581830344"
+}

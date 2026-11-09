@@ -1,0 +1,36 @@
+{
+  "slug": "bortolettoserramenti",
+  "targetUrl": "https://www.bortolettoserramenti.com",
+  "searchKeyword": "serramenti padova",
+  "measuredResponseMs": 1513,
+  "renderBlockingScripts": 55,
+  "estimatedMobileLcpSeconds": 13.5,
+  "runsAds": true,
+  "detectedTrackingSignals": [
+    "Google Ads / GTM"
+  ],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "luca.p@ocalab.it",
+    "isGeneric": true,
+    "score": 8
+  },
+  "extractedEmails": [
+    "luca.p@ocalab.it",
+    "info@bortolettoserramenti.it",
+    "info@bortolettoserramenti.it",
+    "luca.p@ocalab.it",
+    "info@bortolettoserramenti.it",
+    "info@bortolettoserramenti.it"
+  ],
+  "extractedPhones": [
+    "00062240288",
+    "+39049760988",
+    "0692489"
+  ],
+  "extractedVat": "00062240288"
+}

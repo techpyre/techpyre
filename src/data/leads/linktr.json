@@ -12,7 +12,9 @@
     "isGenericInbox": true,
     "emailScore": 5,
     "decisionMakerFirstName": null,
-    "decisionMakerRole": "Direzione Aziendale"
+    "decisionMakerRole": "Direzione Aziendale",
+    "status": "INVALID_TICKET_INBOX",
+    "notes": "Linktree duplicato di isartidelweb."
   },
   "audit": {
     "originalLcpSeconds": 7,

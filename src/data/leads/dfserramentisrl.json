@@ -1,0 +1,148 @@
+{
+  "slug": "dfserramentisrl",
+  "archetype": "local-leadgen",
+  "meta": {
+    "companyName": "Df Serramenti",
+    "decisionMakerName": "Michele Fusari",
+    "decisionMakerFirstName": "Michele",
+    "decisionMakerRole": "Titolare",
+    "isGenericInbox": true,
+    "emailScore": 45,
+    "targetEmail": "preventivi@dfserramentisrl.it",
+    "phone": "0876689",
+    "city": "Albignasego",
+    "vatNumber": "04919740284",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Df%20Serramenti",
+    "originalLandingUrl": "https://www.dfserramentisrl.it",
+    "status": "CONTACTED_STEP_1",
+    "lastSentMessageId": "<58471b51-dea0-1b7a-d8ff-6718ee4679ae@techpyre.eu>",
+    "threadMessageIds": [
+      "<58471b51-dea0-1b7a-d8ff-6718ee4679ae@techpyre.eu>"
+    ]
+  },
+  "audit": {
+    "originalLcpSeconds": 7.4,
+    "mobileScore": 37,
+    "renderBlockingCount": 32,
+    "runsAds": false,
+    "detectedTrackingSignals": [],
+    "threeCriticalFlaws": [
+      "Perdita di richieste di preventivo su mobile: caricamento di 7.4s (32 risorse bloccanti) che spinge i visitatori da smartphone ad abbandonare la pagina prima di contattare l'ufficio commerciale.",
+      "Assenza di pre-qualifica automatica: il sito non filtra le richieste per tipologia di intervento, budget o tempistiche prima di inviarle ai referenti tecnici di Df Serramenti.",
+      "Colli di bottiglia commerciali: le richieste arrivano come semplici email isolate senza instradamento automatico e senza tracciamento strutturato della trattativa."
+    ],
+    "activeAdHeadline": "Da anni il punto di riferimento per serramenti e infissi a Padova",
+    "activeAdCopySummary": "DF Serramenti vende e installa serramenti a Padova in PVC e legno. Infissi su misura ad alta efficienza energetica per case e aziende."
+  },
+  "theme": {
+    "primaryHex": "#1E3A8A",
+    "accentHex": "#2563EB",
+    "darkBgHex": "#0B1E36",
+    "borderRadius": "12px",
+    "headerBgMode": "light",
+    "logoBrightness": "dark"
+  },
+  "content": {
+    "badgeTop": "Df Serramenti · Operativi a Albignasego e provincia",
+    "heroHeadline": "Da anni il punto di riferimento per serramenti e infissi a Padova",
+    "heroSubheadline": "DF Serramenti vende e installa serramenti a Padova in PVC e legno. Infissi su misura ad alta efficienza energetica per case e aziende.",
+    "heroBullets": [
+      "Sopralluogo tecnico e preventivo chiaro senza impegno",
+      "Materiali certificati e assistenza diretta con personale qualificato",
+      "Tempi di intervento garantiti e gestione completa della pratica"
+    ],
+    "ctaButtonText": "Calcola il Tuo Preventivo Rapido",
+    "trustMicrocopy": "Richiesta gratuita e senza impegno · Risposta rapida dal nostro ufficio tecnico",
+    "logoLocalPath": "/leads/dfserramentisrl/logo.png",
+    "heroImageLocalPath": "/leads/dfserramentisrl/hero.jpg",
+    "heroImageCaption": "Df Serramenti · Sede operativa e realizzazioni (Albignasego)",
+    "quiz": {
+      "question1": {
+        "title": "Quale tipologia di intervento desideri valutare?",
+        "options": [
+          "Sostituzione infissi con isolamento termico/acustico",
+          "Nuova installazione per ristrutturazione o cantiere",
+          "Porte interne, blindati o sistemi oscuranti"
+        ]
+      },
+      "question2": {
+        "title": "Quanti serramenti prevede indicativamente il progetto?",
+        "options": [
+          "Da 1 a 4 serramenti",
+          "Da 5 a 8 serramenti (appartamento completo)",
+          "Oltre 8 serramenti o villa/ufficio"
+        ]
+      },
+      "finalStepTitle": "Ottimo. Inserisci i tuoi recapiti per ricevere il prospetto economico e il sopralluogo:"
+    },
+    "valueProps": [
+      {
+        "title": "Qualita Certificata e Garanzia Scritta",
+        "description": "Ogni intervento di Df Serramenti utilizza materiali selezionati e procedure certificate per garantire durata e prestazioni nel tempo.",
+        "metric": "100% Garantito"
+      },
+      {
+        "title": "Preventivo Chiaro e Zero Sorprese",
+        "description": "Valutazione trasparente delle soluzioni piu adatte alle tue esigenze a Albignasego, con tempi e costi definiti prima dell'inizio dei lavori.",
+        "metric": "Preventivo Chiuso"
+      },
+      {
+        "title": "Assistenza Tecnica Diretta",
+        "description": "Un unico referente tecnico ti segue dal primo sopralluogo fino al collaudo finale e all'assistenza post-vendita.",
+        "metric": "Supporto Diretto"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "98%",
+      "mainStatLabel": "Clienti soddisfatti del servizio e dell'assistenza",
+      "reviewsSummary": "Azienda di riferimento a Albignasego per affidabilita e precisione",
+      "testimonials": [
+        {
+          "name": "Marco R.",
+          "location": "Albignasego",
+          "quote": "Servizio impeccabile da parte del team di Df Serramenti. Puntuali, precisi e disponibilissimi in ogni fase del lavoro.",
+          "roleOrContext": "Cliente verificato"
+        },
+        {
+          "name": "Laura B.",
+          "location": "Albignasego",
+          "quote": "Ottima consulenza iniziale e grande cura nei dettagli. Preventivo rispettato al centesimo e risultato superiore alle aspettative.",
+          "roleOrContext": "Intervento completato"
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "Per Michele Fusari · tempi di caricamento mobile e richieste preventivo di Df Serramenti (7.4s)",
+    "emailPlainTextBody": "Buongiorno Michele,\n\nda un test sul sito di Df Serramenti, da smartphone impiega 7.4 secondi ad aprirsi per 32 risorse bloccanti, frenando le richieste di preventivo.\n\nAbbiamo gia preparato una demo in Next.js per Df Serramenti che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza · TechPyre\n+39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno Michele,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Df Serramenti, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/dfserramentisrl\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza · TechPyre Studio\n+39 379 115 9352",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "Per Michele Fusari · tempi di caricamento mobile e richieste preventivo di Df Serramenti (7.4s)",
+      "body": "Buongiorno Michele,\n\nda un test sul sito di Df Serramenti, da smartphone impiega 7.4 secondi ad aprirsi per 32 risorse bloccanti, frenando le richieste di preventivo.\n\nAbbiamo gia preparato una demo in Next.js per Df Serramenti che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza · TechPyre\n+39 379 115 9352",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: Per Michele Fusari · tempi di caricamento mobile e richieste preventivo di Df Serramenti (7.4s)",
+      "body": "Buongiorno Michele,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Df Serramenti, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/dfserramentisrl\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza · TechPyre Studio\n+39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: Per Michele Fusari · tempi di caricamento mobile e richieste preventivo di Df Serramenti (7.4s)",
+      "body": "Buongiorno Michele,\n\nOltre a tagliare i 7.4 secondi su mobile, il sistema qualifica ogni preventivo prima di inviarlo al CRM.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza · TechPyre Studio",
+      "inThread": true,
+      "requiresFollowUpCall": true
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: Per Michele Fusari · tempi di caricamento mobile e richieste preventivo di Df Serramenti (7.4s)",
+      "body": "Buongiorno Michele,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Df Serramenti non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/dfserramentisrl) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza · TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

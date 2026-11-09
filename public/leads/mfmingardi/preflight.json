@@ -1,0 +1,33 @@
+{
+  "slug": "mfmingardi",
+  "targetUrl": "https://mfmingardi.it",
+  "searchKeyword": "impianti aspirazione milano",
+  "measuredResponseMs": 4982,
+  "renderBlockingScripts": 41,
+  "estimatedMobileLcpSeconds": 13.7,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "magazzino@mfmingardi.it",
+    "isGeneric": true,
+    "score": 38
+  },
+  "extractedEmails": [
+    "magazzino@mfmingardi.it",
+    "amministrazione@mfmingardi.it",
+    "magazzino@mfmingardi.it",
+    "amministrazione@mfmingardi.it",
+    "magazzino@mfmingardi.it"
+  ],
+  "extractedPhones": [
+    "3333333333",
+    "0843176",
+    "00966931"
+  ],
+  "extractedVat": "00794390963"
+}

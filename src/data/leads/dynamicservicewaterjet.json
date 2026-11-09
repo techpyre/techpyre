@@ -13,7 +13,9 @@
     "isGenericInbox": true,
     "emailScore": 5,
     "decisionMakerFirstName": null,
-    "decisionMakerRole": "Direzione Aziendale"
+    "decisionMakerRole": "Direzione Aziendale",
+    "status": "INVALID_TICKET_INBOX",
+    "notes": "Duplicato di dynamicservicesrl (stessa email info@dynamicservicesrl.it)."
   },
   "audit": {
     "originalLcpSeconds": 12.8,

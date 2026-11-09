@@ -2,8 +2,8 @@
   "slug": "clinicacappellin",
   "archetype": "medical-clinic",
   "meta": {
-    "companyName": "Denti Fissi &#8211; Clinica dentale Cappellin",
-    "decisionMakerName": "Direzione Denti Fissi &#8211; Clinica dentale Cappellin",
+    "companyName": "Clinica Dentale Cappellin",
+    "decisionMakerName": "Direzione Clinica Dentale Cappellin",
     "targetEmail": "contatti@clinicacappellin.it",
     "phone": "3936671668",
     "city": "Torino",
@@ -117,34 +117,34 @@
     }
   },
   "outreach": {
-    "emailSubject": "Denti Fissi &#8211; Clinica dentale Cappellin · dispersione clic mobile e tempi di caricamento di Denti Fissi &#8211; Clinica dentale Cappellin (7.3s)",
-    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di Denti Fissi &#8211; Clinica dentale Cappellin, da smartphone impiega 7.3 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Denti Fissi &#8211; Clinica dentale Cappellin che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza · TechPyre\n+39 379 115 9352",
-    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Denti Fissi &#8211; Clinica dentale Cappellin, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/clinicacappellin\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza · TechPyre Studio\n+39 379 115 9352",
+    "emailSubject": "Clinica Dentale Cappellin · dispersione clic mobile e tempi di caricamento di Clinica Dentale Cappellin (7.3s)",
+    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di Clinica Dentale Cappellin, da smartphone impiega 7.3 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Clinica Dentale Cappellin che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza · TechPyre\n+39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Clinica Dentale Cappellin, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/clinicacappellin\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza · TechPyre Studio\n+39 379 115 9352",
     "step1FirstTouch": {
       "dayOffset": 1,
-      "subject": "Denti Fissi &#8211; Clinica dentale Cappellin · dispersione clic mobile e tempi di caricamento di Denti Fissi &#8211; Clinica dentale Cappellin (7.3s)",
-      "body": "Buongiorno,\n\nda un test sul sito di Denti Fissi &#8211; Clinica dentale Cappellin, da smartphone impiega 7.3 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Denti Fissi &#8211; Clinica dentale Cappellin che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza · TechPyre\n+39 379 115 9352",
+      "subject": "Clinica Dentale Cappellin · dispersione clic mobile e tempi di caricamento di Clinica Dentale Cappellin (7.3s)",
+      "body": "Buongiorno,\n\nda un test sul sito di Clinica Dentale Cappellin, da smartphone impiega 7.3 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Clinica Dentale Cappellin che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza · TechPyre\n+39 379 115 9352",
       "inThread": false,
       "requiresFollowUpCall": false
     },
     "step2FollowUpLink": {
       "dayOffset": 4,
-      "subject": "Re: Denti Fissi &#8211; Clinica dentale Cappellin · dispersione clic mobile e tempi di caricamento di Denti Fissi &#8211; Clinica dentale Cappellin (7.3s)",
-      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Denti Fissi &#8211; Clinica dentale Cappellin, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/clinicacappellin\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza · TechPyre Studio\n+39 379 115 9352",
+      "subject": "Re: Clinica Dentale Cappellin · dispersione clic mobile e tempi di caricamento di Clinica Dentale Cappellin (7.3s)",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Clinica Dentale Cappellin, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/clinicacappellin\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza · TechPyre Studio\n+39 379 115 9352",
       "inThread": true,
       "requiresFollowUpCall": false
     },
     "step3ValueDropAndCallTrigger": {
       "dayOffset": 8,
-      "subject": "Re: Denti Fissi &#8211; Clinica dentale Cappellin · dispersione clic mobile e tempi di caricamento di Denti Fissi &#8211; Clinica dentale Cappellin (7.3s)",
+      "subject": "Re: Clinica Dentale Cappellin · dispersione clic mobile e tempi di caricamento di Clinica Dentale Cappellin (7.3s)",
       "body": "Buongiorno,\n\nOltre a tagliare i 7.3 secondi su mobile, l'infrastruttura recupera il 40% delle conversioni tramite Server-Side Tracking.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza · TechPyre Studio",
       "inThread": true,
       "requiresFollowUpCall": true
     },
     "step4Breakup": {
       "dayOffset": 13,
-      "subject": "Re: Denti Fissi &#8211; Clinica dentale Cappellin · dispersione clic mobile e tempi di caricamento di Denti Fissi &#8211; Clinica dentale Cappellin (7.3s)",
-      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Denti Fissi &#8211; Clinica dentale Cappellin non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/clinicacappellin) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza · TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
+      "subject": "Re: Clinica Dentale Cappellin · dispersione clic mobile e tempi di caricamento di Clinica Dentale Cappellin (7.3s)",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Clinica Dentale Cappellin non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/clinicacappellin) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza · TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
       "inThread": true,
       "requiresFollowUpCall": false
     }

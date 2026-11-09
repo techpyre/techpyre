@@ -1,0 +1,48 @@
+{
+  "slug": "lacasadelserramento",
+  "targetUrl": "https://www.lacasadelserramento.it",
+  "searchKeyword": "serramenti padova",
+  "measuredResponseMs": 1584,
+  "renderBlockingScripts": 37,
+  "estimatedMobileLcpSeconds": 9,
+  "runsAds": true,
+  "detectedTrackingSignals": [
+    "Google Ads / GTM"
+  ],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@lacasadelserramento.it",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@lacasadelserramento.it",
+    "info@lacasadelserramento.it",
+    "info@lacasadelserramento.it",
+    "info@lacasadelserramento.it",
+    "info@lacasadelserramento.it",
+    "info@lacasadelserramento.it",
+    "info@lacasadelserramento.it",
+    "info@lacasadelserramento.it",
+    "info@lacasadelserramento.it",
+    "info@lacasadelserramento.it",
+    "info@lacasadelserramento.it",
+    "info@lacasadelserramento.it",
+    "info@lacasadelserramento.it",
+    "info@lacasadelserramento.it",
+    "info@lacasadelserramento.it",
+    "info@lacasadelserramento.it",
+    "info@lacasadelserramento.it",
+    "amministrazione@lacasadelserramento.it"
+  ],
+  "extractedPhones": [
+    "0576701",
+    "049 8023946",
+    "+390498023946"
+  ],
+  "extractedVat": "04778510281"
+}

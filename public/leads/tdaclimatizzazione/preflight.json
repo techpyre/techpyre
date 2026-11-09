@@ -1,0 +1,38 @@
+{
+  "slug": "tdaclimatizzazione",
+  "targetUrl": "http://www.tdaclimatizzazione.it",
+  "searchKeyword": "impianti aspirazione milano",
+  "measuredResponseMs": 2523,
+  "renderBlockingScripts": 16,
+  "estimatedMobileLcpSeconds": 6,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "tdaclima@libero.it",
+    "isGeneric": true,
+    "score": -2
+  },
+  "extractedEmails": [
+    "tdaclima@libero.it",
+    "tdaclima@libero.it",
+    "tda-logo@2x-dark-ver.png",
+    "tda-logo@2x-light-ver.png",
+    "tdaclima@libero.it",
+    "tdaclima@libero.it",
+    "tdaclima@libero.it",
+    "tdaclima@libero.it",
+    "tdaclima@libero.it",
+    "tdaclima@libero.it",
+    "tdaclima@libero.it"
+  ],
+  "extractedPhones": [
+    "0825670960",
+    "+39 02 29520700"
+  ],
+  "extractedVat": "10825670960"
+}

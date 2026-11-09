@@ -1,0 +1,47 @@
+{
+  "slug": "sevensrl",
+  "targetUrl": "http://www.sevensrl.it",
+  "searchKeyword": "impianti aspirazione milano",
+  "measuredResponseMs": 3897,
+  "renderBlockingScripts": 14,
+  "estimatedMobileLcpSeconds": 7.5,
+  "runsAds": true,
+  "detectedTrackingSignals": [
+    "Google Ads / GTM"
+  ],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "seven@sevensrl.it",
+    "isGeneric": true,
+    "score": 38
+  },
+  "extractedEmails": [
+    "seven@sevensrl.it",
+    "seven@sevensrl.it",
+    "seven@sevensrl.it",
+    "seven@sevensrl.it",
+    "seven@sevensrl.it",
+    "seven@sevensrl.it",
+    "seven@sevensrl.it",
+    "seven@sevensrl.it",
+    "seven@sevensrl.it",
+    "seven@sevensrl.it",
+    "seven@sevensrl.it",
+    "seven@sevensrl.it",
+    "seven@sevensrl.it",
+    "seven@sevensrl.it",
+    "seven@sevensrl.it",
+    "seven@sevensrl.it",
+    "seven@sevensrl.it"
+  ],
+  "extractedPhones": [
+    "080319025",
+    "0498874518",
+    "049 8874518"
+  ],
+  "extractedVat": "00544860281"
+}

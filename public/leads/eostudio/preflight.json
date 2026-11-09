@@ -1,0 +1,37 @@
+{
+  "slug": "eostudio",
+  "targetUrl": "http://www.eostudio.it",
+  "searchKeyword": "automazione industriale brescia",
+  "measuredResponseMs": 526,
+  "renderBlockingScripts": 25,
+  "estimatedMobileLcpSeconds": 5.8,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "oneda@eostudio.it",
+    "isGeneric": true,
+    "score": 38
+  },
+  "extractedEmails": [
+    "info@eostudio.it",
+    "info@eostudio.it",
+    "info@eostudio.it",
+    "info@eostudio.it",
+    "oneda@eostudio.it",
+    "info@eostudio.it",
+    "info@eostudio.it",
+    "info@eostudio.it",
+    "info@eostudio.it"
+  ],
+  "extractedPhones": [
+    "0230613",
+    "02674140989",
+    "030 3730746"
+  ],
+  "extractedVat": "02674140989"
+}

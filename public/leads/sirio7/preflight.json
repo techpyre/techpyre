@@ -1,0 +1,34 @@
+{
+  "slug": "sirio7",
+  "targetUrl": "https://www.sirio7.it",
+  "searchKeyword": "serramenti padova",
+  "measuredResponseMs": 4382,
+  "renderBlockingScripts": 58,
+  "estimatedMobileLcpSeconds": 16,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@sirio7.it",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@sirio7.it",
+    "info@sirio7.it",
+    "info@sirio7.it",
+    "info@sirio7.it",
+    "info@sirio7.it",
+    "info@sirio7.it"
+  ],
+  "extractedPhones": [
+    "0499471630",
+    "3333333333",
+    "0814654503"
+  ],
+  "extractedVat": "03287080281"
+}

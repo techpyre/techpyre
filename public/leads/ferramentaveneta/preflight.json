@@ -1,0 +1,30 @@
+{
+  "slug": "ferramentaveneta",
+  "targetUrl": "https://www.ferramentaveneta.com",
+  "searchKeyword": "porte sezionali verona",
+  "measuredResponseMs": 1531,
+  "renderBlockingScripts": 118,
+  "estimatedMobileLcpSeconds": 25.4,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@ferramentaveneta.com",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@ferramentaveneta.com",
+    "info@ferramentaveneta.com"
+  ],
+  "extractedPhones": [
+    "0902104",
+    "+39 045 8266555",
+    "00221490238"
+  ],
+  "extractedVat": "00221490238"
+}
