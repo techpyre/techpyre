@@ -13,7 +13,13 @@
     "isGenericInbox": false,
     "emailScore": 50,
     "decisionMakerFirstName": "Poeta",
-    "decisionMakerRole": "Direzione"
+    "decisionMakerRole": "Direzione",
+    "lastSentMessageId": "<f2bbee15-dd56-0f0c-ee5e-2246771996e5@techpyre.eu>",
+    "threadMessageIds": [
+      "<9baff7af-cd7c-6652-aad3-2fa7d404b8dc@techpyre.eu>",
+      "<f2bbee15-dd56-0f0c-ee5e-2246771996e5@techpyre.eu>"
+    ],
+    "status": "CONTACTED_STEP_2"
   },
   "audit": {
     "originalLcpSeconds": 4.1,

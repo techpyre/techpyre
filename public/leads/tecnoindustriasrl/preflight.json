@@ -1,0 +1,30 @@
+{
+  "slug": "tecnoindustriasrl",
+  "targetUrl": "http://www.tecnoindustriasrl.com",
+  "searchKeyword": "impianti aspirazione industriale modena",
+  "measuredResponseMs": 4138,
+  "renderBlockingScripts": 8,
+  "estimatedMobileLcpSeconds": 6.2,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "tecnoindustria@tecnoindustriasrl.com",
+    "isGeneric": true,
+    "score": 38
+  },
+  "extractedEmails": [
+    "tecnoindustria@tecnoindustriasrl.com",
+    "tecnoindustria@tecnoindustriasrl.com"
+  ],
+  "extractedPhones": [
+    "0220613",
+    "0251202",
+    "059 748282"
+  ],
+  "extractedVat": "03273760367"
+}

@@ -1,0 +1,41 @@
+{
+  "slug": "officinebertolini",
+  "targetUrl": "https://www.officinebertolini.it",
+  "searchKeyword": "carpenteria pesante reggio emilia",
+  "measuredResponseMs": 3003,
+  "renderBlockingScripts": 28,
+  "estimatedMobileLcpSeconds": 8.9,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@officinebertolini.it",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@officinebertolini.it",
+    "info@officinebertolini.it",
+    "info@officinebertolini.it",
+    "info@officinebertolini.it",
+    "info@officinebertolini.it",
+    "info@officinebertolini.it",
+    "info@officinebertolini.it",
+    "info@officinebertolini.it",
+    "info@officinebertolini.it",
+    "info@officinebertolini.it",
+    "info@officinebertolini.it",
+    "info@officinebertolini.it",
+    "info@officinebertolini.it"
+  ],
+  "extractedPhones": [
+    "+390522883290",
+    "+39 0522 883290",
+    "+390522240084"
+  ],
+  "extractedVat": "01497650356"
+}

@@ -1,0 +1,45 @@
+{
+  "slug": "cooperativabazzino",
+  "targetUrl": "http://www.cooperativabazzino.it",
+  "searchKeyword": "logistica integrata magazzini piacenza",
+  "measuredResponseMs": 1159,
+  "renderBlockingScripts": 33,
+  "estimatedMobileLcpSeconds": 8,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "coopbazzino@libero.it",
+    "isGeneric": true,
+    "score": -2
+  },
+  "extractedEmails": [
+    "coopbazzino@libero.it",
+    "bazzino@pec.it",
+    "coopbazzino@libero.it",
+    "bazzino@pec.it",
+    "coopbazzino@libero.it",
+    "bazzino@pec.it",
+    "coopbazzino@libero.it",
+    "coopbazzino@libero.it",
+    "bazzino@pec.it",
+    "coopbazzino@libero.it",
+    "bazzino@pec.it",
+    "coopbazzino@libero.it",
+    "bazzino@pec.it",
+    "coopbazzino@libero.it",
+    "bazzino@pec.it",
+    "coopbazzino@libero.it",
+    "coopbazzino@libero.it"
+  ],
+  "extractedPhones": [
+    "019 805722",
+    "019 800457",
+    "00098720097"
+  ],
+  "extractedVat": "00098720097"
+}

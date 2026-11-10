@@ -1,0 +1,30 @@
+{
+  "slug": "tecno-3d",
+  "targetUrl": "http://www.tecno-3d.com",
+  "searchKeyword": "carpenteria pesante reggio emilia",
+  "measuredResponseMs": 493,
+  "renderBlockingScripts": 108,
+  "estimatedMobileLcpSeconds": 20.9,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@tecno-3d.com",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@tecno3d.com",
+    "info@tecno-3d.com"
+  ],
+  "extractedPhones": [
+    "03542170364",
+    "+39 059 645289",
+    "+39 059 645289"
+  ],
+  "extractedVat": "03542170364"
+}

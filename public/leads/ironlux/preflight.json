@@ -1,0 +1,41 @@
+{
+  "slug": "ironlux",
+  "targetUrl": "https://www.ironlux.it",
+  "searchKeyword": "trattamenti galvanici metalli brescia",
+  "measuredResponseMs": 409,
+  "renderBlockingScripts": 35,
+  "estimatedMobileLcpSeconds": 7.2,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "ironlux@ironlux.it",
+    "isGeneric": true,
+    "score": 58
+  },
+  "extractedEmails": [
+    "ironlux@ironlux.it",
+    "ironlux@ironlux.it",
+    "ironlux@ironlux.it",
+    "ironlux@ironlux.it",
+    "ironlux@ironlux.it",
+    "ironlux@ironlux.it",
+    "ironlux@ironlux.it",
+    "ironlux@ironlux.it",
+    "ironlux@ironlux.it",
+    "ironlux@ironlux.it",
+    "ironlux@ironlux.it",
+    "ironlux@ironlux.it",
+    "ironlux@ironlux.it"
+  ],
+  "extractedPhones": [
+    "0308950282",
+    "030.8950282",
+    "03698870981"
+  ],
+  "extractedVat": "03698870981"
+}

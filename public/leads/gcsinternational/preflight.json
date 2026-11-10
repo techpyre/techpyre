@@ -1,0 +1,41 @@
+{
+  "slug": "gcsinternational",
+  "targetUrl": "http://www.gcsinternational.it",
+  "searchKeyword": "logistica integrata magazzini piacenza",
+  "measuredResponseMs": 1687,
+  "renderBlockingScripts": 25,
+  "estimatedMobileLcpSeconds": 6.9,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@gcsinternational.it",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@gcsinternational.it",
+    "info@gcsinternational.it",
+    "info@gcsinternational.it",
+    "info@gcsinternational.it",
+    "info@gcsinternational.it",
+    "info@gcsinternational.it",
+    "info@gcsinternational.it",
+    "info@gcsinternational.it",
+    "info@gcsinternational.it",
+    "info@gcsinternational.it",
+    "info@gcsinternational.it",
+    "info@gcsinternational.it",
+    "info@gcsinternational.it"
+  ],
+  "extractedPhones": [
+    "317763801",
+    "051 6653811",
+    "051 6650255"
+  ],
+  "extractedVat": "02370321206"
+}

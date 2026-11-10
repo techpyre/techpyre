@@ -1,0 +1,37 @@
+{
+  "slug": "svautotrasporti",
+  "targetUrl": "http://www.svautotrasporti.it",
+  "searchKeyword": "logistica integrata magazzini piacenza",
+  "measuredResponseMs": 533,
+  "renderBlockingScripts": 34,
+  "estimatedMobileLcpSeconds": 8.4,
+  "runsAds": true,
+  "detectedTrackingSignals": [
+    "Google Ads / GTM"
+  ],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@svautotrasporti.it",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@svautotrasporti.it",
+    "info@svautotrasporti.it",
+    "info@svautotrasporti.it",
+    "info@svautotrasporti.it",
+    "info@svautotrasporti.it",
+    "info@svautotrasporti.it",
+    "info@svautotrasporti.it"
+  ],
+  "extractedPhones": [
+    "0100101",
+    "348 9195723",
+    "+390297240009"
+  ],
+  "extractedVat": "09204700968"
+}

@@ -14,10 +14,11 @@
     "vatNumber": "02597060827",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Edil%20Special",
     "originalLandingUrl": "http://www.edilspecial.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<5d1030f0-7c24-d490-5174-633eca2bceac@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<70958afc-b791-4603-f362-0ec136d1955b@techpyre.eu>",
     "threadMessageIds": [
-      "<5d1030f0-7c24-d490-5174-633eca2bceac@techpyre.eu>"
+      "<5d1030f0-7c24-d490-5174-633eca2bceac@techpyre.eu>",
+      "<70958afc-b791-4603-f362-0ec136d1955b@techpyre.eu>"
     ]
   },
   "audit": {

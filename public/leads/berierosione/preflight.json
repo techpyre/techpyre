@@ -1,0 +1,34 @@
+{
+  "slug": "berierosione",
+  "targetUrl": "http://www.berierosione.com",
+  "searchKeyword": "costruzioni meccaniche monza",
+  "measuredResponseMs": 3207,
+  "renderBlockingScripts": 43,
+  "estimatedMobileLcpSeconds": 12,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@berierosione.com",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@berierosione.com",
+    "info@berierosione.com",
+    "info@berierosione.com",
+    "info@berierosione.com",
+    "info@berierosione.com",
+    "info@berierosione.com"
+  ],
+  "extractedPhones": [
+    "03896680133",
+    "0195001",
+    "3072509769"
+  ],
+  "extractedVat": "03896680133"
+}

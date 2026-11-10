@@ -1,0 +1,35 @@
+{
+  "slug": "anceschi",
+  "targetUrl": "https://www.anceschi.it",
+  "searchKeyword": "carpenteria pesante reggio emilia",
+  "measuredResponseMs": 2181,
+  "renderBlockingScripts": 116,
+  "estimatedMobileLcpSeconds": 23.9,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "anceschi@anceschi.it",
+    "isGeneric": true,
+    "score": 58
+  },
+  "extractedEmails": [
+    "info@anceschi.it",
+    "info@anceschi.it",
+    "info@anceschi.it",
+    "info@anceschi.it",
+    "info@anceschi.it",
+    "info@anceschi.it",
+    "anceschi@anceschi.it"
+  ],
+  "extractedPhones": [
+    "3302532369",
+    "0522.699949",
+    "0522.647540"
+  ],
+  "extractedVat": "01494810359"
+}

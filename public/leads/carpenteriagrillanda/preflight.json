@@ -1,0 +1,29 @@
+{
+  "slug": "carpenteriagrillanda",
+  "targetUrl": "http://www.carpenteriagrillanda.com",
+  "searchKeyword": "carpenteria pesante reggio emilia",
+  "measuredResponseMs": 2152,
+  "renderBlockingScripts": 17,
+  "estimatedMobileLcpSeconds": 6.5,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@carpenteriagrillanda.com",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@carpenteriagrillanda.com"
+  ],
+  "extractedPhones": [
+    "0865513",
+    "3933389480",
+    "+390532427355"
+  ],
+  "extractedVat": "02051880389"
+}

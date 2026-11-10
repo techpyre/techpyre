@@ -1,0 +1,49 @@
+{
+  "slug": "metalsistemmarche",
+  "targetUrl": "https://www.metalsistemmarche.com",
+  "searchKeyword": "logistica integrata magazzini piacenza",
+  "measuredResponseMs": 2840,
+  "renderBlockingScripts": 29,
+  "estimatedMobileLcpSeconds": 10.3,
+  "runsAds": true,
+  "detectedTrackingSignals": [
+    "Google Ads / GTM"
+  ],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@metalsistemmarche.com",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@metalsistemmarche.com",
+    "info@metalsistemmarche.com",
+    "info@metalsistemmarche.com",
+    "info@metalsistemmarche.com",
+    "info@metalsistemmarche.com",
+    "info@metalsistemmarche.com",
+    "info@metalsistemmarche.com",
+    "info@metalsistemmarche.com",
+    "info@metalsistemmarche.com",
+    "info@metalsistemmarche.com",
+    "info@metalsistemmarche.com",
+    "info@metalsistemmarche.com",
+    "info@metalsistemmarche.com",
+    "info@metalsistemmarche.com",
+    "info@metalsistemmarche.com",
+    "info@metalsistemmarche.com",
+    "info@metalsistemmarche.com",
+    "info@metalsistemmarche.com",
+    "info@metalsistemmarche.com"
+  ],
+  "extractedPhones": [
+    "0717108660",
+    "01365890423",
+    "0310812"
+  ],
+  "extractedVat": "01365890423"
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "eurolegno",
+  "targetUrl": "https://eurolegno.eu",
+  "searchKeyword": "impianti aspirazione industriale modena",
+  "measuredResponseMs": 3737,
+  "renderBlockingScripts": 26,
+  "estimatedMobileLcpSeconds": 7.3,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@eurolegno.eu",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@eurolegno.eu",
+    "info@eurolegno.eu",
+    "info@eurolegno.eu",
+    "info@eurolegno.eu",
+    "info@eurolegno.eu",
+    "info@eurolegno.eu",
+    "info@eurolegno.eu",
+    "info@eurolegno.eu",
+    "info@eurolegno.eu",
+    "eurolegno.bo@sirbopec.org",
+    "info@eurolegno.eu"
+  ],
+  "extractedPhones": [
+    "+39051722805",
+    "+39 051 722805",
+    "0241127"
+  ],
+  "extractedVat": "03733161206"
+}

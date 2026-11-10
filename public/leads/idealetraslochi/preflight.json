@@ -1,0 +1,49 @@
+{
+  "slug": "idealetraslochi",
+  "targetUrl": "http://www.idealetraslochi.it",
+  "searchKeyword": "logistica integrata magazzini piacenza",
+  "measuredResponseMs": 442,
+  "renderBlockingScripts": 43,
+  "estimatedMobileLcpSeconds": 9.8,
+  "runsAds": true,
+  "detectedTrackingSignals": [
+    "Google Ads / GTM"
+  ],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@idealetraslochi.it",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@idealetraslochi.it",
+    "info@idealetraslochi.it",
+    "idealetraslochi@gmail.com",
+    "idealetraslochi@gmail.com",
+    "idealetraslochi@gmail.com",
+    "info@idealetraslochi.it",
+    "info@idealetraslochi.it",
+    "idealetraslochi@gmail.com",
+    "idealetraslochi@gmail.com",
+    "idealetraslochi@gmail.com",
+    "idealetraslochi@gmail.com",
+    "info@idealetraslochi.it",
+    "info@idealetraslochi.it",
+    "idealetraslochi@gmail.com",
+    "idealetraslochi@gmail.com",
+    "idealetraslochi@gmail.com",
+    "info@idealetraslochi.it",
+    "info@idealetraslochi.it",
+    "idealetraslochi@gmail.com"
+  ],
+  "extractedPhones": [
+    "+393209312077",
+    "0538271",
+    "0298476"
+  ],
+  "extractedVat": "05072100232"
+}

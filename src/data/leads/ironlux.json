@@ -1,0 +1,148 @@
+{
+  "slug": "ironlux",
+  "archetype": "local-leadgen",
+  "meta": {
+    "companyName": "Ironlux Polishing Concept",
+    "decisionMakerName": "Direzione Ironlux Polishing Concept",
+    "decisionMakerFirstName": null,
+    "decisionMakerRole": "Direzione Aziendale",
+    "isGenericInbox": true,
+    "emailScore": 58,
+    "targetEmail": "ironlux@ironlux.it",
+    "phone": "0308950282",
+    "city": "Lodrino",
+    "vatNumber": "03698870981",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Ironlux%20%20Polishing%20Concept",
+    "originalLandingUrl": "https://www.ironlux.it",
+    "status": "CONTACTED_STEP_1",
+    "lastSentMessageId": "<9127a2a9-c090-582a-f60a-21a34a0cc160@techpyre.eu>",
+    "threadMessageIds": [
+      "<9127a2a9-c090-582a-f60a-21a34a0cc160@techpyre.eu>"
+    ]
+  },
+  "audit": {
+    "originalLcpSeconds": 7.2,
+    "mobileScore": 39,
+    "renderBlockingCount": 35,
+    "runsAds": false,
+    "detectedTrackingSignals": [],
+    "threeCriticalFlaws": [
+      "Perdita di richieste di preventivo su mobile: caricamento di 7.2s (35 risorse bloccanti) che spinge i visitatori da smartphone ad abbandonare la pagina prima di contattare l'ufficio commerciale.",
+      "Assenza di pre-qualifica automatica: il sito non filtra le richieste per tipologia di intervento, budget o tempistiche prima di inviarle ai referenti tecnici di Ironlux  Polishing Concept.",
+      "Colli di bottiglia commerciali: le richieste arrivano come semplici email isolate senza instradamento automatico e senza tracciamento strutturato della trattativa."
+    ],
+    "activeAdHeadline": "Ironlux Pulitura Lucidatura Metalli Lodrino Brescia",
+    "activeAdCopySummary": "Ironlux Pulitura Lucidatura Metalli Lodrino Brescia"
+  },
+  "theme": {
+    "primaryHex": "#1E3A8A",
+    "accentHex": "#2563EB",
+    "darkBgHex": "#0B1E36",
+    "borderRadius": "12px",
+    "headerBgMode": "light",
+    "logoBrightness": "dark"
+  },
+  "content": {
+    "badgeTop": "Ironlux  Polishing Concept · Operativi a Lodrino e provincia",
+    "heroHeadline": "Ironlux Pulitura Lucidatura Metalli Lodrino Brescia",
+    "heroSubheadline": "Ironlux Pulitura Lucidatura Metalli Lodrino Brescia",
+    "heroBullets": [
+      "Sopralluogo tecnico e preventivo chiaro senza impegno",
+      "Materiali certificati e assistenza diretta con personale qualificato",
+      "Tempi di intervento garantiti e gestione completa della pratica"
+    ],
+    "ctaButtonText": "Calcola il Tuo Preventivo Rapido",
+    "trustMicrocopy": "Richiesta gratuita e senza impegno · Risposta rapida dal nostro ufficio tecnico",
+    "logoLocalPath": "/leads/ironlux/logo.png",
+    "heroImageLocalPath": "/leads/ironlux/hero.jpg",
+    "heroImageCaption": "Ironlux  Polishing Concept · Sede operativa e realizzazioni (Lodrino)",
+    "quiz": {
+      "question1": {
+        "title": "Di quale servizio o soluzione hai bisogno?",
+        "options": [
+          "Richiesta preventivo dettagliato su misura",
+          "Consulenza tecnica e sopralluogo operativo",
+          "Intervento rapido o assistenza prioritaria"
+        ]
+      },
+      "question2": {
+        "title": "Entro quando vorresti avviare il progetto?",
+        "options": [
+          "Il prima possibile (Entro 2 settimane)",
+          "Entro 1 - 2 mesi",
+          "Sto valutando diverse soluzioni"
+        ]
+      },
+      "finalStepTitle": "Perfetto. Inserisci i tuoi dati per ricevere una proposta personalizzata senza impegno:"
+    },
+    "valueProps": [
+      {
+        "title": "Qualita Certificata e Garanzia Scritta",
+        "description": "Ogni intervento di Ironlux  Polishing Concept utilizza materiali selezionati e procedure certificate per garantire durata e prestazioni nel tempo.",
+        "metric": "100% Garantito"
+      },
+      {
+        "title": "Preventivo Chiaro e Zero Sorprese",
+        "description": "Valutazione trasparente delle soluzioni piu adatte alle tue esigenze a Lodrino, con tempi e costi definiti prima dell'inizio dei lavori.",
+        "metric": "Preventivo Chiuso"
+      },
+      {
+        "title": "Assistenza Tecnica Diretta",
+        "description": "Un unico referente tecnico ti segue dal primo sopralluogo fino al collaudo finale e all'assistenza post-vendita.",
+        "metric": "Supporto Diretto"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "98%",
+      "mainStatLabel": "Clienti soddisfatti del servizio e dell'assistenza",
+      "reviewsSummary": "Azienda di riferimento a Lodrino per affidabilita e precisione",
+      "testimonials": [
+        {
+          "name": "Marco R.",
+          "location": "Lodrino",
+          "quote": "Servizio impeccabile da parte del team di Ironlux  Polishing Concept. Puntuali, precisi e disponibilissimi in ogni fase del lavoro.",
+          "roleOrContext": "Cliente verificato"
+        },
+        {
+          "name": "Laura B.",
+          "location": "Lodrino",
+          "quote": "Ottima consulenza iniziale e grande cura nei dettagli. Preventivo rispettato al centesimo e risultato superiore alle aspettative.",
+          "roleOrContext": "Intervento completato"
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "Ironlux  Polishing Concept - tempi di caricamento mobile e richieste preventivo di Ironlux  Polishing Concept (7.2s)",
+    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di Ironlux  Polishing Concept, da smartphone impiega 7.2 secondi ad aprirsi per 35 risorse bloccanti, frenando le richieste di preventivo.\n\nAbbiamo gia preparato una demo in Next.js per Ironlux  Polishing Concept che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Ironlux  Polishing Concept, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/ironlux\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "Ironlux  Polishing Concept - tempi di caricamento mobile e richieste preventivo di Ironlux  Polishing Concept (7.2s)",
+      "body": "Buongiorno,\n\nda un test sul sito di Ironlux  Polishing Concept, da smartphone impiega 7.2 secondi ad aprirsi per 35 risorse bloccanti, frenando le richieste di preventivo.\n\nAbbiamo gia preparato una demo in Next.js per Ironlux  Polishing Concept che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: Ironlux  Polishing Concept - tempi di caricamento mobile e richieste preventivo di Ironlux  Polishing Concept (7.2s)",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Ironlux  Polishing Concept, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/ironlux\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: Ironlux  Polishing Concept - tempi di caricamento mobile e richieste preventivo di Ironlux  Polishing Concept (7.2s)",
+      "body": "Buongiorno,\n\nOltre a tagliare i 7.2 secondi su mobile, il sistema qualifica ogni preventivo prima di inviarlo al CRM.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza - TechPyre Studio",
+      "inThread": true,
+      "requiresFollowUpCall": true
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: Ironlux  Polishing Concept - tempi di caricamento mobile e richieste preventivo di Ironlux  Polishing Concept (7.2s)",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Ironlux  Polishing Concept non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/ironlux) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

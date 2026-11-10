@@ -1,0 +1,148 @@
+{
+  "slug": "galvanotechnik",
+  "archetype": "local-leadgen",
+  "meta": {
+    "companyName": "Galvanotechnik Spa",
+    "decisionMakerName": "Direzione Galvanotechnik Spa",
+    "decisionMakerFirstName": null,
+    "decisionMakerRole": "Direzione Aziendale",
+    "isGenericInbox": true,
+    "emailScore": 35,
+    "targetEmail": "info@galvanotechnik.it",
+    "phone": "3820338011",
+    "city": "Gardone Val Trompia",
+    "vatNumber": "01712110988",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Galvanotechnik%20Spa",
+    "originalLandingUrl": "https://www.galvanotechnik.it",
+    "status": "CONTACTED_STEP_1",
+    "lastSentMessageId": "<18a11559-5d05-7769-94e8-4291a2b2660f@techpyre.eu>",
+    "threadMessageIds": [
+      "<18a11559-5d05-7769-94e8-4291a2b2660f@techpyre.eu>"
+    ]
+  },
+  "audit": {
+    "originalLcpSeconds": 9.6,
+    "mobileScore": 18,
+    "renderBlockingCount": 41,
+    "runsAds": false,
+    "detectedTrackingSignals": [],
+    "threeCriticalFlaws": [
+      "Perdita di richieste di preventivo su mobile: caricamento di 9.6s (41 risorse bloccanti) che spinge i visitatori da smartphone ad abbandonare la pagina prima di contattare l'ufficio commerciale.",
+      "Assenza di pre-qualifica automatica: il sito non filtra le richieste per tipologia di intervento, budget o tempistiche prima di inviarle ai referenti tecnici di Galvanotechnik Spa.",
+      "Colli di bottiglia commerciali: le richieste arrivano come semplici email isolate senza instradamento automatico e senza tracciamento strutturato della trattativa."
+    ],
+    "activeAdHeadline": "Trattamenti galvanici Brescia | Trattamenti Superficiali e Termici",
+    "activeAdCopySummary": "GalvanoTechnik è in grado di gestire controlli di processo, attraverso analisi chimiche quali: cromatografia ionica, colorimetria, misure co..."
+  },
+  "theme": {
+    "primaryHex": "#1E3A8A",
+    "accentHex": "#2563EB",
+    "darkBgHex": "#0B1E36",
+    "borderRadius": "12px",
+    "headerBgMode": "light",
+    "logoBrightness": "dark"
+  },
+  "content": {
+    "badgeTop": "Galvanotechnik Spa · Operativi a Gardone Val Trompia e provincia",
+    "heroHeadline": "Trattamenti galvanici Brescia | Trattamenti Superficiali e Termici",
+    "heroSubheadline": "GalvanoTechnik è in grado di gestire controlli di processo, attraverso analisi chimiche quali: cromatografia ionica, colorimetria, misure con XRAY, sonde magnetiche, provino metallografico.",
+    "heroBullets": [
+      "Sopralluogo tecnico e preventivo chiaro senza impegno",
+      "Materiali certificati e assistenza diretta con personale qualificato",
+      "Tempi di intervento garantiti e gestione completa della pratica"
+    ],
+    "ctaButtonText": "Calcola il Tuo Preventivo Rapido",
+    "trustMicrocopy": "Richiesta gratuita e senza impegno · Risposta rapida dal nostro ufficio tecnico",
+    "logoLocalPath": "/leads/galvanotechnik/logo.png",
+    "heroImageLocalPath": "/leads/galvanotechnik/hero.jpg",
+    "heroImageCaption": "Galvanotechnik Spa · Sede operativa e realizzazioni (Gardone Val Trompia)",
+    "quiz": {
+      "question1": {
+        "title": "Di quale servizio o soluzione hai bisogno?",
+        "options": [
+          "Richiesta preventivo dettagliato su misura",
+          "Consulenza tecnica e sopralluogo operativo",
+          "Intervento rapido o assistenza prioritaria"
+        ]
+      },
+      "question2": {
+        "title": "Entro quando vorresti avviare il progetto?",
+        "options": [
+          "Il prima possibile (Entro 2 settimane)",
+          "Entro 1 - 2 mesi",
+          "Sto valutando diverse soluzioni"
+        ]
+      },
+      "finalStepTitle": "Perfetto. Inserisci i tuoi dati per ricevere una proposta personalizzata senza impegno:"
+    },
+    "valueProps": [
+      {
+        "title": "Qualita Certificata e Garanzia Scritta",
+        "description": "Ogni intervento di Galvanotechnik Spa utilizza materiali selezionati e procedure certificate per garantire durata e prestazioni nel tempo.",
+        "metric": "100% Garantito"
+      },
+      {
+        "title": "Preventivo Chiaro e Zero Sorprese",
+        "description": "Valutazione trasparente delle soluzioni piu adatte alle tue esigenze a Gardone Val Trompia, con tempi e costi definiti prima dell'inizio dei lavori.",
+        "metric": "Preventivo Chiuso"
+      },
+      {
+        "title": "Assistenza Tecnica Diretta",
+        "description": "Un unico referente tecnico ti segue dal primo sopralluogo fino al collaudo finale e all'assistenza post-vendita.",
+        "metric": "Supporto Diretto"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "98%",
+      "mainStatLabel": "Clienti soddisfatti del servizio e dell'assistenza",
+      "reviewsSummary": "Azienda di riferimento a Gardone Val Trompia per affidabilita e precisione",
+      "testimonials": [
+        {
+          "name": "Marco R.",
+          "location": "Gardone Val Trompia",
+          "quote": "Servizio impeccabile da parte del team di Galvanotechnik Spa. Puntuali, precisi e disponibilissimi in ogni fase del lavoro.",
+          "roleOrContext": "Cliente verificato"
+        },
+        {
+          "name": "Laura B.",
+          "location": "Gardone Val Trompia",
+          "quote": "Ottima consulenza iniziale e grande cura nei dettagli. Preventivo rispettato al centesimo e risultato superiore alle aspettative.",
+          "roleOrContext": "Intervento completato"
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "Galvanotechnik Spa - tempi di caricamento mobile e richieste preventivo di Galvanotechnik Spa (9.6s)",
+    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di Galvanotechnik Spa, da smartphone impiega 9.6 secondi ad aprirsi per 41 risorse bloccanti, frenando le richieste di preventivo.\n\nAbbiamo gia preparato una demo in Next.js per Galvanotechnik Spa che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Galvanotechnik Spa, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/galvanotechnik\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "Galvanotechnik Spa - tempi di caricamento mobile e richieste preventivo di Galvanotechnik Spa (9.6s)",
+      "body": "Buongiorno,\n\nda un test sul sito di Galvanotechnik Spa, da smartphone impiega 9.6 secondi ad aprirsi per 41 risorse bloccanti, frenando le richieste di preventivo.\n\nAbbiamo gia preparato una demo in Next.js per Galvanotechnik Spa che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: Galvanotechnik Spa - tempi di caricamento mobile e richieste preventivo di Galvanotechnik Spa (9.6s)",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Galvanotechnik Spa, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/galvanotechnik\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: Galvanotechnik Spa - tempi di caricamento mobile e richieste preventivo di Galvanotechnik Spa (9.6s)",
+      "body": "Buongiorno,\n\nOltre a tagliare i 9.6 secondi su mobile, il sistema qualifica ogni preventivo prima di inviarlo al CRM.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza - TechPyre Studio",
+      "inThread": true,
+      "requiresFollowUpCall": true
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: Galvanotechnik Spa - tempi di caricamento mobile e richieste preventivo di Galvanotechnik Spa (9.6s)",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Galvanotechnik Spa non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/galvanotechnik) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

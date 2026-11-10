@@ -1,0 +1,169 @@
+{
+  "slug": "ferrettilivio",
+  "archetype": "b2b-authority",
+  "meta": {
+    "companyName": "Ferretti Livio",
+    "decisionMakerName": "Direzione Ferretti Livio",
+    "decisionMakerFirstName": null,
+    "decisionMakerRole": "Direzione Aziendale",
+    "isGenericInbox": true,
+    "emailScore": 38,
+    "targetEmail": "ferrettililivio@ferrettilivio.it",
+    "phone": "+39 0521356552",
+    "city": "Langhirano",
+    "vatNumber": "00184990349",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Ferretti%20Livio",
+    "originalLandingUrl": "https://www.ferrettilivio.it",
+    "status": "CONTACTED_STEP_1",
+    "lastSentMessageId": "<f9a0edcf-0061-a089-84ae-9d69c8f48702@techpyre.eu>",
+    "threadMessageIds": [
+      "<f9a0edcf-0061-a089-84ae-9d69c8f48702@techpyre.eu>"
+    ]
+  },
+  "audit": {
+    "originalLcpSeconds": 13.7,
+    "mobileScore": 15,
+    "renderBlockingCount": 42,
+    "runsAds": false,
+    "detectedTrackingSignals": [],
+    "threeCriticalFlaws": [
+      "Perdita di richieste di preventivo su mobile: caricamento di 13.7s (42 risorse bloccanti) che spinge i visitatori da smartphone ad abbandonare la pagina prima di contattare l'ufficio commerciale.",
+      "Assenza di pre-qualifica automatica: il sito non filtra le richieste per tipologia di intervento, budget o tempistiche prima di inviarle ai referenti tecnici di Ferretti Livio.",
+      "Colli di bottiglia commerciali: le richieste arrivano come semplici email isolate senza instradamento automatico e senza tracciamento strutturato della trattativa."
+    ],
+    "activeAdHeadline": "Ferretti Livio Impianti",
+    "activeAdCopySummary": "Ferretti Livio Impianti opera nel settore elettrico dal 1972, fornendo progettazione e consulenza per impianti elettrici industriali e civil..."
+  },
+  "theme": {
+    "primaryHex": "#0B1E36",
+    "accentHex": "#B8860B",
+    "darkBgHex": "#0B1E36",
+    "borderRadius": "8px",
+    "headerBgMode": "light",
+    "logoBrightness": "dark"
+  },
+  "content": {
+    "badgeTop": "Ferretti Livio · Divisione Tecnica & Commesse B2B (Langhirano)",
+    "heroHeadline": "Ferretti Livio Impianti",
+    "heroSubheadline": "Ferretti Livio Impianti opera nel settore elettrico dal 1972, fornendo progettazione e consulenza per impianti elettrici industriali e civili, costruendo impianti, quadri elettrici di automazione e distribuzion",
+    "heroBullets": [
+      "Studio di fattibilita tecnica e capitolato con tempi di consegna certi",
+      "Qualifica immediata della richiesta e assegnazione diretta all'Ufficio Tecnico",
+      "Produzione e assistenza certificata con referente unico dedicato"
+    ],
+    "ctaButtonText": "Richiedi Studio di Fattibilita",
+    "trustMicrocopy": "Riservatezza industriale garantita (NDA) · Risposta tecnica entro la giornata lavorativa",
+    "logoLocalPath": "/leads/ferrettilivio/logo.png",
+    "heroImageLocalPath": "/leads/ferrettilivio/hero.jpg",
+    "heroImageCaption": "Ferretti Livio · Sede operativa e realizzazioni (Langhirano)",
+    "quiz": {
+      "question1": {
+        "title": "Quale ambito operativo o di commessa desiderate approfondire?",
+        "options": [
+          "Fornitura industriale, impianti o commessa su specifica",
+          "Integrazione tecnica, automazione di reparto o portale B2B",
+          "Studio di fattibilita, capitolato e quotazione riservata"
+        ]
+      },
+      "question2": {
+        "title": "Qual e l'orizzonte temporale previsto per il progetto?",
+        "options": [
+          "Avvio operativo urgente (entro 30 giorni)",
+          "Pianificazione nel trimestre in corso",
+          "Valutazione tecnica e di budget preliminare"
+        ]
+      },
+      "finalStepTitle": "Specifiche registrate. Inserisci i riferimenti aziendali per il colloquio con l'Ufficio Tecnico:"
+    },
+    "valueProps": [
+      {
+        "title": "Ingegneria e Progettazione su Specifica",
+        "description": "Analizziamo i requisiti produttivi della commessa a Langhirano, definendo specifiche tecniche, tempi di consegna e ritorno sull'investimento prima dell'avvio operativo.",
+        "metric": "Capitolato Chiuso"
+      },
+      {
+        "title": "Controllo Qualita e Conformita Normativa",
+        "description": "Ogni fornitura e impianto di Ferretti Livio viene collaudato secondo gli standard di sicurezza e qualita vigenti, con documentazione tecnica completa.",
+        "metric": "100% Certificato"
+      },
+      {
+        "title": "Continuita Operativa e Assistenza Post-Vendita",
+        "description": "Affianchiamo il reparto tecnico e acquisti dal collaudo in stabilimento fino alla manutenzione programmata e al riordino ricambi.",
+        "metric": "SLA Garantito"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "99.4%",
+      "mainStatLabel": "Commesse B2B consegnate entro i tempi contrattuali",
+      "reviewsSummary": "Partner tecnico di riferimento per imprese e stabilimenti a Langhirano",
+      "clientReferenceWall": [
+        "Qualita Certificata ISO 9001",
+        "Conformita Tecnica CE",
+        "Integrazione Gestionale / ERP",
+        "Capitolato e Preventivo Chiuso",
+        "Assistenza Tecnica Diretta"
+      ],
+      "secondaryStats": [
+        {
+          "value": "99.4%",
+          "label": "Commesse consegnate nel pieno rispetto dei tempi contrattuali"
+        },
+        {
+          "value": "< 0.4s",
+          "label": "Caricamento istantaneo dell'infrastruttura digitale su rete mobile"
+        },
+        {
+          "value": "24h",
+          "label": "Presa in carico tecnica e invio automatico della richiesta al CRM"
+        }
+      ],
+      "testimonials": [
+        {
+          "name": "Direzione Tecnica e Produzione",
+          "location": "Langhirano · Commessa Industriale",
+          "quote": "Abbiamo affidato a Ferretti Livio una commessa strategica per il nostro reparto: rispetto rigoroso delle specifiche tecniche, tempi di consegna puntuali e collaudo impeccabile.",
+          "roleOrContext": "Fornitura e collaudo B2B"
+        },
+        {
+          "name": "Responsabile Ufficio Acquisti",
+          "location": "Langhirano e provincia",
+          "quote": "Un partner strutturato e affidabile: preventivazione trasparente senza costi occulti, documentazione tecnica completa e supporto post-vendita immediato.",
+          "roleOrContext": "Accordo quadro di fornitura"
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "Ferretti Livio - tempi di caricamento mobile e richieste preventivo di Ferretti Livio (13.7s)",
+    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di Ferretti Livio, da smartphone impiega 13.7 secondi ad aprirsi per 42 risorse bloccanti, frenando le richieste di preventivo.\n\nAbbiamo gia preparato una demo in Next.js per Ferretti Livio che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Ferretti Livio, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/ferrettilivio\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "Ferretti Livio - tempi di caricamento mobile e richieste preventivo di Ferretti Livio (13.7s)",
+      "body": "Buongiorno,\n\nda un test sul sito di Ferretti Livio, da smartphone impiega 13.7 secondi ad aprirsi per 42 risorse bloccanti, frenando le richieste di preventivo.\n\nAbbiamo gia preparato una demo in Next.js per Ferretti Livio che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: Ferretti Livio - tempi di caricamento mobile e richieste preventivo di Ferretti Livio (13.7s)",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Ferretti Livio, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/ferrettilivio\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: Ferretti Livio - tempi di caricamento mobile e richieste preventivo di Ferretti Livio (13.7s)",
+      "body": "Buongiorno,\n\nOltre a tagliare i 13.7 secondi su mobile, il sistema qualifica ogni preventivo prima di inviarlo al CRM.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza - TechPyre Studio",
+      "inThread": true,
+      "requiresFollowUpCall": true
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: Ferretti Livio - tempi di caricamento mobile e richieste preventivo di Ferretti Livio (13.7s)",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Ferretti Livio non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/ferrettilivio) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

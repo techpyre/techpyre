@@ -1,0 +1,43 @@
+{
+  "slug": "amgsilvano",
+  "targetUrl": "http://www.amgsilvano.com",
+  "searchKeyword": "macchine utensili torino",
+  "measuredResponseMs": 3796,
+  "renderBlockingScripts": 91,
+  "estimatedMobileLcpSeconds": 21.4,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@amgsilvano.com",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@amgsilvano.com",
+    "info@amgsilvano.com",
+    "info@amgsilvano.com",
+    "info@amgsilvano.com",
+    "info@amgsilvano.com",
+    "info@amgsilvano.com",
+    "info@amgsilvano.com",
+    "info@amgsilvano.com",
+    "info@amgsilvano.com",
+    "info@amgsilvano.com",
+    "info@amgsilvano.com",
+    "info@amgsilvano.com",
+    "info@amgsilvano.com",
+    "info@amgsilvano.com",
+    "info@amgsilvano.com"
+  ],
+  "extractedPhones": [
+    "0143882253",
+    "02247820067",
+    "366793375"
+  ],
+  "extractedVat": "02247820067"
+}

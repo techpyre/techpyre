@@ -1,0 +1,43 @@
+{
+  "slug": "elemek",
+  "targetUrl": "https://www.elemek.it",
+  "searchKeyword": "quadri elettrici automazione parma",
+  "measuredResponseMs": 437,
+  "renderBlockingScripts": 55,
+  "estimatedMobileLcpSeconds": 11.2,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@elemek.it",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@elemek.it",
+    "info@elemek.it",
+    "info@elemek.it",
+    "info@elemek.it",
+    "info@elemek.it",
+    "info@elemek.it",
+    "info@elemek.it",
+    "info@elemek.it",
+    "info@elemek.it",
+    "info@elemek.it",
+    "info@elemek.it",
+    "info@elemek.it",
+    "info@elemek.it",
+    "info@elemek.it",
+    "info@elemek.it"
+  ],
+  "extractedPhones": [
+    "347890735",
+    "349917391",
+    "+39 0521 272893"
+  ],
+  "extractedVat": "02981470343"
+}

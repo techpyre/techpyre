@@ -1,0 +1,42 @@
+{
+  "slug": "emersonmacchine",
+  "targetUrl": "https://www.emersonmacchine.it",
+  "searchKeyword": "macchine utensili torino",
+  "measuredResponseMs": 342,
+  "renderBlockingScripts": 33,
+  "estimatedMobileLcpSeconds": 7,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@emersonmacchine.it",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@torinomacchine.it",
+    "info@torinomacchine.it",
+    "info@emersonmacchine.it",
+    "info@emersonmacchine.it",
+    "info@emersonmacchine.it",
+    "info@emersonmacchine.it",
+    "info@emersonmacchine.it",
+    "info@emersonmacchine.it",
+    "info@emersonmacchine.it",
+    "info@emersonmacchine.it",
+    "info@emersonmacchine.it",
+    "info@emersonmacchine.it",
+    "info@torinomacchine.it",
+    "info@torinomacchine.it"
+  ],
+  "extractedPhones": [
+    "06467420011",
+    "+39 011 4531169",
+    "3933571001"
+  ],
+  "extractedVat": "06467420011"
+}

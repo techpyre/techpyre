@@ -1,0 +1,31 @@
+{
+  "slug": "riparifranco",
+  "targetUrl": "http://www.riparifranco.it",
+  "searchKeyword": "impianti aspirazione industriale modena",
+  "measuredResponseMs": 6888,
+  "renderBlockingScripts": 77,
+  "estimatedMobileLcpSeconds": 22.2,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "cristianripari@riparifranco.it",
+    "isGeneric": true,
+    "score": 38
+  },
+  "extractedEmails": [
+    "francoriparisrl@pec.riparifranco.it",
+    "francoriparisrl@pec.riparifranco.it",
+    "cristianripari@riparifranco.it"
+  ],
+  "extractedPhones": [
+    "0260707",
+    "001-14001",
+    "0733 898172"
+  ],
+  "extractedVat": "01931500431"
+}

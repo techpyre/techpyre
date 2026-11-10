@@ -14,10 +14,11 @@
     "vatNumber": "06533050826",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=NES%20-%20Nuovi%20Sistemi%20Energetici",
     "originalLandingUrl": "http://www.nuovisistemienergetici.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<894b96b7-5a52-66ab-4698-2fcbc97420dd@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<18f9e6fe-5b62-7591-c591-c167e5c80be6@techpyre.eu>",
     "threadMessageIds": [
-      "<894b96b7-5a52-66ab-4698-2fcbc97420dd@techpyre.eu>"
+      "<894b96b7-5a52-66ab-4698-2fcbc97420dd@techpyre.eu>",
+      "<18f9e6fe-5b62-7591-c591-c167e5c80be6@techpyre.eu>"
     ]
   },
   "audit": {

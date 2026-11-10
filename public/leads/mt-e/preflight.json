@@ -1,0 +1,53 @@
+{
+  "slug": "mt-e",
+  "targetUrl": "https://www.mt-e.it",
+  "searchKeyword": "carpenteria pesante reggio emilia",
+  "measuredResponseMs": 3495,
+  "renderBlockingScripts": 14,
+  "estimatedMobileLcpSeconds": 7.3,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "infoegena@mt-e.it",
+    "isGeneric": true,
+    "score": 38
+  },
+  "extractedEmails": [
+    "mte@pec.sol.it",
+    "mte@pec.sol.it",
+    "info@mt-e.it",
+    "info@mt-e.it",
+    "mte@pec.sol.it",
+    "mte@pec.sol.it",
+    "info@mt-e.it",
+    "info@mt-e.it",
+    "mte@pec.sol.it",
+    "mte@pec.sol.it",
+    "info@mt-e.it",
+    "info@mt-e.it",
+    "mte@pec.sol.it",
+    "mte@pec.sol.it",
+    "info@mt-e.it",
+    "info@mt-e.it",
+    "mte@pec.sol.it",
+    "mte@pec.sol.it",
+    "info@mt-e.it",
+    "info@mt-e.it",
+    "mte@pec.sol.it",
+    "mte@pec.sol.it",
+    "info@mt-e.it",
+    "info@mt-e.it",
+    "infoegena@mt-e.it"
+  ],
+  "extractedPhones": [
+    "0204568",
+    "0204569",
+    "0832 361578"
+  ],
+  "extractedVat": "01698950936"
+}

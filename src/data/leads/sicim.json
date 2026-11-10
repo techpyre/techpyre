@@ -14,10 +14,11 @@
     "vatNumber": "00141590877",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Sicim",
     "originalLandingUrl": "http://www.sicim.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<7b780414-43a2-55cf-14a5-da2ef5b8fd33@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<bad2b4cd-1f2d-4c85-53a1-aa8030b2f280@techpyre.eu>",
     "threadMessageIds": [
-      "<7b780414-43a2-55cf-14a5-da2ef5b8fd33@techpyre.eu>"
+      "<7b780414-43a2-55cf-14a5-da2ef5b8fd33@techpyre.eu>",
+      "<bad2b4cd-1f2d-4c85-53a1-aa8030b2f280@techpyre.eu>"
     ]
   },
   "audit": {

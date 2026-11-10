@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import tls from "tls";
+import { spawnSync } from "child_process";
 import nodemailer, { SendMailOptions } from "nodemailer";
 import { InboundReplyClassification, LeadConfig } from "@/types/lead";
 import { UserProfile } from "./adminAuth";
@@ -131,6 +132,24 @@ export function getOutreachHistory(): OutreachLogEntry[] {
   return [];
 }
 
+export function triggerExcelAndGoogleDriveSync() {
+  try {
+    const scriptPath = path.join(process.cwd(), "scripts", "export-excel-crm.mjs");
+    if (fs.existsSync(/*turbopackIgnore: true*/ scriptPath)) {
+      spawnSync("node", [scriptPath], {
+        cwd: process.cwd(),
+        timeout: 25000,
+        env: {
+          ...process.env,
+          PATH: `/Users/riccardogranza/.gemini/antigravity/bin:/opt/homebrew/bin:/usr/local/bin:${process.env.PATH || ""}`,
+        },
+      });
+    }
+  } catch {
+    // Non bloccare il flusso principale se la sync in background impiega più tempo
+  }
+}
+
 export function saveOutreachLog(logEntry: OutreachLogEntry) {
   const { primary, fallback } = getOutreachHistoryPath();
   const list = getOutreachHistory();
@@ -144,6 +163,8 @@ export function saveOutreachLog(logEntry: OutreachLogEntry) {
   try {
     fs.writeFileSync(/*turbopackIgnore: true*/ fallback, jsonStr, "utf-8");
   } catch {}
+
+  triggerExcelAndGoogleDriveSync();
 }
 
 /**

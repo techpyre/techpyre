@@ -1,0 +1,31 @@
+{
+  "slug": "fanfonimpianti",
+  "targetUrl": "https://www.fanfonimpianti.it",
+  "searchKeyword": "quadri elettrici automazione parma",
+  "measuredResponseMs": 1450,
+  "renderBlockingScripts": 56,
+  "estimatedMobileLcpSeconds": 12.5,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "impianti@fanfonimpianti.it",
+    "isGeneric": true,
+    "score": 38
+  },
+  "extractedEmails": [
+    "impianti@fanfonimpianti.it",
+    "impianti@fanfonimpianti.it",
+    "impianti@fanfonimpianti.it"
+  ],
+  "extractedPhones": [
+    "0488301",
+    "+390521802080",
+    "+39 0521 802080"
+  ],
+  "extractedVat": "01806370340"
+}

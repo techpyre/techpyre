@@ -1,0 +1,36 @@
+{
+  "slug": "incisionidecor",
+  "targetUrl": "https://www.incisionidecor.it",
+  "searchKeyword": "trattamenti galvanici metalli brescia",
+  "measuredResponseMs": 1063,
+  "renderBlockingScripts": 21,
+  "estimatedMobileLcpSeconds": 5.5,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@incisionidecor.it",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@incisionidecor.it",
+    "info@incisionidecor.it",
+    "info@incisionidecor.it",
+    "info@incisionidecor.it",
+    "info@incisionidecor.it",
+    "info@incisionidecor.it",
+    "info@incisionidecor.it",
+    "info@incisionidecor.it"
+  ],
+  "extractedPhones": [
+    "3479542580",
+    "+390308960361",
+    "030 8960361"
+  ],
+  "extractedVat": "03836660989"
+}

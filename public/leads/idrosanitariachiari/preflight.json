@@ -1,0 +1,32 @@
+{
+  "slug": "idrosanitariachiari",
+  "targetUrl": "https://idrosanitariachiari.it",
+  "searchKeyword": "macchine utensili torino",
+  "measuredResponseMs": 3500,
+  "renderBlockingScripts": 4,
+  "estimatedMobileLcpSeconds": 5.3,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "expo@idrosanitariachiari.it",
+    "isGeneric": true,
+    "score": 38
+  },
+  "extractedEmails": [
+    "info@idrosanitariachiari.it",
+    "info@idrosanitariachiari.it",
+    "expo@idrosanitariachiari.it",
+    "expo@idrosanitariachiari.it"
+  ],
+  "extractedPhones": [
+    "3333333333",
+    "0307722334",
+    "030 7722334"
+  ],
+  "extractedVat": "00565220985"
+}

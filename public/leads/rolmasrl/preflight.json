@@ -1,0 +1,52 @@
+{
+  "slug": "rolmasrl",
+  "targetUrl": "http://www.rolmasrl.com",
+  "searchKeyword": "macchine utensili torino",
+  "measuredResponseMs": 2013,
+  "renderBlockingScripts": 33,
+  "estimatedMobileLcpSeconds": 9,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "marchisio@rolmasrl.com",
+    "isGeneric": true,
+    "score": 38
+  },
+  "extractedEmails": [
+    "info@rolmasrl.com",
+    "info@rolmasrl.com",
+    "marchisio@rolmasrl.com",
+    "marchisio@rolmasrl.com",
+    "info@rolmasrl.com",
+    "info@rolmasrl.com",
+    "marchisio@rolmasrl.com",
+    "marchisio@rolmasrl.com",
+    "info@rolmasrl.com",
+    "info@rolmasrl.com",
+    "marchisio@rolmasrl.com",
+    "marchisio@rolmasrl.com",
+    "info@rolmasrl.com",
+    "info@rolmasrl.com",
+    "marchisio@rolmasrl.com",
+    "marchisio@rolmasrl.com",
+    "info@rolmasrl.com",
+    "info@rolmasrl.com",
+    "marchisio@rolmasrl.com",
+    "marchisio@rolmasrl.com",
+    "info@rolmasrl.com",
+    "info@rolmasrl.com",
+    "marchisio@rolmasrl.com",
+    "marchisio@rolmasrl.com"
+  ],
+  "extractedPhones": [
+    "+393453711621",
+    "3519814747",
+    "004717942"
+  ],
+  "extractedVat": "10128460010"
+}

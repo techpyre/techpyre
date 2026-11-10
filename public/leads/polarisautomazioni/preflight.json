@@ -1,0 +1,36 @@
+{
+  "slug": "polarisautomazioni",
+  "targetUrl": "https://www.polarisautomazioni.com",
+  "searchKeyword": "quadri elettrici automazione parma",
+  "measuredResponseMs": 1404,
+  "renderBlockingScripts": 38,
+  "estimatedMobileLcpSeconds": 14.1,
+  "runsAds": true,
+  "detectedTrackingSignals": [
+    "Google Ads / GTM"
+  ],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "sales@polarisautomazioni.com",
+    "isGeneric": true,
+    "score": 45
+  },
+  "extractedEmails": [
+    "sales@polarisautomazioni.com",
+    "sales@polarisautomazioni.com",
+    "info@polarisautomazioni.com",
+    "info@polarisautomazioni.com",
+    "info@polarisautomazioni.com",
+    "info@polarisautomazioni.com"
+  ],
+  "extractedPhones": [
+    "3333333333",
+    "000000000000",
+    "074-134993"
+  ],
+  "extractedVat": "02764240350"
+}

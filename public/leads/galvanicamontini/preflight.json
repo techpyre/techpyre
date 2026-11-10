@@ -1,0 +1,35 @@
+{
+  "slug": "galvanicamontini",
+  "targetUrl": "http://www.galvanicamontini.it",
+  "searchKeyword": "trattamenti galvanici metalli brescia",
+  "measuredResponseMs": 5343,
+  "renderBlockingScripts": 35,
+  "estimatedMobileLcpSeconds": 12.4,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@galvanicamontini.it",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@galvanicamontini.itinfo",
+    "info@galvanicamontini.it",
+    "info@galvanicamontini.it",
+    "info@pec.galvanicamontini.it",
+    "info@pec.galvanicamontini.it",
+    "info@galvanicamontini.it",
+    "info@galvanicamontini.it"
+  ],
+  "extractedPhones": [
+    "00695320986",
+    "030 800907",
+    "030 802661"
+  ],
+  "extractedVat": "00695320986"
+}

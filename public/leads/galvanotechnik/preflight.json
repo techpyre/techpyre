@@ -1,0 +1,41 @@
+{
+  "slug": "galvanotechnik",
+  "targetUrl": "https://www.galvanotechnik.it",
+  "searchKeyword": "trattamenti galvanici metalli brescia",
+  "measuredResponseMs": 1188,
+  "renderBlockingScripts": 41,
+  "estimatedMobileLcpSeconds": 9.6,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@galvanotechnik.it",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@galvanotechnik.it",
+    "info@galvanotechnik.it",
+    "info@galvanotechnik.it",
+    "info@galvanotechnik.it",
+    "info@galvanotechnik.it",
+    "info@galvanotechnik.it",
+    "info@galvanotechnik.it",
+    "info@galvanotechnik.it",
+    "galvanotechnik@pec.intred.it",
+    "galvanotechnik@pec.intred.it",
+    "info@galvanotechnik.it",
+    "info@galvanotechnik.it",
+    "info@galvanotechnik.it"
+  ],
+  "extractedPhones": [
+    "3820338011",
+    "+39 030.8912456",
+    "01712110988"
+  ],
+  "extractedVat": "01712110988"
+}

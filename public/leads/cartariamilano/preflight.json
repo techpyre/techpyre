@@ -1,0 +1,42 @@
+{
+  "slug": "cartariamilano",
+  "targetUrl": "https://www.cartariamilano.com",
+  "searchKeyword": "impianti aspirazione industriale modena",
+  "measuredResponseMs": 3901,
+  "renderBlockingScripts": 71,
+  "estimatedMobileLcpSeconds": 17.9,
+  "runsAds": true,
+  "detectedTrackingSignals": [
+    "Meta Pixel",
+    "Google Ads / GTM"
+  ],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@cartariamilano.com",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@cartariamilano.com",
+    "info@cartariamilano.com",
+    "info@cartariamilano.com",
+    "info@cartariamilano.com",
+    "info@cartariamilano.com",
+    "info@cartariamilano.com",
+    "info@cartariamilano.com",
+    "info@cartariamilano.com",
+    "info@cartariamilano.com",
+    "info@cartariamilano.com",
+    "info@cartariamilano.com"
+  ],
+  "extractedPhones": [
+    "0261027",
+    "09045105",
+    "0289503711"
+  ],
+  "extractedVat": "11152880966"
+}

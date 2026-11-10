@@ -1,0 +1,33 @@
+{
+  "slug": "chiapparoli",
+  "targetUrl": "http://www.chiapparoli.it",
+  "searchKeyword": "logistica integrata magazzini piacenza",
+  "measuredResponseMs": 599,
+  "renderBlockingScripts": 24,
+  "estimatedMobileLcpSeconds": 6,
+  "runsAds": true,
+  "detectedTrackingSignals": [
+    "Google Ads / GTM"
+  ],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@chiapparoli.it",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "privacy@chiapparoli.it",
+    "privacy@chiapparoli.it",
+    "info@chiapparoli.it"
+  ],
+  "extractedPhones": [
+    "030741965909",
+    "090030231",
+    "303222638"
+  ],
+  "extractedVat": "01662261203"
+}

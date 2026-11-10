@@ -1,0 +1,42 @@
+{
+  "slug": "gattasrl",
+  "targetUrl": "http://www.gattasrl.com",
+  "searchKeyword": "macchine utensili torino",
+  "measuredResponseMs": 2340,
+  "renderBlockingScripts": 45,
+  "estimatedMobileLcpSeconds": 11.9,
+  "runsAds": true,
+  "detectedTrackingSignals": [
+    "Google Ads / GTM"
+  ],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "gatta@gattasrl.com",
+    "isGeneric": true,
+    "score": 38
+  },
+  "extractedEmails": [
+    "gatta@gattasrl.com",
+    "gatta@gattasrl.com",
+    "gatta@gattasrl.com",
+    "gatta@gattasrl.com",
+    "gatta@gattasrl.com",
+    "gatta@gattasrl.com",
+    "gatta@gattasrl.com",
+    "gatta@gattasrl.com",
+    "gatta@gattasrl.com",
+    "gatta@gattasrl.com",
+    "gatta@gattasrl.com",
+    "gatta@gattasrl.com"
+  ],
+  "extractedPhones": [
+    "027588923",
+    "+3901251923530",
+    "09162760012"
+  ],
+  "extractedVat": "09162760012"
+}

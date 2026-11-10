@@ -1,0 +1,40 @@
+{
+  "slug": "ferrettilivio",
+  "targetUrl": "https://www.ferrettilivio.it",
+  "searchKeyword": "quadri elettrici automazione parma",
+  "measuredResponseMs": 5211,
+  "renderBlockingScripts": 42,
+  "estimatedMobileLcpSeconds": 13.7,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "ferrettililivio@ferrettilivio.it",
+    "isGeneric": true,
+    "score": 38
+  },
+  "extractedEmails": [
+    "ferrettililivio@ferrettilivio.it",
+    "ferrettililivio@ferrettilivio.it",
+    "ferrettililivio@ferrettilivio.it",
+    "ferrettililivio@ferrettilivio.it",
+    "ferrettililivio@ferrettilivio.it",
+    "ferrettililivio@ferrettilivio.it",
+    "ferrettililivio@ferrettilivio.it",
+    "ferrettililivio@ferrettilivio.it",
+    "ferrettililivio@ferrettilivio.it",
+    "ferrettililivio@ferrettilivio.it",
+    "ferrettililivio@ferrettilivio.it",
+    "amministrazione@ferrettilivio.it"
+  ],
+  "extractedPhones": [
+    "+39 0521356552",
+    "+39 0521857486",
+    "00184990349"
+  ],
+  "extractedVat": "00184990349"
+}
