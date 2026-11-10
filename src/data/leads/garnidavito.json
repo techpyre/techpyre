@@ -42,7 +42,7 @@
   "content": {
     "badgeTop": "Hotel Economico Jesolo · Divisione Tecnica & Commesse B2B (Roma)",
     "heroHeadline": "B&B \"DA VITO\" Garnì a Lido di Jesolo",
-    "heroSubheadline": "Garnì da Vito è un hotel ad 1 stella con servizio B&amp;B, vicino alla spiaggia libera del Faro a Jesolo Lido - Venezia. Aperti tutto l&#039;anno, offriamo camere con aria condizionata e servizio Wi-Fi e accett",
+    "heroSubheadline": "Garnì da Vito è un hotel ad 1 stella con servizio B&B, vicino alla spiaggia libera del Faro a Jesolo Lido - Venezia. Aperti tutto l'anno, offriamo camere con aria condizionata e servizio Wi-Fi e accett",
     "heroBullets": [
       "Studio di fattibilita tecnica e capitolato con tempi di consegna certi",
       "Qualifica immediata della richiesta e assegnazione diretta all'Ufficio Tecnico",
@@ -131,34 +131,34 @@
     }
   },
   "outreach": {
-    "emailSubject": "Struttura Garni Da Vito · dispersione clic mobile e tempi di caricamento di Struttura Garni Da Vito (3.1s)",
-    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di Struttura Garni Da Vito, da smartphone impiega 3.1 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Struttura Garni Da Vito che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza · TechPyre\n+39 379 115 9352",
-    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Struttura Garni Da Vito, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/garnidavito\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza · TechPyre Studio\n+39 379 115 9352",
+    "emailSubject": "Struttura Garni Da Vito - dispersione clic mobile e tempi di caricamento di Struttura Garni Da Vito (3.1s)",
+    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di Struttura Garni Da Vito, da smartphone impiega 3.1 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Struttura Garni Da Vito che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Struttura Garni Da Vito, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/garnidavito\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
     "step1FirstTouch": {
       "dayOffset": 1,
-      "subject": "Struttura Garni Da Vito · dispersione clic mobile e tempi di caricamento di Struttura Garni Da Vito (3.1s)",
-      "body": "Buongiorno,\n\nda un test sul sito di Struttura Garni Da Vito, da smartphone impiega 3.1 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Struttura Garni Da Vito che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza · TechPyre\n+39 379 115 9352",
+      "subject": "Struttura Garni Da Vito - dispersione clic mobile e tempi di caricamento di Struttura Garni Da Vito (3.1s)",
+      "body": "Buongiorno,\n\nda un test sul sito di Struttura Garni Da Vito, da smartphone impiega 3.1 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Struttura Garni Da Vito che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
       "inThread": false,
       "requiresFollowUpCall": false
     },
     "step2FollowUpLink": {
       "dayOffset": 4,
-      "subject": "Re: Struttura Garni Da Vito · dispersione clic mobile e tempi di caricamento di Struttura Garni Da Vito (3.1s)",
-      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Struttura Garni Da Vito, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/garnidavito\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza · TechPyre Studio\n+39 379 115 9352",
+      "subject": "Re: Struttura Garni Da Vito - dispersione clic mobile e tempi di caricamento di Struttura Garni Da Vito (3.1s)",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Struttura Garni Da Vito, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/garnidavito\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
       "inThread": true,
       "requiresFollowUpCall": false
     },
     "step3ValueDropAndCallTrigger": {
       "dayOffset": 8,
-      "subject": "Re: Struttura Garni Da Vito · dispersione clic mobile e tempi di caricamento di Struttura Garni Da Vito (3.1s)",
-      "body": "Buongiorno,\n\nOltre a tagliare i 3.1 secondi su mobile, l'infrastruttura recupera il 40% delle conversioni tramite Server-Side Tracking.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza · TechPyre Studio",
+      "subject": "Re: Struttura Garni Da Vito - dispersione clic mobile e tempi di caricamento di Struttura Garni Da Vito (3.1s)",
+      "body": "Buongiorno,\n\nOltre a tagliare i 3.1 secondi su mobile, l'infrastruttura recupera il 40% delle conversioni tramite Server-Side Tracking.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza - TechPyre Studio",
       "inThread": true,
       "requiresFollowUpCall": true
     },
     "step4Breakup": {
       "dayOffset": 13,
-      "subject": "Re: Struttura Garni Da Vito · dispersione clic mobile e tempi di caricamento di Struttura Garni Da Vito (3.1s)",
-      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Struttura Garni Da Vito non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/garnidavito) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza · TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
+      "subject": "Re: Struttura Garni Da Vito - dispersione clic mobile e tempi di caricamento di Struttura Garni Da Vito (3.1s)",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Struttura Garni Da Vito non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/garnidavito) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
       "inThread": true,
       "requiresFollowUpCall": false
     }

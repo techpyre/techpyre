@@ -4,14 +4,14 @@
   "meta": {
     "companyName": "Ecolamp ExtraVoltaico",
     "decisionMakerName": "Direzione Ecolamp ExtraVoltaico",
-    "targetEmail": "logistica@ecolamp.it",
+    "targetEmail": "ecolamp@ecolamp.it",
     "phone": "027754834",
     "city": "Milano",
     "vatNumber": "04589960964",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Servizio%20ExtraVoltaico",
     "originalLandingUrl": "https://www.ecolamp.it/servizi/professionista/extravoltaico/",
-    "isGenericInbox": false,
-    "emailScore": 80,
+    "isGenericInbox": true,
+    "emailScore": 58,
     "decisionMakerFirstName": null,
     "decisionMakerRole": "Direzione Aziendale"
   },
@@ -110,34 +110,34 @@
     }
   },
   "outreach": {
-    "emailSubject": "Ecolamp ExtraVoltaico · dispersione clic mobile e tempi di caricamento di Ecolamp ExtraVoltaico (4.2s)",
-    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di Ecolamp ExtraVoltaico, da smartphone impiega 4.2 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Ecolamp ExtraVoltaico che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza · TechPyre\n+39 379 115 9352",
-    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Ecolamp ExtraVoltaico, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/ecolamp\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza · TechPyre Studio\n+39 379 115 9352",
+    "emailSubject": "Ecolamp ExtraVoltaico - dispersione clic mobile e tempi di caricamento di Ecolamp ExtraVoltaico (4.2s)",
+    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di Ecolamp ExtraVoltaico, da smartphone impiega 4.2 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Ecolamp ExtraVoltaico che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Ecolamp ExtraVoltaico, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/ecolamp\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
     "step1FirstTouch": {
       "dayOffset": 1,
-      "subject": "Ecolamp ExtraVoltaico · dispersione clic mobile e tempi di caricamento di Ecolamp ExtraVoltaico (4.2s)",
-      "body": "Buongiorno,\n\nda un test sul sito di Ecolamp ExtraVoltaico, da smartphone impiega 4.2 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Ecolamp ExtraVoltaico che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza · TechPyre\n+39 379 115 9352",
+      "subject": "Ecolamp ExtraVoltaico - dispersione clic mobile e tempi di caricamento di Ecolamp ExtraVoltaico (4.2s)",
+      "body": "Buongiorno,\n\nda un test sul sito di Ecolamp ExtraVoltaico, da smartphone impiega 4.2 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Ecolamp ExtraVoltaico che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
       "inThread": false,
       "requiresFollowUpCall": false
     },
     "step2FollowUpLink": {
       "dayOffset": 4,
-      "subject": "Re: Ecolamp ExtraVoltaico · dispersione clic mobile e tempi di caricamento di Ecolamp ExtraVoltaico (4.2s)",
-      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Ecolamp ExtraVoltaico, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/ecolamp\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza · TechPyre Studio\n+39 379 115 9352",
+      "subject": "Re: Ecolamp ExtraVoltaico - dispersione clic mobile e tempi di caricamento di Ecolamp ExtraVoltaico (4.2s)",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Ecolamp ExtraVoltaico, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/ecolamp\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
       "inThread": true,
       "requiresFollowUpCall": false
     },
     "step3ValueDropAndCallTrigger": {
       "dayOffset": 8,
-      "subject": "Re: Ecolamp ExtraVoltaico · dispersione clic mobile e tempi di caricamento di Ecolamp ExtraVoltaico (4.2s)",
-      "body": "Buongiorno,\n\nOltre a tagliare i 4.2 secondi su mobile, l'infrastruttura recupera il 40% delle conversioni tramite Server-Side Tracking.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza · TechPyre Studio",
+      "subject": "Re: Ecolamp ExtraVoltaico - dispersione clic mobile e tempi di caricamento di Ecolamp ExtraVoltaico (4.2s)",
+      "body": "Buongiorno,\n\nOltre a tagliare i 4.2 secondi su mobile, l'infrastruttura recupera il 40% delle conversioni tramite Server-Side Tracking.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza - TechPyre Studio",
       "inThread": true,
       "requiresFollowUpCall": true
     },
     "step4Breakup": {
       "dayOffset": 13,
-      "subject": "Re: Ecolamp ExtraVoltaico · dispersione clic mobile e tempi di caricamento di Ecolamp ExtraVoltaico (4.2s)",
-      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Ecolamp ExtraVoltaico non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/ecolamp) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza · TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
+      "subject": "Re: Ecolamp ExtraVoltaico - dispersione clic mobile e tempi di caricamento di Ecolamp ExtraVoltaico (4.2s)",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Ecolamp ExtraVoltaico non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/ecolamp) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
       "inThread": true,
       "requiresFollowUpCall": false
     }

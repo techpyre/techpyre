@@ -44,7 +44,7 @@
   },
   "content": {
     "badgeTop": "Global System Impianti · Divisione Tecnica & Commesse B2B (Carini)",
-    "heroHeadline": "In Sicilia le pi&ugrave; moderne soluzioni di efficientamento energetico",
+    "heroHeadline": "In Sicilia le più moderne soluzioni di efficientamento energetico",
     "heroSubheadline": "Global System Impianti offre installazione e manutenzione di impianti elettrici e fotovoltaici. Contattaci per soluzioni innovative e professionali.",
     "heroBullets": [
       "Studio di fattibilita tecnica e capitolato con tempi di consegna certi",
@@ -134,34 +134,34 @@
     }
   },
   "outreach": {
-    "emailSubject": "Global System Impianti · tempi di caricamento mobile e richieste preventivo di Global System Impianti (5.1s)",
-    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di Global System Impianti, da smartphone impiega 5.1 secondi ad aprirsi per 4 risorse bloccanti, frenando le richieste di preventivo.\n\nAbbiamo gia preparato una demo in Next.js per Global System Impianti che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza · TechPyre\n+39 379 115 9352",
-    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Global System Impianti, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/globalsystemimpianti\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza · TechPyre Studio\n+39 379 115 9352",
+    "emailSubject": "Global System Impianti - tempi di caricamento mobile e richieste preventivo di Global System Impianti (5.1s)",
+    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di Global System Impianti, da smartphone impiega 5.1 secondi ad aprirsi per 8 risorse bloccanti, frenando le richieste di preventivo.\n\nAbbiamo gia preparato una demo in Next.js per Global System Impianti che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Global System Impianti, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/globalsystemimpianti\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
     "step1FirstTouch": {
       "dayOffset": 1,
-      "subject": "Global System Impianti · tempi di caricamento mobile e richieste preventivo di Global System Impianti (5.1s)",
-      "body": "Buongiorno,\n\nda un test sul sito di Global System Impianti, da smartphone impiega 5.1 secondi ad aprirsi per 4 risorse bloccanti, frenando le richieste di preventivo.\n\nAbbiamo gia preparato una demo in Next.js per Global System Impianti che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza · TechPyre\n+39 379 115 9352",
+      "subject": "Global System Impianti - tempi di caricamento mobile e richieste preventivo di Global System Impianti (5.1s)",
+      "body": "Buongiorno,\n\nda un test sul sito di Global System Impianti, da smartphone impiega 5.1 secondi ad aprirsi per 8 risorse bloccanti, frenando le richieste di preventivo.\n\nAbbiamo gia preparato una demo in Next.js per Global System Impianti che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
       "inThread": false,
       "requiresFollowUpCall": false
     },
     "step2FollowUpLink": {
       "dayOffset": 4,
-      "subject": "Re: Global System Impianti · tempi di caricamento mobile e richieste preventivo di Global System Impianti (5.1s)",
-      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Global System Impianti, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/globalsystemimpianti\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza · TechPyre Studio\n+39 379 115 9352",
+      "subject": "Re: Global System Impianti - tempi di caricamento mobile e richieste preventivo di Global System Impianti (5.1s)",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Global System Impianti, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/globalsystemimpianti\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
       "inThread": true,
       "requiresFollowUpCall": false
     },
     "step3ValueDropAndCallTrigger": {
       "dayOffset": 8,
-      "subject": "Re: Global System Impianti · tempi di caricamento mobile e richieste preventivo di Global System Impianti (5.1s)",
-      "body": "Buongiorno,\n\nOltre a tagliare i 5.1 secondi su mobile, il sistema qualifica ogni preventivo prima di inviarlo al CRM.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza · TechPyre Studio",
+      "subject": "Re: Global System Impianti - tempi di caricamento mobile e richieste preventivo di Global System Impianti (5.1s)",
+      "body": "Buongiorno,\n\nOltre a tagliare i 5.1 secondi su mobile, il sistema qualifica ogni preventivo prima di inviarlo al CRM.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza - TechPyre Studio",
       "inThread": true,
       "requiresFollowUpCall": true
     },
     "step4Breakup": {
       "dayOffset": 13,
-      "subject": "Re: Global System Impianti · tempi di caricamento mobile e richieste preventivo di Global System Impianti (5.1s)",
-      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Global System Impianti non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/globalsystemimpianti) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza · TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
+      "subject": "Re: Global System Impianti - tempi di caricamento mobile e richieste preventivo di Global System Impianti (5.1s)",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Global System Impianti non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/globalsystemimpianti) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
       "inThread": true,
       "requiresFollowUpCall": false
     }

@@ -131,34 +131,34 @@
     }
   },
   "outreach": {
-    "emailSubject": "SEIND S.R.L. · dispersione clic mobile e tempi di caricamento di SEIND S.R.L. (2.7s)",
-    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di SEIND S.R.L., da smartphone impiega 2.7 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per SEIND S.R.L. che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza · TechPyre\n+39 379 115 9352",
-    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per SEIND S.R.L., completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/seind\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza · TechPyre Studio\n+39 379 115 9352",
+    "emailSubject": "SEIND S.R.L. - dispersione clic mobile e tempi di caricamento di SEIND S.R.L. (2.7s)",
+    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di SEIND S.R.L., da smartphone impiega 2.7 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per SEIND S.R.L. che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per SEIND S.R.L., completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/seind\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
     "step1FirstTouch": {
       "dayOffset": 1,
-      "subject": "SEIND S.R.L. · dispersione clic mobile e tempi di caricamento di SEIND S.R.L. (2.7s)",
-      "body": "Buongiorno,\n\nda un test sul sito di SEIND S.R.L., da smartphone impiega 2.7 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per SEIND S.R.L. che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza · TechPyre\n+39 379 115 9352",
+      "subject": "SEIND S.R.L. - dispersione clic mobile e tempi di caricamento di SEIND S.R.L. (2.7s)",
+      "body": "Buongiorno,\n\nda un test sul sito di SEIND S.R.L., da smartphone impiega 2.7 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per SEIND S.R.L. che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
       "inThread": false,
       "requiresFollowUpCall": false
     },
     "step2FollowUpLink": {
       "dayOffset": 4,
-      "subject": "Re: SEIND S.R.L. · dispersione clic mobile e tempi di caricamento di SEIND S.R.L. (2.7s)",
-      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per SEIND S.R.L., completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/seind\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza · TechPyre Studio\n+39 379 115 9352",
+      "subject": "Re: SEIND S.R.L. - dispersione clic mobile e tempi di caricamento di SEIND S.R.L. (2.7s)",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per SEIND S.R.L., completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/seind\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
       "inThread": true,
       "requiresFollowUpCall": false
     },
     "step3ValueDropAndCallTrigger": {
       "dayOffset": 8,
-      "subject": "Re: SEIND S.R.L. · dispersione clic mobile e tempi di caricamento di SEIND S.R.L. (2.7s)",
-      "body": "Buongiorno,\n\nOltre a tagliare i 2.7 secondi su mobile, l'infrastruttura recupera il 40% delle conversioni tramite Server-Side Tracking.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza · TechPyre Studio",
+      "subject": "Re: SEIND S.R.L. - dispersione clic mobile e tempi di caricamento di SEIND S.R.L. (2.7s)",
+      "body": "Buongiorno,\n\nOltre a tagliare i 2.7 secondi su mobile, l'infrastruttura recupera il 40% delle conversioni tramite Server-Side Tracking.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza - TechPyre Studio",
       "inThread": true,
       "requiresFollowUpCall": true
     },
     "step4Breakup": {
       "dayOffset": 13,
-      "subject": "Re: SEIND S.R.L. · dispersione clic mobile e tempi di caricamento di SEIND S.R.L. (2.7s)",
-      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di SEIND S.R.L. non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/seind) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza · TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
+      "subject": "Re: SEIND S.R.L. - dispersione clic mobile e tempi di caricamento di SEIND S.R.L. (2.7s)",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di SEIND S.R.L. non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/seind) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
       "inThread": true,
       "requiresFollowUpCall": false
     }

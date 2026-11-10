@@ -186,7 +186,7 @@ if (shouldSend) {
   const port = Number(process.env.OUTBOUND_SMTP_PORT || process.env.SMTP_PORT || 587);
   const user = process.env.OUTBOUND_SMTP_USER || process.env.SMTP_USER;
   const pass = process.env.OUTBOUND_SMTP_PASS || process.env.SMTP_PASS;
-  const fromName = process.env.OUTBOUND_FROM_NAME || 'Riccardo Granza · TechPyre Studio';
+  const fromName = (process.env.OUTBOUND_FROM_NAME || 'Riccardo Granza - TechPyre Studio').replace(/[\u2013\u2014\u00b7]/g, '-');
 
   if (!host || !user || !pass || host.includes('tuoprovider')) {
     console.log('\nℹ️  SMTP non configurato per invio reale (modalità Dry-Run completata).');
@@ -200,15 +200,16 @@ if (shouldSend) {
     auth: { user, pass },
   });
 
-  const subject = stepNumber === 1 ? cleanSubject : `Re: ${cleanSubject.replace(/^Re:\s*/i, '')}`;
-  const text =
+  const subject = (stepNumber === 1 ? cleanSubject : `Re: ${cleanSubject.replace(/^Re:\s*/i, '')}`).replace(/[\u2013\u2014\u00b7]/g, '-');
+  const text = (
     stepNumber === 2
       ? step2Body
       : stepNumber === 3
       ? step3Body
       : stepNumber === 4
       ? step4Body
-      : step1Body;
+      : step1Body
+  ).replace(/[\u2013\u2014\u00b7]/g, '-');
 
   const formatMsgId = (id) => {
     if (!id) return null;
@@ -227,11 +228,12 @@ if (shouldSend) {
   const referencesHeader = existingRefs.join(' ');
 
   const mailOptions = {
-    from: `"${fromName}" <${user}>`,
+    from: { name: fromName, address: user },
     replyTo: user,
     to: lead.meta.targetEmail,
     subject,
     text,
+    textEncoding: 'base64',
   };
 
   if (stepNumber > 1 && parentMessageId) {
@@ -247,10 +249,21 @@ if (shouldSend) {
   const sentMessageId = formatMsgId(info.messageId) || `<${Date.now()}.${lead.slug}@techpyre.eu>`;
 
   try {
+    const encodeMimeHeader = (val) =>
+      /^[\x20-\x7E]*$/.test(val)
+        ? val
+        : `=?UTF-8?B?${Buffer.from(val, 'utf8').toString('base64')}?=`;
+    const encodedFrom = /^[\x20-\x7E]*$/.test(fromName)
+      ? `"${fromName.replace(/"/g, '')}"`
+      : encodeMimeHeader(fromName);
+    const b64Body = Buffer.from(text.replace(/\r?\n/g, '\r\n'), 'utf8')
+      .toString('base64')
+      .replace(/(.{76})/g, '$1\r\n');
+
     const rawHeaders = [
-      `From: "${fromName}" <${user}>`,
+      `From: ${encodedFrom} <${user}>`,
       `To: ${lead.meta.targetEmail}`,
-      `Subject: ${subject}`,
+      `Subject: ${encodeMimeHeader(subject)}`,
       `Date: ${new Date().toUTCString()}`,
       `Message-ID: ${sentMessageId}`,
     ];
@@ -260,10 +273,10 @@ if (shouldSend) {
     }
     rawHeaders.push(
       `MIME-Version: 1.0`,
-      `Content-Type: text/plain; charset=utf-8`,
-      `Content-Transfer-Encoding: 8bit`,
+      `Content-Type: text/plain; charset="utf-8"`,
+      `Content-Transfer-Encoding: base64`,
       ``,
-      text
+      b64Body
     );
     await appendToArubaSent(user, pass, rawHeaders.join('\r\n'));
   } catch {

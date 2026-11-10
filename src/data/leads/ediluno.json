@@ -42,7 +42,7 @@
   "content": {
     "badgeTop": "EDILUNO · Divisione Tecnica & Commesse B2B (Venezia)",
     "heroHeadline": "FINESTRE VELUX",
-    "heroSubheadline": "Ediluno di Mira in provincia di Venezia è l&#039;azienda specializzata in interventi di manutenzione o installazione di finestre velux o lucernari.",
+    "heroSubheadline": "Ediluno di Mira in provincia di Venezia è l'azienda specializzata in interventi di manutenzione o installazione di finestre velux o lucernari.",
     "heroBullets": [
       "Studio di fattibilita tecnica e capitolato con tempi di consegna certi",
       "Qualifica immediata della richiesta e assegnazione diretta all'Ufficio Tecnico",
@@ -131,34 +131,34 @@
     }
   },
   "outreach": {
-    "emailSubject": "EDILUNO · dispersione clic mobile e tempi di caricamento di EDILUNO (3.3s)",
-    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di EDILUNO, da smartphone impiega 3.3 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per EDILUNO che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza · TechPyre\n+39 379 115 9352",
-    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per EDILUNO, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/ediluno\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza · TechPyre Studio\n+39 379 115 9352",
+    "emailSubject": "EDILUNO - dispersione clic mobile e tempi di caricamento di EDILUNO (3.3s)",
+    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di EDILUNO, da smartphone impiega 3.3 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per EDILUNO che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per EDILUNO, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/ediluno\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
     "step1FirstTouch": {
       "dayOffset": 1,
-      "subject": "EDILUNO · dispersione clic mobile e tempi di caricamento di EDILUNO (3.3s)",
-      "body": "Buongiorno,\n\nda un test sul sito di EDILUNO, da smartphone impiega 3.3 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per EDILUNO che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza · TechPyre\n+39 379 115 9352",
+      "subject": "EDILUNO - dispersione clic mobile e tempi di caricamento di EDILUNO (3.3s)",
+      "body": "Buongiorno,\n\nda un test sul sito di EDILUNO, da smartphone impiega 3.3 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per EDILUNO che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
       "inThread": false,
       "requiresFollowUpCall": false
     },
     "step2FollowUpLink": {
       "dayOffset": 4,
-      "subject": "Re: EDILUNO · dispersione clic mobile e tempi di caricamento di EDILUNO (3.3s)",
-      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per EDILUNO, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/ediluno\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza · TechPyre Studio\n+39 379 115 9352",
+      "subject": "Re: EDILUNO - dispersione clic mobile e tempi di caricamento di EDILUNO (3.3s)",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per EDILUNO, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/ediluno\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
       "inThread": true,
       "requiresFollowUpCall": false
     },
     "step3ValueDropAndCallTrigger": {
       "dayOffset": 8,
-      "subject": "Re: EDILUNO · dispersione clic mobile e tempi di caricamento di EDILUNO (3.3s)",
-      "body": "Buongiorno,\n\nOltre a tagliare i 3.3 secondi su mobile, l'infrastruttura recupera il 40% delle conversioni tramite Server-Side Tracking.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza · TechPyre Studio",
+      "subject": "Re: EDILUNO - dispersione clic mobile e tempi di caricamento di EDILUNO (3.3s)",
+      "body": "Buongiorno,\n\nOltre a tagliare i 3.3 secondi su mobile, l'infrastruttura recupera il 40% delle conversioni tramite Server-Side Tracking.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza - TechPyre Studio",
       "inThread": true,
       "requiresFollowUpCall": true
     },
     "step4Breakup": {
       "dayOffset": 13,
-      "subject": "Re: EDILUNO · dispersione clic mobile e tempi di caricamento di EDILUNO (3.3s)",
-      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di EDILUNO non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/ediluno) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza · TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
+      "subject": "Re: EDILUNO - dispersione clic mobile e tempi di caricamento di EDILUNO (3.3s)",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di EDILUNO non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/ediluno) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
       "inThread": true,
       "requiresFollowUpCall": false
     }

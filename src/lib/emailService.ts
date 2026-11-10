@@ -8,9 +8,24 @@ import { getUserSmtp } from "./userSmtpStorage";
 import { loadLeadConfig, saveLeadConfig } from "./leadsStorage";
 import {
   buildMultiStepOutreach,
+  decodeHtmlEntities,
   isHardBlockedEmail,
   migrateOldLeadConfig,
 } from "./scoutService";
+
+function encodeMimeHeaderWord(value: string): string {
+  const clean = decodeHtmlEntities(value).replace(/[\u2013\u2014\u00b7]/g, "-").trim();
+  if (/^[\x20-\x7E]*$/.test(clean)) {
+    return clean;
+  }
+  return `=?UTF-8?B?${Buffer.from(clean, "utf8").toString("base64")}?=`;
+}
+
+function wrapBase64Body(text: string): string {
+  const clean = decodeHtmlEntities(text).replace(/[\u2013\u2014\u00b7]/g, "-").replace(/\r?\n/g, "\r\n");
+  const b64 = Buffer.from(clean, "utf8").toString("base64");
+  return b64.replace(/(.{76})/g, "$1\r\n");
+}
 
 export function formatMimeMessageId(rawId?: string | null): string | null {
   if (!rawId) return null;
@@ -523,9 +538,13 @@ export async function sendLeadOutreach({
     smtpUser = process.env.OUTBOUND_SMTP_USER || process.env.SMTP_USER || "";
     smtpPass = process.env.OUTBOUND_SMTP_PASS || process.env.SMTP_PASS || "";
     senderName =
-      process.env.OUTBOUND_FROM_NAME || `${user.displayName} · TechPyre Studio`;
+      process.env.OUTBOUND_FROM_NAME || `${user.displayName} - TechPyre Studio`;
     senderEmail = smtpUser;
   }
+
+  senderName = decodeHtmlEntities(senderName)
+    .replace(/[\u2013\u2014\u00b7]/g, "-")
+    .trim();
 
   if (!host || !smtpUser || !smtpPass) {
     throw new Error(
@@ -541,19 +560,20 @@ export async function sendLeadOutreach({
   };
   const activeStep = stepMap[resolvedStep];
 
-  const baseOriginalSubject = (
+  const baseOriginalSubject = decodeHtmlEntities(
     lead.outreach.step1FirstTouch?.subject ||
-    lead.outreach.emailSubject ||
-    `${lead.meta.companyName} · tempi di caricamento mobile`
+      lead.outreach.emailSubject ||
+      `${lead.meta.companyName} - tempi di caricamento mobile`
   )
     .replace(/^Re:\s*/i, "")
-    .replace(/[—–]/g, "-");
+    .replace(/[\u2013\u2014\u00b7]/g, "-")
+    .trim();
 
   const isThreadedReply = Boolean(activeStep.inThread || resolvedStep > 1);
   const subject = isThreadedReply
     ? `Re: ${baseOriginalSubject}`
     : baseOriginalSubject;
-  let text = activeStep.body.replace(/[—–]/g, "-");
+  let text = decodeHtmlEntities(activeStep.body).replace(/[\u2013\u2014\u00b7]/g, "-");
 
   if (user.username !== "riccardogranza" && senderName) {
     text = text.replace(/Riccardo Granza/gi, senderName);
@@ -610,11 +630,15 @@ export async function sendLeadOutreach({
   });
 
   const mailOptions: SendMailOptions = {
-    from: `"${senderName}" <${senderEmail || smtpUser}>`,
+    from: {
+      name: senderName,
+      address: senderEmail || smtpUser,
+    },
     replyTo: senderEmail || smtpUser,
     to: lead.meta.targetEmail,
     subject,
     text,
+    textEncoding: "base64",
   };
 
   if (isThreadedReply && parentMessageId) {
@@ -632,10 +656,13 @@ export async function sendLeadOutreach({
 
   if (host.includes("aruba.it")) {
     try {
+      const encodedFromName = /^[\x20-\x7E]*$/.test(senderName)
+        ? `"${senderName.replace(/"/g, "")}"`
+        : encodeMimeHeaderWord(senderName);
       const mimeHeaders = [
-        `From: "${senderName}" <${senderEmail || smtpUser}>`,
+        `From: ${encodedFromName} <${senderEmail || smtpUser}>`,
         `To: ${lead.meta.targetEmail}`,
-        `Subject: ${subject}`,
+        `Subject: ${encodeMimeHeaderWord(subject)}`,
         `Date: ${new Date().toUTCString()}`,
         `Message-ID: ${sentMessageId}`,
       ];
@@ -645,10 +672,10 @@ export async function sendLeadOutreach({
       }
       mimeHeaders.push(
         `MIME-Version: 1.0`,
-        `Content-Type: text/plain; charset=utf-8`,
-        `Content-Transfer-Encoding: 8bit`,
+        `Content-Type: text/plain; charset="utf-8"`,
+        `Content-Transfer-Encoding: base64`,
         ``,
-        text
+        wrapBase64Body(text)
       );
       await appendToArubaSent(smtpUser, smtpPass, mimeHeaders.join("\r\n"));
     } catch {}

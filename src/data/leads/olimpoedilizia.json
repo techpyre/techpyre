@@ -134,34 +134,34 @@
     }
   },
   "outreach": {
-    "emailSubject": "Olimpo Edilizia · tempi di caricamento mobile e richieste preventivo di Olimpo Edilizia (10s)",
-    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di Olimpo Edilizia, da smartphone impiega 10 secondi ad aprirsi per 4 risorse bloccanti, frenando le richieste di preventivo.\n\nAbbiamo gia preparato una demo in Next.js per Olimpo Edilizia che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza · TechPyre\n+39 379 115 9352",
-    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Olimpo Edilizia, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/olimpoedilizia\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza · TechPyre Studio\n+39 379 115 9352",
+    "emailSubject": "Olimpo Edilizia - tempi di caricamento mobile e richieste preventivo di Olimpo Edilizia (10s)",
+    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di Olimpo Edilizia, da smartphone impiega 10 secondi ad aprirsi per 4 risorse bloccanti, frenando le richieste di preventivo.\n\nAbbiamo gia preparato una demo in Next.js per Olimpo Edilizia che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Olimpo Edilizia, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/olimpoedilizia\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
     "step1FirstTouch": {
       "dayOffset": 1,
-      "subject": "Olimpo Edilizia · tempi di caricamento mobile e richieste preventivo di Olimpo Edilizia (10s)",
-      "body": "Buongiorno,\n\nda un test sul sito di Olimpo Edilizia, da smartphone impiega 10 secondi ad aprirsi per 4 risorse bloccanti, frenando le richieste di preventivo.\n\nAbbiamo gia preparato una demo in Next.js per Olimpo Edilizia che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza · TechPyre\n+39 379 115 9352",
+      "subject": "Olimpo Edilizia - tempi di caricamento mobile e richieste preventivo di Olimpo Edilizia (10s)",
+      "body": "Buongiorno,\n\nda un test sul sito di Olimpo Edilizia, da smartphone impiega 10 secondi ad aprirsi per 4 risorse bloccanti, frenando le richieste di preventivo.\n\nAbbiamo gia preparato una demo in Next.js per Olimpo Edilizia che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
       "inThread": false,
       "requiresFollowUpCall": false
     },
     "step2FollowUpLink": {
       "dayOffset": 4,
-      "subject": "Re: Olimpo Edilizia · tempi di caricamento mobile e richieste preventivo di Olimpo Edilizia (10s)",
-      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Olimpo Edilizia, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/olimpoedilizia\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza · TechPyre Studio\n+39 379 115 9352",
+      "subject": "Re: Olimpo Edilizia - tempi di caricamento mobile e richieste preventivo di Olimpo Edilizia (10s)",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Olimpo Edilizia, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/olimpoedilizia\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
       "inThread": true,
       "requiresFollowUpCall": false
     },
     "step3ValueDropAndCallTrigger": {
       "dayOffset": 8,
-      "subject": "Re: Olimpo Edilizia · tempi di caricamento mobile e richieste preventivo di Olimpo Edilizia (10s)",
-      "body": "Buongiorno,\n\nOltre a tagliare i 10 secondi su mobile, il sistema qualifica ogni preventivo prima di inviarlo al CRM.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza · TechPyre Studio",
+      "subject": "Re: Olimpo Edilizia - tempi di caricamento mobile e richieste preventivo di Olimpo Edilizia (10s)",
+      "body": "Buongiorno,\n\nOltre a tagliare i 10 secondi su mobile, il sistema qualifica ogni preventivo prima di inviarlo al CRM.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza - TechPyre Studio",
       "inThread": true,
       "requiresFollowUpCall": true
     },
     "step4Breakup": {
       "dayOffset": 13,
-      "subject": "Re: Olimpo Edilizia · tempi di caricamento mobile e richieste preventivo di Olimpo Edilizia (10s)",
-      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Olimpo Edilizia non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/olimpoedilizia) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza · TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
+      "subject": "Re: Olimpo Edilizia - tempi di caricamento mobile e richieste preventivo di Olimpo Edilizia (10s)",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Olimpo Edilizia non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/olimpoedilizia) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
       "inThread": true,
       "requiresFollowUpCall": false
     }

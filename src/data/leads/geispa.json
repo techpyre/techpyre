@@ -42,7 +42,7 @@
   "content": {
     "badgeTop": "G.E.I. Gestione Energetica Impianti S.p.a. · Divisione Tecnica & Commesse B2B (Crema)",
     "heroHeadline": "GEI - Reti Gas",
-    "heroSubheadline": "Facciamo parte di un Gruppo dell’energia nato 70 anni fa che ha contribuito alla metanizzazione del norditalia. La nostra sede centrale è presso lo stabile ristrutturato dove nel 1873 sorgeva l’antica Officina ",
+    "heroSubheadline": "Facciamo parte di un Gruppo dell’energia nato 70 anni fa che ha contribuito alla metanizzazione del norditalia. La nostra sede centrale è presso lo stabile ristrutturato dove nel 1873 sorgeva l’antica Officina",
     "heroBullets": [
       "Studio di fattibilita tecnica e capitolato con tempi di consegna certi",
       "Qualifica immediata della richiesta e assegnazione diretta all'Ufficio Tecnico",
@@ -131,34 +131,34 @@
     }
   },
   "outreach": {
-    "emailSubject": "G.E.I. Gestione Energetica Impianti S.p.a. · dispersione clic mobile e tempi di caricamento di G.E.I. Gestione Energetica Impianti S.p.a. (10.8s)",
-    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di G.E.I. Gestione Energetica Impianti S.p.a., da smartphone impiega 10.8 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per G.E.I. Gestione Energetica Impianti S.p.a. che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza · TechPyre\n+39 379 115 9352",
-    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per G.E.I. Gestione Energetica Impianti S.p.a., completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/geispa\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza · TechPyre Studio\n+39 379 115 9352",
+    "emailSubject": "G.E.I. Gestione Energetica Impianti S.p.a. - dispersione clic mobile e tempi di caricamento di G.E.I. Gestione Energetica Impianti S.p.a. (10.8s)",
+    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di G.E.I. Gestione Energetica Impianti S.p.a., da smartphone impiega 10.8 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per G.E.I. Gestione Energetica Impianti S.p.a. che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per G.E.I. Gestione Energetica Impianti S.p.a., completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/geispa\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
     "step1FirstTouch": {
       "dayOffset": 1,
-      "subject": "G.E.I. Gestione Energetica Impianti S.p.a. · dispersione clic mobile e tempi di caricamento di G.E.I. Gestione Energetica Impianti S.p.a. (10.8s)",
-      "body": "Buongiorno,\n\nda un test sul sito di G.E.I. Gestione Energetica Impianti S.p.a., da smartphone impiega 10.8 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per G.E.I. Gestione Energetica Impianti S.p.a. che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza · TechPyre\n+39 379 115 9352",
+      "subject": "G.E.I. Gestione Energetica Impianti S.p.a. - dispersione clic mobile e tempi di caricamento di G.E.I. Gestione Energetica Impianti S.p.a. (10.8s)",
+      "body": "Buongiorno,\n\nda un test sul sito di G.E.I. Gestione Energetica Impianti S.p.a., da smartphone impiega 10.8 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per G.E.I. Gestione Energetica Impianti S.p.a. che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
       "inThread": false,
       "requiresFollowUpCall": false
     },
     "step2FollowUpLink": {
       "dayOffset": 4,
-      "subject": "Re: G.E.I. Gestione Energetica Impianti S.p.a. · dispersione clic mobile e tempi di caricamento di G.E.I. Gestione Energetica Impianti S.p.a. (10.8s)",
-      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per G.E.I. Gestione Energetica Impianti S.p.a., completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/geispa\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza · TechPyre Studio\n+39 379 115 9352",
+      "subject": "Re: G.E.I. Gestione Energetica Impianti S.p.a. - dispersione clic mobile e tempi di caricamento di G.E.I. Gestione Energetica Impianti S.p.a. (10.8s)",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per G.E.I. Gestione Energetica Impianti S.p.a., completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/geispa\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
       "inThread": true,
       "requiresFollowUpCall": false
     },
     "step3ValueDropAndCallTrigger": {
       "dayOffset": 8,
-      "subject": "Re: G.E.I. Gestione Energetica Impianti S.p.a. · dispersione clic mobile e tempi di caricamento di G.E.I. Gestione Energetica Impianti S.p.a. (10.8s)",
-      "body": "Buongiorno,\n\nOltre a tagliare i 10.8 secondi su mobile, l'infrastruttura recupera il 40% delle conversioni tramite Server-Side Tracking.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza · TechPyre Studio",
+      "subject": "Re: G.E.I. Gestione Energetica Impianti S.p.a. - dispersione clic mobile e tempi di caricamento di G.E.I. Gestione Energetica Impianti S.p.a. (10.8s)",
+      "body": "Buongiorno,\n\nOltre a tagliare i 10.8 secondi su mobile, l'infrastruttura recupera il 40% delle conversioni tramite Server-Side Tracking.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza - TechPyre Studio",
       "inThread": true,
       "requiresFollowUpCall": true
     },
     "step4Breakup": {
       "dayOffset": 13,
-      "subject": "Re: G.E.I. Gestione Energetica Impianti S.p.a. · dispersione clic mobile e tempi di caricamento di G.E.I. Gestione Energetica Impianti S.p.a. (10.8s)",
-      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di G.E.I. Gestione Energetica Impianti S.p.a. non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/geispa) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza · TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
+      "subject": "Re: G.E.I. Gestione Energetica Impianti S.p.a. - dispersione clic mobile e tempi di caricamento di G.E.I. Gestione Energetica Impianti S.p.a. (10.8s)",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di G.E.I. Gestione Energetica Impianti S.p.a. non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/geispa) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
       "inThread": true,
       "requiresFollowUpCall": false
     }

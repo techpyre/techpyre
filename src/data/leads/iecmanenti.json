@@ -118,34 +118,34 @@
     }
   },
   "outreach": {
-    "emailSubject": "I.E.C. Manenti · dispersione clic mobile e tempi di caricamento di I.E.C. Manenti (7.1s)",
-    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di I.E.C. Manenti, da smartphone impiega 7.1 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per I.E.C. Manenti che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza · TechPyre\n+39 379 115 9352",
-    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per I.E.C. Manenti, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/iecmanenti\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza · TechPyre Studio\n+39 379 115 9352",
+    "emailSubject": "I.E.C. Manenti - dispersione clic mobile e tempi di caricamento di I.E.C. Manenti (7.1s)",
+    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di I.E.C. Manenti, da smartphone impiega 7.1 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per I.E.C. Manenti che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per I.E.C. Manenti, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/iecmanenti\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
     "step1FirstTouch": {
       "dayOffset": 1,
-      "subject": "I.E.C. Manenti · dispersione clic mobile e tempi di caricamento di I.E.C. Manenti (7.1s)",
-      "body": "Buongiorno,\n\nda un test sul sito di I.E.C. Manenti, da smartphone impiega 7.1 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per I.E.C. Manenti che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza · TechPyre\n+39 379 115 9352",
+      "subject": "I.E.C. Manenti - dispersione clic mobile e tempi di caricamento di I.E.C. Manenti (7.1s)",
+      "body": "Buongiorno,\n\nda un test sul sito di I.E.C. Manenti, da smartphone impiega 7.1 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per I.E.C. Manenti che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
       "inThread": false,
       "requiresFollowUpCall": false
     },
     "step2FollowUpLink": {
       "dayOffset": 4,
-      "subject": "Re: I.E.C. Manenti · dispersione clic mobile e tempi di caricamento di I.E.C. Manenti (7.1s)",
-      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per I.E.C. Manenti, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/iecmanenti\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza · TechPyre Studio\n+39 379 115 9352",
+      "subject": "Re: I.E.C. Manenti - dispersione clic mobile e tempi di caricamento di I.E.C. Manenti (7.1s)",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per I.E.C. Manenti, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/iecmanenti\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
       "inThread": true,
       "requiresFollowUpCall": false
     },
     "step3ValueDropAndCallTrigger": {
       "dayOffset": 8,
-      "subject": "Re: I.E.C. Manenti · dispersione clic mobile e tempi di caricamento di I.E.C. Manenti (7.1s)",
-      "body": "Buongiorno,\n\nOltre a tagliare i 7.1 secondi su mobile, l'infrastruttura recupera il 40% delle conversioni tramite Server-Side Tracking.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza · TechPyre Studio",
+      "subject": "Re: I.E.C. Manenti - dispersione clic mobile e tempi di caricamento di I.E.C. Manenti (7.1s)",
+      "body": "Buongiorno,\n\nOltre a tagliare i 7.1 secondi su mobile, l'infrastruttura recupera il 40% delle conversioni tramite Server-Side Tracking.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza - TechPyre Studio",
       "inThread": true,
       "requiresFollowUpCall": true
     },
     "step4Breakup": {
       "dayOffset": 13,
-      "subject": "Re: I.E.C. Manenti · dispersione clic mobile e tempi di caricamento di I.E.C. Manenti (7.1s)",
-      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di I.E.C. Manenti non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/iecmanenti) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza · TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
+      "subject": "Re: I.E.C. Manenti - dispersione clic mobile e tempi di caricamento di I.E.C. Manenti (7.1s)",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di I.E.C. Manenti non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/iecmanenti) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
       "inThread": true,
       "requiresFollowUpCall": false
     }

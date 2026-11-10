@@ -91,6 +91,30 @@ const EXCLUDED_DOMAINS = [
   "eni.com",
   "poste.it",
   "ktcshop.it",
+  "riello.it",
+  "domal.it",
+  "schueco.it",
+  "finstral.com",
+  "oknoplast.it",
+  "velux.it",
+  "daikin.it",
+  "mitsubishielectric.it",
+  "vaillant.it",
+  "immergas.com",
+  "baxi.it",
+  "ariston.com",
+  "viessmann.it",
+  "bticino.it",
+  "vimar.com",
+  "faac.it",
+  "came.com",
+  "niceforyou.com",
+  "hormann.it",
+  "dierre.com",
+  "scrigno.it",
+  "garofoli.com",
+  "ocalab.it",
+  "hione.it",
 ];
 
 const ITALIAN_CITIES = [
@@ -196,16 +220,69 @@ export function slugifyDomain(input: string): string {
     .slice(0, 42);
 }
 
+export function decodeHtmlEntities(input: string): string {
+  if (!input) return "";
+  const namedEntities: Record<string, string> = {
+    "&nbsp;": " ",
+    "&amp;": "&",
+    "&quot;": '"',
+    "&apos;": "'",
+    "&lsquo;": "'",
+    "&rsquo;": "'",
+    "&ldquo;": '"',
+    "&rdquo;": '"',
+    "&laquo;": '"',
+    "&raquo;": '"',
+    "&ndash;": "-",
+    "&mdash;": "-",
+    "&bull;": "-",
+    "&middot;": "-",
+    "&hellip;": "...",
+    "&agrave;": "à",
+    "&egrave;": "è",
+    "&eacute;": "é",
+    "&igrave;": "ì",
+    "&ograve;": "ò",
+    "&ugrave;": "ù",
+    "&Agrave;": "À",
+    "&Egrave;": "È",
+    "&Eacute;": "É",
+    "&Igrave;": "Ì",
+    "&Ograve;": "Ò",
+    "&Ugrave;": "Ù",
+    "&euro;": "EUR",
+    "&reg;": "",
+    "&trade;": "",
+    "&copy;": "",
+  };
+  return input
+    .replace(/&[a-zA-Z]+;/g, (match) => namedEntities[match] ?? " ")
+    .replace(/&#(\d+);/g, (_, dec) => {
+      const code = Number(dec);
+      if (code === 8211 || code === 8212 || code === 183 || code === 8226) return "-";
+      if (code === 8216 || code === 8217) return "'";
+      if (code === 8220 || code === 8221) return '"';
+      if (code === 160) return " ";
+      return code >= 32 && code <= 65535 ? String.fromCharCode(code) : "";
+    })
+    .replace(/&#x([0-9a-fA-F]+);/g, (_, hex) => {
+      const code = parseInt(hex, 16);
+      if (code === 0x2013 || code === 0x2014 || code === 0x00b7 || code === 0x2022) return "-";
+      if (code === 0x2018 || code === 0x2019) return "'";
+      if (code === 0x201c || code === 0x201d) return '"';
+      if (code === 0x00a0) return " ";
+      return code >= 32 && code <= 65535 ? String.fromCharCode(code) : "";
+    })
+    .replace(/[\u2013\u2014\u00b7]/g, "-");
+}
+
 function stripTags(html: string): string {
-  return html
-    .replace(/<script[\s\S]*?<\/script>/gi, " ")
-    .replace(/<style[\s\S]*?<\/style>/gi, " ")
-    .replace(/<[^>]+>/g, " ")
-    .replace(/&nbsp;/g, " ")
-    .replace(/&amp;/g, "&")
-    .replace(/&quot;/g, '"')
-    .replace(/&#039;/g, "'")
-    .replace(/&#x27;/g, "'")
+  return decodeHtmlEntities(
+    html
+      .replace(/<script[\s\S]*?<\/script>/gi, " ")
+      .replace(/<style[\s\S]*?<\/style>/gi, " ")
+      .replace(/<[^>]+>/g, " ")
+  )
     .replace(/\s+/g, " ")
     .trim();
 }
@@ -792,11 +869,22 @@ export function selectBestDecisionMakerEmail(
     let score = 0;
     let isGeneric = false;
 
-    // +30 pt se il dominio dell'email coincide esattamente col dominio del sito aziendale
-    if (cleanCompanyDomain && domainPart === cleanCompanyDomain) {
+    const cleanRoot = cleanCompanyDomain.split(".")[0];
+    const candRoot = domainPart.split(".")[0];
+    const isSameOrRelatedCompanyDomain =
+      Boolean(cleanCompanyDomain) &&
+      (domainPart === cleanCompanyDomain ||
+        (cleanRoot &&
+          cleanRoot.length >= 4 &&
+          (candRoot.includes(cleanRoot) || cleanRoot.includes(candRoot))));
+
+    // +30 pt se il dominio dell'email coincide col dominio del sito aziendale (penalizza domini terzi/web agency non correlati)
+    if (isSameOrRelatedCompanyDomain) {
       score += 30;
     } else if (FREE_MAIL_DOMAINS.has(domainPart)) {
       score -= 10;
+    } else if (cleanCompanyDomain) {
+      score -= 45;
     }
 
     const domainRoot = cleanCompanyDomain.split(".")[0];
@@ -1215,36 +1303,44 @@ export function buildMultiStepOutreach({
   const demoUrl = `https://www.techpyre.eu/demo/${slug}`;
   const blockingCount = Math.max(4, renderBlockingScripts);
 
-  // Regola di Salvaguardia info@: Se isGeneric === true e abbiamo trovato fullName, forza l'oggetto a iniziare con "Per ${fullName} · ..."
+  const cleanCompanyName = decodeHtmlEntities(companyName);
+  const cleanFullName = decisionMaker.fullName
+    ? decodeHtmlEntities(decisionMaker.fullName)
+    : null;
+  const cleanFirstName = decisionMaker.firstName
+    ? decodeHtmlEntities(decisionMaker.firstName)
+    : null;
+
+  // Regola di Salvaguardia info@: Se isGeneric === true e abbiamo trovato fullName, forza l'oggetto a iniziare con "Per ${fullName} - ..."
   const baseSubject = runsAds
-    ? ` dispersione clic mobile e tempi di caricamento di ${companyName} (${estimatedMobileLcpSeconds}s)`
-    : ` tempi di caricamento mobile e richieste preventivo di ${companyName} (${estimatedMobileLcpSeconds}s)`;
+    ? ` dispersione clic mobile e tempi di caricamento di ${cleanCompanyName} (${estimatedMobileLcpSeconds}s)`
+    : ` tempi di caricamento mobile e richieste preventivo di ${cleanCompanyName} (${estimatedMobileLcpSeconds}s)`;
 
   const emailSubject =
-    isGenericInbox && decisionMaker.fullName
-      ? `Per ${decisionMaker.fullName} ·${baseSubject}`
-      : `${companyName} ·${baseSubject}`;
+    isGenericInbox && cleanFullName
+      ? `Per ${cleanFullName} -${baseSubject}`
+      : `${cleanCompanyName} -${baseSubject}`;
 
   const threadSubject = `Re: ${emailSubject}`;
-  const greeting = decisionMaker.firstName
-    ? `Buongiorno ${decisionMaker.firstName},`
+  const greeting = cleanFirstName
+    ? `Buongiorno ${cleanFirstName},`
     : `Buongiorno,`;
 
   // STEP 1 (Giorno 1 - First Touch: 65-85 parole totali, zero link, zero prezzi, zero 'LINK')
   const step1Paragraph1 = runsAds
-    ? `da un test sul sito di ${companyName}, da smartphone impiega ${estimatedMobileLcpSeconds} secondi ad aprirsi per ${blockingCount} blocchi di codice, disperdendo buona parte dei clic pagati.`
-    : `da un test sul sito di ${companyName}, da smartphone impiega ${estimatedMobileLcpSeconds} secondi ad aprirsi per ${blockingCount} risorse bloccanti, frenando le richieste di preventivo.`;
+    ? `da un test sul sito di ${cleanCompanyName}, da smartphone impiega ${estimatedMobileLcpSeconds} secondi ad aprirsi per ${blockingCount} blocchi di codice, disperdendo buona parte dei clic pagati.`
+    : `da un test sul sito di ${cleanCompanyName}, da smartphone impiega ${estimatedMobileLcpSeconds} secondi ad aprirsi per ${blockingCount} risorse bloccanti, frenando le richieste di preventivo.`;
 
   const step1Body = [
     greeting,
     ``,
     step1Paragraph1,
     ``,
-    `Abbiamo gia preparato una demo in Next.js per ${companyName} che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.`,
+    `Abbiamo gia preparato una demo in Next.js per ${cleanCompanyName} che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.`,
     ``,
     `Vi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?`,
     ``,
-    `Riccardo Granza · TechPyre`,
+    `Riccardo Granza - TechPyre`,
     `+39 379 115 9352`,
   ].join("\n");
 
@@ -1252,13 +1348,13 @@ export function buildMultiStepOutreach({
   const step2Body = [
     greeting,
     ``,
-    `vi lascio qui sotto il link della demo da 0.3 secondi preparata per ${companyName}, completa di filtro pre-qualifica contatti:`,
+    `vi lascio qui sotto il link della demo da 0.3 secondi preparata per ${cleanCompanyName}, completa di filtro pre-qualifica contatti:`,
     ``,
     demoUrl,
     ``,
     `Avete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?`,
     ``,
-    `Riccardo Granza · TechPyre Studio`,
+    `Riccardo Granza - TechPyre Studio`,
     `+39 379 115 9352`,
   ].join("\n");
 
@@ -1274,19 +1370,19 @@ export function buildMultiStepOutreach({
     ``,
     `Provo a farvi uno squillo in settimana per un confronto di 10 minuti.`,
     ``,
-    `Riccardo Granza · TechPyre Studio`,
+    `Riccardo Granza - TechPyre Studio`,
   ].join("\n");
 
   // STEP 4 (Giorno 13 - In-Thread: Breakup cortese senza pressione)
   const step4Body = [
     greeting,
     ``,
-    `immagino che ottimizzare i tempi mobile e la qualifica contatti di ${companyName} non sia una priorita in questo trimestre.`,
+    `immagino che ottimizzare i tempi mobile e la qualifica contatti di ${cleanCompanyName} non sia una priorita in questo trimestre.`,
     ``,
     `Vi lascio comunque attiva la demo (${demoUrl}) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.`,
     ``,
     `Un cordiale saluto e buon lavoro,`,
-    `Riccardo Granza · TechPyre Studio`,
+    `Riccardo Granza - TechPyre Studio`,
     `WhatsApp diretto: +39 379 115 9352`,
   ].join("\n");
 
@@ -1349,6 +1445,31 @@ export function migrateOldLeadConfig(
   }
 
   let changed = false;
+
+  // 0. Decodifica entità HTML residue e rimozione caratteri problematici (es. &#8211;, &rsquo;, ·)
+  if (lead.meta.companyName) {
+    const decodedCompany = decodeHtmlEntities(lead.meta.companyName).replace(/\s+/g, " ").trim();
+    if (decodedCompany !== lead.meta.companyName) {
+      lead.meta.companyName = decodedCompany;
+      changed = true;
+    }
+  }
+  if (lead.content) {
+    if (lead.content.heroHeadline) {
+      const decodedH = decodeHtmlEntities(lead.content.heroHeadline).replace(/\s+/g, " ").trim();
+      if (decodedH !== lead.content.heroHeadline) {
+        lead.content.heroHeadline = decodedH;
+        changed = true;
+      }
+    }
+    if (lead.content.heroSubheadline) {
+      const decodedSub = decodeHtmlEntities(lead.content.heroSubheadline).replace(/\s+/g, " ").trim();
+      if (decodedSub !== lead.content.heroSubheadline) {
+        lead.content.heroSubheadline = decodedSub;
+        changed = true;
+      }
+    }
+  }
 
   // 1. Raccolta email candidate (incluso eventuale preflight.json salvato in public/leads/[slug]/preflight.json)
   const rawEmails: string[] = [];
@@ -1513,7 +1634,7 @@ export function migrateOldLeadConfig(
     changed = true;
   }
 
-  // 5. Verifica o rigenerazione dei 4 Step Outreach (Zero-Fluff Protocol)
+  // 5. Verifica o rigenerazione dei 4 Step Outreach (Zero-Fluff Protocol + Clean Encoding senza · né entità HTML)
   const hasLegacyCopy =
     !lead.outreach.step1FirstTouch ||
     !lead.outreach.step2FollowUpLink ||
@@ -1521,6 +1642,13 @@ export function migrateOldLeadConfig(
     !lead.outreach.step4Breakup ||
     /mi chiamo|900\s*euro|zero canoni|rispondetemi pure ['"]?link['"]?/i.test(
       lead.outreach.emailPlainTextBody || ""
+    ) ||
+    /[\u00b7\u2013\u2014]|&#\d+;|&[a-z]+;/i.test(
+      (lead.outreach.emailSubject || "") +
+        " " +
+        (lead.outreach.emailPlainTextBody || "") +
+        " " +
+        (lead.outreach.followUpWithLinkBody || "")
     ) ||
     (!lead.audit.runsAds &&
       /clic pagati|campagne/i.test(lead.outreach.emailPlainTextBody || ""));
@@ -1948,11 +2076,48 @@ export async function discoverItalianBusinesses(
           }
 
           if (!externalSiteUrl) {
+            const nameTokens = (ldName || "")
+              .toLowerCase()
+              .replace(/[^a-z0-9\s]/g, " ")
+              .split(/\s+/)
+              .filter(
+                (t) =>
+                  t.length >= 4 &&
+                  ![
+                    "srl",
+                    "srls",
+                    "spa",
+                    "snc",
+                    "sas",
+                    "ditta",
+                    "studio",
+                    "impresa",
+                    "gruppo",
+                    "italia",
+                    "servizi",
+                    "sistemi",
+                    "tecnologie",
+                    "impianti",
+                    "serramenti",
+                    "infissi",
+                    "costruzioni",
+                    "edilizia",
+                    "carpenteria",
+                    "meccanica",
+                  ].includes(t)
+              );
+
             for (const link of allLinks) {
               try {
                 const parsedLink = new URL(link);
-                const host = parsedLink.hostname.toLowerCase();
+                const host = parsedLink.hostname.toLowerCase().replace(/^www\./, "");
                 if (EXCLUDED_DOMAINS.some((ex) => host.includes(ex))) continue;
+                if (
+                  nameTokens.length > 0 &&
+                  !nameTokens.some((tok) => host.includes(tok))
+                ) {
+                  continue;
+                }
                 externalSiteUrl = parsedLink.origin;
                 break;
               } catch {

@@ -4,14 +4,14 @@
   "meta": {
     "companyName": "Ma.Tra.",
     "decisionMakerName": "Giulio Matra",
-    "targetEmail": "info@matrapd.it",
+    "targetEmail": "giulio.matra@gmail.com",
     "phone": "+39 049 600731",
     "city": "Padova",
     "vatNumber": "00815320288",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Ma.Tra.",
     "originalLandingUrl": "https://www.matrapadova.it",
     "isGenericInbox": true,
-    "emailScore": 5,
+    "emailScore": -2,
     "decisionMakerFirstName": "Giulio",
     "decisionMakerRole": "Direzione",
     "lastSentMessageId": "<3afcc3f2-94eb-7787-6ac4-36ad7b4d88dd@techpyre.eu>",
@@ -137,34 +137,34 @@
     }
   },
   "outreach": {
-    "emailSubject": "Ma.Tra. · dispersione clic mobile e tempi di caricamento di Ma.Tra. (12.8s)",
-    "emailPlainTextBody": "Buongiorno Giulio,\n\nda un test sul sito di Ma.Tra., da smartphone impiega 12.8 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Ma.Tra. che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza · TechPyre\n+39 379 115 9352",
-    "followUpWithLinkBody": "Buongiorno Giulio,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Ma.Tra., completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/matrapadova\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza · TechPyre Studio\n+39 379 115 9352",
+    "emailSubject": "Per Giulio Matra - dispersione clic mobile e tempi di caricamento di Ma.Tra. (12.8s)",
+    "emailPlainTextBody": "Buongiorno Giulio,\n\nda un test sul sito di Ma.Tra., da smartphone impiega 12.8 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Ma.Tra. che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno Giulio,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Ma.Tra., completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/matrapadova\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
     "step1FirstTouch": {
       "dayOffset": 1,
-      "subject": "Ma.Tra. · dispersione clic mobile e tempi di caricamento di Ma.Tra. (12.8s)",
-      "body": "Buongiorno Giulio,\n\nda un test sul sito di Ma.Tra., da smartphone impiega 12.8 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Ma.Tra. che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza · TechPyre\n+39 379 115 9352",
+      "subject": "Per Giulio Matra - dispersione clic mobile e tempi di caricamento di Ma.Tra. (12.8s)",
+      "body": "Buongiorno Giulio,\n\nda un test sul sito di Ma.Tra., da smartphone impiega 12.8 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Ma.Tra. che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
       "inThread": false,
       "requiresFollowUpCall": false
     },
     "step2FollowUpLink": {
       "dayOffset": 4,
-      "subject": "Re: Ma.Tra. · dispersione clic mobile e tempi di caricamento di Ma.Tra. (12.8s)",
-      "body": "Buongiorno Giulio,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Ma.Tra., completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/matrapadova\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza · TechPyre Studio\n+39 379 115 9352",
+      "subject": "Re: Per Giulio Matra - dispersione clic mobile e tempi di caricamento di Ma.Tra. (12.8s)",
+      "body": "Buongiorno Giulio,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Ma.Tra., completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/matrapadova\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
       "inThread": true,
       "requiresFollowUpCall": false
     },
     "step3ValueDropAndCallTrigger": {
       "dayOffset": 8,
-      "subject": "Re: Ma.Tra. · dispersione clic mobile e tempi di caricamento di Ma.Tra. (12.8s)",
-      "body": "Buongiorno Giulio,\n\nOltre a tagliare i 12.8 secondi su mobile, l'infrastruttura recupera il 40% delle conversioni tramite Server-Side Tracking.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza · TechPyre Studio",
+      "subject": "Re: Per Giulio Matra - dispersione clic mobile e tempi di caricamento di Ma.Tra. (12.8s)",
+      "body": "Buongiorno Giulio,\n\nOltre a tagliare i 12.8 secondi su mobile, l'infrastruttura recupera il 40% delle conversioni tramite Server-Side Tracking.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza - TechPyre Studio",
       "inThread": true,
       "requiresFollowUpCall": true
     },
     "step4Breakup": {
       "dayOffset": 13,
-      "subject": "Re: Ma.Tra. · dispersione clic mobile e tempi di caricamento di Ma.Tra. (12.8s)",
-      "body": "Buongiorno Giulio,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Ma.Tra. non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/matrapadova) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza · TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
+      "subject": "Re: Per Giulio Matra - dispersione clic mobile e tempi di caricamento di Ma.Tra. (12.8s)",
+      "body": "Buongiorno Giulio,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Ma.Tra. non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/matrapadova) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
       "inThread": true,
       "requiresFollowUpCall": false
     }

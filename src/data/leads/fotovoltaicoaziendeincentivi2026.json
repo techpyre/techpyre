@@ -4,14 +4,14 @@
   "meta": {
     "companyName": "Seges Fotovoltaico Aziende",
     "decisionMakerName": "Marco Rossi",
-    "targetEmail": "marco.rossi@rpss.it",
+    "targetEmail": "leonardo.segesit@gmail.com",
     "phone": "0000008",
     "city": "Italia",
     "vatNumber": "Non trovata",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Fotovoltaicoaziendeincentivi2026",
     "originalLandingUrl": "https://fotovoltaicoaziendeincentivi2026.rpss.it/",
     "isGenericInbox": false,
-    "emailScore": 60,
+    "emailScore": 50,
     "decisionMakerFirstName": "Marco",
     "decisionMakerRole": "Direzione"
   },
@@ -131,34 +131,34 @@
     }
   },
   "outreach": {
-    "emailSubject": "Seges Fotovoltaico Aziende · dispersione clic mobile e tempi di caricamento di Seges Fotovoltaico Aziende (3.6s)",
-    "emailPlainTextBody": "Buongiorno Marco,\n\nda un test sul sito di Seges Fotovoltaico Aziende, da smartphone impiega 3.6 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Seges Fotovoltaico Aziende che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza · TechPyre\n+39 379 115 9352",
-    "followUpWithLinkBody": "Buongiorno Marco,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Seges Fotovoltaico Aziende, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/fotovoltaicoaziendeincentivi2026\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza · TechPyre Studio\n+39 379 115 9352",
+    "emailSubject": "Seges Fotovoltaico Aziende - dispersione clic mobile e tempi di caricamento di Seges Fotovoltaico Aziende (3.6s)",
+    "emailPlainTextBody": "Buongiorno Marco,\n\nda un test sul sito di Seges Fotovoltaico Aziende, da smartphone impiega 3.6 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Seges Fotovoltaico Aziende che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno Marco,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Seges Fotovoltaico Aziende, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/fotovoltaicoaziendeincentivi2026\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
     "step1FirstTouch": {
       "dayOffset": 1,
-      "subject": "Seges Fotovoltaico Aziende · dispersione clic mobile e tempi di caricamento di Seges Fotovoltaico Aziende (3.6s)",
-      "body": "Buongiorno Marco,\n\nda un test sul sito di Seges Fotovoltaico Aziende, da smartphone impiega 3.6 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Seges Fotovoltaico Aziende che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza · TechPyre\n+39 379 115 9352",
+      "subject": "Seges Fotovoltaico Aziende - dispersione clic mobile e tempi di caricamento di Seges Fotovoltaico Aziende (3.6s)",
+      "body": "Buongiorno Marco,\n\nda un test sul sito di Seges Fotovoltaico Aziende, da smartphone impiega 3.6 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Seges Fotovoltaico Aziende che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
       "inThread": false,
       "requiresFollowUpCall": false
     },
     "step2FollowUpLink": {
       "dayOffset": 4,
-      "subject": "Re: Seges Fotovoltaico Aziende · dispersione clic mobile e tempi di caricamento di Seges Fotovoltaico Aziende (3.6s)",
-      "body": "Buongiorno Marco,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Seges Fotovoltaico Aziende, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/fotovoltaicoaziendeincentivi2026\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza · TechPyre Studio\n+39 379 115 9352",
+      "subject": "Re: Seges Fotovoltaico Aziende - dispersione clic mobile e tempi di caricamento di Seges Fotovoltaico Aziende (3.6s)",
+      "body": "Buongiorno Marco,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Seges Fotovoltaico Aziende, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/fotovoltaicoaziendeincentivi2026\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
       "inThread": true,
       "requiresFollowUpCall": false
     },
     "step3ValueDropAndCallTrigger": {
       "dayOffset": 8,
-      "subject": "Re: Seges Fotovoltaico Aziende · dispersione clic mobile e tempi di caricamento di Seges Fotovoltaico Aziende (3.6s)",
-      "body": "Buongiorno Marco,\n\nOltre a tagliare i 3.6 secondi su mobile, l'infrastruttura recupera il 40% delle conversioni tramite Server-Side Tracking.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza · TechPyre Studio",
+      "subject": "Re: Seges Fotovoltaico Aziende - dispersione clic mobile e tempi di caricamento di Seges Fotovoltaico Aziende (3.6s)",
+      "body": "Buongiorno Marco,\n\nOltre a tagliare i 3.6 secondi su mobile, l'infrastruttura recupera il 40% delle conversioni tramite Server-Side Tracking.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza - TechPyre Studio",
       "inThread": true,
       "requiresFollowUpCall": true
     },
     "step4Breakup": {
       "dayOffset": 13,
-      "subject": "Re: Seges Fotovoltaico Aziende · dispersione clic mobile e tempi di caricamento di Seges Fotovoltaico Aziende (3.6s)",
-      "body": "Buongiorno Marco,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Seges Fotovoltaico Aziende non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/fotovoltaicoaziendeincentivi2026) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza · TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
+      "subject": "Re: Seges Fotovoltaico Aziende - dispersione clic mobile e tempi di caricamento di Seges Fotovoltaico Aziende (3.6s)",
+      "body": "Buongiorno Marco,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Seges Fotovoltaico Aziende non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/fotovoltaicoaziendeincentivi2026) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
       "inThread": true,
       "requiresFollowUpCall": false
     }

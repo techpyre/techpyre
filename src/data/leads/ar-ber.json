@@ -45,7 +45,7 @@
   "content": {
     "badgeTop": "Ar-Ber Snc · Divisione Tecnica & Commesse B2B (Rezzato)",
     "heroHeadline": "TECNOLOGIA AL VOSTRO SERVIZIO",
-    "heroSubheadline": "AR-BER esegue lavorazioni meccaniche per l’asportazione del truciolo, tramite  torni e fresatrici CNC. Trattamenti su materiali e finiture.",
+    "heroSubheadline": "AR-BER esegue lavorazioni meccaniche per l’asportazione del truciolo, tramite torni e fresatrici CNC. Trattamenti su materiali e finiture.",
     "heroBullets": [
       "Studio di fattibilita tecnica e capitolato con tempi di consegna certi",
       "Qualifica immediata della richiesta e assegnazione diretta all'Ufficio Tecnico",
@@ -134,34 +134,34 @@
     }
   },
   "outreach": {
-    "emailSubject": "Ar-Ber Snc · tempi di caricamento mobile e richieste preventivo di Ar-Ber Snc (9.4s)",
-    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di Ar-Ber Snc, da smartphone impiega 9.4 secondi ad aprirsi per 46 risorse bloccanti, frenando le richieste di preventivo.\n\nAbbiamo gia preparato una demo in Next.js per Ar-Ber Snc che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza · TechPyre\n+39 379 115 9352",
-    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Ar-Ber Snc, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/ar-ber\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza · TechPyre Studio\n+39 379 115 9352",
+    "emailSubject": "Ar-Ber Snc - tempi di caricamento mobile e richieste preventivo di Ar-Ber Snc (9.4s)",
+    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di Ar-Ber Snc, da smartphone impiega 9.4 secondi ad aprirsi per 46 risorse bloccanti, frenando le richieste di preventivo.\n\nAbbiamo gia preparato una demo in Next.js per Ar-Ber Snc che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Ar-Ber Snc, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/ar-ber\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
     "step1FirstTouch": {
       "dayOffset": 1,
-      "subject": "Ar-Ber Snc · tempi di caricamento mobile e richieste preventivo di Ar-Ber Snc (9.4s)",
-      "body": "Buongiorno,\n\nda un test sul sito di Ar-Ber Snc, da smartphone impiega 9.4 secondi ad aprirsi per 46 risorse bloccanti, frenando le richieste di preventivo.\n\nAbbiamo gia preparato una demo in Next.js per Ar-Ber Snc che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza · TechPyre\n+39 379 115 9352",
+      "subject": "Ar-Ber Snc - tempi di caricamento mobile e richieste preventivo di Ar-Ber Snc (9.4s)",
+      "body": "Buongiorno,\n\nda un test sul sito di Ar-Ber Snc, da smartphone impiega 9.4 secondi ad aprirsi per 46 risorse bloccanti, frenando le richieste di preventivo.\n\nAbbiamo gia preparato una demo in Next.js per Ar-Ber Snc che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
       "inThread": false,
       "requiresFollowUpCall": false
     },
     "step2FollowUpLink": {
       "dayOffset": 4,
-      "subject": "Re: Ar-Ber Snc · tempi di caricamento mobile e richieste preventivo di Ar-Ber Snc (9.4s)",
-      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Ar-Ber Snc, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/ar-ber\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza · TechPyre Studio\n+39 379 115 9352",
+      "subject": "Re: Ar-Ber Snc - tempi di caricamento mobile e richieste preventivo di Ar-Ber Snc (9.4s)",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Ar-Ber Snc, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/ar-ber\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
       "inThread": true,
       "requiresFollowUpCall": false
     },
     "step3ValueDropAndCallTrigger": {
       "dayOffset": 8,
-      "subject": "Re: Ar-Ber Snc · tempi di caricamento mobile e richieste preventivo di Ar-Ber Snc (9.4s)",
-      "body": "Buongiorno,\n\nOltre a tagliare i 9.4 secondi su mobile, il sistema qualifica ogni preventivo prima di inviarlo al CRM.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza · TechPyre Studio",
+      "subject": "Re: Ar-Ber Snc - tempi di caricamento mobile e richieste preventivo di Ar-Ber Snc (9.4s)",
+      "body": "Buongiorno,\n\nOltre a tagliare i 9.4 secondi su mobile, il sistema qualifica ogni preventivo prima di inviarlo al CRM.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza - TechPyre Studio",
       "inThread": true,
       "requiresFollowUpCall": true
     },
     "step4Breakup": {
       "dayOffset": 13,
-      "subject": "Re: Ar-Ber Snc · tempi di caricamento mobile e richieste preventivo di Ar-Ber Snc (9.4s)",
-      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Ar-Ber Snc non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/ar-ber) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza · TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
+      "subject": "Re: Ar-Ber Snc - tempi di caricamento mobile e richieste preventivo di Ar-Ber Snc (9.4s)",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Ar-Ber Snc non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/ar-ber) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
       "inThread": true,
       "requiresFollowUpCall": false
     }
