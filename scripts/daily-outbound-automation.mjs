@@ -126,6 +126,19 @@ const B2B_KEYWORD_POOL = [
   "stampaggio gomma plastica monza",
 ];
 
+async function isLiveDemoReachable(slug) {
+  try {
+    const res = await fetch(`https://www.techpyre.eu/demo/${encodeURIComponent(slug)}`, {
+      method: "HEAD",
+      redirect: "follow",
+      signal: AbortSignal.timeout(6000),
+    });
+    return res.status === 200;
+  } catch {
+    return false;
+  }
+}
+
 async function hasValidMxRecord(email) {
   if (!email || !email.includes("@")) return false;
   const domain = email.split("@")[1]?.trim().toLowerCase();
@@ -311,6 +324,13 @@ async function main() {
         saveLeadConfig(cand.slug, cand.config);
         continue;
       }
+      const demoOk = await isLiveDemoReachable(cand.slug);
+      if (!demoOk) {
+        console.log(
+          `  ⏭️  Skip Step 2 [${cand.slug}]: demo https://www.techpyre.eu/demo/${cand.slug} non risponde HTTP 200 (attende prossimo deploy).`
+        );
+        continue;
+      }
       try {
         const sendRes = await sendLeadOutreach({
           slug: cand.slug,
@@ -456,6 +476,25 @@ async function main() {
     const commitMsg = `chore(outbound): daily automation (${sentStep1Report.length} Step 1, ${sentStep2Report.length} Step 2, Excel CRM updated)`;
     spawnSync("git", ["commit", "-m", commitMsg], { stdio: "inherit", cwd: ROOT_DIR });
     spawnSync("git", ["push", "origin", "main"], { stdio: "inherit", cwd: ROOT_DIR });
+
+    // Verifica post-deploy che le nuove demo siano effettivamente HTTP 200 live su techpyre.eu
+    const probeSlug = sentStep1Report[0]?.slug || newlyScoutedSlugs[0];
+    if (probeSlug) {
+      console.log(`\n🌐 Verifica deploy live su https://www.techpyre.eu/demo/${probeSlug}...`);
+      let liveReady = false;
+      for (let attempt = 1; attempt <= 12; attempt++) {
+        liveReady = await isLiveDemoReachable(probeSlug);
+        if (liveReady) {
+          console.log(`  ✅ Deploy live verificato (HTTP 200 OK su https://www.techpyre.eu/demo/${probeSlug})!`);
+          break;
+        }
+        await new Promise((r) => setTimeout(r, 8000));
+      }
+      if (!liveReady) {
+        console.warn(`  ⚠️ Il deploy GitHub sta impiegando più tempo, avvio deploy diretto Vercel CLI...`);
+        spawnSync("vercel", ["--prod", "--yes"], { stdio: "inherit", cwd: ROOT_DIR });
+      }
+    }
   } catch (err) {
     console.warn("⚠️ Git push warning:", err.message);
   }
