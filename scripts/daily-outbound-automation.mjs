@@ -334,7 +334,7 @@ async function main() {
           console.warn(`    ⚠️ Sync Excel warning: ${syncErr.message}`);
         }
         console.log(
-          `  🚀 [Step 2 ${step2AlreadySentToday + sentStep2Report.length}/${step2DailyLimit}] Follow-Up Link inviato a ${cand.config.meta.companyName} (${email}) (Excel + Drive sincronizzati)`
+          `  🚀 [Step 2 ${step2AlreadySentToday + sentStep2Report.length}/${step2DailyLimit}] [${cand.slug}] Follow-Up Link inviato a ${cand.config.meta.companyName} (${email}) -> https://www.techpyre.eu/demo/${cand.slug} (Excel + Drive sincronizzati)`
         );
       } catch (err) {
         console.error(`  ❌ Errore invio Step 2 [${cand.slug}]: ${err.message}`);
@@ -411,7 +411,7 @@ async function main() {
           console.warn(`    ⚠️ Sync Excel warning: ${syncErr.message}`);
         }
         console.log(
-          `  📨 [Step 1 ${step1AlreadySentToday + sentStep1Report.length}/${targetStep1Daily}] Inviato a ${cand.config.meta.companyName} (${email}) -> ${sendRes.messageId} (Excel + Drive sincronizzati)`
+          `  📨 [Step 1 ${step1AlreadySentToday + sentStep1Report.length}/${targetStep1Daily}] [${cand.slug}] Inviato a ${cand.config.meta.companyName} (${email}) -> https://www.techpyre.eu/demo/${cand.slug} (Excel + Drive sincronizzati)`
         );
       } catch (err) {
         console.error(`  ❌ Errore invio Step 1 [${cand.slug}]: ${err.message}`);
