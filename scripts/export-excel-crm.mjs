@@ -20,6 +20,30 @@ export const GDRIVE_CRM_FILE_ID =
 export const GDRIVE_CRM_WEB_URL = `https://docs.google.com/spreadsheets/d/${GDRIVE_CRM_FILE_ID}/edit`;
 
 export function syncExcelToGoogleDrive(localFilePath) {
+  // Candidato 1: Antigravity language_server plugin-cli (inietta automaticamente la sessione OAuth attiva del plugin)
+  const langServer = "/Applications/Antigravity.app/Contents/Resources/bin/language_server";
+  if (fs.existsSync(langServer)) {
+    try {
+      const res = spawnSync(
+        langServer,
+        ["plugin-cli", "gdrive", "mutate", "update", GDRIVE_CRM_FILE_ID, localFilePath],
+        {
+          encoding: "utf-8",
+          timeout: 25000,
+          env: process.env,
+        }
+      );
+      if (res.status === 0) {
+        return {
+          synced: true,
+          fileId: GDRIVE_CRM_FILE_ID,
+          webUrl: GDRIVE_CRM_WEB_URL,
+        };
+      }
+    } catch {}
+  }
+
+  // Candidato 2: gdrive da PATH
   const gdriveBinCandidates = [
     "/Users/riccardogranza/.gemini/antigravity/bin/gdrive",
     "gdrive",

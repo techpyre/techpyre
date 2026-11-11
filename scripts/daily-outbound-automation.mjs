@@ -28,7 +28,7 @@ if (!process.env.__TECHPYRE_DAILY_TSX) {
     cwd: ROOT_DIR,
     env: {
       ...process.env,
-      PATH: `/opt/homebrew/bin:/usr/local/bin:${process.env.PATH || ""}`,
+      PATH: `/Applications/Antigravity.app/Contents/Resources/bin:/Users/riccardogranza/.gemini/antigravity/bin:/opt/homebrew/bin:/usr/local/bin:${process.env.PATH || ""}`,
       __TECHPYRE_DAILY_TSX: "1",
     },
   });
@@ -60,7 +60,9 @@ const {
   migrateOldLeadConfig,
 } = await import("../src/lib/scoutService.ts");
 
-const { listAllLeadConfigs } = await import("../src/lib/leadsStorage.ts");
+const { listAllLeadConfigs, saveLeadConfig } = await import(
+  "../src/lib/leadsStorage.ts"
+);
 
 const {
   sendLeadOutreach,
@@ -102,6 +104,26 @@ const B2B_KEYWORD_POOL = [
   "scaffalature industriali magazzino verona",
   "gruppi elettrogeni industriali bologna",
   "impianti antincendio industriali padova",
+  "serramenti legno alluminio udine",
+  "carpenteria meccanica cuneo",
+  "infissi alluminio pordenone",
+  "automazioni industriali forli",
+  "costruzione stampi lamiere lecco",
+  "impianti depurazione acque varese",
+  "carpenteria metallica ravenna",
+  "lavorazione lamiera cnc como",
+  "macchine confezionatrici packaging bologna",
+  "strutture metalliche prefabbricate piacenza",
+  "carpenteria navale industriale trieste",
+  "tubazioni industriali saldate ferrara",
+  "impianti filtrazione aria vicenza",
+  "meccanica precisione brescia",
+  "cabine trasformazione mt bt bergamo",
+  "robotica industriale saldatura torino",
+  "impianti vapore industriale parma",
+  "serramenti facciate continue verona",
+  "carpenteria medio pesante treviso",
+  "stampaggio gomma plastica monza",
 ];
 
 async function hasValidMxRecord(email) {
@@ -160,7 +182,10 @@ function getEligibleLists() {
 
   for (const { slug, config } of all) {
     const migrated = migrateOldLeadConfig(config, true);
-    const status = migrated.meta?.status || "NEW";
+    let status = migrated.meta?.status || "NEW";
+    if (status === "NEW" && sentStepMap.has(slug)) {
+      status = sentStepMap.get(slug) >= 2 ? "CONTACTED_STEP_2" : "CONTACTED_STEP_1";
+    }
     if (
       status === "BLACKLISTED" ||
       status === "INVALID_TICKET_INBOX" ||
@@ -268,96 +293,13 @@ async function main() {
     `📊 Controllo Step 2: ${preExistingStep2Candidates.length} aziende in stato CONTACTED_STEP_1 disponibili (Soglia minima: ${step2Threshold}, Max blocco giornaliero: ${step2DailyLimit}).`
   );
 
-  // FASE 2: SCOUTING DI NUOVE AZIENDE B2B + INVIO FINO A 35 STEP 1 GIORNALIERI
-  console.log(
-    `\n🔎 FASE 1/3 · Scouting nuove aziende B2B e invio di ${remainingStep1Needed} Step 1 mancanti per raggiungere ${targetStep1Daily}/giorno...`
-  );
-
-  // Ruota le keyword in base al giorno dell'anno per esplorare nicchie sempre nuove
-  const dayOfYear = Math.floor(Date.now() / 86400000);
-  const rotatedKeywords = [
-    ...B2B_KEYWORD_POOL.slice(dayOfYear % B2B_KEYWORD_POOL.length),
-    ...B2B_KEYWORD_POOL.slice(0, dayOfYear % B2B_KEYWORD_POOL.length),
-  ];
-
-  const newlyScoutedSlugs = [];
-  for (const kw of rotatedKeywords) {
-    const currentCheck = getEligibleLists();
-    if (currentCheck.eligibleStep1.length >= remainingStep1Needed) break;
-    const neededScout = Math.min(
-      5,
-      remainingStep1Needed - currentCheck.eligibleStep1.length
-    );
-    try {
-      console.log(`  🌐 Scouting live su keyword: "${kw}" (necessari ancora: ${neededScout})...`);
-      const res = await runAutonomousScout(kw, neededScout, {
-        preferAdLibrary: false,
-        minLcpSeconds: 5.0,
-      });
-      for (const d of res.discovered || []) {
-        newlyScoutedSlugs.push(d.slug);
-        console.log(
-          `    ✅ Nuova Demo creata: [${d.slug}] ${d.companyName} (${d.city}) - LCP ${d.lcp}s - ${d.targetEmail}`
-        );
-      }
-      await generateExcelCrm();
-    } catch (err) {
-      console.warn(`    ⚠️ Errore scouting su "${kw}": ${err.message}`);
-    }
-  }
-
-  // Ricarica la lista di tutti i candidati Step 1 idonei
-  const { eligibleStep1 } = getEligibleLists();
-  const newlyScoutedSet = new Set(newlyScoutedSlugs);
-  eligibleStep1.sort((a, b) => {
-    const aNew = newlyScoutedSet.has(a.slug) ? 0 : 1;
-    const bNew = newlyScoutedSet.has(b.slug) ? 0 : 1;
-    if (aNew !== bNew) return aNew - bNew;
-    return (b.config.meta?.emailScore || 0) - (a.config.meta?.emailScore || 0);
-  });
-
-  const sentStep1Report = [];
-  for (const cand of eligibleStep1) {
-    if (sentStep1Report.length >= remainingStep1Needed) break;
-    const email = cand.config.meta.targetEmail;
-    const mxOk = await hasValidMxRecord(email);
-    if (!mxOk) {
-      console.log(`  ⏭️  Skip [${cand.slug}] (${email}): dominio privo di record MX valido.`);
-      continue;
-    }
-
-    try {
-      const sendRes = await sendLeadOutreach({
-        slug: cand.slug,
-        stepNumber: 1,
-        user,
-        bypassBusinessHoursCheck: true,
-        bypassRateLimitCheck: true,
-        applyJitter: true,
-      });
-      sentStep1Report.push({
-        slug: cand.slug,
-        companyName: cand.config.meta.companyName,
-        city: cand.config.meta.city,
-        email,
-        lcp: cand.config.audit.originalLcpSeconds,
-        messageId: sendRes.messageId,
-      });
-      console.log(
-        `  📨 [Step 1 ${step1AlreadySentToday + sentStep1Report.length}/${targetStep1Daily}] Inviato a ${cand.config.meta.companyName} (${email}) -> ${sendRes.messageId} (Excel + Drive sincronizzati)`
-      );
-    } catch (err) {
-      console.error(`  ❌ Errore invio Step 1 [${cand.slug}]: ${err.message}`);
-    }
-  }
-
-  // FASE 3: INVIO STEP 2 SOLO A MASSIMO 40 AZIENDE ALLA VOLTA (SE SONO DISPONIBILI >= 40 AZIENDE IN CONTACTED_STEP_1)
+  // FASE 2: INVIO STEP 2 SOLO A MASSIMO 40 AZIENDE ALLA VOLTA (SE SONO DISPONIBILI >= 40 AZIENDE IN CONTACTED_STEP_1)
   const sentStep2Report = [];
   const totalStep2PoolIncludingToday =
     preExistingStep2Candidates.length + step2AlreadySentToday;
   if (totalStep2PoolIncludingToday >= step2Threshold && remainingStep2Allowed > 0) {
     console.log(
-      `\n🚀 FASE 2/3 · Soglia Step 2 attiva (${preExistingStep2Candidates.length} disponibili, max 40/giorno)! Invio fino a ${remainingStep2Allowed} Step 2 rimanenti di oggi...`
+      `\n🚀 FASE 1/3 · Soglia Step 2 attiva (${preExistingStep2Candidates.length} disponibili, max 40/giorno)! Invio fino a ${remainingStep2Allowed} Step 2 rimanenti di oggi in ordine cronologico...`
     );
     for (const cand of preExistingStep2Candidates) {
       if (sentStep2Report.length >= remainingStep2Allowed) break;
@@ -365,6 +307,8 @@ async function main() {
       const mxOk = await hasValidMxRecord(email);
       if (!mxOk) {
         console.log(`  ⏭️  Skip Step 2 [${cand.slug}] (${email}): MX non valido.`);
+        cand.config.meta.status = "INVALID_TICKET_INBOX";
+        saveLeadConfig(cand.slug, cand.config);
         continue;
       }
       try {
@@ -383,6 +327,12 @@ async function main() {
           email,
           messageId: sendRes.messageId,
         });
+        // Sincronizza immediatamente il file Excel CRM e Google Drive dopo ogni singolo invio
+        try {
+          await generateExcelCrm();
+        } catch (syncErr) {
+          console.warn(`    ⚠️ Sync Excel warning: ${syncErr.message}`);
+        }
         console.log(
           `  🚀 [Step 2 ${step2AlreadySentToday + sentStep2Report.length}/${step2DailyLimit}] Follow-Up Link inviato a ${cand.config.meta.companyName} (${email}) (Excel + Drive sincronizzati)`
         );
@@ -392,12 +342,111 @@ async function main() {
     }
   } else {
     console.log(
-      `\nℹ️  FASE 2/3 · Aziende pronte per Step 2: ${preExistingStep2Candidates.length} (sotto la soglia di ${step2Threshold}). Lo Step 2 verrà inviato non appena il bacino raggiunge ${step2Threshold}+ aziende.`
+      `\nℹ️  FASE 1/3 · Aziende pronte per Step 2: ${preExistingStep2Candidates.length} (sotto la soglia di ${step2Threshold}). Lo Step 2 verrà inviato non appena il bacino raggiunge ${step2Threshold}+ aziende.`
     );
   }
 
-  // FASE 4: GENERAZIONE / AGGIORNAMENTO EXCEL CRM
-  console.log(`\n📊 FASE 3/3 · Aggiornamento file Excel formattato TechPyre_Outbound_CRM.xlsx...`);
+  // FASE 3: SCOUTING DI NUOVE AZIENDE B2B + INVIO FINO A 35 STEP 1 GIORNALIERI
+  console.log(
+    `\n🔎 FASE 2/3 · Scouting nuove aziende B2B e invio di ${remainingStep1Needed} Step 1 mancanti per raggiungere ${targetStep1Daily}/giorno...`
+  );
+
+  // Ruota le keyword in base al giorno dell'anno per esplorare nicchie sempre nuove
+  const dayOfYear = Math.floor(Date.now() / 86400000);
+  const rotatedKeywords = [
+    ...B2B_KEYWORD_POOL.slice(dayOfYear % B2B_KEYWORD_POOL.length),
+    ...B2B_KEYWORD_POOL.slice(0, dayOfYear % B2B_KEYWORD_POOL.length),
+  ];
+
+  const sentStep1Report = [];
+  const newlyScoutedSlugs = [];
+  let kwIdx = 0;
+
+  while (
+    sentStep1Report.length < remainingStep1Needed &&
+    kwIdx < rotatedKeywords.length
+  ) {
+    // 1. Prova prima ad inviare ai lead Step 1 già disponibili nel database
+    const { eligibleStep1 } = getEligibleLists();
+    const newlyScoutedSet = new Set(newlyScoutedSlugs);
+    eligibleStep1.sort((a, b) => {
+      const aNew = newlyScoutedSet.has(a.slug) ? 0 : 1;
+      const bNew = newlyScoutedSet.has(b.slug) ? 0 : 1;
+      if (aNew !== bNew) return aNew - bNew;
+      return (b.config.meta?.emailScore || 0) - (a.config.meta?.emailScore || 0);
+    });
+
+    for (const cand of eligibleStep1) {
+      if (sentStep1Report.length >= remainingStep1Needed) break;
+      const email = cand.config.meta.targetEmail;
+      const mxOk = await hasValidMxRecord(email);
+      if (!mxOk) {
+        console.log(`  ⏭️  Skip [${cand.slug}] (${email}): dominio privo di record MX valido.`);
+        cand.config.meta.status = "INVALID_TICKET_INBOX";
+        saveLeadConfig(cand.slug, cand.config);
+        continue;
+      }
+
+      try {
+        const sendRes = await sendLeadOutreach({
+          slug: cand.slug,
+          stepNumber: 1,
+          user,
+          bypassBusinessHoursCheck: true,
+          bypassRateLimitCheck: true,
+          applyJitter: true,
+        });
+        sentStep1Report.push({
+          slug: cand.slug,
+          companyName: cand.config.meta.companyName,
+          city: cand.config.meta.city,
+          email,
+          lcp: cand.config.audit.originalLcpSeconds,
+          messageId: sendRes.messageId,
+        });
+        // Sincronizza immediatamente il file Excel CRM e Google Drive dopo ogni singolo invio
+        try {
+          await generateExcelCrm();
+        } catch (syncErr) {
+          console.warn(`    ⚠️ Sync Excel warning: ${syncErr.message}`);
+        }
+        console.log(
+          `  📨 [Step 1 ${step1AlreadySentToday + sentStep1Report.length}/${targetStep1Daily}] Inviato a ${cand.config.meta.companyName} (${email}) -> ${sendRes.messageId} (Excel + Drive sincronizzati)`
+        );
+      } catch (err) {
+        console.error(`  ❌ Errore invio Step 1 [${cand.slug}]: ${err.message}`);
+      }
+    }
+
+    if (sentStep1Report.length >= remainingStep1Needed) break;
+
+    // 2. Se mancano ancora lead per raggiungere la quota, cerca la prossima keyword
+    const kw = rotatedKeywords[kwIdx++];
+    const stillNeeded = remainingStep1Needed - sentStep1Report.length;
+    const batchScoutCount = Math.min(6, Math.max(2, stillNeeded));
+    console.log(
+      `  🌐 Scouting live su keyword: "${kw}" (ancora necessari: ${stillNeeded} Step 1)...`
+    );
+    try {
+      const res = await runAutonomousScout(kw, batchScoutCount, {
+        preferAdLibrary: false,
+        minLcpSeconds: 5.0,
+      });
+      for (const d of res.discovered || []) {
+        newlyScoutedSlugs.push(d.slug);
+        console.log(
+          `    ✅ Nuova Demo creata: [${d.slug}] ${d.companyName} (${d.city}) - LCP ${d.lcp}s - ${d.targetEmail}`
+        );
+      }
+      // Sincronizza subito Excel e Google Drive con i nuovi lead scoperti
+      await generateExcelCrm();
+    } catch (err) {
+      console.warn(`    ⚠️ Errore scouting su "${kw}": ${err.message}`);
+    }
+  }
+
+  // FASE 4: AGGIORNAMENTO FINALE EXCEL CRM
+  console.log(`\n📊 FASE 3/3 · Aggiornamento finale file Excel formattato TechPyre_Outbound_CRM.xlsx...`);
   const excelSummary = await generateExcelCrm();
   console.log("  ✅ Excel aggiornato:", JSON.stringify(excelSummary));
 

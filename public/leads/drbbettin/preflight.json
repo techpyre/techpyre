@@ -1,0 +1,29 @@
+{
+  "slug": "drbbettin",
+  "targetUrl": "http://www.drbbettin.it",
+  "searchKeyword": "taglio laser lamiera vicenza",
+  "measuredResponseMs": 2316,
+  "renderBlockingScripts": 35,
+  "estimatedMobileLcpSeconds": 9.2,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@drbbettin.it",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@drbbettin.it"
+  ],
+  "extractedPhones": [
+    "049 630411",
+    "03360100287",
+    "+39 049 630411"
+  ],
+  "extractedVat": "03360100287"
+}

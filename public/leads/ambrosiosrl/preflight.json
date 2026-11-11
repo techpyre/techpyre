@@ -1,0 +1,38 @@
+{
+  "slug": "ambrosiosrl",
+  "targetUrl": "https://www.ambrosiosrl.eu",
+  "searchKeyword": "nastri trasportatori industriali torino",
+  "measuredResponseMs": 4955,
+  "renderBlockingScripts": 27,
+  "estimatedMobileLcpSeconds": 5.1,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "ambrosiosrl@ambrosiosrl.eu",
+    "isGeneric": true,
+    "score": 58
+  },
+  "extractedEmails": [
+    "ambrosiosrl@ambrosiosrl.eu",
+    "ambrosiosrl@ambrosiosrl.eu",
+    "ambrosiosrl@ambrosiosrl.eu",
+    "tecnico@ambrosiosrl.eu",
+    "ambrosiosrl@ambrosiosrl.eu",
+    "ambrosiosrl@ambrosiosrl.eu",
+    "tecnico@ambrosiosrl.eu",
+    "ambrosiosrl@ambrosiosrl.eu",
+    "ambrosiosrl@ambrosiosrl.eu",
+    "ambrosiosrl@ambrosiosrl.eu"
+  ],
+  "extractedPhones": [
+    "+390119130174",
+    "08703010010",
+    "314572800"
+  ],
+  "extractedVat": "08703010010"
+}

@@ -1,0 +1,36 @@
+{
+  "slug": "laserpro",
+  "targetUrl": "https://www.laserpro.it",
+  "searchKeyword": "taglio laser lamiera vicenza",
+  "measuredResponseMs": 2995,
+  "renderBlockingScripts": 83,
+  "estimatedMobileLcpSeconds": 19.1,
+  "runsAds": true,
+  "detectedTrackingSignals": [
+    "Google Ads / GTM"
+  ],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@laserpro.it",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@laserpro.it",
+    "info@laserpro.it",
+    "info@laserpro.it",
+    "info@laserpro.it",
+    "info@laserpro.it",
+    "INFO@LASERPRO.IT"
+  ],
+  "extractedPhones": [
+    "0971866",
+    "0444 971866",
+    "0444971866"
+  ],
+  "extractedVat": "03051190241"
+}

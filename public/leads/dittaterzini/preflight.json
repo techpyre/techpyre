@@ -1,0 +1,37 @@
+{
+  "slug": "dittaterzini",
+  "targetUrl": "http://www.dittaterzini.it",
+  "searchKeyword": "infissi pvc alluminio bologna",
+  "measuredResponseMs": 1421,
+  "renderBlockingScripts": 17,
+  "estimatedMobileLcpSeconds": 5.1,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@dittaterzini.it",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@dittaterzini.it",
+    "info@dittaterzini.it",
+    "info@dittaterzini.it",
+    "info@dittaterzini.it",
+    "info@dittaterzini.it",
+    "info@dittaterzini.it",
+    "info@dittaterzini.it",
+    "info@dittaterzini.it",
+    "info@dittaterzini.it"
+  ],
+  "extractedPhones": [
+    "06638090",
+    "026975266214",
+    "3934722121"
+  ],
+  "extractedVat": "03575951201"
+}

@@ -1,0 +1,32 @@
+{
+  "slug": "az-traslochi",
+  "targetUrl": "https://az-traslochi.it",
+  "searchKeyword": "soluzioni imballaggio industriale parma",
+  "measuredResponseMs": 1153,
+  "renderBlockingScripts": 34,
+  "estimatedMobileLcpSeconds": 8.3,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@az-traslochi.it",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "az.traslochieservizi@gmail.com",
+    "az.traslochieservizi@gmail.com",
+    "info@az-traslochi.it",
+    "az.traslochieservizi@gmail.com"
+  ],
+  "extractedPhones": [
+    "3164242857",
+    "06815006666",
+    "0126955"
+  ],
+  "extractedVat": "01823320039"
+}

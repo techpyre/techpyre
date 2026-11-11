@@ -1,0 +1,37 @@
+{
+  "slug": "siriuselectric",
+  "targetUrl": "https://www.siriuselectric.it",
+  "searchKeyword": "saldatura robotizzata padova",
+  "measuredResponseMs": 1714,
+  "renderBlockingScripts": 5,
+  "estimatedMobileLcpSeconds": 5.1,
+  "runsAds": true,
+  "detectedTrackingSignals": [
+    "Google Ads / GTM"
+  ],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "siriuselectric@siriuselectric.it",
+    "isGeneric": true,
+    "score": 58
+  },
+  "extractedEmails": [
+    "siriuselectric@siriuselectric.it",
+    "siriuselectric@siriuselectric.it",
+    "siriuselectric@siriuselectric.it",
+    "siriuselectric@siriuselectric.it",
+    "sirius@pec.siriuselectric.it",
+    "sirius@pec.siriuselectric.it",
+    "info@siriuselectric.it"
+  ],
+  "extractedPhones": [
+    "00000008",
+    "3333333333",
+    "083397000"
+  ],
+  "extractedVat": "01350900187"
+}

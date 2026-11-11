@@ -1,0 +1,37 @@
+{
+  "slug": "ca-me",
+  "targetUrl": "http://www.ca-me.it",
+  "searchKeyword": "taglio laser lamiera vicenza",
+  "measuredResponseMs": 688,
+  "renderBlockingScripts": 29,
+  "estimatedMobileLcpSeconds": 6.5,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@ca-me.it",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@ca-me.it",
+    "info@ca-me.it",
+    "info@ca-me.it",
+    "info@ca-me.it",
+    "info@ca-me.it",
+    "info@ca-me.it",
+    "info@ca-me.it",
+    "info@ca-me.it",
+    "info@ca-me.it"
+  ],
+  "extractedPhones": [
+    "0445510173",
+    "0445.510173",
+    "0445.518245"
+  ],
+  "extractedVat": "01996390249"
+}

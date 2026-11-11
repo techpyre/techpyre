@@ -1,0 +1,171 @@
+{
+  "slug": "caroni",
+  "archetype": "b2b-authority",
+  "meta": {
+    "companyName": "Caroni Spa",
+    "decisionMakerName": "Direzione Caroni Spa",
+    "decisionMakerFirstName": null,
+    "decisionMakerRole": "Direzione Aziendale",
+    "isGenericInbox": true,
+    "emailScore": 45,
+    "targetEmail": "sales@caroni.it",
+    "phone": "03405223",
+    "city": "Cuneo",
+    "vatNumber": "00677140048",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Caroni%20Spa",
+    "originalLandingUrl": "http://www.caroni.it",
+    "status": "CONTACTED_STEP_1",
+    "lastSentMessageId": "<5a478393-595d-3ba9-2385-8141b7d24dc5@techpyre.eu>",
+    "threadMessageIds": [
+      "<5a478393-595d-3ba9-2385-8141b7d24dc5@techpyre.eu>"
+    ]
+  },
+  "audit": {
+    "originalLcpSeconds": 9.1,
+    "mobileScore": 23,
+    "renderBlockingCount": 41,
+    "runsAds": true,
+    "detectedTrackingSignals": [
+      "Google Ads / GTM"
+    ],
+    "threeCriticalFlaws": [
+      "Dispersione del budget pubblicitario: caricamento mobile di 9.1s (41 risorse bloccanti) che fa abbandonare oltre meta degli utenti prima dell'apertura della pagina.",
+      "Cecita decisionale sul ROI: assenza di tracciamento Server-Side di prima parte (GTM Server-Side e Meta CAPI), con perdita del 30-50% dei dati di conversione per blocchi browser e cookie banner.",
+      "Colli di bottiglia commerciali: i contatti finiscono in email isolate senza pre-qualifica automatica e senza sincronizzazione immediata via API/Webhook con il CRM aziendale."
+    ],
+    "activeAdHeadline": "Caroni, da 70 anni diamo forma a idee industriali.",
+    "activeAdCopySummary": "Caroni è un azienda italiana, che opera nel campo dello stampaggio a freddo, saldatura e verniciatura di componenti in acciaio e alluminio p..."
+  },
+  "theme": {
+    "primaryHex": "#0B1E36",
+    "accentHex": "#B8860B",
+    "darkBgHex": "#0B1E36",
+    "borderRadius": "8px",
+    "headerBgMode": "light",
+    "logoBrightness": "dark"
+  },
+  "content": {
+    "badgeTop": "Caroni Spa · Divisione Tecnica & Commesse B2B (Cuneo)",
+    "heroHeadline": "Caroni, da 70 anni diamo forma a idee industriali.",
+    "heroSubheadline": "Caroni è un azienda italiana, che opera nel campo dello stampaggio a freddo, saldatura e verniciatura di componenti in acciaio e alluminio per i principali produttori del settore Automotive. Da oltre 70 anni Ca",
+    "heroBullets": [
+      "Studio di fattibilita tecnica e capitolato con tempi di consegna certi",
+      "Qualifica immediata della richiesta e assegnazione diretta all'Ufficio Tecnico",
+      "Produzione e assistenza certificata con referente unico dedicato"
+    ],
+    "ctaButtonText": "Richiedi Studio di Fattibilita",
+    "trustMicrocopy": "Riservatezza industriale garantita (NDA) · Risposta tecnica entro la giornata lavorativa",
+    "logoLocalPath": "/leads/caroni/logo.png",
+    "heroImageLocalPath": "/leads/caroni/hero.jpg",
+    "heroImageCaption": "Caroni Spa · Sede operativa e realizzazioni (Cuneo)",
+    "quiz": {
+      "question1": {
+        "title": "Quale ambito operativo o di commessa desiderate approfondire?",
+        "options": [
+          "Fornitura industriale, impianti o commessa su specifica",
+          "Integrazione tecnica, automazione di reparto o portale B2B",
+          "Studio di fattibilita, capitolato e quotazione riservata"
+        ]
+      },
+      "question2": {
+        "title": "Qual e l'orizzonte temporale previsto per il progetto?",
+        "options": [
+          "Avvio operativo urgente (entro 30 giorni)",
+          "Pianificazione nel trimestre in corso",
+          "Valutazione tecnica e di budget preliminare"
+        ]
+      },
+      "finalStepTitle": "Specifiche registrate. Inserisci i riferimenti aziendali per il colloquio con l'Ufficio Tecnico:"
+    },
+    "valueProps": [
+      {
+        "title": "Ingegneria e Progettazione su Specifica",
+        "description": "Analizziamo i requisiti produttivi della commessa a Cuneo, definendo specifiche tecniche, tempi di consegna e ritorno sull'investimento prima dell'avvio operativo.",
+        "metric": "Capitolato Chiuso"
+      },
+      {
+        "title": "Controllo Qualita e Conformita Normativa",
+        "description": "Ogni fornitura e impianto di Caroni Spa viene collaudato secondo gli standard di sicurezza e qualita vigenti, con documentazione tecnica completa.",
+        "metric": "100% Certificato"
+      },
+      {
+        "title": "Continuita Operativa e Assistenza Post-Vendita",
+        "description": "Affianchiamo il reparto tecnico e acquisti dal collaudo in stabilimento fino alla manutenzione programmata e al riordino ricambi.",
+        "metric": "SLA Garantito"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "99.4%",
+      "mainStatLabel": "Commesse B2B consegnate entro i tempi contrattuali",
+      "reviewsSummary": "Partner tecnico di riferimento per imprese e stabilimenti a Cuneo",
+      "clientReferenceWall": [
+        "Qualita Certificata ISO 9001",
+        "Conformita Tecnica CE",
+        "Integrazione Gestionale / ERP",
+        "Capitolato e Preventivo Chiuso",
+        "Assistenza Tecnica Diretta"
+      ],
+      "secondaryStats": [
+        {
+          "value": "99.4%",
+          "label": "Commesse consegnate nel pieno rispetto dei tempi contrattuali"
+        },
+        {
+          "value": "< 0.4s",
+          "label": "Caricamento istantaneo dell'infrastruttura digitale su rete mobile"
+        },
+        {
+          "value": "24h",
+          "label": "Presa in carico tecnica e invio automatico della richiesta al CRM"
+        }
+      ],
+      "testimonials": [
+        {
+          "name": "Direzione Tecnica e Produzione",
+          "location": "Cuneo · Commessa Industriale",
+          "quote": "Abbiamo affidato a Caroni Spa una commessa strategica per il nostro reparto: rispetto rigoroso delle specifiche tecniche, tempi di consegna puntuali e collaudo impeccabile.",
+          "roleOrContext": "Fornitura e collaudo B2B"
+        },
+        {
+          "name": "Responsabile Ufficio Acquisti",
+          "location": "Cuneo e provincia",
+          "quote": "Un partner strutturato e affidabile: preventivazione trasparente senza costi occulti, documentazione tecnica completa e supporto post-vendita immediato.",
+          "roleOrContext": "Accordo quadro di fornitura"
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "Caroni Spa - dispersione clic mobile e tempi di caricamento di Caroni Spa (9.1s)",
+    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di Caroni Spa, da smartphone impiega 9.1 secondi ad aprirsi per 41 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Caroni Spa che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Caroni Spa, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/caroni\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "Caroni Spa - dispersione clic mobile e tempi di caricamento di Caroni Spa (9.1s)",
+      "body": "Buongiorno,\n\nda un test sul sito di Caroni Spa, da smartphone impiega 9.1 secondi ad aprirsi per 41 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Caroni Spa che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: Caroni Spa - dispersione clic mobile e tempi di caricamento di Caroni Spa (9.1s)",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Caroni Spa, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/caroni\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: Caroni Spa - dispersione clic mobile e tempi di caricamento di Caroni Spa (9.1s)",
+      "body": "Buongiorno,\n\nOltre a tagliare i 9.1 secondi su mobile, l'infrastruttura recupera il 40% delle conversioni tramite Server-Side Tracking.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza - TechPyre Studio",
+      "inThread": true,
+      "requiresFollowUpCall": true
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: Caroni Spa - dispersione clic mobile e tempi di caricamento di Caroni Spa (9.1s)",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Caroni Spa non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/caroni) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

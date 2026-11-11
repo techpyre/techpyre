@@ -1,0 +1,50 @@
+{
+  "slug": "llp",
+  "targetUrl": "https://www.llp.it",
+  "searchKeyword": "taglio laser lamiera vicenza",
+  "measuredResponseMs": 3238,
+  "renderBlockingScripts": 85,
+  "estimatedMobileLcpSeconds": 19.6,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@llp.it",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@llp.it",
+    "info@llp.it",
+    "info@llp.it",
+    "info@llp.it",
+    "info@llp.it",
+    "info@llp.it",
+    "info@llp.it",
+    "info@llp.it",
+    "info@llp.it",
+    "info@llp.it",
+    "amministrazione@pec.llp.it",
+    "info@llp.it",
+    "info@llp.it",
+    "info@llp.it",
+    "info@llp.it",
+    "info@llp.it",
+    "info@llp.it",
+    "info@llp.it",
+    "info@llp.it",
+    "amministrazione@pec.llp.it",
+    "info@llp.it",
+    "info@llp.it"
+  ],
+  "extractedPhones": [
+    "3328383410",
+    "3311160508",
+    "+39 0444 649202"
+  ],
+  "extractedVat": "03385770247"
+}

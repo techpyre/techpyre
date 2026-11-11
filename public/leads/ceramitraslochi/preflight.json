@@ -1,0 +1,30 @@
+{
+  "slug": "ceramitraslochi",
+  "targetUrl": "https://www.ceramitraslochi.it",
+  "searchKeyword": "soluzioni imballaggio industriale parma",
+  "measuredResponseMs": 1136,
+  "renderBlockingScripts": 41,
+  "estimatedMobileLcpSeconds": 9.9,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@ceramitraslochi.it",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@ceramitraslochi.it",
+    "info@ceramitraslochi.it"
+  ],
+  "extractedPhones": [
+    "0000000",
+    "3567179040",
+    "05.63768149"
+  ],
+  "extractedVat": "12345678912"
+}

@@ -1,0 +1,45 @@
+{
+  "slug": "tvmcube",
+  "targetUrl": "http://www.tvmcube.com",
+  "searchKeyword": "saldatura robotizzata padova",
+  "measuredResponseMs": 6283,
+  "renderBlockingScripts": 33,
+  "estimatedMobileLcpSeconds": 13.5,
+  "runsAds": true,
+  "detectedTrackingSignals": [
+    "Google Ads / GTM"
+  ],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@tvmcube.com",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@tvmcube.com",
+    "info@tvmcube.com",
+    "info@tvmcube.com",
+    "info@tvmcube.com",
+    "info@tvmcube.com",
+    "info@tvmcube.com",
+    "info@tvmcube.com",
+    "info@tvmcube.com",
+    "info@tvmcube.com",
+    "info@tvmcube.com",
+    "info@tvmcube.com",
+    "info@tvmcube.com",
+    "info@tvmcube.com",
+    "info@tvmcube.com",
+    "info@tvmcube.com"
+  ],
+  "extractedPhones": [
+    "00000057",
+    "3333333333",
+    "000953300269"
+  ],
+  "extractedVat": "02779660352"
+}

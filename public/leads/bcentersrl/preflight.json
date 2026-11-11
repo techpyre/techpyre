@@ -1,0 +1,43 @@
+{
+  "slug": "bcentersrl",
+  "targetUrl": "http://www.bcentersrl.com",
+  "searchKeyword": "oleodinamica pneumatica modena",
+  "measuredResponseMs": 1078,
+  "renderBlockingScripts": 49,
+  "estimatedMobileLcpSeconds": 10.6,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "mietitrebbie@bcentersrl.com",
+    "isGeneric": true,
+    "score": 38
+  },
+  "extractedEmails": [
+    "b.center@certopec.it",
+    "b.center@certopec.it",
+    "mietitrebbie@bcentersrl.com",
+    "mietitrebbie@bcentersrl.com",
+    "info@bcentersrl.com",
+    "info@bcentersrl.com",
+    "info@bcentersrl.com",
+    "b.center@certopec.it",
+    "b.center@certopec.it",
+    "mietitrebbie@bcentersrl.com",
+    "mietitrebbie@bcentersrl.com",
+    "info@bcentersrl.com",
+    "info@bcentersrl.com",
+    "info@bcentersrl.com",
+    "info@bcentersrl.com"
+  ],
+  "extractedPhones": [
+    "+39 051 827084",
+    "0033863",
+    "00624971206"
+  ],
+  "extractedVat": "03475550376"
+}

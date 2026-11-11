@@ -1,0 +1,41 @@
+{
+  "slug": "aplem",
+  "targetUrl": "https://www.aplem.it",
+  "searchKeyword": "compressori industriali milano",
+  "measuredResponseMs": 2051,
+  "renderBlockingScripts": 58,
+  "estimatedMobileLcpSeconds": 13.9,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@aplem.it",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@aplem.it",
+    "info@aplem.it",
+    "INFO@APLEM.IT",
+    "info@aplem.it",
+    "INFO@APLEM.IT",
+    "info@aplem.it",
+    "info@aplem.it",
+    "info@aplem.it",
+    "info@aplem.it",
+    "INFO@APLEM.IT",
+    "info@aplem.it",
+    "INFO@APLEM.IT",
+    "info@aplem.it"
+  ],
+  "extractedPhones": [
+    "3852541983",
+    "0147894",
+    "0742309"
+  ],
+  "extractedVat": "06134330155"
+}

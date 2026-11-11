@@ -1,0 +1,169 @@
+{
+  "slug": "famacompressori",
+  "archetype": "b2b-authority",
+  "meta": {
+    "companyName": "Fama' Compressori SRL",
+    "decisionMakerName": "Direzione Fama' Compressori SRL",
+    "decisionMakerFirstName": null,
+    "decisionMakerRole": "Direzione Aziendale",
+    "isGenericInbox": true,
+    "emailScore": 18,
+    "targetEmail": "famacompressorisrl@gmail.com",
+    "phone": "0297288355",
+    "city": "Mesero",
+    "vatNumber": "11871190960",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Fama'%20Compressori%20SRL",
+    "originalLandingUrl": "http://www.famacompressori.it",
+    "status": "CONTACTED_STEP_1",
+    "lastSentMessageId": "<3fbde7ca-0aa1-c519-aa4b-1ab8b7de03de@techpyre.eu>",
+    "threadMessageIds": [
+      "<3fbde7ca-0aa1-c519-aa4b-1ab8b7de03de@techpyre.eu>"
+    ]
+  },
+  "audit": {
+    "originalLcpSeconds": 10.9,
+    "mobileScore": 15,
+    "renderBlockingCount": 39,
+    "runsAds": false,
+    "detectedTrackingSignals": [],
+    "threeCriticalFlaws": [
+      "Perdita di richieste di preventivo su mobile: caricamento di 10.9s (39 risorse bloccanti) che spinge i visitatori da smartphone ad abbandonare la pagina prima di contattare l'ufficio commerciale.",
+      "Assenza di pre-qualifica automatica: il sito non filtra le richieste per tipologia di intervento, budget o tempistiche prima di inviarle ai referenti tecnici di Fama' Compressori SRL.",
+      "Colli di bottiglia commerciali: le richieste arrivano come semplici email isolate senza instradamento automatico e senza tracciamento strutturato della trattativa."
+    ],
+    "activeAdHeadline": "ASSISTENZA e VENDITA",
+    "activeAdCopySummary": "Famà si occupa VENDITA e ASSISTENZA rivolta a tutti i tipi di compressori propri e di qualsiasi altra marca."
+  },
+  "theme": {
+    "primaryHex": "#0B1E36",
+    "accentHex": "#B8860B",
+    "darkBgHex": "#0B1E36",
+    "borderRadius": "8px",
+    "headerBgMode": "light",
+    "logoBrightness": "dark"
+  },
+  "content": {
+    "badgeTop": "Fama' Compressori SRL · Divisione Tecnica & Commesse B2B (Mesero)",
+    "heroHeadline": "ASSISTENZA e VENDITA",
+    "heroSubheadline": "Famà si occupa VENDITA e ASSISTENZA rivolta a tutti i tipi di compressori propri e di qualsiasi altra marca.",
+    "heroBullets": [
+      "Studio di fattibilita tecnica e capitolato con tempi di consegna certi",
+      "Qualifica immediata della richiesta e assegnazione diretta all'Ufficio Tecnico",
+      "Produzione e assistenza certificata con referente unico dedicato"
+    ],
+    "ctaButtonText": "Richiedi Studio di Fattibilita",
+    "trustMicrocopy": "Riservatezza industriale garantita (NDA) · Risposta tecnica entro la giornata lavorativa",
+    "logoLocalPath": "/leads/famacompressori/logo.png",
+    "heroImageLocalPath": "/leads/famacompressori/hero.jpg",
+    "heroImageCaption": "Fama' Compressori SRL · Sede operativa e realizzazioni (Mesero)",
+    "quiz": {
+      "question1": {
+        "title": "Quale ambito operativo o di commessa desiderate approfondire?",
+        "options": [
+          "Fornitura industriale, impianti o commessa su specifica",
+          "Integrazione tecnica, automazione di reparto o portale B2B",
+          "Studio di fattibilita, capitolato e quotazione riservata"
+        ]
+      },
+      "question2": {
+        "title": "Qual e l'orizzonte temporale previsto per il progetto?",
+        "options": [
+          "Avvio operativo urgente (entro 30 giorni)",
+          "Pianificazione nel trimestre in corso",
+          "Valutazione tecnica e di budget preliminare"
+        ]
+      },
+      "finalStepTitle": "Specifiche registrate. Inserisci i riferimenti aziendali per il colloquio con l'Ufficio Tecnico:"
+    },
+    "valueProps": [
+      {
+        "title": "Ingegneria e Progettazione su Specifica",
+        "description": "Analizziamo i requisiti produttivi della commessa a Mesero, definendo specifiche tecniche, tempi di consegna e ritorno sull'investimento prima dell'avvio operativo.",
+        "metric": "Capitolato Chiuso"
+      },
+      {
+        "title": "Controllo Qualita e Conformita Normativa",
+        "description": "Ogni fornitura e impianto di Fama' Compressori SRL viene collaudato secondo gli standard di sicurezza e qualita vigenti, con documentazione tecnica completa.",
+        "metric": "100% Certificato"
+      },
+      {
+        "title": "Continuita Operativa e Assistenza Post-Vendita",
+        "description": "Affianchiamo il reparto tecnico e acquisti dal collaudo in stabilimento fino alla manutenzione programmata e al riordino ricambi.",
+        "metric": "SLA Garantito"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "99.4%",
+      "mainStatLabel": "Commesse B2B consegnate entro i tempi contrattuali",
+      "reviewsSummary": "Partner tecnico di riferimento per imprese e stabilimenti a Mesero",
+      "clientReferenceWall": [
+        "Qualita Certificata ISO 9001",
+        "Conformita Tecnica CE",
+        "Integrazione Gestionale / ERP",
+        "Capitolato e Preventivo Chiuso",
+        "Assistenza Tecnica Diretta"
+      ],
+      "secondaryStats": [
+        {
+          "value": "99.4%",
+          "label": "Commesse consegnate nel pieno rispetto dei tempi contrattuali"
+        },
+        {
+          "value": "< 0.4s",
+          "label": "Caricamento istantaneo dell'infrastruttura digitale su rete mobile"
+        },
+        {
+          "value": "24h",
+          "label": "Presa in carico tecnica e invio automatico della richiesta al CRM"
+        }
+      ],
+      "testimonials": [
+        {
+          "name": "Direzione Tecnica e Produzione",
+          "location": "Mesero · Commessa Industriale",
+          "quote": "Abbiamo affidato a Fama' Compressori SRL una commessa strategica per il nostro reparto: rispetto rigoroso delle specifiche tecniche, tempi di consegna puntuali e collaudo impeccabile.",
+          "roleOrContext": "Fornitura e collaudo B2B"
+        },
+        {
+          "name": "Responsabile Ufficio Acquisti",
+          "location": "Mesero e provincia",
+          "quote": "Un partner strutturato e affidabile: preventivazione trasparente senza costi occulti, documentazione tecnica completa e supporto post-vendita immediato.",
+          "roleOrContext": "Accordo quadro di fornitura"
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "Fama' Compressori SRL - tempi di caricamento mobile e richieste preventivo di Fama' Compressori SRL (10.9s)",
+    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di Fama' Compressori SRL, da smartphone impiega 10.9 secondi ad aprirsi per 39 risorse bloccanti, frenando le richieste di preventivo.\n\nAbbiamo gia preparato una demo in Next.js per Fama' Compressori SRL che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Fama' Compressori SRL, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/famacompressori\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "Fama' Compressori SRL - tempi di caricamento mobile e richieste preventivo di Fama' Compressori SRL (10.9s)",
+      "body": "Buongiorno,\n\nda un test sul sito di Fama' Compressori SRL, da smartphone impiega 10.9 secondi ad aprirsi per 39 risorse bloccanti, frenando le richieste di preventivo.\n\nAbbiamo gia preparato una demo in Next.js per Fama' Compressori SRL che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: Fama' Compressori SRL - tempi di caricamento mobile e richieste preventivo di Fama' Compressori SRL (10.9s)",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Fama' Compressori SRL, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/famacompressori\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: Fama' Compressori SRL - tempi di caricamento mobile e richieste preventivo di Fama' Compressori SRL (10.9s)",
+      "body": "Buongiorno,\n\nOltre a tagliare i 10.9 secondi su mobile, il sistema qualifica ogni preventivo prima di inviarlo al CRM.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza - TechPyre Studio",
+      "inThread": true,
+      "requiresFollowUpCall": true
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: Fama' Compressori SRL - tempi di caricamento mobile e richieste preventivo di Fama' Compressori SRL (10.9s)",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Fama' Compressori SRL non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/famacompressori) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

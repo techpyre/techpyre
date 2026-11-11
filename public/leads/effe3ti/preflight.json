@@ -1,0 +1,45 @@
+{
+  "slug": "effe3ti",
+  "targetUrl": "https://www.effe3ti.com",
+  "searchKeyword": "nastri trasportatori industriali torino",
+  "measuredResponseMs": 572,
+  "renderBlockingScripts": 68,
+  "estimatedMobileLcpSeconds": 14.3,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": "Stefano Franchino",
+    "firstName": "Stefano",
+    "role": "Direzione"
+  },
+  "emailSelection": {
+    "bestEmail": "stefano.franchino@effe3ti.com",
+    "isGeneric": false,
+    "score": 90
+  },
+  "extractedEmails": [
+    "communication@effe3ti.com",
+    "communication@effe3ti.com",
+    "stefano.franchino@effe3ti.com",
+    "communication@effe3ti.com",
+    "communication@effe3ti.com",
+    "stefano.franchino@effe3ti.com",
+    "communication@effe3ti.com",
+    "effe3ti@espripec.it",
+    "effe3ti@espripec.it",
+    "communication@effe3ti.com",
+    "communication@effe3ti.com",
+    "stefano.franchino@effe3ti.com",
+    "communication@effe3ti.com",
+    "communication@effe3ti.com",
+    "stefano.franchino@effe3ti.com",
+    "communication@effe3ti.com",
+    "support@effe3ti.com"
+  ],
+  "extractedPhones": [
+    "0680046",
+    "3386567595",
+    "3386857652"
+  ],
+  "extractedVat": "01957010026"
+}

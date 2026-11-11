@@ -1,0 +1,51 @@
+{
+  "slug": "martinasusa",
+  "targetUrl": "https://www.martinasusa.com",
+  "searchKeyword": "nastri trasportatori industriali torino",
+  "measuredResponseMs": 489,
+  "renderBlockingScripts": 46,
+  "estimatedMobileLcpSeconds": 9.5,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "commerciale@martinasusa.com",
+    "isGeneric": true,
+    "score": 45
+  },
+  "extractedEmails": [
+    "info@martinasusa.com",
+    "info@martinasusa.com",
+    "info@martinasusa.com",
+    "info@martinasusa.com",
+    "info@martinasusa.com",
+    "info@martinasusa.com",
+    "info@martinasusa.com",
+    "info@martinasusa.com",
+    "info@martinasusa.com",
+    "info@martinasusa.com",
+    "info@martinasusa.com",
+    "info@martinasusa.com",
+    "info@martinasusa.com",
+    "amministrazione@martinasusa.com",
+    "amministrazione@martinasusa.com",
+    "tecnico@martinasusa.com",
+    "tecnico@martinasusa.com",
+    "commerciale@martinasusa.com",
+    "commerciale@martinasusa.com",
+    "info@martinasusa.com",
+    "info@martinasusa.com",
+    "info@martinasusa.com",
+    "info@martinasusa.com"
+  ],
+  "extractedPhones": [
+    "0200618",
+    "026032302533",
+    "0260323"
+  ],
+  "extractedVat": "10191230019"
+}

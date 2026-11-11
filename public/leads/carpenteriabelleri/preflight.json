@@ -1,0 +1,36 @@
+{
+  "slug": "carpenteriabelleri",
+  "targetUrl": "http://www.carpenteriabelleri.it",
+  "searchKeyword": "carpenteria metallica brescia",
+  "measuredResponseMs": 3746,
+  "renderBlockingScripts": 9,
+  "estimatedMobileLcpSeconds": 5.4,
+  "runsAds": true,
+  "detectedTrackingSignals": [
+    "Google Ads / GTM"
+  ],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@carpenteriabelleri.it",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@carpenteriabelleri.it",
+    "info@carpenteriabelleri.it",
+    "info@carpenteriabelleri.it",
+    "info@carpenteriabelleri.it",
+    "info@carpenteriabelleri.it",
+    "info@carpenteriabelleri.it"
+  ],
+  "extractedPhones": [
+    "0100101",
+    "+39 030 725181",
+    "00555860980"
+  ],
+  "extractedVat": "00555860980"
+}

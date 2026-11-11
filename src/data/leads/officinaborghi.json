@@ -13,7 +13,13 @@
     "isGenericInbox": false,
     "emailScore": 90,
     "decisionMakerFirstName": "Giorgia",
-    "decisionMakerRole": "Direzione"
+    "decisionMakerRole": "Direzione",
+    "lastSentMessageId": "<3eab1459-36ef-3edb-64a1-4406562d1bbf@techpyre.eu>",
+    "threadMessageIds": [
+      "<8ad9b25f-7c42-71e8-62f3-031027e09d80@techpyre.eu>",
+      "<3eab1459-36ef-3edb-64a1-4406562d1bbf@techpyre.eu>"
+    ],
+    "status": "CONTACTED_STEP_2"
   },
   "audit": {
     "originalLcpSeconds": 1.1,

@@ -1,0 +1,31 @@
+{
+  "slug": "maximabo",
+  "targetUrl": "http://www.maximabo.it",
+  "searchKeyword": "infissi pvc alluminio bologna",
+  "measuredResponseMs": 6449,
+  "renderBlockingScripts": 62,
+  "estimatedMobileLcpSeconds": 19.8,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@maximabo.it",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@maximabo.it",
+    "magazzino@maximane.it",
+    "info@maximabo.it"
+  ],
+  "extractedPhones": [
+    "3416585724",
+    "3054255629",
+    "3054250582"
+  ],
+  "extractedVat": "03164411203"
+}

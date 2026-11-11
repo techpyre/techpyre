@@ -1,0 +1,40 @@
+{
+  "slug": "omoleodinamica",
+  "targetUrl": "https://omoleodinamica.com",
+  "searchKeyword": "oleodinamica pneumatica modena",
+  "measuredResponseMs": 941,
+  "renderBlockingScripts": 38,
+  "estimatedMobileLcpSeconds": 8.3,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "commerciale@omoleodinamica.com",
+    "isGeneric": true,
+    "score": 45
+  },
+  "extractedEmails": [
+    "commerciale@omoleodinamica.com",
+    "commerciale@omoleodinamica.com",
+    "modena@omoleodinamica.com",
+    "modena@omoleodinamica.com",
+    "commerciale@omoleodinamica.com",
+    "commerciale@omoleodinamica.com",
+    "modena@omoleodinamica.com",
+    "modena@omoleodinamica.com",
+    "commerciale@omoleodinamica.com",
+    "commerciale@omoleodinamica.com",
+    "modena@omoleodinamica.com",
+    "modena@omoleodinamica.com"
+  ],
+  "extractedPhones": [
+    "0260624",
+    "0251202",
+    "0260604"
+  ],
+  "extractedVat": "00478760424"
+}

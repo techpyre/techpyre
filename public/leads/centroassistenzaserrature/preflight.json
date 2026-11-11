@@ -1,0 +1,31 @@
+{
+  "slug": "centroassistenzaserrature",
+  "targetUrl": "https://www.centroassistenzaserrature.it",
+  "searchKeyword": "infissi pvc alluminio bologna",
+  "measuredResponseMs": 827,
+  "renderBlockingScripts": 80,
+  "estimatedMobileLcpSeconds": 16.9,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@centroassistenzaserrature.it",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@centroassistenzaserrature.it",
+    "info@centroassistenzaserrature.it",
+    "info@centroassistenzaserrature.it"
+  ],
+  "extractedPhones": [
+    "3298793493",
+    "0275896",
+    "04241551201"
+  ],
+  "extractedVat": "04241551201"
+}

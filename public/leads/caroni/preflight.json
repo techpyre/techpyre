@@ -1,0 +1,45 @@
+{
+  "slug": "caroni",
+  "targetUrl": "http://www.caroni.it",
+  "searchKeyword": "nastri trasportatori industriali torino",
+  "measuredResponseMs": 792,
+  "renderBlockingScripts": 41,
+  "estimatedMobileLcpSeconds": 9.1,
+  "runsAds": true,
+  "detectedTrackingSignals": [
+    "Google Ads / GTM"
+  ],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "sales@caroni.it",
+    "isGeneric": true,
+    "score": 45
+  },
+  "extractedEmails": [
+    "info@caroni.it",
+    "info@caroni.it",
+    "info@caroni.it",
+    "info@caroni.it",
+    "info@caroni.it",
+    "info@caroni.it",
+    "info@caroni.it",
+    "info@caroni.it",
+    "info@caroni.it",
+    "info@caroni.it",
+    "sales@caroni.it",
+    "sales@caroni.it",
+    "info@caroni.it",
+    "info@caroni.it",
+    "info@caroni.it"
+  ],
+  "extractedPhones": [
+    "03405223",
+    "+390171401346",
+    "+39 0171401346"
+  ],
+  "extractedVat": "00677140048"
+}

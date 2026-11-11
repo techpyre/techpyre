@@ -1,0 +1,56 @@
+{
+  "slug": "pragos",
+  "targetUrl": "http://www.pragos.it",
+  "searchKeyword": "saldatura robotizzata padova",
+  "measuredResponseMs": 1024,
+  "renderBlockingScripts": 24,
+  "estimatedMobileLcpSeconds": 5.9,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@pragos.it",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@pragos.it",
+    "info@pragos.it",
+    "info@pragos.it",
+    "info@pragos.it",
+    "info@pragos.it",
+    "info@pragos.it",
+    "info@pragos.it",
+    "info@pragos.it",
+    "info@pragos.it",
+    "info@pragos.it",
+    "info@pragos.it",
+    "info@pragos.it",
+    "info@pragos.it",
+    "info@pragos.it",
+    "info@pragos.it",
+    "info@pragos.it",
+    "info@pragos.it",
+    "info@pragos.it",
+    "info@pragos.it",
+    "info@pragos.it",
+    "info@pragos.it",
+    "info@pragos.it",
+    "info@pragos.it",
+    "info@pragos.it",
+    "info@pragos.it",
+    "info@pragos.it",
+    "info@pragos.it",
+    "info@pragos.it"
+  ],
+  "extractedPhones": [
+    "3099951286",
+    "050999999992",
+    "0980205902"
+  ],
+  "extractedVat": "05276250486"
+}

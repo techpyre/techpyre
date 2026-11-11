@@ -1,0 +1,38 @@
+{
+  "slug": "bonaldoorlando",
+  "targetUrl": "http://www.bonaldoorlando.it",
+  "searchKeyword": "saldatura robotizzata padova",
+  "measuredResponseMs": 862,
+  "renderBlockingScripts": 28,
+  "estimatedMobileLcpSeconds": 6.5,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@bonaldoorlando.it",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@bonaldoorlando.it",
+    "info@bonaldoorlando.it",
+    "info@bonaldoorlando.it",
+    "info@bonaldoorlando.it",
+    "info@bonaldoorlando.it",
+    "info@bonaldoorlando.it",
+    "info@bonaldoorlando.it",
+    "info@bonaldoorlando.it",
+    "info@bonaldoorlando.it",
+    "info@bonaldoorlando.it"
+  ],
+  "extractedPhones": [
+    "+39 041 5760008",
+    "03345260271",
+    "+390415760008"
+  ],
+  "extractedVat": "03345260271"
+}

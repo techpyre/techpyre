@@ -2406,9 +2406,9 @@ export async function runAutonomousScout(
   if (options?.customCandidates && options.customCandidates.length > 0) {
     candidates = options.customCandidates;
   } else if (options?.preferAdLibrary) {
-    candidates = await discoverMetaAdLibraryBusinesses(keyword, maxLeads * 4);
+    candidates = await discoverMetaAdLibraryBusinesses(keyword, Math.max(16, maxLeads * 4));
   } else {
-    candidates = await discoverItalianBusinesses(keyword, maxLeads * 3);
+    candidates = await discoverItalianBusinesses(keyword, Math.max(20, maxLeads * 4));
   }
 
   const discovered: Array<{

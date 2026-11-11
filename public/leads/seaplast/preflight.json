@@ -1,0 +1,46 @@
+{
+  "slug": "seaplast",
+  "targetUrl": "http://www.seaplast.net",
+  "searchKeyword": "compressori industriali milano",
+  "measuredResponseMs": 4196,
+  "renderBlockingScripts": 44,
+  "estimatedMobileLcpSeconds": 13.1,
+  "runsAds": true,
+  "detectedTrackingSignals": [
+    "Meta Pixel"
+  ],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@seaplast.net",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@seaplast.net",
+    "info@seaplast.net",
+    "info@seaplast.net",
+    "info@seaplast.net",
+    "info@seaplast.net",
+    "info@seaplast.net",
+    "info@seaplast.net",
+    "info@seaplast.net",
+    "info@seaplast.net",
+    "info@seaplast.net",
+    "info@seaplast.net",
+    "info@seaplast.net",
+    "info@seaplast.net",
+    "info@seaplast.net",
+    "info@seaplast.net",
+    "info@seaplast.net"
+  ],
+  "extractedPhones": [
+    "+39035330102",
+    "01866930165",
+    "0970249"
+  ],
+  "extractedVat": "01866930165"
+}

@@ -1,0 +1,29 @@
+{
+  "slug": "centrolaser",
+  "targetUrl": "http://www.centrolaser.eu",
+  "searchKeyword": "taglio laser lamiera vicenza",
+  "measuredResponseMs": 2093,
+  "renderBlockingScripts": 15,
+  "estimatedMobileLcpSeconds": 5.3,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@centrolaser.eu",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@centrolaser.eu"
+  ],
+  "extractedPhones": [
+    "041666666666",
+    "0445540246",
+    "0445540249"
+  ],
+  "extractedVat": "02462610243"
+}

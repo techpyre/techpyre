@@ -1,0 +1,31 @@
+{
+  "slug": "abonplastic",
+  "targetUrl": "http://www.abonplastic.it",
+  "searchKeyword": "compressori industriali milano",
+  "measuredResponseMs": 2572,
+  "renderBlockingScripts": 41,
+  "estimatedMobileLcpSeconds": 10.9,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@abonplastic.it",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@abonplastic.it",
+    "info@abonplastic.it",
+    "info@abonplastic.it"
+  ],
+  "extractedPhones": [
+    "+39 0331.850099",
+    "3699293019",
+    "01355880129"
+  ],
+  "extractedVat": "01355880129"
+}

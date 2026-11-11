@@ -1,0 +1,49 @@
+{
+  "slug": "implast",
+  "targetUrl": "http://www.implast.it",
+  "searchKeyword": "saldatura robotizzata padova",
+  "measuredResponseMs": 1221,
+  "renderBlockingScripts": 20,
+  "estimatedMobileLcpSeconds": 5.9,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@implast.it",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@implast.it",
+    "info@implast.it",
+    "info@implast.it",
+    "info@implast.it",
+    "info@implast.it",
+    "info@implast.it",
+    "info@implast.it",
+    "info@implast.it",
+    "info@implast.it",
+    "info@implast.it",
+    "info@implast.it",
+    "info@implast.it",
+    "info@implast.it",
+    "info@implast.it",
+    "info@implast.it",
+    "info@implast.it",
+    "info@implast.it",
+    "info@implast.it",
+    "info@implast.it",
+    "info@implast.it",
+    "info@implast.it"
+  ],
+  "extractedPhones": [
+    "00241603",
+    "+39 030 738200",
+    "+39 030 7386200"
+  ],
+  "extractedVat": "01624490981"
+}

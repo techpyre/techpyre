@@ -1,0 +1,31 @@
+{
+  "slug": "coopfacchinifaenza",
+  "targetUrl": "http://www.coopfacchinifaenza.it",
+  "searchKeyword": "soluzioni imballaggio industriale parma",
+  "measuredResponseMs": 1732,
+  "renderBlockingScripts": 59,
+  "estimatedMobileLcpSeconds": 13.3,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@coopfacchinifaenza.it",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@cffcoop.it",
+    "info@cffcoop.it",
+    "info@coopfacchinifaenza.it"
+  ],
+  "extractedPhones": [
+    "00578706",
+    "00578906",
+    "00579402"
+  ],
+  "extractedVat": "00319810396"
+}

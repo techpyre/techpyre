@@ -1,0 +1,35 @@
+{
+  "slug": "lavorazionibmdue",
+  "targetUrl": "https://www.lavorazionibmdue.it",
+  "searchKeyword": "nastri trasportatori industriali torino",
+  "measuredResponseMs": 5432,
+  "renderBlockingScripts": 82,
+  "estimatedMobileLcpSeconds": 21.2,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "sanfilippo@lavorazionibmdue.it",
+    "isGeneric": true,
+    "score": 38
+  },
+  "extractedEmails": [
+    "info@lavorazionibmdue.it",
+    "info@lavorazionibmdue.it",
+    "sanfilippo@lavorazionibmdue.it",
+    "sanfilippo@lavorazionibmdue.it",
+    "info@lavorazionibmdue.it",
+    "sanfilippo@lavorazionibmdue.it",
+    "info@lavorazionibmdue.it"
+  ],
+  "extractedPhones": [
+    "047187971322",
+    "07749398",
+    "05707660152"
+  ],
+  "extractedVat": "09888750016"
+}
