@@ -1,0 +1,36 @@
+{
+  "slug": "ids-srl",
+  "targetUrl": "http://www.ids-srl.com",
+  "searchKeyword": "soluzioni imballaggio industriale parma",
+  "measuredResponseMs": 2568,
+  "renderBlockingScripts": 18,
+  "estimatedMobileLcpSeconds": 7.4,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "web@ids-srl.com",
+    "isGeneric": true,
+    "score": 38
+  },
+  "extractedEmails": [
+    "web@ids-srl.com",
+    "web@ids-srl.com",
+    "web@ids-srl.com",
+    "web@ids-srl.com",
+    "web@ids-srl.com",
+    "web@ids-srl.com",
+    "web@ids-srl.com",
+    "info@ids-srl.com"
+  ],
+  "extractedPhones": [
+    "0100101",
+    "024112801",
+    "039 5967800"
+  ],
+  "extractedVat": "06580970967"
+}

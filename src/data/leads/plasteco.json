@@ -1,0 +1,150 @@
+{
+  "slug": "plasteco",
+  "archetype": "local-leadgen",
+  "meta": {
+    "companyName": "PLASTECO S.R.L.",
+    "decisionMakerName": "Direzione PLASTECO S.R.L.",
+    "decisionMakerFirstName": null,
+    "decisionMakerRole": "Direzione Aziendale",
+    "isGenericInbox": true,
+    "emailScore": 35,
+    "targetEmail": "info@plasteco.it",
+    "phone": "039 9202872",
+    "city": "Bulciago",
+    "vatNumber": "01518940133",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=PLASTECO%20S.R.L.",
+    "originalLandingUrl": "https://www.plasteco.it",
+    "status": "CONTACTED_STEP_1",
+    "lastSentMessageId": "<c6d73574-9272-cbd1-9488-222f95e6e147@techpyre.eu>",
+    "threadMessageIds": [
+      "<c6d73574-9272-cbd1-9488-222f95e6e147@techpyre.eu>"
+    ]
+  },
+  "audit": {
+    "originalLcpSeconds": 9.4,
+    "mobileScore": 20,
+    "renderBlockingCount": 43,
+    "runsAds": true,
+    "detectedTrackingSignals": [
+      "Google Ads / GTM"
+    ],
+    "threeCriticalFlaws": [
+      "Dispersione del budget pubblicitario: caricamento mobile di 9.4s (43 risorse bloccanti) che fa abbandonare oltre meta degli utenti prima dell'apertura della pagina.",
+      "Cecita decisionale sul ROI: assenza di tracciamento Server-Side di prima parte (GTM Server-Side e Meta CAPI), con perdita del 30-50% dei dati di conversione per blocchi browser e cookie banner.",
+      "Colli di bottiglia commerciali: i contatti finiscono in email isolate senza pre-qualifica automatica e senza sincronizzazione immediata via API/Webhook con il CRM aziendale."
+    ],
+    "activeAdHeadline": "Plasteco | Termoformatura e confezionamento materie plastiche | PLASTECO",
+    "activeAdCopySummary": "Termoformatura e confezionamento materie plastiche Plasteco: i professionisti nella lavorazioni delle materie plastiche."
+  },
+  "theme": {
+    "primaryHex": "#1E3A8A",
+    "accentHex": "#2563EB",
+    "darkBgHex": "#0B1E36",
+    "borderRadius": "12px",
+    "headerBgMode": "light",
+    "logoBrightness": "dark"
+  },
+  "content": {
+    "badgeTop": "PLASTECO S.R.L. · Operativi a Bulciago e provincia",
+    "heroHeadline": "Plasteco | Termoformatura e confezionamento materie plastiche | PLASTECO",
+    "heroSubheadline": "Termoformatura e confezionamento materie plastiche Plasteco: i professionisti nella lavorazioni delle materie plastiche.",
+    "heroBullets": [
+      "Sopralluogo tecnico e preventivo chiaro senza impegno",
+      "Materiali certificati e assistenza diretta con personale qualificato",
+      "Tempi di intervento garantiti e gestione completa della pratica"
+    ],
+    "ctaButtonText": "Calcola il Tuo Preventivo Rapido",
+    "trustMicrocopy": "Richiesta gratuita e senza impegno · Risposta rapida dal nostro ufficio tecnico",
+    "logoLocalPath": "/leads/plasteco/logo.png",
+    "heroImageLocalPath": "/leads/plasteco/hero.jpg",
+    "heroImageCaption": "PLASTECO S.R.L. · Sede operativa e realizzazioni (Bulciago)",
+    "quiz": {
+      "question1": {
+        "title": "Di quale servizio o soluzione hai bisogno?",
+        "options": [
+          "Richiesta preventivo dettagliato su misura",
+          "Consulenza tecnica e sopralluogo operativo",
+          "Intervento rapido o assistenza prioritaria"
+        ]
+      },
+      "question2": {
+        "title": "Entro quando vorresti avviare il progetto?",
+        "options": [
+          "Il prima possibile (Entro 2 settimane)",
+          "Entro 1 - 2 mesi",
+          "Sto valutando diverse soluzioni"
+        ]
+      },
+      "finalStepTitle": "Perfetto. Inserisci i tuoi dati per ricevere una proposta personalizzata senza impegno:"
+    },
+    "valueProps": [
+      {
+        "title": "Qualita Certificata e Garanzia Scritta",
+        "description": "Ogni intervento di PLASTECO S.R.L. utilizza materiali selezionati e procedure certificate per garantire durata e prestazioni nel tempo.",
+        "metric": "100% Garantito"
+      },
+      {
+        "title": "Preventivo Chiaro e Zero Sorprese",
+        "description": "Valutazione trasparente delle soluzioni piu adatte alle tue esigenze a Bulciago, con tempi e costi definiti prima dell'inizio dei lavori.",
+        "metric": "Preventivo Chiuso"
+      },
+      {
+        "title": "Assistenza Tecnica Diretta",
+        "description": "Un unico referente tecnico ti segue dal primo sopralluogo fino al collaudo finale e all'assistenza post-vendita.",
+        "metric": "Supporto Diretto"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "98%",
+      "mainStatLabel": "Clienti soddisfatti del servizio e dell'assistenza",
+      "reviewsSummary": "Azienda di riferimento a Bulciago per affidabilita e precisione",
+      "testimonials": [
+        {
+          "name": "Marco R.",
+          "location": "Bulciago",
+          "quote": "Servizio impeccabile da parte del team di PLASTECO S.R.L.. Puntuali, precisi e disponibilissimi in ogni fase del lavoro.",
+          "roleOrContext": "Cliente verificato"
+        },
+        {
+          "name": "Laura B.",
+          "location": "Bulciago",
+          "quote": "Ottima consulenza iniziale e grande cura nei dettagli. Preventivo rispettato al centesimo e risultato superiore alle aspettative.",
+          "roleOrContext": "Intervento completato"
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "PLASTECO S.R.L. - dispersione clic mobile e tempi di caricamento di PLASTECO S.R.L. (9.4s)",
+    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di PLASTECO S.R.L., da smartphone impiega 9.4 secondi ad aprirsi per 43 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per PLASTECO S.R.L. che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per PLASTECO S.R.L., completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/plasteco\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "PLASTECO S.R.L. - dispersione clic mobile e tempi di caricamento di PLASTECO S.R.L. (9.4s)",
+      "body": "Buongiorno,\n\nda un test sul sito di PLASTECO S.R.L., da smartphone impiega 9.4 secondi ad aprirsi per 43 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per PLASTECO S.R.L. che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: PLASTECO S.R.L. - dispersione clic mobile e tempi di caricamento di PLASTECO S.R.L. (9.4s)",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per PLASTECO S.R.L., completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/plasteco\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: PLASTECO S.R.L. - dispersione clic mobile e tempi di caricamento di PLASTECO S.R.L. (9.4s)",
+      "body": "Buongiorno,\n\nOltre a tagliare i 9.4 secondi su mobile, l'infrastruttura recupera il 40% delle conversioni tramite Server-Side Tracking.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza - TechPyre Studio",
+      "inThread": true,
+      "requiresFollowUpCall": true
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: PLASTECO S.R.L. - dispersione clic mobile e tempi di caricamento di PLASTECO S.R.L. (9.4s)",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di PLASTECO S.R.L. non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/plasteco) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

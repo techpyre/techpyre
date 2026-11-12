@@ -1,0 +1,35 @@
+{
+  "slug": "tagliolaser",
+  "targetUrl": "https://tagliolaser.deametaldesign.it",
+  "searchKeyword": "taglio laser lamiera vicenza",
+  "measuredResponseMs": 953,
+  "renderBlockingScripts": 42,
+  "estimatedMobileLcpSeconds": 9.3,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": "Davide Montagna",
+    "firstName": "Davide",
+    "role": "Titolare"
+  },
+  "emailSelection": {
+    "bestEmail": "info@deametaldesign.it",
+    "isGeneric": true,
+    "score": -40
+  },
+  "extractedEmails": [
+    "info@deametaldesign.it",
+    "info@deametaldesign.it",
+    "info@deametaldesign.it",
+    "info@deametaldesign.it",
+    "info@deametaldesign.it",
+    "info@deametaldesign.it",
+    "info@deametaldesign.it"
+  ],
+  "extractedPhones": [
+    "3399136609",
+    "04437760244",
+    "+393474115517"
+  ],
+  "extractedVat": "04437760244"
+}

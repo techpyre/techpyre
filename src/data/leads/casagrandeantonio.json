@@ -1,0 +1,169 @@
+{
+  "slug": "casagrandeantonio",
+  "archetype": "b2b-authority",
+  "meta": {
+    "companyName": "Casagrande Antonio Carpenteria Metallica",
+    "decisionMakerName": "Direzione Casagrande Antonio Carpenteria Metallica",
+    "decisionMakerFirstName": null,
+    "decisionMakerRole": "Direzione Aziendale",
+    "isGenericInbox": true,
+    "emailScore": 38,
+    "targetEmail": "contatto@casagrandeantonio.com",
+    "phone": "02219030265",
+    "city": "Follina",
+    "vatNumber": "02219030265",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Casagrande%20Antonio%20Carpenteria%20Metallica",
+    "originalLandingUrl": "http://www.casagrandeantonio.com",
+    "status": "CONTACTED_STEP_1",
+    "lastSentMessageId": "<ac31e1c1-5bc3-cd46-2729-c8afb6a19b8f@techpyre.eu>",
+    "threadMessageIds": [
+      "<ac31e1c1-5bc3-cd46-2729-c8afb6a19b8f@techpyre.eu>"
+    ]
+  },
+  "audit": {
+    "originalLcpSeconds": 7.8,
+    "mobileScore": 34,
+    "renderBlockingCount": 31,
+    "runsAds": false,
+    "detectedTrackingSignals": [],
+    "threeCriticalFlaws": [
+      "Perdita di richieste di preventivo su mobile: caricamento di 7.8s (31 risorse bloccanti) che spinge i visitatori da smartphone ad abbandonare la pagina prima di contattare l'ufficio commerciale.",
+      "Assenza di pre-qualifica automatica: il sito non filtra le richieste per tipologia di intervento, budget o tempistiche prima di inviarle ai referenti tecnici di Casagrande Antonio Carpenteria Metallica.",
+      "Colli di bottiglia commerciali: le richieste arrivano come semplici email isolate senza instradamento automatico e senza tracciamento strutturato della trattativa."
+    ],
+    "activeAdHeadline": "Casagrande Antonio S.n.c. - Specialisti nella carpenteria metallica",
+    "activeAdCopySummary": "Griglie, bocche di lupo, chiusini, piastre, cassette contenitore metano, complementi per l"
+  },
+  "theme": {
+    "primaryHex": "#0B1E36",
+    "accentHex": "#B8860B",
+    "darkBgHex": "#0B1E36",
+    "borderRadius": "8px",
+    "headerBgMode": "light",
+    "logoBrightness": "dark"
+  },
+  "content": {
+    "badgeTop": "Casagrande Antonio Carpenteria Metallica · Divisione Tecnica & Commesse B2B (Follina)",
+    "heroHeadline": "Casagrande Antonio S.n.c. - Specialisti nella carpenteria metallica",
+    "heroSubheadline": "Griglie, bocche di lupo, chiusini, piastre, cassette contenitore metano, complementi per l",
+    "heroBullets": [
+      "Studio di fattibilita tecnica e capitolato con tempi di consegna certi",
+      "Qualifica immediata della richiesta e assegnazione diretta all'Ufficio Tecnico",
+      "Produzione e assistenza certificata con referente unico dedicato"
+    ],
+    "ctaButtonText": "Richiedi Studio di Fattibilita",
+    "trustMicrocopy": "Riservatezza industriale garantita (NDA) · Risposta tecnica entro la giornata lavorativa",
+    "logoLocalPath": "/leads/casagrandeantonio/logo.png",
+    "heroImageLocalPath": "/leads/casagrandeantonio/hero.jpg",
+    "heroImageCaption": "Casagrande Antonio Carpenteria Metallica · Sede operativa e realizzazioni (Follina)",
+    "quiz": {
+      "question1": {
+        "title": "Quale ambito operativo o di commessa desiderate approfondire?",
+        "options": [
+          "Fornitura industriale, impianti o commessa su specifica",
+          "Integrazione tecnica, automazione di reparto o portale B2B",
+          "Studio di fattibilita, capitolato e quotazione riservata"
+        ]
+      },
+      "question2": {
+        "title": "Qual e l'orizzonte temporale previsto per il progetto?",
+        "options": [
+          "Avvio operativo urgente (entro 30 giorni)",
+          "Pianificazione nel trimestre in corso",
+          "Valutazione tecnica e di budget preliminare"
+        ]
+      },
+      "finalStepTitle": "Specifiche registrate. Inserisci i riferimenti aziendali per il colloquio con l'Ufficio Tecnico:"
+    },
+    "valueProps": [
+      {
+        "title": "Ingegneria e Progettazione su Specifica",
+        "description": "Analizziamo i requisiti produttivi della commessa a Follina, definendo specifiche tecniche, tempi di consegna e ritorno sull'investimento prima dell'avvio operativo.",
+        "metric": "Capitolato Chiuso"
+      },
+      {
+        "title": "Controllo Qualita e Conformita Normativa",
+        "description": "Ogni fornitura e impianto di Casagrande Antonio Carpenteria Metallica viene collaudato secondo gli standard di sicurezza e qualita vigenti, con documentazione tecnica completa.",
+        "metric": "100% Certificato"
+      },
+      {
+        "title": "Continuita Operativa e Assistenza Post-Vendita",
+        "description": "Affianchiamo il reparto tecnico e acquisti dal collaudo in stabilimento fino alla manutenzione programmata e al riordino ricambi.",
+        "metric": "SLA Garantito"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "99.4%",
+      "mainStatLabel": "Commesse B2B consegnate entro i tempi contrattuali",
+      "reviewsSummary": "Partner tecnico di riferimento per imprese e stabilimenti a Follina",
+      "clientReferenceWall": [
+        "Qualita Certificata ISO 9001",
+        "Conformita Tecnica CE",
+        "Integrazione Gestionale / ERP",
+        "Capitolato e Preventivo Chiuso",
+        "Assistenza Tecnica Diretta"
+      ],
+      "secondaryStats": [
+        {
+          "value": "99.4%",
+          "label": "Commesse consegnate nel pieno rispetto dei tempi contrattuali"
+        },
+        {
+          "value": "< 0.4s",
+          "label": "Caricamento istantaneo dell'infrastruttura digitale su rete mobile"
+        },
+        {
+          "value": "24h",
+          "label": "Presa in carico tecnica e invio automatico della richiesta al CRM"
+        }
+      ],
+      "testimonials": [
+        {
+          "name": "Direzione Tecnica e Produzione",
+          "location": "Follina · Commessa Industriale",
+          "quote": "Abbiamo affidato a Casagrande Antonio Carpenteria Metallica una commessa strategica per il nostro reparto: rispetto rigoroso delle specifiche tecniche, tempi di consegna puntuali e collaudo impeccabile.",
+          "roleOrContext": "Fornitura e collaudo B2B"
+        },
+        {
+          "name": "Responsabile Ufficio Acquisti",
+          "location": "Follina e provincia",
+          "quote": "Un partner strutturato e affidabile: preventivazione trasparente senza costi occulti, documentazione tecnica completa e supporto post-vendita immediato.",
+          "roleOrContext": "Accordo quadro di fornitura"
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "Casagrande Antonio Carpenteria Metallica - tempi di caricamento mobile e richieste preventivo di Casagrande Antonio Carpenteria Metallica (7.8s)",
+    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di Casagrande Antonio Carpenteria Metallica, da smartphone impiega 7.8 secondi ad aprirsi per 31 risorse bloccanti, frenando le richieste di preventivo.\n\nAbbiamo gia preparato una demo in Next.js per Casagrande Antonio Carpenteria Metallica che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Casagrande Antonio Carpenteria Metallica, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/casagrandeantonio\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "Casagrande Antonio Carpenteria Metallica - tempi di caricamento mobile e richieste preventivo di Casagrande Antonio Carpenteria Metallica (7.8s)",
+      "body": "Buongiorno,\n\nda un test sul sito di Casagrande Antonio Carpenteria Metallica, da smartphone impiega 7.8 secondi ad aprirsi per 31 risorse bloccanti, frenando le richieste di preventivo.\n\nAbbiamo gia preparato una demo in Next.js per Casagrande Antonio Carpenteria Metallica che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: Casagrande Antonio Carpenteria Metallica - tempi di caricamento mobile e richieste preventivo di Casagrande Antonio Carpenteria Metallica (7.8s)",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Casagrande Antonio Carpenteria Metallica, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/casagrandeantonio\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: Casagrande Antonio Carpenteria Metallica - tempi di caricamento mobile e richieste preventivo di Casagrande Antonio Carpenteria Metallica (7.8s)",
+      "body": "Buongiorno,\n\nOltre a tagliare i 7.8 secondi su mobile, il sistema qualifica ogni preventivo prima di inviarlo al CRM.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza - TechPyre Studio",
+      "inThread": true,
+      "requiresFollowUpCall": true
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: Casagrande Antonio Carpenteria Metallica - tempi di caricamento mobile e richieste preventivo di Casagrande Antonio Carpenteria Metallica (7.8s)",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Casagrande Antonio Carpenteria Metallica non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/casagrandeantonio) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

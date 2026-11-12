@@ -1,0 +1,30 @@
+{
+  "slug": "ett1",
+  "targetUrl": "https://ett1.it",
+  "searchKeyword": "nastri trasportatori industriali torino",
+  "measuredResponseMs": 3266,
+  "renderBlockingScripts": 33,
+  "estimatedMobileLcpSeconds": 11.2,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@ett1.it",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@ett1.it",
+    "info@ett1.it"
+  ],
+  "extractedPhones": [
+    "00000000",
+    "+39011734243",
+    "07231940011"
+  ],
+  "extractedVat": "07231940011"
+}

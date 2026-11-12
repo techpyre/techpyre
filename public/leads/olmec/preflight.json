@@ -1,0 +1,31 @@
+{
+  "slug": "olmec",
+  "targetUrl": "https://www.olmec.it",
+  "searchKeyword": "oleodinamica pneumatica modena",
+  "measuredResponseMs": 4063,
+  "renderBlockingScripts": 6,
+  "estimatedMobileLcpSeconds": 6.5,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "olmec@olmec.it",
+    "isGeneric": true,
+    "score": 58
+  },
+  "extractedEmails": [
+    "olmec@omec.it",
+    "olmec@olmec.it",
+    "olmec@olmec.it"
+  ],
+  "extractedPhones": [
+    "+39059281118",
+    "+39 059281118",
+    "00262350366"
+  ],
+  "extractedVat": "Non trovata"
+}

@@ -1,0 +1,53 @@
+{
+  "slug": "mare",
+  "targetUrl": "http://www.mare.com",
+  "searchKeyword": "compressori industriali milano",
+  "measuredResponseMs": 534,
+  "renderBlockingScripts": 30,
+  "estimatedMobileLcpSeconds": 7.3,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "mare.france@mare.com",
+    "isGeneric": true,
+    "score": 58
+  },
+  "extractedEmails": [
+    "sales@mare.com",
+    "dynamics@mare.com",
+    "mare.france@mare.com",
+    "mare.austria@mare.com",
+    "mare.austria@mare.com",
+    "adminbcn@mare.com",
+    "info@marenordic.se",
+    "mare.germany@mare.com",
+    "mare.germany@mare.com",
+    "mare.germany@mare.com",
+    "info@marenordic.se",
+    "info@marenordic.se",
+    "adminbcn@mare.com",
+    "adminbcn@mare.com",
+    "mare.austria@mare.com",
+    "mare.austria@mare.com",
+    "mare.austria@mare.com",
+    "mare.austria@mare.com",
+    "mare.france@mare.com",
+    "mare.france@mare.com",
+    "dynamics@mare.com",
+    "dynamics@mare.com",
+    "sales@mare.com",
+    "sales@mare.com",
+    "sales@mare.com"
+  ],
+  "extractedPhones": [
+    "+39 02 903261",
+    "+39 0290380474",
+    "+39 0572427208"
+  ],
+  "extractedVat": "05509410964"
+}

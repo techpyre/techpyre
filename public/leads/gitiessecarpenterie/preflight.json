@@ -1,0 +1,27 @@
+{
+  "slug": "gitiessecarpenterie",
+  "targetUrl": "https://www.gitiessecarpenterie.com",
+  "searchKeyword": "taglio laser lamiera vicenza",
+  "measuredResponseMs": 7458,
+  "renderBlockingScripts": 0,
+  "estimatedMobileLcpSeconds": 7.9,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@gitiessecarpenterie.com",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@gitiessecarpenterie.com"
+  ],
+  "extractedPhones": [
+    "+39 045 7970847"
+  ],
+  "extractedVat": "03073670238"
+}

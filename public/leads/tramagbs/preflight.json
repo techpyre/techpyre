@@ -1,0 +1,41 @@
+{
+  "slug": "tramagbs",
+  "targetUrl": "http://www.tramagbs.com",
+  "searchKeyword": "scaffalature industriali magazzino verona",
+  "measuredResponseMs": 3084,
+  "renderBlockingScripts": 37,
+  "estimatedMobileLcpSeconds": 10.8,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "commerciale@tramagbs.com",
+    "isGeneric": true,
+    "score": 45
+  },
+  "extractedEmails": [
+    "info@tramagbs.com",
+    "info@tramagbs.com",
+    "amministrazione@tramagbs.com",
+    "amministrazione@tramagbs.com",
+    "info@tramagbs.com",
+    "info@tramagbs.com",
+    "commerciale@tramagbs.com",
+    "commerciale@tramagbs.com",
+    "ufficiotecnico@tramagbs.com",
+    "ufficiotecnico@tramagbs.com",
+    "info@tramagbs.com",
+    "info@tramagbs.com",
+    "info@tramagbs.com"
+  ],
+  "extractedPhones": [
+    "0420138",
+    "310530094",
+    "3232505187"
+  ],
+  "extractedVat": "02049760172"
+}

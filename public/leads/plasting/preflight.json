@@ -1,0 +1,35 @@
+{
+  "slug": "plasting",
+  "targetUrl": "http://www.plasting.biz",
+  "searchKeyword": "saldatura robotizzata padova",
+  "measuredResponseMs": 6978,
+  "renderBlockingScripts": 57,
+  "estimatedMobileLcpSeconds": 18.3,
+  "runsAds": true,
+  "detectedTrackingSignals": [
+    "Google Ads / GTM"
+  ],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@plasting.biz",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@plasting.biz",
+    "info@plasting.biz",
+    "amministrazione@plasting.biz",
+    "amministrazione@plasting.biz",
+    "info@plasting.biz"
+  ],
+  "extractedPhones": [
+    "094987771",
+    "0851381333",
+    "0851956910"
+  ],
+  "extractedVat": "06365790960"
+}

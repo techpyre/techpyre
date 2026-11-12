@@ -1,0 +1,33 @@
+{
+  "slug": "factory4d",
+  "targetUrl": "http://www.factory4d.com",
+  "searchKeyword": "saldatura robotizzata padova",
+  "measuredResponseMs": 2042,
+  "renderBlockingScripts": 40,
+  "estimatedMobileLcpSeconds": 7.3,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@factory4d.com",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@factory4d.com",
+    "info@factory4d.com",
+    "info@factory4d.com",
+    "info@factory4d.com",
+    "info@factory4d.com"
+  ],
+  "extractedPhones": [
+    "+39 0733 292101",
+    "+390733292101",
+    "0466067"
+  ],
+  "extractedVat": "01847700430"
+}

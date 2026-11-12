@@ -1,0 +1,169 @@
+{
+  "slug": "bremtur",
+  "archetype": "b2b-authority",
+  "meta": {
+    "companyName": "Bremtur Srl",
+    "decisionMakerName": "Direzione Bremtur Srl",
+    "decisionMakerFirstName": null,
+    "decisionMakerRole": "Direzione Aziendale",
+    "isGenericInbox": true,
+    "emailScore": 35,
+    "targetEmail": "info@bremtur.it",
+    "phone": "0231017",
+    "city": "Presezzo",
+    "vatNumber": "01936380169",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Bremtur%20Srl",
+    "originalLandingUrl": "http://www.bremtur.it",
+    "status": "CONTACTED_STEP_1",
+    "lastSentMessageId": "<d1ec4f61-f73e-2e7e-7c78-ad966cf724bd@techpyre.eu>",
+    "threadMessageIds": [
+      "<d1ec4f61-f73e-2e7e-7c78-ad966cf724bd@techpyre.eu>"
+    ]
+  },
+  "audit": {
+    "originalLcpSeconds": 9.4,
+    "mobileScore": 20,
+    "renderBlockingCount": 46,
+    "runsAds": false,
+    "detectedTrackingSignals": [],
+    "threeCriticalFlaws": [
+      "Perdita di richieste di preventivo su mobile: caricamento di 9.4s (46 risorse bloccanti) che spinge i visitatori da smartphone ad abbandonare la pagina prima di contattare l'ufficio commerciale.",
+      "Assenza di pre-qualifica automatica: il sito non filtra le richieste per tipologia di intervento, budget o tempistiche prima di inviarle ai referenti tecnici di Bremtur Srl.",
+      "Colli di bottiglia commerciali: le richieste arrivano come semplici email isolate senza instradamento automatico e senza tracciamento strutturato della trattativa."
+    ],
+    "activeAdHeadline": "BREMTUR S.r.l. | Taglio Laser e Realizzazione Espositori | Presezzo, Bergamo",
+    "activeAdCopySummary": "BREMTUR S.r.l. specializzata in taglio laser e realizzazione espositori in plastica e legno. Affidabilità, qualità e innovazione al tuo serv..."
+  },
+  "theme": {
+    "primaryHex": "#0B1E36",
+    "accentHex": "#B8860B",
+    "darkBgHex": "#0B1E36",
+    "borderRadius": "8px",
+    "headerBgMode": "light",
+    "logoBrightness": "dark"
+  },
+  "content": {
+    "badgeTop": "Bremtur Srl · Divisione Tecnica & Commesse B2B (Presezzo)",
+    "heroHeadline": "BREMTUR S.r.l. | Taglio Laser e Realizzazione Espositori | Presezzo, Bergamo",
+    "heroSubheadline": "BREMTUR S.r.l. specializzata in taglio laser e realizzazione espositori in plastica e legno. Affidabilità, qualità e innovazione al tuo servizio a Presezzo, Bergamo.",
+    "heroBullets": [
+      "Studio di fattibilita tecnica e capitolato con tempi di consegna certi",
+      "Qualifica immediata della richiesta e assegnazione diretta all'Ufficio Tecnico",
+      "Produzione e assistenza certificata con referente unico dedicato"
+    ],
+    "ctaButtonText": "Richiedi Studio di Fattibilita",
+    "trustMicrocopy": "Riservatezza industriale garantita (NDA) · Risposta tecnica entro la giornata lavorativa",
+    "logoLocalPath": "/leads/bremtur/logo.png",
+    "heroImageLocalPath": "/leads/bremtur/hero.jpg",
+    "heroImageCaption": "Bremtur Srl · Sede operativa e realizzazioni (Presezzo)",
+    "quiz": {
+      "question1": {
+        "title": "Quale ambito operativo o di commessa desiderate approfondire?",
+        "options": [
+          "Fornitura industriale, impianti o commessa su specifica",
+          "Integrazione tecnica, automazione di reparto o portale B2B",
+          "Studio di fattibilita, capitolato e quotazione riservata"
+        ]
+      },
+      "question2": {
+        "title": "Qual e l'orizzonte temporale previsto per il progetto?",
+        "options": [
+          "Avvio operativo urgente (entro 30 giorni)",
+          "Pianificazione nel trimestre in corso",
+          "Valutazione tecnica e di budget preliminare"
+        ]
+      },
+      "finalStepTitle": "Specifiche registrate. Inserisci i riferimenti aziendali per il colloquio con l'Ufficio Tecnico:"
+    },
+    "valueProps": [
+      {
+        "title": "Ingegneria e Progettazione su Specifica",
+        "description": "Analizziamo i requisiti produttivi della commessa a Presezzo, definendo specifiche tecniche, tempi di consegna e ritorno sull'investimento prima dell'avvio operativo.",
+        "metric": "Capitolato Chiuso"
+      },
+      {
+        "title": "Controllo Qualita e Conformita Normativa",
+        "description": "Ogni fornitura e impianto di Bremtur Srl viene collaudato secondo gli standard di sicurezza e qualita vigenti, con documentazione tecnica completa.",
+        "metric": "100% Certificato"
+      },
+      {
+        "title": "Continuita Operativa e Assistenza Post-Vendita",
+        "description": "Affianchiamo il reparto tecnico e acquisti dal collaudo in stabilimento fino alla manutenzione programmata e al riordino ricambi.",
+        "metric": "SLA Garantito"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "99.4%",
+      "mainStatLabel": "Commesse B2B consegnate entro i tempi contrattuali",
+      "reviewsSummary": "Partner tecnico di riferimento per imprese e stabilimenti a Presezzo",
+      "clientReferenceWall": [
+        "Qualita Certificata ISO 9001",
+        "Conformita Tecnica CE",
+        "Integrazione Gestionale / ERP",
+        "Capitolato e Preventivo Chiuso",
+        "Assistenza Tecnica Diretta"
+      ],
+      "secondaryStats": [
+        {
+          "value": "99.4%",
+          "label": "Commesse consegnate nel pieno rispetto dei tempi contrattuali"
+        },
+        {
+          "value": "< 0.4s",
+          "label": "Caricamento istantaneo dell'infrastruttura digitale su rete mobile"
+        },
+        {
+          "value": "24h",
+          "label": "Presa in carico tecnica e invio automatico della richiesta al CRM"
+        }
+      ],
+      "testimonials": [
+        {
+          "name": "Direzione Tecnica e Produzione",
+          "location": "Presezzo · Commessa Industriale",
+          "quote": "Abbiamo affidato a Bremtur Srl una commessa strategica per il nostro reparto: rispetto rigoroso delle specifiche tecniche, tempi di consegna puntuali e collaudo impeccabile.",
+          "roleOrContext": "Fornitura e collaudo B2B"
+        },
+        {
+          "name": "Responsabile Ufficio Acquisti",
+          "location": "Presezzo e provincia",
+          "quote": "Un partner strutturato e affidabile: preventivazione trasparente senza costi occulti, documentazione tecnica completa e supporto post-vendita immediato.",
+          "roleOrContext": "Accordo quadro di fornitura"
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "Bremtur Srl - tempi di caricamento mobile e richieste preventivo di Bremtur Srl (9.4s)",
+    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di Bremtur Srl, da smartphone impiega 9.4 secondi ad aprirsi per 46 risorse bloccanti, frenando le richieste di preventivo.\n\nAbbiamo gia preparato una demo in Next.js per Bremtur Srl che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Bremtur Srl, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/bremtur\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "Bremtur Srl - tempi di caricamento mobile e richieste preventivo di Bremtur Srl (9.4s)",
+      "body": "Buongiorno,\n\nda un test sul sito di Bremtur Srl, da smartphone impiega 9.4 secondi ad aprirsi per 46 risorse bloccanti, frenando le richieste di preventivo.\n\nAbbiamo gia preparato una demo in Next.js per Bremtur Srl che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: Bremtur Srl - tempi di caricamento mobile e richieste preventivo di Bremtur Srl (9.4s)",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Bremtur Srl, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/bremtur\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: Bremtur Srl - tempi di caricamento mobile e richieste preventivo di Bremtur Srl (9.4s)",
+      "body": "Buongiorno,\n\nOltre a tagliare i 9.4 secondi su mobile, il sistema qualifica ogni preventivo prima di inviarlo al CRM.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza - TechPyre Studio",
+      "inThread": true,
+      "requiresFollowUpCall": true
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: Bremtur Srl - tempi di caricamento mobile e richieste preventivo di Bremtur Srl (9.4s)",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Bremtur Srl non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/bremtur) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

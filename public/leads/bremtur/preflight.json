@@ -1,0 +1,38 @@
+{
+  "slug": "bremtur",
+  "targetUrl": "http://www.bremtur.it",
+  "searchKeyword": "saldatura robotizzata padova",
+  "measuredResponseMs": 403,
+  "renderBlockingScripts": 46,
+  "estimatedMobileLcpSeconds": 9.4,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@bremtur.it",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@bremtur.it",
+    "info@bremtur.it",
+    "info@bremtur.it",
+    "info@bremtur.it",
+    "info@bremtur.it",
+    "info@bremtur.it",
+    "info@bremtur.it",
+    "info@bremtur.it",
+    "info@bremtur.it",
+    "info@bremtur.it"
+  ],
+  "extractedPhones": [
+    "0231017",
+    "025050604171",
+    "0250506"
+  ],
+  "extractedVat": "01936380169"
+}

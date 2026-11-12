@@ -1,0 +1,148 @@
+{
+  "slug": "bemastampistampaggio",
+  "archetype": "local-leadgen",
+  "meta": {
+    "companyName": "BEMA srl",
+    "decisionMakerName": "Direzione BEMA srl",
+    "decisionMakerFirstName": null,
+    "decisionMakerRole": "Direzione Aziendale",
+    "isGenericInbox": true,
+    "emailScore": 35,
+    "targetEmail": "info@bemastampistampaggio.com",
+    "phone": "0382 614767",
+    "city": "Landriano",
+    "vatNumber": "02244730186",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=BEMA%20srl",
+    "originalLandingUrl": "http://www.bemastampistampaggio.com",
+    "status": "CONTACTED_STEP_1",
+    "lastSentMessageId": "<e0322129-9312-cc71-225d-d255b101f1a4@techpyre.eu>",
+    "threadMessageIds": [
+      "<e0322129-9312-cc71-225d-d255b101f1a4@techpyre.eu>"
+    ]
+  },
+  "audit": {
+    "originalLcpSeconds": 9.8,
+    "mobileScore": 17,
+    "renderBlockingCount": 41,
+    "runsAds": false,
+    "detectedTrackingSignals": [],
+    "threeCriticalFlaws": [
+      "Perdita di richieste di preventivo su mobile: caricamento di 9.8s (41 risorse bloccanti) che spinge i visitatori da smartphone ad abbandonare la pagina prima di contattare l'ufficio commerciale.",
+      "Assenza di pre-qualifica automatica: il sito non filtra le richieste per tipologia di intervento, budget o tempistiche prima di inviarle ai referenti tecnici di BEMA srl.",
+      "Colli di bottiglia commerciali: le richieste arrivano come semplici email isolate senza instradamento automatico e senza tracciamento strutturato della trattativa."
+    ],
+    "activeAdHeadline": "Bema Stampi Stampaggio Home - Bema Stampi Stampaggio",
+    "activeAdCopySummary": "La Bema costruisce stampi per materie plastiche e pressofusione. Dimensioni mm 600 x 1000. La progettazione degli stampi viene eseguita inte..."
+  },
+  "theme": {
+    "primaryHex": "#1E3A8A",
+    "accentHex": "#2563EB",
+    "darkBgHex": "#0B1E36",
+    "borderRadius": "12px",
+    "headerBgMode": "light",
+    "logoBrightness": "dark"
+  },
+  "content": {
+    "badgeTop": "BEMA srl · Operativi a Landriano e provincia",
+    "heroHeadline": "Bema Stampi Stampaggio Home - Bema Stampi Stampaggio",
+    "heroSubheadline": "La Bema costruisce stampi per materie plastiche e pressofusione. Dimensioni mm 600 x 1000. La progettazione degli stampi viene eseguita interamente con sistemi CAD di modellazione tridimensionale POWERSHAPE DEL",
+    "heroBullets": [
+      "Sopralluogo tecnico e preventivo chiaro senza impegno",
+      "Materiali certificati e assistenza diretta con personale qualificato",
+      "Tempi di intervento garantiti e gestione completa della pratica"
+    ],
+    "ctaButtonText": "Calcola il Tuo Preventivo Rapido",
+    "trustMicrocopy": "Richiesta gratuita e senza impegno · Risposta rapida dal nostro ufficio tecnico",
+    "logoLocalPath": "/leads/bemastampistampaggio/logo.png",
+    "heroImageLocalPath": "/leads/bemastampistampaggio/hero.jpg",
+    "heroImageCaption": "BEMA srl · Sede operativa e realizzazioni (Landriano)",
+    "quiz": {
+      "question1": {
+        "title": "Di quale servizio o soluzione hai bisogno?",
+        "options": [
+          "Richiesta preventivo dettagliato su misura",
+          "Consulenza tecnica e sopralluogo operativo",
+          "Intervento rapido o assistenza prioritaria"
+        ]
+      },
+      "question2": {
+        "title": "Entro quando vorresti avviare il progetto?",
+        "options": [
+          "Il prima possibile (Entro 2 settimane)",
+          "Entro 1 - 2 mesi",
+          "Sto valutando diverse soluzioni"
+        ]
+      },
+      "finalStepTitle": "Perfetto. Inserisci i tuoi dati per ricevere una proposta personalizzata senza impegno:"
+    },
+    "valueProps": [
+      {
+        "title": "Qualita Certificata e Garanzia Scritta",
+        "description": "Ogni intervento di BEMA srl utilizza materiali selezionati e procedure certificate per garantire durata e prestazioni nel tempo.",
+        "metric": "100% Garantito"
+      },
+      {
+        "title": "Preventivo Chiaro e Zero Sorprese",
+        "description": "Valutazione trasparente delle soluzioni piu adatte alle tue esigenze a Landriano, con tempi e costi definiti prima dell'inizio dei lavori.",
+        "metric": "Preventivo Chiuso"
+      },
+      {
+        "title": "Assistenza Tecnica Diretta",
+        "description": "Un unico referente tecnico ti segue dal primo sopralluogo fino al collaudo finale e all'assistenza post-vendita.",
+        "metric": "Supporto Diretto"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "98%",
+      "mainStatLabel": "Clienti soddisfatti del servizio e dell'assistenza",
+      "reviewsSummary": "Azienda di riferimento a Landriano per affidabilita e precisione",
+      "testimonials": [
+        {
+          "name": "Marco R.",
+          "location": "Landriano",
+          "quote": "Servizio impeccabile da parte del team di BEMA srl. Puntuali, precisi e disponibilissimi in ogni fase del lavoro.",
+          "roleOrContext": "Cliente verificato"
+        },
+        {
+          "name": "Laura B.",
+          "location": "Landriano",
+          "quote": "Ottima consulenza iniziale e grande cura nei dettagli. Preventivo rispettato al centesimo e risultato superiore alle aspettative.",
+          "roleOrContext": "Intervento completato"
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "BEMA srl - tempi di caricamento mobile e richieste preventivo di BEMA srl (9.8s)",
+    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di BEMA srl, da smartphone impiega 9.8 secondi ad aprirsi per 41 risorse bloccanti, frenando le richieste di preventivo.\n\nAbbiamo gia preparato una demo in Next.js per BEMA srl che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per BEMA srl, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/bemastampistampaggio\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "BEMA srl - tempi di caricamento mobile e richieste preventivo di BEMA srl (9.8s)",
+      "body": "Buongiorno,\n\nda un test sul sito di BEMA srl, da smartphone impiega 9.8 secondi ad aprirsi per 41 risorse bloccanti, frenando le richieste di preventivo.\n\nAbbiamo gia preparato una demo in Next.js per BEMA srl che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: BEMA srl - tempi di caricamento mobile e richieste preventivo di BEMA srl (9.8s)",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per BEMA srl, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/bemastampistampaggio\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: BEMA srl - tempi di caricamento mobile e richieste preventivo di BEMA srl (9.8s)",
+      "body": "Buongiorno,\n\nOltre a tagliare i 9.8 secondi su mobile, il sistema qualifica ogni preventivo prima di inviarlo al CRM.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza - TechPyre Studio",
+      "inThread": true,
+      "requiresFollowUpCall": true
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: BEMA srl - tempi di caricamento mobile e richieste preventivo di BEMA srl (9.8s)",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di BEMA srl non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/bemastampistampaggio) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

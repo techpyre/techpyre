@@ -3,9 +3,9 @@
   "archetype": "local-leadgen",
   "meta": {
     "companyName": "Pakei S.r.l",
-    "decisionMakerName": "Titolare Pakei S.r.l",
+    "decisionMakerName": "Direzione Pakei S.r.l",
     "decisionMakerFirstName": null,
-    "decisionMakerRole": null,
+    "decisionMakerRole": "Direzione Aziendale",
     "isGenericInbox": true,
     "emailScore": 38,
     "targetEmail": "pakei@nsoft.it",

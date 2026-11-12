@@ -1,0 +1,57 @@
+{
+  "slug": "gsindustry",
+  "targetUrl": "http://www.gsindustry.com",
+  "searchKeyword": "scaffalature industriali magazzino verona",
+  "measuredResponseMs": 3622,
+  "renderBlockingScripts": 175,
+  "estimatedMobileLcpSeconds": 37.2,
+  "runsAds": true,
+  "detectedTrackingSignals": [
+    "Google Ads / GTM"
+  ],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "contacts@gsindustry.com",
+    "isGeneric": true,
+    "score": 38
+  },
+  "extractedEmails": [
+    "contacts@gsindustry.com",
+    "contacts@gsindustry.com",
+    "contacts@gsindustry.com",
+    "contacts@gsindustry.com",
+    "contacts@gsindustry.com",
+    "contacts@gsindustry.com",
+    "contacts@gsindustry.com",
+    "contacts@gsindustry.com",
+    "amministrazione.gsindustryspa@pec.net",
+    "amministrazione.gsindustryspa@pec.net",
+    "contacts@gsindustry.com",
+    "contacts@gsindustry.com",
+    "contacts@gsindustry.com",
+    "contacts@gsindustry.com",
+    "contacts@gsindustry.com",
+    "contacts@gsindustry.com",
+    "contacts@gsindustry.com",
+    "contacts@gsindustry.com",
+    "contacts@gsindustry.com",
+    "contacts@gsindustry.com",
+    "contacts@gsindustry.com",
+    "contacts@gsindustry.com",
+    "contacts@gsindustry.com",
+    "contacts@gsindustry.com",
+    "contacts@gsindustry.com",
+    "contacts@gsindustry.com",
+    "info@gsindustry.com"
+  ],
+  "extractedPhones": [
+    "0112776",
+    "026101920494",
+    "07-102200"
+  ],
+  "extractedVat": "04753290289"
+}

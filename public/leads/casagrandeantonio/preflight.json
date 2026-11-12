@@ -1,0 +1,44 @@
+{
+  "slug": "casagrandeantonio",
+  "targetUrl": "http://www.casagrandeantonio.com",
+  "searchKeyword": "porte rapide industriali treviso",
+  "measuredResponseMs": 1569,
+  "renderBlockingScripts": 31,
+  "estimatedMobileLcpSeconds": 7.8,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "contatto@casagrandeantonio.com",
+    "isGeneric": true,
+    "score": 38
+  },
+  "extractedEmails": [
+    "contatto@casagrandeantonio.com",
+    "contatto@casagrandeantonio.com",
+    "contatto@casagrandeantonio.com",
+    "contatto@casagrandeantonio.com",
+    "contatto@casagrandeantonio.com",
+    "tecnico@casagrandeantonio.com",
+    "contatto@casagrandeantonio.com",
+    "contatto@casagrandeantonio.com",
+    "contatto@casagrandeantonio.com",
+    "contatto@casagrandeantonio.com",
+    "contatto@casagrandeantonio.com",
+    "contatto@casagrandeantonio.com",
+    "contatto@casagrandeantonio.com",
+    "tecnico@casagrandeantonio.com",
+    "contatto@casagrandeantonio.com",
+    "contatto@casagrandeantonio.com"
+  ],
+  "extractedPhones": [
+    "02219030265",
+    "0438 971859",
+    "3370617225"
+  ],
+  "extractedVat": "02219030265"
+}

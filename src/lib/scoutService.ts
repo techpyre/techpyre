@@ -3,8 +3,54 @@ import path from "path";
 import { spawn } from "child_process";
 import { LeadConfig, OutreachStep } from "@/types/lead";
 import { loadLeadConfig, saveLeadConfig } from "./leadsStorage";
+import {
+  analyzePngLogo,
+  downloadAndNormalizeRasterAsset,
+} from "./logoProcessor";
 
-type LeadArchetype = LeadConfig["archetype"];
+export type LeadArchetype = LeadConfig["archetype"];
+
+/**
+ * REGISTRO CHIUSO DEI TEMPLATE UFFICIALI (SINGLE SOURCE OF TRUTH)
+ * È severamente vietato generare o registrare template extra rispetto ai 3 componenti ufficiali
+ * presenti in `src/components/templates/`.
+ */
+export const OFFICIAL_TEMPLATE_IDS: readonly LeadArchetype[] = [
+  "b2b-authority",
+  "local-leadgen",
+  "medical-clinic",
+] as const;
+
+export const OFFICIAL_TEMPLATE_REGISTRY: Record<
+  LeadArchetype,
+  { componentName: "B2BAuthority" | "LocalLeadGen" | "MedicalClinic"; filePath: string }
+> = {
+  "b2b-authority": {
+    componentName: "B2BAuthority",
+    filePath: "src/components/templates/B2BAuthority.tsx",
+  },
+  "local-leadgen": {
+    componentName: "LocalLeadGen",
+    filePath: "src/components/templates/LocalLeadGen.tsx",
+  },
+  "medical-clinic": {
+    componentName: "MedicalClinic",
+    filePath: "src/components/templates/MedicalClinic.tsx",
+  },
+};
+
+export function assertOfficialArchetype(archetype: string): LeadArchetype {
+  if (
+    archetype === "b2b-authority" ||
+    archetype === "local-leadgen" ||
+    archetype === "medical-clinic"
+  ) {
+    return archetype;
+  }
+  throw new Error(
+    `Archetipo non conforme "${archetype}": la pipeline ammette esclusivamente i 3 template ufficiali (${OFFICIAL_TEMPLATE_IDS.join(", ")}).`
+  );
+}
 
 const EXCLUDED_DOMAINS = [
   "facebook.com",
@@ -1445,6 +1491,16 @@ export function migrateOldLeadConfig(
   }
 
   let changed = false;
+
+  // -1. Vincolo stretto sui 3 archetipi/template ufficiali
+  if (!OFFICIAL_TEMPLATE_IDS.includes(lead.archetype)) {
+    const inferredArchetype = detectArchetype(
+      lead.meta.companyName || "",
+      `${lead.content?.heroHeadline || ""} ${lead.content?.heroSubheadline || ""}`
+    );
+    lead.archetype = assertOfficialArchetype(inferredArchetype);
+    changed = true;
+  }
 
   // 0. Decodifica entità HTML residue e rimozione caratteri problematici (es. &#8211;, &rsquo;, ·)
   if (lead.meta.companyName) {

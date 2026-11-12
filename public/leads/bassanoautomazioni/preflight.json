@@ -1,0 +1,47 @@
+{
+  "slug": "bassanoautomazioni",
+  "targetUrl": "http://www.bassanoautomazioni.it",
+  "searchKeyword": "porte rapide industriali treviso",
+  "measuredResponseMs": 1459,
+  "renderBlockingScripts": 62,
+  "estimatedMobileLcpSeconds": 13.7,
+  "runsAds": true,
+  "detectedTrackingSignals": [
+    "Google Ads / GTM"
+  ],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@bassanoautomazioni.it",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@bassanoautomazioni.it",
+    "info@bassanoautomazioni.it",
+    "info@bassanoautomazioni.it",
+    "info@bassanoautomazioni.it",
+    "info@bassanoautomazioni.it",
+    "info@bassanoautomazioni.it",
+    "info@bassanoautomazioni.it",
+    "info@bassanoautomazioni.it",
+    "info@bassanoautomazioni.it",
+    "info@bassanoautomazioni.it",
+    "info@bassanoautomazioni.it",
+    "info@bassanoautomazioni.it",
+    "info@bassanoautomazioni.it",
+    "info@bassanoautomazioni.it",
+    "info@bassanoautomazioni.it",
+    "info@bassanoautomazioni.it",
+    "info@bassanoautomazioni.it"
+  ],
+  "extractedPhones": [
+    "+390424511299",
+    "0424 511299",
+    "+39 0424511299"
+  ],
+  "extractedVat": "02250950249"
+}

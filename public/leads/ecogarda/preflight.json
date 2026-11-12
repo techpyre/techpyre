@@ -1,0 +1,32 @@
+{
+  "slug": "ecogarda",
+  "targetUrl": "http://www.ecogarda.it",
+  "searchKeyword": "bonifiche ambientali industriali brescia",
+  "measuredResponseMs": 3122,
+  "renderBlockingScripts": 100,
+  "estimatedMobileLcpSeconds": 21.8,
+  "runsAds": true,
+  "detectedTrackingSignals": [
+    "Google Ads / GTM"
+  ],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@ecogarda.it",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@ecogarda.it",
+    "info@ecogarda.it"
+  ],
+  "extractedPhones": [
+    "0093468",
+    "0151026",
+    "030 2459003"
+  ],
+  "extractedVat": "03060450982"
+}

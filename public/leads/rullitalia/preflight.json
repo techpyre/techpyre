@@ -1,0 +1,33 @@
+{
+  "slug": "rullitalia",
+  "targetUrl": "https://www.rullitalia.com",
+  "searchKeyword": "nastri trasportatori industriali torino",
+  "measuredResponseMs": 402,
+  "renderBlockingScripts": 9,
+  "estimatedMobileLcpSeconds": 6.3,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "produzione@rullitalia.com",
+    "isGeneric": true,
+    "score": 38
+  },
+  "extractedEmails": [
+    "produzione@rullitalia.com",
+    "produzione@rullitalia.com",
+    "produzione@rullitalia.com",
+    "produzione@rullitalia.com",
+    "produzione@rullitalia.com"
+  ],
+  "extractedPhones": [
+    "04733720",
+    "+390119988535",
+    "011 9988535"
+  ],
+  "extractedVat": "12392100017"
+}

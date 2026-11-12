@@ -1,0 +1,51 @@
+{
+  "slug": "plasteco",
+  "targetUrl": "https://www.plasteco.it",
+  "searchKeyword": "saldatura robotizzata padova",
+  "measuredResponseMs": 959,
+  "renderBlockingScripts": 43,
+  "estimatedMobileLcpSeconds": 9.4,
+  "runsAds": true,
+  "detectedTrackingSignals": [
+    "Google Ads / GTM"
+  ],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@plasteco.it",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@plasteco.it",
+    "info@plasteco.it",
+    "info@plasteco.it",
+    "info@plasteco.it",
+    "info@plasteco.it",
+    "info@plasteco.it",
+    "info@plasteco.it",
+    "info@plasteco.it",
+    "info@plasteco.it",
+    "info@plasteco.it",
+    "info@plasteco.it",
+    "info@plasteco.it",
+    "info@plasteco.it",
+    "info@plasteco.it",
+    "info@plasteco.it",
+    "info@plasteco.it",
+    "info@plasteco.it",
+    "info@plasteco.it",
+    "info@plasteco.it",
+    "info@plasteco.it",
+    "info@plasteco.it"
+  ],
+  "extractedPhones": [
+    "039 9202872",
+    "039 9202907",
+    "071254163204"
+  ],
+  "extractedVat": "01518940133"
+}

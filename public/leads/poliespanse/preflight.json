@@ -1,0 +1,29 @@
+{
+  "slug": "poliespanse",
+  "targetUrl": "http://www.poliespanse.it",
+  "searchKeyword": "soluzioni imballaggio industriale parma",
+  "measuredResponseMs": 644,
+  "renderBlockingScripts": 17,
+  "estimatedMobileLcpSeconds": 5.3,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@poliespanse.it",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@poliespanse.it"
+  ],
+  "extractedPhones": [
+    "022728946253",
+    "0522 637761",
+    "0522 637781"
+  ],
+  "extractedVat": "01215000355"
+}

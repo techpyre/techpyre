@@ -1,0 +1,42 @@
+{
+  "slug": "fcl-portastampi",
+  "targetUrl": "https://www.fcl-portastampi.it",
+  "searchKeyword": "saldatura robotizzata padova",
+  "measuredResponseMs": 1827,
+  "renderBlockingScripts": 41,
+  "estimatedMobileLcpSeconds": 10,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": "Luigi Colli",
+    "firstName": "Luigi",
+    "role": "Titolare"
+  },
+  "emailSelection": {
+    "bestEmail": "info@fcl-portastampi.it",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "fcl.moldholder@gmail.com",
+    "info@fcl-portastampi.it",
+    "fcl.moldholder@gmail.com",
+    "info@fcl-portastampi.it",
+    "info@fcl-portastampi.it",
+    "fcl.moldholder@gmail.com",
+    "info@fcl-portastampi.it",
+    "privacy@fcl-portastampi.it",
+    "privacy@fcl-portastampi.it",
+    "privacy@fcl-portastampi.it",
+    "privacy@fcl-portastampi.it",
+    "fcl.moldholder@gmail.com",
+    "info@fcl-portastampi.it",
+    "info@fcl-portastampi.it"
+  ],
+  "extractedPhones": [
+    "0180904",
+    "00783140122",
+    "+39 0296381897"
+  ],
+  "extractedVat": "00783140122"
+}

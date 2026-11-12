@@ -1,0 +1,31 @@
+{
+  "slug": "lanfranconitraslochi",
+  "targetUrl": "http://www.lanfranconitraslochi.it",
+  "searchKeyword": "soluzioni imballaggio industriale parma",
+  "measuredResponseMs": 2173,
+  "renderBlockingScripts": 19,
+  "estimatedMobileLcpSeconds": 7.1,
+  "runsAds": true,
+  "detectedTrackingSignals": [
+    "Google Ads / GTM"
+  ],
+  "decisionMaker": {
+    "fullName": "Giuliano Lanfranconi",
+    "firstName": "Giuliano",
+    "role": "Titolare"
+  },
+  "emailSelection": {
+    "bestEmail": "lanfranconigiulianotraslochi@gmail.com",
+    "isGeneric": true,
+    "score": -2
+  },
+  "extractedEmails": [
+    "lanfranconigiulianotraslochi@gmail.com"
+  ],
+  "extractedPhones": [
+    "0889047",
+    "0889050",
+    "350818840"
+  ],
+  "extractedVat": "03863530105"
+}

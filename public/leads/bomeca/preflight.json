@@ -1,0 +1,31 @@
+{
+  "slug": "bomeca",
+  "targetUrl": "http://www.bomeca.it",
+  "searchKeyword": "taglio laser lamiera vicenza",
+  "measuredResponseMs": 3637,
+  "renderBlockingScripts": 18,
+  "estimatedMobileLcpSeconds": 8,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "bomeca@bomeca.it",
+    "isGeneric": true,
+    "score": 58
+  },
+  "extractedEmails": [
+    "bomeca@bomeca.it",
+    "bomeca@bomeca.it",
+    "amministrazione@bomeca.it"
+  ],
+  "extractedPhones": [
+    "044579041",
+    "3564653400",
+    "04637638453"
+  ],
+  "extractedVat": "03130780244"
+}

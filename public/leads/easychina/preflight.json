@@ -1,0 +1,65 @@
+{
+  "slug": "easychina",
+  "targetUrl": "https://www.easychina.it",
+  "searchKeyword": "compressori industriali milano",
+  "measuredResponseMs": 1885,
+  "renderBlockingScripts": 20,
+  "estimatedMobileLcpSeconds": 7.2,
+  "runsAds": true,
+  "detectedTrackingSignals": [
+    "Google Ads / GTM"
+  ],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@easychina.it",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@easychina.it",
+    "info@easychina.it",
+    "info@easychina.it",
+    "info@easychina.it",
+    "info@easychina.it",
+    "info@easychina.it",
+    "info@easychina.it",
+    "info@easychina.it",
+    "info@easychina.it",
+    "info@easychina.it",
+    "info@easychina.it",
+    "info@easychina.it",
+    "info@easychina.it",
+    "info@easychina.it",
+    "info@easychina.it",
+    "info@easychina.it",
+    "info@easychina.it",
+    "info@easychina.it",
+    "info@easychina.it",
+    "info@easychina.it",
+    "info@easychina.it",
+    "info@easychina.it",
+    "info@easychina.it",
+    "info@easychina.it",
+    "info@easychina.it",
+    "info@easychina.it",
+    "info@easychina.it",
+    "info@easychina.it",
+    "info@easychina.it",
+    "info@easychina.it",
+    "info@easychina.it",
+    "info@easychina.it",
+    "info@easychina.it",
+    "info@easychina.it",
+    "info@easychina.it"
+  ],
+  "extractedPhones": [
+    "0995652",
+    "046143829492",
+    "+393331851160"
+  ],
+  "extractedVat": "01633180557"
+}

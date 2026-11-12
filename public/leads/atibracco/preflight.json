@@ -1,0 +1,36 @@
+{
+  "slug": "atibracco",
+  "targetUrl": "https://atibracco.com",
+  "searchKeyword": "nastri trasportatori industriali torino",
+  "measuredResponseMs": 2957,
+  "renderBlockingScripts": 49,
+  "estimatedMobileLcpSeconds": 13.1,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@atibracco.com",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@atibracco.com",
+    "info@atibracco.com",
+    "info@atibracco.com",
+    "info@atibracco.com",
+    "info@atibracco.com",
+    "info@atibracco.com",
+    "info@atibracco.com",
+    "info@atibracco.com"
+  ],
+  "extractedPhones": [
+    "3333333333",
+    "066666666666",
+    "09986050012"
+  ],
+  "extractedVat": "09986050012"
+}

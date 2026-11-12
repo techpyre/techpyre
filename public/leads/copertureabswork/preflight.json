@@ -1,0 +1,30 @@
+{
+  "slug": "copertureabswork",
+  "targetUrl": "https://www.copertureabswork.it",
+  "searchKeyword": "bonifiche ambientali industriali brescia",
+  "measuredResponseMs": 4459,
+  "renderBlockingScripts": 25,
+  "estimatedMobileLcpSeconds": 9.8,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "-info@copertureabswork.it",
+    "isGeneric": true,
+    "score": 38
+  },
+  "extractedEmails": [
+    "-info@copertureabswork.it",
+    "info@copertureabswork.it"
+  ],
+  "extractedPhones": [
+    "0177012",
+    "06829468063",
+    "3011624437"
+  ],
+  "extractedVat": "03138680982"
+}

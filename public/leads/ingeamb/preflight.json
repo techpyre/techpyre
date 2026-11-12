@@ -1,0 +1,35 @@
+{
+  "slug": "ingeamb",
+  "targetUrl": "https://www.ingeamb.it",
+  "searchKeyword": "bonifiche ambientali industriali brescia",
+  "measuredResponseMs": 1233,
+  "renderBlockingScripts": 49,
+  "estimatedMobileLcpSeconds": 10.8,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@ingeamb.it",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@ingeamb.it",
+    "info@ingeamb.it",
+    "info@ingeamb.it",
+    "info@ingeamb.it",
+    "info@ingeamb.it",
+    "info@ingeamb.it",
+    "amministrazione@ingeamb.it"
+  ],
+  "extractedPhones": [
+    "02202830986",
+    "+390303583682",
+    "0306341860"
+  ],
+  "extractedVat": "02202830986"
+}

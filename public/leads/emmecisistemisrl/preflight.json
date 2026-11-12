@@ -1,0 +1,40 @@
+{
+  "slug": "emmecisistemisrl",
+  "targetUrl": "http://www.emmecisistemisrl.com",
+  "searchKeyword": "porte rapide industriali treviso",
+  "measuredResponseMs": 6511,
+  "renderBlockingScripts": 92,
+  "estimatedMobileLcpSeconds": 26.3,
+  "runsAds": true,
+  "detectedTrackingSignals": [
+    "Meta Pixel",
+    "Google Ads / GTM"
+  ],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@emmecisistemisrl.com",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "%20info@emmecisistemisrl.com",
+    "info@emmecisistemisrl.com",
+    "%20info@emmecisistemisrl.com",
+    "info@emmecisistemisrl.com",
+    "%20info@emmecisistemisrl.com",
+    "info@emmecisistemisrl.com",
+    "%20info@emmecisistemisrl.com",
+    "info@emmecisistemisrl.com",
+    "info@emmecisistemisrl.com"
+  ],
+  "extractedPhones": [
+    "078584267677",
+    "00.90625",
+    "00.0585938"
+  ],
+  "extractedVat": "03929060261"
+}

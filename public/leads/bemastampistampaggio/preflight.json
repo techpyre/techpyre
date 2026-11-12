@@ -1,0 +1,33 @@
+{
+  "slug": "bemastampistampaggio",
+  "targetUrl": "http://www.bemastampistampaggio.com",
+  "searchKeyword": "saldatura robotizzata padova",
+  "measuredResponseMs": 1757,
+  "renderBlockingScripts": 41,
+  "estimatedMobileLcpSeconds": 9.8,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@bemastampistampaggio.com",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@bemastampistampaggio.com",
+    "info@bemastampistampaggio.com",
+    "info@bemastampistampaggio.com",
+    "info@bemastampistampaggio.com",
+    "info@bemastampistampaggio.com"
+  ],
+  "extractedPhones": [
+    "0382 614767",
+    "0382 64235",
+    "0382 64039"
+  ],
+  "extractedVat": "02244730186"
+}

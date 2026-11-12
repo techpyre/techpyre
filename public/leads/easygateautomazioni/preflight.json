@@ -1,0 +1,33 @@
+{
+  "slug": "easygateautomazioni",
+  "targetUrl": "https://www.easygateautomazioni.it",
+  "searchKeyword": "porte rapide industriali treviso",
+  "measuredResponseMs": 480,
+  "renderBlockingScripts": 64,
+  "estimatedMobileLcpSeconds": 12.6,
+  "runsAds": true,
+  "detectedTrackingSignals": [
+    "Google Ads / GTM"
+  ],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@easygateautomazioni.it",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "spazioinnovazioni@pec.it",
+    "spazioinnovazioni@pec.it",
+    "info@easygateautomazioni.it"
+  ],
+  "extractedPhones": [
+    "+390497386845",
+    "+39 049 7386845",
+    "04489910283"
+  ],
+  "extractedVat": "04489910283"
+}
