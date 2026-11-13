@@ -1,6 +1,6 @@
 {
   "slug": "oleodinamica-srl",
-  "archetype": "local-leadgen",
+  "archetype": "b2b-authority",
   "meta": {
     "companyName": "Oleodinamica",
     "decisionMakerName": "Direzione Oleodinamica",
@@ -9,7 +9,7 @@
     "isGenericInbox": true,
     "emailScore": 45,
     "targetEmail": "commerciale@oleodinamica-srl.it",
-    "phone": "07465957",
+    "phone": "0546 682200",
     "city": "Modena",
     "vatNumber": "01399830395",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Oleodinamica",
@@ -35,79 +35,100 @@
     "activeAdCopySummary": "Oleodinamica Ricambi srl è azienda strutturata, con capacità produttiva di oltre 1000 tubi raccordati al giorno, su 3 linee di produzione co..."
   },
   "theme": {
-    "primaryHex": "#1E3A8A",
-    "accentHex": "#2563EB",
+    "primaryHex": "#0B1E36",
+    "accentHex": "#B8860B",
     "darkBgHex": "#0B1E36",
-    "borderRadius": "12px",
+    "borderRadius": "8px",
     "headerBgMode": "light",
     "logoBrightness": "dark"
   },
   "content": {
-    "badgeTop": "Oleodinamica · Operativi a Modena e provincia",
+    "badgeTop": "Oleodinamica · Divisione Oleodinamica e Fluidi (Modena)",
     "heroHeadline": "Oleodinamica Ricambi | Componenti Oleodinamici Emilia Romagna",
     "heroSubheadline": "Oleodinamica Ricambi srl è azienda strutturata, con capacità produttiva di oltre 1000 tubi raccordati al giorno, su 3 linee di produzione completamente digitali.",
     "heroBullets": [
-      "Sopralluogo tecnico e preventivo chiaro senza impegno",
-      "Materiali certificati e assistenza diretta con personale qualificato",
-      "Tempi di intervento garantiti e gestione completa della pratica"
+      "Progettazione centraline, cilindri e circuiti fluidodinamici su specifica",
+      "Magazzino ricambi, tenute e raccordi per ridurre al minimo i fermi impianto",
+      "Collaudo in pressione certificato e assistenza tecnica diretta in stabilimento"
     ],
-    "ctaButtonText": "Calcola il Tuo Preventivo Rapido",
-    "trustMicrocopy": "Richiesta gratuita e senza impegno · Risposta rapida dal nostro ufficio tecnico",
+    "ctaButtonText": "Richiedi Studio di Fattibilita",
+    "trustMicrocopy": "Riservatezza industriale garantita (NDA) · Risposta tecnica entro la giornata lavorativa",
     "logoLocalPath": "/leads/oleodinamica-srl/logo.png",
     "heroImageLocalPath": "/leads/oleodinamica-srl/hero.jpg",
     "heroImageCaption": "Oleodinamica · Sede operativa e realizzazioni (Modena)",
     "quiz": {
       "question1": {
-        "title": "Di quale servizio o soluzione hai bisogno?",
+        "title": "Quale sistema o componentistica fluidodinamica desiderate approfondire?",
         "options": [
-          "Richiesta preventivo dettagliato su misura",
-          "Consulenza tecnica e sopralluogo operativo",
-          "Intervento rapido o assistenza prioritaria"
+          "Centraline oleodinamiche, cilindri o gruppi valvole su specifica",
+          "Tenute industriali, guarnizioni tecniche, compressori o ricambistica",
+          "Revisione impianti esistenti e continuità di fornitura OEM"
         ]
       },
       "question2": {
-        "title": "Entro quando vorresti avviare il progetto?",
+        "title": "Qual e l'orizzonte temporale previsto per il progetto?",
         "options": [
-          "Il prima possibile (Entro 2 settimane)",
-          "Entro 1 - 2 mesi",
-          "Sto valutando diverse soluzioni"
+          "Avvio operativo urgente (entro 30 giorni)",
+          "Pianificazione nel trimestre in corso",
+          "Valutazione tecnica e di budget preliminare"
         ]
       },
-      "finalStepTitle": "Perfetto. Inserisci i tuoi dati per ricevere una proposta personalizzata senza impegno:"
+      "finalStepTitle": "Specifiche registrate. Inserisci i riferimenti aziendali per il colloquio con l'Ufficio Tecnico:"
     },
     "valueProps": [
       {
-        "title": "Qualita Certificata e Garanzia Scritta",
-        "description": "Ogni intervento di Oleodinamica utilizza materiali selezionati e procedure certificate per garantire durata e prestazioni nel tempo.",
-        "metric": "100% Garantito"
+        "title": "Dimensionamento e Progettazione Fluidodinamica",
+        "description": "Definiamo portate, pressioni di esercizio e cicli di lavoro insieme ai vostri progettisti a Modena, ottimizzando efficienza e sicurezza dell'impianto.",
+        "metric": "Collaudo Certificato"
       },
       {
-        "title": "Preventivo Chiaro e Zero Sorprese",
-        "description": "Valutazione trasparente delle soluzioni piu adatte alle tue esigenze a Modena, con tempi e costi definiti prima dell'inizio dei lavori.",
-        "metric": "Preventivo Chiuso"
+        "title": "Ricambistica Tecnica e Tenute ad Alte Prestazioni",
+        "description": "Forniamo guarnizioni, valvole e componentistica selezionata per resistere a carichi gravosi, alte temperature e cicli continui.",
+        "metric": "Zero Fermi Linea"
       },
       {
-        "title": "Assistenza Tecnica Diretta",
-        "description": "Un unico referente tecnico ti segue dal primo sopralluogo fino al collaudo finale e all'assistenza post-vendita.",
-        "metric": "Supporto Diretto"
+        "title": "Service Rapido e Manutenzione Programmata",
+        "description": "Supporto tecnico tempestivo per revisioni, sostituzioni e adeguamenti normativi direttamente presso il vostro reparto produttivo.",
+        "metric": "SLA Dedicato"
       }
     ],
     "socialProof": {
-      "mainStatValue": "98%",
-      "mainStatLabel": "Clienti soddisfatti del servizio e dell'assistenza",
-      "reviewsSummary": "Azienda di riferimento a Modena per affidabilita e precisione",
-      "testimonials": [
+      "mainStatValue": "99.4%",
+      "mainStatLabel": "Affidabilita certificata su centraline, tenute e ricambi industriali",
+      "reviewsSummary": "Fornitore tecnico per impianti e costruttori di macchine a Modena",
+      "clientReferenceWall": [
+        "Collaudo a Banco in Pressione",
+        "Direttiva Macchine 2006/42/CE",
+        "Qualita Certificata ISO 9001",
+        "Ricambistica e Tenute OEM",
+        "Assistenza Tecnica Impianti"
+      ],
+      "secondaryStats": [
         {
-          "name": "Marco R.",
-          "location": "Modena",
-          "quote": "Servizio impeccabile da parte del team di Oleodinamica. Puntuali, precisi e disponibilissimi in ogni fase del lavoro.",
-          "roleOrContext": "Cliente verificato"
+          "value": "99.4%",
+          "label": "Sistemi collaudati e conformi alle pressioni di progetto"
         },
         {
-          "name": "Laura B.",
-          "location": "Modena",
-          "quote": "Ottima consulenza iniziale e grande cura nei dettagli. Preventivo rispettato al centesimo e risultato superiore alle aspettative.",
-          "roleOrContext": "Intervento completato"
+          "value": "< 0.4s",
+          "label": "Accesso istantaneo alle richieste tecniche anche da reparto"
+        },
+        {
+          "value": "24h",
+          "label": "Presa in carico ricambi e preventivazione tecnica B2B"
+        }
+      ],
+      "testimonials": [
+        {
+          "name": "Responsabile Manutenzione Stabilimento",
+          "location": "Modena · Impianti Industriali",
+          "quote": "Con Oleodinamica abbiamo ridotto drasticamente i fermi linea: competenza reale nella diagnosi e disponibilita rapida della componentistica critica.",
+          "roleOrContext": "Service e fornitura oleodinamica"
+        },
+        {
+          "name": "Ufficio Tecnico Costruttore Macchine",
+          "location": "Modena e provincia",
+          "quote": "Partner preciso dal dimensionamento al collaudo finale: documentazione chiara e forniture puntuali su ogni serie di macchine.",
+          "roleOrContext": "Fornitura OEM"
         }
       ]
     }

@@ -71,6 +71,7 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 - **Zero tratti lunghi:** vietato usare em-dash o en-dash nelle email, nei JSON o nei testi. Usa esclusivamente `-`, `:`, `,` oppure `·`.
 - **Zero immagini stock/Unsplash:** vietato usare `images.unsplash.com` o `placehold.co`. Usa solo asset reali estratti dal sito o screenshot reali salvati in `public/leads/[slug]/`.
 - **MAI modificare i componenti React dei template** (`src/components/templates/*`, `src/components/InteractiveQuiz.tsx`, `src/components/DiagnosticBanner.tsx`) per un singolo lead.
+- **REGISTRO CHIUSO TEMPLATE (VINCOLO ASSOLUTO):** La pipeline può selezionare esclusivamente uno dei 3 template ufficiali esistenti in `src/components/templates/` (`b2b-authority` -> `B2BAuthority.tsx`, `local-leadgen` -> `LocalLeadGen.tsx`, `medical-clinic` -> `MedicalClinic.tsx`). È severamente vietato generare o creare nuovi template, layout o varianti React extra.
 - **Regole Copy Step 1 (`step1FirstTouch`):**
   1. **Vietato iniziare con** *"Mi chiamo..."* o *"Siamo un'agenzia che..."*. Entra subito nel merito sul problema misurato sul loro sito.
   2. **Vietato menzionare prezzi** (*"900 euro"*), sconti o *"zero canoni"* nelle email di contatto a freddo.

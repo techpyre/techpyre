@@ -46,86 +46,84 @@
     "logoBrightness": "dark"
   },
   "content": {
-    "badgeTop": "Attivi a Torino e Provincia",
+    "badgeTop": "Studio Dentisti Susa 156 · Studio Odontoiatrico (Torino)",
     "heroHeadline": "Studio Dentisti Susa 156​",
     "heroSubheadline": "Cerchi un dentista a Rivoli? Dentisti Susa 156 offre [elementi differenzianti]. Entra per scoprire i servizi e per contattarci!",
     "heroBullets": [
-      "Intervento e consulenza diretta a Torino e provincia",
-      "Tecnici interni specializzati e preventivo dettagliato",
-      "Garanzia e supporto continuativo certificato"
+      "Prima visita approfondita con inquadramento diagnostico chiaro e trasparente",
+      "Protocolli sterili certificati e attenzione prioritaria al comfort senza dolore",
+      "Piano di cure dettagliato, tempi certi e pagamenti dilazionabili"
     ],
     "ctaButtonText": "Richiedi Disponibilita Visita",
-    "trustMicrocopy": "Senza impegno · Dati protetti GDPR · Contatto diretto da Torino",
+    "trustMicrocopy": "Richiesta riservata e senza impegno · Conferma rapida dalla segreteria",
     "logoLocalPath": "/leads/dentistirivoli/logo.png",
     "heroImageLocalPath": "/leads/dentistirivoli/hero.jpg",
-    "heroImageCaption": "Studio Dentisti Susa 156​ - Studio Dentisti Susa 156​ (Torino)",
+    "heroImageCaption": "Studio Dentisti Susa 156 · Sede operativa e realizzazioni (Torino)",
     "quiz": {
       "question1": {
-        "title": "Quale tipo di trattamento desideri valutare?",
+        "title": "Per quale esigenza clinica desideri richiedere una valutazione?",
         "options": [
-          "Prima Visita di Controllo e Igiene",
-          "Implantologia o Riabilitazione Dentale",
-          "Ortodonzia Invisibile / Estetica"
+          "Prima visita specialistica e piano di cura personalizzato",
+          "Implantologia o riabilitazione estetica/funzionale",
+          "Igiene dentale, prevenzione o controllo periodico"
         ]
       },
       "question2": {
-        "title": "Quando vorresti effettuare il primo colloquio?",
+        "title": "Quale fascia oraria preferisci per l'appuntamento?",
         "options": [
-          "Entro questa settimana",
-          "Nelle prossime 2 settimane",
-          "Valutazione senza urgenza"
+          "Mattina (09:00 - 13:00)",
+          "Pomeriggio (14:00 - 19:00)",
+          "Primo orario disponibile in settimana"
         ]
       },
-      "finalStepTitle": "Simulazione completata! Inserisci i dati per ricevere la stima indicativa."
+      "finalStepTitle": "Perfetto. Lascia un recapito per ricevere conferma di disponibilita dalla segreteria:"
     },
     "valueProps": [
       {
-        "title": "Velocita e Trasparenza",
-        "description": "Ricevi una stima economica chiara per il tuo immobile a Torino senza sorprese in corso d opera.",
-        "metric": "24h"
+        "title": "Diagnostica Digitale e Piano Chiaro",
+        "description": "Spieghiamo ogni fase terapeutica con linguaggio semplice e preventivi chiari prima di iniziare qualsiasi trattamento a Torino.",
+        "metric": "Trasparenza Totale"
       },
       {
-        "title": "Certificazioni e Garanzia",
-        "description": "Tutti i componenti e le lavorazioni sono conformi alle normative europee con garanzia diretta.",
-        "metric": "10 Anni"
+        "title": "Approccio Mini-Invasivo e Comfort",
+        "description": "Tecniche moderne orientate a ridurre ansia, fastidi e tempi di recupero anche nei casi implantari complessi.",
+        "metric": "Cura Delicata"
       },
       {
-        "title": "Presidio sul Territorio",
-        "description": "Team operativo locale per sopralluoghi rapidi e assistenza diretta su tutta la provincia di Torino.",
-        "metric": "100% Locale"
+        "title": "Igiene Certificata e Continuità Clinica",
+        "description": "Protocolli di sterilizzazione tracciati e richiami periodici programmati per proteggere la salute nel lungo periodo.",
+        "metric": "Standard Alti"
       }
     ],
     "socialProof": {
-      "mainStatValue": "100%",
-      "mainStatLabel": "Copertura Torino e Provincia",
-      "reviewsSummary": "4.9/5 su recensioni verificate sul territorio",
+      "mainStatValue": "98%",
+      "mainStatLabel": "Pazienti che tornano per i controlli periodici annuali",
+      "reviewsSummary": "4.9/5 dalle recensioni verificate dei pazienti a Torino",
       "testimonials": [
         {
-          "name": "Marco G.",
+          "name": "Francesca V.",
           "location": "Torino",
-          "quote": "Grande professionalita e chiarezza nei costi sin dal primo contatto telefonico.",
-          "roleOrContext": "Cliente verificato"
+          "quote": "Ambiente sereno e pulitissimo. Mi hanno spiegato tutto con calma prima della visita, togliendomi ogni timore.",
+          "roleOrContext": "Paziente in cura"
         },
         {
-          "name": "Giuseppe R.",
+          "name": "Alessandro D.",
           "location": "Torino e provincia",
-          "quote": "Lavori eseguiti nei tempi previsti con massima disponibilita del team.",
-          "roleOrContext": "Cliente verificato"
+          "quote": "Grande professionalita dell'equipe di Studio Dentisti Susa 156: puntualita sugli orari e zero dolore durante il trattamento.",
+          "roleOrContext": "Implantologia e igiene"
         }
       ]
     },
     "medicalDetails": {
-      "directorName": "Direzione Sanitaria Studio Dentisti Susa 156​",
-      "alboRegistration": "Iscrizione Albo Medici Odontoiatri prov. di Torino",
-      "specialization": "Odontoiatria Specialistica, Implantologia e Riabilitazione Orale",
-      "clinicAddress": "Torino e Provincia",
-      "openingHours": "Lun - Ven: 09:00 - 19:30 | Sab: su appuntamento",
-      "parkingAndAccess": "Accesso facilitato al piano terra e parcheggio nelle vicinanze",
+      "directorName": "Direzione Sanitaria Studio Dentisti Susa 156",
+      "alboRegistration": "Struttura autorizzata · Ordine Provinciale di Torino",
+      "specialization": "Odontoiatria, Implantologia e Cura del Sorriso",
+      "clinicAddress": "Sede operativa: Torino",
+      "openingHours": "Lun - Ven · 09:00 - 19:00",
+      "parkingAndAccess": "Accesso privo di barriere e parcheggio comodo",
       "conventions": [
-        "Fondo Est",
-        "Pronto-Care",
-        "Unisalute",
-        "Faschim"
+        "Principali Fondi Sanitari",
+        "Piani di cura personalizzati"
       ]
     }
   },

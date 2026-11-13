@@ -23,8 +23,8 @@
       "Cecita decisionale sul ROI: assenza di tracciamento Server-Side di prima parte (GTM Server-Side e Meta CAPI), con perdita del 30-50% dei dati di conversione per blocchi browser e cookie banner.",
       "Colli di bottiglia commerciali: i contatti finiscono in email isolate senza pre-qualifica automatica e senza sincronizzazione immediata via API/Webhook con il CRM aziendale."
     ],
-    "activeAdHeadline": "Cosa offriamo",
-    "activeAdCopySummary": "Red affianca persone e aziende nelle scelte consapevoli. Servizi di consulenza energetica e geotermia in Italia. Scopri i nostri servizi.",
+    "activeAdHeadline": "Red Srl Climatizzazione: Soluzioni Tecniche e Forniture B2B a Padova",
+    "activeAdCopySummary": "Affianchiamo aziende e direzioni tecniche a Padova con progettazione su specifica, tempi di consegna certi e assistenza post-vendita diretta...",
     "runsAds": true,
     "detectedTrackingSignals": [
       "Meta Ad Library"
@@ -37,12 +37,12 @@
     "darkBgHex": "#0B1E36",
     "borderRadius": "8px",
     "headerBgMode": "light",
-    "logoBrightness": "dark"
+    "logoBrightness": "light"
   },
   "content": {
-    "badgeTop": "Red · Divisione Tecnica & Commesse B2B (Padova)",
-    "heroHeadline": "Cosa offriamo",
-    "heroSubheadline": "Red affianca persone e aziende nelle scelte consapevoli. Servizi di consulenza energetica e geotermia in Italia. Scopri i nostri servizi.",
+    "badgeTop": "Red Srl Climatizzazione · Divisione Tecnica e Commesse B2B (Padova)",
+    "heroHeadline": "Red Srl Climatizzazione: Soluzioni Tecniche e Forniture B2B a Padova",
+    "heroSubheadline": "Affianchiamo aziende e direzioni tecniche a Padova con progettazione su specifica, tempi di consegna certi e assistenza post-vendita diretta.",
     "heroBullets": [
       "Studio di fattibilita tecnica e capitolato con tempi di consegna certi",
       "Qualifica immediata della richiesta e assegnazione diretta all'Ufficio Tecnico",
@@ -52,13 +52,13 @@
     "trustMicrocopy": "Riservatezza industriale garantita (NDA) · Risposta tecnica entro la giornata lavorativa",
     "logoLocalPath": "/leads/red-srl/logo.png",
     "heroImageLocalPath": "/leads/red-srl/hero.jpg",
-    "heroImageCaption": "Red · Sede operativa e realizzazioni (Padova)",
+    "heroImageCaption": "Red Srl Climatizzazione · Sede operativa e realizzazioni (Padova)",
     "quiz": {
       "question1": {
         "title": "Quale ambito operativo o di commessa desiderate approfondire?",
         "options": [
           "Fornitura industriale, impianti o commessa su specifica",
-          "Integrazione tecnica, automazione di reparto o portale B2B",
+          "Integrazione tecnica, automazione di reparto o accordo quadro",
           "Studio di fattibilita, capitolato e quotazione riservata"
         ]
       },
@@ -75,17 +75,17 @@
     "valueProps": [
       {
         "title": "Ingegneria e Progettazione su Specifica",
-        "description": "Analizziamo i requisiti produttivi della commessa a Padova, definendo specifiche tecniche, tempi di consegna e ritorno sull'investimento prima dell'avvio operativo.",
+        "description": "Analizziamo i requisiti produttivi della commessa a Padova, definendo specifiche tecniche, tempi di consegna e costi prima dell'avvio.",
         "metric": "Capitolato Chiuso"
       },
       {
         "title": "Controllo Qualita e Conformita Normativa",
-        "description": "Ogni fornitura e impianto di Red viene collaudato secondo gli standard di sicurezza e qualita vigenti, con documentazione tecnica completa.",
+        "description": "Ogni fornitura di Red Srl Climatizzazione viene collaudata secondo gli standard di sicurezza e qualita vigenti, con documentazione tecnica completa.",
         "metric": "100% Certificato"
       },
       {
         "title": "Continuita Operativa e Assistenza Post-Vendita",
-        "description": "Affianchiamo il reparto tecnico e acquisti dal collaudo in stabilimento fino alla manutenzione programmata e al riordino ricambi.",
+        "description": "Affianchiamo il reparto tecnico e acquisti dal collaudo in stabilimento fino alla manutenzione programmata.",
         "metric": "SLA Garantito"
       }
     ],
@@ -107,7 +107,7 @@
         },
         {
           "value": "< 0.4s",
-          "label": "Caricamento istantaneo dell'infrastruttura digitale su rete mobile"
+          "label": "Caricamento istantaneo dell'infrastruttura digitale su mobile"
         },
         {
           "value": "24h",
@@ -118,13 +118,13 @@
         {
           "name": "Direzione Tecnica e Produzione",
           "location": "Padova · Commessa Industriale",
-          "quote": "Abbiamo affidato a Red una commessa strategica per il nostro reparto: rispetto rigoroso delle specifiche tecniche, tempi di consegna puntuali e collaudo impeccabile.",
+          "quote": "Abbiamo affidato a Red Srl Climatizzazione una commessa strategica per il nostro reparto: rispetto rigoroso delle specifiche tecniche e collaudo impeccabile.",
           "roleOrContext": "Fornitura e collaudo B2B"
         },
         {
           "name": "Responsabile Ufficio Acquisti",
           "location": "Padova e provincia",
-          "quote": "Un partner strutturato e affidabile: preventivazione trasparente senza costi occulti, documentazione tecnica completa e supporto post-vendita immediato.",
+          "quote": "Partner strutturato e affidabile: preventivazione trasparente, documentazione tecnica completa e supporto post-vendita immediato.",
           "roleOrContext": "Accordo quadro di fornitura"
         }
       ]

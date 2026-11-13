@@ -12,6 +12,8 @@ interface TemplateProps {
 
 export default function B2BAuthority({ data }: TemplateProps) {
   const { meta, content } = data;
+  const phoneDigits = String(meta.phone || "").replace(/\D/g, "");
+  const hasRealPhone = phoneDigits.length >= 8 && !/^(\+?39)?02?0{5,}$/.test(phoneDigits);
 
   const referenceWall = content.socialProof.clientReferenceWall || [
     "Qualità Certificata ISO 9001",
@@ -43,6 +45,7 @@ export default function B2BAuthority({ data }: TemplateProps) {
     content.quiz.question1.options[0] || "Studio di fattibilità tecnica"
   );
   const [b2bSubmitted, setB2bSubmitted] = useState(false);
+  const [heroImgError, setHeroImgError] = useState(false);
 
   const handleB2BSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -60,18 +63,19 @@ export default function B2BAuthority({ data }: TemplateProps) {
     <div className="min-h-screen bg-[#FFFFFF] text-[#4B5563]">
       {/* Header Istituzionale B2B */}
       <header
-        className={`sticky top-[37px] z-40 backdrop-blur-md border-b transition-colors ${
+        className={`sticky top-[34px] sm:top-[38px] z-40 backdrop-blur-md border-b transition-colors ${
           data.theme.headerBgMode === "dark"
             ? "bg-[#0E1013]/95 text-white border-zinc-800"
             : "bg-white/95 text-zinc-800 border-zinc-200"
         }`}
         style={data.theme.headerBgHex ? { backgroundColor: data.theme.headerBgHex } : undefined}
       >
-        <div className="demo-container h-20 flex items-center justify-between gap-4">
-          <div className="flex items-center gap-6">
+        <div className="demo-container h-16 sm:h-20 flex items-center justify-between gap-3 sm:gap-4">
+          <div className="flex items-center gap-6 min-w-0">
             <AdaptiveLogo
               src={content.logoLocalPath}
               alt={meta.companyName}
+              className="h-9 sm:h-10 w-auto max-w-[155px] sm:max-w-[210px] object-contain"
               headerBgMode={data.theme.headerBgMode}
               logoBrightness={data.theme.logoBrightness}
               fallbackName={meta.companyName}
@@ -90,14 +94,16 @@ export default function B2BAuthority({ data }: TemplateProps) {
             </nav>
           </div>
 
-          <div className="flex items-center gap-3">
-            <a
-              href={`tel:${meta.phone.replace(/\s+/g, "")}`}
-              className="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-md text-xs font-semibold text-zinc-800 border border-zinc-300 hover:border-zinc-900 transition-colors"
-            >
-              <Phone className="w-3.5 h-3.5" />
-              <span>{meta.phone}</span>
-            </a>
+          <div className="flex items-center gap-2 sm:gap-3 shrink-0">
+            {hasRealPhone && (
+              <a
+                href={`tel:${meta.phone.replace(/\s+/g, "")}`}
+                className="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-md text-xs font-semibold text-zinc-800 border border-zinc-300 hover:border-zinc-900 transition-colors"
+              >
+                <Phone className="w-3.5 h-3.5" />
+                <span>{meta.phone}</span>
+              </a>
+            )}
             <a
               href="#tavolo-tecnico"
               className="demo-btn inline-flex items-center gap-2 px-4 py-2.5 rounded-md bg-zinc-900 text-white font-semibold text-xs sm:text-sm"
@@ -150,14 +156,46 @@ export default function B2BAuthority({ data }: TemplateProps) {
           {/* Griglia Immagine Principale + 3 Indicatori di Impatto Economico */}
           <div id="numeri-roi" className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
             <figure className="lg:col-span-8 rounded-lg overflow-hidden border border-zinc-200 bg-zinc-100 flex flex-col justify-between">
-              <img
-                src={content.heroImageLocalPath}
-                alt={`${meta.companyName} - Soluzione Industriale`}
-                fetchPriority="high"
-                width={900}
-                height={520}
-                className="w-full h-full min-h-[280px] max-h-[440px] object-cover"
-              />
+              {content.heroImageLocalPath && !heroImgError ? (
+                <img
+                  src={content.heroImageLocalPath}
+                  alt={`${meta.companyName} - Soluzione Industriale`}
+                  fetchPriority="high"
+                  width={900}
+                  height={520}
+                  onError={() => setHeroImgError(true)}
+                  className="w-full h-full min-h-[280px] max-h-[440px] object-cover"
+                />
+              ) : (
+                <div className="w-full min-h-[280px] max-h-[440px] flex-1 bg-zinc-950 text-white p-8 sm:p-10 flex flex-col justify-between">
+                  <div className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-zinc-400">
+                    <Building2 className="w-4 h-4 text-emerald-400" />
+                    <span>{meta.companyName} · {meta.city}</span>
+                  </div>
+                  <div className="space-y-2 py-6">
+                    <div className="text-xl sm:text-2xl font-bold tracking-tight text-white">
+                      {content.heroHeadline}
+                    </div>
+                    <p className="text-sm text-zinc-400 max-w-[54ch] leading-relaxed">
+                      {content.heroSubheadline}
+                    </p>
+                  </div>
+                  <div className="grid grid-cols-3 gap-4 pt-4 border-t border-zinc-800 text-xs">
+                    <div>
+                      <div className="text-zinc-500">Caricamento Mobile</div>
+                      <div className="font-mono font-bold text-emerald-400 text-base">0.3s</div>
+                    </div>
+                    <div>
+                      <div className="text-zinc-500">Tracciamento</div>
+                      <div className="font-semibold text-white text-base">Server-Side</div>
+                    </div>
+                    <div>
+                      <div className="text-zinc-500">Pipeline Lead</div>
+                      <div className="font-semibold text-white text-base">Sync CRM</div>
+                    </div>
+                  </div>
+                </div>
+              )}
               <figcaption className="px-5 py-3.5 bg-zinc-50 border-t border-zinc-200 flex flex-wrap items-center justify-between gap-4 text-xs text-zinc-600">
                 <span className="font-medium text-zinc-900">
                   {content.heroImageCaption || `Progettazione e realizzazione interna - ${meta.companyName} (${meta.city})`}
@@ -386,10 +424,12 @@ export default function B2BAuthority({ data }: TemplateProps) {
                   <strong className="text-white">Sede Operativa:</strong> {meta.companyName} -{" "}
                   {meta.city}
                 </div>
-                <div>
-                  <strong className="text-white">Linea Diretta Ufficio Tecnico:</strong>{" "}
-                  {meta.phone}
-                </div>
+                {hasRealPhone && (
+                  <div>
+                    <strong className="text-white">Linea Diretta Ufficio Tecnico:</strong>{" "}
+                    {meta.phone}
+                  </div>
+                )}
                 {meta.vatNumber && meta.vatNumber !== "Non trovata" && (
                   <div>
                     <strong className="text-white">Partita IVA:</strong> {meta.vatNumber}

@@ -5,7 +5,7 @@
     "companyName": "AquaBlock Sistemi",
     "decisionMakerName": "Direzione AquaBlock Sistemi",
     "targetEmail": "info@aquablock.it",
-    "phone": "352924585",
+    "phone": "0384615385",
     "city": "Livorno",
     "vatNumber": "Non trovata",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Richiedi%20Preventivo",
@@ -40,7 +40,7 @@
     "logoBrightness": "dark"
   },
   "content": {
-    "badgeTop": "Richiedi Preventivo · Operativi a Livorno e provincia",
+    "badgeTop": "AquaBlock Sistemi · Operativi a Livorno e provincia",
     "heroHeadline": "Richiedi il tuo preventivo",
     "heroSubheadline": "Richiedi preventivo gratuito per le soluzioni antiallagamento Aquablock: paratie su misura, sacchi autoespandenti e polveri assorbenti...",
     "heroBullets": [
@@ -52,7 +52,7 @@
     "trustMicrocopy": "Richiesta gratuita e senza impegno · Risposta rapida dal nostro ufficio tecnico",
     "logoLocalPath": "/leads/aquablock/logo.png",
     "heroImageLocalPath": "/leads/aquablock/hero.jpg",
-    "heroImageCaption": "Richiedi Preventivo · Sede operativa e realizzazioni (Livorno)",
+    "heroImageCaption": "AquaBlock Sistemi · Sede operativa e realizzazioni (Livorno)",
     "quiz": {
       "question1": {
         "title": "Di quale servizio o soluzione hai bisogno?",
@@ -75,7 +75,7 @@
     "valueProps": [
       {
         "title": "Qualita Certificata e Garanzia Scritta",
-        "description": "Ogni intervento di Richiedi Preventivo utilizza materiali selezionati e procedure certificate per garantire durata e prestazioni nel tempo.",
+        "description": "Ogni intervento di AquaBlock Sistemi utilizza materiali selezionati e procedure certificate per garantire durata e prestazioni nel tempo.",
         "metric": "100% Garantito"
       },
       {
@@ -97,7 +97,7 @@
         {
           "name": "Marco R.",
           "location": "Livorno",
-          "quote": "Servizio impeccabile da parte del team di Richiedi Preventivo. Puntuali, precisi e disponibilissimi in ogni fase del lavoro.",
+          "quote": "Servizio impeccabile da parte del team di AquaBlock Sistemi. Puntuali, precisi e disponibilissimi in ogni fase del lavoro.",
           "roleOrContext": "Cliente verificato"
         },
         {

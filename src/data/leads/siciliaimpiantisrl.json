@@ -1,6 +1,6 @@
 {
   "slug": "siciliaimpiantisrl",
-  "archetype": "b2b-authority",
+  "archetype": "local-leadgen",
   "meta": {
     "companyName": "Sicilia Impianti",
     "decisionMakerName": "Direzione Sicilia Impianti",
@@ -36,100 +36,79 @@
     "renderBlockingCount": 8
   },
   "theme": {
-    "primaryHex": "#0B1E36",
-    "accentHex": "#B8860B",
+    "primaryHex": "#1E3A8A",
+    "accentHex": "#2563EB",
     "darkBgHex": "#0B1E36",
-    "borderRadius": "8px",
+    "borderRadius": "12px",
     "headerBgMode": "light",
-    "logoBrightness": "dark"
+    "logoBrightness": "light"
   },
   "content": {
-    "badgeTop": "Sicilia Impianti · Divisione Tecnica & Commesse B2B (Catania)",
+    "badgeTop": "Sicilia Impianti · Sicurezza e Protezione (Catania)",
     "heroHeadline": "Leader nella realizzazione e nell'adeguamento impianti elettrici a Catania",
     "heroSubheadline": "Sicilia Impianti Srl offre un ampio spettro di servizi nel settore elettrico, delle automazioni e sicurezza. Contattate lo staff per un sopralluogo.",
     "heroBullets": [
-      "Studio di fattibilita tecnica e capitolato con tempi di consegna certi",
-      "Qualifica immediata della richiesta e assegnazione diretta all'Ufficio Tecnico",
-      "Produzione e assistenza certificata con referente unico dedicato"
+      "Interventi tempestivi a domicilio con tecnici qualificati sul territorio",
+      "Sistemi di sicurezza e serrature certificate antiscasso di ultima generazione",
+      "Preventivo chiaro prima dell'uscita e garanzia diretta sui componenti"
     ],
-    "ctaButtonText": "Richiedi Studio di Fattibilita",
-    "trustMicrocopy": "Riservatezza industriale garantita (NDA) · Risposta tecnica entro la giornata lavorativa",
+    "ctaButtonText": "Calcola il Tuo Preventivo Rapido",
+    "trustMicrocopy": "Richiesta gratuita e senza impegno · Risposta rapida dal nostro ufficio tecnico",
     "logoLocalPath": "/leads/siciliaimpiantisrl/logo.png",
     "heroImageLocalPath": "/leads/siciliaimpiantisrl/hero.jpg",
     "heroImageCaption": "Sicilia Impianti · Sede operativa e realizzazioni (Catania)",
     "quiz": {
       "question1": {
-        "title": "Quale ambito operativo o di commessa desiderate approfondire?",
+        "title": "Di quale intervento di sicurezza hai bisogno?",
         "options": [
-          "Fornitura industriale, impianti o commessa su specifica",
-          "Integrazione tecnica, automazione di reparto o portale B2B",
-          "Studio di fattibilita, capitolato e quotazione riservata"
+          "Installazione sistema antifurto o videosorveglianza",
+          "Sostituzione serratura europea o porta blindata",
+          "Assistenza tecnica urgente su porte e serrature"
         ]
       },
       "question2": {
-        "title": "Qual e l'orizzonte temporale previsto per il progetto?",
+        "title": "Dove va eseguito l'intervento?",
         "options": [
-          "Avvio operativo urgente (entro 30 giorni)",
-          "Pianificazione nel trimestre in corso",
-          "Valutazione tecnica e di budget preliminare"
+          "Appartamento o abitazione indipendente",
+          "Ufficio, negozio o studio professionale",
+          "Condominio o autorimessa"
         ]
       },
-      "finalStepTitle": "Specifiche registrate. Inserisci i riferimenti aziendali per il colloquio con l'Ufficio Tecnico:"
+      "finalStepTitle": "Richiesta registrata. Inserisci i tuoi recapiti per un contatto rapido dal tecnico:"
     },
     "valueProps": [
       {
-        "title": "Ingegneria e Progettazione su Specifica",
-        "description": "Analizziamo i requisiti produttivi della commessa a Catania, definendo specifiche tecniche, tempi di consegna e ritorno sull'investimento prima dell'avvio operativo.",
-        "metric": "Capitolato Chiuso"
+        "title": "Analisi Punti Critici e Consulenza Diretta",
+        "description": "Verifichiamo accessi, serramenti e vulnerabilita dell'immobile a Catania proponendo solo le protezioni realmente utili.",
+        "metric": "Sopralluogo Rapido"
       },
       {
-        "title": "Controllo Qualita e Conformita Normativa",
-        "description": "Ogni fornitura e impianto di Sicilia Impianti viene collaudato secondo gli standard di sicurezza e qualita vigenti, con documentazione tecnica completa.",
-        "metric": "100% Certificato"
+        "title": "Componenti Certificati Alta Sicurezza",
+        "description": "Sicilia Impianti installa dispositivi affidabili per proteggere la tua famiglia e i tuoi beni senza falsi allarmi.",
+        "metric": "Alta Affidabilita"
       },
       {
-        "title": "Continuita Operativa e Assistenza Post-Vendita",
-        "description": "Affianchiamo il reparto tecnico e acquisti dal collaudo in stabilimento fino alla manutenzione programmata e al riordino ricambi.",
-        "metric": "SLA Garantito"
+        "title": "Assistenza Diretta H24 sul Territorio",
+        "description": "Un referente locale reale sempre reperibile per configurazioni, manutenzioni e urgenze.",
+        "metric": "Pronto Intervento"
       }
     ],
     "socialProof": {
-      "mainStatValue": "99.4%",
-      "mainStatLabel": "Commesse B2B consegnate entro i tempi contrattuali",
-      "reviewsSummary": "Partner tecnico di riferimento per imprese e stabilimenti a Catania",
-      "clientReferenceWall": [
-        "Qualita Certificata ISO 9001",
-        "Conformita Tecnica CE",
-        "Integrazione Gestionale / ERP",
-        "Capitolato e Preventivo Chiuso",
-        "Assistenza Tecnica Diretta"
-      ],
-      "secondaryStats": [
-        {
-          "value": "99.4%",
-          "label": "Commesse consegnate nel pieno rispetto dei tempi contrattuali"
-        },
-        {
-          "value": "< 0.4s",
-          "label": "Caricamento istantaneo dell'infrastruttura digitale su rete mobile"
-        },
-        {
-          "value": "24h",
-          "label": "Presa in carico tecnica e invio automatico della richiesta al CRM"
-        }
-      ],
+      "mainStatValue": "98%",
+      "mainStatLabel": "Interventi risolti alla prima uscita con garanzia scritta",
+      "reviewsSummary": "4.9/5 da famiglie e attivita a Catania",
       "testimonials": [
         {
-          "name": "Direzione Tecnica e Produzione",
-          "location": "Catania · Commessa Industriale",
-          "quote": "Abbiamo affidato a Sicilia Impianti una commessa strategica per il nostro reparto: rispetto rigoroso delle specifiche tecniche, tempi di consegna puntuali e collaudo impeccabile.",
-          "roleOrContext": "Fornitura e collaudo B2B"
+          "name": "Roberto T.",
+          "location": "Catania",
+          "quote": "Intervenuti in giornata per l'aggiornamento delle serrature. Lavoro pulito, veloce e prezzo assolutamente corretto.",
+          "roleOrContext": "Sicurezza abitazione"
         },
         {
-          "name": "Responsabile Ufficio Acquisti",
+          "name": "Giulia N.",
           "location": "Catania e provincia",
-          "quote": "Un partner strutturato e affidabile: preventivazione trasparente senza costi occulti, documentazione tecnica completa e supporto post-vendita immediato.",
-          "roleOrContext": "Accordo quadro di fornitura"
+          "quote": "Sistema di allarme semplice da usare da smartphone e installato senza cavi a vista. Consigliatissimi.",
+          "roleOrContext": "Impianto antintrusione"
         }
       ]
     }

@@ -1,6 +1,6 @@
 {
   "slug": "prosapio",
-  "archetype": "b2b-authority",
+  "archetype": "local-leadgen",
   "meta": {
     "companyName": "Prosapio Patrick Service srl",
     "decisionMakerName": "Direzione Prosapio Patrick Service srl",
@@ -37,100 +37,79 @@
     "activeAdCopySummary": "Prosapio a Bologna: esperti in ristrutturazioni edili, impianti idraulici, soluzioni sostenibili ed energie rinnovabili. Affidati a oltre 30..."
   },
   "theme": {
-    "primaryHex": "#0B1E36",
-    "accentHex": "#B8860B",
+    "primaryHex": "#2070c0",
+    "accentHex": "#2563EB",
     "darkBgHex": "#0B1E36",
-    "borderRadius": "8px",
+    "borderRadius": "12px",
     "headerBgMode": "light",
     "logoBrightness": "dark"
   },
   "content": {
-    "badgeTop": "Prosapio Patrick Service srl · Divisione Tecnica & Commesse B2B (San Lazzaro di Savena)",
+    "badgeTop": "Prosapio Patrick Service srl · Energia e Comfort Termico (San Lazzaro di Savena)",
     "heroHeadline": "Prosapio Patrick Service - Ristrutturazioni Edili e Impianti Green Chiavi in Mano a Bologna",
     "heroSubheadline": "Prosapio a Bologna: esperti in ristrutturazioni edili, impianti idraulici, soluzioni sostenibili ed energie rinnovabili. Affidati a oltre 30 anni di esperienza per lavori chiavi in mano, efficienti e certificat",
     "heroBullets": [
-      "Studio di fattibilita tecnica e capitolato con tempi di consegna certi",
-      "Qualifica immediata della richiesta e assegnazione diretta all'Ufficio Tecnico",
-      "Produzione e assistenza certificata con referente unico dedicato"
+      "Analisi consumi in bolletta e dimensionamento reale senza sovrastime",
+      "Installazione certificata con tecnici interni abilitati F-Gas / FER",
+      "Gestione completa pratiche di allaccio, ENEA e incentivi fiscali"
     ],
-    "ctaButtonText": "Richiedi Studio di Fattibilita",
-    "trustMicrocopy": "Riservatezza industriale garantita (NDA) · Risposta tecnica entro la giornata lavorativa",
+    "ctaButtonText": "Calcola il Tuo Preventivo Rapido",
+    "trustMicrocopy": "Richiesta gratuita e senza impegno · Risposta rapida dal nostro ufficio tecnico",
     "logoLocalPath": "/leads/prosapio/logo.png",
     "heroImageLocalPath": "/leads/prosapio/hero.jpg",
     "heroImageCaption": "Prosapio Patrick Service srl · Sede operativa e realizzazioni (San Lazzaro di Savena)",
     "quiz": {
       "question1": {
-        "title": "Quale ambito operativo o di commessa desiderate approfondire?",
+        "title": "Quale impianto desideri installare o sostituire?",
         "options": [
-          "Fornitura industriale, impianti o commessa su specifica",
-          "Integrazione tecnica, automazione di reparto o portale B2B",
-          "Studio di fattibilita, capitolato e quotazione riservata"
+          "Impianto fotovoltaico con eventuale sistema di accumulo",
+          "Climatizzatori, pompa di calore o caldaia ad alta efficienza",
+          "Riqualificazione energetica completa dell'abitazione"
         ]
       },
       "question2": {
-        "title": "Qual e l'orizzonte temporale previsto per il progetto?",
+        "title": "Qual e il tuo obiettivo principale?",
         "options": [
-          "Avvio operativo urgente (entro 30 giorni)",
-          "Pianificazione nel trimestre in corso",
-          "Valutazione tecnica e di budget preliminare"
+          "Abbattere subito i costi in bolletta",
+          "Accesso agli incentivi e detrazioni fiscali attive",
+          "Sostituzione urgente con sopralluogo tecnico rapido"
         ]
       },
-      "finalStepTitle": "Specifiche registrate. Inserisci i riferimenti aziendali per il colloquio con l'Ufficio Tecnico:"
+      "finalStepTitle": "Perfetto. Lascia i tuoi dati per ricevere la simulazione tecnica e il preventivo dedicato:"
     },
     "valueProps": [
       {
-        "title": "Ingegneria e Progettazione su Specifica",
-        "description": "Analizziamo i requisiti produttivi della commessa a San Lazzaro di Savena, definendo specifiche tecniche, tempi di consegna e ritorno sull'investimento prima dell'avvio operativo.",
-        "metric": "Capitolato Chiuso"
+        "title": "Dimensionamento Sui Tuoi Consumi Reali",
+        "description": "Calcoliamo potenza, accumulo o taglia della pompa di calore per offrirti il miglior rientro economico possibile a San Lazzaro di Savena.",
+        "metric": "Resa Massima"
       },
       {
-        "title": "Controllo Qualita e Conformita Normativa",
-        "description": "Ogni fornitura e impianto di Prosapio Patrick Service srl viene collaudato secondo gli standard di sicurezza e qualita vigenti, con documentazione tecnica completa.",
-        "metric": "100% Certificato"
+        "title": "Installazione Certificata e Sicura",
+        "description": "I tecnici di Prosapio Patrick Service srl eseguono il lavoro a regola d'arte rilasciando tutte le dichiarazioni di conformita.",
+        "metric": "100% A Norma"
       },
       {
-        "title": "Continuita Operativa e Assistenza Post-Vendita",
-        "description": "Affianchiamo il reparto tecnico e acquisti dal collaudo in stabilimento fino alla manutenzione programmata e al riordino ricambi.",
-        "metric": "SLA Garantito"
+        "title": "Assistenza e Pratiche Chiavi in Mano",
+        "description": "Seguiamo noi iter autorizzativi, pratiche incentivi e manutenzione programmata post-installazione.",
+        "metric": "Zero Pensieri"
       }
     ],
     "socialProof": {
-      "mainStatValue": "99.4%",
-      "mainStatLabel": "Commesse B2B consegnate entro i tempi contrattuali",
-      "reviewsSummary": "Partner tecnico di riferimento per imprese e stabilimenti a San Lazzaro di Savena",
-      "clientReferenceWall": [
-        "Qualita Certificata ISO 9001",
-        "Conformita Tecnica CE",
-        "Integrazione Gestionale / ERP",
-        "Capitolato e Preventivo Chiuso",
-        "Assistenza Tecnica Diretta"
-      ],
-      "secondaryStats": [
-        {
-          "value": "99.4%",
-          "label": "Commesse consegnate nel pieno rispetto dei tempi contrattuali"
-        },
-        {
-          "value": "< 0.4s",
-          "label": "Caricamento istantaneo dell'infrastruttura digitale su rete mobile"
-        },
-        {
-          "value": "24h",
-          "label": "Presa in carico tecnica e invio automatico della richiesta al CRM"
-        }
-      ],
+      "mainStatValue": "98%",
+      "mainStatLabel": "Clienti soddisfatti del risparmio energetico ottenuto",
+      "reviewsSummary": "4.9/5 da clienti residenziali a San Lazzaro di Savena",
       "testimonials": [
         {
-          "name": "Direzione Tecnica e Produzione",
-          "location": "San Lazzaro di Savena · Commessa Industriale",
-          "quote": "Abbiamo affidato a Prosapio Patrick Service srl una commessa strategica per il nostro reparto: rispetto rigoroso delle specifiche tecniche, tempi di consegna puntuali e collaudo impeccabile.",
-          "roleOrContext": "Fornitura e collaudo B2B"
+          "name": "Simone G.",
+          "location": "San Lazzaro di Savena",
+          "quote": "Impianto dimensione perfetta per i nostri consumi. Prosapio Patrick Service srl ha gestito installazione e pratiche in tempi record.",
+          "roleOrContext": "Fotovoltaico con accumulo"
         },
         {
-          "name": "Responsabile Ufficio Acquisti",
+          "name": "Elena P.",
           "location": "San Lazzaro di Savena e provincia",
-          "quote": "Un partner strutturato e affidabile: preventivazione trasparente senza costi occulti, documentazione tecnica completa e supporto post-vendita immediato.",
-          "roleOrContext": "Accordo quadro di fornitura"
+          "quote": "Tecnici puliti e precisi nel montaggio del nuovo impianto di climatizzazione. Preventivo chiaro fin dal primo giorno.",
+          "roleOrContext": "Pompa di calore e clima"
         }
       ]
     }

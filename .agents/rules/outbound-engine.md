@@ -18,12 +18,12 @@
   - **Valkiria International** (Servizio 02 · Ecosistema B2B & Portale Ordini Custom): `https://b2b-demo.techpyre.eu` (`LCP < 0.4s`, `100/100 CWV`)
   - **Kinetix Performance** (Servizio 01 + 04 · Infrastruttura di Conversione & Pipeline CRM): `https://headless-demo.techpyre.eu` (`0.3s`, `TTFB < 50ms`, `+68% Resa Lead`)
 
-## 2. Architettura ed Economia dei Token
-1. **MAI modificare il codice dei componenti React** (`src/components/templates/*`, `src/components/InteractiveQuiz.tsx`, `src/components/DiagnosticBanner.tsx`, `src/components/TechPyreFooter.tsx`) quando generi una demo per un singolo cliente.
+## 2. Architettura ed Economia dei Token (Registro Chiuso Template)
+1. **MAI modificare o aggiungere componenti React/template** (`src/components/templates/*`, `src/components/InteractiveQuiz.tsx`, `src/components/DiagnosticBanner.tsx`, `src/components/TechPyreFooter.tsx`). Sono ammessi **ESCLUSIVAMENTE** i 3 template ufficiali già presenti nel codebase (`b2b-authority` -> `B2BAuthority.tsx`, `local-leadgen` -> `LocalLeadGen.tsx`, `medical-clinic` -> `MedicalClinic.tsx`): è vietato creare nuovi file template o varianti layout extra.
 2. Ogni nuova demo consiste ESCLUSIVAMENTE in:
    - Asset grafici reali salvati in `public/leads/[slug]/`
    - Un singolo file JSON validato su `src/types/lead.ts` salvato in `src/data/leads/[slug].json`
-3. **Zero Immagini Stock/Unsplash:** È severamente vietato usare URL di `images.unsplash.com` o `placehold.co`. Estrai sempre gli URL delle immagini reali dal DOM della landing page del cliente o fai uno screenshot pulito di una sezione visiva del loro sito/inserzione e salvalo localmente in `public/leads/[slug]/hero.jpg`.
+3. **Zero Immagini Stock/Unsplash:** È severamente vietato usare URL di `images.unsplash.com`, `placehold.co` o fallback incrociati verso altri lead (`/leads/infissimpm/hero.jpg`). Estrai sempre gli URL delle immagini reali dal DOM/subpagine della landing page del cliente o cattura uno screenshot pulito sopra la piega del sito reale e salvalo localmente in `public/leads/[slug]/hero.jpg`.
 4. **Rimozione Integrale dei Tratti Lunghi:** Non usare MAI tratti lunghi (em-dash o en-dash) in nessun testo, JSON, oggetto email o corpo email. Usa esclusivamente `-`, `:`, `,` oppure `·`.
 5. **Regola Anti-Spam e Posizionamento B2B per l'Email (`emailPlainTextBody`):**
    - Testo puro, massimo 135 parole, tono professionale, esecutivo e rispettoso (usa il "Lei" o il "Voi" aziendale, mai il "tu" confidenziale al primo contatto).

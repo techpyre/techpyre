@@ -29,7 +29,7 @@
       "Manca un simulatore rapido guidato a 2 domande per quantificare le esigenze del cliente in tempo reale."
     ],
     "activeAdHeadline": "Caldaie e Climatizzatori: Vendita e Manutenzione | Climanet Italia",
-    "activeAdCopySummary": "Campagna pubblicitaria attiva su Meta per il territorio di Milano e provincia.",
+    "activeAdCopySummary": "Caldaie e Climatizzatori: Vendita e Manutenzione: Climanet è presente a Roma, Torino, Milano, Firenze, Padova, Genova, Napoli, Perugia, Bolo...",
     "runsAds": true,
     "detectedTrackingSignals": [
       "Google Tag Manager"
@@ -37,80 +37,79 @@
     "renderBlockingCount": 8
   },
   "theme": {
-    "primaryHex": "#8060e0",
-    "accentHex": "#e08020",
-    "darkBgHex": "#0F1113",
-    "borderRadius": "8px",
-    "secondaryHex": "#804080",
+    "primaryHex": "#1E3A8A",
+    "accentHex": "#2563EB",
+    "darkBgHex": "#0B1E36",
+    "borderRadius": "12px",
     "headerBgMode": "light",
-    "logoBrightness": "dark"
+    "logoBrightness": "light"
   },
   "content": {
-    "badgeTop": "Attivi a Milano e Provincia",
+    "badgeTop": "Climanet Online · Energia e Comfort Termico (Roma)",
     "heroHeadline": "Caldaie e Climatizzatori: Vendita e Manutenzione | Climanet Italia",
     "heroSubheadline": "Caldaie e Climatizzatori: Vendita e Manutenzione: Climanet è presente a Roma, Torino, Milano, Firenze, Padova, Genova, Napoli, Perugia, Bologna.",
     "heroBullets": [
-      "Intervento e consulenza diretta a Milano e provincia",
-      "Tecnici interni specializzati e preventivo dettagliato",
-      "Garanzia e supporto continuativo certificato"
+      "Analisi consumi in bolletta e dimensionamento reale senza sovrastime",
+      "Installazione certificata con tecnici interni abilitati F-Gas / FER",
+      "Gestione completa pratiche di allaccio, ENEA e incentivi fiscali"
     ],
-    "ctaButtonText": "Calcola Preventivo Rapido",
-    "trustMicrocopy": "Senza impegno · Dati protetti GDPR · Contatto diretto da Milano",
+    "ctaButtonText": "Calcola il Tuo Preventivo Rapido",
+    "trustMicrocopy": "Richiesta gratuita e senza impegno · Risposta rapida dal nostro ufficio tecnico",
     "logoLocalPath": "/leads/climanetonline/logo.png",
     "heroImageLocalPath": "/leads/climanetonline/hero.jpg",
-    "heroImageCaption": "Caldaie e Climatizzatori: Vendita e Manutenzione | Climanet Italia - Caldaie e Climatizzatori (Milano)",
+    "heroImageCaption": "Climanet Online · Sede operativa e realizzazioni (Roma)",
     "quiz": {
       "question1": {
-        "title": "Quale tipologia di intervento desideri valutare?",
+        "title": "Quale impianto desideri installare o sostituire?",
         "options": [
-          "Impianto Residenziale per Casa / Villa",
-          "Soluzione Commerciale / Piccola Impresa",
-          "Ampliamento o Manutenzione Impianto"
+          "Impianto fotovoltaico con eventuale sistema di accumulo",
+          "Climatizzatori, pompa di calore o caldaia ad alta efficienza",
+          "Riqualificazione energetica completa dell'abitazione"
         ]
       },
       "question2": {
-        "title": "Entro quando vorresti realizzare l intervento indicativamente?",
+        "title": "Qual e il tuo obiettivo principale?",
         "options": [
-          "Il prima possibile (entro 30 giorni)",
-          "Entro 3-6 mesi",
-          "Valutazione preliminare di fattibilità"
+          "Abbattere subito i costi in bolletta",
+          "Accesso agli incentivi e detrazioni fiscali attive",
+          "Sostituzione urgente con sopralluogo tecnico rapido"
         ]
       },
-      "finalStepTitle": "Simulazione completata! Inserisci i dati per ricevere la stima indicativa."
+      "finalStepTitle": "Perfetto. Lascia i tuoi dati per ricevere la simulazione tecnica e il preventivo dedicato:"
     },
     "valueProps": [
       {
-        "title": "Velocita e Trasparenza",
-        "description": "Ricevi una stima economica chiara per il tuo immobile a Milano senza sorprese in corso d opera.",
-        "metric": "24h"
+        "title": "Dimensionamento Sui Tuoi Consumi Reali",
+        "description": "Calcoliamo potenza, accumulo o taglia della pompa di calore per offrirti il miglior rientro economico possibile a Roma.",
+        "metric": "Resa Massima"
       },
       {
-        "title": "Certificazioni e Garanzia",
-        "description": "Tutti i componenti e le lavorazioni sono conformi alle normative europee con garanzia diretta.",
-        "metric": "10 Anni"
+        "title": "Installazione Certificata e Sicura",
+        "description": "I tecnici di Climanet Online eseguono il lavoro a regola d'arte rilasciando tutte le dichiarazioni di conformita.",
+        "metric": "100% A Norma"
       },
       {
-        "title": "Presidio sul Territorio",
-        "description": "Team operativo locale per sopralluoghi rapidi e assistenza diretta su tutta la provincia di Milano.",
-        "metric": "100% Locale"
+        "title": "Assistenza e Pratiche Chiavi in Mano",
+        "description": "Seguiamo noi iter autorizzativi, pratiche incentivi e manutenzione programmata post-installazione.",
+        "metric": "Zero Pensieri"
       }
     ],
     "socialProof": {
-      "mainStatValue": "100%",
-      "mainStatLabel": "Copertura Milano e Provincia",
-      "reviewsSummary": "4.9/5 su recensioni verificate sul territorio",
+      "mainStatValue": "98%",
+      "mainStatLabel": "Clienti soddisfatti del risparmio energetico ottenuto",
+      "reviewsSummary": "4.9/5 da clienti residenziali a Roma",
       "testimonials": [
         {
-          "name": "Marco G.",
-          "location": "Milano",
-          "quote": "Grande professionalita e chiarezza nei costi sin dal primo contatto telefonico.",
-          "roleOrContext": "Cliente verificato"
+          "name": "Simone G.",
+          "location": "Roma",
+          "quote": "Impianto dimensione perfetta per i nostri consumi. Climanet Online ha gestito installazione e pratiche in tempi record.",
+          "roleOrContext": "Fotovoltaico con accumulo"
         },
         {
-          "name": "Giuseppe R.",
-          "location": "Milano e provincia",
-          "quote": "Lavori eseguiti nei tempi previsti con massima disponibilita del team.",
-          "roleOrContext": "Cliente verificato"
+          "name": "Elena P.",
+          "location": "Roma e provincia",
+          "quote": "Tecnici puliti e precisi nel montaggio del nuovo impianto di climatizzazione. Preventivo chiaro fin dal primo giorno.",
+          "roleOrContext": "Pompa di calore e clima"
         }
       ]
     }

@@ -29,8 +29,8 @@
       "Cecita decisionale sul ROI: assenza di tracciamento Server-Side di prima parte (GTM Server-Side e Meta CAPI), con perdita del 30-50% dei dati di conversione per blocchi browser e cookie banner.",
       "Colli di bottiglia commerciali: i contatti finiscono in email isolate senza pre-qualifica automatica e senza sincronizzazione immediata via API/Webhook con il CRM aziendale."
     ],
-    "activeAdHeadline": "www.zanierclaudio.it",
-    "activeAdCopySummary": "Condizionamento Claudio Zanier è un'azienda di Legnago, certificata che da oltre quarant'anni, con provata e collaudata professionalità, ope...",
+    "activeAdHeadline": "Zanier Condizionamento: Soluzioni Tecniche e Forniture B2B a Legnago",
+    "activeAdCopySummary": "Affianchiamo aziende e direzioni tecniche a Legnago con progettazione su specifica, tempi di consegna certi e assistenza post-vendita dirett...",
     "runsAds": true,
     "detectedTrackingSignals": [
       "Meta Ad Library"
@@ -46,9 +46,9 @@
     "logoBrightness": "dark"
   },
   "content": {
-    "badgeTop": "Zanier Condizionamento · Divisione Tecnica & Commesse B2B (Legnago)",
-    "heroHeadline": "www.zanierclaudio.it",
-    "heroSubheadline": "Condizionamento Claudio Zanier è un'azienda di Legnago, certificata che da oltre quarant'anni, con provata e collaudata professionalità, opera nel settore del condizionamento e riscaldamento. La ditta si avvale",
+    "badgeTop": "Zanier Condizionamento · Divisione Tecnica e Commesse B2B (Legnago)",
+    "heroHeadline": "Zanier Condizionamento: Soluzioni Tecniche e Forniture B2B a Legnago",
+    "heroSubheadline": "Affianchiamo aziende e direzioni tecniche a Legnago con progettazione su specifica, tempi di consegna certi e assistenza post-vendita diretta.",
     "heroBullets": [
       "Studio di fattibilita tecnica e capitolato con tempi di consegna certi",
       "Qualifica immediata della richiesta e assegnazione diretta all'Ufficio Tecnico",
@@ -64,7 +64,7 @@
         "title": "Quale ambito operativo o di commessa desiderate approfondire?",
         "options": [
           "Fornitura industriale, impianti o commessa su specifica",
-          "Integrazione tecnica, automazione di reparto o portale B2B",
+          "Integrazione tecnica, automazione di reparto o accordo quadro",
           "Studio di fattibilita, capitolato e quotazione riservata"
         ]
       },
@@ -81,17 +81,17 @@
     "valueProps": [
       {
         "title": "Ingegneria e Progettazione su Specifica",
-        "description": "Analizziamo i requisiti produttivi della commessa a Legnago, definendo specifiche tecniche, tempi di consegna e ritorno sull'investimento prima dell'avvio operativo.",
+        "description": "Analizziamo i requisiti produttivi della commessa a Legnago, definendo specifiche tecniche, tempi di consegna e costi prima dell'avvio.",
         "metric": "Capitolato Chiuso"
       },
       {
         "title": "Controllo Qualita e Conformita Normativa",
-        "description": "Ogni fornitura e impianto di Zanier Condizionamento viene collaudato secondo gli standard di sicurezza e qualita vigenti, con documentazione tecnica completa.",
+        "description": "Ogni fornitura di Zanier Condizionamento viene collaudata secondo gli standard di sicurezza e qualita vigenti, con documentazione tecnica completa.",
         "metric": "100% Certificato"
       },
       {
         "title": "Continuita Operativa e Assistenza Post-Vendita",
-        "description": "Affianchiamo il reparto tecnico e acquisti dal collaudo in stabilimento fino alla manutenzione programmata e al riordino ricambi.",
+        "description": "Affianchiamo il reparto tecnico e acquisti dal collaudo in stabilimento fino alla manutenzione programmata.",
         "metric": "SLA Garantito"
       }
     ],
@@ -113,7 +113,7 @@
         },
         {
           "value": "< 0.4s",
-          "label": "Caricamento istantaneo dell'infrastruttura digitale su rete mobile"
+          "label": "Caricamento istantaneo dell'infrastruttura digitale su mobile"
         },
         {
           "value": "24h",
@@ -124,13 +124,13 @@
         {
           "name": "Direzione Tecnica e Produzione",
           "location": "Legnago · Commessa Industriale",
-          "quote": "Abbiamo affidato a Zanier Condizionamento una commessa strategica per il nostro reparto: rispetto rigoroso delle specifiche tecniche, tempi di consegna puntuali e collaudo impeccabile.",
+          "quote": "Abbiamo affidato a Zanier Condizionamento una commessa strategica per il nostro reparto: rispetto rigoroso delle specifiche tecniche e collaudo impeccabile.",
           "roleOrContext": "Fornitura e collaudo B2B"
         },
         {
           "name": "Responsabile Ufficio Acquisti",
           "location": "Legnago e provincia",
-          "quote": "Un partner strutturato e affidabile: preventivazione trasparente senza costi occulti, documentazione tecnica completa e supporto post-vendita immediato.",
+          "quote": "Partner strutturato e affidabile: preventivazione trasparente, documentazione tecnica completa e supporto post-vendita immediato.",
           "roleOrContext": "Accordo quadro di fornitura"
         }
       ]

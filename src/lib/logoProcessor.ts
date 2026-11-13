@@ -29,6 +29,17 @@ export interface PngAnalysisResult {
   whiteRatio: number;
 }
 
+export interface HeroAnalysisResult {
+  width: number;
+  height: number;
+  aspectRatio: number;
+  transparentRatio: number;
+  whiteRatio: number;
+  uniformRatio: number;
+  isValidHeroPhoto: boolean;
+  rejectReason?: string;
+}
+
 function parsePngPixels(buf: Buffer): {
   width: number;
   height: number;
@@ -374,22 +385,146 @@ export function getPngDimensions(buf: Buffer): { width: number; height: number }
   };
 }
 
+function computeHeroPixelMetrics(parsed: {
+  width: number;
+  height: number;
+  pixels: Buffer;
+}): HeroAnalysisResult {
+  const { width, height, pixels } = parsed;
+  const total = width * height;
+  const step = Math.max(1, Math.floor(total / 25000));
+  let sampled = 0;
+  let transparentCount = 0;
+  let visibleCount = 0;
+  let whiteCount = 0;
+  const buckets: Record<string, number> = {};
+
+  for (let idx = 0; idx < total; idx += step) {
+    const o = idx * 4;
+    const r = pixels[o];
+    const g = pixels[o + 1];
+    const b = pixels[o + 2];
+    const a = pixels[o + 3];
+    sampled++;
+    if (a < 35) {
+      transparentCount++;
+    } else {
+      visibleCount++;
+      const lum = (0.299 * r + 0.587 * g + 0.114 * b) / 255;
+      if (lum > 0.9) {
+        whiteCount++;
+      }
+      const key = `${r >> 4}-${g >> 4}-${b >> 4}`;
+      buckets[key] = (buckets[key] || 0) + 1;
+    }
+  }
+
+  const transparentRatio = sampled > 0 ? transparentCount / sampled : 0;
+  const whiteRatio = visibleCount > 0 ? whiteCount / visibleCount : 1;
+  const maxBucket = Object.values(buckets).reduce((m, v) => (v > m ? v : m), 0);
+  const uniformRatio = visibleCount > 0 ? maxBucket / visibleCount : 1;
+  const aspectRatio = height > 0 ? width / height : 1;
+
+  let rejectReason: string | undefined;
+  if (width < 480 || height < 240) {
+    rejectReason = `dimensions_too_small(${width}x${height})`;
+  } else if (aspectRatio < 0.55 || aspectRatio > 3.2) {
+    rejectReason = `extreme_aspect_ratio(${aspectRatio.toFixed(2)})`;
+  } else if (transparentRatio > 0.08) {
+    rejectReason = `transparent_cutout(${Math.round(transparentRatio * 100)}%)`;
+  } else if (whiteRatio > 0.65) {
+    rejectReason = `mostly_white_canvas(${Math.round(whiteRatio * 100)}%)`;
+  } else if (uniformRatio > 0.85) {
+    rejectReason = `uniform_blank_image(${Math.round(uniformRatio * 100)}%)`;
+  }
+
+  return {
+    width,
+    height,
+    aspectRatio,
+    transparentRatio,
+    whiteRatio,
+    uniformRatio,
+    isValidHeroPhoto: !rejectReason,
+    rejectReason,
+  };
+}
+
+/**
+ * Analizza qualsiasi file hero locale (JPEG, PNG, WebP) convertendolo temporaneamente in PNG se necessario
+ * per rilevare sticker trasparenti, badge su sfondo bianco o immagini uniformi/vuote.
+ */
+export function analyzeRasterHeroFile(filePath: string): HeroAnalysisResult | null {
+  try {
+    if (!fs.existsSync(/*turbopackIgnore: true*/ filePath)) return null;
+    const raw = fs.readFileSync(/*turbopackIgnore: true*/ filePath);
+    if (isValidRasterImageBuffer(raw, "png")) {
+      const parsed = parsePngPixels(raw);
+      return parsed ? computeHeroPixelMetrics(parsed) : null;
+    }
+
+    const sipsCmd = ["", "usr", "bin", "sips"].join("/");
+    if (!fs.existsSync(/*turbopackIgnore: true*/ sipsCmd)) {
+      const dims = getJpegDimensions(raw);
+      if (!dims) return null;
+      const ar = dims.height > 0 ? dims.width / dims.height : 1;
+      const valid = dims.width >= 480 && dims.height >= 240 && ar >= 0.55 && ar <= 3.2;
+      return {
+        width: dims.width,
+        height: dims.height,
+        aspectRatio: ar,
+        transparentRatio: 0,
+        whiteRatio: 0,
+        uniformRatio: 0,
+        isValidHeroPhoto: valid,
+        rejectReason: valid ? undefined : "invalid_dimensions",
+      };
+    }
+
+    const tmpPng = `${filePath}.tmp-analyze-${Date.now()}-${Math.random().toString(36).slice(2, 6)}.png`;
+    try {
+      execFileSync(
+        /*turbopackIgnore: true*/ sipsCmd,
+        ["-s", "format", "png", filePath, "--out", tmpPng],
+        { stdio: "ignore", timeout: 8000 }
+      );
+      if (!fs.existsSync(/*turbopackIgnore: true*/ tmpPng)) return null;
+      const parsed = parsePngPixels(fs.readFileSync(/*turbopackIgnore: true*/ tmpPng));
+      return parsed ? computeHeroPixelMetrics(parsed) : null;
+    } finally {
+      try {
+        if (fs.existsSync(/*turbopackIgnore: true*/ tmpPng)) {
+          fs.unlinkSync(/*turbopackIgnore: true*/ tmpPng);
+        }
+      } catch {}
+    }
+  } catch {
+    return null;
+  }
+}
+
 /**
  * Scarica un'immagine remota, la converte al formato raster atteso (PNG/JPG) via macOS `sips`
- * se disponibile, verifica dimensioni minime (evita icone 16x16 usate come hero) e pulisce il logo.
+ * se disponibile, verifica dimensioni minime (evita icone 16x16 usate come hero), rigetta sticker/badge
+ * trasparenti o bianchi per le hero e pulisce il logo.
  */
 export async function downloadAndNormalizeRasterAsset(
   url: string,
   destPath: string,
   targetFormat: "png" | "jpg",
-  options?: { minBytes?: number; minWidth?: number; minHeight?: number }
+  options?: {
+    minBytes?: number;
+    minWidth?: number;
+    minHeight?: number;
+    allowSquareGifFallback?: boolean;
+  }
 ): Promise<{
   ok: boolean;
   logoAnalysis?: PngAnalysisResult | null;
 }> {
-  const minBytes = options?.minBytes ?? (targetFormat === "jpg" ? 4500 : 450);
-  const minWidth = options?.minWidth ?? (targetFormat === "jpg" ? 320 : 28);
-  const minHeight = options?.minHeight ?? (targetFormat === "jpg" ? 160 : 20);
+  const minBytes = options?.minBytes ?? (targetFormat === "jpg" ? 8000 : 450);
+  const minWidth = options?.minWidth ?? (targetFormat === "jpg" ? 480 : 40);
+  const minHeight = options?.minHeight ?? (targetFormat === "jpg" ? 240 : 18);
 
   if (!url || url.startsWith("data:") || /\.svg(\?|$|#)/i.test(url)) {
     return { ok: false };
@@ -397,8 +532,16 @@ export async function downloadAndNormalizeRasterAsset(
 
   const lowerUrl = url.toLowerCase();
   if (
+    /(?:shinystat\.com|facebook\.com\/tr|doubleclick\.net|google-analytics\.com|googleadservices\.com|linkedin\.com\/px)/i.test(
+      lowerUrl
+    )
+  ) {
+    return { ok: false };
+  }
+
+  if (
     targetFormat === "jpg" &&
-    /(?:favicon|logo|icon-|sprite|pixel|blank|spacer|badge|flag-|1x1|woocommerce-placeholder)/i.test(
+    /(?:favicon|logo|icon-|_icon|sprite|pixel|blank|spacer|badge|bollino|sticker|flag-|bandiera|1x1|woocommerce-placeholder|certific|iso-|soa-|payment|visa|paypal|social|client-|partner)/i.test(
       lowerUrl
     )
   ) {
@@ -426,6 +569,24 @@ export async function downloadAndNormalizeRasterAsset(
 
   if (!isValidRasterImageBuffer(rawBuf)) {
     return { ok: false };
+  }
+
+  const rawAsciiHead = rawBuf.subarray(0, 12).toString("ascii").toLowerCase();
+  const isRawGif = rawAsciiHead.startsWith("gif8");
+  const isRawPng = rawBuf.length >= 24 && rawBuf.readUInt32BE(0) === 0x89504e47;
+
+  // Per hero foto, scarta GIF e scarta PNG trasparenti/sticker prima della conversione in JPEG
+  if (targetFormat === "jpg") {
+    if (isRawGif) return { ok: false };
+    if (isRawPng) {
+      const parsedHero = parsePngPixels(rawBuf);
+      if (parsedHero) {
+        const metrics = computeHeroPixelMetrics(parsedHero);
+        if (!metrics.isValidHeroPhoto) {
+          return { ok: false };
+        }
+      }
+    }
   }
 
   const outDir = path.dirname(destPath);
@@ -480,9 +641,32 @@ export async function downloadAndNormalizeRasterAsset(
     }
 
     if (targetFormat === "png") {
+      // Evita micro-favicon GIF quadrate (es. 250x250 croppate) quando non richiesto esplicitamente
+      if (
+        !options?.allowSquareGifFallback &&
+        isRawGif &&
+        dims &&
+        Math.abs(dims.width - dims.height) <= 4 &&
+        dims.width <= 300
+      ) {
+        try {
+          fs.unlinkSync(/*turbopackIgnore: true*/ destPath);
+        } catch {}
+        return { ok: false };
+      }
+
       cleanLogoPngInPlace(destPath);
       const logoAnalysis = analyzePngLogo(destPath);
       return { ok: true, logoAnalysis };
+    }
+
+    // Validazione finale pixel-level su hero.jpg convertita (evita badge bianchi, aspect ratio estremi o schermate vuote)
+    const heroAnalysis = analyzeRasterHeroFile(destPath);
+    if (heroAnalysis && !heroAnalysis.isValidHeroPhoto) {
+      try {
+        fs.unlinkSync(/*turbopackIgnore: true*/ destPath);
+      } catch {}
+      return { ok: false };
     }
 
     return { ok: true };

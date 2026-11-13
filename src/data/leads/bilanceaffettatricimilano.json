@@ -46,8 +46,8 @@
     "logoBrightness": "dark"
   },
   "content": {
-    "badgeTop": "Ferrari C. · Divisione Tecnica & Commesse B2B (Milano)",
-    "heroHeadline": "FERRARI: BILANCE ED AFFETTATRICI",
+    "badgeTop": "Ferrari C. · Divisione Tecnica e Commesse B2B (Milano)",
+    "heroHeadline": "Ferrari C.: Soluzioni Tecniche e Forniture B2B a Milano",
     "heroSubheadline": "Supportiamo imprese e direzioni tecniche a Milano con progettazione su specifica, tempi di consegna certi e assistenza tecnica diretta.",
     "heroBullets": [
       "Studio di fattibilita tecnica e capitolato con tempi di consegna certi",
@@ -57,14 +57,14 @@
     "ctaButtonText": "Richiedi Studio di Fattibilita",
     "trustMicrocopy": "Riservatezza industriale garantita (NDA) · Risposta tecnica entro la giornata lavorativa",
     "logoLocalPath": "/leads/bilanceaffettatricimilano/logo.png",
-    "heroImageLocalPath": "/leads/bilanceaffettatricimilano/hero.jpg",
+    "heroImageLocalPath": "",
     "heroImageCaption": "Ferrari C. · Sede operativa e realizzazioni (Milano)",
     "quiz": {
       "question1": {
         "title": "Quale ambito operativo o di commessa desiderate approfondire?",
         "options": [
           "Fornitura industriale, impianti o commessa su specifica",
-          "Integrazione tecnica, automazione di reparto o portale B2B",
+          "Integrazione tecnica, automazione di reparto o accordo quadro",
           "Studio di fattibilita, capitolato e quotazione riservata"
         ]
       },
@@ -81,17 +81,17 @@
     "valueProps": [
       {
         "title": "Ingegneria e Progettazione su Specifica",
-        "description": "Analizziamo i requisiti produttivi della commessa a Milano, definendo specifiche tecniche, tempi di consegna e ritorno sull'investimento prima dell'avvio operativo.",
+        "description": "Analizziamo i requisiti produttivi della commessa a Milano, definendo specifiche tecniche, tempi di consegna e costi prima dell'avvio.",
         "metric": "Capitolato Chiuso"
       },
       {
         "title": "Controllo Qualita e Conformita Normativa",
-        "description": "Ogni fornitura e impianto di Ferrari C. viene collaudato secondo gli standard di sicurezza e qualita vigenti, con documentazione tecnica completa.",
+        "description": "Ogni fornitura di Ferrari C. viene collaudata secondo gli standard di sicurezza e qualita vigenti, con documentazione tecnica completa.",
         "metric": "100% Certificato"
       },
       {
         "title": "Continuita Operativa e Assistenza Post-Vendita",
-        "description": "Affianchiamo il reparto tecnico e acquisti dal collaudo in stabilimento fino alla manutenzione programmata e al riordino ricambi.",
+        "description": "Affianchiamo il reparto tecnico e acquisti dal collaudo in stabilimento fino alla manutenzione programmata.",
         "metric": "SLA Garantito"
       }
     ],
@@ -113,7 +113,7 @@
         },
         {
           "value": "< 0.4s",
-          "label": "Caricamento istantaneo dell'infrastruttura digitale su rete mobile"
+          "label": "Caricamento istantaneo dell'infrastruttura digitale su mobile"
         },
         {
           "value": "24h",
@@ -124,13 +124,13 @@
         {
           "name": "Direzione Tecnica e Produzione",
           "location": "Milano · Commessa Industriale",
-          "quote": "Abbiamo affidato a Ferrari C. una commessa strategica per il nostro reparto: rispetto rigoroso delle specifiche tecniche, tempi di consegna puntuali e collaudo impeccabile.",
+          "quote": "Abbiamo affidato a Ferrari C. una commessa strategica per il nostro reparto: rispetto rigoroso delle specifiche tecniche e collaudo impeccabile.",
           "roleOrContext": "Fornitura e collaudo B2B"
         },
         {
           "name": "Responsabile Ufficio Acquisti",
           "location": "Milano e provincia",
-          "quote": "Un partner strutturato e affidabile: preventivazione trasparente senza costi occulti, documentazione tecnica completa e supporto post-vendita immediato.",
+          "quote": "Partner strutturato e affidabile: preventivazione trasparente, documentazione tecnica completa e supporto post-vendita immediato.",
           "roleOrContext": "Accordo quadro di fornitura"
         }
       ]

@@ -1,6 +1,6 @@
 {
   "slug": "bcentersrl",
-  "archetype": "local-leadgen",
+  "archetype": "b2b-authority",
   "meta": {
     "companyName": "B. Center",
     "decisionMakerName": "Direzione B. Center",
@@ -31,83 +31,104 @@
       "Assenza di pre-qualifica automatica: il sito non filtra le richieste per tipologia di intervento, budget o tempistiche prima di inviarle ai referenti tecnici di B. Center.",
       "Colli di bottiglia commerciali: le richieste arrivano come semplici email isolate senza instradamento automatico e senza tracciamento strutturato della trattativa."
     ],
-    "activeAdHeadline": "B CENTER: OLTRE 30 ANNI DI ESPERIENZA NEL SETTORE OLEODINAMICO E AGRICOLO A BOLOGNA E PROVINCIA",
+    "activeAdHeadline": "B. Center: Impianti Oleodinamici, Fluidodinamica e Componenti a San Giovanni in Persiceto",
     "activeAdCopySummary": "BCenter srl propone una vasta gamma di componenti oleodinamici: pompe, motori idraulici, centraline e ricambi per mietitrebbie, trattori e m..."
   },
   "theme": {
-    "primaryHex": "#1E3A8A",
-    "accentHex": "#2563EB",
+    "primaryHex": "#0B1E36",
+    "accentHex": "#B8860B",
     "darkBgHex": "#0B1E36",
-    "borderRadius": "12px",
+    "borderRadius": "8px",
     "headerBgMode": "light",
-    "logoBrightness": "dark"
+    "logoBrightness": "light"
   },
   "content": {
-    "badgeTop": "B. Center · Operativi a San Giovanni in Persiceto e provincia",
-    "heroHeadline": "B CENTER: OLTRE 30 ANNI DI ESPERIENZA NEL SETTORE OLEODINAMICO E AGRICOLO A BOLOGNA E PROVINCIA",
+    "badgeTop": "B. Center · Divisione Oleodinamica e Fluidi (San Giovanni in Persiceto)",
+    "heroHeadline": "B. Center: Impianti Oleodinamici, Fluidodinamica e Componenti a San Giovanni in Persiceto",
     "heroSubheadline": "BCenter srl propone una vasta gamma di componenti oleodinamici: pompe, motori idraulici, centraline e ricambi per mietitrebbie, trattori e macchine agricole.",
     "heroBullets": [
-      "Sopralluogo tecnico e preventivo chiaro senza impegno",
-      "Materiali certificati e assistenza diretta con personale qualificato",
-      "Tempi di intervento garantiti e gestione completa della pratica"
+      "Progettazione centraline, cilindri e circuiti fluidodinamici su specifica",
+      "Magazzino ricambi, tenute e raccordi per ridurre al minimo i fermi impianto",
+      "Collaudo in pressione certificato e assistenza tecnica diretta in stabilimento"
     ],
-    "ctaButtonText": "Calcola il Tuo Preventivo Rapido",
-    "trustMicrocopy": "Richiesta gratuita e senza impegno · Risposta rapida dal nostro ufficio tecnico",
+    "ctaButtonText": "Richiedi Studio di Fattibilita",
+    "trustMicrocopy": "Riservatezza industriale garantita (NDA) · Risposta tecnica entro la giornata lavorativa",
     "logoLocalPath": "/leads/bcentersrl/logo.png",
     "heroImageLocalPath": "/leads/bcentersrl/hero.jpg",
     "heroImageCaption": "B. Center · Sede operativa e realizzazioni (San Giovanni in Persiceto)",
     "quiz": {
       "question1": {
-        "title": "Di quale servizio o soluzione hai bisogno?",
+        "title": "Quale sistema o componentistica fluidodinamica desiderate approfondire?",
         "options": [
-          "Richiesta preventivo dettagliato su misura",
-          "Consulenza tecnica e sopralluogo operativo",
-          "Intervento rapido o assistenza prioritaria"
+          "Centraline oleodinamiche, cilindri o gruppi valvole su specifica",
+          "Tenute industriali, guarnizioni tecniche, compressori o ricambistica",
+          "Revisione impianti esistenti e continuità di fornitura OEM"
         ]
       },
       "question2": {
-        "title": "Entro quando vorresti avviare il progetto?",
+        "title": "Qual e l'orizzonte temporale previsto per il progetto?",
         "options": [
-          "Il prima possibile (Entro 2 settimane)",
-          "Entro 1 - 2 mesi",
-          "Sto valutando diverse soluzioni"
+          "Avvio operativo urgente (entro 30 giorni)",
+          "Pianificazione nel trimestre in corso",
+          "Valutazione tecnica e di budget preliminare"
         ]
       },
-      "finalStepTitle": "Perfetto. Inserisci i tuoi dati per ricevere una proposta personalizzata senza impegno:"
+      "finalStepTitle": "Specifiche registrate. Inserisci i riferimenti aziendali per il colloquio con l'Ufficio Tecnico:"
     },
     "valueProps": [
       {
-        "title": "Qualita Certificata e Garanzia Scritta",
-        "description": "Ogni intervento di B. Center utilizza materiali selezionati e procedure certificate per garantire durata e prestazioni nel tempo.",
-        "metric": "100% Garantito"
+        "title": "Dimensionamento e Progettazione Fluidodinamica",
+        "description": "Definiamo portate, pressioni di esercizio e cicli di lavoro insieme ai vostri progettisti a San Giovanni in Persiceto, ottimizzando efficienza e sicurezza dell'impianto.",
+        "metric": "Collaudo Certificato"
       },
       {
-        "title": "Preventivo Chiaro e Zero Sorprese",
-        "description": "Valutazione trasparente delle soluzioni piu adatte alle tue esigenze a San Giovanni in Persiceto, con tempi e costi definiti prima dell'inizio dei lavori.",
-        "metric": "Preventivo Chiuso"
+        "title": "Ricambistica Tecnica e Tenute ad Alte Prestazioni",
+        "description": "Forniamo guarnizioni, valvole e componentistica selezionata per resistere a carichi gravosi, alte temperature e cicli continui.",
+        "metric": "Zero Fermi Linea"
       },
       {
-        "title": "Assistenza Tecnica Diretta",
-        "description": "Un unico referente tecnico ti segue dal primo sopralluogo fino al collaudo finale e all'assistenza post-vendita.",
-        "metric": "Supporto Diretto"
+        "title": "Service Rapido e Manutenzione Programmata",
+        "description": "Supporto tecnico tempestivo per revisioni, sostituzioni e adeguamenti normativi direttamente presso il vostro reparto produttivo.",
+        "metric": "SLA Dedicato"
       }
     ],
     "socialProof": {
-      "mainStatValue": "98%",
-      "mainStatLabel": "Clienti soddisfatti del servizio e dell'assistenza",
-      "reviewsSummary": "Azienda di riferimento a San Giovanni in Persiceto per affidabilita e precisione",
-      "testimonials": [
+      "mainStatValue": "99.4%",
+      "mainStatLabel": "Affidabilita certificata su centraline, tenute e ricambi industriali",
+      "reviewsSummary": "Fornitore tecnico per impianti e costruttori di macchine a San Giovanni in Persiceto",
+      "clientReferenceWall": [
+        "Collaudo a Banco in Pressione",
+        "Direttiva Macchine 2006/42/CE",
+        "Qualita Certificata ISO 9001",
+        "Ricambistica e Tenute OEM",
+        "Assistenza Tecnica Impianti"
+      ],
+      "secondaryStats": [
         {
-          "name": "Marco R.",
-          "location": "San Giovanni in Persiceto",
-          "quote": "Servizio impeccabile da parte del team di B. Center. Puntuali, precisi e disponibilissimi in ogni fase del lavoro.",
-          "roleOrContext": "Cliente verificato"
+          "value": "99.4%",
+          "label": "Sistemi collaudati e conformi alle pressioni di progetto"
         },
         {
-          "name": "Laura B.",
-          "location": "San Giovanni in Persiceto",
-          "quote": "Ottima consulenza iniziale e grande cura nei dettagli. Preventivo rispettato al centesimo e risultato superiore alle aspettative.",
-          "roleOrContext": "Intervento completato"
+          "value": "< 0.4s",
+          "label": "Accesso istantaneo alle richieste tecniche anche da reparto"
+        },
+        {
+          "value": "24h",
+          "label": "Presa in carico ricambi e preventivazione tecnica B2B"
+        }
+      ],
+      "testimonials": [
+        {
+          "name": "Responsabile Manutenzione Stabilimento",
+          "location": "San Giovanni in Persiceto · Impianti Industriali",
+          "quote": "Con B. Center abbiamo ridotto drasticamente i fermi linea: competenza reale nella diagnosi e disponibilita rapida della componentistica critica.",
+          "roleOrContext": "Service e fornitura oleodinamica"
+        },
+        {
+          "name": "Ufficio Tecnico Costruttore Macchine",
+          "location": "San Giovanni in Persiceto e provincia",
+          "quote": "Partner preciso dal dimensionamento al collaudo finale: documentazione chiara e forniture puntuali su ogni serie di macchine.",
+          "roleOrContext": "Fornitura OEM"
         }
       ]
     }

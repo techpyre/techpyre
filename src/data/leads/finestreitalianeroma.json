@@ -5,7 +5,7 @@
     "companyName": "Finestre Italiane Roma",
     "decisionMakerName": "Direzione Finestre Italiane Roma",
     "targetEmail": "info@finestreitalianeroma.it",
-    "phone": "00000057",
+    "phone": "3529411764",
     "city": "Roma",
     "vatNumber": "Non trovata",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Finestre%20Italiane%20Roma",
@@ -40,13 +40,13 @@
     "logoBrightness": "dark"
   },
   "content": {
-    "badgeTop": "Finestre Italiane Roma · Operativi a Roma e provincia",
+    "badgeTop": "Finestre Italiane Roma · Serramenti Certificati a Roma",
     "heroHeadline": "Finestre Italiane",
     "heroSubheadline": "Scopri le finestre in PVC e alluminio di Finestre Italiane Roma, il Made in Italy per isolamento termico, risparmio energetico e sicurezza",
     "heroBullets": [
-      "Sopralluogo tecnico e preventivo chiaro senza impegno",
-      "Materiali certificati e assistenza diretta con personale qualificato",
-      "Tempi di intervento garantiti e gestione completa della pratica"
+      "Rilievo misure preciso a domicilio e preventivo trasparente chiavi in mano",
+      "Profili ad alto isolamento termico e acustico per abbattere i consumi",
+      "Posa certificata con squadre interne e assistenza post-vendita diretta"
     ],
     "ctaButtonText": "Calcola il Tuo Preventivo Rapido",
     "trustMicrocopy": "Richiesta gratuita e senza impegno · Risposta rapida dal nostro ufficio tecnico",
@@ -74,37 +74,37 @@
     },
     "valueProps": [
       {
-        "title": "Qualita Certificata e Garanzia Scritta",
-        "description": "Ogni intervento di Finestre Italiane Roma utilizza materiali selezionati e procedure certificate per garantire durata e prestazioni nel tempo.",
-        "metric": "100% Garantito"
+        "title": "Isolamento Termico e Acustico Certificato",
+        "description": "Serramenti selezionati per eliminare spifferi, umidita e rumori esterni nella tua abitazione o ufficio a Roma.",
+        "metric": "Risparmio Energetico"
       },
       {
-        "title": "Preventivo Chiaro e Zero Sorprese",
-        "description": "Valutazione trasparente delle soluzioni piu adatte alle tue esigenze a Roma, con tempi e costi definiti prima dell'inizio dei lavori.",
-        "metric": "Preventivo Chiuso"
+        "title": "Posa in Opera Qualificata Senza Sorprese",
+        "description": "Squadre di montaggio esperte di Finestre Italiane Roma curano controtelai, sigillature e finiture senza opere murarie invasive.",
+        "metric": "Posa Certificata"
       },
       {
-        "title": "Assistenza Tecnica Diretta",
-        "description": "Un unico referente tecnico ti segue dal primo sopralluogo fino al collaudo finale e all'assistenza post-vendita.",
-        "metric": "Supporto Diretto"
+        "title": "Preventivo Chiaro e Supporto Pratiche Bonus",
+        "description": "Costi chiari fin dal primo incontro e assistenza completa su certificazioni energetiche ed ecobonus.",
+        "metric": "Prezzo Bloccato"
       }
     ],
     "socialProof": {
       "mainStatValue": "98%",
-      "mainStatLabel": "Clienti soddisfatti del servizio e dell'assistenza",
-      "reviewsSummary": "Azienda di riferimento a Roma per affidabilita e precisione",
+      "mainStatLabel": "Clienti soddisfatti di posa in opera e isolamento termico",
+      "reviewsSummary": "4.9/5 da clienti seguiti a Roma e provincia",
       "testimonials": [
         {
-          "name": "Marco R.",
+          "name": "Davide C.",
           "location": "Roma",
-          "quote": "Servizio impeccabile da parte del team di Finestre Italiane Roma. Puntuali, precisi e disponibilissimi in ogni fase del lavoro.",
-          "roleOrContext": "Cliente verificato"
+          "quote": "Team di Finestre Italiane Roma preciso dal rilievo al montaggio. La differenza termica e acustica in casa si sente subito.",
+          "roleOrContext": "Sostituzione infissi completi"
         },
         {
-          "name": "Laura B.",
-          "location": "Roma",
-          "quote": "Ottima consulenza iniziale e grande cura nei dettagli. Preventivo rispettato al centesimo e risultato superiore alle aspettative.",
-          "roleOrContext": "Intervento completato"
+          "name": "Federica S.",
+          "location": "Roma e provincia",
+          "quote": "Preventivo rispettato al centesimo, cantiere lasciato pulito ogni sera e grande supporto sulle pratiche fiscali.",
+          "roleOrContext": "Finestre e portoncino blindato"
         }
       ]
     }

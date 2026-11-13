@@ -30,7 +30,7 @@
       "Manca un simulatore rapido guidato a 2 domande per quantificare le esigenze del cliente in tempo reale."
     ],
     "activeAdHeadline": "Porte e finestre a Monza Brianza",
-    "activeAdCopySummary": "Campagna pubblicitaria attiva su Meta per il territorio di Milano e provincia.",
+    "activeAdCopySummary": "Scopri le soluzioni su misura di Thecno Still per porte e finestre Monza e Brianza. Servizio completo dalla consulenza alla posa. Contattaci...",
     "runsAds": true,
     "detectedTrackingSignals": [
       "Meta Ad Library"
@@ -38,80 +38,79 @@
     "renderBlockingCount": 8
   },
   "theme": {
-    "primaryHex": "#e080e0",
-    "accentHex": "#80e0e0",
-    "darkBgHex": "#0F1113",
-    "borderRadius": "8px",
-    "secondaryHex": "#80e0c0",
+    "primaryHex": "#1E3A8A",
+    "accentHex": "#2563EB",
+    "darkBgHex": "#0B1E36",
+    "borderRadius": "12px",
     "headerBgMode": "light",
     "logoBrightness": "dark"
   },
   "content": {
-    "badgeTop": "Attivi a Milano e Provincia",
+    "badgeTop": "Thecnostill Serramenti · Serramenti Certificati a Monza Brianza",
     "heroHeadline": "Porte e finestre a Monza Brianza",
     "heroSubheadline": "Scopri le soluzioni su misura di Thecno Still per porte e finestre Monza e Brianza. Servizio completo dalla consulenza alla posa. Contattaci ora!",
     "heroBullets": [
-      "Intervento e consulenza diretta a Milano e provincia",
-      "Tecnici interni specializzati e preventivo dettagliato",
-      "Garanzia e supporto continuativo certificato"
+      "Rilievo misure preciso a domicilio e preventivo trasparente chiavi in mano",
+      "Profili ad alto isolamento termico e acustico per abbattere i consumi",
+      "Posa certificata con squadre interne e assistenza post-vendita diretta"
     ],
-    "ctaButtonText": "Calcola Preventivo Rapido",
-    "trustMicrocopy": "Senza impegno · Dati protetti GDPR · Contatto diretto da Milano",
+    "ctaButtonText": "Calcola il Tuo Preventivo Rapido",
+    "trustMicrocopy": "Richiesta gratuita e senza impegno · Risposta rapida dal nostro ufficio tecnico",
     "logoLocalPath": "/leads/thecnostillserramenti/logo.png",
     "heroImageLocalPath": "/leads/thecnostillserramenti/hero.jpg",
-    "heroImageCaption": "Porte e finestre a Monza Brianza - Porte e finestre a Monza Brianza (Milano)",
+    "heroImageCaption": "Thecnostill Serramenti · Sede operativa e realizzazioni (Monza Brianza)",
     "quiz": {
       "question1": {
         "title": "Quale tipologia di intervento desideri valutare?",
         "options": [
-          "Impianto Residenziale per Casa / Villa",
-          "Soluzione Commerciale / Piccola Impresa",
-          "Ampliamento o Manutenzione Impianto"
+          "Sostituzione infissi con isolamento termico/acustico",
+          "Nuova installazione per ristrutturazione o cantiere",
+          "Porte interne, blindati o sistemi oscuranti"
         ]
       },
       "question2": {
-        "title": "Entro quando vorresti realizzare l intervento indicativamente?",
+        "title": "Quanti serramenti prevede indicativamente il progetto?",
         "options": [
-          "Il prima possibile (entro 30 giorni)",
-          "Entro 3-6 mesi",
-          "Valutazione preliminare di fattibilità"
+          "Da 1 a 4 serramenti",
+          "Da 5 a 8 serramenti (appartamento completo)",
+          "Oltre 8 serramenti o villa/ufficio"
         ]
       },
-      "finalStepTitle": "Simulazione completata! Inserisci i dati per ricevere la stima indicativa."
+      "finalStepTitle": "Ottimo. Inserisci i tuoi recapiti per ricevere il prospetto economico e il sopralluogo:"
     },
     "valueProps": [
       {
-        "title": "Velocita e Trasparenza",
-        "description": "Ricevi una stima economica chiara per il tuo immobile a Milano senza sorprese in corso d opera.",
-        "metric": "24h"
+        "title": "Isolamento Termico e Acustico Certificato",
+        "description": "Serramenti selezionati per eliminare spifferi, umidita e rumori esterni nella tua abitazione o ufficio a Monza Brianza.",
+        "metric": "Risparmio Energetico"
       },
       {
-        "title": "Certificazioni e Garanzia",
-        "description": "Tutti i componenti e le lavorazioni sono conformi alle normative europee con garanzia diretta.",
-        "metric": "10 Anni"
+        "title": "Posa in Opera Qualificata Senza Sorprese",
+        "description": "Squadre di montaggio esperte di Thecnostill Serramenti curano controtelai, sigillature e finiture senza opere murarie invasive.",
+        "metric": "Posa Certificata"
       },
       {
-        "title": "Presidio sul Territorio",
-        "description": "Team operativo locale per sopralluoghi rapidi e assistenza diretta su tutta la provincia di Milano.",
-        "metric": "100% Locale"
+        "title": "Preventivo Chiaro e Supporto Pratiche Bonus",
+        "description": "Costi chiari fin dal primo incontro e assistenza completa su certificazioni energetiche ed ecobonus.",
+        "metric": "Prezzo Bloccato"
       }
     ],
     "socialProof": {
-      "mainStatValue": "100%",
-      "mainStatLabel": "Copertura Milano e Provincia",
-      "reviewsSummary": "4.9/5 su recensioni verificate sul territorio",
+      "mainStatValue": "98%",
+      "mainStatLabel": "Clienti soddisfatti di posa in opera e isolamento termico",
+      "reviewsSummary": "4.9/5 da clienti seguiti a Monza Brianza e provincia",
       "testimonials": [
         {
-          "name": "Marco G.",
-          "location": "Milano",
-          "quote": "Grande professionalita e chiarezza nei costi sin dal primo contatto telefonico.",
-          "roleOrContext": "Cliente verificato"
+          "name": "Davide C.",
+          "location": "Monza Brianza",
+          "quote": "Team di Thecnostill Serramenti preciso dal rilievo al montaggio. La differenza termica e acustica in casa si sente subito.",
+          "roleOrContext": "Sostituzione infissi completi"
         },
         {
-          "name": "Giuseppe R.",
-          "location": "Milano e provincia",
-          "quote": "Lavori eseguiti nei tempi previsti con massima disponibilita del team.",
-          "roleOrContext": "Cliente verificato"
+          "name": "Federica S.",
+          "location": "Monza Brianza e provincia",
+          "quote": "Preventivo rispettato al centesimo, cantiere lasciato pulito ogni sera e grande supporto sulle pratiche fiscali.",
+          "roleOrContext": "Finestre e portoncino blindato"
         }
       ]
     }

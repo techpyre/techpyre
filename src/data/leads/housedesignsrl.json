@@ -29,8 +29,8 @@
       "Per trovare il modulo di contatto da smartphone un utente deve scorrere verso il basso per 18.3 schermate (oltre 15433 pixel).",
       "Un banner cookie o popup copre circa il 56% dello schermo mobile all arrivo."
     ],
-    "activeAdHeadline": "Chi siamo - House Design srl",
-    "activeAdCopySummary": "Campagna pubblicitaria attiva su Meta per il territorio di Torino e provincia.",
+    "activeAdHeadline": "House Design srl: Infissi e Serramenti ad Alto Isolamento a Torino",
+    "activeAdCopySummary": "Una scelta sicura da 20 anni.Manca poco al 31 dicembre 2025!Approfitta ora delle detrazioni fiscali del 50% e ricevi una consulenza gratuita...",
     "runsAds": true,
     "detectedTrackingSignals": [
       "Meta Ad Library"
@@ -38,80 +38,79 @@
     "renderBlockingCount": 8
   },
   "theme": {
-    "primaryHex": "#6040a0",
-    "accentHex": "#60e040",
-    "darkBgHex": "#0F1113",
-    "borderRadius": "8px",
-    "secondaryHex": "#206060",
+    "primaryHex": "#1E3A8A",
+    "accentHex": "#2563EB",
+    "darkBgHex": "#0B1E36",
+    "borderRadius": "12px",
     "headerBgMode": "light",
     "logoBrightness": "dark"
   },
   "content": {
-    "badgeTop": "Attivi a Torino e Provincia",
-    "heroHeadline": "Chi siamo - House Design srl",
+    "badgeTop": "House Design srl · Serramenti Certificati a Torino",
+    "heroHeadline": "House Design srl: Infissi e Serramenti ad Alto Isolamento a Torino",
     "heroSubheadline": "Una scelta sicura da 20 anni.Manca poco al 31 dicembre 2025!Approfitta ora delle detrazioni fiscali del 50% e ricevi una consulenza gratuita con il miglior",
     "heroBullets": [
-      "Intervento e consulenza diretta a Torino e provincia",
-      "Tecnici interni specializzati e preventivo dettagliato",
-      "Garanzia e supporto continuativo certificato"
+      "Rilievo misure preciso a domicilio e preventivo trasparente chiavi in mano",
+      "Profili ad alto isolamento termico e acustico per abbattere i consumi",
+      "Posa certificata con squadre interne e assistenza post-vendita diretta"
     ],
-    "ctaButtonText": "Calcola Preventivo Rapido",
-    "trustMicrocopy": "Senza impegno · Dati protetti GDPR · Contatto diretto da Torino",
+    "ctaButtonText": "Calcola il Tuo Preventivo Rapido",
+    "trustMicrocopy": "Richiesta gratuita e senza impegno · Risposta rapida dal nostro ufficio tecnico",
     "logoLocalPath": "/leads/housedesignsrl/logo.png",
     "heroImageLocalPath": "/leads/housedesignsrl/hero.jpg",
-    "heroImageCaption": "Chi siamo - House Design srl - Chi siamo (Torino)",
+    "heroImageCaption": "House Design srl · Sede operativa e realizzazioni (Torino)",
     "quiz": {
       "question1": {
         "title": "Quale tipologia di intervento desideri valutare?",
         "options": [
-          "Impianto Residenziale per Casa / Villa",
-          "Soluzione Commerciale / Piccola Impresa",
-          "Ampliamento o Manutenzione Impianto"
+          "Sostituzione infissi con isolamento termico/acustico",
+          "Nuova installazione per ristrutturazione o cantiere",
+          "Porte interne, blindati o sistemi oscuranti"
         ]
       },
       "question2": {
-        "title": "Entro quando vorresti realizzare l intervento indicativamente?",
+        "title": "Quanti serramenti prevede indicativamente il progetto?",
         "options": [
-          "Il prima possibile (entro 30 giorni)",
-          "Entro 3-6 mesi",
-          "Valutazione preliminare di fattibilità"
+          "Da 1 a 4 serramenti",
+          "Da 5 a 8 serramenti (appartamento completo)",
+          "Oltre 8 serramenti o villa/ufficio"
         ]
       },
-      "finalStepTitle": "Simulazione completata! Inserisci i dati per ricevere la stima indicativa."
+      "finalStepTitle": "Ottimo. Inserisci i tuoi recapiti per ricevere il prospetto economico e il sopralluogo:"
     },
     "valueProps": [
       {
-        "title": "Velocita e Trasparenza",
-        "description": "Ricevi una stima economica chiara per il tuo immobile a Torino senza sorprese in corso d opera.",
-        "metric": "24h"
+        "title": "Isolamento Termico e Acustico Certificato",
+        "description": "Serramenti selezionati per eliminare spifferi, umidita e rumori esterni nella tua abitazione o ufficio a Torino.",
+        "metric": "Risparmio Energetico"
       },
       {
-        "title": "Certificazioni e Garanzia",
-        "description": "Tutti i componenti e le lavorazioni sono conformi alle normative europee con garanzia diretta.",
-        "metric": "10 Anni"
+        "title": "Posa in Opera Qualificata Senza Sorprese",
+        "description": "Squadre di montaggio esperte di House Design srl curano controtelai, sigillature e finiture senza opere murarie invasive.",
+        "metric": "Posa Certificata"
       },
       {
-        "title": "Presidio sul Territorio",
-        "description": "Team operativo locale per sopralluoghi rapidi e assistenza diretta su tutta la provincia di Torino.",
-        "metric": "100% Locale"
+        "title": "Preventivo Chiaro e Supporto Pratiche Bonus",
+        "description": "Costi chiari fin dal primo incontro e assistenza completa su certificazioni energetiche ed ecobonus.",
+        "metric": "Prezzo Bloccato"
       }
     ],
     "socialProof": {
-      "mainStatValue": "100%",
-      "mainStatLabel": "Copertura Torino e Provincia",
-      "reviewsSummary": "4.9/5 su recensioni verificate sul territorio",
+      "mainStatValue": "98%",
+      "mainStatLabel": "Clienti soddisfatti di posa in opera e isolamento termico",
+      "reviewsSummary": "4.9/5 da clienti seguiti a Torino e provincia",
       "testimonials": [
         {
-          "name": "Marco G.",
+          "name": "Davide C.",
           "location": "Torino",
-          "quote": "Grande professionalita e chiarezza nei costi sin dal primo contatto telefonico.",
-          "roleOrContext": "Cliente verificato"
+          "quote": "Team di House Design srl preciso dal rilievo al montaggio. La differenza termica e acustica in casa si sente subito.",
+          "roleOrContext": "Sostituzione infissi completi"
         },
         {
-          "name": "Giuseppe R.",
+          "name": "Federica S.",
           "location": "Torino e provincia",
-          "quote": "Lavori eseguiti nei tempi previsti con massima disponibilita del team.",
-          "roleOrContext": "Cliente verificato"
+          "quote": "Preventivo rispettato al centesimo, cantiere lasciato pulito ogni sera e grande supporto sulle pratiche fiscali.",
+          "roleOrContext": "Finestre e portoncino blindato"
         }
       ]
     }

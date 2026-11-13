@@ -23,8 +23,8 @@
       "Cecita decisionale sul ROI: assenza di tracciamento Server-Side di prima parte (GTM Server-Side e Meta CAPI), con perdita del 30-50% dei dati di conversione per blocchi browser e cookie banner.",
       "Colli di bottiglia commerciali: i contatti finiscono in email isolate senza pre-qualifica automatica e senza sincronizzazione immediata via API/Webhook con il CRM aziendale."
     ],
-    "activeAdHeadline": "Contatti: Ingegneria, Forniture e Soluzioni B2B a Treviso",
-    "activeAdCopySummary": "Per informazioni e preventivi sugli impianti contatta SAMI. Ti risponderemo il prima possibile con cortesia e professionalità.",
+    "activeAdHeadline": "Sami Manutenzioni Industriali: Soluzioni Tecniche e Forniture B2B a Treviso",
+    "activeAdCopySummary": "Affianchiamo aziende e direzioni tecniche a Treviso con progettazione su specifica, tempi di consegna certi e assistenza post-vendita dirett",
     "runsAds": true,
     "detectedTrackingSignals": [
       "Meta Ad Library"
@@ -32,7 +32,7 @@
     "renderBlockingCount": 8
   },
   "theme": {
-    "primaryHex": "#0B1E36",
+    "primaryHex": "#c01020",
     "accentHex": "#B8860B",
     "darkBgHex": "#0B1E36",
     "borderRadius": "8px",
@@ -40,9 +40,9 @@
     "logoBrightness": "dark"
   },
   "content": {
-    "badgeTop": "Contatti · Divisione Tecnica & Commesse B2B (Treviso)",
-    "heroHeadline": "Contatti: Ingegneria, Forniture e Soluzioni B2B a Treviso",
-    "heroSubheadline": "Per informazioni e preventivi sugli impianti contatta SAMI. Ti risponderemo il prima possibile con cortesia e professionalità.",
+    "badgeTop": "Sami Manutenzioni Industriali · Divisione Tecnica e Commesse B2B (Treviso)",
+    "heroHeadline": "Sami Manutenzioni Industriali: Soluzioni Tecniche e Forniture B2B a Treviso",
+    "heroSubheadline": "Affianchiamo aziende e direzioni tecniche a Treviso con progettazione su specifica, tempi di consegna certi e assistenza post-vendita diretta.",
     "heroBullets": [
       "Studio di fattibilita tecnica e capitolato con tempi di consegna certi",
       "Qualifica immediata della richiesta e assegnazione diretta all'Ufficio Tecnico",
@@ -51,14 +51,14 @@
     "ctaButtonText": "Richiedi Studio di Fattibilita",
     "trustMicrocopy": "Riservatezza industriale garantita (NDA) · Risposta tecnica entro la giornata lavorativa",
     "logoLocalPath": "/leads/samimanutenzioni/logo.png",
-    "heroImageLocalPath": "https://www.facebook.com/tr?id=482505846265199&#038;ev=PageView&#038;noscript=1&#038;cd%5Bpage_title%5D=Contatti&#038;cd%5Bpost_type%5D=page&#038;cd%5Bpost_id%5D=1516&#038;cd%5Bplugin%5D=PixelYourSite&#038;cd%5Buser_role%5D=guest&#038;cd%5Bevent_url%5D=samimanutenzioni.it%2Fcontatti%2F",
-    "heroImageCaption": "Contatti · Sede operativa e realizzazioni (Treviso)",
+    "heroImageLocalPath": "/leads/samimanutenzioni/hero.jpg",
+    "heroImageCaption": "Sami Manutenzioni Industriali · Sede operativa e realizzazioni (Treviso)",
     "quiz": {
       "question1": {
         "title": "Quale ambito operativo o di commessa desiderate approfondire?",
         "options": [
           "Fornitura industriale, impianti o commessa su specifica",
-          "Integrazione tecnica, automazione di reparto o portale B2B",
+          "Integrazione tecnica, automazione di reparto o accordo quadro",
           "Studio di fattibilita, capitolato e quotazione riservata"
         ]
       },
@@ -75,17 +75,17 @@
     "valueProps": [
       {
         "title": "Ingegneria e Progettazione su Specifica",
-        "description": "Analizziamo i requisiti produttivi della commessa a Treviso, definendo specifiche tecniche, tempi di consegna e ritorno sull'investimento prima dell'avvio operativo.",
+        "description": "Analizziamo i requisiti produttivi della commessa a Treviso, definendo specifiche tecniche, tempi di consegna e costi prima dell'avvio.",
         "metric": "Capitolato Chiuso"
       },
       {
         "title": "Controllo Qualita e Conformita Normativa",
-        "description": "Ogni fornitura e impianto di Contatti viene collaudato secondo gli standard di sicurezza e qualita vigenti, con documentazione tecnica completa.",
+        "description": "Ogni fornitura di Sami Manutenzioni Industriali viene collaudata secondo gli standard di sicurezza e qualita vigenti, con documentazione tecnica completa.",
         "metric": "100% Certificato"
       },
       {
         "title": "Continuita Operativa e Assistenza Post-Vendita",
-        "description": "Affianchiamo il reparto tecnico e acquisti dal collaudo in stabilimento fino alla manutenzione programmata e al riordino ricambi.",
+        "description": "Affianchiamo il reparto tecnico e acquisti dal collaudo in stabilimento fino alla manutenzione programmata.",
         "metric": "SLA Garantito"
       }
     ],
@@ -107,7 +107,7 @@
         },
         {
           "value": "< 0.4s",
-          "label": "Caricamento istantaneo dell'infrastruttura digitale su rete mobile"
+          "label": "Caricamento istantaneo dell'infrastruttura digitale su mobile"
         },
         {
           "value": "24h",
@@ -118,13 +118,13 @@
         {
           "name": "Direzione Tecnica e Produzione",
           "location": "Treviso · Commessa Industriale",
-          "quote": "Abbiamo affidato a Contatti una commessa strategica per il nostro reparto: rispetto rigoroso delle specifiche tecniche, tempi di consegna puntuali e collaudo impeccabile.",
+          "quote": "Abbiamo affidato a Sami Manutenzioni Industriali una commessa strategica per il nostro reparto: rispetto rigoroso delle specifiche tecniche e collaudo impeccabile.",
           "roleOrContext": "Fornitura e collaudo B2B"
         },
         {
           "name": "Responsabile Ufficio Acquisti",
           "location": "Treviso e provincia",
-          "quote": "Un partner strutturato e affidabile: preventivazione trasparente senza costi occulti, documentazione tecnica completa e supporto post-vendita immediato.",
+          "quote": "Partner strutturato e affidabile: preventivazione trasparente, documentazione tecnica completa e supporto post-vendita immediato.",
           "roleOrContext": "Accordo quadro di fornitura"
         }
       ]

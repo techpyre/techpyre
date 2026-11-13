@@ -1,11 +1,11 @@
 {
   "slug": "wigmann",
-  "archetype": "b2b-authority",
+  "archetype": "local-leadgen",
   "meta": {
     "companyName": "Wigmann Infissi",
     "decisionMakerName": "Direzione Wigmann Infissi",
     "targetEmail": "commerciale@wigmann.it",
-    "phone": "058823529411",
+    "phone": "3529411764",
     "city": "Italia",
     "vatNumber": "Non trovata",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Wigmann%20Infissi",
@@ -23,7 +23,7 @@
       "Cecita decisionale sul ROI: assenza di tracciamento Server-Side di prima parte (GTM Server-Side e Meta CAPI), con perdita del 30-50% dei dati di conversione per blocchi browser e cookie banner.",
       "Colli di bottiglia commerciali: i contatti finiscono in email isolate senza pre-qualifica automatica e senza sincronizzazione immediata via API/Webhook con il CRM aziendale."
     ],
-    "activeAdHeadline": "SIAMO PRODUTTORI !",
+    "activeAdHeadline": "Wigmann Infissi: Soluzioni Tecniche e Forniture B2B a Italia",
     "activeAdCopySummary": "Wigmann infissi apre a nuove prospettive. Visita il sito ufficiale di Wigmann per vedere i nostri prodotti e ascoltare i nostri consigli.",
     "runsAds": true,
     "detectedTrackingSignals": [
@@ -40,92 +40,71 @@
     "logoBrightness": "dark"
   },
   "content": {
-    "badgeTop": "Wigmann Infissi · Divisione Tecnica & Commesse B2B (Italia)",
-    "heroHeadline": "SIAMO PRODUTTORI !",
-    "heroSubheadline": "Wigmann infissi apre a nuove prospettive. Visita il sito ufficiale di Wigmann per vedere i nostri prodotti e ascoltare i nostri consigli.",
+    "badgeTop": "Wigmann Infissi · Serramenti Certificati a Italia",
+    "heroHeadline": "Wigmann Infissi: Infissi e Serramenti ad Alto Isolamento a Italia",
+    "heroSubheadline": "Progettazione, fornitura e posa qualificata di infissi in PVC, alluminio, porte interne e blindati a Italia con gestione completa delle detrazioni fiscali.",
     "heroBullets": [
-      "Studio di fattibilita tecnica e capitolato con tempi di consegna certi",
-      "Qualifica immediata della richiesta e assegnazione diretta all'Ufficio Tecnico",
-      "Produzione e assistenza certificata con referente unico dedicato"
+      "Rilievo misure preciso a domicilio e preventivo trasparente chiavi in mano",
+      "Profili ad alto isolamento termico e acustico per abbattere i consumi",
+      "Posa certificata con squadre interne e assistenza post-vendita diretta"
     ],
-    "ctaButtonText": "Richiedi Studio di Fattibilita",
-    "trustMicrocopy": "Riservatezza industriale garantita (NDA) · Risposta tecnica entro la giornata lavorativa",
+    "ctaButtonText": "Calcola il Tuo Preventivo Rapido",
+    "trustMicrocopy": "Richiesta gratuita e senza impegno · Risposta rapida dal nostro ufficio tecnico",
     "logoLocalPath": "/leads/wigmann/logo.png",
     "heroImageLocalPath": "/leads/wigmann/hero.jpg",
     "heroImageCaption": "Wigmann Infissi · Sede operativa e realizzazioni (Italia)",
     "quiz": {
       "question1": {
-        "title": "Quale ambito operativo o di commessa desiderate approfondire?",
+        "title": "Quale tipologia di intervento desideri valutare?",
         "options": [
-          "Fornitura industriale, impianti o commessa su specifica",
-          "Integrazione tecnica, automazione di reparto o portale B2B",
-          "Studio di fattibilita, capitolato e quotazione riservata"
+          "Sostituzione infissi con isolamento termico/acustico",
+          "Nuova installazione per ristrutturazione o cantiere",
+          "Porte interne, blindati o sistemi oscuranti"
         ]
       },
       "question2": {
-        "title": "Qual e l'orizzonte temporale previsto per il progetto?",
+        "title": "Quanti serramenti prevede indicativamente il progetto?",
         "options": [
-          "Avvio operativo urgente (entro 30 giorni)",
-          "Pianificazione nel trimestre in corso",
-          "Valutazione tecnica e di budget preliminare"
+          "Da 1 a 4 serramenti",
+          "Da 5 a 8 serramenti (appartamento completo)",
+          "Oltre 8 serramenti o villa/ufficio"
         ]
       },
-      "finalStepTitle": "Specifiche registrate. Inserisci i riferimenti aziendali per il colloquio con l'Ufficio Tecnico:"
+      "finalStepTitle": "Ottimo. Inserisci i tuoi recapiti per ricevere il prospetto economico e il sopralluogo:"
     },
     "valueProps": [
       {
-        "title": "Ingegneria e Progettazione su Specifica",
-        "description": "Analizziamo i requisiti produttivi della commessa a Italia, definendo specifiche tecniche, tempi di consegna e ritorno sull'investimento prima dell'avvio operativo.",
-        "metric": "Capitolato Chiuso"
+        "title": "Isolamento Termico e Acustico Certificato",
+        "description": "Serramenti selezionati per eliminare spifferi, umidita e rumori esterni nella tua abitazione o ufficio a Italia.",
+        "metric": "Risparmio Energetico"
       },
       {
-        "title": "Controllo Qualita e Conformita Normativa",
-        "description": "Ogni fornitura e impianto di Wigmann Infissi viene collaudato secondo gli standard di sicurezza e qualita vigenti, con documentazione tecnica completa.",
-        "metric": "100% Certificato"
+        "title": "Posa in Opera Qualificata Senza Sorprese",
+        "description": "Squadre di montaggio esperte di Wigmann Infissi curano controtelai, sigillature e finiture senza opere murarie invasive.",
+        "metric": "Posa Certificata"
       },
       {
-        "title": "Continuita Operativa e Assistenza Post-Vendita",
-        "description": "Affianchiamo il reparto tecnico e acquisti dal collaudo in stabilimento fino alla manutenzione programmata e al riordino ricambi.",
-        "metric": "SLA Garantito"
+        "title": "Preventivo Chiaro e Supporto Pratiche Bonus",
+        "description": "Costi chiari fin dal primo incontro e assistenza completa su certificazioni energetiche ed ecobonus.",
+        "metric": "Prezzo Bloccato"
       }
     ],
     "socialProof": {
-      "mainStatValue": "99.4%",
-      "mainStatLabel": "Commesse B2B consegnate entro i tempi contrattuali",
-      "reviewsSummary": "Partner tecnico di riferimento per imprese e stabilimenti a Italia",
-      "clientReferenceWall": [
-        "Qualita Certificata ISO 9001",
-        "Conformita Tecnica CE",
-        "Integrazione Gestionale / ERP",
-        "Capitolato e Preventivo Chiuso",
-        "Assistenza Tecnica Diretta"
-      ],
-      "secondaryStats": [
-        {
-          "value": "99.4%",
-          "label": "Commesse consegnate nel pieno rispetto dei tempi contrattuali"
-        },
-        {
-          "value": "< 0.4s",
-          "label": "Caricamento istantaneo dell'infrastruttura digitale su rete mobile"
-        },
-        {
-          "value": "24h",
-          "label": "Presa in carico tecnica e invio automatico della richiesta al CRM"
-        }
-      ],
+      "mainStatValue": "98%",
+      "mainStatLabel": "Clienti soddisfatti di posa in opera e isolamento termico",
+      "reviewsSummary": "4.9/5 da clienti seguiti a Italia e provincia",
       "testimonials": [
         {
-          "name": "Direzione Tecnica e Produzione",
-          "location": "Italia · Commessa Industriale",
-          "quote": "Abbiamo affidato a Wigmann Infissi una commessa strategica per il nostro reparto: rispetto rigoroso delle specifiche tecniche, tempi di consegna puntuali e collaudo impeccabile.",
-          "roleOrContext": "Fornitura e collaudo B2B"
+          "name": "Davide C.",
+          "location": "Italia",
+          "quote": "Team di Wigmann Infissi preciso dal rilievo al montaggio. La differenza termica e acustica in casa si sente subito.",
+          "roleOrContext": "Sostituzione infissi completi"
         },
         {
-          "name": "Responsabile Ufficio Acquisti",
+          "name": "Federica S.",
           "location": "Italia e provincia",
-          "quote": "Un partner strutturato e affidabile: preventivazione trasparente senza costi occulti, documentazione tecnica completa e supporto post-vendita immediato.",
-          "roleOrContext": "Accordo quadro di fornitura"
+          "quote": "Preventivo rispettato al centesimo, cantiere lasciato pulito ogni sera e grande supporto sulle pratiche fiscali.",
+          "roleOrContext": "Finestre e portoncino blindato"
         }
       ]
     }

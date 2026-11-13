@@ -15,7 +15,7 @@ interface AdaptiveLogoProps {
 export default function AdaptiveLogo({
   src,
   alt,
-  className = "h-10 w-auto object-contain",
+  className = "h-10 w-auto max-w-[160px] sm:max-w-[210px] object-contain",
   headerBgMode = "light",
   logoBrightness,
   fallbackName,
@@ -105,7 +105,11 @@ export default function AdaptiveLogo({
 
   if (hasError || !src) {
     return (
-      <span className="font-[family-name:var(--font-jakarta)] font-extrabold text-lg sm:text-xl text-zinc-900 tracking-tight">
+      <span
+        className={`font-[family-name:var(--font-jakarta)] font-extrabold text-base sm:text-lg tracking-tight truncate max-w-[220px] ${
+          headerBgMode === "dark" ? "text-white" : "text-zinc-900"
+        }`}
+      >
         {fallbackName || alt}
       </span>
     );
@@ -118,7 +122,7 @@ export default function AdaptiveLogo({
 
   if (needsContrastPill) {
     return (
-      <div className="inline-flex items-center justify-center px-3 py-1.5 rounded-lg bg-zinc-950/95 border border-zinc-800 shadow-sm transition-all duration-200">
+      <div className="inline-flex shrink-0 items-center justify-center px-2.5 py-1 rounded-lg bg-zinc-950/95 border border-zinc-800 shadow-sm transition-all duration-200">
         <img
           ref={imgRef}
           src={src}
@@ -140,7 +144,7 @@ export default function AdaptiveLogo({
       crossOrigin="anonymous"
       onLoad={handleImageLoad}
       onError={() => setHasError(true)}
-      className={`${className} ${hasWhiteCanvasBg && headerBgMode !== "dark" ? "mix-blend-multiply" : ""}`}
+      className={`${className} shrink-0 ${hasWhiteCanvasBg && headerBgMode !== "dark" ? "mix-blend-multiply" : ""}`}
     />
   );
 }

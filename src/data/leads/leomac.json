@@ -32,7 +32,7 @@
     "renderBlockingCount": 8
   },
   "theme": {
-    "primaryHex": "#0B1E36",
+    "primaryHex": "#f09020",
     "accentHex": "#B8860B",
     "darkBgHex": "#0B1E36",
     "borderRadius": "8px",
@@ -40,7 +40,7 @@
     "logoBrightness": "dark"
   },
   "content": {
-    "badgeTop": "Leo.Mac Consolidamento fondazioni | · Divisione Tecnica & Commesse B2B (Milano)",
+    "badgeTop": "Leo.Mac Consolidamento Fondazioni · Divisione Tecnica e Commesse B2B (Milano)",
     "heroHeadline": "Consolidamento Fondazioni con Resine Espandenti: il Sistema Leo.Mac",
     "heroSubheadline": "Scopri il sistema Leo.Mac per il consolidamento fondazioni: una soluzione rapida, non invasiva e garantita per risolvere cedimenti e crepe nei muri.",
     "heroBullets": [
@@ -52,13 +52,13 @@
     "trustMicrocopy": "Riservatezza industriale garantita (NDA) · Risposta tecnica entro la giornata lavorativa",
     "logoLocalPath": "/leads/leomac/logo.png",
     "heroImageLocalPath": "/leads/leomac/hero.jpg",
-    "heroImageCaption": "Leo.Mac Consolidamento fondazioni | · Sede operativa e realizzazioni (Milano)",
+    "heroImageCaption": "Leo.Mac Consolidamento Fondazioni · Sede operativa e realizzazioni (Milano)",
     "quiz": {
       "question1": {
         "title": "Quale ambito operativo o di commessa desiderate approfondire?",
         "options": [
           "Fornitura industriale, impianti o commessa su specifica",
-          "Integrazione tecnica, automazione di reparto o portale B2B",
+          "Integrazione tecnica, automazione di reparto o accordo quadro",
           "Studio di fattibilita, capitolato e quotazione riservata"
         ]
       },
@@ -75,17 +75,17 @@
     "valueProps": [
       {
         "title": "Ingegneria e Progettazione su Specifica",
-        "description": "Analizziamo i requisiti produttivi della commessa a Milano, definendo specifiche tecniche, tempi di consegna e ritorno sull'investimento prima dell'avvio operativo.",
+        "description": "Analizziamo i requisiti produttivi della commessa a Milano, definendo specifiche tecniche, tempi di consegna e costi prima dell'avvio.",
         "metric": "Capitolato Chiuso"
       },
       {
         "title": "Controllo Qualita e Conformita Normativa",
-        "description": "Ogni fornitura e impianto di Leo.Mac Consolidamento fondazioni | viene collaudato secondo gli standard di sicurezza e qualita vigenti, con documentazione tecnica completa.",
+        "description": "Ogni fornitura di Leo.Mac Consolidamento Fondazioni viene collaudata secondo gli standard di sicurezza e qualita vigenti, con documentazione tecnica completa.",
         "metric": "100% Certificato"
       },
       {
         "title": "Continuita Operativa e Assistenza Post-Vendita",
-        "description": "Affianchiamo il reparto tecnico e acquisti dal collaudo in stabilimento fino alla manutenzione programmata e al riordino ricambi.",
+        "description": "Affianchiamo il reparto tecnico e acquisti dal collaudo in stabilimento fino alla manutenzione programmata.",
         "metric": "SLA Garantito"
       }
     ],
@@ -107,7 +107,7 @@
         },
         {
           "value": "< 0.4s",
-          "label": "Caricamento istantaneo dell'infrastruttura digitale su rete mobile"
+          "label": "Caricamento istantaneo dell'infrastruttura digitale su mobile"
         },
         {
           "value": "24h",
@@ -118,13 +118,13 @@
         {
           "name": "Direzione Tecnica e Produzione",
           "location": "Milano · Commessa Industriale",
-          "quote": "Abbiamo affidato a Leo.Mac Consolidamento fondazioni | una commessa strategica per il nostro reparto: rispetto rigoroso delle specifiche tecniche, tempi di consegna puntuali e collaudo impeccabile.",
+          "quote": "Abbiamo affidato a Leo.Mac Consolidamento Fondazioni una commessa strategica per il nostro reparto: rispetto rigoroso delle specifiche tecniche e collaudo impeccabile.",
           "roleOrContext": "Fornitura e collaudo B2B"
         },
         {
           "name": "Responsabile Ufficio Acquisti",
           "location": "Milano e provincia",
-          "quote": "Un partner strutturato e affidabile: preventivazione trasparente senza costi occulti, documentazione tecnica completa e supporto post-vendita immediato.",
+          "quote": "Partner strutturato e affidabile: preventivazione trasparente, documentazione tecnica completa e supporto post-vendita immediato.",
           "roleOrContext": "Accordo quadro di fornitura"
         }
       ]

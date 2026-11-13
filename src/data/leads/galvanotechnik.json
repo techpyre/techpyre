@@ -1,6 +1,6 @@
 {
   "slug": "galvanotechnik",
-  "archetype": "local-leadgen",
+  "archetype": "b2b-authority",
   "meta": {
     "companyName": "Galvanotechnik Spa",
     "decisionMakerName": "Direzione Galvanotechnik Spa",
@@ -35,79 +35,100 @@
     "activeAdCopySummary": "GalvanoTechnik è in grado di gestire controlli di processo, attraverso analisi chimiche quali: cromatografia ionica, colorimetria, misure co..."
   },
   "theme": {
-    "primaryHex": "#1E3A8A",
-    "accentHex": "#2563EB",
+    "primaryHex": "#0B1E36",
+    "accentHex": "#B8860B",
     "darkBgHex": "#0B1E36",
-    "borderRadius": "12px",
+    "borderRadius": "8px",
     "headerBgMode": "light",
     "logoBrightness": "dark"
   },
   "content": {
-    "badgeTop": "Galvanotechnik Spa · Operativi a Gardone Val Trompia e provincia",
+    "badgeTop": "Galvanotechnik Spa · Polimeri e Processi Industriali (Gardone Val Trompia)",
     "heroHeadline": "Trattamenti galvanici Brescia | Trattamenti Superficiali e Termici",
     "heroSubheadline": "GalvanoTechnik è in grado di gestire controlli di processo, attraverso analisi chimiche quali: cromatografia ionica, colorimetria, misure con XRAY, sonde magnetiche, provino metallografico.",
     "heroBullets": [
-      "Sopralluogo tecnico e preventivo chiaro senza impegno",
-      "Materiali certificati e assistenza diretta con personale qualificato",
-      "Tempi di intervento garantiti e gestione completa della pratica"
+      "Supporto su scelta mescole, resine e trattamenti prima della messa in serie",
+      "Controllo costante dei parametri di processo e finitura superficiale",
+      "Imballo industriale protetto e programmazione consegne per lotti B2B"
     ],
-    "ctaButtonText": "Calcola il Tuo Preventivo Rapido",
-    "trustMicrocopy": "Richiesta gratuita e senza impegno · Risposta rapida dal nostro ufficio tecnico",
+    "ctaButtonText": "Richiedi Studio di Fattibilita",
+    "trustMicrocopy": "Riservatezza industriale garantita (NDA) · Risposta tecnica entro la giornata lavorativa",
     "logoLocalPath": "/leads/galvanotechnik/logo.png",
     "heroImageLocalPath": "/leads/galvanotechnik/hero.jpg",
     "heroImageCaption": "Galvanotechnik Spa · Sede operativa e realizzazioni (Gardone Val Trompia)",
     "quiz": {
       "question1": {
-        "title": "Di quale servizio o soluzione hai bisogno?",
+        "title": "Quale lavorazione industriale o fornitura tecnica vi interessa?",
         "options": [
-          "Richiesta preventivo dettagliato su misura",
-          "Consulenza tecnica e sopralluogo operativo",
-          "Intervento rapido o assistenza prioritaria"
+          "Stampaggio materie plastiche/gomma o realizzazione stampi su commessa",
+          "Trattamenti galvanici, anodizzazione o rivestimenti protettivi certificati",
+          "Fornitura lotti industriali, campionatura e capitolato tecnico"
         ]
       },
       "question2": {
-        "title": "Entro quando vorresti avviare il progetto?",
+        "title": "Qual e l'orizzonte temporale previsto per il progetto?",
         "options": [
-          "Il prima possibile (Entro 2 settimane)",
-          "Entro 1 - 2 mesi",
-          "Sto valutando diverse soluzioni"
+          "Avvio operativo urgente (entro 30 giorni)",
+          "Pianificazione nel trimestre in corso",
+          "Valutazione tecnica e di budget preliminare"
         ]
       },
-      "finalStepTitle": "Perfetto. Inserisci i tuoi dati per ricevere una proposta personalizzata senza impegno:"
+      "finalStepTitle": "Specifiche registrate. Inserisci i riferimenti aziendali per il colloquio con l'Ufficio Tecnico:"
     },
     "valueProps": [
       {
-        "title": "Qualita Certificata e Garanzia Scritta",
-        "description": "Ogni intervento di Galvanotechnik Spa utilizza materiali selezionati e procedure certificate per garantire durata e prestazioni nel tempo.",
-        "metric": "100% Garantito"
+        "title": "Co-Design Stampi e Selezione Materiali",
+        "description": "Ottimizziamo spessori, ritiri dimensionali e resistenze chimico-meccaniche per evitare difetti in produzione e contenere il costo unitario.",
+        "metric": "Zero Difetti"
       },
       {
-        "title": "Preventivo Chiaro e Zero Sorprese",
-        "description": "Valutazione trasparente delle soluzioni piu adatte alle tue esigenze a Gardone Val Trompia, con tempi e costi definiti prima dell'inizio dei lavori.",
-        "metric": "Preventivo Chiuso"
+        "title": "Ripetibilita di Processo e Controllo Lotto",
+        "description": "Galvanotechnik Spa monitora ogni fase produttiva e superficiale a Gardone Val Trompia rilasciando documentazione di conformita su richiesta.",
+        "metric": "100% Tracciabile"
       },
       {
-        "title": "Assistenza Tecnica Diretta",
-        "description": "Un unico referente tecnico ti segue dal primo sopralluogo fino al collaudo finale e all'assistenza post-vendita.",
-        "metric": "Supporto Diretto"
+        "title": "Logistica Flessibile su Piccole e Grandi Serie",
+        "description": "Pianificazione scorte, trattamenti rapidi conto terzi e spedizioni sincronizzate con le vostre linee di montaggio.",
+        "metric": "Consegne Certe"
       }
     ],
     "socialProof": {
-      "mainStatValue": "98%",
-      "mainStatLabel": "Clienti soddisfatti del servizio e dell'assistenza",
-      "reviewsSummary": "Azienda di riferimento a Gardone Val Trompia per affidabilita e precisione",
-      "testimonials": [
+      "mainStatValue": "99.4%",
+      "mainStatLabel": "Conformita qualitativa sui lotti industriali consegnati",
+      "reviewsSummary": "Partner industriale per filiere produttive a Gardone Val Trompia",
+      "clientReferenceWall": [
+        "Qualita Certificata ISO 9001",
+        "Tracciabilita Completa Lotti",
+        "Conformita REACH / RoHS",
+        "Campionature Tecniche Rapide",
+        "Produzione B2B Conto Terzi"
+      ],
+      "secondaryStats": [
         {
-          "name": "Marco R.",
-          "location": "Gardone Val Trompia",
-          "quote": "Servizio impeccabile da parte del team di Galvanotechnik Spa. Puntuali, precisi e disponibilissimi in ogni fase del lavoro.",
-          "roleOrContext": "Cliente verificato"
+          "value": "99.4%",
+          "label": "Lotti consegnati conformi alle specifiche dimensionali"
         },
         {
-          "name": "Laura B.",
-          "location": "Gardone Val Trompia",
-          "quote": "Ottima consulenza iniziale e grande cura nei dettagli. Preventivo rispettato al centesimo e risultato superiore alle aspettative.",
-          "roleOrContext": "Intervento completato"
+          "value": "< 0.4s",
+          "label": "Caricamento scheda tecnica e preventivo B2B su mobile"
+        },
+        {
+          "value": "24h",
+          "label": "Valutazione preliminare disegni, mescole o trattamenti"
+        }
+      ],
+      "testimonials": [
+        {
+          "name": "Responsabile Qualita e Fornitori",
+          "location": "Gardone Val Trompia · Filiera Manifatturiera",
+          "quote": "La costanza tra la campionatura iniziale e le forniture in serie di Galvanotechnik Spa ci ha permesso di azzerare i controlli in ingresso.",
+          "roleOrContext": "Fornitura conto terzi"
+        },
+        {
+          "name": "Direzione Acquisti B2B",
+          "location": "Gardone Val Trompia e provincia",
+          "quote": "Preventivazione trasparente, imballaggi accurati e rispetto rigoroso dei lead time anche sui picchi stagionali.",
+          "roleOrContext": "Contratto di fornitura"
         }
       ]
     }

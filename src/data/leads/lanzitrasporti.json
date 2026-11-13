@@ -38,7 +38,7 @@
     "renderBlockingCount": 8
   },
   "theme": {
-    "primaryHex": "#0B1E36",
+    "primaryHex": "#4070b0",
     "accentHex": "#B8860B",
     "darkBgHex": "#0B1E36",
     "borderRadius": "8px",
@@ -46,13 +46,13 @@
     "logoBrightness": "dark"
   },
   "content": {
-    "badgeTop": "Lanzi Traslochi Parma · Divisione Tecnica & Commesse B2B (Romitaggio)",
+    "badgeTop": "Lanzi Traslochi Parma · Ingegneria e Automazione B2B (Romitaggio)",
     "heroHeadline": "Dal 1955 soluzioni in movimento",
     "heroSubheadline": "Lanzi è una storica azienda parmense che opera da più di 60 anni nel settore dei trasporti su strada, su rotaia, e della logistica integrata.",
     "heroBullets": [
-      "Studio di fattibilita tecnica e capitolato con tempi di consegna certi",
-      "Qualifica immediata della richiesta e assegnazione diretta all'Ufficio Tecnico",
-      "Produzione e assistenza certificata con referente unico dedicato"
+      "Studio elettrico, sviluppo software PLC e cablaggio quadri certificato",
+      "Revamping macchinari e interconnessione verso gestionali aziendali MES/ERP",
+      "Collaudo funzionale, fascicolo tecnico CE e teleassistenza post-vendita"
     ],
     "ctaButtonText": "Richiedi Studio di Fattibilita",
     "trustMicrocopy": "Riservatezza industriale garantita (NDA) · Risposta tecnica entro la giornata lavorativa",
@@ -61,11 +61,11 @@
     "heroImageCaption": "Lanzi Traslochi Parma · Sede operativa e realizzazioni (Romitaggio)",
     "quiz": {
       "question1": {
-        "title": "Quale ambito operativo o di commessa desiderate approfondire?",
+        "title": "Quale ambito di automazione o impiantistica industriale valutate?",
         "options": [
-          "Fornitura industriale, impianti o commessa su specifica",
-          "Integrazione tecnica, automazione di reparto o portale B2B",
-          "Studio di fattibilita, capitolato e quotazione riservata"
+          "Quadri elettrici bordomacchina, revamping linee e integrazione PLC",
+          "Progettazione isole robotizzate, macchinari o automazione di reparto",
+          "Studio di fattibilita tecnica, conformita CE e tempi di consegna"
         ]
       },
       "question2": {
@@ -80,58 +80,58 @@
     },
     "valueProps": [
       {
-        "title": "Ingegneria e Progettazione su Specifica",
-        "description": "Analizziamo i requisiti produttivi della commessa a Romitaggio, definendo specifiche tecniche, tempi di consegna e ritorno sull'investimento prima dell'avvio operativo.",
-        "metric": "Capitolato Chiuso"
+        "title": "Progettazione Elettrica e Software Su Specifica",
+        "description": "Sviluppiamo architetture di controllo affidabili e scalabili a Romitaggio, pensate per integrarsi nei vostri reparti senza lunghi fermi produzione.",
+        "metric": "Norma CE"
       },
       {
-        "title": "Controllo Qualita e Conformita Normativa",
-        "description": "Ogni fornitura e impianto di Lanzi Traslochi Parma viene collaudato secondo gli standard di sicurezza e qualita vigenti, con documentazione tecnica completa.",
-        "metric": "100% Certificato"
+        "title": "Quadristica, Cablaggio e Sicurezza Impianti",
+        "description": "Quadri di potenza e automazione testati al 100% prima della spedizione, completi di schemi aggiornati e verifiche di sicurezza.",
+        "metric": "Testato 100%"
       },
       {
-        "title": "Continuita Operativa e Assistenza Post-Vendita",
-        "description": "Affianchiamo il reparto tecnico e acquisti dal collaudo in stabilimento fino alla manutenzione programmata e al riordino ricambi.",
-        "metric": "SLA Garantito"
+        "title": "Avviamento in Linea e Teleassistenza",
+        "description": "Supportiamo gli operatori in fabbrica durante la messa in servizio e garantiamo continuità con diagnostica tempestiva.",
+        "metric": "Supporto Diretto"
       }
     ],
     "socialProof": {
       "mainStatValue": "99.4%",
-      "mainStatLabel": "Commesse B2B consegnate entro i tempi contrattuali",
-      "reviewsSummary": "Partner tecnico di riferimento per imprese e stabilimenti a Romitaggio",
+      "mainStatLabel": "Impianti e quadri avviati nel rispetto delle finestre produttive",
+      "reviewsSummary": "Partner tecnologico per l'automazione di stabilimenti a Romitaggio",
       "clientReferenceWall": [
-        "Qualita Certificata ISO 9001",
-        "Conformita Tecnica CE",
-        "Integrazione Gestionale / ERP",
-        "Capitolato e Preventivo Chiuso",
-        "Assistenza Tecnica Diretta"
+        "Direttiva Macchine 2006/42/CE",
+        "Conformita CEI EN 60204-1",
+        "Integrazione MES / ERP",
+        "Teleassistenza Industriale",
+        "Qualita Certificata ISO 9001"
       ],
       "secondaryStats": [
         {
           "value": "99.4%",
-          "label": "Commesse consegnate nel pieno rispetto dei tempi contrattuali"
+          "label": "Commesse di automazione collaudate nei tempi concordati"
         },
         {
           "value": "< 0.4s",
-          "label": "Caricamento istantaneo dell'infrastruttura digitale su rete mobile"
+          "label": "Caricamento rapido del portale tecnico su smartphone"
         },
         {
           "value": "24h",
-          "label": "Presa in carico tecnica e invio automatico della richiesta al CRM"
+          "label": "Primo riscontro dall'Ufficio Tecnico su nuove commesse"
         }
       ],
       "testimonials": [
         {
-          "name": "Direzione Tecnica e Produzione",
-          "location": "Romitaggio · Commessa Industriale",
-          "quote": "Abbiamo affidato a Lanzi Traslochi Parma una commessa strategica per il nostro reparto: rispetto rigoroso delle specifiche tecniche, tempi di consegna puntuali e collaudo impeccabile.",
-          "roleOrContext": "Fornitura e collaudo B2B"
+          "name": "Direttore di Stabilimento",
+          "location": "Romitaggio · Reparto Automazione",
+          "quote": "Il revamping eseguito da Lanzi Traslochi Parma ha stabilizzato la linea e ridotto i guasti elettrici fin dal primo mese di esercizio.",
+          "roleOrContext": "Automazione e revamping"
         },
         {
-          "name": "Responsabile Ufficio Acquisti",
+          "name": "Responsabile Ingegneria di Processo",
           "location": "Romitaggio e provincia",
-          "quote": "Un partner strutturato e affidabile: preventivazione trasparente senza costi occulti, documentazione tecnica completa e supporto post-vendita immediato.",
-          "roleOrContext": "Accordo quadro di fornitura"
+          "quote": "Documentazione elettrica ordinata, rispetto rigoroso delle norme di sicurezza e disponibilita immediata in fase di collaudo.",
+          "roleOrContext": "Quadristica e bordomacchina"
         }
       ]
     }

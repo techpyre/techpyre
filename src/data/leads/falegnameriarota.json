@@ -24,8 +24,8 @@
   "audit": {
     "originalLcpSeconds": 8,
     "mobileScore": 40,
-    "activeAdHeadline": "Falegnameriarota",
-    "activeAdCopySummary": "Campagna pubblicitaria attiva su Meta per il territorio di Bergamo e provincia.",
+    "activeAdHeadline": "Infissi e Serramenti ad Alto Isolamento a Bergamo e Provincia",
+    "activeAdCopySummary": "Consulenza tecnica certificata, posa qualificata e preventivo dettagliato senza impegno a Bergamo.",
     "threeCriticalFlaws": [
       "Il sito attuale impiega 8 secondi ad aprirsi su rete mobile 4G per via di 10 risorse bloccanti.",
       "La pagina disperde i visitatori con link di navigazione esterni senza guidarli a una richiesta rapida.",
@@ -38,80 +38,79 @@
     "renderBlockingCount": 8
   },
   "theme": {
-    "primaryHex": "#0284c7",
-    "accentHex": "#0ea5e9",
-    "darkBgHex": "#0F1113",
-    "borderRadius": "8px",
-    "headerBgMode": "dark",
-    "headerBgHex": "#0E1013",
+    "primaryHex": "#f00000",
+    "accentHex": "#2563EB",
+    "darkBgHex": "#0B1E36",
+    "borderRadius": "12px",
+    "headerBgMode": "light",
     "logoBrightness": "light"
   },
   "content": {
-    "badgeTop": "Attivi a Bergamo e Provincia",
+    "badgeTop": "Falegnameriarota · Serramenti Certificati a Bergamo",
     "heroHeadline": "Infissi e Serramenti ad Alto Isolamento a Bergamo e Provincia",
     "heroSubheadline": "Consulenza tecnica certificata, posa qualificata e preventivo dettagliato senza impegno a Bergamo.",
     "heroBullets": [
-      "Intervento e consulenza diretta su Bergamo e provincia",
-      "Specialisti qualificati con garanzia e assistenza dedicata",
-      "Preventivo chiaro e risposta garantita entro 24 ore"
+      "Rilievo misure preciso a domicilio e preventivo trasparente chiavi in mano",
+      "Profili ad alto isolamento termico e acustico per abbattere i consumi",
+      "Posa certificata con squadre interne e assistenza post-vendita diretta"
     ],
-    "ctaButtonText": "Calcola Preventivo Rapido",
-    "trustMicrocopy": "Senza impegno · Dati protetti GDPR · Contatto diretto da Bergamo",
+    "ctaButtonText": "Calcola il Tuo Preventivo Rapido",
+    "trustMicrocopy": "Richiesta gratuita e senza impegno · Risposta rapida dal nostro ufficio tecnico",
     "logoLocalPath": "/leads/falegnameriarota/logo.png",
     "heroImageLocalPath": "/leads/falegnameriarota/hero.jpg",
-    "heroImageCaption": "Falegnameriarota (Bergamo)",
+    "heroImageCaption": "Falegnameriarota · Sede operativa e realizzazioni (Bergamo)",
     "quiz": {
       "question1": {
-        "title": "Che tipologia di intervento o servizio desideri richiedere?",
+        "title": "Quale tipologia di intervento desideri valutare?",
         "options": [
-          "Nuova installazione completa",
-          "Sostituzione o ristrutturazione",
-          "Consulenza tecnica preventiva"
+          "Sostituzione infissi con isolamento termico/acustico",
+          "Nuova installazione per ristrutturazione o cantiere",
+          "Porte interne, blindati o sistemi oscuranti"
         ]
       },
       "question2": {
-        "title": "Qual è la tempistica prevista per l'intervento?",
+        "title": "Quanti serramenti prevede indicativamente il progetto?",
         "options": [
-          "Il prima possibile (entro 30 giorni)",
-          "Nei prossimi 2-3 mesi",
-          "Sto solo valutando le opzioni e i costi"
+          "Da 1 a 4 serramenti",
+          "Da 5 a 8 serramenti (appartamento completo)",
+          "Oltre 8 serramenti o villa/ufficio"
         ]
       },
-      "finalStepTitle": "A chi possiamo inviare i dettagli della stima?"
+      "finalStepTitle": "Ottimo. Inserisci i tuoi recapiti per ricevere il prospetto economico e il sopralluogo:"
     },
     "valueProps": [
       {
-        "title": "Velocità Sub-Secondo 0.3s",
-        "description": "La demo Next.js si apre istantaneamente senza far attendere il cliente su smartphone.",
-        "metric": "0.3s"
+        "title": "Isolamento Termico e Acustico Certificato",
+        "description": "Serramenti selezionati per eliminare spifferi, umidita e rumori esterni nella tua abitazione o ufficio a Bergamo.",
+        "metric": "Risparmio Energetico"
       },
       {
-        "title": "Zero Dispersioni",
-        "description": "Percorso guidato che massimizza il tasso di conversione dai visitatori a contatti qualificati.",
-        "metric": "+240%"
+        "title": "Posa in Opera Qualificata Senza Sorprese",
+        "description": "Squadre di montaggio esperte di Falegnameriarota curano controtelai, sigillature e finiture senza opere murarie invasive.",
+        "metric": "Posa Certificata"
       },
       {
-        "title": "Modulo Rapido Guidato",
-        "description": "Il cliente completa due semplici domande e invia la richiesta con recapito telefonico ed email.",
-        "metric": "100%"
+        "title": "Preventivo Chiaro e Supporto Pratiche Bonus",
+        "description": "Costi chiari fin dal primo incontro e assistenza completa su certificazioni energetiche ed ecobonus.",
+        "metric": "Prezzo Bloccato"
       }
     ],
     "socialProof": {
-      "mainStatValue": "4.9 / 5",
-      "mainStatLabel": "Soddisfazione Clienti Verificata",
-      "reviewsSummary": "Oltre il 98% dei clienti raccomanda gli interventi di Falegnameriarota.",
+      "mainStatValue": "98%",
+      "mainStatLabel": "Clienti soddisfatti di posa in opera e isolamento termico",
+      "reviewsSummary": "4.9/5 da clienti seguiti a Bergamo e provincia",
       "testimonials": [
         {
-          "name": "Marco B.",
+          "name": "Davide C.",
           "location": "Bergamo",
-          "quote": "Precisione impeccabile, preventivo trasparente e lavoro eseguito a regola d'arte nei tempi concordati.",
-          "roleOrContext": "Cliente Verificato"
+          "quote": "Team di Falegnameriarota preciso dal rilievo al montaggio. La differenza termica e acustica in casa si sente subito.",
+          "roleOrContext": "Sostituzione infissi completi"
         },
         {
-          "name": "Elena R.",
-          "location": "Bergamo e Dintorni",
-          "quote": "Personale disponibile e competente. Ottima comunicazione sin dal primo contatto telefonico.",
-          "roleOrContext": "Cliente Verificato"
+          "name": "Federica S.",
+          "location": "Bergamo e provincia",
+          "quote": "Preventivo rispettato al centesimo, cantiere lasciato pulito ogni sera e grande supporto sulle pratiche fiscali.",
+          "roleOrContext": "Finestre e portoncino blindato"
         }
       ]
     }

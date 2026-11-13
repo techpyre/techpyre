@@ -61,15 +61,46 @@ async function run() {
       !e.includes('u00')
   );
 
-  const phones = [
-    ...new Set(
-      html.match(/(?:\+39\s?)?(?:0\d{1,3}[\s.-]?\d{5,8}|3\d{2}[\s.-]?\d{6,7})/g) || []
-    ),
-  ].slice(0, 5);
-
   const piva =
     html.match(/(?:P\.?\s*IVA|Partita\s+IVA|C\.F\.|Codice\s+Fiscale)[\s:]*([0-9]{11})/i)?.[1] ||
     'Non trovata';
+
+  const extractCleanPhones = (rawHtml, vatVal) => {
+    const cleanVat = String(vatVal || '').replace(/\D/g, '');
+    const seen = new Set();
+    const out = [];
+    const pushPh = (raw, fromTel) => {
+      const trimmed = String(raw || '').replace(/^tel:/i, '').trim();
+      let d = trimmed.replace(/\D/g, '');
+      if (d.startsWith('0039') && d.length >= 12) d = d.slice(4);
+      else if (d.startsWith('39') && d.length >= 11 && (d[2] === '0' || d[2] === '3' || d[2] === '8')) d = d.slice(2);
+      if (!d || (cleanVat && d === cleanVat) || /0{5,}/.test(d) || new Set(d.split('')).size < 4) return;
+      const isValid =
+        /^3\d{9}$/.test(d) ||
+        /^8(?:00|03|40|48)\d{6,7}$/.test(d) ||
+        (fromTel && /^(?:02|06)\d{6,8}$/.test(d)) ||
+        /^0\d{8,10}$/.test(d);
+      if (!isValid || seen.has(d)) return;
+      seen.add(d);
+      out.push(trimmed.length <= 20 ? trimmed.replace(/\s+/g, ' ') : d);
+    };
+    for (const m of rawHtml.matchAll(/href=["']tel:([^"']+)["']/gi)) pushPh(m[1], true);
+    const vis = rawHtml
+      .replace(/<script[\s\S]*?<\/script>/gi, ' ')
+      .replace(/<style[\s\S]*?<\/style>/gi, ' ')
+      .replace(/<svg[\s\S]*?<\/svg>/gi, ' ')
+      .replace(/<[^>]+>/g, ' ')
+      .replace(/\s+/g, ' ');
+    for (const m of vis.matchAll(/(?:tel\.?|telefono|cell\.?|mobile|chiama)[\s:.-]{0,12}((?:\+39\s?|0039\s?)?(?:0\d{1,3}[\s.-]?\d{5,8}|3\d{2}[\s.-]?\d{6,7}))/gi)) {
+      pushPh(m[1], true);
+    }
+    for (const m of vis.matchAll(/\b((?:\+39\s?)?(?:0\d{1,3}[\s.-]?\d{5,8}|3\d{2}[\s.-]?\d{6,7}|8(?:00|03|40|48)[\s.-]?\d{6,7}))\b/g)) {
+      pushPh(m[1], false);
+    }
+    return out.slice(0, 5);
+  };
+
+  const phones = extractCleanPhones(html, piva);
 
   const cleanText = html
     .replace(/<script[\s\S]*?<\/script>/gi, ' ')
@@ -189,15 +220,11 @@ async function run() {
       !e.includes('u00')
   );
 
-  const finalPhones = [
-    ...new Set(
-      combinedHtml.match(/(?:\+39\s?)?(?:0\d{1,3}[\s.-]?\d{5,8}|3\d{2}[\s.-]?\d{6,7})/g) || []
-    ),
-  ].slice(0, 5);
-
   const finalPiva =
     combinedHtml.match(/(?:P\.?\s*IVA|Partita\s+IVA|C\.F\.|Codice\s+Fiscale)[\s:]*([0-9]{11})/i)?.[1] ||
     piva;
+
+  const finalPhones = extractCleanPhones(combinedHtml, finalPiva);
 
   // 4. RILEVAMENTO AGENZIA WEB / MARKETING ESTERNA & WHITE-LABEL OPPORTUNITY
   const agencyCreditMatches = [
@@ -313,10 +340,12 @@ async function run() {
   for (const match of imgTagMatches) {
     const fullTag = match[0].toLowerCase();
     const resolved = resolveUrl(finalUrl, match[1]);
-    if (!resolved) continue;
+    if (!resolved || /shinystat|facebook\.com\/tr|doubleclick|blank\.gif|spacer|1x1/i.test(resolved)) continue;
     if (fullTag.includes('logo') || resolved.toLowerCase().includes('logo')) {
-      if (!candidateLogoUrls.includes(resolved)) candidateLogoUrls.push(resolved);
-    } else if (!resolved.endsWith('.svg') && !resolved.includes('icon') && !resolved.includes('pixel')) {
+      if (!/\.svg(\?|$|#)/i.test(resolved) && !candidateLogoUrls.includes(resolved)) candidateLogoUrls.push(resolved);
+    } else if (
+      !/\.svg(\?|$|#)|icon|pixel|badge|bollino|sticker|flag|cookie|iubenda|certific|iso-|soa-|payment|visa|paypal|client-|partner/i.test(resolved)
+    ) {
       if (!candidateHeroUrls.includes(resolved)) candidateHeroUrls.push(resolved);
     }
   }

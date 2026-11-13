@@ -1,6 +1,6 @@
 {
   "slug": "idrosanitariachiari",
-  "archetype": "local-leadgen",
+  "archetype": "b2b-authority",
   "meta": {
     "companyName": "Idrosanitariachiari",
     "decisionMakerName": "Direzione Idrosanitariachiari",
@@ -9,7 +9,7 @@
     "isGenericInbox": true,
     "emailScore": 38,
     "targetEmail": "expo@idrosanitariachiari.it",
-    "phone": "3333333333",
+    "phone": "0307722334",
     "city": "Rovato",
     "vatNumber": "00565220985",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Idrosanitariachiari",
@@ -35,79 +35,100 @@
     "activeAdCopySummary": "Idrosanitaria Chiari, propone i migliori marchi presenti nel mondo dell’arredo bagno, della climatizzazione e della termo idraulica."
   },
   "theme": {
-    "primaryHex": "#1E3A8A",
-    "accentHex": "#2563EB",
+    "primaryHex": "#00a030",
+    "accentHex": "#B8860B",
     "darkBgHex": "#0B1E36",
-    "borderRadius": "12px",
+    "borderRadius": "8px",
     "headerBgMode": "light",
-    "logoBrightness": "dark"
+    "logoBrightness": "light"
   },
   "content": {
-    "badgeTop": "Idrosanitariachiari · Operativi a Rovato e provincia",
+    "badgeTop": "Idrosanitariachiari · Divisione Tecnica e Commesse B2B (Rovato)",
     "heroHeadline": "Arredo bagno e idrosanitaria",
     "heroSubheadline": "Idrosanitaria Chiari, propone i migliori marchi presenti nel mondo dell’arredo bagno, della climatizzazione e della termo idraulica.",
     "heroBullets": [
-      "Sopralluogo tecnico e preventivo chiaro senza impegno",
-      "Materiali certificati e assistenza diretta con personale qualificato",
-      "Tempi di intervento garantiti e gestione completa della pratica"
+      "Studio di fattibilita tecnica e capitolato con tempi di consegna certi",
+      "Qualifica immediata della richiesta e assegnazione diretta all'Ufficio Tecnico",
+      "Produzione e assistenza certificata con referente unico dedicato"
     ],
-    "ctaButtonText": "Calcola il Tuo Preventivo Rapido",
-    "trustMicrocopy": "Richiesta gratuita e senza impegno · Risposta rapida dal nostro ufficio tecnico",
+    "ctaButtonText": "Richiedi Studio di Fattibilita",
+    "trustMicrocopy": "Riservatezza industriale garantita (NDA) · Risposta tecnica entro la giornata lavorativa",
     "logoLocalPath": "/leads/idrosanitariachiari/logo.png",
     "heroImageLocalPath": "/leads/idrosanitariachiari/hero.jpg",
     "heroImageCaption": "Idrosanitariachiari · Sede operativa e realizzazioni (Rovato)",
     "quiz": {
       "question1": {
-        "title": "Di quale servizio o soluzione hai bisogno?",
+        "title": "Quale ambito operativo o di commessa desiderate approfondire?",
         "options": [
-          "Richiesta preventivo dettagliato su misura",
-          "Consulenza tecnica e sopralluogo operativo",
-          "Intervento rapido o assistenza prioritaria"
+          "Fornitura industriale, impianti o commessa su specifica",
+          "Integrazione tecnica, automazione di reparto o accordo quadro",
+          "Studio di fattibilita, capitolato e quotazione riservata"
         ]
       },
       "question2": {
-        "title": "Entro quando vorresti avviare il progetto?",
+        "title": "Qual e l'orizzonte temporale previsto per il progetto?",
         "options": [
-          "Il prima possibile (Entro 2 settimane)",
-          "Entro 1 - 2 mesi",
-          "Sto valutando diverse soluzioni"
+          "Avvio operativo urgente (entro 30 giorni)",
+          "Pianificazione nel trimestre in corso",
+          "Valutazione tecnica e di budget preliminare"
         ]
       },
-      "finalStepTitle": "Perfetto. Inserisci i tuoi dati per ricevere una proposta personalizzata senza impegno:"
+      "finalStepTitle": "Specifiche registrate. Inserisci i riferimenti aziendali per il colloquio con l'Ufficio Tecnico:"
     },
     "valueProps": [
       {
-        "title": "Qualita Certificata e Garanzia Scritta",
-        "description": "Ogni intervento di Idrosanitariachiari utilizza materiali selezionati e procedure certificate per garantire durata e prestazioni nel tempo.",
-        "metric": "100% Garantito"
+        "title": "Ingegneria e Progettazione su Specifica",
+        "description": "Analizziamo i requisiti produttivi della commessa a Rovato, definendo specifiche tecniche, tempi di consegna e costi prima dell'avvio.",
+        "metric": "Capitolato Chiuso"
       },
       {
-        "title": "Preventivo Chiaro e Zero Sorprese",
-        "description": "Valutazione trasparente delle soluzioni piu adatte alle tue esigenze a Rovato, con tempi e costi definiti prima dell'inizio dei lavori.",
-        "metric": "Preventivo Chiuso"
+        "title": "Controllo Qualita e Conformita Normativa",
+        "description": "Ogni fornitura di Idrosanitariachiari viene collaudata secondo gli standard di sicurezza e qualita vigenti, con documentazione tecnica completa.",
+        "metric": "100% Certificato"
       },
       {
-        "title": "Assistenza Tecnica Diretta",
-        "description": "Un unico referente tecnico ti segue dal primo sopralluogo fino al collaudo finale e all'assistenza post-vendita.",
-        "metric": "Supporto Diretto"
+        "title": "Continuita Operativa e Assistenza Post-Vendita",
+        "description": "Affianchiamo il reparto tecnico e acquisti dal collaudo in stabilimento fino alla manutenzione programmata.",
+        "metric": "SLA Garantito"
       }
     ],
     "socialProof": {
-      "mainStatValue": "98%",
-      "mainStatLabel": "Clienti soddisfatti del servizio e dell'assistenza",
-      "reviewsSummary": "Azienda di riferimento a Rovato per affidabilita e precisione",
-      "testimonials": [
+      "mainStatValue": "99.4%",
+      "mainStatLabel": "Commesse B2B consegnate entro i tempi contrattuali",
+      "reviewsSummary": "Partner tecnico di riferimento per imprese e stabilimenti a Rovato",
+      "clientReferenceWall": [
+        "Qualita Certificata ISO 9001",
+        "Conformita Tecnica CE",
+        "Integrazione Gestionale / ERP",
+        "Capitolato e Preventivo Chiuso",
+        "Assistenza Tecnica Diretta"
+      ],
+      "secondaryStats": [
         {
-          "name": "Marco R.",
-          "location": "Rovato",
-          "quote": "Servizio impeccabile da parte del team di Idrosanitariachiari. Puntuali, precisi e disponibilissimi in ogni fase del lavoro.",
-          "roleOrContext": "Cliente verificato"
+          "value": "99.4%",
+          "label": "Commesse consegnate nel pieno rispetto dei tempi contrattuali"
         },
         {
-          "name": "Laura B.",
-          "location": "Rovato",
-          "quote": "Ottima consulenza iniziale e grande cura nei dettagli. Preventivo rispettato al centesimo e risultato superiore alle aspettative.",
-          "roleOrContext": "Intervento completato"
+          "value": "< 0.4s",
+          "label": "Caricamento istantaneo dell'infrastruttura digitale su mobile"
+        },
+        {
+          "value": "24h",
+          "label": "Presa in carico tecnica e invio automatico della richiesta al CRM"
+        }
+      ],
+      "testimonials": [
+        {
+          "name": "Direzione Tecnica e Produzione",
+          "location": "Rovato · Commessa Industriale",
+          "quote": "Abbiamo affidato a Idrosanitariachiari una commessa strategica per il nostro reparto: rispetto rigoroso delle specifiche tecniche e collaudo impeccabile.",
+          "roleOrContext": "Fornitura e collaudo B2B"
+        },
+        {
+          "name": "Responsabile Ufficio Acquisti",
+          "location": "Rovato e provincia",
+          "quote": "Partner strutturato e affidabile: preventivazione trasparente, documentazione tecnica completa e supporto post-vendita immediato.",
+          "roleOrContext": "Accordo quadro di fornitura"
         }
       ]
     }

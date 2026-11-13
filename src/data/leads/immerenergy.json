@@ -5,7 +5,7 @@
     "companyName": "ImmerEnergy Fotovoltaico",
     "decisionMakerName": "Direzione ImmerEnergy Fotovoltaico",
     "targetEmail": "privacy@immergas.com",
-    "phone": "0120961",
+    "phone": "3364031911",
     "city": "Reggio Emilia",
     "vatNumber": "00932830359",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Referenze",
@@ -41,71 +41,71 @@
     "logoBrightness": "dark"
   },
   "content": {
-    "badgeTop": "Referenze · Operativi a Reggio Emilia e provincia",
-    "heroHeadline": "Referenze - Immerenergy",
+    "badgeTop": "ImmerEnergy Fotovoltaico · Energia e Comfort Termico (Reggio Emilia)",
+    "heroHeadline": "ImmerEnergy Fotovoltaico: Fotovoltaico, Clima e Impianti ad Alta Efficienza a Reggio Emilia",
     "heroSubheadline": "Grazie a profili di consumo elettrico costanti, Immerenergy permette alle aziende di raggiungere alti traguardi di efficienza energetica.",
     "heroBullets": [
-      "Sopralluogo tecnico e preventivo chiaro senza impegno",
-      "Materiali certificati e assistenza diretta con personale qualificato",
-      "Tempi di intervento garantiti e gestione completa della pratica"
+      "Analisi consumi in bolletta e dimensionamento reale senza sovrastime",
+      "Installazione certificata con tecnici interni abilitati F-Gas / FER",
+      "Gestione completa pratiche di allaccio, ENEA e incentivi fiscali"
     ],
     "ctaButtonText": "Calcola il Tuo Preventivo Rapido",
     "trustMicrocopy": "Richiesta gratuita e senza impegno · Risposta rapida dal nostro ufficio tecnico",
-    "logoLocalPath": "/leads/immerenergy/logo.png",
+    "logoLocalPath": "",
     "heroImageLocalPath": "/leads/immerenergy/hero.jpg",
-    "heroImageCaption": "Referenze · Sede operativa e realizzazioni (Reggio Emilia)",
+    "heroImageCaption": "ImmerEnergy Fotovoltaico · Sede operativa e realizzazioni (Reggio Emilia)",
     "quiz": {
       "question1": {
-        "title": "Di quale servizio o soluzione hai bisogno?",
+        "title": "Quale impianto desideri installare o sostituire?",
         "options": [
-          "Richiesta preventivo dettagliato su misura",
-          "Consulenza tecnica e sopralluogo operativo",
-          "Intervento rapido o assistenza prioritaria"
+          "Impianto fotovoltaico con eventuale sistema di accumulo",
+          "Climatizzatori, pompa di calore o caldaia ad alta efficienza",
+          "Riqualificazione energetica completa dell'abitazione"
         ]
       },
       "question2": {
-        "title": "Entro quando vorresti avviare il progetto?",
+        "title": "Qual e il tuo obiettivo principale?",
         "options": [
-          "Il prima possibile (Entro 2 settimane)",
-          "Entro 1 - 2 mesi",
-          "Sto valutando diverse soluzioni"
+          "Abbattere subito i costi in bolletta",
+          "Accesso agli incentivi e detrazioni fiscali attive",
+          "Sostituzione urgente con sopralluogo tecnico rapido"
         ]
       },
-      "finalStepTitle": "Perfetto. Inserisci i tuoi dati per ricevere una proposta personalizzata senza impegno:"
+      "finalStepTitle": "Perfetto. Lascia i tuoi dati per ricevere la simulazione tecnica e il preventivo dedicato:"
     },
     "valueProps": [
       {
-        "title": "Qualita Certificata e Garanzia Scritta",
-        "description": "Ogni intervento di Referenze utilizza materiali selezionati e procedure certificate per garantire durata e prestazioni nel tempo.",
-        "metric": "100% Garantito"
+        "title": "Dimensionamento Sui Tuoi Consumi Reali",
+        "description": "Calcoliamo potenza, accumulo o taglia della pompa di calore per offrirti il miglior rientro economico possibile a Reggio Emilia.",
+        "metric": "Resa Massima"
       },
       {
-        "title": "Preventivo Chiaro e Zero Sorprese",
-        "description": "Valutazione trasparente delle soluzioni piu adatte alle tue esigenze a Reggio Emilia, con tempi e costi definiti prima dell'inizio dei lavori.",
-        "metric": "Preventivo Chiuso"
+        "title": "Installazione Certificata e Sicura",
+        "description": "I tecnici di ImmerEnergy Fotovoltaico eseguono il lavoro a regola d'arte rilasciando tutte le dichiarazioni di conformita.",
+        "metric": "100% A Norma"
       },
       {
-        "title": "Assistenza Tecnica Diretta",
-        "description": "Un unico referente tecnico ti segue dal primo sopralluogo fino al collaudo finale e all'assistenza post-vendita.",
-        "metric": "Supporto Diretto"
+        "title": "Assistenza e Pratiche Chiavi in Mano",
+        "description": "Seguiamo noi iter autorizzativi, pratiche incentivi e manutenzione programmata post-installazione.",
+        "metric": "Zero Pensieri"
       }
     ],
     "socialProof": {
       "mainStatValue": "98%",
-      "mainStatLabel": "Clienti soddisfatti del servizio e dell'assistenza",
-      "reviewsSummary": "Azienda di riferimento a Reggio Emilia per affidabilita e precisione",
+      "mainStatLabel": "Clienti soddisfatti del risparmio energetico ottenuto",
+      "reviewsSummary": "4.9/5 da clienti residenziali a Reggio Emilia",
       "testimonials": [
         {
-          "name": "Marco R.",
+          "name": "Simone G.",
           "location": "Reggio Emilia",
-          "quote": "Servizio impeccabile da parte del team di Referenze. Puntuali, precisi e disponibilissimi in ogni fase del lavoro.",
-          "roleOrContext": "Cliente verificato"
+          "quote": "Impianto dimensione perfetta per i nostri consumi. ImmerEnergy Fotovoltaico ha gestito installazione e pratiche in tempi record.",
+          "roleOrContext": "Fotovoltaico con accumulo"
         },
         {
-          "name": "Laura B.",
-          "location": "Reggio Emilia",
-          "quote": "Ottima consulenza iniziale e grande cura nei dettagli. Preventivo rispettato al centesimo e risultato superiore alle aspettative.",
-          "roleOrContext": "Intervento completato"
+          "name": "Elena P.",
+          "location": "Reggio Emilia e provincia",
+          "quote": "Tecnici puliti e precisi nel montaggio del nuovo impianto di climatizzazione. Preventivo chiaro fin dal primo giorno.",
+          "roleOrContext": "Pompa di calore e clima"
         }
       ]
     }

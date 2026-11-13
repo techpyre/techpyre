@@ -23,8 +23,8 @@
       "Cecita decisionale sul ROI: assenza di tracciamento Server-Side di prima parte (GTM Server-Side e Meta CAPI), con perdita del 30-50% dei dati di conversione per blocchi browser e cookie banner.",
       "Colli di bottiglia commerciali: i contatti finiscono in email isolate senza pre-qualifica automatica e senza sincronizzazione immediata via API/Webhook con il CRM aziendale."
     ],
-    "activeAdHeadline": "Contatti - Euromac",
-    "activeAdCopySummary": "\ude00𝗲 𝗹𝗮𝘃𝗼𝗿𝗮𝘇𝗶𝗼𝗻𝗶, anche le 𝗽𝗶𝘂̀ 𝗰𝗼𝗺𝗽𝗹𝗲𝘀𝘀𝗲. Non dovrai più adattare il tuo processo produttivo ai limiti della macchina...",
+    "activeAdHeadline": "Euromac Macchine Industriali: Stampaggio Tecnico, Polimeri e Trattamenti Industriali a Italia",
+    "activeAdCopySummary": "Soluzioni industriali per materie plastiche, gomma, rivestimenti e trattamenti superficiali a Italia con controllo qualita di processo e tra...",
     "runsAds": true,
     "detectedTrackingSignals": [
       "Meta Ad Library"
@@ -32,34 +32,34 @@
     "renderBlockingCount": 8
   },
   "theme": {
-    "primaryHex": "#0B1E36",
+    "primaryHex": "#002000",
     "accentHex": "#B8860B",
     "darkBgHex": "#0B1E36",
     "borderRadius": "8px",
     "headerBgMode": "light",
-    "logoBrightness": "dark"
+    "logoBrightness": "light"
   },
   "content": {
-    "badgeTop": "Contatti · Divisione Tecnica & Commesse B2B (Italia)",
-    "heroHeadline": "Contatti - Euromac",
-    "heroSubheadline": "\ude00𝗲 𝗹𝗮𝘃𝗼𝗿𝗮𝘇𝗶𝗼𝗻𝗶, anche le 𝗽𝗶𝘂̀ 𝗰𝗼𝗺𝗽𝗹𝗲𝘀𝘀𝗲. Non dovrai più adattare il tuo processo produttivo ai limiti della macchina. Con Euromac è la macchina a 𝘀𝗲𝗴𝘂𝗶𝗿𝗲 𝗶 𝘁𝘂𝗼𝗶 𝗳𝗹𝘂𝘀𝘀𝗶.",
+    "badgeTop": "Euromac Macchine Industriali · Polimeri e Processi Industriali (Italia)",
+    "heroHeadline": "Euromac Macchine Industriali: Stampaggio Tecnico, Polimeri e Trattamenti Industriali a Italia",
+    "heroSubheadline": "Soluzioni industriali per materie plastiche, gomma, rivestimenti e trattamenti superficiali a Italia con controllo qualita di processo e tracciabilita lotti.",
     "heroBullets": [
-      "Studio di fattibilita tecnica e capitolato con tempi di consegna certi",
-      "Qualifica immediata della richiesta e assegnazione diretta all'Ufficio Tecnico",
-      "Produzione e assistenza certificata con referente unico dedicato"
+      "Supporto su scelta mescole, resine e trattamenti prima della messa in serie",
+      "Controllo costante dei parametri di processo e finitura superficiale",
+      "Imballo industriale protetto e programmazione consegne per lotti B2B"
     ],
     "ctaButtonText": "Richiedi Studio di Fattibilita",
     "trustMicrocopy": "Riservatezza industriale garantita (NDA) · Risposta tecnica entro la giornata lavorativa",
     "logoLocalPath": "/leads/euromac/logo.png",
     "heroImageLocalPath": "/leads/euromac/hero.jpg",
-    "heroImageCaption": "Contatti · Sede operativa e realizzazioni (Italia)",
+    "heroImageCaption": "Euromac Macchine Industriali · Sede operativa e realizzazioni (Italia)",
     "quiz": {
       "question1": {
-        "title": "Quale ambito operativo o di commessa desiderate approfondire?",
+        "title": "Quale lavorazione industriale o fornitura tecnica vi interessa?",
         "options": [
-          "Fornitura industriale, impianti o commessa su specifica",
-          "Integrazione tecnica, automazione di reparto o portale B2B",
-          "Studio di fattibilita, capitolato e quotazione riservata"
+          "Stampaggio materie plastiche/gomma o realizzazione stampi su commessa",
+          "Trattamenti galvanici, anodizzazione o rivestimenti protettivi certificati",
+          "Fornitura lotti industriali, campionatura e capitolato tecnico"
         ]
       },
       "question2": {
@@ -74,58 +74,58 @@
     },
     "valueProps": [
       {
-        "title": "Ingegneria e Progettazione su Specifica",
-        "description": "Analizziamo i requisiti produttivi della commessa a Italia, definendo specifiche tecniche, tempi di consegna e ritorno sull'investimento prima dell'avvio operativo.",
-        "metric": "Capitolato Chiuso"
+        "title": "Co-Design Stampi e Selezione Materiali",
+        "description": "Ottimizziamo spessori, ritiri dimensionali e resistenze chimico-meccaniche per evitare difetti in produzione e contenere il costo unitario.",
+        "metric": "Zero Difetti"
       },
       {
-        "title": "Controllo Qualita e Conformita Normativa",
-        "description": "Ogni fornitura e impianto di Contatti viene collaudato secondo gli standard di sicurezza e qualita vigenti, con documentazione tecnica completa.",
-        "metric": "100% Certificato"
+        "title": "Ripetibilita di Processo e Controllo Lotto",
+        "description": "Euromac Macchine Industriali monitora ogni fase produttiva e superficiale a Italia rilasciando documentazione di conformita su richiesta.",
+        "metric": "100% Tracciabile"
       },
       {
-        "title": "Continuita Operativa e Assistenza Post-Vendita",
-        "description": "Affianchiamo il reparto tecnico e acquisti dal collaudo in stabilimento fino alla manutenzione programmata e al riordino ricambi.",
-        "metric": "SLA Garantito"
+        "title": "Logistica Flessibile su Piccole e Grandi Serie",
+        "description": "Pianificazione scorte, trattamenti rapidi conto terzi e spedizioni sincronizzate con le vostre linee di montaggio.",
+        "metric": "Consegne Certe"
       }
     ],
     "socialProof": {
       "mainStatValue": "99.4%",
-      "mainStatLabel": "Commesse B2B consegnate entro i tempi contrattuali",
-      "reviewsSummary": "Partner tecnico di riferimento per imprese e stabilimenti a Italia",
+      "mainStatLabel": "Conformita qualitativa sui lotti industriali consegnati",
+      "reviewsSummary": "Partner industriale per filiere produttive a Italia",
       "clientReferenceWall": [
         "Qualita Certificata ISO 9001",
-        "Conformita Tecnica CE",
-        "Integrazione Gestionale / ERP",
-        "Capitolato e Preventivo Chiuso",
-        "Assistenza Tecnica Diretta"
+        "Tracciabilita Completa Lotti",
+        "Conformita REACH / RoHS",
+        "Campionature Tecniche Rapide",
+        "Produzione B2B Conto Terzi"
       ],
       "secondaryStats": [
         {
           "value": "99.4%",
-          "label": "Commesse consegnate nel pieno rispetto dei tempi contrattuali"
+          "label": "Lotti consegnati conformi alle specifiche dimensionali"
         },
         {
           "value": "< 0.4s",
-          "label": "Caricamento istantaneo dell'infrastruttura digitale su rete mobile"
+          "label": "Caricamento scheda tecnica e preventivo B2B su mobile"
         },
         {
           "value": "24h",
-          "label": "Presa in carico tecnica e invio automatico della richiesta al CRM"
+          "label": "Valutazione preliminare disegni, mescole o trattamenti"
         }
       ],
       "testimonials": [
         {
-          "name": "Direzione Tecnica e Produzione",
-          "location": "Italia · Commessa Industriale",
-          "quote": "Abbiamo affidato a Contatti una commessa strategica per il nostro reparto: rispetto rigoroso delle specifiche tecniche, tempi di consegna puntuali e collaudo impeccabile.",
-          "roleOrContext": "Fornitura e collaudo B2B"
+          "name": "Responsabile Qualita e Fornitori",
+          "location": "Italia · Filiera Manifatturiera",
+          "quote": "La costanza tra la campionatura iniziale e le forniture in serie di Euromac Macchine Industriali ci ha permesso di azzerare i controlli in ingresso.",
+          "roleOrContext": "Fornitura conto terzi"
         },
         {
-          "name": "Responsabile Ufficio Acquisti",
+          "name": "Direzione Acquisti B2B",
           "location": "Italia e provincia",
-          "quote": "Un partner strutturato e affidabile: preventivazione trasparente senza costi occulti, documentazione tecnica completa e supporto post-vendita immediato.",
-          "roleOrContext": "Accordo quadro di fornitura"
+          "quote": "Preventivazione trasparente, imballaggi accurati e rispetto rigoroso dei lead time anche sui picchi stagionali.",
+          "roleOrContext": "Contratto di fornitura"
         }
       ]
     }

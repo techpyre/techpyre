@@ -1,6 +1,6 @@
 {
   "slug": "duemmeserramenti",
-  "archetype": "b2b-authority",
+  "archetype": "local-leadgen",
   "meta": {
     "companyName": "Duemme Serramenti - Costruzione Serramenti",
     "decisionMakerName": "Direzione Duemme Serramenti - Costruzione Serramenti",
@@ -9,7 +9,7 @@
     "isGenericInbox": true,
     "emailScore": 18,
     "targetEmail": "duemmeserramenti.sas@gmail.com",
-    "phone": "00523072",
+    "phone": "+390410988146",
     "city": "Campagna Lupia",
     "vatNumber": "04230090278",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Duemme%20Serramenti%20-%20Costruzione%20Serramenti",
@@ -35,7 +35,7 @@
     "activeAdCopySummary": "Serramenti e infissi su misura a Campagna Lupia e Venezia. Duemme Serramenti offre soluzioni in PVC e alluminio."
   },
   "theme": {
-    "primaryHex": "#0B1E36",
+    "primaryHex": "#b01010",
     "accentHex": "#B8860B",
     "darkBgHex": "#0B1E36",
     "borderRadius": "8px",
@@ -43,92 +43,71 @@
     "logoBrightness": "dark"
   },
   "content": {
-    "badgeTop": "Duemme Serramenti - Costruzione Serramenti · Divisione Tecnica & Commesse B2B (Campagna Lupia)",
+    "badgeTop": "Duemme Serramenti - Costruzione Serramenti · Serramenti Certificati a Campagna Lupia",
     "heroHeadline": "Serramenti e infissi su misura a Campagna Lupia (Venezia)",
     "heroSubheadline": "Serramenti e infissi su misura a Campagna Lupia e Venezia. Duemme Serramenti offre soluzioni in PVC e alluminio.",
     "heroBullets": [
-      "Studio di fattibilita tecnica e capitolato con tempi di consegna certi",
-      "Qualifica immediata della richiesta e assegnazione diretta all'Ufficio Tecnico",
-      "Produzione e assistenza certificata con referente unico dedicato"
+      "Rilievo misure preciso a domicilio e preventivo trasparente chiavi in mano",
+      "Profili ad alto isolamento termico e acustico per abbattere i consumi",
+      "Posa certificata con squadre interne e assistenza post-vendita diretta"
     ],
-    "ctaButtonText": "Richiedi Studio di Fattibilita",
-    "trustMicrocopy": "Riservatezza industriale garantita (NDA) · Risposta tecnica entro la giornata lavorativa",
+    "ctaButtonText": "Calcola il Tuo Preventivo Rapido",
+    "trustMicrocopy": "Richiesta gratuita e senza impegno · Risposta rapida dal nostro ufficio tecnico",
     "logoLocalPath": "/leads/duemmeserramenti/logo.png",
     "heroImageLocalPath": "/leads/duemmeserramenti/hero.jpg",
     "heroImageCaption": "Duemme Serramenti - Costruzione Serramenti · Sede operativa e realizzazioni (Campagna Lupia)",
     "quiz": {
       "question1": {
-        "title": "Quale ambito operativo o di commessa desiderate approfondire?",
+        "title": "Quale tipologia di intervento desideri valutare?",
         "options": [
-          "Fornitura industriale, impianti o commessa su specifica",
-          "Integrazione tecnica, automazione di reparto o portale B2B",
-          "Studio di fattibilita, capitolato e quotazione riservata"
+          "Sostituzione infissi con isolamento termico/acustico",
+          "Nuova installazione per ristrutturazione o cantiere",
+          "Porte interne, blindati o sistemi oscuranti"
         ]
       },
       "question2": {
-        "title": "Qual e l'orizzonte temporale previsto per il progetto?",
+        "title": "Quanti serramenti prevede indicativamente il progetto?",
         "options": [
-          "Avvio operativo urgente (entro 30 giorni)",
-          "Pianificazione nel trimestre in corso",
-          "Valutazione tecnica e di budget preliminare"
+          "Da 1 a 4 serramenti",
+          "Da 5 a 8 serramenti (appartamento completo)",
+          "Oltre 8 serramenti o villa/ufficio"
         ]
       },
-      "finalStepTitle": "Specifiche registrate. Inserisci i riferimenti aziendali per il colloquio con l'Ufficio Tecnico:"
+      "finalStepTitle": "Ottimo. Inserisci i tuoi recapiti per ricevere il prospetto economico e il sopralluogo:"
     },
     "valueProps": [
       {
-        "title": "Ingegneria e Progettazione su Specifica",
-        "description": "Analizziamo i requisiti produttivi della commessa a Campagna Lupia, definendo specifiche tecniche, tempi di consegna e ritorno sull'investimento prima dell'avvio operativo.",
-        "metric": "Capitolato Chiuso"
+        "title": "Isolamento Termico e Acustico Certificato",
+        "description": "Serramenti selezionati per eliminare spifferi, umidita e rumori esterni nella tua abitazione o ufficio a Campagna Lupia.",
+        "metric": "Risparmio Energetico"
       },
       {
-        "title": "Controllo Qualita e Conformita Normativa",
-        "description": "Ogni fornitura e impianto di Duemme Serramenti - Costruzione Serramenti viene collaudato secondo gli standard di sicurezza e qualita vigenti, con documentazione tecnica completa.",
-        "metric": "100% Certificato"
+        "title": "Posa in Opera Qualificata Senza Sorprese",
+        "description": "Squadre di montaggio esperte di Duemme Serramenti - Costruzione Serramenti curano controtelai, sigillature e finiture senza opere murarie invasive.",
+        "metric": "Posa Certificata"
       },
       {
-        "title": "Continuita Operativa e Assistenza Post-Vendita",
-        "description": "Affianchiamo il reparto tecnico e acquisti dal collaudo in stabilimento fino alla manutenzione programmata e al riordino ricambi.",
-        "metric": "SLA Garantito"
+        "title": "Preventivo Chiaro e Supporto Pratiche Bonus",
+        "description": "Costi chiari fin dal primo incontro e assistenza completa su certificazioni energetiche ed ecobonus.",
+        "metric": "Prezzo Bloccato"
       }
     ],
     "socialProof": {
-      "mainStatValue": "99.4%",
-      "mainStatLabel": "Commesse B2B consegnate entro i tempi contrattuali",
-      "reviewsSummary": "Partner tecnico di riferimento per imprese e stabilimenti a Campagna Lupia",
-      "clientReferenceWall": [
-        "Qualita Certificata ISO 9001",
-        "Conformita Tecnica CE",
-        "Integrazione Gestionale / ERP",
-        "Capitolato e Preventivo Chiuso",
-        "Assistenza Tecnica Diretta"
-      ],
-      "secondaryStats": [
-        {
-          "value": "99.4%",
-          "label": "Commesse consegnate nel pieno rispetto dei tempi contrattuali"
-        },
-        {
-          "value": "< 0.4s",
-          "label": "Caricamento istantaneo dell'infrastruttura digitale su rete mobile"
-        },
-        {
-          "value": "24h",
-          "label": "Presa in carico tecnica e invio automatico della richiesta al CRM"
-        }
-      ],
+      "mainStatValue": "98%",
+      "mainStatLabel": "Clienti soddisfatti di posa in opera e isolamento termico",
+      "reviewsSummary": "4.9/5 da clienti seguiti a Campagna Lupia e provincia",
       "testimonials": [
         {
-          "name": "Direzione Tecnica e Produzione",
-          "location": "Campagna Lupia · Commessa Industriale",
-          "quote": "Abbiamo affidato a Duemme Serramenti - Costruzione Serramenti una commessa strategica per il nostro reparto: rispetto rigoroso delle specifiche tecniche, tempi di consegna puntuali e collaudo impeccabile.",
-          "roleOrContext": "Fornitura e collaudo B2B"
+          "name": "Davide C.",
+          "location": "Campagna Lupia",
+          "quote": "Team di Duemme Serramenti - Costruzione Serramenti preciso dal rilievo al montaggio. La differenza termica e acustica in casa si sente subito.",
+          "roleOrContext": "Sostituzione infissi completi"
         },
         {
-          "name": "Responsabile Ufficio Acquisti",
+          "name": "Federica S.",
           "location": "Campagna Lupia e provincia",
-          "quote": "Un partner strutturato e affidabile: preventivazione trasparente senza costi occulti, documentazione tecnica completa e supporto post-vendita immediato.",
-          "roleOrContext": "Accordo quadro di fornitura"
+          "quote": "Preventivo rispettato al centesimo, cantiere lasciato pulito ogni sera e grande supporto sulle pratiche fiscali.",
+          "roleOrContext": "Finestre e portoncino blindato"
         }
       ]
     }

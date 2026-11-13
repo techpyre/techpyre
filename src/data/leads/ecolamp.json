@@ -40,7 +40,7 @@
     "logoBrightness": "dark"
   },
   "content": {
-    "badgeTop": "Servizio ExtraVoltaico · Operativi a Milano e provincia",
+    "badgeTop": "Ecolamp ExtraVoltaico · Operativi a Milano e provincia",
     "heroHeadline": "Servizio ExtraVoltaico | Ecolamp",
     "heroSubheadline": "ExtraVoltaico è il servizio Ecolamp destinato a tutti gli installatori e i professionisti che devono smaltire pannelli fotovoltaici appartenenti raggruppamento R4.",
     "heroBullets": [
@@ -52,7 +52,7 @@
     "trustMicrocopy": "Richiesta gratuita e senza impegno · Risposta rapida dal nostro ufficio tecnico",
     "logoLocalPath": "/leads/ecolamp/logo.png",
     "heroImageLocalPath": "/leads/ecolamp/hero.jpg",
-    "heroImageCaption": "Servizio ExtraVoltaico · Sede operativa e realizzazioni (Milano)",
+    "heroImageCaption": "Ecolamp ExtraVoltaico · Sede operativa e realizzazioni (Milano)",
     "quiz": {
       "question1": {
         "title": "Di quale servizio o soluzione hai bisogno?",
@@ -75,7 +75,7 @@
     "valueProps": [
       {
         "title": "Qualita Certificata e Garanzia Scritta",
-        "description": "Ogni intervento di Servizio ExtraVoltaico utilizza materiali selezionati e procedure certificate per garantire durata e prestazioni nel tempo.",
+        "description": "Ogni intervento di Ecolamp ExtraVoltaico utilizza materiali selezionati e procedure certificate per garantire durata e prestazioni nel tempo.",
         "metric": "100% Garantito"
       },
       {
@@ -97,7 +97,7 @@
         {
           "name": "Marco R.",
           "location": "Milano",
-          "quote": "Servizio impeccabile da parte del team di Servizio ExtraVoltaico. Puntuali, precisi e disponibilissimi in ogni fase del lavoro.",
+          "quote": "Servizio impeccabile da parte del team di Ecolamp ExtraVoltaico. Puntuali, precisi e disponibilissimi in ogni fase del lavoro.",
           "roleOrContext": "Cliente verificato"
         },
         {

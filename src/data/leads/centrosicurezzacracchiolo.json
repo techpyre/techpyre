@@ -38,21 +38,21 @@
     "renderBlockingCount": 8
   },
   "theme": {
-    "primaryHex": "#1E3A8A",
+    "primaryHex": "#70a080",
     "accentHex": "#2563EB",
     "darkBgHex": "#0B1E36",
     "borderRadius": "12px",
     "headerBgMode": "light",
-    "logoBrightness": "dark"
+    "logoBrightness": "light"
   },
   "content": {
-    "badgeTop": "C.S.C Centro Sicurezza Cracchiolo · Operativi a Torino e provincia",
+    "badgeTop": "C.S.C Centro Sicurezza Cracchiolo · Serramenti Certificati a Torino",
     "heroHeadline": "Centro Sicurezza Cracchiolo",
     "heroSubheadline": "Porte blindate torino Cracchiolo: ampia scelta in fatto di porte corazzate, casseforti e sistemi antifurto di qualunque tipologia.",
     "heroBullets": [
-      "Sopralluogo tecnico e preventivo chiaro senza impegno",
-      "Materiali certificati e assistenza diretta con personale qualificato",
-      "Tempi di intervento garantiti e gestione completa della pratica"
+      "Rilievo misure preciso a domicilio e preventivo trasparente chiavi in mano",
+      "Profili ad alto isolamento termico e acustico per abbattere i consumi",
+      "Posa certificata con squadre interne e assistenza post-vendita diretta"
     ],
     "ctaButtonText": "Calcola il Tuo Preventivo Rapido",
     "trustMicrocopy": "Richiesta gratuita e senza impegno · Risposta rapida dal nostro ufficio tecnico",
@@ -80,37 +80,37 @@
     },
     "valueProps": [
       {
-        "title": "Qualita Certificata e Garanzia Scritta",
-        "description": "Ogni intervento di C.S.C Centro Sicurezza Cracchiolo utilizza materiali selezionati e procedure certificate per garantire durata e prestazioni nel tempo.",
-        "metric": "100% Garantito"
+        "title": "Isolamento Termico e Acustico Certificato",
+        "description": "Serramenti selezionati per eliminare spifferi, umidita e rumori esterni nella tua abitazione o ufficio a Torino.",
+        "metric": "Risparmio Energetico"
       },
       {
-        "title": "Preventivo Chiaro e Zero Sorprese",
-        "description": "Valutazione trasparente delle soluzioni piu adatte alle tue esigenze a Torino, con tempi e costi definiti prima dell'inizio dei lavori.",
-        "metric": "Preventivo Chiuso"
+        "title": "Posa in Opera Qualificata Senza Sorprese",
+        "description": "Squadre di montaggio esperte di C.S.C Centro Sicurezza Cracchiolo curano controtelai, sigillature e finiture senza opere murarie invasive.",
+        "metric": "Posa Certificata"
       },
       {
-        "title": "Assistenza Tecnica Diretta",
-        "description": "Un unico referente tecnico ti segue dal primo sopralluogo fino al collaudo finale e all'assistenza post-vendita.",
-        "metric": "Supporto Diretto"
+        "title": "Preventivo Chiaro e Supporto Pratiche Bonus",
+        "description": "Costi chiari fin dal primo incontro e assistenza completa su certificazioni energetiche ed ecobonus.",
+        "metric": "Prezzo Bloccato"
       }
     ],
     "socialProof": {
       "mainStatValue": "98%",
-      "mainStatLabel": "Clienti soddisfatti del servizio e dell'assistenza",
-      "reviewsSummary": "Azienda di riferimento a Torino per affidabilita e precisione",
+      "mainStatLabel": "Clienti soddisfatti di posa in opera e isolamento termico",
+      "reviewsSummary": "4.9/5 da clienti seguiti a Torino e provincia",
       "testimonials": [
         {
-          "name": "Marco R.",
+          "name": "Davide C.",
           "location": "Torino",
-          "quote": "Servizio impeccabile da parte del team di C.S.C Centro Sicurezza Cracchiolo. Puntuali, precisi e disponibilissimi in ogni fase del lavoro.",
-          "roleOrContext": "Cliente verificato"
+          "quote": "Team di C.S.C Centro Sicurezza Cracchiolo preciso dal rilievo al montaggio. La differenza termica e acustica in casa si sente subito.",
+          "roleOrContext": "Sostituzione infissi completi"
         },
         {
-          "name": "Laura B.",
-          "location": "Torino",
-          "quote": "Ottima consulenza iniziale e grande cura nei dettagli. Preventivo rispettato al centesimo e risultato superiore alle aspettative.",
-          "roleOrContext": "Intervento completato"
+          "name": "Federica S.",
+          "location": "Torino e provincia",
+          "quote": "Preventivo rispettato al centesimo, cantiere lasciato pulito ogni sera e grande supporto sulle pratiche fiscali.",
+          "roleOrContext": "Finestre e portoncino blindato"
         }
       ]
     }

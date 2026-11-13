@@ -5,7 +5,7 @@
     "companyName": "Fausto Ricambi",
     "decisionMakerName": "Direzione Fausto Ricambi",
     "targetEmail": "faustoricambi@gmail.com",
-    "phone": "01002026",
+    "phone": "3937555131",
     "city": "Italia",
     "vatNumber": "02345040444",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=FaustoRicambi.it",
@@ -32,7 +32,7 @@
     "renderBlockingCount": 8
   },
   "theme": {
-    "primaryHex": "#0B1E36",
+    "primaryHex": "#f00000",
     "accentHex": "#B8860B",
     "darkBgHex": "#0B1E36",
     "borderRadius": "8px",
@@ -40,7 +40,7 @@
     "logoBrightness": "dark"
   },
   "content": {
-    "badgeTop": "FaustoRicambi.it · Divisione Tecnica & Commesse B2B (Italia)",
+    "badgeTop": "Fausto Ricambi · Divisione Tecnica e Commesse B2B (Italia)",
     "heroHeadline": "FaustoRicambi.it - Homepage",
     "heroSubheadline": "xyqm7xq\"> FaustoRicambi Sponsorizzato 🔧 Hai ancora Bisogno di Faustoricambi.it? 🔍 Scopri la nostra vasta gamma di ricambi originali e compatibili per elettrodomestici, caldaie e condizionatori. ✅ Qualità Gara",
     "heroBullets": [
@@ -52,13 +52,13 @@
     "trustMicrocopy": "Riservatezza industriale garantita (NDA) · Risposta tecnica entro la giornata lavorativa",
     "logoLocalPath": "/leads/faustoricambi/logo.png",
     "heroImageLocalPath": "/leads/faustoricambi/hero.jpg",
-    "heroImageCaption": "FaustoRicambi.it · Sede operativa e realizzazioni (Italia)",
+    "heroImageCaption": "Fausto Ricambi · Sede operativa e realizzazioni (Italia)",
     "quiz": {
       "question1": {
         "title": "Quale ambito operativo o di commessa desiderate approfondire?",
         "options": [
           "Fornitura industriale, impianti o commessa su specifica",
-          "Integrazione tecnica, automazione di reparto o portale B2B",
+          "Integrazione tecnica, automazione di reparto o accordo quadro",
           "Studio di fattibilita, capitolato e quotazione riservata"
         ]
       },
@@ -75,17 +75,17 @@
     "valueProps": [
       {
         "title": "Ingegneria e Progettazione su Specifica",
-        "description": "Analizziamo i requisiti produttivi della commessa a Italia, definendo specifiche tecniche, tempi di consegna e ritorno sull'investimento prima dell'avvio operativo.",
+        "description": "Analizziamo i requisiti produttivi della commessa a Italia, definendo specifiche tecniche, tempi di consegna e costi prima dell'avvio.",
         "metric": "Capitolato Chiuso"
       },
       {
         "title": "Controllo Qualita e Conformita Normativa",
-        "description": "Ogni fornitura e impianto di FaustoRicambi.it viene collaudato secondo gli standard di sicurezza e qualita vigenti, con documentazione tecnica completa.",
+        "description": "Ogni fornitura di Fausto Ricambi viene collaudata secondo gli standard di sicurezza e qualita vigenti, con documentazione tecnica completa.",
         "metric": "100% Certificato"
       },
       {
         "title": "Continuita Operativa e Assistenza Post-Vendita",
-        "description": "Affianchiamo il reparto tecnico e acquisti dal collaudo in stabilimento fino alla manutenzione programmata e al riordino ricambi.",
+        "description": "Affianchiamo il reparto tecnico e acquisti dal collaudo in stabilimento fino alla manutenzione programmata.",
         "metric": "SLA Garantito"
       }
     ],
@@ -107,7 +107,7 @@
         },
         {
           "value": "< 0.4s",
-          "label": "Caricamento istantaneo dell'infrastruttura digitale su rete mobile"
+          "label": "Caricamento istantaneo dell'infrastruttura digitale su mobile"
         },
         {
           "value": "24h",
@@ -118,13 +118,13 @@
         {
           "name": "Direzione Tecnica e Produzione",
           "location": "Italia · Commessa Industriale",
-          "quote": "Abbiamo affidato a FaustoRicambi.it una commessa strategica per il nostro reparto: rispetto rigoroso delle specifiche tecniche, tempi di consegna puntuali e collaudo impeccabile.",
+          "quote": "Abbiamo affidato a Fausto Ricambi una commessa strategica per il nostro reparto: rispetto rigoroso delle specifiche tecniche e collaudo impeccabile.",
           "roleOrContext": "Fornitura e collaudo B2B"
         },
         {
           "name": "Responsabile Ufficio Acquisti",
           "location": "Italia e provincia",
-          "quote": "Un partner strutturato e affidabile: preventivazione trasparente senza costi occulti, documentazione tecnica completa e supporto post-vendita immediato.",
+          "quote": "Partner strutturato e affidabile: preventivazione trasparente, documentazione tecnica completa e supporto post-vendita immediato.",
           "roleOrContext": "Accordo quadro di fornitura"
         }
       ]

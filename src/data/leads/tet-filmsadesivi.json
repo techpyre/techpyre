@@ -38,34 +38,34 @@
     "renderBlockingCount": 8
   },
   "theme": {
-    "primaryHex": "#0B1E36",
+    "primaryHex": "#107050",
     "accentHex": "#B8860B",
     "darkBgHex": "#0B1E36",
     "borderRadius": "8px",
     "headerBgMode": "light",
-    "logoBrightness": "dark"
+    "logoBrightness": "light"
   },
   "content": {
-    "badgeTop": "T & T srl · Divisione Tecnica & Commesse B2B (Limena)",
+    "badgeTop": "T & T srl · Polimeri e Processi Industriali (Limena)",
     "heroHeadline": "Films Adesivi Speciali",
     "heroSubheadline": "L'esperienza della T & T nel settore dei film adesivi per la protezione di superfici dai danneggiamenti, risale agli anni '70, quando vengono immessi sul mercato i primi film plastici in sostituzione dei vecchi",
     "heroBullets": [
-      "Studio di fattibilita tecnica e capitolato con tempi di consegna certi",
-      "Qualifica immediata della richiesta e assegnazione diretta all'Ufficio Tecnico",
-      "Produzione e assistenza certificata con referente unico dedicato"
+      "Supporto su scelta mescole, resine e trattamenti prima della messa in serie",
+      "Controllo costante dei parametri di processo e finitura superficiale",
+      "Imballo industriale protetto e programmazione consegne per lotti B2B"
     ],
     "ctaButtonText": "Richiedi Studio di Fattibilita",
     "trustMicrocopy": "Riservatezza industriale garantita (NDA) · Risposta tecnica entro la giornata lavorativa",
     "logoLocalPath": "/leads/tet-filmsadesivi/logo.png",
-    "heroImageLocalPath": "/leads/tet-filmsadesivi/hero.jpg",
+    "heroImageLocalPath": "",
     "heroImageCaption": "T & T srl · Sede operativa e realizzazioni (Limena)",
     "quiz": {
       "question1": {
-        "title": "Quale ambito operativo o di commessa desiderate approfondire?",
+        "title": "Quale lavorazione industriale o fornitura tecnica vi interessa?",
         "options": [
-          "Fornitura industriale, impianti o commessa su specifica",
-          "Integrazione tecnica, automazione di reparto o portale B2B",
-          "Studio di fattibilita, capitolato e quotazione riservata"
+          "Stampaggio materie plastiche/gomma o realizzazione stampi su commessa",
+          "Trattamenti galvanici, anodizzazione o rivestimenti protettivi certificati",
+          "Fornitura lotti industriali, campionatura e capitolato tecnico"
         ]
       },
       "question2": {
@@ -80,58 +80,58 @@
     },
     "valueProps": [
       {
-        "title": "Ingegneria e Progettazione su Specifica",
-        "description": "Analizziamo i requisiti produttivi della commessa a Limena, definendo specifiche tecniche, tempi di consegna e ritorno sull'investimento prima dell'avvio operativo.",
-        "metric": "Capitolato Chiuso"
+        "title": "Co-Design Stampi e Selezione Materiali",
+        "description": "Ottimizziamo spessori, ritiri dimensionali e resistenze chimico-meccaniche per evitare difetti in produzione e contenere il costo unitario.",
+        "metric": "Zero Difetti"
       },
       {
-        "title": "Controllo Qualita e Conformita Normativa",
-        "description": "Ogni fornitura e impianto di T & T srl viene collaudato secondo gli standard di sicurezza e qualita vigenti, con documentazione tecnica completa.",
-        "metric": "100% Certificato"
+        "title": "Ripetibilita di Processo e Controllo Lotto",
+        "description": "T & T srl monitora ogni fase produttiva e superficiale a Limena rilasciando documentazione di conformita su richiesta.",
+        "metric": "100% Tracciabile"
       },
       {
-        "title": "Continuita Operativa e Assistenza Post-Vendita",
-        "description": "Affianchiamo il reparto tecnico e acquisti dal collaudo in stabilimento fino alla manutenzione programmata e al riordino ricambi.",
-        "metric": "SLA Garantito"
+        "title": "Logistica Flessibile su Piccole e Grandi Serie",
+        "description": "Pianificazione scorte, trattamenti rapidi conto terzi e spedizioni sincronizzate con le vostre linee di montaggio.",
+        "metric": "Consegne Certe"
       }
     ],
     "socialProof": {
       "mainStatValue": "99.4%",
-      "mainStatLabel": "Commesse B2B consegnate entro i tempi contrattuali",
-      "reviewsSummary": "Partner tecnico di riferimento per imprese e stabilimenti a Limena",
+      "mainStatLabel": "Conformita qualitativa sui lotti industriali consegnati",
+      "reviewsSummary": "Partner industriale per filiere produttive a Limena",
       "clientReferenceWall": [
         "Qualita Certificata ISO 9001",
-        "Conformita Tecnica CE",
-        "Integrazione Gestionale / ERP",
-        "Capitolato e Preventivo Chiuso",
-        "Assistenza Tecnica Diretta"
+        "Tracciabilita Completa Lotti",
+        "Conformita REACH / RoHS",
+        "Campionature Tecniche Rapide",
+        "Produzione B2B Conto Terzi"
       ],
       "secondaryStats": [
         {
           "value": "99.4%",
-          "label": "Commesse consegnate nel pieno rispetto dei tempi contrattuali"
+          "label": "Lotti consegnati conformi alle specifiche dimensionali"
         },
         {
           "value": "< 0.4s",
-          "label": "Caricamento istantaneo dell'infrastruttura digitale su rete mobile"
+          "label": "Caricamento scheda tecnica e preventivo B2B su mobile"
         },
         {
           "value": "24h",
-          "label": "Presa in carico tecnica e invio automatico della richiesta al CRM"
+          "label": "Valutazione preliminare disegni, mescole o trattamenti"
         }
       ],
       "testimonials": [
         {
-          "name": "Direzione Tecnica e Produzione",
-          "location": "Limena · Commessa Industriale",
-          "quote": "Abbiamo affidato a T & T srl una commessa strategica per il nostro reparto: rispetto rigoroso delle specifiche tecniche, tempi di consegna puntuali e collaudo impeccabile.",
-          "roleOrContext": "Fornitura e collaudo B2B"
+          "name": "Responsabile Qualita e Fornitori",
+          "location": "Limena · Filiera Manifatturiera",
+          "quote": "La costanza tra la campionatura iniziale e le forniture in serie di T & T srl ci ha permesso di azzerare i controlli in ingresso.",
+          "roleOrContext": "Fornitura conto terzi"
         },
         {
-          "name": "Responsabile Ufficio Acquisti",
+          "name": "Direzione Acquisti B2B",
           "location": "Limena e provincia",
-          "quote": "Un partner strutturato e affidabile: preventivazione trasparente senza costi occulti, documentazione tecnica completa e supporto post-vendita immediato.",
-          "roleOrContext": "Accordo quadro di fornitura"
+          "quote": "Preventivazione trasparente, imballaggi accurati e rispetto rigoroso dei lead time anche sui picchi stagionali.",
+          "roleOrContext": "Contratto di fornitura"
         }
       ]
     }

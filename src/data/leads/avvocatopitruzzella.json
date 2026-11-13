@@ -1,6 +1,6 @@
 {
   "slug": "avvocatopitruzzella",
-  "archetype": "b2b-authority",
+  "archetype": "local-leadgen",
   "meta": {
     "companyName": "Studio Legale Pitruzzella Domenico",
     "decisionMakerName": "Laura Cuti",
@@ -31,104 +31,83 @@
       "Assenza di pre-qualifica automatica: il sito non filtra le richieste per tipologia di intervento, budget o tempistiche prima di inviarle ai referenti tecnici di Studio Legale Pitruzzella Domenico.",
       "Colli di bottiglia commerciali: le richieste arrivano come semplici email isolate senza instradamento automatico e senza tracciamento strutturato della trattativa."
     ],
-    "activeAdHeadline": "Home - Avvocato Pitruzzella",
+    "activeAdHeadline": "Studio Legale Pitruzzella Domenico: Soluzioni Professionali a Palermo",
     "activeAdCopySummary": "Studio Legale Pitruzzella - Consulenza legale professionale e affidabile. Contattaci per le tue esigenze legali."
   },
   "theme": {
-    "primaryHex": "#0B1E36",
-    "accentHex": "#B8860B",
+    "primaryHex": "#1E3A8A",
+    "accentHex": "#2563EB",
     "darkBgHex": "#0B1E36",
-    "borderRadius": "8px",
+    "borderRadius": "12px",
     "headerBgMode": "light",
-    "logoBrightness": "dark"
+    "logoBrightness": "light"
   },
   "content": {
-    "badgeTop": "Studio Legale Pitruzzella Domenico · Divisione Tecnica & Commesse B2B (Palermo)",
-    "heroHeadline": "Home - Avvocato Pitruzzella",
+    "badgeTop": "Studio Legale Pitruzzella Domenico · Operativi a Palermo e provincia",
+    "heroHeadline": "Studio Legale Pitruzzella Domenico: Soluzioni Professionali a Palermo",
     "heroSubheadline": "Studio Legale Pitruzzella - Consulenza legale professionale e affidabile. Contattaci per le tue esigenze legali.",
     "heroBullets": [
-      "Studio di fattibilita tecnica e capitolato con tempi di consegna certi",
-      "Qualifica immediata della richiesta e assegnazione diretta all'Ufficio Tecnico",
-      "Produzione e assistenza certificata con referente unico dedicato"
+      "Sopralluogo tecnico e preventivo chiaro senza impegno",
+      "Materiali certificati e assistenza diretta con personale qualificato",
+      "Tempi di intervento garantiti e gestione completa della pratica"
     ],
-    "ctaButtonText": "Richiedi Studio di Fattibilita",
-    "trustMicrocopy": "Riservatezza industriale garantita (NDA) · Risposta tecnica entro la giornata lavorativa",
+    "ctaButtonText": "Calcola il Tuo Preventivo Rapido",
+    "trustMicrocopy": "Richiesta gratuita e senza impegno · Risposta rapida dal nostro ufficio tecnico",
     "logoLocalPath": "/leads/avvocatopitruzzella/logo.png",
     "heroImageLocalPath": "/leads/avvocatopitruzzella/hero.jpg",
     "heroImageCaption": "Studio Legale Pitruzzella Domenico · Sede operativa e realizzazioni (Palermo)",
     "quiz": {
       "question1": {
-        "title": "Quale ambito operativo o di commessa desiderate approfondire?",
+        "title": "Di quale servizio o soluzione hai bisogno?",
         "options": [
-          "Fornitura industriale, impianti o commessa su specifica",
-          "Integrazione tecnica, automazione di reparto o portale B2B",
-          "Studio di fattibilita, capitolato e quotazione riservata"
+          "Richiesta preventivo dettagliato su misura",
+          "Consulenza tecnica e sopralluogo operativo",
+          "Intervento rapido o assistenza prioritaria"
         ]
       },
       "question2": {
-        "title": "Qual e l'orizzonte temporale previsto per il progetto?",
+        "title": "Entro quando vorresti avviare il progetto?",
         "options": [
-          "Avvio operativo urgente (entro 30 giorni)",
-          "Pianificazione nel trimestre in corso",
-          "Valutazione tecnica e di budget preliminare"
+          "Il prima possibile (Entro 2 settimane)",
+          "Entro 1 - 2 mesi",
+          "Sto valutando diverse soluzioni"
         ]
       },
-      "finalStepTitle": "Specifiche registrate. Inserisci i riferimenti aziendali per il colloquio con l'Ufficio Tecnico:"
+      "finalStepTitle": "Perfetto. Inserisci i tuoi dati per ricevere una proposta personalizzata senza impegno:"
     },
     "valueProps": [
       {
-        "title": "Ingegneria e Progettazione su Specifica",
-        "description": "Analizziamo i requisiti produttivi della commessa a Palermo, definendo specifiche tecniche, tempi di consegna e ritorno sull'investimento prima dell'avvio operativo.",
-        "metric": "Capitolato Chiuso"
+        "title": "Qualita Certificata e Garanzia Scritta",
+        "description": "Ogni intervento di Studio Legale Pitruzzella Domenico utilizza materiali selezionati e procedure certificate per garantire durata e prestazioni nel tempo.",
+        "metric": "100% Garantito"
       },
       {
-        "title": "Controllo Qualita e Conformita Normativa",
-        "description": "Ogni fornitura e impianto di Studio Legale Pitruzzella Domenico viene collaudato secondo gli standard di sicurezza e qualita vigenti, con documentazione tecnica completa.",
-        "metric": "100% Certificato"
+        "title": "Preventivo Chiaro e Zero Sorprese",
+        "description": "Valutazione trasparente delle soluzioni piu adatte alle tue esigenze a Palermo, con tempi e costi definiti prima dell'inizio dei lavori.",
+        "metric": "Preventivo Chiuso"
       },
       {
-        "title": "Continuita Operativa e Assistenza Post-Vendita",
-        "description": "Affianchiamo il reparto tecnico e acquisti dal collaudo in stabilimento fino alla manutenzione programmata e al riordino ricambi.",
-        "metric": "SLA Garantito"
+        "title": "Assistenza Tecnica Diretta",
+        "description": "Un unico referente tecnico ti segue dal primo sopralluogo fino al collaudo finale e all'assistenza post-vendita.",
+        "metric": "Supporto Diretto"
       }
     ],
     "socialProof": {
-      "mainStatValue": "99.4%",
-      "mainStatLabel": "Commesse B2B consegnate entro i tempi contrattuali",
-      "reviewsSummary": "Partner tecnico di riferimento per imprese e stabilimenti a Palermo",
-      "clientReferenceWall": [
-        "Qualita Certificata ISO 9001",
-        "Conformita Tecnica CE",
-        "Integrazione Gestionale / ERP",
-        "Capitolato e Preventivo Chiuso",
-        "Assistenza Tecnica Diretta"
-      ],
-      "secondaryStats": [
-        {
-          "value": "99.4%",
-          "label": "Commesse consegnate nel pieno rispetto dei tempi contrattuali"
-        },
-        {
-          "value": "< 0.4s",
-          "label": "Caricamento istantaneo dell'infrastruttura digitale su rete mobile"
-        },
-        {
-          "value": "24h",
-          "label": "Presa in carico tecnica e invio automatico della richiesta al CRM"
-        }
-      ],
+      "mainStatValue": "98%",
+      "mainStatLabel": "Clienti soddisfatti del servizio e dell'assistenza",
+      "reviewsSummary": "Azienda di riferimento a Palermo per affidabilita e precisione",
       "testimonials": [
         {
-          "name": "Direzione Tecnica e Produzione",
-          "location": "Palermo · Commessa Industriale",
-          "quote": "Abbiamo affidato a Studio Legale Pitruzzella Domenico una commessa strategica per il nostro reparto: rispetto rigoroso delle specifiche tecniche, tempi di consegna puntuali e collaudo impeccabile.",
-          "roleOrContext": "Fornitura e collaudo B2B"
+          "name": "Marco R.",
+          "location": "Palermo",
+          "quote": "Servizio impeccabile da parte del team di Studio Legale Pitruzzella Domenico. Puntuali, precisi e disponibilissimi in ogni fase del lavoro.",
+          "roleOrContext": "Cliente verificato"
         },
         {
-          "name": "Responsabile Ufficio Acquisti",
-          "location": "Palermo e provincia",
-          "quote": "Un partner strutturato e affidabile: preventivazione trasparente senza costi occulti, documentazione tecnica completa e supporto post-vendita immediato.",
-          "roleOrContext": "Accordo quadro di fornitura"
+          "name": "Laura B.",
+          "location": "Palermo",
+          "quote": "Ottima consulenza iniziale e grande cura nei dettagli. Preventivo rispettato al centesimo e risultato superiore alle aspettative.",
+          "roleOrContext": "Intervento completato"
         }
       ]
     }

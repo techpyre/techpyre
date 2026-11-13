@@ -14,9 +14,9 @@ export default function DiagnosticBanner({ data }: DiagnosticBannerProps) {
 
   return (
     <div className="bg-[#101214] text-zinc-200 border-b border-zinc-800/90 sticky top-0 z-50 text-xs font-sans">
-      {/* Versione Mobile Compatta (Riga Singola Ottimizzata 34px) */}
-      <div className="demo-container py-1.5 sm:hidden flex items-center justify-between gap-2 text-[11px]">
-        <div className="flex items-center gap-1.5 min-w-0">
+      {/* Versione Mobile Compatta (Altezza Fissa 34px · Singola Riga) */}
+      <div className="demo-container h-[34px] sm:hidden flex items-center justify-between gap-2 text-[11px] whitespace-nowrap overflow-hidden">
+        <div className="flex items-center gap-1.5 min-w-0 flex-1 overflow-hidden">
           <span className="px-1.5 py-0.5 rounded text-[9px] font-bold bg-amber-500/15 text-amber-400 border border-amber-500/30 uppercase tracking-wide shrink-0">
             Audit
           </span>
@@ -48,32 +48,34 @@ export default function DiagnosticBanner({ data }: DiagnosticBannerProps) {
         </motion.button>
       </div>
 
-      {/* Versione Desktop / Tablet (Completa e Istituzionale) */}
-      <div className="demo-container py-2 hidden sm:flex items-center justify-between gap-4">
-        <div className="flex items-center gap-2.5">
-          <span className="px-2 py-0.5 rounded text-[10px] font-semibold bg-zinc-800/90 text-zinc-300 border border-zinc-700/60 uppercase tracking-wider">
-            Diagnosi Architetturale B2B
+      {/* Versione Desktop / Tablet (Altezza Fissa 38px · Anti-Wrap su tutte le risoluzioni) */}
+      <div className="demo-container h-[38px] hidden sm:flex items-center justify-between gap-3 whitespace-nowrap overflow-hidden">
+        <div className="flex items-center gap-2 min-w-0 flex-1 overflow-hidden">
+          <span className="px-2 py-0.5 rounded text-[10px] font-semibold bg-zinc-800/90 text-zinc-300 border border-zinc-700/60 uppercase tracking-wider shrink-0">
+            <span className="hidden md:inline">Diagnosi Architetturale B2B</span>
+            <span className="md:hidden">Diagnosi B2B</span>
           </span>
-          <span className="font-semibold text-white tracking-tight">
+          <span className="font-semibold text-white tracking-tight truncate">
             {data.meta.companyName}
           </span>
-          <span className="text-zinc-600">·</span>
-          <span className="text-zinc-400 text-[11px]">
+          <span className="hidden lg:inline text-zinc-600 shrink-0">·</span>
+          <span className="hidden lg:inline text-zinc-400 text-[11px] truncate">
             Alla c.a. di {data.meta.decisionMakerName}
           </span>
         </div>
 
-        <div className="flex items-center gap-4">
-          <div className="flex items-center gap-2 text-[11px]">
+        <div className="flex items-center gap-2.5 md:gap-4 shrink-0 whitespace-nowrap">
+          <div className="flex items-center gap-1.5 sm:gap-2 text-[11px]">
             <span className="text-zinc-400">
-              Sito attuale:{" "}
+              <span className="hidden md:inline">Sito attuale: </span>
               <strong className="text-amber-400 font-semibold font-mono">
                 {data.audit.originalLcpSeconds}s
               </strong>
             </span>
             <span className="text-zinc-600">→</span>
             <span className="text-zinc-300">
-              Ecosistema TechPYRE:{" "}
+              <span className="hidden md:inline">Ecosistema TechPYRE: </span>
+              <span className="md:hidden">TechPYRE: </span>
               <strong className="text-emerald-400 font-semibold font-mono">
                 0.3s
               </strong>
@@ -84,7 +86,7 @@ export default function DiagnosticBanner({ data }: DiagnosticBannerProps) {
             whileTap={{ scale: 0.97 }}
             type="button"
             onClick={() => setExpanded((prev) => !prev)}
-            className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-zinc-800/90 hover:bg-zinc-700/90 text-zinc-200 border border-zinc-700/50 transition-colors text-[11px] font-medium cursor-pointer"
+            className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-zinc-800/90 hover:bg-zinc-700/90 text-zinc-200 border border-zinc-700/50 transition-colors text-[11px] font-medium cursor-pointer shrink-0"
           >
             <span>Diagnosi Flussi ({data.audit.threeCriticalFlaws.length})</span>
             {expanded ? (
@@ -103,7 +105,7 @@ export default function DiagnosticBanner({ data }: DiagnosticBannerProps) {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.22, ease: "easeInOut" }}
-            className="overflow-hidden bg-[#0C0E10] border-t border-zinc-800 text-xs"
+            className="absolute top-full left-0 right-0 z-50 shadow-2xl overflow-hidden bg-[#0C0E10] border-t border-b border-zinc-800 text-xs"
           >
             <div className="demo-container py-4 sm:py-5 grid grid-cols-1 md:grid-cols-12 gap-5 sm:gap-6 items-start">
               <div className="md:col-span-5 space-y-1.5">

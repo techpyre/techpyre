@@ -5,7 +5,7 @@
     "companyName": "Autodov Oscuramento Vetri",
     "decisionMakerName": "Direzione Autodov Oscuramento Vetri",
     "targetEmail": "autodov.italia@gmail.com",
-    "phone": "0683520",
+    "phone": "3938825262",
     "city": "Como",
     "vatNumber": "Non trovata",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Autodov%20%26%238211%3B%20Oscuramento%20vetri",
@@ -40,7 +40,7 @@
     "logoBrightness": "dark"
   },
   "content": {
-    "badgeTop": "Autodov &#8211; Oscuramento vetri · Divisione Tecnica & Commesse B2B (Como)",
+    "badgeTop": "Autodov Oscuramento Vetri · Divisione Tecnica e Commesse B2B (Como)",
     "heroHeadline": "Autodov - Oscuramento vetri",
     "heroSubheadline": "drBGkQ7kNvwF4J2rM&_nc_oc=AdogdY-UPl0VxR6KukvWaFBwac_Q5Pt5PExX5U0DOVBrFK4mjkFkHoGLPqhcPnsG0as&_nc_zt=14&_nc_ht=scontent-mxp2-1.xx&_nc_gid=TezmZmpHOXEmE865bYL8GQ&_nc_ss=72289&oh=00_AQT7z5PrXqQ-omfEjxdSoCyMc_L98pY",
     "heroBullets": [
@@ -52,13 +52,13 @@
     "trustMicrocopy": "Riservatezza industriale garantita (NDA) · Risposta tecnica entro la giornata lavorativa",
     "logoLocalPath": "/leads/autodov/logo.png",
     "heroImageLocalPath": "/leads/autodov/hero.jpg",
-    "heroImageCaption": "Autodov &#8211; Oscuramento vetri · Sede operativa e realizzazioni (Como)",
+    "heroImageCaption": "Autodov Oscuramento Vetri · Sede operativa e realizzazioni (Como)",
     "quiz": {
       "question1": {
         "title": "Quale ambito operativo o di commessa desiderate approfondire?",
         "options": [
           "Fornitura industriale, impianti o commessa su specifica",
-          "Integrazione tecnica, automazione di reparto o portale B2B",
+          "Integrazione tecnica, automazione di reparto o accordo quadro",
           "Studio di fattibilita, capitolato e quotazione riservata"
         ]
       },
@@ -75,17 +75,17 @@
     "valueProps": [
       {
         "title": "Ingegneria e Progettazione su Specifica",
-        "description": "Analizziamo i requisiti produttivi della commessa a Como, definendo specifiche tecniche, tempi di consegna e ritorno sull'investimento prima dell'avvio operativo.",
+        "description": "Analizziamo i requisiti produttivi della commessa a Como, definendo specifiche tecniche, tempi di consegna e costi prima dell'avvio.",
         "metric": "Capitolato Chiuso"
       },
       {
         "title": "Controllo Qualita e Conformita Normativa",
-        "description": "Ogni fornitura e impianto di Autodov &#8211; Oscuramento vetri viene collaudato secondo gli standard di sicurezza e qualita vigenti, con documentazione tecnica completa.",
+        "description": "Ogni fornitura di Autodov Oscuramento Vetri viene collaudata secondo gli standard di sicurezza e qualita vigenti, con documentazione tecnica completa.",
         "metric": "100% Certificato"
       },
       {
         "title": "Continuita Operativa e Assistenza Post-Vendita",
-        "description": "Affianchiamo il reparto tecnico e acquisti dal collaudo in stabilimento fino alla manutenzione programmata e al riordino ricambi.",
+        "description": "Affianchiamo il reparto tecnico e acquisti dal collaudo in stabilimento fino alla manutenzione programmata.",
         "metric": "SLA Garantito"
       }
     ],
@@ -107,7 +107,7 @@
         },
         {
           "value": "< 0.4s",
-          "label": "Caricamento istantaneo dell'infrastruttura digitale su rete mobile"
+          "label": "Caricamento istantaneo dell'infrastruttura digitale su mobile"
         },
         {
           "value": "24h",
@@ -118,13 +118,13 @@
         {
           "name": "Direzione Tecnica e Produzione",
           "location": "Como · Commessa Industriale",
-          "quote": "Abbiamo affidato a Autodov &#8211; Oscuramento vetri una commessa strategica per il nostro reparto: rispetto rigoroso delle specifiche tecniche, tempi di consegna puntuali e collaudo impeccabile.",
+          "quote": "Abbiamo affidato a Autodov Oscuramento Vetri una commessa strategica per il nostro reparto: rispetto rigoroso delle specifiche tecniche e collaudo impeccabile.",
           "roleOrContext": "Fornitura e collaudo B2B"
         },
         {
           "name": "Responsabile Ufficio Acquisti",
           "location": "Como e provincia",
-          "quote": "Un partner strutturato e affidabile: preventivazione trasparente senza costi occulti, documentazione tecnica completa e supporto post-vendita immediato.",
+          "quote": "Partner strutturato e affidabile: preventivazione trasparente, documentazione tecnica completa e supporto post-vendita immediato.",
           "roleOrContext": "Accordo quadro di fornitura"
         }
       ]

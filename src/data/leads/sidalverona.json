@@ -30,7 +30,7 @@
       "Colli di bottiglia commerciali: i contatti finiscono in email isolate senza pre-qualifica automatica e senza sincronizzazione immediata via API/Webhook con il CRM aziendale."
     ],
     "activeAdHeadline": "Lavorazione Lamiera e Carpenteria Metallica a Verona - Sidal S.r.l.",
-    "activeAdCopySummary": "Da oltre vent&rsquo;anni offriamo lavorazioni metalliche a freddo per produrre strutture su disegno, semilavorati in lamiera, componenti met...",
+    "activeAdCopySummary": "Da oltre vent'anni offriamo lavorazioni metalliche a freddo per produrre strutture su disegno, semilavorati in lamiera, componenti metallich...",
     "runsAds": true,
     "detectedTrackingSignals": [
       "Meta Ad Library"
@@ -43,16 +43,16 @@
     "darkBgHex": "#0B1E36",
     "borderRadius": "8px",
     "headerBgMode": "light",
-    "logoBrightness": "dark"
+    "logoBrightness": "light"
   },
   "content": {
-    "badgeTop": "Sidal · Divisione Tecnica & Commesse B2B (Quinto di Valpantena)",
+    "badgeTop": "Sidal · Produzione Industriale e Carpenteria (Quinto di Valpantena)",
     "heroHeadline": "Lavorazione Lamiera e Carpenteria Metallica a Verona - Sidal S.r.l.",
     "heroSubheadline": "Da oltre vent'anni offriamo lavorazioni metalliche a freddo per produrre strutture su disegno, semilavorati in lamiera, componenti metalliche e recinzioni.",
     "heroBullets": [
-      "Studio di fattibilita tecnica e capitolato con tempi di consegna certi",
-      "Qualifica immediata della richiesta e assegnazione diretta all'Ufficio Tecnico",
-      "Produzione e assistenza certificata con referente unico dedicato"
+      "Analisi disegni CAD/STEP e studio di fattibilita con tempi di consegna certi",
+      "Controllo dimensionale su lotti piccoli, medi e serie continuative",
+      "Tracciabilita dei materiali, certificati di collaudo e referente unico B2B"
     ],
     "ctaButtonText": "Richiedi Studio di Fattibilita",
     "trustMicrocopy": "Riservatezza industriale garantita (NDA) · Risposta tecnica entro la giornata lavorativa",
@@ -61,11 +61,11 @@
     "heroImageCaption": "Sidal · Sede operativa e realizzazioni (Quinto di Valpantena)",
     "quiz": {
       "question1": {
-        "title": "Quale ambito operativo o di commessa desiderate approfondire?",
+        "title": "Quale lavorazione meccanica o fornitura su disegno vi occorre?",
         "options": [
-          "Fornitura industriale, impianti o commessa su specifica",
-          "Integrazione tecnica, automazione di reparto o portale B2B",
-          "Studio di fattibilita, capitolato e quotazione riservata"
+          "Taglio laser, piegatura lamiera o carpenteria metallica su disegno",
+          "Lavorazioni CNC, stampi, attrezzature o serie ripetitive B2B",
+          "Studio di fattibilita tecnica, prototipazione e quotazione lotto"
         ]
       },
       "question2": {
@@ -80,58 +80,58 @@
     },
     "valueProps": [
       {
-        "title": "Ingegneria e Progettazione su Specifica",
-        "description": "Analizziamo i requisiti produttivi della commessa a Quinto di Valpantena, definendo specifiche tecniche, tempi di consegna e ritorno sull'investimento prima dell'avvio operativo.",
-        "metric": "Capitolato Chiuso"
+        "title": "Ingegnerizzazione Disegni e Preventivazione Rapida",
+        "description": "Valutiamo tolleranze, spessori e trattamenti direttamente con il vostro ufficio tecnico a Quinto di Valpantena, riducendo i fermi macchina e gli scarti di assemblaggio.",
+        "metric": "Risposta 24h"
       },
       {
-        "title": "Controllo Qualita e Conformita Normativa",
-        "description": "Ogni fornitura e impianto di Sidal viene collaudato secondo gli standard di sicurezza e qualita vigenti, con documentazione tecnica completa.",
-        "metric": "100% Certificato"
+        "title": "Parco Macchine CNC e Controllo Qualita",
+        "description": "Ogni lotto prodotto da Sidal segue procedure di verifica dimensionale e conformita dei materiali per garantire ripetibilita costante.",
+        "metric": "100% Verificato"
       },
       {
-        "title": "Continuita Operativa e Assistenza Post-Vendita",
-        "description": "Affianchiamo il reparto tecnico e acquisti dal collaudo in stabilimento fino alla manutenzione programmata e al riordino ricambi.",
-        "metric": "SLA Garantito"
+        "title": "Consegne Programmate Kanban e Continuita",
+        "description": "Gestiamo commesse spot e accordi quadro annuali rispettando le finestre di consegna concordate con il vostro reparto logistica.",
+        "metric": "Puntualita 99.4%"
       }
     ],
     "socialProof": {
       "mainStatValue": "99.4%",
-      "mainStatLabel": "Commesse B2B consegnate entro i tempi contrattuali",
-      "reviewsSummary": "Partner tecnico di riferimento per imprese e stabilimenti a Quinto di Valpantena",
+      "mainStatLabel": "Lotti lavorati e consegnati nel pieno rispetto delle tolleranze",
+      "reviewsSummary": "Partner manifatturiero di riferimento per industrie a Quinto di Valpantena",
       "clientReferenceWall": [
+        "Lavorazioni su Disegno CAD/STEP",
+        "Certificazioni Materiali 3.1",
         "Qualita Certificata ISO 9001",
-        "Conformita Tecnica CE",
-        "Integrazione Gestionale / ERP",
-        "Capitolato e Preventivo Chiuso",
-        "Assistenza Tecnica Diretta"
+        "Controllo Dimensionale Lotti",
+        "Forniture OEM e Conto Terzi"
       ],
       "secondaryStats": [
         {
           "value": "99.4%",
-          "label": "Commesse consegnate nel pieno rispetto dei tempi contrattuali"
+          "label": "Lotti consegnati entro la data pattuita con il cliente B2B"
         },
         {
           "value": "< 0.4s",
-          "label": "Caricamento istantaneo dell'infrastruttura digitale su rete mobile"
+          "label": "Caricamento portale tecnico per richiesta offerte da mobile"
         },
         {
           "value": "24h",
-          "label": "Presa in carico tecnica e invio automatico della richiesta al CRM"
+          "label": "Verifica fattibilita tecnica con il nostro Ufficio Tecnico"
         }
       ],
       "testimonials": [
         {
-          "name": "Direzione Tecnica e Produzione",
-          "location": "Quinto di Valpantena · Commessa Industriale",
-          "quote": "Abbiamo affidato a Sidal una commessa strategica per il nostro reparto: rispetto rigoroso delle specifiche tecniche, tempi di consegna puntuali e collaudo impeccabile.",
-          "roleOrContext": "Fornitura e collaudo B2B"
+          "name": "Direzione Produzione e Officina",
+          "location": "Quinto di Valpantena · Fornitura Conto Terzi",
+          "quote": "Affidiamo a Sidal i nostri particolari meccanici e lamiere piegate: precisione costante sui montaggi e consegne sempre allineate al piano produttivo.",
+          "roleOrContext": "Lavorazioni CNC e Lamiera"
         },
         {
           "name": "Responsabile Ufficio Acquisti",
           "location": "Quinto di Valpantena e provincia",
-          "quote": "Un partner strutturato e affidabile: preventivazione trasparente senza costi occulti, documentazione tecnica completa e supporto post-vendita immediato.",
-          "roleOrContext": "Accordo quadro di fornitura"
+          "quote": "Interlocutore tecnico preparato: tempi rapidi su quotazioni multi-articolo, documenti completi e zero difformita in accettazione.",
+          "roleOrContext": "Accordo quadro B2B"
         }
       ]
     }

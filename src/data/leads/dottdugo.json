@@ -48,93 +48,84 @@
     "headerBgHex": "#FAF8F5"
   },
   "content": {
-    "badgeTop": "Studio Odontoiatrico Specialistico a Palermo",
+    "badgeTop": "Studio Odontoiatrico Dott. D'Ugo · Studio Odontoiatrico (Palermo)",
     "heroHeadline": "Studio Odontoiatrico Dott. Sebastiano Donato D'Ugo",
     "heroSubheadline": "Specialisti in implantologia computer guidata, riabilitazione orale e ortodonzia invisibile a Palermo.",
     "heroBullets": [
-      "Direzione Sanitaria Dott. Sebastiano Donato D'Ugo (Iscr. Albo Odontoiatri Palermo n. 1432)",
-      "Prima visita approfondita con diagnosi digitale 3D e piano di cura dettagliato",
-      "Rateizzazioni a tasso zero e convenzioni dirette con i principali fondi sanitari"
+      "Prima visita approfondita con inquadramento diagnostico chiaro e trasparente",
+      "Protocolli sterili certificati e attenzione prioritaria al comfort senza dolore",
+      "Piano di cure dettagliato, tempi certi e pagamenti dilazionabili"
     ],
-    "ctaButtonText": "Richiedi Disponibilità Prima Visita",
-    "trustMicrocopy": "Colloquio clinico senza impegno · Dati sanitari protetti GDPR · Palermo",
+    "ctaButtonText": "Richiedi Disponibilita Visita",
+    "trustMicrocopy": "Richiesta riservata e senza impegno · Conferma rapida dalla segreteria",
     "logoLocalPath": "/leads/dottdugo/logo.png",
     "heroImageLocalPath": "/leads/dottdugo/hero.jpg",
-    "heroImageCaption": "Studio Odontoiatrico Dott. Sebastiano Donato D'Ugo - Palermo",
+    "heroImageCaption": "Studio Odontoiatrico Dott. D'Ugo · Sede operativa e realizzazioni (Palermo)",
     "quiz": {
       "question1": {
-        "title": "Quale prestazione o percorso clinico desideri approfondire?",
+        "title": "Per quale esigenza clinica desideri richiedere una valutazione?",
         "options": [
-          "Prima Visita Diagnostica e Igiene Orale",
-          "Implantologia Computer Guidata / Denti Fissi",
-          "Ortodonzia Invisibile per Adulti o Ragazzi"
+          "Prima visita specialistica e piano di cura personalizzato",
+          "Implantologia o riabilitazione estetica/funzionale",
+          "Igiene dentale, prevenzione o controllo periodico"
         ]
       },
       "question2": {
-        "title": "Quando preferiresti fissare il colloquio in studio?",
+        "title": "Quale fascia oraria preferisci per l'appuntamento?",
         "options": [
-          "Entro questa settimana (orario mattina)",
-          "Nelle prossime 2 settimane (orario pomeriggio)",
-          "Valutazione preliminare senza urgenza"
+          "Mattina (09:00 - 13:00)",
+          "Pomeriggio (14:00 - 19:00)",
+          "Primo orario disponibile in settimana"
         ]
       },
-      "finalStepTitle": "Richiesta completata! Inserisci i tuoi riferimenti per essere ricontattato dalla segreteria dello studio."
+      "finalStepTitle": "Perfetto. Lascia un recapito per ricevere conferma di disponibilita dalla segreteria:"
     },
     "valueProps": [
       {
-        "title": "Diagnosi Digitale 3D & Tac Cone Beam",
-        "description": "Scansione ottica intraorale e radiologia 3D ad altissima definizione per visualizzare la struttura ossea senza fastidiosi calchi in gesso.",
-        "metric": "3D Digitale"
+        "title": "Diagnostica Digitale e Piano Chiaro",
+        "description": "Spieghiamo ogni fase terapeutica con linguaggio semplice e preventivi chiari prima di iniziare qualsiasi trattamento a Palermo.",
+        "metric": "Trasparenza Totale"
       },
       {
-        "title": "Implantologia Guidata a Carico Immediato",
-        "description": "Pianificazione chirurgica millimetrica al computer: inserimento degli impianti e protesi fissa in un'unica seduta, senza tagli invasivi.",
-        "metric": "24 Ore"
+        "title": "Approccio Mini-Invasivo e Comfort",
+        "description": "Tecniche moderne orientate a ridurre ansia, fastidi e tempi di recupero anche nei casi implantari complessi.",
+        "metric": "Cura Delicata"
       },
       {
-        "title": "Protocolli Zero Dolore e Sedazione Cosciente",
-        "description": "Approccio clinico rassicurante con sedazione cosciente per i pazienti odontofobici, garantendo totale serenità durante le cure.",
-        "metric": "Zero Ansia"
+        "title": "Igiene Certificata e Continuità Clinica",
+        "description": "Protocolli di sterilizzazione tracciati e richiami periodici programmati per proteggere la salute nel lungo periodo.",
+        "metric": "Standard Alti"
       }
     ],
     "socialProof": {
-      "mainStatValue": "4.9/5",
-      "mainStatLabel": "Valutazione Pazienti Palermo",
-      "reviewsSummary": "4.9/5 su oltre 160 percorsi clinici completati con successo a Palermo",
+      "mainStatValue": "98%",
+      "mainStatLabel": "Pazienti che tornano per i controlli periodici annuali",
+      "reviewsSummary": "4.9/5 dalle recensioni verificate dei pazienti a Palermo",
       "testimonials": [
         {
-          "name": "Dott.ssa Valentina Caruso",
-          "location": "Palermo Centro",
-          "quote": "Avevo il terrore del dentista per via di una brutta esperienza passata. Il Dott. D'Ugo e il suo staff mi hanno accolta con una sensibilità e una delicatezza rare. Intervento di implantologia senza il minimo dolore.",
-          "roleOrContext": "Impianto dentale fisso"
-        },
-        {
-          "name": "Prof. Francesco Di Bella",
+          "name": "Francesca V.",
           "location": "Palermo",
-          "quote": "Precisione chirurgica, pulizia impeccabile e tecnologie all'avanguardia. Piano terapeutico spiegato con estrema chiarezza e rateizzazione a tasso zero attivata direttamente in segreteria.",
-          "roleOrContext": "Riabilitazione protesica"
+          "quote": "Ambiente sereno e pulitissimo. Mi hanno spiegato tutto con calma prima della visita, togliendomi ogni timore.",
+          "roleOrContext": "Paziente in cura"
         },
         {
-          "name": "Elena R.",
-          "location": "Monreale (PA)",
-          "quote": "Studio modernissimo e puntualità svizzera. Risultato dell'allineamento con mascherine invisibili eccellente: finalmente sorrido con sicurezza.",
-          "roleOrContext": "Ortodonzia invisibile"
+          "name": "Alessandro D.",
+          "location": "Palermo e provincia",
+          "quote": "Grande professionalita dell'equipe di Studio Odontoiatrico Dott. D'Ugo: puntualita sugli orari e zero dolore durante il trattamento.",
+          "roleOrContext": "Implantologia e igiene"
         }
       ]
     },
     "medicalDetails": {
-      "directorName": "Dott. Sebastiano Donato D'Ugo",
-      "alboRegistration": "Iscrizione Albo dei Medici Chirurghi e Odontoiatri prov. di Palermo",
-      "specialization": "Odontoiatria Specialistica, Implantologia Computer Guidata e Riabilitazione Orale",
-      "clinicAddress": "Sede Studio a Palermo",
-      "openingHours": "Lun - Ven: 09:00 - 19:30 | Sabato su appuntamento",
-      "parkingAndAccess": "Studio privo di barriere architettoniche e parcheggio riservato nelle vicinanze",
+      "directorName": "Dott Dugosebastiano",
+      "alboRegistration": "Struttura autorizzata · Ordine Provinciale di Palermo",
+      "specialization": "Odontoiatria, Implantologia e Cura del Sorriso",
+      "clinicAddress": "Sede operativa: Palermo",
+      "openingHours": "Lun - Ven · 09:00 - 19:00",
+      "parkingAndAccess": "Accesso privo di barriere e parcheggio comodo",
       "conventions": [
-        "Fondo Est",
-        "Pronto-Care",
-        "Unisalute",
-        "Faschim",
-        "Rateizzazione Tasso Zero"
+        "Principali Fondi Sanitari",
+        "Piani di cura personalizzati"
       ]
     }
   },

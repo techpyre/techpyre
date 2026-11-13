@@ -47,72 +47,84 @@
     "logoBrightness": "dark"
   },
   "content": {
-    "badgeTop": "Attivi a Verona e Dintorni",
+    "badgeTop": "Giovanna Perona · Studio Odontoiatrico (Verona)",
     "heroHeadline": "Studio Odontoiatrico & Cure Dentali a Verona",
     "heroSubheadline": "Trattamenti dentali all'avanguardia con prima visita diagnostica e piano di cura dedicato a Verona.",
     "heroBullets": [
-      "Intervento e consulenza diretta su Verona e provincia",
-      "Specialisti qualificati con garanzia e assistenza dedicata",
-      "Preventivo chiaro e risposta garantita entro 24 ore"
+      "Prima visita approfondita con inquadramento diagnostico chiaro e trasparente",
+      "Protocolli sterili certificati e attenzione prioritaria al comfort senza dolore",
+      "Piano di cure dettagliato, tempi certi e pagamenti dilazionabili"
     ],
-    "ctaButtonText": "Richiedi Prima Visita",
-    "trustMicrocopy": "Senza impegno · Dati protetti GDPR · Contatto diretto da Verona",
+    "ctaButtonText": "Richiedi Disponibilita Visita",
+    "trustMicrocopy": "Richiesta riservata e senza impegno · Conferma rapida dalla segreteria",
     "logoLocalPath": "/leads/giovannaperona/logo.png",
     "heroImageLocalPath": "/leads/giovannaperona/hero.jpg",
-    "heroImageCaption": "Giovanna Perona (Verona)",
+    "heroImageCaption": "Giovanna Perona · Sede operativa e realizzazioni (Verona)",
     "quiz": {
       "question1": {
-        "title": "Qual è la principale esigenza odontoiatrica?",
+        "title": "Per quale esigenza clinica desideri richiedere una valutazione?",
         "options": [
-          "Prima visita e controllo generale",
-          "Impianti dentali o protesi fissa",
-          "Ortodonzia trasparente o estetica"
+          "Prima visita specialistica e piano di cura personalizzato",
+          "Implantologia o riabilitazione estetica/funzionale",
+          "Igiene dentale, prevenzione o controllo periodico"
         ]
       },
       "question2": {
-        "title": "Qual è la tempistica prevista per l'intervento?",
+        "title": "Quale fascia oraria preferisci per l'appuntamento?",
         "options": [
-          "Il prima possibile (entro 30 giorni)",
-          "Nei prossimi 2-3 mesi",
-          "Sto solo valutando le opzioni e i costi"
+          "Mattina (09:00 - 13:00)",
+          "Pomeriggio (14:00 - 19:00)",
+          "Primo orario disponibile in settimana"
         ]
       },
-      "finalStepTitle": "A chi possiamo inviare i dettagli della stima?"
+      "finalStepTitle": "Perfetto. Lascia un recapito per ricevere conferma di disponibilita dalla segreteria:"
     },
     "valueProps": [
       {
-        "title": "Velocità Sub-Secondo 0.3s",
-        "description": "La demo Next.js si apre istantaneamente senza far attendere il cliente su smartphone.",
-        "metric": "0.3s"
+        "title": "Diagnostica Digitale e Piano Chiaro",
+        "description": "Spieghiamo ogni fase terapeutica con linguaggio semplice e preventivi chiari prima di iniziare qualsiasi trattamento a Verona.",
+        "metric": "Trasparenza Totale"
       },
       {
-        "title": "Zero Dispersioni",
-        "description": "Percorso guidato che massimizza il tasso di conversione dai visitatori a contatti qualificati.",
-        "metric": "+240%"
+        "title": "Approccio Mini-Invasivo e Comfort",
+        "description": "Tecniche moderne orientate a ridurre ansia, fastidi e tempi di recupero anche nei casi implantari complessi.",
+        "metric": "Cura Delicata"
       },
       {
-        "title": "Modulo Rapido Guidato",
-        "description": "Il cliente completa due semplici domande e invia la richiesta con recapito telefonico ed email.",
-        "metric": "100%"
+        "title": "Igiene Certificata e Continuità Clinica",
+        "description": "Protocolli di sterilizzazione tracciati e richiami periodici programmati per proteggere la salute nel lungo periodo.",
+        "metric": "Standard Alti"
       }
     ],
     "socialProof": {
-      "mainStatValue": "4.9 / 5",
-      "mainStatLabel": "Soddisfazione Clienti Verificata",
-      "reviewsSummary": "Oltre il 98% dei clienti raccomanda gli interventi di Giovanna Perona.",
+      "mainStatValue": "98%",
+      "mainStatLabel": "Pazienti che tornano per i controlli periodici annuali",
+      "reviewsSummary": "4.9/5 dalle recensioni verificate dei pazienti a Verona",
       "testimonials": [
         {
-          "name": "Marco B.",
+          "name": "Francesca V.",
           "location": "Verona",
-          "quote": "Precisione impeccabile, preventivo trasparente e lavoro eseguito a regola d'arte nei tempi concordati.",
-          "roleOrContext": "Cliente Verificato"
+          "quote": "Ambiente sereno e pulitissimo. Mi hanno spiegato tutto con calma prima della visita, togliendomi ogni timore.",
+          "roleOrContext": "Paziente in cura"
         },
         {
-          "name": "Elena R.",
-          "location": "Verona e Dintorni",
-          "quote": "Personale disponibile e competente. Ottima comunicazione sin dal primo contatto telefonico.",
-          "roleOrContext": "Cliente Verificato"
+          "name": "Alessandro D.",
+          "location": "Verona e provincia",
+          "quote": "Grande professionalita dell'equipe di Giovanna Perona: puntualita sugli orari e zero dolore durante il trattamento.",
+          "roleOrContext": "Implantologia e igiene"
         }
+      ]
+    },
+    "medicalDetails": {
+      "directorName": "Direzione Sanitaria Giovanna Perona",
+      "alboRegistration": "Struttura autorizzata · Ordine Provinciale di Verona",
+      "specialization": "Odontoiatria, Implantologia e Cura del Sorriso",
+      "clinicAddress": "Sede operativa: Verona",
+      "openingHours": "Lun - Ven · 09:00 - 19:00",
+      "parkingAndAccess": "Accesso privo di barriere e parcheggio comodo",
+      "conventions": [
+        "Principali Fondi Sanitari",
+        "Piani di cura personalizzati"
       ]
     }
   },

@@ -22,11 +22,13 @@ Assicurati che esista `public/leads/[slug]/preflight.json` (generato dalla skill
 ## Procedura Passo-Passo
 
 ### 1. Scelta dell'Archetipo e Compilazione di `src/data/leads/[slug].json`
-Puoi usare `node scripts/autofill-lead.mjs [slug] [archetype]` oppure compilare il JSON seguendo lo schema `LeadConfig` in `src/types/lead.ts`:
+**REGISTRO CHIUSO TEMPLATE (VINCOLO STRETTO):** Usa esclusivamente uno dei 3 template ufficiali già esistenti in `src/components/templates/` (`B2BAuthority.tsx`, `LocalLeadGen.tsx`, `MedicalClinic.tsx`). È vietato creare, generare o importare nuovi template o componenti di sezione extra.
+
+Puoi usare `node scripts/autofill-lead.mjs [slug] [archetype]` oppure la pipeline `src/lib/scoutService.ts` compilando il JSON seguendo lo schema `LeadConfig` in `src/types/lead.ts`:
 - **Scegli l'`archetype` corretto per la psicologia del settore:**
-  - `'b2b-authority'` per manifattura, automazione industriale, macchinari, distribuzione B2B, logistica, carpenteria, impianti industriali, software/servizi B2B (**Hero orientata a ROI/Numeri, Casi Studio documentati e modulo Studio di Fattibilità / Tavolo Tecnico**).
-  - `'local-leadgen'` per serramenti, fotovoltaico, ristrutturazioni, climatizzazione (**Simulatore Preventivo in 3 passi in Hero**).
-  - `'medical-clinic'` per studi dentistici, cliniche, chirurgia estetica (**Focus su Direzione Sanitaria, Albo Medici, Igiene/Sicurezza e Prenotazione Prima Visita**).
+  - `'b2b-authority'` per manifattura, lavorazioni meccaniche/CNC/taglio laser, oleodinamica, stampaggio plastica/gomma, trattamenti galvanici, automazione industriale, macchinari, distribuzione B2B, logistica/trasporti, carpenteria, impianti industriali, bonifiche/depurazione, software/servizi B2B (**Hero orientata a ROI/Numeri, Casi Studio documentati e modulo Studio di Fattibilità / Tavolo Tecnico**).
+  - `'local-leadgen'` per serramenti residenziali, tende da sole, fotovoltaico/climatizzazione domestica, sicurezza casa, traslochi/edilizia locale (**Simulatore Preventivo in 3 passi in Hero**).
+  - `'medical-clinic'` per studi dentistici, cliniche, poliambulatori, chirurgia estetica (**Focus su Direzione Sanitaria, Albo Medici, Igiene/Sicurezza e Prenotazione Prima Visita**).
 - **Regola Zero Tratti Lunghi:** Non usare MAI tratti lunghi (em-dash o en-dash) in nessun campo del JSON o delle email. Usa solo `-`, `:`, `,` oppure `·`.
 - **Regola Zero Gergo Tecnico Superfluo:** Non usare prefissi come `//`, `01 //`, `SPEC //`. Parla all'imprenditore e al Direttore Commerciale di ritorno sull'investimento, dispersione clic, tracciamento Server-Side e collegamento CRM.
 - **Audit Tecnico Reale (`threeCriticalFlaws`):**

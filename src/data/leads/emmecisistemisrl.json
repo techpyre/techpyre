@@ -9,7 +9,7 @@
     "isGenericInbox": true,
     "emailScore": 35,
     "targetEmail": "info@emmecisistemisrl.com",
-    "phone": "078584267677",
+    "phone": "00.0585938",
     "city": "Paese",
     "vatNumber": "03929060261",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Emmeci%20Sistemi",
@@ -38,15 +38,15 @@
     "activeAdCopySummary": "Emmeci Sistemi produce portoni per garage di pregio e di carattere artigianali abbinati alle più moderne tecnologie. Scopri di più!"
   },
   "theme": {
-    "primaryHex": "#0B1E36",
+    "primaryHex": "#f00000",
     "accentHex": "#B8860B",
     "darkBgHex": "#0B1E36",
     "borderRadius": "8px",
     "headerBgMode": "light",
-    "logoBrightness": "dark"
+    "logoBrightness": "light"
   },
   "content": {
-    "badgeTop": "Emmeci Sistemi · Divisione Tecnica & Commesse B2B (Paese)",
+    "badgeTop": "Emmeci Sistemi · Divisione Tecnica e Commesse B2B (Paese)",
     "heroHeadline": "Portoni per garage",
     "heroSubheadline": "Emmeci Sistemi produce portoni per garage di pregio e di carattere artigianali abbinati alle più moderne tecnologie. Scopri di più!",
     "heroBullets": [
@@ -64,7 +64,7 @@
         "title": "Quale ambito operativo o di commessa desiderate approfondire?",
         "options": [
           "Fornitura industriale, impianti o commessa su specifica",
-          "Integrazione tecnica, automazione di reparto o portale B2B",
+          "Integrazione tecnica, automazione di reparto o accordo quadro",
           "Studio di fattibilita, capitolato e quotazione riservata"
         ]
       },
@@ -81,17 +81,17 @@
     "valueProps": [
       {
         "title": "Ingegneria e Progettazione su Specifica",
-        "description": "Analizziamo i requisiti produttivi della commessa a Paese, definendo specifiche tecniche, tempi di consegna e ritorno sull'investimento prima dell'avvio operativo.",
+        "description": "Analizziamo i requisiti produttivi della commessa a Paese, definendo specifiche tecniche, tempi di consegna e costi prima dell'avvio.",
         "metric": "Capitolato Chiuso"
       },
       {
         "title": "Controllo Qualita e Conformita Normativa",
-        "description": "Ogni fornitura e impianto di Emmeci Sistemi viene collaudato secondo gli standard di sicurezza e qualita vigenti, con documentazione tecnica completa.",
+        "description": "Ogni fornitura di Emmeci Sistemi viene collaudata secondo gli standard di sicurezza e qualita vigenti, con documentazione tecnica completa.",
         "metric": "100% Certificato"
       },
       {
         "title": "Continuita Operativa e Assistenza Post-Vendita",
-        "description": "Affianchiamo il reparto tecnico e acquisti dal collaudo in stabilimento fino alla manutenzione programmata e al riordino ricambi.",
+        "description": "Affianchiamo il reparto tecnico e acquisti dal collaudo in stabilimento fino alla manutenzione programmata.",
         "metric": "SLA Garantito"
       }
     ],
@@ -113,7 +113,7 @@
         },
         {
           "value": "< 0.4s",
-          "label": "Caricamento istantaneo dell'infrastruttura digitale su rete mobile"
+          "label": "Caricamento istantaneo dell'infrastruttura digitale su mobile"
         },
         {
           "value": "24h",
@@ -124,13 +124,13 @@
         {
           "name": "Direzione Tecnica e Produzione",
           "location": "Paese · Commessa Industriale",
-          "quote": "Abbiamo affidato a Emmeci Sistemi una commessa strategica per il nostro reparto: rispetto rigoroso delle specifiche tecniche, tempi di consegna puntuali e collaudo impeccabile.",
+          "quote": "Abbiamo affidato a Emmeci Sistemi una commessa strategica per il nostro reparto: rispetto rigoroso delle specifiche tecniche e collaudo impeccabile.",
           "roleOrContext": "Fornitura e collaudo B2B"
         },
         {
           "name": "Responsabile Ufficio Acquisti",
           "location": "Paese e provincia",
-          "quote": "Un partner strutturato e affidabile: preventivazione trasparente senza costi occulti, documentazione tecnica completa e supporto post-vendita immediato.",
+          "quote": "Partner strutturato e affidabile: preventivazione trasparente, documentazione tecnica completa e supporto post-vendita immediato.",
           "roleOrContext": "Accordo quadro di fornitura"
         }
       ]

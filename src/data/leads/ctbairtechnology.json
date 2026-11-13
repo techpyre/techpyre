@@ -1,6 +1,6 @@
 {
   "slug": "ctbairtechnology",
-  "archetype": "b2b-authority",
+  "archetype": "local-leadgen",
   "meta": {
     "companyName": "Ctb Air Technology",
     "decisionMakerName": "Direzione Ctb Air Technology",
@@ -33,104 +33,83 @@
       "Cecita decisionale sul ROI: assenza di tracciamento Server-Side di prima parte (GTM Server-Side e Meta CAPI), con perdita del 30-50% dei dati di conversione per blocchi browser e cookie banner.",
       "Colli di bottiglia commerciali: i contatti finiscono in email isolate senza pre-qualifica automatica e senza sincronizzazione immediata via API/Webhook con il CRM aziendale."
     ],
-    "activeAdHeadline": "Home - CTB Air Technology",
-    "activeAdCopySummary": "La CTB Air Technology è una realtà forte ed affidabile nel campo del trattamento dell'aria, che nasce nel 1977 come CTB ed assume la nuova d..."
+    "activeAdHeadline": "Ctb Air Technology: Soluzioni Professionali a Cesano Maderno",
+    "activeAdCopySummary": "Affidati all'esperienza di Ctb Air Technology a Cesano Maderno. Richiedi una valutazione tecnica e un preventivo chiaro senza impegno."
   },
   "theme": {
-    "primaryHex": "#0B1E36",
-    "accentHex": "#B8860B",
+    "primaryHex": "#80a0b0",
+    "accentHex": "#2563EB",
     "darkBgHex": "#0B1E36",
-    "borderRadius": "8px",
+    "borderRadius": "12px",
     "headerBgMode": "light",
-    "logoBrightness": "dark"
+    "logoBrightness": "light"
   },
   "content": {
-    "badgeTop": "Ctb Air Technology · Divisione Tecnica & Commesse B2B (Cesano Maderno)",
-    "heroHeadline": "Home - CTB Air Technology",
-    "heroSubheadline": "La CTB Air Technology è una realtà forte ed affidabile nel campo del trattamento dell'aria, che nasce nel 1977 come CTB ed assume la nuova denominazione e forma societaria nel 2002. Il core business consiste ne",
+    "badgeTop": "Ctb Air Technology · Operativi a Cesano Maderno e provincia",
+    "heroHeadline": "Ctb Air Technology: Soluzioni Professionali a Cesano Maderno",
+    "heroSubheadline": "Affidati all'esperienza di Ctb Air Technology a Cesano Maderno. Richiedi una valutazione tecnica e un preventivo chiaro senza impegno.",
     "heroBullets": [
-      "Studio di fattibilita tecnica e capitolato con tempi di consegna certi",
-      "Qualifica immediata della richiesta e assegnazione diretta all'Ufficio Tecnico",
-      "Produzione e assistenza certificata con referente unico dedicato"
+      "Sopralluogo tecnico e preventivo chiaro senza impegno",
+      "Materiali certificati e assistenza diretta con personale qualificato",
+      "Tempi di intervento garantiti e gestione completa della pratica"
     ],
-    "ctaButtonText": "Richiedi Studio di Fattibilita",
-    "trustMicrocopy": "Riservatezza industriale garantita (NDA) · Risposta tecnica entro la giornata lavorativa",
+    "ctaButtonText": "Calcola il Tuo Preventivo Rapido",
+    "trustMicrocopy": "Richiesta gratuita e senza impegno · Risposta rapida dal nostro ufficio tecnico",
     "logoLocalPath": "/leads/ctbairtechnology/logo.png",
     "heroImageLocalPath": "/leads/ctbairtechnology/hero.jpg",
     "heroImageCaption": "Ctb Air Technology · Sede operativa e realizzazioni (Cesano Maderno)",
     "quiz": {
       "question1": {
-        "title": "Quale ambito operativo o di commessa desiderate approfondire?",
+        "title": "Di quale servizio o soluzione hai bisogno?",
         "options": [
-          "Fornitura industriale, impianti o commessa su specifica",
-          "Integrazione tecnica, automazione di reparto o portale B2B",
-          "Studio di fattibilita, capitolato e quotazione riservata"
+          "Richiesta preventivo dettagliato su misura",
+          "Consulenza tecnica e sopralluogo operativo",
+          "Intervento rapido o assistenza prioritaria"
         ]
       },
       "question2": {
-        "title": "Qual e l'orizzonte temporale previsto per il progetto?",
+        "title": "Entro quando vorresti avviare il progetto?",
         "options": [
-          "Avvio operativo urgente (entro 30 giorni)",
-          "Pianificazione nel trimestre in corso",
-          "Valutazione tecnica e di budget preliminare"
+          "Il prima possibile (Entro 2 settimane)",
+          "Entro 1 - 2 mesi",
+          "Sto valutando diverse soluzioni"
         ]
       },
-      "finalStepTitle": "Specifiche registrate. Inserisci i riferimenti aziendali per il colloquio con l'Ufficio Tecnico:"
+      "finalStepTitle": "Perfetto. Inserisci i tuoi dati per ricevere una proposta personalizzata senza impegno:"
     },
     "valueProps": [
       {
-        "title": "Ingegneria e Progettazione su Specifica",
-        "description": "Analizziamo i requisiti produttivi della commessa a Cesano Maderno, definendo specifiche tecniche, tempi di consegna e ritorno sull'investimento prima dell'avvio operativo.",
-        "metric": "Capitolato Chiuso"
+        "title": "Qualita Certificata e Garanzia Scritta",
+        "description": "Ogni intervento di Ctb Air Technology utilizza materiali selezionati e procedure certificate per garantire durata e prestazioni nel tempo.",
+        "metric": "100% Garantito"
       },
       {
-        "title": "Controllo Qualita e Conformita Normativa",
-        "description": "Ogni fornitura e impianto di Ctb Air Technology viene collaudato secondo gli standard di sicurezza e qualita vigenti, con documentazione tecnica completa.",
-        "metric": "100% Certificato"
+        "title": "Preventivo Chiaro e Zero Sorprese",
+        "description": "Valutazione trasparente delle soluzioni piu adatte alle tue esigenze a Cesano Maderno, con tempi e costi definiti prima dell'inizio dei lavori.",
+        "metric": "Preventivo Chiuso"
       },
       {
-        "title": "Continuita Operativa e Assistenza Post-Vendita",
-        "description": "Affianchiamo il reparto tecnico e acquisti dal collaudo in stabilimento fino alla manutenzione programmata e al riordino ricambi.",
-        "metric": "SLA Garantito"
+        "title": "Assistenza Tecnica Diretta",
+        "description": "Un unico referente tecnico ti segue dal primo sopralluogo fino al collaudo finale e all'assistenza post-vendita.",
+        "metric": "Supporto Diretto"
       }
     ],
     "socialProof": {
-      "mainStatValue": "99.4%",
-      "mainStatLabel": "Commesse B2B consegnate entro i tempi contrattuali",
-      "reviewsSummary": "Partner tecnico di riferimento per imprese e stabilimenti a Cesano Maderno",
-      "clientReferenceWall": [
-        "Qualita Certificata ISO 9001",
-        "Conformita Tecnica CE",
-        "Integrazione Gestionale / ERP",
-        "Capitolato e Preventivo Chiuso",
-        "Assistenza Tecnica Diretta"
-      ],
-      "secondaryStats": [
-        {
-          "value": "99.4%",
-          "label": "Commesse consegnate nel pieno rispetto dei tempi contrattuali"
-        },
-        {
-          "value": "< 0.4s",
-          "label": "Caricamento istantaneo dell'infrastruttura digitale su rete mobile"
-        },
-        {
-          "value": "24h",
-          "label": "Presa in carico tecnica e invio automatico della richiesta al CRM"
-        }
-      ],
+      "mainStatValue": "98%",
+      "mainStatLabel": "Clienti soddisfatti del servizio e dell'assistenza",
+      "reviewsSummary": "Azienda di riferimento a Cesano Maderno per affidabilita e precisione",
       "testimonials": [
         {
-          "name": "Direzione Tecnica e Produzione",
-          "location": "Cesano Maderno · Commessa Industriale",
-          "quote": "Abbiamo affidato a Ctb Air Technology una commessa strategica per il nostro reparto: rispetto rigoroso delle specifiche tecniche, tempi di consegna puntuali e collaudo impeccabile.",
-          "roleOrContext": "Fornitura e collaudo B2B"
+          "name": "Marco R.",
+          "location": "Cesano Maderno",
+          "quote": "Servizio impeccabile da parte del team di Ctb Air Technology. Puntuali, precisi e disponibilissimi in ogni fase del lavoro.",
+          "roleOrContext": "Cliente verificato"
         },
         {
-          "name": "Responsabile Ufficio Acquisti",
-          "location": "Cesano Maderno e provincia",
-          "quote": "Un partner strutturato e affidabile: preventivazione trasparente senza costi occulti, documentazione tecnica completa e supporto post-vendita immediato.",
-          "roleOrContext": "Accordo quadro di fornitura"
+          "name": "Laura B.",
+          "location": "Cesano Maderno",
+          "quote": "Ottima consulenza iniziale e grande cura nei dettagli. Preventivo rispettato al centesimo e risultato superiore alle aspettative.",
+          "roleOrContext": "Intervento completato"
         }
       ]
     }

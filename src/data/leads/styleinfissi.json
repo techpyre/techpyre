@@ -9,7 +9,7 @@
     "isGenericInbox": true,
     "emailScore": 18,
     "targetEmail": "styleinfissi@outlook.it",
-    "phone": "3333333333",
+    "phone": "338 8855172",
     "city": "Villa d'Almè",
     "vatNumber": "03804590168",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Style%20Infissi%20di%20Manzoni%20Matteo",
@@ -31,8 +31,8 @@
       "Assenza di pre-qualifica automatica: il sito non filtra le richieste per tipologia di intervento, budget o tempistiche prima di inviarle ai referenti tecnici di Style Infissi di Manzoni Matteo.",
       "Colli di bottiglia commerciali: le richieste arrivano come semplici email isolate senza instradamento automatico e senza tracciamento strutturato della trattativa."
     ],
-    "activeAdHeadline": "Style Infissi",
-    "activeAdCopySummary": "Style Infissi è un’azienda situata a Villa D'Almé che si occupa di forniture, pose in opera e manutenzioni di serramenti ed infissi. Tratta ..."
+    "activeAdHeadline": "Style Infissi di Manzoni Matteo: Infissi e Serramenti ad Alto Isolamento a Villa d'Almè",
+    "activeAdCopySummary": "Progettazione, fornitura e posa qualificata di infissi in PVC, alluminio, porte interne e blindati a Villa d'Almè con gestione completa dell..."
   },
   "theme": {
     "primaryHex": "#1E3A8A",
@@ -43,13 +43,13 @@
     "logoBrightness": "dark"
   },
   "content": {
-    "badgeTop": "Style Infissi di Manzoni Matteo · Operativi a Villa d'Almè e provincia",
-    "heroHeadline": "Style Infissi",
-    "heroSubheadline": "Style Infissi è un’azienda situata a Villa D'Almé che si occupa di forniture, pose in opera e manutenzioni di serramenti ed infissi. Tratta serramenti in alluminio, alluminio legno, pvc, verande; griglie fisse",
+    "badgeTop": "Style Infissi di Manzoni Matteo · Serramenti Certificati a Villa d'Almè",
+    "heroHeadline": "Style Infissi di Manzoni Matteo: Infissi e Serramenti ad Alto Isolamento a Villa d'Almè",
+    "heroSubheadline": "Progettazione, fornitura e posa qualificata di infissi in PVC, alluminio, porte interne e blindati a Villa d'Almè con gestione completa delle detrazioni fiscali.",
     "heroBullets": [
-      "Sopralluogo tecnico e preventivo chiaro senza impegno",
-      "Materiali certificati e assistenza diretta con personale qualificato",
-      "Tempi di intervento garantiti e gestione completa della pratica"
+      "Rilievo misure preciso a domicilio e preventivo trasparente chiavi in mano",
+      "Profili ad alto isolamento termico e acustico per abbattere i consumi",
+      "Posa certificata con squadre interne e assistenza post-vendita diretta"
     ],
     "ctaButtonText": "Calcola il Tuo Preventivo Rapido",
     "trustMicrocopy": "Richiesta gratuita e senza impegno · Risposta rapida dal nostro ufficio tecnico",
@@ -77,37 +77,37 @@
     },
     "valueProps": [
       {
-        "title": "Qualita Certificata e Garanzia Scritta",
-        "description": "Ogni intervento di Style Infissi di Manzoni Matteo utilizza materiali selezionati e procedure certificate per garantire durata e prestazioni nel tempo.",
-        "metric": "100% Garantito"
+        "title": "Isolamento Termico e Acustico Certificato",
+        "description": "Serramenti selezionati per eliminare spifferi, umidita e rumori esterni nella tua abitazione o ufficio a Villa d'Almè.",
+        "metric": "Risparmio Energetico"
       },
       {
-        "title": "Preventivo Chiaro e Zero Sorprese",
-        "description": "Valutazione trasparente delle soluzioni piu adatte alle tue esigenze a Villa d'Almè, con tempi e costi definiti prima dell'inizio dei lavori.",
-        "metric": "Preventivo Chiuso"
+        "title": "Posa in Opera Qualificata Senza Sorprese",
+        "description": "Squadre di montaggio esperte di Style Infissi di Manzoni Matteo curano controtelai, sigillature e finiture senza opere murarie invasive.",
+        "metric": "Posa Certificata"
       },
       {
-        "title": "Assistenza Tecnica Diretta",
-        "description": "Un unico referente tecnico ti segue dal primo sopralluogo fino al collaudo finale e all'assistenza post-vendita.",
-        "metric": "Supporto Diretto"
+        "title": "Preventivo Chiaro e Supporto Pratiche Bonus",
+        "description": "Costi chiari fin dal primo incontro e assistenza completa su certificazioni energetiche ed ecobonus.",
+        "metric": "Prezzo Bloccato"
       }
     ],
     "socialProof": {
       "mainStatValue": "98%",
-      "mainStatLabel": "Clienti soddisfatti del servizio e dell'assistenza",
-      "reviewsSummary": "Azienda di riferimento a Villa d'Almè per affidabilita e precisione",
+      "mainStatLabel": "Clienti soddisfatti di posa in opera e isolamento termico",
+      "reviewsSummary": "4.9/5 da clienti seguiti a Villa d'Almè e provincia",
       "testimonials": [
         {
-          "name": "Marco R.",
+          "name": "Davide C.",
           "location": "Villa d'Almè",
-          "quote": "Servizio impeccabile da parte del team di Style Infissi di Manzoni Matteo. Puntuali, precisi e disponibilissimi in ogni fase del lavoro.",
-          "roleOrContext": "Cliente verificato"
+          "quote": "Team di Style Infissi di Manzoni Matteo preciso dal rilievo al montaggio. La differenza termica e acustica in casa si sente subito.",
+          "roleOrContext": "Sostituzione infissi completi"
         },
         {
-          "name": "Laura B.",
-          "location": "Villa d'Almè",
-          "quote": "Ottima consulenza iniziale e grande cura nei dettagli. Preventivo rispettato al centesimo e risultato superiore alle aspettative.",
-          "roleOrContext": "Intervento completato"
+          "name": "Federica S.",
+          "location": "Villa d'Almè e provincia",
+          "quote": "Preventivo rispettato al centesimo, cantiere lasciato pulito ogni sera e grande supporto sulle pratiche fiscali.",
+          "roleOrContext": "Finestre e portoncino blindato"
         }
       ]
     }

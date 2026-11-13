@@ -5,7 +5,7 @@
     "companyName": "Vetrate Panoramiche Italiane",
     "decisionMakerName": "Direzione Vetrate Panoramiche Italiane",
     "targetEmail": "info@vetratepanoramicheitaliane.com",
-    "phone": "08905417",
+    "phone": "3666312148",
     "city": "Roma",
     "vatNumber": "Non trovata",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Vetratepanoramicheitaliane",
@@ -32,7 +32,7 @@
     "renderBlockingCount": 8
   },
   "theme": {
-    "primaryHex": "#0B1E36",
+    "primaryHex": "#a0d0f0",
     "accentHex": "#B8860B",
     "darkBgHex": "#0B1E36",
     "borderRadius": "8px",
@@ -40,7 +40,7 @@
     "logoBrightness": "dark"
   },
   "content": {
-    "badgeTop": "Vetratepanoramicheitaliane · Divisione Tecnica & Commesse B2B (Roma)",
+    "badgeTop": "Vetrate Panoramiche Italiane · Divisione Tecnica e Commesse B2B (Roma)",
     "heroHeadline": "Vetratepanoramicheitaliane: Ingegneria, Forniture e Soluzioni B2B a Roma",
     "heroSubheadline": "x63nzvj x108nfp6 xq9mrsl x1h4wwuj xeuugli\"> Sei alla ricerca di una soluzione per vivere i tuoi spazi esterni anche d’inverno? ❌Non tutte le vetrate sono uguali e prima di scegliere, dovresti sapere una cosa: l",
     "heroBullets": [
@@ -50,15 +50,15 @@
     ],
     "ctaButtonText": "Richiedi Studio di Fattibilita",
     "trustMicrocopy": "Riservatezza industriale garantita (NDA) · Risposta tecnica entro la giornata lavorativa",
-    "logoLocalPath": "",
-    "heroImageLocalPath": "/leads/infissimpm/hero.jpg",
-    "heroImageCaption": "Vetratepanoramicheitaliane · Sede operativa e realizzazioni (Roma)",
+    "logoLocalPath": "/leads/vetratepanoramicheitaliane/logo.png",
+    "heroImageLocalPath": "/leads/vetratepanoramicheitaliane/hero.jpg",
+    "heroImageCaption": "Vetrate Panoramiche Italiane · Sede operativa e realizzazioni (Roma)",
     "quiz": {
       "question1": {
         "title": "Quale ambito operativo o di commessa desiderate approfondire?",
         "options": [
           "Fornitura industriale, impianti o commessa su specifica",
-          "Integrazione tecnica, automazione di reparto o portale B2B",
+          "Integrazione tecnica, automazione di reparto o accordo quadro",
           "Studio di fattibilita, capitolato e quotazione riservata"
         ]
       },
@@ -75,17 +75,17 @@
     "valueProps": [
       {
         "title": "Ingegneria e Progettazione su Specifica",
-        "description": "Analizziamo i requisiti produttivi della commessa a Roma, definendo specifiche tecniche, tempi di consegna e ritorno sull'investimento prima dell'avvio operativo.",
+        "description": "Analizziamo i requisiti produttivi della commessa a Roma, definendo specifiche tecniche, tempi di consegna e costi prima dell'avvio.",
         "metric": "Capitolato Chiuso"
       },
       {
         "title": "Controllo Qualita e Conformita Normativa",
-        "description": "Ogni fornitura e impianto di Vetratepanoramicheitaliane viene collaudato secondo gli standard di sicurezza e qualita vigenti, con documentazione tecnica completa.",
+        "description": "Ogni fornitura di Vetrate Panoramiche Italiane viene collaudata secondo gli standard di sicurezza e qualita vigenti, con documentazione tecnica completa.",
         "metric": "100% Certificato"
       },
       {
         "title": "Continuita Operativa e Assistenza Post-Vendita",
-        "description": "Affianchiamo il reparto tecnico e acquisti dal collaudo in stabilimento fino alla manutenzione programmata e al riordino ricambi.",
+        "description": "Affianchiamo il reparto tecnico e acquisti dal collaudo in stabilimento fino alla manutenzione programmata.",
         "metric": "SLA Garantito"
       }
     ],
@@ -107,7 +107,7 @@
         },
         {
           "value": "< 0.4s",
-          "label": "Caricamento istantaneo dell'infrastruttura digitale su rete mobile"
+          "label": "Caricamento istantaneo dell'infrastruttura digitale su mobile"
         },
         {
           "value": "24h",
@@ -118,13 +118,13 @@
         {
           "name": "Direzione Tecnica e Produzione",
           "location": "Roma · Commessa Industriale",
-          "quote": "Abbiamo affidato a Vetratepanoramicheitaliane una commessa strategica per il nostro reparto: rispetto rigoroso delle specifiche tecniche, tempi di consegna puntuali e collaudo impeccabile.",
+          "quote": "Abbiamo affidato a Vetrate Panoramiche Italiane una commessa strategica per il nostro reparto: rispetto rigoroso delle specifiche tecniche e collaudo impeccabile.",
           "roleOrContext": "Fornitura e collaudo B2B"
         },
         {
           "name": "Responsabile Ufficio Acquisti",
           "location": "Roma e provincia",
-          "quote": "Un partner strutturato e affidabile: preventivazione trasparente senza costi occulti, documentazione tecnica completa e supporto post-vendita immediato.",
+          "quote": "Partner strutturato e affidabile: preventivazione trasparente, documentazione tecnica completa e supporto post-vendita immediato.",
           "roleOrContext": "Accordo quadro di fornitura"
         }
       ]

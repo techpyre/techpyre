@@ -5,6 +5,7 @@ import { LeadConfig, OutreachStep } from "@/types/lead";
 import { loadLeadConfig, saveLeadConfig } from "./leadsStorage";
 import {
   analyzePngLogo,
+  analyzeRasterHeroFile,
   downloadAndNormalizeRasterAsset,
 } from "./logoProcessor";
 
@@ -357,6 +358,13 @@ async function tryDownloadFileLocally(url: string, destPath: string): Promise<bo
     if (buf.length < 400) return false;
     fs.mkdirSync(/*turbopackIgnore: true*/ path.dirname(destPath), { recursive: true });
     fs.writeFileSync(/*turbopackIgnore: true*/ destPath, buf);
+    const shotAnalysis = analyzeRasterHeroFile(destPath);
+    if (shotAnalysis && shotAnalysis.uniformRatio > 0.92) {
+      try {
+        fs.unlinkSync(/*turbopackIgnore: true*/ destPath);
+      } catch {}
+      return false;
+    }
     return true;
   } catch {
     return false;
@@ -2262,41 +2270,831 @@ export async function searchItalianBusinessUrls(
   return list.map((c) => c.targetUrl);
 }
 
-function detectArchetype(keyword: string, html: string): LeadArchetype {
-  const combined = (keyword + " " + html.slice(0, 6000)).toLowerCase();
-  if (
-    combined.includes("dentist") ||
-    combined.includes("odontoiatr") ||
-    combined.includes("clinica") ||
-    combined.includes("poliambulatorio") ||
-    combined.includes("chirurg") ||
-    combined.includes("studio medico") ||
-    combined.includes("implantolog")
-  ) {
-    return "medical-clinic";
+export type BusinessNiche =
+  | "meccanica_cnc"
+  | "oleodinamica_fluidi"
+  | "plastica_gomma_chimica"
+  | "automazione_elettrico"
+  | "logistica_imballaggi"
+  | "ambiente_energia_b2b"
+  | "infissi_serramenti"
+  | "tende_outdoor"
+  | "fotovoltaico_clima"
+  | "sicurezza_casa"
+  | "traslochi_edilizia"
+  | "odontoiatria"
+  | "poliambulatorio"
+  | "generic_b2b"
+  | "generic_local";
+
+const MEDICAL_SIGNALS = [
+  "dentist",
+  "odontoiatr",
+  "implantolog",
+  "ortodonzi",
+  "clinica dentale",
+  "studio dentistico",
+  "poliambulatorio",
+  "studio medico",
+  "chirurgia estetica",
+  "fisioterap",
+  "ortopedi",
+  "oculist",
+  "dermatolog",
+  "medico chirurgo",
+  "igiene dentale",
+];
+
+const STRONG_B2B_INDUSTRIAL_SIGNALS = [
+  "b2b",
+  "industri",
+  "manifattur",
+  "macchinari",
+  "taglio laser",
+  "lamiera",
+  "piegatura",
+  "calandratur",
+  "tranciatura",
+  "punzonatur",
+  "saldatur",
+  "robotizzat",
+  "oleodinamic",
+  "pneumatic",
+  "centraline",
+  "cilindri",
+  "valvol",
+  "compressori",
+  "stampagg",
+  "portastamp",
+  "costruzione stampi",
+  "stampi per",
+  "materie plastiche",
+  "termoformatur",
+  "estrusione",
+  "polimer",
+  "polietilen",
+  "poliuretan",
+  "guarnizioni",
+  "galvanic",
+  "anodizz",
+  "zincatur",
+  "cromatur",
+  "nichelatur",
+  "verniciatura industriale",
+  "trattamenti superficiali",
+  "macchine utensili",
+  "lavorazioni meccaniche",
+  "torneria",
+  "fresatura",
+  "rettifica",
+  "elettroerosione",
+  "cnc",
+  "conto terzi",
+  "terzist",
+  "carpenteri",
+  "meccanic",
+  "siderurg",
+  "metallurg",
+  "ferro battuto",
+  "acciaio inox",
+  "automazion",
+  "robotica",
+  "quadri elettrici",
+  "quadristica",
+  "bordomacchina",
+  "plc",
+  "scada",
+  "nastri trasportatori",
+  "rulli",
+  "movimentazione",
+  "scaffalatur",
+  "carrelli elevatori",
+  "facchinaggio",
+  "autotrasporti",
+  "trasporti",
+  "spedizioni",
+  "logistic",
+  "imballagg",
+  "packaging",
+  "film estensibil",
+  "films adesiv",
+  "etichette industriali",
+  "bonifiche ambientali",
+  "smaltimento rifiuti",
+  "depurazione",
+  "aspirazione industriale",
+  "filtrazione industriale",
+  "prefabbricat",
+  "capannoni",
+  "coperture industriali",
+  "asfalti",
+  "lubrificanti",
+  "affilatura",
+  "rottami",
+  "lavanderie industriali",
+  "cuscinetti",
+  "antincendio",
+  "ingross",
+  "distribut",
+  "forniture industriali",
+  "forniture b2b",
+  "software",
+  "gestionale",
+  "erp",
+  "consulenza aziendale",
+  "stabilimento",
+  "manutenzioni industriali",
+  "impianti industriali",
+  "impianti tecnologici",
+  "impianti di produzione",
+  "impianti a vapore",
+  "media tensione",
+  "cabine mt",
+  "fotovoltaico industriale",
+  "fotovoltaico aziendale",
+  "ufficio tecnico",
+  "commesse",
+  "iso 9001",
+];
+
+const RESIDENTIAL_LOCAL_SIGNALS = [
+  "infissi",
+  "serramenti",
+  "finestre",
+  "porte interne",
+  "porte blindate",
+  "zanzariere",
+  "tapparelle",
+  "persiane",
+  "tende da sole",
+  "pergole",
+  "bioclimatiche",
+  "traslochi",
+  "sgomberi",
+  "fabbro",
+  "apertura porte",
+  "caldaie",
+  "scaldabagni",
+  "climatizzatori",
+  "condizionatori",
+  "arredamento",
+  "arredo casa",
+  "ristrutturazione bagno",
+  "ristrutturazioni chiavi in mano",
+  "antifurto casa",
+  "detrazione fiscale",
+  "ecobonus casa",
+];
+
+export function detectArchetype(keyword: string, html: string): LeadArchetype {
+  const kwLower = (keyword || "").toLowerCase();
+  const cleanSnippet = stripTags((html || "").slice(0, 14000)).toLowerCase();
+  const combined = `${kwLower} ${cleanSnippet}`;
+
+  let medicalScore = 0;
+  for (const sig of MEDICAL_SIGNALS) {
+    if (kwLower.includes(sig)) medicalScore += 3;
+    else if (cleanSnippet.includes(sig)) medicalScore += 1;
   }
-  if (
-    combined.includes("b2b") ||
-    combined.includes("industri") ||
-    combined.includes("automazion") ||
-    combined.includes("manifattur") ||
-    combined.includes("macchinari") ||
-    combined.includes("carpenteri") ||
-    combined.includes("meccanic") ||
-    combined.includes("logistic") ||
-    combined.includes("ingross") ||
-    combined.includes("distribut") ||
-    combined.includes("fornitur") ||
-    combined.includes("software") ||
-    combined.includes("gestionale") ||
-    combined.includes("erp") ||
-    combined.includes("consulenza aziendale") ||
-    combined.includes("stabilimento") ||
-    combined.includes("impiant")
-  ) {
-    return "b2b-authority";
+
+  let b2bScore = 0;
+  for (const sig of STRONG_B2B_INDUSTRIAL_SIGNALS) {
+    if (kwLower.includes(sig)) b2bScore += 4;
+    else if (cleanSnippet.includes(sig)) b2bScore += 2;
   }
-  return "local-leadgen";
+
+  let localScore = 0;
+  for (const sig of RESIDENTIAL_LOCAL_SIGNALS) {
+    if (kwLower.includes(sig)) localScore += 4;
+    else if (cleanSnippet.includes(sig)) localScore += 3;
+  }
+
+  if (medicalScore >= 2 && medicalScore >= b2bScore) {
+    return assertOfficialArchetype("medical-clinic");
+  }
+
+  if (b2bScore >= 2 && b2bScore > localScore) {
+    return assertOfficialArchetype("b2b-authority");
+  }
+
+  // Se compaiono chiaramente indicatori residenziali (es. infissi, caldaie, tende, traslochi)
+  if (localScore > 0 && b2bScore < 4) {
+    return assertOfficialArchetype("local-leadgen");
+  }
+
+  // Segnale generico "impianti": B2B solo con contesto industriale/terziario forte
+  if (
+    combined.includes("impiant") &&
+    (combined.includes("capannon") ||
+      combined.includes("aziend") ||
+      combined.includes("stabiliment") ||
+      combined.includes("fotovoltaico industriale") ||
+      combined.includes("elettrici industriali"))
+  ) {
+    return assertOfficialArchetype("b2b-authority");
+  }
+
+  return assertOfficialArchetype("local-leadgen");
+}
+
+export function detectBusinessNiche(
+  keyword: string,
+  corpus: string,
+  archetype: LeadArchetype
+): BusinessNiche {
+  const kwLower = (keyword || "").toLowerCase();
+  const corpusLower = (corpus || "").toLowerCase();
+
+  const scoreNiches = (
+    table: Array<{ niche: BusinessNiche; terms: string[] }>,
+    fallback: BusinessNiche
+  ): BusinessNiche => {
+    let bestNiche: BusinessNiche = fallback;
+    let bestScore = 0;
+    for (const entry of table) {
+      let score = 0;
+      for (const t of entry.terms) {
+        if (kwLower.includes(t)) score += 6;
+        else if (corpusLower.includes(t)) score += 1;
+      }
+      if (score > bestScore) {
+        bestScore = score;
+        bestNiche = entry.niche;
+      }
+    }
+    return bestNiche;
+  };
+
+  if (archetype === "medical-clinic") {
+    return scoreNiches(
+      [
+        {
+          niche: "odontoiatria",
+          terms: ["dentist", "odontoiatr", "implantolog", "ortodonzi"],
+        },
+      ],
+      "poliambulatorio"
+    );
+  }
+
+  if (archetype === "b2b-authority") {
+    return scoreNiches(
+      [
+        {
+          niche: "oleodinamica_fluidi",
+          terms: [
+            "oleodinamic",
+            "pneumatic",
+            "cilindr",
+            "centralin",
+            "valvol",
+            "compressori",
+            "guarnizioni",
+            "cuscinetti",
+          ],
+        },
+        {
+          niche: "plastica_gomma_chimica",
+          terms: [
+            "stampagg",
+            "materie plastiche",
+            "polimer",
+            "gomma",
+            "galvanic",
+            "anodizz",
+            "verniciatur",
+            "films adesiv",
+            "lubrificanti",
+          ],
+        },
+        {
+          niche: "meccanica_cnc",
+          terms: [
+            "taglio laser",
+            "lamiera",
+            "carpenteri",
+            "torneria",
+            "fresatura",
+            "cnc",
+            "stampi",
+            "portastamp",
+            "affilatura",
+            "saldatur",
+            "meccanic",
+            "acciai",
+            "ferro battuto",
+          ],
+        },
+        {
+          niche: "automazione_elettrico",
+          terms: [
+            "automazion",
+            "robot",
+            "quadri elettrici",
+            "macchinari",
+            "macchine industriali",
+            "elettrici",
+            "software",
+            "erp",
+          ],
+        },
+        {
+          niche: "logistica_imballaggi",
+          terms: [
+            "scaffalatur",
+            "magazzin",
+            "stoccagg",
+            "trasport",
+            "logistic",
+            "nastri trasportatori",
+            "rulli",
+            "imballagg",
+            "packaging",
+            "facchinaggio",
+          ],
+        },
+        {
+          niche: "ambiente_energia_b2b",
+          terms: [
+            "bonific",
+            "depurazion",
+            "fotovoltaic",
+            "energi",
+            "coperture",
+            "prefabbricat",
+            "asfalti",
+            "antincendio",
+            "lavanderie industriali",
+            "rottami",
+          ],
+        },
+      ],
+      "generic_b2b"
+    );
+  }
+
+  return scoreNiches(
+    [
+      {
+        niche: "infissi_serramenti",
+        terms: ["infissi", "serramenti", "finestre", "persiane", "porte"],
+      },
+      {
+        niche: "tende_outdoor",
+        terms: ["tende da sole", "pergol", "bioclimatic"],
+      },
+      {
+        niche: "fotovoltaico_clima",
+        terms: ["fotovoltaico", "solare", "climatizz", "caldai", "termoidraulic"],
+      },
+      {
+        niche: "sicurezza_casa",
+        terms: ["antifurto", "sicurezza", "serratur", "fabbro"],
+      },
+      {
+        niche: "traslochi_edilizia",
+        terms: ["trasloch", "sgomber", "ristruttur", "ediliz"],
+      },
+    ],
+    "generic_local"
+  );
+}
+
+const BOILERPLATE_TITLES_REGEX =
+  /^(?:home|homepage|chi siamo|la nostra storia|i nostri lavori|lavori|lavora con noi|servizi|prodotti|contatti|contattaci|preventivo|richiedi preventivo|referenze|news|blog|eventi|privacy|privacy policy|cookie policy|benvenuti|sito ufficiale|welcome|index|404|error|menu)(?:\s*[-|•:\u2013\u2014].*)?$/i;
+
+function isBoilerplateTitle(str: string): boolean {
+  const s = (str || "").trim();
+  if (!s || s.length < 3) return true;
+  if (BOILERPLATE_TITLES_REGEX.test(s)) return true;
+  if (/^(?:https?:\/\/|www\.)/i.test(s)) return true;
+  if (/\b(?:simei|fiera|edition|cookie|privacy policy)\b/i.test(s)) return true;
+  if (/^[a-z0-9.-]+\.[a-z]{2,}$/i.test(s)) return true;
+  return false;
+}
+
+function isCleanItalianHeadline(str: string): boolean {
+  const s = (str || "").trim();
+  if (s.length < 14 || s.length > 92) return false;
+  if (isBoilerplateTitle(s)) return false;
+  if (/^(?:la nostra storia|i nostri lavori|scopri chi siamo|about us|our company|home\s|homepage\s|contatti\s|chi siamo\s|lavora con noi)/i.test(s)) {
+    return false;
+  }
+  // Evita titoli interamente inglesi o slogan generici non localizzati
+  const englishHits = (
+    s.match(
+      /\b(?:the|and|for|with|solutions|industry|perfection|tradition|functional|process|company|welcome|quality|services|products|home|engineering|productivity|lifelong)\b/gi
+    ) || []
+  ).length;
+  const italianHits = (
+    s.match(
+      /\b(?:per|con|di|da|su|in|e|impianti|produzione|lavorazioni|sistemi|azienda|aziende|servizi|soluzioni|sicurezza|qualita|qualità|preventivo|progettazione|fabbrica|italia)\b/gi
+    ) || []
+  ).length;
+  if (englishHits >= 2 && italianHits === 0) return false;
+  if (s === s.toUpperCase() && s.split(/\s+/).length <= 4) return false;
+  return true;
+}
+
+export function extractCleanCompanyName(opts: {
+  slug: string;
+  targetUrl?: string;
+  fallbackName?: string;
+  ogSiteName?: string;
+  pageTitle?: string;
+  html?: string;
+}): string {
+  const { slug, fallbackName, ogSiteName, pageTitle, html } = opts;
+
+  const cleanCandidate = (raw: string): string =>
+    decodeHtmlEntities(raw || "")
+      .replace(/[—–]/g, "-")
+      .replace(/\b(?:homepage di|benvenuti in|benvenuti su|sito ufficiale di|sito ufficiale)\b/gi, "")
+      .replace(/^https?:\/\/(?:www\.)?/i, "")
+      .replace(/^www\./i, "")
+      .replace(/\s+/g, " ")
+      .trim();
+
+  const isAcceptableName = (name: string): boolean => {
+    if (!name || name.length < 3 || name.length > 44) return false;
+    if (isBoilerplateTitle(name)) return false;
+    if (/\.(?:it|com|eu|net|org|srl\.it)$/i.test(name)) return false;
+    // Evita descrizioni generiche tipo "Rulli per nastri trasportatori"
+    if (/^(?:rulli per|taglio laser|stampaggio|impianti di|produzione di)\b/i.test(name)) {
+      return false;
+    }
+    return true;
+  };
+
+  // 1. Prova da Copyright footer o Ragione Sociale S.r.l. / S.p.A. nel DOM
+  if (html) {
+    const cleanText = stripTags(html);
+    const legalMatch = cleanText.match(
+      /(?:©|\(c\)|copyright(?:\s+\d{4})?)\s*([A-ZÀ-ÖØ-Þ][A-Za-zÀ-ÿ0-9&.'\-\s]{2,36}?(?:\s+(?:S\.?r\.?l\.?|S\.?p\.?A\.?|S\.?n\.?c\.?|S\.?a\.?s\.?))?)(?:\s*(?:[-|·,]|\bp\.?\s*iva\b|\btutti i diritti\b|\ball rights\b))/i
+    );
+    if (legalMatch?.[1]) {
+      const candLegal = cleanCandidate(legalMatch[1]);
+      if (isAcceptableName(candLegal)) return candLegal;
+    }
+  }
+
+  // 2. FallbackName esplicito se pulito
+  if (fallbackName) {
+    const cleaned = cleanCandidate(fallbackName);
+    if (isAcceptableName(cleaned)) return cleaned;
+  }
+
+  // 3. og:site_name
+  if (ogSiteName) {
+    const cleaned = cleanCandidate(ogSiteName);
+    if (isAcceptableName(cleaned)) return cleaned;
+  }
+
+  // 4. Segmenti del <title>
+  if (pageTitle) {
+    const segments = decodeHtmlEntities(pageTitle)
+      .split(/[-|•:\u2013\u2014]/)
+      .map((s) => cleanCandidate(s))
+      .filter((s) => isAcceptableName(s));
+    const withLegal = segments.find((s) => /\b(?:s\.?r\.?l\.?|s\.?p\.?a\.?|snc)\b/i.test(s));
+    if (withLegal) return withLegal;
+    const brandLike = segments.find((s) => s.split(/\s+/).length <= 4);
+    if (brandLike) return brandLike;
+    if (segments[0]) return segments[0];
+  }
+
+  // 5. Ultimo fallback dallo slug formattato con cura
+  return slug
+    .split("-")
+    .map((w) =>
+      w === "srl"
+        ? "S.r.l."
+        : w === "spa"
+        ? "S.p.A."
+        : w.charAt(0).toUpperCase() + w.slice(1)
+    )
+    .join(" ");
+}
+
+export function extractValidItalianPhones(
+  combinedHtml: string,
+  options?: { extraPhones?: (string | null | undefined)[]; vatNumber?: string | null }
+): string[] {
+  const cleanVat = String(options?.vatNumber || "").replace(/\D/g, "");
+  const seenDigits = new Set<string>();
+  const validPhones: string[] = [];
+
+  const normalizeAndPush = (raw: string, fromExplicitTel: boolean) => {
+    let trimmed = decodeHtmlEntities(String(raw || ""))
+      .replace(/^tel:/i, "")
+      .trim();
+    if (!trimmed) return;
+    let digits = trimmed.replace(/\D/g, "");
+    if (digits.startsWith("0039") && digits.length >= 12) {
+      digits = digits.slice(4);
+      trimmed = digits;
+    } else if (digits.startsWith("39") && digits.length >= 11 && (digits[2] === "0" || digits[2] === "3" || digits[2] === "8")) {
+      digits = digits.slice(2);
+    }
+
+    if (!digits) return;
+    if (cleanVat && digits === cleanVat) return;
+    if (/0{5,}/.test(digits)) return;
+    if (new Set(digits.split("")).size < 4) return;
+
+    const isMobile = /^3\d{9}$/.test(digits);
+    const isTollFree = /^8(?:00|03|40|48)\d{6,7}$/.test(digits);
+    const isMajorCity8 = /^(?:02|06)\d{6,8}$/.test(digits);
+    const isStandardLandline = /^0\d{8,10}$/.test(digits);
+
+    if (!isMobile && !isTollFree && !(fromExplicitTel && isMajorCity8) && !isStandardLandline) {
+      return;
+    }
+
+    if (seenDigits.has(digits)) return;
+    seenDigits.add(digits);
+
+    // Formatta in modo pulito e leggibile se non ha separatori chiari
+    if (/^[+0-9\s().-]+$/.test(trimmed) && trimmed.replace(/\D/g, "").endsWith(digits) && trimmed.length <= 20) {
+      validPhones.push(trimmed.replace(/\s+/g, " "));
+    } else if (digits.startsWith("3")) {
+      validPhones.push(`${digits.slice(0, 3)} ${digits.slice(3, 6)} ${digits.slice(6)}`);
+    } else if (digits.startsWith("02") || digits.startsWith("06")) {
+      validPhones.push(`${digits.slice(0, 2)} ${digits.slice(2)}`);
+    } else {
+      validPhones.push(`${digits.slice(0, 3)} ${digits.slice(3)}`);
+    }
+  };
+
+  // 1. Priorita assoluta ai link tel: e ai telefoni espliciti (JSON-LD / fallback)
+  for (const m of combinedHtml.matchAll(/href=["']tel:([^"']+)["']/gi)) {
+    normalizeAndPush(m[1], true);
+  }
+  for (const extra of options?.extraPhones || []) {
+    if (extra) normalizeAndPush(extra, true);
+  }
+
+  // 2. Testo visibile (escludendo script, style, svg, attributi HTML)
+  const visibleText = stripTags(
+    combinedHtml
+      .replace(/<svg[\s\S]*?<\/svg>/gi, " ")
+      .replace(/<noscript[\s\S]*?<\/noscript>/gi, " ")
+  );
+
+  for (const m of visibleText.matchAll(
+    /(?:tel\.?|telefono|cell\.?|mobile|uff\.?|chiama|contatt[ai]?)[\s:.-]{0,12}((?:\+39\s?|0039\s?)?(?:0\d{1,3}[\s.-]?\d{5,8}|3\d{2}[\s.-]?\d{6,7}|8(?:00|03|40|48)[\s.-]?\d{6,7}))/gi
+  )) {
+    normalizeAndPush(m[1], true);
+  }
+
+  for (const m of visibleText.matchAll(
+    /\b((?:\+39\s?)?(?:0\d{1,3}[\s.-]?\d{5,8}|3\d{2}[\s.-]?\d{6,7}|8(?:00|03|40|48)[\s.-]?\d{6,7}))\b/g
+  )) {
+    normalizeAndPush(m[1], false);
+  }
+
+  return validPhones.slice(0, 3);
+}
+
+export function extractExtendedImageUrls(
+  baseUrl: string,
+  htmlPages: string[]
+): { candidateLogoUrls: string[]; candidateHeroUrls: string[] } {
+  const headerLogoUrls: string[] = [];
+  const secondaryLogoUrls: string[] = [];
+  const iconFallbackUrls: string[] = [];
+  const preferredHeroUrls: string[] = [];
+  const secondaryHeroUrls: string[] = [];
+  const combinedHtml = htmlPages.filter(Boolean).join("\n");
+
+  const LOGO_REJECT_RX =
+    /data:|blank\.gif|spacer|1x1|shinystat|facebook\.com\/tr|doubleclick|cookie|iubenda|gdpr|visa|mastercard|paypal|flag-|bandiera|\/lang\/|social-|whatsapp-icon|close|arrow|chevron|spinner|loader/i;
+  const HERO_REJECT_RX =
+    /data:|\.svg(\?|$|#)|favicon|logo|icon-|_icon|sprite|pixel|blank|spacer|badge|bollino|sticker|flag-|bandiera|cookie|iubenda|gdpr|1x1|avatar|woocommerce-placeholder|\/lang\/|certific|iso-|soa-|payment|visa|paypal|social|client-|partner|shinystat\.com|facebook\.com\/tr|connect\.facebook\.net|doubleclick\.net|google-analytics\.com|googleadservices\.com|linkedin\.com\/px|ads\.twitter\.com/i;
+
+  const pushUnique = (list: string[], url: string, front = false) => {
+    if (list.includes(url)) return;
+    if (front) list.unshift(url);
+    else list.push(url);
+  };
+
+  const addLogo = (raw: string | null | undefined, tier: "header" | "body" | "icon") => {
+    const resolved = resolveUrl(baseUrl, raw || undefined);
+    if (!resolved || LOGO_REJECT_RX.test(resolved) || /\.svg(\?|$|#)/i.test(resolved)) return;
+    // I loghi non "-bianco"/"-white" vengono provati prima per leggibilita naturale su header chiaro
+    const isWhiteVariant = /(?:bianco|white|negativo|inverse)[._-]/i.test(resolved);
+    if (tier === "header") pushUnique(headerLogoUrls, resolved, !isWhiteVariant);
+    else if (tier === "body") pushUnique(secondaryLogoUrls, resolved, !isWhiteVariant);
+    else pushUnique(iconFallbackUrls, resolved, false);
+  };
+
+  const addHero = (raw?: string | null, prioritize = false) => {
+    const resolved = resolveUrl(baseUrl, raw || undefined);
+    if (!resolved || HERO_REJECT_RX.test(resolved)) return;
+    const isPhotoExt = /\.(?:jpe?g|webp)(?:\?|$|#)/i.test(resolved);
+    if (prioritize && isPhotoExt) {
+      pushUnique(preferredHeroUrls, resolved, true);
+    } else if (prioritize || isPhotoExt) {
+      pushUnique(preferredHeroUrls, resolved, false);
+    } else {
+      pushUnique(secondaryHeroUrls, resolved, false);
+    }
+  };
+
+  // Estrae blocchi <header> e <nav> per prioritizzare i loghi aziendali reali
+  const headerBlocks = [
+    ...combinedHtml.matchAll(/<(?:header|nav)\b[^>]*>[\s\S]*?<\/(?:header|nav)>/gi),
+  ]
+    .map((m) => m[0])
+    .join("\n");
+
+  for (const m of headerBlocks.matchAll(/<img\b[^>]*>/gi)) {
+    const tag = m[0];
+    const tagLower = tag.toLowerCase();
+    const srcCandidate =
+      tag.match(/\b(?:data-lazy-src|data-src|data-original|src)=["']([^"']+)["']/i)?.[1] ||
+      tag.match(/\bsrcset=["']([^"'\s,]+)/i)?.[1];
+    if (!srcCandidate) continue;
+    if (/logo|brand|header|site-title|custom-logo|default_logo|navbar-brand/i.test(tagLower + " " + srcCandidate)) {
+      addLogo(srcCandidate, "header");
+    }
+  }
+
+  // Meta og:image & twitter:image
+  for (const m of combinedHtml.matchAll(
+    /<meta[^>]+(?:property=["'](?:og:image|twitter:image)["'][^>]+content=["']([^"']+)["']|content=["']([^"']+)["'][^>]+(?:property|name)=["'](?:og:image|twitter:image)["'])/gi
+  )) {
+    addHero(m[1] || m[2], true);
+  }
+
+  // <img ...> tags (src, data-src, data-lazy-src, data-original, srcset)
+  for (const m of combinedHtml.matchAll(/<img\b[^>]*>/gi)) {
+    const tag = m[0];
+    const tagLower = tag.toLowerCase();
+    const srcCandidate =
+      tag.match(/\b(?:data-lazy-src|data-src|data-original|src)=["']([^"']+)["']/i)?.[1] ||
+      tag.match(/\bsrcset=["']([^"'\s,]+)/i)?.[1];
+    if (!srcCandidate) continue;
+
+    if (
+      tagLower.includes("logo") ||
+      tagLower.includes("brand") ||
+      srcCandidate.toLowerCase().includes("logo")
+    ) {
+      addLogo(srcCandidate, "body");
+    } else {
+      const isHeroNamed = /hero|slider|banner|impianto|stabilimento|prodotto|magazzino|officina|cover|sede|azienda/i.test(
+        tagLower + " " + srcCandidate
+      );
+      addHero(srcCandidate, isHeroNamed);
+    }
+  }
+
+  // <source srcset="...">
+  for (const m of combinedHtml.matchAll(/<source[^>]+srcset=["']([^"'\s,]+)/gi)) {
+    addHero(m[1], false);
+  }
+
+  // CSS background-image: url(...)
+  for (const m of combinedHtml.matchAll(/background(?:-image)?\s*:[^;}]*url\(["']?([^"')]+)["']?\)/gi)) {
+    addHero(m[1], false);
+  }
+
+  // Apple touch icon / icon come estremo fallback logo raster (dopo i loghi reali!)
+  for (const m of combinedHtml.matchAll(
+    /<link[^>]+rel=["'](?:apple-touch-icon[^"']*|icon|shortcut icon)["'][^>]+href=["']([^"']+)["']/gi
+  )) {
+    addLogo(m[1], "icon");
+  }
+
+  const candidateLogoUrls = Array.from(
+    new Set([...headerLogoUrls, ...secondaryLogoUrls, ...iconFallbackUrls])
+  );
+  const candidateHeroUrls = Array.from(
+    new Set([...preferredHeroUrls, ...secondaryHeroUrls])
+  );
+
+  return { candidateLogoUrls, candidateHeroUrls };
+}
+
+export async function captureFallbackHeroScreenshot(
+  targetUrl: string,
+  destPath: string
+): Promise<boolean> {
+  const browserBin = getLocalBrowserBin();
+  if (!browserBin) return false;
+
+  const userDataDir = `/tmp/techpyre-hero-${Date.now()}-${Math.random()
+    .toString(36)
+    .slice(2, 7)}`;
+  let proc: ReturnType<typeof spawn> | null = null;
+  let ws: WebSocket | null = null;
+
+  try {
+    proc = spawn(/*turbopackIgnore: true*/ browserBin, [
+      "--headless=new",
+      "--disable-gpu",
+      "--no-first-run",
+      "--no-default-browser-check",
+      "--hide-scrollbars",
+      "--window-size=1280,800",
+      "--remote-debugging-port=0",
+      `--user-data-dir=${userDataDir}`,
+      "about:blank",
+    ]);
+
+    const wsUrl = await new Promise<string>((resolve, reject) => {
+      const timer = setTimeout(() => reject(new Error("CDP timeout")), 9000);
+      proc?.stderr?.on("data", (chunk: Buffer) => {
+        const m = chunk.toString().match(/DevTools listening on (ws:\/\/[^\s]+)/);
+        if (m) {
+          clearTimeout(timer);
+          resolve(m[1]);
+        }
+      });
+    });
+
+    const pagesRes = await fetch(wsUrl.replace("ws://", "http://").split("/devtools")[0] + "/json/list");
+    const pages = (await pagesRes.json()) as Array<{ webSocketDebuggerUrl?: string }>;
+    const pageWsUrl = pages[0]?.webSocketDebuggerUrl;
+    if (!pageWsUrl) return false;
+
+    ws = new WebSocket(pageWsUrl);
+    await new Promise<void>((res, rej) => {
+      ws!.onopen = () => res();
+      ws!.onerror = (e) => rej(e);
+    });
+
+    let msgId = 1;
+    const sendCdp = (method: string, params: Record<string, unknown> = {}) =>
+      new Promise<Record<string, unknown>>((resolve) => {
+        const id = msgId++;
+        const onMsg = (ev: MessageEvent) => {
+          try {
+            const parsed = JSON.parse(String(ev.data));
+            if (parsed.id === id) {
+              ws?.removeEventListener("message", onMsg);
+              resolve(parsed.result || {});
+            }
+          } catch {}
+        };
+        ws?.addEventListener("message", onMsg);
+        ws?.send(JSON.stringify({ id, method, params }));
+      });
+
+    await sendCdp("Emulation.setDeviceMetricsOverride", {
+      width: 1280,
+      height: 760,
+      deviceScaleFactor: 1,
+      mobile: false,
+    });
+    await sendCdp("Page.navigate", { url: targetUrl });
+    await new Promise((r) => setTimeout(r, 3200));
+
+    // Nasconde eventuali banner cookie intrusivi prima dello scatto
+    await sendCdp("Runtime.evaluate", {
+      expression: `(() => {
+        document.querySelectorAll('[id*="cookie" i],[class*="cookie" i],[id*="iubenda" i],[class*="iubenda" i],[class*="gdpr" i]').forEach(el => {
+          if (el.offsetHeight < 500) el.style.display = 'none';
+        });
+      })()`,
+    });
+    await new Promise((r) => setTimeout(r, 250));
+
+    const shot = await sendCdp("Page.captureScreenshot", {
+      format: "jpeg",
+      quality: 86,
+      clip: { x: 0, y: 0, width: 1280, height: 760, scale: 1 },
+    });
+
+    const base64Data = typeof shot?.data === "string" ? shot.data : "";
+    if (!base64Data) return false;
+    const buf = Buffer.from(base64Data, "base64");
+    if (buf.length < 12000) return false;
+
+    fs.mkdirSync(/*turbopackIgnore: true*/ path.dirname(destPath), { recursive: true });
+    fs.writeFileSync(/*turbopackIgnore: true*/ destPath, buf);
+    const shotAnalysis = analyzeRasterHeroFile(destPath);
+    if (shotAnalysis && shotAnalysis.uniformRatio > 0.92) {
+      try {
+        fs.unlinkSync(/*turbopackIgnore: true*/ destPath);
+      } catch {}
+      return false;
+    }
+    return true;
+  } catch {
+    return false;
+  } finally {
+    try {
+      ws?.close();
+    } catch {}
+    try {
+      proc?.kill("SIGKILL");
+    } catch {}
+    try {
+      fs.rmSync(/*turbopackIgnore: true*/ userDataDir, { recursive: true, force: true });
+    } catch {}
+  }
 }
 
 function extractCityFromQueryOrHtml(
@@ -2317,20 +3115,29 @@ function extractCityFromQueryOrHtml(
   return "Italia";
 }
 
-function buildQuizForKeyword(
+export function buildQuizForKeyword(
   keyword: string,
-  archetype: LeadArchetype
+  archetype: LeadArchetype,
+  nicheOverride?: BusinessNiche
 ): LeadConfig["content"]["quiz"] {
-  const kw = keyword.toLowerCase();
+  const niche = nicheOverride || detectBusinessNiche(keyword, keyword, archetype);
+
   if (archetype === "medical-clinic") {
     return {
       question1: {
         title: "Per quale esigenza clinica desideri richiedere una valutazione?",
-        options: [
-          "Prima visita specialistica e piano di cura",
-          "Implantologia o riabilitazione estetica/funzionale",
-          "Igiene, prevenzione o controllo periodico",
-        ] as [string, string, string],
+        options:
+          niche === "odontoiatria"
+            ? [
+                "Prima visita specialistica e piano di cura personalizzato",
+                "Implantologia o riabilitazione estetica/funzionale",
+                "Igiene dentale, prevenzione o controllo periodico",
+              ]
+            : [
+                "Prima visita specialistica e inquadramento diagnostico",
+                "Percorso terapeutico, riabilitazione o esami strumentali",
+                "Controllo periodico o seconda opinione medica",
+              ],
       },
       question2: {
         title: "Quale fascia oraria preferisci per l'appuntamento?",
@@ -2346,15 +3153,67 @@ function buildQuizForKeyword(
   }
 
   if (archetype === "b2b-authority") {
-    return {
-      question1: {
+    const q1ByNiche: Record<string, { title: string; options: [string, string, string] }> = {
+      meccanica_cnc: {
+        title: "Quale lavorazione meccanica o fornitura su disegno vi occorre?",
+        options: [
+          "Taglio laser, piegatura lamiera o carpenteria metallica su disegno",
+          "Lavorazioni CNC, stampi, attrezzature o serie ripetitive B2B",
+          "Studio di fattibilita tecnica, prototipazione e quotazione lotto",
+        ],
+      },
+      oleodinamica_fluidi: {
+        title: "Quale sistema o componentistica fluidodinamica desiderate approfondire?",
+        options: [
+          "Centraline oleodinamiche, cilindri o gruppi valvole su specifica",
+          "Tenute industriali, guarnizioni tecniche, compressori o ricambistica",
+          "Revisione impianti esistenti e continuità di fornitura OEM",
+        ],
+      },
+      plastica_gomma_chimica: {
+        title: "Quale lavorazione industriale o fornitura tecnica vi interessa?",
+        options: [
+          "Stampaggio materie plastiche/gomma o realizzazione stampi su commessa",
+          "Trattamenti galvanici, anodizzazione o rivestimenti protettivi certificati",
+          "Fornitura lotti industriali, campionatura e capitolato tecnico",
+        ],
+      },
+      automazione_elettrico: {
+        title: "Quale ambito di automazione o impiantistica industriale valutate?",
+        options: [
+          "Quadri elettrici bordomacchina, revamping linee e integrazione PLC",
+          "Progettazione isole robotizzate, macchinari o automazione di reparto",
+          "Studio di fattibilita tecnica, conformita CE e tempi di consegna",
+        ],
+      },
+      logistica_imballaggi: {
+        title: "Quale esigenza logistica o di movimentazione desiderate ottimizzare?",
+        options: [
+          "Nastri trasportatori, rulli, scaffalature o impianti di movimentazione",
+          "Imballaggi industriali, packaging su misura e forniture continuative",
+          "Trasporti dedicati, logistica di stabilimento e contratto SLA",
+        ],
+      },
+      ambiente_energia_b2b: {
+        title: "Quale intervento tecnico per il vostro stabilimento state pianificando?",
+        options: [
+          "Bonifiche ambientali, depurazione acque o gestione rifiuti industriali",
+          "Coperture industriali, impianti fotovoltaici aziendali o efficienza energetica",
+          "Sopralluogo tecnico in stabilimento, perizia e capitolato chiavi in mano",
+        ],
+      },
+      generic_b2b: {
         title: "Quale ambito operativo o di commessa desiderate approfondire?",
         options: [
           "Fornitura industriale, impianti o commessa su specifica",
-          "Integrazione tecnica, automazione di reparto o portale B2B",
+          "Integrazione tecnica, automazione di reparto o accordo quadro",
           "Studio di fattibilita, capitolato e quotazione riservata",
-        ] as [string, string, string],
+        ],
       },
+    };
+
+    return {
+      question1: q1ByNiche[niche] || q1ByNiche.generic_b2b,
       question2: {
         title: "Qual e l'orizzonte temporale previsto per il progetto?",
         options: [
@@ -2368,7 +3227,7 @@ function buildQuizForKeyword(
     };
   }
 
-  if (kw.includes("infissi") || kw.includes("serramenti") || kw.includes("finestre")) {
+  if (niche === "infissi_serramenti") {
     return {
       question1: {
         title: "Quale tipologia di intervento desideri valutare?",
@@ -2391,26 +3250,72 @@ function buildQuizForKeyword(
     };
   }
 
-  if (kw.includes("fotovoltaico") || kw.includes("solare") || kw.includes("energia")) {
+  if (niche === "tende_outdoor") {
     return {
       question1: {
-        title: "Dove intendi installare l'impianto fotovoltaico?",
+        title: "Quale soluzione per esterni desideri installare?",
         options: [
-          "Abitazione indipendente / Villa",
-          "Capannone industriale o sede aziendale B2B",
-          "Condominio o struttura commerciale",
+          "Pergola bioclimatica o pergotenda su misura",
+          "Tenda da sole per terrazzo o balcone",
+          "Chiusura con vetrate panoramiche o zanzariere",
         ] as [string, string, string],
       },
       question2: {
-        title: "Qual e il tuo obiettivo principale di risparmio?",
+        title: "Che superficie indicativa vuoi coprire?",
         options: [
-          "Ridurre subito la bolletta con sistema di accumulo",
-          "Accesso agli incentivi e detrazioni fiscali attive",
-          "Riqualificazione energetica completa dell'immobile",
+          "Fino a 15 mq (balcone o piccolo terrazzo)",
+          "Da 15 a 35 mq (terrazzo o giardino privato)",
+          "Oltre 35 mq (ampio spazio esterno o attivita)",
         ] as [string, string, string],
       },
       finalStepTitle:
-        "Perfetto. Lascia i tuoi dati per ricevere la simulazione di resa e rientro investimento:",
+        "Perfetto. Lascia i tuoi dati per prenotare il rilievo misure e ricevere il preventivo:",
+    };
+  }
+
+  if (niche === "fotovoltaico_clima") {
+    return {
+      question1: {
+        title: "Quale impianto desideri installare o sostituire?",
+        options: [
+          "Impianto fotovoltaico con eventuale sistema di accumulo",
+          "Climatizzatori, pompa di calore o caldaia ad alta efficienza",
+          "Riqualificazione energetica completa dell'abitazione",
+        ] as [string, string, string],
+      },
+      question2: {
+        title: "Qual e il tuo obiettivo principale?",
+        options: [
+          "Abbattere subito i costi in bolletta",
+          "Accesso agli incentivi e detrazioni fiscali attive",
+          "Sostituzione urgente con sopralluogo tecnico rapido",
+        ] as [string, string, string],
+      },
+      finalStepTitle:
+        "Perfetto. Lascia i tuoi dati per ricevere la simulazione tecnica e il preventivo dedicato:",
+    };
+  }
+
+  if (niche === "sicurezza_casa") {
+    return {
+      question1: {
+        title: "Di quale intervento di sicurezza hai bisogno?",
+        options: [
+          "Installazione sistema antifurto o videosorveglianza",
+          "Sostituzione serratura europea o porta blindata",
+          "Assistenza tecnica urgente su porte e serrature",
+        ] as [string, string, string],
+      },
+      question2: {
+        title: "Dove va eseguito l'intervento?",
+        options: [
+          "Appartamento o abitazione indipendente",
+          "Ufficio, negozio o studio professionale",
+          "Condominio o autorimessa",
+        ] as [string, string, string],
+      },
+      finalStepTitle:
+        "Richiesta registrata. Inserisci i tuoi recapiti per un contatto rapido dal tecnico:",
     };
   }
 
@@ -2433,6 +3338,867 @@ function buildQuizForKeyword(
     },
     finalStepTitle:
       "Perfetto. Inserisci i tuoi dati per ricevere una proposta personalizzata senza impegno:",
+  };
+}
+
+export function buildVerticalizedLeadContent(opts: {
+  companyName: string;
+  city: string;
+  archetype: LeadArchetype;
+  keyword: string;
+  corpus: string;
+  scrapedHeadline?: string;
+  scrapedSubheadline?: string;
+  logoLocalPath: string;
+  heroImageLocalPath: string;
+  decisionMakerFullName?: string | null;
+}): LeadConfig["content"] {
+  const {
+    companyName,
+    city,
+    archetype,
+    keyword,
+    corpus,
+    scrapedHeadline,
+    scrapedSubheadline,
+    logoLocalPath,
+    heroImageLocalPath,
+    decisionMakerFullName,
+  } = opts;
+
+  const isB2B = archetype === "b2b-authority";
+  const isMedical = archetype === "medical-clinic";
+  const niche = detectBusinessNiche(keyword, corpus, archetype);
+
+  const defaultContentByNiche: Record<
+    BusinessNiche,
+    {
+      headline: string;
+      subheadline: string;
+      badgeTop: string;
+      heroBullets: [string, string, string];
+      valueProps: Array<{ title: string; description: string; metric?: string }>;
+      clientReferenceWall?: string[];
+      secondaryStats?: Array<{ value: string; label: string }>;
+      reviewsSummary: string;
+      mainStatValue: string;
+      mainStatLabel: string;
+      testimonials: Array<{ name: string; location: string; quote: string; roleOrContext?: string }>;
+    }
+  > = {
+    meccanica_cnc: {
+      headline: `${companyName}: Lavorazioni Meccaniche, Lamiera e Taglio Laser a ${city}`,
+      subheadline: `Produzione conto terzi su disegno tecnico a ${city}: tolleranze certificate, consegna programmata dei lotti e confronto diretto con il nostro Ufficio Tecnico.`,
+      badgeTop: `${companyName} · Produzione Industriale e Carpenteria (${city})`,
+      heroBullets: [
+        "Analisi disegni CAD/STEP e studio di fattibilita con tempi di consegna certi",
+        "Controllo dimensionale su lotti piccoli, medi e serie continuative",
+        "Tracciabilita dei materiali, certificati di collaudo e referente unico B2B",
+      ],
+      valueProps: [
+        {
+          title: "Ingegnerizzazione Disegni e Preventivazione Rapida",
+          description: `Valutiamo tolleranze, spessori e trattamenti direttamente con il vostro ufficio tecnico a ${city}, riducendo i fermi macchina e gli scarti di assemblaggio.`,
+          metric: "Risposta 24h",
+        },
+        {
+          title: "Parco Macchine CNC e Controllo Qualita",
+          description: `Ogni lotto prodotto da ${companyName} segue procedure di verifica dimensionale e conformita dei materiali per garantire ripetibilita costante.`,
+          metric: "100% Verificato",
+        },
+        {
+          title: "Consegne Programmate Kanban e Continuita",
+          description: `Gestiamo commesse spot e accordi quadro annuali rispettando le finestre di consegna concordate con il vostro reparto logistica.`,
+          metric: "Puntualita 99.4%",
+        },
+      ],
+      clientReferenceWall: [
+        "Lavorazioni su Disegno CAD/STEP",
+        "Certificazioni Materiali 3.1",
+        "Qualita Certificata ISO 9001",
+        "Controllo Dimensionale Lotti",
+        "Forniture OEM e Conto Terzi",
+      ],
+      secondaryStats: [
+        { value: "99.4%", label: "Lotti consegnati entro la data pattuita con il cliente B2B" },
+        { value: "< 0.4s", label: "Caricamento portale tecnico per richiesta offerte da mobile" },
+        { value: "24h", label: "Verifica fattibilita tecnica con il nostro Ufficio Tecnico" },
+      ],
+      reviewsSummary: `Partner manifatturiero di riferimento per industrie a ${city}`,
+      mainStatValue: "99.4%",
+      mainStatLabel: "Lotti lavorati e consegnati nel pieno rispetto delle tolleranze",
+      testimonials: [
+        {
+          name: "Direzione Produzione e Officina",
+          location: `${city} · Fornitura Conto Terzi`,
+          quote: `Affidiamo a ${companyName} i nostri particolari meccanici e lamiere piegate: precisione costante sui montaggi e consegne sempre allineate al piano produttivo.`,
+          roleOrContext: "Lavorazioni CNC e Lamiera",
+        },
+        {
+          name: "Responsabile Ufficio Acquisti",
+          location: `${city} e provincia`,
+          quote: `Interlocutore tecnico preparato: tempi rapidi su quotazioni multi-articolo, documenti completi e zero difformita in accettazione.`,
+          roleOrContext: "Accordo quadro B2B",
+        },
+      ],
+    },
+    oleodinamica_fluidi: {
+      headline: `${companyName}: Impianti Oleodinamici, Fluidodinamica e Componenti a ${city}`,
+      subheadline: `Progettazione, assemblaggio e manutenzione di sistemi oleodinamici, tenute e componentistica industriale a ${city} con collaudo a banco certificato.`,
+      badgeTop: `${companyName} · Divisione Oleodinamica e Fluidi (${city})`,
+      heroBullets: [
+        "Progettazione centraline, cilindri e circuiti fluidodinamici su specifica",
+        "Magazzino ricambi, tenute e raccordi per ridurre al minimo i fermi impianto",
+        "Collaudo in pressione certificato e assistenza tecnica diretta in stabilimento",
+      ],
+      valueProps: [
+        {
+          title: "Dimensionamento e Progettazione Fluidodinamica",
+          description: `Definiamo portate, pressioni di esercizio e cicli di lavoro insieme ai vostri progettisti a ${city}, ottimizzando efficienza e sicurezza dell'impianto.`,
+          metric: "Collaudo Certificato",
+        },
+        {
+          title: "Ricambistica Tecnica e Tenute ad Alte Prestazioni",
+          description: `Forniamo guarnizioni, valvole e componentistica selezionata per resistere a carichi gravosi, alte temperature e cicli continui.`,
+          metric: "Zero Fermi Linea",
+        },
+        {
+          title: "Service Rapido e Manutenzione Programmata",
+          description: `Supporto tecnico tempestivo per revisioni, sostituzioni e adeguamenti normativi direttamente presso il vostro reparto produttivo.`,
+          metric: "SLA Dedicato",
+        },
+      ],
+      clientReferenceWall: [
+        "Collaudo a Banco in Pressione",
+        "Direttiva Macchine 2006/42/CE",
+        "Qualita Certificata ISO 9001",
+        "Ricambistica e Tenute OEM",
+        "Assistenza Tecnica Impianti",
+      ],
+      secondaryStats: [
+        { value: "99.4%", label: "Sistemi collaudati e conformi alle pressioni di progetto" },
+        { value: "< 0.4s", label: "Accesso istantaneo alle richieste tecniche anche da reparto" },
+        { value: "24h", label: "Presa in carico ricambi e preventivazione tecnica B2B" },
+      ],
+      reviewsSummary: `Fornitore tecnico per impianti e costruttori di macchine a ${city}`,
+      mainStatValue: "99.4%",
+      mainStatLabel: "Affidabilita certificata su centraline, tenute e ricambi industriali",
+      testimonials: [
+        {
+          name: "Responsabile Manutenzione Stabilimento",
+          location: `${city} · Impianti Industriali`,
+          quote: `Con ${companyName} abbiamo ridotto drasticamente i fermi linea: competenza reale nella diagnosi e disponibilita rapida della componentistica critica.`,
+          roleOrContext: "Service e fornitura oleodinamica",
+        },
+        {
+          name: "Ufficio Tecnico Costruttore Macchine",
+          location: `${city} e provincia`,
+          quote: `Partner preciso dal dimensionamento al collaudo finale: documentazione chiara e forniture puntuali su ogni serie di macchine.`,
+          roleOrContext: "Fornitura OEM",
+        },
+      ],
+    },
+    plastica_gomma_chimica: {
+      headline: `${companyName}: Stampaggio Tecnico, Polimeri e Trattamenti Industriali a ${city}`,
+      subheadline: `Soluzioni industriali per materie plastiche, gomma, rivestimenti e trattamenti superficiali a ${city} con controllo qualita di processo e tracciabilita lotti.`,
+      badgeTop: `${companyName} · Polimeri e Processi Industriali (${city})`,
+      heroBullets: [
+        "Supporto su scelta mescole, resine e trattamenti prima della messa in serie",
+        "Controllo costante dei parametri di processo e finitura superficiale",
+        "Imballo industriale protetto e programmazione consegne per lotti B2B",
+      ],
+      valueProps: [
+        {
+          title: "Co-Design Stampi e Selezione Materiali",
+          description: `Ottimizziamo spessori, ritiri dimensionali e resistenze chimico-meccaniche per evitare difetti in produzione e contenere il costo unitario.`,
+          metric: "Zero Difetti",
+        },
+        {
+          title: "Ripetibilita di Processo e Controllo Lotto",
+          description: `${companyName} monitora ogni fase produttiva e superficiale a ${city} rilasciando documentazione di conformita su richiesta.`,
+          metric: "100% Tracciabile",
+        },
+        {
+          title: "Logistica Flessibile su Piccole e Grandi Serie",
+          description: `Pianificazione scorte, trattamenti rapidi conto terzi e spedizioni sincronizzate con le vostre linee di montaggio.`,
+          metric: "Consegne Certe",
+        },
+      ],
+      clientReferenceWall: [
+        "Qualita Certificata ISO 9001",
+        "Tracciabilita Completa Lotti",
+        "Conformita REACH / RoHS",
+        "Campionature Tecniche Rapide",
+        "Produzione B2B Conto Terzi",
+      ],
+      secondaryStats: [
+        { value: "99.4%", label: "Lotti consegnati conformi alle specifiche dimensionali" },
+        { value: "< 0.4s", label: "Caricamento scheda tecnica e preventivo B2B su mobile" },
+        { value: "24h", label: "Valutazione preliminare disegni, mescole o trattamenti" },
+      ],
+      reviewsSummary: `Partner industriale per filiere produttive a ${city}`,
+      mainStatValue: "99.4%",
+      mainStatLabel: "Conformita qualitativa sui lotti industriali consegnati",
+      testimonials: [
+        {
+          name: "Responsabile Qualita e Fornitori",
+          location: `${city} · Filiera Manifatturiera`,
+          quote: `La costanza tra la campionatura iniziale e le forniture in serie di ${companyName} ci ha permesso di azzerare i controlli in ingresso.`,
+          roleOrContext: "Fornitura conto terzi",
+        },
+        {
+          name: "Direzione Acquisti B2B",
+          location: `${city} e provincia`,
+          quote: `Preventivazione trasparente, imballaggi accurati e rispetto rigoroso dei lead time anche sui picchi stagionali.`,
+          roleOrContext: "Contratto di fornitura",
+        },
+      ],
+    },
+    automazione_elettrico: {
+      headline: `${companyName}: Automazione Industriale e Impianti Tecnologici a ${city}`,
+      subheadline: `Progettazione, quadristica elettrica, integrazione macchinari e revamping linee produttive a ${city} con avviamento certificato in stabilimento.`,
+      badgeTop: `${companyName} · Ingegneria e Automazione B2B (${city})`,
+      heroBullets: [
+        "Studio elettrico, sviluppo software PLC e cablaggio quadri certificato",
+        "Revamping macchinari e interconnessione verso gestionali aziendali MES/ERP",
+        "Collaudo funzionale, fascicolo tecnico CE e teleassistenza post-vendita",
+      ],
+      valueProps: [
+        {
+          title: "Progettazione Elettrica e Software Su Specifica",
+          description: `Sviluppiamo architetture di controllo affidabili e scalabili a ${city}, pensate per integrarsi nei vostri reparti senza lunghi fermi produzione.`,
+          metric: "Norma CE",
+        },
+        {
+          title: "Quadristica, Cablaggio e Sicurezza Impianti",
+          description: `Quadri di potenza e automazione testati al 100% prima della spedizione, completi di schemi aggiornati e verifiche di sicurezza.`,
+          metric: "Testato 100%",
+        },
+        {
+          title: "Avviamento in Linea e Teleassistenza",
+          description: `Supportiamo gli operatori in fabbrica durante la messa in servizio e garantiamo continuità con diagnostica tempestiva.`,
+          metric: "Supporto Diretto",
+        },
+      ],
+      clientReferenceWall: [
+        "Direttiva Macchine 2006/42/CE",
+        "Conformita CEI EN 60204-1",
+        "Integrazione MES / ERP",
+        "Teleassistenza Industriale",
+        "Qualita Certificata ISO 9001",
+      ],
+      secondaryStats: [
+        { value: "99.4%", label: "Commesse di automazione collaudate nei tempi concordati" },
+        { value: "< 0.4s", label: "Caricamento rapido del portale tecnico su smartphone" },
+        { value: "24h", label: "Primo riscontro dall'Ufficio Tecnico su nuove commesse" },
+      ],
+      reviewsSummary: `Partner tecnologico per l'automazione di stabilimenti a ${city}`,
+      mainStatValue: "99.4%",
+      mainStatLabel: "Impianti e quadri avviati nel rispetto delle finestre produttive",
+      testimonials: [
+        {
+          name: "Direttore di Stabilimento",
+          location: `${city} · Reparto Automazione`,
+          quote: `Il revamping eseguito da ${companyName} ha stabilizzato la linea e ridotto i guasti elettrici fin dal primo mese di esercizio.`,
+          roleOrContext: "Automazione e revamping",
+        },
+        {
+          name: "Responsabile Ingegneria di Processo",
+          location: `${city} e provincia`,
+          quote: `Documentazione elettrica ordinata, rispetto rigoroso delle norme di sicurezza e disponibilita immediata in fase di collaudo.`,
+          roleOrContext: "Quadristica e bordomacchina",
+        },
+      ],
+    },
+    logistica_imballaggi: {
+      headline: `${companyName}: Movimentazione, Logistica e Imballaggi Industriali a ${city}`,
+      subheadline: `Soluzioni affidabili per trasporti dedicati, nastri trasportatori, stoccaggio e packaging B2B a ${city} con puntualita contrattuale e monitoraggio diretto.`,
+      badgeTop: `${companyName} · Logistica e Movimentazione B2B (${city})`,
+      heroBullets: [
+        "Analisi flussi di magazzino, movimentazione interna e spedizioni programmate",
+        "Imballaggi protetti e sistemi di trasporto progettati su dimensioni reali",
+        "Referente operativo unico per coordinamento carichi e urgenze",
+      ],
+      valueProps: [
+        {
+          title: "Soluzioni su Misura per Flussi di Stabilimento",
+          description: `Ottimizziamo movimentazione, rulliere, stoccaggio e confezionamento a ${city} riducendo danni da trasporto e tempi morti di carico.`,
+          metric: "Efficienza Logistica",
+        },
+        {
+          title: "Puntualita e Protezione Merci Garantita",
+          description: `${companyName} opera con standard rigorosi per proteggere prodotti finiti, semilavorati e macchinari lungo tutta la filiera.`,
+          metric: "99.4% Puntuali",
+        },
+        {
+          title: "Capacita Flessibile e Accordi Quadro",
+          description: `Scorte di sicurezza e pianificazione flessibile per assorbire picchi di produzione e richieste urgenti senza blocchi.`,
+          metric: "SLA Contrattuale",
+        },
+      ],
+      clientReferenceWall: [
+        "Consegne Programmate JIT",
+        "Sicurezza Carichi e Imballi",
+        "Qualita Certificata ISO 9001",
+        "Integrazione Flussi ERP",
+        "Referente Operativo Unico",
+      ],
+      secondaryStats: [
+        { value: "99.4%", label: "Spedizioni e forniture consegnate nella finestra concordata" },
+        { value: "< 0.4s", label: "Richiesta quotazione istantanea da ufficio acquisti e magazzino" },
+        { value: "24h", label: "Quotazione tratte, impianti o lotti su specifica" },
+      ],
+      reviewsSummary: `Partner logistico e industriale di fiducia a ${city}`,
+      mainStatValue: "99.4%",
+      mainStatLabel: "Tasso di puntualita sulle consegne e movimentazioni B2B",
+      testimonials: [
+        {
+          name: "Responsabile Logistica e Magazzino",
+          location: `${city} · Polo Industriale`,
+          quote: `Da quando collaboriamo con ${companyName} abbiamo velocizzato le operazioni di carico e azzerato i ritardi verso i nostri clienti esteri.`,
+          roleOrContext: "Logistica e movimentazione",
+        },
+        {
+          name: "Ufficio Acquisti Aziendale",
+          location: `${city} e provincia`,
+          quote: `Preventivi chiari, tracciabilita immediata e supporto rapido anche nelle spedizioni urgenti di fine mese.`,
+          roleOrContext: "Fornitura continuativa",
+        },
+      ],
+    },
+    ambiente_energia_b2b: {
+      headline: `${companyName}: Impianti Industriali, Energia e Servizi Ambientali B2B a ${city}`,
+      subheadline: `Progettazione ed esecuzione di interventi tecnici su capannoni, depurazione, bonifiche ed efficienza energetica a ${city} nel pieno rispetto normativo.`,
+      badgeTop: `${companyName} · Servizi Tecnici e Infrastrutture B2B (${city})`,
+      heroBullets: [
+        "Sopralluogo tecnico in stabilimento e piano operativo senza fermo attivita",
+        "Gestione completa pratiche autorizzative, certificazioni e conformita ambientale",
+        "Garanzie scritte su sicurezza, rendimento e assistenza post-intervento",
+      ],
+      valueProps: [
+        {
+          title: "Perizia Tecnica e Piano Esecutivo Chiaro",
+          description: `Analizziamo lo stato reale dell'impianto o della copertura a ${city} definendo costi, tempistiche e ritorni operativi prima del cantiere.`,
+          metric: "Progetto Chiuso",
+        },
+        {
+          title: "Piena Conformita Normativa e Ambientale",
+          description: `${companyName} gestisce interventi complessi in sicurezza, rilasciando tutta la documentazione tecnica e le certificazioni richieste.`,
+          metric: "100% A Norma",
+        },
+        {
+          title: "Manutenzione Programmata e Assistenza Diretta",
+          description: `Un referente tecnico dedicato segue l'azienda dalla realizzazione fino ai controlli periodici e all'assistenza continua.`,
+          metric: "SLA Garantito",
+        },
+      ],
+      clientReferenceWall: [
+        "Conformita Sicurezza D.Lgs 81/08",
+        "Certificazioni Impianti e Ambiente",
+        "Qualita Certificata ISO 9001",
+        "Cantieri Senza Fermo Produzione",
+        "Assistenza Tecnica Diretta",
+      ],
+      secondaryStats: [
+        { value: "99.4%", label: "Interventi eseguiti nel rispetto delle scadenze di cantiere" },
+        { value: "< 0.4s", label: "Accesso rapido a perizie e richieste tecniche su mobile" },
+        { value: "24h", label: "Pianificazione sopralluogo tecnico in stabilimento" },
+      ],
+      reviewsSummary: `Partner tecnico specializzato per aziende e capannoni a ${city}`,
+      mainStatValue: "99.4%",
+      mainStatLabel: "Commesse industriali chiuse in sicurezza e nei tempi concordati",
+      testimonials: [
+        {
+          name: "Direzione Tecnica e HSE",
+          location: `${city} · Stabilimento Produttivo`,
+          quote: `Cantiere organizzato in modo impeccabile da ${companyName}: lavorazioni svolte senza fermare la nostra produzione e documentazione esemplare.`,
+          roleOrContext: "Intervento in stabilimento",
+        },
+        {
+          name: "Amministrazione e Impianti",
+          location: `${city} e provincia`,
+          quote: `Preventivo dettagliato senza voci impreviste e supporto prezioso su tutta la parte autorizzativa.`,
+          roleOrContext: "Servizio chiavi in mano",
+        },
+      ],
+    },
+    generic_b2b: {
+      headline: `${companyName}: Soluzioni Tecniche e Forniture B2B a ${city}`,
+      subheadline: `Affianchiamo aziende e direzioni tecniche a ${city} con progettazione su specifica, tempi di consegna certi e assistenza post-vendita diretta.`,
+      badgeTop: `${companyName} · Divisione Tecnica e Commesse B2B (${city})`,
+      heroBullets: [
+        "Studio di fattibilita tecnica e capitolato con tempi di consegna certi",
+        "Qualifica immediata della richiesta e assegnazione diretta all'Ufficio Tecnico",
+        "Produzione e assistenza certificata con referente unico dedicato",
+      ],
+      valueProps: [
+        {
+          title: "Ingegneria e Progettazione su Specifica",
+          description: `Analizziamo i requisiti produttivi della commessa a ${city}, definendo specifiche tecniche, tempi di consegna e costi prima dell'avvio.`,
+          metric: "Capitolato Chiuso",
+        },
+        {
+          title: "Controllo Qualita e Conformita Normativa",
+          description: `Ogni fornitura di ${companyName} viene collaudata secondo gli standard di sicurezza e qualita vigenti, con documentazione tecnica completa.`,
+          metric: "100% Certificato",
+        },
+        {
+          title: "Continuita Operativa e Assistenza Post-Vendita",
+          description: `Affianchiamo il reparto tecnico e acquisti dal collaudo in stabilimento fino alla manutenzione programmata.`,
+          metric: "SLA Garantito",
+        },
+      ],
+      clientReferenceWall: [
+        "Qualita Certificata ISO 9001",
+        "Conformita Tecnica CE",
+        "Integrazione Gestionale / ERP",
+        "Capitolato e Preventivo Chiuso",
+        "Assistenza Tecnica Diretta",
+      ],
+      secondaryStats: [
+        { value: "99.4%", label: "Commesse consegnate nel pieno rispetto dei tempi contrattuali" },
+        { value: "< 0.4s", label: "Caricamento istantaneo dell'infrastruttura digitale su mobile" },
+        { value: "24h", label: "Presa in carico tecnica e invio automatico della richiesta al CRM" },
+      ],
+      reviewsSummary: `Partner tecnico di riferimento per imprese e stabilimenti a ${city}`,
+      mainStatValue: "99.4%",
+      mainStatLabel: "Commesse B2B consegnate entro i tempi contrattuali",
+      testimonials: [
+        {
+          name: "Direzione Tecnica e Produzione",
+          location: `${city} · Commessa Industriale`,
+          quote: `Abbiamo affidato a ${companyName} una commessa strategica per il nostro reparto: rispetto rigoroso delle specifiche tecniche e collaudo impeccabile.`,
+          roleOrContext: "Fornitura e collaudo B2B",
+        },
+        {
+          name: "Responsabile Ufficio Acquisti",
+          location: `${city} e provincia`,
+          quote: `Partner strutturato e affidabile: preventivazione trasparente, documentazione tecnica completa e supporto post-vendita immediato.`,
+          roleOrContext: "Accordo quadro di fornitura",
+        },
+      ],
+    },
+    infissi_serramenti: {
+      headline: `${companyName}: Infissi e Serramenti ad Alto Isolamento a ${city}`,
+      subheadline: `Progettazione, fornitura e posa qualificata di infissi in PVC, alluminio, porte interne e blindati a ${city} con gestione completa delle detrazioni fiscali.`,
+      badgeTop: `${companyName} · Serramenti Certificati a ${city}`,
+      heroBullets: [
+        "Rilievo misure preciso a domicilio e preventivo trasparente chiavi in mano",
+        "Profili ad alto isolamento termico e acustico per abbattere i consumi",
+        "Posa certificata con squadre interne e assistenza post-vendita diretta",
+      ],
+      valueProps: [
+        {
+          title: "Isolamento Termico e Acustico Certificato",
+          description: `Serramenti selezionati per eliminare spifferi, umidita e rumori esterni nella tua abitazione o ufficio a ${city}.`,
+          metric: "Risparmio Energetico",
+        },
+        {
+          title: "Posa in Opera Qualificata Senza Sorprese",
+          description: `Squadre di montaggio esperte di ${companyName} curano controtelai, sigillature e finiture senza opere murarie invasive.`,
+          metric: "Posa Certificata",
+        },
+        {
+          title: "Preventivo Chiaro e Supporto Pratiche Bonus",
+          description: `Costi chiari fin dal primo incontro e assistenza completa su certificazioni energetiche ed ecobonus.`,
+          metric: "Prezzo Bloccato",
+        },
+      ],
+      reviewsSummary: `4.9/5 da clienti seguiti a ${city} e provincia`,
+      mainStatValue: "98%",
+      mainStatLabel: "Clienti soddisfatti di posa in opera e isolamento termico",
+      testimonials: [
+        {
+          name: "Davide C.",
+          location: city,
+          quote: `Team di ${companyName} preciso dal rilievo al montaggio. La differenza termica e acustica in casa si sente subito.`,
+          roleOrContext: "Sostituzione infissi completi",
+        },
+        {
+          name: "Federica S.",
+          location: `${city} e provincia`,
+          quote: `Preventivo rispettato al centesimo, cantiere lasciato pulito ogni sera e grande supporto sulle pratiche fiscali.`,
+          roleOrContext: "Finestre e portoncino blindato",
+        },
+      ],
+    },
+    tende_outdoor: {
+      headline: `${companyName}: Pergole Bioclimatiche e Tende da Sole a ${city}`,
+      subheadline: `Soluzioni su misura per vivere terrazzi e giardini tutto l'anno a ${city}: sopralluogo tecnico, progettazione dedicata e installazione certificata.`,
+      badgeTop: `${companyName} · Outdoor e Schermature Solari (${city})`,
+      heroBullets: [
+        "Rilievo misure a domicilio e progettazione su misura per balconi e giardini",
+        "Tessuti tecnici e strutture resistenti a sole, vento e pioggia",
+        "Motorizzazioni silenziose, sensoristica vento/pioggia e gestione pratiche",
+      ],
+      valueProps: [
+        {
+          title: "Progettazione Estetica Su Misura",
+          description: `Adattiamo ogni pergola o tenda da sole all'architettura del tuo edificio a ${city} con finiture e tessuti coordinati.`,
+          metric: "Su Misura",
+        },
+        {
+          title: "Materiali Certificati ad Alta Durata",
+          description: `${companyName} utilizza strutture in alluminio verniciato e motorizzazioni garantite per resistere negli anni.`,
+          metric: "Garanzia Scritta",
+        },
+        {
+          title: "Installazione Rapida e Pulita",
+          description: `Montaggio completo curato dai nostri tecnici interni con collaudo finale e assistenza diretta sul territorio.`,
+          metric: "Chiavi in Mano",
+        },
+      ],
+      reviewsSummary: `4.9/5 da privati e attivita a ${city}`,
+      mainStatValue: "98%",
+      mainStatLabel: "Installazioni outdoor completate nei tempi concordati",
+      testimonials: [
+        {
+          name: "Andrea M.",
+          location: city,
+          quote: `La pergola installata da ${companyName} ha trasformato il nostro terrazzo. Finiture impeccabili e montaggio velocissimo.`,
+          roleOrContext: "Pergola bioclimatica",
+        },
+        {
+          name: "Chiara L.",
+          location: `${city} e provincia`,
+          quote: `Consulenza chiara sui tessuti e sulle detrazioni disponibili. Puntuali e super ordinati durante l'installazione.`,
+          roleOrContext: "Tende da sole motorizzate",
+        },
+      ],
+    },
+    fotovoltaico_clima: {
+      headline: `${companyName}: Fotovoltaico, Clima e Impianti ad Alta Efficienza a ${city}`,
+      subheadline: `Riduci subito i costi energetici della tua casa o attivita a ${city} con impianti dimensionati sui consumi reali e installazione certificata chiavi in mano.`,
+      badgeTop: `${companyName} · Energia e Comfort Termico (${city})`,
+      heroBullets: [
+        "Analisi consumi in bolletta e dimensionamento reale senza sovrastime",
+        "Installazione certificata con tecnici interni abilitati F-Gas / FER",
+        "Gestione completa pratiche di allaccio, ENEA e incentivi fiscali",
+      ],
+      valueProps: [
+        {
+          title: "Dimensionamento Sui Tuoi Consumi Reali",
+          description: `Calcoliamo potenza, accumulo o taglia della pompa di calore per offrirti il miglior rientro economico possibile a ${city}.`,
+          metric: "Resa Massima",
+        },
+        {
+          title: "Installazione Certificata e Sicura",
+          description: `I tecnici di ${companyName} eseguono il lavoro a regola d'arte rilasciando tutte le dichiarazioni di conformita.`,
+          metric: "100% A Norma",
+        },
+        {
+          title: "Assistenza e Pratiche Chiavi in Mano",
+          description: `Seguiamo noi iter autorizzativi, pratiche incentivi e manutenzione programmata post-installazione.`,
+          metric: "Zero Pensieri",
+        },
+      ],
+      reviewsSummary: `4.9/5 da clienti residenziali a ${city}`,
+      mainStatValue: "98%",
+      mainStatLabel: "Clienti soddisfatti del risparmio energetico ottenuto",
+      testimonials: [
+        {
+          name: "Simone G.",
+          location: city,
+          quote: `Impianto dimensione perfetta per i nostri consumi. ${companyName} ha gestito installazione e pratiche in tempi record.`,
+          roleOrContext: "Fotovoltaico con accumulo",
+        },
+        {
+          name: "Elena P.",
+          location: `${city} e provincia`,
+          quote: `Tecnici puliti e precisi nel montaggio del nuovo impianto di climatizzazione. Preventivo chiaro fin dal primo giorno.`,
+          roleOrContext: "Pompa di calore e clima",
+        },
+      ],
+    },
+    sicurezza_casa: {
+      headline: `${companyName}: Sicurezza Casa, Serrature e Antifurti a ${city}`,
+      subheadline: `Proteggi abitazione, ufficio o negozio a ${city} con interventi rapidi, sistemi antintrusione affidabili e assistenza tecnica diretta.`,
+      badgeTop: `${companyName} · Sicurezza e Protezione (${city})`,
+      heroBullets: [
+        "Interventi tempestivi a domicilio con tecnici qualificati sul territorio",
+        "Sistemi di sicurezza e serrature certificate antiscasso di ultima generazione",
+        "Preventivo chiaro prima dell'uscita e garanzia diretta sui componenti",
+      ],
+      valueProps: [
+        {
+          title: "Analisi Punti Critici e Consulenza Diretta",
+          description: `Verifichiamo accessi, serramenti e vulnerabilita dell'immobile a ${city} proponendo solo le protezioni realmente utili.`,
+          metric: "Sopralluogo Rapido",
+        },
+        {
+          title: "Componenti Certificati Alta Sicurezza",
+          description: `${companyName} installa dispositivi affidabili per proteggere la tua famiglia e i tuoi beni senza falsi allarmi.`,
+          metric: "Alta Affidabilita",
+        },
+        {
+          title: "Assistenza Diretta H24 sul Territorio",
+          description: `Un referente locale reale sempre reperibile per configurazioni, manutenzioni e urgenze.`,
+          metric: "Pronto Intervento",
+        },
+      ],
+      reviewsSummary: `4.9/5 da famiglie e attivita a ${city}`,
+      mainStatValue: "98%",
+      mainStatLabel: "Interventi risolti alla prima uscita con garanzia scritta",
+      testimonials: [
+        {
+          name: "Roberto T.",
+          location: city,
+          quote: `Intervenuti in giornata per l'aggiornamento delle serrature. Lavoro pulito, veloce e prezzo assolutamente corretto.`,
+          roleOrContext: "Sicurezza abitazione",
+        },
+        {
+          name: "Giulia N.",
+          location: `${city} e provincia`,
+          quote: `Sistema di allarme semplice da usare da smartphone e installato senza cavi a vista. Consigliatissimi.`,
+          roleOrContext: "Impianto antintrusione",
+        },
+      ],
+    },
+    traslochi_edilizia: {
+      headline: `${companyName}: Lavori e Interventi Chiavi in Mano a ${city}`,
+      subheadline: `Affidati al team di ${companyName} a ${city} per pianificazione precisa, squadre interne qualificate e tempi di consegna garantiti da contratto.`,
+      badgeTop: `${companyName} · Operativi a ${city} e provincia`,
+      heroBullets: [
+        "Sopralluogo gratuito e preventivo dettagliato senza costi nascosti",
+        "Squadre operative esperte con attrezzature proprie e copertura assicurativa",
+        "Rispetto rigoroso delle tempistiche concordate e unico referente tecnico",
+      ],
+      valueProps: [
+        {
+          title: "Pianificazione Accurata e Zero Ritardi",
+          description: `Organizziamo mezzi, personale e materiali prima di iniziare l'intervento a ${city} per rispettare ogni scadenza.`,
+          metric: "Tempi Certi",
+        },
+        {
+          title: "Massima Cura e Sicurezza in Cantiere",
+          description: `${companyName} lavora con protezioni dedicate, personale in regola e assicurazione completa su ogni fase.`,
+          metric: "100% Assicurato",
+        },
+        {
+          title: "Preventivo Chiuso e Referente Unico",
+          description: `Sai subito quanto spendi e hai un contatto diretto dall'avvio fino alla chiusura dei lavori.`,
+          metric: "Zero Sorprese",
+        },
+      ],
+      reviewsSummary: `Azienda apprezzata a ${city} per puntualita e cura`,
+      mainStatValue: "98%",
+      mainStatLabel: "Interventi completati nei tempi e nel budget concordato",
+      testimonials: [
+        {
+          name: "Marco R.",
+          location: city,
+          quote: `Organizzazione impeccabile fin dal sopralluogo. Squadra veloce, educata e attenta ad ogni dettaglio.`,
+          roleOrContext: "Intervento completato",
+        },
+        {
+          name: "Laura B.",
+          location: `${city} e provincia`,
+          quote: `Preventivo rispettato alla lettera e tempi anche piu rapidi del previsto. Un riferimento serio sul territorio.`,
+          roleOrContext: "Cliente verificato",
+        },
+      ],
+    },
+    odontoiatria: {
+      headline: `${companyName}: Odontoiatria Moderna e Cura del Paziente a ${city}`,
+      subheadline: `Piani di cura personalizzati, tecnologie diagnostiche digitali e massima attenzione al comfort del paziente nel nostro studio a ${city}.`,
+      badgeTop: `${companyName} · Studio Odontoiatrico (${city})`,
+      heroBullets: [
+        "Prima visita approfondita con inquadramento diagnostico chiaro e trasparente",
+        "Protocolli sterili certificati e attenzione prioritaria al comfort senza dolore",
+        "Piano di cure dettagliato, tempi certi e pagamenti dilazionabili",
+      ],
+      valueProps: [
+        {
+          title: "Diagnostica Digitale e Piano Chiaro",
+          description: `Spieghiamo ogni fase terapeutica con linguaggio semplice e preventivi chiari prima di iniziare qualsiasi trattamento a ${city}.`,
+          metric: "Trasparenza Totale",
+        },
+        {
+          title: "Approccio Mini-Invasivo e Comfort",
+          description: `Tecniche moderne orientate a ridurre ansia, fastidi e tempi di recupero anche nei casi implantari complessi.`,
+          metric: "Cura Delicata",
+        },
+        {
+          title: "Igiene Certificata e Continuità Clinica",
+          description: `Protocolli di sterilizzazione tracciati e richiami periodici programmati per proteggere la salute nel lungo periodo.`,
+          metric: "Standard Alti",
+        },
+      ],
+      reviewsSummary: `4.9/5 dalle recensioni verificate dei pazienti a ${city}`,
+      mainStatValue: "98%",
+      mainStatLabel: "Pazienti che tornano per i controlli periodici annuali",
+      testimonials: [
+        {
+          name: "Francesca V.",
+          location: city,
+          quote: `Ambiente sereno e pulitissimo. Mi hanno spiegato tutto con calma prima della visita, togliendomi ogni timore.`,
+          roleOrContext: "Paziente in cura",
+        },
+        {
+          name: "Alessandro D.",
+          location: `${city} e provincia`,
+          quote: `Grande professionalita dell'equipe di ${companyName}: puntualita sugli orari e zero dolore durante il trattamento.`,
+          roleOrContext: "Implantologia e igiene",
+        },
+      ],
+    },
+    poliambulatorio: {
+      headline: `${companyName}: Centro Medico e Visite Specialistiche a ${city}`,
+      subheadline: `Prevenzione, diagnostica e visite specialistiche con tempi di attesa ridotti e un'equipe medica dedicata a ${city}.`,
+      badgeTop: `${companyName} · Poliambulatorio Specialistico (${city})`,
+      heroBullets: [
+        "Prenotazione rapida senza lunghe liste d'attesa con segreteria dedicata",
+        "Equipe multidisciplinare coordinata e refertazione chiara",
+        "Ambiente accogliente, accessibile e orientato al benessere del paziente",
+      ],
+      valueProps: [
+        {
+          title: "Visite Specialistiche Senza Attese",
+          description: `Accesso rapido a visite ed esami diagnostici a ${city} con orari flessibili adatti anche a chi lavora.`,
+          metric: "Tempi Rapidi",
+        },
+        {
+          title: "Percorso Coordinato Tra Specialisti",
+          description: `Un approccio integrato che mette in comunicazione i medici del centro per evitare esami ripetuti e diagnosi frammentate.`,
+          metric: "Equipe Unita",
+        },
+        {
+          title: "Accoglienza e Chiarezza Clinica",
+          description: `Dalla prima accoglienza fino ai controlli di follow-up seguiamo il paziente con ascolto e massima riservatezza.`,
+          metric: "98% Soddisfatti",
+        },
+      ],
+      reviewsSummary: `4.9/5 dai pazienti seguiti presso il centro a ${city}`,
+      mainStatValue: "98%",
+      mainStatLabel: "Pazienti soddisfatti di puntualita e qualita clinica",
+      testimonials: [
+        {
+          name: "Valentina M.",
+          location: city,
+          quote: `Prenotato la visita in giornata, zero attesa in sala e medico attentissimo nell'ascoltare tutta la mia storia clinica.`,
+          roleOrContext: "Visita specialistica",
+        },
+        {
+          name: "Giovanni P.",
+          location: `${city} e provincia`,
+          quote: `Struttura moderna e personale gentilissimo in segreteria. Un punto di riferimento serio a ${city}.`,
+          roleOrContext: "Diagnostica e controlli",
+        },
+      ],
+    },
+    generic_local: {
+      headline: `${companyName}: Soluzioni Professionali a ${city}`,
+      subheadline: `Affidati all'esperienza di ${companyName} a ${city}. Richiedi una valutazione tecnica e un preventivo chiaro senza impegno.`,
+      badgeTop: `${companyName} · Operativi a ${city} e provincia`,
+      heroBullets: [
+        "Sopralluogo tecnico e preventivo chiaro senza impegno",
+        "Materiali certificati e assistenza diretta con personale qualificato",
+        "Tempi di intervento garantiti e gestione completa della pratica",
+      ],
+      valueProps: [
+        {
+          title: "Qualita Certificata e Garanzia Scritta",
+          description: `Ogni intervento di ${companyName} utilizza materiali selezionati e procedure certificate per garantire durata e prestazioni nel tempo.`,
+          metric: "100% Garantito",
+        },
+        {
+          title: "Preventivo Chiaro e Zero Sorprese",
+          description: `Valutazione trasparente delle soluzioni piu adatte alle tue esigenze a ${city}, con tempi e costi definiti prima dell'inizio dei lavori.`,
+          metric: "Preventivo Chiuso",
+        },
+        {
+          title: "Assistenza Tecnica Diretta",
+          description: `Un unico referente tecnico ti segue dal primo sopralluogo fino al collaudo finale e all'assistenza post-vendita.`,
+          metric: "Supporto Diretto",
+        },
+      ],
+      reviewsSummary: `Azienda di riferimento a ${city} per affidabilita e precisione`,
+      mainStatValue: "98%",
+      mainStatLabel: "Clienti soddisfatti del servizio e dell'assistenza",
+      testimonials: [
+        {
+          name: "Marco R.",
+          location: city,
+          quote: `Servizio impeccabile da parte del team di ${companyName}. Puntuali, precisi e disponibilissimi in ogni fase del lavoro.`,
+          roleOrContext: "Cliente verificato",
+        },
+        {
+          name: "Laura B.",
+          location: city,
+          quote: `Ottima consulenza iniziale e grande cura nei dettagli. Preventivo rispettato al centesimo e risultato superiore alle aspettative.`,
+          roleOrContext: "Intervento completato",
+        },
+      ],
+    },
+  };
+
+  const preset = defaultContentByNiche[niche];
+
+  const cleanScrapedH = (scrapedHeadline || "").replace(/[—–]/g, "-").trim();
+  const cleanScrapedSub = (scrapedSubheadline || "").replace(/[—–]/g, "-").trim();
+
+  const heroHeadline = isCleanItalianHeadline(cleanScrapedH)
+    ? cleanScrapedH
+    : preset.headline;
+
+  const isValidScrapedSub =
+    cleanScrapedSub.length >= 45 &&
+    !isBoilerplateTitle(cleanScrapedSub) &&
+    !/cookie|privacy policy|questo sito utilizza|javascript/i.test(cleanScrapedSub) &&
+    !/\b(?:functional and process solutions|we are a company|welcome to)\b/i.test(
+      cleanScrapedSub
+    );
+
+  const heroSubheadline = isValidScrapedSub
+    ? cleanScrapedSub.slice(0, 210)
+    : preset.subheadline;
+
+  return {
+    badgeTop: preset.badgeTop,
+    heroHeadline,
+    heroSubheadline,
+    heroBullets: preset.heroBullets,
+    ctaButtonText: isMedical
+      ? "Richiedi Disponibilita Visita"
+      : isB2B
+      ? "Richiedi Studio di Fattibilita"
+      : "Calcola il Tuo Preventivo Rapido",
+    trustMicrocopy: isB2B
+      ? "Riservatezza industriale garantita (NDA) · Risposta tecnica entro la giornata lavorativa"
+      : isMedical
+      ? "Richiesta riservata e senza impegno · Conferma rapida dalla segreteria"
+      : "Richiesta gratuita e senza impegno · Risposta rapida dal nostro ufficio tecnico",
+    logoLocalPath,
+    heroImageLocalPath,
+    heroImageCaption: `${companyName} · Sede operativa e realizzazioni (${city})`,
+    quiz: buildQuizForKeyword(keyword, archetype, niche),
+    valueProps: preset.valueProps,
+    socialProof: {
+      mainStatValue: preset.mainStatValue,
+      mainStatLabel: preset.mainStatLabel,
+      reviewsSummary: preset.reviewsSummary,
+      clientReferenceWall: isB2B ? preset.clientReferenceWall : undefined,
+      secondaryStats: isB2B ? preset.secondaryStats : undefined,
+      testimonials: preset.testimonials,
+    },
+    medicalDetails: isMedical
+      ? {
+          directorName:
+            decisionMakerFullName || `Direzione Sanitaria ${companyName}`,
+          alboRegistration: `Struttura autorizzata · Ordine Provinciale di ${city}`,
+          specialization:
+            niche === "odontoiatria"
+              ? "Odontoiatria, Implantologia e Cura del Sorriso"
+              : "Medicina Specialistica, Diagnostica e Prevenzione",
+          clinicAddress: `Sede operativa: ${city}`,
+          openingHours: "Lun - Ven · 09:00 - 19:00",
+          parkingAndAccess: "Accesso privo di barriere e parcheggio comodo",
+          conventions: [
+            "Principali Fondi Sanitari",
+            "Piani di cura personalizzati",
+          ],
+        }
+      : undefined,
   };
 }
 
@@ -2631,21 +4397,17 @@ export async function runAutonomousScout(
       const adTracking = detectActiveAdTracking(combinedHtml, cameFromAdLibrary);
       const runsAds = adTracking.runsAds;
 
-      const phones = [
-        ...new Set([
-          ...(combinedHtml.match(
-            /(?:\+39\s?)?(?:0\d{1,3}[\s.-]?\d{5,8}|3\d{2}[\s.-]?\d{6,7})/g
-          ) || []),
-          ...(cand.fallbackPhone ? [cand.fallbackPhone] : []),
-        ]),
-      ].slice(0, 3);
-
       const piva =
         combinedHtml.match(
           /(?:P\.?\s*IVA|Partita\s+IVA|C\.F\.|Codice\s+Fiscale)[\s:]*([0-9]{11})/i
         )?.[1] ||
         cand.fallbackVat ||
         "Non trovata";
+
+      const phones = extractValidItalianPhones(combinedHtml, {
+        extraPhones: [cand.fallbackPhone],
+        vatNumber: piva,
+      });
 
       const cleanText = stripTags(combinedHtml + " " + (cand.fallbackDescription || ""));
       const pageTitle = stripTags(
@@ -2678,59 +4440,66 @@ export async function runAutonomousScout(
         continue;
       }
 
-      const imgTagMatches = [...html.matchAll(/<img[^>]+src=["']([^"']+)["'][^>]*>/gi)];
-      const candidateLogoUrls: string[] = cand.fallbackLogoUrl
-        ? [cand.fallbackLogoUrl]
-        : [];
-      const candidateHeroUrls: string[] = cand.fallbackHeroUrl
-        ? [cand.fallbackHeroUrl]
-        : [];
+      const { candidateLogoUrls: extractedLogos, candidateHeroUrls: extractedHeroes } =
+        extractExtendedImageUrls(targetUrl, [html, subpagesHtml]);
 
-      const ogImageMatch =
-        html.match(
-          /<meta[^>]+property=["']og:image["'][^>]+content=["']([^"']+)["']/i
-        ) ||
-        html.match(
-          /<meta[^>]+content=["']([^"']+)["'][^>]+property=["']og:image["']/i
-        );
-      if (ogImageMatch?.[1]) {
-        const resolvedOg = resolveUrl(targetUrl, ogImageMatch[1]);
-        if (resolvedOg && !candidateHeroUrls.includes(resolvedOg)) {
-          candidateHeroUrls.unshift(resolvedOg);
-        }
-      }
-
-      for (const match of imgTagMatches) {
-        const fullTag = match[0].toLowerCase();
-        const resolved = resolveUrl(targetUrl, match[1]);
-        if (!resolved) continue;
-        if (fullTag.includes("logo") || resolved.toLowerCase().includes("logo")) {
-          if (!candidateLogoUrls.includes(resolved)) candidateLogoUrls.push(resolved);
-        } else if (
-          !resolved.endsWith(".svg") &&
-          !resolved.includes("icon") &&
-          !resolved.includes("pixel") &&
-          !resolved.includes("avatar")
-        ) {
-          if (!candidateHeroUrls.includes(resolved)) candidateHeroUrls.push(resolved);
-        }
-      }
+      const candidateLogoUrls = Array.from(
+        new Set([
+          ...extractedLogos,
+          ...(cand.fallbackLogoUrl ? [cand.fallbackLogoUrl] : []),
+        ])
+      );
+      const candidateHeroUrls = Array.from(
+        new Set([
+          ...extractedHeroes,
+          ...(cand.fallbackHeroUrl ? [cand.fallbackHeroUrl] : []),
+        ])
+      );
 
       const outDir = path.join(process.cwd(), "public", "leads", slug);
-      let finalLogoPath = candidateLogoUrls[0] || "";
-      for (const logoUrl of candidateLogoUrls.slice(0, 2)) {
-        if (await tryDownloadFileLocally(logoUrl, path.join(outDir, "logo.png"))) {
+      let finalLogoPath = "";
+      let logoAnalysis: ReturnType<typeof analyzePngLogo> = null;
+      for (const logoUrl of candidateLogoUrls.slice(0, 7)) {
+        const res = await downloadAndNormalizeRasterAsset(
+          logoUrl,
+          path.join(outDir, "logo.png"),
+          "png",
+          { minBytes: 300, minWidth: 40, minHeight: 18 }
+        );
+        if (res.ok) {
           finalLogoPath = `/leads/${slug}/logo.png`;
+          logoAnalysis = res.logoAnalysis ?? analyzePngLogo(path.join(outDir, "logo.png"));
           break;
         }
       }
 
-      let finalHeroPath = candidateHeroUrls[0] || "/leads/infissimpm/hero.jpg";
-      for (const heroUrl of candidateHeroUrls.slice(0, 2)) {
-        if (await tryDownloadFileLocally(heroUrl, path.join(outDir, "hero.jpg"))) {
+      let finalHeroPath = "";
+      for (const heroUrl of candidateHeroUrls.slice(0, 10)) {
+        const res = await downloadAndNormalizeRasterAsset(
+          heroUrl,
+          path.join(outDir, "hero.jpg"),
+          "jpg",
+          { minBytes: 8000, minWidth: 480, minHeight: 240 }
+        );
+        if (res.ok) {
           finalHeroPath = `/leads/${slug}/hero.jpg`;
           break;
         }
+      }
+
+      if (!finalHeroPath) {
+        const screenshotOk = await captureFallbackHeroScreenshot(
+          targetUrl,
+          path.join(outDir, "hero.jpg")
+        );
+        if (screenshotOk) {
+          finalHeroPath = `/leads/${slug}/hero.jpg`;
+        }
+      }
+
+      // MAI usare fallback su hero di altri lead (/leads/infissimpm/hero.jpg): se non c'è immagine reale, scarta il candidato
+      if (!finalHeroPath) {
+        continue;
       }
 
       const ogSiteName =
@@ -2738,67 +4507,42 @@ export async function runAutonomousScout(
           /<meta[^>]+property=["']og:site_name["'][^>]+content=["']([^"']+)["']/i
         )?.[1] || "";
 
-      const titleSegments = pageTitle
-        .split(/[-|•:\u2013\u2014]/)
-        .map((s) => s.trim())
-        .filter(
-          (s) =>
-            s.length >= 3 &&
-            !/^(home|homepage|contatti|contattaci|preventivo|richiedi preventivo|chi siamo|referenze|servizi|prodotti|benvenuti|sito ufficiale|welcome|index)$/i.test(
-              s
-            )
-        );
-
-      const rawName = (
-        cand.fallbackName ||
-        (ogSiteName.length >= 3 && ogSiteName.length <= 42 ? ogSiteName : "") ||
-        titleSegments[0] ||
-        ""
-      )
-        .replace(/[—–]/g, "-")
-        .replace(/\b(homepage di|benvenuti in|sito ufficiale)\b/gi, "")
-        .trim();
-
-      const companyName =
-        rawName.length >= 3 &&
-        rawName.length <= 42 &&
-        !/^(contatti|home|preventivo|servizi|chi siamo)$/i.test(rawName)
-          ? rawName
-          : slug
-              .split("-")
-              .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
-              .join(" ");
+      const companyName = extractCleanCompanyName({
+        slug,
+        targetUrl,
+        fallbackName: cand.fallbackName,
+        ogSiteName,
+        pageTitle,
+        html,
+      });
 
       const city = extractCityFromQueryOrHtml(
         keyword,
         cleanText,
         cand.fallbackCity
       );
-      const archetype = detectArchetype(
-        keyword,
-        html + " " + (cand.fallbackDescription || "")
+      const archetype = assertOfficialArchetype(
+        detectArchetype(keyword, `${html} ${cand.fallbackDescription || ""}`)
       );
       const isB2B = archetype === "b2b-authority";
       const isMedical = archetype === "medical-clinic";
-      const phone = phones[0] || "+39 02 0000000";
+      const phone = phones[0] || "";
 
-      const rawHeadline =
-        firstH1 && firstH1.length >= 12 && firstH1.length <= 95
-          ? firstH1
-          : pageTitle && pageTitle.length >= 12 && pageTitle.length <= 95
-          ? pageTitle
-          : isB2B
-          ? `${companyName}: Ingegneria, Forniture e Soluzioni B2B a ${city}`
-          : `${companyName}: Soluzioni Professionali a ${city}`;
-      const heroHeadline = rawHeadline.replace(/[—–]/g, "-");
+      const verticalContent = buildVerticalizedLeadContent({
+        companyName,
+        city,
+        archetype,
+        keyword,
+        corpus: `${cleanText} ${cand.fallbackDescription || ""}`,
+        scrapedHeadline: firstH1 || pageTitle,
+        scrapedSubheadline: metaDesc,
+        logoLocalPath: finalLogoPath,
+        heroImageLocalPath: finalHeroPath,
+        decisionMakerFullName: decisionMaker.fullName,
+      });
 
-      const rawSubheadline =
-        metaDesc && metaDesc.length >= 30
-          ? metaDesc.slice(0, 210)
-          : isB2B
-          ? `Supportiamo imprese e direzioni tecniche a ${city} con progettazione su specifica, tempi di consegna certi e assistenza tecnica diretta.`
-          : `Affidati all'esperienza di ${companyName} a ${city}. Richiedi una valutazione tecnica e un preventivo chiaro senza impegno.`;
-      const heroSubheadline = rawSubheadline.replace(/[—–]/g, "-");
+      const heroHeadline = verticalContent.heroHeadline;
+      const heroSubheadline = verticalContent.heroSubheadline;
 
       // DIRETTIVA 4: Biforcazione dinamica dei threeCriticalFlaws in base a runsAds
       const threeCriticalFlaws: [string, string, string] = runsAds
@@ -2856,6 +4600,16 @@ export async function runAutonomousScout(
         // Ignora su Vercel read-only
       }
 
+      const defaultPrimaryHex = isMedical
+        ? "#0F766E"
+        : isB2B
+        ? "#0B1E36"
+        : "#1E3A8A";
+      const resolvedPrimaryHex =
+        logoAnalysis?.dominantColor && !isMedical
+          ? logoAnalysis.dominantColor
+          : defaultPrimaryHex;
+
       const leadConfig: LeadConfig = {
         slug,
         archetype,
@@ -2891,11 +4645,7 @@ export async function runAutonomousScout(
             (heroSubheadline.length > 140 ? "..." : ""),
         },
         theme: {
-          primaryHex: isMedical
-            ? "#0F766E"
-            : isB2B
-            ? "#0B1E36"
-            : "#1E3A8A",
+          primaryHex: resolvedPrimaryHex,
           accentHex: isMedical
             ? "#0D9488"
             : isB2B
@@ -2904,151 +4654,9 @@ export async function runAutonomousScout(
           darkBgHex: "#0B1E36",
           borderRadius: isB2B ? "8px" : "12px",
           headerBgMode: "light",
-          logoBrightness: "dark",
+          logoBrightness: logoAnalysis?.hasWhiteElements ? "light" : "dark",
         },
-        content: {
-          badgeTop: isB2B
-            ? `${companyName} · Divisione Tecnica & Commesse B2B (${city})`
-            : `${companyName} · Operativi a ${city} e provincia`,
-          heroHeadline,
-          heroSubheadline,
-          heroBullets: isB2B
-            ? [
-                "Studio di fattibilita tecnica e capitolato con tempi di consegna certi",
-                "Qualifica immediata della richiesta e assegnazione diretta all'Ufficio Tecnico",
-                "Produzione e assistenza certificata con referente unico dedicato",
-              ]
-            : [
-                "Sopralluogo tecnico e preventivo chiaro senza impegno",
-                "Materiali certificati e assistenza diretta con personale qualificato",
-                "Tempi di intervento garantiti e gestione completa della pratica",
-              ],
-          ctaButtonText: isMedical
-            ? "Richiedi Disponibilita Visita"
-            : isB2B
-            ? "Richiedi Studio di Fattibilita"
-            : "Calcola il Tuo Preventivo Rapido",
-          trustMicrocopy: isB2B
-            ? "Riservatezza industriale garantita (NDA) · Risposta tecnica entro la giornata lavorativa"
-            : "Richiesta gratuita e senza impegno · Risposta rapida dal nostro ufficio tecnico",
-          logoLocalPath: finalLogoPath,
-          heroImageLocalPath: finalHeroPath,
-          heroImageCaption: `${companyName} · Sede operativa e realizzazioni (${city})`,
-          quiz: buildQuizForKeyword(keyword, archetype),
-          valueProps: isB2B
-            ? [
-                {
-                  title: "Ingegneria e Progettazione su Specifica",
-                  description: `Analizziamo i requisiti produttivi della commessa a ${city}, definendo specifiche tecniche, tempi di consegna e ritorno sull'investimento prima dell'avvio operativo.`,
-                  metric: "Capitolato Chiuso",
-                },
-                {
-                  title: "Controllo Qualita e Conformita Normativa",
-                  description: `Ogni fornitura e impianto di ${companyName} viene collaudato secondo gli standard di sicurezza e qualita vigenti, con documentazione tecnica completa.`,
-                  metric: "100% Certificato",
-                },
-                {
-                  title: "Continuita Operativa e Assistenza Post-Vendita",
-                  description: `Affianchiamo il reparto tecnico e acquisti dal collaudo in stabilimento fino alla manutenzione programmata e al riordino ricambi.`,
-                  metric: "SLA Garantito",
-                },
-              ]
-            : [
-                {
-                  title: "Qualita Certificata e Garanzia Scritta",
-                  description: `Ogni intervento di ${companyName} utilizza materiali selezionati e procedure certificate per garantire durata e prestazioni nel tempo.`,
-                  metric: "100% Garantito",
-                },
-                {
-                  title: "Preventivo Chiaro e Zero Sorprese",
-                  description: `Valutazione trasparente delle soluzioni piu adatte alle tue esigenze a ${city}, con tempi e costi definiti prima dell'inizio dei lavori.`,
-                  metric: "Preventivo Chiuso",
-                },
-                {
-                  title: "Assistenza Tecnica Diretta",
-                  description: `Un unico referente tecnico ti segue dal primo sopralluogo fino al collaudo finale e all'assistenza post-vendita.`,
-                  metric: "Supporto Diretto",
-                },
-              ],
-          socialProof: {
-            mainStatValue: isB2B ? "99.4%" : "98%",
-            mainStatLabel: isB2B
-              ? "Commesse B2B consegnate entro i tempi contrattuali"
-              : "Clienti soddisfatti del servizio e dell'assistenza",
-            reviewsSummary: isB2B
-              ? `Partner tecnico di riferimento per imprese e stabilimenti a ${city}`
-              : `Azienda di riferimento a ${city} per affidabilita e precisione`,
-            clientReferenceWall: isB2B
-              ? [
-                  "Qualita Certificata ISO 9001",
-                  "Conformita Tecnica CE",
-                  "Integrazione Gestionale / ERP",
-                  "Capitolato e Preventivo Chiuso",
-                  "Assistenza Tecnica Diretta",
-                ]
-              : undefined,
-            secondaryStats: isB2B
-              ? [
-                  {
-                    value: "99.4%",
-                    label: "Commesse consegnate nel pieno rispetto dei tempi contrattuali",
-                  },
-                  {
-                    value: "< 0.4s",
-                    label: "Caricamento istantaneo dell'infrastruttura digitale su rete mobile",
-                  },
-                  {
-                    value: "24h",
-                    label: "Presa in carico tecnica e invio automatico della richiesta al CRM",
-                  },
-                ]
-              : undefined,
-            testimonials: isB2B
-              ? [
-                  {
-                    name: "Direzione Tecnica e Produzione",
-                    location: `${city} · Commessa Industriale`,
-                    quote: `Abbiamo affidato a ${companyName} una commessa strategica per il nostro reparto: rispetto rigoroso delle specifiche tecniche, tempi di consegna puntuali e collaudo impeccabile.`,
-                    roleOrContext: "Fornitura e collaudo B2B",
-                  },
-                  {
-                    name: "Responsabile Ufficio Acquisti",
-                    location: `${city} e provincia`,
-                    quote: `Un partner strutturato e affidabile: preventivazione trasparente senza costi occulti, documentazione tecnica completa e supporto post-vendita immediato.`,
-                    roleOrContext: "Accordo quadro di fornitura",
-                  },
-                ]
-              : [
-                  {
-                    name: "Marco R.",
-                    location: city,
-                    quote: `Servizio impeccabile da parte del team di ${companyName}. Puntuali, precisi e disponibilissimi in ogni fase del lavoro.`,
-                    roleOrContext: "Cliente verificato",
-                  },
-                  {
-                    name: "Laura B.",
-                    location: city,
-                    quote: `Ottima consulenza iniziale e grande cura nei dettagli. Preventivo rispettato al centesimo e risultato superiore alle aspettative.`,
-                    roleOrContext: "Intervento completato",
-                  },
-                ],
-          },
-          medicalDetails: isMedical
-            ? {
-                directorName:
-                  decisionMaker.fullName || `Direzione Sanitaria ${companyName}`,
-                alboRegistration: `Struttura autorizzata · Ordine Provinciale di ${city}`,
-                specialization: "Odontoiatria, Implantologia e Cura della Persona",
-                clinicAddress: `Sede operativa: ${city}`,
-                openingHours: "Lun - Ven · 09:00 - 19:00",
-                parkingAndAccess: "Accesso privo di barriere e parcheggio comodo",
-                conventions: [
-                  "Principali Fondi Sanitari",
-                  "Piani di cura personalizzati",
-                ],
-              }
-            : undefined,
-        },
+        content: verticalContent,
         outreach,
       };
 

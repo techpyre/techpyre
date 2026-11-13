@@ -27,8 +27,8 @@
       "Assenza di pre-qualifica automatica: il sito non filtra le richieste per tipologia di intervento, budget o tempistiche prima di inviarle ai referenti tecnici di Gitiesse Carpenterie Srl.",
       "Colli di bottiglia commerciali: le richieste arrivano come semplici email isolate senza instradamento automatico e senza tracciamento strutturato della trattativa."
     ],
-    "activeAdHeadline": "www.gitiessecarpenterie.com",
-    "activeAdCopySummary": "L’azienda GITIESSE CARPENTERIE SRL opera nel settore della carpenteria metallica, si occupa della lavorazione di lamiere e profili in allumi..."
+    "activeAdHeadline": "Gitiesse Carpenterie Srl: Lavorazioni Meccaniche, Lamiera e Taglio Laser a Povegliano Veronese",
+    "activeAdCopySummary": "Produzione conto terzi su disegno tecnico a Povegliano Veronese: tolleranze certificate, consegna programmata dei lotti e confronto diretto ..."
   },
   "theme": {
     "primaryHex": "#0B1E36",
@@ -36,29 +36,29 @@
     "darkBgHex": "#0B1E36",
     "borderRadius": "8px",
     "headerBgMode": "light",
-    "logoBrightness": "dark"
+    "logoBrightness": "light"
   },
   "content": {
-    "badgeTop": "Gitiesse Carpenterie Srl · Divisione Tecnica & Commesse B2B (Povegliano Veronese)",
-    "heroHeadline": "www.gitiessecarpenterie.com",
-    "heroSubheadline": "L’azienda GITIESSE CARPENTERIE SRL opera nel settore della carpenteria metallica, si occupa della lavorazione di lamiere e profili in alluminio, acciaio inox ed acciaio al carbonio. Utilizziamo le macchine a co",
+    "badgeTop": "Gitiesse Carpenterie Srl · Produzione Industriale e Carpenteria (Povegliano Veronese)",
+    "heroHeadline": "Gitiesse Carpenterie Srl: Lavorazioni Meccaniche, Lamiera e Taglio Laser a Povegliano Veronese",
+    "heroSubheadline": "Produzione conto terzi su disegno tecnico a Povegliano Veronese: tolleranze certificate, consegna programmata dei lotti e confronto diretto con il nostro Ufficio Tecnico.",
     "heroBullets": [
-      "Studio di fattibilita tecnica e capitolato con tempi di consegna certi",
-      "Qualifica immediata della richiesta e assegnazione diretta all'Ufficio Tecnico",
-      "Produzione e assistenza certificata con referente unico dedicato"
+      "Analisi disegni CAD/STEP e studio di fattibilita con tempi di consegna certi",
+      "Controllo dimensionale su lotti piccoli, medi e serie continuative",
+      "Tracciabilita dei materiali, certificati di collaudo e referente unico B2B"
     ],
     "ctaButtonText": "Richiedi Studio di Fattibilita",
     "trustMicrocopy": "Riservatezza industriale garantita (NDA) · Risposta tecnica entro la giornata lavorativa",
     "logoLocalPath": "/leads/gitiessecarpenterie/logo.png",
-    "heroImageLocalPath": "/leads/gitiessecarpenterie/hero.jpg",
+    "heroImageLocalPath": "",
     "heroImageCaption": "Gitiesse Carpenterie Srl · Sede operativa e realizzazioni (Povegliano Veronese)",
     "quiz": {
       "question1": {
-        "title": "Quale ambito operativo o di commessa desiderate approfondire?",
+        "title": "Quale lavorazione meccanica o fornitura su disegno vi occorre?",
         "options": [
-          "Fornitura industriale, impianti o commessa su specifica",
-          "Integrazione tecnica, automazione di reparto o portale B2B",
-          "Studio di fattibilita, capitolato e quotazione riservata"
+          "Taglio laser, piegatura lamiera o carpenteria metallica su disegno",
+          "Lavorazioni CNC, stampi, attrezzature o serie ripetitive B2B",
+          "Studio di fattibilita tecnica, prototipazione e quotazione lotto"
         ]
       },
       "question2": {
@@ -73,70 +73,70 @@
     },
     "valueProps": [
       {
-        "title": "Ingegneria e Progettazione su Specifica",
-        "description": "Analizziamo i requisiti produttivi della commessa a Povegliano Veronese, definendo specifiche tecniche, tempi di consegna e ritorno sull'investimento prima dell'avvio operativo.",
-        "metric": "Capitolato Chiuso"
+        "title": "Ingegnerizzazione Disegni e Preventivazione Rapida",
+        "description": "Valutiamo tolleranze, spessori e trattamenti direttamente con il vostro ufficio tecnico a Povegliano Veronese, riducendo i fermi macchina e gli scarti di assemblaggio.",
+        "metric": "Risposta 24h"
       },
       {
-        "title": "Controllo Qualita e Conformita Normativa",
-        "description": "Ogni fornitura e impianto di Gitiesse Carpenterie Srl viene collaudato secondo gli standard di sicurezza e qualita vigenti, con documentazione tecnica completa.",
-        "metric": "100% Certificato"
+        "title": "Parco Macchine CNC e Controllo Qualita",
+        "description": "Ogni lotto prodotto da Gitiesse Carpenterie Srl segue procedure di verifica dimensionale e conformita dei materiali per garantire ripetibilita costante.",
+        "metric": "100% Verificato"
       },
       {
-        "title": "Continuita Operativa e Assistenza Post-Vendita",
-        "description": "Affianchiamo il reparto tecnico e acquisti dal collaudo in stabilimento fino alla manutenzione programmata e al riordino ricambi.",
-        "metric": "SLA Garantito"
+        "title": "Consegne Programmate Kanban e Continuita",
+        "description": "Gestiamo commesse spot e accordi quadro annuali rispettando le finestre di consegna concordate con il vostro reparto logistica.",
+        "metric": "Puntualita 99.4%"
       }
     ],
     "socialProof": {
       "mainStatValue": "99.4%",
-      "mainStatLabel": "Commesse B2B consegnate entro i tempi contrattuali",
-      "reviewsSummary": "Partner tecnico di riferimento per imprese e stabilimenti a Povegliano Veronese",
+      "mainStatLabel": "Lotti lavorati e consegnati nel pieno rispetto delle tolleranze",
+      "reviewsSummary": "Partner manifatturiero di riferimento per industrie a Povegliano Veronese",
       "clientReferenceWall": [
+        "Lavorazioni su Disegno CAD/STEP",
+        "Certificazioni Materiali 3.1",
         "Qualita Certificata ISO 9001",
-        "Conformita Tecnica CE",
-        "Integrazione Gestionale / ERP",
-        "Capitolato e Preventivo Chiuso",
-        "Assistenza Tecnica Diretta"
+        "Controllo Dimensionale Lotti",
+        "Forniture OEM e Conto Terzi"
       ],
       "secondaryStats": [
         {
           "value": "99.4%",
-          "label": "Commesse consegnate nel pieno rispetto dei tempi contrattuali"
+          "label": "Lotti consegnati entro la data pattuita con il cliente B2B"
         },
         {
           "value": "< 0.4s",
-          "label": "Caricamento istantaneo dell'infrastruttura digitale su rete mobile"
+          "label": "Caricamento portale tecnico per richiesta offerte da mobile"
         },
         {
           "value": "24h",
-          "label": "Presa in carico tecnica e invio automatico della richiesta al CRM"
+          "label": "Verifica fattibilita tecnica con il nostro Ufficio Tecnico"
         }
       ],
       "testimonials": [
         {
-          "name": "Direzione Tecnica e Produzione",
-          "location": "Povegliano Veronese · Commessa Industriale",
-          "quote": "Abbiamo affidato a Gitiesse Carpenterie Srl una commessa strategica per il nostro reparto: rispetto rigoroso delle specifiche tecniche, tempi di consegna puntuali e collaudo impeccabile.",
-          "roleOrContext": "Fornitura e collaudo B2B"
+          "name": "Direzione Produzione e Officina",
+          "location": "Povegliano Veronese · Fornitura Conto Terzi",
+          "quote": "Affidiamo a Gitiesse Carpenterie Srl i nostri particolari meccanici e lamiere piegate: precisione costante sui montaggi e consegne sempre allineate al piano produttivo.",
+          "roleOrContext": "Lavorazioni CNC e Lamiera"
         },
         {
           "name": "Responsabile Ufficio Acquisti",
           "location": "Povegliano Veronese e provincia",
-          "quote": "Un partner strutturato e affidabile: preventivazione trasparente senza costi occulti, documentazione tecnica completa e supporto post-vendita immediato.",
-          "roleOrContext": "Accordo quadro di fornitura"
+          "quote": "Interlocutore tecnico preparato: tempi rapidi su quotazioni multi-articolo, documenti completi e zero difformita in accettazione.",
+          "roleOrContext": "Accordo quadro B2B"
         }
       ]
     }
   },
   "outreach": {
     "emailSubject": "Gitiesse Carpenterie Srl - tempi di caricamento mobile e richieste preventivo di Gitiesse Carpenterie Srl (7.9s)",
-    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di Gitiesse Carpenterie Srl, da smartphone impiega 7.9 secondi ad aprirsi per 4 risorse bloccanti, frenando le richieste di preventivo.\n\nAbbiamo gia preparato una demo in Next.js per Gitiesse Carpenterie Srl che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di Gitiesse Carpenterie Srl, da smartphone impiega 7.9 secondi ad aprirsi per 8 risorse bloccanti, frenando le richieste di preventivo.\n\nAbbiamo gia preparato una demo in Next.js per Gitiesse Carpenterie Srl che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
     "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Gitiesse Carpenterie Srl, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/gitiessecarpenterie\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
     "step1FirstTouch": {
       "dayOffset": 1,
       "subject": "Gitiesse Carpenterie Srl - tempi di caricamento mobile e richieste preventivo di Gitiesse Carpenterie Srl (7.9s)",
-      "body": "Buongiorno,\n\nda un test sul sito di Gitiesse Carpenterie Srl, da smartphone impiega 7.9 secondi ad aprirsi per 4 risorse bloccanti, frenando le richieste di preventivo.\n\nAbbiamo gia preparato una demo in Next.js per Gitiesse Carpenterie Srl che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+      "body": "Buongiorno,\n\nda un test sul sito di Gitiesse Carpenterie Srl, da smartphone impiega 7.9 secondi ad aprirsi per 8 risorse bloccanti, frenando le richieste di preventivo.\n\nAbbiamo gia preparato una demo in Next.js per Gitiesse Carpenterie Srl che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
       "inThread": false,
       "requiresFollowUpCall": false
     },

@@ -24,6 +24,8 @@ interface TemplateProps {
 
 export default function MedicalClinic({ data }: TemplateProps) {
   const { meta, content } = data;
+  const phoneDigits = String(meta.phone || "").replace(/\D/g, "");
+  const hasRealPhone = phoneDigits.length >= 8 && !/^(\+?39)?02?0{5,}$/.test(phoneDigits);
 
   const medical = content.medicalDetails || {
     directorName: meta.decisionMakerName,
@@ -51,6 +53,7 @@ export default function MedicalClinic({ data }: TemplateProps) {
   const [patientName, setPatientName] = useState<string>("");
   const [patientPhone, setPatientPhone] = useState<string>("");
   const [bookingSubmitted, setBookingSubmitted] = useState<boolean>(false);
+  const [heroImgError, setHeroImgError] = useState<boolean>(false);
 
   const handleBookingSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -86,7 +89,7 @@ export default function MedicalClinic({ data }: TemplateProps) {
 
       {/* Header Clinico con Navigazione e CTA Prenotazione */}
       <header
-        className={`sticky top-[29px] sm:top-[36px] z-40 backdrop-blur-md border-b transition-colors ${
+        className={`sticky top-[34px] sm:top-[38px] z-40 backdrop-blur-md border-b transition-colors ${
           data.theme.headerBgMode === "dark"
             ? "bg-[#141A18]/95 text-white border-[#273531]"
             : "bg-[#FAF8F5]/95 text-[#4A4642] border-[#E5DFD6]"
@@ -117,14 +120,16 @@ export default function MedicalClinic({ data }: TemplateProps) {
             </nav>
           </div>
 
-          <div className="flex items-center gap-2 sm:gap-3">
-            <a
-              href={`tel:${meta.phone.replace(/\s+/g, "")}`}
-              className="hidden sm:inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-white border border-[#D6CFC5] text-[#1F2421] font-medium text-xs sm:text-sm hover:border-[#1F4E46] transition-colors"
-            >
-              <Phone className="w-3.5 h-3.5 text-[#1F4E46]" strokeWidth={1.5} />
-              <span>{meta.phone}</span>
-            </a>
+          <div className="flex items-center gap-2 sm:gap-3 shrink-0">
+            {hasRealPhone && (
+              <a
+                href={`tel:${meta.phone.replace(/\s+/g, "")}`}
+                className="hidden sm:inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-white border border-[#D6CFC5] text-[#1F2421] font-medium text-xs sm:text-sm hover:border-[#1F4E46] transition-colors"
+              >
+                <Phone className="w-3.5 h-3.5 text-[#1F4E46]" strokeWidth={1.5} />
+                <span>{meta.phone}</span>
+              </a>
+            )}
             <a
               href="#prenota-colloquio"
               style={{ backgroundColor: "var(--primary, #1F4E46)" }}
@@ -164,13 +169,15 @@ export default function MedicalClinic({ data }: TemplateProps) {
                   <Calendar className="w-4 h-4" strokeWidth={1.5} />
                   <span>Prenota un colloquio in studio</span>
                 </a>
-                <a
-                  href={`tel:${meta.phone.replace(/\s+/g, "")}`}
-                  className="demo-btn inline-flex items-center gap-2.5 px-6 py-4 rounded-full bg-white text-[#1F2421] border border-[#D6CFC5] hover:border-[#1F4E46] font-medium text-sm sm:text-[15px]"
-                >
-                  <Phone className="w-4 h-4 text-[#1F4E46]" strokeWidth={1.5} />
-                  <span>Parla con la segreteria</span>
-                </a>
+                {hasRealPhone && (
+                  <a
+                    href={`tel:${meta.phone.replace(/\s+/g, "")}`}
+                    className="demo-btn inline-flex items-center gap-2.5 px-6 py-4 rounded-full bg-white text-[#1F2421] border border-[#D6CFC5] hover:border-[#1F4E46] font-medium text-sm sm:text-[15px]"
+                  >
+                    <Phone className="w-4 h-4 text-[#1F4E46]" strokeWidth={1.5} />
+                    <span>Parla con la segreteria</span>
+                  </a>
+                )}
               </div>
 
               {/* Rassicurazione Pazienti sotto i bottoni */}
@@ -196,14 +203,28 @@ export default function MedicalClinic({ data }: TemplateProps) {
             {/* Colonna Destra: Fotografia Luminosa dello Studio + Scheda Direzione Sanitaria */}
             <div className="lg:col-span-6">
               <div className="relative rounded-2xl overflow-hidden border border-[#E5DFD6] bg-white demo-shadow">
-                <img
-                  src={content.heroImageLocalPath}
-                  alt={`${meta.companyName} - Studio Medico a ${meta.city}`}
-                  fetchPriority="high"
-                  width={800}
-                  height={560}
-                  className="w-full aspect-[4/3] object-cover"
-                />
+                {content.heroImageLocalPath && !heroImgError ? (
+                  <img
+                    src={content.heroImageLocalPath}
+                    alt={`${meta.companyName} - Studio Medico a ${meta.city}`}
+                    fetchPriority="high"
+                    width={800}
+                    height={560}
+                    onError={() => setHeroImgError(true)}
+                    className="w-full aspect-[4/3] object-cover"
+                  />
+                ) : (
+                  <div className="w-full aspect-[4/3] bg-[#1F3A33] text-white p-8 flex flex-col justify-between">
+                    <div className="inline-flex items-center gap-2 text-xs font-medium text-[#D6CFC5]">
+                      <Stethoscope className="w-4 h-4" strokeWidth={1.5} />
+                      <span>{meta.companyName} · {meta.city}</span>
+                    </div>
+                    <div className="font-[family-name:var(--font-lora)] text-2xl leading-snug">
+                      {content.heroHeadline}
+                    </div>
+                    <div className="text-xs text-[#D6CFC5]">{medical.specialization}</div>
+                  </div>
+                )}
                 <div className="p-5 sm:p-6 bg-white border-t border-[#E5DFD6] flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                   <div>
                     <div className="text-xs uppercase tracking-wider text-[#1F4E46] font-semibold">
@@ -604,18 +625,20 @@ export default function MedicalClinic({ data }: TemplateProps) {
       {/* Barra Fissa Mobile Clinica — Call To Action Potenziata ma Non Invasiva */}
       <div className="fixed bottom-0 inset-x-0 z-40 md:hidden bg-[#FAF8F5]/95 backdrop-blur-md border-t border-[#E5DFD6] py-2.5 px-4 shadow-[0_-6px_24px_rgba(0,0,0,0.08)]">
         <div className="grid grid-cols-12 gap-2.5 items-center">
-          <a
-            href={`tel:${meta.phone.replace(/\s+/g, "")}`}
-            className="col-span-4 flex items-center justify-center gap-1.5 py-3 px-2 rounded-xl bg-white hover:bg-stone-50 text-[#1F2421] font-semibold text-xs border border-[#D6CFC5] transition-colors active:scale-98"
-          >
-            <Phone className="w-3.5 h-3.5 text-[#1F4E46] shrink-0" />
-            <span>Chiama</span>
-          </a>
+          {hasRealPhone && (
+            <a
+              href={`tel:${meta.phone.replace(/\s+/g, "")}`}
+              className="col-span-4 flex items-center justify-center gap-1.5 py-3 px-2 rounded-xl bg-white hover:bg-stone-50 text-[#1F2421] font-semibold text-xs border border-[#D6CFC5] transition-colors active:scale-98"
+            >
+              <Phone className="w-3.5 h-3.5 text-[#1F4E46] shrink-0" />
+              <span>Chiama</span>
+            </a>
+          )}
 
           <a
             href="#prenota-colloquio"
             style={{ backgroundColor: "var(--primary, #1F4E46)" }}
-            className="col-span-8 flex items-center justify-center gap-2 py-3 px-3 rounded-xl text-white font-bold text-xs sm:text-sm shadow-md transition-all active:scale-98"
+            className={`${hasRealPhone ? "col-span-8" : "col-span-12"} flex items-center justify-center gap-2 py-3 px-3 rounded-xl text-white font-bold text-xs sm:text-sm shadow-md transition-all active:scale-98`}
           >
             <Calendar className="w-4 h-4 shrink-0" />
             <span className="truncate">Prenota Prima Visita</span>

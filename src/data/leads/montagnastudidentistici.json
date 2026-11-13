@@ -48,92 +48,84 @@
     "logoBrightness": "dark"
   },
   "content": {
-    "badgeTop": "Operativi a Brescia e Provincia",
+    "badgeTop": "Montagna Dentisti del Veronese · Studio Odontoiatrico (Brescia)",
     "heroHeadline": "Montagna Dentisti del Veronese: Il dentista vicino al Tuo sorriso",
     "heroSubheadline": "Cerchi un dentista a Verona? Montagna Dentisti del Veronese offre esperienza, empatia, multidisciplinarità e velocità. Entra per scoprire i servizi e per contattarci!",
     "heroBullets": [
-      "Intervento e consulenza diretta a Brescia e provincia",
-      "Tecnici interni specializzati e preventivo trasparente",
-      "Garanzia e supporto continuativo certificato"
+      "Prima visita approfondita con inquadramento diagnostico chiaro e trasparente",
+      "Protocolli sterili certificati e attenzione prioritaria al comfort senza dolore",
+      "Piano di cure dettagliato, tempi certi e pagamenti dilazionabili"
     ],
     "ctaButtonText": "Richiedi Disponibilita Visita",
-    "trustMicrocopy": "Senza impegno · Dati protetti GDPR · Contatto diretto da Brescia",
+    "trustMicrocopy": "Richiesta riservata e senza impegno · Conferma rapida dalla segreteria",
     "logoLocalPath": "/leads/montagnastudidentistici/logo.png",
     "heroImageLocalPath": "/leads/montagnastudidentistici/hero.jpg",
-    "heroImageCaption": "Montagna Dentisti del Veronese: Il dentista vicino al Tuo sorriso - Montagna Dentisti del Veronese (Brescia)",
+    "heroImageCaption": "Montagna Dentisti del Veronese · Sede operativa e realizzazioni (Brescia)",
     "quiz": {
       "question1": {
-        "title": "Quale prestazione o visita desideri valutare?",
+        "title": "Per quale esigenza clinica desideri richiedere una valutazione?",
         "options": [
-          "Prima Visita di Controllo e Igiene",
-          "Implantologia o Riabilitazione Dentale",
-          "Ortodonzia Invisibile / Estetica"
+          "Prima visita specialistica e piano di cura personalizzato",
+          "Implantologia o riabilitazione estetica/funzionale",
+          "Igiene dentale, prevenzione o controllo periodico"
         ]
       },
       "question2": {
-        "title": "Quando vorresti concordare il primo appuntamento?",
+        "title": "Quale fascia oraria preferisci per l'appuntamento?",
         "options": [
-          "Entro questa settimana",
-          "Nelle prossime 2 settimane",
-          "Valutazione senza urgenza"
+          "Mattina (09:00 - 13:00)",
+          "Pomeriggio (14:00 - 19:00)",
+          "Primo orario disponibile in settimana"
         ]
       },
-      "finalStepTitle": "Configurazione completata! Inserisci i tuoi dati per ricevere il preventivo riservato."
+      "finalStepTitle": "Perfetto. Lascia un recapito per ricevere conferma di disponibilita dalla segreteria:"
     },
     "valueProps": [
       {
-        "title": "Velocita e Trasparenza nei Costi",
-        "description": "Stima economica chiara per il tuo immobile a Brescia senza imprevisti o sorprese in corso d opera.",
-        "metric": "24h"
+        "title": "Diagnostica Digitale e Piano Chiaro",
+        "description": "Spieghiamo ogni fase terapeutica con linguaggio semplice e preventivi chiari prima di iniziare qualsiasi trattamento a Brescia.",
+        "metric": "Trasparenza Totale"
       },
       {
-        "title": "Certificazioni e Garanzia Scritta",
-        "description": "Tutti i materiali e le installazioni sono certificati a norma di legge con garanzia continuativa.",
-        "metric": "10 Anni"
+        "title": "Approccio Mini-Invasivo e Comfort",
+        "description": "Tecniche moderne orientate a ridurre ansia, fastidi e tempi di recupero anche nei casi implantari complessi.",
+        "metric": "Cura Delicata"
       },
       {
-        "title": "Presidio sul Territorio",
-        "description": "Team operativo locale per sopralluoghi rapidi e assistenza diretta su tutta la provincia di Brescia.",
-        "metric": "100% Locale"
+        "title": "Igiene Certificata e Continuità Clinica",
+        "description": "Protocolli di sterilizzazione tracciati e richiami periodici programmati per proteggere la salute nel lungo periodo.",
+        "metric": "Standard Alti"
       }
     ],
     "socialProof": {
-      "mainStatValue": "4.9/5",
-      "mainStatLabel": "Soddisfazione Clienti Brescia",
-      "reviewsSummary": "4.9/5 su recensioni verificate sul territorio di Brescia",
+      "mainStatValue": "98%",
+      "mainStatLabel": "Pazienti che tornano per i controlli periodici annuali",
+      "reviewsSummary": "4.9/5 dalle recensioni verificate dei pazienti a Brescia",
       "testimonials": [
         {
-          "name": "Ing. Salvatore Di Martino",
-          "location": "Brescia Centro",
-          "quote": "Massima professionalità e chiarezza nei costi sin dal primo incontro. Lavori eseguiti nel pieno rispetto dei tempi concordati.",
-          "roleOrContext": "Intervento verificato"
-        },
-        {
-          "name": "Famiglia Schembri",
-          "location": "Brescia e provincia",
-          "quote": "Consulenza chiara e trasparente. Preventivo rispettato al centesimo e assistenza tecnica presente anche dopo la consegna.",
-          "roleOrContext": "Installazione certificata"
-        },
-        {
-          "name": "Dott. Corrado Battaglia",
+          "name": "Francesca V.",
           "location": "Brescia",
-          "quote": "Un punto di riferimento serio per chi cerca qualità e affidabilità sul territorio senza passare da intermediari.",
-          "roleOrContext": "Consulenza e posa qualificata"
+          "quote": "Ambiente sereno e pulitissimo. Mi hanno spiegato tutto con calma prima della visita, togliendomi ogni timore.",
+          "roleOrContext": "Paziente in cura"
+        },
+        {
+          "name": "Alessandro D.",
+          "location": "Brescia e provincia",
+          "quote": "Grande professionalita dell'equipe di Montagna Dentisti del Veronese: puntualita sugli orari e zero dolore durante il trattamento.",
+          "roleOrContext": "Implantologia e igiene"
         }
       ]
     },
     "medicalDetails": {
       "directorName": "Direzione Sanitaria Montagna Dentisti del Veronese",
-      "alboRegistration": "Iscrizione Albo Medici Odontoiatri prov. di Brescia",
-      "specialization": "Odontoiatria Specialistica, Implantologia e Riabilitazione Orale",
-      "clinicAddress": "Brescia e Provincia",
-      "openingHours": "Lun - Ven: 09:00 - 19:30 | Sab: su appuntamento",
-      "parkingAndAccess": "Accesso facilitato al piano terra e parcheggio nelle vicinanze",
+      "alboRegistration": "Struttura autorizzata · Ordine Provinciale di Brescia",
+      "specialization": "Odontoiatria, Implantologia e Cura del Sorriso",
+      "clinicAddress": "Sede operativa: Brescia",
+      "openingHours": "Lun - Ven · 09:00 - 19:00",
+      "parkingAndAccess": "Accesso privo di barriere e parcheggio comodo",
       "conventions": [
-        "Fondo Est",
-        "Pronto-Care",
-        "Unisalute",
-        "Faschim"
+        "Principali Fondi Sanitari",
+        "Piani di cura personalizzati"
       ]
     }
   },

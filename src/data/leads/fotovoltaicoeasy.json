@@ -23,8 +23,8 @@
   "audit": {
     "originalLcpSeconds": 7.5,
     "mobileScore": 44,
-    "activeAdHeadline": "FotovoltaicoEasy",
-    "activeAdCopySummary": "Campagna pubblicitaria attiva su Meta per il territorio di Brescia e provincia.",
+    "activeAdHeadline": "Impianti Fotovoltaici con Accumulo a Brescia e Provincia",
+    "activeAdCopySummary": "Consulenza tecnica certificata, posa qualificata e preventivo dettagliato senza impegno a Brescia.",
     "threeCriticalFlaws": [
       "Il sito attuale impiega 7.5 secondi ad aprirsi su rete mobile 4G per via di 8 risorse bloccanti.",
       "La pagina disperde i visitatori con link di navigazione esterni senza guidarli a una richiesta rapida.",
@@ -37,80 +37,79 @@
     "renderBlockingCount": 8
   },
   "theme": {
-    "primaryHex": "#0284c7",
-    "accentHex": "#0ea5e9",
-    "darkBgHex": "#0F1113",
-    "borderRadius": "8px",
-    "headerBgMode": "dark",
-    "headerBgHex": "#0E1013",
+    "primaryHex": "#1E3A8A",
+    "accentHex": "#2563EB",
+    "darkBgHex": "#0B1E36",
+    "borderRadius": "12px",
+    "headerBgMode": "light",
     "logoBrightness": "light"
   },
   "content": {
-    "badgeTop": "Attivi a Brescia e Dintorni",
+    "badgeTop": "FotovoltaicoEasy · Energia e Comfort Termico (Brescia)",
     "heroHeadline": "Impianti Fotovoltaici con Accumulo a Brescia e Provincia",
     "heroSubheadline": "Consulenza tecnica certificata, posa qualificata e preventivo dettagliato senza impegno a Brescia.",
     "heroBullets": [
-      "Intervento e consulenza diretta su Brescia e provincia",
-      "Specialisti qualificati con garanzia e assistenza dedicata",
-      "Preventivo chiaro e risposta garantita entro 24 ore"
+      "Analisi consumi in bolletta e dimensionamento reale senza sovrastime",
+      "Installazione certificata con tecnici interni abilitati F-Gas / FER",
+      "Gestione completa pratiche di allaccio, ENEA e incentivi fiscali"
     ],
-    "ctaButtonText": "Calcola Preventivo Rapido",
-    "trustMicrocopy": "Senza impegno · Dati protetti GDPR · Contatto diretto da Brescia",
+    "ctaButtonText": "Calcola il Tuo Preventivo Rapido",
+    "trustMicrocopy": "Richiesta gratuita e senza impegno · Risposta rapida dal nostro ufficio tecnico",
     "logoLocalPath": "/leads/fotovoltaicoeasy/logo.png",
     "heroImageLocalPath": "/leads/fotovoltaicoeasy/hero.jpg",
-    "heroImageCaption": "FotovoltaicoEasy (Brescia)",
+    "heroImageCaption": "FotovoltaicoEasy · Sede operativa e realizzazioni (Brescia)",
     "quiz": {
       "question1": {
-        "title": "Che tipologia di intervento o servizio desideri richiedere?",
+        "title": "Quale impianto desideri installare o sostituire?",
         "options": [
-          "Nuova installazione completa",
-          "Sostituzione o ristrutturazione",
-          "Consulenza tecnica preventiva"
+          "Impianto fotovoltaico con eventuale sistema di accumulo",
+          "Climatizzatori, pompa di calore o caldaia ad alta efficienza",
+          "Riqualificazione energetica completa dell'abitazione"
         ]
       },
       "question2": {
-        "title": "Qual è la tempistica prevista per l'intervento?",
+        "title": "Qual e il tuo obiettivo principale?",
         "options": [
-          "Il prima possibile (entro 30 giorni)",
-          "Nei prossimi 2-3 mesi",
-          "Sto solo valutando le opzioni e i costi"
+          "Abbattere subito i costi in bolletta",
+          "Accesso agli incentivi e detrazioni fiscali attive",
+          "Sostituzione urgente con sopralluogo tecnico rapido"
         ]
       },
-      "finalStepTitle": "A chi possiamo inviare i dettagli della stima?"
+      "finalStepTitle": "Perfetto. Lascia i tuoi dati per ricevere la simulazione tecnica e il preventivo dedicato:"
     },
     "valueProps": [
       {
-        "title": "Velocità Sub-Secondo 0.3s",
-        "description": "La demo Next.js si apre istantaneamente senza far attendere il cliente su smartphone.",
-        "metric": "0.3s"
+        "title": "Dimensionamento Sui Tuoi Consumi Reali",
+        "description": "Calcoliamo potenza, accumulo o taglia della pompa di calore per offrirti il miglior rientro economico possibile a Brescia.",
+        "metric": "Resa Massima"
       },
       {
-        "title": "Zero Dispersioni",
-        "description": "Percorso guidato che massimizza il tasso di conversione dai visitatori a contatti qualificati.",
-        "metric": "+240%"
+        "title": "Installazione Certificata e Sicura",
+        "description": "I tecnici di FotovoltaicoEasy eseguono il lavoro a regola d'arte rilasciando tutte le dichiarazioni di conformita.",
+        "metric": "100% A Norma"
       },
       {
-        "title": "Modulo Rapido Guidato",
-        "description": "Il cliente completa due semplici domande e invia la richiesta con recapito telefonico ed email.",
-        "metric": "100%"
+        "title": "Assistenza e Pratiche Chiavi in Mano",
+        "description": "Seguiamo noi iter autorizzativi, pratiche incentivi e manutenzione programmata post-installazione.",
+        "metric": "Zero Pensieri"
       }
     ],
     "socialProof": {
-      "mainStatValue": "4.9 / 5",
-      "mainStatLabel": "Soddisfazione Clienti Verificata",
-      "reviewsSummary": "Oltre il 98% dei clienti raccomanda gli interventi di FotovoltaicoEasy.",
+      "mainStatValue": "98%",
+      "mainStatLabel": "Clienti soddisfatti del risparmio energetico ottenuto",
+      "reviewsSummary": "4.9/5 da clienti residenziali a Brescia",
       "testimonials": [
         {
-          "name": "Marco B.",
+          "name": "Simone G.",
           "location": "Brescia",
-          "quote": "Precisione impeccabile, preventivo trasparente e lavoro eseguito a regola d'arte nei tempi concordati.",
-          "roleOrContext": "Cliente Verificato"
+          "quote": "Impianto dimensione perfetta per i nostri consumi. FotovoltaicoEasy ha gestito installazione e pratiche in tempi record.",
+          "roleOrContext": "Fotovoltaico con accumulo"
         },
         {
-          "name": "Elena R.",
-          "location": "Brescia e Dintorni",
-          "quote": "Personale disponibile e competente. Ottima comunicazione sin dal primo contatto telefonico.",
-          "roleOrContext": "Cliente Verificato"
+          "name": "Elena P.",
+          "location": "Brescia e provincia",
+          "quote": "Tecnici puliti e precisi nel montaggio del nuovo impianto di climatizzazione. Preventivo chiaro fin dal primo giorno.",
+          "roleOrContext": "Pompa di calore e clima"
         }
       ]
     }

@@ -1,11 +1,11 @@
 {
   "slug": "tammarometalli",
-  "archetype": "local-leadgen",
+  "archetype": "b2b-authority",
   "meta": {
     "companyName": "Tammaro Metalli",
     "decisionMakerName": "Direzione Tammaro Metalli",
     "targetEmail": "info@tammarometalli.it",
-    "phone": "0471895",
+    "phone": "3387529447",
     "city": "Agrigento",
     "vatNumber": "05710551218",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Ritiro%20metalli%20e%20rottami",
@@ -32,79 +32,100 @@
     "renderBlockingCount": 8
   },
   "theme": {
-    "primaryHex": "#1E3A8A",
-    "accentHex": "#2563EB",
+    "primaryHex": "#0B1E36",
+    "accentHex": "#B8860B",
     "darkBgHex": "#0B1E36",
-    "borderRadius": "12px",
+    "borderRadius": "8px",
     "headerBgMode": "light",
     "logoBrightness": "dark"
   },
   "content": {
-    "badgeTop": "Ritiro metalli e rottami · Operativi a Agrigento e provincia",
+    "badgeTop": "Tammaro Metalli · Servizi Tecnici e Infrastrutture B2B (Agrigento)",
     "heroHeadline": "RITIRO METALLI E ROTTAMI METALLICI",
     "heroSubheadline": "Tammaro Metalli ritira e acquista metalli da aziende e privati fornendo servizi dedicati a seconda della specifica esigenza.",
     "heroBullets": [
-      "Sopralluogo tecnico e preventivo chiaro senza impegno",
-      "Materiali certificati e assistenza diretta con personale qualificato",
-      "Tempi di intervento garantiti e gestione completa della pratica"
+      "Sopralluogo tecnico in stabilimento e piano operativo senza fermo attivita",
+      "Gestione completa pratiche autorizzative, certificazioni e conformita ambientale",
+      "Garanzie scritte su sicurezza, rendimento e assistenza post-intervento"
     ],
-    "ctaButtonText": "Calcola il Tuo Preventivo Rapido",
-    "trustMicrocopy": "Richiesta gratuita e senza impegno · Risposta rapida dal nostro ufficio tecnico",
+    "ctaButtonText": "Richiedi Studio di Fattibilita",
+    "trustMicrocopy": "Riservatezza industriale garantita (NDA) · Risposta tecnica entro la giornata lavorativa",
     "logoLocalPath": "/leads/tammarometalli/logo.png",
     "heroImageLocalPath": "/leads/tammarometalli/hero.jpg",
-    "heroImageCaption": "Ritiro metalli e rottami · Sede operativa e realizzazioni (Agrigento)",
+    "heroImageCaption": "Tammaro Metalli · Sede operativa e realizzazioni (Agrigento)",
     "quiz": {
       "question1": {
-        "title": "Di quale servizio o soluzione hai bisogno?",
+        "title": "Quale intervento tecnico per il vostro stabilimento state pianificando?",
         "options": [
-          "Richiesta preventivo dettagliato su misura",
-          "Consulenza tecnica e sopralluogo operativo",
-          "Intervento rapido o assistenza prioritaria"
+          "Bonifiche ambientali, depurazione acque o gestione rifiuti industriali",
+          "Coperture industriali, impianti fotovoltaici aziendali o efficienza energetica",
+          "Sopralluogo tecnico in stabilimento, perizia e capitolato chiavi in mano"
         ]
       },
       "question2": {
-        "title": "Entro quando vorresti avviare il progetto?",
+        "title": "Qual e l'orizzonte temporale previsto per il progetto?",
         "options": [
-          "Il prima possibile (Entro 2 settimane)",
-          "Entro 1 - 2 mesi",
-          "Sto valutando diverse soluzioni"
+          "Avvio operativo urgente (entro 30 giorni)",
+          "Pianificazione nel trimestre in corso",
+          "Valutazione tecnica e di budget preliminare"
         ]
       },
-      "finalStepTitle": "Perfetto. Inserisci i tuoi dati per ricevere una proposta personalizzata senza impegno:"
+      "finalStepTitle": "Specifiche registrate. Inserisci i riferimenti aziendali per il colloquio con l'Ufficio Tecnico:"
     },
     "valueProps": [
       {
-        "title": "Qualita Certificata e Garanzia Scritta",
-        "description": "Ogni intervento di Ritiro metalli e rottami utilizza materiali selezionati e procedure certificate per garantire durata e prestazioni nel tempo.",
-        "metric": "100% Garantito"
+        "title": "Perizia Tecnica e Piano Esecutivo Chiaro",
+        "description": "Analizziamo lo stato reale dell'impianto o della copertura a Agrigento definendo costi, tempistiche e ritorni operativi prima del cantiere.",
+        "metric": "Progetto Chiuso"
       },
       {
-        "title": "Preventivo Chiaro e Zero Sorprese",
-        "description": "Valutazione trasparente delle soluzioni piu adatte alle tue esigenze a Agrigento, con tempi e costi definiti prima dell'inizio dei lavori.",
-        "metric": "Preventivo Chiuso"
+        "title": "Piena Conformita Normativa e Ambientale",
+        "description": "Tammaro Metalli gestisce interventi complessi in sicurezza, rilasciando tutta la documentazione tecnica e le certificazioni richieste.",
+        "metric": "100% A Norma"
       },
       {
-        "title": "Assistenza Tecnica Diretta",
-        "description": "Un unico referente tecnico ti segue dal primo sopralluogo fino al collaudo finale e all'assistenza post-vendita.",
-        "metric": "Supporto Diretto"
+        "title": "Manutenzione Programmata e Assistenza Diretta",
+        "description": "Un referente tecnico dedicato segue l'azienda dalla realizzazione fino ai controlli periodici e all'assistenza continua.",
+        "metric": "SLA Garantito"
       }
     ],
     "socialProof": {
-      "mainStatValue": "98%",
-      "mainStatLabel": "Clienti soddisfatti del servizio e dell'assistenza",
-      "reviewsSummary": "Azienda di riferimento a Agrigento per affidabilita e precisione",
-      "testimonials": [
+      "mainStatValue": "99.4%",
+      "mainStatLabel": "Commesse industriali chiuse in sicurezza e nei tempi concordati",
+      "reviewsSummary": "Partner tecnico specializzato per aziende e capannoni a Agrigento",
+      "clientReferenceWall": [
+        "Conformita Sicurezza D.Lgs 81/08",
+        "Certificazioni Impianti e Ambiente",
+        "Qualita Certificata ISO 9001",
+        "Cantieri Senza Fermo Produzione",
+        "Assistenza Tecnica Diretta"
+      ],
+      "secondaryStats": [
         {
-          "name": "Marco R.",
-          "location": "Agrigento",
-          "quote": "Servizio impeccabile da parte del team di Ritiro metalli e rottami. Puntuali, precisi e disponibilissimi in ogni fase del lavoro.",
-          "roleOrContext": "Cliente verificato"
+          "value": "99.4%",
+          "label": "Interventi eseguiti nel rispetto delle scadenze di cantiere"
         },
         {
-          "name": "Laura B.",
-          "location": "Agrigento",
-          "quote": "Ottima consulenza iniziale e grande cura nei dettagli. Preventivo rispettato al centesimo e risultato superiore alle aspettative.",
-          "roleOrContext": "Intervento completato"
+          "value": "< 0.4s",
+          "label": "Accesso rapido a perizie e richieste tecniche su mobile"
+        },
+        {
+          "value": "24h",
+          "label": "Pianificazione sopralluogo tecnico in stabilimento"
+        }
+      ],
+      "testimonials": [
+        {
+          "name": "Direzione Tecnica e HSE",
+          "location": "Agrigento · Stabilimento Produttivo",
+          "quote": "Cantiere organizzato in modo impeccabile da Tammaro Metalli: lavorazioni svolte senza fermare la nostra produzione e documentazione esemplare.",
+          "roleOrContext": "Intervento in stabilimento"
+        },
+        {
+          "name": "Amministrazione e Impianti",
+          "location": "Agrigento e provincia",
+          "quote": "Preventivo dettagliato senza voci impreviste e supporto prezioso su tutta la parte autorizzativa.",
+          "roleOrContext": "Servizio chiavi in mano"
         }
       ]
     }

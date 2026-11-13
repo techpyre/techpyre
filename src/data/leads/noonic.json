@@ -23,8 +23,8 @@
   "audit": {
     "originalLcpSeconds": 6.8,
     "mobileScore": 38,
-    "activeAdHeadline": "Richiesta aperta: Web Developer & Landing Page Specialist",
-    "activeAdCopySummary": "Posizione e richiesta aperta individuata su LinkedIn / Job Directory.",
+    "activeAdHeadline": "Landing Page ad Alta Conversione & Velocità 0.3s per Noonic",
+    "activeAdCopySummary": "Supporto tecnico avanzato per agenzie e corporate: architettura headless sub-secondo, zero dipendenze pesanti e percorsi di conversione guid...",
     "threeCriticalFlaws": [
       "Abbandono Preventivi da Mobile (6.8s LCP): i potenziali clienti B2B che visitano il sito da smartphone attendono 6.8 secondi a causa di 8 risorse bloccanti prima di vedere l'offerta",
       "Assenza di Qualifica Commerciale Automatica: i visitatori atterrano su moduli generici che inviano semplici email isolate, costringendo il team a filtrare e ricopiare i dati a mano",
@@ -35,78 +35,100 @@
     "renderBlockingCount": 8
   },
   "theme": {
-    "primaryHex": "#0284c7",
-    "accentHex": "#0ea5e9",
-    "darkBgHex": "#0F1113",
+    "primaryHex": "#0B1E36",
+    "accentHex": "#B8860B",
+    "darkBgHex": "#0B1E36",
     "borderRadius": "8px",
-    "headerBgMode": "adaptive"
+    "headerBgMode": "light",
+    "logoBrightness": "dark"
   },
   "content": {
-    "badgeTop": "Sviluppo Front-End Specializzato Next.js",
+    "badgeTop": "Noonic · Ingegneria e Automazione B2B (Padova)",
     "heroHeadline": "Landing Page ad Alta Conversione & Velocità 0.3s per Noonic",
     "heroSubheadline": "Supporto tecnico avanzato per agenzie e corporate: architettura headless sub-secondo, zero dipendenze pesanti e percorsi di conversione guidati.",
     "heroBullets": [
-      "Compilazione statica Next.js con caricamento istantaneo su qualsiasi dispositivo mobile",
-      "Funnel guidato a 2 domande che raddoppia i contatti profilati",
-      "Pronta operatività white-label o chiavi in mano con consegna in 48 ore"
+      "Studio elettrico, sviluppo software PLC e cablaggio quadri certificato",
+      "Revamping macchinari e interconnessione verso gestionali aziendali MES/ERP",
+      "Collaudo funzionale, fascicolo tecnico CE e teleassistenza post-vendita"
     ],
-    "ctaButtonText": "Richiedi Dimostrazione Tecnica",
-    "trustMicrocopy": "Codice custom testato · Core Web Vitals 100/100 · Sviluppo in Italia",
+    "ctaButtonText": "Richiedi Studio di Fattibilita",
+    "trustMicrocopy": "Riservatezza industriale garantita (NDA) · Risposta tecnica entro la giornata lavorativa",
     "logoLocalPath": "/leads/noonic/logo.png",
     "heroImageLocalPath": "/leads/noonic/hero.jpg",
-    "heroImageCaption": "Noonic (Padova)",
+    "heroImageCaption": "Noonic · Sede operativa e realizzazioni (Padova)",
     "quiz": {
       "question1": {
-        "title": "Qual è l'obiettivo principale per la nuova landing page?",
+        "title": "Quale ambito di automazione o impiantistica industriale valutate?",
         "options": [
-          "Campagne Lead Generation (Meta / Google Ads)",
-          "Lancio di un nuovo servizio o prodotto",
-          "Sostituzione di una pagina lenta che non converte"
+          "Quadri elettrici bordomacchina, revamping linee e integrazione PLC",
+          "Progettazione isole robotizzate, macchinari o automazione di reparto",
+          "Studio di fattibilita tecnica, conformita CE e tempi di consegna"
         ]
       },
       "question2": {
-        "title": "Qual è la tempistica desiderata per il rilascio?",
+        "title": "Qual e l'orizzonte temporale previsto per il progetto?",
         "options": [
-          "Entro pochi giorni (massima priorità)",
-          "Nelle prossime 2-3 settimane",
-          "Valutazione preventiva di costi e fattibilità"
+          "Avvio operativo urgente (entro 30 giorni)",
+          "Pianificazione nel trimestre in corso",
+          "Valutazione tecnica e di budget preliminare"
         ]
       },
-      "finalStepTitle": "A chi possiamo inviare le specifiche tecniche e il preventivo?"
+      "finalStepTitle": "Specifiche registrate. Inserisci i riferimenti aziendali per il colloquio con l'Ufficio Tecnico:"
     },
     "valueProps": [
       {
-        "title": "Velocità Reale 0.3s",
-        "description": "Supera ogni CMS tradizionale: la pagina si apre istantaneamente senza tempi morti.",
-        "metric": "0.3s"
+        "title": "Progettazione Elettrica e Software Su Specifica",
+        "description": "Sviluppiamo architetture di controllo affidabili e scalabili a Padova, pensate per integrarsi nei vostri reparti senza lunghi fermi produzione.",
+        "metric": "Norma CE"
       },
       {
-        "title": "Massima Conversione",
-        "description": "Struttura scientifica studiata per convertire il traffico a pagamento in contatti reali.",
-        "metric": "+240%"
+        "title": "Quadristica, Cablaggio e Sicurezza Impianti",
+        "description": "Quadri di potenza e automazione testati al 100% prima della spedizione, completi di schemi aggiornati e verifiche di sicurezza.",
+        "metric": "Testato 100%"
       },
       {
-        "title": "Zero Manutenzione Complessa",
-        "description": "Architettura statica sicura, priva di vulnerabilità plugin e compatibile con ogni CRM.",
-        "metric": "100%"
+        "title": "Avviamento in Linea e Teleassistenza",
+        "description": "Supportiamo gli operatori in fabbrica durante la messa in servizio e garantiamo continuità con diagnostica tempestiva.",
+        "metric": "Supporto Diretto"
       }
     ],
     "socialProof": {
-      "mainStatValue": "100 / 100",
-      "mainStatLabel": "Google Core Web Vitals",
-      "reviewsSummary": "Soluzioni ingegnerizzate per agenzie pubblicitarie e corporate orientate al performance marketing.",
-      "testimonials": [
+      "mainStatValue": "99.4%",
+      "mainStatLabel": "Impianti e quadri avviati nel rispetto delle finestre produttive",
+      "reviewsSummary": "Partner tecnologico per l'automazione di stabilimenti a Padova",
+      "clientReferenceWall": [
+        "Direttiva Macchine 2006/42/CE",
+        "Conformita CEI EN 60204-1",
+        "Integrazione MES / ERP",
+        "Teleassistenza Industriale",
+        "Qualita Certificata ISO 9001"
+      ],
+      "secondaryStats": [
         {
-          "name": "Andrea V.",
-          "location": "Milano",
-          "quote": "La velocità della landing page ha abbattuto il costo per contatto sulle nostre campagne Meta di oltre il 40%.",
-          "roleOrContext": "Performance Marketing Manager"
+          "value": "99.4%",
+          "label": "Commesse di automazione collaudate nei tempi concordati"
         },
         {
-          "name": "Chiara M.",
-          "location": "Torino",
-          "quote": "Consegna impeccabile in meno di 48 ore e piena integrazione con il nostro sistema di tracciamento.",
-          "roleOrContext": "Direttore Creativo"
+          "value": "< 0.4s",
+          "label": "Caricamento rapido del portale tecnico su smartphone"
+        },
+        {
+          "value": "24h",
+          "label": "Primo riscontro dall'Ufficio Tecnico su nuove commesse"
+        }
+      ],
+      "testimonials": [
+        {
+          "name": "Direttore di Stabilimento",
+          "location": "Padova · Reparto Automazione",
+          "quote": "Il revamping eseguito da Noonic ha stabilizzato la linea e ridotto i guasti elettrici fin dal primo mese di esercizio.",
+          "roleOrContext": "Automazione e revamping"
+        },
+        {
+          "name": "Responsabile Ingegneria di Processo",
+          "location": "Padova e provincia",
+          "quote": "Documentazione elettrica ordinata, rispetto rigoroso delle norme di sicurezza e disponibilita immediata in fase di collaudo.",
+          "roleOrContext": "Quadristica e bordomacchina"
         }
       ]
     }

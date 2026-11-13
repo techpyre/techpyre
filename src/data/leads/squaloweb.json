@@ -23,8 +23,8 @@
   "audit": {
     "originalLcpSeconds": 6.8,
     "mobileScore": 38,
-    "activeAdHeadline": "Richiesta aperta: Sviluppatore & CRO Specialist per Landing Page Campagne",
-    "activeAdCopySummary": "Posizione e richiesta aperta individuata su LinkedIn Jobs.",
+    "activeAdHeadline": "Landing Page ad Alta Conversione & Velocità 0.3s per Squalo Web",
+    "activeAdCopySummary": "Supporto tecnico avanzato per agenzie e corporate: architettura headless sub-secondo, zero dipendenze pesanti e percorsi di conversione guid...",
     "threeCriticalFlaws": [
       "Abbandono Preventivi da Mobile (6.8s LCP): i potenziali clienti B2B che visitano il sito da smartphone attendono 6.8 secondi a causa di 8 risorse bloccanti prima di vedere l'offerta",
       "Assenza di Qualifica Commerciale Automatica: i visitatori atterrano su moduli generici che inviano semplici email isolate, costringendo il team a filtrare e ricopiare i dati a mano",
@@ -35,78 +35,100 @@
     "renderBlockingCount": 8
   },
   "theme": {
-    "primaryHex": "#0284c7",
-    "accentHex": "#0ea5e9",
-    "darkBgHex": "#0F1113",
+    "primaryHex": "#0B1E36",
+    "accentHex": "#B8860B",
+    "darkBgHex": "#0B1E36",
     "borderRadius": "8px",
-    "headerBgMode": "adaptive"
+    "headerBgMode": "light",
+    "logoBrightness": "dark"
   },
   "content": {
-    "badgeTop": "Sviluppo Front-End Specializzato Next.js",
+    "badgeTop": "Squalo Web · Produzione Industriale e Carpenteria (Brescia)",
     "heroHeadline": "Landing Page ad Alta Conversione & Velocità 0.3s per Squalo Web",
     "heroSubheadline": "Supporto tecnico avanzato per agenzie e corporate: architettura headless sub-secondo, zero dipendenze pesanti e percorsi di conversione guidati.",
     "heroBullets": [
-      "Compilazione statica Next.js con caricamento istantaneo su qualsiasi dispositivo mobile",
-      "Funnel guidato a 2 domande che raddoppia i contatti profilati",
-      "Pronta operatività white-label o chiavi in mano con consegna in 48 ore"
+      "Analisi disegni CAD/STEP e studio di fattibilita con tempi di consegna certi",
+      "Controllo dimensionale su lotti piccoli, medi e serie continuative",
+      "Tracciabilita dei materiali, certificati di collaudo e referente unico B2B"
     ],
-    "ctaButtonText": "Richiedi Dimostrazione Tecnica",
-    "trustMicrocopy": "Codice custom testato · Core Web Vitals 100/100 · Sviluppo in Italia",
+    "ctaButtonText": "Richiedi Studio di Fattibilita",
+    "trustMicrocopy": "Riservatezza industriale garantita (NDA) · Risposta tecnica entro la giornata lavorativa",
     "logoLocalPath": "/leads/squaloweb/logo.png",
     "heroImageLocalPath": "/leads/squaloweb/hero.jpg",
-    "heroImageCaption": "Squalo Web (Brescia)",
+    "heroImageCaption": "Squalo Web · Sede operativa e realizzazioni (Brescia)",
     "quiz": {
       "question1": {
-        "title": "Qual è l'obiettivo principale per la nuova landing page?",
+        "title": "Quale lavorazione meccanica o fornitura su disegno vi occorre?",
         "options": [
-          "Campagne Lead Generation (Meta / Google Ads)",
-          "Lancio di un nuovo servizio o prodotto",
-          "Sostituzione di una pagina lenta che non converte"
+          "Taglio laser, piegatura lamiera o carpenteria metallica su disegno",
+          "Lavorazioni CNC, stampi, attrezzature o serie ripetitive B2B",
+          "Studio di fattibilita tecnica, prototipazione e quotazione lotto"
         ]
       },
       "question2": {
-        "title": "Qual è la tempistica desiderata per il rilascio?",
+        "title": "Qual e l'orizzonte temporale previsto per il progetto?",
         "options": [
-          "Entro pochi giorni (massima priorità)",
-          "Nelle prossime 2-3 settimane",
-          "Valutazione preventiva di costi e fattibilità"
+          "Avvio operativo urgente (entro 30 giorni)",
+          "Pianificazione nel trimestre in corso",
+          "Valutazione tecnica e di budget preliminare"
         ]
       },
-      "finalStepTitle": "A chi possiamo inviare le specifiche tecniche e il preventivo?"
+      "finalStepTitle": "Specifiche registrate. Inserisci i riferimenti aziendali per il colloquio con l'Ufficio Tecnico:"
     },
     "valueProps": [
       {
-        "title": "Velocità Reale 0.3s",
-        "description": "Supera ogni CMS tradizionale: la pagina si apre istantaneamente senza tempi morti.",
-        "metric": "0.3s"
+        "title": "Ingegnerizzazione Disegni e Preventivazione Rapida",
+        "description": "Valutiamo tolleranze, spessori e trattamenti direttamente con il vostro ufficio tecnico a Brescia, riducendo i fermi macchina e gli scarti di assemblaggio.",
+        "metric": "Risposta 24h"
       },
       {
-        "title": "Massima Conversione",
-        "description": "Struttura scientifica studiata per convertire il traffico a pagamento in contatti reali.",
-        "metric": "+240%"
+        "title": "Parco Macchine CNC e Controllo Qualita",
+        "description": "Ogni lotto prodotto da Squalo Web segue procedure di verifica dimensionale e conformita dei materiali per garantire ripetibilita costante.",
+        "metric": "100% Verificato"
       },
       {
-        "title": "Zero Manutenzione Complessa",
-        "description": "Architettura statica sicura, priva di vulnerabilità plugin e compatibile con ogni CRM.",
-        "metric": "100%"
+        "title": "Consegne Programmate Kanban e Continuita",
+        "description": "Gestiamo commesse spot e accordi quadro annuali rispettando le finestre di consegna concordate con il vostro reparto logistica.",
+        "metric": "Puntualita 99.4%"
       }
     ],
     "socialProof": {
-      "mainStatValue": "100 / 100",
-      "mainStatLabel": "Google Core Web Vitals",
-      "reviewsSummary": "Soluzioni ingegnerizzate per agenzie pubblicitarie e corporate orientate al performance marketing.",
-      "testimonials": [
+      "mainStatValue": "99.4%",
+      "mainStatLabel": "Lotti lavorati e consegnati nel pieno rispetto delle tolleranze",
+      "reviewsSummary": "Partner manifatturiero di riferimento per industrie a Brescia",
+      "clientReferenceWall": [
+        "Lavorazioni su Disegno CAD/STEP",
+        "Certificazioni Materiali 3.1",
+        "Qualita Certificata ISO 9001",
+        "Controllo Dimensionale Lotti",
+        "Forniture OEM e Conto Terzi"
+      ],
+      "secondaryStats": [
         {
-          "name": "Andrea V.",
-          "location": "Milano",
-          "quote": "La velocità della landing page ha abbattuto il costo per contatto sulle nostre campagne Meta di oltre il 40%.",
-          "roleOrContext": "Performance Marketing Manager"
+          "value": "99.4%",
+          "label": "Lotti consegnati entro la data pattuita con il cliente B2B"
         },
         {
-          "name": "Chiara M.",
-          "location": "Torino",
-          "quote": "Consegna impeccabile in meno di 48 ore e piena integrazione con il nostro sistema di tracciamento.",
-          "roleOrContext": "Direttore Creativo"
+          "value": "< 0.4s",
+          "label": "Caricamento portale tecnico per richiesta offerte da mobile"
+        },
+        {
+          "value": "24h",
+          "label": "Verifica fattibilita tecnica con il nostro Ufficio Tecnico"
+        }
+      ],
+      "testimonials": [
+        {
+          "name": "Direzione Produzione e Officina",
+          "location": "Brescia · Fornitura Conto Terzi",
+          "quote": "Affidiamo a Squalo Web i nostri particolari meccanici e lamiere piegate: precisione costante sui montaggi e consegne sempre allineate al piano produttivo.",
+          "roleOrContext": "Lavorazioni CNC e Lamiera"
+        },
+        {
+          "name": "Responsabile Ufficio Acquisti",
+          "location": "Brescia e provincia",
+          "quote": "Interlocutore tecnico preparato: tempi rapidi su quotazioni multi-articolo, documenti completi e zero difformita in accettazione.",
+          "roleOrContext": "Accordo quadro B2B"
         }
       ]
     }

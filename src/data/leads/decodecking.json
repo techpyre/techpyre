@@ -5,7 +5,7 @@
     "companyName": "Deco Decking e Rivestimenti",
     "decisionMakerName": "Direzione Deco Decking e Rivestimenti",
     "targetEmail": "decoroom.milano@decodecking.it",
-    "phone": "0201208",
+    "phone": "",
     "city": "Milano",
     "vatNumber": "03702400163",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Deco",
@@ -40,8 +40,8 @@
     "logoBrightness": "dark"
   },
   "content": {
-    "badgeTop": "Deco · Divisione Tecnica & Commesse B2B (Milano)",
-    "heroHeadline": "PROVA IL VISUALIZER DÉCO",
+    "badgeTop": "Deco Decking e Rivestimenti · Divisione Tecnica e Commesse B2B (Milano)",
+    "heroHeadline": "Deco Decking e Rivestimenti: Soluzioni Tecniche e Forniture B2B a Milano",
     "heroSubheadline": "Prova il simulatore virtuale arredo casa di Déco e visualizza in anteprima come si abbinano colori, rivestimenti murali e pavimenti nella tua casa!",
     "heroBullets": [
       "Studio di fattibilita tecnica e capitolato con tempi di consegna certi",
@@ -52,13 +52,13 @@
     "trustMicrocopy": "Riservatezza industriale garantita (NDA) · Risposta tecnica entro la giornata lavorativa",
     "logoLocalPath": "/leads/decodecking/logo.png",
     "heroImageLocalPath": "/leads/decodecking/hero.jpg",
-    "heroImageCaption": "Deco · Sede operativa e realizzazioni (Milano)",
+    "heroImageCaption": "Deco Decking e Rivestimenti · Sede operativa e realizzazioni (Milano)",
     "quiz": {
       "question1": {
         "title": "Quale ambito operativo o di commessa desiderate approfondire?",
         "options": [
           "Fornitura industriale, impianti o commessa su specifica",
-          "Integrazione tecnica, automazione di reparto o portale B2B",
+          "Integrazione tecnica, automazione di reparto o accordo quadro",
           "Studio di fattibilita, capitolato e quotazione riservata"
         ]
       },
@@ -75,17 +75,17 @@
     "valueProps": [
       {
         "title": "Ingegneria e Progettazione su Specifica",
-        "description": "Analizziamo i requisiti produttivi della commessa a Milano, definendo specifiche tecniche, tempi di consegna e ritorno sull'investimento prima dell'avvio operativo.",
+        "description": "Analizziamo i requisiti produttivi della commessa a Milano, definendo specifiche tecniche, tempi di consegna e costi prima dell'avvio.",
         "metric": "Capitolato Chiuso"
       },
       {
         "title": "Controllo Qualita e Conformita Normativa",
-        "description": "Ogni fornitura e impianto di Deco viene collaudato secondo gli standard di sicurezza e qualita vigenti, con documentazione tecnica completa.",
+        "description": "Ogni fornitura di Deco Decking e Rivestimenti viene collaudata secondo gli standard di sicurezza e qualita vigenti, con documentazione tecnica completa.",
         "metric": "100% Certificato"
       },
       {
         "title": "Continuita Operativa e Assistenza Post-Vendita",
-        "description": "Affianchiamo il reparto tecnico e acquisti dal collaudo in stabilimento fino alla manutenzione programmata e al riordino ricambi.",
+        "description": "Affianchiamo il reparto tecnico e acquisti dal collaudo in stabilimento fino alla manutenzione programmata.",
         "metric": "SLA Garantito"
       }
     ],
@@ -107,7 +107,7 @@
         },
         {
           "value": "< 0.4s",
-          "label": "Caricamento istantaneo dell'infrastruttura digitale su rete mobile"
+          "label": "Caricamento istantaneo dell'infrastruttura digitale su mobile"
         },
         {
           "value": "24h",
@@ -118,13 +118,13 @@
         {
           "name": "Direzione Tecnica e Produzione",
           "location": "Milano · Commessa Industriale",
-          "quote": "Abbiamo affidato a Deco una commessa strategica per il nostro reparto: rispetto rigoroso delle specifiche tecniche, tempi di consegna puntuali e collaudo impeccabile.",
+          "quote": "Abbiamo affidato a Deco Decking e Rivestimenti una commessa strategica per il nostro reparto: rispetto rigoroso delle specifiche tecniche e collaudo impeccabile.",
           "roleOrContext": "Fornitura e collaudo B2B"
         },
         {
           "name": "Responsabile Ufficio Acquisti",
           "location": "Milano e provincia",
-          "quote": "Un partner strutturato e affidabile: preventivazione trasparente senza costi occulti, documentazione tecnica completa e supporto post-vendita immediato.",
+          "quote": "Partner strutturato e affidabile: preventivazione trasparente, documentazione tecnica completa e supporto post-vendita immediato.",
           "roleOrContext": "Accordo quadro di fornitura"
         }
       ]

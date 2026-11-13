@@ -47,70 +47,70 @@
     "logoBrightness": "dark"
   },
   "content": {
-    "badgeTop": "Attivi a Catania e Provincia",
+    "badgeTop": "Etna Verde Multiservice Catania · Operativi a Catania e provincia",
     "heroHeadline": "Etna Verde Multiservice Catania",
     "heroSubheadline": "Soluzioni professionali certificate per la casa e l azienda a Catania e provincia.",
     "heroBullets": [
-      "Intervento e consulenza diretta a Catania e provincia",
-      "Tecnici interni specializzati e preventivo dettagliato",
-      "Garanzia e supporto continuativo certificato"
+      "Sopralluogo gratuito e preventivo dettagliato senza costi nascosti",
+      "Squadre operative esperte con attrezzature proprie e copertura assicurativa",
+      "Rispetto rigoroso delle tempistiche concordate e unico referente tecnico"
     ],
-    "ctaButtonText": "Calcola Preventivo Rapido",
-    "trustMicrocopy": "Senza impegno · Dati protetti GDPR · Contatto diretto da Catania",
+    "ctaButtonText": "Calcola il Tuo Preventivo Rapido",
+    "trustMicrocopy": "Richiesta gratuita e senza impegno · Risposta rapida dal nostro ufficio tecnico",
     "logoLocalPath": "/leads/etnaverde/logo.png",
     "heroImageLocalPath": "/leads/etnaverde/hero.jpg",
-    "heroImageCaption": "Etna Verde Multiservice Catania - Etna Verde Multiservice Catania (Catania)",
+    "heroImageCaption": "Etna Verde Multiservice Catania · Sede operativa e realizzazioni (Catania)",
     "quiz": {
       "question1": {
-        "title": "Quale tipologia di intervento desideri valutare?",
+        "title": "Di quale servizio o soluzione hai bisogno?",
         "options": [
-          "Impianto Residenziale per Casa / Villa",
-          "Soluzione Commerciale / Piccola Impresa",
-          "Ampliamento o Manutenzione Impianto"
+          "Richiesta preventivo dettagliato su misura",
+          "Consulenza tecnica e sopralluogo operativo",
+          "Intervento rapido o assistenza prioritaria"
         ]
       },
       "question2": {
-        "title": "Entro quando vorresti realizzare l intervento indicativamente?",
+        "title": "Entro quando vorresti avviare il progetto?",
         "options": [
-          "Il prima possibile (entro 30 giorni)",
-          "Entro 3-6 mesi",
-          "Valutazione preliminare di fattibilità"
+          "Il prima possibile (Entro 2 settimane)",
+          "Entro 1 - 2 mesi",
+          "Sto valutando diverse soluzioni"
         ]
       },
-      "finalStepTitle": "Simulazione completata! Inserisci i dati per ricevere la stima indicativa."
+      "finalStepTitle": "Perfetto. Inserisci i tuoi dati per ricevere una proposta personalizzata senza impegno:"
     },
     "valueProps": [
       {
-        "title": "Velocita e Trasparenza",
-        "description": "Ricevi una stima economica chiara per il tuo immobile a Catania senza sorprese in corso d opera.",
-        "metric": "24h"
+        "title": "Pianificazione Accurata e Zero Ritardi",
+        "description": "Organizziamo mezzi, personale e materiali prima di iniziare l'intervento a Catania per rispettare ogni scadenza.",
+        "metric": "Tempi Certi"
       },
       {
-        "title": "Certificazioni e Garanzia",
-        "description": "Tutti i componenti e le lavorazioni sono conformi alle normative europee con garanzia diretta.",
-        "metric": "10 Anni"
+        "title": "Massima Cura e Sicurezza in Cantiere",
+        "description": "Etna Verde Multiservice Catania lavora con protezioni dedicate, personale in regola e assicurazione completa su ogni fase.",
+        "metric": "100% Assicurato"
       },
       {
-        "title": "Presidio sul Territorio",
-        "description": "Team operativo locale per sopralluoghi rapidi e assistenza diretta su tutta la provincia di Catania.",
-        "metric": "100% Locale"
+        "title": "Preventivo Chiuso e Referente Unico",
+        "description": "Sai subito quanto spendi e hai un contatto diretto dall'avvio fino alla chiusura dei lavori.",
+        "metric": "Zero Sorprese"
       }
     ],
     "socialProof": {
-      "mainStatValue": "100%",
-      "mainStatLabel": "Copertura Catania e Provincia",
-      "reviewsSummary": "4.9/5 su recensioni verificate sul territorio",
+      "mainStatValue": "98%",
+      "mainStatLabel": "Interventi completati nei tempi e nel budget concordato",
+      "reviewsSummary": "Azienda apprezzata a Catania per puntualita e cura",
       "testimonials": [
         {
-          "name": "Marco G.",
+          "name": "Marco R.",
           "location": "Catania",
-          "quote": "Grande professionalita e chiarezza nei costi sin dal primo contatto telefonico.",
-          "roleOrContext": "Cliente verificato"
+          "quote": "Organizzazione impeccabile fin dal sopralluogo. Squadra veloce, educata e attenta ad ogni dettaglio.",
+          "roleOrContext": "Intervento completato"
         },
         {
-          "name": "Giuseppe R.",
+          "name": "Laura B.",
           "location": "Catania e provincia",
-          "quote": "Lavori eseguiti nei tempi previsti con massima disponibilita del team.",
+          "quote": "Preventivo rispettato alla lettera e tempi anche piu rapidi del previsto. Un riferimento serio sul territorio.",
           "roleOrContext": "Cliente verificato"
         }
       ]

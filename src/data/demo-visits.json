@@ -358,5 +358,89 @@
         "isFirstVisit": true
       }
     ]
+  },
+  "duemmeserramenti": {
+    "slug": "duemmeserramenti",
+    "companyName": "Duemme Serramenti - Costruzione Serramenti",
+    "totalVisits": 1,
+    "uniqueSessions": 1,
+    "firstVisitAt": "2026-11-13T04:39:48.910Z",
+    "lastVisitAt": "2026-11-13T04:39:48.910Z",
+    "lastDevice": "Apple Mac (Desktop)",
+    "lastDeviceType": "Desktop",
+    "visits": [
+      {
+        "id": "vis_1794544788910_ctpsi",
+        "timestamp": "2026-11-13T04:39:48.910Z",
+        "formattedDate": "13 Nov 2026, 05:39",
+        "device": "Apple Mac (Desktop)",
+        "deviceType": "Desktop",
+        "referrer": "diretto / link email",
+        "screen": "817x741",
+        "ip": "::1",
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Antigravity/2.31.2 Chrome/152.0.7977.167 Electron/44.9.1 Safari/537.36",
+        "isFirstVisit": true
+      }
+    ]
+  },
+  "gsindustry": {
+    "slug": "gsindustry",
+    "companyName": "GS INDUSTRY SPA",
+    "totalVisits": 4,
+    "uniqueSessions": 3,
+    "firstVisitAt": "2026-11-13T04:42:11.704Z",
+    "lastVisitAt": "2026-11-13T05:16:32.950Z",
+    "lastDevice": "Apple Mac (Desktop)",
+    "lastDeviceType": "Desktop",
+    "visits": [
+      {
+        "id": "vis_1794546992950_2kke2",
+        "timestamp": "2026-11-13T05:16:32.950Z",
+        "formattedDate": "13 Nov 2026, 06:16",
+        "device": "Apple Mac (Desktop)",
+        "deviceType": "Desktop",
+        "referrer": "diretto / link email",
+        "screen": "648x741",
+        "ip": "::1",
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Antigravity/2.31.2 Chrome/152.0.7977.167 Electron/44.9.1 Safari/537.36",
+        "isFirstVisit": false
+      },
+      {
+        "id": "vis_1794546218461_5yu9t",
+        "timestamp": "2026-11-13T05:03:38.461Z",
+        "formattedDate": "13 Nov 2026, 06:03",
+        "device": "Apple Mac (Desktop)",
+        "deviceType": "Desktop",
+        "referrer": "diretto / link email",
+        "screen": "1280x819",
+        "ip": "::1",
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.0.0 Safari/537.36",
+        "isFirstVisit": true
+      },
+      {
+        "id": "vis_1794546215118_uxwth",
+        "timestamp": "2026-11-13T05:03:35.118Z",
+        "formattedDate": "13 Nov 2026, 06:03",
+        "device": "Apple Mac (Desktop)",
+        "deviceType": "Desktop",
+        "referrer": "diretto / link email",
+        "screen": "860x819",
+        "ip": "::1",
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.0.0 Safari/537.36",
+        "isFirstVisit": true
+      },
+      {
+        "id": "vis_1794544931704_iih0u",
+        "timestamp": "2026-11-13T04:42:11.704Z",
+        "formattedDate": "13 Nov 2026, 05:42",
+        "device": "Apple Mac (Desktop)",
+        "deviceType": "Desktop",
+        "referrer": "diretto / link email",
+        "screen": "817x741",
+        "ip": "::1",
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Antigravity/2.31.2 Chrome/152.0.7977.167 Electron/44.9.1 Safari/537.36",
+        "isFirstVisit": true
+      }
+    ]
   }
 }

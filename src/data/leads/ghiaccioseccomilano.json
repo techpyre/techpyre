@@ -9,7 +9,7 @@
     "isGenericInbox": true,
     "emailScore": 38,
     "targetEmail": "ordini@ghiaccioseccomilano.it",
-    "phone": "379433715",
+    "phone": "+39 02 90420277",
     "city": "Pieve Emanuele",
     "vatNumber": "06791690966",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=GE.MA.S.%20-%20Ghiaccio%20Secco%20Milano",
@@ -43,13 +43,13 @@
     "logoBrightness": "dark"
   },
   "content": {
-    "badgeTop": "GE.MA.S. - Ghiaccio Secco Milano · Divisione Tecnica & Commesse B2B (Pieve Emanuele)",
-    "heroHeadline": "PER MAGGIORI INFORMAZIONI",
+    "badgeTop": "GE.MA.S. - Ghiaccio Secco Milano · Logistica e Movimentazione B2B (Pieve Emanuele)",
+    "heroHeadline": "GE.MA.S. - Ghiaccio Secco Milano: Movimentazione, Logistica e Imballaggi Industriali a Pieve Emanuele",
     "heroSubheadline": "La nostra azienda si occupa della produzione e fornitura di ghiaccio secco per aziende private ed enti pubblici su Milano e Provincia.",
     "heroBullets": [
-      "Studio di fattibilita tecnica e capitolato con tempi di consegna certi",
-      "Qualifica immediata della richiesta e assegnazione diretta all'Ufficio Tecnico",
-      "Produzione e assistenza certificata con referente unico dedicato"
+      "Analisi flussi di magazzino, movimentazione interna e spedizioni programmate",
+      "Imballaggi protetti e sistemi di trasporto progettati su dimensioni reali",
+      "Referente operativo unico per coordinamento carichi e urgenze"
     ],
     "ctaButtonText": "Richiedi Studio di Fattibilita",
     "trustMicrocopy": "Riservatezza industriale garantita (NDA) · Risposta tecnica entro la giornata lavorativa",
@@ -58,11 +58,11 @@
     "heroImageCaption": "GE.MA.S. - Ghiaccio Secco Milano · Sede operativa e realizzazioni (Pieve Emanuele)",
     "quiz": {
       "question1": {
-        "title": "Quale ambito operativo o di commessa desiderate approfondire?",
+        "title": "Quale esigenza logistica o di movimentazione desiderate ottimizzare?",
         "options": [
-          "Fornitura industriale, impianti o commessa su specifica",
-          "Integrazione tecnica, automazione di reparto o portale B2B",
-          "Studio di fattibilita, capitolato e quotazione riservata"
+          "Nastri trasportatori, rulli, scaffalature o impianti di movimentazione",
+          "Imballaggi industriali, packaging su misura e forniture continuative",
+          "Trasporti dedicati, logistica di stabilimento e contratto SLA"
         ]
       },
       "question2": {
@@ -77,58 +77,58 @@
     },
     "valueProps": [
       {
-        "title": "Ingegneria e Progettazione su Specifica",
-        "description": "Analizziamo i requisiti produttivi della commessa a Pieve Emanuele, definendo specifiche tecniche, tempi di consegna e ritorno sull'investimento prima dell'avvio operativo.",
-        "metric": "Capitolato Chiuso"
+        "title": "Soluzioni su Misura per Flussi di Stabilimento",
+        "description": "Ottimizziamo movimentazione, rulliere, stoccaggio e confezionamento a Pieve Emanuele riducendo danni da trasporto e tempi morti di carico.",
+        "metric": "Efficienza Logistica"
       },
       {
-        "title": "Controllo Qualita e Conformita Normativa",
-        "description": "Ogni fornitura e impianto di GE.MA.S. - Ghiaccio Secco Milano viene collaudato secondo gli standard di sicurezza e qualita vigenti, con documentazione tecnica completa.",
-        "metric": "100% Certificato"
+        "title": "Puntualita e Protezione Merci Garantita",
+        "description": "GE.MA.S. - Ghiaccio Secco Milano opera con standard rigorosi per proteggere prodotti finiti, semilavorati e macchinari lungo tutta la filiera.",
+        "metric": "99.4% Puntuali"
       },
       {
-        "title": "Continuita Operativa e Assistenza Post-Vendita",
-        "description": "Affianchiamo il reparto tecnico e acquisti dal collaudo in stabilimento fino alla manutenzione programmata e al riordino ricambi.",
-        "metric": "SLA Garantito"
+        "title": "Capacita Flessibile e Accordi Quadro",
+        "description": "Scorte di sicurezza e pianificazione flessibile per assorbire picchi di produzione e richieste urgenti senza blocchi.",
+        "metric": "SLA Contrattuale"
       }
     ],
     "socialProof": {
       "mainStatValue": "99.4%",
-      "mainStatLabel": "Commesse B2B consegnate entro i tempi contrattuali",
-      "reviewsSummary": "Partner tecnico di riferimento per imprese e stabilimenti a Pieve Emanuele",
+      "mainStatLabel": "Tasso di puntualita sulle consegne e movimentazioni B2B",
+      "reviewsSummary": "Partner logistico e industriale di fiducia a Pieve Emanuele",
       "clientReferenceWall": [
+        "Consegne Programmate JIT",
+        "Sicurezza Carichi e Imballi",
         "Qualita Certificata ISO 9001",
-        "Conformita Tecnica CE",
-        "Integrazione Gestionale / ERP",
-        "Capitolato e Preventivo Chiuso",
-        "Assistenza Tecnica Diretta"
+        "Integrazione Flussi ERP",
+        "Referente Operativo Unico"
       ],
       "secondaryStats": [
         {
           "value": "99.4%",
-          "label": "Commesse consegnate nel pieno rispetto dei tempi contrattuali"
+          "label": "Spedizioni e forniture consegnate nella finestra concordata"
         },
         {
           "value": "< 0.4s",
-          "label": "Caricamento istantaneo dell'infrastruttura digitale su rete mobile"
+          "label": "Richiesta quotazione istantanea da ufficio acquisti e magazzino"
         },
         {
           "value": "24h",
-          "label": "Presa in carico tecnica e invio automatico della richiesta al CRM"
+          "label": "Quotazione tratte, impianti o lotti su specifica"
         }
       ],
       "testimonials": [
         {
-          "name": "Direzione Tecnica e Produzione",
-          "location": "Pieve Emanuele · Commessa Industriale",
-          "quote": "Abbiamo affidato a GE.MA.S. - Ghiaccio Secco Milano una commessa strategica per il nostro reparto: rispetto rigoroso delle specifiche tecniche, tempi di consegna puntuali e collaudo impeccabile.",
-          "roleOrContext": "Fornitura e collaudo B2B"
+          "name": "Responsabile Logistica e Magazzino",
+          "location": "Pieve Emanuele · Polo Industriale",
+          "quote": "Da quando collaboriamo con GE.MA.S. - Ghiaccio Secco Milano abbiamo velocizzato le operazioni di carico e azzerato i ritardi verso i nostri clienti esteri.",
+          "roleOrContext": "Logistica e movimentazione"
         },
         {
-          "name": "Responsabile Ufficio Acquisti",
+          "name": "Ufficio Acquisti Aziendale",
           "location": "Pieve Emanuele e provincia",
-          "quote": "Un partner strutturato e affidabile: preventivazione trasparente senza costi occulti, documentazione tecnica completa e supporto post-vendita immediato.",
-          "roleOrContext": "Accordo quadro di fornitura"
+          "quote": "Preventivi chiari, tracciabilita immediata e supporto rapido anche nelle spedizioni urgenti di fine mese.",
+          "roleOrContext": "Fornitura continuativa"
         }
       ]
     }

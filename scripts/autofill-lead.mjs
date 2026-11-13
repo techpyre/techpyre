@@ -35,20 +35,25 @@ const scripts = Number(p.renderBlockingScripts || 12);
 const mobileScore = Math.max(15, Math.min(65, Math.round(100 - lcp * 7.5)));
 const email = p.extractedEmails?.[0] || '';
 
-// Filtra numeri fittizi o ripetuti (es. 3333333333, 3636363636)
+// Filtra numeri fittizi o ripetuti (es. 3333333333, 3636363636, 0112776)
 const validPhones = (p.extractedPhones || []).filter((ph) => {
-  const digits = ph.replace(/\D/g, '');
-  if (digits.length < 8 || digits.length > 13) return false;
-  if (/^(\d)\1+$/.test(digits)) return false;
-  if (digits.startsWith('0000')) return false;
-  return true;
+  let digits = ph.replace(/\D/g, '');
+  if (digits.startsWith('0039') && digits.length >= 12) digits = digits.slice(4);
+  else if (digits.startsWith('39') && digits.length >= 11 && (digits[2] === '0' || digits[2] === '3' || digits[2] === '8')) digits = digits.slice(2);
+  if (/0{5,}/.test(digits) || new Set(digits.split('')).size < 4) return false;
+  return (
+    /^3\d{9}$/.test(digits) ||
+    /^8(?:00|03|40|48)\d{6,7}$/.test(digits) ||
+    /^0\d{8,10}$/.test(digits) ||
+    /^(?:02|06)\d{6,8}$/.test(digits)
+  );
 });
 
-// Preferisci cellulare italiano (3xx) o fisso italiano coerente
+// Preferisci cellulare italiano (3xx) o fisso italiano coerente (mai placeholder finto 02 000000)
 const phone = validPhones.find((ph) => {
   const d = ph.replace(/\D/g, '');
   return d.startsWith('393') || (d.startsWith('3') && d.length === 10);
-}) || validPhones[0] || '+39 02 000000';
+}) || validPhones[0] || '';
 
 const vat = p.extractedVat && p.extractedVat !== 'Non trovata' ? p.extractedVat : undefined;
 
@@ -115,14 +120,21 @@ for (const item of ITALIAN_CITIES) {
   }
 }
 
-// Archetipo
+// Archetipo (Registro Chiuso: esclusivamente i 3 template ufficiali in src/components/templates/)
+const OFFICIAL_ARCHETYPES = ['b2b-authority', 'local-leadgen', 'medical-clinic'];
+if (archetypeArg && !OFFICIAL_ARCHETYPES.includes(archetypeArg)) {
+  console.error(`❌ Archetipo non conforme "${archetypeArg}". Ammessi solo: ${OFFICIAL_ARCHETYPES.join(', ')}`);
+  process.exit(1);
+}
 let archetype = archetypeArg || 'local-leadgen';
 if (!archetypeArg) {
   if (
     corpus.includes('dentist') ||
     corpus.includes('odontoiatr') ||
-    corpus.includes('clinic') ||
+    corpus.includes('clinica dentale') ||
+    corpus.includes('studio dentistico') ||
     corpus.includes('poliambulatorio') ||
+    corpus.includes('studio medico') ||
     corpus.includes('implantolog')
   ) {
     archetype = 'medical-clinic';
@@ -134,7 +146,25 @@ if (!archetypeArg) {
     corpus.includes('manifattur') ||
     corpus.includes('macchinari') ||
     corpus.includes('carpenteri') ||
+    corpus.includes('meccanic') ||
+    corpus.includes('taglio laser') ||
+    corpus.includes('lamiera') ||
+    corpus.includes('oleodinamic') ||
+    corpus.includes('pneumatic') ||
+    corpus.includes('stampagg') ||
+    corpus.includes('stampi') ||
+    corpus.includes('materie plastiche') ||
+    corpus.includes('guarnizioni') ||
+    corpus.includes('galvanic') ||
+    corpus.includes('cnc') ||
+    corpus.includes('torneria') ||
+    corpus.includes('nastri trasportatori') ||
+    corpus.includes('compressori') ||
+    corpus.includes('imballagg') ||
+    corpus.includes('packaging') ||
+    corpus.includes('bonifiche ambientali') ||
     corpus.includes('logistic') ||
+    corpus.includes('trasporti') ||
     corpus.includes('distribut') ||
     corpus.includes('fornitur') ||
     corpus.includes('stabilimento')

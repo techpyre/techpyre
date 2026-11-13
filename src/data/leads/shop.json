@@ -57,7 +57,7 @@
     "ctaButtonText": "Calcola Preventivo Rapido",
     "trustMicrocopy": "Senza impegno · Dati protetti GDPR · Contatto diretto da Italia",
     "logoLocalPath": "/leads/shop/logo.png",
-    "heroImageLocalPath": "/leads/shop/hero.jpg",
+    "heroImageLocalPath": "",
     "heroImageCaption": "colorshopweb (Italia)",
     "quiz": {
       "question1": {

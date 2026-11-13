@@ -9,7 +9,7 @@
     "isGenericInbox": true,
     "emailScore": 35,
     "targetEmail": "info@bremtur.it",
-    "phone": "0231017",
+    "phone": "+39 035 617989",
     "city": "Presezzo",
     "vatNumber": "01936380169",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Bremtur%20Srl",
@@ -35,21 +35,21 @@
     "activeAdCopySummary": "BREMTUR S.r.l. specializzata in taglio laser e realizzazione espositori in plastica e legno. Affidabilità, qualità e innovazione al tuo serv..."
   },
   "theme": {
-    "primaryHex": "#0B1E36",
+    "primaryHex": "#008070",
     "accentHex": "#B8860B",
     "darkBgHex": "#0B1E36",
     "borderRadius": "8px",
     "headerBgMode": "light",
-    "logoBrightness": "dark"
+    "logoBrightness": "light"
   },
   "content": {
-    "badgeTop": "Bremtur Srl · Divisione Tecnica & Commesse B2B (Presezzo)",
+    "badgeTop": "Bremtur Srl · Produzione Industriale e Carpenteria (Presezzo)",
     "heroHeadline": "BREMTUR S.r.l. | Taglio Laser e Realizzazione Espositori | Presezzo, Bergamo",
     "heroSubheadline": "BREMTUR S.r.l. specializzata in taglio laser e realizzazione espositori in plastica e legno. Affidabilità, qualità e innovazione al tuo servizio a Presezzo, Bergamo.",
     "heroBullets": [
-      "Studio di fattibilita tecnica e capitolato con tempi di consegna certi",
-      "Qualifica immediata della richiesta e assegnazione diretta all'Ufficio Tecnico",
-      "Produzione e assistenza certificata con referente unico dedicato"
+      "Analisi disegni CAD/STEP e studio di fattibilita con tempi di consegna certi",
+      "Controllo dimensionale su lotti piccoli, medi e serie continuative",
+      "Tracciabilita dei materiali, certificati di collaudo e referente unico B2B"
     ],
     "ctaButtonText": "Richiedi Studio di Fattibilita",
     "trustMicrocopy": "Riservatezza industriale garantita (NDA) · Risposta tecnica entro la giornata lavorativa",
@@ -58,11 +58,11 @@
     "heroImageCaption": "Bremtur Srl · Sede operativa e realizzazioni (Presezzo)",
     "quiz": {
       "question1": {
-        "title": "Quale ambito operativo o di commessa desiderate approfondire?",
+        "title": "Quale lavorazione meccanica o fornitura su disegno vi occorre?",
         "options": [
-          "Fornitura industriale, impianti o commessa su specifica",
-          "Integrazione tecnica, automazione di reparto o portale B2B",
-          "Studio di fattibilita, capitolato e quotazione riservata"
+          "Taglio laser, piegatura lamiera o carpenteria metallica su disegno",
+          "Lavorazioni CNC, stampi, attrezzature o serie ripetitive B2B",
+          "Studio di fattibilita tecnica, prototipazione e quotazione lotto"
         ]
       },
       "question2": {
@@ -77,58 +77,58 @@
     },
     "valueProps": [
       {
-        "title": "Ingegneria e Progettazione su Specifica",
-        "description": "Analizziamo i requisiti produttivi della commessa a Presezzo, definendo specifiche tecniche, tempi di consegna e ritorno sull'investimento prima dell'avvio operativo.",
-        "metric": "Capitolato Chiuso"
+        "title": "Ingegnerizzazione Disegni e Preventivazione Rapida",
+        "description": "Valutiamo tolleranze, spessori e trattamenti direttamente con il vostro ufficio tecnico a Presezzo, riducendo i fermi macchina e gli scarti di assemblaggio.",
+        "metric": "Risposta 24h"
       },
       {
-        "title": "Controllo Qualita e Conformita Normativa",
-        "description": "Ogni fornitura e impianto di Bremtur Srl viene collaudato secondo gli standard di sicurezza e qualita vigenti, con documentazione tecnica completa.",
-        "metric": "100% Certificato"
+        "title": "Parco Macchine CNC e Controllo Qualita",
+        "description": "Ogni lotto prodotto da Bremtur Srl segue procedure di verifica dimensionale e conformita dei materiali per garantire ripetibilita costante.",
+        "metric": "100% Verificato"
       },
       {
-        "title": "Continuita Operativa e Assistenza Post-Vendita",
-        "description": "Affianchiamo il reparto tecnico e acquisti dal collaudo in stabilimento fino alla manutenzione programmata e al riordino ricambi.",
-        "metric": "SLA Garantito"
+        "title": "Consegne Programmate Kanban e Continuita",
+        "description": "Gestiamo commesse spot e accordi quadro annuali rispettando le finestre di consegna concordate con il vostro reparto logistica.",
+        "metric": "Puntualita 99.4%"
       }
     ],
     "socialProof": {
       "mainStatValue": "99.4%",
-      "mainStatLabel": "Commesse B2B consegnate entro i tempi contrattuali",
-      "reviewsSummary": "Partner tecnico di riferimento per imprese e stabilimenti a Presezzo",
+      "mainStatLabel": "Lotti lavorati e consegnati nel pieno rispetto delle tolleranze",
+      "reviewsSummary": "Partner manifatturiero di riferimento per industrie a Presezzo",
       "clientReferenceWall": [
+        "Lavorazioni su Disegno CAD/STEP",
+        "Certificazioni Materiali 3.1",
         "Qualita Certificata ISO 9001",
-        "Conformita Tecnica CE",
-        "Integrazione Gestionale / ERP",
-        "Capitolato e Preventivo Chiuso",
-        "Assistenza Tecnica Diretta"
+        "Controllo Dimensionale Lotti",
+        "Forniture OEM e Conto Terzi"
       ],
       "secondaryStats": [
         {
           "value": "99.4%",
-          "label": "Commesse consegnate nel pieno rispetto dei tempi contrattuali"
+          "label": "Lotti consegnati entro la data pattuita con il cliente B2B"
         },
         {
           "value": "< 0.4s",
-          "label": "Caricamento istantaneo dell'infrastruttura digitale su rete mobile"
+          "label": "Caricamento portale tecnico per richiesta offerte da mobile"
         },
         {
           "value": "24h",
-          "label": "Presa in carico tecnica e invio automatico della richiesta al CRM"
+          "label": "Verifica fattibilita tecnica con il nostro Ufficio Tecnico"
         }
       ],
       "testimonials": [
         {
-          "name": "Direzione Tecnica e Produzione",
-          "location": "Presezzo · Commessa Industriale",
-          "quote": "Abbiamo affidato a Bremtur Srl una commessa strategica per il nostro reparto: rispetto rigoroso delle specifiche tecniche, tempi di consegna puntuali e collaudo impeccabile.",
-          "roleOrContext": "Fornitura e collaudo B2B"
+          "name": "Direzione Produzione e Officina",
+          "location": "Presezzo · Fornitura Conto Terzi",
+          "quote": "Affidiamo a Bremtur Srl i nostri particolari meccanici e lamiere piegate: precisione costante sui montaggi e consegne sempre allineate al piano produttivo.",
+          "roleOrContext": "Lavorazioni CNC e Lamiera"
         },
         {
           "name": "Responsabile Ufficio Acquisti",
           "location": "Presezzo e provincia",
-          "quote": "Un partner strutturato e affidabile: preventivazione trasparente senza costi occulti, documentazione tecnica completa e supporto post-vendita immediato.",
-          "roleOrContext": "Accordo quadro di fornitura"
+          "quote": "Interlocutore tecnico preparato: tempi rapidi su quotazioni multi-articolo, documenti completi e zero difformita in accettazione.",
+          "roleOrContext": "Accordo quadro B2B"
         }
       ]
     }

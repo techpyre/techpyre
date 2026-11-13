@@ -1,6 +1,6 @@
 {
   "slug": "bemastampistampaggio",
-  "archetype": "local-leadgen",
+  "archetype": "b2b-authority",
   "meta": {
     "companyName": "BEMA srl",
     "decisionMakerName": "Direzione BEMA srl",
@@ -35,79 +35,100 @@
     "activeAdCopySummary": "La Bema costruisce stampi per materie plastiche e pressofusione. Dimensioni mm 600 x 1000. La progettazione degli stampi viene eseguita inte..."
   },
   "theme": {
-    "primaryHex": "#1E3A8A",
-    "accentHex": "#2563EB",
+    "primaryHex": "#0B1E36",
+    "accentHex": "#B8860B",
     "darkBgHex": "#0B1E36",
-    "borderRadius": "12px",
+    "borderRadius": "8px",
     "headerBgMode": "light",
     "logoBrightness": "dark"
   },
   "content": {
-    "badgeTop": "BEMA srl · Operativi a Landriano e provincia",
+    "badgeTop": "BEMA srl · Produzione Industriale e Carpenteria (Landriano)",
     "heroHeadline": "Bema Stampi Stampaggio Home - Bema Stampi Stampaggio",
     "heroSubheadline": "La Bema costruisce stampi per materie plastiche e pressofusione. Dimensioni mm 600 x 1000. La progettazione degli stampi viene eseguita interamente con sistemi CAD di modellazione tridimensionale POWERSHAPE DEL",
     "heroBullets": [
-      "Sopralluogo tecnico e preventivo chiaro senza impegno",
-      "Materiali certificati e assistenza diretta con personale qualificato",
-      "Tempi di intervento garantiti e gestione completa della pratica"
+      "Analisi disegni CAD/STEP e studio di fattibilita con tempi di consegna certi",
+      "Controllo dimensionale su lotti piccoli, medi e serie continuative",
+      "Tracciabilita dei materiali, certificati di collaudo e referente unico B2B"
     ],
-    "ctaButtonText": "Calcola il Tuo Preventivo Rapido",
-    "trustMicrocopy": "Richiesta gratuita e senza impegno · Risposta rapida dal nostro ufficio tecnico",
+    "ctaButtonText": "Richiedi Studio di Fattibilita",
+    "trustMicrocopy": "Riservatezza industriale garantita (NDA) · Risposta tecnica entro la giornata lavorativa",
     "logoLocalPath": "/leads/bemastampistampaggio/logo.png",
     "heroImageLocalPath": "/leads/bemastampistampaggio/hero.jpg",
     "heroImageCaption": "BEMA srl · Sede operativa e realizzazioni (Landriano)",
     "quiz": {
       "question1": {
-        "title": "Di quale servizio o soluzione hai bisogno?",
+        "title": "Quale lavorazione meccanica o fornitura su disegno vi occorre?",
         "options": [
-          "Richiesta preventivo dettagliato su misura",
-          "Consulenza tecnica e sopralluogo operativo",
-          "Intervento rapido o assistenza prioritaria"
+          "Taglio laser, piegatura lamiera o carpenteria metallica su disegno",
+          "Lavorazioni CNC, stampi, attrezzature o serie ripetitive B2B",
+          "Studio di fattibilita tecnica, prototipazione e quotazione lotto"
         ]
       },
       "question2": {
-        "title": "Entro quando vorresti avviare il progetto?",
+        "title": "Qual e l'orizzonte temporale previsto per il progetto?",
         "options": [
-          "Il prima possibile (Entro 2 settimane)",
-          "Entro 1 - 2 mesi",
-          "Sto valutando diverse soluzioni"
+          "Avvio operativo urgente (entro 30 giorni)",
+          "Pianificazione nel trimestre in corso",
+          "Valutazione tecnica e di budget preliminare"
         ]
       },
-      "finalStepTitle": "Perfetto. Inserisci i tuoi dati per ricevere una proposta personalizzata senza impegno:"
+      "finalStepTitle": "Specifiche registrate. Inserisci i riferimenti aziendali per il colloquio con l'Ufficio Tecnico:"
     },
     "valueProps": [
       {
-        "title": "Qualita Certificata e Garanzia Scritta",
-        "description": "Ogni intervento di BEMA srl utilizza materiali selezionati e procedure certificate per garantire durata e prestazioni nel tempo.",
-        "metric": "100% Garantito"
+        "title": "Ingegnerizzazione Disegni e Preventivazione Rapida",
+        "description": "Valutiamo tolleranze, spessori e trattamenti direttamente con il vostro ufficio tecnico a Landriano, riducendo i fermi macchina e gli scarti di assemblaggio.",
+        "metric": "Risposta 24h"
       },
       {
-        "title": "Preventivo Chiaro e Zero Sorprese",
-        "description": "Valutazione trasparente delle soluzioni piu adatte alle tue esigenze a Landriano, con tempi e costi definiti prima dell'inizio dei lavori.",
-        "metric": "Preventivo Chiuso"
+        "title": "Parco Macchine CNC e Controllo Qualita",
+        "description": "Ogni lotto prodotto da BEMA srl segue procedure di verifica dimensionale e conformita dei materiali per garantire ripetibilita costante.",
+        "metric": "100% Verificato"
       },
       {
-        "title": "Assistenza Tecnica Diretta",
-        "description": "Un unico referente tecnico ti segue dal primo sopralluogo fino al collaudo finale e all'assistenza post-vendita.",
-        "metric": "Supporto Diretto"
+        "title": "Consegne Programmate Kanban e Continuita",
+        "description": "Gestiamo commesse spot e accordi quadro annuali rispettando le finestre di consegna concordate con il vostro reparto logistica.",
+        "metric": "Puntualita 99.4%"
       }
     ],
     "socialProof": {
-      "mainStatValue": "98%",
-      "mainStatLabel": "Clienti soddisfatti del servizio e dell'assistenza",
-      "reviewsSummary": "Azienda di riferimento a Landriano per affidabilita e precisione",
-      "testimonials": [
+      "mainStatValue": "99.4%",
+      "mainStatLabel": "Lotti lavorati e consegnati nel pieno rispetto delle tolleranze",
+      "reviewsSummary": "Partner manifatturiero di riferimento per industrie a Landriano",
+      "clientReferenceWall": [
+        "Lavorazioni su Disegno CAD/STEP",
+        "Certificazioni Materiali 3.1",
+        "Qualita Certificata ISO 9001",
+        "Controllo Dimensionale Lotti",
+        "Forniture OEM e Conto Terzi"
+      ],
+      "secondaryStats": [
         {
-          "name": "Marco R.",
-          "location": "Landriano",
-          "quote": "Servizio impeccabile da parte del team di BEMA srl. Puntuali, precisi e disponibilissimi in ogni fase del lavoro.",
-          "roleOrContext": "Cliente verificato"
+          "value": "99.4%",
+          "label": "Lotti consegnati entro la data pattuita con il cliente B2B"
         },
         {
-          "name": "Laura B.",
-          "location": "Landriano",
-          "quote": "Ottima consulenza iniziale e grande cura nei dettagli. Preventivo rispettato al centesimo e risultato superiore alle aspettative.",
-          "roleOrContext": "Intervento completato"
+          "value": "< 0.4s",
+          "label": "Caricamento portale tecnico per richiesta offerte da mobile"
+        },
+        {
+          "value": "24h",
+          "label": "Verifica fattibilita tecnica con il nostro Ufficio Tecnico"
+        }
+      ],
+      "testimonials": [
+        {
+          "name": "Direzione Produzione e Officina",
+          "location": "Landriano · Fornitura Conto Terzi",
+          "quote": "Affidiamo a BEMA srl i nostri particolari meccanici e lamiere piegate: precisione costante sui montaggi e consegne sempre allineate al piano produttivo.",
+          "roleOrContext": "Lavorazioni CNC e Lamiera"
+        },
+        {
+          "name": "Responsabile Ufficio Acquisti",
+          "location": "Landriano e provincia",
+          "quote": "Interlocutore tecnico preparato: tempi rapidi su quotazioni multi-articolo, documenti completi e zero difformita in accettazione.",
+          "roleOrContext": "Accordo quadro B2B"
         }
       ]
     }

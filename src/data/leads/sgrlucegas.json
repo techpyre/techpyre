@@ -40,13 +40,13 @@
     "logoBrightness": "dark"
   },
   "content": {
-    "badgeTop": "SGR Luce e Gas · Divisione Tecnica & Commesse B2B (Rimini)",
+    "badgeTop": "SGR Luce e Gas · Servizi Tecnici e Infrastrutture B2B (Rimini)",
     "heroHeadline": "SGR Luce e Gas - Guardaci sotto una nuova Luce - Scopri le Offerte",
     "heroSubheadline": "Le Migliori Offerte per la casa, Scopri i vantaggi di passare a SGR Luce e Gas, Personalizza con noi la tua energia. Scegli di Risparmiare",
     "heroBullets": [
-      "Studio di fattibilita tecnica e capitolato con tempi di consegna certi",
-      "Qualifica immediata della richiesta e assegnazione diretta all'Ufficio Tecnico",
-      "Produzione e assistenza certificata con referente unico dedicato"
+      "Sopralluogo tecnico in stabilimento e piano operativo senza fermo attivita",
+      "Gestione completa pratiche autorizzative, certificazioni e conformita ambientale",
+      "Garanzie scritte su sicurezza, rendimento e assistenza post-intervento"
     ],
     "ctaButtonText": "Richiedi Studio di Fattibilita",
     "trustMicrocopy": "Riservatezza industriale garantita (NDA) · Risposta tecnica entro la giornata lavorativa",
@@ -55,11 +55,11 @@
     "heroImageCaption": "SGR Luce e Gas · Sede operativa e realizzazioni (Rimini)",
     "quiz": {
       "question1": {
-        "title": "Quale ambito operativo o di commessa desiderate approfondire?",
+        "title": "Quale intervento tecnico per il vostro stabilimento state pianificando?",
         "options": [
-          "Fornitura industriale, impianti o commessa su specifica",
-          "Integrazione tecnica, automazione di reparto o portale B2B",
-          "Studio di fattibilita, capitolato e quotazione riservata"
+          "Bonifiche ambientali, depurazione acque o gestione rifiuti industriali",
+          "Coperture industriali, impianti fotovoltaici aziendali o efficienza energetica",
+          "Sopralluogo tecnico in stabilimento, perizia e capitolato chiavi in mano"
         ]
       },
       "question2": {
@@ -74,58 +74,58 @@
     },
     "valueProps": [
       {
-        "title": "Ingegneria e Progettazione su Specifica",
-        "description": "Analizziamo i requisiti produttivi della commessa a Rimini, definendo specifiche tecniche, tempi di consegna e ritorno sull'investimento prima dell'avvio operativo.",
-        "metric": "Capitolato Chiuso"
+        "title": "Perizia Tecnica e Piano Esecutivo Chiaro",
+        "description": "Analizziamo lo stato reale dell'impianto o della copertura a Rimini definendo costi, tempistiche e ritorni operativi prima del cantiere.",
+        "metric": "Progetto Chiuso"
       },
       {
-        "title": "Controllo Qualita e Conformita Normativa",
-        "description": "Ogni fornitura e impianto di SGR Luce e Gas viene collaudato secondo gli standard di sicurezza e qualita vigenti, con documentazione tecnica completa.",
-        "metric": "100% Certificato"
+        "title": "Piena Conformita Normativa e Ambientale",
+        "description": "SGR Luce e Gas gestisce interventi complessi in sicurezza, rilasciando tutta la documentazione tecnica e le certificazioni richieste.",
+        "metric": "100% A Norma"
       },
       {
-        "title": "Continuita Operativa e Assistenza Post-Vendita",
-        "description": "Affianchiamo il reparto tecnico e acquisti dal collaudo in stabilimento fino alla manutenzione programmata e al riordino ricambi.",
+        "title": "Manutenzione Programmata e Assistenza Diretta",
+        "description": "Un referente tecnico dedicato segue l'azienda dalla realizzazione fino ai controlli periodici e all'assistenza continua.",
         "metric": "SLA Garantito"
       }
     ],
     "socialProof": {
       "mainStatValue": "99.4%",
-      "mainStatLabel": "Commesse B2B consegnate entro i tempi contrattuali",
-      "reviewsSummary": "Partner tecnico di riferimento per imprese e stabilimenti a Rimini",
+      "mainStatLabel": "Commesse industriali chiuse in sicurezza e nei tempi concordati",
+      "reviewsSummary": "Partner tecnico specializzato per aziende e capannoni a Rimini",
       "clientReferenceWall": [
+        "Conformita Sicurezza D.Lgs 81/08",
+        "Certificazioni Impianti e Ambiente",
         "Qualita Certificata ISO 9001",
-        "Conformita Tecnica CE",
-        "Integrazione Gestionale / ERP",
-        "Capitolato e Preventivo Chiuso",
+        "Cantieri Senza Fermo Produzione",
         "Assistenza Tecnica Diretta"
       ],
       "secondaryStats": [
         {
           "value": "99.4%",
-          "label": "Commesse consegnate nel pieno rispetto dei tempi contrattuali"
+          "label": "Interventi eseguiti nel rispetto delle scadenze di cantiere"
         },
         {
           "value": "< 0.4s",
-          "label": "Caricamento istantaneo dell'infrastruttura digitale su rete mobile"
+          "label": "Accesso rapido a perizie e richieste tecniche su mobile"
         },
         {
           "value": "24h",
-          "label": "Presa in carico tecnica e invio automatico della richiesta al CRM"
+          "label": "Pianificazione sopralluogo tecnico in stabilimento"
         }
       ],
       "testimonials": [
         {
-          "name": "Direzione Tecnica e Produzione",
-          "location": "Rimini · Commessa Industriale",
-          "quote": "Abbiamo affidato a SGR Luce e Gas una commessa strategica per il nostro reparto: rispetto rigoroso delle specifiche tecniche, tempi di consegna puntuali e collaudo impeccabile.",
-          "roleOrContext": "Fornitura e collaudo B2B"
+          "name": "Direzione Tecnica e HSE",
+          "location": "Rimini · Stabilimento Produttivo",
+          "quote": "Cantiere organizzato in modo impeccabile da SGR Luce e Gas: lavorazioni svolte senza fermare la nostra produzione e documentazione esemplare.",
+          "roleOrContext": "Intervento in stabilimento"
         },
         {
-          "name": "Responsabile Ufficio Acquisti",
+          "name": "Amministrazione e Impianti",
           "location": "Rimini e provincia",
-          "quote": "Un partner strutturato e affidabile: preventivazione trasparente senza costi occulti, documentazione tecnica completa e supporto post-vendita immediato.",
-          "roleOrContext": "Accordo quadro di fornitura"
+          "quote": "Preventivo dettagliato senza voci impreviste e supporto prezioso su tutta la parte autorizzativa.",
+          "roleOrContext": "Servizio chiavi in mano"
         }
       ]
     }

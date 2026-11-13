@@ -32,7 +32,7 @@
       "Colli di bottiglia commerciali: le richieste arrivano come semplici email isolate senza instradamento automatico e senza tracciamento strutturato della trattativa."
     ],
     "activeAdHeadline": "Fratelli Traverso Traslochi - Traslocatori a Genova e nel Mondo dal 1960",
-    "activeAdCopySummary": "Fratelli Traverso Traslochi a Genova dal 1960 insieme a voi La nostra ditta di famiglia ha una&nbsp;lunga tradizione nel settore dei trasloc..."
+    "activeAdCopySummary": "Fratelli Traverso Traslochi a Genova dal 1960 insieme a voi La nostra ditta di famiglia ha una lunga tradizione nel settore dei traslochi, g..."
   },
   "theme": {
     "primaryHex": "#0B1E36",
@@ -43,13 +43,13 @@
     "logoBrightness": "dark"
   },
   "content": {
-    "badgeTop": "F.lli Traverso Traslochi · Divisione Tecnica & Commesse B2B (Genova)",
+    "badgeTop": "F.lli Traverso Traslochi · Logistica e Movimentazione B2B (Genova)",
     "heroHeadline": "Fratelli Traverso Traslochi - Traslocatori a Genova e nel Mondo dal 1960",
     "heroSubheadline": "Fratelli Traverso Traslochi a Genova dal 1960 insieme a voi La nostra ditta di famiglia ha una lunga tradizione nel settore dei traslochi, garantendo capacità, efficienza e qualità da 60 anni. Il tuo trasl",
     "heroBullets": [
-      "Studio di fattibilita tecnica e capitolato con tempi di consegna certi",
-      "Qualifica immediata della richiesta e assegnazione diretta all'Ufficio Tecnico",
-      "Produzione e assistenza certificata con referente unico dedicato"
+      "Analisi flussi di magazzino, movimentazione interna e spedizioni programmate",
+      "Imballaggi protetti e sistemi di trasporto progettati su dimensioni reali",
+      "Referente operativo unico per coordinamento carichi e urgenze"
     ],
     "ctaButtonText": "Richiedi Studio di Fattibilita",
     "trustMicrocopy": "Riservatezza industriale garantita (NDA) · Risposta tecnica entro la giornata lavorativa",
@@ -58,11 +58,11 @@
     "heroImageCaption": "F.lli Traverso Traslochi · Sede operativa e realizzazioni (Genova)",
     "quiz": {
       "question1": {
-        "title": "Quale ambito operativo o di commessa desiderate approfondire?",
+        "title": "Quale esigenza logistica o di movimentazione desiderate ottimizzare?",
         "options": [
-          "Fornitura industriale, impianti o commessa su specifica",
-          "Integrazione tecnica, automazione di reparto o portale B2B",
-          "Studio di fattibilita, capitolato e quotazione riservata"
+          "Nastri trasportatori, rulli, scaffalature o impianti di movimentazione",
+          "Imballaggi industriali, packaging su misura e forniture continuative",
+          "Trasporti dedicati, logistica di stabilimento e contratto SLA"
         ]
       },
       "question2": {
@@ -77,58 +77,58 @@
     },
     "valueProps": [
       {
-        "title": "Ingegneria e Progettazione su Specifica",
-        "description": "Analizziamo i requisiti produttivi della commessa a Genova, definendo specifiche tecniche, tempi di consegna e ritorno sull'investimento prima dell'avvio operativo.",
-        "metric": "Capitolato Chiuso"
+        "title": "Soluzioni su Misura per Flussi di Stabilimento",
+        "description": "Ottimizziamo movimentazione, rulliere, stoccaggio e confezionamento a Genova riducendo danni da trasporto e tempi morti di carico.",
+        "metric": "Efficienza Logistica"
       },
       {
-        "title": "Controllo Qualita e Conformita Normativa",
-        "description": "Ogni fornitura e impianto di F.lli Traverso Traslochi viene collaudato secondo gli standard di sicurezza e qualita vigenti, con documentazione tecnica completa.",
-        "metric": "100% Certificato"
+        "title": "Puntualita e Protezione Merci Garantita",
+        "description": "F.lli Traverso Traslochi opera con standard rigorosi per proteggere prodotti finiti, semilavorati e macchinari lungo tutta la filiera.",
+        "metric": "99.4% Puntuali"
       },
       {
-        "title": "Continuita Operativa e Assistenza Post-Vendita",
-        "description": "Affianchiamo il reparto tecnico e acquisti dal collaudo in stabilimento fino alla manutenzione programmata e al riordino ricambi.",
-        "metric": "SLA Garantito"
+        "title": "Capacita Flessibile e Accordi Quadro",
+        "description": "Scorte di sicurezza e pianificazione flessibile per assorbire picchi di produzione e richieste urgenti senza blocchi.",
+        "metric": "SLA Contrattuale"
       }
     ],
     "socialProof": {
       "mainStatValue": "99.4%",
-      "mainStatLabel": "Commesse B2B consegnate entro i tempi contrattuali",
-      "reviewsSummary": "Partner tecnico di riferimento per imprese e stabilimenti a Genova",
+      "mainStatLabel": "Tasso di puntualita sulle consegne e movimentazioni B2B",
+      "reviewsSummary": "Partner logistico e industriale di fiducia a Genova",
       "clientReferenceWall": [
+        "Consegne Programmate JIT",
+        "Sicurezza Carichi e Imballi",
         "Qualita Certificata ISO 9001",
-        "Conformita Tecnica CE",
-        "Integrazione Gestionale / ERP",
-        "Capitolato e Preventivo Chiuso",
-        "Assistenza Tecnica Diretta"
+        "Integrazione Flussi ERP",
+        "Referente Operativo Unico"
       ],
       "secondaryStats": [
         {
           "value": "99.4%",
-          "label": "Commesse consegnate nel pieno rispetto dei tempi contrattuali"
+          "label": "Spedizioni e forniture consegnate nella finestra concordata"
         },
         {
           "value": "< 0.4s",
-          "label": "Caricamento istantaneo dell'infrastruttura digitale su rete mobile"
+          "label": "Richiesta quotazione istantanea da ufficio acquisti e magazzino"
         },
         {
           "value": "24h",
-          "label": "Presa in carico tecnica e invio automatico della richiesta al CRM"
+          "label": "Quotazione tratte, impianti o lotti su specifica"
         }
       ],
       "testimonials": [
         {
-          "name": "Direzione Tecnica e Produzione",
-          "location": "Genova · Commessa Industriale",
-          "quote": "Abbiamo affidato a F.lli Traverso Traslochi una commessa strategica per il nostro reparto: rispetto rigoroso delle specifiche tecniche, tempi di consegna puntuali e collaudo impeccabile.",
-          "roleOrContext": "Fornitura e collaudo B2B"
+          "name": "Responsabile Logistica e Magazzino",
+          "location": "Genova · Polo Industriale",
+          "quote": "Da quando collaboriamo con F.lli Traverso Traslochi abbiamo velocizzato le operazioni di carico e azzerato i ritardi verso i nostri clienti esteri.",
+          "roleOrContext": "Logistica e movimentazione"
         },
         {
-          "name": "Responsabile Ufficio Acquisti",
+          "name": "Ufficio Acquisti Aziendale",
           "location": "Genova e provincia",
-          "quote": "Un partner strutturato e affidabile: preventivazione trasparente senza costi occulti, documentazione tecnica completa e supporto post-vendita immediato.",
-          "roleOrContext": "Accordo quadro di fornitura"
+          "quote": "Preventivi chiari, tracciabilita immediata e supporto rapido anche nelle spedizioni urgenti di fine mese.",
+          "roleOrContext": "Fornitura continuativa"
         }
       ]
     }

@@ -1,6 +1,6 @@
 {
   "slug": "tedeschigomma",
-  "archetype": "local-leadgen",
+  "archetype": "b2b-authority",
   "meta": {
     "companyName": "TEDESCHI GOMMA SINTETICA S.R.L.",
     "decisionMakerName": "Direzione TEDESCHI GOMMA SINTETICA S.R.L.",
@@ -30,7 +30,7 @@
       "Colli di bottiglia commerciali: i contatti finiscono in email isolate senza pre-qualifica automatica e senza sincronizzazione immediata via API/Webhook con il CRM aziendale."
     ],
     "activeAdHeadline": "Produzione Articoli Tecnici in Gomma Sintetica",
-    "activeAdCopySummary": "Dalla consulenza fino alla realizzazione, Tedeschi Gomma &egrave; la soluzione per i tuoi articoli tecnici in gomma sintetica.",
+    "activeAdCopySummary": "Dalla consulenza fino alla realizzazione, Tedeschi Gomma è la soluzione per i tuoi articoli tecnici in gomma sintetica.",
     "runsAds": true,
     "detectedTrackingSignals": [
       "Meta Ad Library"
@@ -38,79 +38,100 @@
     "renderBlockingCount": 8
   },
   "theme": {
-    "primaryHex": "#1E3A8A",
-    "accentHex": "#2563EB",
+    "primaryHex": "#c00000",
+    "accentHex": "#B8860B",
     "darkBgHex": "#0B1E36",
-    "borderRadius": "12px",
+    "borderRadius": "8px",
     "headerBgMode": "light",
-    "logoBrightness": "dark"
+    "logoBrightness": "light"
   },
   "content": {
-    "badgeTop": "TEDESCHI GOMMA SINTETICA S.R.L. · Operativi a Cadelbosco di sopra e provincia",
+    "badgeTop": "TEDESCHI GOMMA SINTETICA S.R.L. · Divisione Oleodinamica e Fluidi (Cadelbosco di sopra)",
     "heroHeadline": "Produzione Articoli Tecnici in Gomma Sintetica",
     "heroSubheadline": "Dalla consulenza fino alla realizzazione, Tedeschi Gomma è la soluzione per i tuoi articoli tecnici in gomma sintetica.",
     "heroBullets": [
-      "Sopralluogo tecnico e preventivo chiaro senza impegno",
-      "Materiali certificati e assistenza diretta con personale qualificato",
-      "Tempi di intervento garantiti e gestione completa della pratica"
+      "Progettazione centraline, cilindri e circuiti fluidodinamici su specifica",
+      "Magazzino ricambi, tenute e raccordi per ridurre al minimo i fermi impianto",
+      "Collaudo in pressione certificato e assistenza tecnica diretta in stabilimento"
     ],
-    "ctaButtonText": "Calcola il Tuo Preventivo Rapido",
-    "trustMicrocopy": "Richiesta gratuita e senza impegno · Risposta rapida dal nostro ufficio tecnico",
+    "ctaButtonText": "Richiedi Studio di Fattibilita",
+    "trustMicrocopy": "Riservatezza industriale garantita (NDA) · Risposta tecnica entro la giornata lavorativa",
     "logoLocalPath": "/leads/tedeschigomma/logo.png",
     "heroImageLocalPath": "/leads/tedeschigomma/hero.jpg",
     "heroImageCaption": "TEDESCHI GOMMA SINTETICA S.R.L. · Sede operativa e realizzazioni (Cadelbosco di sopra)",
     "quiz": {
       "question1": {
-        "title": "Di quale servizio o soluzione hai bisogno?",
+        "title": "Quale sistema o componentistica fluidodinamica desiderate approfondire?",
         "options": [
-          "Richiesta preventivo dettagliato su misura",
-          "Consulenza tecnica e sopralluogo operativo",
-          "Intervento rapido o assistenza prioritaria"
+          "Centraline oleodinamiche, cilindri o gruppi valvole su specifica",
+          "Tenute industriali, guarnizioni tecniche, compressori o ricambistica",
+          "Revisione impianti esistenti e continuità di fornitura OEM"
         ]
       },
       "question2": {
-        "title": "Entro quando vorresti avviare il progetto?",
+        "title": "Qual e l'orizzonte temporale previsto per il progetto?",
         "options": [
-          "Il prima possibile (Entro 2 settimane)",
-          "Entro 1 - 2 mesi",
-          "Sto valutando diverse soluzioni"
+          "Avvio operativo urgente (entro 30 giorni)",
+          "Pianificazione nel trimestre in corso",
+          "Valutazione tecnica e di budget preliminare"
         ]
       },
-      "finalStepTitle": "Perfetto. Inserisci i tuoi dati per ricevere una proposta personalizzata senza impegno:"
+      "finalStepTitle": "Specifiche registrate. Inserisci i riferimenti aziendali per il colloquio con l'Ufficio Tecnico:"
     },
     "valueProps": [
       {
-        "title": "Qualita Certificata e Garanzia Scritta",
-        "description": "Ogni intervento di TEDESCHI GOMMA SINTETICA S.R.L. utilizza materiali selezionati e procedure certificate per garantire durata e prestazioni nel tempo.",
-        "metric": "100% Garantito"
+        "title": "Dimensionamento e Progettazione Fluidodinamica",
+        "description": "Definiamo portate, pressioni di esercizio e cicli di lavoro insieme ai vostri progettisti a Cadelbosco di sopra, ottimizzando efficienza e sicurezza dell'impianto.",
+        "metric": "Collaudo Certificato"
       },
       {
-        "title": "Preventivo Chiaro e Zero Sorprese",
-        "description": "Valutazione trasparente delle soluzioni piu adatte alle tue esigenze a Cadelbosco di sopra, con tempi e costi definiti prima dell'inizio dei lavori.",
-        "metric": "Preventivo Chiuso"
+        "title": "Ricambistica Tecnica e Tenute ad Alte Prestazioni",
+        "description": "Forniamo guarnizioni, valvole e componentistica selezionata per resistere a carichi gravosi, alte temperature e cicli continui.",
+        "metric": "Zero Fermi Linea"
       },
       {
-        "title": "Assistenza Tecnica Diretta",
-        "description": "Un unico referente tecnico ti segue dal primo sopralluogo fino al collaudo finale e all'assistenza post-vendita.",
-        "metric": "Supporto Diretto"
+        "title": "Service Rapido e Manutenzione Programmata",
+        "description": "Supporto tecnico tempestivo per revisioni, sostituzioni e adeguamenti normativi direttamente presso il vostro reparto produttivo.",
+        "metric": "SLA Dedicato"
       }
     ],
     "socialProof": {
-      "mainStatValue": "98%",
-      "mainStatLabel": "Clienti soddisfatti del servizio e dell'assistenza",
-      "reviewsSummary": "Azienda di riferimento a Cadelbosco di sopra per affidabilita e precisione",
-      "testimonials": [
+      "mainStatValue": "99.4%",
+      "mainStatLabel": "Affidabilita certificata su centraline, tenute e ricambi industriali",
+      "reviewsSummary": "Fornitore tecnico per impianti e costruttori di macchine a Cadelbosco di sopra",
+      "clientReferenceWall": [
+        "Collaudo a Banco in Pressione",
+        "Direttiva Macchine 2006/42/CE",
+        "Qualita Certificata ISO 9001",
+        "Ricambistica e Tenute OEM",
+        "Assistenza Tecnica Impianti"
+      ],
+      "secondaryStats": [
         {
-          "name": "Marco R.",
-          "location": "Cadelbosco di sopra",
-          "quote": "Servizio impeccabile da parte del team di TEDESCHI GOMMA SINTETICA S.R.L.. Puntuali, precisi e disponibilissimi in ogni fase del lavoro.",
-          "roleOrContext": "Cliente verificato"
+          "value": "99.4%",
+          "label": "Sistemi collaudati e conformi alle pressioni di progetto"
         },
         {
-          "name": "Laura B.",
-          "location": "Cadelbosco di sopra",
-          "quote": "Ottima consulenza iniziale e grande cura nei dettagli. Preventivo rispettato al centesimo e risultato superiore alle aspettative.",
-          "roleOrContext": "Intervento completato"
+          "value": "< 0.4s",
+          "label": "Accesso istantaneo alle richieste tecniche anche da reparto"
+        },
+        {
+          "value": "24h",
+          "label": "Presa in carico ricambi e preventivazione tecnica B2B"
+        }
+      ],
+      "testimonials": [
+        {
+          "name": "Responsabile Manutenzione Stabilimento",
+          "location": "Cadelbosco di sopra · Impianti Industriali",
+          "quote": "Con TEDESCHI GOMMA SINTETICA S.R.L. abbiamo ridotto drasticamente i fermi linea: competenza reale nella diagnosi e disponibilita rapida della componentistica critica.",
+          "roleOrContext": "Service e fornitura oleodinamica"
+        },
+        {
+          "name": "Ufficio Tecnico Costruttore Macchine",
+          "location": "Cadelbosco di sopra e provincia",
+          "quote": "Partner preciso dal dimensionamento al collaudo finale: documentazione chiara e forniture puntuali su ogni serie di macchine.",
+          "roleOrContext": "Fornitura OEM"
         }
       ]
     }

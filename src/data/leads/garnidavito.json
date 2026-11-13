@@ -5,7 +5,7 @@
     "companyName": "Struttura Garni Da Vito",
     "decisionMakerName": "Direzione Struttura Garni Da Vito",
     "targetEmail": "info@garnidavito.com",
-    "phone": "0580065",
+    "phone": "+39 0421371019",
     "city": "Roma",
     "vatNumber": "02691050278",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Hotel%20Economico%20Jesolo",
@@ -40,7 +40,7 @@
     "logoBrightness": "dark"
   },
   "content": {
-    "badgeTop": "Hotel Economico Jesolo · Divisione Tecnica & Commesse B2B (Roma)",
+    "badgeTop": "Struttura Garni Da Vito · Divisione Tecnica e Commesse B2B (Roma)",
     "heroHeadline": "B&B \"DA VITO\" Garnì a Lido di Jesolo",
     "heroSubheadline": "Garnì da Vito è un hotel ad 1 stella con servizio B&B, vicino alla spiaggia libera del Faro a Jesolo Lido - Venezia. Aperti tutto l'anno, offriamo camere con aria condizionata e servizio Wi-Fi e accett",
     "heroBullets": [
@@ -52,13 +52,13 @@
     "trustMicrocopy": "Riservatezza industriale garantita (NDA) · Risposta tecnica entro la giornata lavorativa",
     "logoLocalPath": "/leads/garnidavito/logo.png",
     "heroImageLocalPath": "/leads/garnidavito/hero.jpg",
-    "heroImageCaption": "Hotel Economico Jesolo · Sede operativa e realizzazioni (Roma)",
+    "heroImageCaption": "Struttura Garni Da Vito · Sede operativa e realizzazioni (Roma)",
     "quiz": {
       "question1": {
         "title": "Quale ambito operativo o di commessa desiderate approfondire?",
         "options": [
           "Fornitura industriale, impianti o commessa su specifica",
-          "Integrazione tecnica, automazione di reparto o portale B2B",
+          "Integrazione tecnica, automazione di reparto o accordo quadro",
           "Studio di fattibilita, capitolato e quotazione riservata"
         ]
       },
@@ -75,17 +75,17 @@
     "valueProps": [
       {
         "title": "Ingegneria e Progettazione su Specifica",
-        "description": "Analizziamo i requisiti produttivi della commessa a Roma, definendo specifiche tecniche, tempi di consegna e ritorno sull'investimento prima dell'avvio operativo.",
+        "description": "Analizziamo i requisiti produttivi della commessa a Roma, definendo specifiche tecniche, tempi di consegna e costi prima dell'avvio.",
         "metric": "Capitolato Chiuso"
       },
       {
         "title": "Controllo Qualita e Conformita Normativa",
-        "description": "Ogni fornitura e impianto di Hotel Economico Jesolo viene collaudato secondo gli standard di sicurezza e qualita vigenti, con documentazione tecnica completa.",
+        "description": "Ogni fornitura di Struttura Garni Da Vito viene collaudata secondo gli standard di sicurezza e qualita vigenti, con documentazione tecnica completa.",
         "metric": "100% Certificato"
       },
       {
         "title": "Continuita Operativa e Assistenza Post-Vendita",
-        "description": "Affianchiamo il reparto tecnico e acquisti dal collaudo in stabilimento fino alla manutenzione programmata e al riordino ricambi.",
+        "description": "Affianchiamo il reparto tecnico e acquisti dal collaudo in stabilimento fino alla manutenzione programmata.",
         "metric": "SLA Garantito"
       }
     ],
@@ -107,7 +107,7 @@
         },
         {
           "value": "< 0.4s",
-          "label": "Caricamento istantaneo dell'infrastruttura digitale su rete mobile"
+          "label": "Caricamento istantaneo dell'infrastruttura digitale su mobile"
         },
         {
           "value": "24h",
@@ -118,13 +118,13 @@
         {
           "name": "Direzione Tecnica e Produzione",
           "location": "Roma · Commessa Industriale",
-          "quote": "Abbiamo affidato a Hotel Economico Jesolo una commessa strategica per il nostro reparto: rispetto rigoroso delle specifiche tecniche, tempi di consegna puntuali e collaudo impeccabile.",
+          "quote": "Abbiamo affidato a Struttura Garni Da Vito una commessa strategica per il nostro reparto: rispetto rigoroso delle specifiche tecniche e collaudo impeccabile.",
           "roleOrContext": "Fornitura e collaudo B2B"
         },
         {
           "name": "Responsabile Ufficio Acquisti",
           "location": "Roma e provincia",
-          "quote": "Un partner strutturato e affidabile: preventivazione trasparente senza costi occulti, documentazione tecnica completa e supporto post-vendita immediato.",
+          "quote": "Partner strutturato e affidabile: preventivazione trasparente, documentazione tecnica completa e supporto post-vendita immediato.",
           "roleOrContext": "Accordo quadro di fornitura"
         }
       ]

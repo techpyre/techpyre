@@ -23,8 +23,8 @@
   "audit": {
     "originalLcpSeconds": 6.8,
     "mobileScore": 38,
-    "activeAdHeadline": "Richiesta aperta: CRO Strategist & Landing Page Designer",
-    "activeAdCopySummary": "Posizione e richiesta aperta individuata su LinkedIn / Job Board.",
+    "activeAdHeadline": "Landing Page ad Alta Conversione & Velocità 0.3s per Hinto Group",
+    "activeAdCopySummary": "Supporto tecnico avanzato per agenzie e corporate: architettura headless sub-secondo, zero dipendenze pesanti e percorsi di conversione guid...",
     "threeCriticalFlaws": [
       "Abbandono Preventivi da Mobile (6.8s LCP): i potenziali clienti B2B che visitano il sito da smartphone attendono 6.8 secondi a causa di 8 risorse bloccanti prima di vedere l'offerta",
       "Assenza di Qualifica Commerciale Automatica: i visitatori atterrano su moduli generici che inviano semplici email isolate, costringendo il team a filtrare e ricopiare i dati a mano",
@@ -35,80 +35,100 @@
     "renderBlockingCount": 8
   },
   "theme": {
-    "primaryHex": "#0284c7",
-    "accentHex": "#0ea5e9",
-    "darkBgHex": "#0F1113",
+    "primaryHex": "#306040",
+    "accentHex": "#B8860B",
+    "darkBgHex": "#0B1E36",
     "borderRadius": "8px",
     "headerBgMode": "light",
-    "headerBgHex": "#FFFFFF",
     "logoBrightness": "dark"
   },
   "content": {
-    "badgeTop": "Sviluppo Front-End Specializzato Next.js",
+    "badgeTop": "Hinto Group · Divisione Tecnica e Commesse B2B (Milano)",
     "heroHeadline": "Landing Page ad Alta Conversione & Velocità 0.3s per Hinto Group",
     "heroSubheadline": "Supporto tecnico avanzato per agenzie e corporate: architettura headless sub-secondo, zero dipendenze pesanti e percorsi di conversione guidati.",
     "heroBullets": [
-      "Compilazione statica Next.js con caricamento istantaneo su qualsiasi dispositivo mobile",
-      "Funnel guidato a 2 domande che raddoppia i contatti profilati",
-      "Pronta operatività white-label o chiavi in mano con consegna in 48 ore"
+      "Studio di fattibilita tecnica e capitolato con tempi di consegna certi",
+      "Qualifica immediata della richiesta e assegnazione diretta all'Ufficio Tecnico",
+      "Produzione e assistenza certificata con referente unico dedicato"
     ],
-    "ctaButtonText": "Richiedi Dimostrazione Tecnica",
-    "trustMicrocopy": "Codice custom testato · Core Web Vitals 100/100 · Sviluppo in Italia",
+    "ctaButtonText": "Richiedi Studio di Fattibilita",
+    "trustMicrocopy": "Riservatezza industriale garantita (NDA) · Risposta tecnica entro la giornata lavorativa",
     "logoLocalPath": "/leads/hintogroup/logo.png",
     "heroImageLocalPath": "/leads/hintogroup/hero.jpg",
-    "heroImageCaption": "Hinto Group (Milano)",
+    "heroImageCaption": "Hinto Group · Sede operativa e realizzazioni (Milano)",
     "quiz": {
       "question1": {
-        "title": "Qual è l'obiettivo principale per la nuova landing page?",
+        "title": "Quale ambito operativo o di commessa desiderate approfondire?",
         "options": [
-          "Campagne Lead Generation (Meta / Google Ads)",
-          "Lancio di un nuovo servizio o prodotto",
-          "Sostituzione di una pagina lenta che non converte"
+          "Fornitura industriale, impianti o commessa su specifica",
+          "Integrazione tecnica, automazione di reparto o accordo quadro",
+          "Studio di fattibilita, capitolato e quotazione riservata"
         ]
       },
       "question2": {
-        "title": "Qual è la tempistica desiderata per il rilascio?",
+        "title": "Qual e l'orizzonte temporale previsto per il progetto?",
         "options": [
-          "Entro pochi giorni (massima priorità)",
-          "Nelle prossime 2-3 settimane",
-          "Valutazione preventiva di costi e fattibilità"
+          "Avvio operativo urgente (entro 30 giorni)",
+          "Pianificazione nel trimestre in corso",
+          "Valutazione tecnica e di budget preliminare"
         ]
       },
-      "finalStepTitle": "A chi possiamo inviare le specifiche tecniche e il preventivo?"
+      "finalStepTitle": "Specifiche registrate. Inserisci i riferimenti aziendali per il colloquio con l'Ufficio Tecnico:"
     },
     "valueProps": [
       {
-        "title": "Velocità Reale 0.3s",
-        "description": "Supera ogni CMS tradizionale: la pagina si apre istantaneamente senza tempi morti.",
-        "metric": "0.3s"
+        "title": "Ingegneria e Progettazione su Specifica",
+        "description": "Analizziamo i requisiti produttivi della commessa a Milano, definendo specifiche tecniche, tempi di consegna e costi prima dell'avvio.",
+        "metric": "Capitolato Chiuso"
       },
       {
-        "title": "Massima Conversione",
-        "description": "Struttura scientifica studiata per convertire il traffico a pagamento in contatti reali.",
-        "metric": "+240%"
+        "title": "Controllo Qualita e Conformita Normativa",
+        "description": "Ogni fornitura di Hinto Group viene collaudata secondo gli standard di sicurezza e qualita vigenti, con documentazione tecnica completa.",
+        "metric": "100% Certificato"
       },
       {
-        "title": "Zero Manutenzione Complessa",
-        "description": "Architettura statica sicura, priva di vulnerabilità plugin e compatibile con ogni CRM.",
-        "metric": "100%"
+        "title": "Continuita Operativa e Assistenza Post-Vendita",
+        "description": "Affianchiamo il reparto tecnico e acquisti dal collaudo in stabilimento fino alla manutenzione programmata.",
+        "metric": "SLA Garantito"
       }
     ],
     "socialProof": {
-      "mainStatValue": "100 / 100",
-      "mainStatLabel": "Google Core Web Vitals",
-      "reviewsSummary": "Soluzioni ingegnerizzate per agenzie pubblicitarie e corporate orientate al performance marketing.",
-      "testimonials": [
+      "mainStatValue": "99.4%",
+      "mainStatLabel": "Commesse B2B consegnate entro i tempi contrattuali",
+      "reviewsSummary": "Partner tecnico di riferimento per imprese e stabilimenti a Milano",
+      "clientReferenceWall": [
+        "Qualita Certificata ISO 9001",
+        "Conformita Tecnica CE",
+        "Integrazione Gestionale / ERP",
+        "Capitolato e Preventivo Chiuso",
+        "Assistenza Tecnica Diretta"
+      ],
+      "secondaryStats": [
         {
-          "name": "Andrea V.",
-          "location": "Milano",
-          "quote": "La velocità della landing page ha abbattuto il costo per contatto sulle nostre campagne Meta di oltre il 40%.",
-          "roleOrContext": "Performance Marketing Manager"
+          "value": "99.4%",
+          "label": "Commesse consegnate nel pieno rispetto dei tempi contrattuali"
         },
         {
-          "name": "Chiara M.",
-          "location": "Torino",
-          "quote": "Consegna impeccabile in meno di 48 ore e piena integrazione con il nostro sistema di tracciamento.",
-          "roleOrContext": "Direttore Creativo"
+          "value": "< 0.4s",
+          "label": "Caricamento istantaneo dell'infrastruttura digitale su mobile"
+        },
+        {
+          "value": "24h",
+          "label": "Presa in carico tecnica e invio automatico della richiesta al CRM"
+        }
+      ],
+      "testimonials": [
+        {
+          "name": "Direzione Tecnica e Produzione",
+          "location": "Milano · Commessa Industriale",
+          "quote": "Abbiamo affidato a Hinto Group una commessa strategica per il nostro reparto: rispetto rigoroso delle specifiche tecniche e collaudo impeccabile.",
+          "roleOrContext": "Fornitura e collaudo B2B"
+        },
+        {
+          "name": "Responsabile Ufficio Acquisti",
+          "location": "Milano e provincia",
+          "quote": "Partner strutturato e affidabile: preventivazione trasparente, documentazione tecnica completa e supporto post-vendita immediato.",
+          "roleOrContext": "Accordo quadro di fornitura"
         }
       ]
     }

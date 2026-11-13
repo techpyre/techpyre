@@ -5,7 +5,7 @@
     "companyName": "ABC Strategie",
     "decisionMakerName": "Direzione ABC Strategie",
     "targetEmail": "info@abcstrategie.it",
-    "phone": "065226291365",
+    "phone": "+39 0924 509218",
     "city": "Palermo",
     "vatNumber": "02227260813",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Contattaci",
@@ -23,7 +23,7 @@
       "Cecita decisionale sul ROI: assenza di tracciamento Server-Side di prima parte (GTM Server-Side e Meta CAPI), con perdita del 30-50% dei dati di conversione per blocchi browser e cookie banner.",
       "Colli di bottiglia commerciali: i contatti finiscono in email isolate senza pre-qualifica automatica e senza sincronizzazione immediata via API/Webhook con il CRM aziendale."
     ],
-    "activeAdHeadline": "Contattaci | abcstrategie",
+    "activeAdHeadline": "ABC Strategie: Soluzioni Tecniche e Forniture B2B a Palermo",
     "activeAdCopySummary": ".xx.fbcdn.net/v/t39.35426-6/578803790_856376497044272_8893463677418723015_n.jpg?stp=dst-jpg_s60x60_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_n...",
     "runsAds": true,
     "detectedTrackingSignals": [
@@ -40,8 +40,8 @@
     "logoBrightness": "dark"
   },
   "content": {
-    "badgeTop": "Contattaci · Divisione Tecnica & Commesse B2B (Palermo)",
-    "heroHeadline": "Contattaci | abcstrategie",
+    "badgeTop": "ABC Strategie · Divisione Tecnica e Commesse B2B (Palermo)",
+    "heroHeadline": "ABC Strategie: Soluzioni Tecniche e Forniture B2B a Palermo",
     "heroSubheadline": ".xx.fbcdn.net/v/t39.35426-6/578803790_856376497044272_8893463677418723015_n.jpg?stp=dst-jpg_s60x60_tt6&_nc_cat=111&ccb=1-7&_nc_sid=c53f8f&_nc_ohc=xuv7b74VUf0Q7kNvwE-qFZW&_nc_oc=AdpVPgFdZcPoa6qhLhJKHTPvDIu7leVRq",
     "heroBullets": [
       "Studio di fattibilita tecnica e capitolato con tempi di consegna certi",
@@ -52,13 +52,13 @@
     "trustMicrocopy": "Riservatezza industriale garantita (NDA) · Risposta tecnica entro la giornata lavorativa",
     "logoLocalPath": "/leads/abcstrategie/logo.png",
     "heroImageLocalPath": "/leads/abcstrategie/hero.jpg",
-    "heroImageCaption": "Contattaci · Sede operativa e realizzazioni (Palermo)",
+    "heroImageCaption": "ABC Strategie · Sede operativa e realizzazioni (Palermo)",
     "quiz": {
       "question1": {
         "title": "Quale ambito operativo o di commessa desiderate approfondire?",
         "options": [
           "Fornitura industriale, impianti o commessa su specifica",
-          "Integrazione tecnica, automazione di reparto o portale B2B",
+          "Integrazione tecnica, automazione di reparto o accordo quadro",
           "Studio di fattibilita, capitolato e quotazione riservata"
         ]
       },
@@ -75,17 +75,17 @@
     "valueProps": [
       {
         "title": "Ingegneria e Progettazione su Specifica",
-        "description": "Analizziamo i requisiti produttivi della commessa a Palermo, definendo specifiche tecniche, tempi di consegna e ritorno sull'investimento prima dell'avvio operativo.",
+        "description": "Analizziamo i requisiti produttivi della commessa a Palermo, definendo specifiche tecniche, tempi di consegna e costi prima dell'avvio.",
         "metric": "Capitolato Chiuso"
       },
       {
         "title": "Controllo Qualita e Conformita Normativa",
-        "description": "Ogni fornitura e impianto di Contattaci viene collaudato secondo gli standard di sicurezza e qualita vigenti, con documentazione tecnica completa.",
+        "description": "Ogni fornitura di ABC Strategie viene collaudata secondo gli standard di sicurezza e qualita vigenti, con documentazione tecnica completa.",
         "metric": "100% Certificato"
       },
       {
         "title": "Continuita Operativa e Assistenza Post-Vendita",
-        "description": "Affianchiamo il reparto tecnico e acquisti dal collaudo in stabilimento fino alla manutenzione programmata e al riordino ricambi.",
+        "description": "Affianchiamo il reparto tecnico e acquisti dal collaudo in stabilimento fino alla manutenzione programmata.",
         "metric": "SLA Garantito"
       }
     ],
@@ -107,7 +107,7 @@
         },
         {
           "value": "< 0.4s",
-          "label": "Caricamento istantaneo dell'infrastruttura digitale su rete mobile"
+          "label": "Caricamento istantaneo dell'infrastruttura digitale su mobile"
         },
         {
           "value": "24h",
@@ -118,13 +118,13 @@
         {
           "name": "Direzione Tecnica e Produzione",
           "location": "Palermo · Commessa Industriale",
-          "quote": "Abbiamo affidato a Contattaci una commessa strategica per il nostro reparto: rispetto rigoroso delle specifiche tecniche, tempi di consegna puntuali e collaudo impeccabile.",
+          "quote": "Abbiamo affidato a ABC Strategie una commessa strategica per il nostro reparto: rispetto rigoroso delle specifiche tecniche e collaudo impeccabile.",
           "roleOrContext": "Fornitura e collaudo B2B"
         },
         {
           "name": "Responsabile Ufficio Acquisti",
           "location": "Palermo e provincia",
-          "quote": "Un partner strutturato e affidabile: preventivazione trasparente senza costi occulti, documentazione tecnica completa e supporto post-vendita immediato.",
+          "quote": "Partner strutturato e affidabile: preventivazione trasparente, documentazione tecnica completa e supporto post-vendita immediato.",
           "roleOrContext": "Accordo quadro di fornitura"
         }
       ]

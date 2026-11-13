@@ -30,7 +30,7 @@
       "Colli di bottiglia commerciali: i contatti finiscono in email isolate senza pre-qualifica automatica e senza sincronizzazione immediata via API/Webhook con il CRM aziendale."
     ],
     "activeAdHeadline": "Mattioli & Messori | Raccorderia per impianti oleodinamici",
-    "activeAdCopySummary": "Mattioli &amp; Messori è da oltre 50 anni un&#039;azienda specializzata in raccorderia per impianti oleodinamici e produzione di tubi ad alt...",
+    "activeAdCopySummary": "Mattioli & Messori è da oltre 50 anni un'azienda specializzata in raccorderia per impianti oleodinamici e produzione di tubi ad alta pressio...",
     "runsAds": true,
     "detectedTrackingSignals": [
       "Meta Ad Library"
@@ -38,21 +38,21 @@
     "renderBlockingCount": 8
   },
   "theme": {
-    "primaryHex": "#0B1E36",
+    "primaryHex": "#303080",
     "accentHex": "#B8860B",
     "darkBgHex": "#0B1E36",
     "borderRadius": "8px",
     "headerBgMode": "light",
-    "logoBrightness": "dark"
+    "logoBrightness": "light"
   },
   "content": {
-    "badgeTop": "Mattioli e Messori · Divisione Tecnica & Commesse B2B (Modena)",
+    "badgeTop": "Mattioli e Messori · Divisione Oleodinamica e Fluidi (Modena)",
     "heroHeadline": "Mattioli & Messori | Raccorderia per impianti oleodinamici",
     "heroSubheadline": "Mattioli & Messori è da oltre 50 anni un'azienda specializzata in raccorderia per impianti oleodinamici e produzione di tubi ad alta pressione",
     "heroBullets": [
-      "Studio di fattibilita tecnica e capitolato con tempi di consegna certi",
-      "Qualifica immediata della richiesta e assegnazione diretta all'Ufficio Tecnico",
-      "Produzione e assistenza certificata con referente unico dedicato"
+      "Progettazione centraline, cilindri e circuiti fluidodinamici su specifica",
+      "Magazzino ricambi, tenute e raccordi per ridurre al minimo i fermi impianto",
+      "Collaudo in pressione certificato e assistenza tecnica diretta in stabilimento"
     ],
     "ctaButtonText": "Richiedi Studio di Fattibilita",
     "trustMicrocopy": "Riservatezza industriale garantita (NDA) · Risposta tecnica entro la giornata lavorativa",
@@ -61,11 +61,11 @@
     "heroImageCaption": "Mattioli e Messori · Sede operativa e realizzazioni (Modena)",
     "quiz": {
       "question1": {
-        "title": "Quale ambito operativo o di commessa desiderate approfondire?",
+        "title": "Quale sistema o componentistica fluidodinamica desiderate approfondire?",
         "options": [
-          "Fornitura industriale, impianti o commessa su specifica",
-          "Integrazione tecnica, automazione di reparto o portale B2B",
-          "Studio di fattibilita, capitolato e quotazione riservata"
+          "Centraline oleodinamiche, cilindri o gruppi valvole su specifica",
+          "Tenute industriali, guarnizioni tecniche, compressori o ricambistica",
+          "Revisione impianti esistenti e continuità di fornitura OEM"
         ]
       },
       "question2": {
@@ -80,58 +80,58 @@
     },
     "valueProps": [
       {
-        "title": "Ingegneria e Progettazione su Specifica",
-        "description": "Analizziamo i requisiti produttivi della commessa a Modena, definendo specifiche tecniche, tempi di consegna e ritorno sull'investimento prima dell'avvio operativo.",
-        "metric": "Capitolato Chiuso"
+        "title": "Dimensionamento e Progettazione Fluidodinamica",
+        "description": "Definiamo portate, pressioni di esercizio e cicli di lavoro insieme ai vostri progettisti a Modena, ottimizzando efficienza e sicurezza dell'impianto.",
+        "metric": "Collaudo Certificato"
       },
       {
-        "title": "Controllo Qualita e Conformita Normativa",
-        "description": "Ogni fornitura e impianto di Mattioli e Messori viene collaudato secondo gli standard di sicurezza e qualita vigenti, con documentazione tecnica completa.",
-        "metric": "100% Certificato"
+        "title": "Ricambistica Tecnica e Tenute ad Alte Prestazioni",
+        "description": "Forniamo guarnizioni, valvole e componentistica selezionata per resistere a carichi gravosi, alte temperature e cicli continui.",
+        "metric": "Zero Fermi Linea"
       },
       {
-        "title": "Continuita Operativa e Assistenza Post-Vendita",
-        "description": "Affianchiamo il reparto tecnico e acquisti dal collaudo in stabilimento fino alla manutenzione programmata e al riordino ricambi.",
-        "metric": "SLA Garantito"
+        "title": "Service Rapido e Manutenzione Programmata",
+        "description": "Supporto tecnico tempestivo per revisioni, sostituzioni e adeguamenti normativi direttamente presso il vostro reparto produttivo.",
+        "metric": "SLA Dedicato"
       }
     ],
     "socialProof": {
       "mainStatValue": "99.4%",
-      "mainStatLabel": "Commesse B2B consegnate entro i tempi contrattuali",
-      "reviewsSummary": "Partner tecnico di riferimento per imprese e stabilimenti a Modena",
+      "mainStatLabel": "Affidabilita certificata su centraline, tenute e ricambi industriali",
+      "reviewsSummary": "Fornitore tecnico per impianti e costruttori di macchine a Modena",
       "clientReferenceWall": [
+        "Collaudo a Banco in Pressione",
+        "Direttiva Macchine 2006/42/CE",
         "Qualita Certificata ISO 9001",
-        "Conformita Tecnica CE",
-        "Integrazione Gestionale / ERP",
-        "Capitolato e Preventivo Chiuso",
-        "Assistenza Tecnica Diretta"
+        "Ricambistica e Tenute OEM",
+        "Assistenza Tecnica Impianti"
       ],
       "secondaryStats": [
         {
           "value": "99.4%",
-          "label": "Commesse consegnate nel pieno rispetto dei tempi contrattuali"
+          "label": "Sistemi collaudati e conformi alle pressioni di progetto"
         },
         {
           "value": "< 0.4s",
-          "label": "Caricamento istantaneo dell'infrastruttura digitale su rete mobile"
+          "label": "Accesso istantaneo alle richieste tecniche anche da reparto"
         },
         {
           "value": "24h",
-          "label": "Presa in carico tecnica e invio automatico della richiesta al CRM"
+          "label": "Presa in carico ricambi e preventivazione tecnica B2B"
         }
       ],
       "testimonials": [
         {
-          "name": "Direzione Tecnica e Produzione",
-          "location": "Modena · Commessa Industriale",
-          "quote": "Abbiamo affidato a Mattioli e Messori una commessa strategica per il nostro reparto: rispetto rigoroso delle specifiche tecniche, tempi di consegna puntuali e collaudo impeccabile.",
-          "roleOrContext": "Fornitura e collaudo B2B"
+          "name": "Responsabile Manutenzione Stabilimento",
+          "location": "Modena · Impianti Industriali",
+          "quote": "Con Mattioli e Messori abbiamo ridotto drasticamente i fermi linea: competenza reale nella diagnosi e disponibilita rapida della componentistica critica.",
+          "roleOrContext": "Service e fornitura oleodinamica"
         },
         {
-          "name": "Responsabile Ufficio Acquisti",
+          "name": "Ufficio Tecnico Costruttore Macchine",
           "location": "Modena e provincia",
-          "quote": "Un partner strutturato e affidabile: preventivazione trasparente senza costi occulti, documentazione tecnica completa e supporto post-vendita immediato.",
-          "roleOrContext": "Accordo quadro di fornitura"
+          "quote": "Partner preciso dal dimensionamento al collaudo finale: documentazione chiara e forniture puntuali su ogni serie di macchine.",
+          "roleOrContext": "Fornitura OEM"
         }
       ]
     }
