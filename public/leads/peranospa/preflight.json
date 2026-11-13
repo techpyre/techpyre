@@ -1,0 +1,37 @@
+{
+  "slug": "peranospa",
+  "targetUrl": "https://www.peranospa.it",
+  "searchKeyword": "carpenteria meccanica cuneo",
+  "measuredResponseMs": 259,
+  "renderBlockingScripts": 7,
+  "estimatedMobileLcpSeconds": 5.5,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": "Bruno Perano",
+    "firstName": "Bruno",
+    "role": "Titolare"
+  },
+  "emailSelection": {
+    "bestEmail": "info@peranospa.it",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@peranospa.it",
+    "demo@gmail.com",
+    "indusinfo@gmail.com",
+    "info@peranospa.it",
+    "info@peranospa.it",
+    "demo@gmail.com",
+    "indusinfo@gmail.com",
+    "info@peranospa.it",
+    "demo@gmail.com",
+    "indusinfo@gmail.com",
+    "info@peranospa.it",
+    "demo@gmail.com",
+    "indusinfo@gmail.com"
+  ],
+  "extractedPhones": [],
+  "extractedVat": "03096280049"
+}

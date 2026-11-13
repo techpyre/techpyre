@@ -1,0 +1,37 @@
+{
+  "slug": "autofficinafordbologna",
+  "targetUrl": "http://www.autofficinafordbologna.com",
+  "searchKeyword": "gruppi elettrogeni industriali bologna",
+  "measuredResponseMs": 4947,
+  "renderBlockingScripts": 38,
+  "estimatedMobileLcpSeconds": 12.6,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "binifordservice@gmail.com",
+    "isGeneric": true,
+    "score": -2
+  },
+  "extractedEmails": [
+    "binifordservice@gmail.com",
+    "binifordservice@gmail.com",
+    "binifordservice@gmail.com",
+    "binifordservice@gmail.com",
+    "binifordservice@gmail.com",
+    "binifordservice@gmail.com",
+    "binifordservice@gmail.com",
+    "binifordservice@gmail.com",
+    "binifordservice@gmail.com",
+    "binifordservice@gmail.com",
+    "binifordservice@gmail.com"
+  ],
+  "extractedPhones": [
+    "+39051490884"
+  ],
+  "extractedVat": "03096620376"
+}

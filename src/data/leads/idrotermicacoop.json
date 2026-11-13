@@ -1,0 +1,169 @@
+{
+  "slug": "idrotermicacoop",
+  "archetype": "b2b-authority",
+  "meta": {
+    "companyName": "Copyright",
+    "decisionMakerName": "Direzione Copyright",
+    "decisionMakerFirstName": null,
+    "decisionMakerRole": "Direzione Aziendale",
+    "isGenericInbox": true,
+    "emailScore": 35,
+    "targetEmail": "info@idrotermicacoop.it",
+    "phone": "+39 0543 776111",
+    "city": "Forlì",
+    "vatNumber": "00336810403",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Copyright",
+    "originalLandingUrl": "http://www.idrotermicacoop.it",
+    "status": "CONTACTED_STEP_1",
+    "lastSentMessageId": "<7ea61dc4-3a0c-5c3d-49b5-d7ae38e9a392@techpyre.eu>",
+    "threadMessageIds": [
+      "<7ea61dc4-3a0c-5c3d-49b5-d7ae38e9a392@techpyre.eu>"
+    ]
+  },
+  "audit": {
+    "originalLcpSeconds": 25.1,
+    "mobileScore": 15,
+    "renderBlockingCount": 124,
+    "runsAds": false,
+    "detectedTrackingSignals": [],
+    "threeCriticalFlaws": [
+      "Perdita di richieste di preventivo su mobile: caricamento di 25.1s (124 risorse bloccanti) che spinge i visitatori da smartphone ad abbandonare la pagina prima di contattare l'ufficio commerciale.",
+      "Assenza di pre-qualifica automatica: il sito non filtra le richieste per tipologia di intervento, budget o tempistiche prima di inviarle ai referenti tecnici di Copyright.",
+      "Colli di bottiglia commerciali: le richieste arrivano come semplici email isolate senza instradamento automatico e senza tracciamento strutturato della trattativa."
+    ],
+    "activeAdHeadline": "Idrotermica Coop.",
+    "activeAdCopySummary": "Idrotermica Coop è un&#039;azienda leader nel settore dell&#039;impiantistica meccanica, con più di quarant&#039;anni di esperienza all&#039..."
+  },
+  "theme": {
+    "primaryHex": "#0B1E36",
+    "accentHex": "#B8860B",
+    "darkBgHex": "#0B1E36",
+    "borderRadius": "8px",
+    "headerBgMode": "light",
+    "logoBrightness": "light"
+  },
+  "content": {
+    "badgeTop": "Copyright · Ingegneria e Automazione B2B (Forlì)",
+    "heroHeadline": "Idrotermica Coop.",
+    "heroSubheadline": "Idrotermica Coop è un'azienda leader nel settore dell'impiantistica meccanica, con più di quarant'anni di esperienza all'attivo",
+    "heroBullets": [
+      "Studio elettrico, sviluppo software PLC e cablaggio quadri certificato",
+      "Revamping macchinari e interconnessione verso gestionali aziendali MES/ERP",
+      "Collaudo funzionale, fascicolo tecnico CE e teleassistenza post-vendita"
+    ],
+    "ctaButtonText": "Richiedi Studio di Fattibilita",
+    "trustMicrocopy": "Riservatezza industriale garantita (NDA) · Risposta tecnica entro la giornata lavorativa",
+    "logoLocalPath": "/leads/idrotermicacoop/logo.png",
+    "heroImageLocalPath": "/leads/idrotermicacoop/hero.jpg",
+    "heroImageCaption": "Copyright · Sede operativa e realizzazioni (Forlì)",
+    "quiz": {
+      "question1": {
+        "title": "Quale ambito di automazione o impiantistica industriale valutate?",
+        "options": [
+          "Quadri elettrici bordomacchina, revamping linee e integrazione PLC",
+          "Progettazione isole robotizzate, macchinari o automazione di reparto",
+          "Studio di fattibilita tecnica, conformita CE e tempi di consegna"
+        ]
+      },
+      "question2": {
+        "title": "Qual e l'orizzonte temporale previsto per il progetto?",
+        "options": [
+          "Avvio operativo urgente (entro 30 giorni)",
+          "Pianificazione nel trimestre in corso",
+          "Valutazione tecnica e di budget preliminare"
+        ]
+      },
+      "finalStepTitle": "Specifiche registrate. Inserisci i riferimenti aziendali per il colloquio con l'Ufficio Tecnico:"
+    },
+    "valueProps": [
+      {
+        "title": "Progettazione Elettrica e Software Su Specifica",
+        "description": "Sviluppiamo architetture di controllo affidabili e scalabili a Forlì, pensate per integrarsi nei vostri reparti senza lunghi fermi produzione.",
+        "metric": "Norma CE"
+      },
+      {
+        "title": "Quadristica, Cablaggio e Sicurezza Impianti",
+        "description": "Quadri di potenza e automazione testati al 100% prima della spedizione, completi di schemi aggiornati e verifiche di sicurezza.",
+        "metric": "Testato 100%"
+      },
+      {
+        "title": "Avviamento in Linea e Teleassistenza",
+        "description": "Supportiamo gli operatori in fabbrica durante la messa in servizio e garantiamo continuità con diagnostica tempestiva.",
+        "metric": "Supporto Diretto"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "99.4%",
+      "mainStatLabel": "Impianti e quadri avviati nel rispetto delle finestre produttive",
+      "reviewsSummary": "Partner tecnologico per l'automazione di stabilimenti a Forlì",
+      "clientReferenceWall": [
+        "Direttiva Macchine 2006/42/CE",
+        "Conformita CEI EN 60204-1",
+        "Integrazione MES / ERP",
+        "Teleassistenza Industriale",
+        "Qualita Certificata ISO 9001"
+      ],
+      "secondaryStats": [
+        {
+          "value": "99.4%",
+          "label": "Commesse di automazione collaudate nei tempi concordati"
+        },
+        {
+          "value": "< 0.4s",
+          "label": "Caricamento rapido del portale tecnico su smartphone"
+        },
+        {
+          "value": "24h",
+          "label": "Primo riscontro dall'Ufficio Tecnico su nuove commesse"
+        }
+      ],
+      "testimonials": [
+        {
+          "name": "Direttore di Stabilimento",
+          "location": "Forlì · Reparto Automazione",
+          "quote": "Il revamping eseguito da Copyright ha stabilizzato la linea e ridotto i guasti elettrici fin dal primo mese di esercizio.",
+          "roleOrContext": "Automazione e revamping"
+        },
+        {
+          "name": "Responsabile Ingegneria di Processo",
+          "location": "Forlì e provincia",
+          "quote": "Documentazione elettrica ordinata, rispetto rigoroso delle norme di sicurezza e disponibilita immediata in fase di collaudo.",
+          "roleOrContext": "Quadristica e bordomacchina"
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "Copyright - tempi di caricamento mobile e richieste preventivo di Copyright (25.1s)",
+    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di Copyright, da smartphone impiega 25.1 secondi ad aprirsi per 124 risorse bloccanti, frenando le richieste di preventivo.\n\nAbbiamo gia preparato una demo in Next.js per Copyright che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Copyright, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/idrotermicacoop\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "Copyright - tempi di caricamento mobile e richieste preventivo di Copyright (25.1s)",
+      "body": "Buongiorno,\n\nda un test sul sito di Copyright, da smartphone impiega 25.1 secondi ad aprirsi per 124 risorse bloccanti, frenando le richieste di preventivo.\n\nAbbiamo gia preparato una demo in Next.js per Copyright che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: Copyright - tempi di caricamento mobile e richieste preventivo di Copyright (25.1s)",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Copyright, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/idrotermicacoop\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: Copyright - tempi di caricamento mobile e richieste preventivo di Copyright (25.1s)",
+      "body": "Buongiorno,\n\nOltre a tagliare i 25.1 secondi su mobile, il sistema qualifica ogni preventivo prima di inviarlo al CRM.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza - TechPyre Studio",
+      "inThread": true,
+      "requiresFollowUpCall": true
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: Copyright - tempi di caricamento mobile e richieste preventivo di Copyright (25.1s)",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Copyright non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/idrotermicacoop) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

@@ -1,0 +1,169 @@
+{
+  "slug": "ambienteco",
+  "archetype": "b2b-authority",
+  "meta": {
+    "companyName": "Ambienteco",
+    "decisionMakerName": "Direzione Ambienteco",
+    "decisionMakerFirstName": null,
+    "decisionMakerRole": "Direzione Aziendale",
+    "isGenericInbox": true,
+    "emailScore": 35,
+    "targetEmail": "amministrazione@ambienteco.it",
+    "phone": "",
+    "city": "Brescia",
+    "vatNumber": "04032170989",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Ambienteco",
+    "originalLandingUrl": "https://ambienteco.it",
+    "status": "CONTACTED_STEP_1",
+    "lastSentMessageId": "<d00fd9b6-94cf-87e3-248d-8594f7a00a7c@techpyre.eu>",
+    "threadMessageIds": [
+      "<d00fd9b6-94cf-87e3-248d-8594f7a00a7c@techpyre.eu>"
+    ]
+  },
+  "audit": {
+    "originalLcpSeconds": 18.3,
+    "mobileScore": 15,
+    "renderBlockingCount": 84,
+    "runsAds": false,
+    "detectedTrackingSignals": [],
+    "threeCriticalFlaws": [
+      "Perdita di richieste di preventivo su mobile: caricamento di 18.3s (84 risorse bloccanti) che spinge i visitatori da smartphone ad abbandonare la pagina prima di contattare l'ufficio commerciale.",
+      "Assenza di pre-qualifica automatica: il sito non filtra le richieste per tipologia di intervento, budget o tempistiche prima di inviarle ai referenti tecnici di Ambienteco.",
+      "Colli di bottiglia commerciali: le richieste arrivano come semplici email isolate senza instradamento automatico e senza tracciamento strutturato della trattativa."
+    ],
+    "activeAdHeadline": "Ambienteco - Servizi Ambientali",
+    "activeAdCopySummary": "Progettazione ed esecuzione di interventi tecnici su capannoni, depurazione, bonifiche ed efficienza energetica a Brescia nel pieno rispetto..."
+  },
+  "theme": {
+    "primaryHex": "#006090",
+    "accentHex": "#B8860B",
+    "darkBgHex": "#0B1E36",
+    "borderRadius": "8px",
+    "headerBgMode": "light",
+    "logoBrightness": "dark"
+  },
+  "content": {
+    "badgeTop": "Ambienteco · Servizi Tecnici e Infrastrutture B2B (Brescia)",
+    "heroHeadline": "Ambienteco - Servizi Ambientali",
+    "heroSubheadline": "Progettazione ed esecuzione di interventi tecnici su capannoni, depurazione, bonifiche ed efficienza energetica a Brescia nel pieno rispetto normativo.",
+    "heroBullets": [
+      "Sopralluogo tecnico in stabilimento e piano operativo senza fermo attivita",
+      "Gestione completa pratiche autorizzative, certificazioni e conformita ambientale",
+      "Garanzie scritte su sicurezza, rendimento e assistenza post-intervento"
+    ],
+    "ctaButtonText": "Richiedi Studio di Fattibilita",
+    "trustMicrocopy": "Riservatezza industriale garantita (NDA) · Risposta tecnica entro la giornata lavorativa",
+    "logoLocalPath": "/leads/ambienteco/logo.png",
+    "heroImageLocalPath": "/leads/ambienteco/hero.jpg",
+    "heroImageCaption": "Ambienteco · Sede operativa e realizzazioni (Brescia)",
+    "quiz": {
+      "question1": {
+        "title": "Quale intervento tecnico per il vostro stabilimento state pianificando?",
+        "options": [
+          "Bonifiche ambientali, depurazione acque o gestione rifiuti industriali",
+          "Coperture industriali, impianti fotovoltaici aziendali o efficienza energetica",
+          "Sopralluogo tecnico in stabilimento, perizia e capitolato chiavi in mano"
+        ]
+      },
+      "question2": {
+        "title": "Qual e l'orizzonte temporale previsto per il progetto?",
+        "options": [
+          "Avvio operativo urgente (entro 30 giorni)",
+          "Pianificazione nel trimestre in corso",
+          "Valutazione tecnica e di budget preliminare"
+        ]
+      },
+      "finalStepTitle": "Specifiche registrate. Inserisci i riferimenti aziendali per il colloquio con l'Ufficio Tecnico:"
+    },
+    "valueProps": [
+      {
+        "title": "Perizia Tecnica e Piano Esecutivo Chiaro",
+        "description": "Analizziamo lo stato reale dell'impianto o della copertura a Brescia definendo costi, tempistiche e ritorni operativi prima del cantiere.",
+        "metric": "Progetto Chiuso"
+      },
+      {
+        "title": "Piena Conformita Normativa e Ambientale",
+        "description": "Ambienteco gestisce interventi complessi in sicurezza, rilasciando tutta la documentazione tecnica e le certificazioni richieste.",
+        "metric": "100% A Norma"
+      },
+      {
+        "title": "Manutenzione Programmata e Assistenza Diretta",
+        "description": "Un referente tecnico dedicato segue l'azienda dalla realizzazione fino ai controlli periodici e all'assistenza continua.",
+        "metric": "SLA Garantito"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "99.4%",
+      "mainStatLabel": "Commesse industriali chiuse in sicurezza e nei tempi concordati",
+      "reviewsSummary": "Partner tecnico specializzato per aziende e capannoni a Brescia",
+      "clientReferenceWall": [
+        "Conformita Sicurezza D.Lgs 81/08",
+        "Certificazioni Impianti e Ambiente",
+        "Qualita Certificata ISO 9001",
+        "Cantieri Senza Fermo Produzione",
+        "Assistenza Tecnica Diretta"
+      ],
+      "secondaryStats": [
+        {
+          "value": "99.4%",
+          "label": "Interventi eseguiti nel rispetto delle scadenze di cantiere"
+        },
+        {
+          "value": "< 0.4s",
+          "label": "Accesso rapido a perizie e richieste tecniche su mobile"
+        },
+        {
+          "value": "24h",
+          "label": "Pianificazione sopralluogo tecnico in stabilimento"
+        }
+      ],
+      "testimonials": [
+        {
+          "name": "Direzione Tecnica e HSE",
+          "location": "Brescia · Stabilimento Produttivo",
+          "quote": "Cantiere organizzato in modo impeccabile da Ambienteco: lavorazioni svolte senza fermare la nostra produzione e documentazione esemplare.",
+          "roleOrContext": "Intervento in stabilimento"
+        },
+        {
+          "name": "Amministrazione e Impianti",
+          "location": "Brescia e provincia",
+          "quote": "Preventivo dettagliato senza voci impreviste e supporto prezioso su tutta la parte autorizzativa.",
+          "roleOrContext": "Servizio chiavi in mano"
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "Ambienteco - tempi di caricamento mobile e richieste preventivo di Ambienteco (18.3s)",
+    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di Ambienteco, da smartphone impiega 18.3 secondi ad aprirsi per 84 risorse bloccanti, frenando le richieste di preventivo.\n\nAbbiamo gia preparato una demo in Next.js per Ambienteco che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Ambienteco, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/ambienteco\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "Ambienteco - tempi di caricamento mobile e richieste preventivo di Ambienteco (18.3s)",
+      "body": "Buongiorno,\n\nda un test sul sito di Ambienteco, da smartphone impiega 18.3 secondi ad aprirsi per 84 risorse bloccanti, frenando le richieste di preventivo.\n\nAbbiamo gia preparato una demo in Next.js per Ambienteco che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: Ambienteco - tempi di caricamento mobile e richieste preventivo di Ambienteco (18.3s)",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Ambienteco, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/ambienteco\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: Ambienteco - tempi di caricamento mobile e richieste preventivo di Ambienteco (18.3s)",
+      "body": "Buongiorno,\n\nOltre a tagliare i 18.3 secondi su mobile, il sistema qualifica ogni preventivo prima di inviarlo al CRM.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza - TechPyre Studio",
+      "inThread": true,
+      "requiresFollowUpCall": true
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: Ambienteco - tempi di caricamento mobile e richieste preventivo di Ambienteco (18.3s)",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Ambienteco non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/ambienteco) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

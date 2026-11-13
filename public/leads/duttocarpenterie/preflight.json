@@ -1,0 +1,32 @@
+{
+  "slug": "duttocarpenterie",
+  "targetUrl": "http://www.duttocarpenterie.it",
+  "searchKeyword": "carpenteria meccanica cuneo",
+  "measuredResponseMs": 5456,
+  "renderBlockingScripts": 8,
+  "estimatedMobileLcpSeconds": 7.8,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "lorena@duttocarpenterie.it",
+    "isGeneric": true,
+    "score": 38
+  },
+  "extractedEmails": [
+    "lorena@duttocarpenterie.it",
+    "lorena@duttocarpenterie.it",
+    "samanta@duttocarpenterie.it",
+    "samanta@duttocarpenterie.it",
+    "lorena@duttocarpenterie.it"
+  ],
+  "extractedPhones": [
+    "+39 0171 383885",
+    "0171-383900"
+  ],
+  "extractedVat": "00221140049"
+}

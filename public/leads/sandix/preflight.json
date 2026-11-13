@@ -1,0 +1,29 @@
+{
+  "slug": "sandix",
+  "targetUrl": "http://www.sandix.it",
+  "searchKeyword": "serramenti legno alluminio udine",
+  "measuredResponseMs": 2872,
+  "renderBlockingScripts": 12,
+  "estimatedMobileLcpSeconds": 5.9,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "sandix@sandix.it",
+    "isGeneric": true,
+    "score": 58
+  },
+  "extractedEmails": [
+    "sandix@sandix.it"
+  ],
+  "extractedPhones": [
+    "0432667025",
+    "0432 667459",
+    "393 9172258"
+  ],
+  "extractedVat": "00285480307"
+}

@@ -1,0 +1,29 @@
+{
+  "slug": "alpimarco",
+  "targetUrl": "http://www.alpimarco.it",
+  "searchKeyword": "automazioni industriali forli",
+  "measuredResponseMs": 1981,
+  "renderBlockingScripts": 16,
+  "estimatedMobileLcpSeconds": 5.8,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@alpimarco.it",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@alpimarco.it",
+    "info@alpimarco.it",
+    "info@alpimarco.it"
+  ],
+  "extractedPhones": [
+    "+390546620593"
+  ],
+  "extractedVat": "02401050394"
+}

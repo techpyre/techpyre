@@ -1,0 +1,36 @@
+{
+  "slug": "ermeticserramenti",
+  "targetUrl": "https://ermeticserramenti.it",
+  "searchKeyword": "serramenti legno alluminio udine",
+  "measuredResponseMs": 318,
+  "renderBlockingScripts": 70,
+  "estimatedMobileLcpSeconds": 14.8,
+  "runsAds": true,
+  "detectedTrackingSignals": [
+    "Google Ads / GTM"
+  ],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "commerciale@ermeticserramenti.it",
+    "isGeneric": true,
+    "score": 45
+  },
+  "extractedEmails": [
+    "info@ermeticserramenti.it",
+    "assistenza@treativa.com",
+    "info@ermeticserramenti.it",
+    "ermeticserramenti@pec.itEmail",
+    "commerciale@ermeticserramenti.it",
+    "assistenza@treativa.com"
+  ],
+  "extractedPhones": [
+    "0432679100",
+    "+390432790215",
+    "00606070308"
+  ],
+  "extractedVat": "Non trovata"
+}

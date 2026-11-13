@@ -1,0 +1,31 @@
+{
+  "slug": "montesi",
+  "targetUrl": "http://www.montesi.it",
+  "searchKeyword": "automazioni industriali forli",
+  "measuredResponseMs": 3584,
+  "renderBlockingScripts": 81,
+  "estimatedMobileLcpSeconds": 20.5,
+  "runsAds": true,
+  "detectedTrackingSignals": [
+    "Google Ads / GTM"
+  ],
+  "decisionMaker": {
+    "fullName": "Paolo Montesi",
+    "firstName": "Paolo",
+    "role": "Titolare"
+  },
+  "emailSelection": {
+    "bestEmail": "info@montesi.it",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "wordpress@netrising.com",
+    "info@montesi.it"
+  ],
+  "extractedPhones": [
+    "+39054540162",
+    "0243640397"
+  ],
+  "extractedVat": "02430640397"
+}

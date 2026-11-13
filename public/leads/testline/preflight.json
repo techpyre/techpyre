@@ -1,0 +1,33 @@
+{
+  "slug": "testline",
+  "targetUrl": "http://www.testline.it",
+  "searchKeyword": "scaffalature industriali magazzino verona",
+  "measuredResponseMs": 1836,
+  "renderBlockingScripts": 25,
+  "estimatedMobileLcpSeconds": 7.1,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@testline.it",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@testline.it",
+    "info@testline.it",
+    "info@testline.it",
+    "info@testline.it",
+    "info@testline.it"
+  ],
+  "extractedPhones": [
+    "+39 051 6831972",
+    "+39 051 6834093",
+    "051 6857147"
+  ],
+  "extractedVat": "01546130384"
+}

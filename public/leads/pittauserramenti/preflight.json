@@ -1,0 +1,30 @@
+{
+  "slug": "pittauserramenti",
+  "targetUrl": "http://www.pittauserramenti.com",
+  "searchKeyword": "infissi alluminio pordenone",
+  "measuredResponseMs": 301,
+  "renderBlockingScripts": 46,
+  "estimatedMobileLcpSeconds": 9.2,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "serramentipittau@gmail.com",
+    "isGeneric": true,
+    "score": -2
+  },
+  "extractedEmails": [
+    "serramentipittau@gmail.com",
+    "serramentipittau@gmail.com",
+    "serramentipittau@gmail.com"
+  ],
+  "extractedPhones": [
+    "0434 580636",
+    "347 8458371"
+  ],
+  "extractedVat": "01436620932"
+}

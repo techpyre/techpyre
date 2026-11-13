@@ -1,0 +1,29 @@
+{
+  "slug": "edilarredofacile",
+  "targetUrl": "https://www.edilarredofacile.it",
+  "searchKeyword": "carpenteria meccanica cuneo",
+  "measuredResponseMs": 237,
+  "renderBlockingScripts": 91,
+  "estimatedMobileLcpSeconds": 18,
+  "runsAds": true,
+  "detectedTrackingSignals": [
+    "Google Ads / GTM"
+  ],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@edilarredofacile.it",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@edilarredofacile.it"
+  ],
+  "extractedPhones": [
+    "+39 06 87786323"
+  ],
+  "extractedVat": "12506401004"
+}

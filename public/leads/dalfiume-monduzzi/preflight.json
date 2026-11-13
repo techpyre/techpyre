@@ -1,0 +1,27 @@
+{
+  "slug": "dalfiume-monduzzi",
+  "targetUrl": "https://www.dalfiume-monduzzi.it",
+  "searchKeyword": "gruppi elettrogeni industriali bologna",
+  "measuredResponseMs": 2625,
+  "renderBlockingScripts": 14,
+  "estimatedMobileLcpSeconds": 5.7,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@dalfiume-monduzzi.it",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@dalfiume-monduzzi.it"
+  ],
+  "extractedPhones": [
+    "+39 054 2641607"
+  ],
+  "extractedVat": "02698831209"
+}

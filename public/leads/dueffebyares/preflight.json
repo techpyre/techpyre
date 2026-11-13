@@ -1,0 +1,35 @@
+{
+  "slug": "dueffebyares",
+  "targetUrl": "https://dueffebyares.it",
+  "searchKeyword": "infissi alluminio pordenone",
+  "measuredResponseMs": 1152,
+  "renderBlockingScripts": 23,
+  "estimatedMobileLcpSeconds": 6.2,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@dueffebyares.it",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@dueffebyares.it",
+    "info@dueffebyares.it",
+    "info@dueffebyares.it",
+    "info@dueffebyares.it",
+    "info@dueffebyares.it",
+    "info@dueffebyares.it",
+    "info@dueffebyares.it",
+    "info@dueffebyares.it",
+    "info@dueffebyares.it"
+  ],
+  "extractedPhones": [
+    "0434 570495"
+  ],
+  "extractedVat": "Non trovata"
+}

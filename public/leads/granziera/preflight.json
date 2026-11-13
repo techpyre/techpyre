@@ -1,0 +1,30 @@
+{
+  "slug": "granziera",
+  "targetUrl": "https://www.granziera.it",
+  "searchKeyword": "infissi alluminio pordenone",
+  "measuredResponseMs": 765,
+  "renderBlockingScripts": 75,
+  "estimatedMobileLcpSeconds": 15.8,
+  "runsAds": true,
+  "detectedTrackingSignals": [
+    "Google Ads / GTM"
+  ],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@granziera.it",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@granziera.it"
+  ],
+  "extractedPhones": [
+    "+39 0438 482016",
+    "0438 480700"
+  ],
+  "extractedVat": "03757380260"
+}

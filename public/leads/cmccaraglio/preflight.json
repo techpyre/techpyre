@@ -1,0 +1,40 @@
+{
+  "slug": "cmccaraglio",
+  "targetUrl": "https://www.cmccaraglio.it",
+  "searchKeyword": "carpenteria meccanica cuneo",
+  "measuredResponseMs": 3343,
+  "renderBlockingScripts": 57,
+  "estimatedMobileLcpSeconds": 14.4,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "progettazione@cmccaraglio.it",
+    "isGeneric": true,
+    "score": 38
+  },
+  "extractedEmails": [
+    "info@cmccaraglio.it",
+    "info@cmccaraglio.it",
+    "info@cmccaraglio.it",
+    "info@cmccaraglio.it",
+    "acquisti@cmccaraglio.it",
+    "acquisti@cmccaraglio.it",
+    "progettazione@cmccaraglio.it",
+    "progettazione@cmccaraglio.it",
+    "amministrazione@cmccaraglio.it",
+    "amministrazione@cmccaraglio.it",
+    "info@cmccaraglio.it",
+    "info@cmccaraglio.it",
+    "acquisti@cmccaraglio.it"
+  ],
+  "extractedPhones": [
+    "0171-619091",
+    "0171-618466"
+  ],
+  "extractedVat": "03343930040"
+}

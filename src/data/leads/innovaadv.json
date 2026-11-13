@@ -13,7 +13,13 @@
     "isGenericInbox": true,
     "emailScore": 5,
     "decisionMakerFirstName": null,
-    "decisionMakerRole": "Direzione Aziendale"
+    "decisionMakerRole": "Direzione Aziendale",
+    "lastSentMessageId": "<b2184f8a-43e7-c0c8-a3e5-845ccdf7ffd5@techpyre.eu>",
+    "threadMessageIds": [
+      "<7c124425-73db-45b7-66e1-b3f3d679d20e@techpyre.eu>",
+      "<b2184f8a-43e7-c0c8-a3e5-845ccdf7ffd5@techpyre.eu>"
+    ],
+    "status": "CONTACTED_STEP_2"
   },
   "audit": {
     "originalLcpSeconds": 6,

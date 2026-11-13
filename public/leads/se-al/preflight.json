@@ -1,0 +1,63 @@
+{
+  "slug": "se-al",
+  "targetUrl": "https://www.se-al.it",
+  "searchKeyword": "serramenti legno alluminio udine",
+  "measuredResponseMs": 186,
+  "renderBlockingScripts": 48,
+  "estimatedMobileLcpSeconds": 9.9,
+  "runsAds": true,
+  "detectedTrackingSignals": [
+    "Google Ads / GTM"
+  ],
+  "decisionMaker": {
+    "fullName": "Giovanni Della",
+    "firstName": "Giovanni",
+    "role": "Titolare"
+  },
+  "emailSelection": {
+    "bestEmail": "info@se-al.it",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "area-ponzio@2x.png",
+    "area-ponzio@2x.png",
+    "area-ponzio@2x-300x70.png",
+    "area-ponzio@2x-450x105.png",
+    "info@se-al.it",
+    "info@se-al.it",
+    "info@se-al.it",
+    "info@se-al.it",
+    "info@se-al.it",
+    "info@se-al.it",
+    "info@se-al.it",
+    "info@se-al.it",
+    "info@se-al.it",
+    "info@se-al.it",
+    "info@se-al.it",
+    "info@se-al.it",
+    "info@se-al.it",
+    "info@se-al.it",
+    "info@se-al.it",
+    "info@se-al.it",
+    "info@se-al.it",
+    "info@se-al.it",
+    "info@se-al.it",
+    "info@se-al.it",
+    "info@se-al.it",
+    "info@se-al.it",
+    "info@se-al.it",
+    "info@se-al.it",
+    "info@se-al.it",
+    "info@se-al.it",
+    "info@se-al.it",
+    "info@se-al.it",
+    "info@se-al.it",
+    "info@se-al.it"
+  ],
+  "extractedPhones": [
+    "+390432675127",
+    "0432 675870"
+  ],
+  "extractedVat": "02639600309"
+}

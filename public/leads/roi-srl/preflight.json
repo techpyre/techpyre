@@ -1,0 +1,25 @@
+{
+  "slug": "roi-srl",
+  "targetUrl": "https://www.roi-srl.com",
+  "searchKeyword": "nastri trasportatori industriali torino",
+  "measuredResponseMs": 247,
+  "renderBlockingScripts": 23,
+  "estimatedMobileLcpSeconds": 5.9,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@roi-srl.it",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@roi-srl.it"
+  ],
+  "extractedPhones": [],
+  "extractedVat": "01743481200"
+}

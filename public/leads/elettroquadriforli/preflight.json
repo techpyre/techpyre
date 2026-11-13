@@ -1,0 +1,33 @@
+{
+  "slug": "elettroquadriforli",
+  "targetUrl": "http://www.elettroquadriforli.com",
+  "searchKeyword": "automazioni industriali forli",
+  "measuredResponseMs": 877,
+  "renderBlockingScripts": 7,
+  "estimatedMobileLcpSeconds": 5.9,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@elettroquadriforli.com",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@elettroquadriforli.com",
+    "info@elettroquadriforli.com",
+    "info@elettroquadriforli.com",
+    "info@elettroquadriforli.com",
+    "info@elettroquadriforli.com",
+    "info@elettroquadriforli.com",
+    "info@elettroquadriforli.com"
+  ],
+  "extractedPhones": [
+    "+39 0543 724294"
+  ],
+  "extractedVat": "03443020403"
+}

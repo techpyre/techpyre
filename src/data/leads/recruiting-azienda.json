@@ -13,7 +13,8 @@
     "isGenericInbox": false,
     "emailScore": 50,
     "decisionMakerFirstName": null,
-    "decisionMakerRole": "Direzione Aziendale"
+    "decisionMakerRole": "Direzione Aziendale",
+    "status": "INVALID_TICKET_INBOX"
   },
   "audit": {
     "originalLcpSeconds": 8.5,

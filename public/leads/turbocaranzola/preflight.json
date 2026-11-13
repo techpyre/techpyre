@@ -1,0 +1,30 @@
+{
+  "slug": "turbocaranzola",
+  "targetUrl": "http://www.turbocaranzola.it",
+  "searchKeyword": "gruppi elettrogeni industriali bologna",
+  "measuredResponseMs": 276,
+  "renderBlockingScripts": 22,
+  "estimatedMobileLcpSeconds": 5.6,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "turbocarbologna@gmail.com",
+    "isGeneric": true,
+    "score": -2
+  },
+  "extractedEmails": [
+    "turbocarbologna@gmail.com",
+    "turbocarbologna@gmail.com",
+    "turbocarbologna@gmail.com",
+    "turbocarbologna@gmail.com"
+  ],
+  "extractedPhones": [
+    "+39051731393"
+  ],
+  "extractedVat": "01607941208"
+}

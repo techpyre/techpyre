@@ -1,0 +1,28 @@
+{
+  "slug": "elettrodistribuzione",
+  "targetUrl": "http://www.elettrodistribuzione.com",
+  "searchKeyword": "impianti antincendio industriali padova",
+  "measuredResponseMs": 2289,
+  "renderBlockingScripts": 28,
+  "estimatedMobileLcpSeconds": 8.5,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@elettrodistribuzione.com",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@elettrodistribuzione.com",
+    "info@elettrodistribuzione.com"
+  ],
+  "extractedPhones": [
+    "+39 049 9355269"
+  ],
+  "extractedVat": "04807660289"
+}

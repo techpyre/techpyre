@@ -1,0 +1,33 @@
+{
+  "slug": "sari-srl",
+  "targetUrl": "http://www.sari-srl.com",
+  "searchKeyword": "taglio laser lamiera vicenza",
+  "measuredResponseMs": 4447,
+  "renderBlockingScripts": 26,
+  "estimatedMobileLcpSeconds": 10.2,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": "Domenico Motta",
+    "firstName": "Domenico",
+    "role": "Direzione Tecnica"
+  },
+  "emailSelection": {
+    "bestEmail": "deutschland@sari-srl.com",
+    "isGeneric": true,
+    "score": 38
+  },
+  "extractedEmails": [
+    "info@sari-srl.com",
+    "info@sari-srl.com",
+    "deutschland@sari-srl.com",
+    "deutschland@sari-srl.com",
+    "info@sari-srl.com"
+  ],
+  "extractedPhones": [
+    "+39042477240",
+    "+39042477241",
+    "0424 474975"
+  ],
+  "extractedVat": "02579890241"
+}

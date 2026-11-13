@@ -1,0 +1,28 @@
+{
+  "slug": "idrotermicacoop",
+  "targetUrl": "http://www.idrotermicacoop.it",
+  "searchKeyword": "automazioni industriali forli",
+  "measuredResponseMs": 1923,
+  "renderBlockingScripts": 124,
+  "estimatedMobileLcpSeconds": 25.1,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@idrotermicacoop.it",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@idrotermicacoop.it",
+    "info@idrotermicacoop.it"
+  ],
+  "extractedPhones": [
+    "+39 0543 776111"
+  ],
+  "extractedVat": "00336810403"
+}

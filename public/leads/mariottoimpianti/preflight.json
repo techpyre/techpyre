@@ -1,0 +1,29 @@
+{
+  "slug": "mariottoimpianti",
+  "targetUrl": "http://www.mariottoimpianti.it",
+  "searchKeyword": "impianti antincendio industriali padova",
+  "measuredResponseMs": 1975,
+  "renderBlockingScripts": 12,
+  "estimatedMobileLcpSeconds": 5,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@mariottoimpianti.it",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@mariottoimpianti.it",
+    "info@mariottoimpianti.it",
+    "info@mariottoimpianti.it"
+  ],
+  "extractedPhones": [
+    "+39 049 5993118"
+  ],
+  "extractedVat": "03558470286"
+}

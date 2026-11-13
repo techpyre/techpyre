@@ -1,0 +1,29 @@
+{
+  "slug": "falegnameriacorrubolo",
+  "targetUrl": "http://www.falegnameriacorrubolo.com",
+  "searchKeyword": "serramenti legno alluminio udine",
+  "measuredResponseMs": 374,
+  "renderBlockingScripts": 46,
+  "estimatedMobileLcpSeconds": 9.4,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@falegnameriacorrubolo.com",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@falegnameriacorrubolo.com",
+    "info@falegnameriacorrubolo.com",
+    "info@falegnameriacorrubolo.com"
+  ],
+  "extractedPhones": [
+    "0432 800458"
+  ],
+  "extractedVat": "02122580307"
+}

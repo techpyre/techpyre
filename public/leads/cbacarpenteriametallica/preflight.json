@@ -1,0 +1,49 @@
+{
+  "slug": "cbacarpenteriametallica",
+  "targetUrl": "https://www.cbacarpenteriametallica.it",
+  "searchKeyword": "carpenteria meccanica cuneo",
+  "measuredResponseMs": 305,
+  "renderBlockingScripts": 42,
+  "estimatedMobileLcpSeconds": 8.8,
+  "runsAds": true,
+  "detectedTrackingSignals": [
+    "Google Ads / GTM"
+  ],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "cbasrl@cbasrl.com",
+    "isGeneric": true,
+    "score": -37
+  },
+  "extractedEmails": [
+    "cbasrl@cbasrl.com",
+    "cbasrl@cbasrl.com",
+    "cbasrl@cbasrl.com",
+    "cbasrl@cbasrl.com",
+    "cbasrl@cbasrl.com",
+    "cbasrl@cbasrl.com",
+    "cbasrl@cbasrl.com",
+    "cbasrl@cbasrl.com",
+    "cbasrl@cbasrl.com",
+    "cbasrl@cbasrl.com",
+    "cbasrl@cbasrl.com",
+    "cbasrl@cbasrl.com",
+    "cbasrl@cbasrl.com",
+    "cbasrl@cbasrl.com",
+    "cbasrl@cbasrl.com",
+    "cbasrl@cbasrl.com",
+    "cbasrl@cbasrl.com",
+    "cbasrl@cbasrl.com",
+    "cbasrl@cbasrl.com",
+    "cbasrl@cbasrl.com",
+    "cbasrl@cbasrl.com"
+  ],
+  "extractedPhones": [
+    "+390172499245"
+  ],
+  "extractedVat": "00534060041"
+}

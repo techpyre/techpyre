@@ -1,0 +1,29 @@
+{
+  "slug": "eurocarpenteria",
+  "targetUrl": "https://eurocarpenteria.com",
+  "searchKeyword": "carpenteria meccanica cuneo",
+  "measuredResponseMs": 2535,
+  "renderBlockingScripts": 44,
+  "estimatedMobileLcpSeconds": 11.5,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "eurocarpenteriasrl@gmail.com",
+    "isGeneric": true,
+    "score": 18
+  },
+  "extractedEmails": [
+    "eurocarpenteriasrl@gmail.com",
+    "eurocarpenteriasrl@gmail.com"
+  ],
+  "extractedPhones": [
+    "390171902135",
+    "328 3460623"
+  ],
+  "extractedVat": "04120530045"
+}

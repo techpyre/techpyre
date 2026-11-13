@@ -1,0 +1,32 @@
+{
+  "slug": "gonzatoserramentiudine",
+  "targetUrl": "https://www.gonzatoserramentiudine.it",
+  "searchKeyword": "serramenti legno alluminio udine",
+  "measuredResponseMs": 608,
+  "renderBlockingScripts": 47,
+  "estimatedMobileLcpSeconds": 9.7,
+  "runsAds": true,
+  "detectedTrackingSignals": [
+    "Google Ads / GTM"
+  ],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "gonzatoserramenti@gmail.com",
+    "isGeneric": true,
+    "score": -2
+  },
+  "extractedEmails": [
+    "gonzatoserramenti@gmail.com",
+    "gonzatoserramenti@pec.confartigianato.it",
+    "gonzatoserramenti@gmail.com",
+    "gonzatoserramenti@gmail.com"
+  ],
+  "extractedPhones": [
+    "0431 58114"
+  ],
+  "extractedVat": "01042770303"
+}

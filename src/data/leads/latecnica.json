@@ -1,0 +1,169 @@
+{
+  "slug": "latecnica",
+  "archetype": "b2b-authority",
+  "meta": {
+    "companyName": "La Tecnica",
+    "decisionMakerName": "Direzione La Tecnica",
+    "decisionMakerFirstName": null,
+    "decisionMakerRole": "Direzione Aziendale",
+    "isGenericInbox": true,
+    "emailScore": 35,
+    "targetEmail": "info@latecnica.trentino.it",
+    "phone": "+39 0463 422100",
+    "city": "Cles",
+    "vatNumber": "00331540229",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=La%20Tecnica",
+    "originalLandingUrl": "http://www.latecnica.trentino.it",
+    "status": "CONTACTED_STEP_1",
+    "lastSentMessageId": "<ee786384-6d41-9e34-8bce-d0235719e425@techpyre.eu>",
+    "threadMessageIds": [
+      "<ee786384-6d41-9e34-8bce-d0235719e425@techpyre.eu>"
+    ]
+  },
+  "audit": {
+    "originalLcpSeconds": 6,
+    "mobileScore": 49,
+    "renderBlockingCount": 28,
+    "runsAds": false,
+    "detectedTrackingSignals": [],
+    "threeCriticalFlaws": [
+      "Perdita di richieste di preventivo su mobile: caricamento di 6s (28 risorse bloccanti) che spinge i visitatori da smartphone ad abbandonare la pagina prima di contattare l'ufficio commerciale.",
+      "Assenza di pre-qualifica automatica: il sito non filtra le richieste per tipologia di intervento, budget o tempistiche prima di inviarle ai referenti tecnici di La Tecnica.",
+      "Colli di bottiglia commerciali: le richieste arrivano come semplici email isolate senza instradamento automatico e senza tracciamento strutturato della trattativa."
+    ],
+    "activeAdHeadline": "La Tecnica - Multitask Ideas",
+    "activeAdCopySummary": "Siamo specializzati nella produzione di sistemi di archiviazione, armadi multifunzionali e scaffali compattabili"
+  },
+  "theme": {
+    "primaryHex": "#205090",
+    "accentHex": "#B8860B",
+    "darkBgHex": "#0B1E36",
+    "borderRadius": "8px",
+    "headerBgMode": "light",
+    "logoBrightness": "light"
+  },
+  "content": {
+    "badgeTop": "La Tecnica · Logistica e Movimentazione B2B (Cles)",
+    "heroHeadline": "La Tecnica - Multitask Ideas",
+    "heroSubheadline": "Siamo specializzati nella produzione di sistemi di archiviazione, armadi multifunzionali e scaffali compattabili",
+    "heroBullets": [
+      "Analisi flussi di magazzino, movimentazione interna e spedizioni programmate",
+      "Imballaggi protetti e sistemi di trasporto progettati su dimensioni reali",
+      "Referente operativo unico per coordinamento carichi e urgenze"
+    ],
+    "ctaButtonText": "Richiedi Studio di Fattibilita",
+    "trustMicrocopy": "Riservatezza industriale garantita (NDA) · Risposta tecnica entro la giornata lavorativa",
+    "logoLocalPath": "/leads/latecnica/logo.png",
+    "heroImageLocalPath": "/leads/latecnica/hero.jpg",
+    "heroImageCaption": "La Tecnica · Sede operativa e realizzazioni (Cles)",
+    "quiz": {
+      "question1": {
+        "title": "Quale esigenza logistica o di movimentazione desiderate ottimizzare?",
+        "options": [
+          "Nastri trasportatori, rulli, scaffalature o impianti di movimentazione",
+          "Imballaggi industriali, packaging su misura e forniture continuative",
+          "Trasporti dedicati, logistica di stabilimento e contratto SLA"
+        ]
+      },
+      "question2": {
+        "title": "Qual e l'orizzonte temporale previsto per il progetto?",
+        "options": [
+          "Avvio operativo urgente (entro 30 giorni)",
+          "Pianificazione nel trimestre in corso",
+          "Valutazione tecnica e di budget preliminare"
+        ]
+      },
+      "finalStepTitle": "Specifiche registrate. Inserisci i riferimenti aziendali per il colloquio con l'Ufficio Tecnico:"
+    },
+    "valueProps": [
+      {
+        "title": "Soluzioni su Misura per Flussi di Stabilimento",
+        "description": "Ottimizziamo movimentazione, rulliere, stoccaggio e confezionamento a Cles riducendo danni da trasporto e tempi morti di carico.",
+        "metric": "Efficienza Logistica"
+      },
+      {
+        "title": "Puntualita e Protezione Merci Garantita",
+        "description": "La Tecnica opera con standard rigorosi per proteggere prodotti finiti, semilavorati e macchinari lungo tutta la filiera.",
+        "metric": "99.4% Puntuali"
+      },
+      {
+        "title": "Capacita Flessibile e Accordi Quadro",
+        "description": "Scorte di sicurezza e pianificazione flessibile per assorbire picchi di produzione e richieste urgenti senza blocchi.",
+        "metric": "SLA Contrattuale"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "99.4%",
+      "mainStatLabel": "Tasso di puntualita sulle consegne e movimentazioni B2B",
+      "reviewsSummary": "Partner logistico e industriale di fiducia a Cles",
+      "clientReferenceWall": [
+        "Consegne Programmate JIT",
+        "Sicurezza Carichi e Imballi",
+        "Qualita Certificata ISO 9001",
+        "Integrazione Flussi ERP",
+        "Referente Operativo Unico"
+      ],
+      "secondaryStats": [
+        {
+          "value": "99.4%",
+          "label": "Spedizioni e forniture consegnate nella finestra concordata"
+        },
+        {
+          "value": "< 0.4s",
+          "label": "Richiesta quotazione istantanea da ufficio acquisti e magazzino"
+        },
+        {
+          "value": "24h",
+          "label": "Quotazione tratte, impianti o lotti su specifica"
+        }
+      ],
+      "testimonials": [
+        {
+          "name": "Responsabile Logistica e Magazzino",
+          "location": "Cles · Polo Industriale",
+          "quote": "Da quando collaboriamo con La Tecnica abbiamo velocizzato le operazioni di carico e azzerato i ritardi verso i nostri clienti esteri.",
+          "roleOrContext": "Logistica e movimentazione"
+        },
+        {
+          "name": "Ufficio Acquisti Aziendale",
+          "location": "Cles e provincia",
+          "quote": "Preventivi chiari, tracciabilita immediata e supporto rapido anche nelle spedizioni urgenti di fine mese.",
+          "roleOrContext": "Fornitura continuativa"
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "La Tecnica - tempi di caricamento mobile e richieste preventivo di La Tecnica (6s)",
+    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di La Tecnica, da smartphone impiega 6 secondi ad aprirsi per 28 risorse bloccanti, frenando le richieste di preventivo.\n\nAbbiamo gia preparato una demo in Next.js per La Tecnica che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per La Tecnica, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/latecnica\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "La Tecnica - tempi di caricamento mobile e richieste preventivo di La Tecnica (6s)",
+      "body": "Buongiorno,\n\nda un test sul sito di La Tecnica, da smartphone impiega 6 secondi ad aprirsi per 28 risorse bloccanti, frenando le richieste di preventivo.\n\nAbbiamo gia preparato una demo in Next.js per La Tecnica che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: La Tecnica - tempi di caricamento mobile e richieste preventivo di La Tecnica (6s)",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per La Tecnica, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/latecnica\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: La Tecnica - tempi di caricamento mobile e richieste preventivo di La Tecnica (6s)",
+      "body": "Buongiorno,\n\nOltre a tagliare i 6 secondi su mobile, il sistema qualifica ogni preventivo prima di inviarlo al CRM.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza - TechPyre Studio",
+      "inThread": true,
+      "requiresFollowUpCall": true
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: La Tecnica - tempi di caricamento mobile e richieste preventivo di La Tecnica (6s)",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di La Tecnica non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/latecnica) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

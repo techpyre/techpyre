@@ -1,0 +1,28 @@
+{
+  "slug": "latecnica",
+  "targetUrl": "http://www.latecnica.trentino.it",
+  "searchKeyword": "scaffalature industriali magazzino verona",
+  "measuredResponseMs": 345,
+  "renderBlockingScripts": 28,
+  "estimatedMobileLcpSeconds": 6,
+  "runsAds": false,
+  "detectedTrackingSignals": [],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "info@latecnica.trentino.it",
+    "isGeneric": true,
+    "score": 35
+  },
+  "extractedEmails": [
+    "info@latecnica.trentino.it"
+  ],
+  "extractedPhones": [
+    "+39 0463 422100",
+    "0463 424047"
+  ],
+  "extractedVat": "00331540229"
+}

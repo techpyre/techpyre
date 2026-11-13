@@ -1,0 +1,54 @@
+{
+  "slug": "reggianiscaffalature",
+  "targetUrl": "http://www.reggianiscaffalature.it",
+  "searchKeyword": "scaffalature industriali magazzino verona",
+  "measuredResponseMs": 429,
+  "renderBlockingScripts": 47,
+  "estimatedMobileLcpSeconds": 10.1,
+  "runsAds": true,
+  "detectedTrackingSignals": [
+    "Google Ads / GTM"
+  ],
+  "decisionMaker": {
+    "fullName": null,
+    "firstName": null,
+    "role": null
+  },
+  "emailSelection": {
+    "bestEmail": "nicola@reggianiscaffalature.it",
+    "isGeneric": false,
+    "score": 80
+  },
+  "extractedEmails": [
+    "reggiani@reggianiscaffalature.it",
+    "reggiani@reggianiscaffalature.it",
+    "nicola@reggianiscaffalature.it",
+    "nicola@reggianiscaffalature.it",
+    "esperti@reggianiscaffalature.it",
+    "esperti@reggianiscaffalature.it",
+    "pezzarossa@reggianiscaffalature.it",
+    "pezzarossa@reggianiscaffalature.it",
+    "mauro@reggianiscaffalature.it",
+    "mauro@reggianiscaffalature.it",
+    "marketing@reggianiscaffalature.it",
+    "marketing@reggianiscaffalature.it",
+    "reggiani@reggianiscaffalature.it",
+    "reggiani@reggianiscaffalature.it",
+    "nicola@reggianiscaffalature.it",
+    "nicola@reggianiscaffalature.it",
+    "esperti@reggianiscaffalature.it",
+    "esperti@reggianiscaffalature.it",
+    "pezzarossa@reggianiscaffalature.it",
+    "pezzarossa@reggianiscaffalature.it",
+    "mauro@reggianiscaffalature.it",
+    "mauro@reggianiscaffalature.it",
+    "marketing@reggianiscaffalature.it",
+    "marketing@reggianiscaffalature.it",
+    "reggiani@reggianiscaffalature.it"
+  ],
+  "extractedPhones": [
+    "3404640449",
+    "+390521619104"
+  ],
+  "extractedVat": "01806050348"
+}
