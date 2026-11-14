@@ -1,0 +1,42 @@
+{
+  "name": "techpyre",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build --webpack",
+    "start": "next start",
+    "lint": "eslint",
+    "test": "node --import ./tests/register-alias.mjs --test tests/*.test.ts",
+    "generate:favicons": "node scripts/generate-favicons.mjs",
+    "tp": "node scripts/techpyre-cli.mjs",
+    "gui": "node techpyre-gui.mjs",
+    "dryrun": "node scripts/test-scout-dryrun.mjs",
+    "scout": "node scripts/scout-ad-library.mjs",
+    "preflight": "node scripts/preflight.mjs",
+    "outreach": "node scripts/send-outreach.mjs"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "exceljs": "^4.4.0",
+    "framer-motion": "^13.2.0",
+    "lucide-react": "^1.43.0",
+    "next": "16.3.4",
+    "nodemailer": "^10.1.1",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "tailwind-merge": "^3.6.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/nodemailer": "^8.0.2",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.4",
+    "opentype.js": "^2.0.0",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
