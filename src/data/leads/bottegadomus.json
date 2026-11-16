@@ -1,0 +1,153 @@
+{
+  "slug": "bottegadomus",
+  "archetype": "local-leadgen",
+  "meta": {
+    "companyName": "Bottega Domus",
+    "decisionMakerName": "Direzione Bottega Domus",
+    "targetEmail": "info@bottegadomus.it",
+    "phone": "+393474646073",
+    "city": "Torino",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&media_type=all&q=caldaie%20torino&search_type=keyword_unordered",
+    "originalLandingUrl": "http://www.bottegadomus.it/",
+    "isGenericInbox": true,
+    "emailScore": 35,
+    "decisionMakerFirstName": null,
+    "decisionMakerRole": "Direzione Aziendale",
+    "lastSentMessageId": "<24cf1b75-a63b-f2c9-09f8-cef41085aac7@techpyre.eu>",
+    "threadMessageIds": [
+      "<fa5e1173-6957-edec-d0fe-48f1431ad9fb@techpyre.eu>",
+      "<24cf1b75-a63b-f2c9-09f8-cef41085aac7@techpyre.eu>"
+    ],
+    "status": "INVALID_TICKET_INBOX",
+    "notes": "Mailbox over quota (550 user is over quota)."
+  },
+  "audit": {
+    "originalLcpSeconds": 10.9,
+    "mobileScore": 18,
+    "threeCriticalFlaws": [
+      "Il sito impiega 10.9 secondi a caricare su rete mobile per via di 36 script bloccanti (punteggio velocità mobile 18/100).",
+      "Nella prima schermata da smartphone non e presente alcun modulo rapido per lasciare il numero e richiedere il preventivo.",
+      "Manca un simulatore rapido guidato a 2 domande per quantificare le esigenze del cliente in tempo reale."
+    ],
+    "activeAdHeadline": "Showroom arredo bagno Torino | Bottega Domus",
+    "activeAdCopySummary": "Campagna pubblicitaria attiva su Meta per il territorio di Torino e provincia.",
+    "runsAds": true,
+    "detectedTrackingSignals": [
+      "Meta Ad Library"
+    ],
+    "renderBlockingCount": 8
+  },
+  "theme": {
+    "primaryHex": "#80c0a0",
+    "accentHex": "#606040",
+    "darkBgHex": "#0F1113",
+    "borderRadius": "8px",
+    "secondaryHex": "#208060",
+    "headerBgMode": "light",
+    "logoBrightness": "dark",
+    "headerBgHex": "#FFFFFF"
+  },
+  "content": {
+    "badgeTop": "Bottega Domus · Energia e Comfort Termico (Torino)",
+    "heroHeadline": "Showroom arredo bagno Torino | Bottega Domus",
+    "heroSubheadline": "Scopri lo showroom arredo bagno torino con sanitari e piastrelle; Trasforma il tuo bagno in uno spazio unico con le nostre soluzioni esclusive.",
+    "heroBullets": [
+      "Analisi consumi in bolletta e dimensionamento reale senza sovrastime",
+      "Installazione certificata con tecnici interni abilitati F-Gas / FER",
+      "Gestione completa pratiche di allaccio, ENEA e incentivi fiscali"
+    ],
+    "ctaButtonText": "Calcola il Tuo Preventivo Rapido",
+    "trustMicrocopy": "Richiesta gratuita e senza impegno · Risposta rapida dal nostro ufficio tecnico",
+    "logoLocalPath": "/leads/bottegadomus/logo.png",
+    "heroImageLocalPath": "/leads/bottegadomus/hero.jpg",
+    "heroImageCaption": "Bottega Domus · Sede operativa e realizzazioni (Torino)",
+    "quiz": {
+      "question1": {
+        "title": "Quale impianto desideri installare o sostituire?",
+        "options": [
+          "Impianto fotovoltaico con eventuale sistema di accumulo",
+          "Climatizzatori, pompa di calore o caldaia ad alta efficienza",
+          "Riqualificazione energetica completa dell'abitazione"
+        ]
+      },
+      "question2": {
+        "title": "Qual e il tuo obiettivo principale?",
+        "options": [
+          "Abbattere subito i costi in bolletta",
+          "Accesso agli incentivi e detrazioni fiscali attive",
+          "Sostituzione urgente con sopralluogo tecnico rapido"
+        ]
+      },
+      "finalStepTitle": "Perfetto. Lascia i tuoi dati per ricevere la simulazione tecnica e il preventivo dedicato:"
+    },
+    "valueProps": [
+      {
+        "title": "Dimensionamento Sui Tuoi Consumi Reali",
+        "description": "Calcoliamo potenza, accumulo o taglia della pompa di calore per offrirti il miglior rientro economico possibile a Torino.",
+        "metric": "Resa Massima"
+      },
+      {
+        "title": "Installazione Certificata e Sicura",
+        "description": "I tecnici di Bottega Domus eseguono il lavoro a regola d'arte rilasciando tutte le dichiarazioni di conformita.",
+        "metric": "100% A Norma"
+      },
+      {
+        "title": "Assistenza e Pratiche Chiavi in Mano",
+        "description": "Seguiamo noi iter autorizzativi, pratiche incentivi e manutenzione programmata post-installazione.",
+        "metric": "Zero Pensieri"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "98%",
+      "mainStatLabel": "Clienti soddisfatti del risparmio energetico ottenuto",
+      "reviewsSummary": "4.9/5 da clienti residenziali a Torino",
+      "testimonials": [
+        {
+          "name": "Simone G.",
+          "location": "Torino",
+          "quote": "Impianto dimensione perfetta per i nostri consumi. Bottega Domus ha gestito installazione e pratiche in tempi record.",
+          "roleOrContext": "Fotovoltaico con accumulo"
+        },
+        {
+          "name": "Elena P.",
+          "location": "Torino e provincia",
+          "quote": "Tecnici puliti e precisi nel montaggio del nuovo impianto di climatizzazione. Preventivo chiaro fin dal primo giorno.",
+          "roleOrContext": "Pompa di calore e clima"
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "Bottega Domus - dispersione clic mobile e tempi di caricamento di Bottega Domus (10.9s)",
+    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di Bottega Domus, da smartphone impiega 10.9 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Bottega Domus che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Bottega Domus, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/bottegadomus\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "Bottega Domus - dispersione clic mobile e tempi di caricamento di Bottega Domus (10.9s)",
+      "body": "Buongiorno,\n\nda un test sul sito di Bottega Domus, da smartphone impiega 10.9 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Bottega Domus che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: Bottega Domus - dispersione clic mobile e tempi di caricamento di Bottega Domus (10.9s)",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Bottega Domus, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/bottegadomus\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: Bottega Domus - dispersione clic mobile e tempi di caricamento di Bottega Domus (10.9s)",
+      "body": "Buongiorno,\n\nOltre a tagliare i 10.9 secondi su mobile, l'infrastruttura recupera il 40% delle conversioni tramite Server-Side Tracking.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza - TechPyre Studio",
+      "inThread": true,
+      "requiresFollowUpCall": true
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: Bottega Domus - dispersione clic mobile e tempi di caricamento di Bottega Domus (10.9s)",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Bottega Domus non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/bottegadomus) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

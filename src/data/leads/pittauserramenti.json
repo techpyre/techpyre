@@ -1,0 +1,148 @@
+{
+  "slug": "pittauserramenti",
+  "archetype": "local-leadgen",
+  "meta": {
+    "companyName": "Pittau Serramenti",
+    "decisionMakerName": "Direzione Pittau Serramenti",
+    "decisionMakerFirstName": null,
+    "decisionMakerRole": "Direzione Aziendale",
+    "isGenericInbox": true,
+    "emailScore": -2,
+    "targetEmail": "serramentipittau@gmail.com",
+    "phone": "0434 580636",
+    "city": "Cordenons",
+    "vatNumber": "01436620932",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Pittau%20Serramenti",
+    "originalLandingUrl": "http://www.pittauserramenti.com",
+    "status": "CONTACTED_STEP_1",
+    "lastSentMessageId": "<7379ebec-318b-22b6-33ae-7754fb3b3bc8@techpyre.eu>",
+    "threadMessageIds": [
+      "<7379ebec-318b-22b6-33ae-7754fb3b3bc8@techpyre.eu>"
+    ]
+  },
+  "audit": {
+    "originalLcpSeconds": 9.2,
+    "mobileScore": 22,
+    "renderBlockingCount": 46,
+    "runsAds": false,
+    "detectedTrackingSignals": [],
+    "threeCriticalFlaws": [
+      "Perdita di richieste di preventivo su mobile: caricamento di 9.2s (46 risorse bloccanti) che spinge i visitatori da smartphone ad abbandonare la pagina prima di contattare l'ufficio commerciale.",
+      "Assenza di pre-qualifica automatica: il sito non filtra le richieste per tipologia di intervento, budget o tempistiche prima di inviarle ai referenti tecnici di Pittau Serramenti.",
+      "Colli di bottiglia commerciali: le richieste arrivano come semplici email isolate senza instradamento automatico e senza tracciamento strutturato della trattativa."
+    ],
+    "activeAdHeadline": "infissi in alluminio e legno-alluminio",
+    "activeAdCopySummary": "Progettazione, fornitura e posa qualificata di infissi in PVC, alluminio, porte interne e blindati a Cordenons con gestione completa delle d..."
+  },
+  "theme": {
+    "primaryHex": "#5090c0",
+    "accentHex": "#2563EB",
+    "darkBgHex": "#0B1E36",
+    "borderRadius": "12px",
+    "headerBgMode": "light",
+    "logoBrightness": "light"
+  },
+  "content": {
+    "badgeTop": "Pittau Serramenti · Serramenti Certificati a Cordenons",
+    "heroHeadline": "infissi in alluminio e legno-alluminio",
+    "heroSubheadline": "Progettazione, fornitura e posa qualificata di infissi in PVC, alluminio, porte interne e blindati a Cordenons con gestione completa delle detrazioni fiscali.",
+    "heroBullets": [
+      "Rilievo misure preciso a domicilio e preventivo trasparente chiavi in mano",
+      "Profili ad alto isolamento termico e acustico per abbattere i consumi",
+      "Posa certificata con squadre interne e assistenza post-vendita diretta"
+    ],
+    "ctaButtonText": "Calcola il Tuo Preventivo Rapido",
+    "trustMicrocopy": "Richiesta gratuita e senza impegno · Risposta rapida dal nostro ufficio tecnico",
+    "logoLocalPath": "/leads/pittauserramenti/logo.png",
+    "heroImageLocalPath": "/leads/pittauserramenti/hero.jpg",
+    "heroImageCaption": "Pittau Serramenti · Sede operativa e realizzazioni (Cordenons)",
+    "quiz": {
+      "question1": {
+        "title": "Quale tipologia di intervento desideri valutare?",
+        "options": [
+          "Sostituzione infissi con isolamento termico/acustico",
+          "Nuova installazione per ristrutturazione o cantiere",
+          "Porte interne, blindati o sistemi oscuranti"
+        ]
+      },
+      "question2": {
+        "title": "Quanti serramenti prevede indicativamente il progetto?",
+        "options": [
+          "Da 1 a 4 serramenti",
+          "Da 5 a 8 serramenti (appartamento completo)",
+          "Oltre 8 serramenti o villa/ufficio"
+        ]
+      },
+      "finalStepTitle": "Ottimo. Inserisci i tuoi recapiti per ricevere il prospetto economico e il sopralluogo:"
+    },
+    "valueProps": [
+      {
+        "title": "Isolamento Termico e Acustico Certificato",
+        "description": "Serramenti selezionati per eliminare spifferi, umidita e rumori esterni nella tua abitazione o ufficio a Cordenons.",
+        "metric": "Risparmio Energetico"
+      },
+      {
+        "title": "Posa in Opera Qualificata Senza Sorprese",
+        "description": "Squadre di montaggio esperte di Pittau Serramenti curano controtelai, sigillature e finiture senza opere murarie invasive.",
+        "metric": "Posa Certificata"
+      },
+      {
+        "title": "Preventivo Chiaro e Supporto Pratiche Bonus",
+        "description": "Costi chiari fin dal primo incontro e assistenza completa su certificazioni energetiche ed ecobonus.",
+        "metric": "Prezzo Bloccato"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "98%",
+      "mainStatLabel": "Clienti soddisfatti di posa in opera e isolamento termico",
+      "reviewsSummary": "4.9/5 da clienti seguiti a Cordenons e provincia",
+      "testimonials": [
+        {
+          "name": "Davide C.",
+          "location": "Cordenons",
+          "quote": "Team di Pittau Serramenti preciso dal rilievo al montaggio. La differenza termica e acustica in casa si sente subito.",
+          "roleOrContext": "Sostituzione infissi completi"
+        },
+        {
+          "name": "Federica S.",
+          "location": "Cordenons e provincia",
+          "quote": "Preventivo rispettato al centesimo, cantiere lasciato pulito ogni sera e grande supporto sulle pratiche fiscali.",
+          "roleOrContext": "Finestre e portoncino blindato"
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "Pittau Serramenti - tempi di caricamento mobile e richieste preventivo di Pittau Serramenti (9.2s)",
+    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di Pittau Serramenti, da smartphone impiega 9.2 secondi ad aprirsi per 46 risorse bloccanti, frenando le richieste di preventivo.\n\nAbbiamo gia preparato una demo in Next.js per Pittau Serramenti che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Pittau Serramenti, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/pittauserramenti\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "Pittau Serramenti - tempi di caricamento mobile e richieste preventivo di Pittau Serramenti (9.2s)",
+      "body": "Buongiorno,\n\nda un test sul sito di Pittau Serramenti, da smartphone impiega 9.2 secondi ad aprirsi per 46 risorse bloccanti, frenando le richieste di preventivo.\n\nAbbiamo gia preparato una demo in Next.js per Pittau Serramenti che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: Pittau Serramenti - tempi di caricamento mobile e richieste preventivo di Pittau Serramenti (9.2s)",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Pittau Serramenti, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/pittauserramenti\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: Pittau Serramenti - tempi di caricamento mobile e richieste preventivo di Pittau Serramenti (9.2s)",
+      "body": "Buongiorno,\n\nOltre a tagliare i 9.2 secondi su mobile, il sistema qualifica ogni preventivo prima di inviarlo al CRM.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza - TechPyre Studio",
+      "inThread": true,
+      "requiresFollowUpCall": true
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: Pittau Serramenti - tempi di caricamento mobile e richieste preventivo di Pittau Serramenti (9.2s)",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Pittau Serramenti non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/pittauserramenti) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

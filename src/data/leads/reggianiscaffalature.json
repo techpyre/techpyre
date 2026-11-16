@@ -1,0 +1,171 @@
+{
+  "slug": "reggianiscaffalature",
+  "archetype": "b2b-authority",
+  "meta": {
+    "companyName": "Reggiani S.r.l.",
+    "decisionMakerName": "Direzione Reggiani S.r.l.",
+    "decisionMakerFirstName": null,
+    "decisionMakerRole": "Direzione Aziendale",
+    "isGenericInbox": false,
+    "emailScore": 80,
+    "targetEmail": "nicola@reggianiscaffalature.it",
+    "phone": "3404640449",
+    "city": "Ponte Taro",
+    "vatNumber": "01806050348",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Reggiani%20S.r.l.",
+    "originalLandingUrl": "http://www.reggianiscaffalature.it",
+    "status": "CONTACTED_STEP_1",
+    "lastSentMessageId": "<02701bd5-53d0-e500-f442-3622970a426b@techpyre.eu>",
+    "threadMessageIds": [
+      "<02701bd5-53d0-e500-f442-3622970a426b@techpyre.eu>"
+    ]
+  },
+  "audit": {
+    "originalLcpSeconds": 10.1,
+    "mobileScore": 15,
+    "renderBlockingCount": 47,
+    "runsAds": true,
+    "detectedTrackingSignals": [
+      "Google Ads / GTM"
+    ],
+    "threeCriticalFlaws": [
+      "Dispersione del budget pubblicitario: caricamento mobile di 10.1s (47 risorse bloccanti) che fa abbandonare oltre meta degli utenti prima dell'apertura della pagina.",
+      "Cecita decisionale sul ROI: assenza di tracciamento Server-Side di prima parte (GTM Server-Side e Meta CAPI), con perdita del 30-50% dei dati di conversione per blocchi browser e cookie banner.",
+      "Colli di bottiglia commerciali: i contatti finiscono in email isolate senza pre-qualifica automatica e senza sincronizzazione immediata via API/Webhook con il CRM aziendale."
+    ],
+    "activeAdHeadline": "Tecnologia e logistica di magazzinaggio | Reggiani Scaffalature",
+    "activeAdCopySummary": "Reggiani S.r.l. è un&#039;azienda leader specializzata nel ramo della tecnologia e logistica di magazzinaggio, nella progettazione e produzi..."
+  },
+  "theme": {
+    "primaryHex": "#4050a0",
+    "accentHex": "#B8860B",
+    "darkBgHex": "#0B1E36",
+    "borderRadius": "8px",
+    "headerBgMode": "light",
+    "logoBrightness": "light"
+  },
+  "content": {
+    "badgeTop": "Reggiani S.r.l. · Logistica e Movimentazione B2B (Ponte Taro)",
+    "heroHeadline": "Tecnologia e logistica di magazzinaggio | Reggiani Scaffalature",
+    "heroSubheadline": "Reggiani S.r.l. è un'azienda leader specializzata nel ramo della tecnologia e logistica di magazzinaggio, nella progettazione e produzione di soppalchi, coperture e scaffalature metalliche industriali.",
+    "heroBullets": [
+      "Analisi flussi di magazzino, movimentazione interna e spedizioni programmate",
+      "Imballaggi protetti e sistemi di trasporto progettati su dimensioni reali",
+      "Referente operativo unico per coordinamento carichi e urgenze"
+    ],
+    "ctaButtonText": "Richiedi Studio di Fattibilita",
+    "trustMicrocopy": "Riservatezza industriale garantita (NDA) · Risposta tecnica entro la giornata lavorativa",
+    "logoLocalPath": "/leads/reggianiscaffalature/logo.png",
+    "heroImageLocalPath": "/leads/reggianiscaffalature/hero.jpg",
+    "heroImageCaption": "Reggiani S.r.l. · Sede operativa e realizzazioni (Ponte Taro)",
+    "quiz": {
+      "question1": {
+        "title": "Quale esigenza logistica o di movimentazione desiderate ottimizzare?",
+        "options": [
+          "Nastri trasportatori, rulli, scaffalature o impianti di movimentazione",
+          "Imballaggi industriali, packaging su misura e forniture continuative",
+          "Trasporti dedicati, logistica di stabilimento e contratto SLA"
+        ]
+      },
+      "question2": {
+        "title": "Qual e l'orizzonte temporale previsto per il progetto?",
+        "options": [
+          "Avvio operativo urgente (entro 30 giorni)",
+          "Pianificazione nel trimestre in corso",
+          "Valutazione tecnica e di budget preliminare"
+        ]
+      },
+      "finalStepTitle": "Specifiche registrate. Inserisci i riferimenti aziendali per il colloquio con l'Ufficio Tecnico:"
+    },
+    "valueProps": [
+      {
+        "title": "Soluzioni su Misura per Flussi di Stabilimento",
+        "description": "Ottimizziamo movimentazione, rulliere, stoccaggio e confezionamento a Ponte Taro riducendo danni da trasporto e tempi morti di carico.",
+        "metric": "Efficienza Logistica"
+      },
+      {
+        "title": "Puntualita e Protezione Merci Garantita",
+        "description": "Reggiani S.r.l. opera con standard rigorosi per proteggere prodotti finiti, semilavorati e macchinari lungo tutta la filiera.",
+        "metric": "99.4% Puntuali"
+      },
+      {
+        "title": "Capacita Flessibile e Accordi Quadro",
+        "description": "Scorte di sicurezza e pianificazione flessibile per assorbire picchi di produzione e richieste urgenti senza blocchi.",
+        "metric": "SLA Contrattuale"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "99.4%",
+      "mainStatLabel": "Tasso di puntualita sulle consegne e movimentazioni B2B",
+      "reviewsSummary": "Partner logistico e industriale di fiducia a Ponte Taro",
+      "clientReferenceWall": [
+        "Consegne Programmate JIT",
+        "Sicurezza Carichi e Imballi",
+        "Qualita Certificata ISO 9001",
+        "Integrazione Flussi ERP",
+        "Referente Operativo Unico"
+      ],
+      "secondaryStats": [
+        {
+          "value": "99.4%",
+          "label": "Spedizioni e forniture consegnate nella finestra concordata"
+        },
+        {
+          "value": "< 0.4s",
+          "label": "Richiesta quotazione istantanea da ufficio acquisti e magazzino"
+        },
+        {
+          "value": "24h",
+          "label": "Quotazione tratte, impianti o lotti su specifica"
+        }
+      ],
+      "testimonials": [
+        {
+          "name": "Responsabile Logistica e Magazzino",
+          "location": "Ponte Taro · Polo Industriale",
+          "quote": "Da quando collaboriamo con Reggiani S.r.l. abbiamo velocizzato le operazioni di carico e azzerato i ritardi verso i nostri clienti esteri.",
+          "roleOrContext": "Logistica e movimentazione"
+        },
+        {
+          "name": "Ufficio Acquisti Aziendale",
+          "location": "Ponte Taro e provincia",
+          "quote": "Preventivi chiari, tracciabilita immediata e supporto rapido anche nelle spedizioni urgenti di fine mese.",
+          "roleOrContext": "Fornitura continuativa"
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "Reggiani S.r.l. - dispersione clic mobile e tempi di caricamento di Reggiani S.r.l. (10.1s)",
+    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di Reggiani S.r.l., da smartphone impiega 10.1 secondi ad aprirsi per 47 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Reggiani S.r.l. che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Reggiani S.r.l., completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/reggianiscaffalature\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "Reggiani S.r.l. - dispersione clic mobile e tempi di caricamento di Reggiani S.r.l. (10.1s)",
+      "body": "Buongiorno,\n\nda un test sul sito di Reggiani S.r.l., da smartphone impiega 10.1 secondi ad aprirsi per 47 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Reggiani S.r.l. che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: Reggiani S.r.l. - dispersione clic mobile e tempi di caricamento di Reggiani S.r.l. (10.1s)",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Reggiani S.r.l., completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/reggianiscaffalature\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: Reggiani S.r.l. - dispersione clic mobile e tempi di caricamento di Reggiani S.r.l. (10.1s)",
+      "body": "Buongiorno,\n\nOltre a tagliare i 10.1 secondi su mobile, l'infrastruttura recupera il 40% delle conversioni tramite Server-Side Tracking.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza - TechPyre Studio",
+      "inThread": true,
+      "requiresFollowUpCall": true
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: Reggiani S.r.l. - dispersione clic mobile e tempi di caricamento di Reggiani S.r.l. (10.1s)",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Reggiani S.r.l. non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/reggianiscaffalature) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

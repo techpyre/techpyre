@@ -456,16 +456,39 @@ async function main() {
     }
   }
 
-  console.log(`\nFASE 3/3 · Aggiornamento file Excel CRM...`);
+  console.log(`\nFASE 3/4 · Aggiornamento file Excel CRM e sincronizzazione Google Drive...`);
   const excelSummary = await generateExcelCrm();
   console.log("  Excel aggiornato:", JSON.stringify(excelSummary));
 
-  if (process.env.TECHPYRE_AUTO_DEPLOY === "1") {
-    try {
-      spawnSync("vercel", ["--prod", "--yes"], { stdio: "inherit", cwd: ROOT_DIR });
-    } catch (err) {
-      console.warn("[WARN] Vercel deploy:", err.message);
+  console.log(`\nFASE 4/4 · Commit e push su GitHub (origin/main) per rendere live le nuove demo...`);
+  try {
+    spawnSync("git", ["add", "."], { stdio: "inherit", cwd: ROOT_DIR });
+    const diffCheck = spawnSync("git", ["diff", "--cached", "--quiet"], { cwd: ROOT_DIR });
+    if (diffCheck.status !== 0) {
+      const commitMsg = `chore(outbound): daily outbound sync - ${new Date().toLocaleDateString("it-IT", { timeZone: "Europe/Rome" })} - Step 1: ${sentStep1Report.length}, Step 2: ${sentStep2Report.length}`;
+      const commitRes = spawnSync("git", ["commit", "-m", commitMsg], { stdio: "inherit", cwd: ROOT_DIR });
+      if (commitRes.status === 0) {
+        console.log("  [GIT] Commit eseguito con successo.");
+        const pushRes = spawnSync("git", ["push", "origin", "main"], { stdio: "inherit", cwd: ROOT_DIR });
+        if (pushRes.status === 0) {
+          console.log("  [GIT] Push su GitHub origin/main completato!");
+        } else {
+          console.warn("  [WARN] git push status:", pushRes.status);
+        }
+      }
+    } else {
+      console.log("  [GIT] Nessuna modifica da committare su git.");
     }
+  } catch (gitErr) {
+    console.warn("  [WARN] Errore sincronizzazione Git:", gitErr.message);
+  }
+
+  try {
+    console.log("\n[DEPLOY] Aggiornamento Vercel Production per attivare le nuove demo su techpyre.eu...");
+    spawnSync("vercel", ["--prod", "--yes"], { stdio: "inherit", cwd: ROOT_DIR });
+    console.log("  [DEPLOY] Vercel Production aggiornato!");
+  } catch (deployErr) {
+    console.warn("  [WARN] Vercel deploy:", deployErr.message);
   }
 
   console.log("\nAUTOMAZIONE GIORNALIERA COMPLETATA");
@@ -476,6 +499,10 @@ async function main() {
         step2AvailableBeforeRun: preExistingStep2Candidates.length,
         step2SentToday: sentStep2Report.length,
         excelFile: excelSummary.outputPath,
+        googleDriveUrl: excelSummary.googleDriveUrl,
+        googleDriveSynced: excelSummary.googleDriveSynced,
+        sentStep1Report,
+        sentStep2Report,
         kpi: excelSummary,
       },
       null,

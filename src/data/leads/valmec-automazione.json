@@ -1,0 +1,166 @@
+{
+  "slug": "valmec-automazione",
+  "archetype": "b2b-authority",
+  "meta": {
+    "companyName": "Valmec Automazione Industriale S.r.l.",
+    "decisionMakerName": "Ing. Davide Valsecchi",
+    "targetEmail": "d.valsecchi@valmecautomazione.it",
+    "phone": "+39 035 456 7890",
+    "city": "Bergamo",
+    "vatNumber": "03216540168",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?id=778899001122",
+    "originalLandingUrl": "https://www.valmecautomazione.it/isole-robotizzate-saldatura",
+    "isGenericInbox": false,
+    "emailScore": 90,
+    "decisionMakerFirstName": "Davide",
+    "decisionMakerRole": "Titolare",
+    "status": "INVALID_TICKET_INBOX",
+    "notes": "Dominio email privo di record DNS/MX."
+  },
+  "audit": {
+    "originalLcpSeconds": 7.1,
+    "mobileScore": 29,
+    "activeAdHeadline": "Isole Robotizzate di Saldatura e Asservimento Macchine CNC Chiavi in Mano",
+    "activeAdCopySummary": "Aumenta la produttività del reparto fino al 42% e accedi alle agevolazioni Transizione 5.0 con le celle robotizzate su misura Valmec.",
+    "threeCriticalFlaws": [
+      "LCP mobile di 7.1 secondi: i responsabili di stabilimento che cliccano da smartphone abbandonano prima del caricamento.",
+      "Form generico 'Contattaci' che non qualifica né il processo produttivo (saldatura, asservimento CNC, fine linea) né l'articolazione dei turni.",
+      "Assenza sopra la piega di metriche di Payback Period, OEE e conformità per l'accesso al credito d'imposta Transizione 5.0."
+    ],
+    "runsAds": true,
+    "detectedTrackingSignals": [
+      "Meta Ad Library"
+    ],
+    "renderBlockingCount": 8
+  },
+  "theme": {
+    "primaryHex": "#008020",
+    "accentHex": "#802060",
+    "darkBgHex": "#0F1113",
+    "borderRadius": "8px",
+    "secondaryHex": "#802000",
+    "headerBgMode": "light",
+    "logoBrightness": "dark"
+  },
+  "content": {
+    "badgeTop": "Automazione Industriale e Robotica · Bergamo",
+    "heroHeadline": "Isole Robotizzate di Saldatura e Asservimento Macchine CNC Chiavi in Mano",
+    "heroSubheadline": "Progettiamo, costruiamo e integriamo celle robotizzate custom che abbattono il costo pezzo e i fermi linea, con interconnessione nativa MES/ERP e perizia asseverata Transizione 5.0 inclusa.",
+    "ctaButtonText": "Richiedi Studio di Fattibilità e Analisi Tempo Ciclo",
+    "secondaryCtaText": "Esplora Casi Studio & KPI",
+    "trustMicrocopy": "Riservato a imprese manifatturiere (P.IVA) • Tutela NDA sui disegni tecnici • Ufficio Ingegneria interno",
+    "logoLocalPath": "/leads/valmec-automazione/logo.png",
+    "heroImageLocalPath": "/leads/valmec-automazione/hero.jpg",
+    "heroImageCaption": "Isola robotizzata di saldatura arco pulsato a doppia stazione rotante - Stabilimento di Dalmine (BG)",
+    "quiz": {
+      "question1": {
+        "title": "Quale processo produttivo intendete automatizzare in stabilimento?",
+        "options": [
+          "Saldatura robotizzata (MIG/MAG, TIG o Laser)",
+          "Asservimento centri di lavoro CNC / Torni automatici",
+          "Pallettizzazione, manipolazione e fine linea"
+        ]
+      },
+      "question2": {
+        "title": "Su quanti turni opera attualmente il reparto interessato?",
+        "options": [
+          "1 turno giornaliero (con colli di bottiglia su lotti ripetitivi)",
+          "2 turni (obiettivo: presidio operatore ridotto)",
+          "3 turni / Ciclo continuo H24"
+        ]
+      },
+      "finalStepTitle": "A quale referente tecnico inviamo lo studio preliminare di tempo ciclo e ROI?"
+    },
+    "valueProps": [
+      {
+        "title": "Simulazione 3D del Tempo Ciclo su Gemello Digitale",
+        "description": "Prima di avviare la carpenteria meccanica, validiamo al simulatore 3D layout, raggiungibilità torcia/pinza e tempo ciclo reale direttamente sui file STEP dei vostri particolari.",
+        "metric": "ACCURATEZZA CICLO ±1.5%"
+      },
+      {
+        "title": "Interconnessione MES/ERP e Perizia Transizione 5.0",
+        "description": "Consegniamo l'isola completa di telemetria energetica OPC-UA e documentazione tecnica asseverata per il recupero fiscale tramite credito d'imposta."
+      },
+      {
+        "title": "Service Tele-Diagnostico e Intervento On-Site in 12 Ore",
+        "description": "Il nostro polo ingegneristico di Bergamo garantisce assistenza remota immediata su PLC/Robot e reperibilità ricambi critici a magazzino."
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "-38%",
+      "mainStatLabel": "Riduzione media del costo industriale per singolo pezzo in 14 mesi",
+      "secondaryStats": [
+        {
+          "value": "-38%",
+          "label": "Riduzione media del costo industriale per singolo pezzo lavorato entro 14 mesi dall'avviamento"
+        },
+        {
+          "value": "+42%",
+          "label": "Incremento medio dell'indice OEE di reparto grazie all'azzeramento dei micro-fermi"
+        },
+        {
+          "value": "95+",
+          "label": "Celle robotizzate in esercizio continuo presso aziende manifatturiere in Lombardia e Veneto"
+        }
+      ],
+      "clientReferenceWall": [
+        "ISO 9001:2015 ENGINEERING",
+        "TRANSIZIONE 5.0 READY",
+        "DIRETTIVA MACCHINE CE",
+        "PROTOCOLLO OPC-UA / SIEMENS",
+        "PARTNER INTEGRATORE FANUC & ABB"
+      ],
+      "reviewsSummary": "95+ impianti industriali attivi nel Nord Italia",
+      "testimonials": [
+        {
+          "name": "Ing. M. Cattaneo - Direttore di Stabilimento",
+          "location": "Dalmine (BG)",
+          "quote": "L'isola di saldatura a doppia stazione progettata da Valmec ha eliminato le rilavorazioni sulle commesse ripetitive e liberato due saldatori specializzati per carpenteria speciale."
+        },
+        {
+          "name": "Torneria Meccanica R. S.p.A.",
+          "location": "Lumezzane (BS)",
+          "quote": "Cella robotizzata di asservimento su 3 centri CNC con controllo dimensionale ottico in linea. Consegnata e collaudata nel pieno rispetto del cronoprogramma."
+        },
+        {
+          "name": "Carpenteria Metallica V. S.r.l.",
+          "location": "Treviglio (BG)",
+          "quote": "Simulazione preliminare del tempo ciclo fedele al secondo rispetto alla resa reale in produzione. Supporto ineccepibile anche per la pratica Transizione 5.0."
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "Valmec Automazione Industriale S.r.l. - dispersione clic mobile e tempi di caricamento di Valmec Automazione Industriale S.r.l. (7.1s)",
+    "emailPlainTextBody": "Buongiorno Davide,\n\nda un test sul sito di Valmec Automazione Industriale S.r.l., da smartphone impiega 7.1 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Valmec Automazione Industriale S.r.l. che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno Davide,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Valmec Automazione Industriale S.r.l., completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/valmec-automazione\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "Valmec Automazione Industriale S.r.l. - dispersione clic mobile e tempi di caricamento di Valmec Automazione Industriale S.r.l. (7.1s)",
+      "body": "Buongiorno Davide,\n\nda un test sul sito di Valmec Automazione Industriale S.r.l., da smartphone impiega 7.1 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Valmec Automazione Industriale S.r.l. che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: Valmec Automazione Industriale S.r.l. - dispersione clic mobile e tempi di caricamento di Valmec Automazione Industriale S.r.l. (7.1s)",
+      "body": "Buongiorno Davide,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Valmec Automazione Industriale S.r.l., completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/valmec-automazione\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: Valmec Automazione Industriale S.r.l. - dispersione clic mobile e tempi di caricamento di Valmec Automazione Industriale S.r.l. (7.1s)",
+      "body": "Buongiorno Davide,\n\nOltre a tagliare i 7.1 secondi su mobile, l'infrastruttura recupera il 40% delle conversioni tramite Server-Side Tracking.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza - TechPyre Studio",
+      "inThread": true,
+      "requiresFollowUpCall": true
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: Valmec Automazione Industriale S.r.l. - dispersione clic mobile e tempi di caricamento di Valmec Automazione Industriale S.r.l. (7.1s)",
+      "body": "Buongiorno Davide,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Valmec Automazione Industriale S.r.l. non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/valmec-automazione) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

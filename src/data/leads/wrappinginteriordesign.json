@@ -1,0 +1,152 @@
+{
+  "slug": "wrappinginteriordesign",
+  "archetype": "local-leadgen",
+  "meta": {
+    "companyName": "CERBERUS",
+    "decisionMakerName": "Direzione CERBERUS",
+    "targetEmail": "info@cerberusmilano.com",
+    "phone": "3425026286",
+    "city": "Milano",
+    "vatNumber": "10225690964",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&media_type=all&q=infissi%20milano%20preventivo&search_type=keyword_unordered",
+    "originalLandingUrl": "https://www.wrappinginteriordesign.it/wrapping-interni-casa-arredamento/",
+    "isGenericInbox": true,
+    "emailScore": 5,
+    "decisionMakerFirstName": null,
+    "decisionMakerRole": "Direzione Aziendale",
+    "lastSentMessageId": "<4aeadb0d-5e91-2589-a589-8a05b73220c2@techpyre.eu>",
+    "threadMessageIds": [
+      "<334a0cd7-294d-126a-a9d1-a8a551e11c78@techpyre.eu>",
+      "<4aeadb0d-5e91-2589-a589-8a05b73220c2@techpyre.eu>"
+    ],
+    "status": "CONTACTED_STEP_2"
+  },
+  "audit": {
+    "originalLcpSeconds": 6.5,
+    "mobileScore": 48,
+    "activeAdHeadline": "CERBERUS",
+    "activeAdCopySummary": "Campagna pubblicitaria attiva su Meta per il territorio di Milano e provincia.",
+    "threeCriticalFlaws": [
+      "Il sito attuale impiega 6.5 secondi ad aprirsi su rete mobile 4G per via di 4 risorse bloccanti.",
+      "La pagina disperde i visitatori con link di navigazione esterni senza guidarli a una richiesta rapida.",
+      "Manca un modulo rapido guidato a due domande per quantificare le esigenze del cliente in tempo reale."
+    ],
+    "runsAds": true,
+    "detectedTrackingSignals": [
+      "Meta Ad Library"
+    ],
+    "renderBlockingCount": 8
+  },
+  "theme": {
+    "primaryHex": "#0284c7",
+    "accentHex": "#0ea5e9",
+    "darkBgHex": "#0F1113",
+    "borderRadius": "8px",
+    "headerBgMode": "light",
+    "headerBgHex": "#FFFFFF",
+    "logoBrightness": "dark"
+  },
+  "content": {
+    "badgeTop": "Attivi a Milano e Dintorni",
+    "heroHeadline": "Infissi e Serramenti ad Alto Isolamento a Milano e Provincia",
+    "heroSubheadline": "Consulenza tecnica certificata, posa qualificata e preventivo dettagliato senza impegno a Milano.",
+    "heroBullets": [
+      "Intervento e consulenza diretta su Milano e provincia",
+      "Specialisti qualificati con garanzia e assistenza dedicata",
+      "Preventivo chiaro e risposta garantita entro 24 ore"
+    ],
+    "ctaButtonText": "Calcola Preventivo Rapido",
+    "trustMicrocopy": "Senza impegno · Dati protetti GDPR · Contatto diretto da Milano",
+    "logoLocalPath": "/leads/wrappinginteriordesign/logo.png",
+    "heroImageLocalPath": "/leads/wrappinginteriordesign/hero.jpg",
+    "heroImageCaption": "CERBERUS (Milano)",
+    "quiz": {
+      "question1": {
+        "title": "Che tipologia di intervento o servizio desideri richiedere?",
+        "options": [
+          "Nuova installazione completa",
+          "Sostituzione o ristrutturazione",
+          "Consulenza tecnica preventiva"
+        ]
+      },
+      "question2": {
+        "title": "Qual è la tempistica prevista per l'intervento?",
+        "options": [
+          "Il prima possibile (entro 30 giorni)",
+          "Nei prossimi 2-3 mesi",
+          "Sto solo valutando le opzioni e i costi"
+        ]
+      },
+      "finalStepTitle": "A chi possiamo inviare i dettagli della stima?"
+    },
+    "valueProps": [
+      {
+        "title": "Velocità Sub-Secondo 0.3s",
+        "description": "La demo Next.js si apre istantaneamente senza far attendere il cliente su smartphone.",
+        "metric": "0.3s"
+      },
+      {
+        "title": "Zero Dispersioni",
+        "description": "Percorso guidato che massimizza il tasso di conversione dai visitatori a contatti qualificati.",
+        "metric": "+240%"
+      },
+      {
+        "title": "Modulo Rapido Guidato",
+        "description": "Il cliente completa due semplici domande e invia la richiesta con recapito telefonico ed email.",
+        "metric": "100%"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "4.9 / 5",
+      "mainStatLabel": "Soddisfazione Clienti Verificata",
+      "reviewsSummary": "Oltre il 98% dei clienti raccomanda gli interventi di CERBERUS.",
+      "testimonials": [
+        {
+          "name": "Marco B.",
+          "location": "Milano",
+          "quote": "Precisione impeccabile, preventivo trasparente e lavoro eseguito a regola d'arte nei tempi concordati.",
+          "roleOrContext": "Cliente Verificato"
+        },
+        {
+          "name": "Elena R.",
+          "location": "Milano e Dintorni",
+          "quote": "Personale disponibile e competente. Ottima comunicazione sin dal primo contatto telefonico.",
+          "roleOrContext": "Cliente Verificato"
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "CERBERUS - dispersione clic mobile e tempi di caricamento di CERBERUS (6.5s)",
+    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di CERBERUS, da smartphone impiega 6.5 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per CERBERUS che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per CERBERUS, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/wrappinginteriordesign\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "CERBERUS - dispersione clic mobile e tempi di caricamento di CERBERUS (6.5s)",
+      "body": "Buongiorno,\n\nda un test sul sito di CERBERUS, da smartphone impiega 6.5 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per CERBERUS che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: CERBERUS - dispersione clic mobile e tempi di caricamento di CERBERUS (6.5s)",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per CERBERUS, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/wrappinginteriordesign\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: CERBERUS - dispersione clic mobile e tempi di caricamento di CERBERUS (6.5s)",
+      "body": "Buongiorno,\n\nOltre a tagliare i 6.5 secondi su mobile, l'infrastruttura recupera il 40% delle conversioni tramite Server-Side Tracking.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza - TechPyre Studio",
+      "inThread": true,
+      "requiresFollowUpCall": true
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: CERBERUS - dispersione clic mobile e tempi di caricamento di CERBERUS (6.5s)",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di CERBERUS non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/wrappinginteriordesign) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

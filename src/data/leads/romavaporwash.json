@@ -1,0 +1,172 @@
+{
+  "slug": "romavaporwash",
+  "archetype": "b2b-authority",
+  "meta": {
+    "companyName": "Roma Vapor Wash",
+    "decisionMakerName": "Direzione Roma Vapor Wash",
+    "targetEmail": "romavaporwash@gmail.com",
+    "phone": "056.15706013",
+    "city": "Roma",
+    "vatNumber": "02852800594",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Roma%20Vapor%20Wash",
+    "originalLandingUrl": "http://www.romavaporwash.it/pulizia-sanificazione-auto-roma",
+    "isGenericInbox": false,
+    "emailScore": 40,
+    "decisionMakerFirstName": null,
+    "decisionMakerRole": "Direzione Aziendale",
+    "lastSentMessageId": "<008752c4-f5aa-cf2c-a82a-bd5eff5d2147@techpyre.eu>",
+    "threadMessageIds": [
+      "<b2d4190f-6764-628f-fc79-544bc2eef674@techpyre.eu>",
+      "<008752c4-f5aa-cf2c-a82a-bd5eff5d2147@techpyre.eu>"
+    ],
+    "status": "CONTACTED_STEP_2"
+  },
+  "audit": {
+    "originalLcpSeconds": 17.7,
+    "mobileScore": 15,
+    "threeCriticalFlaws": [
+      "Dispersione del budget pubblicitario: caricamento mobile di 17.7s (77 risorse bloccanti) che fa abbandonare oltre meta degli utenti prima dell'apertura della pagina.",
+      "Cecita decisionale sul ROI: assenza di tracciamento Server-Side di prima parte (GTM Server-Side e Meta CAPI), con perdita del 30-50% dei dati di conversione per blocchi browser e cookie banner.",
+      "Colli di bottiglia commerciali: i contatti finiscono in email isolate senza pre-qualifica automatica e senza sincronizzazione immediata via API/Webhook con il CRM aziendale."
+    ],
+    "activeAdHeadline": "Pulizia e Sanificazione Auto a Vapore ed Ozono",
+    "activeAdCopySummary": "Sanifica e igienizza la tua auto con vapore secco a 180° e ozono: rimuovi macchie, odori e allergeni. Servizio mobile a Roma, +1000 veicoli ...",
+    "runsAds": true,
+    "detectedTrackingSignals": [
+      "Meta Ad Library"
+    ],
+    "renderBlockingCount": 8
+  },
+  "theme": {
+    "primaryHex": "#0B1E36",
+    "accentHex": "#B8860B",
+    "darkBgHex": "#0B1E36",
+    "borderRadius": "8px",
+    "headerBgMode": "light",
+    "logoBrightness": "dark"
+  },
+  "content": {
+    "badgeTop": "Roma Vapor Wash · Divisione Tecnica e Commesse B2B (Roma)",
+    "heroHeadline": "Pulizia e Sanificazione Auto a Vapore ed Ozono",
+    "heroSubheadline": "Sanifica e igienizza la tua auto con vapore secco a 180° e ozono: rimuovi macchie, odori e allergeni. Servizio mobile a Roma, +1000 veicoli trattati all’anno. Scopri ora!",
+    "heroBullets": [
+      "Studio di fattibilita tecnica e capitolato con tempi di consegna certi",
+      "Qualifica immediata della richiesta e assegnazione diretta all'Ufficio Tecnico",
+      "Produzione e assistenza certificata con referente unico dedicato"
+    ],
+    "ctaButtonText": "Richiedi Studio di Fattibilita",
+    "trustMicrocopy": "Riservatezza industriale garantita (NDA) · Risposta tecnica entro la giornata lavorativa",
+    "logoLocalPath": "/leads/romavaporwash/logo.png",
+    "heroImageLocalPath": "/leads/romavaporwash/hero.jpg",
+    "heroImageCaption": "Roma Vapor Wash · Sede operativa e realizzazioni (Roma)",
+    "quiz": {
+      "question1": {
+        "title": "Quale ambito operativo o di commessa desiderate approfondire?",
+        "options": [
+          "Fornitura industriale, impianti o commessa su specifica",
+          "Integrazione tecnica, automazione di reparto o accordo quadro",
+          "Studio di fattibilita, capitolato e quotazione riservata"
+        ]
+      },
+      "question2": {
+        "title": "Qual e l'orizzonte temporale previsto per il progetto?",
+        "options": [
+          "Avvio operativo urgente (entro 30 giorni)",
+          "Pianificazione nel trimestre in corso",
+          "Valutazione tecnica e di budget preliminare"
+        ]
+      },
+      "finalStepTitle": "Specifiche registrate. Inserisci i riferimenti aziendali per il colloquio con l'Ufficio Tecnico:"
+    },
+    "valueProps": [
+      {
+        "title": "Ingegneria e Progettazione su Specifica",
+        "description": "Analizziamo i requisiti produttivi della commessa a Roma, definendo specifiche tecniche, tempi di consegna e costi prima dell'avvio.",
+        "metric": "Capitolato Chiuso"
+      },
+      {
+        "title": "Controllo Qualita e Conformita Normativa",
+        "description": "Ogni fornitura di Roma Vapor Wash viene collaudata secondo gli standard di sicurezza e qualita vigenti, con documentazione tecnica completa.",
+        "metric": "100% Certificato"
+      },
+      {
+        "title": "Continuita Operativa e Assistenza Post-Vendita",
+        "description": "Affianchiamo il reparto tecnico e acquisti dal collaudo in stabilimento fino alla manutenzione programmata.",
+        "metric": "SLA Garantito"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "99.4%",
+      "mainStatLabel": "Commesse B2B consegnate entro i tempi contrattuali",
+      "reviewsSummary": "Partner tecnico di riferimento per imprese e stabilimenti a Roma",
+      "clientReferenceWall": [
+        "Qualita Certificata ISO 9001",
+        "Conformita Tecnica CE",
+        "Integrazione Gestionale / ERP",
+        "Capitolato e Preventivo Chiuso",
+        "Assistenza Tecnica Diretta"
+      ],
+      "secondaryStats": [
+        {
+          "value": "99.4%",
+          "label": "Commesse consegnate nel pieno rispetto dei tempi contrattuali"
+        },
+        {
+          "value": "< 0.4s",
+          "label": "Caricamento istantaneo dell'infrastruttura digitale su mobile"
+        },
+        {
+          "value": "24h",
+          "label": "Presa in carico tecnica e invio automatico della richiesta al CRM"
+        }
+      ],
+      "testimonials": [
+        {
+          "name": "Direzione Tecnica e Produzione",
+          "location": "Roma · Commessa Industriale",
+          "quote": "Abbiamo affidato a Roma Vapor Wash una commessa strategica per il nostro reparto: rispetto rigoroso delle specifiche tecniche e collaudo impeccabile.",
+          "roleOrContext": "Fornitura e collaudo B2B"
+        },
+        {
+          "name": "Responsabile Ufficio Acquisti",
+          "location": "Roma e provincia",
+          "quote": "Partner strutturato e affidabile: preventivazione trasparente, documentazione tecnica completa e supporto post-vendita immediato.",
+          "roleOrContext": "Accordo quadro di fornitura"
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "Roma Vapor Wash - dispersione clic mobile e tempi di caricamento di Roma Vapor Wash (17.7s)",
+    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di Roma Vapor Wash, da smartphone impiega 17.7 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Roma Vapor Wash che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Roma Vapor Wash, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/romavaporwash\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "Roma Vapor Wash - dispersione clic mobile e tempi di caricamento di Roma Vapor Wash (17.7s)",
+      "body": "Buongiorno,\n\nda un test sul sito di Roma Vapor Wash, da smartphone impiega 17.7 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Roma Vapor Wash che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: Roma Vapor Wash - dispersione clic mobile e tempi di caricamento di Roma Vapor Wash (17.7s)",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Roma Vapor Wash, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/romavaporwash\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: Roma Vapor Wash - dispersione clic mobile e tempi di caricamento di Roma Vapor Wash (17.7s)",
+      "body": "Buongiorno,\n\nOltre a tagliare i 17.7 secondi su mobile, l'infrastruttura recupera il 40% delle conversioni tramite Server-Side Tracking.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza - TechPyre Studio",
+      "inThread": true,
+      "requiresFollowUpCall": true
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: Roma Vapor Wash - dispersione clic mobile e tempi di caricamento di Roma Vapor Wash (17.7s)",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Roma Vapor Wash non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/romavaporwash) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "slug": "dipierri",
+  "archetype": "local-leadgen",
+  "meta": {
+    "companyName": "Di Pierri Immobiliare",
+    "decisionMakerName": "Direzione Di Pierri Immobiliare",
+    "targetEmail": "immobiliare@dipierri.it",
+    "phone": "3933715936",
+    "city": "Bologna",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&media_type=all&q=pompe%20di%20calore%20bologna&search_type=keyword_unordered",
+    "originalLandingUrl": "https://dipierri.it/lp/arcoveggio-56",
+    "isGenericInbox": false,
+    "emailScore": 0,
+    "decisionMakerFirstName": null,
+    "decisionMakerRole": "Direzione Aziendale",
+    "lastSentMessageId": "<bcd4f56e-1ae0-a081-751d-1ae714882c5a@techpyre.eu>",
+    "threadMessageIds": [
+      "<8a5f2915-8dff-0777-352a-afbdaf1638a9@techpyre.eu>",
+      "<cb6bb0b7-d0fb-6aad-7241-051e84b96f5e@techpyre.eu>",
+      "<bcd4f56e-1ae0-a081-751d-1ae714882c5a@techpyre.eu>"
+    ],
+    "status": "CONTACTED_STEP_2"
+  },
+  "audit": {
+    "originalLcpSeconds": 4.3,
+    "mobileScore": 65,
+    "threeCriticalFlaws": [
+      "Il sito impiega 4.3 secondi a caricare su rete mobile per via di 1 script bloccanti (punteggio velocità mobile 65/100).",
+      "La pagina mantiene un menu di navigazione che disperde i visitatori provenienti dalla campagna Meta.",
+      "Manca un simulatore rapido guidato a 2 domande per quantificare le esigenze del cliente in tempo reale."
+    ],
+    "activeAdHeadline": "Dove il futuro prende casa",
+    "activeAdCopySummary": "Campagna pubblicitaria attiva su Meta per il territorio di Bologna e provincia.",
+    "runsAds": true,
+    "detectedTrackingSignals": [
+      "Meta Ad Library"
+    ],
+    "renderBlockingCount": 8
+  },
+  "theme": {
+    "primaryHex": "#20c0c0",
+    "accentHex": "#80e020",
+    "darkBgHex": "#0F1113",
+    "borderRadius": "8px",
+    "secondaryHex": "#20a060",
+    "headerBgMode": "light",
+    "logoBrightness": "dark"
+  },
+  "content": {
+    "badgeTop": "Di Pierri Immobiliare · Operativi a Bologna e provincia",
+    "heroHeadline": "Dove il futuro prende casa",
+    "heroSubheadline": "Bilocali, trilocali, quadrilocali e un attico esclusivo in via dell'Arcoveggio 56/21 a Bologna. Nuova costruzione in classe energetica A4: lascia un recapito per scoprire gli appartamenti disponibili.",
+    "heroBullets": [
+      "Sopralluogo tecnico e preventivo chiaro senza impegno",
+      "Materiali certificati e assistenza diretta con personale qualificato",
+      "Tempi di intervento garantiti e gestione completa della pratica"
+    ],
+    "ctaButtonText": "Calcola il Tuo Preventivo Rapido",
+    "trustMicrocopy": "Richiesta gratuita e senza impegno · Risposta rapida dal nostro ufficio tecnico",
+    "logoLocalPath": "/leads/dipierri/logo.png",
+    "heroImageLocalPath": "/leads/dipierri/hero.jpg",
+    "heroImageCaption": "Di Pierri Immobiliare · Sede operativa e realizzazioni (Bologna)",
+    "quiz": {
+      "question1": {
+        "title": "Di quale servizio o soluzione hai bisogno?",
+        "options": [
+          "Richiesta preventivo dettagliato su misura",
+          "Consulenza tecnica e sopralluogo operativo",
+          "Intervento rapido o assistenza prioritaria"
+        ]
+      },
+      "question2": {
+        "title": "Entro quando vorresti avviare il progetto?",
+        "options": [
+          "Il prima possibile (Entro 2 settimane)",
+          "Entro 1 - 2 mesi",
+          "Sto valutando diverse soluzioni"
+        ]
+      },
+      "finalStepTitle": "Perfetto. Inserisci i tuoi dati per ricevere una proposta personalizzata senza impegno:"
+    },
+    "valueProps": [
+      {
+        "title": "Qualita Certificata e Garanzia Scritta",
+        "description": "Ogni intervento di Di Pierri Immobiliare utilizza materiali selezionati e procedure certificate per garantire durata e prestazioni nel tempo.",
+        "metric": "100% Garantito"
+      },
+      {
+        "title": "Preventivo Chiaro e Zero Sorprese",
+        "description": "Valutazione trasparente delle soluzioni piu adatte alle tue esigenze a Bologna, con tempi e costi definiti prima dell'inizio dei lavori.",
+        "metric": "Preventivo Chiuso"
+      },
+      {
+        "title": "Assistenza Tecnica Diretta",
+        "description": "Un unico referente tecnico ti segue dal primo sopralluogo fino al collaudo finale e all'assistenza post-vendita.",
+        "metric": "Supporto Diretto"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "98%",
+      "mainStatLabel": "Clienti soddisfatti del servizio e dell'assistenza",
+      "reviewsSummary": "Azienda di riferimento a Bologna per affidabilita e precisione",
+      "testimonials": [
+        {
+          "name": "Marco R.",
+          "location": "Bologna",
+          "quote": "Servizio impeccabile da parte del team di Di Pierri Immobiliare. Puntuali, precisi e disponibilissimi in ogni fase del lavoro.",
+          "roleOrContext": "Cliente verificato"
+        },
+        {
+          "name": "Laura B.",
+          "location": "Bologna",
+          "quote": "Ottima consulenza iniziale e grande cura nei dettagli. Preventivo rispettato al centesimo e risultato superiore alle aspettative.",
+          "roleOrContext": "Intervento completato"
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "Di Pierri Immobiliare - dispersione clic mobile e tempi di caricamento di Di Pierri Immobiliare (4.3s)",
+    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di Di Pierri Immobiliare, da smartphone impiega 4.3 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Di Pierri Immobiliare che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Di Pierri Immobiliare, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/dipierri\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "Di Pierri Immobiliare - dispersione clic mobile e tempi di caricamento di Di Pierri Immobiliare (4.3s)",
+      "body": "Buongiorno,\n\nda un test sul sito di Di Pierri Immobiliare, da smartphone impiega 4.3 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Di Pierri Immobiliare che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: Di Pierri Immobiliare - dispersione clic mobile e tempi di caricamento di Di Pierri Immobiliare (4.3s)",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Di Pierri Immobiliare, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/dipierri\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: Di Pierri Immobiliare - dispersione clic mobile e tempi di caricamento di Di Pierri Immobiliare (4.3s)",
+      "body": "Buongiorno,\n\nOltre a tagliare i 4.3 secondi su mobile, l'infrastruttura recupera il 40% delle conversioni tramite Server-Side Tracking.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza - TechPyre Studio",
+      "inThread": true,
+      "requiresFollowUpCall": true
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: Di Pierri Immobiliare - dispersione clic mobile e tempi di caricamento di Di Pierri Immobiliare (4.3s)",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Di Pierri Immobiliare non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/dipierri) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

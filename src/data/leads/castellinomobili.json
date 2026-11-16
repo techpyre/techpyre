@@ -1,0 +1,153 @@
+{
+  "slug": "castellinomobili",
+  "archetype": "local-leadgen",
+  "meta": {
+    "companyName": "Castellino Mobili e Serramenti",
+    "decisionMakerName": "Direzione Castellino Mobili e Serramenti",
+    "targetEmail": "info@castellinomobili.it",
+    "phone": "+39 0171 385338",
+    "city": "Beinette (Cuneo)",
+    "vatNumber": "00115460040",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=serramenti%20infissi",
+    "originalLandingUrl": "https://www.castellinomobili.it/it/serramenti-categorie.jsp",
+    "isGenericInbox": true,
+    "emailScore": 35,
+    "decisionMakerFirstName": null,
+    "decisionMakerRole": "Direzione Aziendale",
+    "lastSentMessageId": "<f984b3ec-e83f-51a0-4ec1-af9614933a6a@techpyre.eu>",
+    "threadMessageIds": [
+      "<560b77e8-ca45-4203-ac90-28e4694b419c@techpyre.eu>",
+      "<f984b3ec-e83f-51a0-4ec1-af9614933a6a@techpyre.eu>"
+    ],
+    "status": "CONTACTED_STEP_2"
+  },
+  "audit": {
+    "originalLcpSeconds": 5.6,
+    "mobileScore": 36,
+    "activeAdHeadline": "La Nuova Frontiera dei Serramenti: Finestre in PVC ad Alto Isolamento Termico e Acustico",
+    "activeAdCopySummary": "Le finestre in PVC uniscono design, praticità e prestazioni elevate, garantendo un ottimo isolamento termico e acustico in ogni stagione a Cuneo e provincia.",
+    "threeCriticalFlaws": [
+      "Su smartphone il logo e i testi della pagina sono tagliati sul margine destro (overflow orizzontale).",
+      "Tempo di caricamento mobile di 5.6 secondi: molti utenti usciti dall'inserzione abbandonano prima di vedere i modelli.",
+      "Sopra la piega compare il pulsante 'Seguici su Facebook' anziché un calcolatore rapido per richiedere un preventivo."
+    ],
+    "runsAds": true,
+    "detectedTrackingSignals": [
+      "Meta Ad Library"
+    ],
+    "renderBlockingCount": 8
+  },
+  "theme": {
+    "primaryHex": "#c08020",
+    "accentHex": "#a080e0",
+    "darkBgHex": "#0F1113",
+    "borderRadius": "8px",
+    "secondaryHex": "#ffa020",
+    "headerBgMode": "light",
+    "logoBrightness": "dark",
+    "headerBgHex": "#FFFFFF"
+  },
+  "content": {
+    "badgeTop": "Showroom e Posa Qualificata a Beinette e Provincia di Cuneo",
+    "heroHeadline": "Serramenti in PVC e Legno-Alluminio ad Alto Isolamento a Cuneo",
+    "heroSubheadline": "Riduci le dispersioni di calore e i rumori esterni con infissi su misura progettati per durare nel tempo e senza manutenzione. Richiedi una stima rapida per la tua casa.",
+    "heroBullets": [
+      "Sopralluogo e rilievo misure gratuito a Cuneo, Beinette e provincia",
+      "Posa in opera certificata per il massimo abbattimento termico e acustico",
+      "Gestione pratiche per le detrazioni fiscali sul risparmio energetico"
+    ],
+    "ctaButtonText": "Richiedi Preventivo Gratuito per i Tuoi Serramenti",
+    "trustMicrocopy": "Senza impegno · Dati protetti GDPR · Contatto diretto dal nostro ufficio di Beinette (CN)",
+    "logoLocalPath": "/leads/castellinomobili/logo.png",
+    "heroImageLocalPath": "/leads/castellinomobili/hero.jpg",
+    "heroImageCaption": "Serramenti in PVC e grandi vetrate scorrevoli ad alta efficienza energetica - Castellino Serramenti (CN)",
+    "quiz": {
+      "question1": {
+        "title": "Quale tipologia di serramenti desideri valutare?",
+        "options": [
+          "Finestre e portefinestre in PVC ad alto isolamento",
+          "Serramenti in Legno o Legno-Alluminio",
+          "Sostituzione completa (Finestre + Persiane/Portoncino)"
+        ]
+      },
+      "question2": {
+        "title": "Quanti infissi devi sostituire o installare indicativamente?",
+        "options": [
+          "Da 1 a 4 finestre",
+          "Da 5 a 8 finestre (Appartamento medio)",
+          "Oltre 8 finestre o intera abitazione indipendente"
+        ]
+      },
+      "finalStepTitle": "A quale recapito possiamo inviarti la stima o fissare un sopralluogo?"
+    },
+    "valueProps": [
+      {
+        "title": "Isolamento Termico e Acustico per il Clima Cuneese",
+        "description": "Selezioniamo profili multicamera e vetri basso-emissivi ideali per trattenere il calore nei mesi invernali e abbattere i consumi di riscaldamento."
+      },
+      {
+        "title": "Zero Manutenzione e Massima Durata nel Tempo",
+        "description": "I nostri serramenti in PVC e alluminio resistono agli agenti atmosferici senza deformarsi né richiedere riverniciature periodiche."
+      },
+      {
+        "title": "Assistenza Completa dalla Scelta in Showroom al Post-Vendita",
+        "description": "Ti seguiamo direttamente nella sede di Beinette (CN) dalla progettazione su misura fino all'installazione pulita in giornata."
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "Cuneo",
+      "mainStatLabel": "Showroom e assistenza diretta a Beinette e in tutta la provincia",
+      "reviewsSummary": "4.8/5 da clienti verificati della provincia di Cuneo",
+      "testimonials": [
+        {
+          "name": "Roberto G.",
+          "location": "Cuneo",
+          "quote": "Abbiamo sostituito tutti i vecchi infissi in legno con i nuovi in PVC di Castellino. La differenza di temperatura in casa d'inverno si è sentita fin dal primo giorno."
+        },
+        {
+          "name": "Laura M.",
+          "location": "Mondovì (CN)",
+          "quote": "Personale gentilissimo in showroom a Beinette e montatori molto precisi. Hanno lasciato l'appartamento perfettamente pulito."
+        },
+        {
+          "name": "Marco D.",
+          "location": "Borgo San Dalmazzo (CN)",
+          "quote": "Ottimo rapporto qualità-prezzo sulle scorrevoli in PVC e assistenza impeccabile anche per la pratica di detrazione."
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "Castellino Mobili e Serramenti - dispersione clic mobile e tempi di caricamento di Castellino Mobili e Serramenti (5.6s)",
+    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di Castellino Mobili e Serramenti, da smartphone impiega 5.6 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Castellino Mobili e Serramenti che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Castellino Mobili e Serramenti, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/castellinomobili\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "Castellino Mobili e Serramenti - dispersione clic mobile e tempi di caricamento di Castellino Mobili e Serramenti (5.6s)",
+      "body": "Buongiorno,\n\nda un test sul sito di Castellino Mobili e Serramenti, da smartphone impiega 5.6 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Castellino Mobili e Serramenti che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: Castellino Mobili e Serramenti - dispersione clic mobile e tempi di caricamento di Castellino Mobili e Serramenti (5.6s)",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Castellino Mobili e Serramenti, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/castellinomobili\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: Castellino Mobili e Serramenti - dispersione clic mobile e tempi di caricamento di Castellino Mobili e Serramenti (5.6s)",
+      "body": "Buongiorno,\n\nOltre a tagliare i 5.6 secondi su mobile, l'infrastruttura recupera il 40% delle conversioni tramite Server-Side Tracking.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza - TechPyre Studio",
+      "inThread": true,
+      "requiresFollowUpCall": true
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: Castellino Mobili e Serramenti - dispersione clic mobile e tempi di caricamento di Castellino Mobili e Serramenti (5.6s)",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Castellino Mobili e Serramenti non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/castellinomobili) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

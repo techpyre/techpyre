@@ -1,0 +1,147 @@
+{
+  "slug": "acquasudtrattamentoacque",
+  "archetype": "local-leadgen",
+  "meta": {
+    "companyName": "AcquaSud Trattamento Acque",
+    "decisionMakerName": "Direzione AcquaSud Trattamento Acque",
+    "targetEmail": "info@acquasud.it",
+    "phone": "+39 320 146 8333",
+    "city": "Palermo",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&media_type=all&q=caldaie%20palermo&search_type=keyword_unordered",
+    "originalLandingUrl": "http://www.acquasudtrattamentoacque.com/",
+    "isGenericInbox": true,
+    "emailScore": 5,
+    "decisionMakerFirstName": null,
+    "decisionMakerRole": "Direzione Aziendale",
+    "status": "INVALID_TICKET_INBOX",
+    "notes": "Dominio email privo di record DNS/MX."
+  },
+  "audit": {
+    "originalLcpSeconds": 5.7,
+    "mobileScore": 57,
+    "threeCriticalFlaws": [
+      "Il sito impiega 5.7 secondi a caricare su rete mobile per via di 3 script bloccanti (punteggio velocità mobile 57/100).",
+      "Per trovare il modulo di contatto da smartphone un utente deve scorrere verso il basso per 1.6 schermate (oltre 1382 pixel).",
+      "Manca un simulatore rapido guidato a 2 domande per quantificare le esigenze del cliente in tempo reale."
+    ],
+    "activeAdHeadline": "AcquaSud Trattamento Acque",
+    "activeAdCopySummary": "Campagna pubblicitaria attiva su Meta per il territorio di Palermo e provincia.",
+    "runsAds": true,
+    "detectedTrackingSignals": [
+      "Google Tag Manager"
+    ],
+    "renderBlockingCount": 8
+  },
+  "theme": {
+    "primaryHex": "#204020",
+    "accentHex": "#40a040",
+    "darkBgHex": "#0F1113",
+    "borderRadius": "8px",
+    "secondaryHex": "#406020",
+    "headerBgMode": "light",
+    "logoBrightness": "dark"
+  },
+  "content": {
+    "badgeTop": "AcquaSud Trattamento Acque · Energia e Comfort Termico (Palermo)",
+    "heroHeadline": "AcquaSud Trattamento Acque",
+    "heroSubheadline": "Specialisti in addolcitori, osmosi e depuratori d",
+    "heroBullets": [
+      "Analisi consumi in bolletta e dimensionamento reale senza sovrastime",
+      "Installazione certificata con tecnici interni abilitati F-Gas / FER",
+      "Gestione completa pratiche di allaccio, ENEA e incentivi fiscali"
+    ],
+    "ctaButtonText": "Calcola il Tuo Preventivo Rapido",
+    "trustMicrocopy": "Richiesta gratuita e senza impegno · Risposta rapida dal nostro ufficio tecnico",
+    "logoLocalPath": "/leads/acquasudtrattamentoacque/logo.png",
+    "heroImageLocalPath": "/leads/acquasudtrattamentoacque/hero.jpg",
+    "heroImageCaption": "AcquaSud Trattamento Acque · Sede operativa e realizzazioni (Palermo)",
+    "quiz": {
+      "question1": {
+        "title": "Quale impianto desideri installare o sostituire?",
+        "options": [
+          "Impianto fotovoltaico con eventuale sistema di accumulo",
+          "Climatizzatori, pompa di calore o caldaia ad alta efficienza",
+          "Riqualificazione energetica completa dell'abitazione"
+        ]
+      },
+      "question2": {
+        "title": "Qual e il tuo obiettivo principale?",
+        "options": [
+          "Abbattere subito i costi in bolletta",
+          "Accesso agli incentivi e detrazioni fiscali attive",
+          "Sostituzione urgente con sopralluogo tecnico rapido"
+        ]
+      },
+      "finalStepTitle": "Perfetto. Lascia i tuoi dati per ricevere la simulazione tecnica e il preventivo dedicato:"
+    },
+    "valueProps": [
+      {
+        "title": "Dimensionamento Sui Tuoi Consumi Reali",
+        "description": "Calcoliamo potenza, accumulo o taglia della pompa di calore per offrirti il miglior rientro economico possibile a Palermo.",
+        "metric": "Resa Massima"
+      },
+      {
+        "title": "Installazione Certificata e Sicura",
+        "description": "I tecnici di AcquaSud Trattamento Acque eseguono il lavoro a regola d'arte rilasciando tutte le dichiarazioni di conformita.",
+        "metric": "100% A Norma"
+      },
+      {
+        "title": "Assistenza e Pratiche Chiavi in Mano",
+        "description": "Seguiamo noi iter autorizzativi, pratiche incentivi e manutenzione programmata post-installazione.",
+        "metric": "Zero Pensieri"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "98%",
+      "mainStatLabel": "Clienti soddisfatti del risparmio energetico ottenuto",
+      "reviewsSummary": "4.9/5 da clienti residenziali a Palermo",
+      "testimonials": [
+        {
+          "name": "Simone G.",
+          "location": "Palermo",
+          "quote": "Impianto dimensione perfetta per i nostri consumi. AcquaSud Trattamento Acque ha gestito installazione e pratiche in tempi record.",
+          "roleOrContext": "Fotovoltaico con accumulo"
+        },
+        {
+          "name": "Elena P.",
+          "location": "Palermo e provincia",
+          "quote": "Tecnici puliti e precisi nel montaggio del nuovo impianto di climatizzazione. Preventivo chiaro fin dal primo giorno.",
+          "roleOrContext": "Pompa di calore e clima"
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "AcquaSud Trattamento Acque - dispersione clic mobile e tempi di caricamento di AcquaSud Trattamento Acque (5.7s)",
+    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di AcquaSud Trattamento Acque, da smartphone impiega 5.7 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per AcquaSud Trattamento Acque che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per AcquaSud Trattamento Acque, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/acquasudtrattamentoacque\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "AcquaSud Trattamento Acque - dispersione clic mobile e tempi di caricamento di AcquaSud Trattamento Acque (5.7s)",
+      "body": "Buongiorno,\n\nda un test sul sito di AcquaSud Trattamento Acque, da smartphone impiega 5.7 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per AcquaSud Trattamento Acque che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: AcquaSud Trattamento Acque - dispersione clic mobile e tempi di caricamento di AcquaSud Trattamento Acque (5.7s)",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per AcquaSud Trattamento Acque, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/acquasudtrattamentoacque\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: AcquaSud Trattamento Acque - dispersione clic mobile e tempi di caricamento di AcquaSud Trattamento Acque (5.7s)",
+      "body": "Buongiorno,\n\nOltre a tagliare i 5.7 secondi su mobile, l'infrastruttura recupera il 40% delle conversioni tramite Server-Side Tracking.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza - TechPyre Studio",
+      "inThread": true,
+      "requiresFollowUpCall": true
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: AcquaSud Trattamento Acque - dispersione clic mobile e tempi di caricamento di AcquaSud Trattamento Acque (5.7s)",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di AcquaSud Trattamento Acque non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/acquasudtrattamentoacque) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

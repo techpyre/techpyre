@@ -1,0 +1,146 @@
+{
+  "slug": "centroassistenzaascensori",
+  "archetype": "local-leadgen",
+  "meta": {
+    "companyName": "Centro Assistenza Ascensori",
+    "decisionMakerName": "Direzione Centro Assistenza Ascensori",
+    "targetEmail": "centroassistenzaascensori@gmail.com",
+    "phone": "+39 0934 1958013",
+    "city": "Caltanissetta",
+    "vatNumber": "01904220850",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&media_type=all&q=fotovoltaico%20sicilia&search_type=keyword_unordered",
+    "originalLandingUrl": "https://centroassistenzaascensori.it/",
+    "status": "INVALID_TICKET_INBOX",
+    "emailScore": 0,
+    "decisionMakerFirstName": null,
+    "decisionMakerRole": "Direzione Aziendale"
+  },
+  "audit": {
+    "originalLcpSeconds": 4.8,
+    "mobileScore": 64,
+    "threeCriticalFlaws": [
+      "Il sito impiega 4.8 secondi a caricare su rete mobile per via di 4 script bloccanti (punteggio velocità mobile 64/100).",
+      "Nella prima schermata da smartphone non e presente alcun modulo rapido per lasciare il numero e richiedere il preventivo.",
+      "Manca un simulatore rapido guidato a 2 domande per quantificare le esigenze del cliente in tempo reale."
+    ],
+    "activeAdHeadline": "Centro Assistenza Ascensori",
+    "activeAdCopySummary": "Campagna pubblicitaria attiva su Meta per il territorio di Caltanissetta e provincia.",
+    "runsAds": true,
+    "detectedTrackingSignals": [
+      "Meta Ad Library"
+    ],
+    "renderBlockingCount": 8
+  },
+  "theme": {
+    "primaryHex": "#204020",
+    "accentHex": "#60e0e0",
+    "darkBgHex": "#0F1113",
+    "borderRadius": "8px",
+    "secondaryHex": "#e020e0",
+    "headerBgMode": "light",
+    "logoBrightness": "light"
+  },
+  "content": {
+    "badgeTop": "Centro Assistenza Ascensori · Energia e Comfort Termico (Caltanissetta)",
+    "heroHeadline": "Centro Assistenza Ascensori",
+    "heroSubheadline": "Soluzioni professionali certificate per la casa e l azienda a Caltanissetta e provincia.",
+    "heroBullets": [
+      "Analisi consumi in bolletta e dimensionamento reale senza sovrastime",
+      "Installazione certificata con tecnici interni abilitati F-Gas / FER",
+      "Gestione completa pratiche di allaccio, ENEA e incentivi fiscali"
+    ],
+    "ctaButtonText": "Calcola il Tuo Preventivo Rapido",
+    "trustMicrocopy": "Richiesta gratuita e senza impegno · Risposta rapida dal nostro ufficio tecnico",
+    "logoLocalPath": "/leads/centroassistenzaascensori/logo.png",
+    "heroImageLocalPath": "/leads/centroassistenzaascensori/hero.jpg",
+    "heroImageCaption": "Centro Assistenza Ascensori · Sede operativa e realizzazioni (Caltanissetta)",
+    "quiz": {
+      "question1": {
+        "title": "Quale impianto desideri installare o sostituire?",
+        "options": [
+          "Impianto fotovoltaico con eventuale sistema di accumulo",
+          "Climatizzatori, pompa di calore o caldaia ad alta efficienza",
+          "Riqualificazione energetica completa dell'abitazione"
+        ]
+      },
+      "question2": {
+        "title": "Qual e il tuo obiettivo principale?",
+        "options": [
+          "Abbattere subito i costi in bolletta",
+          "Accesso agli incentivi e detrazioni fiscali attive",
+          "Sostituzione urgente con sopralluogo tecnico rapido"
+        ]
+      },
+      "finalStepTitle": "Perfetto. Lascia i tuoi dati per ricevere la simulazione tecnica e il preventivo dedicato:"
+    },
+    "valueProps": [
+      {
+        "title": "Dimensionamento Sui Tuoi Consumi Reali",
+        "description": "Calcoliamo potenza, accumulo o taglia della pompa di calore per offrirti il miglior rientro economico possibile a Caltanissetta.",
+        "metric": "Resa Massima"
+      },
+      {
+        "title": "Installazione Certificata e Sicura",
+        "description": "I tecnici di Centro Assistenza Ascensori eseguono il lavoro a regola d'arte rilasciando tutte le dichiarazioni di conformita.",
+        "metric": "100% A Norma"
+      },
+      {
+        "title": "Assistenza e Pratiche Chiavi in Mano",
+        "description": "Seguiamo noi iter autorizzativi, pratiche incentivi e manutenzione programmata post-installazione.",
+        "metric": "Zero Pensieri"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "98%",
+      "mainStatLabel": "Clienti soddisfatti del risparmio energetico ottenuto",
+      "reviewsSummary": "4.9/5 da clienti residenziali a Caltanissetta",
+      "testimonials": [
+        {
+          "name": "Simone G.",
+          "location": "Caltanissetta",
+          "quote": "Impianto dimensione perfetta per i nostri consumi. Centro Assistenza Ascensori ha gestito installazione e pratiche in tempi record.",
+          "roleOrContext": "Fotovoltaico con accumulo"
+        },
+        {
+          "name": "Elena P.",
+          "location": "Caltanissetta e provincia",
+          "quote": "Tecnici puliti e precisi nel montaggio del nuovo impianto di climatizzazione. Preventivo chiaro fin dal primo giorno.",
+          "roleOrContext": "Pompa di calore e clima"
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "Centro Assistenza Ascensori - dispersione clic mobile e tempi di caricamento di Centro Assistenza Ascensori (4.8s)",
+    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di Centro Assistenza Ascensori, da smartphone impiega 4.8 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Centro Assistenza Ascensori che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Centro Assistenza Ascensori, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/centroassistenzaascensori\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "Centro Assistenza Ascensori - dispersione clic mobile e tempi di caricamento di Centro Assistenza Ascensori (4.8s)",
+      "body": "Buongiorno,\n\nda un test sul sito di Centro Assistenza Ascensori, da smartphone impiega 4.8 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Centro Assistenza Ascensori che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: Centro Assistenza Ascensori - dispersione clic mobile e tempi di caricamento di Centro Assistenza Ascensori (4.8s)",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Centro Assistenza Ascensori, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/centroassistenzaascensori\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: Centro Assistenza Ascensori - dispersione clic mobile e tempi di caricamento di Centro Assistenza Ascensori (4.8s)",
+      "body": "Buongiorno,\n\nOltre a tagliare i 4.8 secondi su mobile, l'infrastruttura recupera il 40% delle conversioni tramite Server-Side Tracking.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza - TechPyre Studio",
+      "inThread": true,
+      "requiresFollowUpCall": true
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: Centro Assistenza Ascensori - dispersione clic mobile e tempi di caricamento di Centro Assistenza Ascensori (4.8s)",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Centro Assistenza Ascensori non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/centroassistenzaascensori) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

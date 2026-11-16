@@ -1,0 +1,153 @@
+{
+  "slug": "iecmanenti",
+  "archetype": "local-leadgen",
+  "meta": {
+    "companyName": "I.E.C. Manenti",
+    "decisionMakerName": "Direzione I.E.C. Manenti",
+    "targetEmail": "info@iecmanenti.it",
+    "phone": "+39 331 2341919",
+    "city": "Brescia",
+    "vatNumber": "00560590986",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&media_type=all&q=fotovoltaico%20brescia&search_type=keyword_unordered",
+    "originalLandingUrl": "https://www.iecmanenti.it/landing",
+    "isGenericInbox": true,
+    "emailScore": 35,
+    "decisionMakerFirstName": null,
+    "decisionMakerRole": "Direzione Aziendale",
+    "lastSentMessageId": "<680b11b6-3923-cd0f-e4e7-338a9f684c9b@techpyre.eu>",
+    "threadMessageIds": [
+      "<e5afbdeb-b5e2-7063-6475-d0efac7af1c7@techpyre.eu>",
+      "<680b11b6-3923-cd0f-e4e7-338a9f684c9b@techpyre.eu>"
+    ],
+    "status": "CONTACTED_STEP_2"
+  },
+  "audit": {
+    "originalLcpSeconds": 7.1,
+    "mobileScore": 47,
+    "threeCriticalFlaws": [
+      "Il sito impiega 7.1 secondi a caricare su rete mobile per via di 13 script bloccanti (punteggio velocità mobile 47/100).",
+      "Per trovare il modulo di contatto da smartphone un utente deve scorrere verso il basso per 5.8 schermate (oltre 4883 pixel).",
+      "Manca un simulatore rapido guidato a 2 domande per quantificare le esigenze del cliente in tempo reale."
+    ],
+    "activeAdHeadline": "I.E.C. Manenti: Nuove Abitazioni in Classe A4 con Fotovoltaico",
+    "activeAdCopySummary": "Campagna pubblicitaria attiva su Meta per il territorio di Brescia e provincia.",
+    "runsAds": true,
+    "detectedTrackingSignals": [
+      "Google Tag Manager"
+    ],
+    "renderBlockingCount": 8
+  },
+  "theme": {
+    "primaryHex": "#602080",
+    "accentHex": "#604020",
+    "darkBgHex": "#0B0D10",
+    "borderRadius": "8px",
+    "secondaryHex": "#40a080",
+    "headerBgMode": "dark",
+    "headerBgHex": "#0D0F12",
+    "logoBrightness": "dark"
+  },
+  "content": {
+    "badgeTop": "I.E.C. Manenti · Energia e Comfort Termico (Brescia)",
+    "heroHeadline": "Quadrilocali e Ville in Classe A4 a Torbole Casaglia",
+    "heroSubheadline": "Nuove abitazioni con impianto fotovoltaico, pompa di calore e classe energetica A4 a pochi minuti da Brescia. Comfort moderno e massimo risparmio in bolletta.",
+    "heroBullets": [
+      "Analisi consumi in bolletta e dimensionamento reale senza sovrastime",
+      "Installazione certificata con tecnici interni abilitati F-Gas / FER",
+      "Gestione completa pratiche di allaccio, ENEA e incentivi fiscali"
+    ],
+    "ctaButtonText": "Calcola il Tuo Preventivo Rapido",
+    "trustMicrocopy": "Richiesta gratuita e senza impegno · Risposta rapida dal nostro ufficio tecnico",
+    "logoLocalPath": "/leads/iecmanenti/logo.png",
+    "heroImageLocalPath": "/leads/iecmanenti/hero.jpg",
+    "heroImageCaption": "I.E.C. Manenti · Sede operativa e realizzazioni (Brescia)",
+    "quiz": {
+      "question1": {
+        "title": "Quale impianto desideri installare o sostituire?",
+        "options": [
+          "Impianto fotovoltaico con eventuale sistema di accumulo",
+          "Climatizzatori, pompa di calore o caldaia ad alta efficienza",
+          "Riqualificazione energetica completa dell'abitazione"
+        ]
+      },
+      "question2": {
+        "title": "Qual e il tuo obiettivo principale?",
+        "options": [
+          "Abbattere subito i costi in bolletta",
+          "Accesso agli incentivi e detrazioni fiscali attive",
+          "Sostituzione urgente con sopralluogo tecnico rapido"
+        ]
+      },
+      "finalStepTitle": "Perfetto. Lascia i tuoi dati per ricevere la simulazione tecnica e il preventivo dedicato:"
+    },
+    "valueProps": [
+      {
+        "title": "Dimensionamento Sui Tuoi Consumi Reali",
+        "description": "Calcoliamo potenza, accumulo o taglia della pompa di calore per offrirti il miglior rientro economico possibile a Brescia.",
+        "metric": "Resa Massima"
+      },
+      {
+        "title": "Installazione Certificata e Sicura",
+        "description": "I tecnici di I.E.C. Manenti eseguono il lavoro a regola d'arte rilasciando tutte le dichiarazioni di conformita.",
+        "metric": "100% A Norma"
+      },
+      {
+        "title": "Assistenza e Pratiche Chiavi in Mano",
+        "description": "Seguiamo noi iter autorizzativi, pratiche incentivi e manutenzione programmata post-installazione.",
+        "metric": "Zero Pensieri"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "98%",
+      "mainStatLabel": "Clienti soddisfatti del risparmio energetico ottenuto",
+      "reviewsSummary": "4.9/5 da clienti residenziali a Brescia",
+      "testimonials": [
+        {
+          "name": "Simone G.",
+          "location": "Brescia",
+          "quote": "Impianto dimensione perfetta per i nostri consumi. I.E.C. Manenti ha gestito installazione e pratiche in tempi record.",
+          "roleOrContext": "Fotovoltaico con accumulo"
+        },
+        {
+          "name": "Elena P.",
+          "location": "Brescia e provincia",
+          "quote": "Tecnici puliti e precisi nel montaggio del nuovo impianto di climatizzazione. Preventivo chiaro fin dal primo giorno.",
+          "roleOrContext": "Pompa di calore e clima"
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "I.E.C. Manenti - dispersione clic mobile e tempi di caricamento di I.E.C. Manenti (7.1s)",
+    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di I.E.C. Manenti, da smartphone impiega 7.1 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per I.E.C. Manenti che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per I.E.C. Manenti, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/iecmanenti\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "I.E.C. Manenti - dispersione clic mobile e tempi di caricamento di I.E.C. Manenti (7.1s)",
+      "body": "Buongiorno,\n\nda un test sul sito di I.E.C. Manenti, da smartphone impiega 7.1 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per I.E.C. Manenti che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: I.E.C. Manenti - dispersione clic mobile e tempi di caricamento di I.E.C. Manenti (7.1s)",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per I.E.C. Manenti, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/iecmanenti\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: I.E.C. Manenti - dispersione clic mobile e tempi di caricamento di I.E.C. Manenti (7.1s)",
+      "body": "Buongiorno,\n\nOltre a tagliare i 7.1 secondi su mobile, l'infrastruttura recupera il 40% delle conversioni tramite Server-Side Tracking.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza - TechPyre Studio",
+      "inThread": true,
+      "requiresFollowUpCall": true
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: I.E.C. Manenti - dispersione clic mobile e tempi di caricamento di I.E.C. Manenti (7.1s)",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di I.E.C. Manenti non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/iecmanenti) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

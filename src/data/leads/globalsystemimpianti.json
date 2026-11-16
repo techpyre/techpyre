@@ -1,0 +1,169 @@
+{
+  "slug": "globalsystemimpianti",
+  "archetype": "b2b-authority",
+  "meta": {
+    "companyName": "Global System Impianti",
+    "decisionMakerName": "Direzione Global System Impianti",
+    "decisionMakerFirstName": null,
+    "decisionMakerRole": "Direzione Aziendale",
+    "isGenericInbox": true,
+    "emailScore": 38,
+    "targetEmail": "ufficiotecnico@globalsystemimpianti.com",
+    "phone": "3434084301",
+    "city": "Carini",
+    "vatNumber": "06859320829",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Global%20System%20Impianti",
+    "originalLandingUrl": "https://www.globalsystemimpianti.com",
+    "status": "CONTACTED_STEP_1",
+    "lastSentMessageId": "<80cad8c0-a34d-f83f-0843-4c4fa7318e79@techpyre.eu>",
+    "threadMessageIds": [
+      "<80cad8c0-a34d-f83f-0843-4c4fa7318e79@techpyre.eu>"
+    ]
+  },
+  "audit": {
+    "originalLcpSeconds": 5.1,
+    "mobileScore": 57,
+    "renderBlockingCount": 8,
+    "runsAds": false,
+    "detectedTrackingSignals": [],
+    "threeCriticalFlaws": [
+      "Perdita di richieste di preventivo su mobile: caricamento di 5.1s (0 risorse bloccanti) che spinge i visitatori da smartphone ad abbandonare la pagina prima di contattare l'ufficio commerciale.",
+      "Assenza di pre-qualifica automatica: il sito non filtra le richieste per tipologia di intervento, budget o tempistiche prima di inviarle ai referenti tecnici di Global System Impianti.",
+      "Colli di bottiglia commerciali: le richieste arrivano come semplici email isolate senza instradamento automatico e senza tracciamento strutturato della trattativa."
+    ],
+    "activeAdHeadline": "In Sicilia le pi&ugrave; moderne soluzioni di efficientamento energetico",
+    "activeAdCopySummary": "Global System Impianti offre installazione e manutenzione di impianti elettrici e fotovoltaici. Contattaci per soluzioni innovative e profes..."
+  },
+  "theme": {
+    "primaryHex": "#0B1E36",
+    "accentHex": "#B8860B",
+    "darkBgHex": "#0B1E36",
+    "borderRadius": "8px",
+    "headerBgMode": "light",
+    "logoBrightness": "light"
+  },
+  "content": {
+    "badgeTop": "Global System Impianti · Servizi Tecnici e Infrastrutture B2B (Carini)",
+    "heroHeadline": "In Sicilia le più moderne soluzioni di efficientamento energetico",
+    "heroSubheadline": "Global System Impianti offre installazione e manutenzione di impianti elettrici e fotovoltaici. Contattaci per soluzioni innovative e professionali.",
+    "heroBullets": [
+      "Sopralluogo tecnico in stabilimento e piano operativo senza fermo attivita",
+      "Gestione completa pratiche autorizzative, certificazioni e conformita ambientale",
+      "Garanzie scritte su sicurezza, rendimento e assistenza post-intervento"
+    ],
+    "ctaButtonText": "Richiedi Studio di Fattibilita",
+    "trustMicrocopy": "Riservatezza industriale garantita (NDA) · Risposta tecnica entro la giornata lavorativa",
+    "logoLocalPath": "/leads/globalsystemimpianti/logo.png",
+    "heroImageLocalPath": "/leads/globalsystemimpianti/hero.jpg",
+    "heroImageCaption": "Global System Impianti · Sede operativa e realizzazioni (Carini)",
+    "quiz": {
+      "question1": {
+        "title": "Quale intervento tecnico per il vostro stabilimento state pianificando?",
+        "options": [
+          "Bonifiche ambientali, depurazione acque o gestione rifiuti industriali",
+          "Coperture industriali, impianti fotovoltaici aziendali o efficienza energetica",
+          "Sopralluogo tecnico in stabilimento, perizia e capitolato chiavi in mano"
+        ]
+      },
+      "question2": {
+        "title": "Qual e l'orizzonte temporale previsto per il progetto?",
+        "options": [
+          "Avvio operativo urgente (entro 30 giorni)",
+          "Pianificazione nel trimestre in corso",
+          "Valutazione tecnica e di budget preliminare"
+        ]
+      },
+      "finalStepTitle": "Specifiche registrate. Inserisci i riferimenti aziendali per il colloquio con l'Ufficio Tecnico:"
+    },
+    "valueProps": [
+      {
+        "title": "Perizia Tecnica e Piano Esecutivo Chiaro",
+        "description": "Analizziamo lo stato reale dell'impianto o della copertura a Carini definendo costi, tempistiche e ritorni operativi prima del cantiere.",
+        "metric": "Progetto Chiuso"
+      },
+      {
+        "title": "Piena Conformita Normativa e Ambientale",
+        "description": "Global System Impianti gestisce interventi complessi in sicurezza, rilasciando tutta la documentazione tecnica e le certificazioni richieste.",
+        "metric": "100% A Norma"
+      },
+      {
+        "title": "Manutenzione Programmata e Assistenza Diretta",
+        "description": "Un referente tecnico dedicato segue l'azienda dalla realizzazione fino ai controlli periodici e all'assistenza continua.",
+        "metric": "SLA Garantito"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "99.4%",
+      "mainStatLabel": "Commesse industriali chiuse in sicurezza e nei tempi concordati",
+      "reviewsSummary": "Partner tecnico specializzato per aziende e capannoni a Carini",
+      "clientReferenceWall": [
+        "Conformita Sicurezza D.Lgs 81/08",
+        "Certificazioni Impianti e Ambiente",
+        "Qualita Certificata ISO 9001",
+        "Cantieri Senza Fermo Produzione",
+        "Assistenza Tecnica Diretta"
+      ],
+      "secondaryStats": [
+        {
+          "value": "99.4%",
+          "label": "Interventi eseguiti nel rispetto delle scadenze di cantiere"
+        },
+        {
+          "value": "< 0.4s",
+          "label": "Accesso rapido a perizie e richieste tecniche su mobile"
+        },
+        {
+          "value": "24h",
+          "label": "Pianificazione sopralluogo tecnico in stabilimento"
+        }
+      ],
+      "testimonials": [
+        {
+          "name": "Direzione Tecnica e HSE",
+          "location": "Carini · Stabilimento Produttivo",
+          "quote": "Cantiere organizzato in modo impeccabile da Global System Impianti: lavorazioni svolte senza fermare la nostra produzione e documentazione esemplare.",
+          "roleOrContext": "Intervento in stabilimento"
+        },
+        {
+          "name": "Amministrazione e Impianti",
+          "location": "Carini e provincia",
+          "quote": "Preventivo dettagliato senza voci impreviste e supporto prezioso su tutta la parte autorizzativa.",
+          "roleOrContext": "Servizio chiavi in mano"
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "Global System Impianti - tempi di caricamento mobile e richieste preventivo di Global System Impianti (5.1s)",
+    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di Global System Impianti, da smartphone impiega 5.1 secondi ad aprirsi per 8 risorse bloccanti, frenando le richieste di preventivo.\n\nAbbiamo gia preparato una demo in Next.js per Global System Impianti che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Global System Impianti, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/globalsystemimpianti\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "Global System Impianti - tempi di caricamento mobile e richieste preventivo di Global System Impianti (5.1s)",
+      "body": "Buongiorno,\n\nda un test sul sito di Global System Impianti, da smartphone impiega 5.1 secondi ad aprirsi per 8 risorse bloccanti, frenando le richieste di preventivo.\n\nAbbiamo gia preparato una demo in Next.js per Global System Impianti che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: Global System Impianti - tempi di caricamento mobile e richieste preventivo di Global System Impianti (5.1s)",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Global System Impianti, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/globalsystemimpianti\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: Global System Impianti - tempi di caricamento mobile e richieste preventivo di Global System Impianti (5.1s)",
+      "body": "Buongiorno,\n\nOltre a tagliare i 5.1 secondi su mobile, il sistema qualifica ogni preventivo prima di inviarlo al CRM.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza - TechPyre Studio",
+      "inThread": true,
+      "requiresFollowUpCall": true
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: Global System Impianti - tempi di caricamento mobile e richieste preventivo di Global System Impianti (5.1s)",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Global System Impianti non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/globalsystemimpianti) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

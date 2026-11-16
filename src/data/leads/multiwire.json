@@ -1,0 +1,170 @@
+{
+  "slug": "multiwire",
+  "archetype": "b2b-authority",
+  "meta": {
+    "companyName": "DUTTO SEBASTIANO & C. SNC",
+    "decisionMakerName": "Direzione DUTTO SEBASTIANO & C. SNC",
+    "decisionMakerFirstName": null,
+    "decisionMakerRole": "Direzione Aziendale",
+    "isGenericInbox": true,
+    "emailScore": 38,
+    "targetEmail": "job@multiwire.net",
+    "phone": "+39 0171 346643",
+    "city": "Cuneo",
+    "vatNumber": "02574160046",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=DUTTO%20SEBASTIANO%20%26%20C.%20SNC",
+    "originalLandingUrl": "https://www.multiwire.net",
+    "status": "CONTACTED_STEP_1",
+    "lastSentMessageId": "<17c65427-c54d-a559-2fda-e77b6d53319a@techpyre.eu>",
+    "threadMessageIds": [
+      "<17c65427-c54d-a559-2fda-e77b6d53319a@techpyre.eu>"
+    ]
+  },
+  "audit": {
+    "originalLcpSeconds": 6.9,
+    "mobileScore": 41,
+    "renderBlockingCount": 33,
+    "runsAds": false,
+    "detectedTrackingSignals": [],
+    "threeCriticalFlaws": [
+      "Perdita di richieste di preventivo su mobile: caricamento di 6.9s (33 risorse bloccanti) che spinge i visitatori da smartphone ad abbandonare la pagina prima di contattare l'ufficio commerciale.",
+      "Assenza di pre-qualifica automatica: il sito non filtra le richieste per tipologia di intervento, budget o tempistiche prima di inviarle ai referenti tecnici di DUTTO SEBASTIANO & C. SNC.",
+      "Colli di bottiglia commerciali: le richieste arrivano come semplici email isolate senza instradamento automatico e senza tracciamento strutturato della trattativa."
+    ],
+    "activeAdHeadline": "Internet Service And Application Provider",
+    "activeAdCopySummary": "In MultiWire trovi persone con competenze specifiche in progettazione e realizzazione di reti, in architetture software e sviluppo web, in s..."
+  },
+  "theme": {
+    "primaryHex": "#30c0f0",
+    "accentHex": "#B8860B",
+    "darkBgHex": "#0B1E36",
+    "borderRadius": "8px",
+    "headerBgMode": "light",
+    "headerBgHex": "#FFFFFF",
+    "logoBrightness": "dark"
+  },
+  "content": {
+    "badgeTop": "DUTTO SEBASTIANO & C. SNC · Produzione Industriale e Carpenteria (Cuneo)",
+    "heroHeadline": "Internet Service And Application Provider",
+    "heroSubheadline": "In MultiWire trovi persone con competenze specifiche in progettazione e realizzazione di reti, in architetture software e sviluppo web, in sicurezza ed assistenza informatica",
+    "heroBullets": [
+      "Analisi disegni CAD/STEP e studio di fattibilita con tempi di consegna certi",
+      "Controllo dimensionale su lotti piccoli, medi e serie continuative",
+      "Tracciabilita dei materiali, certificati di collaudo e referente unico B2B"
+    ],
+    "ctaButtonText": "Richiedi Studio di Fattibilita",
+    "trustMicrocopy": "Riservatezza industriale garantita (NDA) · Risposta tecnica entro la giornata lavorativa",
+    "logoLocalPath": "/leads/multiwire/logo.png",
+    "heroImageLocalPath": "/leads/multiwire/hero.jpg",
+    "heroImageCaption": "DUTTO SEBASTIANO & C. SNC · Sede operativa e realizzazioni (Cuneo)",
+    "quiz": {
+      "question1": {
+        "title": "Quale lavorazione meccanica o fornitura su disegno vi occorre?",
+        "options": [
+          "Taglio laser, piegatura lamiera o carpenteria metallica su disegno",
+          "Lavorazioni CNC, stampi, attrezzature o serie ripetitive B2B",
+          "Studio di fattibilita tecnica, prototipazione e quotazione lotto"
+        ]
+      },
+      "question2": {
+        "title": "Qual e l'orizzonte temporale previsto per il progetto?",
+        "options": [
+          "Avvio operativo urgente (entro 30 giorni)",
+          "Pianificazione nel trimestre in corso",
+          "Valutazione tecnica e di budget preliminare"
+        ]
+      },
+      "finalStepTitle": "Specifiche registrate. Inserisci i riferimenti aziendali per il colloquio con l'Ufficio Tecnico:"
+    },
+    "valueProps": [
+      {
+        "title": "Ingegnerizzazione Disegni e Preventivazione Rapida",
+        "description": "Valutiamo tolleranze, spessori e trattamenti direttamente con il vostro ufficio tecnico a Cuneo, riducendo i fermi macchina e gli scarti di assemblaggio.",
+        "metric": "Risposta 24h"
+      },
+      {
+        "title": "Parco Macchine CNC e Controllo Qualita",
+        "description": "Ogni lotto prodotto da DUTTO SEBASTIANO & C. SNC segue procedure di verifica dimensionale e conformita dei materiali per garantire ripetibilita costante.",
+        "metric": "100% Verificato"
+      },
+      {
+        "title": "Consegne Programmate Kanban e Continuita",
+        "description": "Gestiamo commesse spot e accordi quadro annuali rispettando le finestre di consegna concordate con il vostro reparto logistica.",
+        "metric": "Puntualita 99.4%"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "99.4%",
+      "mainStatLabel": "Lotti lavorati e consegnati nel pieno rispetto delle tolleranze",
+      "reviewsSummary": "Partner manifatturiero di riferimento per industrie a Cuneo",
+      "clientReferenceWall": [
+        "Lavorazioni su Disegno CAD/STEP",
+        "Certificazioni Materiali 3.1",
+        "Qualita Certificata ISO 9001",
+        "Controllo Dimensionale Lotti",
+        "Forniture OEM e Conto Terzi"
+      ],
+      "secondaryStats": [
+        {
+          "value": "99.4%",
+          "label": "Lotti consegnati entro la data pattuita con il cliente B2B"
+        },
+        {
+          "value": "< 0.4s",
+          "label": "Caricamento portale tecnico per richiesta offerte da mobile"
+        },
+        {
+          "value": "24h",
+          "label": "Verifica fattibilita tecnica con il nostro Ufficio Tecnico"
+        }
+      ],
+      "testimonials": [
+        {
+          "name": "Direzione Produzione e Officina",
+          "location": "Cuneo · Fornitura Conto Terzi",
+          "quote": "Affidiamo a DUTTO SEBASTIANO & C. SNC i nostri particolari meccanici e lamiere piegate: precisione costante sui montaggi e consegne sempre allineate al piano produttivo.",
+          "roleOrContext": "Lavorazioni CNC e Lamiera"
+        },
+        {
+          "name": "Responsabile Ufficio Acquisti",
+          "location": "Cuneo e provincia",
+          "quote": "Interlocutore tecnico preparato: tempi rapidi su quotazioni multi-articolo, documenti completi e zero difformita in accettazione.",
+          "roleOrContext": "Accordo quadro B2B"
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "DUTTO SEBASTIANO & C. SNC - tempi di caricamento mobile e richieste preventivo di DUTTO SEBASTIANO & C. SNC (6.9s)",
+    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di DUTTO SEBASTIANO & C. SNC, da smartphone impiega 6.9 secondi ad aprirsi per 33 risorse bloccanti, frenando le richieste di preventivo.\n\nAbbiamo gia preparato una demo in Next.js per DUTTO SEBASTIANO & C. SNC che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nTechPyre Studio",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per DUTTO SEBASTIANO & C. SNC, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/multiwire\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nTechPyre Studio",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "DUTTO SEBASTIANO & C. SNC - tempi di caricamento mobile e richieste preventivo di DUTTO SEBASTIANO & C. SNC (6.9s)",
+      "body": "Buongiorno,\n\nda un test sul sito di DUTTO SEBASTIANO & C. SNC, da smartphone impiega 6.9 secondi ad aprirsi per 33 risorse bloccanti, frenando le richieste di preventivo.\n\nAbbiamo gia preparato una demo in Next.js per DUTTO SEBASTIANO & C. SNC che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nTechPyre Studio",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: DUTTO SEBASTIANO & C. SNC - tempi di caricamento mobile e richieste preventivo di DUTTO SEBASTIANO & C. SNC (6.9s)",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per DUTTO SEBASTIANO & C. SNC, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/multiwire\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nTechPyre Studio",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: DUTTO SEBASTIANO & C. SNC - tempi di caricamento mobile e richieste preventivo di DUTTO SEBASTIANO & C. SNC (6.9s)",
+      "body": "Buongiorno,\n\nOltre a tagliare i 6.9 secondi su mobile, il sistema qualifica ogni preventivo prima di inviarlo al CRM.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nTechPyre Studio",
+      "inThread": true,
+      "requiresFollowUpCall": true
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: DUTTO SEBASTIANO & C. SNC - tempi di caricamento mobile e richieste preventivo di DUTTO SEBASTIANO & C. SNC (6.9s)",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di DUTTO SEBASTIANO & C. SNC non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/multiwire) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nTechPyre Studio",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

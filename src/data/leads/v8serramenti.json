@@ -1,0 +1,151 @@
+{
+  "slug": "v8serramenti",
+  "archetype": "local-leadgen",
+  "meta": {
+    "companyName": "V8 Serramenti",
+    "decisionMakerName": "Direzione V8 Serramenti",
+    "targetEmail": "info@v8serramenti.it",
+    "phone": "+39 030 6373336",
+    "city": "Brescia",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&media_type=all&q=infissi%20brescia&search_type=keyword_unordered",
+    "originalLandingUrl": "https://v8serramenti.it/",
+    "isGenericInbox": true,
+    "emailScore": 35,
+    "decisionMakerFirstName": null,
+    "decisionMakerRole": "Direzione Aziendale",
+    "lastSentMessageId": "<aee42923-3f85-9932-f2da-2ff20667f31d@techpyre.eu>",
+    "threadMessageIds": [
+      "<819e8ba1-6f4f-2d1f-7c8b-be5151ea2db7@techpyre.eu>",
+      "<aee42923-3f85-9932-f2da-2ff20667f31d@techpyre.eu>"
+    ],
+    "status": "CONTACTED_STEP_2"
+  },
+  "audit": {
+    "originalLcpSeconds": 5.6,
+    "mobileScore": 58,
+    "threeCriticalFlaws": [
+      "Il sito impiega 5.6 secondi a caricare su rete mobile per via di 5 script bloccanti (punteggio velocità mobile 58/100).",
+      "Per trovare il modulo di contatto da smartphone un utente deve scorrere verso il basso per 3.7 schermate (oltre 3126 pixel).",
+      "Un banner cookie o popup copre circa il 69% dello schermo mobile all arrivo."
+    ],
+    "activeAdHeadline": "Serramenti in legno, legno-alluminio e PVC. Risparmio energetico",
+    "activeAdCopySummary": "Campagna pubblicitaria attiva su Meta per il territorio di Brescia e provincia.",
+    "runsAds": true,
+    "detectedTrackingSignals": [
+      "Meta Ad Library"
+    ],
+    "renderBlockingCount": 8
+  },
+  "theme": {
+    "primaryHex": "#6080e0",
+    "accentHex": "#6060e0",
+    "darkBgHex": "#0F1113",
+    "borderRadius": "8px",
+    "secondaryHex": "#40a040",
+    "headerBgMode": "light",
+    "logoBrightness": "dark"
+  },
+  "content": {
+    "badgeTop": "V8 Serramenti · Serramenti Certificati a Brescia",
+    "heroHeadline": "Serramenti in legno, legno-alluminio e PVC. Risparmio energetico",
+    "heroSubheadline": "V8 Serramenti: infissi in legno, legno-alluminio e PVC, porte interne in laminato o in legno, a risparmio energetico con detrazione; portoncini ingresso e porte blindate, ante esterne (persiane e scuri) in legn",
+    "heroBullets": [
+      "Rilievo misure preciso a domicilio e preventivo trasparente chiavi in mano",
+      "Profili ad alto isolamento termico e acustico per abbattere i consumi",
+      "Posa certificata con squadre interne e assistenza post-vendita diretta"
+    ],
+    "ctaButtonText": "Calcola il Tuo Preventivo Rapido",
+    "trustMicrocopy": "Richiesta gratuita e senza impegno · Risposta rapida dal nostro ufficio tecnico",
+    "logoLocalPath": "/leads/v8serramenti/logo.png",
+    "heroImageLocalPath": "/leads/v8serramenti/hero.jpg",
+    "heroImageCaption": "V8 Serramenti · Sede operativa e realizzazioni (Brescia)",
+    "quiz": {
+      "question1": {
+        "title": "Quale tipologia di intervento desideri valutare?",
+        "options": [
+          "Sostituzione infissi con isolamento termico/acustico",
+          "Nuova installazione per ristrutturazione o cantiere",
+          "Porte interne, blindati o sistemi oscuranti"
+        ]
+      },
+      "question2": {
+        "title": "Quanti serramenti prevede indicativamente il progetto?",
+        "options": [
+          "Da 1 a 4 serramenti",
+          "Da 5 a 8 serramenti (appartamento completo)",
+          "Oltre 8 serramenti o villa/ufficio"
+        ]
+      },
+      "finalStepTitle": "Ottimo. Inserisci i tuoi recapiti per ricevere il prospetto economico e il sopralluogo:"
+    },
+    "valueProps": [
+      {
+        "title": "Isolamento Termico e Acustico Certificato",
+        "description": "Serramenti selezionati per eliminare spifferi, umidita e rumori esterni nella tua abitazione o ufficio a Brescia.",
+        "metric": "Risparmio Energetico"
+      },
+      {
+        "title": "Posa in Opera Qualificata Senza Sorprese",
+        "description": "Squadre di montaggio esperte di V8 Serramenti curano controtelai, sigillature e finiture senza opere murarie invasive.",
+        "metric": "Posa Certificata"
+      },
+      {
+        "title": "Preventivo Chiaro e Supporto Pratiche Bonus",
+        "description": "Costi chiari fin dal primo incontro e assistenza completa su certificazioni energetiche ed ecobonus.",
+        "metric": "Prezzo Bloccato"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "98%",
+      "mainStatLabel": "Clienti soddisfatti di posa in opera e isolamento termico",
+      "reviewsSummary": "4.9/5 da clienti seguiti a Brescia e provincia",
+      "testimonials": [
+        {
+          "name": "Davide C.",
+          "location": "Brescia",
+          "quote": "Team di V8 Serramenti preciso dal rilievo al montaggio. La differenza termica e acustica in casa si sente subito.",
+          "roleOrContext": "Sostituzione infissi completi"
+        },
+        {
+          "name": "Federica S.",
+          "location": "Brescia e provincia",
+          "quote": "Preventivo rispettato al centesimo, cantiere lasciato pulito ogni sera e grande supporto sulle pratiche fiscali.",
+          "roleOrContext": "Finestre e portoncino blindato"
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "V8 Serramenti - dispersione clic mobile e tempi di caricamento di V8 Serramenti (5.6s)",
+    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di V8 Serramenti, da smartphone impiega 5.6 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per V8 Serramenti che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per V8 Serramenti, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/v8serramenti\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "V8 Serramenti - dispersione clic mobile e tempi di caricamento di V8 Serramenti (5.6s)",
+      "body": "Buongiorno,\n\nda un test sul sito di V8 Serramenti, da smartphone impiega 5.6 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per V8 Serramenti che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: V8 Serramenti - dispersione clic mobile e tempi di caricamento di V8 Serramenti (5.6s)",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per V8 Serramenti, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/v8serramenti\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: V8 Serramenti - dispersione clic mobile e tempi di caricamento di V8 Serramenti (5.6s)",
+      "body": "Buongiorno,\n\nOltre a tagliare i 5.6 secondi su mobile, l'infrastruttura recupera il 40% delle conversioni tramite Server-Side Tracking.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza - TechPyre Studio",
+      "inThread": true,
+      "requiresFollowUpCall": true
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: V8 Serramenti - dispersione clic mobile e tempi di caricamento di V8 Serramenti (5.6s)",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di V8 Serramenti non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/v8serramenti) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

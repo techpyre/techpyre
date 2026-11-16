@@ -1,0 +1,172 @@
+{
+  "slug": "lumaimpianti",
+  "archetype": "b2b-authority",
+  "meta": {
+    "companyName": "Luma Impianti Sas",
+    "decisionMakerName": "Luca Bonato",
+    "targetEmail": "luca.bonato@lumaimpianti.com",
+    "phone": "+39 045 6661604",
+    "city": "Buttapietra",
+    "vatNumber": "03669820239",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Luma%20Impianti%20Sas",
+    "originalLandingUrl": "http://www.lumaimpianti.com",
+    "isGenericInbox": false,
+    "emailScore": 90,
+    "decisionMakerFirstName": "Luca",
+    "decisionMakerRole": "Direzione",
+    "lastSentMessageId": "<6ce42c66-d3b1-a243-4dc8-68540a349284@techpyre.eu>",
+    "threadMessageIds": [
+      "<11dec5ba-780a-f949-a7b0-84b2c2c05137@techpyre.eu>",
+      "<6ce42c66-d3b1-a243-4dc8-68540a349284@techpyre.eu>"
+    ],
+    "status": "CONTACTED_STEP_2"
+  },
+  "audit": {
+    "originalLcpSeconds": 12.8,
+    "mobileScore": 24,
+    "threeCriticalFlaws": [
+      "Dispersione del budget pubblicitario: caricamento mobile di 12.8s (18 risorse bloccanti) che fa abbandonare oltre meta degli utenti prima dell'apertura della pagina.",
+      "Cecita decisionale sul ROI: assenza di tracciamento Server-Side di prima parte (GTM Server-Side e Meta CAPI), con perdita del 30-50% dei dati di conversione per blocchi browser e cookie banner.",
+      "Colli di bottiglia commerciali: i contatti finiscono in email isolate senza pre-qualifica automatica e senza sincronizzazione immediata via API/Webhook con il CRM aziendale."
+    ],
+    "activeAdHeadline": "Luma Impianti S.a.s. - Impianti elettrici Verona e provincia",
+    "activeAdCopySummary": "Luma Impianti elettrici a Verona - installazione e manutenzione impianti elettrici industriali e civili a Verona e provincia.",
+    "runsAds": true,
+    "detectedTrackingSignals": [
+      "Meta Ad Library"
+    ],
+    "renderBlockingCount": 8
+  },
+  "theme": {
+    "primaryHex": "#0B1E36",
+    "accentHex": "#B8860B",
+    "darkBgHex": "#0B1E36",
+    "borderRadius": "8px",
+    "headerBgMode": "light",
+    "logoBrightness": "dark"
+  },
+  "content": {
+    "badgeTop": "Luma Impianti Sas · Ingegneria e Automazione B2B (Buttapietra)",
+    "heroHeadline": "Luma Impianti S.a.s. - Impianti elettrici Verona e provincia",
+    "heroSubheadline": "Luma Impianti elettrici a Verona - installazione e manutenzione impianti elettrici industriali e civili a Verona e provincia.",
+    "heroBullets": [
+      "Studio elettrico, sviluppo software PLC e cablaggio quadri certificato",
+      "Revamping macchinari e interconnessione verso gestionali aziendali MES/ERP",
+      "Collaudo funzionale, fascicolo tecnico CE e teleassistenza post-vendita"
+    ],
+    "ctaButtonText": "Richiedi Studio di Fattibilita",
+    "trustMicrocopy": "Riservatezza industriale garantita (NDA) · Risposta tecnica entro la giornata lavorativa",
+    "logoLocalPath": "/leads/lumaimpianti/logo.png",
+    "heroImageLocalPath": "/leads/lumaimpianti/hero.jpg",
+    "heroImageCaption": "Luma Impianti Sas · Sede operativa e realizzazioni (Buttapietra)",
+    "quiz": {
+      "question1": {
+        "title": "Quale ambito di automazione o impiantistica industriale valutate?",
+        "options": [
+          "Quadri elettrici bordomacchina, revamping linee e integrazione PLC",
+          "Progettazione isole robotizzate, macchinari o automazione di reparto",
+          "Studio di fattibilita tecnica, conformita CE e tempi di consegna"
+        ]
+      },
+      "question2": {
+        "title": "Qual e l'orizzonte temporale previsto per il progetto?",
+        "options": [
+          "Avvio operativo urgente (entro 30 giorni)",
+          "Pianificazione nel trimestre in corso",
+          "Valutazione tecnica e di budget preliminare"
+        ]
+      },
+      "finalStepTitle": "Specifiche registrate. Inserisci i riferimenti aziendali per il colloquio con l'Ufficio Tecnico:"
+    },
+    "valueProps": [
+      {
+        "title": "Progettazione Elettrica e Software Su Specifica",
+        "description": "Sviluppiamo architetture di controllo affidabili e scalabili a Buttapietra, pensate per integrarsi nei vostri reparti senza lunghi fermi produzione.",
+        "metric": "Norma CE"
+      },
+      {
+        "title": "Quadristica, Cablaggio e Sicurezza Impianti",
+        "description": "Quadri di potenza e automazione testati al 100% prima della spedizione, completi di schemi aggiornati e verifiche di sicurezza.",
+        "metric": "Testato 100%"
+      },
+      {
+        "title": "Avviamento in Linea e Teleassistenza",
+        "description": "Supportiamo gli operatori in fabbrica durante la messa in servizio e garantiamo continuità con diagnostica tempestiva.",
+        "metric": "Supporto Diretto"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "99.4%",
+      "mainStatLabel": "Impianti e quadri avviati nel rispetto delle finestre produttive",
+      "reviewsSummary": "Partner tecnologico per l'automazione di stabilimenti a Buttapietra",
+      "clientReferenceWall": [
+        "Direttiva Macchine 2006/42/CE",
+        "Conformita CEI EN 60204-1",
+        "Integrazione MES / ERP",
+        "Teleassistenza Industriale",
+        "Qualita Certificata ISO 9001"
+      ],
+      "secondaryStats": [
+        {
+          "value": "99.4%",
+          "label": "Commesse di automazione collaudate nei tempi concordati"
+        },
+        {
+          "value": "< 0.4s",
+          "label": "Caricamento rapido del portale tecnico su smartphone"
+        },
+        {
+          "value": "24h",
+          "label": "Primo riscontro dall'Ufficio Tecnico su nuove commesse"
+        }
+      ],
+      "testimonials": [
+        {
+          "name": "Direttore di Stabilimento",
+          "location": "Buttapietra · Reparto Automazione",
+          "quote": "Il revamping eseguito da Luma Impianti Sas ha stabilizzato la linea e ridotto i guasti elettrici fin dal primo mese di esercizio.",
+          "roleOrContext": "Automazione e revamping"
+        },
+        {
+          "name": "Responsabile Ingegneria di Processo",
+          "location": "Buttapietra e provincia",
+          "quote": "Documentazione elettrica ordinata, rispetto rigoroso delle norme di sicurezza e disponibilita immediata in fase di collaudo.",
+          "roleOrContext": "Quadristica e bordomacchina"
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "Luma Impianti Sas - dispersione clic mobile e tempi di caricamento di Luma Impianti Sas (12.8s)",
+    "emailPlainTextBody": "Buongiorno Luca,\n\nda un test sul sito di Luma Impianti Sas, da smartphone impiega 12.8 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Luma Impianti Sas che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno Luca,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Luma Impianti Sas, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/lumaimpianti\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "Luma Impianti Sas - dispersione clic mobile e tempi di caricamento di Luma Impianti Sas (12.8s)",
+      "body": "Buongiorno Luca,\n\nda un test sul sito di Luma Impianti Sas, da smartphone impiega 12.8 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Luma Impianti Sas che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: Luma Impianti Sas - dispersione clic mobile e tempi di caricamento di Luma Impianti Sas (12.8s)",
+      "body": "Buongiorno Luca,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Luma Impianti Sas, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/lumaimpianti\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: Luma Impianti Sas - dispersione clic mobile e tempi di caricamento di Luma Impianti Sas (12.8s)",
+      "body": "Buongiorno Luca,\n\nOltre a tagliare i 12.8 secondi su mobile, l'infrastruttura recupera il 40% delle conversioni tramite Server-Side Tracking.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza - TechPyre Studio",
+      "inThread": true,
+      "requiresFollowUpCall": true
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: Luma Impianti Sas - dispersione clic mobile e tempi di caricamento di Luma Impianti Sas (12.8s)",
+      "body": "Buongiorno Luca,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Luma Impianti Sas non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/lumaimpianti) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

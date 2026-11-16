@@ -1,0 +1,153 @@
+{
+  "slug": "desideriodicasa",
+  "archetype": "local-leadgen",
+  "meta": {
+    "companyName": "Desiderio Di Casa",
+    "decisionMakerName": "Direzione Desiderio Di Casa",
+    "targetEmail": "liberta@desideriodicasa.it",
+    "phone": "091326761",
+    "city": "Palermo",
+    "vatNumber": "04287650826",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&media_type=all&q=infissi%20sicilia&search_type=keyword_unordered",
+    "originalLandingUrl": "http://www.desideriodicasa.it/",
+    "isGenericInbox": false,
+    "emailScore": 80,
+    "decisionMakerFirstName": null,
+    "decisionMakerRole": "Direzione Aziendale",
+    "lastSentMessageId": "<f039299e-8702-10b6-5714-1de2abc72ec5@techpyre.eu>",
+    "threadMessageIds": [
+      "<9ccd36c4-cab6-13fe-f755-df7c5a8dc725@techpyre.eu>",
+      "<f039299e-8702-10b6-5714-1de2abc72ec5@techpyre.eu>"
+    ],
+    "status": "CONTACTED_STEP_2"
+  },
+  "audit": {
+    "originalLcpSeconds": 10,
+    "mobileScore": 25,
+    "threeCriticalFlaws": [
+      "Il sito impiega 10 secondi a caricare su rete mobile per via di 24 script bloccanti (punteggio velocità mobile 25/100).",
+      "La pagina mantiene un menu di navigazione che disperde i visitatori provenienti dalla campagna Meta.",
+      "Manca un simulatore rapido guidato a 2 domande per quantificare le esigenze del cliente in tempo reale."
+    ],
+    "activeAdHeadline": "Desiderio Di Casa",
+    "activeAdCopySummary": "Campagna pubblicitaria attiva su Meta per il territorio di Palermo e provincia.",
+    "runsAds": true,
+    "detectedTrackingSignals": [
+      "Meta Ad Library"
+    ],
+    "renderBlockingCount": 8
+  },
+  "theme": {
+    "primaryHex": "#c04020",
+    "accentHex": "#2040a0",
+    "darkBgHex": "#0F1113",
+    "borderRadius": "8px",
+    "secondaryHex": "#a02040",
+    "headerBgMode": "dark",
+    "logoBrightness": "light",
+    "headerBgHex": "#0E1013"
+  },
+  "content": {
+    "badgeTop": "Desiderio Di Casa · Serramenti Certificati a Palermo",
+    "heroHeadline": "Desiderio Di Casa",
+    "heroSubheadline": "Soluzioni professionali certificate per la casa e l azienda a Palermo e provincia.",
+    "heroBullets": [
+      "Rilievo misure preciso a domicilio e preventivo trasparente chiavi in mano",
+      "Profili ad alto isolamento termico e acustico per abbattere i consumi",
+      "Posa certificata con squadre interne e assistenza post-vendita diretta"
+    ],
+    "ctaButtonText": "Calcola il Tuo Preventivo Rapido",
+    "trustMicrocopy": "Richiesta gratuita e senza impegno · Risposta rapida dal nostro ufficio tecnico",
+    "logoLocalPath": "/leads/desideriodicasa/logo.png",
+    "heroImageLocalPath": "/leads/desideriodicasa/hero.jpg",
+    "heroImageCaption": "Desiderio Di Casa · Sede operativa e realizzazioni (Palermo)",
+    "quiz": {
+      "question1": {
+        "title": "Quale tipologia di intervento desideri valutare?",
+        "options": [
+          "Sostituzione infissi con isolamento termico/acustico",
+          "Nuova installazione per ristrutturazione o cantiere",
+          "Porte interne, blindati o sistemi oscuranti"
+        ]
+      },
+      "question2": {
+        "title": "Quanti serramenti prevede indicativamente il progetto?",
+        "options": [
+          "Da 1 a 4 serramenti",
+          "Da 5 a 8 serramenti (appartamento completo)",
+          "Oltre 8 serramenti o villa/ufficio"
+        ]
+      },
+      "finalStepTitle": "Ottimo. Inserisci i tuoi recapiti per ricevere il prospetto economico e il sopralluogo:"
+    },
+    "valueProps": [
+      {
+        "title": "Isolamento Termico e Acustico Certificato",
+        "description": "Serramenti selezionati per eliminare spifferi, umidita e rumori esterni nella tua abitazione o ufficio a Palermo.",
+        "metric": "Risparmio Energetico"
+      },
+      {
+        "title": "Posa in Opera Qualificata Senza Sorprese",
+        "description": "Squadre di montaggio esperte di Desiderio Di Casa curano controtelai, sigillature e finiture senza opere murarie invasive.",
+        "metric": "Posa Certificata"
+      },
+      {
+        "title": "Preventivo Chiaro e Supporto Pratiche Bonus",
+        "description": "Costi chiari fin dal primo incontro e assistenza completa su certificazioni energetiche ed ecobonus.",
+        "metric": "Prezzo Bloccato"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "98%",
+      "mainStatLabel": "Clienti soddisfatti di posa in opera e isolamento termico",
+      "reviewsSummary": "4.9/5 da clienti seguiti a Palermo e provincia",
+      "testimonials": [
+        {
+          "name": "Davide C.",
+          "location": "Palermo",
+          "quote": "Team di Desiderio Di Casa preciso dal rilievo al montaggio. La differenza termica e acustica in casa si sente subito.",
+          "roleOrContext": "Sostituzione infissi completi"
+        },
+        {
+          "name": "Federica S.",
+          "location": "Palermo e provincia",
+          "quote": "Preventivo rispettato al centesimo, cantiere lasciato pulito ogni sera e grande supporto sulle pratiche fiscali.",
+          "roleOrContext": "Finestre e portoncino blindato"
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "Desiderio Di Casa - dispersione clic mobile e tempi di caricamento di Desiderio Di Casa (10s)",
+    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di Desiderio Di Casa, da smartphone impiega 10 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Desiderio Di Casa che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Desiderio Di Casa, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/desideriodicasa\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "Desiderio Di Casa - dispersione clic mobile e tempi di caricamento di Desiderio Di Casa (10s)",
+      "body": "Buongiorno,\n\nda un test sul sito di Desiderio Di Casa, da smartphone impiega 10 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Desiderio Di Casa che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: Desiderio Di Casa - dispersione clic mobile e tempi di caricamento di Desiderio Di Casa (10s)",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Desiderio Di Casa, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/desideriodicasa\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: Desiderio Di Casa - dispersione clic mobile e tempi di caricamento di Desiderio Di Casa (10s)",
+      "body": "Buongiorno,\n\nOltre a tagliare i 10 secondi su mobile, l'infrastruttura recupera il 40% delle conversioni tramite Server-Side Tracking.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza - TechPyre Studio",
+      "inThread": true,
+      "requiresFollowUpCall": true
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: Desiderio Di Casa - dispersione clic mobile e tempi di caricamento di Desiderio Di Casa (10s)",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Desiderio Di Casa non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/desideriodicasa) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

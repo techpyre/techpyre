@@ -1,0 +1,146 @@
+{
+  "slug": "immerenergy",
+  "archetype": "local-leadgen",
+  "meta": {
+    "companyName": "ImmerEnergy Fotovoltaico",
+    "decisionMakerName": "Direzione ImmerEnergy Fotovoltaico",
+    "targetEmail": "privacy@immergas.com",
+    "phone": "3364031911",
+    "city": "Reggio Emilia",
+    "vatNumber": "00932830359",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Referenze",
+    "originalLandingUrl": "https://www.immerenergy.it/referenze/",
+    "status": "INVALID_TICKET_INBOX",
+    "emailScore": 0,
+    "decisionMakerFirstName": null,
+    "decisionMakerRole": "Direzione Aziendale",
+    "notes": "Indirizzo privacy@immergas.com bloccato da gateway Sophos."
+  },
+  "audit": {
+    "originalLcpSeconds": 6.9,
+    "mobileScore": 41,
+    "threeCriticalFlaws": [
+      "Dispersione del budget pubblicitario: caricamento mobile di 6.9s (29 risorse bloccanti) che fa abbandonare oltre meta degli utenti prima dell'apertura della pagina.",
+      "Cecita decisionale sul ROI: assenza di tracciamento Server-Side di prima parte (GTM Server-Side e Meta CAPI), con perdita del 30-50% dei dati di conversione per blocchi browser e cookie banner.",
+      "Colli di bottiglia commerciali: i contatti finiscono in email isolate senza pre-qualifica automatica e senza sincronizzazione immediata via API/Webhook con il CRM aziendale."
+    ],
+    "activeAdHeadline": "Referenze - Immerenergy",
+    "activeAdCopySummary": "Grazie a profili di consumo elettrico costanti, Immerenergy permette alle aziende di raggiungere alti traguardi di efficienza energetica.",
+    "runsAds": true,
+    "detectedTrackingSignals": [
+      "Meta Ad Library"
+    ],
+    "renderBlockingCount": 8
+  },
+  "theme": {
+    "primaryHex": "#1E3A8A",
+    "accentHex": "#2563EB",
+    "darkBgHex": "#0B1E36",
+    "borderRadius": "12px",
+    "headerBgMode": "light",
+    "logoBrightness": "dark"
+  },
+  "content": {
+    "badgeTop": "ImmerEnergy Fotovoltaico · Energia e Comfort Termico (Reggio Emilia)",
+    "heroHeadline": "ImmerEnergy Fotovoltaico: Fotovoltaico, Clima e Impianti ad Alta Efficienza a Reggio Emilia",
+    "heroSubheadline": "Grazie a profili di consumo elettrico costanti, Immerenergy permette alle aziende di raggiungere alti traguardi di efficienza energetica.",
+    "heroBullets": [
+      "Analisi consumi in bolletta e dimensionamento reale senza sovrastime",
+      "Installazione certificata con tecnici interni abilitati F-Gas / FER",
+      "Gestione completa pratiche di allaccio, ENEA e incentivi fiscali"
+    ],
+    "ctaButtonText": "Calcola il Tuo Preventivo Rapido",
+    "trustMicrocopy": "Richiesta gratuita e senza impegno · Risposta rapida dal nostro ufficio tecnico",
+    "logoLocalPath": "",
+    "heroImageLocalPath": "/leads/immerenergy/hero.jpg",
+    "heroImageCaption": "ImmerEnergy Fotovoltaico · Sede operativa e realizzazioni (Reggio Emilia)",
+    "quiz": {
+      "question1": {
+        "title": "Quale impianto desideri installare o sostituire?",
+        "options": [
+          "Impianto fotovoltaico con eventuale sistema di accumulo",
+          "Climatizzatori, pompa di calore o caldaia ad alta efficienza",
+          "Riqualificazione energetica completa dell'abitazione"
+        ]
+      },
+      "question2": {
+        "title": "Qual e il tuo obiettivo principale?",
+        "options": [
+          "Abbattere subito i costi in bolletta",
+          "Accesso agli incentivi e detrazioni fiscali attive",
+          "Sostituzione urgente con sopralluogo tecnico rapido"
+        ]
+      },
+      "finalStepTitle": "Perfetto. Lascia i tuoi dati per ricevere la simulazione tecnica e il preventivo dedicato:"
+    },
+    "valueProps": [
+      {
+        "title": "Dimensionamento Sui Tuoi Consumi Reali",
+        "description": "Calcoliamo potenza, accumulo o taglia della pompa di calore per offrirti il miglior rientro economico possibile a Reggio Emilia.",
+        "metric": "Resa Massima"
+      },
+      {
+        "title": "Installazione Certificata e Sicura",
+        "description": "I tecnici di ImmerEnergy Fotovoltaico eseguono il lavoro a regola d'arte rilasciando tutte le dichiarazioni di conformita.",
+        "metric": "100% A Norma"
+      },
+      {
+        "title": "Assistenza e Pratiche Chiavi in Mano",
+        "description": "Seguiamo noi iter autorizzativi, pratiche incentivi e manutenzione programmata post-installazione.",
+        "metric": "Zero Pensieri"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "98%",
+      "mainStatLabel": "Clienti soddisfatti del risparmio energetico ottenuto",
+      "reviewsSummary": "4.9/5 da clienti residenziali a Reggio Emilia",
+      "testimonials": [
+        {
+          "name": "Simone G.",
+          "location": "Reggio Emilia",
+          "quote": "Impianto dimensione perfetta per i nostri consumi. ImmerEnergy Fotovoltaico ha gestito installazione e pratiche in tempi record.",
+          "roleOrContext": "Fotovoltaico con accumulo"
+        },
+        {
+          "name": "Elena P.",
+          "location": "Reggio Emilia e provincia",
+          "quote": "Tecnici puliti e precisi nel montaggio del nuovo impianto di climatizzazione. Preventivo chiaro fin dal primo giorno.",
+          "roleOrContext": "Pompa di calore e clima"
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "ImmerEnergy Fotovoltaico - dispersione clic mobile e tempi di caricamento di ImmerEnergy Fotovoltaico (6.9s)",
+    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di ImmerEnergy Fotovoltaico, da smartphone impiega 6.9 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per ImmerEnergy Fotovoltaico che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per ImmerEnergy Fotovoltaico, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/immerenergy\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "ImmerEnergy Fotovoltaico - dispersione clic mobile e tempi di caricamento di ImmerEnergy Fotovoltaico (6.9s)",
+      "body": "Buongiorno,\n\nda un test sul sito di ImmerEnergy Fotovoltaico, da smartphone impiega 6.9 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per ImmerEnergy Fotovoltaico che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: ImmerEnergy Fotovoltaico - dispersione clic mobile e tempi di caricamento di ImmerEnergy Fotovoltaico (6.9s)",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per ImmerEnergy Fotovoltaico, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/immerenergy\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: ImmerEnergy Fotovoltaico - dispersione clic mobile e tempi di caricamento di ImmerEnergy Fotovoltaico (6.9s)",
+      "body": "Buongiorno,\n\nOltre a tagliare i 6.9 secondi su mobile, l'infrastruttura recupera il 40% delle conversioni tramite Server-Side Tracking.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza - TechPyre Studio",
+      "inThread": true,
+      "requiresFollowUpCall": true
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: ImmerEnergy Fotovoltaico - dispersione clic mobile e tempi di caricamento di ImmerEnergy Fotovoltaico (6.9s)",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di ImmerEnergy Fotovoltaico non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/immerenergy) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

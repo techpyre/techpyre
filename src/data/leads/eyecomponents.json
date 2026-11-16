@@ -1,0 +1,172 @@
+{
+  "slug": "eyecomponents",
+  "archetype": "b2b-authority",
+  "meta": {
+    "companyName": "Eye - Componenti per L'Occhialeria",
+    "decisionMakerName": "Direzione Eye - Componenti per L'Occhialeria",
+    "targetEmail": "info@eyecomponents.it",
+    "phone": "+39 0439 779409",
+    "city": "Alano di Piave",
+    "vatNumber": "01042590255",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Eye%20%20-%20Componenti%20per%20L'Occhialeria",
+    "originalLandingUrl": "http://www.eyecomponents.it",
+    "isGenericInbox": true,
+    "emailScore": 35,
+    "decisionMakerFirstName": null,
+    "decisionMakerRole": "Direzione Aziendale",
+    "lastSentMessageId": "<f6b504f1-923e-d7f1-8589-50976b0f35da@techpyre.eu>",
+    "threadMessageIds": [
+      "<b01d9c6d-d920-2f8a-7522-d0712be350c6@techpyre.eu>",
+      "<f6b504f1-923e-d7f1-8589-50976b0f35da@techpyre.eu>"
+    ],
+    "status": "CONTACTED_STEP_2"
+  },
+  "audit": {
+    "originalLcpSeconds": 2.7,
+    "mobileScore": 77,
+    "threeCriticalFlaws": [
+      "Dispersione del budget pubblicitario: caricamento mobile di 2.7s (0 risorse bloccanti) che fa abbandonare oltre meta degli utenti prima dell'apertura della pagina.",
+      "Cecita decisionale sul ROI: assenza di tracciamento Server-Side di prima parte (GTM Server-Side e Meta CAPI), con perdita del 30-50% dei dati di conversione per blocchi browser e cookie banner.",
+      "Colli di bottiglia commerciali: i contatti finiscono in email isolate senza pre-qualifica automatica e senza sincronizzazione immediata via API/Webhook con il CRM aziendale."
+    ],
+    "activeAdHeadline": "Eye - Componenti per L'Occhialeria: Stampaggio Tecnico, Polimeri e Trattamenti Industriali a Alano di Piave",
+    "activeAdCopySummary": "Soluzioni industriali per materie plastiche, gomma, rivestimenti e trattamenti superficiali a Alano di Piave con controllo qualita di proces...",
+    "runsAds": true,
+    "detectedTrackingSignals": [
+      "Meta Ad Library"
+    ],
+    "renderBlockingCount": 8
+  },
+  "theme": {
+    "primaryHex": "#a09060",
+    "accentHex": "#B8860B",
+    "darkBgHex": "#0B1E36",
+    "borderRadius": "8px",
+    "headerBgMode": "light",
+    "logoBrightness": "light"
+  },
+  "content": {
+    "badgeTop": "Eye - Componenti per L'Occhialeria · Polimeri e Processi Industriali (Alano di Piave)",
+    "heroHeadline": "Eye - Componenti per L'Occhialeria: Stampaggio Tecnico, Polimeri e Trattamenti Industriali a Alano di Piave",
+    "heroSubheadline": "Soluzioni industriali per materie plastiche, gomma, rivestimenti e trattamenti superficiali a Alano di Piave con controllo qualita di processo e tracciabilita lotti.",
+    "heroBullets": [
+      "Supporto su scelta mescole, resine e trattamenti prima della messa in serie",
+      "Controllo costante dei parametri di processo e finitura superficiale",
+      "Imballo industriale protetto e programmazione consegne per lotti B2B"
+    ],
+    "ctaButtonText": "Richiedi Studio di Fattibilita",
+    "trustMicrocopy": "Riservatezza industriale garantita (NDA) · Risposta tecnica entro la giornata lavorativa",
+    "logoLocalPath": "/leads/eyecomponents/logo.png",
+    "heroImageLocalPath": "/leads/eyecomponents/hero.jpg",
+    "heroImageCaption": "Eye - Componenti per L'Occhialeria · Sede operativa e realizzazioni (Alano di Piave)",
+    "quiz": {
+      "question1": {
+        "title": "Quale lavorazione industriale o fornitura tecnica vi interessa?",
+        "options": [
+          "Stampaggio materie plastiche/gomma o realizzazione stampi su commessa",
+          "Trattamenti galvanici, anodizzazione o rivestimenti protettivi certificati",
+          "Fornitura lotti industriali, campionatura e capitolato tecnico"
+        ]
+      },
+      "question2": {
+        "title": "Qual e l'orizzonte temporale previsto per il progetto?",
+        "options": [
+          "Avvio operativo urgente (entro 30 giorni)",
+          "Pianificazione nel trimestre in corso",
+          "Valutazione tecnica e di budget preliminare"
+        ]
+      },
+      "finalStepTitle": "Specifiche registrate. Inserisci i riferimenti aziendali per il colloquio con l'Ufficio Tecnico:"
+    },
+    "valueProps": [
+      {
+        "title": "Co-Design Stampi e Selezione Materiali",
+        "description": "Ottimizziamo spessori, ritiri dimensionali e resistenze chimico-meccaniche per evitare difetti in produzione e contenere il costo unitario.",
+        "metric": "Zero Difetti"
+      },
+      {
+        "title": "Ripetibilita di Processo e Controllo Lotto",
+        "description": "Eye - Componenti per L'Occhialeria monitora ogni fase produttiva e superficiale a Alano di Piave rilasciando documentazione di conformita su richiesta.",
+        "metric": "100% Tracciabile"
+      },
+      {
+        "title": "Logistica Flessibile su Piccole e Grandi Serie",
+        "description": "Pianificazione scorte, trattamenti rapidi conto terzi e spedizioni sincronizzate con le vostre linee di montaggio.",
+        "metric": "Consegne Certe"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "99.4%",
+      "mainStatLabel": "Conformita qualitativa sui lotti industriali consegnati",
+      "reviewsSummary": "Partner industriale per filiere produttive a Alano di Piave",
+      "clientReferenceWall": [
+        "Qualita Certificata ISO 9001",
+        "Tracciabilita Completa Lotti",
+        "Conformita REACH / RoHS",
+        "Campionature Tecniche Rapide",
+        "Produzione B2B Conto Terzi"
+      ],
+      "secondaryStats": [
+        {
+          "value": "99.4%",
+          "label": "Lotti consegnati conformi alle specifiche dimensionali"
+        },
+        {
+          "value": "< 0.4s",
+          "label": "Caricamento scheda tecnica e preventivo B2B su mobile"
+        },
+        {
+          "value": "24h",
+          "label": "Valutazione preliminare disegni, mescole o trattamenti"
+        }
+      ],
+      "testimonials": [
+        {
+          "name": "Responsabile Qualita e Fornitori",
+          "location": "Alano di Piave · Filiera Manifatturiera",
+          "quote": "La costanza tra la campionatura iniziale e le forniture in serie di Eye - Componenti per L'Occhialeria ci ha permesso di azzerare i controlli in ingresso.",
+          "roleOrContext": "Fornitura conto terzi"
+        },
+        {
+          "name": "Direzione Acquisti B2B",
+          "location": "Alano di Piave e provincia",
+          "quote": "Preventivazione trasparente, imballaggi accurati e rispetto rigoroso dei lead time anche sui picchi stagionali.",
+          "roleOrContext": "Contratto di fornitura"
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "Eye - Componenti per L'Occhialeria - dispersione clic mobile e tempi di caricamento di Eye - Componenti per L'Occhialeria (2.7s)",
+    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di Eye - Componenti per L'Occhialeria, da smartphone impiega 2.7 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Eye - Componenti per L'Occhialeria che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Eye - Componenti per L'Occhialeria, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/eyecomponents\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "Eye - Componenti per L'Occhialeria - dispersione clic mobile e tempi di caricamento di Eye - Componenti per L'Occhialeria (2.7s)",
+      "body": "Buongiorno,\n\nda un test sul sito di Eye - Componenti per L'Occhialeria, da smartphone impiega 2.7 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Eye - Componenti per L'Occhialeria che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: Eye - Componenti per L'Occhialeria - dispersione clic mobile e tempi di caricamento di Eye - Componenti per L'Occhialeria (2.7s)",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Eye - Componenti per L'Occhialeria, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/eyecomponents\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: Eye - Componenti per L'Occhialeria - dispersione clic mobile e tempi di caricamento di Eye - Componenti per L'Occhialeria (2.7s)",
+      "body": "Buongiorno,\n\nOltre a tagliare i 2.7 secondi su mobile, l'infrastruttura recupera il 40% delle conversioni tramite Server-Side Tracking.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza - TechPyre Studio",
+      "inThread": true,
+      "requiresFollowUpCall": true
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: Eye - Componenti per L'Occhialeria - dispersione clic mobile e tempi di caricamento di Eye - Componenti per L'Occhialeria (2.7s)",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Eye - Componenti per L'Occhialeria non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/eyecomponents) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

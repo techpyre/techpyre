@@ -1,0 +1,172 @@
+{
+  "slug": "dimetalpalermo",
+  "archetype": "b2b-authority",
+  "meta": {
+    "companyName": "Di Metal Lavorazione Metalli",
+    "decisionMakerName": "Direzione Di Metal Lavorazione Metalli",
+    "targetEmail": "di.metal@virgilio.it",
+    "phone": "+39 351 6697516",
+    "city": "Palermo",
+    "vatNumber": "06675460825",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Di%20Metal%20Lavorazione%20Metalli",
+    "originalLandingUrl": "https://www.dimetalpalermo.com",
+    "isGenericInbox": false,
+    "emailScore": 50,
+    "decisionMakerFirstName": null,
+    "decisionMakerRole": "Direzione Aziendale",
+    "lastSentMessageId": "<7e9f0a76-901b-82b7-0334-b04fdda030a8@techpyre.eu>",
+    "threadMessageIds": [
+      "<f20ba2d7-851e-0017-ef6d-d691690fae2f@techpyre.eu>",
+      "<7e9f0a76-901b-82b7-0334-b04fdda030a8@techpyre.eu>"
+    ],
+    "status": "CONTACTED_STEP_2"
+  },
+  "audit": {
+    "originalLcpSeconds": 6.3,
+    "mobileScore": 46,
+    "threeCriticalFlaws": [
+      "Dispersione del budget pubblicitario: caricamento mobile di 6.3s (3 risorse bloccanti) che fa abbandonare oltre meta degli utenti prima dell'apertura della pagina.",
+      "Cecita decisionale sul ROI: assenza di tracciamento Server-Side di prima parte (GTM Server-Side e Meta CAPI), con perdita del 30-50% dei dati di conversione per blocchi browser e cookie banner.",
+      "Colli di bottiglia commerciali: i contatti finiscono in email isolate senza pre-qualifica automatica e senza sincronizzazione immediata via API/Webhook con il CRM aziendale."
+    ],
+    "activeAdHeadline": "Di Metal Lavorazione Metalli a Paler mo",
+    "activeAdCopySummary": "Supportiamo imprese e direzioni tecniche a Palermo con progettazione su specifica, tempi di consegna certi e assistenza tecnica diretta.",
+    "runsAds": true,
+    "detectedTrackingSignals": [
+      "Meta Ad Library"
+    ],
+    "renderBlockingCount": 8
+  },
+  "theme": {
+    "primaryHex": "#3070f0",
+    "accentHex": "#B8860B",
+    "darkBgHex": "#0B1E36",
+    "borderRadius": "8px",
+    "headerBgMode": "light",
+    "logoBrightness": "light"
+  },
+  "content": {
+    "badgeTop": "Di Metal Lavorazione Metalli · Produzione Industriale e Carpenteria (Palermo)",
+    "heroHeadline": "Di Metal Lavorazione Metalli a Paler mo",
+    "heroSubheadline": "Supportiamo imprese e direzioni tecniche a Palermo con progettazione su specifica, tempi di consegna certi e assistenza tecnica diretta.",
+    "heroBullets": [
+      "Analisi disegni CAD/STEP e studio di fattibilita con tempi di consegna certi",
+      "Controllo dimensionale su lotti piccoli, medi e serie continuative",
+      "Tracciabilita dei materiali, certificati di collaudo e referente unico B2B"
+    ],
+    "ctaButtonText": "Richiedi Studio di Fattibilita",
+    "trustMicrocopy": "Riservatezza industriale garantita (NDA) · Risposta tecnica entro la giornata lavorativa",
+    "logoLocalPath": "/leads/dimetalpalermo/logo.png",
+    "heroImageLocalPath": "/leads/dimetalpalermo/hero.jpg",
+    "heroImageCaption": "Di Metal Lavorazione Metalli · Sede operativa e realizzazioni (Palermo)",
+    "quiz": {
+      "question1": {
+        "title": "Quale lavorazione meccanica o fornitura su disegno vi occorre?",
+        "options": [
+          "Taglio laser, piegatura lamiera o carpenteria metallica su disegno",
+          "Lavorazioni CNC, stampi, attrezzature o serie ripetitive B2B",
+          "Studio di fattibilita tecnica, prototipazione e quotazione lotto"
+        ]
+      },
+      "question2": {
+        "title": "Qual e l'orizzonte temporale previsto per il progetto?",
+        "options": [
+          "Avvio operativo urgente (entro 30 giorni)",
+          "Pianificazione nel trimestre in corso",
+          "Valutazione tecnica e di budget preliminare"
+        ]
+      },
+      "finalStepTitle": "Specifiche registrate. Inserisci i riferimenti aziendali per il colloquio con l'Ufficio Tecnico:"
+    },
+    "valueProps": [
+      {
+        "title": "Ingegnerizzazione Disegni e Preventivazione Rapida",
+        "description": "Valutiamo tolleranze, spessori e trattamenti direttamente con il vostro ufficio tecnico a Palermo, riducendo i fermi macchina e gli scarti di assemblaggio.",
+        "metric": "Risposta 24h"
+      },
+      {
+        "title": "Parco Macchine CNC e Controllo Qualita",
+        "description": "Ogni lotto prodotto da Di Metal Lavorazione Metalli segue procedure di verifica dimensionale e conformita dei materiali per garantire ripetibilita costante.",
+        "metric": "100% Verificato"
+      },
+      {
+        "title": "Consegne Programmate Kanban e Continuita",
+        "description": "Gestiamo commesse spot e accordi quadro annuali rispettando le finestre di consegna concordate con il vostro reparto logistica.",
+        "metric": "Puntualita 99.4%"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "99.4%",
+      "mainStatLabel": "Lotti lavorati e consegnati nel pieno rispetto delle tolleranze",
+      "reviewsSummary": "Partner manifatturiero di riferimento per industrie a Palermo",
+      "clientReferenceWall": [
+        "Lavorazioni su Disegno CAD/STEP",
+        "Certificazioni Materiali 3.1",
+        "Qualita Certificata ISO 9001",
+        "Controllo Dimensionale Lotti",
+        "Forniture OEM e Conto Terzi"
+      ],
+      "secondaryStats": [
+        {
+          "value": "99.4%",
+          "label": "Lotti consegnati entro la data pattuita con il cliente B2B"
+        },
+        {
+          "value": "< 0.4s",
+          "label": "Caricamento portale tecnico per richiesta offerte da mobile"
+        },
+        {
+          "value": "24h",
+          "label": "Verifica fattibilita tecnica con il nostro Ufficio Tecnico"
+        }
+      ],
+      "testimonials": [
+        {
+          "name": "Direzione Produzione e Officina",
+          "location": "Palermo · Fornitura Conto Terzi",
+          "quote": "Affidiamo a Di Metal Lavorazione Metalli i nostri particolari meccanici e lamiere piegate: precisione costante sui montaggi e consegne sempre allineate al piano produttivo.",
+          "roleOrContext": "Lavorazioni CNC e Lamiera"
+        },
+        {
+          "name": "Responsabile Ufficio Acquisti",
+          "location": "Palermo e provincia",
+          "quote": "Interlocutore tecnico preparato: tempi rapidi su quotazioni multi-articolo, documenti completi e zero difformita in accettazione.",
+          "roleOrContext": "Accordo quadro B2B"
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "Di Metal Lavorazione Metalli - dispersione clic mobile e tempi di caricamento di Di Metal Lavorazione Metalli (6.3s)",
+    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di Di Metal Lavorazione Metalli, da smartphone impiega 6.3 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Di Metal Lavorazione Metalli che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Di Metal Lavorazione Metalli, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/dimetalpalermo\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "Di Metal Lavorazione Metalli - dispersione clic mobile e tempi di caricamento di Di Metal Lavorazione Metalli (6.3s)",
+      "body": "Buongiorno,\n\nda un test sul sito di Di Metal Lavorazione Metalli, da smartphone impiega 6.3 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Di Metal Lavorazione Metalli che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: Di Metal Lavorazione Metalli - dispersione clic mobile e tempi di caricamento di Di Metal Lavorazione Metalli (6.3s)",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Di Metal Lavorazione Metalli, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/dimetalpalermo\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: Di Metal Lavorazione Metalli - dispersione clic mobile e tempi di caricamento di Di Metal Lavorazione Metalli (6.3s)",
+      "body": "Buongiorno,\n\nOltre a tagliare i 6.3 secondi su mobile, l'infrastruttura recupera il 40% delle conversioni tramite Server-Side Tracking.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza - TechPyre Studio",
+      "inThread": true,
+      "requiresFollowUpCall": true
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: Di Metal Lavorazione Metalli - dispersione clic mobile e tempi di caricamento di Di Metal Lavorazione Metalli (6.3s)",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Di Metal Lavorazione Metalli non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/dimetalpalermo) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

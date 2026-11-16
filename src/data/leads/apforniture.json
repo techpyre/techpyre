@@ -1,0 +1,148 @@
+{
+  "slug": "apforniture",
+  "archetype": "local-leadgen",
+  "meta": {
+    "companyName": "A.P. Forniture Serramenti e Infissi",
+    "decisionMakerName": "Direzione A.P. Forniture Serramenti e Infissi",
+    "decisionMakerFirstName": null,
+    "decisionMakerRole": "Direzione Aziendale",
+    "isGenericInbox": true,
+    "emailScore": 35,
+    "targetEmail": "info@apforniture.it",
+    "phone": "+39 0432 522306",
+    "city": "Udine",
+    "vatNumber": "02067560306",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=A.P.%20Forniture%20Serramenti%20e%20Infissi",
+    "originalLandingUrl": "https://apforniture.it",
+    "status": "CONTACTED_STEP_1",
+    "lastSentMessageId": "<15a71467-348b-f896-a894-e7301aeabb78@techpyre.eu>",
+    "threadMessageIds": [
+      "<15a71467-348b-f896-a894-e7301aeabb78@techpyre.eu>"
+    ]
+  },
+  "audit": {
+    "originalLcpSeconds": 8.9,
+    "mobileScore": 24,
+    "renderBlockingCount": 38,
+    "runsAds": false,
+    "detectedTrackingSignals": [],
+    "threeCriticalFlaws": [
+      "Perdita di richieste di preventivo su mobile: caricamento di 8.9s (38 risorse bloccanti) che spinge i visitatori da smartphone ad abbandonare la pagina prima di contattare l'ufficio commerciale.",
+      "Assenza di pre-qualifica automatica: il sito non filtra le richieste per tipologia di intervento, budget o tempistiche prima di inviarle ai referenti tecnici di A.P. Forniture Serramenti e Infissi.",
+      "Colli di bottiglia commerciali: le richieste arrivano come semplici email isolate senza instradamento automatico e senza tracciamento strutturato della trattativa."
+    ],
+    "activeAdHeadline": "A.P. Forniture Serramenti e Infissi: Infissi e Serramenti ad Alto Isolamento a Udine",
+    "activeAdCopySummary": "Vuoi avere informazioni riguardo le agevolazioni fiscali? VISITA LA PAGINA NUOVO ORARIO Si comunica alla gentile clientela che l&#039;uffici..."
+  },
+  "theme": {
+    "primaryHex": "#b02030",
+    "accentHex": "#2563EB",
+    "darkBgHex": "#0B1E36",
+    "borderRadius": "12px",
+    "headerBgMode": "light",
+    "logoBrightness": "dark"
+  },
+  "content": {
+    "badgeTop": "A.P. Forniture Serramenti e Infissi · Serramenti Certificati a Udine",
+    "heroHeadline": "A.P. Forniture Serramenti e Infissi: Infissi e Serramenti ad Alto Isolamento a Udine",
+    "heroSubheadline": "Vuoi avere informazioni riguardo le agevolazioni fiscali? VISITA LA PAGINA NUOVO ORARIO Si comunica alla gentile clientela che l'ufficio osserva il seguente orario di apertura: Lunedì - Venerdì dalle ore 0",
+    "heroBullets": [
+      "Rilievo misure preciso a domicilio e preventivo trasparente chiavi in mano",
+      "Profili ad alto isolamento termico e acustico per abbattere i consumi",
+      "Posa certificata con squadre interne e assistenza post-vendita diretta"
+    ],
+    "ctaButtonText": "Calcola il Tuo Preventivo Rapido",
+    "trustMicrocopy": "Richiesta gratuita e senza impegno · Risposta rapida dal nostro ufficio tecnico",
+    "logoLocalPath": "/leads/apforniture/logo.png",
+    "heroImageLocalPath": "/leads/apforniture/hero.jpg",
+    "heroImageCaption": "A.P. Forniture Serramenti e Infissi · Sede operativa e realizzazioni (Udine)",
+    "quiz": {
+      "question1": {
+        "title": "Quale tipologia di intervento desideri valutare?",
+        "options": [
+          "Sostituzione infissi con isolamento termico/acustico",
+          "Nuova installazione per ristrutturazione o cantiere",
+          "Porte interne, blindati o sistemi oscuranti"
+        ]
+      },
+      "question2": {
+        "title": "Quanti serramenti prevede indicativamente il progetto?",
+        "options": [
+          "Da 1 a 4 serramenti",
+          "Da 5 a 8 serramenti (appartamento completo)",
+          "Oltre 8 serramenti o villa/ufficio"
+        ]
+      },
+      "finalStepTitle": "Ottimo. Inserisci i tuoi recapiti per ricevere il prospetto economico e il sopralluogo:"
+    },
+    "valueProps": [
+      {
+        "title": "Isolamento Termico e Acustico Certificato",
+        "description": "Serramenti selezionati per eliminare spifferi, umidita e rumori esterni nella tua abitazione o ufficio a Udine.",
+        "metric": "Risparmio Energetico"
+      },
+      {
+        "title": "Posa in Opera Qualificata Senza Sorprese",
+        "description": "Squadre di montaggio esperte di A.P. Forniture Serramenti e Infissi curano controtelai, sigillature e finiture senza opere murarie invasive.",
+        "metric": "Posa Certificata"
+      },
+      {
+        "title": "Preventivo Chiaro e Supporto Pratiche Bonus",
+        "description": "Costi chiari fin dal primo incontro e assistenza completa su certificazioni energetiche ed ecobonus.",
+        "metric": "Prezzo Bloccato"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "98%",
+      "mainStatLabel": "Clienti soddisfatti di posa in opera e isolamento termico",
+      "reviewsSummary": "4.9/5 da clienti seguiti a Udine e provincia",
+      "testimonials": [
+        {
+          "name": "Davide C.",
+          "location": "Udine",
+          "quote": "Team di A.P. Forniture Serramenti e Infissi preciso dal rilievo al montaggio. La differenza termica e acustica in casa si sente subito.",
+          "roleOrContext": "Sostituzione infissi completi"
+        },
+        {
+          "name": "Federica S.",
+          "location": "Udine e provincia",
+          "quote": "Preventivo rispettato al centesimo, cantiere lasciato pulito ogni sera e grande supporto sulle pratiche fiscali.",
+          "roleOrContext": "Finestre e portoncino blindato"
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "A.P. Forniture Serramenti e Infissi - tempi di caricamento mobile e richieste preventivo di A.P. Forniture Serramenti e Infissi (8.9s)",
+    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di A.P. Forniture Serramenti e Infissi, da smartphone impiega 8.9 secondi ad aprirsi per 38 risorse bloccanti, frenando le richieste di preventivo.\n\nAbbiamo gia preparato una demo in Next.js per A.P. Forniture Serramenti e Infissi che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per A.P. Forniture Serramenti e Infissi, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/apforniture\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "A.P. Forniture Serramenti e Infissi - tempi di caricamento mobile e richieste preventivo di A.P. Forniture Serramenti e Infissi (8.9s)",
+      "body": "Buongiorno,\n\nda un test sul sito di A.P. Forniture Serramenti e Infissi, da smartphone impiega 8.9 secondi ad aprirsi per 38 risorse bloccanti, frenando le richieste di preventivo.\n\nAbbiamo gia preparato una demo in Next.js per A.P. Forniture Serramenti e Infissi che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: A.P. Forniture Serramenti e Infissi - tempi di caricamento mobile e richieste preventivo di A.P. Forniture Serramenti e Infissi (8.9s)",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per A.P. Forniture Serramenti e Infissi, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/apforniture\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: A.P. Forniture Serramenti e Infissi - tempi di caricamento mobile e richieste preventivo di A.P. Forniture Serramenti e Infissi (8.9s)",
+      "body": "Buongiorno,\n\nOltre a tagliare i 8.9 secondi su mobile, il sistema qualifica ogni preventivo prima di inviarlo al CRM.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza - TechPyre Studio",
+      "inThread": true,
+      "requiresFollowUpCall": true
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: A.P. Forniture Serramenti e Infissi - tempi di caricamento mobile e richieste preventivo di A.P. Forniture Serramenti e Infissi (8.9s)",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di A.P. Forniture Serramenti e Infissi non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/apforniture) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

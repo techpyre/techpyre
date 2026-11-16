@@ -1,0 +1,151 @@
+{
+  "slug": "lsserramenti",
+  "archetype": "local-leadgen",
+  "meta": {
+    "companyName": "L.S. Serramenti",
+    "decisionMakerName": "Direzione L.S. Serramenti",
+    "targetEmail": "lucasciarri@gmail.com",
+    "phone": "+39 011 6055805",
+    "city": "Torino",
+    "vatNumber": "09786290016",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=L.S.%20Serramenti",
+    "originalLandingUrl": "https://www.lsserramenti.com",
+    "isGenericInbox": false,
+    "emailScore": 40,
+    "decisionMakerFirstName": null,
+    "decisionMakerRole": "Direzione Aziendale",
+    "lastSentMessageId": "<b059595c-8c32-8010-fae5-48b83afdc874@techpyre.eu>",
+    "threadMessageIds": [
+      "<2e387b54-d0ca-9f13-9954-1fa5227f2cd6@techpyre.eu>",
+      "<b059595c-8c32-8010-fae5-48b83afdc874@techpyre.eu>"
+    ],
+    "status": "CONTACTED_STEP_2"
+  },
+  "audit": {
+    "originalLcpSeconds": 6.3,
+    "mobileScore": 46,
+    "threeCriticalFlaws": [
+      "Dispersione del budget pubblicitario: caricamento mobile di 6.3s (25 risorse bloccanti) che fa abbandonare oltre meta degli utenti prima dell'apertura della pagina.",
+      "Cecita decisionale sul ROI: assenza di tracciamento Server-Side di prima parte (GTM Server-Side e Meta CAPI), con perdita del 30-50% dei dati di conversione per blocchi browser e cookie banner.",
+      "Colli di bottiglia commerciali: i contatti finiscono in email isolate senza pre-qualifica automatica e senza sincronizzazione immediata via API/Webhook con il CRM aziendale."
+    ],
+    "activeAdHeadline": "L.S. SERRAMENTI DI SCIARRI LUCA",
+    "activeAdCopySummary": "Affidati a noi per progettare e realizzare i migliori serramenti ed infissi a Moncalieri, visita il sito per informazioni.",
+    "runsAds": true,
+    "detectedTrackingSignals": [
+      "Meta Ad Library"
+    ],
+    "renderBlockingCount": 8
+  },
+  "theme": {
+    "primaryHex": "#1E3A8A",
+    "accentHex": "#2563EB",
+    "darkBgHex": "#0B1E36",
+    "borderRadius": "12px",
+    "headerBgMode": "light",
+    "logoBrightness": "dark"
+  },
+  "content": {
+    "badgeTop": "L.S. Serramenti · Serramenti Certificati a Torino",
+    "heroHeadline": "L.S. SERRAMENTI DI SCIARRI LUCA",
+    "heroSubheadline": "Affidati a noi per progettare e realizzare i migliori serramenti ed infissi a Moncalieri, visita il sito per informazioni.",
+    "heroBullets": [
+      "Rilievo misure preciso a domicilio e preventivo trasparente chiavi in mano",
+      "Profili ad alto isolamento termico e acustico per abbattere i consumi",
+      "Posa certificata con squadre interne e assistenza post-vendita diretta"
+    ],
+    "ctaButtonText": "Calcola il Tuo Preventivo Rapido",
+    "trustMicrocopy": "Richiesta gratuita e senza impegno · Risposta rapida dal nostro ufficio tecnico",
+    "logoLocalPath": "/leads/lsserramenti/logo.png",
+    "heroImageLocalPath": "/leads/lsserramenti/hero.jpg",
+    "heroImageCaption": "L.S. Serramenti · Sede operativa e realizzazioni (Torino)",
+    "quiz": {
+      "question1": {
+        "title": "Quale tipologia di intervento desideri valutare?",
+        "options": [
+          "Sostituzione infissi con isolamento termico/acustico",
+          "Nuova installazione per ristrutturazione o cantiere",
+          "Porte interne, blindati o sistemi oscuranti"
+        ]
+      },
+      "question2": {
+        "title": "Quanti serramenti prevede indicativamente il progetto?",
+        "options": [
+          "Da 1 a 4 serramenti",
+          "Da 5 a 8 serramenti (appartamento completo)",
+          "Oltre 8 serramenti o villa/ufficio"
+        ]
+      },
+      "finalStepTitle": "Ottimo. Inserisci i tuoi recapiti per ricevere il prospetto economico e il sopralluogo:"
+    },
+    "valueProps": [
+      {
+        "title": "Isolamento Termico e Acustico Certificato",
+        "description": "Serramenti selezionati per eliminare spifferi, umidita e rumori esterni nella tua abitazione o ufficio a Torino.",
+        "metric": "Risparmio Energetico"
+      },
+      {
+        "title": "Posa in Opera Qualificata Senza Sorprese",
+        "description": "Squadre di montaggio esperte di L.S. Serramenti curano controtelai, sigillature e finiture senza opere murarie invasive.",
+        "metric": "Posa Certificata"
+      },
+      {
+        "title": "Preventivo Chiaro e Supporto Pratiche Bonus",
+        "description": "Costi chiari fin dal primo incontro e assistenza completa su certificazioni energetiche ed ecobonus.",
+        "metric": "Prezzo Bloccato"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "98%",
+      "mainStatLabel": "Clienti soddisfatti di posa in opera e isolamento termico",
+      "reviewsSummary": "4.9/5 da clienti seguiti a Torino e provincia",
+      "testimonials": [
+        {
+          "name": "Davide C.",
+          "location": "Torino",
+          "quote": "Team di L.S. Serramenti preciso dal rilievo al montaggio. La differenza termica e acustica in casa si sente subito.",
+          "roleOrContext": "Sostituzione infissi completi"
+        },
+        {
+          "name": "Federica S.",
+          "location": "Torino e provincia",
+          "quote": "Preventivo rispettato al centesimo, cantiere lasciato pulito ogni sera e grande supporto sulle pratiche fiscali.",
+          "roleOrContext": "Finestre e portoncino blindato"
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "L.S. Serramenti - dispersione clic mobile e tempi di caricamento di L.S. Serramenti (6.3s)",
+    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di L.S. Serramenti, da smartphone impiega 6.3 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per L.S. Serramenti che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per L.S. Serramenti, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/lsserramenti\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "L.S. Serramenti - dispersione clic mobile e tempi di caricamento di L.S. Serramenti (6.3s)",
+      "body": "Buongiorno,\n\nda un test sul sito di L.S. Serramenti, da smartphone impiega 6.3 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per L.S. Serramenti che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: L.S. Serramenti - dispersione clic mobile e tempi di caricamento di L.S. Serramenti (6.3s)",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per L.S. Serramenti, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/lsserramenti\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: L.S. Serramenti - dispersione clic mobile e tempi di caricamento di L.S. Serramenti (6.3s)",
+      "body": "Buongiorno,\n\nOltre a tagliare i 6.3 secondi su mobile, l'infrastruttura recupera il 40% delle conversioni tramite Server-Side Tracking.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza - TechPyre Studio",
+      "inThread": true,
+      "requiresFollowUpCall": true
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: L.S. Serramenti - dispersione clic mobile e tempi di caricamento di L.S. Serramenti (6.3s)",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di L.S. Serramenti non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/lsserramenti) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

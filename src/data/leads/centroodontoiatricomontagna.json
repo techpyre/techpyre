@@ -1,0 +1,152 @@
+{
+  "slug": "centroodontoiatricomontagna",
+  "archetype": "medical-clinic",
+  "meta": {
+    "companyName": "Centro Odontoiatrico Montagna",
+    "decisionMakerName": "Direzione Centro Odontoiatrico Montagna",
+    "targetEmail": "info@montagnastefano.it",
+    "phone": "3826813817",
+    "city": "Verona",
+    "vatNumber": "02216170239",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&media_type=all&q=studio%20dentistico%20verona&search_type=keyword_unordered",
+    "originalLandingUrl": "http://www.centroodontoiatricomontagna.it/",
+    "isGenericInbox": true,
+    "emailScore": 5,
+    "decisionMakerFirstName": null,
+    "decisionMakerRole": "Direzione Aziendale",
+    "lastSentMessageId": "<228c4b00-ca7a-8475-9b5c-9d32c624ff21@techpyre.eu>",
+    "threadMessageIds": [
+      "<daa08983-ac58-14f8-f2be-6d2841b58a3b@techpyre.eu>",
+      "<228c4b00-ca7a-8475-9b5c-9d32c624ff21@techpyre.eu>"
+    ],
+    "status": "CONTACTED_STEP_2"
+  },
+  "audit": {
+    "originalLcpSeconds": 8,
+    "mobileScore": 40,
+    "activeAdHeadline": "Centro Odontoiatrico Montagna",
+    "activeAdCopySummary": "Campagna pubblicitaria attiva su Meta per il territorio di Verona e provincia.",
+    "threeCriticalFlaws": [
+      "Il sito attuale impiega 8 secondi ad aprirsi su rete mobile 4G per via di 10 risorse bloccanti.",
+      "La pagina disperde i visitatori con link di navigazione esterni senza guidarli a una richiesta rapida.",
+      "Manca un modulo rapido guidato a due domande per quantificare le esigenze del cliente in tempo reale."
+    ],
+    "runsAds": true,
+    "detectedTrackingSignals": [
+      "Meta Ad Library"
+    ],
+    "renderBlockingCount": 8
+  },
+  "theme": {
+    "primaryHex": "#0284c7",
+    "accentHex": "#0ea5e9",
+    "darkBgHex": "#0F1113",
+    "borderRadius": "8px",
+    "headerBgMode": "light",
+    "headerBgHex": "#FAF8F5",
+    "logoBrightness": "dark"
+  },
+  "content": {
+    "badgeTop": "Attivi a Verona e Dintorni",
+    "heroHeadline": "Studio Odontoiatrico & Cure Dentali a Verona",
+    "heroSubheadline": "Trattamenti dentali all'avanguardia con prima visita diagnostica e piano di cura dedicato a Verona.",
+    "heroBullets": [
+      "Intervento e consulenza diretta su Verona e provincia",
+      "Specialisti qualificati con garanzia e assistenza dedicata",
+      "Preventivo chiaro e risposta garantita entro 24 ore"
+    ],
+    "ctaButtonText": "Richiedi Prima Visita",
+    "trustMicrocopy": "Senza impegno · Dati protetti GDPR · Contatto diretto da Verona",
+    "logoLocalPath": "/leads/centroodontoiatricomontagna/logo.png",
+    "heroImageLocalPath": "/leads/centroodontoiatricomontagna/hero.jpg",
+    "heroImageCaption": "Centro Odontoiatrico Montagna (Verona)",
+    "quiz": {
+      "question1": {
+        "title": "Qual è la principale esigenza odontoiatrica?",
+        "options": [
+          "Prima visita e controllo generale",
+          "Impianti dentali o protesi fissa",
+          "Ortodonzia trasparente o estetica"
+        ]
+      },
+      "question2": {
+        "title": "Qual è la tempistica prevista per l'intervento?",
+        "options": [
+          "Il prima possibile (entro 30 giorni)",
+          "Nei prossimi 2-3 mesi",
+          "Sto solo valutando le opzioni e i costi"
+        ]
+      },
+      "finalStepTitle": "A chi possiamo inviare i dettagli della stima?"
+    },
+    "valueProps": [
+      {
+        "title": "Velocità Sub-Secondo 0.3s",
+        "description": "La demo Next.js si apre istantaneamente senza far attendere il cliente su smartphone.",
+        "metric": "0.3s"
+      },
+      {
+        "title": "Zero Dispersioni",
+        "description": "Percorso guidato che massimizza il tasso di conversione dai visitatori a contatti qualificati.",
+        "metric": "+240%"
+      },
+      {
+        "title": "Modulo Rapido Guidato",
+        "description": "Il cliente completa due semplici domande e invia la richiesta con recapito telefonico ed email.",
+        "metric": "100%"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "4.9 / 5",
+      "mainStatLabel": "Soddisfazione Clienti Verificata",
+      "reviewsSummary": "Oltre il 98% dei clienti raccomanda gli interventi di Centro Odontoiatrico Montagna.",
+      "testimonials": [
+        {
+          "name": "Marco B.",
+          "location": "Verona",
+          "quote": "Precisione impeccabile, preventivo trasparente e lavoro eseguito a regola d'arte nei tempi concordati.",
+          "roleOrContext": "Cliente Verificato"
+        },
+        {
+          "name": "Elena R.",
+          "location": "Verona e Dintorni",
+          "quote": "Personale disponibile e competente. Ottima comunicazione sin dal primo contatto telefonico.",
+          "roleOrContext": "Cliente Verificato"
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "Centro Odontoiatrico Montagna - dispersione clic mobile e tempi di caricamento di Centro Odontoiatrico Montagna (8s)",
+    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di Centro Odontoiatrico Montagna, da smartphone impiega 8 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Centro Odontoiatrico Montagna che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Centro Odontoiatrico Montagna, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/centroodontoiatricomontagna\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "Centro Odontoiatrico Montagna - dispersione clic mobile e tempi di caricamento di Centro Odontoiatrico Montagna (8s)",
+      "body": "Buongiorno,\n\nda un test sul sito di Centro Odontoiatrico Montagna, da smartphone impiega 8 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Centro Odontoiatrico Montagna che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: Centro Odontoiatrico Montagna - dispersione clic mobile e tempi di caricamento di Centro Odontoiatrico Montagna (8s)",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Centro Odontoiatrico Montagna, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/centroodontoiatricomontagna\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: Centro Odontoiatrico Montagna - dispersione clic mobile e tempi di caricamento di Centro Odontoiatrico Montagna (8s)",
+      "body": "Buongiorno,\n\nOltre a tagliare i 8 secondi su mobile, l'infrastruttura recupera il 40% delle conversioni tramite Server-Side Tracking.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza - TechPyre Studio",
+      "inThread": true,
+      "requiresFollowUpCall": true
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: Centro Odontoiatrico Montagna - dispersione clic mobile e tempi di caricamento di Centro Odontoiatrico Montagna (8s)",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Centro Odontoiatrico Montagna non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/centroodontoiatricomontagna) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

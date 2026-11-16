@@ -1,0 +1,169 @@
+{
+  "slug": "mare",
+  "archetype": "b2b-authority",
+  "meta": {
+    "companyName": "Mare Spa",
+    "decisionMakerName": "Direzione Mare Spa",
+    "decisionMakerFirstName": null,
+    "decisionMakerRole": "Direzione Aziendale",
+    "isGenericInbox": true,
+    "emailScore": 58,
+    "targetEmail": "mare.france@mare.com",
+    "phone": "+39 02 903261",
+    "city": "Milano",
+    "vatNumber": "05509410964",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Mare%20Spa",
+    "originalLandingUrl": "http://www.mare.com",
+    "status": "CONTACTED_STEP_1",
+    "lastSentMessageId": "<495f8e4b-abd4-ac36-6cd4-7c029bec8a06@techpyre.eu>",
+    "threadMessageIds": [
+      "<495f8e4b-abd4-ac36-6cd4-7c029bec8a06@techpyre.eu>"
+    ]
+  },
+  "audit": {
+    "originalLcpSeconds": 7.3,
+    "mobileScore": 38,
+    "renderBlockingCount": 30,
+    "runsAds": false,
+    "detectedTrackingSignals": [],
+    "threeCriticalFlaws": [
+      "Perdita di richieste di preventivo su mobile: caricamento di 7.3s (30 risorse bloccanti) che spinge i visitatori da smartphone ad abbandonare la pagina prima di contattare l'ufficio commerciale.",
+      "Assenza di pre-qualifica automatica: il sito non filtra le richieste per tipologia di intervento, budget o tempistiche prima di inviarle ai referenti tecnici di Mare Spa.",
+      "Colli di bottiglia commerciali: le richieste arrivano come semplici email isolate senza instradamento automatico e senza tracciamento strutturato della trattativa."
+    ],
+    "activeAdHeadline": "Mare Spa: Impianti Oleodinamici, Fluidodinamica e Componenti a Milano",
+    "activeAdCopySummary": "Enhancing Industries: Mare, a premier European supplier of functional and process chemical products to diverse industries and sectors"
+  },
+  "theme": {
+    "primaryHex": "#0B1E36",
+    "accentHex": "#B8860B",
+    "darkBgHex": "#0B1E36",
+    "borderRadius": "8px",
+    "headerBgMode": "light",
+    "logoBrightness": "dark"
+  },
+  "content": {
+    "badgeTop": "Mare Spa · Divisione Oleodinamica e Fluidi (Milano)",
+    "heroHeadline": "Mare Spa: Impianti Oleodinamici, Fluidodinamica e Componenti a Milano",
+    "heroSubheadline": "Enhancing Industries: Mare, a premier European supplier of functional and process chemical products to diverse industries and sectors",
+    "heroBullets": [
+      "Progettazione centraline, cilindri e circuiti fluidodinamici su specifica",
+      "Magazzino ricambi, tenute e raccordi per ridurre al minimo i fermi impianto",
+      "Collaudo in pressione certificato e assistenza tecnica diretta in stabilimento"
+    ],
+    "ctaButtonText": "Richiedi Studio di Fattibilita",
+    "trustMicrocopy": "Riservatezza industriale garantita (NDA) · Risposta tecnica entro la giornata lavorativa",
+    "logoLocalPath": "/leads/mare/logo.png",
+    "heroImageLocalPath": "/leads/mare/hero.jpg",
+    "heroImageCaption": "Mare Spa · Sede operativa e realizzazioni (Milano)",
+    "quiz": {
+      "question1": {
+        "title": "Quale sistema o componentistica fluidodinamica desiderate approfondire?",
+        "options": [
+          "Centraline oleodinamiche, cilindri o gruppi valvole su specifica",
+          "Tenute industriali, guarnizioni tecniche, compressori o ricambistica",
+          "Revisione impianti esistenti e continuità di fornitura OEM"
+        ]
+      },
+      "question2": {
+        "title": "Qual e l'orizzonte temporale previsto per il progetto?",
+        "options": [
+          "Avvio operativo urgente (entro 30 giorni)",
+          "Pianificazione nel trimestre in corso",
+          "Valutazione tecnica e di budget preliminare"
+        ]
+      },
+      "finalStepTitle": "Specifiche registrate. Inserisci i riferimenti aziendali per il colloquio con l'Ufficio Tecnico:"
+    },
+    "valueProps": [
+      {
+        "title": "Dimensionamento e Progettazione Fluidodinamica",
+        "description": "Definiamo portate, pressioni di esercizio e cicli di lavoro insieme ai vostri progettisti a Milano, ottimizzando efficienza e sicurezza dell'impianto.",
+        "metric": "Collaudo Certificato"
+      },
+      {
+        "title": "Ricambistica Tecnica e Tenute ad Alte Prestazioni",
+        "description": "Forniamo guarnizioni, valvole e componentistica selezionata per resistere a carichi gravosi, alte temperature e cicli continui.",
+        "metric": "Zero Fermi Linea"
+      },
+      {
+        "title": "Service Rapido e Manutenzione Programmata",
+        "description": "Supporto tecnico tempestivo per revisioni, sostituzioni e adeguamenti normativi direttamente presso il vostro reparto produttivo.",
+        "metric": "SLA Dedicato"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "99.4%",
+      "mainStatLabel": "Affidabilita certificata su centraline, tenute e ricambi industriali",
+      "reviewsSummary": "Fornitore tecnico per impianti e costruttori di macchine a Milano",
+      "clientReferenceWall": [
+        "Collaudo a Banco in Pressione",
+        "Direttiva Macchine 2006/42/CE",
+        "Qualita Certificata ISO 9001",
+        "Ricambistica e Tenute OEM",
+        "Assistenza Tecnica Impianti"
+      ],
+      "secondaryStats": [
+        {
+          "value": "99.4%",
+          "label": "Sistemi collaudati e conformi alle pressioni di progetto"
+        },
+        {
+          "value": "< 0.4s",
+          "label": "Accesso istantaneo alle richieste tecniche anche da reparto"
+        },
+        {
+          "value": "24h",
+          "label": "Presa in carico ricambi e preventivazione tecnica B2B"
+        }
+      ],
+      "testimonials": [
+        {
+          "name": "Responsabile Manutenzione Stabilimento",
+          "location": "Milano · Impianti Industriali",
+          "quote": "Con Mare Spa abbiamo ridotto drasticamente i fermi linea: competenza reale nella diagnosi e disponibilita rapida della componentistica critica.",
+          "roleOrContext": "Service e fornitura oleodinamica"
+        },
+        {
+          "name": "Ufficio Tecnico Costruttore Macchine",
+          "location": "Milano e provincia",
+          "quote": "Partner preciso dal dimensionamento al collaudo finale: documentazione chiara e forniture puntuali su ogni serie di macchine.",
+          "roleOrContext": "Fornitura OEM"
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "Mare Spa - tempi di caricamento mobile e richieste preventivo di Mare Spa (7.3s)",
+    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di Mare Spa, da smartphone impiega 7.3 secondi ad aprirsi per 30 risorse bloccanti, frenando le richieste di preventivo.\n\nAbbiamo gia preparato una demo in Next.js per Mare Spa che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Mare Spa, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/mare\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "Mare Spa - tempi di caricamento mobile e richieste preventivo di Mare Spa (7.3s)",
+      "body": "Buongiorno,\n\nda un test sul sito di Mare Spa, da smartphone impiega 7.3 secondi ad aprirsi per 30 risorse bloccanti, frenando le richieste di preventivo.\n\nAbbiamo gia preparato una demo in Next.js per Mare Spa che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: Mare Spa - tempi di caricamento mobile e richieste preventivo di Mare Spa (7.3s)",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Mare Spa, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/mare\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: Mare Spa - tempi di caricamento mobile e richieste preventivo di Mare Spa (7.3s)",
+      "body": "Buongiorno,\n\nOltre a tagliare i 7.3 secondi su mobile, il sistema qualifica ogni preventivo prima di inviarlo al CRM.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza - TechPyre Studio",
+      "inThread": true,
+      "requiresFollowUpCall": true
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: Mare Spa - tempi di caricamento mobile e richieste preventivo di Mare Spa (7.3s)",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Mare Spa non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/mare) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

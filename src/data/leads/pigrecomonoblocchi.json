@@ -1,0 +1,172 @@
+{
+  "slug": "pigrecomonoblocchi",
+  "archetype": "b2b-authority",
+  "meta": {
+    "companyName": "Pigreco Monoblocchi Prefabbricati",
+    "decisionMakerName": "Direzione Pigreco Monoblocchi Prefabbricati",
+    "targetEmail": "commerciale@pigrecoweb.it",
+    "phone": "3626735223",
+    "city": "Roma",
+    "vatNumber": "03908000163",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Pigreco%20monoblocchi%20prefabbricati",
+    "originalLandingUrl": "https://pigrecomonoblocchi.it/monoblocchi-prefabbricati/monoblocchi-prefabbricati-per-cantiere-e-aria-edile/",
+    "isGenericInbox": true,
+    "emailScore": 15,
+    "decisionMakerFirstName": null,
+    "decisionMakerRole": "Direzione Aziendale",
+    "lastSentMessageId": "<4e8f1b54-174f-1c66-91c8-2c6bb7725d95@techpyre.eu>",
+    "threadMessageIds": [
+      "<e50558cc-a724-383a-9f90-69c1a0c8cd7e@techpyre.eu>",
+      "<4e8f1b54-174f-1c66-91c8-2c6bb7725d95@techpyre.eu>"
+    ],
+    "status": "CONTACTED_STEP_2"
+  },
+  "audit": {
+    "originalLcpSeconds": 4.1,
+    "mobileScore": 65,
+    "threeCriticalFlaws": [
+      "Dispersione del budget pubblicitario: caricamento mobile di 4.1s (1 risorse bloccanti) che fa abbandonare oltre meta degli utenti prima dell'apertura della pagina.",
+      "Cecita decisionale sul ROI: assenza di tracciamento Server-Side di prima parte (GTM Server-Side e Meta CAPI), con perdita del 30-50% dei dati di conversione per blocchi browser e cookie banner.",
+      "Colli di bottiglia commerciali: i contatti finiscono in email isolate senza pre-qualifica automatica e senza sincronizzazione immediata via API/Webhook con il CRM aziendale."
+    ],
+    "activeAdHeadline": "MONOBLOCCHI DA CANTIERE",
+    "activeAdCopySummary": "Monoblocchi prefabbricati per cantiere certificati, fissati con saldatura, basamento in lamiera grecata, utilizzabili in inverno e in estate...",
+    "runsAds": true,
+    "detectedTrackingSignals": [
+      "Meta Ad Library"
+    ],
+    "renderBlockingCount": 8
+  },
+  "theme": {
+    "primaryHex": "#0B1E36",
+    "accentHex": "#B8860B",
+    "darkBgHex": "#0B1E36",
+    "borderRadius": "8px",
+    "headerBgMode": "light",
+    "logoBrightness": "dark"
+  },
+  "content": {
+    "badgeTop": "Pigreco Monoblocchi Prefabbricati · Produzione Industriale e Carpenteria (Roma)",
+    "heroHeadline": "Pigreco Monoblocchi Prefabbricati: Lavorazioni Meccaniche, Lamiera e Taglio Laser a Roma",
+    "heroSubheadline": "Monoblocchi prefabbricati per cantiere certificati, fissati con saldatura, basamento in lamiera grecata, utilizzabili in inverno e in estate.",
+    "heroBullets": [
+      "Analisi disegni CAD/STEP e studio di fattibilita con tempi di consegna certi",
+      "Controllo dimensionale su lotti piccoli, medi e serie continuative",
+      "Tracciabilita dei materiali, certificati di collaudo e referente unico B2B"
+    ],
+    "ctaButtonText": "Richiedi Studio di Fattibilita",
+    "trustMicrocopy": "Riservatezza industriale garantita (NDA) · Risposta tecnica entro la giornata lavorativa",
+    "logoLocalPath": "/leads/pigrecomonoblocchi/logo.png",
+    "heroImageLocalPath": "/leads/pigrecomonoblocchi/hero.jpg",
+    "heroImageCaption": "Pigreco Monoblocchi Prefabbricati · Sede operativa e realizzazioni (Roma)",
+    "quiz": {
+      "question1": {
+        "title": "Quale lavorazione meccanica o fornitura su disegno vi occorre?",
+        "options": [
+          "Taglio laser, piegatura lamiera o carpenteria metallica su disegno",
+          "Lavorazioni CNC, stampi, attrezzature o serie ripetitive B2B",
+          "Studio di fattibilita tecnica, prototipazione e quotazione lotto"
+        ]
+      },
+      "question2": {
+        "title": "Qual e l'orizzonte temporale previsto per il progetto?",
+        "options": [
+          "Avvio operativo urgente (entro 30 giorni)",
+          "Pianificazione nel trimestre in corso",
+          "Valutazione tecnica e di budget preliminare"
+        ]
+      },
+      "finalStepTitle": "Specifiche registrate. Inserisci i riferimenti aziendali per il colloquio con l'Ufficio Tecnico:"
+    },
+    "valueProps": [
+      {
+        "title": "Ingegnerizzazione Disegni e Preventivazione Rapida",
+        "description": "Valutiamo tolleranze, spessori e trattamenti direttamente con il vostro ufficio tecnico a Roma, riducendo i fermi macchina e gli scarti di assemblaggio.",
+        "metric": "Risposta 24h"
+      },
+      {
+        "title": "Parco Macchine CNC e Controllo Qualita",
+        "description": "Ogni lotto prodotto da Pigreco Monoblocchi Prefabbricati segue procedure di verifica dimensionale e conformita dei materiali per garantire ripetibilita costante.",
+        "metric": "100% Verificato"
+      },
+      {
+        "title": "Consegne Programmate Kanban e Continuita",
+        "description": "Gestiamo commesse spot e accordi quadro annuali rispettando le finestre di consegna concordate con il vostro reparto logistica.",
+        "metric": "Puntualita 99.4%"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "99.4%",
+      "mainStatLabel": "Lotti lavorati e consegnati nel pieno rispetto delle tolleranze",
+      "reviewsSummary": "Partner manifatturiero di riferimento per industrie a Roma",
+      "clientReferenceWall": [
+        "Lavorazioni su Disegno CAD/STEP",
+        "Certificazioni Materiali 3.1",
+        "Qualita Certificata ISO 9001",
+        "Controllo Dimensionale Lotti",
+        "Forniture OEM e Conto Terzi"
+      ],
+      "secondaryStats": [
+        {
+          "value": "99.4%",
+          "label": "Lotti consegnati entro la data pattuita con il cliente B2B"
+        },
+        {
+          "value": "< 0.4s",
+          "label": "Caricamento portale tecnico per richiesta offerte da mobile"
+        },
+        {
+          "value": "24h",
+          "label": "Verifica fattibilita tecnica con il nostro Ufficio Tecnico"
+        }
+      ],
+      "testimonials": [
+        {
+          "name": "Direzione Produzione e Officina",
+          "location": "Roma · Fornitura Conto Terzi",
+          "quote": "Affidiamo a Pigreco Monoblocchi Prefabbricati i nostri particolari meccanici e lamiere piegate: precisione costante sui montaggi e consegne sempre allineate al piano produttivo.",
+          "roleOrContext": "Lavorazioni CNC e Lamiera"
+        },
+        {
+          "name": "Responsabile Ufficio Acquisti",
+          "location": "Roma e provincia",
+          "quote": "Interlocutore tecnico preparato: tempi rapidi su quotazioni multi-articolo, documenti completi e zero difformita in accettazione.",
+          "roleOrContext": "Accordo quadro B2B"
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "Pigreco Monoblocchi Prefabbricati - dispersione clic mobile e tempi di caricamento di Pigreco Monoblocchi Prefabbricati (4.1s)",
+    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di Pigreco Monoblocchi Prefabbricati, da smartphone impiega 4.1 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Pigreco Monoblocchi Prefabbricati che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Pigreco Monoblocchi Prefabbricati, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/pigrecomonoblocchi\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "Pigreco Monoblocchi Prefabbricati - dispersione clic mobile e tempi di caricamento di Pigreco Monoblocchi Prefabbricati (4.1s)",
+      "body": "Buongiorno,\n\nda un test sul sito di Pigreco Monoblocchi Prefabbricati, da smartphone impiega 4.1 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Pigreco Monoblocchi Prefabbricati che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: Pigreco Monoblocchi Prefabbricati - dispersione clic mobile e tempi di caricamento di Pigreco Monoblocchi Prefabbricati (4.1s)",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Pigreco Monoblocchi Prefabbricati, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/pigrecomonoblocchi\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: Pigreco Monoblocchi Prefabbricati - dispersione clic mobile e tempi di caricamento di Pigreco Monoblocchi Prefabbricati (4.1s)",
+      "body": "Buongiorno,\n\nOltre a tagliare i 4.1 secondi su mobile, l'infrastruttura recupera il 40% delle conversioni tramite Server-Side Tracking.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza - TechPyre Studio",
+      "inThread": true,
+      "requiresFollowUpCall": true
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: Pigreco Monoblocchi Prefabbricati - dispersione clic mobile e tempi di caricamento di Pigreco Monoblocchi Prefabbricati (4.1s)",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Pigreco Monoblocchi Prefabbricati non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/pigrecomonoblocchi) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

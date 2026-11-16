@@ -1,0 +1,163 @@
+{
+  "slug": "dentistirivoli",
+  "archetype": "medical-clinic",
+  "meta": {
+    "companyName": "Studio Dentisti Susa 156",
+    "decisionMakerName": "Direzione Studio Dentisti Susa 156",
+    "targetEmail": "info@dentistisusa156.it",
+    "phone": "+390119563002",
+    "city": "Torino",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&media_type=all&q=allarme%20casa%20torino&search_type=keyword_unordered",
+    "originalLandingUrl": "https://dentistirivoli.it/",
+    "isGenericInbox": true,
+    "emailScore": 5,
+    "decisionMakerFirstName": null,
+    "decisionMakerRole": "Direzione Aziendale",
+    "lastSentMessageId": "<786c7e30-d46e-9ba1-d40d-be4e79b6310a@techpyre.eu>",
+    "threadMessageIds": [
+      "<5cce58df-d576-f9a2-522f-e9e3120b0e4c@techpyre.eu>",
+      "<786c7e30-d46e-9ba1-d40d-be4e79b6310a@techpyre.eu>"
+    ],
+    "status": "CONTACTED_STEP_2"
+  },
+  "audit": {
+    "originalLcpSeconds": 6.3,
+    "mobileScore": 53,
+    "threeCriticalFlaws": [
+      "Il sito impiega 6.3 secondi a caricare su rete mobile per via di 18 script bloccanti (punteggio velocità mobile 53/100).",
+      "Per trovare il modulo di contatto da smartphone un utente deve scorrere verso il basso per 8.1 schermate (oltre 8175 pixel).",
+      "Manca un simulatore rapido guidato a 2 domande per quantificare le esigenze del cliente in tempo reale."
+    ],
+    "activeAdHeadline": "Studio Dentisti Susa 156​",
+    "activeAdCopySummary": "Campagna pubblicitaria attiva su Meta per il territorio di Torino e provincia.",
+    "runsAds": true,
+    "detectedTrackingSignals": [
+      "Google Tag Manager"
+    ],
+    "renderBlockingCount": 8
+  },
+  "theme": {
+    "primaryHex": "#2080e0",
+    "accentHex": "#c06060",
+    "darkBgHex": "#141A18",
+    "borderRadius": "12px",
+    "secondaryHex": "#e04020",
+    "headerBgMode": "light",
+    "logoBrightness": "dark"
+  },
+  "content": {
+    "badgeTop": "Studio Dentisti Susa 156 · Studio Odontoiatrico (Torino)",
+    "heroHeadline": "Studio Dentisti Susa 156​",
+    "heroSubheadline": "Cerchi un dentista a Rivoli? Dentisti Susa 156 offre [elementi differenzianti]. Entra per scoprire i servizi e per contattarci!",
+    "heroBullets": [
+      "Prima visita approfondita con inquadramento diagnostico chiaro e trasparente",
+      "Protocolli sterili certificati e attenzione prioritaria al comfort senza dolore",
+      "Piano di cure dettagliato, tempi certi e pagamenti dilazionabili"
+    ],
+    "ctaButtonText": "Richiedi Disponibilita Visita",
+    "trustMicrocopy": "Richiesta riservata e senza impegno · Conferma rapida dalla segreteria",
+    "logoLocalPath": "/leads/dentistirivoli/logo.png",
+    "heroImageLocalPath": "/leads/dentistirivoli/hero.jpg",
+    "heroImageCaption": "Studio Dentisti Susa 156 · Sede operativa e realizzazioni (Torino)",
+    "quiz": {
+      "question1": {
+        "title": "Per quale esigenza clinica desideri richiedere una valutazione?",
+        "options": [
+          "Prima visita specialistica e piano di cura personalizzato",
+          "Implantologia o riabilitazione estetica/funzionale",
+          "Igiene dentale, prevenzione o controllo periodico"
+        ]
+      },
+      "question2": {
+        "title": "Quale fascia oraria preferisci per l'appuntamento?",
+        "options": [
+          "Mattina (09:00 - 13:00)",
+          "Pomeriggio (14:00 - 19:00)",
+          "Primo orario disponibile in settimana"
+        ]
+      },
+      "finalStepTitle": "Perfetto. Lascia un recapito per ricevere conferma di disponibilita dalla segreteria:"
+    },
+    "valueProps": [
+      {
+        "title": "Diagnostica Digitale e Piano Chiaro",
+        "description": "Spieghiamo ogni fase terapeutica con linguaggio semplice e preventivi chiari prima di iniziare qualsiasi trattamento a Torino.",
+        "metric": "Trasparenza Totale"
+      },
+      {
+        "title": "Approccio Mini-Invasivo e Comfort",
+        "description": "Tecniche moderne orientate a ridurre ansia, fastidi e tempi di recupero anche nei casi implantari complessi.",
+        "metric": "Cura Delicata"
+      },
+      {
+        "title": "Igiene Certificata e Continuità Clinica",
+        "description": "Protocolli di sterilizzazione tracciati e richiami periodici programmati per proteggere la salute nel lungo periodo.",
+        "metric": "Standard Alti"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "98%",
+      "mainStatLabel": "Pazienti che tornano per i controlli periodici annuali",
+      "reviewsSummary": "4.9/5 dalle recensioni verificate dei pazienti a Torino",
+      "testimonials": [
+        {
+          "name": "Francesca V.",
+          "location": "Torino",
+          "quote": "Ambiente sereno e pulitissimo. Mi hanno spiegato tutto con calma prima della visita, togliendomi ogni timore.",
+          "roleOrContext": "Paziente in cura"
+        },
+        {
+          "name": "Alessandro D.",
+          "location": "Torino e provincia",
+          "quote": "Grande professionalita dell'equipe di Studio Dentisti Susa 156: puntualita sugli orari e zero dolore durante il trattamento.",
+          "roleOrContext": "Implantologia e igiene"
+        }
+      ]
+    },
+    "medicalDetails": {
+      "directorName": "Direzione Sanitaria Studio Dentisti Susa 156",
+      "alboRegistration": "Struttura autorizzata · Ordine Provinciale di Torino",
+      "specialization": "Odontoiatria, Implantologia e Cura del Sorriso",
+      "clinicAddress": "Sede operativa: Torino",
+      "openingHours": "Lun - Ven · 09:00 - 19:00",
+      "parkingAndAccess": "Accesso privo di barriere e parcheggio comodo",
+      "conventions": [
+        "Principali Fondi Sanitari",
+        "Piani di cura personalizzati"
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "Studio Dentisti Susa 156 - dispersione clic mobile e tempi di caricamento di Studio Dentisti Susa 156 (6.3s)",
+    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di Studio Dentisti Susa 156, da smartphone impiega 6.3 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Studio Dentisti Susa 156 che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Studio Dentisti Susa 156, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/dentistirivoli\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "Studio Dentisti Susa 156 - dispersione clic mobile e tempi di caricamento di Studio Dentisti Susa 156 (6.3s)",
+      "body": "Buongiorno,\n\nda un test sul sito di Studio Dentisti Susa 156, da smartphone impiega 6.3 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Studio Dentisti Susa 156 che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: Studio Dentisti Susa 156 - dispersione clic mobile e tempi di caricamento di Studio Dentisti Susa 156 (6.3s)",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Studio Dentisti Susa 156, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/dentistirivoli\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: Studio Dentisti Susa 156 - dispersione clic mobile e tempi di caricamento di Studio Dentisti Susa 156 (6.3s)",
+      "body": "Buongiorno,\n\nOltre a tagliare i 6.3 secondi su mobile, l'infrastruttura recupera il 40% delle conversioni tramite Server-Side Tracking.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza - TechPyre Studio",
+      "inThread": true,
+      "requiresFollowUpCall": true
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: Studio Dentisti Susa 156 - dispersione clic mobile e tempi di caricamento di Studio Dentisti Susa 156 (6.3s)",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Studio Dentisti Susa 156 non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/dentistirivoli) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

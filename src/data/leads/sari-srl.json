@@ -1,0 +1,169 @@
+{
+  "slug": "sari-srl",
+  "archetype": "b2b-authority",
+  "meta": {
+    "companyName": "Sari",
+    "decisionMakerName": "Domenico Motta",
+    "decisionMakerFirstName": "Domenico",
+    "decisionMakerRole": "Direzione Tecnica",
+    "isGenericInbox": true,
+    "emailScore": 38,
+    "targetEmail": "deutschland@sari-srl.com",
+    "phone": "+39042477240",
+    "city": "Marostica",
+    "vatNumber": "02579890241",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Sari",
+    "originalLandingUrl": "http://www.sari-srl.com",
+    "status": "CONTACTED_STEP_1",
+    "lastSentMessageId": "<40668a22-c5b3-6550-6788-b32280d8ec80@techpyre.eu>",
+    "threadMessageIds": [
+      "<40668a22-c5b3-6550-6788-b32280d8ec80@techpyre.eu>"
+    ]
+  },
+  "audit": {
+    "originalLcpSeconds": 10.2,
+    "mobileScore": 15,
+    "renderBlockingCount": 26,
+    "runsAds": false,
+    "detectedTrackingSignals": [],
+    "threeCriticalFlaws": [
+      "Perdita di richieste di preventivo su mobile: caricamento di 10.2s (26 risorse bloccanti) che spinge i visitatori da smartphone ad abbandonare la pagina prima di contattare l'ufficio commerciale.",
+      "Assenza di pre-qualifica automatica: il sito non filtra le richieste per tipologia di intervento, budget o tempistiche prima di inviarle ai referenti tecnici di Sari.",
+      "Colli di bottiglia commerciali: le richieste arrivano come semplici email isolate senza instradamento automatico e senza tracciamento strutturato della trattativa."
+    ],
+    "activeAdHeadline": "Sari: Lavorazioni Meccaniche, Lamiera e Taglio Laser a Marostica",
+    "activeAdCopySummary": "Sari s.r.l. - Boiler e caldaie a condensazione, scambiatori a fascio tubiero e pareti ondulate."
+  },
+  "theme": {
+    "primaryHex": "#e00000",
+    "accentHex": "#B8860B",
+    "darkBgHex": "#0B1E36",
+    "borderRadius": "8px",
+    "headerBgMode": "light",
+    "logoBrightness": "dark"
+  },
+  "content": {
+    "badgeTop": "Sari · Produzione Industriale e Carpenteria (Marostica)",
+    "heroHeadline": "Sari: Lavorazioni Meccaniche, Lamiera e Taglio Laser a Marostica",
+    "heroSubheadline": "Sari s.r.l. - Boiler e caldaie a condensazione, scambiatori a fascio tubiero e pareti ondulate.",
+    "heroBullets": [
+      "Analisi disegni CAD/STEP e studio di fattibilita con tempi di consegna certi",
+      "Controllo dimensionale su lotti piccoli, medi e serie continuative",
+      "Tracciabilita dei materiali, certificati di collaudo e referente unico B2B"
+    ],
+    "ctaButtonText": "Richiedi Studio di Fattibilita",
+    "trustMicrocopy": "Riservatezza industriale garantita (NDA) · Risposta tecnica entro la giornata lavorativa",
+    "logoLocalPath": "/leads/sari-srl/logo.png",
+    "heroImageLocalPath": "/leads/sari-srl/hero.jpg",
+    "heroImageCaption": "Sari · Sede operativa e realizzazioni (Marostica)",
+    "quiz": {
+      "question1": {
+        "title": "Quale lavorazione meccanica o fornitura su disegno vi occorre?",
+        "options": [
+          "Taglio laser, piegatura lamiera o carpenteria metallica su disegno",
+          "Lavorazioni CNC, stampi, attrezzature o serie ripetitive B2B",
+          "Studio di fattibilita tecnica, prototipazione e quotazione lotto"
+        ]
+      },
+      "question2": {
+        "title": "Qual e l'orizzonte temporale previsto per il progetto?",
+        "options": [
+          "Avvio operativo urgente (entro 30 giorni)",
+          "Pianificazione nel trimestre in corso",
+          "Valutazione tecnica e di budget preliminare"
+        ]
+      },
+      "finalStepTitle": "Specifiche registrate. Inserisci i riferimenti aziendali per il colloquio con l'Ufficio Tecnico:"
+    },
+    "valueProps": [
+      {
+        "title": "Ingegnerizzazione Disegni e Preventivazione Rapida",
+        "description": "Valutiamo tolleranze, spessori e trattamenti direttamente con il vostro ufficio tecnico a Marostica, riducendo i fermi macchina e gli scarti di assemblaggio.",
+        "metric": "Risposta 24h"
+      },
+      {
+        "title": "Parco Macchine CNC e Controllo Qualita",
+        "description": "Ogni lotto prodotto da Sari segue procedure di verifica dimensionale e conformita dei materiali per garantire ripetibilita costante.",
+        "metric": "100% Verificato"
+      },
+      {
+        "title": "Consegne Programmate Kanban e Continuita",
+        "description": "Gestiamo commesse spot e accordi quadro annuali rispettando le finestre di consegna concordate con il vostro reparto logistica.",
+        "metric": "Puntualita 99.4%"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "99.4%",
+      "mainStatLabel": "Lotti lavorati e consegnati nel pieno rispetto delle tolleranze",
+      "reviewsSummary": "Partner manifatturiero di riferimento per industrie a Marostica",
+      "clientReferenceWall": [
+        "Lavorazioni su Disegno CAD/STEP",
+        "Certificazioni Materiali 3.1",
+        "Qualita Certificata ISO 9001",
+        "Controllo Dimensionale Lotti",
+        "Forniture OEM e Conto Terzi"
+      ],
+      "secondaryStats": [
+        {
+          "value": "99.4%",
+          "label": "Lotti consegnati entro la data pattuita con il cliente B2B"
+        },
+        {
+          "value": "< 0.4s",
+          "label": "Caricamento portale tecnico per richiesta offerte da mobile"
+        },
+        {
+          "value": "24h",
+          "label": "Verifica fattibilita tecnica con il nostro Ufficio Tecnico"
+        }
+      ],
+      "testimonials": [
+        {
+          "name": "Direzione Produzione e Officina",
+          "location": "Marostica · Fornitura Conto Terzi",
+          "quote": "Affidiamo a Sari i nostri particolari meccanici e lamiere piegate: precisione costante sui montaggi e consegne sempre allineate al piano produttivo.",
+          "roleOrContext": "Lavorazioni CNC e Lamiera"
+        },
+        {
+          "name": "Responsabile Ufficio Acquisti",
+          "location": "Marostica e provincia",
+          "quote": "Interlocutore tecnico preparato: tempi rapidi su quotazioni multi-articolo, documenti completi e zero difformita in accettazione.",
+          "roleOrContext": "Accordo quadro B2B"
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "Per Domenico Motta - tempi di caricamento mobile e richieste preventivo di Sari (10.2s)",
+    "emailPlainTextBody": "Buongiorno Domenico,\n\nda un test sul sito di Sari, da smartphone impiega 10.2 secondi ad aprirsi per 26 risorse bloccanti, frenando le richieste di preventivo.\n\nAbbiamo gia preparato una demo in Next.js per Sari che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno Domenico,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Sari, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/sari-srl\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "Per Domenico Motta - tempi di caricamento mobile e richieste preventivo di Sari (10.2s)",
+      "body": "Buongiorno Domenico,\n\nda un test sul sito di Sari, da smartphone impiega 10.2 secondi ad aprirsi per 26 risorse bloccanti, frenando le richieste di preventivo.\n\nAbbiamo gia preparato una demo in Next.js per Sari che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: Per Domenico Motta - tempi di caricamento mobile e richieste preventivo di Sari (10.2s)",
+      "body": "Buongiorno Domenico,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Sari, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/sari-srl\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: Per Domenico Motta - tempi di caricamento mobile e richieste preventivo di Sari (10.2s)",
+      "body": "Buongiorno Domenico,\n\nOltre a tagliare i 10.2 secondi su mobile, il sistema qualifica ogni preventivo prima di inviarlo al CRM.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza - TechPyre Studio",
+      "inThread": true,
+      "requiresFollowUpCall": true
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: Per Domenico Motta - tempi di caricamento mobile e richieste preventivo di Sari (10.2s)",
+      "body": "Buongiorno Domenico,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Sari non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/sari-srl) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

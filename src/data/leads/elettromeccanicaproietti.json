@@ -1,0 +1,172 @@
+{
+  "slug": "elettromeccanicaproietti",
+  "archetype": "b2b-authority",
+  "meta": {
+    "companyName": "Elettromeccanica f.lli Proietti",
+    "decisionMakerName": "Direzione Elettromeccanica f.lli Proietti",
+    "targetEmail": "amministrazione@elettromeccanicaproietti.it",
+    "phone": "+39 095 7831246",
+    "city": "Carlentini",
+    "vatNumber": "01192460895",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Elettromeccanica%20f.lli%20Proietti",
+    "originalLandingUrl": "https://www.elettromeccanicaproietti.it",
+    "isGenericInbox": true,
+    "emailScore": 35,
+    "decisionMakerFirstName": null,
+    "decisionMakerRole": "Direzione Aziendale",
+    "lastSentMessageId": "<3025a26e-bce1-931c-a873-8abc99ecb6b1@techpyre.eu>",
+    "threadMessageIds": [
+      "<4392e139-6375-905b-5d44-e7c9d07cc7a9@techpyre.eu>",
+      "<3025a26e-bce1-931c-a873-8abc99ecb6b1@techpyre.eu>"
+    ],
+    "status": "CONTACTED_STEP_2"
+  },
+  "audit": {
+    "originalLcpSeconds": 3.4,
+    "mobileScore": 71,
+    "threeCriticalFlaws": [
+      "Dispersione del budget pubblicitario: caricamento mobile di 3.4s (10 risorse bloccanti) che fa abbandonare oltre meta degli utenti prima dell'apertura della pagina.",
+      "Cecita decisionale sul ROI: assenza di tracciamento Server-Side di prima parte (GTM Server-Side e Meta CAPI), con perdita del 30-50% dei dati di conversione per blocchi browser e cookie banner.",
+      "Colli di bottiglia commerciali: i contatti finiscono in email isolate senza pre-qualifica automatica e senza sincronizzazione immediata via API/Webhook con il CRM aziendale."
+    ],
+    "activeAdHeadline": "L'obiettivo principale &egrave; da sempre migliorare la qualit&agrave; del servizio offerto",
+    "activeAdCopySummary": "Competenza, professionalità e innovazione nella progettazione e assemblaggio di quadri elettrici a Carlentini: chiama ora per un preventivo ...",
+    "runsAds": true,
+    "detectedTrackingSignals": [
+      "Meta Ad Library"
+    ],
+    "renderBlockingCount": 8
+  },
+  "theme": {
+    "primaryHex": "#0B1E36",
+    "accentHex": "#B8860B",
+    "darkBgHex": "#0B1E36",
+    "borderRadius": "8px",
+    "headerBgMode": "light",
+    "logoBrightness": "dark"
+  },
+  "content": {
+    "badgeTop": "Elettromeccanica f.lli Proietti · Ingegneria e Automazione B2B (Carlentini)",
+    "heroHeadline": "L'obiettivo principale è da sempre migliorare la qualità del servizio offerto",
+    "heroSubheadline": "Competenza, professionalità e innovazione nella progettazione e assemblaggio di quadri elettrici a Carlentini: chiama ora per un preventivo gratuito.",
+    "heroBullets": [
+      "Studio elettrico, sviluppo software PLC e cablaggio quadri certificato",
+      "Revamping macchinari e interconnessione verso gestionali aziendali MES/ERP",
+      "Collaudo funzionale, fascicolo tecnico CE e teleassistenza post-vendita"
+    ],
+    "ctaButtonText": "Richiedi Studio di Fattibilita",
+    "trustMicrocopy": "Riservatezza industriale garantita (NDA) · Risposta tecnica entro la giornata lavorativa",
+    "logoLocalPath": "/leads/elettromeccanicaproietti/logo.png",
+    "heroImageLocalPath": "/leads/elettromeccanicaproietti/hero.jpg",
+    "heroImageCaption": "Elettromeccanica f.lli Proietti · Sede operativa e realizzazioni (Carlentini)",
+    "quiz": {
+      "question1": {
+        "title": "Quale ambito di automazione o impiantistica industriale valutate?",
+        "options": [
+          "Quadri elettrici bordomacchina, revamping linee e integrazione PLC",
+          "Progettazione isole robotizzate, macchinari o automazione di reparto",
+          "Studio di fattibilita tecnica, conformita CE e tempi di consegna"
+        ]
+      },
+      "question2": {
+        "title": "Qual e l'orizzonte temporale previsto per il progetto?",
+        "options": [
+          "Avvio operativo urgente (entro 30 giorni)",
+          "Pianificazione nel trimestre in corso",
+          "Valutazione tecnica e di budget preliminare"
+        ]
+      },
+      "finalStepTitle": "Specifiche registrate. Inserisci i riferimenti aziendali per il colloquio con l'Ufficio Tecnico:"
+    },
+    "valueProps": [
+      {
+        "title": "Progettazione Elettrica e Software Su Specifica",
+        "description": "Sviluppiamo architetture di controllo affidabili e scalabili a Carlentini, pensate per integrarsi nei vostri reparti senza lunghi fermi produzione.",
+        "metric": "Norma CE"
+      },
+      {
+        "title": "Quadristica, Cablaggio e Sicurezza Impianti",
+        "description": "Quadri di potenza e automazione testati al 100% prima della spedizione, completi di schemi aggiornati e verifiche di sicurezza.",
+        "metric": "Testato 100%"
+      },
+      {
+        "title": "Avviamento in Linea e Teleassistenza",
+        "description": "Supportiamo gli operatori in fabbrica durante la messa in servizio e garantiamo continuità con diagnostica tempestiva.",
+        "metric": "Supporto Diretto"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "99.4%",
+      "mainStatLabel": "Impianti e quadri avviati nel rispetto delle finestre produttive",
+      "reviewsSummary": "Partner tecnologico per l'automazione di stabilimenti a Carlentini",
+      "clientReferenceWall": [
+        "Direttiva Macchine 2006/42/CE",
+        "Conformita CEI EN 60204-1",
+        "Integrazione MES / ERP",
+        "Teleassistenza Industriale",
+        "Qualita Certificata ISO 9001"
+      ],
+      "secondaryStats": [
+        {
+          "value": "99.4%",
+          "label": "Commesse di automazione collaudate nei tempi concordati"
+        },
+        {
+          "value": "< 0.4s",
+          "label": "Caricamento rapido del portale tecnico su smartphone"
+        },
+        {
+          "value": "24h",
+          "label": "Primo riscontro dall'Ufficio Tecnico su nuove commesse"
+        }
+      ],
+      "testimonials": [
+        {
+          "name": "Direttore di Stabilimento",
+          "location": "Carlentini · Reparto Automazione",
+          "quote": "Il revamping eseguito da Elettromeccanica f.lli Proietti ha stabilizzato la linea e ridotto i guasti elettrici fin dal primo mese di esercizio.",
+          "roleOrContext": "Automazione e revamping"
+        },
+        {
+          "name": "Responsabile Ingegneria di Processo",
+          "location": "Carlentini e provincia",
+          "quote": "Documentazione elettrica ordinata, rispetto rigoroso delle norme di sicurezza e disponibilita immediata in fase di collaudo.",
+          "roleOrContext": "Quadristica e bordomacchina"
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "Elettromeccanica f.lli Proietti - dispersione clic mobile e tempi di caricamento di Elettromeccanica f.lli Proietti (3.4s)",
+    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di Elettromeccanica f.lli Proietti, da smartphone impiega 3.4 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Elettromeccanica f.lli Proietti che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Elettromeccanica f.lli Proietti, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/elettromeccanicaproietti\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "Elettromeccanica f.lli Proietti - dispersione clic mobile e tempi di caricamento di Elettromeccanica f.lli Proietti (3.4s)",
+      "body": "Buongiorno,\n\nda un test sul sito di Elettromeccanica f.lli Proietti, da smartphone impiega 3.4 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Elettromeccanica f.lli Proietti che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: Elettromeccanica f.lli Proietti - dispersione clic mobile e tempi di caricamento di Elettromeccanica f.lli Proietti (3.4s)",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Elettromeccanica f.lli Proietti, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/elettromeccanicaproietti\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: Elettromeccanica f.lli Proietti - dispersione clic mobile e tempi di caricamento di Elettromeccanica f.lli Proietti (3.4s)",
+      "body": "Buongiorno,\n\nOltre a tagliare i 3.4 secondi su mobile, l'infrastruttura recupera il 40% delle conversioni tramite Server-Side Tracking.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza - TechPyre Studio",
+      "inThread": true,
+      "requiresFollowUpCall": true
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: Elettromeccanica f.lli Proietti - dispersione clic mobile e tempi di caricamento di Elettromeccanica f.lli Proietti (3.4s)",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Elettromeccanica f.lli Proietti non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/elettromeccanicaproietti) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

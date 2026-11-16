@@ -1,0 +1,169 @@
+{
+  "slug": "seventyseven",
+  "archetype": "b2b-authority",
+  "meta": {
+    "companyName": "Seventy Seven Srl",
+    "decisionMakerName": "Direzione Seventy Seven Srl",
+    "targetEmail": "info@seventyseven.biz",
+    "phone": "+39 02 8905 4410",
+    "city": "Milano",
+    "adLibraryUrl": "https://www.linkedin.com/company/seventyseven",
+    "originalLandingUrl": "https://www.seventyseven.biz",
+    "isGenericInbox": true,
+    "emailScore": 35,
+    "decisionMakerFirstName": null,
+    "decisionMakerRole": "Direzione Aziendale",
+    "lastSentMessageId": "<cf44f3e6-24c0-d3df-2f4f-131c4b10e3dd@techpyre.eu>",
+    "threadMessageIds": [
+      "<ede6a15f-b683-d3ff-cd35-ea62ceb9a3e8@techpyre.eu>",
+      "<cf44f3e6-24c0-d3df-2f4f-131c4b10e3dd@techpyre.eu>"
+    ],
+    "status": "CONTACTED_STEP_2"
+  },
+  "audit": {
+    "originalLcpSeconds": 6.8,
+    "mobileScore": 38,
+    "activeAdHeadline": "Landing Page ad Alta Conversione & Velocità 0.3s per Seventy Seven Srl",
+    "activeAdCopySummary": "Supporto tecnico avanzato per agenzie e corporate: architettura headless sub-secondo, zero dipendenze pesanti e percorsi di conversione guid...",
+    "threeCriticalFlaws": [
+      "Abbandono Preventivi da Mobile (6.8s LCP): i potenziali clienti B2B che visitano il sito da smartphone attendono 6.8 secondi a causa di 8 risorse bloccanti prima di vedere l'offerta",
+      "Assenza di Qualifica Commerciale Automatica: i visitatori atterrano su moduli generici che inviano semplici email isolate, costringendo il team a filtrare e ricopiare i dati a mano",
+      "Scollegamento dal Flusso Vendite (CRM): manca un collegamento automatico che classifichi il cliente per tipologia di intervento e notifichi subito il referente commerciale"
+    ],
+    "runsAds": false,
+    "detectedTrackingSignals": [],
+    "renderBlockingCount": 8
+  },
+  "theme": {
+    "primaryHex": "#306040",
+    "accentHex": "#B8860B",
+    "darkBgHex": "#0B1E36",
+    "borderRadius": "8px",
+    "headerBgMode": "light",
+    "logoBrightness": "dark"
+  },
+  "content": {
+    "badgeTop": "Seventy Seven Srl · Ingegneria e Automazione B2B (Milano)",
+    "heroHeadline": "Landing Page ad Alta Conversione & Velocità 0.3s per Seventy Seven Srl",
+    "heroSubheadline": "Supporto tecnico avanzato per agenzie e corporate: architettura headless sub-secondo, zero dipendenze pesanti e percorsi di conversione guidati.",
+    "heroBullets": [
+      "Studio elettrico, sviluppo software PLC e cablaggio quadri certificato",
+      "Revamping macchinari e interconnessione verso gestionali aziendali MES/ERP",
+      "Collaudo funzionale, fascicolo tecnico CE e teleassistenza post-vendita"
+    ],
+    "ctaButtonText": "Richiedi Studio di Fattibilita",
+    "trustMicrocopy": "Riservatezza industriale garantita (NDA) · Risposta tecnica entro la giornata lavorativa",
+    "logoLocalPath": "/leads/seventyseven/logo.png",
+    "heroImageLocalPath": "/leads/seventyseven/hero.jpg",
+    "heroImageCaption": "Seventy Seven Srl · Sede operativa e realizzazioni (Milano)",
+    "quiz": {
+      "question1": {
+        "title": "Quale ambito di automazione o impiantistica industriale valutate?",
+        "options": [
+          "Quadri elettrici bordomacchina, revamping linee e integrazione PLC",
+          "Progettazione isole robotizzate, macchinari o automazione di reparto",
+          "Studio di fattibilita tecnica, conformita CE e tempi di consegna"
+        ]
+      },
+      "question2": {
+        "title": "Qual e l'orizzonte temporale previsto per il progetto?",
+        "options": [
+          "Avvio operativo urgente (entro 30 giorni)",
+          "Pianificazione nel trimestre in corso",
+          "Valutazione tecnica e di budget preliminare"
+        ]
+      },
+      "finalStepTitle": "Specifiche registrate. Inserisci i riferimenti aziendali per il colloquio con l'Ufficio Tecnico:"
+    },
+    "valueProps": [
+      {
+        "title": "Progettazione Elettrica e Software Su Specifica",
+        "description": "Sviluppiamo architetture di controllo affidabili e scalabili a Milano, pensate per integrarsi nei vostri reparti senza lunghi fermi produzione.",
+        "metric": "Norma CE"
+      },
+      {
+        "title": "Quadristica, Cablaggio e Sicurezza Impianti",
+        "description": "Quadri di potenza e automazione testati al 100% prima della spedizione, completi di schemi aggiornati e verifiche di sicurezza.",
+        "metric": "Testato 100%"
+      },
+      {
+        "title": "Avviamento in Linea e Teleassistenza",
+        "description": "Supportiamo gli operatori in fabbrica durante la messa in servizio e garantiamo continuità con diagnostica tempestiva.",
+        "metric": "Supporto Diretto"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "99.4%",
+      "mainStatLabel": "Impianti e quadri avviati nel rispetto delle finestre produttive",
+      "reviewsSummary": "Partner tecnologico per l'automazione di stabilimenti a Milano",
+      "clientReferenceWall": [
+        "Direttiva Macchine 2006/42/CE",
+        "Conformita CEI EN 60204-1",
+        "Integrazione MES / ERP",
+        "Teleassistenza Industriale",
+        "Qualita Certificata ISO 9001"
+      ],
+      "secondaryStats": [
+        {
+          "value": "99.4%",
+          "label": "Commesse di automazione collaudate nei tempi concordati"
+        },
+        {
+          "value": "< 0.4s",
+          "label": "Caricamento rapido del portale tecnico su smartphone"
+        },
+        {
+          "value": "24h",
+          "label": "Primo riscontro dall'Ufficio Tecnico su nuove commesse"
+        }
+      ],
+      "testimonials": [
+        {
+          "name": "Direttore di Stabilimento",
+          "location": "Milano · Reparto Automazione",
+          "quote": "Il revamping eseguito da Seventy Seven Srl ha stabilizzato la linea e ridotto i guasti elettrici fin dal primo mese di esercizio.",
+          "roleOrContext": "Automazione e revamping"
+        },
+        {
+          "name": "Responsabile Ingegneria di Processo",
+          "location": "Milano e provincia",
+          "quote": "Documentazione elettrica ordinata, rispetto rigoroso delle norme di sicurezza e disponibilita immediata in fase di collaudo.",
+          "roleOrContext": "Quadristica e bordomacchina"
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "Seventy Seven Srl - tempi di caricamento mobile e richieste preventivo di Seventy Seven Srl (6.8s)",
+    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di Seventy Seven Srl, da smartphone impiega 6.8 secondi ad aprirsi per 8 risorse bloccanti, frenando le richieste di preventivo.\n\nAbbiamo gia preparato una demo in Next.js per Seventy Seven Srl che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Seventy Seven Srl, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/seventyseven\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "Seventy Seven Srl - tempi di caricamento mobile e richieste preventivo di Seventy Seven Srl (6.8s)",
+      "body": "Buongiorno,\n\nda un test sul sito di Seventy Seven Srl, da smartphone impiega 6.8 secondi ad aprirsi per 8 risorse bloccanti, frenando le richieste di preventivo.\n\nAbbiamo gia preparato una demo in Next.js per Seventy Seven Srl che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: Seventy Seven Srl - tempi di caricamento mobile e richieste preventivo di Seventy Seven Srl (6.8s)",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Seventy Seven Srl, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/seventyseven\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: Seventy Seven Srl - tempi di caricamento mobile e richieste preventivo di Seventy Seven Srl (6.8s)",
+      "body": "Buongiorno,\n\nOltre a tagliare i 6.8 secondi su mobile, il sistema qualifica ogni preventivo prima di inviarlo al CRM.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza - TechPyre Studio",
+      "inThread": true,
+      "requiresFollowUpCall": true
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: Seventy Seven Srl - tempi di caricamento mobile e richieste preventivo di Seventy Seven Srl (6.8s)",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Seventy Seven Srl non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/seventyseven) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

@@ -1,0 +1,170 @@
+{
+  "slug": "ripamonti",
+  "archetype": "b2b-authority",
+  "meta": {
+    "companyName": "Ripamonti Dr. Gianni",
+    "decisionMakerName": "Direzione Ripamonti Dr. Gianni",
+    "decisionMakerFirstName": null,
+    "decisionMakerRole": "Direzione Aziendale",
+    "isGenericInbox": true,
+    "emailScore": 35,
+    "targetEmail": "info@ripamonti.net",
+    "phone": "+39 0323 838211",
+    "city": "Ornavasso",
+    "vatNumber": "00625230032",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Ripamonti%20Dr.%20Gianni",
+    "originalLandingUrl": "http://www.ripamonti.net",
+    "status": "CONTACTED_STEP_1",
+    "lastSentMessageId": "<1fb02376-40f3-383f-d3f3-1e15c92877a1@techpyre.eu>",
+    "threadMessageIds": [
+      "<1fb02376-40f3-383f-d3f3-1e15c92877a1@techpyre.eu>"
+    ]
+  },
+  "audit": {
+    "originalLcpSeconds": 5.5,
+    "mobileScore": 53,
+    "renderBlockingCount": 18,
+    "runsAds": false,
+    "detectedTrackingSignals": [],
+    "threeCriticalFlaws": [
+      "Perdita di richieste di preventivo su mobile: caricamento di 5.5s (18 risorse bloccanti) che spinge i visitatori da smartphone ad abbandonare la pagina prima di contattare l'ufficio commerciale.",
+      "Assenza di pre-qualifica automatica: il sito non filtra le richieste per tipologia di intervento, budget o tempistiche prima di inviarle ai referenti tecnici di Ripamonti Dr. Gianni.",
+      "Colli di bottiglia commerciali: le richieste arrivano come semplici email isolate senza instradamento automatico e senza tracciamento strutturato della trattativa."
+    ],
+    "activeAdHeadline": "Ripamonti Dr. Gianni: Impianti Industriali, Energia e Servizi Ambientali B2B a Ornavasso",
+    "activeAdCopySummary": "Soluzioni per la perforazione e la demolizione."
+  },
+  "theme": {
+    "primaryHex": "#d00020",
+    "accentHex": "#B8860B",
+    "darkBgHex": "#0B1E36",
+    "borderRadius": "8px",
+    "headerBgMode": "dark",
+    "headerBgHex": "#0E1013",
+    "logoBrightness": "light"
+  },
+  "content": {
+    "badgeTop": "Ripamonti Dr. Gianni · Servizi Tecnici e Infrastrutture B2B (Ornavasso)",
+    "heroHeadline": "Ripamonti Dr. Gianni: Impianti Industriali, Energia e Servizi Ambientali B2B a Ornavasso",
+    "heroSubheadline": "Soluzioni per la perforazione e la demolizione.",
+    "heroBullets": [
+      "Sopralluogo tecnico in stabilimento e piano operativo senza fermo attivita",
+      "Gestione completa pratiche autorizzative, certificazioni e conformita ambientale",
+      "Garanzie scritte su sicurezza, rendimento e assistenza post-intervento"
+    ],
+    "ctaButtonText": "Richiedi Studio di Fattibilita",
+    "trustMicrocopy": "Riservatezza industriale garantita (NDA) · Risposta tecnica entro la giornata lavorativa",
+    "logoLocalPath": "/leads/ripamonti/logo.png",
+    "heroImageLocalPath": "/leads/ripamonti/hero.jpg",
+    "heroImageCaption": "Ripamonti Dr. Gianni · Sede operativa e realizzazioni (Ornavasso)",
+    "quiz": {
+      "question1": {
+        "title": "Quale intervento tecnico per il vostro stabilimento state pianificando?",
+        "options": [
+          "Bonifiche ambientali, depurazione acque o gestione rifiuti industriali",
+          "Coperture industriali, impianti fotovoltaici aziendali o efficienza energetica",
+          "Sopralluogo tecnico in stabilimento, perizia e capitolato chiavi in mano"
+        ]
+      },
+      "question2": {
+        "title": "Qual e l'orizzonte temporale previsto per il progetto?",
+        "options": [
+          "Avvio operativo urgente (entro 30 giorni)",
+          "Pianificazione nel trimestre in corso",
+          "Valutazione tecnica e di budget preliminare"
+        ]
+      },
+      "finalStepTitle": "Specifiche registrate. Inserisci i riferimenti aziendali per il colloquio con l'Ufficio Tecnico:"
+    },
+    "valueProps": [
+      {
+        "title": "Perizia Tecnica e Piano Esecutivo Chiaro",
+        "description": "Analizziamo lo stato reale dell'impianto o della copertura a Ornavasso definendo costi, tempistiche e ritorni operativi prima del cantiere.",
+        "metric": "Progetto Chiuso"
+      },
+      {
+        "title": "Piena Conformita Normativa e Ambientale",
+        "description": "Ripamonti Dr. Gianni gestisce interventi complessi in sicurezza, rilasciando tutta la documentazione tecnica e le certificazioni richieste.",
+        "metric": "100% A Norma"
+      },
+      {
+        "title": "Manutenzione Programmata e Assistenza Diretta",
+        "description": "Un referente tecnico dedicato segue l'azienda dalla realizzazione fino ai controlli periodici e all'assistenza continua.",
+        "metric": "SLA Garantito"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "99.4%",
+      "mainStatLabel": "Commesse industriali chiuse in sicurezza e nei tempi concordati",
+      "reviewsSummary": "Partner tecnico specializzato per aziende e capannoni a Ornavasso",
+      "clientReferenceWall": [
+        "Conformita Sicurezza D.Lgs 81/08",
+        "Certificazioni Impianti e Ambiente",
+        "Qualita Certificata ISO 9001",
+        "Cantieri Senza Fermo Produzione",
+        "Assistenza Tecnica Diretta"
+      ],
+      "secondaryStats": [
+        {
+          "value": "99.4%",
+          "label": "Interventi eseguiti nel rispetto delle scadenze di cantiere"
+        },
+        {
+          "value": "< 0.4s",
+          "label": "Accesso rapido a perizie e richieste tecniche su mobile"
+        },
+        {
+          "value": "24h",
+          "label": "Pianificazione sopralluogo tecnico in stabilimento"
+        }
+      ],
+      "testimonials": [
+        {
+          "name": "Direzione Tecnica e HSE",
+          "location": "Ornavasso · Stabilimento Produttivo",
+          "quote": "Cantiere organizzato in modo impeccabile da Ripamonti Dr. Gianni: lavorazioni svolte senza fermare la nostra produzione e documentazione esemplare.",
+          "roleOrContext": "Intervento in stabilimento"
+        },
+        {
+          "name": "Amministrazione e Impianti",
+          "location": "Ornavasso e provincia",
+          "quote": "Preventivo dettagliato senza voci impreviste e supporto prezioso su tutta la parte autorizzativa.",
+          "roleOrContext": "Servizio chiavi in mano"
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "Ripamonti Dr. Gianni - tempi di caricamento mobile e richieste preventivo di Ripamonti Dr. Gianni (5.5s)",
+    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di Ripamonti Dr. Gianni, da smartphone impiega 5.5 secondi ad aprirsi per 18 risorse bloccanti, frenando le richieste di preventivo.\n\nAbbiamo gia preparato una demo in Next.js per Ripamonti Dr. Gianni che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nTechPyre Studio",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Ripamonti Dr. Gianni, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/ripamonti\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nTechPyre Studio",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "Ripamonti Dr. Gianni - tempi di caricamento mobile e richieste preventivo di Ripamonti Dr. Gianni (5.5s)",
+      "body": "Buongiorno,\n\nda un test sul sito di Ripamonti Dr. Gianni, da smartphone impiega 5.5 secondi ad aprirsi per 18 risorse bloccanti, frenando le richieste di preventivo.\n\nAbbiamo gia preparato una demo in Next.js per Ripamonti Dr. Gianni che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nTechPyre Studio",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: Ripamonti Dr. Gianni - tempi di caricamento mobile e richieste preventivo di Ripamonti Dr. Gianni (5.5s)",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Ripamonti Dr. Gianni, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/ripamonti\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nTechPyre Studio",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: Ripamonti Dr. Gianni - tempi di caricamento mobile e richieste preventivo di Ripamonti Dr. Gianni (5.5s)",
+      "body": "Buongiorno,\n\nOltre a tagliare i 5.5 secondi su mobile, il sistema qualifica ogni preventivo prima di inviarlo al CRM.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nTechPyre Studio",
+      "inThread": true,
+      "requiresFollowUpCall": true
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: Ripamonti Dr. Gianni - tempi di caricamento mobile e richieste preventivo di Ripamonti Dr. Gianni (5.5s)",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Ripamonti Dr. Gianni non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/ripamonti) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nTechPyre Studio",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

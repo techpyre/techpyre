@@ -1,0 +1,172 @@
+{
+  "slug": "plastorgomma",
+  "archetype": "b2b-authority",
+  "meta": {
+    "companyName": "Plastorgomma Service",
+    "decisionMakerName": "Direzione Plastorgomma Service",
+    "targetEmail": "info@plastorgomma.com",
+    "phone": "+39 0522 626361",
+    "city": "Rubiera",
+    "vatNumber": "01806940357",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Plastorgomma%20Service",
+    "originalLandingUrl": "http://www.plastorgomma.com",
+    "isGenericInbox": true,
+    "emailScore": 35,
+    "decisionMakerFirstName": null,
+    "decisionMakerRole": "Direzione Aziendale",
+    "lastSentMessageId": "<3806fb6e-88e8-6e8f-24da-c1eaeef72200@techpyre.eu>",
+    "threadMessageIds": [
+      "<742a79a4-743c-571e-6f44-98f33464608b@techpyre.eu>",
+      "<3806fb6e-88e8-6e8f-24da-c1eaeef72200@techpyre.eu>"
+    ],
+    "status": "CONTACTED_STEP_2"
+  },
+  "audit": {
+    "originalLcpSeconds": 8.8,
+    "mobileScore": 25,
+    "threeCriticalFlaws": [
+      "Dispersione del budget pubblicitario: caricamento mobile di 8.8s (35 risorse bloccanti) che fa abbandonare oltre meta degli utenti prima dell'apertura della pagina.",
+      "Cecita decisionale sul ROI: assenza di tracciamento Server-Side di prima parte (GTM Server-Side e Meta CAPI), con perdita del 30-50% dei dati di conversione per blocchi browser e cookie banner.",
+      "Colli di bottiglia commerciali: i contatti finiscono in email isolate senza pre-qualifica automatica e senza sincronizzazione immediata via API/Webhook con il CRM aziendale."
+    ],
+    "activeAdHeadline": "Plastorgomma Service - Dal 1969 Forniture Tecniche Industriali",
+    "activeAdCopySummary": "Forniture Tecniche Industriali e Ricambi per l'industria Ceramica dal 1969. Entra e scopri prodotti e servizi",
+    "runsAds": true,
+    "detectedTrackingSignals": [
+      "Meta Ad Library"
+    ],
+    "renderBlockingCount": 8
+  },
+  "theme": {
+    "primaryHex": "#e00010",
+    "accentHex": "#B8860B",
+    "darkBgHex": "#0B1E36",
+    "borderRadius": "8px",
+    "headerBgMode": "light",
+    "logoBrightness": "light"
+  },
+  "content": {
+    "badgeTop": "Plastorgomma Service · Divisione Oleodinamica e Fluidi (Rubiera)",
+    "heroHeadline": "Plastorgomma Service - Dal 1969 Forniture Tecniche Industriali",
+    "heroSubheadline": "Forniture Tecniche Industriali e Ricambi per l'industria Ceramica dal 1969. Entra e scopri prodotti e servizi",
+    "heroBullets": [
+      "Progettazione centraline, cilindri e circuiti fluidodinamici su specifica",
+      "Magazzino ricambi, tenute e raccordi per ridurre al minimo i fermi impianto",
+      "Collaudo in pressione certificato e assistenza tecnica diretta in stabilimento"
+    ],
+    "ctaButtonText": "Richiedi Studio di Fattibilita",
+    "trustMicrocopy": "Riservatezza industriale garantita (NDA) · Risposta tecnica entro la giornata lavorativa",
+    "logoLocalPath": "/leads/plastorgomma/logo.png",
+    "heroImageLocalPath": "/leads/plastorgomma/hero.jpg",
+    "heroImageCaption": "Plastorgomma Service · Sede operativa e realizzazioni (Rubiera)",
+    "quiz": {
+      "question1": {
+        "title": "Quale sistema o componentistica fluidodinamica desiderate approfondire?",
+        "options": [
+          "Centraline oleodinamiche, cilindri o gruppi valvole su specifica",
+          "Tenute industriali, guarnizioni tecniche, compressori o ricambistica",
+          "Revisione impianti esistenti e continuità di fornitura OEM"
+        ]
+      },
+      "question2": {
+        "title": "Qual e l'orizzonte temporale previsto per il progetto?",
+        "options": [
+          "Avvio operativo urgente (entro 30 giorni)",
+          "Pianificazione nel trimestre in corso",
+          "Valutazione tecnica e di budget preliminare"
+        ]
+      },
+      "finalStepTitle": "Specifiche registrate. Inserisci i riferimenti aziendali per il colloquio con l'Ufficio Tecnico:"
+    },
+    "valueProps": [
+      {
+        "title": "Dimensionamento e Progettazione Fluidodinamica",
+        "description": "Definiamo portate, pressioni di esercizio e cicli di lavoro insieme ai vostri progettisti a Rubiera, ottimizzando efficienza e sicurezza dell'impianto.",
+        "metric": "Collaudo Certificato"
+      },
+      {
+        "title": "Ricambistica Tecnica e Tenute ad Alte Prestazioni",
+        "description": "Forniamo guarnizioni, valvole e componentistica selezionata per resistere a carichi gravosi, alte temperature e cicli continui.",
+        "metric": "Zero Fermi Linea"
+      },
+      {
+        "title": "Service Rapido e Manutenzione Programmata",
+        "description": "Supporto tecnico tempestivo per revisioni, sostituzioni e adeguamenti normativi direttamente presso il vostro reparto produttivo.",
+        "metric": "SLA Dedicato"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "99.4%",
+      "mainStatLabel": "Affidabilita certificata su centraline, tenute e ricambi industriali",
+      "reviewsSummary": "Fornitore tecnico per impianti e costruttori di macchine a Rubiera",
+      "clientReferenceWall": [
+        "Collaudo a Banco in Pressione",
+        "Direttiva Macchine 2006/42/CE",
+        "Qualita Certificata ISO 9001",
+        "Ricambistica e Tenute OEM",
+        "Assistenza Tecnica Impianti"
+      ],
+      "secondaryStats": [
+        {
+          "value": "99.4%",
+          "label": "Sistemi collaudati e conformi alle pressioni di progetto"
+        },
+        {
+          "value": "< 0.4s",
+          "label": "Accesso istantaneo alle richieste tecniche anche da reparto"
+        },
+        {
+          "value": "24h",
+          "label": "Presa in carico ricambi e preventivazione tecnica B2B"
+        }
+      ],
+      "testimonials": [
+        {
+          "name": "Responsabile Manutenzione Stabilimento",
+          "location": "Rubiera · Impianti Industriali",
+          "quote": "Con Plastorgomma Service abbiamo ridotto drasticamente i fermi linea: competenza reale nella diagnosi e disponibilita rapida della componentistica critica.",
+          "roleOrContext": "Service e fornitura oleodinamica"
+        },
+        {
+          "name": "Ufficio Tecnico Costruttore Macchine",
+          "location": "Rubiera e provincia",
+          "quote": "Partner preciso dal dimensionamento al collaudo finale: documentazione chiara e forniture puntuali su ogni serie di macchine.",
+          "roleOrContext": "Fornitura OEM"
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "Plastorgomma Service - dispersione clic mobile e tempi di caricamento di Plastorgomma Service (8.8s)",
+    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di Plastorgomma Service, da smartphone impiega 8.8 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Plastorgomma Service che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Plastorgomma Service, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/plastorgomma\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "Plastorgomma Service - dispersione clic mobile e tempi di caricamento di Plastorgomma Service (8.8s)",
+      "body": "Buongiorno,\n\nda un test sul sito di Plastorgomma Service, da smartphone impiega 8.8 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Plastorgomma Service che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: Plastorgomma Service - dispersione clic mobile e tempi di caricamento di Plastorgomma Service (8.8s)",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Plastorgomma Service, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/plastorgomma\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: Plastorgomma Service - dispersione clic mobile e tempi di caricamento di Plastorgomma Service (8.8s)",
+      "body": "Buongiorno,\n\nOltre a tagliare i 8.8 secondi su mobile, l'infrastruttura recupera il 40% delle conversioni tramite Server-Side Tracking.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza - TechPyre Studio",
+      "inThread": true,
+      "requiresFollowUpCall": true
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: Plastorgomma Service - dispersione clic mobile e tempi di caricamento di Plastorgomma Service (8.8s)",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Plastorgomma Service non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/plastorgomma) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

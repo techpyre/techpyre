@@ -1,0 +1,164 @@
+{
+  "slug": "giovannaperona",
+  "archetype": "medical-clinic",
+  "meta": {
+    "companyName": "Giovanna Perona",
+    "decisionMakerName": "Direzione Giovanna Perona",
+    "targetEmail": "info@giovannaperona.it",
+    "phone": "+390456801521",
+    "city": "Verona",
+    "vatNumber": "02557700230",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&media_type=all&q=studio%20dentistico%20verona&search_type=keyword_unordered",
+    "originalLandingUrl": "https://www.giovannaperona.it/dentista-san-pietro-in-cariano/",
+    "isGenericInbox": true,
+    "emailScore": 35,
+    "decisionMakerFirstName": null,
+    "decisionMakerRole": "Direzione Aziendale",
+    "lastSentMessageId": "<11ce8009-419b-4a3f-2c4c-8ed17f9ba7c6@techpyre.eu>",
+    "threadMessageIds": [
+      "<447a7f95-2d64-4f73-835f-9d4abfb7b620@techpyre.eu>",
+      "<11ce8009-419b-4a3f-2c4c-8ed17f9ba7c6@techpyre.eu>"
+    ],
+    "status": "CONTACTED_STEP_2"
+  },
+  "audit": {
+    "originalLcpSeconds": 14.8,
+    "mobileScore": 14,
+    "activeAdHeadline": "Giovanna Perona",
+    "activeAdCopySummary": "Campagna pubblicitaria attiva su Meta per il territorio di Verona e provincia.",
+    "threeCriticalFlaws": [
+      "Il sito attuale impiega 14.8 secondi ad aprirsi su rete mobile 4G per via di 20 risorse bloccanti.",
+      "La pagina disperde i visitatori con link di navigazione esterni senza guidarli a una richiesta rapida.",
+      "Manca un modulo rapido guidato a due domande per quantificare le esigenze del cliente in tempo reale."
+    ],
+    "runsAds": true,
+    "detectedTrackingSignals": [
+      "Meta Pixel"
+    ],
+    "renderBlockingCount": 8
+  },
+  "theme": {
+    "primaryHex": "#0284c7",
+    "accentHex": "#0ea5e9",
+    "darkBgHex": "#0F1113",
+    "borderRadius": "8px",
+    "headerBgMode": "light",
+    "headerBgHex": "#FAF8F5",
+    "logoBrightness": "dark"
+  },
+  "content": {
+    "badgeTop": "Giovanna Perona · Studio Odontoiatrico (Verona)",
+    "heroHeadline": "Studio Odontoiatrico & Cure Dentali a Verona",
+    "heroSubheadline": "Trattamenti dentali all'avanguardia con prima visita diagnostica e piano di cura dedicato a Verona.",
+    "heroBullets": [
+      "Prima visita approfondita con inquadramento diagnostico chiaro e trasparente",
+      "Protocolli sterili certificati e attenzione prioritaria al comfort senza dolore",
+      "Piano di cure dettagliato, tempi certi e pagamenti dilazionabili"
+    ],
+    "ctaButtonText": "Richiedi Disponibilita Visita",
+    "trustMicrocopy": "Richiesta riservata e senza impegno · Conferma rapida dalla segreteria",
+    "logoLocalPath": "/leads/giovannaperona/logo.png",
+    "heroImageLocalPath": "/leads/giovannaperona/hero.jpg",
+    "heroImageCaption": "Giovanna Perona · Sede operativa e realizzazioni (Verona)",
+    "quiz": {
+      "question1": {
+        "title": "Per quale esigenza clinica desideri richiedere una valutazione?",
+        "options": [
+          "Prima visita specialistica e piano di cura personalizzato",
+          "Implantologia o riabilitazione estetica/funzionale",
+          "Igiene dentale, prevenzione o controllo periodico"
+        ]
+      },
+      "question2": {
+        "title": "Quale fascia oraria preferisci per l'appuntamento?",
+        "options": [
+          "Mattina (09:00 - 13:00)",
+          "Pomeriggio (14:00 - 19:00)",
+          "Primo orario disponibile in settimana"
+        ]
+      },
+      "finalStepTitle": "Perfetto. Lascia un recapito per ricevere conferma di disponibilita dalla segreteria:"
+    },
+    "valueProps": [
+      {
+        "title": "Diagnostica Digitale e Piano Chiaro",
+        "description": "Spieghiamo ogni fase terapeutica con linguaggio semplice e preventivi chiari prima di iniziare qualsiasi trattamento a Verona.",
+        "metric": "Trasparenza Totale"
+      },
+      {
+        "title": "Approccio Mini-Invasivo e Comfort",
+        "description": "Tecniche moderne orientate a ridurre ansia, fastidi e tempi di recupero anche nei casi implantari complessi.",
+        "metric": "Cura Delicata"
+      },
+      {
+        "title": "Igiene Certificata e Continuità Clinica",
+        "description": "Protocolli di sterilizzazione tracciati e richiami periodici programmati per proteggere la salute nel lungo periodo.",
+        "metric": "Standard Alti"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "98%",
+      "mainStatLabel": "Pazienti che tornano per i controlli periodici annuali",
+      "reviewsSummary": "4.9/5 dalle recensioni verificate dei pazienti a Verona",
+      "testimonials": [
+        {
+          "name": "Francesca V.",
+          "location": "Verona",
+          "quote": "Ambiente sereno e pulitissimo. Mi hanno spiegato tutto con calma prima della visita, togliendomi ogni timore.",
+          "roleOrContext": "Paziente in cura"
+        },
+        {
+          "name": "Alessandro D.",
+          "location": "Verona e provincia",
+          "quote": "Grande professionalita dell'equipe di Giovanna Perona: puntualita sugli orari e zero dolore durante il trattamento.",
+          "roleOrContext": "Implantologia e igiene"
+        }
+      ]
+    },
+    "medicalDetails": {
+      "directorName": "Direzione Sanitaria Giovanna Perona",
+      "alboRegistration": "Struttura autorizzata · Ordine Provinciale di Verona",
+      "specialization": "Odontoiatria, Implantologia e Cura del Sorriso",
+      "clinicAddress": "Sede operativa: Verona",
+      "openingHours": "Lun - Ven · 09:00 - 19:00",
+      "parkingAndAccess": "Accesso privo di barriere e parcheggio comodo",
+      "conventions": [
+        "Principali Fondi Sanitari",
+        "Piani di cura personalizzati"
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "Giovanna Perona - dispersione clic mobile e tempi di caricamento di Giovanna Perona (14.8s)",
+    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di Giovanna Perona, da smartphone impiega 14.8 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Giovanna Perona che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Giovanna Perona, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/giovannaperona\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "Giovanna Perona - dispersione clic mobile e tempi di caricamento di Giovanna Perona (14.8s)",
+      "body": "Buongiorno,\n\nda un test sul sito di Giovanna Perona, da smartphone impiega 14.8 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Giovanna Perona che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: Giovanna Perona - dispersione clic mobile e tempi di caricamento di Giovanna Perona (14.8s)",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Giovanna Perona, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/giovannaperona\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: Giovanna Perona - dispersione clic mobile e tempi di caricamento di Giovanna Perona (14.8s)",
+      "body": "Buongiorno,\n\nOltre a tagliare i 14.8 secondi su mobile, l'infrastruttura recupera il 40% delle conversioni tramite Server-Side Tracking.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza - TechPyre Studio",
+      "inThread": true,
+      "requiresFollowUpCall": true
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: Giovanna Perona - dispersione clic mobile e tempi di caricamento di Giovanna Perona (14.8s)",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Giovanna Perona non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/giovannaperona) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

@@ -1,0 +1,151 @@
+{
+  "slug": "cariup",
+  "archetype": "local-leadgen",
+  "meta": {
+    "companyName": "Cariup",
+    "decisionMakerName": "Direzione Cariup",
+    "targetEmail": "info@cariup.it",
+    "phone": "+39 349 0386119",
+    "city": "Brescia",
+    "vatNumber": "04559010162",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&media_type=all&q=fotovoltaico%20brescia&search_type=keyword_unordered",
+    "originalLandingUrl": "https://metodo.cariup.it/",
+    "isGenericInbox": true,
+    "emailScore": 5,
+    "decisionMakerFirstName": null,
+    "decisionMakerRole": "Direzione Aziendale",
+    "lastSentMessageId": "<68b2fbc7-64d5-53a4-abb2-bcd37fd55642@techpyre.eu>",
+    "threadMessageIds": [
+      "<89be622d-751b-15d1-ed10-591b26469466@techpyre.eu>",
+      "<68b2fbc7-64d5-53a4-abb2-bcd37fd55642@techpyre.eu>"
+    ],
+    "status": "CONTACTED_STEP_2"
+  },
+  "audit": {
+    "originalLcpSeconds": 5.3,
+    "mobileScore": 60,
+    "threeCriticalFlaws": [
+      "Il sito impiega 5.3 secondi a caricare su rete mobile per via di 7 script bloccanti (punteggio velocità mobile 60/100).",
+      "Per trovare il modulo di contatto da smartphone un utente deve scorrere verso il basso per 9.1 schermate (oltre 7710 pixel).",
+      "Un banner cookie o popup copre circa il 56% dello schermo mobile all arrivo."
+    ],
+    "activeAdHeadline": "Cariup: Specialisti Impianti Fotovoltaici",
+    "activeAdCopySummary": "Dal 2009 trasformiamo l'energia in valore per aziende e abitazioni. Operiamo tra Brescia, Bergamo e Monza Brianza con soluzioni su misura e ...",
+    "runsAds": true,
+    "detectedTrackingSignals": [
+      "Meta Pixel"
+    ],
+    "renderBlockingCount": 8
+  },
+  "theme": {
+    "primaryHex": "#f0c000",
+    "accentHex": "#2563EB",
+    "darkBgHex": "#0B1E36",
+    "borderRadius": "12px",
+    "headerBgMode": "light",
+    "logoBrightness": "dark"
+  },
+  "content": {
+    "badgeTop": "Cariup · Energia e Comfort Termico (Brescia)",
+    "heroHeadline": "Cariup: Specialisti Impianti Fotovoltaici",
+    "heroSubheadline": "Dal 2009 trasformiamo l'energia in valore per aziende e abitazioni. Operiamo tra Brescia, Bergamo e Monza Brianza con soluzioni su misura e servizio completo.",
+    "heroBullets": [
+      "Analisi consumi in bolletta e dimensionamento reale senza sovrastime",
+      "Installazione certificata con tecnici interni abilitati F-Gas / FER",
+      "Gestione completa pratiche di allaccio, ENEA e incentivi fiscali"
+    ],
+    "ctaButtonText": "Calcola il Tuo Preventivo Rapido",
+    "trustMicrocopy": "Richiesta gratuita e senza impegno · Risposta rapida dal nostro ufficio tecnico",
+    "logoLocalPath": "/leads/cariup/logo.png",
+    "heroImageLocalPath": "/leads/cariup/hero.jpg",
+    "heroImageCaption": "Cariup · Sede operativa e realizzazioni (Brescia)",
+    "quiz": {
+      "question1": {
+        "title": "Quale impianto desideri installare o sostituire?",
+        "options": [
+          "Impianto fotovoltaico con eventuale sistema di accumulo",
+          "Climatizzatori, pompa di calore o caldaia ad alta efficienza",
+          "Riqualificazione energetica completa dell'abitazione"
+        ]
+      },
+      "question2": {
+        "title": "Qual e il tuo obiettivo principale?",
+        "options": [
+          "Abbattere subito i costi in bolletta",
+          "Accesso agli incentivi e detrazioni fiscali attive",
+          "Sostituzione urgente con sopralluogo tecnico rapido"
+        ]
+      },
+      "finalStepTitle": "Perfetto. Lascia i tuoi dati per ricevere la simulazione tecnica e il preventivo dedicato:"
+    },
+    "valueProps": [
+      {
+        "title": "Dimensionamento Sui Tuoi Consumi Reali",
+        "description": "Calcoliamo potenza, accumulo o taglia della pompa di calore per offrirti il miglior rientro economico possibile a Brescia.",
+        "metric": "Resa Massima"
+      },
+      {
+        "title": "Installazione Certificata e Sicura",
+        "description": "I tecnici di Cariup eseguono il lavoro a regola d'arte rilasciando tutte le dichiarazioni di conformita.",
+        "metric": "100% A Norma"
+      },
+      {
+        "title": "Assistenza e Pratiche Chiavi in Mano",
+        "description": "Seguiamo noi iter autorizzativi, pratiche incentivi e manutenzione programmata post-installazione.",
+        "metric": "Zero Pensieri"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "98%",
+      "mainStatLabel": "Clienti soddisfatti del risparmio energetico ottenuto",
+      "reviewsSummary": "4.9/5 da clienti residenziali a Brescia",
+      "testimonials": [
+        {
+          "name": "Simone G.",
+          "location": "Brescia",
+          "quote": "Impianto dimensione perfetta per i nostri consumi. Cariup ha gestito installazione e pratiche in tempi record.",
+          "roleOrContext": "Fotovoltaico con accumulo"
+        },
+        {
+          "name": "Elena P.",
+          "location": "Brescia e provincia",
+          "quote": "Tecnici puliti e precisi nel montaggio del nuovo impianto di climatizzazione. Preventivo chiaro fin dal primo giorno.",
+          "roleOrContext": "Pompa di calore e clima"
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "Cariup - dispersione clic mobile e tempi di caricamento di Cariup (5.3s)",
+    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di Cariup, da smartphone impiega 5.3 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Cariup che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Cariup, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/cariup\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "Cariup - dispersione clic mobile e tempi di caricamento di Cariup (5.3s)",
+      "body": "Buongiorno,\n\nda un test sul sito di Cariup, da smartphone impiega 5.3 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Cariup che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: Cariup - dispersione clic mobile e tempi di caricamento di Cariup (5.3s)",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Cariup, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/cariup\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: Cariup - dispersione clic mobile e tempi di caricamento di Cariup (5.3s)",
+      "body": "Buongiorno,\n\nOltre a tagliare i 5.3 secondi su mobile, l'infrastruttura recupera il 40% delle conversioni tramite Server-Side Tracking.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza - TechPyre Studio",
+      "inThread": true,
+      "requiresFollowUpCall": true
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: Cariup - dispersione clic mobile e tempi di caricamento di Cariup (5.3s)",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Cariup non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/cariup) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

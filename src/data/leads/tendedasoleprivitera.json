@@ -1,0 +1,151 @@
+{
+  "slug": "tendedasoleprivitera",
+  "archetype": "local-leadgen",
+  "meta": {
+    "companyName": "Tende da Sole F.lli Privitera",
+    "decisionMakerName": "Direzione Tende da Sole F.lli Privitera",
+    "targetEmail": "fratelliprivitera@libero.it",
+    "phone": "+39 095 354967",
+    "city": "Catania",
+    "vatNumber": "04428210878",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Tende%20da%20Sole%20F.lli%20Privitera",
+    "originalLandingUrl": "https://www.tendedasoleprivitera.it",
+    "isGenericInbox": true,
+    "emailScore": -2,
+    "decisionMakerFirstName": null,
+    "decisionMakerRole": "Direzione Aziendale",
+    "lastSentMessageId": "<a10d3b77-6a0a-5702-3c90-b9fd0ec42fca@techpyre.eu>",
+    "threadMessageIds": [
+      "<a59e026e-5bf7-a3c5-af0f-84b5c4b18b4a@techpyre.eu>",
+      "<a10d3b77-6a0a-5702-3c90-b9fd0ec42fca@techpyre.eu>"
+    ],
+    "status": "CONTACTED_STEP_2"
+  },
+  "audit": {
+    "originalLcpSeconds": 3,
+    "mobileScore": 75,
+    "threeCriticalFlaws": [
+      "Dispersione del budget pubblicitario: caricamento mobile di 3s (8 risorse bloccanti) che fa abbandonare oltre meta degli utenti prima dell'apertura della pagina.",
+      "Cecita decisionale sul ROI: assenza di tracciamento Server-Side di prima parte (GTM Server-Side e Meta CAPI), con perdita del 30-50% dei dati di conversione per blocchi browser e cookie banner.",
+      "Colli di bottiglia commerciali: i contatti finiscono in email isolate senza pre-qualifica automatica e senza sincronizzazione immediata via API/Webhook con il CRM aziendale."
+    ],
+    "activeAdHeadline": "Realizzazione e commercializzazione tende da sole e coperture a Catania",
+    "activeAdCopySummary": "Tende Da Sole F.lli Privitera di Catania si occupa della realizzazione e commercializzazione di tende da sole e coperture. Scoprite di più.",
+    "runsAds": true,
+    "detectedTrackingSignals": [
+      "Meta Ad Library"
+    ],
+    "renderBlockingCount": 8
+  },
+  "theme": {
+    "primaryHex": "#f0c090",
+    "accentHex": "#2563EB",
+    "darkBgHex": "#0B1E36",
+    "borderRadius": "12px",
+    "headerBgMode": "light",
+    "logoBrightness": "dark"
+  },
+  "content": {
+    "badgeTop": "Tende da Sole F.lli Privitera · Serramenti Certificati a Catania",
+    "heroHeadline": "Realizzazione e commercializzazione tende da sole e coperture a Catania",
+    "heroSubheadline": "Tende Da Sole F.lli Privitera di Catania si occupa della realizzazione e commercializzazione di tende da sole e coperture. Scoprite di più.",
+    "heroBullets": [
+      "Rilievo misure preciso a domicilio e preventivo trasparente chiavi in mano",
+      "Profili ad alto isolamento termico e acustico per abbattere i consumi",
+      "Posa certificata con squadre interne e assistenza post-vendita diretta"
+    ],
+    "ctaButtonText": "Calcola il Tuo Preventivo Rapido",
+    "trustMicrocopy": "Richiesta gratuita e senza impegno · Risposta rapida dal nostro ufficio tecnico",
+    "logoLocalPath": "/leads/tendedasoleprivitera/logo.png",
+    "heroImageLocalPath": "/leads/tendedasoleprivitera/hero.jpg",
+    "heroImageCaption": "Tende da Sole F.lli Privitera · Sede operativa e realizzazioni (Catania)",
+    "quiz": {
+      "question1": {
+        "title": "Quale tipologia di intervento desideri valutare?",
+        "options": [
+          "Sostituzione infissi con isolamento termico/acustico",
+          "Nuova installazione per ristrutturazione o cantiere",
+          "Porte interne, blindati o sistemi oscuranti"
+        ]
+      },
+      "question2": {
+        "title": "Quanti serramenti prevede indicativamente il progetto?",
+        "options": [
+          "Da 1 a 4 serramenti",
+          "Da 5 a 8 serramenti (appartamento completo)",
+          "Oltre 8 serramenti o villa/ufficio"
+        ]
+      },
+      "finalStepTitle": "Ottimo. Inserisci i tuoi recapiti per ricevere il prospetto economico e il sopralluogo:"
+    },
+    "valueProps": [
+      {
+        "title": "Isolamento Termico e Acustico Certificato",
+        "description": "Serramenti selezionati per eliminare spifferi, umidita e rumori esterni nella tua abitazione o ufficio a Catania.",
+        "metric": "Risparmio Energetico"
+      },
+      {
+        "title": "Posa in Opera Qualificata Senza Sorprese",
+        "description": "Squadre di montaggio esperte di Tende da Sole F.lli Privitera curano controtelai, sigillature e finiture senza opere murarie invasive.",
+        "metric": "Posa Certificata"
+      },
+      {
+        "title": "Preventivo Chiaro e Supporto Pratiche Bonus",
+        "description": "Costi chiari fin dal primo incontro e assistenza completa su certificazioni energetiche ed ecobonus.",
+        "metric": "Prezzo Bloccato"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "98%",
+      "mainStatLabel": "Clienti soddisfatti di posa in opera e isolamento termico",
+      "reviewsSummary": "4.9/5 da clienti seguiti a Catania e provincia",
+      "testimonials": [
+        {
+          "name": "Davide C.",
+          "location": "Catania",
+          "quote": "Team di Tende da Sole F.lli Privitera preciso dal rilievo al montaggio. La differenza termica e acustica in casa si sente subito.",
+          "roleOrContext": "Sostituzione infissi completi"
+        },
+        {
+          "name": "Federica S.",
+          "location": "Catania e provincia",
+          "quote": "Preventivo rispettato al centesimo, cantiere lasciato pulito ogni sera e grande supporto sulle pratiche fiscali.",
+          "roleOrContext": "Finestre e portoncino blindato"
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "Tende da Sole F.lli Privitera - dispersione clic mobile e tempi di caricamento di Tende da Sole F.lli Privitera (3s)",
+    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di Tende da Sole F.lli Privitera, da smartphone impiega 3 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Tende da Sole F.lli Privitera che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Tende da Sole F.lli Privitera, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/tendedasoleprivitera\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "Tende da Sole F.lli Privitera - dispersione clic mobile e tempi di caricamento di Tende da Sole F.lli Privitera (3s)",
+      "body": "Buongiorno,\n\nda un test sul sito di Tende da Sole F.lli Privitera, da smartphone impiega 3 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Tende da Sole F.lli Privitera che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: Tende da Sole F.lli Privitera - dispersione clic mobile e tempi di caricamento di Tende da Sole F.lli Privitera (3s)",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Tende da Sole F.lli Privitera, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/tendedasoleprivitera\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: Tende da Sole F.lli Privitera - dispersione clic mobile e tempi di caricamento di Tende da Sole F.lli Privitera (3s)",
+      "body": "Buongiorno,\n\nOltre a tagliare i 3 secondi su mobile, l'infrastruttura recupera il 40% delle conversioni tramite Server-Side Tracking.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza - TechPyre Studio",
+      "inThread": true,
+      "requiresFollowUpCall": true
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: Tende da Sole F.lli Privitera - dispersione clic mobile e tempi di caricamento di Tende da Sole F.lli Privitera (3s)",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Tende da Sole F.lli Privitera non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/tendedasoleprivitera) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

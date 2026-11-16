@@ -1,0 +1,154 @@
+{
+  "slug": "ecorestaurosrl",
+  "archetype": "local-leadgen",
+  "meta": {
+    "companyName": "Ecorestauro S.r.l.",
+    "decisionMakerName": "Direzione Ecorestauro S.r.l.",
+    "targetEmail": "preventivi@ecorestaurosrl.it",
+    "phone": "+39 051 982980",
+    "city": "Bologna e Provincia",
+    "vatNumber": "02960911200",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=serramenti%20infissi",
+    "originalLandingUrl": "https://www.ecorestaurosrl.com/optin-vetro-termico",
+    "isGenericInbox": true,
+    "emailScore": 15,
+    "decisionMakerFirstName": null,
+    "decisionMakerRole": "Direzione Aziendale",
+    "lastSentMessageId": "<51b001e4-f8cf-ceb1-1755-9f87fe56200a@techpyre.eu>",
+    "threadMessageIds": [
+      "<0bf63980-f74d-46a2-54da-ebb76a6783eb@techpyre.eu>",
+      "<51b001e4-f8cf-ceb1-1755-9f87fe56200a@techpyre.eu>"
+    ],
+    "status": "BLACKLISTED",
+    "notes": "Ha risposto il 30/10 Elena specificando di non essere interessata."
+  },
+  "audit": {
+    "originalLcpSeconds": 4.3,
+    "mobileScore": 38,
+    "activeAdHeadline": "Le Tue Finestre Sono Vecchie? Restaurale e Installa il Nuovo Vetro Termico Risparmiando fino al 30%",
+    "activeAdCopySummary": "Non sempre serve sostituire gli infissi: rigeneriamo le tue finestre in legno a livello estetico e installiamo il nuovo vetro termico senza creare l'effetto sottovuoto e muffa.",
+    "threeCriticalFlaws": [
+      "Su smartphone i titoli principali e il bottone arancione 'Accedi ORA' escono fuori dal margine destro dello schermo.",
+      "Tempo di caricamento su rete mobile di 4.3 secondi a causa di immagini non compresse.",
+      "La pagina costringe a leggere un testo molto lungo prima di poter richiedere una valutazione tecnica o il buono sconto."
+    ],
+    "runsAds": true,
+    "detectedTrackingSignals": [
+      "Meta Pixel"
+    ],
+    "renderBlockingCount": 8
+  },
+  "theme": {
+    "primaryHex": "#602060",
+    "accentHex": "#e06080",
+    "darkBgHex": "#0F1113",
+    "borderRadius": "8px",
+    "secondaryHex": "#e06020",
+    "headerBgMode": "light",
+    "logoBrightness": "dark",
+    "headerBgHex": "#FFFFFF"
+  },
+  "content": {
+    "badgeTop": "Il Centro Benessere del Legno · Vetro Termico e Restauro Infissi",
+    "heroHeadline": "Rigenera le Tue Finestre in Legno con il Nuovo Vetro Termico Senza Sostituirle",
+    "heroSubheadline": "Risparmia fino al 30% di energia ed evita il rischio di muffa e condensa causato dagli infissi ermetici in plastica. Scopri in 30 secondi se le tue finestre possono essere restaurate.",
+    "heroBullets": [
+      "Installazione di vetro termico isolante sui tuoi telai in legno esistenti",
+      "Riverniciatura completa o cambio colore (anche bicolore interno/esterno)",
+      "Zero opere murarie e coupon sconto del 10% riservato online"
+    ],
+    "ctaButtonText": "Richiedi Valutazione e Coupon Sconto 10%",
+    "trustMicrocopy": "Valutazione senza impegno · Dati protetti GDPR · Ecorestauro S.r.l.",
+    "logoLocalPath": "/leads/ecorestaurosrl/logo.png",
+    "heroImageLocalPath": "/leads/ecorestaurosrl/hero.jpg",
+    "heroImageCaption": "Intervento di riqualificazione energetica e restauro su finestre in legno - Ecorestauro S.r.l.",
+    "quiz": {
+      "question1": {
+        "title": "Qual è il problema principale delle tue finestre attuali?",
+        "options": [
+          "Entra freddo / spifferi e hanno ancora il vetro singolo o vecchio",
+          "La vernice esterna è rovinata o vorrei cambiare il colore",
+          "Entrambi: voglio isolarle termicamente e rimetterle a nuovo"
+        ]
+      },
+      "question2": {
+        "title": "Su quante finestre o portefinestre vorresti intervenire?",
+        "options": [
+          "Fino a 4 finestre",
+          "Da 5 a 8 finestre",
+          "Oltre 8 finestre"
+        ]
+      },
+      "finalStepTitle": "Dove possiamo inviarti la valutazione tecnica e il coupon sconto del 10%?"
+    },
+    "valueProps": [
+      {
+        "title": "Nuovo Vetro Termico Senza Effetto 'Sottovuoto' e Muffa",
+        "description": "Potenziamo la tenuta termica e acustica delle tue finestre mantenendo la naturale traspirabilità del legno e un microclima salubre in casa."
+      },
+      {
+        "title": "Restauro Estetico e Possibilità di Cambio Colore",
+        "description": "Possiamo sbiancare o laccare il lato interno delle tue finestre mantenendo il colore condominiale all'esterno, con cicli garantiti nel tempo."
+      },
+      {
+        "title": "Confronto Onesto prima di Spendere Migliaia di Euro",
+        "description": "Un nostro tecnico valuta lo stato reale del legno: se i tuoi infissi sono sani, li portiamo alle prestazioni moderne senza sostituirli."
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "-30%",
+      "mainStatLabel": "di dispersione energetica grazie al nuovo vetro termico su legno",
+      "reviewsSummary": "4.9/5 da clienti che hanno riqualificato i propri infissi",
+      "testimonials": [
+        {
+          "name": "Silvia M.",
+          "location": "Bologna",
+          "quote": "Ci avevano preventivato 14.000 euro per cambiare tutto in PVC. Con Ecorestauro abbiamo inserito i nuovi vetri termici e riverniciato il legno spendendo molto meno."
+        },
+        {
+          "name": "Alberto F.",
+          "location": "Modena",
+          "quote": "Hanno trasformato le nostre vecchie finestre scure facendole bianche all'interno e lasciando il legno fuori per il condominio. Risultato splendido."
+        },
+        {
+          "name": "Lucia G.",
+          "location": "Casalecchio di Reno (BO)",
+          "quote": "Niente più spifferi né rumore dalla strada, e soprattutto zero polvere di cantiere in casa."
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "Ecorestauro S.r.l. - dispersione clic mobile e tempi di caricamento di Ecorestauro S.r.l. (4.3s)",
+    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di Ecorestauro S.r.l., da smartphone impiega 4.3 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Ecorestauro S.r.l. che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Ecorestauro S.r.l., completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/ecorestaurosrl\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "Ecorestauro S.r.l. - dispersione clic mobile e tempi di caricamento di Ecorestauro S.r.l. (4.3s)",
+      "body": "Buongiorno,\n\nda un test sul sito di Ecorestauro S.r.l., da smartphone impiega 4.3 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Ecorestauro S.r.l. che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: Ecorestauro S.r.l. - dispersione clic mobile e tempi di caricamento di Ecorestauro S.r.l. (4.3s)",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Ecorestauro S.r.l., completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/ecorestaurosrl\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: Ecorestauro S.r.l. - dispersione clic mobile e tempi di caricamento di Ecorestauro S.r.l. (4.3s)",
+      "body": "Buongiorno,\n\nOltre a tagliare i 4.3 secondi su mobile, l'infrastruttura recupera il 40% delle conversioni tramite Server-Side Tracking.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza - TechPyre Studio",
+      "inThread": true,
+      "requiresFollowUpCall": true
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: Ecorestauro S.r.l. - dispersione clic mobile e tempi di caricamento di Ecorestauro S.r.l. (4.3s)",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Ecorestauro S.r.l. non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/ecorestaurosrl) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

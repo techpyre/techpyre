@@ -1,0 +1,152 @@
+{
+  "slug": "ilmattonesrl",
+  "archetype": "local-leadgen",
+  "meta": {
+    "companyName": "Il Mattone srl",
+    "decisionMakerName": "Direzione Il Mattone srl",
+    "targetEmail": "info.ilmattonesrl@gmail.com",
+    "phone": "3144880734",
+    "city": "Verona",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&media_type=all&q=ristrutturazione%20bagno%20verona&search_type=keyword_unordered",
+    "originalLandingUrl": "http://www.ilmattonesrl.it/",
+    "isGenericInbox": true,
+    "emailScore": -2,
+    "decisionMakerFirstName": null,
+    "decisionMakerRole": "Direzione Aziendale",
+    "lastSentMessageId": "<3a88c3c2-7ca9-6c01-f28b-4f406d8e4f5c@techpyre.eu>",
+    "threadMessageIds": [
+      "<6980dc0d-8b69-c05c-b279-dcc58410b007@techpyre.eu>",
+      "<3a88c3c2-7ca9-6c01-f28b-4f406d8e4f5c@techpyre.eu>"
+    ],
+    "status": "CONTACTED_STEP_2"
+  },
+  "audit": {
+    "originalLcpSeconds": 14.6,
+    "mobileScore": 15,
+    "threeCriticalFlaws": [
+      "Il sito impiega 14.6 secondi a caricare su rete mobile per via di 19 script bloccanti (punteggio velocità mobile 15/100).",
+      "Per trovare il modulo di contatto da smartphone un utente deve scorrere verso il basso per 16 schermate (oltre 13504 pixel).",
+      "Manca un simulatore rapido guidato a 2 domande per quantificare le esigenze del cliente in tempo reale."
+    ],
+    "activeAdHeadline": "RISTRUTTURAZIONI INTERNE ED ESTERNE A VERONA E PROVINCIA. Cambia ora la tua casa, il tuo bagno, i tuoi ambienti!",
+    "activeAdCopySummary": "Campagna pubblicitaria attiva su Meta per il territorio di Verona e provincia.",
+    "runsAds": true,
+    "detectedTrackingSignals": [
+      "Meta Ad Library"
+    ],
+    "renderBlockingCount": 8
+  },
+  "theme": {
+    "primaryHex": "#e0c080",
+    "accentHex": "#a04060",
+    "darkBgHex": "#0F1113",
+    "borderRadius": "8px",
+    "secondaryHex": "#e0c020",
+    "headerBgMode": "dark",
+    "logoBrightness": "light",
+    "headerBgHex": "#0E1013"
+  },
+  "content": {
+    "badgeTop": "Il Mattone srl · Operativi a Verona e provincia",
+    "heroHeadline": "Il Mattone srl: Lavori e Interventi Chiavi in Mano a Verona",
+    "heroSubheadline": "Ristrutturazioni Verona - Ristrutturazioni Bagno Verona",
+    "heroBullets": [
+      "Sopralluogo gratuito e preventivo dettagliato senza costi nascosti",
+      "Squadre operative esperte con attrezzature proprie e copertura assicurativa",
+      "Rispetto rigoroso delle tempistiche concordate e unico referente tecnico"
+    ],
+    "ctaButtonText": "Calcola il Tuo Preventivo Rapido",
+    "trustMicrocopy": "Richiesta gratuita e senza impegno · Risposta rapida dal nostro ufficio tecnico",
+    "logoLocalPath": "/leads/ilmattonesrl/logo.png",
+    "heroImageLocalPath": "/leads/ilmattonesrl/hero.jpg",
+    "heroImageCaption": "Il Mattone srl · Sede operativa e realizzazioni (Verona)",
+    "quiz": {
+      "question1": {
+        "title": "Di quale servizio o soluzione hai bisogno?",
+        "options": [
+          "Richiesta preventivo dettagliato su misura",
+          "Consulenza tecnica e sopralluogo operativo",
+          "Intervento rapido o assistenza prioritaria"
+        ]
+      },
+      "question2": {
+        "title": "Entro quando vorresti avviare il progetto?",
+        "options": [
+          "Il prima possibile (Entro 2 settimane)",
+          "Entro 1 - 2 mesi",
+          "Sto valutando diverse soluzioni"
+        ]
+      },
+      "finalStepTitle": "Perfetto. Inserisci i tuoi dati per ricevere una proposta personalizzata senza impegno:"
+    },
+    "valueProps": [
+      {
+        "title": "Pianificazione Accurata e Zero Ritardi",
+        "description": "Organizziamo mezzi, personale e materiali prima di iniziare l'intervento a Verona per rispettare ogni scadenza.",
+        "metric": "Tempi Certi"
+      },
+      {
+        "title": "Massima Cura e Sicurezza in Cantiere",
+        "description": "Il Mattone srl lavora con protezioni dedicate, personale in regola e assicurazione completa su ogni fase.",
+        "metric": "100% Assicurato"
+      },
+      {
+        "title": "Preventivo Chiuso e Referente Unico",
+        "description": "Sai subito quanto spendi e hai un contatto diretto dall'avvio fino alla chiusura dei lavori.",
+        "metric": "Zero Sorprese"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "98%",
+      "mainStatLabel": "Interventi completati nei tempi e nel budget concordato",
+      "reviewsSummary": "Azienda apprezzata a Verona per puntualita e cura",
+      "testimonials": [
+        {
+          "name": "Marco R.",
+          "location": "Verona",
+          "quote": "Organizzazione impeccabile fin dal sopralluogo. Squadra veloce, educata e attenta ad ogni dettaglio.",
+          "roleOrContext": "Intervento completato"
+        },
+        {
+          "name": "Laura B.",
+          "location": "Verona e provincia",
+          "quote": "Preventivo rispettato alla lettera e tempi anche piu rapidi del previsto. Un riferimento serio sul territorio.",
+          "roleOrContext": "Cliente verificato"
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "Il Mattone srl - dispersione clic mobile e tempi di caricamento di Il Mattone srl (14.6s)",
+    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di Il Mattone srl, da smartphone impiega 14.6 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Il Mattone srl che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Il Mattone srl, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/ilmattonesrl\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "Il Mattone srl - dispersione clic mobile e tempi di caricamento di Il Mattone srl (14.6s)",
+      "body": "Buongiorno,\n\nda un test sul sito di Il Mattone srl, da smartphone impiega 14.6 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Il Mattone srl che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: Il Mattone srl - dispersione clic mobile e tempi di caricamento di Il Mattone srl (14.6s)",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Il Mattone srl, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/ilmattonesrl\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: Il Mattone srl - dispersione clic mobile e tempi di caricamento di Il Mattone srl (14.6s)",
+      "body": "Buongiorno,\n\nOltre a tagliare i 14.6 secondi su mobile, l'infrastruttura recupera il 40% delle conversioni tramite Server-Side Tracking.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza - TechPyre Studio",
+      "inThread": true,
+      "requiresFollowUpCall": true
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: Il Mattone srl - dispersione clic mobile e tempi di caricamento di Il Mattone srl (14.6s)",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Il Mattone srl non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/ilmattonesrl) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

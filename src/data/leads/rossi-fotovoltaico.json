@@ -1,0 +1,148 @@
+{
+  "slug": "rossi-fotovoltaico",
+  "archetype": "local-leadgen",
+  "meta": {
+    "companyName": "Rossi Impianti Solari S.r.l.",
+    "decisionMakerName": "Ing. Roberto Rossi",
+    "targetEmail": "r.rossi@rossiimpiantisolari.it",
+    "phone": "+39 030 987 6543",
+    "city": "Brescia",
+    "vatNumber": "04129870981",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?id=981273918273",
+    "originalLandingUrl": "https://www.rossiimpiantisolari.it/promo-fotovoltaico",
+    "isGenericInbox": false,
+    "emailScore": 90,
+    "decisionMakerFirstName": "Roberto",
+    "decisionMakerRole": "Titolare",
+    "status": "INVALID_TICKET_INBOX",
+    "notes": "Dominio email privo di record DNS/MX."
+  },
+  "audit": {
+    "originalLcpSeconds": 6.4,
+    "mobileScore": 34,
+    "activeAdHeadline": "Fotovoltaico Chiavi in Mano a Brescia con Detrazione 50% e Accumulo",
+    "activeAdCopySummary": "Taglia la bolletta fino all'80% con gli impianti fotovoltaici ad alta resa Rossi Impianti. Sopralluogo tecnico e gestione pratiche GSE inclusi.",
+    "threeCriticalFlaws": [
+      "Tempo di caricamento su rete mobile 4G di 6.4 secondi (oltre il 45% dei clic pubblicitari abbandona prima del rendering).",
+      "Form di contatto a 8 campi posizionato in fondo alla pagina, privo di pre-qualificazione su tipologia immobile e consumi.",
+      "Assenza sopra la piega di recensioni verificate sul territorio e garanzie sulle squadre di installazione interne."
+    ],
+    "runsAds": true,
+    "detectedTrackingSignals": [
+      "Meta Ad Library"
+    ],
+    "renderBlockingCount": 8
+  },
+  "theme": {
+    "primaryHex": "#60a060",
+    "accentHex": "#e060e0",
+    "darkBgHex": "#0F1113",
+    "borderRadius": "8px",
+    "secondaryHex": "#60a0e0",
+    "headerBgMode": "light",
+    "logoBrightness": "dark"
+  },
+  "content": {
+    "badgeTop": "Attivi a Brescia, Lago di Garda e Franciacorta",
+    "heroHeadline": "Fotovoltaico Chiavi in Mano a Brescia con Detrazione 50% e Accumulo",
+    "heroSubheadline": "Riduci fino all'80% i costi della bolletta elettrica con installatori interni abilitati FER e gestione integrale delle pratiche GSE ed ENEA. Calcola in 30 secondi la resa sul tuo tetto.",
+    "heroBullets": [
+      "Sopralluogo tecnico gratuito entro 5 giorni lavorativi in provincia di Brescia",
+      "Squadre di posa interne certificate (zero subappalti a ditte esterne)",
+      "Gestione completa pratiche GSE, E-Distribuzione e Detrazione Fiscale 50%"
+    ],
+    "ctaButtonText": "Richiedi Stima Risparmio e Sopralluogo Gratuito",
+    "trustMicrocopy": "Zero vincoli contrattuali • Dati protetti GDPR • Riscontro da un nostro ingegnere in 24h",
+    "logoLocalPath": "/leads/rossi-fotovoltaico/logo.png",
+    "heroImageLocalPath": "/leads/rossi-fotovoltaico/hero.jpg",
+    "heroImageCaption": "Installazione residenziale 6 kWp + Accumulo 15 kWh eseguita a Gussago (BS)",
+    "quiz": {
+      "question1": {
+        "title": "Su quale immobile desideri installare l'impianto fotovoltaico?",
+        "options": [
+          "Casa singola / Villetta indipendente",
+          "Bifamiliare o Villetta a schiera",
+          "Capannone / Immobile aziendale"
+        ]
+      },
+      "question2": {
+        "title": "Qual è la tua spesa media attuale in bolletta elettrica (bimestrale)?",
+        "options": [
+          "Tra 180 € e 300 € a bimestre",
+          "Tra 300 € e 500 € a bimestre",
+          "Oltre 500 € a bimestre (Consumo elevato)"
+        ]
+      },
+      "finalStepTitle": "A quale recapito possiamo inviarti il piano di rientro dell'investimento?"
+    },
+    "valueProps": [
+      {
+        "title": "Squadre di Installazione Interne (Zero Subappalti)",
+        "description": "Ogni cantiere a Brescia e provincia è seguito esclusivamente dai nostri tecnici abilitati FER, con posa certificata a regola d'arte in 48 ore lavorative."
+      },
+      {
+        "title": "Ufficio Pratiche GSE, ENEA ed E-Distribuzione Interno",
+        "description": "I nostri ingegneri gestiscono internamente collaudo, allaccio alla rete, contributo di scambio e pratica per la detrazione fiscale del 50%."
+      },
+      {
+        "title": "Garanzia 25 Anni sulla Produttività dei Moduli",
+        "description": "Installiamo solo pannelli monocristallini Tier-1 ad alta resa anche con luce diffusa e sistemi di accumulo al litio-ferro-fosfato garantiti."
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "480+",
+      "mainStatLabel": "impianti attivi a Brescia e provincia",
+      "reviewsSummary": "4.9/5 su 142+ recensioni Google",
+      "testimonials": [
+        {
+          "name": "Famiglia Guerini",
+          "location": "Desenzano del Garda (BS)",
+          "quote": "Impianto da 6 kWp con accumulo da 15 kWh installato in due giorni. Pratiche GSE gestite interamente dal loro studio tecnico, bolletta estiva e autunnale azzerata."
+        },
+        {
+          "name": "Marco Martinelli",
+          "location": "Gussago (BS)",
+          "quote": "Sopralluogo tecnico estremamente serio con l'Ing. Rossi. Nessun venditore insistente, preventivo analitico chiaro e lavoro sul tetto eseguito con estrema cura."
+        },
+        {
+          "name": "Officina Meccanica Fratelli B.",
+          "location": "Brescia Sud",
+          "quote": "Installato impianto da 40 kWp sulla copertura del capannone. Rientro dell'investimento previsto in 3 anni grazie all'autoconsumo diurno dei macchinari."
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "Rossi Impianti Solari S.r.l. - dispersione clic mobile e tempi di caricamento di Rossi Impianti Solari S.r.l. (6.4s)",
+    "emailPlainTextBody": "Buongiorno Roberto,\n\nda un test sul sito di Rossi Impianti Solari S.r.l., da smartphone impiega 6.4 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Rossi Impianti Solari S.r.l. che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno Roberto,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Rossi Impianti Solari S.r.l., completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/rossi-fotovoltaico\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "Rossi Impianti Solari S.r.l. - dispersione clic mobile e tempi di caricamento di Rossi Impianti Solari S.r.l. (6.4s)",
+      "body": "Buongiorno Roberto,\n\nda un test sul sito di Rossi Impianti Solari S.r.l., da smartphone impiega 6.4 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Rossi Impianti Solari S.r.l. che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: Rossi Impianti Solari S.r.l. - dispersione clic mobile e tempi di caricamento di Rossi Impianti Solari S.r.l. (6.4s)",
+      "body": "Buongiorno Roberto,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Rossi Impianti Solari S.r.l., completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/rossi-fotovoltaico\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: Rossi Impianti Solari S.r.l. - dispersione clic mobile e tempi di caricamento di Rossi Impianti Solari S.r.l. (6.4s)",
+      "body": "Buongiorno Roberto,\n\nOltre a tagliare i 6.4 secondi su mobile, l'infrastruttura recupera il 40% delle conversioni tramite Server-Side Tracking.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza - TechPyre Studio",
+      "inThread": true,
+      "requiresFollowUpCall": true
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: Rossi Impianti Solari S.r.l. - dispersione clic mobile e tempi di caricamento di Rossi Impianti Solari S.r.l. (6.4s)",
+      "body": "Buongiorno Roberto,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Rossi Impianti Solari S.r.l. non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/rossi-fotovoltaico) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

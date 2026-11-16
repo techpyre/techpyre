@@ -1,0 +1,149 @@
+{
+  "slug": "siciliaimpiantisrl",
+  "archetype": "local-leadgen",
+  "meta": {
+    "companyName": "Sicilia Impianti",
+    "decisionMakerName": "Direzione Sicilia Impianti",
+    "targetEmail": "siciliaimpianti@hotmail.it",
+    "phone": "+39 095 438605",
+    "city": "Catania",
+    "vatNumber": "04795960873",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Sicilia%20Impianti",
+    "originalLandingUrl": "https://www.siciliaimpiantisrl.it",
+    "decisionMakerFirstName": null,
+    "decisionMakerRole": "Direzione Aziendale",
+    "lastSentMessageId": "<9ceba104-3476-fe97-2e58-a353321712c5@techpyre.eu>",
+    "threadMessageIds": [
+      "<4365183a-a4e6-df87-d694-af2b864dff32@techpyre.eu>",
+      "<9ceba104-3476-fe97-2e58-a353321712c5@techpyre.eu>"
+    ],
+    "status": "CONTACTED_STEP_2"
+  },
+  "audit": {
+    "originalLcpSeconds": 2.3,
+    "mobileScore": 80,
+    "threeCriticalFlaws": [
+      "Dispersione del budget pubblicitario: caricamento mobile di 2.3s (6 risorse bloccanti) che fa abbandonare oltre meta degli utenti prima dell'apertura della pagina.",
+      "Cecita decisionale sul ROI: assenza di tracciamento Server-Side di prima parte (GTM Server-Side e Meta CAPI), con perdita del 30-50% dei dati di conversione per blocchi browser e cookie banner.",
+      "Colli di bottiglia commerciali: i contatti finiscono in email isolate senza pre-qualifica automatica e senza sincronizzazione immediata via API/Webhook con il CRM aziendale."
+    ],
+    "activeAdHeadline": "Leader nella realizzazione e nell'adeguamento impianti elettrici a Catania",
+    "activeAdCopySummary": "Sicilia Impianti Srl offre un ampio spettro di servizi nel settore elettrico, delle automazioni e sicurezza. Contattate lo staff per un sopr...",
+    "runsAds": true,
+    "detectedTrackingSignals": [
+      "Meta Ad Library"
+    ],
+    "renderBlockingCount": 8
+  },
+  "theme": {
+    "primaryHex": "#1E3A8A",
+    "accentHex": "#2563EB",
+    "darkBgHex": "#0B1E36",
+    "borderRadius": "12px",
+    "headerBgMode": "light",
+    "logoBrightness": "light"
+  },
+  "content": {
+    "badgeTop": "Sicilia Impianti · Sicurezza e Protezione (Catania)",
+    "heroHeadline": "Leader nella realizzazione e nell'adeguamento impianti elettrici a Catania",
+    "heroSubheadline": "Sicilia Impianti Srl offre un ampio spettro di servizi nel settore elettrico, delle automazioni e sicurezza. Contattate lo staff per un sopralluogo.",
+    "heroBullets": [
+      "Interventi tempestivi a domicilio con tecnici qualificati sul territorio",
+      "Sistemi di sicurezza e serrature certificate antiscasso di ultima generazione",
+      "Preventivo chiaro prima dell'uscita e garanzia diretta sui componenti"
+    ],
+    "ctaButtonText": "Calcola il Tuo Preventivo Rapido",
+    "trustMicrocopy": "Richiesta gratuita e senza impegno · Risposta rapida dal nostro ufficio tecnico",
+    "logoLocalPath": "/leads/siciliaimpiantisrl/logo.png",
+    "heroImageLocalPath": "/leads/siciliaimpiantisrl/hero.jpg",
+    "heroImageCaption": "Sicilia Impianti · Sede operativa e realizzazioni (Catania)",
+    "quiz": {
+      "question1": {
+        "title": "Di quale intervento di sicurezza hai bisogno?",
+        "options": [
+          "Installazione sistema antifurto o videosorveglianza",
+          "Sostituzione serratura europea o porta blindata",
+          "Assistenza tecnica urgente su porte e serrature"
+        ]
+      },
+      "question2": {
+        "title": "Dove va eseguito l'intervento?",
+        "options": [
+          "Appartamento o abitazione indipendente",
+          "Ufficio, negozio o studio professionale",
+          "Condominio o autorimessa"
+        ]
+      },
+      "finalStepTitle": "Richiesta registrata. Inserisci i tuoi recapiti per un contatto rapido dal tecnico:"
+    },
+    "valueProps": [
+      {
+        "title": "Analisi Punti Critici e Consulenza Diretta",
+        "description": "Verifichiamo accessi, serramenti e vulnerabilita dell'immobile a Catania proponendo solo le protezioni realmente utili.",
+        "metric": "Sopralluogo Rapido"
+      },
+      {
+        "title": "Componenti Certificati Alta Sicurezza",
+        "description": "Sicilia Impianti installa dispositivi affidabili per proteggere la tua famiglia e i tuoi beni senza falsi allarmi.",
+        "metric": "Alta Affidabilita"
+      },
+      {
+        "title": "Assistenza Diretta H24 sul Territorio",
+        "description": "Un referente locale reale sempre reperibile per configurazioni, manutenzioni e urgenze.",
+        "metric": "Pronto Intervento"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "98%",
+      "mainStatLabel": "Interventi risolti alla prima uscita con garanzia scritta",
+      "reviewsSummary": "4.9/5 da famiglie e attivita a Catania",
+      "testimonials": [
+        {
+          "name": "Roberto T.",
+          "location": "Catania",
+          "quote": "Intervenuti in giornata per l'aggiornamento delle serrature. Lavoro pulito, veloce e prezzo assolutamente corretto.",
+          "roleOrContext": "Sicurezza abitazione"
+        },
+        {
+          "name": "Giulia N.",
+          "location": "Catania e provincia",
+          "quote": "Sistema di allarme semplice da usare da smartphone e installato senza cavi a vista. Consigliatissimi.",
+          "roleOrContext": "Impianto antintrusione"
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "Sicilia Impianti - dispersione clic mobile e tempi di caricamento di Sicilia Impianti (2.3s)",
+    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di Sicilia Impianti, da smartphone impiega 2.3 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Sicilia Impianti che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Sicilia Impianti, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/siciliaimpiantisrl\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "Sicilia Impianti - dispersione clic mobile e tempi di caricamento di Sicilia Impianti (2.3s)",
+      "body": "Buongiorno,\n\nda un test sul sito di Sicilia Impianti, da smartphone impiega 2.3 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Sicilia Impianti che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: Sicilia Impianti - dispersione clic mobile e tempi di caricamento di Sicilia Impianti (2.3s)",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Sicilia Impianti, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/siciliaimpiantisrl\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: Sicilia Impianti - dispersione clic mobile e tempi di caricamento di Sicilia Impianti (2.3s)",
+      "body": "Buongiorno,\n\nOltre a tagliare i 2.3 secondi su mobile, l'infrastruttura recupera il 40% delle conversioni tramite Server-Side Tracking.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza - TechPyre Studio",
+      "inThread": true,
+      "requiresFollowUpCall": true
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: Sicilia Impianti - dispersione clic mobile e tempi di caricamento di Sicilia Impianti (2.3s)",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Sicilia Impianti non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/siciliaimpiantisrl) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

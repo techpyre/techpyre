@@ -1,0 +1,172 @@
+{
+  "slug": "tecnoresinesrl",
+  "archetype": "b2b-authority",
+  "meta": {
+    "companyName": "Tecnoresine",
+    "decisionMakerName": "Direzione Tecnoresine",
+    "targetEmail": "info@tecnoresinesrl.com",
+    "phone": "+39 0422 361980",
+    "city": "Silea",
+    "vatNumber": "01275000261",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Tecnoresine",
+    "originalLandingUrl": "https://www.tecnoresinesrl.com",
+    "isGenericInbox": true,
+    "emailScore": 35,
+    "decisionMakerFirstName": null,
+    "decisionMakerRole": "Direzione Aziendale",
+    "lastSentMessageId": "<59eb7c9e-ec26-e428-d9cb-3ef1506190c4@techpyre.eu>",
+    "threadMessageIds": [
+      "<c15092b0-3871-770c-3785-25163626123e@techpyre.eu>",
+      "<59eb7c9e-ec26-e428-d9cb-3ef1506190c4@techpyre.eu>"
+    ],
+    "status": "CONTACTED_STEP_2"
+  },
+  "audit": {
+    "originalLcpSeconds": 1.3,
+    "mobileScore": 89,
+    "threeCriticalFlaws": [
+      "Dispersione del budget pubblicitario: caricamento mobile di 1.3s (0 risorse bloccanti) che fa abbandonare oltre meta degli utenti prima dell'apertura della pagina.",
+      "Cecita decisionale sul ROI: assenza di tracciamento Server-Side di prima parte (GTM Server-Side e Meta CAPI), con perdita del 30-50% dei dati di conversione per blocchi browser e cookie banner.",
+      "Colli di bottiglia commerciali: i contatti finiscono in email isolate senza pre-qualifica automatica e senza sincronizzazione immediata via API/Webhook con il CRM aziendale."
+    ],
+    "activeAdHeadline": "Tecnoresine: Soluzioni Professionali a Silea",
+    "activeAdCopySummary": "A Silea, in provincia di Treviso, l'azienda Tecnoresine si occupa della lavorazione di resine espanse, con particolare specializzazione nel ...",
+    "runsAds": true,
+    "detectedTrackingSignals": [
+      "Meta Ad Library"
+    ],
+    "renderBlockingCount": 8
+  },
+  "theme": {
+    "primaryHex": "#60a0f0",
+    "accentHex": "#B8860B",
+    "darkBgHex": "#0B1E36",
+    "borderRadius": "8px",
+    "headerBgMode": "light",
+    "logoBrightness": "light"
+  },
+  "content": {
+    "badgeTop": "Tecnoresine · Polimeri e Processi Industriali (Silea)",
+    "heroHeadline": "Tecnoresine: Soluzioni Professionali a Silea",
+    "heroSubheadline": "A Silea, in provincia di Treviso, l'azienda Tecnoresine si occupa della lavorazione di resine espanse, con particolare specializzazione nel settore delle imbottiture per arredamenti. La ditta opera soprattutto",
+    "heroBullets": [
+      "Supporto su scelta mescole, resine e trattamenti prima della messa in serie",
+      "Controllo costante dei parametri di processo e finitura superficiale",
+      "Imballo industriale protetto e programmazione consegne per lotti B2B"
+    ],
+    "ctaButtonText": "Richiedi Studio di Fattibilita",
+    "trustMicrocopy": "Riservatezza industriale garantita (NDA) · Risposta tecnica entro la giornata lavorativa",
+    "logoLocalPath": "/leads/tecnoresinesrl/logo.png",
+    "heroImageLocalPath": "/leads/tecnoresinesrl/hero.jpg",
+    "heroImageCaption": "Tecnoresine · Sede operativa e realizzazioni (Silea)",
+    "quiz": {
+      "question1": {
+        "title": "Quale lavorazione industriale o fornitura tecnica vi interessa?",
+        "options": [
+          "Stampaggio materie plastiche/gomma o realizzazione stampi su commessa",
+          "Trattamenti galvanici, anodizzazione o rivestimenti protettivi certificati",
+          "Fornitura lotti industriali, campionatura e capitolato tecnico"
+        ]
+      },
+      "question2": {
+        "title": "Qual e l'orizzonte temporale previsto per il progetto?",
+        "options": [
+          "Avvio operativo urgente (entro 30 giorni)",
+          "Pianificazione nel trimestre in corso",
+          "Valutazione tecnica e di budget preliminare"
+        ]
+      },
+      "finalStepTitle": "Specifiche registrate. Inserisci i riferimenti aziendali per il colloquio con l'Ufficio Tecnico:"
+    },
+    "valueProps": [
+      {
+        "title": "Co-Design Stampi e Selezione Materiali",
+        "description": "Ottimizziamo spessori, ritiri dimensionali e resistenze chimico-meccaniche per evitare difetti in produzione e contenere il costo unitario.",
+        "metric": "Zero Difetti"
+      },
+      {
+        "title": "Ripetibilita di Processo e Controllo Lotto",
+        "description": "Tecnoresine monitora ogni fase produttiva e superficiale a Silea rilasciando documentazione di conformita su richiesta.",
+        "metric": "100% Tracciabile"
+      },
+      {
+        "title": "Logistica Flessibile su Piccole e Grandi Serie",
+        "description": "Pianificazione scorte, trattamenti rapidi conto terzi e spedizioni sincronizzate con le vostre linee di montaggio.",
+        "metric": "Consegne Certe"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "99.4%",
+      "mainStatLabel": "Conformita qualitativa sui lotti industriali consegnati",
+      "reviewsSummary": "Partner industriale per filiere produttive a Silea",
+      "clientReferenceWall": [
+        "Qualita Certificata ISO 9001",
+        "Tracciabilita Completa Lotti",
+        "Conformita REACH / RoHS",
+        "Campionature Tecniche Rapide",
+        "Produzione B2B Conto Terzi"
+      ],
+      "secondaryStats": [
+        {
+          "value": "99.4%",
+          "label": "Lotti consegnati conformi alle specifiche dimensionali"
+        },
+        {
+          "value": "< 0.4s",
+          "label": "Caricamento scheda tecnica e preventivo B2B su mobile"
+        },
+        {
+          "value": "24h",
+          "label": "Valutazione preliminare disegni, mescole o trattamenti"
+        }
+      ],
+      "testimonials": [
+        {
+          "name": "Responsabile Qualita e Fornitori",
+          "location": "Silea · Filiera Manifatturiera",
+          "quote": "La costanza tra la campionatura iniziale e le forniture in serie di Tecnoresine ci ha permesso di azzerare i controlli in ingresso.",
+          "roleOrContext": "Fornitura conto terzi"
+        },
+        {
+          "name": "Direzione Acquisti B2B",
+          "location": "Silea e provincia",
+          "quote": "Preventivazione trasparente, imballaggi accurati e rispetto rigoroso dei lead time anche sui picchi stagionali.",
+          "roleOrContext": "Contratto di fornitura"
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "Tecnoresine - dispersione clic mobile e tempi di caricamento di Tecnoresine (1.3s)",
+    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di Tecnoresine, da smartphone impiega 1.3 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Tecnoresine che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Tecnoresine, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/tecnoresinesrl\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "Tecnoresine - dispersione clic mobile e tempi di caricamento di Tecnoresine (1.3s)",
+      "body": "Buongiorno,\n\nda un test sul sito di Tecnoresine, da smartphone impiega 1.3 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Tecnoresine che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: Tecnoresine - dispersione clic mobile e tempi di caricamento di Tecnoresine (1.3s)",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Tecnoresine, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/tecnoresinesrl\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: Tecnoresine - dispersione clic mobile e tempi di caricamento di Tecnoresine (1.3s)",
+      "body": "Buongiorno,\n\nOltre a tagliare i 1.3 secondi su mobile, l'infrastruttura recupera il 40% delle conversioni tramite Server-Side Tracking.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza - TechPyre Studio",
+      "inThread": true,
+      "requiresFollowUpCall": true
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: Tecnoresine - dispersione clic mobile e tempi di caricamento di Tecnoresine (1.3s)",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Tecnoresine non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/tecnoresinesrl) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

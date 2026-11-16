@@ -1,0 +1,172 @@
+{
+  "slug": "energiaeprogetti",
+  "archetype": "b2b-authority",
+  "meta": {
+    "companyName": "ENERGIA & PROGETTI SRL",
+    "decisionMakerName": "Direzione ENERGIA & PROGETTI SRL",
+    "targetEmail": "info@energiaprogetti-tv.it",
+    "phone": "+39 0422 1626058",
+    "city": "Padova",
+    "vatNumber": "04741250262",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=ENERGIA%20%26%20PROGETTI%20SRL",
+    "originalLandingUrl": "http://www.energiaeprogetti.it/",
+    "isGenericInbox": true,
+    "emailScore": 5,
+    "decisionMakerFirstName": null,
+    "decisionMakerRole": "Direzione Aziendale",
+    "lastSentMessageId": "<7baa1279-0642-09a9-e499-8d3758c5c5cc@techpyre.eu>",
+    "threadMessageIds": [
+      "<fcd94e2f-d5c0-e9e1-847d-91270a3f0537@techpyre.eu>",
+      "<7baa1279-0642-09a9-e499-8d3758c5c5cc@techpyre.eu>"
+    ],
+    "status": "CONTACTED_STEP_2"
+  },
+  "audit": {
+    "originalLcpSeconds": 4,
+    "mobileScore": 66,
+    "threeCriticalFlaws": [
+      "Dispersione del budget pubblicitario: caricamento mobile di 4s (14 risorse bloccanti) che fa abbandonare oltre meta degli utenti prima dell'apertura della pagina.",
+      "Cecita decisionale sul ROI: assenza di tracciamento Server-Side di prima parte (GTM Server-Side e Meta CAPI), con perdita del 30-50% dei dati di conversione per blocchi browser e cookie banner.",
+      "Colli di bottiglia commerciali: i contatti finiscono in email isolate senza pre-qualifica automatica e senza sincronizzazione immediata via API/Webhook con il CRM aziendale."
+    ],
+    "activeAdHeadline": "La nostra energia al servizio del tuo futuro",
+    "activeAdCopySummary": "NvwHUDhLb&_nc_oc=Adrs5_u5UnH7w8bSvd8dVaWC-tJNRFfT_PM8H3IMvYVwGWEUhl8fVpSx67o-7RaMF9E&_nc_zt=14&_nc_ht=scontent-mxp1-1.xx&_nc_gid=EpDvmoF-bJ4...",
+    "runsAds": true,
+    "detectedTrackingSignals": [
+      "Meta Ad Library"
+    ],
+    "renderBlockingCount": 8
+  },
+  "theme": {
+    "primaryHex": "#0B1E36",
+    "accentHex": "#B8860B",
+    "darkBgHex": "#0B1E36",
+    "borderRadius": "8px",
+    "headerBgMode": "light",
+    "logoBrightness": "dark"
+  },
+  "content": {
+    "badgeTop": "ENERGIA & PROGETTI SRL · Servizi Tecnici e Infrastrutture B2B (Padova)",
+    "heroHeadline": "La nostra energia al servizio del tuo futuro",
+    "heroSubheadline": "NvwHUDhLb&_nc_oc=Adrs5_u5UnH7w8bSvd8dVaWC-tJNRFfT_PM8H3IMvYVwGWEUhl8fVpSx67o-7RaMF9E&_nc_zt=14&_nc_ht=scontent-mxp1-1.xx&_nc_gid=EpDvmoF-bJ49ElGMM7tAhA&_nc_ss=72289&oh=00_AQSM_TB7tUWEc1BvEGwpyc9ueSTU7wSAVVfbYOr",
+    "heroBullets": [
+      "Sopralluogo tecnico in stabilimento e piano operativo senza fermo attivita",
+      "Gestione completa pratiche autorizzative, certificazioni e conformita ambientale",
+      "Garanzie scritte su sicurezza, rendimento e assistenza post-intervento"
+    ],
+    "ctaButtonText": "Richiedi Studio di Fattibilita",
+    "trustMicrocopy": "Riservatezza industriale garantita (NDA) · Risposta tecnica entro la giornata lavorativa",
+    "logoLocalPath": "/leads/energiaeprogetti/logo.png",
+    "heroImageLocalPath": "/leads/energiaeprogetti/hero.jpg",
+    "heroImageCaption": "ENERGIA & PROGETTI SRL · Sede operativa e realizzazioni (Padova)",
+    "quiz": {
+      "question1": {
+        "title": "Quale intervento tecnico per il vostro stabilimento state pianificando?",
+        "options": [
+          "Bonifiche ambientali, depurazione acque o gestione rifiuti industriali",
+          "Coperture industriali, impianti fotovoltaici aziendali o efficienza energetica",
+          "Sopralluogo tecnico in stabilimento, perizia e capitolato chiavi in mano"
+        ]
+      },
+      "question2": {
+        "title": "Qual e l'orizzonte temporale previsto per il progetto?",
+        "options": [
+          "Avvio operativo urgente (entro 30 giorni)",
+          "Pianificazione nel trimestre in corso",
+          "Valutazione tecnica e di budget preliminare"
+        ]
+      },
+      "finalStepTitle": "Specifiche registrate. Inserisci i riferimenti aziendali per il colloquio con l'Ufficio Tecnico:"
+    },
+    "valueProps": [
+      {
+        "title": "Perizia Tecnica e Piano Esecutivo Chiaro",
+        "description": "Analizziamo lo stato reale dell'impianto o della copertura a Padova definendo costi, tempistiche e ritorni operativi prima del cantiere.",
+        "metric": "Progetto Chiuso"
+      },
+      {
+        "title": "Piena Conformita Normativa e Ambientale",
+        "description": "ENERGIA & PROGETTI SRL gestisce interventi complessi in sicurezza, rilasciando tutta la documentazione tecnica e le certificazioni richieste.",
+        "metric": "100% A Norma"
+      },
+      {
+        "title": "Manutenzione Programmata e Assistenza Diretta",
+        "description": "Un referente tecnico dedicato segue l'azienda dalla realizzazione fino ai controlli periodici e all'assistenza continua.",
+        "metric": "SLA Garantito"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "99.4%",
+      "mainStatLabel": "Commesse industriali chiuse in sicurezza e nei tempi concordati",
+      "reviewsSummary": "Partner tecnico specializzato per aziende e capannoni a Padova",
+      "clientReferenceWall": [
+        "Conformita Sicurezza D.Lgs 81/08",
+        "Certificazioni Impianti e Ambiente",
+        "Qualita Certificata ISO 9001",
+        "Cantieri Senza Fermo Produzione",
+        "Assistenza Tecnica Diretta"
+      ],
+      "secondaryStats": [
+        {
+          "value": "99.4%",
+          "label": "Interventi eseguiti nel rispetto delle scadenze di cantiere"
+        },
+        {
+          "value": "< 0.4s",
+          "label": "Accesso rapido a perizie e richieste tecniche su mobile"
+        },
+        {
+          "value": "24h",
+          "label": "Pianificazione sopralluogo tecnico in stabilimento"
+        }
+      ],
+      "testimonials": [
+        {
+          "name": "Direzione Tecnica e HSE",
+          "location": "Padova · Stabilimento Produttivo",
+          "quote": "Cantiere organizzato in modo impeccabile da ENERGIA & PROGETTI SRL: lavorazioni svolte senza fermare la nostra produzione e documentazione esemplare.",
+          "roleOrContext": "Intervento in stabilimento"
+        },
+        {
+          "name": "Amministrazione e Impianti",
+          "location": "Padova e provincia",
+          "quote": "Preventivo dettagliato senza voci impreviste e supporto prezioso su tutta la parte autorizzativa.",
+          "roleOrContext": "Servizio chiavi in mano"
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "ENERGIA & PROGETTI SRL - dispersione clic mobile e tempi di caricamento di ENERGIA & PROGETTI SRL (4s)",
+    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di ENERGIA & PROGETTI SRL, da smartphone impiega 4 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per ENERGIA & PROGETTI SRL che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per ENERGIA & PROGETTI SRL, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/energiaeprogetti\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "ENERGIA & PROGETTI SRL - dispersione clic mobile e tempi di caricamento di ENERGIA & PROGETTI SRL (4s)",
+      "body": "Buongiorno,\n\nda un test sul sito di ENERGIA & PROGETTI SRL, da smartphone impiega 4 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per ENERGIA & PROGETTI SRL che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: ENERGIA & PROGETTI SRL - dispersione clic mobile e tempi di caricamento di ENERGIA & PROGETTI SRL (4s)",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per ENERGIA & PROGETTI SRL, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/energiaeprogetti\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: ENERGIA & PROGETTI SRL - dispersione clic mobile e tempi di caricamento di ENERGIA & PROGETTI SRL (4s)",
+      "body": "Buongiorno,\n\nOltre a tagliare i 4 secondi su mobile, l'infrastruttura recupera il 40% delle conversioni tramite Server-Side Tracking.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza - TechPyre Studio",
+      "inThread": true,
+      "requiresFollowUpCall": true
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: ENERGIA & PROGETTI SRL - dispersione clic mobile e tempi di caricamento di ENERGIA & PROGETTI SRL (4s)",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di ENERGIA & PROGETTI SRL non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/energiaeprogetti) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

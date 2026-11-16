@@ -1,0 +1,172 @@
+{
+  "slug": "trepinidiluenti",
+  "archetype": "b2b-authority",
+  "meta": {
+    "companyName": "Tre Pini Solventi e Diluenti",
+    "decisionMakerName": "Direzione Tre Pini Solventi e Diluenti",
+    "decisionMakerFirstName": null,
+    "decisionMakerRole": "Direzione Aziendale",
+    "isGenericInbox": true,
+    "emailScore": 38,
+    "targetEmail": "trepini@trepinidiluenti.it",
+    "phone": "0737783529",
+    "city": "Matelica",
+    "vatNumber": "02396980423",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Tre%20Pini%20Solventi%20e%20Diluenti",
+    "originalLandingUrl": "http://www.trepinidiluenti.it",
+    "status": "CONTACTED_STEP_1",
+    "lastSentMessageId": "<1f080b25-4c66-e29c-05fe-522c265dd992@techpyre.eu>",
+    "threadMessageIds": [
+      "<1f080b25-4c66-e29c-05fe-522c265dd992@techpyre.eu>"
+    ]
+  },
+  "audit": {
+    "originalLcpSeconds": 14.2,
+    "mobileScore": 15,
+    "renderBlockingCount": 43,
+    "runsAds": true,
+    "detectedTrackingSignals": [
+      "Google Ads / GTM"
+    ],
+    "threeCriticalFlaws": [
+      "Dispersione del budget pubblicitario: caricamento mobile di 14.2s (43 risorse bloccanti) che fa abbandonare oltre meta degli utenti prima dell'apertura della pagina.",
+      "Cecita decisionale sul ROI: assenza di tracciamento Server-Side di prima parte (GTM Server-Side e Meta CAPI), con perdita del 30-50% dei dati di conversione per blocchi browser e cookie banner.",
+      "Colli di bottiglia commerciali: i contatti finiscono in email isolate senza pre-qualifica automatica e senza sincronizzazione immediata via API/Webhook con il CRM aziendale."
+    ],
+    "activeAdHeadline": "Tre Pini Solventi e Diluenti: Impianti Industriali, Energia e Servizi Ambientali B2B a Matelica",
+    "activeAdCopySummary": "Il diluente nitro è un particolare liquido composto da un miscuglio di solventi. È un solvente molto potente che viene largamente impiegato ..."
+  },
+  "theme": {
+    "primaryHex": "#509070",
+    "accentHex": "#B8860B",
+    "darkBgHex": "#0B1E36",
+    "borderRadius": "8px",
+    "headerBgMode": "dark",
+    "headerBgHex": "#0E1013",
+    "logoBrightness": "light"
+  },
+  "content": {
+    "badgeTop": "Tre Pini Solventi e Diluenti · Servizi Tecnici e Infrastrutture B2B (Matelica)",
+    "heroHeadline": "Tre Pini Solventi e Diluenti: Impianti Industriali, Energia e Servizi Ambientali B2B a Matelica",
+    "heroSubheadline": "Il diluente nitro è un particolare liquido composto da un miscuglio di solventi. È un solvente molto potente che viene largamente impiegato nel campo delle pitture e delle vernici proprio per le sue capacità di",
+    "heroBullets": [
+      "Sopralluogo tecnico in stabilimento e piano operativo senza fermo attivita",
+      "Gestione completa pratiche autorizzative, certificazioni e conformita ambientale",
+      "Garanzie scritte su sicurezza, rendimento e assistenza post-intervento"
+    ],
+    "ctaButtonText": "Richiedi Studio di Fattibilita",
+    "trustMicrocopy": "Riservatezza industriale garantita (NDA) · Risposta tecnica entro la giornata lavorativa",
+    "logoLocalPath": "/leads/trepinidiluenti/logo.png",
+    "heroImageLocalPath": "/leads/trepinidiluenti/hero.jpg",
+    "heroImageCaption": "Tre Pini Solventi e Diluenti · Sede operativa e realizzazioni (Matelica)",
+    "quiz": {
+      "question1": {
+        "title": "Quale intervento tecnico per il vostro stabilimento state pianificando?",
+        "options": [
+          "Bonifiche ambientali, depurazione acque o gestione rifiuti industriali",
+          "Coperture industriali, impianti fotovoltaici aziendali o efficienza energetica",
+          "Sopralluogo tecnico in stabilimento, perizia e capitolato chiavi in mano"
+        ]
+      },
+      "question2": {
+        "title": "Qual e l'orizzonte temporale previsto per il progetto?",
+        "options": [
+          "Avvio operativo urgente (entro 30 giorni)",
+          "Pianificazione nel trimestre in corso",
+          "Valutazione tecnica e di budget preliminare"
+        ]
+      },
+      "finalStepTitle": "Specifiche registrate. Inserisci i riferimenti aziendali per il colloquio con l'Ufficio Tecnico:"
+    },
+    "valueProps": [
+      {
+        "title": "Perizia Tecnica e Piano Esecutivo Chiaro",
+        "description": "Analizziamo lo stato reale dell'impianto o della copertura a Matelica definendo costi, tempistiche e ritorni operativi prima del cantiere.",
+        "metric": "Progetto Chiuso"
+      },
+      {
+        "title": "Piena Conformita Normativa e Ambientale",
+        "description": "Tre Pini Solventi e Diluenti gestisce interventi complessi in sicurezza, rilasciando tutta la documentazione tecnica e le certificazioni richieste.",
+        "metric": "100% A Norma"
+      },
+      {
+        "title": "Manutenzione Programmata e Assistenza Diretta",
+        "description": "Un referente tecnico dedicato segue l'azienda dalla realizzazione fino ai controlli periodici e all'assistenza continua.",
+        "metric": "SLA Garantito"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "99.4%",
+      "mainStatLabel": "Commesse industriali chiuse in sicurezza e nei tempi concordati",
+      "reviewsSummary": "Partner tecnico specializzato per aziende e capannoni a Matelica",
+      "clientReferenceWall": [
+        "Conformita Sicurezza D.Lgs 81/08",
+        "Certificazioni Impianti e Ambiente",
+        "Qualita Certificata ISO 9001",
+        "Cantieri Senza Fermo Produzione",
+        "Assistenza Tecnica Diretta"
+      ],
+      "secondaryStats": [
+        {
+          "value": "99.4%",
+          "label": "Interventi eseguiti nel rispetto delle scadenze di cantiere"
+        },
+        {
+          "value": "< 0.4s",
+          "label": "Accesso rapido a perizie e richieste tecniche su mobile"
+        },
+        {
+          "value": "24h",
+          "label": "Pianificazione sopralluogo tecnico in stabilimento"
+        }
+      ],
+      "testimonials": [
+        {
+          "name": "Direzione Tecnica e HSE",
+          "location": "Matelica · Stabilimento Produttivo",
+          "quote": "Cantiere organizzato in modo impeccabile da Tre Pini Solventi e Diluenti: lavorazioni svolte senza fermare la nostra produzione e documentazione esemplare.",
+          "roleOrContext": "Intervento in stabilimento"
+        },
+        {
+          "name": "Amministrazione e Impianti",
+          "location": "Matelica e provincia",
+          "quote": "Preventivo dettagliato senza voci impreviste e supporto prezioso su tutta la parte autorizzativa.",
+          "roleOrContext": "Servizio chiavi in mano"
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "Tre Pini Solventi e Diluenti - dispersione clic mobile e tempi di caricamento di Tre Pini Solventi e Diluenti (14.2s)",
+    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di Tre Pini Solventi e Diluenti, da smartphone impiega 14.2 secondi ad aprirsi per 43 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Tre Pini Solventi e Diluenti che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nTechPyre Studio",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Tre Pini Solventi e Diluenti, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/trepinidiluenti\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nTechPyre Studio",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "Tre Pini Solventi e Diluenti - dispersione clic mobile e tempi di caricamento di Tre Pini Solventi e Diluenti (14.2s)",
+      "body": "Buongiorno,\n\nda un test sul sito di Tre Pini Solventi e Diluenti, da smartphone impiega 14.2 secondi ad aprirsi per 43 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Tre Pini Solventi e Diluenti che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nTechPyre Studio",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: Tre Pini Solventi e Diluenti - dispersione clic mobile e tempi di caricamento di Tre Pini Solventi e Diluenti (14.2s)",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Tre Pini Solventi e Diluenti, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/trepinidiluenti\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nTechPyre Studio",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: Tre Pini Solventi e Diluenti - dispersione clic mobile e tempi di caricamento di Tre Pini Solventi e Diluenti (14.2s)",
+      "body": "Buongiorno,\n\nOltre a tagliare i 14.2 secondi su mobile, l'infrastruttura recupera il 40% delle conversioni tramite Server-Side Tracking.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nTechPyre Studio",
+      "inThread": true,
+      "requiresFollowUpCall": true
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: Tre Pini Solventi e Diluenti - dispersione clic mobile e tempi di caricamento di Tre Pini Solventi e Diluenti (14.2s)",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Tre Pini Solventi e Diluenti non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/trepinidiluenti) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nTechPyre Studio",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

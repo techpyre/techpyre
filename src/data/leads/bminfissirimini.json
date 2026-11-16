@@ -1,0 +1,153 @@
+{
+  "slug": "bminfissirimini",
+  "archetype": "local-leadgen",
+  "meta": {
+    "companyName": "BM Infissi di Massimo Bianchi",
+    "decisionMakerName": "Massimo Bianchi",
+    "targetEmail": "info@bminfissirimini.com",
+    "phone": "+39 0541 416124",
+    "city": "Rimini",
+    "vatNumber": "04766030409",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=serramenti%20infissi",
+    "originalLandingUrl": "https://www.bminfissirimini.com/showroom-rimini.php",
+    "isGenericInbox": true,
+    "emailScore": 35,
+    "decisionMakerFirstName": "Massimo",
+    "decisionMakerRole": "Titolare",
+    "lastSentMessageId": "<a6d54e55-4329-a27b-ccb9-014dac69d062@techpyre.eu>",
+    "threadMessageIds": [
+      "<799cfddc-0610-410a-bfa6-a320573e6583@techpyre.eu>",
+      "<a6d54e55-4329-a27b-ccb9-014dac69d062@techpyre.eu>"
+    ],
+    "status": "CONTACTED_STEP_2"
+  },
+  "audit": {
+    "originalLcpSeconds": 5.4,
+    "mobileScore": 35,
+    "activeAdHeadline": "Showroom BM Infissi: Oltre 400 mq di Esposizione a Rimini",
+    "activeAdCopySummary": "Scopri le migliori soluzioni per la tua casa o il tuo ufficio nel nostro showroom a Rimini: infissi in PVC e alluminio QFort, porte interne e blindate.",
+    "threeCriticalFlaws": [
+      "All'apertura da smartphone compare un popup 'Avviso Importante' fuori asse che blocca l'intera schermata e copre i contenuti.",
+      "Tempo di caricamento mobile di 5.4 secondi che disperde i clic provenienti dalla sponsorizzata locale.",
+      "Manca sopra la piega un modulo immediato per prenotare la visita nello showroom di 400 mq o richiedere un preventivo rapido."
+    ],
+    "runsAds": true,
+    "detectedTrackingSignals": [
+      "Google Tag Manager"
+    ],
+    "renderBlockingCount": 8
+  },
+  "theme": {
+    "primaryHex": "#c06040",
+    "accentHex": "#0080c0",
+    "darkBgHex": "#0F1113",
+    "borderRadius": "8px",
+    "secondaryHex": "#604020",
+    "headerBgMode": "dark",
+    "logoBrightness": "light",
+    "headerBgHex": "#0E1013"
+  },
+  "content": {
+    "badgeTop": "Showroom di Oltre 400 mq a Rimini · Rivenditore QFort",
+    "heroHeadline": "Infissi in PVC, Alluminio e Porte: 400 mq di Showroom a Rimini",
+    "heroSubheadline": "Tocca con mano la qualità dei serramenti ad alto isolamento termico e acustico per la tua casa a Rimini e provincia. Progettazione, posa qualificata e assistenza completa.",
+    "heroBullets": [
+      "Esposizione di oltre 400 mq a Rimini con consulenza tecnica dedicata",
+      "Partner ufficiale infissi QFort progettati per durare nel tempo",
+      "Servizio completo: rilievo misure, installazione pulita e pratiche detrazione"
+    ],
+    "ctaButtonText": "Richiedi Preventivo o Prenota Visita in Showroom",
+    "trustMicrocopy": "Zero vincoli · Dati protetti GDPR · Risposta diretta da BM Infissi Rimini",
+    "logoLocalPath": "/leads/bminfissirimini/logo.png",
+    "heroImageLocalPath": "/leads/bminfissirimini/hero.jpg",
+    "heroImageCaption": "Progettazione, fornitura e posa serramenti su misura a Rimini - BM Infissi di Massimo Bianchi",
+    "quiz": {
+      "question1": {
+        "title": "Cosa stai cercando per la tua abitazione o ufficio?",
+        "options": [
+          "Infissi e finestre in PVC o Alluminio",
+          "Porte interne, Portoncini o Porte blindate",
+          "Pacchetto completo per ristrutturazione / nuova casa"
+        ]
+      },
+      "question2": {
+        "title": "Come preferisci ricevere la nostra consulenza?",
+        "options": [
+          "Appuntamento dedicato nello Showroom di Rimini (400 mq)",
+          "Preventivo preliminare telefonico + sopralluogo a domicilio",
+          "Ho già le misure e vorrei una quotazione rapida"
+        ]
+      },
+      "finalStepTitle": "Lascia i tuoi riferimenti per essere ricontattato dal nostro staff di Rimini:"
+    },
+    "valueProps": [
+      {
+        "title": "Showroom di 400 mq a Rimini per Toccare con Mano i Materiali",
+        "description": "Nel nostro spazio espositivo puoi confrontare dal vivo profili in PVC, alluminio, finiture, vetri termici e sistemi oscuranti."
+      },
+      {
+        "title": "Collaborazione con Marchi Leader come QFort",
+        "description": "Forniamo serramenti certificati ad altissima tenuta termica e acustica, ideali anche per il clima costiero della Romagna."
+      },
+      {
+        "title": "Montaggio Qualificato e Assistenza Diretta",
+        "description": "Seguiamo internamente ogni fase del lavoro a Rimini e provincia, dal rilievo quote in cantiere fino alla regolazione post-vendita."
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "400 mq",
+      "mainStatLabel": "di sala mostra specializzata in infissi e porte a Rimini",
+      "reviewsSummary": "4.9/5 da clienti di Rimini e provincia",
+      "testimonials": [
+        {
+          "name": "Davide C.",
+          "location": "Rimini",
+          "quote": "Showroom davvero grande e curato. Massimo e il suo staff ci hanno guidato nella scelta degli infissi QFort per tutta la casa con estrema competenza."
+        },
+        {
+          "name": "Federica S.",
+          "location": "Riccione (RN)",
+          "quote": "Sostituite 7 finestre e il portoncino blindato. Isolamento acustico eccezionale e squadra di montaggio super ordinata."
+        },
+        {
+          "name": "Matteo R.",
+          "location": "Santarcangelo di Romagna (RN)",
+          "quote": "Tempi di consegna rispettati e ottimo supporto anche per tutta la documentazione delle detrazioni fiscali."
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "Per Massimo Bianchi - dispersione clic mobile e tempi di caricamento di BM Infissi di Massimo Bianchi (5.4s)",
+    "emailPlainTextBody": "Buongiorno Massimo,\n\nda un test sul sito di BM Infissi di Massimo Bianchi, da smartphone impiega 5.4 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per BM Infissi di Massimo Bianchi che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno Massimo,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per BM Infissi di Massimo Bianchi, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/bminfissirimini\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "Per Massimo Bianchi - dispersione clic mobile e tempi di caricamento di BM Infissi di Massimo Bianchi (5.4s)",
+      "body": "Buongiorno Massimo,\n\nda un test sul sito di BM Infissi di Massimo Bianchi, da smartphone impiega 5.4 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per BM Infissi di Massimo Bianchi che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: Per Massimo Bianchi - dispersione clic mobile e tempi di caricamento di BM Infissi di Massimo Bianchi (5.4s)",
+      "body": "Buongiorno Massimo,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per BM Infissi di Massimo Bianchi, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/bminfissirimini\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: Per Massimo Bianchi - dispersione clic mobile e tempi di caricamento di BM Infissi di Massimo Bianchi (5.4s)",
+      "body": "Buongiorno Massimo,\n\nOltre a tagliare i 5.4 secondi su mobile, l'infrastruttura recupera il 40% delle conversioni tramite Server-Side Tracking.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza - TechPyre Studio",
+      "inThread": true,
+      "requiresFollowUpCall": true
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: Per Massimo Bianchi - dispersione clic mobile e tempi di caricamento di BM Infissi di Massimo Bianchi (5.4s)",
+      "body": "Buongiorno Massimo,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di BM Infissi di Massimo Bianchi non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/bminfissirimini) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

@@ -1,0 +1,153 @@
+{
+  "slug": "professionistidelserramento",
+  "archetype": "local-leadgen",
+  "meta": {
+    "companyName": "Professionisti Del Serramento",
+    "decisionMakerName": "Direzione Professionisti Del Serramento",
+    "targetEmail": "info@professionistidelserramento.com",
+    "phone": "+39 0933 364814",
+    "city": "Ragusa",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&media_type=all&q=infissi%20ragusa&search_type=keyword_unordered",
+    "originalLandingUrl": "https://www.professionistidelserramento.com/",
+    "isGenericInbox": true,
+    "emailScore": 35,
+    "decisionMakerFirstName": null,
+    "decisionMakerRole": "Direzione Aziendale",
+    "lastSentMessageId": "<73a7f0f4-a854-c0f4-689f-b7ba060b6997@techpyre.eu>",
+    "threadMessageIds": [
+      "<db028838-7140-ff26-7da2-c23654b8e3ba@techpyre.eu>",
+      "<73a7f0f4-a854-c0f4-689f-b7ba060b6997@techpyre.eu>"
+    ],
+    "status": "HOT_LEAD",
+    "notes": "Ha risposto il 29/10 chiedendo dati aziendali e portfolio di lavori realizzati."
+  },
+  "audit": {
+    "originalLcpSeconds": 6.5,
+    "mobileScore": 51,
+    "threeCriticalFlaws": [
+      "Il sito impiega 6.5 secondi a caricare su rete mobile per via di 3 script bloccanti (punteggio velocità mobile 51/100).",
+      "Per trovare il modulo di contatto da smartphone un utente deve scorrere verso il basso per 6.3 schermate (oltre 5316 pixel).",
+      "Manca un simulatore rapido guidato a 2 domande per quantificare le esigenze del cliente in tempo reale."
+    ],
+    "activeAdHeadline": "Professionisti Del Serramento - Infissi Schüco Ragusa",
+    "activeAdCopySummary": "Campagna attiva su Meta: Promozione infissi Schüco, 40% sconto diretto o detrazione 50%, finanziamento tasso zero. Showroom a Ragusa e Niscemi.",
+    "runsAds": true,
+    "detectedTrackingSignals": [
+      "Meta Ad Library"
+    ],
+    "renderBlockingCount": 8
+  },
+  "theme": {
+    "primaryHex": "#E31E24",
+    "accentHex": "#1E293B",
+    "darkBgHex": "#0E1013",
+    "borderRadius": "8px",
+    "secondaryHex": "#B91C1C",
+    "headerBgMode": "dark",
+    "logoBrightness": "light",
+    "headerBgHex": "#0E1013"
+  },
+  "content": {
+    "badgeTop": "Professionisti Del Serramento · Serramenti Certificati a Ragusa",
+    "heroHeadline": "Infissi Schüco ad Alto Isolamento Termico e Acustico",
+    "heroSubheadline": "Sostituisci i tuoi vecchi serramenti con certificazione Schüco: 40% di sconto diretto o detrazione fiscale 50%, con finanziamento a tasso zero.",
+    "heroBullets": [
+      "Rilievo misure preciso a domicilio e preventivo trasparente chiavi in mano",
+      "Profili ad alto isolamento termico e acustico per abbattere i consumi",
+      "Posa certificata con squadre interne e assistenza post-vendita diretta"
+    ],
+    "ctaButtonText": "Calcola il Tuo Preventivo Rapido",
+    "trustMicrocopy": "Richiesta gratuita e senza impegno · Risposta rapida dal nostro ufficio tecnico",
+    "logoLocalPath": "/leads/professionistidelserramento/logo.png",
+    "heroImageLocalPath": "/leads/professionistidelserramento/hero.jpg",
+    "heroImageCaption": "Professionisti Del Serramento · Sede operativa e realizzazioni (Ragusa)",
+    "quiz": {
+      "question1": {
+        "title": "Quale tipologia di intervento desideri valutare?",
+        "options": [
+          "Sostituzione infissi con isolamento termico/acustico",
+          "Nuova installazione per ristrutturazione o cantiere",
+          "Porte interne, blindati o sistemi oscuranti"
+        ]
+      },
+      "question2": {
+        "title": "Quanti serramenti prevede indicativamente il progetto?",
+        "options": [
+          "Da 1 a 4 serramenti",
+          "Da 5 a 8 serramenti (appartamento completo)",
+          "Oltre 8 serramenti o villa/ufficio"
+        ]
+      },
+      "finalStepTitle": "Ottimo. Inserisci i tuoi recapiti per ricevere il prospetto economico e il sopralluogo:"
+    },
+    "valueProps": [
+      {
+        "title": "Isolamento Termico e Acustico Certificato",
+        "description": "Serramenti selezionati per eliminare spifferi, umidita e rumori esterni nella tua abitazione o ufficio a Ragusa.",
+        "metric": "Risparmio Energetico"
+      },
+      {
+        "title": "Posa in Opera Qualificata Senza Sorprese",
+        "description": "Squadre di montaggio esperte di Professionisti Del Serramento curano controtelai, sigillature e finiture senza opere murarie invasive.",
+        "metric": "Posa Certificata"
+      },
+      {
+        "title": "Preventivo Chiaro e Supporto Pratiche Bonus",
+        "description": "Costi chiari fin dal primo incontro e assistenza completa su certificazioni energetiche ed ecobonus.",
+        "metric": "Prezzo Bloccato"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "98%",
+      "mainStatLabel": "Clienti soddisfatti di posa in opera e isolamento termico",
+      "reviewsSummary": "4.9/5 da clienti seguiti a Ragusa e provincia",
+      "testimonials": [
+        {
+          "name": "Davide C.",
+          "location": "Ragusa",
+          "quote": "Team di Professionisti Del Serramento preciso dal rilievo al montaggio. La differenza termica e acustica in casa si sente subito.",
+          "roleOrContext": "Sostituzione infissi completi"
+        },
+        {
+          "name": "Federica S.",
+          "location": "Ragusa e provincia",
+          "quote": "Preventivo rispettato al centesimo, cantiere lasciato pulito ogni sera e grande supporto sulle pratiche fiscali.",
+          "roleOrContext": "Finestre e portoncino blindato"
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "Professionisti Del Serramento - dispersione clic mobile e tempi di caricamento di Professionisti Del Serramento (6.5s)",
+    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di Professionisti Del Serramento, da smartphone impiega 6.5 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Professionisti Del Serramento che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Professionisti Del Serramento, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/professionistidelserramento\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "Professionisti Del Serramento - dispersione clic mobile e tempi di caricamento di Professionisti Del Serramento (6.5s)",
+      "body": "Buongiorno,\n\nda un test sul sito di Professionisti Del Serramento, da smartphone impiega 6.5 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Professionisti Del Serramento che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: Professionisti Del Serramento - dispersione clic mobile e tempi di caricamento di Professionisti Del Serramento (6.5s)",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Professionisti Del Serramento, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/professionistidelserramento\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: Professionisti Del Serramento - dispersione clic mobile e tempi di caricamento di Professionisti Del Serramento (6.5s)",
+      "body": "Buongiorno,\n\nOltre a tagliare i 6.5 secondi su mobile, l'infrastruttura recupera il 40% delle conversioni tramite Server-Side Tracking.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza - TechPyre Studio",
+      "inThread": true,
+      "requiresFollowUpCall": true
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: Professionisti Del Serramento - dispersione clic mobile e tempi di caricamento di Professionisti Del Serramento (6.5s)",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Professionisti Del Serramento non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/professionistidelserramento) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

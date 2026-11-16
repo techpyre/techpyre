@@ -1,0 +1,154 @@
+{
+  "slug": "zaniniemaselli",
+  "archetype": "local-leadgen",
+  "meta": {
+    "companyName": "Zanini e Maselli",
+    "decisionMakerName": "Direzione Zanini e Maselli",
+    "targetEmail": "info@zaniniemaselli.it",
+    "phone": "+39 030 312077",
+    "city": "Brescia",
+    "vatNumber": "03448820179",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&media_type=all&q=fotovoltaico%20brescia&search_type=keyword_unordered",
+    "originalLandingUrl": "https://www.zaniniemaselli.it/pompe-di-calore-vantaggi",
+    "isGenericInbox": true,
+    "emailScore": 35,
+    "decisionMakerFirstName": null,
+    "decisionMakerRole": "Direzione Aziendale",
+    "lastSentMessageId": "<e9061b48-6c67-1be2-b425-ffeb4f33b926@techpyre.eu>",
+    "threadMessageIds": [
+      "<b724e6c6-9e29-b3ae-3098-458e2fe7552b@techpyre.eu>",
+      "<e9061b48-6c67-1be2-b425-ffeb4f33b926@techpyre.eu>"
+    ],
+    "status": "CONTACTED_STEP_2"
+  },
+  "audit": {
+    "originalLcpSeconds": 6.7,
+    "mobileScore": 50,
+    "threeCriticalFlaws": [
+      "Il sito impiega 6.7 secondi a caricare su rete mobile per via di 7 script bloccanti (punteggio velocità mobile 50/100).",
+      "Per trovare il modulo di contatto da smartphone un utente deve scorrere verso il basso per 3 schermate (oltre 3794 pixel).",
+      "Manca un simulatore rapido guidato a 2 domande per quantificare le esigenze del cliente in tempo reale."
+    ],
+    "activeAdHeadline": "Pompe di calore per efficentamento energetico | Zanini e Maselli",
+    "activeAdCopySummary": "Campagna pubblicitaria attiva su Meta per il territorio di Brescia e provincia.",
+    "runsAds": true,
+    "detectedTrackingSignals": [
+      "Google Tag Manager",
+      "Meta Pixel"
+    ],
+    "renderBlockingCount": 8
+  },
+  "theme": {
+    "primaryHex": "#204080",
+    "accentHex": "#802060",
+    "darkBgHex": "#0F1113",
+    "borderRadius": "8px",
+    "secondaryHex": "#608040",
+    "headerBgMode": "dark",
+    "logoBrightness": "light",
+    "headerBgHex": "#0E1013"
+  },
+  "content": {
+    "badgeTop": "Zanini e Maselli · Energia e Comfort Termico (Brescia)",
+    "heroHeadline": "Pompe di Calore e Climatizzazione ad Alta Efficienza",
+    "heroSubheadline": "Riscaldamento, raffrescamento e acqua calda con un'unica soluzione intelligente. Riduci i consumi fino al 60% con sopralluogo e stima personalizzata.",
+    "heroBullets": [
+      "Analisi consumi in bolletta e dimensionamento reale senza sovrastime",
+      "Installazione certificata con tecnici interni abilitati F-Gas / FER",
+      "Gestione completa pratiche di allaccio, ENEA e incentivi fiscali"
+    ],
+    "ctaButtonText": "Calcola il Tuo Preventivo Rapido",
+    "trustMicrocopy": "Richiesta gratuita e senza impegno · Risposta rapida dal nostro ufficio tecnico",
+    "logoLocalPath": "/leads/zaniniemaselli/logo.png",
+    "heroImageLocalPath": "/leads/zaniniemaselli/hero.jpg",
+    "heroImageCaption": "Zanini e Maselli · Sede operativa e realizzazioni (Brescia)",
+    "quiz": {
+      "question1": {
+        "title": "Quale impianto desideri installare o sostituire?",
+        "options": [
+          "Impianto fotovoltaico con eventuale sistema di accumulo",
+          "Climatizzatori, pompa di calore o caldaia ad alta efficienza",
+          "Riqualificazione energetica completa dell'abitazione"
+        ]
+      },
+      "question2": {
+        "title": "Qual e il tuo obiettivo principale?",
+        "options": [
+          "Abbattere subito i costi in bolletta",
+          "Accesso agli incentivi e detrazioni fiscali attive",
+          "Sostituzione urgente con sopralluogo tecnico rapido"
+        ]
+      },
+      "finalStepTitle": "Perfetto. Lascia i tuoi dati per ricevere la simulazione tecnica e il preventivo dedicato:"
+    },
+    "valueProps": [
+      {
+        "title": "Dimensionamento Sui Tuoi Consumi Reali",
+        "description": "Calcoliamo potenza, accumulo o taglia della pompa di calore per offrirti il miglior rientro economico possibile a Brescia.",
+        "metric": "Resa Massima"
+      },
+      {
+        "title": "Installazione Certificata e Sicura",
+        "description": "I tecnici di Zanini e Maselli eseguono il lavoro a regola d'arte rilasciando tutte le dichiarazioni di conformita.",
+        "metric": "100% A Norma"
+      },
+      {
+        "title": "Assistenza e Pratiche Chiavi in Mano",
+        "description": "Seguiamo noi iter autorizzativi, pratiche incentivi e manutenzione programmata post-installazione.",
+        "metric": "Zero Pensieri"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "98%",
+      "mainStatLabel": "Clienti soddisfatti del risparmio energetico ottenuto",
+      "reviewsSummary": "4.9/5 da clienti residenziali a Brescia",
+      "testimonials": [
+        {
+          "name": "Simone G.",
+          "location": "Brescia",
+          "quote": "Impianto dimensione perfetta per i nostri consumi. Zanini e Maselli ha gestito installazione e pratiche in tempi record.",
+          "roleOrContext": "Fotovoltaico con accumulo"
+        },
+        {
+          "name": "Elena P.",
+          "location": "Brescia e provincia",
+          "quote": "Tecnici puliti e precisi nel montaggio del nuovo impianto di climatizzazione. Preventivo chiaro fin dal primo giorno.",
+          "roleOrContext": "Pompa di calore e clima"
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "Zanini e Maselli - dispersione clic mobile e tempi di caricamento di Zanini e Maselli (6.7s)",
+    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di Zanini e Maselli, da smartphone impiega 6.7 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Zanini e Maselli che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Zanini e Maselli, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/zaniniemaselli\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "Zanini e Maselli - dispersione clic mobile e tempi di caricamento di Zanini e Maselli (6.7s)",
+      "body": "Buongiorno,\n\nda un test sul sito di Zanini e Maselli, da smartphone impiega 6.7 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Zanini e Maselli che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: Zanini e Maselli - dispersione clic mobile e tempi di caricamento di Zanini e Maselli (6.7s)",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Zanini e Maselli, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/zaniniemaselli\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: Zanini e Maselli - dispersione clic mobile e tempi di caricamento di Zanini e Maselli (6.7s)",
+      "body": "Buongiorno,\n\nOltre a tagliare i 6.7 secondi su mobile, l'infrastruttura recupera il 40% delle conversioni tramite Server-Side Tracking.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza - TechPyre Studio",
+      "inThread": true,
+      "requiresFollowUpCall": true
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: Zanini e Maselli - dispersione clic mobile e tempi di caricamento di Zanini e Maselli (6.7s)",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Zanini e Maselli non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/zaniniemaselli) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

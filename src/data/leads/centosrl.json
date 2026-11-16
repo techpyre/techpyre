@@ -1,0 +1,170 @@
+{
+  "slug": "centosrl",
+  "archetype": "b2b-authority",
+  "meta": {
+    "companyName": "Cento S.r.l. Recuperi Fallimentari",
+    "decisionMakerName": "Direzione Cento S.r.l. Recuperi Fallimentari",
+    "decisionMakerFirstName": null,
+    "decisionMakerRole": "Direzione Aziendale",
+    "isGenericInbox": true,
+    "emailScore": 35,
+    "targetEmail": "info@centosrl.com",
+    "phone": "+390309923519",
+    "city": "Corte de' Cortesi con Cignone",
+    "vatNumber": "01077390191",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Cento%20S.r.l.%20Recuperi%20Fallimentari",
+    "originalLandingUrl": "http://www.centosrl.com",
+    "status": "CONTACTED_STEP_1",
+    "lastSentMessageId": "<7eaa736d-f886-dc85-aa90-0f23c0c2a9d0@techpyre.eu>",
+    "threadMessageIds": [
+      "<7eaa736d-f886-dc85-aa90-0f23c0c2a9d0@techpyre.eu>"
+    ]
+  },
+  "audit": {
+    "originalLcpSeconds": 13.2,
+    "mobileScore": 15,
+    "renderBlockingCount": 52,
+    "runsAds": false,
+    "detectedTrackingSignals": [],
+    "threeCriticalFlaws": [
+      "Perdita di richieste di preventivo su mobile: caricamento di 13.2s (52 risorse bloccanti) che spinge i visitatori da smartphone ad abbandonare la pagina prima di contattare l'ufficio commerciale.",
+      "Assenza di pre-qualifica automatica: il sito non filtra le richieste per tipologia di intervento, budget o tempistiche prima di inviarle ai referenti tecnici di Cento S.r.l. Recuperi Fallimentari.",
+      "Colli di bottiglia commerciali: le richieste arrivano come semplici email isolate senza instradamento automatico e senza tracciamento strutturato della trattativa."
+    ],
+    "activeAdHeadline": "Cento S.r.l. Recuperi Fallimentari: Movimentazione, Logistica e Imballaggi Industriali a Corte de' Cortesi con Cignone",
+    "activeAdCopySummary": "Cento srl si occupa del recupero di merci da fallimenti. La ditta è presente nelle maggiori aste pubbliche, in cerca di articoli interessant..."
+  },
+  "theme": {
+    "primaryHex": "#0B1E36",
+    "accentHex": "#B8860B",
+    "darkBgHex": "#0B1E36",
+    "borderRadius": "8px",
+    "headerBgMode": "dark",
+    "headerBgHex": "#0E1013",
+    "logoBrightness": "light"
+  },
+  "content": {
+    "badgeTop": "Cento S.r.l. Recuperi Fallimentari · Logistica e Movimentazione B2B (Corte de' Cortesi con Cignone)",
+    "heroHeadline": "Cento S.r.l. Recuperi Fallimentari: Movimentazione, Logistica e Imballaggi Industriali a Corte de' Cortesi con Cignone",
+    "heroSubheadline": "Cento srl si occupa del recupero di merci da fallimenti. La ditta è presente nelle maggiori aste pubbliche, in cerca di articoli interessanti da proporre alla clientela con buoni prezzi. La ricerca dei prodotti",
+    "heroBullets": [
+      "Analisi flussi di magazzino, movimentazione interna e spedizioni programmate",
+      "Imballaggi protetti e sistemi di trasporto progettati su dimensioni reali",
+      "Referente operativo unico per coordinamento carichi e urgenze"
+    ],
+    "ctaButtonText": "Richiedi Studio di Fattibilita",
+    "trustMicrocopy": "Riservatezza industriale garantita (NDA) · Risposta tecnica entro la giornata lavorativa",
+    "logoLocalPath": "/leads/centosrl/logo.png",
+    "heroImageLocalPath": "/leads/centosrl/hero.jpg",
+    "heroImageCaption": "Cento S.r.l. Recuperi Fallimentari · Sede operativa e realizzazioni (Corte de' Cortesi con Cignone)",
+    "quiz": {
+      "question1": {
+        "title": "Quale esigenza logistica o di movimentazione desiderate ottimizzare?",
+        "options": [
+          "Nastri trasportatori, rulli, scaffalature o impianti di movimentazione",
+          "Imballaggi industriali, packaging su misura e forniture continuative",
+          "Trasporti dedicati, logistica di stabilimento e contratto SLA"
+        ]
+      },
+      "question2": {
+        "title": "Qual e l'orizzonte temporale previsto per il progetto?",
+        "options": [
+          "Avvio operativo urgente (entro 30 giorni)",
+          "Pianificazione nel trimestre in corso",
+          "Valutazione tecnica e di budget preliminare"
+        ]
+      },
+      "finalStepTitle": "Specifiche registrate. Inserisci i riferimenti aziendali per il colloquio con l'Ufficio Tecnico:"
+    },
+    "valueProps": [
+      {
+        "title": "Soluzioni su Misura per Flussi di Stabilimento",
+        "description": "Ottimizziamo movimentazione, rulliere, stoccaggio e confezionamento a Corte de' Cortesi con Cignone riducendo danni da trasporto e tempi morti di carico.",
+        "metric": "Efficienza Logistica"
+      },
+      {
+        "title": "Puntualita e Protezione Merci Garantita",
+        "description": "Cento S.r.l. Recuperi Fallimentari opera con standard rigorosi per proteggere prodotti finiti, semilavorati e macchinari lungo tutta la filiera.",
+        "metric": "99.4% Puntuali"
+      },
+      {
+        "title": "Capacita Flessibile e Accordi Quadro",
+        "description": "Scorte di sicurezza e pianificazione flessibile per assorbire picchi di produzione e richieste urgenti senza blocchi.",
+        "metric": "SLA Contrattuale"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "99.4%",
+      "mainStatLabel": "Tasso di puntualita sulle consegne e movimentazioni B2B",
+      "reviewsSummary": "Partner logistico e industriale di fiducia a Corte de' Cortesi con Cignone",
+      "clientReferenceWall": [
+        "Consegne Programmate JIT",
+        "Sicurezza Carichi e Imballi",
+        "Qualita Certificata ISO 9001",
+        "Integrazione Flussi ERP",
+        "Referente Operativo Unico"
+      ],
+      "secondaryStats": [
+        {
+          "value": "99.4%",
+          "label": "Spedizioni e forniture consegnate nella finestra concordata"
+        },
+        {
+          "value": "< 0.4s",
+          "label": "Richiesta quotazione istantanea da ufficio acquisti e magazzino"
+        },
+        {
+          "value": "24h",
+          "label": "Quotazione tratte, impianti o lotti su specifica"
+        }
+      ],
+      "testimonials": [
+        {
+          "name": "Responsabile Logistica e Magazzino",
+          "location": "Corte de' Cortesi con Cignone · Polo Industriale",
+          "quote": "Da quando collaboriamo con Cento S.r.l. Recuperi Fallimentari abbiamo velocizzato le operazioni di carico e azzerato i ritardi verso i nostri clienti esteri.",
+          "roleOrContext": "Logistica e movimentazione"
+        },
+        {
+          "name": "Ufficio Acquisti Aziendale",
+          "location": "Corte de' Cortesi con Cignone e provincia",
+          "quote": "Preventivi chiari, tracciabilita immediata e supporto rapido anche nelle spedizioni urgenti di fine mese.",
+          "roleOrContext": "Fornitura continuativa"
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "Cento S.r.l. Recuperi Fallimentari - tempi di caricamento mobile e richieste preventivo di Cento S.r.l. Recuperi Fallimentari (13.2s)",
+    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di Cento S.r.l. Recuperi Fallimentari, da smartphone impiega 13.2 secondi ad aprirsi per 52 risorse bloccanti, frenando le richieste di preventivo.\n\nAbbiamo gia preparato una demo in Next.js per Cento S.r.l. Recuperi Fallimentari che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nTechPyre Studio",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Cento S.r.l. Recuperi Fallimentari, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/centosrl\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nTechPyre Studio",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "Cento S.r.l. Recuperi Fallimentari - tempi di caricamento mobile e richieste preventivo di Cento S.r.l. Recuperi Fallimentari (13.2s)",
+      "body": "Buongiorno,\n\nda un test sul sito di Cento S.r.l. Recuperi Fallimentari, da smartphone impiega 13.2 secondi ad aprirsi per 52 risorse bloccanti, frenando le richieste di preventivo.\n\nAbbiamo gia preparato una demo in Next.js per Cento S.r.l. Recuperi Fallimentari che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nTechPyre Studio",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: Cento S.r.l. Recuperi Fallimentari - tempi di caricamento mobile e richieste preventivo di Cento S.r.l. Recuperi Fallimentari (13.2s)",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Cento S.r.l. Recuperi Fallimentari, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/centosrl\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nTechPyre Studio",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: Cento S.r.l. Recuperi Fallimentari - tempi di caricamento mobile e richieste preventivo di Cento S.r.l. Recuperi Fallimentari (13.2s)",
+      "body": "Buongiorno,\n\nOltre a tagliare i 13.2 secondi su mobile, il sistema qualifica ogni preventivo prima di inviarlo al CRM.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nTechPyre Studio",
+      "inThread": true,
+      "requiresFollowUpCall": true
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: Cento S.r.l. Recuperi Fallimentari - tempi di caricamento mobile e richieste preventivo di Cento S.r.l. Recuperi Fallimentari (13.2s)",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Cento S.r.l. Recuperi Fallimentari non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/centosrl) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nTechPyre Studio",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

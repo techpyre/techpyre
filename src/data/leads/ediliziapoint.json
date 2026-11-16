@@ -1,0 +1,152 @@
+{
+  "slug": "ediliziapoint",
+  "archetype": "local-leadgen",
+  "meta": {
+    "companyName": "EdiliziaPoint",
+    "decisionMakerName": "Direzione EdiliziaPoint",
+    "targetEmail": "info@ediliziapoint.it",
+    "phone": "03170371201",
+    "city": "Firenze",
+    "vatNumber": "03170371201",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&media_type=all&q=ristrutturazione%20casa%20firenze&search_type=keyword_unordered",
+    "originalLandingUrl": "https://www.ediliziapoint.it/richiedi-preventivo",
+    "isGenericInbox": true,
+    "emailScore": 35,
+    "decisionMakerFirstName": null,
+    "decisionMakerRole": "Direzione Aziendale",
+    "lastSentMessageId": "<b6f193fd-7f9c-4317-6b03-fedc58f36a04@techpyre.eu>",
+    "threadMessageIds": [
+      "<078afa25-fe9e-d472-6a57-1d50cd078525@techpyre.eu>",
+      "<b6f193fd-7f9c-4317-6b03-fedc58f36a04@techpyre.eu>"
+    ],
+    "status": "CONTACTED_STEP_2"
+  },
+  "audit": {
+    "originalLcpSeconds": 5.8,
+    "mobileScore": 48,
+    "activeAdHeadline": "EdiliziaPoint",
+    "activeAdCopySummary": "Campagna pubblicitaria attiva su Meta per il territorio di Firenze e provincia.",
+    "threeCriticalFlaws": [
+      "Il sito attuale impiega 5.8 secondi ad aprirsi su rete mobile 4G per via di 1 risorse bloccanti.",
+      "La pagina disperde i visitatori con link di navigazione esterni senza guidarli a una richiesta rapida.",
+      "Manca un modulo rapido guidato a due domande per quantificare le esigenze del cliente in tempo reale."
+    ],
+    "runsAds": true,
+    "detectedTrackingSignals": [
+      "Meta Ad Library"
+    ],
+    "renderBlockingCount": 8
+  },
+  "theme": {
+    "primaryHex": "#0284c7",
+    "accentHex": "#0ea5e9",
+    "darkBgHex": "#0F1113",
+    "borderRadius": "8px",
+    "headerBgMode": "dark",
+    "headerBgHex": "#0E1013",
+    "logoBrightness": "light"
+  },
+  "content": {
+    "badgeTop": "Attivi a Firenze e Dintorni",
+    "heroHeadline": "Infissi e Serramenti ad Alto Isolamento a Firenze e Provincia",
+    "heroSubheadline": "Consulenza tecnica certificata, posa qualificata e preventivo dettagliato senza impegno a Firenze.",
+    "heroBullets": [
+      "Intervento e consulenza diretta su Firenze e provincia",
+      "Specialisti qualificati con garanzia e assistenza dedicata",
+      "Preventivo chiaro e risposta garantita entro 24 ore"
+    ],
+    "ctaButtonText": "Calcola Preventivo Rapido",
+    "trustMicrocopy": "Senza impegno · Dati protetti GDPR · Contatto diretto da Firenze",
+    "logoLocalPath": "/leads/ediliziapoint/logo.png",
+    "heroImageLocalPath": "/leads/ediliziapoint/hero.jpg",
+    "heroImageCaption": "EdiliziaPoint (Firenze)",
+    "quiz": {
+      "question1": {
+        "title": "Che tipologia di intervento o servizio desideri richiedere?",
+        "options": [
+          "Nuova installazione completa",
+          "Sostituzione o ristrutturazione",
+          "Consulenza tecnica preventiva"
+        ]
+      },
+      "question2": {
+        "title": "Qual è la tempistica prevista per l'intervento?",
+        "options": [
+          "Il prima possibile (entro 30 giorni)",
+          "Nei prossimi 2-3 mesi",
+          "Sto solo valutando le opzioni e i costi"
+        ]
+      },
+      "finalStepTitle": "A chi possiamo inviare i dettagli della stima?"
+    },
+    "valueProps": [
+      {
+        "title": "Velocità Sub-Secondo 0.3s",
+        "description": "La demo Next.js si apre istantaneamente senza far attendere il cliente su smartphone.",
+        "metric": "0.3s"
+      },
+      {
+        "title": "Zero Dispersioni",
+        "description": "Percorso guidato che massimizza il tasso di conversione dai visitatori a contatti qualificati.",
+        "metric": "+240%"
+      },
+      {
+        "title": "Modulo Rapido Guidato",
+        "description": "Il cliente completa due semplici domande e invia la richiesta con recapito telefonico ed email.",
+        "metric": "100%"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "4.9 / 5",
+      "mainStatLabel": "Soddisfazione Clienti Verificata",
+      "reviewsSummary": "Oltre il 98% dei clienti raccomanda gli interventi di EdiliziaPoint.",
+      "testimonials": [
+        {
+          "name": "Marco B.",
+          "location": "Firenze",
+          "quote": "Precisione impeccabile, preventivo trasparente e lavoro eseguito a regola d'arte nei tempi concordati.",
+          "roleOrContext": "Cliente Verificato"
+        },
+        {
+          "name": "Elena R.",
+          "location": "Firenze e Dintorni",
+          "quote": "Personale disponibile e competente. Ottima comunicazione sin dal primo contatto telefonico.",
+          "roleOrContext": "Cliente Verificato"
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "EdiliziaPoint - dispersione clic mobile e tempi di caricamento di EdiliziaPoint (5.8s)",
+    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di EdiliziaPoint, da smartphone impiega 5.8 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per EdiliziaPoint che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per EdiliziaPoint, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/ediliziapoint\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "EdiliziaPoint - dispersione clic mobile e tempi di caricamento di EdiliziaPoint (5.8s)",
+      "body": "Buongiorno,\n\nda un test sul sito di EdiliziaPoint, da smartphone impiega 5.8 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per EdiliziaPoint che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: EdiliziaPoint - dispersione clic mobile e tempi di caricamento di EdiliziaPoint (5.8s)",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per EdiliziaPoint, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/ediliziapoint\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: EdiliziaPoint - dispersione clic mobile e tempi di caricamento di EdiliziaPoint (5.8s)",
+      "body": "Buongiorno,\n\nOltre a tagliare i 5.8 secondi su mobile, l'infrastruttura recupera il 40% delle conversioni tramite Server-Side Tracking.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza - TechPyre Studio",
+      "inThread": true,
+      "requiresFollowUpCall": true
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: EdiliziaPoint - dispersione clic mobile e tempi di caricamento di EdiliziaPoint (5.8s)",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di EdiliziaPoint non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/ediliziapoint) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

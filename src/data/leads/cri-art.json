@@ -1,0 +1,170 @@
+{
+  "slug": "cri-art",
+  "archetype": "b2b-authority",
+  "meta": {
+    "companyName": "Cri-Art Digital Studio",
+    "decisionMakerName": "Direzione Cri-Art Digital Studio",
+    "targetEmail": "info@cri-art.it",
+    "phone": "+39 035 224 5510",
+    "city": "Bergamo",
+    "adLibraryUrl": "https://www.linkedin.com/company/cri-art",
+    "originalLandingUrl": "https://www.cri-art.it",
+    "isGenericInbox": true,
+    "emailScore": 35,
+    "decisionMakerFirstName": null,
+    "decisionMakerRole": "Direzione Aziendale",
+    "lastSentMessageId": "<c85f4817-81db-a3ae-d1cb-a7b8014c4489@techpyre.eu>",
+    "threadMessageIds": [
+      "<3de2d194-5d93-60d7-6f67-9c3311d08ac7@techpyre.eu>",
+      "<c85f4817-81db-a3ae-d1cb-a7b8014c4489@techpyre.eu>"
+    ],
+    "status": "INVALID_TICKET_INBOX",
+    "notes": "Casella email restituisce 550 No Such User."
+  },
+  "audit": {
+    "originalLcpSeconds": 6.8,
+    "mobileScore": 38,
+    "activeAdHeadline": "Landing Page ad Alta Conversione & Velocità 0.3s per Cri-Art Digital Studio",
+    "activeAdCopySummary": "Supporto tecnico avanzato per agenzie e corporate: architettura headless sub-secondo, zero dipendenze pesanti e percorsi di conversione guid...",
+    "threeCriticalFlaws": [
+      "Abbandono Preventivi da Mobile (6.8s LCP): i potenziali clienti B2B che visitano il sito da smartphone attendono 6.8 secondi a causa di 8 risorse bloccanti prima di vedere l'offerta",
+      "Assenza di Qualifica Commerciale Automatica: i visitatori atterrano su moduli generici che inviano semplici email isolate, costringendo il team a filtrare e ricopiare i dati a mano",
+      "Scollegamento dal Flusso Vendite (CRM): manca un collegamento automatico che classifichi il cliente per tipologia di intervento e notifichi subito il referente commerciale"
+    ],
+    "runsAds": false,
+    "detectedTrackingSignals": [],
+    "renderBlockingCount": 8
+  },
+  "theme": {
+    "primaryHex": "#306040",
+    "accentHex": "#B8860B",
+    "darkBgHex": "#0B1E36",
+    "borderRadius": "8px",
+    "headerBgMode": "light",
+    "logoBrightness": "dark"
+  },
+  "content": {
+    "badgeTop": "Cri-Art Digital Studio · Divisione Tecnica e Commesse B2B (Bergamo)",
+    "heroHeadline": "Landing Page ad Alta Conversione & Velocità 0.3s per Cri-Art Digital Studio",
+    "heroSubheadline": "Supporto tecnico avanzato per agenzie e corporate: architettura headless sub-secondo, zero dipendenze pesanti e percorsi di conversione guidati.",
+    "heroBullets": [
+      "Studio di fattibilita tecnica e capitolato con tempi di consegna certi",
+      "Qualifica immediata della richiesta e assegnazione diretta all'Ufficio Tecnico",
+      "Produzione e assistenza certificata con referente unico dedicato"
+    ],
+    "ctaButtonText": "Richiedi Studio di Fattibilita",
+    "trustMicrocopy": "Riservatezza industriale garantita (NDA) · Risposta tecnica entro la giornata lavorativa",
+    "logoLocalPath": "/leads/cri-art/logo.png",
+    "heroImageLocalPath": "/leads/cri-art/hero.jpg",
+    "heroImageCaption": "Cri-Art Digital Studio · Sede operativa e realizzazioni (Bergamo)",
+    "quiz": {
+      "question1": {
+        "title": "Quale ambito operativo o di commessa desiderate approfondire?",
+        "options": [
+          "Fornitura industriale, impianti o commessa su specifica",
+          "Integrazione tecnica, automazione di reparto o accordo quadro",
+          "Studio di fattibilita, capitolato e quotazione riservata"
+        ]
+      },
+      "question2": {
+        "title": "Qual e l'orizzonte temporale previsto per il progetto?",
+        "options": [
+          "Avvio operativo urgente (entro 30 giorni)",
+          "Pianificazione nel trimestre in corso",
+          "Valutazione tecnica e di budget preliminare"
+        ]
+      },
+      "finalStepTitle": "Specifiche registrate. Inserisci i riferimenti aziendali per il colloquio con l'Ufficio Tecnico:"
+    },
+    "valueProps": [
+      {
+        "title": "Ingegneria e Progettazione su Specifica",
+        "description": "Analizziamo i requisiti produttivi della commessa a Bergamo, definendo specifiche tecniche, tempi di consegna e costi prima dell'avvio.",
+        "metric": "Capitolato Chiuso"
+      },
+      {
+        "title": "Controllo Qualita e Conformita Normativa",
+        "description": "Ogni fornitura di Cri-Art Digital Studio viene collaudata secondo gli standard di sicurezza e qualita vigenti, con documentazione tecnica completa.",
+        "metric": "100% Certificato"
+      },
+      {
+        "title": "Continuita Operativa e Assistenza Post-Vendita",
+        "description": "Affianchiamo il reparto tecnico e acquisti dal collaudo in stabilimento fino alla manutenzione programmata.",
+        "metric": "SLA Garantito"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "99.4%",
+      "mainStatLabel": "Commesse B2B consegnate entro i tempi contrattuali",
+      "reviewsSummary": "Partner tecnico di riferimento per imprese e stabilimenti a Bergamo",
+      "clientReferenceWall": [
+        "Qualita Certificata ISO 9001",
+        "Conformita Tecnica CE",
+        "Integrazione Gestionale / ERP",
+        "Capitolato e Preventivo Chiuso",
+        "Assistenza Tecnica Diretta"
+      ],
+      "secondaryStats": [
+        {
+          "value": "99.4%",
+          "label": "Commesse consegnate nel pieno rispetto dei tempi contrattuali"
+        },
+        {
+          "value": "< 0.4s",
+          "label": "Caricamento istantaneo dell'infrastruttura digitale su mobile"
+        },
+        {
+          "value": "24h",
+          "label": "Presa in carico tecnica e invio automatico della richiesta al CRM"
+        }
+      ],
+      "testimonials": [
+        {
+          "name": "Direzione Tecnica e Produzione",
+          "location": "Bergamo · Commessa Industriale",
+          "quote": "Abbiamo affidato a Cri-Art Digital Studio una commessa strategica per il nostro reparto: rispetto rigoroso delle specifiche tecniche e collaudo impeccabile.",
+          "roleOrContext": "Fornitura e collaudo B2B"
+        },
+        {
+          "name": "Responsabile Ufficio Acquisti",
+          "location": "Bergamo e provincia",
+          "quote": "Partner strutturato e affidabile: preventivazione trasparente, documentazione tecnica completa e supporto post-vendita immediato.",
+          "roleOrContext": "Accordo quadro di fornitura"
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "Cri-Art Digital Studio - tempi di caricamento mobile e richieste preventivo di Cri-Art Digital Studio (6.8s)",
+    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di Cri-Art Digital Studio, da smartphone impiega 6.8 secondi ad aprirsi per 8 risorse bloccanti, frenando le richieste di preventivo.\n\nAbbiamo gia preparato una demo in Next.js per Cri-Art Digital Studio che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Cri-Art Digital Studio, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/cri-art\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "Cri-Art Digital Studio - tempi di caricamento mobile e richieste preventivo di Cri-Art Digital Studio (6.8s)",
+      "body": "Buongiorno,\n\nda un test sul sito di Cri-Art Digital Studio, da smartphone impiega 6.8 secondi ad aprirsi per 8 risorse bloccanti, frenando le richieste di preventivo.\n\nAbbiamo gia preparato una demo in Next.js per Cri-Art Digital Studio che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: Cri-Art Digital Studio - tempi di caricamento mobile e richieste preventivo di Cri-Art Digital Studio (6.8s)",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Cri-Art Digital Studio, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/cri-art\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: Cri-Art Digital Studio - tempi di caricamento mobile e richieste preventivo di Cri-Art Digital Studio (6.8s)",
+      "body": "Buongiorno,\n\nOltre a tagliare i 6.8 secondi su mobile, il sistema qualifica ogni preventivo prima di inviarlo al CRM.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza - TechPyre Studio",
+      "inThread": true,
+      "requiresFollowUpCall": true
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: Cri-Art Digital Studio - tempi di caricamento mobile e richieste preventivo di Cri-Art Digital Studio (6.8s)",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Cri-Art Digital Studio non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/cri-art) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

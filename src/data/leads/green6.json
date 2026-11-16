@@ -1,0 +1,170 @@
+{
+  "slug": "green6",
+  "archetype": "b2b-authority",
+  "meta": {
+    "companyName": "GREEN6.",
+    "decisionMakerName": "Direzione GREEN6.",
+    "decisionMakerFirstName": null,
+    "decisionMakerRole": "Direzione Aziendale",
+    "isGenericInbox": true,
+    "emailScore": 45,
+    "targetEmail": "commerciale@green6.it",
+    "phone": "324 0566866",
+    "city": "Ravenna",
+    "vatNumber": "02697370399",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=GREEN6.",
+    "originalLandingUrl": "https://www.green6.it",
+    "status": "CONTACTED_STEP_1",
+    "lastSentMessageId": "<5be168ed-81b5-eb57-fa6b-d8ebb3305c71@techpyre.eu>",
+    "threadMessageIds": [
+      "<5be168ed-81b5-eb57-fa6b-d8ebb3305c71@techpyre.eu>"
+    ]
+  },
+  "audit": {
+    "originalLcpSeconds": 15.7,
+    "mobileScore": 15,
+    "renderBlockingCount": 58,
+    "runsAds": false,
+    "detectedTrackingSignals": [],
+    "threeCriticalFlaws": [
+      "Perdita di richieste di preventivo su mobile: caricamento di 15.7s (58 risorse bloccanti) che spinge i visitatori da smartphone ad abbandonare la pagina prima di contattare l'ufficio commerciale.",
+      "Assenza di pre-qualifica automatica: il sito non filtra le richieste per tipologia di intervento, budget o tempistiche prima di inviarle ai referenti tecnici di GREEN6..",
+      "Colli di bottiglia commerciali: le richieste arrivano come semplici email isolate senza instradamento automatico e senza tracciamento strutturato della trattativa."
+    ],
+    "activeAdHeadline": "GREEN6.: Automazione Industriale e Impianti Tecnologici a Ravenna",
+    "activeAdCopySummary": "Prendi il controllo del tuo profilo energetico per la tua famiglia e per la tua impresa con Green6. Sfrutta le potenzialità offerte da un im..."
+  },
+  "theme": {
+    "primaryHex": "#f0b020",
+    "accentHex": "#B8860B",
+    "darkBgHex": "#0B1E36",
+    "borderRadius": "8px",
+    "headerBgMode": "dark",
+    "headerBgHex": "#0E1013",
+    "logoBrightness": "light"
+  },
+  "content": {
+    "badgeTop": "GREEN6. · Ingegneria e Automazione B2B (Ravenna)",
+    "heroHeadline": "GREEN6.: Automazione Industriale e Impianti Tecnologici a Ravenna",
+    "heroSubheadline": "Prendi il controllo del tuo profilo energetico per la tua famiglia e per la tua impresa con Green6. Sfrutta le potenzialità offerte da un impianto fotovoltaico nel creare un ambiente ecologicamente sostenibile,",
+    "heroBullets": [
+      "Studio elettrico, sviluppo software PLC e cablaggio quadri certificato",
+      "Revamping macchinari e interconnessione verso gestionali aziendali MES/ERP",
+      "Collaudo funzionale, fascicolo tecnico CE e teleassistenza post-vendita"
+    ],
+    "ctaButtonText": "Richiedi Studio di Fattibilita",
+    "trustMicrocopy": "Riservatezza industriale garantita (NDA) · Risposta tecnica entro la giornata lavorativa",
+    "logoLocalPath": "/leads/green6/logo.png",
+    "heroImageLocalPath": "/leads/green6/hero.jpg",
+    "heroImageCaption": "GREEN6. · Sede operativa e realizzazioni (Ravenna)",
+    "quiz": {
+      "question1": {
+        "title": "Quale ambito di automazione o impiantistica industriale valutate?",
+        "options": [
+          "Quadri elettrici bordomacchina, revamping linee e integrazione PLC",
+          "Progettazione isole robotizzate, macchinari o automazione di reparto",
+          "Studio di fattibilita tecnica, conformita CE e tempi di consegna"
+        ]
+      },
+      "question2": {
+        "title": "Qual e l'orizzonte temporale previsto per il progetto?",
+        "options": [
+          "Avvio operativo urgente (entro 30 giorni)",
+          "Pianificazione nel trimestre in corso",
+          "Valutazione tecnica e di budget preliminare"
+        ]
+      },
+      "finalStepTitle": "Specifiche registrate. Inserisci i riferimenti aziendali per il colloquio con l'Ufficio Tecnico:"
+    },
+    "valueProps": [
+      {
+        "title": "Progettazione Elettrica e Software Su Specifica",
+        "description": "Sviluppiamo architetture di controllo affidabili e scalabili a Ravenna, pensate per integrarsi nei vostri reparti senza lunghi fermi produzione.",
+        "metric": "Norma CE"
+      },
+      {
+        "title": "Quadristica, Cablaggio e Sicurezza Impianti",
+        "description": "Quadri di potenza e automazione testati al 100% prima della spedizione, completi di schemi aggiornati e verifiche di sicurezza.",
+        "metric": "Testato 100%"
+      },
+      {
+        "title": "Avviamento in Linea e Teleassistenza",
+        "description": "Supportiamo gli operatori in fabbrica durante la messa in servizio e garantiamo continuità con diagnostica tempestiva.",
+        "metric": "Supporto Diretto"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "99.4%",
+      "mainStatLabel": "Impianti e quadri avviati nel rispetto delle finestre produttive",
+      "reviewsSummary": "Partner tecnologico per l'automazione di stabilimenti a Ravenna",
+      "clientReferenceWall": [
+        "Direttiva Macchine 2006/42/CE",
+        "Conformita CEI EN 60204-1",
+        "Integrazione MES / ERP",
+        "Teleassistenza Industriale",
+        "Qualita Certificata ISO 9001"
+      ],
+      "secondaryStats": [
+        {
+          "value": "99.4%",
+          "label": "Commesse di automazione collaudate nei tempi concordati"
+        },
+        {
+          "value": "< 0.4s",
+          "label": "Caricamento rapido del portale tecnico su smartphone"
+        },
+        {
+          "value": "24h",
+          "label": "Primo riscontro dall'Ufficio Tecnico su nuove commesse"
+        }
+      ],
+      "testimonials": [
+        {
+          "name": "Direttore di Stabilimento",
+          "location": "Ravenna · Reparto Automazione",
+          "quote": "Il revamping eseguito da GREEN6. ha stabilizzato la linea e ridotto i guasti elettrici fin dal primo mese di esercizio.",
+          "roleOrContext": "Automazione e revamping"
+        },
+        {
+          "name": "Responsabile Ingegneria di Processo",
+          "location": "Ravenna e provincia",
+          "quote": "Documentazione elettrica ordinata, rispetto rigoroso delle norme di sicurezza e disponibilita immediata in fase di collaudo.",
+          "roleOrContext": "Quadristica e bordomacchina"
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "GREEN6. - tempi di caricamento mobile e richieste preventivo di GREEN6. (15.7s)",
+    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di GREEN6., da smartphone impiega 15.7 secondi ad aprirsi per 58 risorse bloccanti, frenando le richieste di preventivo.\n\nAbbiamo gia preparato una demo in Next.js per GREEN6. che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nTechPyre Studio",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per GREEN6., completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/green6\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nTechPyre Studio",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "GREEN6. - tempi di caricamento mobile e richieste preventivo di GREEN6. (15.7s)",
+      "body": "Buongiorno,\n\nda un test sul sito di GREEN6., da smartphone impiega 15.7 secondi ad aprirsi per 58 risorse bloccanti, frenando le richieste di preventivo.\n\nAbbiamo gia preparato una demo in Next.js per GREEN6. che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nTechPyre Studio",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: GREEN6. - tempi di caricamento mobile e richieste preventivo di GREEN6. (15.7s)",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per GREEN6., completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/green6\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nTechPyre Studio",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: GREEN6. - tempi di caricamento mobile e richieste preventivo di GREEN6. (15.7s)",
+      "body": "Buongiorno,\n\nOltre a tagliare i 15.7 secondi su mobile, il sistema qualifica ogni preventivo prima di inviarlo al CRM.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nTechPyre Studio",
+      "inThread": true,
+      "requiresFollowUpCall": true
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: GREEN6. - tempi di caricamento mobile e richieste preventivo di GREEN6. (15.7s)",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di GREEN6. non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/green6) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nTechPyre Studio",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

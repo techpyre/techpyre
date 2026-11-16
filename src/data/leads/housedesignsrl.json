@@ -1,0 +1,151 @@
+{
+  "slug": "housedesignsrl",
+  "archetype": "local-leadgen",
+  "meta": {
+    "companyName": "House Design srl",
+    "decisionMakerName": "Direzione House Design srl",
+    "targetEmail": "commerciale@housedesignsrl.it",
+    "phone": "3124657546",
+    "city": "Torino",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&media_type=all&q=porte%20blindate%20torino&search_type=keyword_unordered",
+    "originalLandingUrl": "https://housedesignsrl.it/",
+    "isGenericInbox": true,
+    "emailScore": 45,
+    "decisionMakerFirstName": null,
+    "decisionMakerRole": "Direzione Aziendale",
+    "lastSentMessageId": "<b9c3065c-72b0-c76a-70bb-6c83f5adf1d2@techpyre.eu>",
+    "threadMessageIds": [
+      "<0fd1b4a2-aad7-4a74-0158-20b6cca9efe1@techpyre.eu>",
+      "<b9c3065c-72b0-c76a-70bb-6c83f5adf1d2@techpyre.eu>"
+    ],
+    "status": "INVALID_TICKET_INBOX",
+    "notes": "Indirizzo commerciale@housedesignsrl.it inesistente (bounce postmaster)."
+  },
+  "audit": {
+    "originalLcpSeconds": 6.8,
+    "mobileScore": 49,
+    "threeCriticalFlaws": [
+      "Il sito impiega 6.8 secondi a caricare su rete mobile per via di 16 script bloccanti (punteggio velocità mobile 49/100).",
+      "Per trovare il modulo di contatto da smartphone un utente deve scorrere verso il basso per 18.3 schermate (oltre 15433 pixel).",
+      "Un banner cookie o popup copre circa il 56% dello schermo mobile all arrivo."
+    ],
+    "activeAdHeadline": "House Design srl: Infissi e Serramenti ad Alto Isolamento a Torino",
+    "activeAdCopySummary": "Una scelta sicura da 20 anni.Manca poco al 31 dicembre 2025!Approfitta ora delle detrazioni fiscali del 50% e ricevi una consulenza gratuita...",
+    "runsAds": true,
+    "detectedTrackingSignals": [
+      "Meta Ad Library"
+    ],
+    "renderBlockingCount": 8
+  },
+  "theme": {
+    "primaryHex": "#1E3A8A",
+    "accentHex": "#2563EB",
+    "darkBgHex": "#0B1E36",
+    "borderRadius": "12px",
+    "headerBgMode": "light",
+    "logoBrightness": "dark"
+  },
+  "content": {
+    "badgeTop": "House Design srl · Serramenti Certificati a Torino",
+    "heroHeadline": "House Design srl: Infissi e Serramenti ad Alto Isolamento a Torino",
+    "heroSubheadline": "Una scelta sicura da 20 anni.Manca poco al 31 dicembre 2025!Approfitta ora delle detrazioni fiscali del 50% e ricevi una consulenza gratuita con il miglior",
+    "heroBullets": [
+      "Rilievo misure preciso a domicilio e preventivo trasparente chiavi in mano",
+      "Profili ad alto isolamento termico e acustico per abbattere i consumi",
+      "Posa certificata con squadre interne e assistenza post-vendita diretta"
+    ],
+    "ctaButtonText": "Calcola il Tuo Preventivo Rapido",
+    "trustMicrocopy": "Richiesta gratuita e senza impegno · Risposta rapida dal nostro ufficio tecnico",
+    "logoLocalPath": "/leads/housedesignsrl/logo.png",
+    "heroImageLocalPath": "/leads/housedesignsrl/hero.jpg",
+    "heroImageCaption": "House Design srl · Sede operativa e realizzazioni (Torino)",
+    "quiz": {
+      "question1": {
+        "title": "Quale tipologia di intervento desideri valutare?",
+        "options": [
+          "Sostituzione infissi con isolamento termico/acustico",
+          "Nuova installazione per ristrutturazione o cantiere",
+          "Porte interne, blindati o sistemi oscuranti"
+        ]
+      },
+      "question2": {
+        "title": "Quanti serramenti prevede indicativamente il progetto?",
+        "options": [
+          "Da 1 a 4 serramenti",
+          "Da 5 a 8 serramenti (appartamento completo)",
+          "Oltre 8 serramenti o villa/ufficio"
+        ]
+      },
+      "finalStepTitle": "Ottimo. Inserisci i tuoi recapiti per ricevere il prospetto economico e il sopralluogo:"
+    },
+    "valueProps": [
+      {
+        "title": "Isolamento Termico e Acustico Certificato",
+        "description": "Serramenti selezionati per eliminare spifferi, umidita e rumori esterni nella tua abitazione o ufficio a Torino.",
+        "metric": "Risparmio Energetico"
+      },
+      {
+        "title": "Posa in Opera Qualificata Senza Sorprese",
+        "description": "Squadre di montaggio esperte di House Design srl curano controtelai, sigillature e finiture senza opere murarie invasive.",
+        "metric": "Posa Certificata"
+      },
+      {
+        "title": "Preventivo Chiaro e Supporto Pratiche Bonus",
+        "description": "Costi chiari fin dal primo incontro e assistenza completa su certificazioni energetiche ed ecobonus.",
+        "metric": "Prezzo Bloccato"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "98%",
+      "mainStatLabel": "Clienti soddisfatti di posa in opera e isolamento termico",
+      "reviewsSummary": "4.9/5 da clienti seguiti a Torino e provincia",
+      "testimonials": [
+        {
+          "name": "Davide C.",
+          "location": "Torino",
+          "quote": "Team di House Design srl preciso dal rilievo al montaggio. La differenza termica e acustica in casa si sente subito.",
+          "roleOrContext": "Sostituzione infissi completi"
+        },
+        {
+          "name": "Federica S.",
+          "location": "Torino e provincia",
+          "quote": "Preventivo rispettato al centesimo, cantiere lasciato pulito ogni sera e grande supporto sulle pratiche fiscali.",
+          "roleOrContext": "Finestre e portoncino blindato"
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "House Design srl - dispersione clic mobile e tempi di caricamento di House Design srl (6.8s)",
+    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di House Design srl, da smartphone impiega 6.8 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per House Design srl che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per House Design srl, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/housedesignsrl\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "House Design srl - dispersione clic mobile e tempi di caricamento di House Design srl (6.8s)",
+      "body": "Buongiorno,\n\nda un test sul sito di House Design srl, da smartphone impiega 6.8 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per House Design srl che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: House Design srl - dispersione clic mobile e tempi di caricamento di House Design srl (6.8s)",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per House Design srl, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/housedesignsrl\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: House Design srl - dispersione clic mobile e tempi di caricamento di House Design srl (6.8s)",
+      "body": "Buongiorno,\n\nOltre a tagliare i 6.8 secondi su mobile, l'infrastruttura recupera il 40% delle conversioni tramite Server-Side Tracking.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza - TechPyre Studio",
+      "inThread": true,
+      "requiresFollowUpCall": true
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: House Design srl - dispersione clic mobile e tempi di caricamento di House Design srl (6.8s)",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di House Design srl non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/housedesignsrl) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

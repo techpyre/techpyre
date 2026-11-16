@@ -1,0 +1,171 @@
+{
+  "slug": "sistelautomazioni",
+  "archetype": "b2b-authority",
+  "meta": {
+    "companyName": "Sistel Centro Automazioni",
+    "decisionMakerName": "Direzione Sistel Centro Automazioni",
+    "decisionMakerFirstName": null,
+    "decisionMakerRole": "Direzione Aziendale",
+    "isGenericInbox": true,
+    "emailScore": 38,
+    "targetEmail": "sistel@sistelautomazioni.it",
+    "phone": "+390522556941",
+    "city": "Reggio nell'Emilia",
+    "vatNumber": "02603070356",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Sistel%20Centro%20Automazioni",
+    "originalLandingUrl": "https://www.sistelautomazioni.it",
+    "status": "CONTACTED_STEP_1",
+    "lastSentMessageId": "<783561d3-4649-679f-9826-9177ba3a0d32@techpyre.eu>",
+    "threadMessageIds": [
+      "<783561d3-4649-679f-9826-9177ba3a0d32@techpyre.eu>"
+    ]
+  },
+  "audit": {
+    "originalLcpSeconds": 5.2,
+    "mobileScore": 56,
+    "renderBlockingCount": 19,
+    "runsAds": true,
+    "detectedTrackingSignals": [
+      "Google Ads / GTM"
+    ],
+    "threeCriticalFlaws": [
+      "Dispersione del budget pubblicitario: caricamento mobile di 5.2s (19 risorse bloccanti) che fa abbandonare oltre meta degli utenti prima dell'apertura della pagina.",
+      "Cecita decisionale sul ROI: assenza di tracciamento Server-Side di prima parte (GTM Server-Side e Meta CAPI), con perdita del 30-50% dei dati di conversione per blocchi browser e cookie banner.",
+      "Colli di bottiglia commerciali: i contatti finiscono in email isolate senza pre-qualifica automatica e senza sincronizzazione immediata via API/Webhook con il CRM aziendale."
+    ],
+    "activeAdHeadline": "Installazione e manutenzione di cancelli e portoni automatici a Reggio Emilia",
+    "activeAdCopySummary": "Progettazione, quadristica elettrica, integrazione macchinari e revamping linee produttive a Reggio nell'Emilia con avviamento certificato i..."
+  },
+  "theme": {
+    "primaryHex": "#30c0f0",
+    "accentHex": "#B8860B",
+    "darkBgHex": "#0B1E36",
+    "borderRadius": "8px",
+    "headerBgMode": "light",
+    "logoBrightness": "dark"
+  },
+  "content": {
+    "badgeTop": "Sistel Centro Automazioni · Ingegneria e Automazione B2B (Reggio nell'Emilia)",
+    "heroHeadline": "Installazione e manutenzione di cancelli e portoni automatici a Reggio Emilia",
+    "heroSubheadline": "Progettazione, quadristica elettrica, integrazione macchinari e revamping linee produttive a Reggio nell'Emilia con avviamento certificato in stabilimento.",
+    "heroBullets": [
+      "Studio elettrico, sviluppo software PLC e cablaggio quadri certificato",
+      "Revamping macchinari e interconnessione verso gestionali aziendali MES/ERP",
+      "Collaudo funzionale, fascicolo tecnico CE e teleassistenza post-vendita"
+    ],
+    "ctaButtonText": "Richiedi Studio di Fattibilita",
+    "trustMicrocopy": "Riservatezza industriale garantita (NDA) · Risposta tecnica entro la giornata lavorativa",
+    "logoLocalPath": "/leads/sistelautomazioni/logo.png",
+    "heroImageLocalPath": "/leads/sistelautomazioni/hero.jpg",
+    "heroImageCaption": "Sistel Centro Automazioni · Sede operativa e realizzazioni (Reggio nell'Emilia)",
+    "quiz": {
+      "question1": {
+        "title": "Quale ambito di automazione o impiantistica industriale valutate?",
+        "options": [
+          "Quadri elettrici bordomacchina, revamping linee e integrazione PLC",
+          "Progettazione isole robotizzate, macchinari o automazione di reparto",
+          "Studio di fattibilita tecnica, conformita CE e tempi di consegna"
+        ]
+      },
+      "question2": {
+        "title": "Qual e l'orizzonte temporale previsto per il progetto?",
+        "options": [
+          "Avvio operativo urgente (entro 30 giorni)",
+          "Pianificazione nel trimestre in corso",
+          "Valutazione tecnica e di budget preliminare"
+        ]
+      },
+      "finalStepTitle": "Specifiche registrate. Inserisci i riferimenti aziendali per il colloquio con l'Ufficio Tecnico:"
+    },
+    "valueProps": [
+      {
+        "title": "Progettazione Elettrica e Software Su Specifica",
+        "description": "Sviluppiamo architetture di controllo affidabili e scalabili a Reggio nell'Emilia, pensate per integrarsi nei vostri reparti senza lunghi fermi produzione.",
+        "metric": "Norma CE"
+      },
+      {
+        "title": "Quadristica, Cablaggio e Sicurezza Impianti",
+        "description": "Quadri di potenza e automazione testati al 100% prima della spedizione, completi di schemi aggiornati e verifiche di sicurezza.",
+        "metric": "Testato 100%"
+      },
+      {
+        "title": "Avviamento in Linea e Teleassistenza",
+        "description": "Supportiamo gli operatori in fabbrica durante la messa in servizio e garantiamo continuità con diagnostica tempestiva.",
+        "metric": "Supporto Diretto"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "99.4%",
+      "mainStatLabel": "Impianti e quadri avviati nel rispetto delle finestre produttive",
+      "reviewsSummary": "Partner tecnologico per l'automazione di stabilimenti a Reggio nell'Emilia",
+      "clientReferenceWall": [
+        "Direttiva Macchine 2006/42/CE",
+        "Conformita CEI EN 60204-1",
+        "Integrazione MES / ERP",
+        "Teleassistenza Industriale",
+        "Qualita Certificata ISO 9001"
+      ],
+      "secondaryStats": [
+        {
+          "value": "99.4%",
+          "label": "Commesse di automazione collaudate nei tempi concordati"
+        },
+        {
+          "value": "< 0.4s",
+          "label": "Caricamento rapido del portale tecnico su smartphone"
+        },
+        {
+          "value": "24h",
+          "label": "Primo riscontro dall'Ufficio Tecnico su nuove commesse"
+        }
+      ],
+      "testimonials": [
+        {
+          "name": "Direttore di Stabilimento",
+          "location": "Reggio nell'Emilia · Reparto Automazione",
+          "quote": "Il revamping eseguito da Sistel Centro Automazioni ha stabilizzato la linea e ridotto i guasti elettrici fin dal primo mese di esercizio.",
+          "roleOrContext": "Automazione e revamping"
+        },
+        {
+          "name": "Responsabile Ingegneria di Processo",
+          "location": "Reggio nell'Emilia e provincia",
+          "quote": "Documentazione elettrica ordinata, rispetto rigoroso delle norme di sicurezza e disponibilita immediata in fase di collaudo.",
+          "roleOrContext": "Quadristica e bordomacchina"
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "Sistel Centro Automazioni - dispersione clic mobile e tempi di caricamento di Sistel Centro Automazioni (5.2s)",
+    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di Sistel Centro Automazioni, da smartphone impiega 5.2 secondi ad aprirsi per 19 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Sistel Centro Automazioni che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Sistel Centro Automazioni, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/sistelautomazioni\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "Sistel Centro Automazioni - dispersione clic mobile e tempi di caricamento di Sistel Centro Automazioni (5.2s)",
+      "body": "Buongiorno,\n\nda un test sul sito di Sistel Centro Automazioni, da smartphone impiega 5.2 secondi ad aprirsi per 19 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Sistel Centro Automazioni che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: Sistel Centro Automazioni - dispersione clic mobile e tempi di caricamento di Sistel Centro Automazioni (5.2s)",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Sistel Centro Automazioni, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/sistelautomazioni\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: Sistel Centro Automazioni - dispersione clic mobile e tempi di caricamento di Sistel Centro Automazioni (5.2s)",
+      "body": "Buongiorno,\n\nOltre a tagliare i 5.2 secondi su mobile, l'infrastruttura recupera il 40% delle conversioni tramite Server-Side Tracking.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza - TechPyre Studio",
+      "inThread": true,
+      "requiresFollowUpCall": true
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: Sistel Centro Automazioni - dispersione clic mobile e tempi di caricamento di Sistel Centro Automazioni (5.2s)",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Sistel Centro Automazioni non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/sistelautomazioni) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

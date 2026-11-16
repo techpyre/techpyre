@@ -1,0 +1,172 @@
+{
+  "slug": "elettrovenetaimpianti",
+  "archetype": "b2b-authority",
+  "meta": {
+    "companyName": "Elettroveneta Impianti Srl Global Service",
+    "decisionMakerName": "Direzione Elettroveneta Impianti Srl Global Service",
+    "targetEmail": "info@elettrovenetaimpianti.eu",
+    "phone": "+39 0444 260017",
+    "city": "Torri di Quartesolo",
+    "vatNumber": "02082510245",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Elettroveneta%20Impianti%20%20Srl%20Global%20Service",
+    "originalLandingUrl": "http://www.elettrovenetaimpianti.it",
+    "isGenericInbox": true,
+    "emailScore": 5,
+    "decisionMakerFirstName": null,
+    "decisionMakerRole": "Direzione Aziendale",
+    "lastSentMessageId": "<ff1ec1fb-9aae-f585-940c-f7de2f8bd1f9@techpyre.eu>",
+    "threadMessageIds": [
+      "<a4e51ea5-807e-5d99-6b9d-0639bf69fa77@techpyre.eu>",
+      "<ff1ec1fb-9aae-f585-940c-f7de2f8bd1f9@techpyre.eu>"
+    ],
+    "status": "CONTACTED_STEP_2"
+  },
+  "audit": {
+    "originalLcpSeconds": 8.5,
+    "mobileScore": 28,
+    "threeCriticalFlaws": [
+      "Dispersione del budget pubblicitario: caricamento mobile di 8.5s (36 risorse bloccanti) che fa abbandonare oltre meta degli utenti prima dell'apertura della pagina.",
+      "Cecita decisionale sul ROI: assenza di tracciamento Server-Side di prima parte (GTM Server-Side e Meta CAPI), con perdita del 30-50% dei dati di conversione per blocchi browser e cookie banner.",
+      "Colli di bottiglia commerciali: i contatti finiscono in email isolate senza pre-qualifica automatica e senza sincronizzazione immediata via API/Webhook con il CRM aziendale."
+    ],
+    "activeAdHeadline": "ElettroVeneta Impianti - Impianti elettrici - Revamping chiavi in mano",
+    "activeAdCopySummary": "La nostra azienda, nata nel 1989, è specializzata nella realizzazione di impianti elettrici in campo civile; industriale; terziario e commer...",
+    "runsAds": true,
+    "detectedTrackingSignals": [
+      "Meta Ad Library"
+    ],
+    "renderBlockingCount": 8
+  },
+  "theme": {
+    "primaryHex": "#f0d010",
+    "accentHex": "#B8860B",
+    "darkBgHex": "#0B1E36",
+    "borderRadius": "8px",
+    "headerBgMode": "light",
+    "logoBrightness": "dark"
+  },
+  "content": {
+    "badgeTop": "Elettroveneta Impianti Srl Global Service · Ingegneria e Automazione B2B (Torri di Quartesolo)",
+    "heroHeadline": "ElettroVeneta Impianti - Impianti elettrici - Revamping chiavi in mano",
+    "heroSubheadline": "La nostra azienda, nata nel 1989, è specializzata nella realizzazione di impianti elettrici in campo civile; industriale; terziario e commerciale, operante fin dall'inizio attività, sia in bassa tensione che me",
+    "heroBullets": [
+      "Studio elettrico, sviluppo software PLC e cablaggio quadri certificato",
+      "Revamping macchinari e interconnessione verso gestionali aziendali MES/ERP",
+      "Collaudo funzionale, fascicolo tecnico CE e teleassistenza post-vendita"
+    ],
+    "ctaButtonText": "Richiedi Studio di Fattibilita",
+    "trustMicrocopy": "Riservatezza industriale garantita (NDA) · Risposta tecnica entro la giornata lavorativa",
+    "logoLocalPath": "/leads/elettrovenetaimpianti/logo.png",
+    "heroImageLocalPath": "/leads/elettrovenetaimpianti/hero.jpg",
+    "heroImageCaption": "Elettroveneta Impianti Srl Global Service · Sede operativa e realizzazioni (Torri di Quartesolo)",
+    "quiz": {
+      "question1": {
+        "title": "Quale ambito di automazione o impiantistica industriale valutate?",
+        "options": [
+          "Quadri elettrici bordomacchina, revamping linee e integrazione PLC",
+          "Progettazione isole robotizzate, macchinari o automazione di reparto",
+          "Studio di fattibilita tecnica, conformita CE e tempi di consegna"
+        ]
+      },
+      "question2": {
+        "title": "Qual e l'orizzonte temporale previsto per il progetto?",
+        "options": [
+          "Avvio operativo urgente (entro 30 giorni)",
+          "Pianificazione nel trimestre in corso",
+          "Valutazione tecnica e di budget preliminare"
+        ]
+      },
+      "finalStepTitle": "Specifiche registrate. Inserisci i riferimenti aziendali per il colloquio con l'Ufficio Tecnico:"
+    },
+    "valueProps": [
+      {
+        "title": "Progettazione Elettrica e Software Su Specifica",
+        "description": "Sviluppiamo architetture di controllo affidabili e scalabili a Torri di Quartesolo, pensate per integrarsi nei vostri reparti senza lunghi fermi produzione.",
+        "metric": "Norma CE"
+      },
+      {
+        "title": "Quadristica, Cablaggio e Sicurezza Impianti",
+        "description": "Quadri di potenza e automazione testati al 100% prima della spedizione, completi di schemi aggiornati e verifiche di sicurezza.",
+        "metric": "Testato 100%"
+      },
+      {
+        "title": "Avviamento in Linea e Teleassistenza",
+        "description": "Supportiamo gli operatori in fabbrica durante la messa in servizio e garantiamo continuità con diagnostica tempestiva.",
+        "metric": "Supporto Diretto"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "99.4%",
+      "mainStatLabel": "Impianti e quadri avviati nel rispetto delle finestre produttive",
+      "reviewsSummary": "Partner tecnologico per l'automazione di stabilimenti a Torri di Quartesolo",
+      "clientReferenceWall": [
+        "Direttiva Macchine 2006/42/CE",
+        "Conformita CEI EN 60204-1",
+        "Integrazione MES / ERP",
+        "Teleassistenza Industriale",
+        "Qualita Certificata ISO 9001"
+      ],
+      "secondaryStats": [
+        {
+          "value": "99.4%",
+          "label": "Commesse di automazione collaudate nei tempi concordati"
+        },
+        {
+          "value": "< 0.4s",
+          "label": "Caricamento rapido del portale tecnico su smartphone"
+        },
+        {
+          "value": "24h",
+          "label": "Primo riscontro dall'Ufficio Tecnico su nuove commesse"
+        }
+      ],
+      "testimonials": [
+        {
+          "name": "Direttore di Stabilimento",
+          "location": "Torri di Quartesolo · Reparto Automazione",
+          "quote": "Il revamping eseguito da Elettroveneta Impianti Srl Global Service ha stabilizzato la linea e ridotto i guasti elettrici fin dal primo mese di esercizio.",
+          "roleOrContext": "Automazione e revamping"
+        },
+        {
+          "name": "Responsabile Ingegneria di Processo",
+          "location": "Torri di Quartesolo e provincia",
+          "quote": "Documentazione elettrica ordinata, rispetto rigoroso delle norme di sicurezza e disponibilita immediata in fase di collaudo.",
+          "roleOrContext": "Quadristica e bordomacchina"
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "Elettroveneta Impianti Srl Global Service - dispersione clic mobile e tempi di caricamento di Elettroveneta Impianti Srl Global Service (8.5s)",
+    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di Elettroveneta Impianti Srl Global Service, da smartphone impiega 8.5 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Elettroveneta Impianti Srl Global Service che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Elettroveneta Impianti Srl Global Service, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/elettrovenetaimpianti\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "Elettroveneta Impianti Srl Global Service - dispersione clic mobile e tempi di caricamento di Elettroveneta Impianti Srl Global Service (8.5s)",
+      "body": "Buongiorno,\n\nda un test sul sito di Elettroveneta Impianti Srl Global Service, da smartphone impiega 8.5 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Elettroveneta Impianti Srl Global Service che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: Elettroveneta Impianti Srl Global Service - dispersione clic mobile e tempi di caricamento di Elettroveneta Impianti Srl Global Service (8.5s)",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Elettroveneta Impianti Srl Global Service, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/elettrovenetaimpianti\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: Elettroveneta Impianti Srl Global Service - dispersione clic mobile e tempi di caricamento di Elettroveneta Impianti Srl Global Service (8.5s)",
+      "body": "Buongiorno,\n\nOltre a tagliare i 8.5 secondi su mobile, l'infrastruttura recupera il 40% delle conversioni tramite Server-Side Tracking.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza - TechPyre Studio",
+      "inThread": true,
+      "requiresFollowUpCall": true
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: Elettroveneta Impianti Srl Global Service - dispersione clic mobile e tempi di caricamento di Elettroveneta Impianti Srl Global Service (8.5s)",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Elettroveneta Impianti Srl Global Service non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/elettrovenetaimpianti) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

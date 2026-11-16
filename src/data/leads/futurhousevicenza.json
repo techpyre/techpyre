@@ -1,0 +1,151 @@
+{
+  "slug": "futurhousevicenza",
+  "archetype": "local-leadgen",
+  "meta": {
+    "companyName": "futurhousevicenza",
+    "decisionMakerName": "Direzione futurhousevicenza",
+    "targetEmail": "contatti@futurhousevicenza.com",
+    "phone": "333.6448195",
+    "city": "Vicenza",
+    "vatNumber": "03731060244",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&media_type=all&q=fotovoltaico%20vicenza&search_type=keyword_unordered",
+    "originalLandingUrl": "https://www.futurhousevicenza.com/real-estate/residence-manzoni-2/",
+    "isGenericInbox": true,
+    "emailScore": 35,
+    "decisionMakerFirstName": null,
+    "decisionMakerRole": "Direzione Aziendale",
+    "lastSentMessageId": "<934c4fb7-3f08-2d8f-d4b2-aafe5f64f116@techpyre.eu>",
+    "threadMessageIds": [
+      "<a7ee19f4-22dd-b651-6ba2-091d6a035dc2@techpyre.eu>",
+      "<934c4fb7-3f08-2d8f-d4b2-aafe5f64f116@techpyre.eu>"
+    ],
+    "status": "CONTACTED_STEP_2"
+  },
+  "audit": {
+    "originalLcpSeconds": 9.3,
+    "mobileScore": 30,
+    "activeAdHeadline": "Impianti Fotovoltaici con Accumulo a Vicenza e Provincia",
+    "activeAdCopySummary": "Consulenza tecnica certificata, posa qualificata e preventivo dettagliato senza impegno a Vicenza.",
+    "threeCriticalFlaws": [
+      "Il sito attuale impiega 9.3 secondi ad aprirsi su rete mobile 4G per via di 15 risorse bloccanti.",
+      "La pagina disperde i visitatori con link di navigazione esterni senza guidarli a una richiesta rapida.",
+      "Manca un modulo rapido guidato a due domande per quantificare le esigenze del cliente in tempo reale."
+    ],
+    "runsAds": true,
+    "detectedTrackingSignals": [
+      "Meta Ad Library"
+    ],
+    "renderBlockingCount": 8
+  },
+  "theme": {
+    "primaryHex": "#f09000",
+    "accentHex": "#2563EB",
+    "darkBgHex": "#0B1E36",
+    "borderRadius": "12px",
+    "headerBgMode": "light",
+    "logoBrightness": "dark"
+  },
+  "content": {
+    "badgeTop": "futurhousevicenza · Energia e Comfort Termico (Vicenza)",
+    "heroHeadline": "Impianti Fotovoltaici con Accumulo a Vicenza e Provincia",
+    "heroSubheadline": "Consulenza tecnica certificata, posa qualificata e preventivo dettagliato senza impegno a Vicenza.",
+    "heroBullets": [
+      "Analisi consumi in bolletta e dimensionamento reale senza sovrastime",
+      "Installazione certificata con tecnici interni abilitati F-Gas / FER",
+      "Gestione completa pratiche di allaccio, ENEA e incentivi fiscali"
+    ],
+    "ctaButtonText": "Calcola il Tuo Preventivo Rapido",
+    "trustMicrocopy": "Richiesta gratuita e senza impegno · Risposta rapida dal nostro ufficio tecnico",
+    "logoLocalPath": "/leads/futurhousevicenza/logo.png",
+    "heroImageLocalPath": "/leads/futurhousevicenza/hero.jpg",
+    "heroImageCaption": "futurhousevicenza · Sede operativa e realizzazioni (Vicenza)",
+    "quiz": {
+      "question1": {
+        "title": "Quale impianto desideri installare o sostituire?",
+        "options": [
+          "Impianto fotovoltaico con eventuale sistema di accumulo",
+          "Climatizzatori, pompa di calore o caldaia ad alta efficienza",
+          "Riqualificazione energetica completa dell'abitazione"
+        ]
+      },
+      "question2": {
+        "title": "Qual e il tuo obiettivo principale?",
+        "options": [
+          "Abbattere subito i costi in bolletta",
+          "Accesso agli incentivi e detrazioni fiscali attive",
+          "Sostituzione urgente con sopralluogo tecnico rapido"
+        ]
+      },
+      "finalStepTitle": "Perfetto. Lascia i tuoi dati per ricevere la simulazione tecnica e il preventivo dedicato:"
+    },
+    "valueProps": [
+      {
+        "title": "Dimensionamento Sui Tuoi Consumi Reali",
+        "description": "Calcoliamo potenza, accumulo o taglia della pompa di calore per offrirti il miglior rientro economico possibile a Vicenza.",
+        "metric": "Resa Massima"
+      },
+      {
+        "title": "Installazione Certificata e Sicura",
+        "description": "I tecnici di futurhousevicenza eseguono il lavoro a regola d'arte rilasciando tutte le dichiarazioni di conformita.",
+        "metric": "100% A Norma"
+      },
+      {
+        "title": "Assistenza e Pratiche Chiavi in Mano",
+        "description": "Seguiamo noi iter autorizzativi, pratiche incentivi e manutenzione programmata post-installazione.",
+        "metric": "Zero Pensieri"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "98%",
+      "mainStatLabel": "Clienti soddisfatti del risparmio energetico ottenuto",
+      "reviewsSummary": "4.9/5 da clienti residenziali a Vicenza",
+      "testimonials": [
+        {
+          "name": "Simone G.",
+          "location": "Vicenza",
+          "quote": "Impianto dimensione perfetta per i nostri consumi. futurhousevicenza ha gestito installazione e pratiche in tempi record.",
+          "roleOrContext": "Fotovoltaico con accumulo"
+        },
+        {
+          "name": "Elena P.",
+          "location": "Vicenza e provincia",
+          "quote": "Tecnici puliti e precisi nel montaggio del nuovo impianto di climatizzazione. Preventivo chiaro fin dal primo giorno.",
+          "roleOrContext": "Pompa di calore e clima"
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "futurhousevicenza - dispersione clic mobile e tempi di caricamento di futurhousevicenza (9.3s)",
+    "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di futurhousevicenza, da smartphone impiega 9.3 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per futurhousevicenza che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per futurhousevicenza, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/futurhousevicenza\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "futurhousevicenza - dispersione clic mobile e tempi di caricamento di futurhousevicenza (9.3s)",
+      "body": "Buongiorno,\n\nda un test sul sito di futurhousevicenza, da smartphone impiega 9.3 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per futurhousevicenza che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: futurhousevicenza - dispersione clic mobile e tempi di caricamento di futurhousevicenza (9.3s)",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per futurhousevicenza, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/futurhousevicenza\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: futurhousevicenza - dispersione clic mobile e tempi di caricamento di futurhousevicenza (9.3s)",
+      "body": "Buongiorno,\n\nOltre a tagliare i 9.3 secondi su mobile, l'infrastruttura recupera il 40% delle conversioni tramite Server-Side Tracking.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza - TechPyre Studio",
+      "inThread": true,
+      "requiresFollowUpCall": true
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: futurhousevicenza - dispersione clic mobile e tempi di caricamento di futurhousevicenza (9.3s)",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di futurhousevicenza non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/futurhousevicenza) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

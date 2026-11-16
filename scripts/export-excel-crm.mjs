@@ -12,7 +12,8 @@ import path from "path";
 import { spawnSync } from "child_process";
 import ExcelJS from "exceljs";
 
-export const GDRIVE_CRM_FILE_ID = process.env.TECHPYRE_GDRIVE_CRM_ID || "";
+export const GDRIVE_CRM_FILE_ID =
+  process.env.TECHPYRE_GDRIVE_CRM_ID || "12rHG46b8sG64BTFQA1gMWNPfBfXBekMD";
 export const GDRIVE_CRM_WEB_URL = GDRIVE_CRM_FILE_ID
   ? `https://docs.google.com/spreadsheets/d/${GDRIVE_CRM_FILE_ID}/edit`
   : "";

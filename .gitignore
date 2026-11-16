@@ -41,16 +41,12 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# runtime CRM, PII & local operational state
+# runtime CRM, local operational logs & artifacts
 *.xlsx
-/src/data/leads/*.json
-!/src/data/leads/.gitkeep
 /src/data/lead-artifacts/
 /src/data/outreach-history.json
 /src/data/demo-visits.json
 /src/data/leads-status.json
 /src/data/user-profiles/
-/public/leads/*
-!/public/leads/.gitkeep
 .agents/
 .antigravity/
