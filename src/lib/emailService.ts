@@ -9,7 +9,9 @@ import { getUserSmtp } from "./userSmtpStorage";
 import { loadLeadConfig, saveLeadConfig } from "./leadsStorage";
 import {
   buildMultiStepOutreach,
+  buildOutreachSignatureLines,
   decodeHtmlEntities,
+  ensureStep2LegalDisclaimer,
   isHardBlockedEmail,
   migrateOldLeadConfig,
 } from "./scoutService";
@@ -323,10 +325,6 @@ export function classifyInboundReply(
       objectionValidation = `Comprensibile, ed e proprio per non farvi perdere tempo in valutazioni astratte che abbiamo gia costruito il prototipo funzionante sulla vostra pagina attuale.`;
     }
 
-    const signatureName = process.env.TECHPYRE_SIGNATURE_NAME || "TechPyre Studio";
-    const signaturePhone =
-      process.env.TECHPYRE_SIGNATURE_PHONE || process.env.NEXT_PUBLIC_CONTACT_PHONE || "";
-
     const suggestedReplyBody = [
       greeting,
       ``,
@@ -338,8 +336,7 @@ export function classifyInboundReply(
       `Se vi fa piacere, facciamo 10 minuti di condivisione schermo tra martedi e giovedi (oppure vi registro un breve video Loom di 2 minuti) per mostrarvi l'architettura applicata al vostro caso e darvi un quadro preciso. Cosa preferite?`,
       ``,
       `Un cordiale saluto,`,
-      signatureName,
-      ...(signaturePhone ? [`WhatsApp diretto: ${signaturePhone}`] : []),
+      ...buildOutreachSignatureLines({ includeWebsite: true, whatsappLabel: true }),
     ].join("\n");
 
     return {
@@ -360,25 +357,21 @@ export function classifyInboundReply(
     saveLeadConfig(lead.slug, lead);
   }
 
-  const fallbackSignatureName = process.env.TECHPYRE_SIGNATURE_NAME || "TechPyre Studio";
-  const fallbackSignaturePhone =
-    process.env.TECHPYRE_SIGNATURE_PHONE || process.env.NEXT_PUBLIC_CONTACT_PHONE || "";
-
-  const step2Body =
+  const step2Body = ensureStep2LegalDisclaimer(
     lead?.outreach?.step2FollowUpLink?.body ||
-    lead?.outreach?.followUpWithLinkBody ||
-    [
-      greeting,
-      ``,
-      `vi lascio qui sotto il link della demo da 0.3 secondi preparata per ${companyName}, completa di filtro pre-qualifica contatti:`,
-      ``,
-      demoUrl,
-      ``,
-      `Avete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?`,
-      ``,
-      fallbackSignatureName,
-      ...(fallbackSignaturePhone ? [fallbackSignaturePhone] : []),
-    ].join("\n");
+      lead?.outreach?.followUpWithLinkBody ||
+      [
+        greeting,
+        ``,
+        `vi lascio qui sotto il link della demo da 0.3 secondi preparata per ${companyName}, completa di filtro pre-qualifica contatti:`,
+        ``,
+        demoUrl,
+        ``,
+        `Avete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?`,
+        ``,
+        ...buildOutreachSignatureLines({ includeWebsite: true }),
+      ].join("\n")
+  );
 
   return {
     classification: "POSITIVE_REQUEST_LINK",
@@ -558,8 +551,10 @@ export async function sendLeadOutreach({
     port = Number(process.env.OUTBOUND_SMTP_PORT || process.env.SMTP_PORT || 465);
     smtpUser = process.env.OUTBOUND_SMTP_USER || process.env.SMTP_USER || "";
     smtpPass = process.env.OUTBOUND_SMTP_PASS || process.env.SMTP_PASS || "";
-    senderName =
-      process.env.OUTBOUND_FROM_NAME || `${user.displayName} - TechPyre Studio`;
+    const fallbackSenderName = /techpyre/i.test(user.displayName)
+      ? user.displayName
+      : `${user.displayName} - TechPyre Studio`;
+    senderName = process.env.OUTBOUND_FROM_NAME || fallbackSenderName;
     senderEmail = smtpUser;
   }
 
@@ -595,6 +590,9 @@ export async function sendLeadOutreach({
     ? `Re: ${baseOriginalSubject}`
     : baseOriginalSubject;
   let text = decodeHtmlEntities(activeStep.body).replace(/[\u2013\u2014\u00b7]/g, "-");
+  if (resolvedStep === 2) {
+    text = ensureStep2LegalDisclaimer(text);
+  }
 
   const legacySenderName = process.env.TECHPYRE_LEGACY_SENDER_NAME?.trim();
   if (senderName && legacySenderName) {

@@ -97,7 +97,15 @@ const baseUrl = process.env.NEXT_PUBLIC_DEMO_DOMAIN || 'https://www.techpyre.eu'
 const demoUrl = `${baseUrl}/demo/${lead.slug}`;
 
 const step1Body = (lead.outreach.step1FirstTouch?.body || lead.outreach.emailPlainTextBody || '').replace(/[\u2013\u2014]/g, '-');
-const step2Body = (lead.outreach.step2FollowUpLink?.body || lead.outreach.followUpWithLinkBody || '').replace(/[\u2013\u2014]/g, '-');
+const STEP2_DEMO_LEGAL_DISCLAIMER =
+  'Nota: la demo è una bozza privata visibile solo da questo link (non indicizzata su Google), creata su misura a solo scopo dimostrativo (art. 21 D.Lgs. 30/2005; Reg. UE 2016/679). Rimozione immediata su richiesta.';
+
+const rawStep2Body = (lead.outreach.step2FollowUpLink?.body || lead.outreach.followUpWithLinkBody || '').replace(/[\u2013\u2014]/g, '-').trim();
+const step2Body = !rawStep2Body
+  ? STEP2_DEMO_LEGAL_DISCLAIMER
+  : /bozza privata visibile solo da questo link/i.test(rawStep2Body)
+  ? rawStep2Body
+  : `${rawStep2Body}\n\n${STEP2_DEMO_LEGAL_DISCLAIMER}`;
 const step3Body = (lead.outreach.step3ValueDropAndCallTrigger?.body || '').replace(/[\u2013\u2014]/g, '-');
 const step4Body = (lead.outreach.step4Breakup?.body || '').replace(/[\u2013\u2014]/g, '-');
 const cleanSubject = (lead.outreach.emailSubject || '').replace(/[\u2013\u2014]/g, '-');
@@ -184,7 +192,14 @@ if (shouldSend) {
   const port = Number(process.env.OUTBOUND_SMTP_PORT || process.env.SMTP_PORT || 587);
   const user = process.env.OUTBOUND_SMTP_USER || process.env.SMTP_USER;
   const pass = process.env.OUTBOUND_SMTP_PASS || process.env.SMTP_PASS;
-  const fromName = (process.env.OUTBOUND_FROM_NAME || process.env.TECHPYRE_SIGNATURE_NAME || 'TechPyre Studio').replace(/[\u2013\u2014\u00b7]/g, '-');
+  const rawFromName =
+    process.env.OUTBOUND_FROM_NAME ||
+    process.env.TECHPYRE_SIGNATURE_NAME ||
+    process.env.TECHPYRE_SENDER_NAME ||
+    'TechPyre Studio';
+  const fromName = (
+    /techpyre/i.test(rawFromName) ? rawFromName : `${rawFromName} - TechPyre Studio`
+  ).replace(/[\u2013\u2014\u00b7]/g, '-');
 
   if (!host || !user || !pass || host.includes('tuoprovider')) {
     console.log('\nℹ️  SMTP non configurato per invio reale (modalità Dry-Run completata).');

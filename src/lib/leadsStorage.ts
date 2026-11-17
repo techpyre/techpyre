@@ -1,6 +1,6 @@
 import fs from "fs";
 import path from "path";
-import { LeadConfig } from "@/types/lead";
+import type { LeadConfig } from "@/types/lead";
 import { migrateOldLeadConfig } from "./scoutService";
 
 const LOCAL_LEADS_DIR = path.join(process.cwd(), "src", "data", "leads");

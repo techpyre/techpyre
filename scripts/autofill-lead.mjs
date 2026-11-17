@@ -13,6 +13,21 @@ import path from 'path';
 import zlib from 'zlib';
 import { cleanLogo } from './clean-scraped-logos.mjs';
 
+const envLocalPath = path.join(process.cwd(), '.env.local');
+if (fs.existsSync(envLocalPath)) {
+  const lines = fs.readFileSync(envLocalPath, 'utf-8').split(/\r?\n/);
+  for (const line of lines) {
+    const trimmed = line.trim();
+    if (!trimmed || trimmed.startsWith('#')) continue;
+    const eqIdx = trimmed.indexOf('=');
+    if (eqIdx > 0) {
+      const k = trimmed.slice(0, eqIdx).trim();
+      const v = trimmed.slice(eqIdx + 1).trim().replace(/^["']|["']$/g, '');
+      if (!process.env[k]) process.env[k] = v;
+    }
+  }
+}
+
 const [,, slug, archetypeArg] = process.argv;
 if (!slug) {
   console.error('Uso: node scripts/autofill-lead.mjs <slug> [archetype]');
@@ -405,9 +420,48 @@ let testimonials = [
   },
 ];
 
-const signatureName = process.env.TECHPYRE_SIGNATURE_NAME || 'TechPyre Studio';
-const signaturePhone =
-  process.env.TECHPYRE_SIGNATURE_PHONE || process.env.NEXT_PUBLIC_CONTACT_PHONE || '';
+const rawSignatureName = (
+  process.env.TECHPYRE_SIGNATURE_NAME ||
+  process.env.OUTBOUND_FROM_NAME ||
+  process.env.TECHPYRE_SENDER_NAME ||
+  process.env.NEXT_PUBLIC_FOUNDER_NAME ||
+  ''
+)
+  .replace(/[\u2013\u2014\u00b7]/g, '-')
+  .trim();
+const signatureName = rawSignatureName
+  ? /techpyre/i.test(rawSignatureName)
+    ? rawSignatureName
+    : `${rawSignatureName} - TechPyre Studio`
+  : 'TechPyre Studio';
+const signaturePhone = (
+  process.env.TECHPYRE_SIGNATURE_PHONE ||
+  process.env.NEXT_PUBLIC_CONTACT_PHONE ||
+  ''
+).trim();
+const signatureEmail = (
+  process.env.TECHPYRE_SIGNATURE_EMAIL ||
+  process.env.OUTBOUND_SMTP_USER ||
+  process.env.SMTP_USER ||
+  process.env.NEXT_PUBLIC_CONTACT_EMAIL ||
+  ''
+).trim();
+const signatureWebsite = (
+  process.env.TECHPYRE_SIGNATURE_WEBSITE || 'https://www.techpyre.eu'
+).trim();
+
+const step1SignatureLines = [
+  signatureName,
+  ...(signaturePhone ? [`Tel/WhatsApp: ${signaturePhone}`] : []),
+  ...(signatureEmail ? [signatureEmail] : []),
+].join('\n');
+
+const followUpSignatureLines = [
+  signatureName,
+  ...(signaturePhone ? [`Tel/WhatsApp: ${signaturePhone}`] : []),
+  ...(signatureEmail ? [signatureEmail] : []),
+  ...(signatureWebsite ? [signatureWebsite] : []),
+].join('\n');
 
 // Scrittura Email grounded nei dati reali e nel nuovo posizionamento TechPyre Studio
 let emailSubject = `Infrastruttura web e resa campagne di ${companyName} a ${city} (${lcp}s su mobile)`;
@@ -420,7 +474,7 @@ Oggi abbiamo analizzato la vostra pagina attiva per il territorio di ${city}: ap
 Per presentarci in modo concreto, vi abbiamo ingegnerizzato una versione dimostrativa istantanea (0.3s) in Next.js con il vostro marchio, qualificatore contatti e predisposizione CRM/Server-Side (fornita a corpo da 900 euro, zero canoni di noleggio e 100% di proprieta del codice). Se vi fa piacere provarla dal telefono, rispondeteci pure qui sotto e ve la giriamo subito.
 
 Un cordiale saluto,
-${signatureName}${signaturePhone ? `\nTel & WhatsApp B2B: ${signaturePhone}` : ''}`;
+${step1SignatureLines}`;
 
 let followUpBody = `Buongiorno,
 
@@ -432,8 +486,9 @@ Questa architettura in Next.js/TypeScript elimina i ${lcp} secondi di attesa su 
 Se desiderate approfondire come integrarla nei vostri flussi commerciali, siamo a disposizione per una breve Sessione di Diagnosi Architetturale di 30 minuti.
 
 Un cordiale saluto,
-${signatureName}
-https://www.techpyre.eu${signaturePhone ? ` · Tel & WhatsApp B2B: ${signaturePhone}` : ''}`;
+${followUpSignatureLines}
+
+Nota: la demo è una bozza privata visibile solo da questo link (non indicizzata su Google), creata su misura a solo scopo dimostrativo (art. 21 D.Lgs. 30/2005; Reg. UE 2016/679). Rimozione immediata su richiesta.`;
 
 const config = {
   slug,

@@ -135,33 +135,33 @@
   },
   "outreach": {
     "emailSubject": "Per Davide Montagna - tempi di caricamento mobile e richieste preventivo di Taglio Laser Metalli Vicenza (9.3s)",
-    "emailPlainTextBody": "Buongiorno Davide,\n\nda un test sul sito di Taglio Laser Metalli Vicenza, da smartphone impiega 9.3 secondi ad aprirsi per 42 risorse bloccanti, frenando le richieste di preventivo.\n\nAbbiamo gia preparato una demo in Next.js per Taglio Laser Metalli Vicenza che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
-    "followUpWithLinkBody": "Buongiorno Davide,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Taglio Laser Metalli Vicenza, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/tagliolaser\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+    "emailPlainTextBody": "Buongiorno Davide,\n\nda un test sul sito di DEA METAL DESIGN SRL, da smartphone impiega 9.3 secondi ad aprirsi per 42 risorse bloccanti, frenando le richieste di preventivo.\n\nAbbiamo gia preparato una demo in Next.js per DEA METAL DESIGN SRL che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre Studio\nTel/WhatsApp: +39 379 115 9352\nriccardo.granza@techpyre.eu",
+    "followUpWithLinkBody": "Buongiorno Davide,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per DEA METAL DESIGN SRL, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/tagliolaser\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\nTel/WhatsApp: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu",
     "step1FirstTouch": {
       "dayOffset": 1,
       "subject": "Per Davide Montagna - tempi di caricamento mobile e richieste preventivo di Taglio Laser Metalli Vicenza (9.3s)",
-      "body": "Buongiorno Davide,\n\nda un test sul sito di Taglio Laser Metalli Vicenza, da smartphone impiega 9.3 secondi ad aprirsi per 42 risorse bloccanti, frenando le richieste di preventivo.\n\nAbbiamo gia preparato una demo in Next.js per Taglio Laser Metalli Vicenza che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre\n+39 379 115 9352",
+      "body": "Buongiorno Davide,\n\nda un test sul sito di DEA METAL DESIGN SRL, da smartphone impiega 9.3 secondi ad aprirsi per 42 risorse bloccanti, frenando le richieste di preventivo.\n\nAbbiamo gia preparato una demo in Next.js per DEA METAL DESIGN SRL che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre Studio\nTel/WhatsApp: +39 379 115 9352\nriccardo.granza@techpyre.eu",
       "inThread": false,
       "requiresFollowUpCall": false
     },
     "step2FollowUpLink": {
       "dayOffset": 4,
       "subject": "Re: Per Davide Montagna - tempi di caricamento mobile e richieste preventivo di Taglio Laser Metalli Vicenza (9.3s)",
-      "body": "Buongiorno Davide,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Taglio Laser Metalli Vicenza, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/tagliolaser\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\n+39 379 115 9352",
+      "body": "Buongiorno Davide,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per DEA METAL DESIGN SRL, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/tagliolaser\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\nTel/WhatsApp: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu",
       "inThread": true,
       "requiresFollowUpCall": false
     },
     "step3ValueDropAndCallTrigger": {
       "dayOffset": 8,
       "subject": "Re: Per Davide Montagna - tempi di caricamento mobile e richieste preventivo di Taglio Laser Metalli Vicenza (9.3s)",
-      "body": "Buongiorno Davide,\n\nOltre a tagliare i 9.3 secondi su mobile, il sistema qualifica ogni preventivo prima di inviarlo al CRM.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza - TechPyre Studio",
+      "body": "Buongiorno Davide,\n\nOltre a tagliare i 9.3 secondi su mobile, il sistema qualifica ogni preventivo prima di inviarlo al CRM.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza - TechPyre Studio\nTel/WhatsApp: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu",
       "inThread": true,
       "requiresFollowUpCall": true
     },
     "step4Breakup": {
       "dayOffset": 13,
       "subject": "Re: Per Davide Montagna - tempi di caricamento mobile e richieste preventivo di Taglio Laser Metalli Vicenza (9.3s)",
-      "body": "Buongiorno Davide,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Taglio Laser Metalli Vicenza non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/tagliolaser) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp diretto: +39 379 115 9352",
+      "body": "Buongiorno Davide,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di DEA METAL DESIGN SRL non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/tagliolaser) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu",
       "inThread": true,
       "requiresFollowUpCall": false
     }

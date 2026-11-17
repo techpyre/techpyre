@@ -1,0 +1,172 @@
+{
+  "slug": "emme-italia",
+  "archetype": "b2b-authority",
+  "meta": {
+    "companyName": "EMME Antincendio S.r.l. unipersonale.",
+    "decisionMakerName": "Elisabetta Tosi",
+    "decisionMakerFirstName": "Elisabetta",
+    "decisionMakerRole": "Direzione Tecnica",
+    "isGenericInbox": false,
+    "emailScore": 90,
+    "targetEmail": "elisabetta.tosi@emme-italia.com",
+    "phone": "0575511320",
+    "city": "Padova",
+    "vatNumber": "11208251006",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=EMME%20Antincendio%20S.r.l.%20unipersonale.",
+    "originalLandingUrl": "https://www.emme-italia.com",
+    "status": "CONTACTED_STEP_1",
+    "lastSentMessageId": "<4ac04be9-28c3-f9fa-7a82-ff1c651ed3ac@techpyre.eu>",
+    "threadMessageIds": [
+      "<4ac04be9-28c3-f9fa-7a82-ff1c651ed3ac@techpyre.eu>"
+    ]
+  },
+  "audit": {
+    "originalLcpSeconds": 13.4,
+    "mobileScore": 15,
+    "renderBlockingCount": 63,
+    "runsAds": true,
+    "detectedTrackingSignals": [
+      "Google Ads / GTM"
+    ],
+    "threeCriticalFlaws": [
+      "Dispersione del budget pubblicitario: caricamento mobile di 13.4s (63 risorse bloccanti) che fa abbandonare oltre meta degli utenti prima dell'apertura della pagina.",
+      "Cecita decisionale sul ROI: assenza di tracciamento Server-Side di prima parte (GTM Server-Side e Meta CAPI), con perdita del 30-50% dei dati di conversione per blocchi browser e cookie banner.",
+      "Colli di bottiglia commerciali: i contatti finiscono in email isolate senza pre-qualifica automatica e senza sincronizzazione immediata via API/Webhook con il CRM aziendale."
+    ],
+    "activeAdHeadline": "EMME Antincendio - Produzione estintori omologati",
+    "activeAdCopySummary": "EMME Antincendio è un&#039;azienda specializzata nel settore antincendio. Produzione di estintori e commercio di articoli antinfortunistica"
+  },
+  "theme": {
+    "primaryHex": "#205030",
+    "accentHex": "#B8860B",
+    "darkBgHex": "#0B1E36",
+    "borderRadius": "8px",
+    "headerBgMode": "light",
+    "headerBgHex": "#FFFFFF",
+    "logoBrightness": "dark"
+  },
+  "content": {
+    "badgeTop": "EMME Antincendio S.r.l. unipersonale. · Servizi Tecnici e Infrastrutture B2B (Padova)",
+    "heroHeadline": "EMME Antincendio - Produzione estintori omologati",
+    "heroSubheadline": "EMME Antincendio è un'azienda specializzata nel settore antincendio. Produzione di estintori e commercio di articoli antinfortunistica",
+    "heroBullets": [
+      "Sopralluogo tecnico in stabilimento e piano operativo senza fermo attivita",
+      "Gestione completa pratiche autorizzative, certificazioni e conformita ambientale",
+      "Garanzie scritte su sicurezza, rendimento e assistenza post-intervento"
+    ],
+    "ctaButtonText": "Richiedi Studio di Fattibilita",
+    "trustMicrocopy": "Riservatezza industriale garantita (NDA) · Risposta tecnica entro la giornata lavorativa",
+    "logoLocalPath": "/leads/emme-italia/logo.png",
+    "heroImageLocalPath": "/leads/emme-italia/hero.jpg",
+    "heroImageCaption": "EMME Antincendio S.r.l. unipersonale. · Sede operativa e realizzazioni (Padova)",
+    "quiz": {
+      "question1": {
+        "title": "Quale intervento tecnico per il vostro stabilimento state pianificando?",
+        "options": [
+          "Bonifiche ambientali, depurazione acque o gestione rifiuti industriali",
+          "Coperture industriali, impianti fotovoltaici aziendali o efficienza energetica",
+          "Sopralluogo tecnico in stabilimento, perizia e capitolato chiavi in mano"
+        ]
+      },
+      "question2": {
+        "title": "Qual e l'orizzonte temporale previsto per il progetto?",
+        "options": [
+          "Avvio operativo urgente (entro 30 giorni)",
+          "Pianificazione nel trimestre in corso",
+          "Valutazione tecnica e di budget preliminare"
+        ]
+      },
+      "finalStepTitle": "Specifiche registrate. Inserisci i riferimenti aziendali per il colloquio con l'Ufficio Tecnico:"
+    },
+    "valueProps": [
+      {
+        "title": "Perizia Tecnica e Piano Esecutivo Chiaro",
+        "description": "Analizziamo lo stato reale dell'impianto o della copertura a Padova definendo costi, tempistiche e ritorni operativi prima del cantiere.",
+        "metric": "Progetto Chiuso"
+      },
+      {
+        "title": "Piena Conformita Normativa e Ambientale",
+        "description": "EMME Antincendio S.r.l. unipersonale. gestisce interventi complessi in sicurezza, rilasciando tutta la documentazione tecnica e le certificazioni richieste.",
+        "metric": "100% A Norma"
+      },
+      {
+        "title": "Manutenzione Programmata e Assistenza Diretta",
+        "description": "Un referente tecnico dedicato segue l'azienda dalla realizzazione fino ai controlli periodici e all'assistenza continua.",
+        "metric": "SLA Garantito"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "99.4%",
+      "mainStatLabel": "Commesse industriali chiuse in sicurezza e nei tempi concordati",
+      "reviewsSummary": "Partner tecnico specializzato per aziende e capannoni a Padova",
+      "clientReferenceWall": [
+        "Conformita Sicurezza D.Lgs 81/08",
+        "Certificazioni Impianti e Ambiente",
+        "Qualita Certificata ISO 9001",
+        "Cantieri Senza Fermo Produzione",
+        "Assistenza Tecnica Diretta"
+      ],
+      "secondaryStats": [
+        {
+          "value": "99.4%",
+          "label": "Interventi eseguiti nel rispetto delle scadenze di cantiere"
+        },
+        {
+          "value": "< 0.4s",
+          "label": "Accesso rapido a perizie e richieste tecniche su mobile"
+        },
+        {
+          "value": "24h",
+          "label": "Pianificazione sopralluogo tecnico in stabilimento"
+        }
+      ],
+      "testimonials": [
+        {
+          "name": "Direzione Tecnica e HSE",
+          "location": "Padova · Stabilimento Produttivo",
+          "quote": "Cantiere organizzato in modo impeccabile da EMME Antincendio S.r.l. unipersonale.: lavorazioni svolte senza fermare la nostra produzione e documentazione esemplare.",
+          "roleOrContext": "Intervento in stabilimento"
+        },
+        {
+          "name": "Amministrazione e Impianti",
+          "location": "Padova e provincia",
+          "quote": "Preventivo dettagliato senza voci impreviste e supporto prezioso su tutta la parte autorizzativa.",
+          "roleOrContext": "Servizio chiavi in mano"
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "EMME Antincendio S.r.l. unipersonale. - dispersione clic mobile e tempi di caricamento di EMME Antincendio S.r.l. unipersonale. (13.4s)",
+    "emailPlainTextBody": "Buongiorno Elisabetta,\n\nda un test sul sito di EMME Antincendio S.r.l. unipersonale., da smartphone impiega 13.4 secondi ad aprirsi per 63 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per EMME Antincendio S.r.l. unipersonale. che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre Studio\nTel/WhatsApp: +39 379 115 9352\nriccardo.granza@techpyre.eu",
+    "followUpWithLinkBody": "Buongiorno Elisabetta,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per EMME Antincendio S.r.l. unipersonale., completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/emme-italia\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\nTel/WhatsApp: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "EMME Antincendio S.r.l. unipersonale. - dispersione clic mobile e tempi di caricamento di EMME Antincendio S.r.l. unipersonale. (13.4s)",
+      "body": "Buongiorno Elisabetta,\n\nda un test sul sito di EMME Antincendio S.r.l. unipersonale., da smartphone impiega 13.4 secondi ad aprirsi per 63 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per EMME Antincendio S.r.l. unipersonale. che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre Studio\nTel/WhatsApp: +39 379 115 9352\nriccardo.granza@techpyre.eu",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: EMME Antincendio S.r.l. unipersonale. - dispersione clic mobile e tempi di caricamento di EMME Antincendio S.r.l. unipersonale. (13.4s)",
+      "body": "Buongiorno Elisabetta,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per EMME Antincendio S.r.l. unipersonale., completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/emme-italia\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\nTel/WhatsApp: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: EMME Antincendio S.r.l. unipersonale. - dispersione clic mobile e tempi di caricamento di EMME Antincendio S.r.l. unipersonale. (13.4s)",
+      "body": "Buongiorno Elisabetta,\n\nOltre a tagliare i 13.4 secondi su mobile, l'infrastruttura recupera il 40% delle conversioni tramite Server-Side Tracking.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza - TechPyre Studio\nTel/WhatsApp: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu",
+      "inThread": true,
+      "requiresFollowUpCall": true
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: EMME Antincendio S.r.l. unipersonale. - dispersione clic mobile e tempi di caricamento di EMME Antincendio S.r.l. unipersonale. (13.4s)",
+      "body": "Buongiorno Elisabetta,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di EMME Antincendio S.r.l. unipersonale. non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/emme-italia) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

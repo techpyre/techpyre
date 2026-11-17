@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 import { execFileSync, spawn } from "child_process";
-import { LeadConfig, OutreachStep } from "@/types/lead";
+import type { LeadConfig, OutreachStep } from "@/types/lead";
 import { loadLeadConfig, saveLeadConfig } from "./leadsStorage";
 import {
   analyzePngLogo,
@@ -846,7 +846,7 @@ export function selectBestDecisionMakerEmail(
     }
     const email = decodedRaw
       .trim()
-      .replace(/^(?:%20|\s)+/gi, "")
+      .replace(/^(?:%20|[-_+.:\s])+/gi, "")
       .replace(/^[0-9]+(?=[a-zA-Z])/, "")
       .toLowerCase();
 
@@ -863,7 +863,7 @@ export function selectBestDecisionMakerEmail(
     // Scarta file statici, placeholder e TLD non validi
     if (
       /\.(png|jpg|jpeg|webp|svg|gif|css|js|woff|ttf)$/i.test(domainPart) ||
-      !/\.(it|com|eu|net|org|info|srl|biz|co|io|tech| pro)$/i.test(domainPart) ||
+      !/\.(it|com|eu|net|org|info|srl|biz|co|io|tech|pro)$/i.test(domainPart) ||
       domainPart.includes("sentry") ||
       domainPart.includes("wix") ||
       domainPart.includes("prestashop") ||
@@ -1314,6 +1314,97 @@ export function detectActiveAdTracking(
   };
 }
 
+export interface OutreachSignatureConfig {
+  signatureName: string;
+  signaturePhone: string;
+  signatureEmail: string;
+  signatureWebsite: string;
+}
+
+/**
+ * Risolve firma e recapiti di contatto dell'operatore dalle variabili d'ambiente.
+ */
+export function getOutreachSignatureConfig(): OutreachSignatureConfig {
+  const rawSender = (
+    process.env.TECHPYRE_SIGNATURE_NAME ||
+    process.env.OUTBOUND_FROM_NAME ||
+    process.env.TECHPYRE_SENDER_NAME ||
+    process.env.NEXT_PUBLIC_FOUNDER_NAME ||
+    ""
+  )
+    .replace(/[\u2013\u2014\u00b7]/g, "-")
+    .trim();
+
+  const signatureName = rawSender
+    ? /techpyre/i.test(rawSender)
+      ? rawSender
+      : `${rawSender} - TechPyre Studio`
+    : "TechPyre Studio";
+
+  const signaturePhone = (
+    process.env.TECHPYRE_SIGNATURE_PHONE ||
+    process.env.NEXT_PUBLIC_CONTACT_PHONE ||
+    ""
+  ).trim();
+
+  const signatureEmail = (
+    process.env.TECHPYRE_SIGNATURE_EMAIL ||
+    process.env.OUTBOUND_SMTP_USER ||
+    process.env.SMTP_USER ||
+    process.env.NEXT_PUBLIC_CONTACT_EMAIL ||
+    ""
+  ).trim();
+
+  const signatureWebsite = (
+    process.env.TECHPYRE_SIGNATURE_WEBSITE || "https://www.techpyre.eu"
+  ).trim();
+
+  return {
+    signatureName,
+    signaturePhone,
+    signatureEmail,
+    signatureWebsite,
+  };
+}
+
+/**
+ * Costruisce le righe di firma e contatti per le email outbound (escludendo URL nello Step 1).
+ */
+export function buildOutreachSignatureLines(options?: {
+  includeWebsite?: boolean;
+  whatsappLabel?: boolean;
+}): string[] {
+  const { signatureName, signaturePhone, signatureEmail, signatureWebsite } =
+    getOutreachSignatureConfig();
+  const lines = [signatureName];
+  if (signaturePhone) {
+    lines.push(
+      options?.whatsappLabel
+        ? `WhatsApp/Tel: ${signaturePhone}`
+        : `Tel/WhatsApp: ${signaturePhone}`
+    );
+  }
+  if (signatureEmail) {
+    lines.push(signatureEmail);
+  }
+  if (options?.includeWebsite && signatureWebsite) {
+    lines.push(signatureWebsite);
+  }
+  return lines;
+}
+
+export const STEP2_DEMO_LEGAL_DISCLAIMER =
+  "Nota: la demo è una bozza privata visibile solo da questo link (non indicizzata su Google), creata su misura a solo scopo dimostrativo (art. 21 D.Lgs. 30/2005; Reg. UE 2016/679). Rimozione immediata su richiesta.";
+
+export function ensureStep2LegalDisclaimer(body: string): string {
+  const trimmed = (body || "").trim();
+  if (!trimmed) return STEP2_DEMO_LEGAL_DISCLAIMER;
+  if (/bozza privata visibile solo da questo link/i.test(trimmed)) {
+    return trimmed;
+  }
+  return `${trimmed}\n\n${STEP2_DEMO_LEGAL_DISCLAIMER}`;
+}
+
 /**
  * Generazione sequenza outbound multi-step (4 touchpoints)
  * - Vietato iniziare con "Mi chiamo..." o "Siamo un'agenzia che..."
@@ -1330,6 +1421,7 @@ export function buildMultiStepOutreach({
   estimatedMobileLcpSeconds,
   renderBlockingScripts,
   runsAds,
+  existingEmailSubject,
 }: {
   slug: string;
   companyName: string;
@@ -1338,6 +1430,7 @@ export function buildMultiStepOutreach({
   estimatedMobileLcpSeconds: number;
   renderBlockingScripts: number;
   runsAds: boolean;
+  existingEmailSubject?: string;
 }): LeadConfig["outreach"] {
   const demoUrl = `https://www.techpyre.eu/demo/${slug}`;
   const blockingCount = Math.max(4, renderBlockingScripts);
@@ -1355,11 +1448,19 @@ export function buildMultiStepOutreach({
     ? ` dispersione clic mobile e tempi di caricamento di ${cleanCompanyName} (${estimatedMobileLcpSeconds}s)`
     : ` tempi di caricamento mobile e richieste preventivo di ${cleanCompanyName} (${estimatedMobileLcpSeconds}s)`;
 
-  const emailSubject =
+  const generatedSubject =
     isGenericInbox && cleanFullName
       ? `Per ${cleanFullName} -${baseSubject}`
       : `${cleanCompanyName} -${baseSubject}`;
 
+  const cleanExistingSubject = existingEmailSubject
+    ? decodeHtmlEntities(existingEmailSubject)
+        .replace(/^Re:\s*/i, "")
+        .replace(/[\u2013\u2014\u00b7]/g, "-")
+        .trim()
+    : "";
+
+  const emailSubject = cleanExistingSubject || generatedSubject;
   const threadSubject = `Re: ${emailSubject}`;
   const greeting = cleanFirstName
     ? `Buongiorno ${cleanFirstName},`
@@ -1370,10 +1471,6 @@ export function buildMultiStepOutreach({
     ? `da un test sul sito di ${cleanCompanyName}, da smartphone impiega ${estimatedMobileLcpSeconds} secondi ad aprirsi per ${blockingCount} blocchi di codice, disperdendo buona parte dei clic pagati.`
     : `da un test sul sito di ${cleanCompanyName}, da smartphone impiega ${estimatedMobileLcpSeconds} secondi ad aprirsi per ${blockingCount} risorse bloccanti, frenando le richieste di preventivo.`;
 
-  const signatureName = process.env.TECHPYRE_SIGNATURE_NAME || "TechPyre Studio";
-  const signaturePhone =
-    process.env.TECHPYRE_SIGNATURE_PHONE || process.env.NEXT_PUBLIC_CONTACT_PHONE || "";
-
   const step1Body = [
     greeting,
     ``,
@@ -1383,8 +1480,7 @@ export function buildMultiStepOutreach({
     ``,
     `Vi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?`,
     ``,
-    signatureName,
-    ...(signaturePhone ? [signaturePhone] : []),
+    ...buildOutreachSignatureLines({ includeWebsite: false }),
   ].join("\n");
 
   const step2Body = [
@@ -1396,8 +1492,9 @@ export function buildMultiStepOutreach({
     ``,
     `Avete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?`,
     ``,
-    signatureName,
-    ...(signaturePhone ? [signaturePhone] : []),
+    ...buildOutreachSignatureLines({ includeWebsite: true }),
+    ``,
+    STEP2_DEMO_LEGAL_DISCLAIMER,
   ].join("\n");
 
   const step3Focus = runsAds
@@ -1411,7 +1508,7 @@ export function buildMultiStepOutreach({
     ``,
     `Provo a farvi uno squillo in settimana per un confronto di 10 minuti.`,
     ``,
-    signatureName,
+    ...buildOutreachSignatureLines({ includeWebsite: true }),
   ].join("\n");
 
   const step4Body = [
@@ -1422,8 +1519,7 @@ export function buildMultiStepOutreach({
     `Vi lascio comunque attiva la demo (${demoUrl}) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.`,
     ``,
     `Un cordiale saluto e buon lavoro,`,
-    signatureName,
-    ...(signaturePhone ? [`WhatsApp diretto: ${signaturePhone}`] : []),
+    ...buildOutreachSignatureLines({ includeWebsite: true, whatsappLabel: true }),
   ].join("\n");
 
   const step1FirstTouch: OutreachStep = {
@@ -1685,12 +1781,34 @@ export function migrateOldLeadConfig(
     changed = true;
   }
 
-  // 5. Verifica o rigenerazione dei 4 Step Outreach (Zero-Fluff Protocol + Clean Encoding senza · né entità HTML)
+  // 5. Verifica o rigenerazione dei 4 Step Outreach (Zero-Fluff Protocol + Firma/Contatti completi + Clean Encoding)
+  const { signatureName, signaturePhone, signatureEmail, signatureWebsite } =
+    getOutreachSignatureConfig();
+  const step1Text =
+    lead.outreach.step1FirstTouch?.body || lead.outreach.emailPlainTextBody || "";
+  const step2Text =
+    lead.outreach.step2FollowUpLink?.body || lead.outreach.followUpWithLinkBody || "";
+  const step3Text = lead.outreach.step3ValueDropAndCallTrigger?.body || "";
+  const step4Text = lead.outreach.step4Breakup?.body || "";
+
+  const missingSignatureDetails = [step1Text, step2Text, step3Text, step4Text].some(
+    (body, idx) =>
+      !body ||
+      (signatureName && !body.includes(signatureName)) ||
+      (signaturePhone && !body.includes(signaturePhone)) ||
+      (signatureEmail && !body.includes(signatureEmail)) ||
+      (idx > 0 && signatureWebsite && !body.includes(signatureWebsite))
+  );
+
+  const hasMissingStep2Disclaimer = !/bozza privata visibile solo da questo link/i.test(step2Text);
+
   const hasLegacyCopy =
     !lead.outreach.step1FirstTouch ||
     !lead.outreach.step2FollowUpLink ||
     !lead.outreach.step3ValueDropAndCallTrigger ||
     !lead.outreach.step4Breakup ||
+    missingSignatureDetails ||
+    hasMissingStep2Disclaimer ||
     /mi chiamo|900\s*euro|zero canoni|rispondetemi pure ['"]?link['"]?/i.test(
       lead.outreach.emailPlainTextBody || ""
     ) ||
@@ -1712,6 +1830,11 @@ export function migrateOldLeadConfig(
         ? lead.meta.decisionMakerName
         : null;
 
+    const existingEmailSubject =
+      lead.meta.status && lead.meta.status !== "NEW"
+        ? lead.outreach.step1FirstTouch?.subject || lead.outreach.emailSubject
+        : undefined;
+
     lead.outreach = buildMultiStepOutreach({
       slug: lead.slug,
       companyName: lead.meta.companyName,
@@ -1724,6 +1847,7 @@ export function migrateOldLeadConfig(
       estimatedMobileLcpSeconds: lcpVal,
       renderBlockingScripts: blockingCount,
       runsAds: Boolean(lead.audit.runsAds),
+      existingEmailSubject,
     });
     changed = true;
   }

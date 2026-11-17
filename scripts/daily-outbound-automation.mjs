@@ -249,9 +249,14 @@ function getEligibleLists() {
 async function main() {
   const user = {
     username: process.env.TECHPYRE_OPERATOR_USERNAME || "admin",
-    displayName: process.env.TECHPYRE_SENDER_NAME || "TechPyre Studio",
+    displayName:
+      process.env.TECHPYRE_SENDER_NAME ||
+      process.env.TECHPYRE_SIGNATURE_NAME ||
+      "TechPyre Studio",
     role: "admin",
-    title: process.env.TECHPYRE_SENDER_ROLE || "Direzione Tecnica - TechPyre Studio",
+    title:
+      process.env.TECHPYRE_SENDER_ROLE ||
+      "Direzione Tecnica - TechPyre Studio",
   };
 
   const targetStep1Daily = DAILY_FIRST_TOUCH_LIMIT; // 35

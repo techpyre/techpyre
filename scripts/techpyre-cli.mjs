@@ -101,10 +101,14 @@ function getDefaultUser(usernameFlag) {
   return {
     username,
     displayName:
+      process.env.TECHPYRE_SENDER_NAME ||
       process.env.TECHPYRE_SIGNATURE_NAME ||
       username.charAt(0).toUpperCase() + username.slice(1),
     role: username === defaultUsername ? "admin" : "special",
-    title: "TechPyre Studio",
+    title:
+      process.env.TECHPYRE_SENDER_ROLE ||
+      process.env.TECHPYRE_SIGNATURE_NAME ||
+      "TechPyre Studio",
   };
 }
 

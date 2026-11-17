@@ -1,0 +1,174 @@
+{
+  "slug": "plastitaliaspa",
+  "archetype": "b2b-authority",
+  "meta": {
+    "companyName": "Plastitalia Spa",
+    "decisionMakerName": "Daniele Macaluso",
+    "decisionMakerFirstName": "Daniele",
+    "decisionMakerRole": "Direzione",
+    "isGenericInbox": false,
+    "emailScore": 90,
+    "targetEmail": "daniele.macaluso@plastitaliaspa.com",
+    "phone": "+390941536311",
+    "city": "Ferrara",
+    "vatNumber": "Non trovata",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Plastitalia%20Spa",
+    "originalLandingUrl": "https://www.plastitaliaspa.com",
+    "status": "CONTACTED_STEP_1",
+    "lastSentMessageId": "<5f5a4897-38de-8eb6-572e-76e5de3e1bf9@techpyre.eu>",
+    "threadMessageIds": [
+      "<5f5a4897-38de-8eb6-572e-76e5de3e1bf9@techpyre.eu>"
+    ]
+  },
+  "audit": {
+    "originalLcpSeconds": 17.3,
+    "mobileScore": 15,
+    "renderBlockingCount": 73,
+    "runsAds": true,
+    "detectedTrackingSignals": [
+      "Meta Pixel",
+      "Google Ads / GTM",
+      "TikTok / LinkedIn Pixel"
+    ],
+    "threeCriticalFlaws": [
+      "Dispersione del budget pubblicitario: caricamento mobile di 17.3s (73 risorse bloccanti) che fa abbandonare oltre meta degli utenti prima dell'apertura della pagina.",
+      "Cecita decisionale sul ROI: assenza di tracciamento Server-Side di prima parte (GTM Server-Side e Meta CAPI), con perdita del 30-50% dei dati di conversione per blocchi browser e cookie banner.",
+      "Colli di bottiglia commerciali: i contatti finiscono in email isolate senza pre-qualifica automatica e senza sincronizzazione immediata via API/Webhook con il CRM aziendale."
+    ],
+    "activeAdHeadline": "Manufacturing of Fittings for Polyethylene Pipes | Plastitalia",
+    "activeAdCopySummary": "European leader in the production of polyethylene fittings. Electrofusion, transition and spigot fittings for water and gas systems."
+  },
+  "theme": {
+    "primaryHex": "#0B1E36",
+    "accentHex": "#B8860B",
+    "darkBgHex": "#0B1E36",
+    "borderRadius": "8px",
+    "headerBgMode": "dark",
+    "headerBgHex": "#0E1013",
+    "logoBrightness": "light"
+  },
+  "content": {
+    "badgeTop": "Plastitalia Spa · Logistica e Movimentazione B2B (Ferrara)",
+    "heroHeadline": "Manufacturing of Fittings for Polyethylene Pipes | Plastitalia",
+    "heroSubheadline": "European leader in the production of polyethylene fittings. Electrofusion, transition and spigot fittings for water and gas systems.",
+    "heroBullets": [
+      "Analisi flussi di magazzino, movimentazione interna e spedizioni programmate",
+      "Imballaggi protetti e sistemi di trasporto progettati su dimensioni reali",
+      "Referente operativo unico per coordinamento carichi e urgenze"
+    ],
+    "ctaButtonText": "Richiedi Studio di Fattibilita",
+    "trustMicrocopy": "Riservatezza industriale garantita (NDA) · Risposta tecnica entro la giornata lavorativa",
+    "logoLocalPath": "/leads/plastitaliaspa/logo.png",
+    "heroImageLocalPath": "/leads/plastitaliaspa/hero.jpg",
+    "heroImageCaption": "Plastitalia Spa · Sede operativa e realizzazioni (Ferrara)",
+    "quiz": {
+      "question1": {
+        "title": "Quale esigenza logistica o di movimentazione desiderate ottimizzare?",
+        "options": [
+          "Nastri trasportatori, rulli, scaffalature o impianti di movimentazione",
+          "Imballaggi industriali, packaging su misura e forniture continuative",
+          "Trasporti dedicati, logistica di stabilimento e contratto SLA"
+        ]
+      },
+      "question2": {
+        "title": "Qual e l'orizzonte temporale previsto per il progetto?",
+        "options": [
+          "Avvio operativo urgente (entro 30 giorni)",
+          "Pianificazione nel trimestre in corso",
+          "Valutazione tecnica e di budget preliminare"
+        ]
+      },
+      "finalStepTitle": "Specifiche registrate. Inserisci i riferimenti aziendali per il colloquio con l'Ufficio Tecnico:"
+    },
+    "valueProps": [
+      {
+        "title": "Soluzioni su Misura per Flussi di Stabilimento",
+        "description": "Ottimizziamo movimentazione, rulliere, stoccaggio e confezionamento a Ferrara riducendo danni da trasporto e tempi morti di carico.",
+        "metric": "Efficienza Logistica"
+      },
+      {
+        "title": "Puntualita e Protezione Merci Garantita",
+        "description": "Plastitalia Spa opera con standard rigorosi per proteggere prodotti finiti, semilavorati e macchinari lungo tutta la filiera.",
+        "metric": "99.4% Puntuali"
+      },
+      {
+        "title": "Capacita Flessibile e Accordi Quadro",
+        "description": "Scorte di sicurezza e pianificazione flessibile per assorbire picchi di produzione e richieste urgenti senza blocchi.",
+        "metric": "SLA Contrattuale"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "99.4%",
+      "mainStatLabel": "Tasso di puntualita sulle consegne e movimentazioni B2B",
+      "reviewsSummary": "Partner logistico e industriale di fiducia a Ferrara",
+      "clientReferenceWall": [
+        "Consegne Programmate JIT",
+        "Sicurezza Carichi e Imballi",
+        "Qualita Certificata ISO 9001",
+        "Integrazione Flussi ERP",
+        "Referente Operativo Unico"
+      ],
+      "secondaryStats": [
+        {
+          "value": "99.4%",
+          "label": "Spedizioni e forniture consegnate nella finestra concordata"
+        },
+        {
+          "value": "< 0.4s",
+          "label": "Richiesta quotazione istantanea da ufficio acquisti e magazzino"
+        },
+        {
+          "value": "24h",
+          "label": "Quotazione tratte, impianti o lotti su specifica"
+        }
+      ],
+      "testimonials": [
+        {
+          "name": "Responsabile Logistica e Magazzino",
+          "location": "Ferrara · Polo Industriale",
+          "quote": "Da quando collaboriamo con Plastitalia Spa abbiamo velocizzato le operazioni di carico e azzerato i ritardi verso i nostri clienti esteri.",
+          "roleOrContext": "Logistica e movimentazione"
+        },
+        {
+          "name": "Ufficio Acquisti Aziendale",
+          "location": "Ferrara e provincia",
+          "quote": "Preventivi chiari, tracciabilita immediata e supporto rapido anche nelle spedizioni urgenti di fine mese.",
+          "roleOrContext": "Fornitura continuativa"
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "Plastitalia Spa - dispersione clic mobile e tempi di caricamento di Plastitalia Spa (17.3s)",
+    "emailPlainTextBody": "Buongiorno Daniele,\n\nda un test sul sito di Plastitalia Spa, da smartphone impiega 17.3 secondi ad aprirsi per 73 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Plastitalia Spa che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre Studio\nTel/WhatsApp: +39 379 115 9352\nriccardo.granza@techpyre.eu",
+    "followUpWithLinkBody": "Buongiorno Daniele,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Plastitalia Spa, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/plastitaliaspa\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\nTel/WhatsApp: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "Plastitalia Spa - dispersione clic mobile e tempi di caricamento di Plastitalia Spa (17.3s)",
+      "body": "Buongiorno Daniele,\n\nda un test sul sito di Plastitalia Spa, da smartphone impiega 17.3 secondi ad aprirsi per 73 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Plastitalia Spa che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre Studio\nTel/WhatsApp: +39 379 115 9352\nriccardo.granza@techpyre.eu",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: Plastitalia Spa - dispersione clic mobile e tempi di caricamento di Plastitalia Spa (17.3s)",
+      "body": "Buongiorno Daniele,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Plastitalia Spa, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/plastitaliaspa\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\nTel/WhatsApp: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: Plastitalia Spa - dispersione clic mobile e tempi di caricamento di Plastitalia Spa (17.3s)",
+      "body": "Buongiorno Daniele,\n\nOltre a tagliare i 17.3 secondi su mobile, l'infrastruttura recupera il 40% delle conversioni tramite Server-Side Tracking.\n\nProvo a farvi uno squillo in settimana per un confronto di 10 minuti.\n\nRiccardo Granza - TechPyre Studio\nTel/WhatsApp: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu",
+      "inThread": true,
+      "requiresFollowUpCall": true
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: Plastitalia Spa - dispersione clic mobile e tempi di caricamento di Plastitalia Spa (17.3s)",
+      "body": "Buongiorno Daniele,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Plastitalia Spa non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/plastitaliaspa) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}
