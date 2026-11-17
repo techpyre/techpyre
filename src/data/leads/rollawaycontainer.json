@@ -118,7 +118,7 @@
   "outreach": {
     "emailSubject": "Rollawaycontainer - dispersione clic mobile e tempi di caricamento di Rollawaycontainer (3.6s)",
     "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di Rollawaycontainer, da smartphone impiega 3.6 secondi ad aprirsi per 8 blocchi di codice, disperdendo buona parte dei clic pagati.\n\nAbbiamo gia preparato una demo in Next.js per Rollawaycontainer che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre Studio\nTel/WhatsApp: +39 379 115 9352\nriccardo.granza@techpyre.eu",
-    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Rollawaycontainer, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/rollawaycontainer\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\nTel/WhatsApp: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Rollawaycontainer, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/rollawaycontainer\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\nTel/WhatsApp: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu\n\nNota: la demo è una bozza privata visibile solo da questo link (non indicizzata su Google), creata su misura a solo scopo dimostrativo (art. 21 D.Lgs. 30/2005; Reg. UE 2016/679). Rimozione immediata su richiesta.",
     "step1FirstTouch": {
       "dayOffset": 1,
       "subject": "Rollawaycontainer - dispersione clic mobile e tempi di caricamento di Rollawaycontainer (3.6s)",
@@ -129,7 +129,7 @@
     "step2FollowUpLink": {
       "dayOffset": 4,
       "subject": "Re: Rollawaycontainer - dispersione clic mobile e tempi di caricamento di Rollawaycontainer (3.6s)",
-      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Rollawaycontainer, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/rollawaycontainer\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\nTel/WhatsApp: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Rollawaycontainer, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/rollawaycontainer\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\nTel/WhatsApp: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu\n\nNota: la demo è una bozza privata visibile solo da questo link (non indicizzata su Google), creata su misura a solo scopo dimostrativo (art. 21 D.Lgs. 30/2005; Reg. UE 2016/679). Rimozione immediata su richiesta.",
       "inThread": true,
       "requiresFollowUpCall": false
     },

@@ -132,7 +132,7 @@
   "outreach": {
     "emailSubject": "AZ TRASLOCHI SOC. COOP. - tempi di caricamento mobile e richieste preventivo di AZ TRASLOCHI SOC. COOP. (8.3s)",
     "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di AZ TRASLOCHI SOC. COOP., da smartphone impiega 8.3 secondi ad aprirsi per 34 risorse bloccanti, frenando le richieste di preventivo.\n\nAbbiamo gia preparato una demo in Next.js per AZ TRASLOCHI SOC. COOP. che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre Studio\nTel/WhatsApp: +39 379 115 9352\nriccardo.granza@techpyre.eu",
-    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per AZ TRASLOCHI SOC. COOP., completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/az-traslochi\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\nTel/WhatsApp: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per AZ TRASLOCHI SOC. COOP., completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/az-traslochi\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\nTel/WhatsApp: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu\n\nNota: la demo è una bozza privata visibile solo da questo link (non indicizzata su Google), creata su misura a solo scopo dimostrativo (art. 21 D.Lgs. 30/2005; Reg. UE 2016/679). Rimozione immediata su richiesta.",
     "step1FirstTouch": {
       "dayOffset": 1,
       "subject": "AZ TRASLOCHI SOC. COOP. - tempi di caricamento mobile e richieste preventivo di AZ TRASLOCHI SOC. COOP. (8.3s)",
@@ -143,7 +143,7 @@
     "step2FollowUpLink": {
       "dayOffset": 4,
       "subject": "Re: AZ TRASLOCHI SOC. COOP. - tempi di caricamento mobile e richieste preventivo di AZ TRASLOCHI SOC. COOP. (8.3s)",
-      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per AZ TRASLOCHI SOC. COOP., completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/az-traslochi\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\nTel/WhatsApp: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per AZ TRASLOCHI SOC. COOP., completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/az-traslochi\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\nTel/WhatsApp: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu\n\nNota: la demo è una bozza privata visibile solo da questo link (non indicizzata su Google), creata su misura a solo scopo dimostrativo (art. 21 D.Lgs. 30/2005; Reg. UE 2016/679). Rimozione immediata su richiesta.",
       "inThread": true,
       "requiresFollowUpCall": false
     },

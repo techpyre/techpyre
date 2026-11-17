@@ -137,7 +137,7 @@
   "outreach": {
     "emailSubject": "Iko Infissi | Verona - tempi di caricamento mobile e richieste preventivo di Iko Infissi | Verona (15.8s)",
     "emailPlainTextBody": "Buongiorno,\n\nda un test sul sito di Iko Infissi | Verona, da smartphone impiega 15.8 secondi ad aprirsi per 64 risorse bloccanti, frenando le richieste di preventivo.\n\nAbbiamo gia preparato una demo in Next.js per Iko Infissi | Verona che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre Studio\nTel/WhatsApp: +39 379 115 9352\nriccardo.granza@techpyre.eu",
-    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Iko Infissi | Verona, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/ikoinfissi\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\nTel/WhatsApp: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Iko Infissi | Verona, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/ikoinfissi\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\nTel/WhatsApp: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu\n\nNota: la demo è una bozza privata visibile solo da questo link (non indicizzata su Google), creata su misura a solo scopo dimostrativo (art. 21 D.Lgs. 30/2005; Reg. UE 2016/679). Rimozione immediata su richiesta.",
     "step1FirstTouch": {
       "dayOffset": 1,
       "subject": "Iko Infissi | Verona - tempi di caricamento mobile e richieste preventivo di Iko Infissi | Verona (15.8s)",
@@ -148,7 +148,7 @@
     "step2FollowUpLink": {
       "dayOffset": 4,
       "subject": "Re: Iko Infissi | Verona - tempi di caricamento mobile e richieste preventivo di Iko Infissi | Verona (15.8s)",
-      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Iko Infissi | Verona, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/ikoinfissi\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\nTel/WhatsApp: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Iko Infissi | Verona, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/ikoinfissi\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\nTel/WhatsApp: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu\n\nNota: la demo è una bozza privata visibile solo da questo link (non indicizzata su Google), creata su misura a solo scopo dimostrativo (art. 21 D.Lgs. 30/2005; Reg. UE 2016/679). Rimozione immediata su richiesta.",
       "inThread": true,
       "requiresFollowUpCall": false
     },

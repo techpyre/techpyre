@@ -115,7 +115,7 @@
   "outreach": {
     "emailSubject": "Per Laura Cuti - tempi di caricamento mobile e richieste preventivo di Studio Legale Pitruzzella Domenico (11.4s)",
     "emailPlainTextBody": "Buongiorno Laura,\n\nda un test sul sito di Studio Legale Pitruzzella Domenico, da smartphone impiega 11.4 secondi ad aprirsi per 47 risorse bloccanti, frenando le richieste di preventivo.\n\nAbbiamo gia preparato una demo in Next.js per Studio Legale Pitruzzella Domenico che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre Studio\nTel/WhatsApp: +39 379 115 9352\nriccardo.granza@techpyre.eu",
-    "followUpWithLinkBody": "Buongiorno Laura,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Studio Legale Pitruzzella Domenico, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/avvocatopitruzzella\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\nTel/WhatsApp: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu",
+    "followUpWithLinkBody": "Buongiorno Laura,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Studio Legale Pitruzzella Domenico, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/avvocatopitruzzella\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\nTel/WhatsApp: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu\n\nNota: la demo è una bozza privata visibile solo da questo link (non indicizzata su Google), creata su misura a solo scopo dimostrativo (art. 21 D.Lgs. 30/2005; Reg. UE 2016/679). Rimozione immediata su richiesta.",
     "step1FirstTouch": {
       "dayOffset": 1,
       "subject": "Per Laura Cuti - tempi di caricamento mobile e richieste preventivo di Studio Legale Pitruzzella Domenico (11.4s)",
@@ -126,7 +126,7 @@
     "step2FollowUpLink": {
       "dayOffset": 4,
       "subject": "Re: Per Laura Cuti - tempi di caricamento mobile e richieste preventivo di Studio Legale Pitruzzella Domenico (11.4s)",
-      "body": "Buongiorno Laura,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Studio Legale Pitruzzella Domenico, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/avvocatopitruzzella\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\nTel/WhatsApp: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu",
+      "body": "Buongiorno Laura,\n\nvi lascio qui sotto il link della demo da 0.3 secondi preparata per Studio Legale Pitruzzella Domenico, completa di filtro pre-qualifica contatti:\n\nhttps://www.techpyre.eu/demo/avvocatopitruzzella\n\nAvete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?\n\nRiccardo Granza - TechPyre Studio\nTel/WhatsApp: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu\n\nNota: la demo è una bozza privata visibile solo da questo link (non indicizzata su Google), creata su misura a solo scopo dimostrativo (art. 21 D.Lgs. 30/2005; Reg. UE 2016/679). Rimozione immediata su richiesta.",
       "inThread": true,
       "requiresFollowUpCall": false
     },
