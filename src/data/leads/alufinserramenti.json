@@ -14,10 +14,11 @@
     "vatNumber": "03342090838",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Alufin%20Serramenti%20Sas",
     "originalLandingUrl": "http://www.alufinserramenti.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<b4bd6221-7432-0883-6f4f-2ea5eea308ea@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<53bf2644-ce5d-6fbb-f8ba-7b06d32dba0f@techpyre.eu>",
     "threadMessageIds": [
-      "<b4bd6221-7432-0883-6f4f-2ea5eea308ea@techpyre.eu>"
+      "<b4bd6221-7432-0883-6f4f-2ea5eea308ea@techpyre.eu>",
+      "<53bf2644-ce5d-6fbb-f8ba-7b06d32dba0f@techpyre.eu>"
     ]
   },
   "audit": {

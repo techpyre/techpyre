@@ -14,10 +14,11 @@
     "vatNumber": "05735180829",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Exalto%20Energy%20%26%20Innovation",
     "originalLandingUrl": "https://www.exaltoenergia.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<0fba914d-c26d-de33-02e7-056075462694@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<5f3f533c-e8d4-e864-e073-70fbfd77e93f@techpyre.eu>",
     "threadMessageIds": [
-      "<0fba914d-c26d-de33-02e7-056075462694@techpyre.eu>"
+      "<0fba914d-c26d-de33-02e7-056075462694@techpyre.eu>",
+      "<5f3f533c-e8d4-e864-e073-70fbfd77e93f@techpyre.eu>"
     ]
   },
   "audit": {

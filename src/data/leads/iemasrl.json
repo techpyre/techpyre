@@ -14,10 +14,11 @@
     "vatNumber": "01673831200",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=IEMA%20srl",
     "originalLandingUrl": "https://www.iemasrl.com",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<1bb1209d-e834-192e-aca4-5724f0818980@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<3a348239-0dd2-1e36-842f-a50c2b87b0e7@techpyre.eu>",
     "threadMessageIds": [
-      "<1bb1209d-e834-192e-aca4-5724f0818980@techpyre.eu>"
+      "<1bb1209d-e834-192e-aca4-5724f0818980@techpyre.eu>",
+      "<3a348239-0dd2-1e36-842f-a50c2b87b0e7@techpyre.eu>"
     ]
   },
   "audit": {

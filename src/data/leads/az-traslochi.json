@@ -14,7 +14,11 @@
     "vatNumber": "01823320039",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=AZ%20TRASLOCHI%20SOC.%20COOP.",
     "originalLandingUrl": "https://az-traslochi.it",
-    "status": "NEW"
+    "status": "CONTACTED_STEP_1",
+    "lastSentMessageId": "<adf39e71-8804-a01c-f3d1-758be34bc943@techpyre.eu>",
+    "threadMessageIds": [
+      "<adf39e71-8804-a01c-f3d1-758be34bc943@techpyre.eu>"
+    ]
   },
   "audit": {
     "originalLcpSeconds": 8.3,

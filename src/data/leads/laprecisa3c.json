@@ -14,10 +14,11 @@
     "vatNumber": "01704420981",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=La%20Precisa%203c",
     "originalLandingUrl": "https://www.laprecisa3c.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<2598e9aa-4328-d167-c4b0-c5175c5c004f@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<fc7146e0-032b-6790-aabe-0c826cd3dcb1@techpyre.eu>",
     "threadMessageIds": [
-      "<2598e9aa-4328-d167-c4b0-c5175c5c004f@techpyre.eu>"
+      "<2598e9aa-4328-d167-c4b0-c5175c5c004f@techpyre.eu>",
+      "<fc7146e0-032b-6790-aabe-0c826cd3dcb1@techpyre.eu>"
     ]
   },
   "audit": {

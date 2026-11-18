@@ -14,10 +14,11 @@
     "vatNumber": "02394181206",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Intech%20Automazione%20Sistemi",
     "originalLandingUrl": "https://www.intechsrl.biz",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<183d28f7-cd86-cfcc-dd92-7d5c2d220d11@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<d9693045-a0cd-cffc-fd0b-e9bed8a088ce@techpyre.eu>",
     "threadMessageIds": [
-      "<183d28f7-cd86-cfcc-dd92-7d5c2d220d11@techpyre.eu>"
+      "<183d28f7-cd86-cfcc-dd92-7d5c2d220d11@techpyre.eu>",
+      "<d9693045-a0cd-cffc-fd0b-e9bed8a088ce@techpyre.eu>"
     ]
   },
   "audit": {

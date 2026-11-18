@@ -14,7 +14,11 @@
     "vatNumber": "03138680982",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Abs%20Work%20Srl",
     "originalLandingUrl": "https://www.copertureabswork.it",
-    "status": "NEW"
+    "status": "CONTACTED_STEP_1",
+    "lastSentMessageId": "<72fdcb5c-1e3b-ff7d-3a54-9f03a57f2b60@techpyre.eu>",
+    "threadMessageIds": [
+      "<72fdcb5c-1e3b-ff7d-3a54-9f03a57f2b60@techpyre.eu>"
+    ]
   },
   "audit": {
     "originalLcpSeconds": 9.8,

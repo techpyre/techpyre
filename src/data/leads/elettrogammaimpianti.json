@@ -14,10 +14,11 @@
     "vatNumber": "00863591202",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Elettrogamma",
     "originalLandingUrl": "https://www.elettrogammaimpianti.com",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<d31ef76d-f57c-0a38-9614-5c9984e69bba@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<9adbaf79-f232-b1f4-2578-2b6127fc8f04@techpyre.eu>",
     "threadMessageIds": [
-      "<d31ef76d-f57c-0a38-9614-5c9984e69bba@techpyre.eu>"
+      "<d31ef76d-f57c-0a38-9614-5c9984e69bba@techpyre.eu>",
+      "<9adbaf79-f232-b1f4-2578-2b6127fc8f04@techpyre.eu>"
     ]
   },
   "audit": {

@@ -1,0 +1,149 @@
+{
+  "slug": "impresamerotto",
+  "archetype": "local-leadgen",
+  "meta": {
+    "companyName": "Merotto Bau S.r.l.",
+    "decisionMakerName": "Francesco Merotto",
+    "decisionMakerFirstName": "Francesco",
+    "decisionMakerRole": "Titolare",
+    "isGenericInbox": true,
+    "emailScore": 35,
+    "targetEmail": "info@impresamerotto.com",
+    "phone": "+390438898240",
+    "city": "Bolzano",
+    "vatNumber": "04078640267",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Merotto%20Bau%20S.r.l.",
+    "originalLandingUrl": "http://www.impresamerotto.com",
+    "status": "CONTACTED_STEP_1",
+    "lastSentMessageId": "<ef17dc22-b070-7f09-d3e2-2fcd1ac88551@techpyre.eu>",
+    "threadMessageIds": [
+      "<ef17dc22-b070-7f09-d3e2-2fcd1ac88551@techpyre.eu>"
+    ]
+  },
+  "audit": {
+    "originalLcpSeconds": 14.2,
+    "mobileScore": 15,
+    "renderBlockingCount": 65,
+    "runsAds": false,
+    "detectedTrackingSignals": [],
+    "threeCriticalFlaws": [
+      "Perdita di richieste di preventivo su mobile: caricamento di 14.2s (65 risorse bloccanti) che spinge i visitatori da smartphone ad abbandonare la pagina prima di contattare l'ufficio commerciale.",
+      "Assenza di pre-qualifica automatica: il sito non filtra le richieste per tipologia di intervento, budget o tempistiche prima di inviarle ai referenti tecnici di Merotto Bau S.r.l..",
+      "Colli di bottiglia commerciali: le richieste arrivano come semplici email isolate senza instradamento automatico e senza tracciamento strutturato della trattativa."
+    ],
+    "activeAdHeadline": "Merotto Bau: isolamento, costruzione e restauro",
+    "activeAdCopySummary": "Merotto Bau è un’impresa edile fondata nel 1967 che opera in Veneto, Friuli Venezia Giulia e Alto Adige. Scopri i nostri progetti."
+  },
+  "theme": {
+    "primaryHex": "#d01010",
+    "accentHex": "#2563EB",
+    "darkBgHex": "#0B1E36",
+    "borderRadius": "12px",
+    "headerBgMode": "light",
+    "headerBgHex": "#FFFFFF",
+    "logoBrightness": "dark"
+  },
+  "content": {
+    "badgeTop": "Merotto Bau S.r.l. · Energia e Comfort Termico (Bolzano)",
+    "heroHeadline": "Merotto Bau: isolamento, costruzione e restauro",
+    "heroSubheadline": "Merotto Bau è un’impresa edile fondata nel 1967 che opera in Veneto, Friuli Venezia Giulia e Alto Adige. Scopri i nostri progetti.",
+    "heroBullets": [
+      "Analisi consumi in bolletta e dimensionamento reale senza sovrastime",
+      "Installazione certificata con tecnici interni abilitati F-Gas / FER",
+      "Gestione completa pratiche di allaccio, ENEA e incentivi fiscali"
+    ],
+    "ctaButtonText": "Calcola il Tuo Preventivo Rapido",
+    "trustMicrocopy": "Richiesta gratuita e senza impegno · Risposta rapida dal nostro ufficio tecnico",
+    "logoLocalPath": "/leads/impresamerotto/logo.png",
+    "heroImageLocalPath": "/leads/impresamerotto/hero.jpg",
+    "heroImageCaption": "Merotto Bau S.r.l. · Sede operativa e realizzazioni (Bolzano)",
+    "quiz": {
+      "question1": {
+        "title": "Quale impianto desideri installare o sostituire?",
+        "options": [
+          "Impianto fotovoltaico con eventuale sistema di accumulo",
+          "Climatizzatori, pompa di calore o caldaia ad alta efficienza",
+          "Riqualificazione energetica completa dell'abitazione"
+        ]
+      },
+      "question2": {
+        "title": "Qual e il tuo obiettivo principale?",
+        "options": [
+          "Abbattere subito i costi in bolletta",
+          "Accesso agli incentivi e detrazioni fiscali attive",
+          "Sostituzione urgente con sopralluogo tecnico rapido"
+        ]
+      },
+      "finalStepTitle": "Perfetto. Lascia i tuoi dati per ricevere la simulazione tecnica e il preventivo dedicato:"
+    },
+    "valueProps": [
+      {
+        "title": "Dimensionamento Sui Tuoi Consumi Reali",
+        "description": "Calcoliamo potenza, accumulo o taglia della pompa di calore per offrirti il miglior rientro economico possibile a Bolzano.",
+        "metric": "Resa Massima"
+      },
+      {
+        "title": "Installazione Certificata e Sicura",
+        "description": "I tecnici di Merotto Bau S.r.l. eseguono il lavoro a regola d'arte rilasciando tutte le dichiarazioni di conformita.",
+        "metric": "100% A Norma"
+      },
+      {
+        "title": "Assistenza e Pratiche Chiavi in Mano",
+        "description": "Seguiamo noi iter autorizzativi, pratiche incentivi e manutenzione programmata post-installazione.",
+        "metric": "Zero Pensieri"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "98%",
+      "mainStatLabel": "Clienti soddisfatti del risparmio energetico ottenuto",
+      "reviewsSummary": "4.9/5 da clienti residenziali a Bolzano",
+      "testimonials": [
+        {
+          "name": "Simone G.",
+          "location": "Bolzano",
+          "quote": "Impianto dimensione perfetta per i nostri consumi. Merotto Bau S.r.l. ha gestito installazione e pratiche in tempi record.",
+          "roleOrContext": "Fotovoltaico con accumulo"
+        },
+        {
+          "name": "Elena P.",
+          "location": "Bolzano e provincia",
+          "quote": "Tecnici puliti e precisi nel montaggio del nuovo impianto di climatizzazione. Preventivo chiaro fin dal primo giorno.",
+          "roleOrContext": "Pompa di calore e clima"
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "Per Francesco Merotto - lentezza da smartphone (14.2s) e filtro richieste preventivo di Merotto Bau S.r.l.",
+    "emailPlainTextBody": "Buongiorno Francesco,\n\nda una verifica sul sito di Merotto Bau S.r.l., aprendolo da smartphone passano 14.2 secondi prima che la pagina sia utilizzabile, frenando le richieste di preventivo di chi vi cerca da mobile.\n\nAbbiamo gia preparato per Merotto Bau S.r.l. una bozza su misura che si apre in 0.3 secondi da telefono e filtra in automatico le richieste di preventivo.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre Studio\nTel/WhatsApp: +39 379 115 9352\nriccardo.granza@techpyre.eu",
+    "followUpWithLinkBody": "Buongiorno Francesco,\n\nvi lascio qui sotto il link della bozza da 0.3 secondi preparata per Merotto Bau S.r.l., con simulatore di pre-qualifica richieste integrato in pagina:\n\nhttps://www.techpyre.eu/demo/impresamerotto\n\nPotete provarla direttamente dal telefono: se l'impostazione vi piace, scrivetemi pure su WhatsApp (o in risposta a questa email) per vedere come adattarla al vostro flusso commerciale.\n\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu\n\nNota: la demo è una bozza privata visibile solo da questo link (non indicizzata su Google), creata su misura a solo scopo dimostrativo (art. 21 D.Lgs. 30/2005; Reg. UE 2016/679). Rimozione immediata su richiesta.",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "Per Francesco Merotto - lentezza da smartphone (14.2s) e filtro richieste preventivo di Merotto Bau S.r.l.",
+      "body": "Buongiorno Francesco,\n\nda una verifica sul sito di Merotto Bau S.r.l., aprendolo da smartphone passano 14.2 secondi prima che la pagina sia utilizzabile, frenando le richieste di preventivo di chi vi cerca da mobile.\n\nAbbiamo gia preparato per Merotto Bau S.r.l. una bozza su misura che si apre in 0.3 secondi da telefono e filtra in automatico le richieste di preventivo.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre Studio\nTel/WhatsApp: +39 379 115 9352\nriccardo.granza@techpyre.eu",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: Per Francesco Merotto - lentezza da smartphone (14.2s) e filtro richieste preventivo di Merotto Bau S.r.l.",
+      "body": "Buongiorno Francesco,\n\nvi lascio qui sotto il link della bozza da 0.3 secondi preparata per Merotto Bau S.r.l., con simulatore di pre-qualifica richieste integrato in pagina:\n\nhttps://www.techpyre.eu/demo/impresamerotto\n\nPotete provarla direttamente dal telefono: se l'impostazione vi piace, scrivetemi pure su WhatsApp (o in risposta a questa email) per vedere come adattarla al vostro flusso commerciale.\n\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu\n\nNota: la demo è una bozza privata visibile solo da questo link (non indicizzata su Google), creata su misura a solo scopo dimostrativo (art. 21 D.Lgs. 30/2005; Reg. UE 2016/679). Rimozione immediata su richiesta.",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: Per Francesco Merotto - lentezza da smartphone (14.2s) e filtro richieste preventivo di Merotto Bau S.r.l.",
+      "body": "Buongiorno Francesco,\n\nOltre ad azzerare i 14.2 secondi di attesa su mobile, il simulatore filtra le richieste fuori target prima di inviarle su WhatsApp o al vostro CRM.\n\nPer non disturbarvi con chiamate a freddo, se mi mandate anche solo un veloce messaggio su WhatsApp al +39 379 115 9352 (o rispondete qui sotto) vi giro subito in chat i dettagli per Merotto Bau S.r.l..\n\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: Per Francesco Merotto - lentezza da smartphone (14.2s) e filtro richieste preventivo di Merotto Bau S.r.l.",
+      "body": "Buongiorno Francesco,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Merotto Bau S.r.l. non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/impresamerotto) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione su WhatsApp o via email se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

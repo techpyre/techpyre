@@ -14,10 +14,11 @@
     "vatNumber": "07894000962",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Foker%20Engineering",
     "originalLandingUrl": "http://www.foker.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<5f66e71b-310e-936a-e540-82d97a28ef9f@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<b87c79a6-faa8-ec09-09c6-05b0e05e0142@techpyre.eu>",
     "threadMessageIds": [
-      "<5f66e71b-310e-936a-e540-82d97a28ef9f@techpyre.eu>"
+      "<5f66e71b-310e-936a-e540-82d97a28ef9f@techpyre.eu>",
+      "<b87c79a6-faa8-ec09-09c6-05b0e05e0142@techpyre.eu>"
     ]
   },
   "audit": {

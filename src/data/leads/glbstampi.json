@@ -14,10 +14,11 @@
     "vatNumber": "01516030986",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=G.L.B.",
     "originalLandingUrl": "http://www.glbstampi.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<9376fe3d-3650-ff8e-6824-dad4950c8859@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<5ca4f945-a4df-db67-026a-5bc8ae46419a@techpyre.eu>",
     "threadMessageIds": [
-      "<9376fe3d-3650-ff8e-6824-dad4950c8859@techpyre.eu>"
+      "<9376fe3d-3650-ff8e-6824-dad4950c8859@techpyre.eu>",
+      "<5ca4f945-a4df-db67-026a-5bc8ae46419a@techpyre.eu>"
     ]
   },
   "audit": {

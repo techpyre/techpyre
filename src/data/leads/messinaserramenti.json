@@ -14,10 +14,11 @@
     "vatNumber": "03273300586",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Messina%20Serramenti%20-%20Roma",
     "originalLandingUrl": "https://messinaserramenti.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<8d5391c2-89b0-fc82-f1e2-8e9f384e6111@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<a4fe1eee-79dc-a854-c332-38aa19165d52@techpyre.eu>",
     "threadMessageIds": [
-      "<8d5391c2-89b0-fc82-f1e2-8e9f384e6111@techpyre.eu>"
+      "<8d5391c2-89b0-fc82-f1e2-8e9f384e6111@techpyre.eu>",
+      "<a4fe1eee-79dc-a854-c332-38aa19165d52@techpyre.eu>"
     ]
   },
   "audit": {

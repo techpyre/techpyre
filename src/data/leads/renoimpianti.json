@@ -14,10 +14,11 @@
     "vatNumber": "03033501200",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Reno%20Impianti",
     "originalLandingUrl": "http://www.renoimpianti.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<e9ac3c2e-664c-94b4-1b20-e929ef832a32@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<3a0ce200-7b06-0ee1-cc2d-33b6832d4b16@techpyre.eu>",
     "threadMessageIds": [
-      "<e9ac3c2e-664c-94b4-1b20-e929ef832a32@techpyre.eu>"
+      "<e9ac3c2e-664c-94b4-1b20-e929ef832a32@techpyre.eu>",
+      "<3a0ce200-7b06-0ee1-cc2d-33b6832d4b16@techpyre.eu>"
     ]
   },
   "audit": {

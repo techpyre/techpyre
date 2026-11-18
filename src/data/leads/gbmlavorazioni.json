@@ -14,10 +14,11 @@
     "vatNumber": "03106500980",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Gbm%20S.r.l.%20Lavorazioni%20Alluminio%20e%20Leghe",
     "originalLandingUrl": "https://www.gbmlavorazioni.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<3928aa37-c298-f1bc-aa24-e83dd8a693dc@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<1dd94f52-2b90-c1b2-df14-19846a0aca2a@techpyre.eu>",
     "threadMessageIds": [
-      "<3928aa37-c298-f1bc-aa24-e83dd8a693dc@techpyre.eu>"
+      "<3928aa37-c298-f1bc-aa24-e83dd8a693dc@techpyre.eu>",
+      "<1dd94f52-2b90-c1b2-df14-19846a0aca2a@techpyre.eu>"
     ]
   },
   "audit": {

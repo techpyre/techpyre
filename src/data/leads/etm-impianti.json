@@ -1,0 +1,149 @@
+{
+  "slug": "etm-impianti",
+  "archetype": "local-leadgen",
+  "meta": {
+    "companyName": "Elettrotecnica Manerbiese",
+    "decisionMakerName": "Direzione Elettrotecnica Manerbiese",
+    "decisionMakerFirstName": null,
+    "decisionMakerRole": "Direzione Aziendale",
+    "isGenericInbox": true,
+    "emailScore": 35,
+    "targetEmail": "info@etm-impianti.it",
+    "phone": "+39 030 9382608",
+    "city": "Manerbio",
+    "vatNumber": "02584690982",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Elettrotecnica%20Manerbiese",
+    "originalLandingUrl": "http://www.etm-impianti.it",
+    "status": "CONTACTED_STEP_1",
+    "lastSentMessageId": "<60b1cfc7-ac0f-989c-6d06-647181485471@techpyre.eu>",
+    "threadMessageIds": [
+      "<60b1cfc7-ac0f-989c-6d06-647181485471@techpyre.eu>"
+    ]
+  },
+  "audit": {
+    "originalLcpSeconds": 8,
+    "mobileScore": 32,
+    "renderBlockingCount": 24,
+    "runsAds": false,
+    "detectedTrackingSignals": [],
+    "threeCriticalFlaws": [
+      "Perdita di richieste di preventivo su mobile: caricamento di 8s (24 risorse bloccanti) che spinge i visitatori da smartphone ad abbandonare la pagina prima di contattare l'ufficio commerciale.",
+      "Assenza di pre-qualifica automatica: il sito non filtra le richieste per tipologia di intervento, budget o tempistiche prima di inviarle ai referenti tecnici di Elettrotecnica Manerbiese.",
+      "Colli di bottiglia commerciali: le richieste arrivano come semplici email isolate senza instradamento automatico e senza tracciamento strutturato della trattativa."
+    ],
+    "activeAdHeadline": "Elettrotecnica Manerbiese: Sicurezza Casa, Serrature e Antifurti a Manerbio",
+    "activeAdCopySummary": "La Elettrotecnica Manerbiese di Sacchi M. & Dester G. snc, sita a Manerbio (BS), con più di 50 anni di esperienza nel settore dell’impiantis..."
+  },
+  "theme": {
+    "primaryHex": "#00f0f0",
+    "accentHex": "#2563EB",
+    "darkBgHex": "#0B1E36",
+    "borderRadius": "12px",
+    "headerBgMode": "light",
+    "headerBgHex": "#FFFFFF",
+    "logoBrightness": "dark"
+  },
+  "content": {
+    "badgeTop": "Elettrotecnica Manerbiese · Sicurezza e Protezione (Manerbio)",
+    "heroHeadline": "Elettrotecnica Manerbiese: Sicurezza Casa, Serrature e Antifurti a Manerbio",
+    "heroSubheadline": "La Elettrotecnica Manerbiese di Sacchi M. & Dester G. snc, sita a Manerbio (BS), con più di 50 anni di esperienza nel settore dell’impiantistica, progetta e realizza ogni tipo di impianto elettrico per il setto",
+    "heroBullets": [
+      "Interventi tempestivi a domicilio con tecnici qualificati sul territorio",
+      "Sistemi di sicurezza e serrature certificate antiscasso di ultima generazione",
+      "Preventivo chiaro prima dell'uscita e garanzia diretta sui componenti"
+    ],
+    "ctaButtonText": "Calcola il Tuo Preventivo Rapido",
+    "trustMicrocopy": "Richiesta gratuita e senza impegno · Risposta rapida dal nostro ufficio tecnico",
+    "logoLocalPath": "/leads/etm-impianti/logo.png",
+    "heroImageLocalPath": "/leads/etm-impianti/hero.jpg",
+    "heroImageCaption": "Elettrotecnica Manerbiese · Sede operativa e realizzazioni (Manerbio)",
+    "quiz": {
+      "question1": {
+        "title": "Di quale intervento di sicurezza hai bisogno?",
+        "options": [
+          "Installazione sistema antifurto o videosorveglianza",
+          "Sostituzione serratura europea o porta blindata",
+          "Assistenza tecnica urgente su porte e serrature"
+        ]
+      },
+      "question2": {
+        "title": "Dove va eseguito l'intervento?",
+        "options": [
+          "Appartamento o abitazione indipendente",
+          "Ufficio, negozio o studio professionale",
+          "Condominio o autorimessa"
+        ]
+      },
+      "finalStepTitle": "Richiesta registrata. Inserisci i tuoi recapiti per un contatto rapido dal tecnico:"
+    },
+    "valueProps": [
+      {
+        "title": "Analisi Punti Critici e Consulenza Diretta",
+        "description": "Verifichiamo accessi, serramenti e vulnerabilita dell'immobile a Manerbio proponendo solo le protezioni realmente utili.",
+        "metric": "Sopralluogo Rapido"
+      },
+      {
+        "title": "Componenti Certificati Alta Sicurezza",
+        "description": "Elettrotecnica Manerbiese installa dispositivi affidabili per proteggere la tua famiglia e i tuoi beni senza falsi allarmi.",
+        "metric": "Alta Affidabilita"
+      },
+      {
+        "title": "Assistenza Diretta H24 sul Territorio",
+        "description": "Un referente locale reale sempre reperibile per configurazioni, manutenzioni e urgenze.",
+        "metric": "Pronto Intervento"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "98%",
+      "mainStatLabel": "Interventi risolti alla prima uscita con garanzia scritta",
+      "reviewsSummary": "4.9/5 da famiglie e attivita a Manerbio",
+      "testimonials": [
+        {
+          "name": "Roberto T.",
+          "location": "Manerbio",
+          "quote": "Intervenuti in giornata per l'aggiornamento delle serrature. Lavoro pulito, veloce e prezzo assolutamente corretto.",
+          "roleOrContext": "Sicurezza abitazione"
+        },
+        {
+          "name": "Giulia N.",
+          "location": "Manerbio e provincia",
+          "quote": "Sistema di allarme semplice da usare da smartphone e installato senza cavi a vista. Consigliatissimi.",
+          "roleOrContext": "Impianto antintrusione"
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "Alla c.a. Direzione Elettrotecnica Manerbiese - lentezza da smartphone (8s) e filtro richieste preventivo",
+    "emailPlainTextBody": "Buongiorno,\n\nda una verifica sul sito di Elettrotecnica Manerbiese, aprendolo da smartphone passano 8 secondi prima che la pagina sia utilizzabile, frenando le richieste di preventivo di chi vi cerca da mobile.\n\nAbbiamo gia preparato per Elettrotecnica Manerbiese una bozza su misura che si apre in 0.3 secondi da telefono e filtra in automatico le richieste di preventivo.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre Studio\nTel/WhatsApp: +39 379 115 9352\nriccardo.granza@techpyre.eu",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della bozza da 0.3 secondi preparata per Elettrotecnica Manerbiese, con simulatore di pre-qualifica richieste integrato in pagina:\n\nhttps://www.techpyre.eu/demo/etm-impianti\n\nPotete provarla direttamente dal telefono: se l'impostazione vi piace, scrivetemi pure su WhatsApp (o in risposta a questa email) per vedere come adattarla al vostro flusso commerciale.\n\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu\n\nNota: la demo è una bozza privata visibile solo da questo link (non indicizzata su Google), creata su misura a solo scopo dimostrativo (art. 21 D.Lgs. 30/2005; Reg. UE 2016/679). Rimozione immediata su richiesta.",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "Alla c.a. Direzione Elettrotecnica Manerbiese - lentezza da smartphone (8s) e filtro richieste preventivo",
+      "body": "Buongiorno,\n\nda una verifica sul sito di Elettrotecnica Manerbiese, aprendolo da smartphone passano 8 secondi prima che la pagina sia utilizzabile, frenando le richieste di preventivo di chi vi cerca da mobile.\n\nAbbiamo gia preparato per Elettrotecnica Manerbiese una bozza su misura che si apre in 0.3 secondi da telefono e filtra in automatico le richieste di preventivo.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre Studio\nTel/WhatsApp: +39 379 115 9352\nriccardo.granza@techpyre.eu",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: Alla c.a. Direzione Elettrotecnica Manerbiese - lentezza da smartphone (8s) e filtro richieste preventivo",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della bozza da 0.3 secondi preparata per Elettrotecnica Manerbiese, con simulatore di pre-qualifica richieste integrato in pagina:\n\nhttps://www.techpyre.eu/demo/etm-impianti\n\nPotete provarla direttamente dal telefono: se l'impostazione vi piace, scrivetemi pure su WhatsApp (o in risposta a questa email) per vedere come adattarla al vostro flusso commerciale.\n\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu\n\nNota: la demo è una bozza privata visibile solo da questo link (non indicizzata su Google), creata su misura a solo scopo dimostrativo (art. 21 D.Lgs. 30/2005; Reg. UE 2016/679). Rimozione immediata su richiesta.",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: Alla c.a. Direzione Elettrotecnica Manerbiese - lentezza da smartphone (8s) e filtro richieste preventivo",
+      "body": "Buongiorno,\n\nOltre ad azzerare i 8 secondi di attesa su mobile, il simulatore filtra le richieste fuori target prima di inviarle su WhatsApp o al vostro CRM.\n\nPer non disturbarvi con chiamate a freddo, se mi mandate anche solo un veloce messaggio su WhatsApp al +39 379 115 9352 (o rispondete qui sotto) vi giro subito in chat i dettagli per Elettrotecnica Manerbiese.\n\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: Alla c.a. Direzione Elettrotecnica Manerbiese - lentezza da smartphone (8s) e filtro richieste preventivo",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Elettrotecnica Manerbiese non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/etm-impianti) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione su WhatsApp o via email se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

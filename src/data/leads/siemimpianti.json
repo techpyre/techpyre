@@ -14,10 +14,11 @@
     "vatNumber": "04025140403",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Siem%20Impianti",
     "originalLandingUrl": "https://www.siemimpianti.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<bfba2e65-ee7e-c878-5394-eb2028d09fb4@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<2fe55314-7697-c6c4-b59a-2fe5f6e3d3c8@techpyre.eu>",
     "threadMessageIds": [
-      "<bfba2e65-ee7e-c878-5394-eb2028d09fb4@techpyre.eu>"
+      "<bfba2e65-ee7e-c878-5394-eb2028d09fb4@techpyre.eu>",
+      "<2fe55314-7697-c6c4-b59a-2fe5f6e3d3c8@techpyre.eu>"
     ]
   },
   "audit": {

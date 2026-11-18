@@ -14,10 +14,11 @@
     "vatNumber": "02194060394",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=ADS%20Automation%20s.r.l.",
     "originalLandingUrl": "http://www.adsautomation.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<1e56de77-bd37-7fd9-506d-60ccdf2e3245@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<afcec88e-2ed7-126e-2f57-21e78288c79e@techpyre.eu>",
     "threadMessageIds": [
-      "<1e56de77-bd37-7fd9-506d-60ccdf2e3245@techpyre.eu>"
+      "<1e56de77-bd37-7fd9-506d-60ccdf2e3245@techpyre.eu>",
+      "<afcec88e-2ed7-126e-2f57-21e78288c79e@techpyre.eu>"
     ]
   },
   "audit": {

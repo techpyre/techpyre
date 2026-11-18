@@ -14,10 +14,11 @@
     "vatNumber": "05026030824",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Studio%20Legale%20Pitruzzella%20Domenico",
     "originalLandingUrl": "http://www.avvocatopitruzzella.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<89939235-5563-5ee0-66d0-9c5339e104bf@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<299103a3-1a37-b6e2-c8ad-e8086a4e0d0b@techpyre.eu>",
     "threadMessageIds": [
-      "<89939235-5563-5ee0-66d0-9c5339e104bf@techpyre.eu>"
+      "<89939235-5563-5ee0-66d0-9c5339e104bf@techpyre.eu>",
+      "<299103a3-1a37-b6e2-c8ad-e8086a4e0d0b@techpyre.eu>"
     ]
   },
   "audit": {

@@ -14,7 +14,11 @@
     "vatNumber": "01698950936",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Metal%20Tech",
     "originalLandingUrl": "https://www.mt-e.it",
-    "status": "NEW"
+    "status": "CONTACTED_STEP_1",
+    "lastSentMessageId": "<153829a9-7266-b353-2837-7800ae86213a@techpyre.eu>",
+    "threadMessageIds": [
+      "<153829a9-7266-b353-2837-7800ae86213a@techpyre.eu>"
+    ]
   },
   "audit": {
     "originalLcpSeconds": 7.3,

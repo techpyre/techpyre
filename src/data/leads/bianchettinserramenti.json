@@ -14,7 +14,11 @@
     "vatNumber": "Non trovata",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Bianchettinserramenti",
     "originalLandingUrl": "https://www.bianchettinserramenti.it",
-    "status": "NEW"
+    "status": "CONTACTED_STEP_1",
+    "lastSentMessageId": "<518dc1d2-b0fc-4de1-6cb8-1385ac0882d3@techpyre.eu>",
+    "threadMessageIds": [
+      "<518dc1d2-b0fc-4de1-6cb8-1385ac0882d3@techpyre.eu>"
+    ]
   },
   "audit": {
     "originalLcpSeconds": 9.1,

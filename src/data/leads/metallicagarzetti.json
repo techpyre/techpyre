@@ -14,11 +14,12 @@
     "vatNumber": "02719550986",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Metallica%20Garzetti",
     "originalLandingUrl": "http://www.metallicagarzetti.com",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<cfc05ca0-0a29-0e5f-7092-79cd3309203a@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<5ea5e656-62b0-24b2-df46-8a228dddf65b@techpyre.eu>",
     "threadMessageIds": [
       "<702f7a38-fef6-d27e-54bc-5f32f8b4eb6a@techpyre.eu>",
-      "<cfc05ca0-0a29-0e5f-7092-79cd3309203a@techpyre.eu>"
+      "<cfc05ca0-0a29-0e5f-7092-79cd3309203a@techpyre.eu>",
+      "<5ea5e656-62b0-24b2-df46-8a228dddf65b@techpyre.eu>"
     ]
   },
   "audit": {

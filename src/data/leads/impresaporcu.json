@@ -1,0 +1,149 @@
+{
+  "slug": "impresaporcu",
+  "archetype": "local-leadgen",
+  "meta": {
+    "companyName": "Aurelio Porcu e Figli",
+    "decisionMakerName": "Aurelio Porcu",
+    "decisionMakerFirstName": "Aurelio",
+    "decisionMakerRole": "Titolare",
+    "isGenericInbox": true,
+    "emailScore": 38,
+    "targetEmail": "direzionetecnica@impresaporcu.com",
+    "phone": "+39 335 5734203",
+    "city": "Cagliari",
+    "vatNumber": "00267530921",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Aurelio%20Porcu%20e%20Figli",
+    "originalLandingUrl": "https://www.impresaporcu.com",
+    "status": "CONTACTED_STEP_1",
+    "lastSentMessageId": "<20670019-adaa-03ae-a92f-395e7330dd28@techpyre.eu>",
+    "threadMessageIds": [
+      "<20670019-adaa-03ae-a92f-395e7330dd28@techpyre.eu>"
+    ]
+  },
+  "audit": {
+    "originalLcpSeconds": 7.3,
+    "mobileScore": 38,
+    "renderBlockingCount": 35,
+    "runsAds": false,
+    "detectedTrackingSignals": [],
+    "threeCriticalFlaws": [
+      "Perdita di richieste di preventivo su mobile: caricamento di 7.3s (35 risorse bloccanti) che spinge i visitatori da smartphone ad abbandonare la pagina prima di contattare l'ufficio commerciale.",
+      "Assenza di pre-qualifica automatica: il sito non filtra le richieste per tipologia di intervento, budget o tempistiche prima di inviarle ai referenti tecnici di Aurelio Porcu e Figli.",
+      "Colli di bottiglia commerciali: le richieste arrivano come semplici email isolate senza instradamento automatico e senza tracciamento strutturato della trattativa."
+    ],
+    "activeAdHeadline": "Impresa Porcu - Impresa di costruzioni generali del sud sardegna",
+    "activeAdCopySummary": "Porcu Aurelio & Figli srl con sede a Cagliari, in Via S'Arrulloni, 5, vanta notevole esperienza come impresa di costruzioni con particolare ..."
+  },
+  "theme": {
+    "primaryHex": "#304060",
+    "accentHex": "#2563EB",
+    "darkBgHex": "#0B1E36",
+    "borderRadius": "12px",
+    "headerBgMode": "light",
+    "headerBgHex": "#FFFFFF",
+    "logoBrightness": "dark"
+  },
+  "content": {
+    "badgeTop": "Aurelio Porcu e Figli · Sicurezza e Protezione (Cagliari)",
+    "heroHeadline": "Impresa Porcu - Impresa di costruzioni generali del sud sardegna",
+    "heroSubheadline": "Porcu Aurelio & Figli srl con sede a Cagliari, in Via S'Arrulloni, 5, vanta notevole esperienza come impresa di costruzioni con particolare specializzazione nel trattamento di conglomerati bituminosi e cementiz",
+    "heroBullets": [
+      "Interventi tempestivi a domicilio con tecnici qualificati sul territorio",
+      "Sistemi di sicurezza e serrature certificate antiscasso di ultima generazione",
+      "Preventivo chiaro prima dell'uscita e garanzia diretta sui componenti"
+    ],
+    "ctaButtonText": "Calcola il Tuo Preventivo Rapido",
+    "trustMicrocopy": "Richiesta gratuita e senza impegno · Risposta rapida dal nostro ufficio tecnico",
+    "logoLocalPath": "/leads/impresaporcu/logo.png",
+    "heroImageLocalPath": "/leads/impresaporcu/hero.jpg",
+    "heroImageCaption": "Aurelio Porcu e Figli · Sede operativa e realizzazioni (Cagliari)",
+    "quiz": {
+      "question1": {
+        "title": "Di quale intervento di sicurezza hai bisogno?",
+        "options": [
+          "Installazione sistema antifurto o videosorveglianza",
+          "Sostituzione serratura europea o porta blindata",
+          "Assistenza tecnica urgente su porte e serrature"
+        ]
+      },
+      "question2": {
+        "title": "Dove va eseguito l'intervento?",
+        "options": [
+          "Appartamento o abitazione indipendente",
+          "Ufficio, negozio o studio professionale",
+          "Condominio o autorimessa"
+        ]
+      },
+      "finalStepTitle": "Richiesta registrata. Inserisci i tuoi recapiti per un contatto rapido dal tecnico:"
+    },
+    "valueProps": [
+      {
+        "title": "Analisi Punti Critici e Consulenza Diretta",
+        "description": "Verifichiamo accessi, serramenti e vulnerabilita dell'immobile a Cagliari proponendo solo le protezioni realmente utili.",
+        "metric": "Sopralluogo Rapido"
+      },
+      {
+        "title": "Componenti Certificati Alta Sicurezza",
+        "description": "Aurelio Porcu e Figli installa dispositivi affidabili per proteggere la tua famiglia e i tuoi beni senza falsi allarmi.",
+        "metric": "Alta Affidabilita"
+      },
+      {
+        "title": "Assistenza Diretta H24 sul Territorio",
+        "description": "Un referente locale reale sempre reperibile per configurazioni, manutenzioni e urgenze.",
+        "metric": "Pronto Intervento"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "98%",
+      "mainStatLabel": "Interventi risolti alla prima uscita con garanzia scritta",
+      "reviewsSummary": "4.9/5 da famiglie e attivita a Cagliari",
+      "testimonials": [
+        {
+          "name": "Roberto T.",
+          "location": "Cagliari",
+          "quote": "Intervenuti in giornata per l'aggiornamento delle serrature. Lavoro pulito, veloce e prezzo assolutamente corretto.",
+          "roleOrContext": "Sicurezza abitazione"
+        },
+        {
+          "name": "Giulia N.",
+          "location": "Cagliari e provincia",
+          "quote": "Sistema di allarme semplice da usare da smartphone e installato senza cavi a vista. Consigliatissimi.",
+          "roleOrContext": "Impianto antintrusione"
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "Per Aurelio Porcu - lentezza da smartphone (7.3s) e filtro richieste preventivo di Aurelio Porcu e Figli",
+    "emailPlainTextBody": "Buongiorno Aurelio,\n\nda una verifica sul sito di Aurelio Porcu e Figli, aprendolo da smartphone passano 7.3 secondi prima che la pagina sia utilizzabile, frenando le richieste di preventivo di chi vi cerca da mobile.\n\nAbbiamo gia preparato per Aurelio Porcu e Figli una bozza su misura che si apre in 0.3 secondi da telefono e filtra in automatico le richieste di preventivo.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre Studio\nTel/WhatsApp: +39 379 115 9352\nriccardo.granza@techpyre.eu",
+    "followUpWithLinkBody": "Buongiorno Aurelio,\n\nvi lascio qui sotto il link della bozza da 0.3 secondi preparata per Aurelio Porcu e Figli, con simulatore di pre-qualifica richieste integrato in pagina:\n\nhttps://www.techpyre.eu/demo/impresaporcu\n\nPotete provarla direttamente dal telefono: se l'impostazione vi piace, scrivetemi pure su WhatsApp (o in risposta a questa email) per vedere come adattarla al vostro flusso commerciale.\n\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu\n\nNota: la demo è una bozza privata visibile solo da questo link (non indicizzata su Google), creata su misura a solo scopo dimostrativo (art. 21 D.Lgs. 30/2005; Reg. UE 2016/679). Rimozione immediata su richiesta.",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "Per Aurelio Porcu - lentezza da smartphone (7.3s) e filtro richieste preventivo di Aurelio Porcu e Figli",
+      "body": "Buongiorno Aurelio,\n\nda una verifica sul sito di Aurelio Porcu e Figli, aprendolo da smartphone passano 7.3 secondi prima che la pagina sia utilizzabile, frenando le richieste di preventivo di chi vi cerca da mobile.\n\nAbbiamo gia preparato per Aurelio Porcu e Figli una bozza su misura che si apre in 0.3 secondi da telefono e filtra in automatico le richieste di preventivo.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre Studio\nTel/WhatsApp: +39 379 115 9352\nriccardo.granza@techpyre.eu",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: Per Aurelio Porcu - lentezza da smartphone (7.3s) e filtro richieste preventivo di Aurelio Porcu e Figli",
+      "body": "Buongiorno Aurelio,\n\nvi lascio qui sotto il link della bozza da 0.3 secondi preparata per Aurelio Porcu e Figli, con simulatore di pre-qualifica richieste integrato in pagina:\n\nhttps://www.techpyre.eu/demo/impresaporcu\n\nPotete provarla direttamente dal telefono: se l'impostazione vi piace, scrivetemi pure su WhatsApp (o in risposta a questa email) per vedere come adattarla al vostro flusso commerciale.\n\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu\n\nNota: la demo è una bozza privata visibile solo da questo link (non indicizzata su Google), creata su misura a solo scopo dimostrativo (art. 21 D.Lgs. 30/2005; Reg. UE 2016/679). Rimozione immediata su richiesta.",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: Per Aurelio Porcu - lentezza da smartphone (7.3s) e filtro richieste preventivo di Aurelio Porcu e Figli",
+      "body": "Buongiorno Aurelio,\n\nOltre ad azzerare i 7.3 secondi di attesa su mobile, il simulatore filtra le richieste fuori target prima di inviarle su WhatsApp o al vostro CRM.\n\nPer non disturbarvi con chiamate a freddo, se mi mandate anche solo un veloce messaggio su WhatsApp al +39 379 115 9352 (o rispondete qui sotto) vi giro subito in chat i dettagli per Aurelio Porcu e Figli.\n\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: Per Aurelio Porcu - lentezza da smartphone (7.3s) e filtro richieste preventivo di Aurelio Porcu e Figli",
+      "body": "Buongiorno Aurelio,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Aurelio Porcu e Figli non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/impresaporcu) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione su WhatsApp o via email se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

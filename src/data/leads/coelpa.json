@@ -14,10 +14,11 @@
     "vatNumber": "06286840829",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Coelpa",
     "originalLandingUrl": "https://www.coelpa.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<5e514092-7115-f65f-6b0f-1ff1343bc858@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<c86d0fbd-5bc4-d981-f039-f8c3995fc698@techpyre.eu>",
     "threadMessageIds": [
-      "<5e514092-7115-f65f-6b0f-1ff1343bc858@techpyre.eu>"
+      "<5e514092-7115-f65f-6b0f-1ff1343bc858@techpyre.eu>",
+      "<c86d0fbd-5bc4-d981-f039-f8c3995fc698@techpyre.eu>"
     ]
   },
   "audit": {

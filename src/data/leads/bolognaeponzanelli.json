@@ -14,10 +14,11 @@
     "vatNumber": "00059670117",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Bologna%20%26%20Ponzanelli",
     "originalLandingUrl": "https://www.bolognaeponzanelli.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<b349e7c2-6e86-14fb-a533-31b19576f490@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<9e32654b-a993-dd26-ba0e-169e02198619@techpyre.eu>",
     "threadMessageIds": [
-      "<b349e7c2-6e86-14fb-a533-31b19576f490@techpyre.eu>"
+      "<b349e7c2-6e86-14fb-a533-31b19576f490@techpyre.eu>",
+      "<9e32654b-a993-dd26-ba0e-169e02198619@techpyre.eu>"
     ]
   },
   "audit": {

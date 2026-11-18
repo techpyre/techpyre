@@ -14,10 +14,11 @@
     "vatNumber": "Non trovata",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Sia%20Srl",
     "originalLandingUrl": "https://sia-srl.com",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<df141562-9912-a098-eebf-173fc4f01e9a@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<ba4448e5-dd43-2862-7fd6-0c775a87fb16@techpyre.eu>",
     "threadMessageIds": [
-      "<df141562-9912-a098-eebf-173fc4f01e9a@techpyre.eu>"
+      "<df141562-9912-a098-eebf-173fc4f01e9a@techpyre.eu>",
+      "<ba4448e5-dd43-2862-7fd6-0c775a87fb16@techpyre.eu>"
     ]
   },
   "audit": {
