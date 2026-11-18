@@ -473,10 +473,10 @@ async function main() {
     );
   }
 
-  // Fase 1B: Invio controllato Step 3 (Giorno 8 · Value Drop + Trigger Chiamata)
+  // Fase 1B: Invio controllato Step 3 (Giorno 8 · Value Drop + Leva Asincrona WhatsApp)
   if (preExistingStep3Candidates.length > 0 && remainingStep3Allowed > 0) {
     console.log(
-      `\nFASE 1B · Invio fino a ${remainingStep3Allowed} Step 3 (Value Drop + Preavviso Chiamata)...`
+      `\nFASE 1B · Invio fino a ${remainingStep3Allowed} Step 3 (Value Drop + Leva Asincrona WhatsApp)...`
     );
     for (const cand of preExistingStep3Candidates) {
       if (sentStep3Report.length >= remainingStep3Allowed) break;

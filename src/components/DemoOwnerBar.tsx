@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { MessageCircle, Phone, X } from "lucide-react";
+import { MessageCircle, X } from "lucide-react";
 
 interface DemoOwnerBarProps {
   slug: string;
@@ -38,7 +38,6 @@ export default function DemoOwnerBar({ slug, companyName }: DemoOwnerBarProps) {
     `Ciao ${FOUNDER_NAME.split(" ")[0]}, ho appena visto la demo preparata per ${companyName} e vorrei capire come funziona.`
   );
   const whatsappHref = `https://wa.me/${FOUNDER_PHONE_DIGITS}?text=${whatsappText}`;
-  const telHref = `tel:+${FOUNDER_PHONE_DIGITS}`;
 
   return (
     <div className="fixed bottom-3 inset-x-3 sm:inset-x-auto sm:right-5 sm:bottom-5 z-40 max-w-md">
@@ -48,7 +47,7 @@ export default function DemoOwnerBar({ slug, companyName }: DemoOwnerBarProps) {
             Bozza riservata · {companyName}
           </p>
           <p className="text-xs text-zinc-300 truncate">
-            Vuoi attivarla o personalizzarla? Parla con {FOUNDER_NAME.split(" ")[0]}
+            Vuoi attivarla o personalizzarla? Scrivici su WhatsApp
           </p>
         </div>
 
@@ -58,21 +57,11 @@ export default function DemoOwnerBar({ slug, companyName }: DemoOwnerBarProps) {
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => trackOwnerAction("owner_whatsapp_click")}
-            className="inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-zinc-950 font-bold text-xs transition-colors"
-            title="Scrivici su WhatsApp"
+            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-zinc-950 font-bold text-xs transition-colors"
+            title="Scrivici direttamente su WhatsApp"
           >
             <MessageCircle className="w-3.5 h-3.5" />
-            <span>WhatsApp</span>
-          </a>
-
-          <a
-            href={telHref}
-            onClick={() => trackOwnerAction("owner_call_click")}
-            className="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-zinc-800 hover:bg-zinc-700 text-zinc-100 border border-zinc-700 font-semibold text-xs transition-colors"
-            title={`Chiama ${FOUNDER_PHONE_DISPLAY}`}
-          >
-            <Phone className="w-3.5 h-3.5 text-amber-400" />
-            <span className="hidden sm:inline">Chiama</span>
+            <span>Scrivici su WhatsApp</span>
           </a>
 
           <button

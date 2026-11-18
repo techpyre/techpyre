@@ -1469,6 +1469,7 @@ export function buildMultiStepOutreach({
   estimatedMobileLcpSeconds,
   renderBlockingScripts,
   runsAds,
+  archetype,
   existingEmailSubject,
 }: {
   slug: string;
@@ -1478,10 +1479,12 @@ export function buildMultiStepOutreach({
   estimatedMobileLcpSeconds: number;
   renderBlockingScripts: number;
   runsAds: boolean;
+  archetype?: LeadConfig["archetype"];
   existingEmailSubject?: string;
 }): LeadConfig["outreach"] {
   const demoUrl = `https://www.techpyre.eu/demo/${slug}`;
-  const blockingCount = Math.max(4, renderBlockingScripts);
+  const isB2B = archetype === "b2b-authority";
+  const { signaturePhone } = getOutreachSignatureConfig();
 
   const cleanCompanyName = decodeHtmlEntities(companyName);
   const cleanFullName = decisionMaker.fullName
@@ -1492,18 +1495,22 @@ export function buildMultiStepOutreach({
     : null;
 
   // Regola di Salvaguardia info@: Se isGeneric === true e abbiamo trovato fullName, forza l'oggetto a iniziare con "Per ${fullName} - ..."
+  const nonAdsTopic = isB2B
+    ? `tempi di apertura mobile (${estimatedMobileLcpSeconds}s) e qualifica commesse B2B`
+    : `lentezza da smartphone (${estimatedMobileLcpSeconds}s) e filtro richieste preventivo`;
+
   const generatedSubject =
     isGenericInbox && cleanFullName
       ? runsAds
         ? `Per ${cleanFullName} - dispersione clic mobile e tempi di apertura di ${cleanCompanyName} (${estimatedMobileLcpSeconds}s)`
-        : `Per ${cleanFullName} - tempi di apertura mobile e richieste preventivo di ${cleanCompanyName} (${estimatedMobileLcpSeconds}s)`
+        : `Per ${cleanFullName} - ${nonAdsTopic} di ${cleanCompanyName}`
       : isGenericInbox
       ? runsAds
         ? `Alla c.a. Direzione ${cleanCompanyName} - dispersione clic mobile e tempi di apertura (${estimatedMobileLcpSeconds}s)`
-        : `Alla c.a. Direzione ${cleanCompanyName} - lentezza da smartphone (${estimatedMobileLcpSeconds}s) e filtro richieste preventivo`
+        : `Alla c.a. Direzione ${cleanCompanyName} - ${nonAdsTopic}`
       : runsAds
       ? `${cleanCompanyName} - dispersione clic mobile e tempi di apertura (${estimatedMobileLcpSeconds}s)`
-      : `${cleanCompanyName} - tempi di apertura mobile (${estimatedMobileLcpSeconds}s) e filtro richieste preventivo`;
+      : `${cleanCompanyName} - ${nonAdsTopic}`;
 
   const cleanExistingSubject = existingEmailSubject
     ? decodeHtmlEntities(existingEmailSubject)
@@ -1518,17 +1525,23 @@ export function buildMultiStepOutreach({
     ? `Buongiorno ${cleanFirstName},`
     : `Buongiorno,`;
 
-  // STEP 1 (Giorno 1 - First Touch: 65-85 parole totali, zero link, zero prezzi, zero 'LINK')
+  // STEP 1 (Giorno 1 - First Touch: 65-85 parole totali, zero link, zero prezzi, zero 'LINK' - 3 Angoli Marketing)
   const step1Paragraph1 = runsAds
     ? `da una verifica sul sito di ${cleanCompanyName}, aprendolo da smartphone passano ${estimatedMobileLcpSeconds} secondi prima che la pagina sia utilizzabile, facendo abbandonare buona parte dei visitatori arrivati dalle inserzioni.`
+    : isB2B
+    ? `da una verifica sul sito di ${cleanCompanyName}, aprendolo da smartphone passano ${estimatedMobileLcpSeconds} secondi prima che la pagina sia utilizzabile, rallentando le richieste di offerta e commessa dei clienti aziendali.`
     : `da una verifica sul sito di ${cleanCompanyName}, aprendolo da smartphone passano ${estimatedMobileLcpSeconds} secondi prima che la pagina sia utilizzabile, frenando le richieste di preventivo di chi vi cerca da mobile.`;
+
+  const step1Paragraph2 = isB2B
+    ? `Abbiamo gia preparato per ${cleanCompanyName} una bozza su misura che si apre in 0.3 secondi da telefono e pre-qualifica in automatico le richieste di commessa.`
+    : `Abbiamo gia preparato per ${cleanCompanyName} una bozza su misura che si apre in 0.3 secondi da telefono e filtra in automatico le richieste di preventivo.`;
 
   const step1Body = [
     greeting,
     ``,
     step1Paragraph1,
     ``,
-    `Abbiamo gia preparato per ${cleanCompanyName} una bozza su misura che si apre in 0.3 secondi da telefono e pre-qualifica in automatico le richieste commerciali.`,
+    step1Paragraph2,
     ``,
     `Vi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?`,
     ``,
@@ -1542,25 +1555,31 @@ export function buildMultiStepOutreach({
     ``,
     demoUrl,
     ``,
-    `Potete provarla direttamente dal telefono: se l'impostazione vi piace, avete 10 minuti tra martedi e giovedi (o su WhatsApp) per vedere come adattarla al vostro flusso commerciale?`,
+    `Potete provarla direttamente dal telefono: se l'impostazione vi piace, scrivetemi pure su WhatsApp (o in risposta a questa email) per vedere come adattarla al vostro flusso commerciale.`,
     ``,
-    ...buildOutreachSignatureLines({ includeWebsite: true }),
+    ...buildOutreachSignatureLines({ includeWebsite: true, whatsappLabel: true }),
     ``,
     STEP2_DEMO_LEGAL_DISCLAIMER,
   ].join("\n");
 
   const step3Focus = runsAds
-    ? `Oltre a tagliare i ${estimatedMobileLcpSeconds} secondi su mobile, l'infrastruttura recupera il 40% delle conversioni tramite Server-Side Tracking.`
-    : `Oltre a tagliare i ${estimatedMobileLcpSeconds} secondi su mobile, il sistema qualifica ogni preventivo prima di inviarlo al CRM.`;
+    ? `Oltre ad azzerare i ${estimatedMobileLcpSeconds} secondi di attesa su mobile, l'infrastruttura recupera il 40% dei dati di conversione persi coi cookie banner tramite Server-Side Tracking.`
+    : isB2B
+    ? `Oltre ad azzerare i ${estimatedMobileLcpSeconds} secondi di attesa su mobile, il sistema qualifica ogni richiesta per tipologia di lavorazione o fornitura prima di inviarla al vostro ufficio commerciale.`
+    : `Oltre ad azzerare i ${estimatedMobileLcpSeconds} secondi di attesa su mobile, il simulatore filtra le richieste fuori target prima di inviarle su WhatsApp o al vostro CRM.`;
+
+  const step3AsyncWhatsappCta = signaturePhone
+    ? `Per non disturbarvi con chiamate a freddo, se mi mandate anche solo un veloce messaggio su WhatsApp al ${signaturePhone} (o rispondete qui sotto) vi giro subito in chat i dettagli per ${cleanCompanyName}.`
+    : `Per non disturbarvi con chiamate a freddo, se rispondete anche solo con un veloce cenno a questa email vi giro subito i dettagli per ${cleanCompanyName}.`;
 
   const step3Body = [
     greeting,
     ``,
     step3Focus,
     ``,
-    `Provo a farvi uno squillo in settimana per un confronto di 10 minuti.`,
+    step3AsyncWhatsappCta,
     ``,
-    ...buildOutreachSignatureLines({ includeWebsite: true }),
+    ...buildOutreachSignatureLines({ includeWebsite: true, whatsappLabel: true }),
   ].join("\n");
 
   const step4Body = [
@@ -1568,7 +1587,7 @@ export function buildMultiStepOutreach({
     ``,
     `immagino che ottimizzare i tempi mobile e la qualifica contatti di ${cleanCompanyName} non sia una priorita in questo trimestre.`,
     ``,
-    `Vi lascio comunque attiva la demo (${demoUrl}) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione se le priorita dovessero cambiare.`,
+    `Vi lascio comunque attiva la demo (${demoUrl}) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione su WhatsApp o via email se le priorita dovessero cambiare.`,
     ``,
     `Un cordiale saluto e buon lavoro,`,
     ...buildOutreachSignatureLines({ includeWebsite: true, whatsappLabel: true }),
@@ -1595,7 +1614,7 @@ export function buildMultiStepOutreach({
     subject: threadSubject,
     body: step3Body,
     inThread: true,
-    requiresFollowUpCall: true,
+    requiresFollowUpCall: false,
   };
 
   const step4Breakup: OutreachStep = {
@@ -1864,6 +1883,7 @@ export function migrateOldLeadConfig(
   );
 
   const hasMissingStep2Disclaimer = !/bozza privata visibile solo da questo link/i.test(step2Text);
+  const hasOldStep3CallTrigger = /provo a farvi uno squillo/i.test(step3Text);
 
   const hasLegacyCopy =
     !lead.outreach.step1FirstTouch ||
@@ -1872,6 +1892,7 @@ export function migrateOldLeadConfig(
     !lead.outreach.step4Breakup ||
     missingSignatureDetails ||
     hasMissingStep2Disclaimer ||
+    hasOldStep3CallTrigger ||
     /mi chiamo|900\s*euro|zero canoni|rispondetemi pure ['"]?link['"]?|blocchi di codice|demo in next\.js/i.test(
       lead.outreach.emailPlainTextBody || ""
     ) ||
@@ -1910,6 +1931,7 @@ export function migrateOldLeadConfig(
       estimatedMobileLcpSeconds: lcpVal,
       renderBlockingScripts: blockingCount,
       runsAds: Boolean(lead.audit.runsAds),
+      archetype: lead.archetype,
       existingEmailSubject,
     });
     changed = true;
@@ -4749,6 +4771,7 @@ export async function runAutonomousScout(
         estimatedMobileLcpSeconds,
         renderBlockingScripts,
         runsAds,
+        archetype,
       });
 
       const resolvedDecisionMakerLabel =

@@ -636,7 +636,7 @@ export async function sendLeadOutreach({
   const referencesHeaderValue = existingRefs.join(" ");
 
   if (applyJitter) {
-    await applyDeliverabilityJitter(1800, 4800);
+    await applyDeliverabilityJitter(3200, 7200);
   }
 
   const transporter = nodemailer.createTransport({

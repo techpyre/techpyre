@@ -69,6 +69,11 @@ async function sendRealTimeProspectAlert({
 
   const lead = loadLeadConfig(slug);
   const phone = lead?.meta?.phone || "N/D";
+  const cleanDigits = phone.replace(/[^\d]/g, "");
+  const whatsappLink =
+    cleanDigits.length >= 9
+      ? `https://wa.me/${cleanDigits.startsWith("39") ? cleanDigits : `39${cleanDigits}`}`
+      : "N/D";
   const targetEmail = lead?.meta?.targetEmail || "N/D";
   const city = lead?.meta?.city || "N/D";
   const dmName = lead?.meta?.decisionMakerName || `Direzione ${companyName}`;
@@ -105,7 +110,7 @@ async function sendRealTimeProspectAlert({
     `Azienda           : ${companyName} (${slug})`,
     `Titolare / Ref.   : ${dmName}`,
     `Citta             : ${city}`,
-    `Telefono da chiam.: ${phone}`,
+    `Tel / WhatsApp    : ${phone} (${whatsappLink})`,
     `Email Prospect    : ${targetEmail}`,
     `Sito Originale    : ${originalUrl} (LCP: ${lcp})`,
     `URL Demo Aperta   : ${demoUrl}`,
@@ -116,8 +121,8 @@ async function sendRealTimeProspectAlert({
     `Visite Totali     : ${totalVisits}`,
     `Data / Ora (Roma) : ${new Date().toLocaleString("it-IT", { timeZone: "Europe/Rome" })}`,
     `============================================================`,
-    `SUGGERIMENTO OPERATIVO:`,
-    `Il prospect ha la demo aperta in questo momento. Chiamalo entro 5 minuti al numero ${phone}!`,
+    `SUGGERIMENTO OPERATIVO (ASINCRO WHATSAPP / EMAIL):`,
+    `Il prospect ha appena aperto la demo. Puoi scrivergli su WhatsApp (${whatsappLink}) o via email (${targetEmail}).`,
   ].join("\n");
 
   const transporter = nodemailer.createTransport({
