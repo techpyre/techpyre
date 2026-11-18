@@ -1225,12 +1225,17 @@ export function extractDecisionMakerFromHtml(
     },
     {
       regex:
-        /\b(?:Fondatore|Co-Founder|Founder|CEO|Titolare|Direttore\s+Generale|Direttore\s+Commerciale)\s*(?:[:,-]|\bsig\.?|\bdott\.?|\bing\.?|\bgeom\.?|\barch\.?)*\s*([A-ZÀÈÉÌÒÙ][A-Za-zàèéìòù]{2,14})\s+([A-ZÀÈÉÌÒÙ][A-Za-zàèéìòù]{2,14})\b/gi,
+        /\b(?:Direttore\s+Sanitario|Responsabile\s+Sanitario|Direzione\s+Sanitaria)\s*(?:[:,-]|\bdi|\bè|\bdott\.ssa|\bdott\.?|\bdr\.ssa|\bdr\.?|\bprof\.?|\bodontoiatra)*\s*([A-ZÀÈÉÌÒÙ][A-Za-zàèéìòù]{2,14})\s+([A-ZÀÈÉÌÒÙ][A-Za-zàèéìòù]{2,14})\b/gi,
+      defaultRole: "Direttore Sanitario",
+    },
+    {
+      regex:
+        /\b(?:Fondatore|Co-Founder|Founder|CEO|Titolare|Socio\s+Unico|Socio\s+Amministratore|Direttore\s+Generale|Direttore\s+Commerciale)\s*(?:[:,-]|\bsig\.?|\bdott\.ssa|\bdott\.?|\bing\.?|\bgeom\.?|\barch\.?)*\s*([A-ZÀÈÉÌÒÙ][A-Za-zàèéìòù]{2,14})\s+([A-ZÀÈÉÌÒÙ][A-Za-zàèéìòù]{2,14})\b/gi,
       defaultRole: "Titolare",
     },
     {
       regex:
-        /\b(?:Dott\.ssa|Dott\.|Ing\.|Geom\.|Arch\.|Sig\.ra|Sig\.)\s+([A-ZÀÈÉÌÒÙ][A-Za-zàèéìòù]{2,14})\s+([A-ZÀÈÉÌÒÙ][A-Za-zàèéìòù]{2,14})\b/g,
+        /\b(?:Dott\.ssa|Dott\.|Dr\.ssa|Dr\.|Ing\.|Geom\.|Arch\.|Sig\.ra|Sig\.)\s+([A-ZÀÈÉÌÒÙ][A-Za-zàèéìòù]{2,14})\s+([A-ZÀÈÉÌÒÙ][A-Za-zàèéìòù]{2,14})\b/g,
       defaultRole: "Direzione Tecnica",
     },
   ];
@@ -1283,9 +1288,11 @@ export function detectActiveAdTracking(
 ): { runsAds: boolean; signals: string[] } {
   const lower = (html || "").toLowerCase();
   const signals: string[] = [];
+  let hasPaidAdSignal = false;
 
   if (cameFromAdLibrary) {
     signals.push("Meta Ad Library Active Advertiser");
+    hasPaidAdSignal = true;
   }
   if (
     lower.includes("connect.facebook.net") ||
@@ -1294,24 +1301,65 @@ export function detectActiveAdTracking(
     lower.includes("fbevents.js")
   ) {
     signals.push("Meta Pixel");
+    hasPaidAdSignal = true;
   }
   if (
-    lower.includes("googletagmanager.com/gtm.js") ||
     lower.includes("googleadservices.com") ||
+    lower.includes("googlesyndication.com") ||
     lower.includes("gtag('config', 'aw-") ||
     lower.includes('gtag("config", "aw-') ||
-    lower.includes("google_conversion_id")
+    lower.includes("google_conversion_id") ||
+    /\baw-\d{6,12}\b/i.test(lower)
   ) {
-    signals.push("Google Ads / GTM");
+    signals.push("Google Ads Conversion / Remarketing");
+    hasPaidAdSignal = true;
+  } else if (lower.includes("googletagmanager.com/gtm.js")) {
+    signals.push("Google Tag Manager (Analytics)");
   }
-  if (lower.includes("analytics.tiktok.com") || lower.includes("snap.licdn.com")) {
-    signals.push("TikTok / LinkedIn Pixel");
+  if (
+    lower.includes("analytics.tiktok.com") ||
+    lower.includes("snap.licdn.com") ||
+    lower.includes("bat.bing.com")
+  ) {
+    signals.push("TikTok / LinkedIn / Microsoft Ads Pixel");
+    hasPaidAdSignal = true;
   }
 
   return {
-    runsAds: signals.length > 0,
+    runsAds: hasPaidAdSignal,
     signals,
   };
+}
+
+/**
+ * Filtra e-commerce B2C retail puri (es. shop carrello senza preventivi/commesse) e multinazionali/quotate
+ */
+export function isUnsuitableB2cOrEnterpriseSite(combinedHtml: string): boolean {
+  const lower = (combinedHtml || "").toLowerCase();
+  const hasB2cCartSignals =
+    (lower.includes("aggiungi al carrello") ||
+      lower.includes("il tuo carrello") ||
+      lower.includes("carrello vuoto") ||
+      lower.includes("procedi al checkout")) &&
+    (lower.includes("spedizione gratuita") ||
+      lower.includes("acquista ora") ||
+      lower.includes("woocommerce-cart"));
+
+  const hasB2bOrServiceSignals =
+    /richiedi\s+(?:un\s+)?preventivo|sopralluogo|commess[ae]|lavorazioni\s+conto\s+terzi|progettazione|installazione|impiant[oi]|carpenteria|serramenti|infissi|clinica|odontoiatr|studio\s+medico|poliambulatorio/i.test(
+      lower
+    );
+
+  if (hasB2cCartSignals && !hasB2bOrServiceSignals) {
+    return true;
+  }
+
+  const isLargeEnterprise =
+    /\binvestor\s+relations\b|\bbilancio\s+consolidato\b|\bcodice\s+etico\s+di\s+gruppo\b|\bquotata\s+in\s+borsa\b/i.test(
+      lower
+    );
+
+  return isLargeEnterprise;
 }
 
 export interface OutreachSignatureConfig {
@@ -1444,14 +1492,18 @@ export function buildMultiStepOutreach({
     : null;
 
   // Regola di Salvaguardia info@: Se isGeneric === true e abbiamo trovato fullName, forza l'oggetto a iniziare con "Per ${fullName} - ..."
-  const baseSubject = runsAds
-    ? ` dispersione clic mobile e tempi di caricamento di ${cleanCompanyName} (${estimatedMobileLcpSeconds}s)`
-    : ` tempi di caricamento mobile e richieste preventivo di ${cleanCompanyName} (${estimatedMobileLcpSeconds}s)`;
-
   const generatedSubject =
     isGenericInbox && cleanFullName
-      ? `Per ${cleanFullName} -${baseSubject}`
-      : `${cleanCompanyName} -${baseSubject}`;
+      ? runsAds
+        ? `Per ${cleanFullName} - dispersione clic mobile e tempi di apertura di ${cleanCompanyName} (${estimatedMobileLcpSeconds}s)`
+        : `Per ${cleanFullName} - tempi di apertura mobile e richieste preventivo di ${cleanCompanyName} (${estimatedMobileLcpSeconds}s)`
+      : isGenericInbox
+      ? runsAds
+        ? `Alla c.a. Direzione ${cleanCompanyName} - dispersione clic mobile e tempi di apertura (${estimatedMobileLcpSeconds}s)`
+        : `Alla c.a. Direzione ${cleanCompanyName} - lentezza da smartphone (${estimatedMobileLcpSeconds}s) e filtro richieste preventivo`
+      : runsAds
+      ? `${cleanCompanyName} - dispersione clic mobile e tempi di apertura (${estimatedMobileLcpSeconds}s)`
+      : `${cleanCompanyName} - tempi di apertura mobile (${estimatedMobileLcpSeconds}s) e filtro richieste preventivo`;
 
   const cleanExistingSubject = existingEmailSubject
     ? decodeHtmlEntities(existingEmailSubject)
@@ -1468,15 +1520,15 @@ export function buildMultiStepOutreach({
 
   // STEP 1 (Giorno 1 - First Touch: 65-85 parole totali, zero link, zero prezzi, zero 'LINK')
   const step1Paragraph1 = runsAds
-    ? `da un test sul sito di ${cleanCompanyName}, da smartphone impiega ${estimatedMobileLcpSeconds} secondi ad aprirsi per ${blockingCount} blocchi di codice, disperdendo buona parte dei clic pagati.`
-    : `da un test sul sito di ${cleanCompanyName}, da smartphone impiega ${estimatedMobileLcpSeconds} secondi ad aprirsi per ${blockingCount} risorse bloccanti, frenando le richieste di preventivo.`;
+    ? `da una verifica sul sito di ${cleanCompanyName}, aprendolo da smartphone passano ${estimatedMobileLcpSeconds} secondi prima che la pagina sia utilizzabile, facendo abbandonare buona parte dei visitatori arrivati dalle inserzioni.`
+    : `da una verifica sul sito di ${cleanCompanyName}, aprendolo da smartphone passano ${estimatedMobileLcpSeconds} secondi prima che la pagina sia utilizzabile, frenando le richieste di preventivo di chi vi cerca da mobile.`;
 
   const step1Body = [
     greeting,
     ``,
     step1Paragraph1,
     ``,
-    `Abbiamo gia preparato una demo in Next.js per ${cleanCompanyName} che carica in 0.3 secondi su mobile e pre-qualifica i contatti commerciali.`,
+    `Abbiamo gia preparato per ${cleanCompanyName} una bozza su misura che si apre in 0.3 secondi da telefono e pre-qualifica in automatico le richieste commerciali.`,
     ``,
     `Vi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?`,
     ``,
@@ -1486,11 +1538,11 @@ export function buildMultiStepOutreach({
   const step2Body = [
     greeting,
     ``,
-    `vi lascio qui sotto il link della demo da 0.3 secondi preparata per ${cleanCompanyName}, completa di filtro pre-qualifica contatti:`,
+    `vi lascio qui sotto il link della bozza da 0.3 secondi preparata per ${cleanCompanyName}, con simulatore di pre-qualifica richieste integrato in pagina:`,
     ``,
     demoUrl,
     ``,
-    `Avete 10 minuti tra martedi e giovedi per vedere come collegarla al vostro flusso commerciale?`,
+    `Potete provarla direttamente dal telefono: se l'impostazione vi piace, avete 10 minuti tra martedi e giovedi (o su WhatsApp) per vedere come adattarla al vostro flusso commerciale?`,
     ``,
     ...buildOutreachSignatureLines({ includeWebsite: true }),
     ``,
@@ -1751,6 +1803,17 @@ export function migrateOldLeadConfig(
         ? ["Meta Ad Library"]
         : [];
     changed = true;
+  } else if (
+    (!lead.meta.status || lead.meta.status === "NEW") &&
+    lead.audit.runsAds === true &&
+    Array.isArray(lead.audit.detectedTrackingSignals) &&
+    lead.audit.detectedTrackingSignals.length === 1 &&
+    lead.audit.detectedTrackingSignals[0] === "Google Ads / GTM"
+  ) {
+    // Corregge il falso positivo GTM passivo sui lead non ancora contattati
+    lead.audit.runsAds = false;
+    lead.audit.detectedTrackingSignals = ["Google Tag Manager (Analytics)"];
+    changed = true;
   }
 
   if (!lead.audit.renderBlockingCount) {
@@ -1809,7 +1872,7 @@ export function migrateOldLeadConfig(
     !lead.outreach.step4Breakup ||
     missingSignatureDetails ||
     hasMissingStep2Disclaimer ||
-    /mi chiamo|900\s*euro|zero canoni|rispondetemi pure ['"]?link['"]?/i.test(
+    /mi chiamo|900\s*euro|zero canoni|rispondetemi pure ['"]?link['"]?|blocchi di codice|demo in next\.js/i.test(
       lead.outreach.emailPlainTextBody || ""
     ) ||
     /[\u00b7\u2013\u2014]|&#\d+;|&[a-z]+;/i.test(
@@ -4435,6 +4498,8 @@ export async function runAutonomousScout(
           "/azienda",
           "/team",
           "/privacy-policy",
+          "/informativa-privacy",
+          "/note-legali",
           ...dynamicInternalLinks,
         ])
       );
@@ -4463,6 +4528,11 @@ export async function runAutonomousScout(
         .replace(/&#64;/g, "@")
         .replace(/&#46;/g, ".")
         .replace(/\[at\]/gi, "@");
+
+      // Scarta e-commerce B2C retail puri e multinazionali/quotate
+      if (isUnsuitableB2cOrEnterpriseSite(combinedHtml)) {
+        continue;
+      }
 
       // Priorita alle email estratte direttamente dal sito rispetto al fallback
       const siteExtractedEmails =

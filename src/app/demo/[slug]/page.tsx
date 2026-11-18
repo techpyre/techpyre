@@ -7,6 +7,7 @@ import { LeadConfig } from "@/types/lead";
 import { loadLeadConfig } from "@/lib/leadsStorage";
 import DiagnosticBanner from "@/components/DiagnosticBanner";
 import DemoTracker from "@/components/DemoTracker";
+import DemoOwnerBar from "@/components/DemoOwnerBar";
 import LocalLeadGen from "@/components/templates/LocalLeadGen";
 import MedicalClinic from "@/components/templates/MedicalClinic";
 import B2BAuthority from "@/components/templates/B2BAuthority";
@@ -106,6 +107,9 @@ export default async function DemoPage({
       ) : (
         <LocalLeadGen data={data} />
       )}
+
+      {/* Barra rapida di contatto diretto per il Titolare che testa la Demo */}
+      <DemoOwnerBar slug={data.slug} companyName={data.meta.companyName} />
     </div>
   );
 }

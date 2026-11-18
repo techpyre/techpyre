@@ -69,58 +69,76 @@ const {
 
 const { generateExcelCrm } = await import("./export-excel-crm.mjs");
 
-// Pool rotativo di keyword B2B ad alto scontrino in tutta Italia
+// Pool rotativo di keyword High-Ticket B2B & Local-Showroom/Medicale ottimizzato su ricerca di mercato Italia
 const B2B_KEYWORD_POOL = [
-  "carpenteria metallica brescia",
-  "automazione industriale bergamo",
+  // TIER 1A · Serramenti, Facciate Continue, Pergole Bioclimatiche & Vetrate con Showroom
+  "serramenti alluminio showroom milano",
+  "pergole bioclimatiche brescia",
+  "vetrate panoramiche monza",
+  "infissi pvc showroom padova",
+  "serramenti legno alluminio verona",
+  "facciate continue alluminio bergamo",
+  "infissi pvc alluminio bologna",
+  "serramenti su misura treviso",
+  "serramenti legno alluminio udine",
+  "infissi alluminio pordenone",
+  // TIER 1B · Fotovoltaico Industriale, ESCo & Efficientamento Energetico Capannoni
   "impianti fotovoltaici industriali padova",
-  "lavorazioni meccaniche cnc vicenza",
-  "impianti elettrici industriali verona",
-  "serramenti alluminio treviso",
-  "stampaggio materie plastiche bologna",
-  "impianti aspirazione industriale modena",
-  "macchine utensili torino",
+  "fotovoltaico aziendale brescia",
+  "efficientamento energetico industriale milano",
+  "impianti fotovoltaici capannoni bergamo",
+  "fotovoltaico industriale verona",
+  "sistemi accumulo fotovoltaico bologna",
+  "impianti fotovoltaici aziende torino",
+  // TIER 1C · Edilizia Industriale Specializzata (Resine, Coperture Capannoni, Bonifica Amianto, Prefabbricati)
+  "pavimenti in resina industriali milano",
+  "rifacimento coperture industriali brescia",
+  "bonifica amianto capannoni bergamo",
+  "impermeabilizzazioni industriali bologna",
+  "pavimentazioni industriali resina verona",
+  "prefabbricati industriali mantova",
+  "strutture metalliche prefabbricate piacenza",
+  "coperture metalliche capannoni padova",
+  // TIER 1D · Cliniche Odontoiatriche Strutturate, Implantologia & Poliambulatori Privati
+  "clinica odontoiatrica milano",
+  "implantologia dentale brescia",
+  "centro odontoiatrico bergamo",
+  "studio dentistico implantologia verona",
+  "clinica dentale padova",
+  "centro implantologia bologna",
+  "poliambulatorio specialistico monza",
+  "clinica odontoiatrica torino",
+  // TIER 2A · Automazione Industriale, Robotica, Quadri Elettrici & Packaging
+  "automazione industriale bergamo",
   "quadri elettrici automazione parma",
-  "carpenteria pesante reggio emilia",
-  "impianti climatizzazione industriale milano",
+  "macchine confezionatrici packaging bologna",
+  "robotica industriale saldatura torino",
+  "impianti elettrici industriali verona",
+  "automazioni industriali modena",
+  "cabine trasformazione mt bt brescia",
+  "nastri trasportatori industriali torino",
+  // TIER 2B · Logistica Integrata 3PL, Scaffalature Industriali, Carrelli Elevatori & Porte Rapide
+  "scaffalature industriali magazzino verona",
   "logistica integrata magazzini piacenza",
+  "noleggio carrelli elevatori brescia",
+  "porte rapide industriali treviso",
+  "soluzioni imballaggio industriale parma",
+  // TIER 2C · Plastica/Stampi, HVAC Industriale, Depurazione Acque, Aria Compressa & Lavorazioni B2B
+  "stampaggio materie plastiche bologna",
+  "stampaggio gomma plastica monza",
+  "costruzione stampi lamiere lecco",
+  "impianti aspirazione industriale modena",
+  "impianti depurazione acque varese",
+  "compressori industriali milano",
+  "impianti climatizzazione industriale milano",
+  "oleodinamica pneumatica modena",
+  "impianti filtrazione aria vicenza",
+  "impianti antincendio industriali padova",
   "trattamenti galvanici metalli brescia",
   "verniciatura industriale bergamo",
-  "costruzioni meccaniche monza",
-  "impianti termoidraulici industriali verona",
-  "prefabbricati industriali mantova",
-  "infissi pvc alluminio bologna",
-  "soluzioni imballaggio industriale parma",
   "taglio laser lamiera vicenza",
-  "saldatura robotizzata padova",
-  "oleodinamica pneumatica modena",
-  "nastri trasportatori industriali torino",
-  "compressori industriali milano",
-  "bonifiche ambientali industriali brescia",
-  "porte rapide industriali treviso",
-  "scaffalature industriali magazzino verona",
-  "gruppi elettrogeni industriali bologna",
-  "impianti antincendio industriali padova",
-  "serramenti legno alluminio udine",
-  "carpenteria meccanica cuneo",
-  "infissi alluminio pordenone",
-  "automazioni industriali forli",
-  "costruzione stampi lamiere lecco",
-  "impianti depurazione acque varese",
-  "carpenteria metallica ravenna",
-  "lavorazione lamiera cnc como",
-  "macchine confezionatrici packaging bologna",
-  "strutture metalliche prefabbricate piacenza",
-  "carpenteria navale industriale trieste",
-  "tubazioni industriali saldate ferrara",
-  "impianti filtrazione aria vicenza",
-  "meccanica precisione brescia",
-  "cabine trasformazione mt bt bergamo",
-  "robotica industriale saldatura torino",
-  "impianti vapore industriale parma",
-  "serramenti facciate continue verona",
-  "carpenteria medio pesante treviso",
-  "stampaggio gomma plastica monza",
+  "carpenteria metallica brescia",
+  "lavorazioni meccaniche cnc vicenza",
 ];
 
 async function isLiveDemoReachable(slug) {
@@ -163,14 +181,22 @@ function getEligibleLists() {
   const sentStepMap = new Map();
   const sentEmailStep1 = new Set();
   const sentEmailStep2 = new Set();
+  const sentEmailStep3 = new Set();
+  const sentEmailStep4 = new Set();
   const step1SentAtMap = new Map();
+  const step2SentAtMap = new Map();
+  const step3SentAtMap = new Map();
 
   for (const h of history) {
     const s =
       h.stepNumber ||
-      (h.type === "FOLLOW_UP" ||
-      h.type === "STEP_2" ||
-      h.type === "FOLLOW_UP_CREDENTIALS_AND_OFFER"
+      (h.type === "STEP_4"
+        ? 4
+        : h.type === "STEP_3"
+        ? 3
+        : h.type === "FOLLOW_UP" ||
+          h.type === "STEP_2" ||
+          h.type === "FOLLOW_UP_CREDENTIALS_AND_OFFER"
         ? 2
         : 1);
     const prev = sentStepMap.get(h.slug) || 0;
@@ -179,9 +205,12 @@ function getEligibleLists() {
     const rec = String(h.recipient || "").trim().toLowerCase();
     if (rec && s >= 1) sentEmailStep1.add(rec);
     if (rec && s >= 2) sentEmailStep2.add(rec);
-    if (s === 1 && !step1SentAtMap.has(h.slug)) {
-      step1SentAtMap.set(h.slug, new Date(h.sentAt || 0).getTime());
-    }
+    if (rec && s >= 3) sentEmailStep3.add(rec);
+    if (rec && s >= 4) sentEmailStep4.add(rec);
+    const ts = new Date(h.sentAt || 0).getTime();
+    if (s === 1 && !step1SentAtMap.has(h.slug)) step1SentAtMap.set(h.slug, ts);
+    if (s === 2 && !step2SentAtMap.has(h.slug)) step2SentAtMap.set(h.slug, ts);
+    if (s === 3 && !step3SentAtMap.has(h.slug)) step3SentAtMap.set(h.slug, ts);
   }
 
   const seenStep1Emails = new Set();
@@ -190,11 +219,29 @@ function getEligibleLists() {
   const seenStep2Emails = new Set();
   const eligibleStep2 = [];
 
+  const seenStep3Emails = new Set();
+  const eligibleStep3 = [];
+
+  const seenStep4Emails = new Set();
+  const eligibleStep4 = [];
+
+  const nowMs = Date.now();
+  const minStep3DelayMs = 4 * 86400000; // Almeno 4 giorni dopo lo Step 2 (Giorno 8)
+  const minStep4DelayMs = 5 * 86400000; // Almeno 5 giorni dopo lo Step 3 (Giorno 13)
+
   for (const { slug, config } of all) {
     const migrated = migrateOldLeadConfig(config, true);
     let status = migrated.meta?.status || "NEW";
     if (status === "NEW" && sentStepMap.has(slug)) {
-      status = sentStepMap.get(slug) >= 2 ? "CONTACTED_STEP_2" : "CONTACTED_STEP_1";
+      const maxS = sentStepMap.get(slug);
+      status =
+        maxS >= 4
+          ? "CONTACTED_STEP_4"
+          : maxS === 3
+          ? "CONTACTED_STEP_3"
+          : maxS === 2
+          ? "CONTACTED_STEP_2"
+          : "CONTACTED_STEP_1";
     }
     if (
       status === "BLACKLISTED" ||
@@ -224,7 +271,7 @@ function getEligibleLists() {
       eligibleStep1.push({ slug, config: migrated });
     }
 
-    // Candidati Step 2 (solo aziende che hanno effettivamente ricevuto lo Step 1: status === "CONTACTED_STEP_1" oppure lastStep === 1)
+    // Candidati Step 2 (solo aziende che hanno effettivamente ricevuto lo Step 1)
     if (
       status === "CONTACTED_STEP_1" &&
       lastStep === 1 &&
@@ -238,12 +285,50 @@ function getEligibleLists() {
         step1Time: step1SentAtMap.get(slug) || Number.MAX_SAFE_INTEGER,
       });
     }
+
+    // Candidati Step 3 (Giorno 8: >= 4 giorni dopo Step 2)
+    const step2Time = step2SentAtMap.get(slug) || 0;
+    if (
+      status === "CONTACTED_STEP_2" &&
+      lastStep === 2 &&
+      step2Time > 0 &&
+      nowMs - step2Time >= minStep3DelayMs &&
+      !sentEmailStep3.has(email) &&
+      !seenStep3Emails.has(email)
+    ) {
+      seenStep3Emails.add(email);
+      eligibleStep3.push({
+        slug,
+        config: migrated,
+        step2Time,
+      });
+    }
+
+    // Candidati Step 4 Breakup (Giorno 13: >= 5 giorni dopo Step 3)
+    const step3Time = step3SentAtMap.get(slug) || 0;
+    if (
+      status === "CONTACTED_STEP_3" &&
+      lastStep === 3 &&
+      step3Time > 0 &&
+      nowMs - step3Time >= minStep4DelayMs &&
+      !sentEmailStep4.has(email) &&
+      !seenStep4Emails.has(email)
+    ) {
+      seenStep4Emails.add(email);
+      eligibleStep4.push({
+        slug,
+        config: migrated,
+        step3Time,
+      });
+    }
   }
 
-  // Ordine cronologico per Step 2 (prima le aziende contattate da più tempo)
+  // Ordine cronologico (prima le aziende contattate da più tempo)
   eligibleStep2.sort((a, b) => a.step1Time - b.step1Time);
+  eligibleStep3.sort((a, b) => a.step2Time - b.step2Time);
+  eligibleStep4.sort((a, b) => a.step3Time - b.step3Time);
 
-  return { eligibleStep1, eligibleStep2 };
+  return { eligibleStep1, eligibleStep2, eligibleStep3, eligibleStep4 };
 }
 
 async function main() {
@@ -262,14 +347,18 @@ async function main() {
   const targetStep1Daily = DAILY_FIRST_TOUCH_LIMIT; // 35
   const step2Threshold = 40;
   const step2DailyLimit = 40;
+  const step3DailyLimit = 15;
+  const step4DailyLimit = 15;
 
-  // Calcola quanti Step 1 e Step 2 sono già stati inviati oggi (Europe/Rome) per essere 100% idempotente
+  // Calcola quanti Step 1..4 sono già stati inviati oggi (Europe/Rome) per essere 100% idempotente
   const todayRomeKey = new Date().toLocaleDateString("sv-SE", {
     timeZone: "Europe/Rome",
   });
   const historyBefore = getOutreachHistory();
   let step1AlreadySentToday = 0;
   let step2AlreadySentToday = 0;
+  let step3AlreadySentToday = 0;
+  let step4AlreadySentToday = 0;
   for (const h of historyBefore) {
     if (!h.sentAt) continue;
     let dKey = h.sentAt.slice(0, 10);
@@ -281,34 +370,52 @@ async function main() {
     if (dKey !== todayRomeKey) continue;
     const s =
       h.stepNumber ||
-      (h.type === "FOLLOW_UP" ||
-      h.type === "STEP_2" ||
-      h.type === "FOLLOW_UP_CREDENTIALS_AND_OFFER"
+      (h.type === "STEP_4"
+        ? 4
+        : h.type === "STEP_3"
+        ? 3
+        : h.type === "FOLLOW_UP" ||
+          h.type === "STEP_2" ||
+          h.type === "FOLLOW_UP_CREDENTIALS_AND_OFFER"
         ? 2
         : 1);
     if (s === 1) step1AlreadySentToday++;
     if (s === 2) step2AlreadySentToday++;
+    if (s === 3) step3AlreadySentToday++;
+    if (s === 4) step4AlreadySentToday++;
   }
 
   const remainingStep1Needed = Math.max(0, targetStep1Daily - step1AlreadySentToday);
   const remainingStep2Allowed = Math.max(0, step2DailyLimit - step2AlreadySentToday);
+  const remainingStep3Allowed = Math.max(0, step3DailyLimit - step3AlreadySentToday);
+  const remainingStep4Allowed = Math.max(0, step4DailyLimit - step4AlreadySentToday);
 
   console.log("--------------------------------------------------------------------------------");
   console.log("AVVIO AUTOMAZIONE GIORNALIERA TECHPYRE STUDIO (B2B OUTBOUND & EXCEL CRM)");
   console.log(`Data/Ora: ${new Date().toLocaleString("it-IT", { timeZone: "Europe/Rome" })} (Europe/Rome)`);
   console.log(
-    `Gia inviati oggi (${todayRomeKey}): Step 1 = ${step1AlreadySentToday}/${targetStep1Daily} · Step 2 = ${step2AlreadySentToday}/${step2DailyLimit}`
+    `Gia inviati oggi (${todayRomeKey}): Step 1 = ${step1AlreadySentToday}/${targetStep1Daily} · Step 2 = ${step2AlreadySentToday}/${step2DailyLimit} · Step 3 = ${step3AlreadySentToday}/${step3DailyLimit} · Step 4 = ${step4AlreadySentToday}/${step4DailyLimit}`
   );
   console.log("--------------------------------------------------------------------------------\n");
 
-  // Fase 1: Controllo disponibilità Step 2 prima dei nuovi invii
+  // Fase 1: Controllo disponibilità Step 2, Step 3 e Step 4 prima dei nuovi invii
   const initialCheck = getEligibleLists();
   const preExistingStep2Candidates = initialCheck.eligibleStep2;
+  const preExistingStep3Candidates = initialCheck.eligibleStep3;
+  const preExistingStep4Candidates = initialCheck.eligibleStep4;
   console.log(
-    `[STEP 2] ${preExistingStep2Candidates.length} aziende in stato CONTACTED_STEP_1 disponibili (Soglia: ${step2Threshold}, Limite/giorno: ${step2DailyLimit}).`
+    `[STEP 2] ${preExistingStep2Candidates.length} aziende in CONTACTED_STEP_1 (Soglia: ${step2Threshold}, Max/g: ${step2DailyLimit}).`
+  );
+  console.log(
+    `[STEP 3] ${preExistingStep3Candidates.length} aziende in CONTACTED_STEP_2 da >= 4g (Max/g: ${step3DailyLimit}).`
+  );
+  console.log(
+    `[STEP 4] ${preExistingStep4Candidates.length} aziende in CONTACTED_STEP_3 da >= 5g (Max/g: ${step4DailyLimit}).`
   );
 
   const sentStep2Report = [];
+  const sentStep3Report = [];
+  const sentStep4Report = [];
   const totalStep2PoolIncludingToday =
     preExistingStep2Candidates.length + step2AlreadySentToday;
   if (totalStep2PoolIncludingToday >= step2Threshold && remainingStep2Allowed > 0) {
@@ -364,6 +471,73 @@ async function main() {
     console.log(
       `\nFASE 1/3 · Aziende pronte per Step 2: ${preExistingStep2Candidates.length} (sotto soglia ${step2Threshold}).`
     );
+  }
+
+  // Fase 1B: Invio controllato Step 3 (Giorno 8 · Value Drop + Trigger Chiamata)
+  if (preExistingStep3Candidates.length > 0 && remainingStep3Allowed > 0) {
+    console.log(
+      `\nFASE 1B · Invio fino a ${remainingStep3Allowed} Step 3 (Value Drop + Preavviso Chiamata)...`
+    );
+    for (const cand of preExistingStep3Candidates) {
+      if (sentStep3Report.length >= remainingStep3Allowed) break;
+      const email = cand.config.meta.targetEmail;
+      if (!(await hasValidMxRecord(email))) continue;
+      try {
+        const sendRes = await sendLeadOutreach({
+          slug: cand.slug,
+          stepNumber: 3,
+          user,
+          bypassBusinessHoursCheck: true,
+          bypassRateLimitCheck: true,
+          applyJitter: true,
+        });
+        sentStep3Report.push({
+          slug: cand.slug,
+          companyName: cand.config.meta.companyName,
+          phone: cand.config.meta.phone,
+          email,
+          messageId: sendRes.messageId,
+        });
+        console.log(
+          `  [Step 3 ${step3AlreadySentToday + sentStep3Report.length}/${step3DailyLimit}] [${cand.slug}] Inviato a ${cand.config.meta.companyName} (${email}) · Tel: ${cand.config.meta.phone}`
+        );
+      } catch (err) {
+        console.error(`  [ERR] Step 3 [${cand.slug}]: ${err.message}`);
+      }
+    }
+  }
+
+  // Fase 1C: Invio controllato Step 4 (Giorno 13 · Breakup Email)
+  if (preExistingStep4Candidates.length > 0 && remainingStep4Allowed > 0) {
+    console.log(
+      `\nFASE 1C · Invio fino a ${remainingStep4Allowed} Step 4 (Breakup Email)...`
+    );
+    for (const cand of preExistingStep4Candidates) {
+      if (sentStep4Report.length >= remainingStep4Allowed) break;
+      const email = cand.config.meta.targetEmail;
+      if (!(await hasValidMxRecord(email))) continue;
+      try {
+        const sendRes = await sendLeadOutreach({
+          slug: cand.slug,
+          stepNumber: 4,
+          user,
+          bypassBusinessHoursCheck: true,
+          bypassRateLimitCheck: true,
+          applyJitter: true,
+        });
+        sentStep4Report.push({
+          slug: cand.slug,
+          companyName: cand.config.meta.companyName,
+          email,
+          messageId: sendRes.messageId,
+        });
+        console.log(
+          `  [Step 4 ${step4AlreadySentToday + sentStep4Report.length}/${step4DailyLimit}] [${cand.slug}] Inviato a ${cand.config.meta.companyName} (${email})`
+        );
+      } catch (err) {
+        console.error(`  [ERR] Step 4 [${cand.slug}]: ${err.message}`);
+      }
+    }
   }
 
   console.log(
@@ -470,7 +644,7 @@ async function main() {
     spawnSync("git", ["add", "."], { stdio: "inherit", cwd: ROOT_DIR });
     const diffCheck = spawnSync("git", ["diff", "--cached", "--quiet"], { cwd: ROOT_DIR });
     if (diffCheck.status !== 0) {
-      const commitMsg = `chore(outbound): daily outbound sync - ${new Date().toLocaleDateString("it-IT", { timeZone: "Europe/Rome" })} - Step 1: ${sentStep1Report.length}, Step 2: ${sentStep2Report.length}`;
+      const commitMsg = `chore(outbound): daily outbound sync - ${new Date().toLocaleDateString("it-IT", { timeZone: "Europe/Rome" })} - S1: ${sentStep1Report.length}, S2: ${sentStep2Report.length}, S3: ${sentStep3Report.length}, S4: ${sentStep4Report.length}`;
       const commitRes = spawnSync("git", ["commit", "-m", commitMsg], { stdio: "inherit", cwd: ROOT_DIR });
       if (commitRes.status === 0) {
         console.log("  [GIT] Commit eseguito con successo.");
@@ -503,11 +677,15 @@ async function main() {
         step1SentToday: sentStep1Report.length,
         step2AvailableBeforeRun: preExistingStep2Candidates.length,
         step2SentToday: sentStep2Report.length,
+        step3SentToday: sentStep3Report.length,
+        step4SentToday: sentStep4Report.length,
         excelFile: excelSummary.outputPath,
         googleDriveUrl: excelSummary.googleDriveUrl,
         googleDriveSynced: excelSummary.googleDriveSynced,
         sentStep1Report,
         sentStep2Report,
+        sentStep3Report,
+        sentStep4Report,
         kpi: excelSummary,
       },
       null,
