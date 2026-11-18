@@ -43,8 +43,9 @@
     "darkBgHex": "#0F1113",
     "borderRadius": "8px",
     "secondaryHex": "#80e0c0",
-    "headerBgMode": "light",
-    "logoBrightness": "light"
+    "headerBgMode": "dark",
+    "logoBrightness": "light",
+    "headerBgHex": "#0E1013"
   },
   "content": {
     "badgeTop": "Bricoterm Termoidraulica · Energia e Comfort Termico (Trapani)",

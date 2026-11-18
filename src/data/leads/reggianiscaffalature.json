@@ -41,8 +41,9 @@
     "accentHex": "#B8860B",
     "darkBgHex": "#0B1E36",
     "borderRadius": "8px",
-    "headerBgMode": "light",
-    "logoBrightness": "light"
+    "headerBgMode": "dark",
+    "logoBrightness": "light",
+    "headerBgHex": "#0E1013"
   },
   "content": {
     "badgeTop": "Reggiani S.r.l. · Logistica e Movimentazione B2B (Ponte Taro)",

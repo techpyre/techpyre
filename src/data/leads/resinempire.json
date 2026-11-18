@@ -29,7 +29,7 @@
       "Cecita decisionale sul ROI: assenza di tracciamento Server-Side di prima parte (GTM Server-Side e Meta CAPI), con perdita del 30-50% dei dati di conversione per blocchi browser e cookie banner.",
       "Colli di bottiglia commerciali: i contatti finiscono in email isolate senza pre-qualifica automatica e senza sincronizzazione immediata via API/Webhook con il CRM aziendale."
     ],
-    "activeAdHeadline": "Resina Universale Grigio Cemento - Proteggi i pavimenti di cemento e a &ndash; resinempire",
+    "activeAdHeadline": "Resina Universale Grigio Cemento - Proteggi i pavimenti di cemento e",
     "activeAdCopySummary": "Resina epossidcia per pavimenti in cemento e asfalto, ideale per cantine e garage di casa. Resina carrabile per moto, auto, camion. Resina i...",
     "runsAds": true,
     "detectedTrackingSignals": [
@@ -42,12 +42,13 @@
     "accentHex": "#B8860B",
     "darkBgHex": "#0B1E36",
     "borderRadius": "8px",
-    "headerBgMode": "light",
-    "logoBrightness": "dark"
+    "headerBgMode": "dark",
+    "logoBrightness": "light",
+    "headerBgHex": "#0E1013"
   },
   "content": {
     "badgeTop": "Resin Empire Pavimenti · Divisione Tecnica e Commesse B2B (Milano)",
-    "heroHeadline": "Resina Universale Grigio Cemento - Proteggi i pavimenti di cemento e a - resinempire",
+    "heroHeadline": "Resina Universale Grigio Cemento - Proteggi i pavimenti di cemento e",
     "heroSubheadline": "Resina epossidcia per pavimenti in cemento e asfalto, ideale per cantine e garage di casa. Resina carrabile per moto, auto, camion. Resina impermeabilizzante per esterno e interno.",
     "heroBullets": [
       "Studio di fattibilita tecnica e capitolato con tempi di consegna certi",

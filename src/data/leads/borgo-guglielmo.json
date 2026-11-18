@@ -41,9 +41,9 @@
     "accentHex": "#0ea5e9",
     "darkBgHex": "#0F1113",
     "borderRadius": "8px",
-    "headerBgMode": "light",
-    "headerBgHex": "#FFFFFF",
-    "logoBrightness": "dark"
+    "headerBgMode": "dark",
+    "headerBgHex": "#0E1013",
+    "logoBrightness": "light"
   },
   "content": {
     "badgeTop": "Attivi a Brescia e Provincia",

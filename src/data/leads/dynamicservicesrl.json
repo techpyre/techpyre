@@ -39,8 +39,9 @@
     "accentHex": "#B8860B",
     "darkBgHex": "#0B1E36",
     "borderRadius": "8px",
-    "headerBgMode": "light",
-    "logoBrightness": "dark"
+    "headerBgMode": "dark",
+    "logoBrightness": "light",
+    "headerBgHex": "#0E1013"
   },
   "content": {
     "badgeTop": "DYNAMIC SERVICE - TAGLIO WATERJET · Produzione Industriale e Carpenteria (Bigolino)",
