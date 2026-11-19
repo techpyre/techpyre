@@ -14,7 +14,7 @@
     "vatNumber": "10924400962",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Brain%20srl.",
     "originalLandingUrl": "https://www.impiantibrain.com",
-    "status": "CONTACTED_STEP_1",
+    "status": "BLACKLISTED",
     "lastSentMessageId": "<ff4a4636-6379-0bf8-8aaa-1eb7bbefe189@techpyre.eu>",
     "threadMessageIds": [
       "<ff4a4636-6379-0bf8-8aaa-1eb7bbefe189@techpyre.eu>"
