@@ -275,9 +275,9 @@ export function classifyInboundReply(
     };
   }
 
-  // 2. UNSUBSCRIBE_OR_NO
+  // 2. UNSUBSCRIBE_OR_NO (Incluso chi scarica la segnalazione al proprio webmaster/agenzia o rifiuta la collaborazione)
   if (
-    /\b(cancellami|cancellate|rimuovete|rimuovere|unsubscribe|non siamo interessati|non mi interessa|non ci interessa|non contattateci|basta mail|diffida|gdpr cancellazione)\b/i.test(
+    /\b(cancellami|cancellate|rimuovete|rimuovere|unsubscribe|non siamo interessati|non mi interessa|non ci interessa|non contattateci|basta mail|diffida|gdpr cancellazione|non valutiamo|non abbiamo richiesto nulla|chi ci cura il sito|avvisero chi|avviserò chi|nostro webmaster|nostro tecnico|siamo gia seguiti|siamo già seguiti|ci segue gia|ci segue già|abbiamo gia un'agenzia|abbiamo già un'agenzia)\b/i.test(
       combined
     )
   ) {
@@ -291,25 +291,21 @@ export function classifyInboundReply(
       stopAutomatedSequence: true,
       nextLeadStatus: "BLACKLISTED",
       operatorActionRequired:
-        "Richiesta di disiscrizione/rifiuto esplicito. Sequenza fermata immediatamente e contatto spostato in BLACKLISTED.",
+        "Richiesta di disiscrizione, rifiuto o inoltro al proprio fornitore attuale. Sequenza fermata immediatamente e contatto spostato in BLACKLISTED (non conteggiato come Hot Lead).",
     };
   }
 
-  // 3. SKEPTICAL_OR_OBJECTION (Interesse dubbioso: "Quanto costa?", "Siamo già seguiti", "Non so se ci serve adesso")
+  // 3. SKEPTICAL_OR_OBJECTION (Interesse reale con domanda su prezzo o funzionamento: "Quanto costa?", "Come funziona?")
   const isPriceQuestion =
     /quanto costa|che costo|prezzo|prezzi|preventivo|listino|budget|investimento/i.test(
       combined
     );
-  const isAgencyObjection =
-    /siamo gia seguiti|ci segue gia|abbiamo gia un'agenzia|abbiamo un'agenzia|nostra agenzia|web agency|fornitore attuale|chi ci segue/i.test(
-      combined
-    );
   const isTimingOrSkeptical =
-    /non so se ci serve|in questo momento|piu avanti|cosa fate esattamente|come funziona|spiegami meglio|dubbio/i.test(
+    /non so se ci serve|cosa fate esattamente|come funziona|spiegami meglio|dubbio/i.test(
       combined
     );
 
-  if (isPriceQuestion || isAgencyObjection || isTimingOrSkeptical) {
+  if (isPriceQuestion || isTimingOrSkeptical) {
     if (lead) {
       lead.meta.status = "HOT_LEAD";
       saveLeadConfig(lead.slug, lead);
@@ -319,8 +315,6 @@ export function classifyInboundReply(
     let objectionValidation = `Capisco perfettamente il punto.`;
     if (isPriceQuestion) {
       objectionValidation = `Ottima domanda: l'intervento dipende solo da quali flussi commerciali volete automatizzare oltre alla velocita mobile, per cui preferisco evitare listini standardizzati prima di avervi mostrato il funzionamento reale.`;
-    } else if (isAgencyObjection) {
-      objectionValidation = `Ha perfettamente senso, e infatti non sostituiamo chi vi segue oggi il marketing: lavoriamo sul livello ingegneristico sottostante (anche in affiancamento ai vostri referenti attuali) per azzerare i ${lcpVal}s di caricamento mobile.`;
     } else if (isTimingOrSkeptical) {
       objectionValidation = `Comprensibile, ed e proprio per non farvi perdere tempo in valutazioni astratte che abbiamo gia costruito il prototipo funzionante sulla vostra pagina attuale.`;
     }
