@@ -14,10 +14,11 @@
     "vatNumber": "00492140173",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Tosoni%20Fluidodinamica%20Srl",
     "originalLandingUrl": "http://www.tosoni.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<2200e026-952d-173c-f876-3cf0979de685@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<9868427b-50d6-45a7-3a0a-24ca40d78761@techpyre.eu>",
     "threadMessageIds": [
-      "<2200e026-952d-173c-f876-3cf0979de685@techpyre.eu>"
+      "<2200e026-952d-173c-f876-3cf0979de685@techpyre.eu>",
+      "<9868427b-50d6-45a7-3a0a-24ca40d78761@techpyre.eu>"
     ]
   },
   "audit": {

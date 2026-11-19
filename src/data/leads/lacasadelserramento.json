@@ -14,10 +14,11 @@
     "vatNumber": "04778510281",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=La%20Casa%20del%20Searramento%20S.R.L.",
     "originalLandingUrl": "https://www.lacasadelserramento.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<71ea2f83-518e-f061-a19f-82c2709019e9@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<06cdbfff-ef96-3f6a-83b3-daf507665d42@techpyre.eu>",
     "threadMessageIds": [
-      "<71ea2f83-518e-f061-a19f-82c2709019e9@techpyre.eu>"
+      "<71ea2f83-518e-f061-a19f-82c2709019e9@techpyre.eu>",
+      "<06cdbfff-ef96-3f6a-83b3-daf507665d42@techpyre.eu>"
     ]
   },
   "audit": {

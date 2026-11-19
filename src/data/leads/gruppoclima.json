@@ -14,10 +14,11 @@
     "vatNumber": "03619871209",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Gruppo%20Clima%20S.r.l%20-%20Condizionamento",
     "originalLandingUrl": "https://www.gruppoclima.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<95c41d27-118a-94c9-1d56-6b2172c77e5f@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<8275afa2-100c-3994-b659-38dac020a26b@techpyre.eu>",
     "threadMessageIds": [
-      "<95c41d27-118a-94c9-1d56-6b2172c77e5f@techpyre.eu>"
+      "<95c41d27-118a-94c9-1d56-6b2172c77e5f@techpyre.eu>",
+      "<8275afa2-100c-3994-b659-38dac020a26b@techpyre.eu>"
     ]
   },
   "audit": {

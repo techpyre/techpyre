@@ -14,13 +14,14 @@
     "vatNumber": "02002950349",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Panciroli%20Andrea%20e%20C.%20S.a.s.",
     "originalLandingUrl": "http://www.panciroliimpiantielettrici.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<4fe38837-e07b-46b2-b6ac-442cb09a48ff@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<1dc5c797-4cff-18d8-2b54-a3006deac100@techpyre.eu>",
     "threadMessageIds": [
       "<b5a5fe8b-d90f-586f-a1b6-d55851647720@techpyre.eu>",
       "<20d01ae1-83d5-cf8c-6373-ada39acaee86@techpyre.eu>",
       "<580ec3ff-692b-b59a-bffa-810bf1cff81e@techpyre.eu>",
-      "<4fe38837-e07b-46b2-b6ac-442cb09a48ff@techpyre.eu>"
+      "<4fe38837-e07b-46b2-b6ac-442cb09a48ff@techpyre.eu>",
+      "<1dc5c797-4cff-18d8-2b54-a3006deac100@techpyre.eu>"
     ]
   },
   "audit": {

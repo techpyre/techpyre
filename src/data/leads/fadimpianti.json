@@ -14,10 +14,11 @@
     "vatNumber": "02063640987",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Fadimpianti",
     "originalLandingUrl": "https://www.fadimpianti.com",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<bb8b4fa4-be28-0bd4-ac88-ea5ffa848767@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<9112d1b2-1fd5-761f-ac6e-a2396b0c91c3@techpyre.eu>",
     "threadMessageIds": [
-      "<bb8b4fa4-be28-0bd4-ac88-ea5ffa848767@techpyre.eu>"
+      "<bb8b4fa4-be28-0bd4-ac88-ea5ffa848767@techpyre.eu>",
+      "<9112d1b2-1fd5-761f-ac6e-a2396b0c91c3@techpyre.eu>"
     ]
   },
   "audit": {

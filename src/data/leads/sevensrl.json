@@ -14,10 +14,11 @@
     "vatNumber": "00544860281",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=SEVEN%20srl",
     "originalLandingUrl": "http://www.sevensrl.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<357399cc-bf2a-6b30-e68b-72a15c304b30@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<8b446cfb-da42-2902-6439-6c56b8c4fb33@techpyre.eu>",
     "threadMessageIds": [
-      "<357399cc-bf2a-6b30-e68b-72a15c304b30@techpyre.eu>"
+      "<357399cc-bf2a-6b30-e68b-72a15c304b30@techpyre.eu>",
+      "<8b446cfb-da42-2902-6439-6c56b8c4fb33@techpyre.eu>"
     ]
   },
   "audit": {

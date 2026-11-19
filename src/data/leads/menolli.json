@@ -14,10 +14,11 @@
     "vatNumber": "04104200235",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Menolli",
     "originalLandingUrl": "https://www.menolli.com",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<0e0f2567-a847-99d0-1287-a44d8e9befbd@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<4fe68f04-c577-9352-4660-b8bfe8267bec@techpyre.eu>",
     "threadMessageIds": [
-      "<0e0f2567-a847-99d0-1287-a44d8e9befbd@techpyre.eu>"
+      "<0e0f2567-a847-99d0-1287-a44d8e9befbd@techpyre.eu>",
+      "<4fe68f04-c577-9352-4660-b8bfe8267bec@techpyre.eu>"
     ]
   },
   "audit": {

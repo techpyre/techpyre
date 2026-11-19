@@ -14,10 +14,11 @@
     "vatNumber": "10825670960",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=TDA%20CLIMATIZZAZIONE%20DI%20GRAZZI%20G.",
     "originalLandingUrl": "http://www.tdaclimatizzazione.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<484378e7-ce8c-e58a-1ba9-163e7151d63a@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<0c11975e-0790-a02f-9534-ad3fa9f7a898@techpyre.eu>",
     "threadMessageIds": [
-      "<484378e7-ce8c-e58a-1ba9-163e7151d63a@techpyre.eu>"
+      "<484378e7-ce8c-e58a-1ba9-163e7151d63a@techpyre.eu>",
+      "<0c11975e-0790-a02f-9534-ad3fa9f7a898@techpyre.eu>"
     ]
   },
   "audit": {

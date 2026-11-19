@@ -14,10 +14,11 @@
     "vatNumber": "03804590168",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Style%20Infissi%20di%20Manzoni%20Matteo",
     "originalLandingUrl": "http://www.styleinfissi.com",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<0b447355-1fe6-f805-9e3d-6dbbb8591309@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<be9d4084-ad20-2b74-c4ea-2f050431862b@techpyre.eu>",
     "threadMessageIds": [
-      "<0b447355-1fe6-f805-9e3d-6dbbb8591309@techpyre.eu>"
+      "<0b447355-1fe6-f805-9e3d-6dbbb8591309@techpyre.eu>",
+      "<be9d4084-ad20-2b74-c4ea-2f050431862b@techpyre.eu>"
     ]
   },
   "audit": {

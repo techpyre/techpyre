@@ -14,10 +14,11 @@
     "vatNumber": "01539010981",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Tecnigas",
     "originalLandingUrl": "http://www.tecnigas.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<c5f0c7ae-13f1-f77b-b394-4509594af88e@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<12d6ed06-6fe0-6c13-9ca5-abebf4c6274e@techpyre.eu>",
     "threadMessageIds": [
-      "<c5f0c7ae-13f1-f77b-b394-4509594af88e@techpyre.eu>"
+      "<c5f0c7ae-13f1-f77b-b394-4509594af88e@techpyre.eu>",
+      "<12d6ed06-6fe0-6c13-9ca5-abebf4c6274e@techpyre.eu>"
     ]
   },
   "audit": {

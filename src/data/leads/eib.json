@@ -14,10 +14,11 @@
     "vatNumber": "02777170131",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=E.I.B.%20S.r.l.",
     "originalLandingUrl": "http://www.eib.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<8e0da63e-96a3-241f-f398-1ea6a1a2b970@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<98fb45f4-8ea3-aa27-b535-0ad4adb83ccc@techpyre.eu>",
     "threadMessageIds": [
-      "<8e0da63e-96a3-241f-f398-1ea6a1a2b970@techpyre.eu>"
+      "<8e0da63e-96a3-241f-f398-1ea6a1a2b970@techpyre.eu>",
+      "<98fb45f4-8ea3-aa27-b535-0ad4adb83ccc@techpyre.eu>"
     ]
   },
   "audit": {

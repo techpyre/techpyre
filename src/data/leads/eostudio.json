@@ -14,10 +14,11 @@
     "vatNumber": "02674140989",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=E.O.S.",
     "originalLandingUrl": "http://www.eostudio.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<d4e80e1a-07b0-b0e3-791c-f19f419bfc9d@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<8bffcd36-e0aa-7f2e-4a73-792192338159@techpyre.eu>",
     "threadMessageIds": [
-      "<d4e80e1a-07b0-b0e3-791c-f19f419bfc9d@techpyre.eu>"
+      "<d4e80e1a-07b0-b0e3-791c-f19f419bfc9d@techpyre.eu>",
+      "<8bffcd36-e0aa-7f2e-4a73-792192338159@techpyre.eu>"
     ]
   },
   "audit": {

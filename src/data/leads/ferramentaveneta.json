@@ -14,10 +14,11 @@
     "vatNumber": "00221490238",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=FERRAMENTA%20VENETA%20SRL",
     "originalLandingUrl": "https://www.ferramentaveneta.com",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<8235ef27-24da-25d7-695b-8dfe02990ec0@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<b3a51ce0-5bbf-cda1-082f-073ab95644d7@techpyre.eu>",
     "threadMessageIds": [
-      "<8235ef27-24da-25d7-695b-8dfe02990ec0@techpyre.eu>"
+      "<8235ef27-24da-25d7-695b-8dfe02990ec0@techpyre.eu>",
+      "<b3a51ce0-5bbf-cda1-082f-073ab95644d7@techpyre.eu>"
     ]
   },
   "audit": {

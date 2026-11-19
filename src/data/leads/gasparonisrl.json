@@ -14,10 +14,11 @@
     "vatNumber": "03584590248",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Gasparoni%20Creazioni%20in%20Ferro",
     "originalLandingUrl": "https://www.gasparonisrl.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<0607c196-c22b-865e-2207-4926b070b6a0@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<af1e54a2-ac7f-653e-b536-bbcb7d724966@techpyre.eu>",
     "threadMessageIds": [
-      "<0607c196-c22b-865e-2207-4926b070b6a0@techpyre.eu>"
+      "<0607c196-c22b-865e-2207-4926b070b6a0@techpyre.eu>",
+      "<af1e54a2-ac7f-653e-b536-bbcb7d724966@techpyre.eu>"
     ]
   },
   "audit": {

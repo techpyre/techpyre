@@ -14,10 +14,11 @@
     "vatNumber": "02707330243",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Las%20%20Lavorazione%20Acciaio%20Inox",
     "originalLandingUrl": "http://www.lasinox.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<ad507dfb-ba21-1d88-8bda-cb771e80be1a@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<4fa9e150-45dd-c9fc-e28c-a87c83155e20@techpyre.eu>",
     "threadMessageIds": [
-      "<ad507dfb-ba21-1d88-8bda-cb771e80be1a@techpyre.eu>"
+      "<ad507dfb-ba21-1d88-8bda-cb771e80be1a@techpyre.eu>",
+      "<4fa9e150-45dd-c9fc-e28c-a87c83155e20@techpyre.eu>"
     ]
   },
   "audit": {

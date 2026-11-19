@@ -14,10 +14,11 @@
     "vatNumber": "03503710968",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Ctb%20Air%20Technology",
     "originalLandingUrl": "http://www.ctbairtechnology.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<f38b725c-ac4e-d42a-0ff2-ce4ca0a29a89@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<b42406d8-d79d-a61a-1ba0-77c4c8df5de0@techpyre.eu>",
     "threadMessageIds": [
-      "<f38b725c-ac4e-d42a-0ff2-ce4ca0a29a89@techpyre.eu>"
+      "<f38b725c-ac4e-d42a-0ff2-ce4ca0a29a89@techpyre.eu>",
+      "<b42406d8-d79d-a61a-1ba0-77c4c8df5de0@techpyre.eu>"
     ]
   },
   "audit": {

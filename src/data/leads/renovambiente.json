@@ -14,10 +14,11 @@
     "vatNumber": "04127190272",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Renova%20ambiente",
     "originalLandingUrl": "https://www.renovambiente.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<66b2b6bd-4a98-e438-feaf-1a96f5fbff06@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<4719a021-9ebf-bd03-0d23-039dfa279c57@techpyre.eu>",
     "threadMessageIds": [
-      "<66b2b6bd-4a98-e438-feaf-1a96f5fbff06@techpyre.eu>"
+      "<66b2b6bd-4a98-e438-feaf-1a96f5fbff06@techpyre.eu>",
+      "<4719a021-9ebf-bd03-0d23-039dfa279c57@techpyre.eu>"
     ]
   },
   "audit": {

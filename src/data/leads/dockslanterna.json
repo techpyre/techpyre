@@ -1,0 +1,172 @@
+{
+  "slug": "dockslanterna",
+  "archetype": "b2b-authority",
+  "meta": {
+    "companyName": "Docks Lanterna Spa",
+    "decisionMakerName": "Direzione Docks Lanterna Spa",
+    "decisionMakerFirstName": null,
+    "decisionMakerRole": "Direzione Aziendale",
+    "isGenericInbox": true,
+    "emailScore": 35,
+    "targetEmail": "info@dockslanterna.com",
+    "phone": "+393356553709",
+    "city": "Genova",
+    "vatNumber": "02315050100",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Docks%20Lanterna%20Spa",
+    "originalLandingUrl": "https://www.dockslanterna.com",
+    "status": "CONTACTED_STEP_1",
+    "lastSentMessageId": "<9d040cde-9bd7-8473-c189-e1f7476ca43d@techpyre.eu>",
+    "threadMessageIds": [
+      "<9d040cde-9bd7-8473-c189-e1f7476ca43d@techpyre.eu>"
+    ]
+  },
+  "audit": {
+    "originalLcpSeconds": 8.3,
+    "mobileScore": 29,
+    "renderBlockingCount": 26,
+    "runsAds": true,
+    "detectedTrackingSignals": [
+      "Google Ads Conversion / Remarketing"
+    ],
+    "threeCriticalFlaws": [
+      "Dispersione del budget pubblicitario: caricamento mobile di 8.3s (26 risorse bloccanti) che fa abbandonare oltre meta degli utenti prima dell'apertura della pagina.",
+      "Cecita decisionale sul ROI: assenza di tracciamento Server-Side di prima parte (GTM Server-Side e Meta CAPI), con perdita del 30-50% dei dati di conversione per blocchi browser e cookie banner.",
+      "Colli di bottiglia commerciali: i contatti finiscono in email isolate senza pre-qualifica automatica e senza sincronizzazione immediata via API/Webhook con il CRM aziendale."
+    ],
+    "activeAdHeadline": "SERVIZI INTEGRATI PER L'AMBIENTe",
+    "activeAdCopySummary": "Docks Lanterna Spa offre servizi per l&#039;ambiente a Genova. Raccolta differenziata, spurgo pulizia fognature, servizi di igiene urbana"
+  },
+  "theme": {
+    "primaryHex": "#0B1E36",
+    "accentHex": "#B8860B",
+    "darkBgHex": "#0B1E36",
+    "borderRadius": "8px",
+    "headerBgMode": "dark",
+    "headerBgHex": "#0E1013",
+    "logoBrightness": "light"
+  },
+  "content": {
+    "badgeTop": "Docks Lanterna Spa · Logistica e Movimentazione B2B (Genova)",
+    "heroHeadline": "SERVIZI INTEGRATI PER L'AMBIENTe",
+    "heroSubheadline": "Docks Lanterna Spa offre servizi per l'ambiente a Genova. Raccolta differenziata, spurgo pulizia fognature, servizi di igiene urbana",
+    "heroBullets": [
+      "Analisi flussi di magazzino, movimentazione interna e spedizioni programmate",
+      "Imballaggi protetti e sistemi di trasporto progettati su dimensioni reali",
+      "Referente operativo unico per coordinamento carichi e urgenze"
+    ],
+    "ctaButtonText": "Richiedi Studio di Fattibilita",
+    "trustMicrocopy": "Riservatezza industriale garantita (NDA) · Risposta tecnica entro la giornata lavorativa",
+    "logoLocalPath": "/leads/dockslanterna/logo.png",
+    "heroImageLocalPath": "/leads/dockslanterna/hero.jpg",
+    "heroImageCaption": "Docks Lanterna Spa · Sede operativa e realizzazioni (Genova)",
+    "quiz": {
+      "question1": {
+        "title": "Quale esigenza logistica o di movimentazione desiderate ottimizzare?",
+        "options": [
+          "Nastri trasportatori, rulli, scaffalature o impianti di movimentazione",
+          "Imballaggi industriali, packaging su misura e forniture continuative",
+          "Trasporti dedicati, logistica di stabilimento e contratto SLA"
+        ]
+      },
+      "question2": {
+        "title": "Qual e l'orizzonte temporale previsto per il progetto?",
+        "options": [
+          "Avvio operativo urgente (entro 30 giorni)",
+          "Pianificazione nel trimestre in corso",
+          "Valutazione tecnica e di budget preliminare"
+        ]
+      },
+      "finalStepTitle": "Specifiche registrate. Inserisci i riferimenti aziendali per il colloquio con l'Ufficio Tecnico:"
+    },
+    "valueProps": [
+      {
+        "title": "Soluzioni su Misura per Flussi di Stabilimento",
+        "description": "Ottimizziamo movimentazione, rulliere, stoccaggio e confezionamento a Genova riducendo danni da trasporto e tempi morti di carico.",
+        "metric": "Efficienza Logistica"
+      },
+      {
+        "title": "Puntualita e Protezione Merci Garantita",
+        "description": "Docks Lanterna Spa opera con standard rigorosi per proteggere prodotti finiti, semilavorati e macchinari lungo tutta la filiera.",
+        "metric": "99.4% Puntuali"
+      },
+      {
+        "title": "Capacita Flessibile e Accordi Quadro",
+        "description": "Scorte di sicurezza e pianificazione flessibile per assorbire picchi di produzione e richieste urgenti senza blocchi.",
+        "metric": "SLA Contrattuale"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "99.4%",
+      "mainStatLabel": "Tasso di puntualita sulle consegne e movimentazioni B2B",
+      "reviewsSummary": "Partner logistico e industriale di fiducia a Genova",
+      "clientReferenceWall": [
+        "Consegne Programmate JIT",
+        "Sicurezza Carichi e Imballi",
+        "Qualita Certificata ISO 9001",
+        "Integrazione Flussi ERP",
+        "Referente Operativo Unico"
+      ],
+      "secondaryStats": [
+        {
+          "value": "99.4%",
+          "label": "Spedizioni e forniture consegnate nella finestra concordata"
+        },
+        {
+          "value": "< 0.4s",
+          "label": "Richiesta quotazione istantanea da ufficio acquisti e magazzino"
+        },
+        {
+          "value": "24h",
+          "label": "Quotazione tratte, impianti o lotti su specifica"
+        }
+      ],
+      "testimonials": [
+        {
+          "name": "Responsabile Logistica e Magazzino",
+          "location": "Genova · Polo Industriale",
+          "quote": "Da quando collaboriamo con Docks Lanterna Spa abbiamo velocizzato le operazioni di carico e azzerato i ritardi verso i nostri clienti esteri.",
+          "roleOrContext": "Logistica e movimentazione"
+        },
+        {
+          "name": "Ufficio Acquisti Aziendale",
+          "location": "Genova e provincia",
+          "quote": "Preventivi chiari, tracciabilita immediata e supporto rapido anche nelle spedizioni urgenti di fine mese.",
+          "roleOrContext": "Fornitura continuativa"
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "Alla c.a. Direzione Docks Lanterna Spa - dispersione clic mobile e tempi di apertura (8.3s)",
+    "emailPlainTextBody": "Buongiorno,\n\nda una verifica sul sito di Docks Lanterna Spa, aprendolo da smartphone passano 8.3 secondi prima che la pagina sia utilizzabile, facendo abbandonare buona parte dei visitatori arrivati dalle inserzioni.\n\nAbbiamo gia preparato per Docks Lanterna Spa una bozza su misura che si apre in 0.3 secondi da telefono e pre-qualifica in automatico le richieste di commessa.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre Studio\nTel/WhatsApp: +39 379 115 9352\nriccardo.granza@techpyre.eu",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della bozza da 0.3 secondi preparata per Docks Lanterna Spa, con simulatore di pre-qualifica richieste integrato in pagina:\n\nhttps://www.techpyre.eu/demo/dockslanterna\n\nPotete provarla direttamente dal telefono: se l'impostazione vi piace, scrivetemi pure su WhatsApp (o in risposta a questa email) per vedere come adattarla al vostro flusso commerciale.\n\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu\n\nNota: la demo è una bozza privata visibile solo da questo link (non indicizzata su Google), creata su misura a solo scopo dimostrativo (art. 21 D.Lgs. 30/2005; Reg. UE 2016/679). Rimozione immediata su richiesta.",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "Alla c.a. Direzione Docks Lanterna Spa - dispersione clic mobile e tempi di apertura (8.3s)",
+      "body": "Buongiorno,\n\nda una verifica sul sito di Docks Lanterna Spa, aprendolo da smartphone passano 8.3 secondi prima che la pagina sia utilizzabile, facendo abbandonare buona parte dei visitatori arrivati dalle inserzioni.\n\nAbbiamo gia preparato per Docks Lanterna Spa una bozza su misura che si apre in 0.3 secondi da telefono e pre-qualifica in automatico le richieste di commessa.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre Studio\nTel/WhatsApp: +39 379 115 9352\nriccardo.granza@techpyre.eu",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: Alla c.a. Direzione Docks Lanterna Spa - dispersione clic mobile e tempi di apertura (8.3s)",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della bozza da 0.3 secondi preparata per Docks Lanterna Spa, con simulatore di pre-qualifica richieste integrato in pagina:\n\nhttps://www.techpyre.eu/demo/dockslanterna\n\nPotete provarla direttamente dal telefono: se l'impostazione vi piace, scrivetemi pure su WhatsApp (o in risposta a questa email) per vedere come adattarla al vostro flusso commerciale.\n\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu\n\nNota: la demo è una bozza privata visibile solo da questo link (non indicizzata su Google), creata su misura a solo scopo dimostrativo (art. 21 D.Lgs. 30/2005; Reg. UE 2016/679). Rimozione immediata su richiesta.",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: Alla c.a. Direzione Docks Lanterna Spa - dispersione clic mobile e tempi di apertura (8.3s)",
+      "body": "Buongiorno,\n\nOltre ad azzerare i 8.3 secondi di attesa su mobile, l'infrastruttura recupera il 40% dei dati di conversione persi coi cookie banner tramite Server-Side Tracking.\n\nPer non disturbarvi con chiamate a freddo, se mi mandate anche solo un veloce messaggio su WhatsApp al +39 379 115 9352 (o rispondete qui sotto) vi giro subito in chat i dettagli per Docks Lanterna Spa.\n\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: Alla c.a. Direzione Docks Lanterna Spa - dispersione clic mobile e tempi di apertura (8.3s)",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Docks Lanterna Spa non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/dockslanterna) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione su WhatsApp o via email se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

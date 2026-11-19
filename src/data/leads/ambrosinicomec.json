@@ -14,10 +14,11 @@
     "vatNumber": "02703560983",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Ambrosini%20Costruzioni%20Meccaniche",
     "originalLandingUrl": "https://www.ambrosinicomec.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<f6395691-3361-e6e0-1a78-513e142e906c@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<165c16b7-870e-e2fa-a1b2-ea419aac9986@techpyre.eu>",
     "threadMessageIds": [
-      "<f6395691-3361-e6e0-1a78-513e142e906c@techpyre.eu>"
+      "<f6395691-3361-e6e0-1a78-513e142e906c@techpyre.eu>",
+      "<165c16b7-870e-e2fa-a1b2-ea419aac9986@techpyre.eu>"
     ]
   },
   "audit": {

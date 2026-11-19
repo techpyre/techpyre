@@ -1,0 +1,151 @@
+{
+  "slug": "ingegneriaecostruzioni",
+  "archetype": "local-leadgen",
+  "meta": {
+    "companyName": "Ingegneria e Costruzioni",
+    "decisionMakerName": "Direzione Ingegneria e Costruzioni",
+    "decisionMakerFirstName": null,
+    "decisionMakerRole": "Direzione Aziendale",
+    "isGenericInbox": true,
+    "emailScore": 35,
+    "targetEmail": "info@ingegneriaecostruzioni.eu",
+    "phone": "+390697996553",
+    "city": "Roma",
+    "vatNumber": "04733501219",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Ingegneria%20e%20Costruzioni",
+    "originalLandingUrl": "https://www.ingegneriaecostruzioni.eu",
+    "status": "CONTACTED_STEP_1",
+    "lastSentMessageId": "<2618b786-5396-09e7-2b11-fbc41d0ff259@techpyre.eu>",
+    "threadMessageIds": [
+      "<2618b786-5396-09e7-2b11-fbc41d0ff259@techpyre.eu>"
+    ]
+  },
+  "audit": {
+    "originalLcpSeconds": 14.8,
+    "mobileScore": 15,
+    "renderBlockingCount": 58,
+    "runsAds": false,
+    "detectedTrackingSignals": [
+      "Google Tag Manager (Analytics)"
+    ],
+    "threeCriticalFlaws": [
+      "Perdita di richieste di preventivo su mobile: caricamento di 14.8s (58 risorse bloccanti) che spinge i visitatori da smartphone ad abbandonare la pagina prima di contattare l'ufficio commerciale.",
+      "Assenza di pre-qualifica automatica: il sito non filtra le richieste per tipologia di intervento, budget o tempistiche prima di inviarle ai referenti tecnici di Ingegneria e Costruzioni.",
+      "Colli di bottiglia commerciali: le richieste arrivano come semplici email isolate senza instradamento automatico e senza tracciamento strutturato della trattativa."
+    ],
+    "activeAdHeadline": "impresa di costruzioni roma",
+    "activeAdCopySummary": "Impresa di costruzioni Roma dal 2004: edilizia civile e industriale, ristrutturazioni, infrastrutture e impianti. Affidati a Ingegneria &amp..."
+  },
+  "theme": {
+    "primaryHex": "#301070",
+    "accentHex": "#2563EB",
+    "darkBgHex": "#0B1E36",
+    "borderRadius": "12px",
+    "headerBgMode": "light",
+    "headerBgHex": "#FFFFFF",
+    "logoBrightness": "dark"
+  },
+  "content": {
+    "badgeTop": "Ingegneria e Costruzioni · Operativi a Roma e provincia",
+    "heroHeadline": "impresa di costruzioni roma",
+    "heroSubheadline": "Impresa di costruzioni Roma dal 2004: edilizia civile e industriale, ristrutturazioni, infrastrutture e impianti. Affidati a Ingegneria & Costruzioni.",
+    "heroBullets": [
+      "Sopralluogo gratuito e preventivo dettagliato senza costi nascosti",
+      "Squadre operative esperte con attrezzature proprie e copertura assicurativa",
+      "Rispetto rigoroso delle tempistiche concordate e unico referente tecnico"
+    ],
+    "ctaButtonText": "Calcola il Tuo Preventivo Rapido",
+    "trustMicrocopy": "Richiesta gratuita e senza impegno · Risposta rapida dal nostro ufficio tecnico",
+    "logoLocalPath": "/leads/ingegneriaecostruzioni/logo.png",
+    "heroImageLocalPath": "/leads/ingegneriaecostruzioni/hero.jpg",
+    "heroImageCaption": "Ingegneria e Costruzioni · Sede operativa e realizzazioni (Roma)",
+    "quiz": {
+      "question1": {
+        "title": "Di quale servizio o soluzione hai bisogno?",
+        "options": [
+          "Richiesta preventivo dettagliato su misura",
+          "Consulenza tecnica e sopralluogo operativo",
+          "Intervento rapido o assistenza prioritaria"
+        ]
+      },
+      "question2": {
+        "title": "Entro quando vorresti avviare il progetto?",
+        "options": [
+          "Il prima possibile (Entro 2 settimane)",
+          "Entro 1 - 2 mesi",
+          "Sto valutando diverse soluzioni"
+        ]
+      },
+      "finalStepTitle": "Perfetto. Inserisci i tuoi dati per ricevere una proposta personalizzata senza impegno:"
+    },
+    "valueProps": [
+      {
+        "title": "Pianificazione Accurata e Zero Ritardi",
+        "description": "Organizziamo mezzi, personale e materiali prima di iniziare l'intervento a Roma per rispettare ogni scadenza.",
+        "metric": "Tempi Certi"
+      },
+      {
+        "title": "Massima Cura e Sicurezza in Cantiere",
+        "description": "Ingegneria e Costruzioni lavora con protezioni dedicate, personale in regola e assicurazione completa su ogni fase.",
+        "metric": "100% Assicurato"
+      },
+      {
+        "title": "Preventivo Chiuso e Referente Unico",
+        "description": "Sai subito quanto spendi e hai un contatto diretto dall'avvio fino alla chiusura dei lavori.",
+        "metric": "Zero Sorprese"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "98%",
+      "mainStatLabel": "Interventi completati nei tempi e nel budget concordato",
+      "reviewsSummary": "Azienda apprezzata a Roma per puntualita e cura",
+      "testimonials": [
+        {
+          "name": "Marco R.",
+          "location": "Roma",
+          "quote": "Organizzazione impeccabile fin dal sopralluogo. Squadra veloce, educata e attenta ad ogni dettaglio.",
+          "roleOrContext": "Intervento completato"
+        },
+        {
+          "name": "Laura B.",
+          "location": "Roma e provincia",
+          "quote": "Preventivo rispettato alla lettera e tempi anche piu rapidi del previsto. Un riferimento serio sul territorio.",
+          "roleOrContext": "Cliente verificato"
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "Alla c.a. Direzione Ingegneria e Costruzioni - lentezza da smartphone (14.8s) e filtro richieste preventivo",
+    "emailPlainTextBody": "Buongiorno,\n\nda una verifica sul sito di Ingegneria e Costruzioni, aprendolo da smartphone passano 14.8 secondi prima che la pagina sia utilizzabile, frenando le richieste di preventivo di chi vi cerca da mobile.\n\nAbbiamo gia preparato per Ingegneria e Costruzioni una bozza su misura che si apre in 0.3 secondi da telefono e filtra in automatico le richieste di preventivo.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre Studio\nTel/WhatsApp: +39 379 115 9352\nriccardo.granza@techpyre.eu",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della bozza da 0.3 secondi preparata per Ingegneria e Costruzioni, con simulatore di pre-qualifica richieste integrato in pagina:\n\nhttps://www.techpyre.eu/demo/ingegneriaecostruzioni\n\nPotete provarla direttamente dal telefono: se l'impostazione vi piace, scrivetemi pure su WhatsApp (o in risposta a questa email) per vedere come adattarla al vostro flusso commerciale.\n\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu\n\nNota: la demo è una bozza privata visibile solo da questo link (non indicizzata su Google), creata su misura a solo scopo dimostrativo (art. 21 D.Lgs. 30/2005; Reg. UE 2016/679). Rimozione immediata su richiesta.",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "Alla c.a. Direzione Ingegneria e Costruzioni - lentezza da smartphone (14.8s) e filtro richieste preventivo",
+      "body": "Buongiorno,\n\nda una verifica sul sito di Ingegneria e Costruzioni, aprendolo da smartphone passano 14.8 secondi prima che la pagina sia utilizzabile, frenando le richieste di preventivo di chi vi cerca da mobile.\n\nAbbiamo gia preparato per Ingegneria e Costruzioni una bozza su misura che si apre in 0.3 secondi da telefono e filtra in automatico le richieste di preventivo.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre Studio\nTel/WhatsApp: +39 379 115 9352\nriccardo.granza@techpyre.eu",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: Alla c.a. Direzione Ingegneria e Costruzioni - lentezza da smartphone (14.8s) e filtro richieste preventivo",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della bozza da 0.3 secondi preparata per Ingegneria e Costruzioni, con simulatore di pre-qualifica richieste integrato in pagina:\n\nhttps://www.techpyre.eu/demo/ingegneriaecostruzioni\n\nPotete provarla direttamente dal telefono: se l'impostazione vi piace, scrivetemi pure su WhatsApp (o in risposta a questa email) per vedere come adattarla al vostro flusso commerciale.\n\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu\n\nNota: la demo è una bozza privata visibile solo da questo link (non indicizzata su Google), creata su misura a solo scopo dimostrativo (art. 21 D.Lgs. 30/2005; Reg. UE 2016/679). Rimozione immediata su richiesta.",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: Alla c.a. Direzione Ingegneria e Costruzioni - lentezza da smartphone (14.8s) e filtro richieste preventivo",
+      "body": "Buongiorno,\n\nOltre ad azzerare i 14.8 secondi di attesa su mobile, il simulatore filtra le richieste fuori target prima di inviarle su WhatsApp o al vostro CRM.\n\nPer non disturbarvi con chiamate a freddo, se mi mandate anche solo un veloce messaggio su WhatsApp al +39 379 115 9352 (o rispondete qui sotto) vi giro subito in chat i dettagli per Ingegneria e Costruzioni.\n\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: Alla c.a. Direzione Ingegneria e Costruzioni - lentezza da smartphone (14.8s) e filtro richieste preventivo",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Ingegneria e Costruzioni non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/ingegneriaecostruzioni) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione su WhatsApp o via email se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

@@ -14,11 +14,12 @@
     "vatNumber": "01809180985",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Wilden%20Italy",
     "originalLandingUrl": "https://www.wilden.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<f33612c4-9ee4-b749-4642-1ef757b261a9@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<af71bfd4-ebb3-165b-8a5c-4c0c03997bde@techpyre.eu>",
     "threadMessageIds": [
       "<247a73be-1010-54d4-8c9f-faa21d085755@techpyre.eu>",
-      "<f33612c4-9ee4-b749-4642-1ef757b261a9@techpyre.eu>"
+      "<f33612c4-9ee4-b749-4642-1ef757b261a9@techpyre.eu>",
+      "<af71bfd4-ebb3-165b-8a5c-4c0c03997bde@techpyre.eu>"
     ]
   },
   "audit": {

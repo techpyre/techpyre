@@ -14,10 +14,11 @@
     "vatNumber": "00860330174",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Ar-Ber%20Snc",
     "originalLandingUrl": "https://www.ar-ber.com",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<83b21cb7-0480-4630-03d7-ad0f52cb4cc8@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<9082eb1d-5c2c-7d17-7f05-0b4cef3e0d48@techpyre.eu>",
     "threadMessageIds": [
-      "<83b21cb7-0480-4630-03d7-ad0f52cb4cc8@techpyre.eu>"
+      "<83b21cb7-0480-4630-03d7-ad0f52cb4cc8@techpyre.eu>",
+      "<9082eb1d-5c2c-7d17-7f05-0b4cef3e0d48@techpyre.eu>"
     ]
   },
   "audit": {

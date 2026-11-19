@@ -14,10 +14,11 @@
     "vatNumber": "04171750260",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=DYNAMIC%20SERVICE%20-%20TAGLIO%20WATERJET",
     "originalLandingUrl": "https://www.dynamicservicesrl.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<2b4b60fa-d438-3d51-a87b-aaa3d7781e76@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<366fe6d2-0053-ddd4-7fe8-3969c4046ada@techpyre.eu>",
     "threadMessageIds": [
-      "<2b4b60fa-d438-3d51-a87b-aaa3d7781e76@techpyre.eu>"
+      "<2b4b60fa-d438-3d51-a87b-aaa3d7781e76@techpyre.eu>",
+      "<366fe6d2-0053-ddd4-7fe8-3969c4046ada@techpyre.eu>"
     ]
   },
   "audit": {

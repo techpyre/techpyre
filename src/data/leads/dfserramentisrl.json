@@ -14,10 +14,11 @@
     "vatNumber": "04919740284",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Df%20Serramenti",
     "originalLandingUrl": "https://www.dfserramentisrl.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<58471b51-dea0-1b7a-d8ff-6718ee4679ae@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<d2f52f0e-bae0-b2f8-c98b-5a0b270d2385@techpyre.eu>",
     "threadMessageIds": [
-      "<58471b51-dea0-1b7a-d8ff-6718ee4679ae@techpyre.eu>"
+      "<58471b51-dea0-1b7a-d8ff-6718ee4679ae@techpyre.eu>",
+      "<d2f52f0e-bae0-b2f8-c98b-5a0b270d2385@techpyre.eu>"
     ]
   },
   "audit": {

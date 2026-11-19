@@ -14,10 +14,11 @@
     "vatNumber": "04144240365",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Resineis%20Ristrutturazioni",
     "originalLandingUrl": "https://resineis.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<21b139e2-63f4-e492-e290-d3e83a74be58@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<469c06a2-76d1-2c3b-0e7e-6fa8186c750b@techpyre.eu>",
     "threadMessageIds": [
-      "<21b139e2-63f4-e492-e290-d3e83a74be58@techpyre.eu>"
+      "<21b139e2-63f4-e492-e290-d3e83a74be58@techpyre.eu>",
+      "<469c06a2-76d1-2c3b-0e7e-6fa8186c750b@techpyre.eu>"
     ]
   },
   "audit": {

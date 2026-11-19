@@ -14,10 +14,11 @@
     "vatNumber": "03287080281",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Sirio%207",
     "originalLandingUrl": "https://www.sirio7.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<aec31ea2-6a30-e6c0-4615-3c278f0ecdcf@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<59db8da2-3ab8-a38e-8669-93e880b4c329@techpyre.eu>",
     "threadMessageIds": [
-      "<aec31ea2-6a30-e6c0-4615-3c278f0ecdcf@techpyre.eu>"
+      "<aec31ea2-6a30-e6c0-4615-3c278f0ecdcf@techpyre.eu>",
+      "<59db8da2-3ab8-a38e-8669-93e880b4c329@techpyre.eu>"
     ]
   },
   "audit": {

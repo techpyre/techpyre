@@ -14,10 +14,11 @@
     "vatNumber": "03810550230",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Sicurfer",
     "originalLandingUrl": "http://www.sicurfer.com",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<1c120bc6-065b-6b0c-3dea-c919887cbd83@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<91af2f30-47df-515d-5458-9ed2b7d7bb0c@techpyre.eu>",
     "threadMessageIds": [
-      "<1c120bc6-065b-6b0c-3dea-c919887cbd83@techpyre.eu>"
+      "<1c120bc6-065b-6b0c-3dea-c919887cbd83@techpyre.eu>",
+      "<91af2f30-47df-515d-5458-9ed2b7d7bb0c@techpyre.eu>"
     ]
   },
   "audit": {

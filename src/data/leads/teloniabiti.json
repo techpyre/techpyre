@@ -14,10 +14,11 @@
     "vatNumber": "03766640266",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Teloni%20Abiti",
     "originalLandingUrl": "https://teloniabiti.com",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<823deb9f-bce7-d6d7-97c2-31dca37da53b@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<b08f1cc1-8897-7fac-fc0a-ecad0c69b11f@techpyre.eu>",
     "threadMessageIds": [
-      "<823deb9f-bce7-d6d7-97c2-31dca37da53b@techpyre.eu>"
+      "<823deb9f-bce7-d6d7-97c2-31dca37da53b@techpyre.eu>",
+      "<b08f1cc1-8897-7fac-fc0a-ecad0c69b11f@techpyre.eu>"
     ]
   },
   "audit": {
