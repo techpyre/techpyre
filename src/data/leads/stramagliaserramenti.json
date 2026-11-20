@@ -14,10 +14,11 @@
     "vatNumber": "05763260725",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Stramaglia%20Serramenti",
     "originalLandingUrl": "http://www.stramagliaserramenti.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<b60ed00c-b488-7c04-2a55-e61344c2df00@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<87f3baec-1fcc-c2a1-1cf0-7896c7de8e0c@techpyre.eu>",
     "threadMessageIds": [
-      "<b60ed00c-b488-7c04-2a55-e61344c2df00@techpyre.eu>"
+      "<b60ed00c-b488-7c04-2a55-e61344c2df00@techpyre.eu>",
+      "<87f3baec-1fcc-c2a1-1cf0-7896c7de8e0c@techpyre.eu>"
     ]
   },
   "audit": {

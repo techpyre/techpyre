@@ -14,10 +14,11 @@
     "vatNumber": "12345678912",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Cerami%20Traslochi%20Trapani",
     "originalLandingUrl": "https://www.ceramitraslochi.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<47c43f66-8806-e680-cc3d-5418a10e1f09@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<40047ed6-a173-6e5c-5a31-45e3329db87a@techpyre.eu>",
     "threadMessageIds": [
-      "<47c43f66-8806-e680-cc3d-5418a10e1f09@techpyre.eu>"
+      "<47c43f66-8806-e680-cc3d-5418a10e1f09@techpyre.eu>",
+      "<40047ed6-a173-6e5c-5a31-45e3329db87a@techpyre.eu>"
     ]
   },
   "audit": {

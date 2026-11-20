@@ -14,10 +14,11 @@
     "vatNumber": "02764240350",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Polaris%20Automazioni",
     "originalLandingUrl": "https://www.polarisautomazioni.com",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<5d25256b-3ff1-0b76-a6f6-e290d0e52ae2@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<a2cc92d1-a2b8-a662-9758-89e321e5c645@techpyre.eu>",
     "threadMessageIds": [
-      "<5d25256b-3ff1-0b76-a6f6-e290d0e52ae2@techpyre.eu>"
+      "<5d25256b-3ff1-0b76-a6f6-e290d0e52ae2@techpyre.eu>",
+      "<a2cc92d1-a2b8-a662-9758-89e321e5c645@techpyre.eu>"
     ]
   },
   "audit": {

@@ -14,10 +14,11 @@
     "vatNumber": "09162760012",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=GATTA%20srl",
     "originalLandingUrl": "http://www.gattasrl.com",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<138b4722-43fa-ece6-2aa8-4d0bc0ca395e@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<76c89b99-cf62-11ee-b4ed-5454fdb796f5@techpyre.eu>",
     "threadMessageIds": [
-      "<138b4722-43fa-ece6-2aa8-4d0bc0ca395e@techpyre.eu>"
+      "<138b4722-43fa-ece6-2aa8-4d0bc0ca395e@techpyre.eu>",
+      "<76c89b99-cf62-11ee-b4ed-5454fdb796f5@techpyre.eu>"
     ]
   },
   "audit": {

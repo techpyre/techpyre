@@ -14,10 +14,11 @@
     "vatNumber": "02193520968",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Devi%20Car%20-%20Centro%20Revisioni",
     "originalLandingUrl": "https://revisionidevicar.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<a75bbe10-62bc-b814-8ece-798e3427a05a@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<df46f5a2-f023-959d-866b-8266d6e226cf@techpyre.eu>",
     "threadMessageIds": [
-      "<a75bbe10-62bc-b814-8ece-798e3427a05a@techpyre.eu>"
+      "<a75bbe10-62bc-b814-8ece-798e3427a05a@techpyre.eu>",
+      "<df46f5a2-f023-959d-866b-8266d6e226cf@techpyre.eu>"
     ]
   },
   "audit": {

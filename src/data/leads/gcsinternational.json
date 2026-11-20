@@ -14,10 +14,11 @@
     "vatNumber": "02370321206",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=G.C.S.%20International",
     "originalLandingUrl": "http://www.gcsinternational.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<35a122b7-64c3-8d8d-61ce-3b0a7c8033d6@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<bf48a78f-df82-4c6c-6cad-0d7f20f73e67@techpyre.eu>",
     "threadMessageIds": [
-      "<35a122b7-64c3-8d8d-61ce-3b0a7c8033d6@techpyre.eu>"
+      "<35a122b7-64c3-8d8d-61ce-3b0a7c8033d6@techpyre.eu>",
+      "<bf48a78f-df82-4c6c-6cad-0d7f20f73e67@techpyre.eu>"
     ]
   },
   "audit": {

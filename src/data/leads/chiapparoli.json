@@ -14,10 +14,11 @@
     "vatNumber": "01662261203",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Chiapparoli%20Logistica%20Spa",
     "originalLandingUrl": "http://www.chiapparoli.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<42f901e1-b85b-4ae3-955d-bf556bf04d39@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<1b369ab8-a636-b8e6-1c4b-dd5452607478@techpyre.eu>",
     "threadMessageIds": [
-      "<42f901e1-b85b-4ae3-955d-bf556bf04d39@techpyre.eu>"
+      "<42f901e1-b85b-4ae3-955d-bf556bf04d39@techpyre.eu>",
+      "<1b369ab8-a636-b8e6-1c4b-dd5452607478@techpyre.eu>"
     ]
   },
   "audit": {

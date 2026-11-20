@@ -14,10 +14,11 @@
     "vatNumber": "03164411203",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Maxima",
     "originalLandingUrl": "http://www.maximabo.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<32771217-249d-c0a1-fa03-2422a35a8e8b@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<247e1493-d915-44ab-443f-04db975c084e@techpyre.eu>",
     "threadMessageIds": [
-      "<32771217-249d-c0a1-fa03-2422a35a8e8b@techpyre.eu>"
+      "<32771217-249d-c0a1-fa03-2422a35a8e8b@techpyre.eu>",
+      "<247e1493-d915-44ab-443f-04db975c084e@techpyre.eu>"
     ]
   },
   "audit": {

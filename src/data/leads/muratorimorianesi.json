@@ -14,10 +14,11 @@
     "emailScore": 65,
     "decisionMakerFirstName": "Federico",
     "decisionMakerRole": "Titolare",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<15ff9ddc-de03-108a-6f71-7c41f7a38520@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<da32d890-60ea-212f-ab4a-58ea29a47660@techpyre.eu>",
     "threadMessageIds": [
-      "<15ff9ddc-de03-108a-6f71-7c41f7a38520@techpyre.eu>"
+      "<15ff9ddc-de03-108a-6f71-7c41f7a38520@techpyre.eu>",
+      "<da32d890-60ea-212f-ab4a-58ea29a47660@techpyre.eu>"
     ]
   },
   "audit": {

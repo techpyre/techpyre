@@ -14,10 +14,11 @@
     "vatNumber": "03733161206",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Eurolegno%20Bo",
     "originalLandingUrl": "https://eurolegno.eu",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<844ca66c-f15e-ce0e-b72e-d00c7271e0c7@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<61c5d320-8946-8800-91f2-63919cc79afb@techpyre.eu>",
     "threadMessageIds": [
-      "<844ca66c-f15e-ce0e-b72e-d00c7271e0c7@techpyre.eu>"
+      "<844ca66c-f15e-ce0e-b72e-d00c7271e0c7@techpyre.eu>",
+      "<61c5d320-8946-8800-91f2-63919cc79afb@techpyre.eu>"
     ]
   },
   "audit": {

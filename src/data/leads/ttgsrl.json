@@ -3,9 +3,9 @@
   "archetype": "b2b-authority",
   "meta": {
     "companyName": "TTG Srl",
-    "decisionMakerName": "Titolare TTG Srl",
+    "decisionMakerName": "Direzione TTG Srl",
     "decisionMakerFirstName": null,
-    "decisionMakerRole": null,
+    "decisionMakerRole": "Direzione Aziendale",
     "isGenericInbox": true,
     "emailScore": 35,
     "targetEmail": "info@ttgsrl.it",
@@ -14,7 +14,11 @@
     "vatNumber": "02150740989",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=TTG%20Srl",
     "originalLandingUrl": "https://www.ttgsrl.it",
-    "status": "NEW"
+    "status": "CONTACTED_STEP_1",
+    "lastSentMessageId": "<f65966a7-0dfb-6f3b-f27f-9b6ca6f89c16@techpyre.eu>",
+    "threadMessageIds": [
+      "<f65966a7-0dfb-6f3b-f27f-9b6ca6f89c16@techpyre.eu>"
+    ]
   },
   "audit": {
     "originalLcpSeconds": 7.9,

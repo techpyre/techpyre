@@ -14,10 +14,11 @@
     "vatNumber": "02051880389",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Carpenteria%20Grillanda",
     "originalLandingUrl": "http://www.carpenteriagrillanda.com",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<c61cf98a-9aef-821d-dc09-c6762b073acb@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<a5095152-b34f-10ff-37a3-a0438faa7fdc@techpyre.eu>",
     "threadMessageIds": [
-      "<c61cf98a-9aef-821d-dc09-c6762b073acb@techpyre.eu>"
+      "<c61cf98a-9aef-821d-dc09-c6762b073acb@techpyre.eu>",
+      "<a5095152-b34f-10ff-37a3-a0438faa7fdc@techpyre.eu>"
     ]
   },
   "audit": {

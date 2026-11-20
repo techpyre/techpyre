@@ -14,10 +14,11 @@
     "vatNumber": "03575951201",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Ditta%20Terzini%20Showroom%20Porte%20e%20Finestre",
     "originalLandingUrl": "http://www.dittaterzini.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<5df392d1-4485-b218-44d4-d328faf99f07@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<6e5b6190-5187-b610-145f-8e4b63dc5fe1@techpyre.eu>",
     "threadMessageIds": [
-      "<5df392d1-4485-b218-44d4-d328faf99f07@techpyre.eu>"
+      "<5df392d1-4485-b218-44d4-d328faf99f07@techpyre.eu>",
+      "<6e5b6190-5187-b610-145f-8e4b63dc5fe1@techpyre.eu>"
     ]
   },
   "audit": {

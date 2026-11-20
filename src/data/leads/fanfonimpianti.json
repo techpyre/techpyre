@@ -14,10 +14,11 @@
     "vatNumber": "01806370340",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Fanfoni%20Impianti",
     "originalLandingUrl": "https://www.fanfonimpianti.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<4fd1093f-ddfb-bde9-1a9c-abfeeefbca60@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<01238b31-e246-05dc-47d7-13f609a3dd0c@techpyre.eu>",
     "threadMessageIds": [
-      "<4fd1093f-ddfb-bde9-1a9c-abfeeefbca60@techpyre.eu>"
+      "<4fd1093f-ddfb-bde9-1a9c-abfeeefbca60@techpyre.eu>",
+      "<01238b31-e246-05dc-47d7-13f609a3dd0c@techpyre.eu>"
     ]
   },
   "audit": {

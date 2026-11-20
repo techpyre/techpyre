@@ -14,10 +14,11 @@
     "vatNumber": "03698870981",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Ironlux%20%20Polishing%20Concept",
     "originalLandingUrl": "https://www.ironlux.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<9127a2a9-c090-582a-f60a-21a34a0cc160@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<9afcb19e-5055-02f0-3c7e-5fdc92885161@techpyre.eu>",
     "threadMessageIds": [
-      "<9127a2a9-c090-582a-f60a-21a34a0cc160@techpyre.eu>"
+      "<9127a2a9-c090-582a-f60a-21a34a0cc160@techpyre.eu>",
+      "<9afcb19e-5055-02f0-3c7e-5fdc92885161@techpyre.eu>"
     ]
   },
   "audit": {

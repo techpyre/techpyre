@@ -14,10 +14,11 @@
     "vatNumber": "00184990349",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Ferretti%20Livio",
     "originalLandingUrl": "https://www.ferrettilivio.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<f9a0edcf-0061-a089-84ae-9d69c8f48702@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<fc07f7c0-b38f-6df6-749a-35b36cf15acb@techpyre.eu>",
     "threadMessageIds": [
-      "<f9a0edcf-0061-a089-84ae-9d69c8f48702@techpyre.eu>"
+      "<f9a0edcf-0061-a089-84ae-9d69c8f48702@techpyre.eu>",
+      "<fc07f7c0-b38f-6df6-749a-35b36cf15acb@techpyre.eu>"
     ]
   },
   "audit": {

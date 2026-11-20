@@ -14,10 +14,11 @@
     "vatNumber": "00098720097",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Cooperativa%20Augusto%20Bazzino",
     "originalLandingUrl": "http://www.cooperativabazzino.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<ff5dc710-c3a7-78af-1fe6-3ad11bc6cde0@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<7347c457-7c38-6708-ee3d-7d38d17f7b3d@techpyre.eu>",
     "threadMessageIds": [
-      "<ff5dc710-c3a7-78af-1fe6-3ad11bc6cde0@techpyre.eu>"
+      "<ff5dc710-c3a7-78af-1fe6-3ad11bc6cde0@techpyre.eu>",
+      "<7347c457-7c38-6708-ee3d-7d38d17f7b3d@techpyre.eu>"
     ]
   },
   "audit": {

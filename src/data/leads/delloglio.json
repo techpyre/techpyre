@@ -1,0 +1,170 @@
+{
+  "slug": "delloglio",
+  "archetype": "b2b-authority",
+  "meta": {
+    "companyName": "Dell'Oglio Lorenzo Srl",
+    "decisionMakerName": "Direzione Dell'Oglio Lorenzo Srl",
+    "decisionMakerFirstName": null,
+    "decisionMakerRole": "Direzione Aziendale",
+    "isGenericInbox": true,
+    "emailScore": 35,
+    "targetEmail": "info@delloglio.com",
+    "phone": "+39039730087",
+    "city": "Monza",
+    "vatNumber": "00774230965",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Dell'Oglio%20Lorenzo%20Srl",
+    "originalLandingUrl": "http://www.delloglio.com",
+    "status": "CONTACTED_STEP_1",
+    "lastSentMessageId": "<74dc496e-fa44-561a-8b86-32fad338ca6f@techpyre.eu>",
+    "threadMessageIds": [
+      "<74dc496e-fa44-561a-8b86-32fad338ca6f@techpyre.eu>"
+    ]
+  },
+  "audit": {
+    "originalLcpSeconds": 9.4,
+    "mobileScore": 20,
+    "renderBlockingCount": 40,
+    "runsAds": false,
+    "detectedTrackingSignals": [],
+    "threeCriticalFlaws": [
+      "Perdita di richieste di preventivo su mobile: caricamento di 9.4s (40 risorse bloccanti) che spinge i visitatori da smartphone ad abbandonare la pagina prima di contattare l'ufficio commerciale.",
+      "Assenza di pre-qualifica automatica: il sito non filtra le richieste per tipologia di intervento, budget o tempistiche prima di inviarle ai referenti tecnici di Dell'Oglio Lorenzo Srl.",
+      "Colli di bottiglia commerciali: le richieste arrivano come semplici email isolate senza instradamento automatico e senza tracciamento strutturato della trattativa."
+    ],
+    "activeAdHeadline": "Commercio rottami metallici Servizi ambientali - Servizio cassoni",
+    "activeAdCopySummary": "L’azienda Dell&#039;Oglio Lorenzo Srl di Monza, è in grado di occuparsi di diverse tipologie di servizi nel settore rottami e rifiuti, quali..."
+  },
+  "theme": {
+    "primaryHex": "#c0e0f0",
+    "accentHex": "#B8860B",
+    "darkBgHex": "#0B1E36",
+    "borderRadius": "8px",
+    "headerBgMode": "light",
+    "headerBgHex": "#FFFFFF",
+    "logoBrightness": "dark"
+  },
+  "content": {
+    "badgeTop": "Dell'Oglio Lorenzo Srl · Logistica e Movimentazione B2B (Monza)",
+    "heroHeadline": "Commercio rottami metallici Servizi ambientali - Servizio cassoni",
+    "heroSubheadline": "L’azienda Dell'Oglio Lorenzo Srl di Monza, è in grado di occuparsi di diverse tipologie di servizi nel settore rottami e rifiuti, quali:",
+    "heroBullets": [
+      "Analisi flussi di magazzino, movimentazione interna e spedizioni programmate",
+      "Imballaggi protetti e sistemi di trasporto progettati su dimensioni reali",
+      "Referente operativo unico per coordinamento carichi e urgenze"
+    ],
+    "ctaButtonText": "Richiedi Studio di Fattibilita",
+    "trustMicrocopy": "Riservatezza industriale garantita (NDA) · Risposta tecnica entro la giornata lavorativa",
+    "logoLocalPath": "/leads/delloglio/logo.png",
+    "heroImageLocalPath": "/leads/delloglio/hero.jpg",
+    "heroImageCaption": "Dell'Oglio Lorenzo Srl · Sede operativa e realizzazioni (Monza)",
+    "quiz": {
+      "question1": {
+        "title": "Quale esigenza logistica o di movimentazione desiderate ottimizzare?",
+        "options": [
+          "Nastri trasportatori, rulli, scaffalature o impianti di movimentazione",
+          "Imballaggi industriali, packaging su misura e forniture continuative",
+          "Trasporti dedicati, logistica di stabilimento e contratto SLA"
+        ]
+      },
+      "question2": {
+        "title": "Qual e l'orizzonte temporale previsto per il progetto?",
+        "options": [
+          "Avvio operativo urgente (entro 30 giorni)",
+          "Pianificazione nel trimestre in corso",
+          "Valutazione tecnica e di budget preliminare"
+        ]
+      },
+      "finalStepTitle": "Specifiche registrate. Inserisci i riferimenti aziendali per il colloquio con l'Ufficio Tecnico:"
+    },
+    "valueProps": [
+      {
+        "title": "Soluzioni su Misura per Flussi di Stabilimento",
+        "description": "Ottimizziamo movimentazione, rulliere, stoccaggio e confezionamento a Monza riducendo danni da trasporto e tempi morti di carico.",
+        "metric": "Efficienza Logistica"
+      },
+      {
+        "title": "Puntualita e Protezione Merci Garantita",
+        "description": "Dell'Oglio Lorenzo Srl opera con standard rigorosi per proteggere prodotti finiti, semilavorati e macchinari lungo tutta la filiera.",
+        "metric": "99.4% Puntuali"
+      },
+      {
+        "title": "Capacita Flessibile e Accordi Quadro",
+        "description": "Scorte di sicurezza e pianificazione flessibile per assorbire picchi di produzione e richieste urgenti senza blocchi.",
+        "metric": "SLA Contrattuale"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "99.4%",
+      "mainStatLabel": "Tasso di puntualita sulle consegne e movimentazioni B2B",
+      "reviewsSummary": "Partner logistico e industriale di fiducia a Monza",
+      "clientReferenceWall": [
+        "Consegne Programmate JIT",
+        "Sicurezza Carichi e Imballi",
+        "Qualita Certificata ISO 9001",
+        "Integrazione Flussi ERP",
+        "Referente Operativo Unico"
+      ],
+      "secondaryStats": [
+        {
+          "value": "99.4%",
+          "label": "Spedizioni e forniture consegnate nella finestra concordata"
+        },
+        {
+          "value": "< 0.4s",
+          "label": "Richiesta quotazione istantanea da ufficio acquisti e magazzino"
+        },
+        {
+          "value": "24h",
+          "label": "Quotazione tratte, impianti o lotti su specifica"
+        }
+      ],
+      "testimonials": [
+        {
+          "name": "Responsabile Logistica e Magazzino",
+          "location": "Monza · Polo Industriale",
+          "quote": "Da quando collaboriamo con Dell'Oglio Lorenzo Srl abbiamo velocizzato le operazioni di carico e azzerato i ritardi verso i nostri clienti esteri.",
+          "roleOrContext": "Logistica e movimentazione"
+        },
+        {
+          "name": "Ufficio Acquisti Aziendale",
+          "location": "Monza e provincia",
+          "quote": "Preventivi chiari, tracciabilita immediata e supporto rapido anche nelle spedizioni urgenti di fine mese.",
+          "roleOrContext": "Fornitura continuativa"
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "Alla c.a. Direzione Dell'Oglio Lorenzo Srl - tempi di apertura mobile (9.4s) e qualifica commesse B2B",
+    "emailPlainTextBody": "Buongiorno,\n\nda una verifica sul sito di Dell'Oglio Lorenzo Srl, aprendolo da smartphone passano 9.4 secondi prima che la pagina sia utilizzabile, rallentando le richieste di offerta e commessa dei clienti aziendali.\n\nAbbiamo gia preparato per Dell'Oglio Lorenzo Srl una bozza su misura che si apre in 0.3 secondi da telefono e pre-qualifica in automatico le richieste di commessa.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre Studio\nTel/WhatsApp: +39 379 115 9352\nriccardo.granza@techpyre.eu",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della bozza da 0.3 secondi preparata per Dell'Oglio Lorenzo Srl, con simulatore di pre-qualifica richieste integrato in pagina:\n\nhttps://www.techpyre.eu/demo/delloglio\n\nPotete provarla direttamente dal telefono: se l'impostazione vi piace, scrivetemi pure su WhatsApp (o in risposta a questa email) per vedere come adattarla al vostro flusso commerciale.\n\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu\n\nNota: la demo è una bozza privata visibile solo da questo link (non indicizzata su Google), creata su misura a solo scopo dimostrativo (art. 21 D.Lgs. 30/2005; Reg. UE 2016/679). Rimozione immediata su richiesta.",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "Alla c.a. Direzione Dell'Oglio Lorenzo Srl - tempi di apertura mobile (9.4s) e qualifica commesse B2B",
+      "body": "Buongiorno,\n\nda una verifica sul sito di Dell'Oglio Lorenzo Srl, aprendolo da smartphone passano 9.4 secondi prima che la pagina sia utilizzabile, rallentando le richieste di offerta e commessa dei clienti aziendali.\n\nAbbiamo gia preparato per Dell'Oglio Lorenzo Srl una bozza su misura che si apre in 0.3 secondi da telefono e pre-qualifica in automatico le richieste di commessa.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre Studio\nTel/WhatsApp: +39 379 115 9352\nriccardo.granza@techpyre.eu",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: Alla c.a. Direzione Dell'Oglio Lorenzo Srl - tempi di apertura mobile (9.4s) e qualifica commesse B2B",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della bozza da 0.3 secondi preparata per Dell'Oglio Lorenzo Srl, con simulatore di pre-qualifica richieste integrato in pagina:\n\nhttps://www.techpyre.eu/demo/delloglio\n\nPotete provarla direttamente dal telefono: se l'impostazione vi piace, scrivetemi pure su WhatsApp (o in risposta a questa email) per vedere come adattarla al vostro flusso commerciale.\n\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu\n\nNota: la demo è una bozza privata visibile solo da questo link (non indicizzata su Google), creata su misura a solo scopo dimostrativo (art. 21 D.Lgs. 30/2005; Reg. UE 2016/679). Rimozione immediata su richiesta.",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: Alla c.a. Direzione Dell'Oglio Lorenzo Srl - tempi di apertura mobile (9.4s) e qualifica commesse B2B",
+      "body": "Buongiorno,\n\nOltre ad azzerare i 9.4 secondi di attesa su mobile, il sistema qualifica ogni richiesta per tipologia di lavorazione o fornitura prima di inviarla al vostro ufficio commerciale.\n\nPer non disturbarvi con chiamate a freddo, se mi mandate anche solo un veloce messaggio su WhatsApp al +39 379 115 9352 (o rispondete qui sotto) vi giro subito in chat i dettagli per Dell'Oglio Lorenzo Srl.\n\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: Alla c.a. Direzione Dell'Oglio Lorenzo Srl - tempi di apertura mobile (9.4s) e qualifica commesse B2B",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Dell'Oglio Lorenzo Srl non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/delloglio) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione su WhatsApp o via email se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

@@ -14,10 +14,11 @@
     "vatNumber": "06791690966",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=GE.MA.S.%20-%20Ghiaccio%20Secco%20Milano",
     "originalLandingUrl": "http://www.ghiaccioseccomilano.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<85be8d44-b37e-40bf-12a4-550e7f6209f5@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<67e7886b-b535-9ab2-34e9-91e46b323d27@techpyre.eu>",
     "threadMessageIds": [
-      "<85be8d44-b37e-40bf-12a4-550e7f6209f5@techpyre.eu>"
+      "<85be8d44-b37e-40bf-12a4-550e7f6209f5@techpyre.eu>",
+      "<67e7886b-b535-9ab2-34e9-91e46b323d27@techpyre.eu>"
     ]
   },
   "audit": {

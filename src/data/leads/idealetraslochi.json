@@ -14,10 +14,11 @@
     "vatNumber": "05072100232",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Ideale%20Traslochi",
     "originalLandingUrl": "http://www.idealetraslochi.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<6a2f902b-052e-8305-b037-d161a640cb08@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<db41d6d8-a5c8-6f55-f117-6b4aa6b843e5@techpyre.eu>",
     "threadMessageIds": [
-      "<6a2f902b-052e-8305-b037-d161a640cb08@techpyre.eu>"
+      "<6a2f902b-052e-8305-b037-d161a640cb08@techpyre.eu>",
+      "<db41d6d8-a5c8-6f55-f117-6b4aa6b843e5@techpyre.eu>"
     ]
   },
   "audit": {

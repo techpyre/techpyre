@@ -14,10 +14,11 @@
     "vatNumber": "11152880966",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=CARTARIA%20MILANO%20SRL",
     "originalLandingUrl": "https://www.cartariamilano.com",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<f2bffa38-4b37-038a-49ce-7e08673562f8@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<7ae6eb53-09ad-283f-82cb-b3c7011e9928@techpyre.eu>",
     "threadMessageIds": [
-      "<f2bffa38-4b37-038a-49ce-7e08673562f8@techpyre.eu>"
+      "<f2bffa38-4b37-038a-49ce-7e08673562f8@techpyre.eu>",
+      "<7ae6eb53-09ad-283f-82cb-b3c7011e9928@techpyre.eu>"
     ]
   },
   "audit": {

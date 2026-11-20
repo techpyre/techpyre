@@ -14,10 +14,11 @@
     "vatNumber": "03542170364",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Tecno-3d%20Engineering",
     "originalLandingUrl": "http://www.tecno-3d.com",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<360e5042-48a4-2b65-cac5-6a8e3077f353@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<df75c74a-e0cb-d58d-1e6d-83e59f630547@techpyre.eu>",
     "threadMessageIds": [
-      "<360e5042-48a4-2b65-cac5-6a8e3077f353@techpyre.eu>"
+      "<360e5042-48a4-2b65-cac5-6a8e3077f353@techpyre.eu>",
+      "<df75c74a-e0cb-d58d-1e6d-83e59f630547@techpyre.eu>"
     ]
   },
   "audit": {

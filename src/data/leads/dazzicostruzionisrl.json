@@ -14,10 +14,11 @@
     "vatNumber": "02557690340",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Dazzicostruzionisrl",
     "originalLandingUrl": "https://www.dazzicostruzionisrl.com",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<4173aa80-a669-9944-53ef-eb6f75579296@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<af78e037-3991-3598-e8a7-70f344c74e03@techpyre.eu>",
     "threadMessageIds": [
-      "<4173aa80-a669-9944-53ef-eb6f75579296@techpyre.eu>"
+      "<4173aa80-a669-9944-53ef-eb6f75579296@techpyre.eu>",
+      "<af78e037-3991-3598-e8a7-70f344c74e03@techpyre.eu>"
     ]
   },
   "audit": {

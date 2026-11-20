@@ -14,10 +14,11 @@
     "vatNumber": "03273760367",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Tecnoindustria",
     "originalLandingUrl": "http://www.tecnoindustriasrl.com",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<b4459135-217a-7ff1-9240-c47deb4ca810@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<9e3a7bf8-3f10-7cdf-3349-26ab43e51b86@techpyre.eu>",
     "threadMessageIds": [
-      "<b4459135-217a-7ff1-9240-c47deb4ca810@techpyre.eu>"
+      "<b4459135-217a-7ff1-9240-c47deb4ca810@techpyre.eu>",
+      "<9e3a7bf8-3f10-7cdf-3349-26ab43e51b86@techpyre.eu>"
     ]
   },
   "audit": {

@@ -14,10 +14,11 @@
     "vatNumber": "01494810359",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Anceschi%20Alberto%20%26%20Paolo",
     "originalLandingUrl": "https://www.anceschi.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<730cc142-9427-b8fe-3bb0-3247d666dcea@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<6619af62-c0d1-483b-a4e5-bb4d61837aac@techpyre.eu>",
     "threadMessageIds": [
-      "<730cc142-9427-b8fe-3bb0-3247d666dcea@techpyre.eu>"
+      "<730cc142-9427-b8fe-3bb0-3247d666dcea@techpyre.eu>",
+      "<6619af62-c0d1-483b-a4e5-bb4d61837aac@techpyre.eu>"
     ]
   },
   "audit": {

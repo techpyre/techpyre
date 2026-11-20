@@ -14,10 +14,11 @@
     "vatNumber": "00695320986",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=GALVANICA%20MONTINI%20PIETRO%20%26%20FIGLI",
     "originalLandingUrl": "http://www.galvanicamontini.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<7c9f07e5-8b0f-3aba-66be-688488e072b1@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<5c746f23-959c-6fac-8720-6f5c38c83443@techpyre.eu>",
     "threadMessageIds": [
-      "<7c9f07e5-8b0f-3aba-66be-688488e072b1@techpyre.eu>"
+      "<7c9f07e5-8b0f-3aba-66be-688488e072b1@techpyre.eu>",
+      "<5c746f23-959c-6fac-8720-6f5c38c83443@techpyre.eu>"
     ]
   },
   "audit": {

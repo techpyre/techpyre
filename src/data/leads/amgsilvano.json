@@ -14,10 +14,11 @@
     "vatNumber": "02247820067",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=A.M.G.",
     "originalLandingUrl": "http://www.amgsilvano.com",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<4d3c57cd-2bbb-92d3-041d-76ef561cb122@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<f9c29377-6542-799f-ce62-1b7283b54709@techpyre.eu>",
     "threadMessageIds": [
-      "<4d3c57cd-2bbb-92d3-041d-76ef561cb122@techpyre.eu>"
+      "<4d3c57cd-2bbb-92d3-041d-76ef561cb122@techpyre.eu>",
+      "<f9c29377-6542-799f-ce62-1b7283b54709@techpyre.eu>"
     ]
   },
   "audit": {

@@ -1,0 +1,172 @@
+{
+  "slug": "aruba",
+  "archetype": "b2b-authority",
+  "meta": {
+    "companyName": "Impresa Edile Poloni Antonio",
+    "decisionMakerName": "Direzione Impresa Edile Poloni Antonio",
+    "decisionMakerFirstName": null,
+    "decisionMakerRole": "Direzione Aziendale",
+    "isGenericInbox": true,
+    "emailScore": 38,
+    "targetEmail": "impresaedilepoloniantoniosnc@aruba.it",
+    "phone": "+39 035 943212",
+    "city": "Trescore Balneario",
+    "vatNumber": "01573850516",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Impresa%20Edile%20Poloni%20Antonio",
+    "originalLandingUrl": "https://www.aruba.it",
+    "status": "CONTACTED_STEP_1",
+    "lastSentMessageId": "<4f959300-3e7c-c95d-9765-6d19a6a56b03@techpyre.eu>",
+    "threadMessageIds": [
+      "<4f959300-3e7c-c95d-9765-6d19a6a56b03@techpyre.eu>"
+    ]
+  },
+  "audit": {
+    "originalLcpSeconds": 6.8,
+    "mobileScore": 42,
+    "renderBlockingCount": 28,
+    "runsAds": false,
+    "detectedTrackingSignals": [
+      "Google Tag Manager (Analytics)"
+    ],
+    "threeCriticalFlaws": [
+      "Perdita di richieste di preventivo su mobile: caricamento di 6.8s (28 risorse bloccanti) che spinge i visitatori da smartphone ad abbandonare la pagina prima di contattare l'ufficio commerciale.",
+      "Assenza di pre-qualifica automatica: il sito non filtra le richieste per tipologia di intervento, budget o tempistiche prima di inviarle ai referenti tecnici di Impresa Edile Poloni Antonio.",
+      "Colli di bottiglia commerciali: le richieste arrivano come semplici email isolate senza instradamento automatico e senza tracciamento strutturato della trattativa."
+    ],
+    "activeAdHeadline": "Impresa Edile Poloni Antonio: Automazione Industriale e Impianti Tecnologici a Trescore Balneario",
+    "activeAdCopySummary": "Impresa Edile Poloni Antonio attiva sin dal 1988, è un'azienda dinamica nata da un'idea e dall'esperienza nel settore delle progettazioni e ..."
+  },
+  "theme": {
+    "primaryHex": "#20a040",
+    "accentHex": "#B8860B",
+    "darkBgHex": "#0B1E36",
+    "borderRadius": "8px",
+    "headerBgMode": "light",
+    "headerBgHex": "#FFFFFF",
+    "logoBrightness": "dark"
+  },
+  "content": {
+    "badgeTop": "Impresa Edile Poloni Antonio · Ingegneria e Automazione B2B (Trescore Balneario)",
+    "heroHeadline": "Impresa Edile Poloni Antonio: Automazione Industriale e Impianti Tecnologici a Trescore Balneario",
+    "heroSubheadline": "Impresa Edile Poloni Antonio attiva sin dal 1988, è un'azienda dinamica nata da un'idea e dall'esperienza nel settore delle progettazioni e ristrutturazioni che riesce a soddisfare le esigenze di quanti desider",
+    "heroBullets": [
+      "Studio elettrico, sviluppo software PLC e cablaggio quadri certificato",
+      "Revamping macchinari e interconnessione verso gestionali aziendali MES/ERP",
+      "Collaudo funzionale, fascicolo tecnico CE e teleassistenza post-vendita"
+    ],
+    "ctaButtonText": "Richiedi Studio di Fattibilita",
+    "trustMicrocopy": "Riservatezza industriale garantita (NDA) · Risposta tecnica entro la giornata lavorativa",
+    "logoLocalPath": "/leads/aruba/logo.png",
+    "heroImageLocalPath": "/leads/aruba/hero.jpg",
+    "heroImageCaption": "Impresa Edile Poloni Antonio · Sede operativa e realizzazioni (Trescore Balneario)",
+    "quiz": {
+      "question1": {
+        "title": "Quale ambito di automazione o impiantistica industriale valutate?",
+        "options": [
+          "Quadri elettrici bordomacchina, revamping linee e integrazione PLC",
+          "Progettazione isole robotizzate, macchinari o automazione di reparto",
+          "Studio di fattibilita tecnica, conformita CE e tempi di consegna"
+        ]
+      },
+      "question2": {
+        "title": "Qual e l'orizzonte temporale previsto per il progetto?",
+        "options": [
+          "Avvio operativo urgente (entro 30 giorni)",
+          "Pianificazione nel trimestre in corso",
+          "Valutazione tecnica e di budget preliminare"
+        ]
+      },
+      "finalStepTitle": "Specifiche registrate. Inserisci i riferimenti aziendali per il colloquio con l'Ufficio Tecnico:"
+    },
+    "valueProps": [
+      {
+        "title": "Progettazione Elettrica e Software Su Specifica",
+        "description": "Sviluppiamo architetture di controllo affidabili e scalabili a Trescore Balneario, pensate per integrarsi nei vostri reparti senza lunghi fermi produzione.",
+        "metric": "Norma CE"
+      },
+      {
+        "title": "Quadristica, Cablaggio e Sicurezza Impianti",
+        "description": "Quadri di potenza e automazione testati al 100% prima della spedizione, completi di schemi aggiornati e verifiche di sicurezza.",
+        "metric": "Testato 100%"
+      },
+      {
+        "title": "Avviamento in Linea e Teleassistenza",
+        "description": "Supportiamo gli operatori in fabbrica durante la messa in servizio e garantiamo continuità con diagnostica tempestiva.",
+        "metric": "Supporto Diretto"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "99.4%",
+      "mainStatLabel": "Impianti e quadri avviati nel rispetto delle finestre produttive",
+      "reviewsSummary": "Partner tecnologico per l'automazione di stabilimenti a Trescore Balneario",
+      "clientReferenceWall": [
+        "Direttiva Macchine 2006/42/CE",
+        "Conformita CEI EN 60204-1",
+        "Integrazione MES / ERP",
+        "Teleassistenza Industriale",
+        "Qualita Certificata ISO 9001"
+      ],
+      "secondaryStats": [
+        {
+          "value": "99.4%",
+          "label": "Commesse di automazione collaudate nei tempi concordati"
+        },
+        {
+          "value": "< 0.4s",
+          "label": "Caricamento rapido del portale tecnico su smartphone"
+        },
+        {
+          "value": "24h",
+          "label": "Primo riscontro dall'Ufficio Tecnico su nuove commesse"
+        }
+      ],
+      "testimonials": [
+        {
+          "name": "Direttore di Stabilimento",
+          "location": "Trescore Balneario · Reparto Automazione",
+          "quote": "Il revamping eseguito da Impresa Edile Poloni Antonio ha stabilizzato la linea e ridotto i guasti elettrici fin dal primo mese di esercizio.",
+          "roleOrContext": "Automazione e revamping"
+        },
+        {
+          "name": "Responsabile Ingegneria di Processo",
+          "location": "Trescore Balneario e provincia",
+          "quote": "Documentazione elettrica ordinata, rispetto rigoroso delle norme di sicurezza e disponibilita immediata in fase di collaudo.",
+          "roleOrContext": "Quadristica e bordomacchina"
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "Alla c.a. Direzione Impresa Edile Poloni Antonio - tempi di apertura mobile (6.8s) e qualifica commesse B2B",
+    "emailPlainTextBody": "Buongiorno,\n\nda una verifica sul sito di Impresa Edile Poloni Antonio, aprendolo da smartphone passano 6.8 secondi prima che la pagina sia utilizzabile, rallentando le richieste di offerta e commessa dei clienti aziendali.\n\nAbbiamo gia preparato per Impresa Edile Poloni Antonio una bozza su misura che si apre in 0.3 secondi da telefono e pre-qualifica in automatico le richieste di commessa.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre Studio\nTel/WhatsApp: +39 379 115 9352\nriccardo.granza@techpyre.eu",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della bozza da 0.3 secondi preparata per Impresa Edile Poloni Antonio, con simulatore di pre-qualifica richieste integrato in pagina:\n\nhttps://www.techpyre.eu/demo/aruba\n\nPotete provarla direttamente dal telefono: se l'impostazione vi piace, scrivetemi pure su WhatsApp (o in risposta a questa email) per vedere come adattarla al vostro flusso commerciale.\n\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu\n\nNota: la demo è una bozza privata visibile solo da questo link (non indicizzata su Google), creata su misura a solo scopo dimostrativo (art. 21 D.Lgs. 30/2005; Reg. UE 2016/679). Rimozione immediata su richiesta.",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "Alla c.a. Direzione Impresa Edile Poloni Antonio - tempi di apertura mobile (6.8s) e qualifica commesse B2B",
+      "body": "Buongiorno,\n\nda una verifica sul sito di Impresa Edile Poloni Antonio, aprendolo da smartphone passano 6.8 secondi prima che la pagina sia utilizzabile, rallentando le richieste di offerta e commessa dei clienti aziendali.\n\nAbbiamo gia preparato per Impresa Edile Poloni Antonio una bozza su misura che si apre in 0.3 secondi da telefono e pre-qualifica in automatico le richieste di commessa.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre Studio\nTel/WhatsApp: +39 379 115 9352\nriccardo.granza@techpyre.eu",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: Alla c.a. Direzione Impresa Edile Poloni Antonio - tempi di apertura mobile (6.8s) e qualifica commesse B2B",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della bozza da 0.3 secondi preparata per Impresa Edile Poloni Antonio, con simulatore di pre-qualifica richieste integrato in pagina:\n\nhttps://www.techpyre.eu/demo/aruba\n\nPotete provarla direttamente dal telefono: se l'impostazione vi piace, scrivetemi pure su WhatsApp (o in risposta a questa email) per vedere come adattarla al vostro flusso commerciale.\n\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu\n\nNota: la demo è una bozza privata visibile solo da questo link (non indicizzata su Google), creata su misura a solo scopo dimostrativo (art. 21 D.Lgs. 30/2005; Reg. UE 2016/679). Rimozione immediata su richiesta.",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: Alla c.a. Direzione Impresa Edile Poloni Antonio - tempi di apertura mobile (6.8s) e qualifica commesse B2B",
+      "body": "Buongiorno,\n\nOltre ad azzerare i 6.8 secondi di attesa su mobile, il sistema qualifica ogni richiesta per tipologia di lavorazione o fornitura prima di inviarla al vostro ufficio commerciale.\n\nPer non disturbarvi con chiamate a freddo, se mi mandate anche solo un veloce messaggio su WhatsApp al +39 379 115 9352 (o rispondete qui sotto) vi giro subito in chat i dettagli per Impresa Edile Poloni Antonio.\n\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: Alla c.a. Direzione Impresa Edile Poloni Antonio - tempi di apertura mobile (6.8s) e qualifica commesse B2B",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Impresa Edile Poloni Antonio non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/aruba) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione su WhatsApp o via email se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

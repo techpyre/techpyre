@@ -1,0 +1,170 @@
+{
+  "slug": "seab",
+  "archetype": "b2b-authority",
+  "meta": {
+    "companyName": "Seab",
+    "decisionMakerName": "Direzione Seab",
+    "decisionMakerFirstName": null,
+    "decisionMakerRole": "Direzione Aziendale",
+    "isGenericInbox": true,
+    "emailScore": 38,
+    "targetEmail": "info.sparkasse-arena@seab.bz.it",
+    "phone": "+39 800 013066",
+    "city": "Bolzano",
+    "vatNumber": "02231010212",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Seab",
+    "originalLandingUrl": "http://www.seab.bz.it",
+    "status": "CONTACTED_STEP_1",
+    "lastSentMessageId": "<d3af6462-cc71-bf4b-bbcc-cd3b82fcc45c@techpyre.eu>",
+    "threadMessageIds": [
+      "<d3af6462-cc71-bf4b-bbcc-cd3b82fcc45c@techpyre.eu>"
+    ]
+  },
+  "audit": {
+    "originalLcpSeconds": 24.2,
+    "mobileScore": 15,
+    "renderBlockingCount": 122,
+    "runsAds": false,
+    "detectedTrackingSignals": [],
+    "threeCriticalFlaws": [
+      "Perdita di richieste di preventivo su mobile: caricamento di 24.2s (122 risorse bloccanti) che spinge i visitatori da smartphone ad abbandonare la pagina prima di contattare l'ufficio commerciale.",
+      "Assenza di pre-qualifica automatica: il sito non filtra le richieste per tipologia di intervento, budget o tempistiche prima di inviarle ai referenti tecnici di Seab.",
+      "Colli di bottiglia commerciali: le richieste arrivano come semplici email isolate senza instradamento automatico e senza tracciamento strutturato della trattativa."
+    ],
+    "activeAdHeadline": "SEAB: Im Dienste der Bürger | SEAB Bolzano/Bozen",
+    "activeAdCopySummary": "SEAB spa con sede a Bolzano, in via Lancia, 4/A si occupa di ambiente con i servizi di asporto rifiuti, raccolta differenziata e gestione de..."
+  },
+  "theme": {
+    "primaryHex": "#d01030",
+    "accentHex": "#B8860B",
+    "darkBgHex": "#0B1E36",
+    "borderRadius": "8px",
+    "headerBgMode": "light",
+    "headerBgHex": "#FFFFFF",
+    "logoBrightness": "dark"
+  },
+  "content": {
+    "badgeTop": "Seab · Divisione Oleodinamica e Fluidi (Bolzano)",
+    "heroHeadline": "SEAB: Im Dienste der Bürger | SEAB Bolzano/Bozen",
+    "heroSubheadline": "SEAB spa con sede a Bolzano, in via Lancia, 4/A si occupa di ambiente con i servizi di asporto rifiuti, raccolta differenziata e gestione del centro di riciclaggio, del servizio reti acqua e gas unitamente ai s",
+    "heroBullets": [
+      "Progettazione centraline, cilindri e circuiti fluidodinamici su specifica",
+      "Magazzino ricambi, tenute e raccordi per ridurre al minimo i fermi impianto",
+      "Collaudo in pressione certificato e assistenza tecnica diretta in stabilimento"
+    ],
+    "ctaButtonText": "Richiedi Studio di Fattibilita",
+    "trustMicrocopy": "Riservatezza industriale garantita (NDA) · Risposta tecnica entro la giornata lavorativa",
+    "logoLocalPath": "/leads/seab/logo.png",
+    "heroImageLocalPath": "/leads/seab/hero.jpg",
+    "heroImageCaption": "Seab · Sede operativa e realizzazioni (Bolzano)",
+    "quiz": {
+      "question1": {
+        "title": "Quale sistema o componentistica fluidodinamica desiderate approfondire?",
+        "options": [
+          "Centraline oleodinamiche, cilindri o gruppi valvole su specifica",
+          "Tenute industriali, guarnizioni tecniche, compressori o ricambistica",
+          "Revisione impianti esistenti e continuità di fornitura OEM"
+        ]
+      },
+      "question2": {
+        "title": "Qual e l'orizzonte temporale previsto per il progetto?",
+        "options": [
+          "Avvio operativo urgente (entro 30 giorni)",
+          "Pianificazione nel trimestre in corso",
+          "Valutazione tecnica e di budget preliminare"
+        ]
+      },
+      "finalStepTitle": "Specifiche registrate. Inserisci i riferimenti aziendali per il colloquio con l'Ufficio Tecnico:"
+    },
+    "valueProps": [
+      {
+        "title": "Dimensionamento e Progettazione Fluidodinamica",
+        "description": "Definiamo portate, pressioni di esercizio e cicli di lavoro insieme ai vostri progettisti a Bolzano, ottimizzando efficienza e sicurezza dell'impianto.",
+        "metric": "Collaudo Certificato"
+      },
+      {
+        "title": "Ricambistica Tecnica e Tenute ad Alte Prestazioni",
+        "description": "Forniamo guarnizioni, valvole e componentistica selezionata per resistere a carichi gravosi, alte temperature e cicli continui.",
+        "metric": "Zero Fermi Linea"
+      },
+      {
+        "title": "Service Rapido e Manutenzione Programmata",
+        "description": "Supporto tecnico tempestivo per revisioni, sostituzioni e adeguamenti normativi direttamente presso il vostro reparto produttivo.",
+        "metric": "SLA Dedicato"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "99.4%",
+      "mainStatLabel": "Affidabilita certificata su centraline, tenute e ricambi industriali",
+      "reviewsSummary": "Fornitore tecnico per impianti e costruttori di macchine a Bolzano",
+      "clientReferenceWall": [
+        "Collaudo a Banco in Pressione",
+        "Direttiva Macchine 2006/42/CE",
+        "Qualita Certificata ISO 9001",
+        "Ricambistica e Tenute OEM",
+        "Assistenza Tecnica Impianti"
+      ],
+      "secondaryStats": [
+        {
+          "value": "99.4%",
+          "label": "Sistemi collaudati e conformi alle pressioni di progetto"
+        },
+        {
+          "value": "< 0.4s",
+          "label": "Accesso istantaneo alle richieste tecniche anche da reparto"
+        },
+        {
+          "value": "24h",
+          "label": "Presa in carico ricambi e preventivazione tecnica B2B"
+        }
+      ],
+      "testimonials": [
+        {
+          "name": "Responsabile Manutenzione Stabilimento",
+          "location": "Bolzano · Impianti Industriali",
+          "quote": "Con Seab abbiamo ridotto drasticamente i fermi linea: competenza reale nella diagnosi e disponibilita rapida della componentistica critica.",
+          "roleOrContext": "Service e fornitura oleodinamica"
+        },
+        {
+          "name": "Ufficio Tecnico Costruttore Macchine",
+          "location": "Bolzano e provincia",
+          "quote": "Partner preciso dal dimensionamento al collaudo finale: documentazione chiara e forniture puntuali su ogni serie di macchine.",
+          "roleOrContext": "Fornitura OEM"
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "Alla c.a. Direzione Seab - tempi di apertura mobile (24.2s) e qualifica commesse B2B",
+    "emailPlainTextBody": "Buongiorno,\n\nda una verifica sul sito di Seab, aprendolo da smartphone passano 24.2 secondi prima che la pagina sia utilizzabile, rallentando le richieste di offerta e commessa dei clienti aziendali.\n\nAbbiamo gia preparato per Seab una bozza su misura che si apre in 0.3 secondi da telefono e pre-qualifica in automatico le richieste di commessa.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre Studio\nTel/WhatsApp: +39 379 115 9352\nriccardo.granza@techpyre.eu",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della bozza da 0.3 secondi preparata per Seab, con simulatore di pre-qualifica richieste integrato in pagina:\n\nhttps://www.techpyre.eu/demo/seab\n\nPotete provarla direttamente dal telefono: se l'impostazione vi piace, scrivetemi pure su WhatsApp (o in risposta a questa email) per vedere come adattarla al vostro flusso commerciale.\n\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu\n\nNota: la demo è una bozza privata visibile solo da questo link (non indicizzata su Google), creata su misura a solo scopo dimostrativo (art. 21 D.Lgs. 30/2005; Reg. UE 2016/679). Rimozione immediata su richiesta.",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "Alla c.a. Direzione Seab - tempi di apertura mobile (24.2s) e qualifica commesse B2B",
+      "body": "Buongiorno,\n\nda una verifica sul sito di Seab, aprendolo da smartphone passano 24.2 secondi prima che la pagina sia utilizzabile, rallentando le richieste di offerta e commessa dei clienti aziendali.\n\nAbbiamo gia preparato per Seab una bozza su misura che si apre in 0.3 secondi da telefono e pre-qualifica in automatico le richieste di commessa.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre Studio\nTel/WhatsApp: +39 379 115 9352\nriccardo.granza@techpyre.eu",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: Alla c.a. Direzione Seab - tempi di apertura mobile (24.2s) e qualifica commesse B2B",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della bozza da 0.3 secondi preparata per Seab, con simulatore di pre-qualifica richieste integrato in pagina:\n\nhttps://www.techpyre.eu/demo/seab\n\nPotete provarla direttamente dal telefono: se l'impostazione vi piace, scrivetemi pure su WhatsApp (o in risposta a questa email) per vedere come adattarla al vostro flusso commerciale.\n\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu\n\nNota: la demo è una bozza privata visibile solo da questo link (non indicizzata su Google), creata su misura a solo scopo dimostrativo (art. 21 D.Lgs. 30/2005; Reg. UE 2016/679). Rimozione immediata su richiesta.",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: Alla c.a. Direzione Seab - tempi di apertura mobile (24.2s) e qualifica commesse B2B",
+      "body": "Buongiorno,\n\nOltre ad azzerare i 24.2 secondi di attesa su mobile, il sistema qualifica ogni richiesta per tipologia di lavorazione o fornitura prima di inviarla al vostro ufficio commerciale.\n\nPer non disturbarvi con chiamate a freddo, se mi mandate anche solo un veloce messaggio su WhatsApp al +39 379 115 9352 (o rispondete qui sotto) vi giro subito in chat i dettagli per Seab.\n\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: Alla c.a. Direzione Seab - tempi di apertura mobile (24.2s) e qualifica commesse B2B",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Seab non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/seab) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione su WhatsApp o via email se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

@@ -14,10 +14,11 @@
     "vatNumber": "01712110988",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Galvanotechnik%20Spa",
     "originalLandingUrl": "https://www.galvanotechnik.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<18a11559-5d05-7769-94e8-4291a2b2660f@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<283c424f-4473-e2ca-6d32-6ee8ed668937@techpyre.eu>",
     "threadMessageIds": [
-      "<18a11559-5d05-7769-94e8-4291a2b2660f@techpyre.eu>"
+      "<18a11559-5d05-7769-94e8-4291a2b2660f@techpyre.eu>",
+      "<283c424f-4473-e2ca-6d32-6ee8ed668937@techpyre.eu>"
     ]
   },
   "audit": {
