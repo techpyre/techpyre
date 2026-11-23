@@ -14,10 +14,11 @@
     "vatNumber": "06365790960",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Plasting%20Materials",
     "originalLandingUrl": "http://www.plasting.biz",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<4a03ece5-2d45-cbf0-2a4b-7b0147b6f5f6@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<df4cfd5e-0e9a-6794-b626-6abc79585e4c@techpyre.eu>",
     "threadMessageIds": [
-      "<4a03ece5-2d45-cbf0-2a4b-7b0147b6f5f6@techpyre.eu>"
+      "<4a03ece5-2d45-cbf0-2a4b-7b0147b6f5f6@techpyre.eu>",
+      "<df4cfd5e-0e9a-6794-b626-6abc79585e4c@techpyre.eu>"
     ]
   },
   "audit": {

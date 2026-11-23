@@ -14,10 +14,11 @@
     "vatNumber": "Non trovata",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Dras%20S.r.l",
     "originalLandingUrl": "https://www.dras.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<9406fee3-ad69-a3b4-88ce-6b7dd2581783@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<8b2b83fe-d2d2-a0bf-5925-4f49375ab0b6@techpyre.eu>",
     "threadMessageIds": [
-      "<9406fee3-ad69-a3b4-88ce-6b7dd2581783@techpyre.eu>"
+      "<9406fee3-ad69-a3b4-88ce-6b7dd2581783@techpyre.eu>",
+      "<8b2b83fe-d2d2-a0bf-5925-4f49375ab0b6@techpyre.eu>"
     ]
   },
   "audit": {

@@ -14,10 +14,11 @@
     "vatNumber": "00677140048",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Caroni%20Spa",
     "originalLandingUrl": "http://www.caroni.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<5a478393-595d-3ba9-2385-8141b7d24dc5@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<3f0cf957-378a-ad74-53ac-a09a8c57b081@techpyre.eu>",
     "threadMessageIds": [
-      "<5a478393-595d-3ba9-2385-8141b7d24dc5@techpyre.eu>"
+      "<5a478393-595d-3ba9-2385-8141b7d24dc5@techpyre.eu>",
+      "<3f0cf957-378a-ad74-53ac-a09a8c57b081@techpyre.eu>"
     ]
   },
   "audit": {

@@ -14,10 +14,11 @@
     "vatNumber": "01693860999",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=F.lli%20Traverso%20Traslochi",
     "originalLandingUrl": "http://www.fratellitraverso.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<61fd3e5a-88f3-7fb7-6a3b-08bffb3349f6@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<8c929081-6966-791e-9a20-5263c43ac79c@techpyre.eu>",
     "threadMessageIds": [
-      "<61fd3e5a-88f3-7fb7-6a3b-08bffb3349f6@techpyre.eu>"
+      "<61fd3e5a-88f3-7fb7-6a3b-08bffb3349f6@techpyre.eu>",
+      "<8c929081-6966-791e-9a20-5263c43ac79c@techpyre.eu>"
     ]
   },
   "audit": {

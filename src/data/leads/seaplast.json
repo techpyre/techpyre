@@ -14,10 +14,11 @@
     "vatNumber": "01866930165",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Lim%20Seaplast.net",
     "originalLandingUrl": "http://www.seaplast.net",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<57d0b75b-3a3f-0554-5224-56e4bf8cc92a@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<ee5b58da-4239-f5c5-b70a-5ad6961dab1e@techpyre.eu>",
     "threadMessageIds": [
-      "<57d0b75b-3a3f-0554-5224-56e4bf8cc92a@techpyre.eu>"
+      "<57d0b75b-3a3f-0554-5224-56e4bf8cc92a@techpyre.eu>",
+      "<ee5b58da-4239-f5c5-b70a-5ad6961dab1e@techpyre.eu>"
     ]
   },
   "audit": {

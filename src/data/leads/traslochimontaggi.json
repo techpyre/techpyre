@@ -14,10 +14,11 @@
     "vatNumber": "02850830346",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Traslochimontaggi",
     "originalLandingUrl": "http://www.traslochimontaggi.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<b4d7a4da-10bf-7dbe-982f-3f38e1368f50@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<12bd20fd-f9a1-91fc-207a-12ff96c3afc6@techpyre.eu>",
     "threadMessageIds": [
-      "<b4d7a4da-10bf-7dbe-982f-3f38e1368f50@techpyre.eu>"
+      "<b4d7a4da-10bf-7dbe-982f-3f38e1368f50@techpyre.eu>",
+      "<12bd20fd-f9a1-91fc-207a-12ff96c3afc6@techpyre.eu>"
     ]
   },
   "audit": {

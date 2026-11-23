@@ -14,10 +14,11 @@
     "vatNumber": "03130780244",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Bomeca",
     "originalLandingUrl": "http://www.bomeca.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<6ccaee15-3675-d92f-7c23-a7a4361ca9c8@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<098fd390-ef56-68a7-8669-4845bd5a2689@techpyre.eu>",
     "threadMessageIds": [
-      "<6ccaee15-3675-d92f-7c23-a7a4361ca9c8@techpyre.eu>"
+      "<6ccaee15-3675-d92f-7c23-a7a4361ca9c8@techpyre.eu>",
+      "<098fd390-ef56-68a7-8669-4845bd5a2689@techpyre.eu>"
     ]
   },
   "audit": {

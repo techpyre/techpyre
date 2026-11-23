@@ -14,10 +14,11 @@
     "vatNumber": "06580970967",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Imballaggi%20del%20Sole",
     "originalLandingUrl": "http://www.ids-srl.com",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<a8c80a13-34ac-6ee1-35df-f1b316a85920@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<af9d4040-d99e-4ca3-9585-93c16004620a@techpyre.eu>",
     "threadMessageIds": [
-      "<a8c80a13-34ac-6ee1-35df-f1b316a85920@techpyre.eu>"
+      "<a8c80a13-34ac-6ee1-35df-f1b316a85920@techpyre.eu>",
+      "<af9d4040-d99e-4ca3-9585-93c16004620a@techpyre.eu>"
     ]
   },
   "audit": {

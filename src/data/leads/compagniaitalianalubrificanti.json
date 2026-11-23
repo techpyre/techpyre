@@ -14,10 +14,11 @@
     "vatNumber": "00844960153",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Compagnia%20Italiana%20Lubrificanti%20Spa",
     "originalLandingUrl": "https://www.compagniaitalianalubrificanti.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<b2c9d2d1-c074-10dd-d33d-0488e3e90f79@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<3d926a35-6a3d-0e9e-ca32-a560747eaa8e@techpyre.eu>",
     "threadMessageIds": [
-      "<b2c9d2d1-c074-10dd-d33d-0488e3e90f79@techpyre.eu>"
+      "<b2c9d2d1-c074-10dd-d33d-0488e3e90f79@techpyre.eu>",
+      "<3d926a35-6a3d-0e9e-ca32-a560747eaa8e@techpyre.eu>"
     ]
   },
   "audit": {

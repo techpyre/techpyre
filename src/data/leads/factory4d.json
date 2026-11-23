@@ -14,10 +14,11 @@
     "vatNumber": "01847700430",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Factory%204D",
     "originalLandingUrl": "http://www.factory4d.com",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<51131a4b-0acc-3292-8065-18203b3cbf23@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<1ce56ed9-8f9b-3f08-cb5e-a27cb6c12211@techpyre.eu>",
     "threadMessageIds": [
-      "<51131a4b-0acc-3292-8065-18203b3cbf23@techpyre.eu>"
+      "<51131a4b-0acc-3292-8065-18203b3cbf23@techpyre.eu>",
+      "<1ce56ed9-8f9b-3f08-cb5e-a27cb6c12211@techpyre.eu>"
     ]
   },
   "audit": {

@@ -14,10 +14,11 @@
     "vatNumber": "12392100017",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Rulli%20per%20nastri%20trasportatori",
     "originalLandingUrl": "https://www.rullitalia.com",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<2fffd359-256f-b492-ec89-1eab53719942@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<e12dfd1b-51b4-2c38-8b9b-1efed1027c51@techpyre.eu>",
     "threadMessageIds": [
-      "<2fffd359-256f-b492-ec89-1eab53719942@techpyre.eu>"
+      "<2fffd359-256f-b492-ec89-1eab53719942@techpyre.eu>",
+      "<e12dfd1b-51b4-2c38-8b9b-1efed1027c51@techpyre.eu>"
     ]
   },
   "audit": {

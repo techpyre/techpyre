@@ -14,10 +14,11 @@
     "vatNumber": "01215000355",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Poliespanse",
     "originalLandingUrl": "http://www.poliespanse.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<4d76ec9f-8d44-e405-77a5-50d9c21b8c8d@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<5130c7ec-491c-f521-f770-105c841f1327@techpyre.eu>",
     "threadMessageIds": [
-      "<4d76ec9f-8d44-e405-77a5-50d9c21b8c8d@techpyre.eu>"
+      "<4d76ec9f-8d44-e405-77a5-50d9c21b8c8d@techpyre.eu>",
+      "<5130c7ec-491c-f521-f770-105c841f1327@techpyre.eu>"
     ]
   },
   "audit": {

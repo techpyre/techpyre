@@ -14,10 +14,11 @@
     "vatNumber": "06134330155",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Aplem",
     "originalLandingUrl": "https://www.aplem.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<0a21eba5-c69f-3eb0-c8a1-b1617ff442fa@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<33f48648-3e70-3637-e8a2-a9f15e3a3924@techpyre.eu>",
     "threadMessageIds": [
-      "<0a21eba5-c69f-3eb0-c8a1-b1617ff442fa@techpyre.eu>"
+      "<0a21eba5-c69f-3eb0-c8a1-b1617ff442fa@techpyre.eu>",
+      "<33f48648-3e70-3637-e8a2-a9f15e3a3924@techpyre.eu>"
     ]
   },
   "audit": {

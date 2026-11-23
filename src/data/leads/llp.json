@@ -14,10 +14,11 @@
     "vatNumber": "03385770247",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=LLP%20srl",
     "originalLandingUrl": "https://www.llp.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<388a83e4-2b1b-8070-417f-b47100336f10@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<42286307-bd3a-6916-b562-970384758df6@techpyre.eu>",
     "threadMessageIds": [
-      "<388a83e4-2b1b-8070-417f-b47100336f10@techpyre.eu>"
+      "<388a83e4-2b1b-8070-417f-b47100336f10@techpyre.eu>",
+      "<42286307-bd3a-6916-b562-970384758df6@techpyre.eu>"
     ]
   },
   "audit": {

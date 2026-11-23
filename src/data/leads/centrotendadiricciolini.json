@@ -1,0 +1,149 @@
+{
+  "slug": "centrotendadiricciolini",
+  "archetype": "local-leadgen",
+  "meta": {
+    "companyName": "Centro Tenda di Ricciolini",
+    "decisionMakerName": "Direzione Centro Tenda di Ricciolini",
+    "decisionMakerFirstName": null,
+    "decisionMakerRole": "Direzione Aziendale",
+    "isGenericInbox": true,
+    "emailScore": 35,
+    "targetEmail": "info@centrotendadiricciolini.it",
+    "phone": "+39 0933 56974",
+    "city": "Caltagirone",
+    "vatNumber": "05547330877",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Centro%20Tenda%20di%20Ricciolini",
+    "originalLandingUrl": "https://www.centrotendadiricciolini.it",
+    "status": "CONTACTED_STEP_1",
+    "lastSentMessageId": "<5b7fc3d0-15c2-cb76-c588-d7bac21c5344@techpyre.eu>",
+    "threadMessageIds": [
+      "<5b7fc3d0-15c2-cb76-c588-d7bac21c5344@techpyre.eu>"
+    ]
+  },
+  "audit": {
+    "originalLcpSeconds": 15.7,
+    "mobileScore": 15,
+    "renderBlockingCount": 66,
+    "runsAds": false,
+    "detectedTrackingSignals": [],
+    "threeCriticalFlaws": [
+      "Perdita di richieste di preventivo su mobile: caricamento di 15.7s (66 risorse bloccanti) che spinge i visitatori da smartphone ad abbandonare la pagina prima di contattare l'ufficio commerciale.",
+      "Assenza di pre-qualifica automatica: il sito non filtra le richieste per tipologia di intervento, budget o tempistiche prima di inviarle ai referenti tecnici di Centro Tenda di Ricciolini.",
+      "Colli di bottiglia commerciali: le richieste arrivano come semplici email isolate senza instradamento automatico e senza tracciamento strutturato della trattativa."
+    ],
+    "activeAdHeadline": "Ricciolini - Tende da sole per interni ed esterni, arredo per esterni",
+    "activeAdCopySummary": "Il Centro Tenda ha sempre la soluzione giusta per te, in qualsiasi stagione: tende d'interno e d'esterno e grandi coperture, in un'infinità ..."
+  },
+  "theme": {
+    "primaryHex": "#1E3A8A",
+    "accentHex": "#2563EB",
+    "darkBgHex": "#0B1E36",
+    "borderRadius": "12px",
+    "headerBgMode": "dark",
+    "headerBgHex": "#0E1013",
+    "logoBrightness": "light"
+  },
+  "content": {
+    "badgeTop": "Centro Tenda di Ricciolini · Outdoor e Schermature Solari (Caltagirone)",
+    "heroHeadline": "Ricciolini - Tende da sole per interni ed esterni, arredo per esterni",
+    "heroSubheadline": "Il Centro Tenda ha sempre la soluzione giusta per te, in qualsiasi stagione: tende d'interno e d'esterno e grandi coperture, in un'infinità di misure, colori, possibilità di personalizzazione. L'azienda, fondat",
+    "heroBullets": [
+      "Rilievo misure a domicilio e progettazione su misura per balconi e giardini",
+      "Tessuti tecnici e strutture resistenti a sole, vento e pioggia",
+      "Motorizzazioni silenziose, sensoristica vento/pioggia e gestione pratiche"
+    ],
+    "ctaButtonText": "Calcola il Tuo Preventivo Rapido",
+    "trustMicrocopy": "Richiesta gratuita e senza impegno · Risposta rapida dal nostro ufficio tecnico",
+    "logoLocalPath": "/leads/centrotendadiricciolini/logo.png",
+    "heroImageLocalPath": "/leads/centrotendadiricciolini/hero.jpg",
+    "heroImageCaption": "Centro Tenda di Ricciolini · Sede operativa e realizzazioni (Caltagirone)",
+    "quiz": {
+      "question1": {
+        "title": "Quale soluzione per esterni desideri installare?",
+        "options": [
+          "Pergola bioclimatica o pergotenda su misura",
+          "Tenda da sole per terrazzo o balcone",
+          "Chiusura con vetrate panoramiche o zanzariere"
+        ]
+      },
+      "question2": {
+        "title": "Che superficie indicativa vuoi coprire?",
+        "options": [
+          "Fino a 15 mq (balcone o piccolo terrazzo)",
+          "Da 15 a 35 mq (terrazzo o giardino privato)",
+          "Oltre 35 mq (ampio spazio esterno o attivita)"
+        ]
+      },
+      "finalStepTitle": "Perfetto. Lascia i tuoi dati per prenotare il rilievo misure e ricevere il preventivo:"
+    },
+    "valueProps": [
+      {
+        "title": "Progettazione Estetica Su Misura",
+        "description": "Adattiamo ogni pergola o tenda da sole all'architettura del tuo edificio a Caltagirone con finiture e tessuti coordinati.",
+        "metric": "Su Misura"
+      },
+      {
+        "title": "Materiali Certificati ad Alta Durata",
+        "description": "Centro Tenda di Ricciolini utilizza strutture in alluminio verniciato e motorizzazioni garantite per resistere negli anni.",
+        "metric": "Garanzia Scritta"
+      },
+      {
+        "title": "Installazione Rapida e Pulita",
+        "description": "Montaggio completo curato dai nostri tecnici interni con collaudo finale e assistenza diretta sul territorio.",
+        "metric": "Chiavi in Mano"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "98%",
+      "mainStatLabel": "Installazioni outdoor completate nei tempi concordati",
+      "reviewsSummary": "4.9/5 da privati e attivita a Caltagirone",
+      "testimonials": [
+        {
+          "name": "Andrea M.",
+          "location": "Caltagirone",
+          "quote": "La pergola installata da Centro Tenda di Ricciolini ha trasformato il nostro terrazzo. Finiture impeccabili e montaggio velocissimo.",
+          "roleOrContext": "Pergola bioclimatica"
+        },
+        {
+          "name": "Chiara L.",
+          "location": "Caltagirone e provincia",
+          "quote": "Consulenza chiara sui tessuti e sulle detrazioni disponibili. Puntuali e super ordinati durante l'installazione.",
+          "roleOrContext": "Tende da sole motorizzate"
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "Alla c.a. Direzione Centro Tenda di Ricciolini - lentezza da smartphone (15.7s) e filtro richieste preventivo",
+    "emailPlainTextBody": "Buongiorno,\n\nda una verifica sul sito di Centro Tenda di Ricciolini, aprendolo da smartphone passano 15.7 secondi prima che la pagina sia utilizzabile, frenando le richieste di preventivo di chi vi cerca da mobile.\n\nAbbiamo gia preparato per Centro Tenda di Ricciolini una bozza su misura che si apre in 0.3 secondi da telefono e filtra in automatico le richieste di preventivo.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre Studio\nTel/WhatsApp: +39 379 115 9352\nriccardo.granza@techpyre.eu",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della bozza da 0.3 secondi preparata per Centro Tenda di Ricciolini, con simulatore di pre-qualifica richieste integrato in pagina:\n\nhttps://www.techpyre.eu/demo/centrotendadiricciolini\n\nPotete provarla direttamente dal telefono: se l'impostazione vi piace, scrivetemi pure su WhatsApp (o in risposta a questa email) per vedere come adattarla al vostro flusso commerciale.\n\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu\n\nNota: la demo è una bozza privata visibile solo da questo link (non indicizzata su Google), creata su misura a solo scopo dimostrativo (art. 21 D.Lgs. 30/2005; Reg. UE 2016/679). Rimozione immediata su richiesta.",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "Alla c.a. Direzione Centro Tenda di Ricciolini - lentezza da smartphone (15.7s) e filtro richieste preventivo",
+      "body": "Buongiorno,\n\nda una verifica sul sito di Centro Tenda di Ricciolini, aprendolo da smartphone passano 15.7 secondi prima che la pagina sia utilizzabile, frenando le richieste di preventivo di chi vi cerca da mobile.\n\nAbbiamo gia preparato per Centro Tenda di Ricciolini una bozza su misura che si apre in 0.3 secondi da telefono e filtra in automatico le richieste di preventivo.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre Studio\nTel/WhatsApp: +39 379 115 9352\nriccardo.granza@techpyre.eu",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: Alla c.a. Direzione Centro Tenda di Ricciolini - lentezza da smartphone (15.7s) e filtro richieste preventivo",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della bozza da 0.3 secondi preparata per Centro Tenda di Ricciolini, con simulatore di pre-qualifica richieste integrato in pagina:\n\nhttps://www.techpyre.eu/demo/centrotendadiricciolini\n\nPotete provarla direttamente dal telefono: se l'impostazione vi piace, scrivetemi pure su WhatsApp (o in risposta a questa email) per vedere come adattarla al vostro flusso commerciale.\n\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu\n\nNota: la demo è una bozza privata visibile solo da questo link (non indicizzata su Google), creata su misura a solo scopo dimostrativo (art. 21 D.Lgs. 30/2005; Reg. UE 2016/679). Rimozione immediata su richiesta.",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: Alla c.a. Direzione Centro Tenda di Ricciolini - lentezza da smartphone (15.7s) e filtro richieste preventivo",
+      "body": "Buongiorno,\n\nOltre ad azzerare i 15.7 secondi di attesa su mobile, il simulatore filtra le richieste fuori target prima di inviarle su WhatsApp o al vostro CRM.\n\nPer non disturbarvi con chiamate a freddo, se mi mandate anche solo un veloce messaggio su WhatsApp al +39 379 115 9352 (o rispondete qui sotto) vi giro subito in chat i dettagli per Centro Tenda di Ricciolini.\n\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: Alla c.a. Direzione Centro Tenda di Ricciolini - lentezza da smartphone (15.7s) e filtro richieste preventivo",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Centro Tenda di Ricciolini non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/centrotendadiricciolini) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione su WhatsApp o via email se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

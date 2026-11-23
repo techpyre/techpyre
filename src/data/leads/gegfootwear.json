@@ -14,10 +14,11 @@
     "vatNumber": "00914400346",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=G%26G%20Footwear%20Srl",
     "originalLandingUrl": "http://www.gegfootwear.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<54002b40-9b60-a4b7-0432-fea7d7b7bb19@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<34d7ba63-b605-93e8-0373-21aed4d03b84@techpyre.eu>",
     "threadMessageIds": [
-      "<54002b40-9b60-a4b7-0432-fea7d7b7bb19@techpyre.eu>"
+      "<54002b40-9b60-a4b7-0432-fea7d7b7bb19@techpyre.eu>",
+      "<34d7ba63-b605-93e8-0373-21aed4d03b84@techpyre.eu>"
     ]
   },
   "audit": {

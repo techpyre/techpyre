@@ -14,10 +14,11 @@
     "vatNumber": "02963310343",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Traslochi%20Lux%20S.r.l.s.",
     "originalLandingUrl": "http://traslochilux.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<8b32fbe4-0955-e228-6ae9-1449c154351f@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<f84aa185-e68b-06af-7871-102bc947455c@techpyre.eu>",
     "threadMessageIds": [
-      "<8b32fbe4-0955-e228-6ae9-1449c154351f@techpyre.eu>"
+      "<8b32fbe4-0955-e228-6ae9-1449c154351f@techpyre.eu>",
+      "<f84aa185-e68b-06af-7871-102bc947455c@techpyre.eu>"
     ]
   },
   "audit": {

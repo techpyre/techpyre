@@ -14,10 +14,11 @@
     "vatNumber": "01624490981",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=IMPLAST%20S.R.L.",
     "originalLandingUrl": "http://www.implast.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<0ffa6d0b-9631-8058-be28-955501d45064@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<824079f5-d433-7ac4-e551-aa3240216f11@techpyre.eu>",
     "threadMessageIds": [
-      "<0ffa6d0b-9631-8058-be28-955501d45064@techpyre.eu>"
+      "<0ffa6d0b-9631-8058-be28-955501d45064@techpyre.eu>",
+      "<824079f5-d433-7ac4-e551-aa3240216f11@techpyre.eu>"
     ]
   },
   "audit": {

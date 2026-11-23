@@ -14,10 +14,11 @@
     "vatNumber": "02244730186",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=BEMA%20srl",
     "originalLandingUrl": "http://www.bemastampistampaggio.com",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<e0322129-9312-cc71-225d-d255b101f1a4@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<f8a2fe7e-5d1a-d996-3712-0e9372f2b0e1@techpyre.eu>",
     "threadMessageIds": [
-      "<e0322129-9312-cc71-225d-d255b101f1a4@techpyre.eu>"
+      "<e0322129-9312-cc71-225d-d255b101f1a4@techpyre.eu>",
+      "<f8a2fe7e-5d1a-d996-3712-0e9372f2b0e1@techpyre.eu>"
     ]
   },
   "audit": {

@@ -14,10 +14,11 @@
     "vatNumber": "03475550376",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=B.%20Center",
     "originalLandingUrl": "http://www.bcentersrl.com",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<27bd3c29-c056-f743-0ccd-e22aff9f9c25@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<4423e3a0-0597-4c76-3dd2-38664adc8bb4@techpyre.eu>",
     "threadMessageIds": [
-      "<27bd3c29-c056-f743-0ccd-e22aff9f9c25@techpyre.eu>"
+      "<27bd3c29-c056-f743-0ccd-e22aff9f9c25@techpyre.eu>",
+      "<4423e3a0-0597-4c76-3dd2-38664adc8bb4@techpyre.eu>"
     ]
   },
   "audit": {

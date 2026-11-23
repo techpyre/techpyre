@@ -14,10 +14,11 @@
     "vatNumber": "01996390249",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=CAME%20srl",
     "originalLandingUrl": "http://www.ca-me.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<d8243b74-1f2f-279a-abc7-ca83d7355408@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<d4e05d86-a21d-3ef7-034a-d383ec097c2a@techpyre.eu>",
     "threadMessageIds": [
-      "<d8243b74-1f2f-279a-abc7-ca83d7355408@techpyre.eu>"
+      "<d8243b74-1f2f-279a-abc7-ca83d7355408@techpyre.eu>",
+      "<d4e05d86-a21d-3ef7-034a-d383ec097c2a@techpyre.eu>"
     ]
   },
   "audit": {

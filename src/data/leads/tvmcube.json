@@ -14,10 +14,11 @@
     "vatNumber": "02779660352",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=T.V.M.%20CUBE",
     "originalLandingUrl": "http://www.tvmcube.com",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<341ed093-d658-d9bc-5bbd-638ea4506bc2@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<4241976c-134b-890f-4c79-0cd6bd65acd8@techpyre.eu>",
     "threadMessageIds": [
-      "<341ed093-d658-d9bc-5bbd-638ea4506bc2@techpyre.eu>"
+      "<341ed093-d658-d9bc-5bbd-638ea4506bc2@techpyre.eu>",
+      "<4241976c-134b-890f-4c79-0cd6bd65acd8@techpyre.eu>"
     ]
   },
   "audit": {

@@ -14,10 +14,11 @@
     "vatNumber": "01355880129",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Abon%20Plastic",
     "originalLandingUrl": "http://www.abonplastic.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<d35739f4-0abb-5daa-9630-9460768c525b@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<e4c606ab-966f-606b-b310-062a68a4f787@techpyre.eu>",
     "threadMessageIds": [
-      "<d35739f4-0abb-5daa-9630-9460768c525b@techpyre.eu>"
+      "<d35739f4-0abb-5daa-9630-9460768c525b@techpyre.eu>",
+      "<e4c606ab-966f-606b-b310-062a68a4f787@techpyre.eu>"
     ]
   },
   "audit": {

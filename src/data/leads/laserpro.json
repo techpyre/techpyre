@@ -14,10 +14,11 @@
     "vatNumber": "03051190241",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Laserpro",
     "originalLandingUrl": "https://www.laserpro.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<817d48e9-f643-72ec-5de9-5b1fd26da2b2@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<3e1ffe54-f4cf-97e7-88ae-41cc1ee6ea6e@techpyre.eu>",
     "threadMessageIds": [
-      "<817d48e9-f643-72ec-5de9-5b1fd26da2b2@techpyre.eu>"
+      "<817d48e9-f643-72ec-5de9-5b1fd26da2b2@techpyre.eu>",
+      "<3e1ffe54-f4cf-97e7-88ae-41cc1ee6ea6e@techpyre.eu>"
     ]
   },
   "audit": {

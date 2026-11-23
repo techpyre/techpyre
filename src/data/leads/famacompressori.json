@@ -14,10 +14,11 @@
     "vatNumber": "11871190960",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Fama'%20Compressori%20SRL",
     "originalLandingUrl": "http://www.famacompressori.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<3fbde7ca-0aa1-c519-aa4b-1ab8b7de03de@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<06d5403c-0647-7a9b-edf6-990c25e9b1e6@techpyre.eu>",
     "threadMessageIds": [
-      "<3fbde7ca-0aa1-c519-aa4b-1ab8b7de03de@techpyre.eu>"
+      "<3fbde7ca-0aa1-c519-aa4b-1ab8b7de03de@techpyre.eu>",
+      "<06d5403c-0647-7a9b-edf6-990c25e9b1e6@techpyre.eu>"
     ]
   },
   "audit": {

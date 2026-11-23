@@ -14,10 +14,11 @@
     "vatNumber": "00783140122",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=F.C.L.",
     "originalLandingUrl": "https://www.fcl-portastampi.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<023847ad-ccf9-19b1-0372-fa9b2c4f85dc@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<2ca629bb-7f90-b1f6-c26e-151099eaf61d@techpyre.eu>",
     "threadMessageIds": [
-      "<023847ad-ccf9-19b1-0372-fa9b2c4f85dc@techpyre.eu>"
+      "<023847ad-ccf9-19b1-0372-fa9b2c4f85dc@techpyre.eu>",
+      "<2ca629bb-7f90-b1f6-c26e-151099eaf61d@techpyre.eu>"
     ]
   },
   "audit": {

@@ -14,10 +14,11 @@
     "vatNumber": "04437760244",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Taglio%20Laser%20Metalli%20Vicenza",
     "originalLandingUrl": "https://tagliolaser.deametaldesign.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<de6708aa-ba67-eb60-3de2-150ca1dab123@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<2d6e004d-ed7c-db80-4573-e2d95b0da530@techpyre.eu>",
     "threadMessageIds": [
-      "<de6708aa-ba67-eb60-3de2-150ca1dab123@techpyre.eu>"
+      "<de6708aa-ba67-eb60-3de2-150ca1dab123@techpyre.eu>",
+      "<2d6e004d-ed7c-db80-4573-e2d95b0da530@techpyre.eu>"
     ]
   },
   "audit": {

@@ -14,10 +14,11 @@
     "vatNumber": "10191230019",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=MARTINA%20GROUP%20srl",
     "originalLandingUrl": "https://www.martinasusa.com",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<4c70ed35-f84a-3745-d3f4-a0bb9f855242@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<34e82eae-605b-462e-d0f7-efe00d7f913d@techpyre.eu>",
     "threadMessageIds": [
-      "<4c70ed35-f84a-3745-d3f4-a0bb9f855242@techpyre.eu>"
+      "<4c70ed35-f84a-3745-d3f4-a0bb9f855242@techpyre.eu>",
+      "<34e82eae-605b-462e-d0f7-efe00d7f913d@techpyre.eu>"
     ]
   },
   "audit": {

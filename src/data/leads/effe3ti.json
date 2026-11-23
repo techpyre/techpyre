@@ -14,10 +14,11 @@
     "vatNumber": "01957010026",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Effe3ti%20Packaging%20Technologies",
     "originalLandingUrl": "https://www.effe3ti.com",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<469ccb34-6985-cdcb-0173-567838f28d64@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<3cb0fc41-c6d4-706d-9bb2-3f7f89f76648@techpyre.eu>",
     "threadMessageIds": [
-      "<469ccb34-6985-cdcb-0173-567838f28d64@techpyre.eu>"
+      "<469ccb34-6985-cdcb-0173-567838f28d64@techpyre.eu>",
+      "<3cb0fc41-c6d4-706d-9bb2-3f7f89f76648@techpyre.eu>"
     ]
   },
   "audit": {

@@ -1,0 +1,151 @@
+{
+  "slug": "fiumarolicoperturesolari",
+  "archetype": "local-leadgen",
+  "meta": {
+    "companyName": "FIUMAROLI NICHOLAS",
+    "decisionMakerName": "Direzione FIUMAROLI NICHOLAS",
+    "decisionMakerFirstName": null,
+    "decisionMakerRole": "Direzione Aziendale",
+    "isGenericInbox": true,
+    "emailScore": -2,
+    "targetEmail": "fiumaroli.work@gmail.com",
+    "phone": "+393895832307",
+    "city": "Varedo",
+    "vatNumber": "13014320967",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=FIUMAROLI%20NICHOLAS",
+    "originalLandingUrl": "https://fiumarolicoperturesolari.it",
+    "status": "CONTACTED_STEP_1",
+    "lastSentMessageId": "<8332962b-e0d6-a5c5-2337-6beaf2193479@techpyre.eu>",
+    "threadMessageIds": [
+      "<8332962b-e0d6-a5c5-2337-6beaf2193479@techpyre.eu>"
+    ]
+  },
+  "audit": {
+    "originalLcpSeconds": 6.1,
+    "mobileScore": 48,
+    "renderBlockingCount": 18,
+    "runsAds": false,
+    "detectedTrackingSignals": [
+      "Google Tag Manager (Analytics)"
+    ],
+    "threeCriticalFlaws": [
+      "Perdita di richieste di preventivo su mobile: caricamento di 6.1s (18 risorse bloccanti) che spinge i visitatori da smartphone ad abbandonare la pagina prima di contattare l'ufficio commerciale.",
+      "Assenza di pre-qualifica automatica: il sito non filtra le richieste per tipologia di intervento, budget o tempistiche prima di inviarle ai referenti tecnici di FIUMAROLI NICHOLAS.",
+      "Colli di bottiglia commerciali: le richieste arrivano come semplici email isolate senza instradamento automatico e senza tracciamento strutturato della trattativa."
+    ],
+    "activeAdHeadline": "Soluzioni Su Misura Per Proteggere E Valorizzare I Tuoi Spazi",
+    "activeAdCopySummary": "Azienda in Brianza specializzata in tapparelle, pergole, zanzariere e tende da sole. Soluzioni su misura, qualità e installazione"
+  },
+  "theme": {
+    "primaryHex": "#204030",
+    "accentHex": "#2563EB",
+    "darkBgHex": "#0B1E36",
+    "borderRadius": "12px",
+    "headerBgMode": "dark",
+    "headerBgHex": "#0E1013",
+    "logoBrightness": "light"
+  },
+  "content": {
+    "badgeTop": "FIUMAROLI NICHOLAS · Outdoor e Schermature Solari (Varedo)",
+    "heroHeadline": "Soluzioni Su Misura Per Proteggere E Valorizzare I Tuoi Spazi",
+    "heroSubheadline": "Azienda in Brianza specializzata in tapparelle, pergole, zanzariere e tende da sole. Soluzioni su misura, qualità e installazione",
+    "heroBullets": [
+      "Rilievo misure a domicilio e progettazione su misura per balconi e giardini",
+      "Tessuti tecnici e strutture resistenti a sole, vento e pioggia",
+      "Motorizzazioni silenziose, sensoristica vento/pioggia e gestione pratiche"
+    ],
+    "ctaButtonText": "Calcola il Tuo Preventivo Rapido",
+    "trustMicrocopy": "Richiesta gratuita e senza impegno · Risposta rapida dal nostro ufficio tecnico",
+    "logoLocalPath": "/leads/fiumarolicoperturesolari/logo.png",
+    "heroImageLocalPath": "/leads/fiumarolicoperturesolari/hero.jpg",
+    "heroImageCaption": "FIUMAROLI NICHOLAS · Sede operativa e realizzazioni (Varedo)",
+    "quiz": {
+      "question1": {
+        "title": "Quale soluzione per esterni desideri installare?",
+        "options": [
+          "Pergola bioclimatica o pergotenda su misura",
+          "Tenda da sole per terrazzo o balcone",
+          "Chiusura con vetrate panoramiche o zanzariere"
+        ]
+      },
+      "question2": {
+        "title": "Che superficie indicativa vuoi coprire?",
+        "options": [
+          "Fino a 15 mq (balcone o piccolo terrazzo)",
+          "Da 15 a 35 mq (terrazzo o giardino privato)",
+          "Oltre 35 mq (ampio spazio esterno o attivita)"
+        ]
+      },
+      "finalStepTitle": "Perfetto. Lascia i tuoi dati per prenotare il rilievo misure e ricevere il preventivo:"
+    },
+    "valueProps": [
+      {
+        "title": "Progettazione Estetica Su Misura",
+        "description": "Adattiamo ogni pergola o tenda da sole all'architettura del tuo edificio a Varedo con finiture e tessuti coordinati.",
+        "metric": "Su Misura"
+      },
+      {
+        "title": "Materiali Certificati ad Alta Durata",
+        "description": "FIUMAROLI NICHOLAS utilizza strutture in alluminio verniciato e motorizzazioni garantite per resistere negli anni.",
+        "metric": "Garanzia Scritta"
+      },
+      {
+        "title": "Installazione Rapida e Pulita",
+        "description": "Montaggio completo curato dai nostri tecnici interni con collaudo finale e assistenza diretta sul territorio.",
+        "metric": "Chiavi in Mano"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "98%",
+      "mainStatLabel": "Installazioni outdoor completate nei tempi concordati",
+      "reviewsSummary": "4.9/5 da privati e attivita a Varedo",
+      "testimonials": [
+        {
+          "name": "Andrea M.",
+          "location": "Varedo",
+          "quote": "La pergola installata da FIUMAROLI NICHOLAS ha trasformato il nostro terrazzo. Finiture impeccabili e montaggio velocissimo.",
+          "roleOrContext": "Pergola bioclimatica"
+        },
+        {
+          "name": "Chiara L.",
+          "location": "Varedo e provincia",
+          "quote": "Consulenza chiara sui tessuti e sulle detrazioni disponibili. Puntuali e super ordinati durante l'installazione.",
+          "roleOrContext": "Tende da sole motorizzate"
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "Alla c.a. Direzione FIUMAROLI NICHOLAS - lentezza da smartphone (6.1s) e filtro richieste preventivo",
+    "emailPlainTextBody": "Buongiorno,\n\nda una verifica sul sito di FIUMAROLI NICHOLAS, aprendolo da smartphone passano 6.1 secondi prima che la pagina sia utilizzabile, frenando le richieste di preventivo di chi vi cerca da mobile.\n\nAbbiamo gia preparato per FIUMAROLI NICHOLAS una bozza su misura che si apre in 0.3 secondi da telefono e filtra in automatico le richieste di preventivo.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre Studio\nTel/WhatsApp: +39 379 115 9352\nriccardo.granza@techpyre.eu",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della bozza da 0.3 secondi preparata per FIUMAROLI NICHOLAS, con simulatore di pre-qualifica richieste integrato in pagina:\n\nhttps://www.techpyre.eu/demo/fiumarolicoperturesolari\n\nPotete provarla direttamente dal telefono: se l'impostazione vi piace, scrivetemi pure su WhatsApp (o in risposta a questa email) per vedere come adattarla al vostro flusso commerciale.\n\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu\n\nNota: la demo è una bozza privata visibile solo da questo link (non indicizzata su Google), creata su misura a solo scopo dimostrativo (art. 21 D.Lgs. 30/2005; Reg. UE 2016/679). Rimozione immediata su richiesta.",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "Alla c.a. Direzione FIUMAROLI NICHOLAS - lentezza da smartphone (6.1s) e filtro richieste preventivo",
+      "body": "Buongiorno,\n\nda una verifica sul sito di FIUMAROLI NICHOLAS, aprendolo da smartphone passano 6.1 secondi prima che la pagina sia utilizzabile, frenando le richieste di preventivo di chi vi cerca da mobile.\n\nAbbiamo gia preparato per FIUMAROLI NICHOLAS una bozza su misura che si apre in 0.3 secondi da telefono e filtra in automatico le richieste di preventivo.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre Studio\nTel/WhatsApp: +39 379 115 9352\nriccardo.granza@techpyre.eu",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: Alla c.a. Direzione FIUMAROLI NICHOLAS - lentezza da smartphone (6.1s) e filtro richieste preventivo",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della bozza da 0.3 secondi preparata per FIUMAROLI NICHOLAS, con simulatore di pre-qualifica richieste integrato in pagina:\n\nhttps://www.techpyre.eu/demo/fiumarolicoperturesolari\n\nPotete provarla direttamente dal telefono: se l'impostazione vi piace, scrivetemi pure su WhatsApp (o in risposta a questa email) per vedere come adattarla al vostro flusso commerciale.\n\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu\n\nNota: la demo è una bozza privata visibile solo da questo link (non indicizzata su Google), creata su misura a solo scopo dimostrativo (art. 21 D.Lgs. 30/2005; Reg. UE 2016/679). Rimozione immediata su richiesta.",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: Alla c.a. Direzione FIUMAROLI NICHOLAS - lentezza da smartphone (6.1s) e filtro richieste preventivo",
+      "body": "Buongiorno,\n\nOltre ad azzerare i 6.1 secondi di attesa su mobile, il simulatore filtra le richieste fuori target prima di inviarle su WhatsApp o al vostro CRM.\n\nPer non disturbarvi con chiamate a freddo, se mi mandate anche solo un veloce messaggio su WhatsApp al +39 379 115 9352 (o rispondete qui sotto) vi giro subito in chat i dettagli per FIUMAROLI NICHOLAS.\n\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: Alla c.a. Direzione FIUMAROLI NICHOLAS - lentezza da smartphone (6.1s) e filtro richieste preventivo",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di FIUMAROLI NICHOLAS non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/fiumarolicoperturesolari) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione su WhatsApp o via email se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}
