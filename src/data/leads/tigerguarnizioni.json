@@ -14,10 +14,11 @@
     "vatNumber": "08741750155",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Centro%20Guarnizioni%20Tiger",
     "originalLandingUrl": "http://www.tigerguarnizioni.com",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<dffc7b7d-36f8-dbe5-ce9e-9fc78cf98246@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<9f166d82-a74d-8601-2255-a52a4285ed62@techpyre.eu>",
     "threadMessageIds": [
-      "<dffc7b7d-36f8-dbe5-ce9e-9fc78cf98246@techpyre.eu>"
+      "<dffc7b7d-36f8-dbe5-ce9e-9fc78cf98246@techpyre.eu>",
+      "<9f166d82-a74d-8601-2255-a52a4285ed62@techpyre.eu>"
     ]
   },
   "audit": {

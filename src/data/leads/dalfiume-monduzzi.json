@@ -14,10 +14,11 @@
     "vatNumber": "02698831209",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Dalfiume%20%26%20Monduzzi%20Srl",
     "originalLandingUrl": "https://www.dalfiume-monduzzi.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<34503623-065e-337c-272c-d9c713b152e4@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<c8c848a3-b75a-ac98-81ba-41b32e39b00e@techpyre.eu>",
     "threadMessageIds": [
-      "<34503623-065e-337c-272c-d9c713b152e4@techpyre.eu>"
+      "<34503623-065e-337c-272c-d9c713b152e4@techpyre.eu>",
+      "<c8c848a3-b75a-ac98-81ba-41b32e39b00e@techpyre.eu>"
     ]
   },
   "audit": {

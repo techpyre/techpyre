@@ -14,10 +14,11 @@
     "vatNumber": "03703420269",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Donadi%20Automazioni",
     "originalLandingUrl": "https://www.donadiautomazioni.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<a54bcb8e-3405-a074-95bd-891ca2a38f20@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<2beb9a42-3b03-6bb0-c4b8-856cb776663f@techpyre.eu>",
     "threadMessageIds": [
-      "<a54bcb8e-3405-a074-95bd-891ca2a38f20@techpyre.eu>"
+      "<a54bcb8e-3405-a074-95bd-891ca2a38f20@techpyre.eu>",
+      "<2beb9a42-3b03-6bb0-c4b8-856cb776663f@techpyre.eu>"
     ]
   },
   "audit": {

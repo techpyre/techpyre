@@ -14,10 +14,11 @@
     "vatNumber": "03060450982",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Ecogarda",
     "originalLandingUrl": "http://www.ecogarda.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<2233c6b6-2784-0fe1-c995-87f86d1751a6@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<14560b50-3188-a53c-ef51-67e5784b362f@techpyre.eu>",
     "threadMessageIds": [
-      "<2233c6b6-2784-0fe1-c995-87f86d1751a6@techpyre.eu>"
+      "<2233c6b6-2784-0fe1-c995-87f86d1751a6@techpyre.eu>",
+      "<14560b50-3188-a53c-ef51-67e5784b362f@techpyre.eu>"
     ]
   },
   "audit": {

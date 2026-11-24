@@ -14,10 +14,11 @@
     "vatNumber": "02639600309",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Serramenti%20in%20alluminio%20Udine",
     "originalLandingUrl": "https://www.se-al.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<ddb5c6f8-6aaf-087f-8edf-0be25b22920e@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<43152fe4-b6eb-89d1-a762-c938987dbeb0@techpyre.eu>",
     "threadMessageIds": [
-      "<ddb5c6f8-6aaf-087f-8edf-0be25b22920e@techpyre.eu>"
+      "<ddb5c6f8-6aaf-087f-8edf-0be25b22920e@techpyre.eu>",
+      "<43152fe4-b6eb-89d1-a762-c938987dbeb0@techpyre.eu>"
     ]
   },
   "audit": {

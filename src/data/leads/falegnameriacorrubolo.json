@@ -14,10 +14,11 @@
     "vatNumber": "02122580307",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Falegnameria%20Corrubolo%20Fagagna",
     "originalLandingUrl": "http://www.falegnameriacorrubolo.com",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<b8aae4e7-7865-8329-d759-26bd73180184@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<9bec5575-0037-6f81-20b7-b0bda9a9b305@techpyre.eu>",
     "threadMessageIds": [
-      "<b8aae4e7-7865-8329-d759-26bd73180184@techpyre.eu>"
+      "<b8aae4e7-7865-8329-d759-26bd73180184@techpyre.eu>",
+      "<9bec5575-0037-6f81-20b7-b0bda9a9b305@techpyre.eu>"
     ]
   },
   "audit": {

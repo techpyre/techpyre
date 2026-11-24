@@ -14,13 +14,14 @@
     "emailScore": 35,
     "decisionMakerFirstName": "Emanuela",
     "decisionMakerRole": "Titolare",
-    "lastSentMessageId": "<3c3d9d79-9792-a3bf-4b0f-63ea253d08cf@techpyre.eu>",
+    "lastSentMessageId": "<e45d4c06-34db-221e-9195-f884276c93a1@techpyre.eu>",
     "threadMessageIds": [
       "<c9d968b5-3165-4f76-8806-cf8892f3f85e@techpyre.eu>",
       "<91f2f5ea-44a9-366d-c686-ac512c25a6ed@techpyre.eu>",
-      "<3c3d9d79-9792-a3bf-4b0f-63ea253d08cf@techpyre.eu>"
+      "<3c3d9d79-9792-a3bf-4b0f-63ea253d08cf@techpyre.eu>",
+      "<e45d4c06-34db-221e-9195-f884276c93a1@techpyre.eu>"
     ],
-    "status": "CONTACTED_STEP_3"
+    "status": "CONTACTED_STEP_4"
   },
   "audit": {
     "originalLcpSeconds": 28.9,

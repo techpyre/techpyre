@@ -14,10 +14,11 @@
     "vatNumber": "00331540229",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=La%20Tecnica",
     "originalLandingUrl": "http://www.latecnica.trentino.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<ee786384-6d41-9e34-8bce-d0235719e425@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<0596cf18-34ea-7e9a-6c9e-2ac95fad0326@techpyre.eu>",
     "threadMessageIds": [
-      "<ee786384-6d41-9e34-8bce-d0235719e425@techpyre.eu>"
+      "<ee786384-6d41-9e34-8bce-d0235719e425@techpyre.eu>",
+      "<0596cf18-34ea-7e9a-6c9e-2ac95fad0326@techpyre.eu>"
     ]
   },
   "audit": {

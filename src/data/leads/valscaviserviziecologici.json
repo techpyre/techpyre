@@ -14,10 +14,11 @@
     "vatNumber": "Non trovata",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Servizi%20Ecologici%20e%20Ambientali",
     "originalLandingUrl": "https://www.valscaviserviziecologici.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<0177ff38-e32a-3219-e4c4-dba846b4e7c7@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<16b37310-7adb-5c0a-f98e-38700ef979b2@techpyre.eu>",
     "threadMessageIds": [
-      "<0177ff38-e32a-3219-e4c4-dba846b4e7c7@techpyre.eu>"
+      "<0177ff38-e32a-3219-e4c4-dba846b4e7c7@techpyre.eu>",
+      "<16b37310-7adb-5c0a-f98e-38700ef979b2@techpyre.eu>"
     ]
   },
   "audit": {

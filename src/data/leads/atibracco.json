@@ -14,10 +14,11 @@
     "vatNumber": "09986050012",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=A.T.I.BRACCO%20DI%20TRIVERO%20EZIO",
     "originalLandingUrl": "https://atibracco.com",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<d2c5d2e5-689f-f29d-a0a3-c83df047afc5@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<60590847-2133-355e-cb5a-2d9e23425d84@techpyre.eu>",
     "threadMessageIds": [
-      "<d2c5d2e5-689f-f29d-a0a3-c83df047afc5@techpyre.eu>"
+      "<d2c5d2e5-689f-f29d-a0a3-c83df047afc5@techpyre.eu>",
+      "<60590847-2133-355e-cb5a-2d9e23425d84@techpyre.eu>"
     ]
   },
   "audit": {

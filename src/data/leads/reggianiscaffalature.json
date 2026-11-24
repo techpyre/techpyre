@@ -14,10 +14,11 @@
     "vatNumber": "01806050348",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Reggiani%20S.r.l.",
     "originalLandingUrl": "http://www.reggianiscaffalature.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<02701bd5-53d0-e500-f442-3622970a426b@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<22f241d9-f645-6081-52d8-98dbf246f793@techpyre.eu>",
     "threadMessageIds": [
-      "<02701bd5-53d0-e500-f442-3622970a426b@techpyre.eu>"
+      "<02701bd5-53d0-e500-f442-3622970a426b@techpyre.eu>",
+      "<22f241d9-f645-6081-52d8-98dbf246f793@techpyre.eu>"
     ]
   },
   "audit": {

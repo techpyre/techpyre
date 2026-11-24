@@ -14,10 +14,11 @@
     "vatNumber": "01518940133",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=PLASTECO%20S.R.L.",
     "originalLandingUrl": "https://www.plasteco.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<c6d73574-9272-cbd1-9488-222f95e6e147@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<ce72abf0-f136-f23a-13b8-ef06cbe594e8@techpyre.eu>",
     "threadMessageIds": [
-      "<c6d73574-9272-cbd1-9488-222f95e6e147@techpyre.eu>"
+      "<c6d73574-9272-cbd1-9488-222f95e6e147@techpyre.eu>",
+      "<ce72abf0-f136-f23a-13b8-ef06cbe594e8@techpyre.eu>"
     ]
   },
   "audit": {

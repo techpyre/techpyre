@@ -14,10 +14,11 @@
     "vatNumber": "01399830395",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Oleodinamica",
     "originalLandingUrl": "https://www.oleodinamica-srl.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<77de5f81-a5aa-f6d2-832b-ff3774dbe32a@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<c0ec7c44-d6a7-3a8b-f43e-ff52b3486706@techpyre.eu>",
     "threadMessageIds": [
-      "<77de5f81-a5aa-f6d2-832b-ff3774dbe32a@techpyre.eu>"
+      "<77de5f81-a5aa-f6d2-832b-ff3774dbe32a@techpyre.eu>",
+      "<c0ec7c44-d6a7-3a8b-f43e-ff52b3486706@techpyre.eu>"
     ]
   },
   "audit": {

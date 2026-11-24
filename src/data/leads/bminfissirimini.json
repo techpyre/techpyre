@@ -14,13 +14,14 @@
     "emailScore": 35,
     "decisionMakerFirstName": "Massimo",
     "decisionMakerRole": "Titolare",
-    "lastSentMessageId": "<5bf913cd-386a-dbb3-57df-994967f603c5@techpyre.eu>",
+    "lastSentMessageId": "<3f06caf7-d3a9-3bb4-ef19-a18e9cae0dc7@techpyre.eu>",
     "threadMessageIds": [
       "<799cfddc-0610-410a-bfa6-a320573e6583@techpyre.eu>",
       "<a6d54e55-4329-a27b-ccb9-014dac69d062@techpyre.eu>",
-      "<5bf913cd-386a-dbb3-57df-994967f603c5@techpyre.eu>"
+      "<5bf913cd-386a-dbb3-57df-994967f603c5@techpyre.eu>",
+      "<3f06caf7-d3a9-3bb4-ef19-a18e9cae0dc7@techpyre.eu>"
     ],
-    "status": "CONTACTED_STEP_3"
+    "status": "CONTACTED_STEP_4"
   },
   "audit": {
     "originalLcpSeconds": 5.4,

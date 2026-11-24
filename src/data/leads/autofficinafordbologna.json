@@ -14,10 +14,11 @@
     "vatNumber": "03096620376",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Bini%20Enrico%20%26%20C.%20-%20Officina%20Autorizzata%20Ford",
     "originalLandingUrl": "http://www.autofficinafordbologna.com",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<d79387a9-e0c7-ca15-8505-1cb0168c5862@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<e05e021e-b6d4-469f-65d0-a2255752cb4b@techpyre.eu>",
     "threadMessageIds": [
-      "<d79387a9-e0c7-ca15-8505-1cb0168c5862@techpyre.eu>"
+      "<d79387a9-e0c7-ca15-8505-1cb0168c5862@techpyre.eu>",
+      "<e05e021e-b6d4-469f-65d0-a2255752cb4b@techpyre.eu>"
     ]
   },
   "audit": {

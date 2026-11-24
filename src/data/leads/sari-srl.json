@@ -14,10 +14,11 @@
     "vatNumber": "02579890241",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Sari",
     "originalLandingUrl": "http://www.sari-srl.com",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<40668a22-c5b3-6550-6788-b32280d8ec80@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<703e3419-361f-be54-bba9-f63e7dfc4a83@techpyre.eu>",
     "threadMessageIds": [
-      "<40668a22-c5b3-6550-6788-b32280d8ec80@techpyre.eu>"
+      "<40668a22-c5b3-6550-6788-b32280d8ec80@techpyre.eu>",
+      "<703e3419-361f-be54-bba9-f63e7dfc4a83@techpyre.eu>"
     ]
   },
   "audit": {

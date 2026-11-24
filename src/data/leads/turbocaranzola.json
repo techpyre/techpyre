@@ -14,10 +14,11 @@
     "vatNumber": "01607941208",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Turbo%20Car%20S.n.c.%20Di%20Benassi%20Emiliano%20e%20C.",
     "originalLandingUrl": "http://www.turbocaranzola.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<d03eb254-e0af-31b3-043d-382add0e72d7@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<51ed6490-2ce5-25fc-dfd9-8c97eb3c2881@techpyre.eu>",
     "threadMessageIds": [
-      "<d03eb254-e0af-31b3-043d-382add0e72d7@techpyre.eu>"
+      "<d03eb254-e0af-31b3-043d-382add0e72d7@techpyre.eu>",
+      "<51ed6490-2ce5-25fc-dfd9-8c97eb3c2881@techpyre.eu>"
     ]
   },
   "audit": {

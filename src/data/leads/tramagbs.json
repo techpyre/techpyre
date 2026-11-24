@@ -14,10 +14,11 @@
     "vatNumber": "02049760172",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=TRA.MAG.%20s.a.s.%20di%20S.%20e%20M.Maffessoli%20%26%20C.",
     "originalLandingUrl": "http://www.tramagbs.com",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<3375cee2-241f-140c-c921-4ff2c7fdf3a5@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<1f836264-8153-224c-5f94-e356dec26c90@techpyre.eu>",
     "threadMessageIds": [
-      "<3375cee2-241f-140c-c921-4ff2c7fdf3a5@techpyre.eu>"
+      "<3375cee2-241f-140c-c921-4ff2c7fdf3a5@techpyre.eu>",
+      "<1f836264-8153-224c-5f94-e356dec26c90@techpyre.eu>"
     ]
   },
   "audit": {

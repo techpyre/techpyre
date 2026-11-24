@@ -14,10 +14,11 @@
     "vatNumber": "03863530105",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Traslochi%20Lanfranconi",
     "originalLandingUrl": "http://www.lanfranconitraslochi.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<7ee7c7b3-6935-5027-bc11-ac060c72baf2@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<c6118d48-96ee-060e-743f-cfbeb7852048@techpyre.eu>",
     "threadMessageIds": [
-      "<7ee7c7b3-6935-5027-bc11-ac060c72baf2@techpyre.eu>"
+      "<7ee7c7b3-6935-5027-bc11-ac060c72baf2@techpyre.eu>",
+      "<c6118d48-96ee-060e-743f-cfbeb7852048@techpyre.eu>"
     ]
   },
   "audit": {

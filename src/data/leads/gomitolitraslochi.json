@@ -14,10 +14,11 @@
     "vatNumber": "03899950236",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Copyright%202026%20GOMITOLI%20TRASLOCHI%20SRL",
     "originalLandingUrl": "http://www.gomitolitraslochi.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<5b8d1b9e-2be0-4c3c-168f-25ff67e2bb2b@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<c961ebc4-be9f-1977-5960-e6583ace45bd@techpyre.eu>",
     "threadMessageIds": [
-      "<5b8d1b9e-2be0-4c3c-168f-25ff67e2bb2b@techpyre.eu>"
+      "<5b8d1b9e-2be0-4c3c-168f-25ff67e2bb2b@techpyre.eu>",
+      "<c961ebc4-be9f-1977-5960-e6583ace45bd@techpyre.eu>"
     ]
   },
   "audit": {

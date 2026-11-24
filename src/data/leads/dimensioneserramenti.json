@@ -1,0 +1,152 @@
+{
+  "slug": "dimensioneserramenti",
+  "archetype": "local-leadgen",
+  "meta": {
+    "companyName": "Dimensione Serramenti Srl a s.u",
+    "decisionMakerName": "Direzione Dimensione Serramenti Srl a s.u",
+    "decisionMakerFirstName": null,
+    "decisionMakerRole": "Direzione Aziendale",
+    "isGenericInbox": true,
+    "emailScore": 38,
+    "targetEmail": "bolognapoint@dimensioneserramenti.com",
+    "phone": "0516468445",
+    "city": "Bologna",
+    "vatNumber": "03008641205",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Dimensione%20Serramenti%20Srl%20a%20s.u",
+    "originalLandingUrl": "http://www.dimensioneserramenti.com",
+    "status": "CONTACTED_STEP_1",
+    "lastSentMessageId": "<ec642aea-8ec3-eb4d-049f-542ed7e9c3b5@techpyre.eu>",
+    "threadMessageIds": [
+      "<ec642aea-8ec3-eb4d-049f-542ed7e9c3b5@techpyre.eu>"
+    ]
+  },
+  "audit": {
+    "originalLcpSeconds": 10.1,
+    "mobileScore": 15,
+    "renderBlockingCount": 42,
+    "runsAds": true,
+    "detectedTrackingSignals": [
+      "Meta Pixel",
+      "Google Ads Conversion / Remarketing"
+    ],
+    "threeCriticalFlaws": [
+      "Dispersione del budget pubblicitario: caricamento mobile di 10.1s (42 risorse bloccanti) che fa abbandonare oltre meta degli utenti prima dell'apertura della pagina.",
+      "Cecita decisionale sul ROI: assenza di tracciamento Server-Side di prima parte (GTM Server-Side e Meta CAPI), con perdita del 30-50% dei dati di conversione per blocchi browser e cookie banner.",
+      "Colli di bottiglia commerciali: i contatti finiscono in email isolate senza pre-qualifica automatica e senza sincronizzazione immediata via API/Webhook con il CRM aziendale."
+    ],
+    "activeAdHeadline": "Produzione e vendita infissi e serramenti a Bologna | DS",
+    "activeAdCopySummary": "Da oltre 30 anni Dimensione Serramenti produce infissi e serramenti a Bologna: finestre, porte, sistemi oscuranti. Prenota un appuntamento n..."
+  },
+  "theme": {
+    "primaryHex": "#204050",
+    "accentHex": "#2563EB",
+    "darkBgHex": "#0B1E36",
+    "borderRadius": "12px",
+    "headerBgMode": "light",
+    "headerBgHex": "#FFFFFF",
+    "logoBrightness": "dark"
+  },
+  "content": {
+    "badgeTop": "Dimensione Serramenti Srl a s.u · Serramenti Certificati a Bologna",
+    "heroHeadline": "Produzione e vendita infissi e serramenti a Bologna | DS",
+    "heroSubheadline": "Da oltre 30 anni Dimensione Serramenti produce infissi e serramenti a Bologna: finestre, porte, sistemi oscuranti. Prenota un appuntamento nei nostri showroom.",
+    "heroBullets": [
+      "Rilievo misure preciso a domicilio e preventivo trasparente chiavi in mano",
+      "Profili ad alto isolamento termico e acustico per abbattere i consumi",
+      "Posa certificata con squadre interne e assistenza post-vendita diretta"
+    ],
+    "ctaButtonText": "Calcola il Tuo Preventivo Rapido",
+    "trustMicrocopy": "Richiesta gratuita e senza impegno · Risposta rapida dal nostro ufficio tecnico",
+    "logoLocalPath": "/leads/dimensioneserramenti/logo.png",
+    "heroImageLocalPath": "/leads/dimensioneserramenti/hero.jpg",
+    "heroImageCaption": "Dimensione Serramenti Srl a s.u · Sede operativa e realizzazioni (Bologna)",
+    "quiz": {
+      "question1": {
+        "title": "Quale tipologia di intervento desideri valutare?",
+        "options": [
+          "Sostituzione infissi con isolamento termico/acustico",
+          "Nuova installazione per ristrutturazione o cantiere",
+          "Porte interne, blindati o sistemi oscuranti"
+        ]
+      },
+      "question2": {
+        "title": "Quanti serramenti prevede indicativamente il progetto?",
+        "options": [
+          "Da 1 a 4 serramenti",
+          "Da 5 a 8 serramenti (appartamento completo)",
+          "Oltre 8 serramenti o villa/ufficio"
+        ]
+      },
+      "finalStepTitle": "Ottimo. Inserisci i tuoi recapiti per ricevere il prospetto economico e il sopralluogo:"
+    },
+    "valueProps": [
+      {
+        "title": "Isolamento Termico e Acustico Certificato",
+        "description": "Serramenti selezionati per eliminare spifferi, umidita e rumori esterni nella tua abitazione o ufficio a Bologna.",
+        "metric": "Risparmio Energetico"
+      },
+      {
+        "title": "Posa in Opera Qualificata Senza Sorprese",
+        "description": "Squadre di montaggio esperte di Dimensione Serramenti Srl a s.u curano controtelai, sigillature e finiture senza opere murarie invasive.",
+        "metric": "Posa Certificata"
+      },
+      {
+        "title": "Preventivo Chiaro e Supporto Pratiche Bonus",
+        "description": "Costi chiari fin dal primo incontro e assistenza completa su certificazioni energetiche ed ecobonus.",
+        "metric": "Prezzo Bloccato"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "98%",
+      "mainStatLabel": "Clienti soddisfatti di posa in opera e isolamento termico",
+      "reviewsSummary": "4.9/5 da clienti seguiti a Bologna e provincia",
+      "testimonials": [
+        {
+          "name": "Davide C.",
+          "location": "Bologna",
+          "quote": "Team di Dimensione Serramenti Srl a s.u preciso dal rilievo al montaggio. La differenza termica e acustica in casa si sente subito.",
+          "roleOrContext": "Sostituzione infissi completi"
+        },
+        {
+          "name": "Federica S.",
+          "location": "Bologna e provincia",
+          "quote": "Preventivo rispettato al centesimo, cantiere lasciato pulito ogni sera e grande supporto sulle pratiche fiscali.",
+          "roleOrContext": "Finestre e portoncino blindato"
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "Alla c.a. Direzione Dimensione Serramenti Srl a s.u - dispersione clic mobile e tempi di apertura (10.1s)",
+    "emailPlainTextBody": "Buongiorno,\n\nda una verifica sul sito di Dimensione Serramenti Srl a s.u, aprendolo da smartphone passano 10.1 secondi prima che la pagina sia utilizzabile, facendo abbandonare buona parte dei visitatori arrivati dalle inserzioni.\n\nAbbiamo gia preparato per Dimensione Serramenti Srl a s.u una bozza su misura che si apre in 0.3 secondi da telefono e filtra in automatico le richieste di preventivo.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre Studio\nTel/WhatsApp: +39 379 115 9352\nriccardo.granza@techpyre.eu",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della bozza da 0.3 secondi preparata per Dimensione Serramenti Srl a s.u, con simulatore di pre-qualifica richieste integrato in pagina:\n\nhttps://www.techpyre.eu/demo/dimensioneserramenti\n\nPotete provarla direttamente dal telefono: se l'impostazione vi piace, scrivetemi pure su WhatsApp (o in risposta a questa email) per vedere come adattarla al vostro flusso commerciale.\n\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu\n\nNota: la demo è una bozza privata visibile solo da questo link (non indicizzata su Google), creata su misura a solo scopo dimostrativo (art. 21 D.Lgs. 30/2005; Reg. UE 2016/679). Rimozione immediata su richiesta.",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "Alla c.a. Direzione Dimensione Serramenti Srl a s.u - dispersione clic mobile e tempi di apertura (10.1s)",
+      "body": "Buongiorno,\n\nda una verifica sul sito di Dimensione Serramenti Srl a s.u, aprendolo da smartphone passano 10.1 secondi prima che la pagina sia utilizzabile, facendo abbandonare buona parte dei visitatori arrivati dalle inserzioni.\n\nAbbiamo gia preparato per Dimensione Serramenti Srl a s.u una bozza su misura che si apre in 0.3 secondi da telefono e filtra in automatico le richieste di preventivo.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre Studio\nTel/WhatsApp: +39 379 115 9352\nriccardo.granza@techpyre.eu",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: Alla c.a. Direzione Dimensione Serramenti Srl a s.u - dispersione clic mobile e tempi di apertura (10.1s)",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della bozza da 0.3 secondi preparata per Dimensione Serramenti Srl a s.u, con simulatore di pre-qualifica richieste integrato in pagina:\n\nhttps://www.techpyre.eu/demo/dimensioneserramenti\n\nPotete provarla direttamente dal telefono: se l'impostazione vi piace, scrivetemi pure su WhatsApp (o in risposta a questa email) per vedere come adattarla al vostro flusso commerciale.\n\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu\n\nNota: la demo è una bozza privata visibile solo da questo link (non indicizzata su Google), creata su misura a solo scopo dimostrativo (art. 21 D.Lgs. 30/2005; Reg. UE 2016/679). Rimozione immediata su richiesta.",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: Alla c.a. Direzione Dimensione Serramenti Srl a s.u - dispersione clic mobile e tempi di apertura (10.1s)",
+      "body": "Buongiorno,\n\nOltre ad azzerare i 10.1 secondi di attesa su mobile, l'infrastruttura recupera il 40% dei dati di conversione persi coi cookie banner tramite Server-Side Tracking.\n\nPer non disturbarvi con chiamate a freddo, se mi mandate anche solo un veloce messaggio su WhatsApp al +39 379 115 9352 (o rispondete qui sotto) vi giro subito in chat i dettagli per Dimensione Serramenti Srl a s.u.\n\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: Alla c.a. Direzione Dimensione Serramenti Srl a s.u - dispersione clic mobile e tempi di apertura (10.1s)",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Dimensione Serramenti Srl a s.u non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/dimensioneserramenti) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione su WhatsApp o via email se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

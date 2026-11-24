@@ -1,0 +1,149 @@
+{
+  "slug": "coaainfissi",
+  "archetype": "local-leadgen",
+  "meta": {
+    "companyName": "C.O.A.A. INFISSI",
+    "decisionMakerName": "Carlo Allegra",
+    "decisionMakerFirstName": "Carlo",
+    "decisionMakerRole": "Titolare",
+    "isGenericInbox": true,
+    "emailScore": 35,
+    "targetEmail": "info@coaainfissi.it",
+    "phone": "0547334262",
+    "city": "Cesena",
+    "vatNumber": "03102930405",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=C.O.A.A.%20INFISSI",
+    "originalLandingUrl": "http://www.coaainfissi.it",
+    "status": "CONTACTED_STEP_1",
+    "lastSentMessageId": "<d0cbb193-bf21-0f0a-57d9-949acfc691e0@techpyre.eu>",
+    "threadMessageIds": [
+      "<d0cbb193-bf21-0f0a-57d9-949acfc691e0@techpyre.eu>"
+    ]
+  },
+  "audit": {
+    "originalLcpSeconds": 10.4,
+    "mobileScore": 15,
+    "renderBlockingCount": 40,
+    "runsAds": false,
+    "detectedTrackingSignals": [],
+    "threeCriticalFlaws": [
+      "Perdita di richieste di preventivo su mobile: caricamento di 10.4s (40 risorse bloccanti) che spinge i visitatori da smartphone ad abbandonare la pagina prima di contattare l'ufficio commerciale.",
+      "Assenza di pre-qualifica automatica: il sito non filtra le richieste per tipologia di intervento, budget o tempistiche prima di inviarle ai referenti tecnici di C.O.A.A. INFISSI.",
+      "Colli di bottiglia commerciali: le richieste arrivano come semplici email isolate senza instradamento automatico e senza tracciamento strutturato della trattativa."
+    ],
+    "activeAdHeadline": "Comfort, sicurezza e stile per i tuoi spazi",
+    "activeAdCopySummary": "Dal 1979 COAA Infissi accompagna famiglie e aziende nella scelta di infissi, serramenti e soluzioni per la casa. Esperienza, qualit&agrave; ..."
+  },
+  "theme": {
+    "primaryHex": "#1E3A8A",
+    "accentHex": "#2563EB",
+    "darkBgHex": "#0B1E36",
+    "borderRadius": "12px",
+    "headerBgMode": "dark",
+    "headerBgHex": "#0E1013",
+    "logoBrightness": "light"
+  },
+  "content": {
+    "badgeTop": "C.O.A.A. INFISSI · Outdoor e Schermature Solari (Cesena)",
+    "heroHeadline": "Comfort, sicurezza e stile per i tuoi spazi",
+    "heroSubheadline": "Dal 1979 COAA Infissi accompagna famiglie e aziende nella scelta di infissi, serramenti e soluzioni per la casa. Esperienza, qualità e assistenza a Cesena e provincia",
+    "heroBullets": [
+      "Rilievo misure a domicilio e progettazione su misura per balconi e giardini",
+      "Tessuti tecnici e strutture resistenti a sole, vento e pioggia",
+      "Motorizzazioni silenziose, sensoristica vento/pioggia e gestione pratiche"
+    ],
+    "ctaButtonText": "Calcola il Tuo Preventivo Rapido",
+    "trustMicrocopy": "Richiesta gratuita e senza impegno · Risposta rapida dal nostro ufficio tecnico",
+    "logoLocalPath": "/leads/coaainfissi/logo.png",
+    "heroImageLocalPath": "/leads/coaainfissi/hero.jpg",
+    "heroImageCaption": "C.O.A.A. INFISSI · Sede operativa e realizzazioni (Cesena)",
+    "quiz": {
+      "question1": {
+        "title": "Quale soluzione per esterni desideri installare?",
+        "options": [
+          "Pergola bioclimatica o pergotenda su misura",
+          "Tenda da sole per terrazzo o balcone",
+          "Chiusura con vetrate panoramiche o zanzariere"
+        ]
+      },
+      "question2": {
+        "title": "Che superficie indicativa vuoi coprire?",
+        "options": [
+          "Fino a 15 mq (balcone o piccolo terrazzo)",
+          "Da 15 a 35 mq (terrazzo o giardino privato)",
+          "Oltre 35 mq (ampio spazio esterno o attivita)"
+        ]
+      },
+      "finalStepTitle": "Perfetto. Lascia i tuoi dati per prenotare il rilievo misure e ricevere il preventivo:"
+    },
+    "valueProps": [
+      {
+        "title": "Progettazione Estetica Su Misura",
+        "description": "Adattiamo ogni pergola o tenda da sole all'architettura del tuo edificio a Cesena con finiture e tessuti coordinati.",
+        "metric": "Su Misura"
+      },
+      {
+        "title": "Materiali Certificati ad Alta Durata",
+        "description": "C.O.A.A. INFISSI utilizza strutture in alluminio verniciato e motorizzazioni garantite per resistere negli anni.",
+        "metric": "Garanzia Scritta"
+      },
+      {
+        "title": "Installazione Rapida e Pulita",
+        "description": "Montaggio completo curato dai nostri tecnici interni con collaudo finale e assistenza diretta sul territorio.",
+        "metric": "Chiavi in Mano"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "98%",
+      "mainStatLabel": "Installazioni outdoor completate nei tempi concordati",
+      "reviewsSummary": "4.9/5 da privati e attivita a Cesena",
+      "testimonials": [
+        {
+          "name": "Andrea M.",
+          "location": "Cesena",
+          "quote": "La pergola installata da C.O.A.A. INFISSI ha trasformato il nostro terrazzo. Finiture impeccabili e montaggio velocissimo.",
+          "roleOrContext": "Pergola bioclimatica"
+        },
+        {
+          "name": "Chiara L.",
+          "location": "Cesena e provincia",
+          "quote": "Consulenza chiara sui tessuti e sulle detrazioni disponibili. Puntuali e super ordinati durante l'installazione.",
+          "roleOrContext": "Tende da sole motorizzate"
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "Per Carlo Allegra - lentezza da smartphone (10.4s) e filtro richieste preventivo di C.O.A.A. INFISSI",
+    "emailPlainTextBody": "Buongiorno Carlo,\n\nda una verifica sul sito di C.O.A.A. INFISSI, aprendolo da smartphone passano 10.4 secondi prima che la pagina sia utilizzabile, frenando le richieste di preventivo di chi vi cerca da mobile.\n\nAbbiamo gia preparato per C.O.A.A. INFISSI una bozza su misura che si apre in 0.3 secondi da telefono e filtra in automatico le richieste di preventivo.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre Studio\nTel/WhatsApp: +39 379 115 9352\nriccardo.granza@techpyre.eu",
+    "followUpWithLinkBody": "Buongiorno Carlo,\n\nvi lascio qui sotto il link della bozza da 0.3 secondi preparata per C.O.A.A. INFISSI, con simulatore di pre-qualifica richieste integrato in pagina:\n\nhttps://www.techpyre.eu/demo/coaainfissi\n\nPotete provarla direttamente dal telefono: se l'impostazione vi piace, scrivetemi pure su WhatsApp (o in risposta a questa email) per vedere come adattarla al vostro flusso commerciale.\n\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu\n\nNota: la demo è una bozza privata visibile solo da questo link (non indicizzata su Google), creata su misura a solo scopo dimostrativo (art. 21 D.Lgs. 30/2005; Reg. UE 2016/679). Rimozione immediata su richiesta.",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "Per Carlo Allegra - lentezza da smartphone (10.4s) e filtro richieste preventivo di C.O.A.A. INFISSI",
+      "body": "Buongiorno Carlo,\n\nda una verifica sul sito di C.O.A.A. INFISSI, aprendolo da smartphone passano 10.4 secondi prima che la pagina sia utilizzabile, frenando le richieste di preventivo di chi vi cerca da mobile.\n\nAbbiamo gia preparato per C.O.A.A. INFISSI una bozza su misura che si apre in 0.3 secondi da telefono e filtra in automatico le richieste di preventivo.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre Studio\nTel/WhatsApp: +39 379 115 9352\nriccardo.granza@techpyre.eu",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: Per Carlo Allegra - lentezza da smartphone (10.4s) e filtro richieste preventivo di C.O.A.A. INFISSI",
+      "body": "Buongiorno Carlo,\n\nvi lascio qui sotto il link della bozza da 0.3 secondi preparata per C.O.A.A. INFISSI, con simulatore di pre-qualifica richieste integrato in pagina:\n\nhttps://www.techpyre.eu/demo/coaainfissi\n\nPotete provarla direttamente dal telefono: se l'impostazione vi piace, scrivetemi pure su WhatsApp (o in risposta a questa email) per vedere come adattarla al vostro flusso commerciale.\n\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu\n\nNota: la demo è una bozza privata visibile solo da questo link (non indicizzata su Google), creata su misura a solo scopo dimostrativo (art. 21 D.Lgs. 30/2005; Reg. UE 2016/679). Rimozione immediata su richiesta.",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: Per Carlo Allegra - lentezza da smartphone (10.4s) e filtro richieste preventivo di C.O.A.A. INFISSI",
+      "body": "Buongiorno Carlo,\n\nOltre ad azzerare i 10.4 secondi di attesa su mobile, il simulatore filtra le richieste fuori target prima di inviarle su WhatsApp o al vostro CRM.\n\nPer non disturbarvi con chiamate a freddo, se mi mandate anche solo un veloce messaggio su WhatsApp al +39 379 115 9352 (o rispondete qui sotto) vi giro subito in chat i dettagli per C.O.A.A. INFISSI.\n\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: Per Carlo Allegra - lentezza da smartphone (10.4s) e filtro richieste preventivo di C.O.A.A. INFISSI",
+      "body": "Buongiorno Carlo,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di C.O.A.A. INFISSI non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/coaainfissi) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione su WhatsApp o via email se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

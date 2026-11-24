@@ -14,10 +14,11 @@
     "vatNumber": "05509410964",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Mare%20Spa",
     "originalLandingUrl": "http://www.mare.com",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<495f8e4b-abd4-ac36-6cd4-7c029bec8a06@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<880a0add-4ca3-2c7f-940e-eba4a6578472@techpyre.eu>",
     "threadMessageIds": [
-      "<495f8e4b-abd4-ac36-6cd4-7c029bec8a06@techpyre.eu>"
+      "<495f8e4b-abd4-ac36-6cd4-7c029bec8a06@techpyre.eu>",
+      "<880a0add-4ca3-2c7f-940e-eba4a6578472@techpyre.eu>"
     ]
   },
   "audit": {

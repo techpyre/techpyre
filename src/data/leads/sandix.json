@@ -14,10 +14,11 @@
     "vatNumber": "00285480307",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Sandix%20Srl%20.%20P.I.%2000285480307",
     "originalLandingUrl": "http://www.sandix.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<f1826473-3644-d62c-23c5-e524a21dd47e@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<d3c54858-5549-5ce4-566d-05670a128ee7@techpyre.eu>",
     "threadMessageIds": [
-      "<f1826473-3644-d62c-23c5-e524a21dd47e@techpyre.eu>"
+      "<f1826473-3644-d62c-23c5-e524a21dd47e@techpyre.eu>",
+      "<d3c54858-5549-5ce4-566d-05670a128ee7@techpyre.eu>"
     ]
   },
   "audit": {

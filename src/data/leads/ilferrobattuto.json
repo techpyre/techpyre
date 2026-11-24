@@ -14,10 +14,11 @@
     "vatNumber": "00749080263",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Il%20Ferrobattuto",
     "originalLandingUrl": "http://www.ilferrobattuto.eu",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<6a8ec7ae-9630-f765-5abc-297e6868d955@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<14b35b0e-cacd-e162-5828-f1f5882e89b9@techpyre.eu>",
     "threadMessageIds": [
-      "<6a8ec7ae-9630-f765-5abc-297e6868d955@techpyre.eu>"
+      "<6a8ec7ae-9630-f765-5abc-297e6868d955@techpyre.eu>",
+      "<14b35b0e-cacd-e162-5828-f1f5882e89b9@techpyre.eu>"
     ]
   },
   "audit": {

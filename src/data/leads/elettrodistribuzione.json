@@ -14,10 +14,11 @@
     "vatNumber": "04807660289",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=ED%20ELETTRODISTRIBUZIONE%20srl",
     "originalLandingUrl": "http://www.elettrodistribuzione.com",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<ac18fc15-e6d7-f99f-85dc-2c28f65e92a2@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<d7697396-d546-fb7e-0a31-123ad5bb279a@techpyre.eu>",
     "threadMessageIds": [
-      "<ac18fc15-e6d7-f99f-85dc-2c28f65e92a2@techpyre.eu>"
+      "<ac18fc15-e6d7-f99f-85dc-2c28f65e92a2@techpyre.eu>",
+      "<d7697396-d546-fb7e-0a31-123ad5bb279a@techpyre.eu>"
     ]
   },
   "audit": {

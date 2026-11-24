@@ -14,10 +14,11 @@
     "vatNumber": "04230090278",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Duemme%20Serramenti%20-%20Costruzione%20Serramenti",
     "originalLandingUrl": "https://www.duemmeserramenti.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<c87bdced-7b1f-67f3-4e65-8ae0cd818b5d@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<37dde5a0-4a26-8ad9-f23e-4cc2f8d1e87d@techpyre.eu>",
     "threadMessageIds": [
-      "<c87bdced-7b1f-67f3-4e65-8ae0cd818b5d@techpyre.eu>"
+      "<c87bdced-7b1f-67f3-4e65-8ae0cd818b5d@techpyre.eu>",
+      "<37dde5a0-4a26-8ad9-f23e-4cc2f8d1e87d@techpyre.eu>"
     ]
   },
   "audit": {

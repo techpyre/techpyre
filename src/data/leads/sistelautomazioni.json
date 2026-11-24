@@ -14,10 +14,11 @@
     "vatNumber": "02603070356",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Sistel%20Centro%20Automazioni",
     "originalLandingUrl": "https://www.sistelautomazioni.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<783561d3-4649-679f-9826-9177ba3a0d32@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<82e84c10-24ea-f40b-b7a8-51d8138416f1@techpyre.eu>",
     "threadMessageIds": [
-      "<783561d3-4649-679f-9826-9177ba3a0d32@techpyre.eu>"
+      "<783561d3-4649-679f-9826-9177ba3a0d32@techpyre.eu>",
+      "<82e84c10-24ea-f40b-b7a8-51d8138416f1@techpyre.eu>"
     ]
   },
   "audit": {

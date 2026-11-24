@@ -14,10 +14,11 @@
     "vatNumber": "05621150019",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Metalplast%20Soprana",
     "originalLandingUrl": "https://www.metalplast-soprana.com",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<a36feb5a-f300-db71-f097-9ec8dc9a2d02@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<86d35ee9-ddcf-20c3-a166-7405420a9935@techpyre.eu>",
     "threadMessageIds": [
-      "<a36feb5a-f300-db71-f097-9ec8dc9a2d02@techpyre.eu>"
+      "<a36feb5a-f300-db71-f097-9ec8dc9a2d02@techpyre.eu>",
+      "<86d35ee9-ddcf-20c3-a166-7405420a9935@techpyre.eu>"
     ]
   },
   "audit": {

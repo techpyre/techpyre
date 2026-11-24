@@ -14,10 +14,11 @@
     "vatNumber": "02485970988",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Ecoval%20srl",
     "originalLandingUrl": "https://ecovalecologia.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<9bed5f62-93ae-f930-2812-16f09e64b396@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<1a4de123-3d9c-e88b-03d7-97153da55ded@techpyre.eu>",
     "threadMessageIds": [
-      "<9bed5f62-93ae-f930-2812-16f09e64b396@techpyre.eu>"
+      "<9bed5f62-93ae-f930-2812-16f09e64b396@techpyre.eu>",
+      "<1a4de123-3d9c-e88b-03d7-97153da55ded@techpyre.eu>"
     ]
   },
   "audit": {

@@ -14,10 +14,11 @@
     "vatNumber": "01936380169",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Bremtur%20Srl",
     "originalLandingUrl": "http://www.bremtur.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<d1ec4f61-f73e-2e7e-7c78-ad966cf724bd@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<b9f496d9-b593-fc27-a420-9ed265a4cb66@techpyre.eu>",
     "threadMessageIds": [
-      "<d1ec4f61-f73e-2e7e-7c78-ad966cf724bd@techpyre.eu>"
+      "<d1ec4f61-f73e-2e7e-7c78-ad966cf724bd@techpyre.eu>",
+      "<b9f496d9-b593-fc27-a420-9ed265a4cb66@techpyre.eu>"
     ]
   },
   "audit": {
