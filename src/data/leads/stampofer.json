@@ -14,10 +14,11 @@
     "vatNumber": "00436440176",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Stampofer",
     "originalLandingUrl": "https://stampofer.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<c5c2e4d2-8721-cb08-291e-4a37b22b5a5c@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<143d1ba3-711a-b8b3-457c-ccf6da01f52b@techpyre.eu>",
     "threadMessageIds": [
-      "<c5c2e4d2-8721-cb08-291e-4a37b22b5a5c@techpyre.eu>"
+      "<c5c2e4d2-8721-cb08-291e-4a37b22b5a5c@techpyre.eu>",
+      "<143d1ba3-711a-b8b3-457c-ccf6da01f52b@techpyre.eu>"
     ]
   },
   "audit": {

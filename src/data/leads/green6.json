@@ -14,10 +14,11 @@
     "vatNumber": "02697370399",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=GREEN6.",
     "originalLandingUrl": "https://www.green6.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<5be168ed-81b5-eb57-fa6b-d8ebb3305c71@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<2093adfc-1265-c168-39d1-4a04e0e14820@techpyre.eu>",
     "threadMessageIds": [
-      "<5be168ed-81b5-eb57-fa6b-d8ebb3305c71@techpyre.eu>"
+      "<5be168ed-81b5-eb57-fa6b-d8ebb3305c71@techpyre.eu>",
+      "<2093adfc-1265-c168-39d1-4a04e0e14820@techpyre.eu>"
     ]
   },
   "audit": {

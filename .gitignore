@@ -47,6 +47,7 @@ next-env.d.ts
 /src/data/outreach-history.json
 /src/data/demo-visits.json
 /src/data/leads-status.json
+/src/data/notion-sync-state.json
 /src/data/user-profiles/
 .agents/
 .antigravity/

@@ -14,10 +14,11 @@
     "vatNumber": "04301320406",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Tecnoimpianti%20Service",
     "originalLandingUrl": "https://tecnoimpiantiservice.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<223450e6-fa91-bfb9-2f54-871ea2dfc5a0@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<8c1a298a-73c4-640d-a2ac-85634ad95ff4@techpyre.eu>",
     "threadMessageIds": [
-      "<223450e6-fa91-bfb9-2f54-871ea2dfc5a0@techpyre.eu>"
+      "<223450e6-fa91-bfb9-2f54-871ea2dfc5a0@techpyre.eu>",
+      "<8c1a298a-73c4-640d-a2ac-85634ad95ff4@techpyre.eu>"
     ]
   },
   "audit": {

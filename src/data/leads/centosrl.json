@@ -14,10 +14,11 @@
     "vatNumber": "01077390191",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Cento%20S.r.l.%20Recuperi%20Fallimentari",
     "originalLandingUrl": "http://www.centosrl.com",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<7eaa736d-f886-dc85-aa90-0f23c0c2a9d0@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<28ef0608-fab4-2f72-98b5-e20d0735c8e2@techpyre.eu>",
     "threadMessageIds": [
-      "<7eaa736d-f886-dc85-aa90-0f23c0c2a9d0@techpyre.eu>"
+      "<7eaa736d-f886-dc85-aa90-0f23c0c2a9d0@techpyre.eu>",
+      "<28ef0608-fab4-2f72-98b5-e20d0735c8e2@techpyre.eu>"
     ]
   },
   "audit": {

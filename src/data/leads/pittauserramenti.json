@@ -14,10 +14,11 @@
     "vatNumber": "01436620932",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Pittau%20Serramenti",
     "originalLandingUrl": "http://www.pittauserramenti.com",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<7379ebec-318b-22b6-33ae-7754fb3b3bc8@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<85008301-083f-7bb3-a526-aa500003be35@techpyre.eu>",
     "threadMessageIds": [
-      "<7379ebec-318b-22b6-33ae-7754fb3b3bc8@techpyre.eu>"
+      "<7379ebec-318b-22b6-33ae-7754fb3b3bc8@techpyre.eu>",
+      "<85008301-083f-7bb3-a526-aa500003be35@techpyre.eu>"
     ]
   },
   "audit": {

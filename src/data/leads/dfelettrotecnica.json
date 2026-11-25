@@ -14,10 +14,11 @@
     "vatNumber": "01436260408",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=DF%20Elettrotecnica",
     "originalLandingUrl": "http://www.dfelettrotecnica.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<929f0366-e8ab-326d-7cf8-6107492898c0@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<88638f4a-886a-f4cb-95ce-f93a71a09b8d@techpyre.eu>",
     "threadMessageIds": [
-      "<929f0366-e8ab-326d-7cf8-6107492898c0@techpyre.eu>"
+      "<929f0366-e8ab-326d-7cf8-6107492898c0@techpyre.eu>",
+      "<88638f4a-886a-f4cb-95ce-f93a71a09b8d@techpyre.eu>"
     ]
   },
   "audit": {

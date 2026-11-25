@@ -14,10 +14,11 @@
     "vatNumber": "Non trovata",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Dueffe%20by%20Ares",
     "originalLandingUrl": "https://dueffebyares.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<60afae56-dadc-12d5-3394-65f08cf058d5@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<3eba8f5a-68f6-fe0e-a5ca-37ad0becee6d@techpyre.eu>",
     "threadMessageIds": [
-      "<60afae56-dadc-12d5-3394-65f08cf058d5@techpyre.eu>"
+      "<60afae56-dadc-12d5-3394-65f08cf058d5@techpyre.eu>",
+      "<3eba8f5a-68f6-fe0e-a5ca-37ad0becee6d@techpyre.eu>"
     ]
   },
   "audit": {

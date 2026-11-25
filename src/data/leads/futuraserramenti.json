@@ -3,9 +3,9 @@
   "archetype": "local-leadgen",
   "meta": {
     "companyName": "Futura Serramenti",
-    "decisionMakerName": "Titolare Futura Serramenti",
+    "decisionMakerName": "Direzione Futura Serramenti",
     "decisionMakerFirstName": null,
-    "decisionMakerRole": null,
+    "decisionMakerRole": "Direzione Aziendale",
     "isGenericInbox": true,
     "emailScore": 45,
     "targetEmail": "commerciale@futuraserramenti.it",
@@ -44,7 +44,7 @@
   "content": {
     "badgeTop": "Futura Serramenti · Serramenti Certificati a Quinto di Treviso",
     "heroHeadline": "Serramenti in PVC di alta qualità, progettati per durare",
-    "heroSubheadline": "Una realt&agrave; dinamica oggi una delle aziende di riferimento nella produzione di serramenti in PVC e nella fornitura di elementi finiti per l",
+    "heroSubheadline": "Una realtà dinamica oggi una delle aziende di riferimento nella produzione di serramenti in PVC e nella fornitura di elementi finiti per l",
     "heroBullets": [
       "Rilievo misure preciso a domicilio e preventivo trasparente chiavi in mano",
       "Profili ad alto isolamento termico e acustico per abbattere i consumi",

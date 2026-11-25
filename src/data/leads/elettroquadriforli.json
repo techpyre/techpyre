@@ -14,10 +14,11 @@
     "vatNumber": "03443020403",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Copyright%202017",
     "originalLandingUrl": "http://www.elettroquadriforli.com",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<6912d459-85d0-e5df-5f9d-d4c328e163ec@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<6adcc888-523c-3982-78a7-329cb8a7906e@techpyre.eu>",
     "threadMessageIds": [
-      "<6912d459-85d0-e5df-5f9d-d4c328e163ec@techpyre.eu>"
+      "<6912d459-85d0-e5df-5f9d-d4c328e163ec@techpyre.eu>",
+      "<6adcc888-523c-3982-78a7-329cb8a7906e@techpyre.eu>"
     ]
   },
   "audit": {

@@ -14,10 +14,11 @@
     "vatNumber": "Non trovata",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Infissitalia%20srl",
     "originalLandingUrl": "https://www.infissitalia.com",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<c59abc70-844b-9142-3caf-019c65122b33@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<8e6e312a-5371-c07b-666b-28f2856b1f12@techpyre.eu>",
     "threadMessageIds": [
-      "<c59abc70-844b-9142-3caf-019c65122b33@techpyre.eu>"
+      "<c59abc70-844b-9142-3caf-019c65122b33@techpyre.eu>",
+      "<8e6e312a-5371-c07b-666b-28f2856b1f12@techpyre.eu>"
     ]
   },
   "audit": {

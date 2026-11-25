@@ -14,10 +14,11 @@
     "vatNumber": "03057690301",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=AR%20Avvolgibili",
     "originalLandingUrl": "https://www.aravvolgibili.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<4c893b7b-8bec-42b0-fc4e-6b062d206981@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<34a1a216-2dd3-e51e-239e-aada7c636ddb@techpyre.eu>",
     "threadMessageIds": [
-      "<4c893b7b-8bec-42b0-fc4e-6b062d206981@techpyre.eu>"
+      "<4c893b7b-8bec-42b0-fc4e-6b062d206981@techpyre.eu>",
+      "<34a1a216-2dd3-e51e-239e-aada7c636ddb@techpyre.eu>"
     ]
   },
   "audit": {

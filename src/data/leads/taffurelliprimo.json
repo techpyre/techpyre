@@ -14,10 +14,11 @@
     "vatNumber": "IT00461490203",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Taffurelli%20Primo",
     "originalLandingUrl": "https://www.taffurelliprimo.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<f7eae7ea-3cb4-91a8-8f8f-246648c2af5d@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<6d268194-203b-8014-eea9-4ac45c3f84d3@techpyre.eu>",
     "threadMessageIds": [
-      "<f7eae7ea-3cb4-91a8-8f8f-246648c2af5d@techpyre.eu>"
+      "<f7eae7ea-3cb4-91a8-8f8f-246648c2af5d@techpyre.eu>",
+      "<6d268194-203b-8014-eea9-4ac45c3f84d3@techpyre.eu>"
     ]
   },
   "audit": {

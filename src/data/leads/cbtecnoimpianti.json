@@ -14,10 +14,11 @@
     "vatNumber": "03448020366",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=C.B.%20Tecnoimpianti",
     "originalLandingUrl": "https://cbtecnoimpianti.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<1210df88-03ed-9f3c-9b17-287bdfcd30e1@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<9321c7bb-7fb8-d6ba-840b-989d1fc182ab@techpyre.eu>",
     "threadMessageIds": [
-      "<1210df88-03ed-9f3c-9b17-287bdfcd30e1@techpyre.eu>"
+      "<1210df88-03ed-9f3c-9b17-287bdfcd30e1@techpyre.eu>",
+      "<9321c7bb-7fb8-d6ba-840b-989d1fc182ab@techpyre.eu>"
     ]
   },
   "audit": {

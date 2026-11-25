@@ -14,10 +14,11 @@
     "vatNumber": "02401050394",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Alpi%20Marco%20e%20C.%20Srl",
     "originalLandingUrl": "http://www.alpimarco.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<72ca7997-ae12-0f62-fdf3-d470afc83500@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<9c1e8b44-a7a6-32b9-1dc5-c1c341182847@techpyre.eu>",
     "threadMessageIds": [
-      "<72ca7997-ae12-0f62-fdf3-d470afc83500@techpyre.eu>"
+      "<72ca7997-ae12-0f62-fdf3-d470afc83500@techpyre.eu>",
+      "<9c1e8b44-a7a6-32b9-1dc5-c1c341182847@techpyre.eu>"
     ]
   },
   "audit": {

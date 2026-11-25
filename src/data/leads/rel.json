@@ -14,10 +14,11 @@
     "vatNumber": "01549170130",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Rel%20-",
     "originalLandingUrl": "https://rel.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<73f42041-a8b8-5df3-bbb2-bb00d99aa935@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<4ee80e8a-2db2-e34b-953e-eecee4f5b435@techpyre.eu>",
     "threadMessageIds": [
-      "<73f42041-a8b8-5df3-bbb2-bb00d99aa935@techpyre.eu>"
+      "<73f42041-a8b8-5df3-bbb2-bb00d99aa935@techpyre.eu>",
+      "<4ee80e8a-2db2-e34b-953e-eecee4f5b435@techpyre.eu>"
     ]
   },
   "audit": {

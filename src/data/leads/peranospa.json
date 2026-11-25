@@ -14,10 +14,11 @@
     "vatNumber": "03096280049",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Perano%20SpA",
     "originalLandingUrl": "https://www.peranospa.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<196dd177-9c0e-dbcf-0951-8b8ba69024a1@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<811775e6-de29-40eb-83a7-0b240897a489@techpyre.eu>",
     "threadMessageIds": [
-      "<196dd177-9c0e-dbcf-0951-8b8ba69024a1@techpyre.eu>"
+      "<196dd177-9c0e-dbcf-0951-8b8ba69024a1@techpyre.eu>",
+      "<811775e6-de29-40eb-83a7-0b240897a489@techpyre.eu>"
     ]
   },
   "audit": {

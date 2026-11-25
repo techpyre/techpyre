@@ -14,10 +14,11 @@
     "vatNumber": "02942830429",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=FRINGUELLI%20SRL",
     "originalLandingUrl": "https://www.fringuelli.net",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<99488afb-c1f4-4493-d957-eb7ccfbeaecb@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<27484d8a-4df5-3fa2-0caa-e71a2828f5d6@techpyre.eu>",
     "threadMessageIds": [
-      "<99488afb-c1f4-4493-d957-eb7ccfbeaecb@techpyre.eu>"
+      "<99488afb-c1f4-4493-d957-eb7ccfbeaecb@techpyre.eu>",
+      "<27484d8a-4df5-3fa2-0caa-e71a2828f5d6@techpyre.eu>"
     ]
   },
   "audit": {

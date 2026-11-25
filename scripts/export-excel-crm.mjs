@@ -1,16 +1,21 @@
 #!/usr/bin/env node
 /**
- * TECHPYRE STUDIO · GENERATORE EXCEL CRM MULTI-FOGLIO (`export-excel-crm.mjs`)
- * Genera / aggiorna il workbook Excel formattato `TechPyre_Outbound_CRM.xlsx`
- * con 3 fogli:
- *   1. "Dashboard & KPI"        -> Riepilogo generale + tabella esecuzioni giornaliere
- *   2. "Pipeline Lead & Demo"   -> Registro completo di tutte le aziende con link demo cliccabili
- *   3. "Storico Invii SMTP"     -> Log cronologico di tutti gli invii (Step 1..4) con Message-ID
+ * TECHPYRE STUDIO · GENERATORE EXCEL CRM MULTI-FOGLIO & SYNC NOTION (`export-excel-crm.mjs`)
+ * Genera / aggiorna il workbook Excel formattato con palette accessibile WCAG 2.2 AA:
+ *   1. "Dashboard & KPI"      -> Riepilogo funnel + collegamenti Notion/Drive + esecuzioni giornaliere
+ *   2. "Pipeline Lead & Demo" -> Registro completo aziende B2B con etichette dual-coded [STATO]
+ *   3. "Storico Invii SMTP"   -> Log cronologico invii SMTP (Step 1..4) con Message-ID e operatore
+ * Se `NOTION_TOKEN` è configurato in `.env.local`, sincronizza anche i 3 database Notion.
  */
 import fs from "fs";
 import path from "path";
+import { createRequire } from "module";
 import { spawnSync } from "child_process";
-import ExcelJS from "exceljs";
+import { collectCrmSnapshot, formatRomeDateTime, normalizeExternalUrl } from "./crm-snapshot.mjs";
+import { DEFAULT_NOTION_CRM_HUB_URL, syncNotionCrm } from "./sync-notion-crm.mjs";
+
+const require = createRequire(import.meta.url);
+const ExcelJS = require("../node_modules/exceljs/dist/exceljs.bare.min.js");
 
 export const GDRIVE_CRM_FILE_ID =
   process.env.TECHPYRE_GDRIVE_CRM_ID || "12rHG46b8sG64BTFQA1gMWNPfBfXBekMD";
@@ -57,124 +62,18 @@ export function syncExcelToGoogleDrive(localFilePath) {
   };
 }
 
-export async function generateExcelCrm(customOutputPath) {
-  const rootDir = process.cwd();
-  const leadsDir = path.join(rootDir, "src", "data", "leads");
-  const historyPath = path.join(rootDir, "src", "data", "outreach-history.json");
+export async function generateExcelCrm(customOutputPathOrOptions, maybeOptions = {}) {
+  const options =
+    typeof customOutputPathOrOptions === "object" && customOutputPathOrOptions !== null
+      ? customOutputPathOrOptions
+      : { ...maybeOptions, customOutputPath: customOutputPathOrOptions };
+
+  const rootDir = options.rootDir || process.cwd();
   const outputPath =
-    customOutputPath || path.join(rootDir, "TechPyre_Outbound_CRM.xlsx");
+    options.customOutputPath || path.join(rootDir, "TechPyre_Outbound_CRM.xlsx");
 
-  let history = [];
-  if (fs.existsSync(historyPath)) {
-    try {
-      history = JSON.parse(fs.readFileSync(historyPath, "utf8"));
-    } catch {
-      history = [];
-    }
-  }
-
-  // Costruiamo mappe per data primo contatto, data Step 2 e ultimo invio per ogni slug
-  const step1SentAtMap = new Map();
-  const step2SentAtMap = new Map();
-  const lastSentAtMap = new Map();
-  const sentCountBySlug = new Map();
-
-  const resolveStep = (h) => {
-    if (typeof h.stepNumber === "number" && h.stepNumber >= 1 && h.stepNumber <= 4) {
-      return h.stepNumber;
-    }
-    const rawType = String(h.type || "").toUpperCase();
-    if (rawType === "STEP_4" || rawType.includes("BREAKUP")) return 4;
-    if (rawType === "STEP_3" || rawType.includes("PHONE")) return 3;
-    if (rawType === "STEP_2" || rawType === "FOLLOW_UP" || rawType === "FOLLOW_UP_CREDENTIALS_AND_OFFER") return 2;
-    return 1;
-  };
-
-  for (const h of history) {
-    const slug = h.slug;
-    if (!slug) continue;
-    const step = resolveStep(h);
-    const ts = h.sentAt || "";
-    if (step === 1 && !step1SentAtMap.has(slug)) {
-      step1SentAtMap.set(slug, ts);
-    }
-    if (step === 2 && !step2SentAtMap.has(slug)) {
-      step2SentAtMap.set(slug, ts);
-    }
-    if (ts) {
-      lastSentAtMap.set(slug, ts);
-    }
-    sentCountBySlug.set(slug, (sentCountBySlug.get(slug) || 0) + 1);
-  }
-
-  const files = fs.existsSync(leadsDir)
-    ? fs
-        .readdirSync(leadsDir)
-        .filter(
-          (f) =>
-            f.endsWith(".json") &&
-            f !== "outreach-history.json" &&
-            f !== "demo-visits.json"
-        )
-    : [];
-
-  const leads = [];
-  for (const f of files) {
-    try {
-      const raw = JSON.parse(fs.readFileSync(path.join(leadsDir, f), "utf8"));
-      const slug = raw.slug || f.replace(/\.json$/, "");
-      let status = raw.meta?.status || "NEW";
-      if (status === "NEW" && step2SentAtMap.has(slug)) {
-        status = "CONTACTED_STEP_2";
-      } else if (status === "NEW" && step1SentAtMap.has(slug)) {
-        status = "CONTACTED_STEP_1";
-      }
-      leads.push({
-        slug,
-        companyName: raw.meta?.companyName || slug,
-        city: raw.meta?.city || "-",
-        vatNumber: raw.meta?.vatNumber || "-",
-        decisionMakerName: raw.meta?.decisionMakerName || "-",
-        decisionMakerRole: raw.meta?.decisionMakerRole || "-",
-        targetEmail: raw.meta?.targetEmail || "-",
-        emailScore: raw.meta?.emailScore ?? 0,
-        isGenericInbox: Boolean(raw.meta?.isGenericInbox),
-        phone: raw.meta?.phone || "-",
-        originalLandingUrl: raw.meta?.originalLandingUrl || "-",
-        demoUrl: `https://www.techpyre.eu/demo/${slug}`,
-        lcpSeconds: raw.audit?.originalLcpSeconds ?? 0,
-        mobileScore: raw.audit?.mobileScore ?? 0,
-        renderBlockingCount: raw.audit?.renderBlockingCount ?? 0,
-        runsAds: Boolean(raw.audit?.runsAds),
-        trackingSignals: (raw.audit?.detectedTrackingSignals || []).join(", ") || "Nessuno",
-        status,
-        step1SentAt: step1SentAtMap.get(slug) || "",
-        step2SentAt: step2SentAtMap.get(slug) || "",
-        lastSentAt: lastSentAtMap.get(slug) || "",
-        lastSentMessageId: raw.meta?.lastSentMessageId || "",
-      });
-    } catch {
-      continue;
-    }
-  }
-
-  // Ordina lead: prima HOT_LEAD, poi CONTACTED_STEP_2, CONTACTED_STEP_1 (per data più recente), poi NEW, infine INVALID/BLACKLISTED
-  const statusPriority = {
-    HOT_LEAD: 1,
-    CONTACTED_STEP_3: 2,
-    CONTACTED_STEP_2: 3,
-    CONTACTED_STEP_1: 4,
-    NEW: 5,
-    INVALID_TICKET_INBOX: 6,
-    BLACKLISTED: 7,
-  };
-
-  leads.sort((a, b) => {
-    const pA = statusPriority[a.status] || 9;
-    const pB = statusPriority[b.status] || 9;
-    if (pA !== pB) return pA - pB;
-    return (b.lastSentAt || "").localeCompare(a.lastSentAt || "");
-  });
+  const snapshot = await collectCrmSnapshot({ rootDir });
+  const { kpis, leads, dailyReports, historyEntries } = snapshot;
 
   const workbook = new ExcelJS.Workbook();
   workbook.creator = "TechPyre Studio Outbound Engine";
@@ -182,86 +81,89 @@ export async function generateExcelCrm(customOutputPath) {
   workbook.created = new Date();
   workbook.modified = new Date();
 
+  const HEADER_FONT = "Segoe UI";
+  const NAVY_BG = "FF0A192F";
+  const SLATE_SURFACE = "FFF8F7F4";
+  const INK_FG = "FF14181F";
+  const MUTED_FG = "FF334155";
+  const LINK_FG = "FF1D4ED8"; // Contrasto >= 6.7:1 su #FFFFFF e #F8F7F4 (WCAG AA/AAA)
+  const BORDER_GRAY = { style: "thin", color: { argb: "FFCBD5E1" } };
+
+  // =========================================================================
+  // FOGLIO 1: DASHBOARD & KPI (Accessibile WCAG AA, testata chiara, trend)
+  // =========================================================================
   const wsDash = workbook.addWorksheet("Dashboard & KPI", {
-    views: [{ state: "frozen", ySplit: 4 }],
+    views: [{ state: "frozen", ySplit: 5 }],
   });
 
-  wsDash.mergeCells("A1:G1");
+  wsDash.mergeCells("A1:I1");
   const titleCell = wsDash.getCell("A1");
-  titleCell.value = "TECHPYRE STUDIO - B2B OUTBOUND CRM & DAILY AUTOMATION REPORT";
-  titleCell.font = { name: "Calibri", size: 15, bold: true, color: { argb: "FFFFFFFF" } };
-  titleCell.fill = {
-    type: "pattern",
-    pattern: "solid",
-    fgColor: { argb: "FF0B1E36" },
-  };
+  titleCell.value = "TECHPYRE STUDIO · CRM OUTBOUND B2B & REPORT AUTOMAZIONI";
+  titleCell.font = { name: HEADER_FONT, size: 15, bold: true, color: { argb: "FFFFFFFF" } };
+  titleCell.fill = { type: "pattern", pattern: "solid", fgColor: { argb: NAVY_BG } };
   titleCell.alignment = { vertical: "middle", horizontal: "left", indent: 1 };
-  wsDash.getRow(1).height = 34;
+  wsDash.getRow(1).height = 36;
 
-  wsDash.mergeCells("A2:G2");
+  wsDash.mergeCells("A2:I2");
   const subCell = wsDash.getCell("A2");
-  subCell.value = `Ultimo aggiornamento automatico: ${new Date().toLocaleString("it-IT", {
-    timeZone: "Europe/Rome",
-  })} (Europe/Rome) · Regola Step 1: 35/giorno · Soglia Step 2: >= 40 aziende in Step 1`;
-  subCell.font = { name: "Calibri", size: 10, italic: true, color: { argb: "FF334155" } };
-  subCell.fill = {
-    type: "pattern",
-    pattern: "solid",
-    fgColor: { argb: "FFF1F5F9" },
-  };
+  subCell.value = `Ultimo aggiornamento: ${snapshot.generatedAtRome} (Europe/Rome) · Quota Step 1: 35/g · Soglia Step 2: >= 40 · Step 3: WhatsApp +39 379 115 9352`;
+  subCell.font = { name: HEADER_FONT, size: 11, color: { argb: INK_FG } };
+  subCell.fill = { type: "pattern", pattern: "solid", fgColor: { argb: SLATE_SURFACE } };
   subCell.alignment = { vertical: "middle", horizontal: "left", indent: 1 };
-  wsDash.getRow(2).height = 22;
+  wsDash.getRow(2).height = 24;
 
-  const countByStatus = (st) => leads.filter((l) => l.status === st).length;
+  wsDash.mergeCells("A3:I3");
+  const notionBanner = wsDash.getCell("A3");
+  const notionHubUrl = process.env.NOTION_CRM_HUB_URL || DEFAULT_NOTION_CRM_HUB_URL;
+  notionBanner.value = {
+    text: "Apri CRM Outbound & Pipeline Lead integrato su Notion (Vista Accessibile WCAG AA & Grafici Live)",
+    hyperlink: notionHubUrl,
+  };
+  notionBanner.font = { name: HEADER_FONT, size: 11, bold: true, underline: true, color: { argb: LINK_FG } };
+  notionBanner.fill = { type: "pattern", pattern: "solid", fgColor: { argb: "FFFFFFFF" } };
+  notionBanner.alignment = { vertical: "middle", horizontal: "left", indent: 1 };
+  wsDash.getRow(3).height = 24;
+
   const kpiRows = [
-    ["Totale Aziende Qualificate a Database", leads.length],
-    ["Hot Lead (Risposte Positive / In Trattativa)", countByStatus("HOT_LEAD")],
-    ["Inviato Step 1 (In attesa di Follow-Up Step 2)", countByStatus("CONTACTED_STEP_1")],
-    ["Inviato Step 2 (Follow-Up In-Thread + Link Demo 0.3s)", countByStatus("CONTACTED_STEP_2")],
-    ["Inviato Step 3 (In attesa chiamata telefonica)", countByStatus("CONTACTED_STEP_3")],
-    ["Inviato Step 4 (Breakup / Chiusura ciclo)", countByStatus("CONTACTED_STEP_4")],
-    ["Pronte da Contattare (Stato NEW qualificate)", countByStatus("NEW")],
-    ["Caselle Ticketing / Scartate / Blacklist", countByStatus("INVALID_TICKET_INBOX") + countByStatus("BLACKLISTED")],
-    ["Totale Email Outbound Inviate (Storico SMTP)", history.length],
+    ["Totale Aziende Qualificate a Database", kpis.totalLeads],
+    ["[P1] Hot Lead (Risposte Positive / In Trattativa)", kpis.hotLeads],
+    ["[STEP 1] Primo Contatto (In attesa Follow-Up Step 2)", kpis.step1Count],
+    ["[STEP 2] Follow-Up In-Thread + Link Demo 0.3s", kpis.step2Count],
+    ["[STEP 3] Value Drop + Leva Asincrona WhatsApp", kpis.step3Count],
+    ["[STEP 4] Breakup / Ciclo Completato", kpis.step4Count],
+    ["[NEW] Pronte da Contattare (Qualificate)", kpis.newCount],
+    ["[SCARTO / STOP] Caselle Ticket, MX Ko e Blacklist", kpis.blockedTotal],
+    ["Aziende con Ads Attivi + LCP Mobile >= 5.0s", kpis.adsAndHighLcpCount],
+    ["Media LCP Mobile / Punteggio PSI Medio", `${kpis.avgLcp}s / ${kpis.avgMobileScore}/100`],
+    ["Visite Reali Demo Registrate (No Bot/Audit)", kpis.realVisitedLeads],
+    ["Totale Invii SMTP Storici", kpis.totalHistoryEntries],
   ];
 
-  wsDash.getRow(4).values = ["METRICA DI PIPELINE B2B", "VALORE ATTUALE", "", "DATA (ROMA)", "STEP 1 INVIATI", "STEP 2 INVIATI", "TOTALE GIORNO"];
-  wsDash.getRow(4).height = 24;
-  ["A4", "B4", "D4", "E4", "F4", "G4"].forEach((addr) => {
+  wsDash.getRow(5).values = [
+    "METRICA DI PIPELINE B2B",
+    "VALORE ATTUALE",
+    "",
+    "DATA (ROMA)",
+    "STEP 1",
+    "STEP 2",
+    "STEP 3",
+    "STEP 4",
+    "TOTALE GIORNO",
+  ];
+  wsDash.getRow(5).height = 26;
+  ["A5", "B5", "D5", "E5", "F5", "G5", "H5", "I5"].forEach((addr) => {
     const c = wsDash.getCell(addr);
-    c.font = { name: "Calibri", size: 11, bold: true, color: { argb: "FFFFFFFF" } };
-    c.fill = { type: "pattern", pattern: "solid", fgColor: { argb: "FF1E3A8A" } };
-    c.alignment = { vertical: "middle", horizontal: addr === "A4" ? "left" : "center" };
+    c.font = { name: HEADER_FONT, size: 11, bold: true, color: { argb: "FFFFFFFF" } };
+    c.fill = { type: "pattern", pattern: "solid", fgColor: { argb: NAVY_BG } };
+    c.alignment = { vertical: "middle", horizontal: addr === "A5" ? "left" : "center" };
   });
 
-  // Aggrega invii per giorno (Europe/Rome)
-  const dailyMap = new Map();
-  for (const h of history) {
-    if (!h.sentAt) continue;
-    let dayKey = h.sentAt.slice(0, 10);
-    try {
-      dayKey = new Date(h.sentAt).toLocaleDateString("sv-SE", { timeZone: "Europe/Rome" });
-    } catch {}
-    const cur = dailyMap.get(dayKey) || { step1: 0, step2: 0, total: 0 };
-    const st =
-      h.stepNumber ||
-      (h.type === "STEP_2" ||
-      h.type === "FOLLOW_UP" ||
-      h.type === "FOLLOW_UP_CREDENTIALS_AND_OFFER"
-        ? 2
-        : 1);
-    if (st === 1) cur.step1++;
-    else cur.step2++;
-    cur.total++;
-    dailyMap.set(dayKey, cur);
-  }
-  const sortedDays = Array.from(dailyMap.entries()).sort((a, b) => b[0].localeCompare(a[0]));
-
-  const maxRows = Math.max(kpiRows.length, sortedDays.length);
+  const maxRows = Math.max(kpiRows.length, dailyReports.length);
   for (let i = 0; i < maxRows; i++) {
-    const rowIdx = 5 + i;
+    const rowIdx = 6 + i;
     const row = wsDash.getRow(rowIdx);
-    row.height = 20;
+    row.height = 22;
+    const zebra = i % 2 === 0 ? "FFFFFFFF" : SLATE_SURFACE;
 
     if (i < kpiRows.length) {
       const [label, val] = kpiRows[i];
@@ -269,251 +171,269 @@ export async function generateExcelCrm(customOutputPath) {
       const cB = row.getCell(2);
       cA.value = label;
       cB.value = val;
-      cA.font = { name: "Calibri", size: 11, bold: i <= 3 };
-      cB.font = { name: "Calibri", size: 12, bold: true, color: { argb: "FF0F172A" } };
+      cA.font = { name: HEADER_FONT, size: 11, bold: i <= 1, color: { argb: INK_FG } };
+      cB.font = { name: HEADER_FONT, size: 11, bold: true, color: { argb: NAVY_BG } };
+      cA.alignment = { horizontal: "left", vertical: "middle" };
       cB.alignment = { horizontal: "center", vertical: "middle" };
-      cA.fill = cB.fill = {
-        type: "pattern",
-        pattern: "solid",
-        fgColor: { argb: i % 2 === 0 ? "FFFFFFFF" : "FFF8FAFC" },
-      };
+      [cA, cB].forEach((c) => {
+        c.fill = { type: "pattern", pattern: "solid", fgColor: { argb: zebra } };
+        c.border = { bottom: BORDER_GRAY };
+      });
     }
 
-    if (i < sortedDays.length) {
-      const [day, stats] = sortedDays[i];
-      const cD = row.getCell(4);
-      const cE = row.getCell(5);
-      const cF = row.getCell(6);
-      const cG = row.getCell(7);
-      cD.value = day;
-      cE.value = stats.step1;
-      cF.value = stats.step2;
-      cG.value = stats.total;
-      [cD, cE, cF, cG].forEach((c) => {
-        c.font = { name: "Calibri", size: 11, bold: c === cG };
-        c.alignment = { horizontal: "center", vertical: "middle" };
-        c.fill = {
-          type: "pattern",
-          pattern: "solid",
-          fgColor: { argb: i % 2 === 0 ? "FFFFFFFF" : "FFF8FAFC" },
-        };
+    if (i < dailyReports.length) {
+      const stats = dailyReports[i];
+      const vals = [stats.date, stats.step1, stats.step2, stats.step3, stats.step4, stats.total];
+      vals.forEach((v, offset) => {
+        const cell = row.getCell(4 + offset);
+        cell.value = v;
+        cell.font = { name: HEADER_FONT, size: 11, bold: offset === 5, color: { argb: INK_FG } };
+        cell.alignment = { horizontal: "center", vertical: "middle" };
+        cell.fill = { type: "pattern", pattern: "solid", fgColor: { argb: zebra } };
+        cell.border = { bottom: BORDER_GRAY };
       });
     }
   }
 
   wsDash.columns = [
-    { width: 48 },
-    { width: 18 },
-    { width: 5 },
-    { width: 18 },
-    { width: 18 },
-    { width: 18 },
-    { width: 18 },
+    { width: 50 },
+    { width: 20 },
+    { width: 4 },
+    { width: 16 },
+    { width: 12 },
+    { width: 12 },
+    { width: 12 },
+    { width: 12 },
+    { width: 16 },
   ];
 
-  // FOGLIO 2: PIPELINE LEAD & DEMO (REGISTRO COMPLETO)
+  // =========================================================================
+  // FOGLIO 2: PIPELINE LEAD & DEMO (Colonne bloccate + dual-coded status)
+  // =========================================================================
   const wsLeads = workbook.addWorksheet("Pipeline Lead & Demo", {
-    views: [{ state: "frozen", ySplit: 1 }],
+    views: [{ state: "frozen", xSplit: 2, ySplit: 1 }],
   });
 
   wsLeads.columns = [
-    { header: "Stato Sequenza", key: "status", width: 22 },
-    { header: "Azienda B2B", key: "companyName", width: 32 },
-    { header: "Citta", key: "city", width: 16 },
-    { header: "Titolare / Decision Maker", key: "decisionMakerName", width: 26 },
-    { header: "Ruolo", key: "decisionMakerRole", width: 20 },
+    { header: "Stato Sequenza (Codice + Label)", key: "status", width: 26 },
+    { header: "Azienda B2B", key: "companyName", width: 34 },
+    { header: "Priorità Azione", key: "priority", width: 26 },
+    { header: "Città", key: "city", width: 18 },
+    { header: "Titolare / Referente", key: "decisionMakerName", width: 26 },
+    { header: "Ruolo", key: "decisionMakerRole", width: 22 },
     { header: "Email Destinatario", key: "targetEmail", width: 32 },
-    { header: "Score Email", key: "emailScore", width: 12 },
-    { header: "Telefono", key: "phone", width: 18 },
+    { header: "Score Email", key: "emailScore", width: 13 },
+    { header: "Telefono / WhatsApp", key: "phone", width: 20 },
     { header: "LCP Mobile (s)", key: "lcpSeconds", width: 15 },
+    { header: "Fascia LCP", key: "lcpBand", width: 20 },
     { header: "Score CWV", key: "mobileScore", width: 12 },
-    { header: "Ads / Pixel Attivi", key: "runsAdsLabel", width: 16 },
+    { header: "Stato Ads", key: "adsBadge", width: 20 },
+    { header: "Visite Demo Reali", key: "realVisitsCount", width: 17 },
     { header: "Data Invio Step 1", key: "step1Date", width: 20 },
     { header: "Data Invio Step 2", key: "step2Date", width: 20 },
     { header: "Demo Live 0.3s (TechPyre)", key: "demoUrl", width: 42 },
-    { header: "Sito Web Originale", key: "originalLandingUrl", width: 36 },
-    { header: "P.IVA", key: "vatNumber", width: 16 },
+    { header: "Sito Web Originale", key: "originalLandingUrl", width: 38 },
+    { header: "P.IVA", key: "vatNumber", width: 18 },
     { header: "Slug", key: "slug", width: 24 },
   ];
 
   const headerRow = wsLeads.getRow(1);
-  headerRow.height = 26;
+  headerRow.height = 28;
   headerRow.eachCell((cell) => {
-    cell.font = { name: "Calibri", size: 11, bold: true, color: { argb: "FFFFFFFF" } };
-    cell.fill = {
-      type: "pattern",
-      pattern: "solid",
-      fgColor: { argb: "FF0B1E36" },
-    };
+    cell.font = { name: HEADER_FONT, size: 11, bold: true, color: { argb: "FFFFFFFF" } };
+    cell.fill = { type: "pattern", pattern: "solid", fgColor: { argb: NAVY_BG } };
     cell.alignment = { vertical: "middle", horizontal: "center", wrapText: true };
   });
 
-  const statusColors = {
-    HOT_LEAD: { bg: "FFDCFCE7", fg: "FF166534", label: "HOT LEAD" },
-    CONTACTED_STEP_2: { bg: "FFDBEAFE", fg: "FF1E40AF", label: "STEP 2 INVIATO" },
-    CONTACTED_STEP_1: { bg: "FFFEF3C7", fg: "FF92400E", label: "STEP 1 INVIATO" },
-    NEW: { bg: "FFF1F5F9", fg: "FF334155", label: "PRONTA (NEW)" },
-    INVALID_TICKET_INBOX: { bg: "FFFEE2E2", fg: "FF991B1B", label: "TICKET / SCARTATA" },
-    BLACKLISTED: { bg: "FFFEE2E2", fg: "FF991B1B", label: "BLACKLISTED" },
-  };
-
-  const fmtDate = (iso) => {
-    if (!iso) return "-";
-    try {
-      return new Date(iso).toLocaleString("it-IT", {
-        timeZone: "Europe/Rome",
-        day: "2-digit",
-        month: "2-digit",
-        year: "numeric",
-        hour: "2-digit",
-        minute: "2-digit",
-      });
-    } catch {
-      return iso.slice(0, 16);
-    }
-  };
-
   leads.forEach((l, idx) => {
-    const stStyle = statusColors[l.status] || {
-      bg: "FFFFFFFF",
-      fg: "FF0F172A",
-      label: l.status,
-    };
+    const safeOrigUrl = normalizeExternalUrl(l.originalLandingUrl);
     const row = wsLeads.addRow({
-      status: stStyle.label,
+      status: l.statusMeta.excelLabel,
       companyName: l.companyName,
+      priority: l.statusMeta.priorityLabel,
       city: l.city,
       decisionMakerName: l.decisionMakerName,
       decisionMakerRole: l.decisionMakerRole,
-      targetEmail: l.targetEmail,
+      targetEmail: l.targetEmail || "-",
       emailScore: l.emailScore,
-      phone: l.phone,
+      phone: l.phone || "-",
       lcpSeconds: l.lcpSeconds,
+      lcpBand: l.lcpBand,
       mobileScore: l.mobileScore,
-      runsAdsLabel: l.runsAds ? "SI (" + l.trackingSignals + ")" : "NO",
-      step1Date: fmtDate(l.step1SentAt),
-      step2Date: fmtDate(l.step2SentAt),
+      adsBadge: l.runsAds ? `${l.adsBadge} (${l.trackingSignals})` : l.adsBadge,
+      realVisitsCount: l.realVisitsCount,
+      step1Date: formatRomeDateTime(l.step1SentAt),
+      step2Date: formatRomeDateTime(l.step2SentAt),
       demoUrl: { text: l.demoUrl, hyperlink: l.demoUrl },
-      originalLandingUrl:
-        l.originalLandingUrl && l.originalLandingUrl.startsWith("http")
-          ? { text: l.originalLandingUrl, hyperlink: l.originalLandingUrl }
-          : l.originalLandingUrl,
+      originalLandingUrl: safeOrigUrl
+        ? { text: safeOrigUrl, hyperlink: safeOrigUrl }
+        : l.originalLandingUrl || "-",
       vatNumber: l.vatNumber,
       slug: l.slug,
     });
 
-    row.height = 20;
-    const zebraBg = idx % 2 === 0 ? "FFFFFFFF" : "FFF8FAFC";
+    row.height = 24;
+    const zebraBg = idx % 2 === 0 ? "FFFFFFFF" : SLATE_SURFACE;
     row.eachCell((cell, colNumber) => {
-      cell.font = { name: "Calibri", size: 10, color: { argb: "FF0F172A" } };
+      cell.font = { name: HEADER_FONT, size: 11, color: { argb: INK_FG } };
       cell.fill = { type: "pattern", pattern: "solid", fgColor: { argb: zebraBg } };
+      cell.border = { bottom: BORDER_GRAY };
       cell.alignment = {
         vertical: "middle",
-        horizontal: [1, 7, 9, 10, 12, 13].includes(colNumber) ? "center" : "left",
+        wrapText: true,
+        horizontal: [1, 8, 10, 12, 14, 15, 16].includes(colNumber) ? "center" : "left",
       };
     });
 
-    // Badge colorato sulla colonna Stato
     const stCell = row.getCell(1);
-    stCell.fill = { type: "pattern", pattern: "solid", fgColor: { argb: stStyle.bg } };
-    stCell.font = { name: "Calibri", size: 10, bold: true, color: { argb: stStyle.fg } };
-
-    // Stile link cliccabile per Demo e Sito Originale
-    const demoCell = row.getCell(14);
-    demoCell.font = {
-      name: "Calibri",
-      size: 10,
-      underline: true,
-      color: { argb: "FF2563EB" },
+    stCell.fill = {
+      type: "pattern",
+      pattern: "solid",
+      fgColor: { argb: l.statusMeta.excelBg },
     };
+    stCell.font = {
+      name: HEADER_FONT,
+      size: 11,
+      bold: true,
+      color: { argb: l.statusMeta.excelFg },
+    };
+
+    const demoCell = row.getCell(17);
+    demoCell.font = {
+      name: HEADER_FONT,
+      size: 11,
+      underline: true,
+      color: { argb: LINK_FG },
+    };
+
+    if (safeOrigUrl) {
+      const origCell = row.getCell(18);
+      origCell.font = {
+        name: HEADER_FONT,
+        size: 11,
+        underline: true,
+        color: { argb: LINK_FG },
+      };
+    }
   });
 
-  wsLeads.autoFilter = {
-    from: "A1",
-    to: "Q1",
-  };
+  wsLeads.autoFilter = { from: "A1", to: "T1" };
 
-  // FOGLIO 3: STORICO INVII SMTP (CRONOLOGICO INVERSO)
+  // =========================================================================
+  // FOGLIO 3: STORICO INVII SMTP
+  // =========================================================================
   const wsHist = workbook.addWorksheet("Storico Invii SMTP", {
-    views: [{ state: "frozen", ySplit: 1 }],
+    views: [{ state: "frozen", xSplit: 1, ySplit: 1 }],
   });
 
   wsHist.columns = [
     { header: "Data & Ora (Roma)", key: "sentAt", width: 22 },
     { header: "Step", key: "step", width: 14 },
-    { header: "Azienda", key: "companyName", width: 30 },
+    { header: "Azienda B2B", key: "companyName", width: 32 },
     { header: "Email Destinatario", key: "recipient", width: 32 },
-    { header: "Oggetto Email", key: "subject", width: 52 },
+    { header: "Oggetto Email", key: "subject", width: 54 },
+    { header: "Operatore", key: "sentBy", width: 24 },
     { header: "Slug", key: "slug", width: 24 },
     { header: "Message-ID SMTP", key: "messageId", width: 44 },
   ];
 
   const histHeader = wsHist.getRow(1);
-  histHeader.height = 25;
+  histHeader.height = 28;
   histHeader.eachCell((cell) => {
-    cell.font = { name: "Calibri", size: 11, bold: true, color: { argb: "FFFFFFFF" } };
-    cell.fill = { type: "pattern", pattern: "solid", fgColor: { argb: "FF1E3A8A" } };
-    cell.alignment = { vertical: "middle", horizontal: "center" };
+    cell.font = { name: HEADER_FONT, size: 11, bold: true, color: { argb: "FFFFFFFF" } };
+    cell.fill = { type: "pattern", pattern: "solid", fgColor: { argb: NAVY_BG } };
+    cell.alignment = { vertical: "middle", horizontal: "center", wrapText: true };
   });
 
-  const sortedHistory = [...history].sort((a, b) =>
-    (b.sentAt || "").localeCompare(a.sentAt || "")
-  );
-
-  sortedHistory.forEach((h, idx) => {
-    const stepNum = resolveStep(h);
+  historyEntries.forEach((h, idx) => {
     const row = wsHist.addRow({
-      sentAt: fmtDate(h.sentAt),
-      step: `STEP ${stepNum}`,
-      companyName: h.companyName || h.slug,
+      sentAt: h.sentAtRome,
+      step: h.stepLabel,
+      companyName: h.companyName,
       recipient: h.recipient || "-",
-      subject: h.subject || "-",
+      subject: h.subject,
+      sentBy: h.sentBy,
       slug: h.slug || "-",
-      messageId: h.messageId || "-",
+      messageId: h.messageId,
     });
-    row.height = 19;
-    const zebra = idx % 2 === 0 ? "FFFFFFFF" : "FFF8FAFC";
+    row.height = 22;
+    const zebra = idx % 2 === 0 ? "FFFFFFFF" : SLATE_SURFACE;
     row.eachCell((cell, colNumber) => {
       cell.font = {
-        name: "Calibri",
-        size: 10,
+        name: HEADER_FONT,
+        size: 11,
         bold: colNumber === 2,
-        color: { argb: colNumber === 2 && stepNum >= 2 ? "FF1E40AF" : "FF0F172A" },
+        color: { argb: colNumber === 2 && h.stepNumber >= 2 ? LINK_FG : INK_FG },
       };
       cell.fill = { type: "pattern", pattern: "solid", fgColor: { argb: zebra } };
+      cell.border = { bottom: BORDER_GRAY };
       cell.alignment = {
         vertical: "middle",
+        wrapText: true,
         horizontal: [1, 2].includes(colNumber) ? "center" : "left",
       };
     });
   });
 
-  wsHist.autoFilter = {
-    from: "A1",
-    to: "G1",
-  };
+  wsHist.autoFilter = { from: "A1", to: "H1" };
 
-  await workbook.xlsx.writeFile(outputPath);
-  const gdriveSync = syncExcelToGoogleDrive(outputPath);
+  const xlsxBuffer = await workbook.xlsx.writeBuffer();
+  fs.writeFileSync(outputPath, Buffer.from(xlsxBuffer));
+  const shouldSyncGdrive =
+    options.syncGdrive !== undefined
+      ? Boolean(options.syncGdrive)
+      : !options.customOutputPath;
+  const gdriveSync = shouldSyncGdrive
+    ? syncExcelToGoogleDrive(outputPath)
+    : {
+        synced: false,
+        fileId: GDRIVE_CRM_FILE_ID,
+        webUrl: GDRIVE_CRM_WEB_URL,
+      };
+
+  let notionSync = {
+    synced: false,
+    reason: "Disabilitato per ciclo interno",
+    hubUrl: notionHubUrl,
+  };
+  if (options.syncNotion !== false) {
+    try {
+      notionSync = await syncNotionCrm(snapshot, {
+        rootDir,
+        googleDriveUrl: gdriveSync.webUrl || GDRIVE_CRM_WEB_URL,
+        googleDriveSynced: gdriveSync.synced,
+      });
+    } catch (err) {
+      notionSync = {
+        synced: false,
+        reason: err instanceof Error ? err.message : String(err),
+        hubUrl: notionHubUrl,
+      };
+    }
+  }
 
   return {
     outputPath,
     googleDriveFileId: gdriveSync.fileId,
     googleDriveUrl: gdriveSync.webUrl,
     googleDriveSynced: gdriveSync.synced,
-    totalLeads: leads.length,
-    hotLeads: countByStatus("HOT_LEAD"),
-    step1Count: countByStatus("CONTACTED_STEP_1"),
-    step2Count: countByStatus("CONTACTED_STEP_2"),
-    step3Count: countByStatus("CONTACTED_STEP_3"),
-    step4Count: countByStatus("CONTACTED_STEP_4"),
-    newCount: countByStatus("NEW"),
-    totalHistoryEntries: history.length,
+    notionSynced: Boolean(notionSync.synced),
+    notionHubUrl: notionSync.hubUrl || notionHubUrl,
+    notionSummary: notionSync,
+    totalLeads: kpis.totalLeads,
+    hotLeads: kpis.hotLeads,
+    step1Count: kpis.step1Count,
+    step2Count: kpis.step2Count,
+    step3Count: kpis.step3Count,
+    step4Count: kpis.step4Count,
+    newCount: kpis.newCount,
+    totalHistoryEntries: kpis.totalHistoryEntries,
   };
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) {
-  generateExcelCrm().then((res) => {
-    console.log("File Excel CRM aggiornato con successo:", JSON.stringify(res, null, 2));
+  const skipNotion = process.argv.includes("--skip-notion");
+  generateExcelCrm({ syncNotion: !skipNotion }).then((res) => {
+    console.log("CRM Excel & Notion aggiornato:", JSON.stringify(res, null, 2));
   });
 }

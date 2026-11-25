@@ -14,10 +14,11 @@
     "vatNumber": "04437640271",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Sorato%20Impianti%20di%20Sorato%20Alberto",
     "originalLandingUrl": "https://www.soratoimpianti.com",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<4fd49482-dd3e-11d5-e70e-28f76ce10326@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<8ea31589-eb74-dfec-4d76-f82145283540@techpyre.eu>",
     "threadMessageIds": [
-      "<4fd49482-dd3e-11d5-e70e-28f76ce10326@techpyre.eu>"
+      "<4fd49482-dd3e-11d5-e70e-28f76ce10326@techpyre.eu>",
+      "<8ea31589-eb74-dfec-4d76-f82145283540@techpyre.eu>"
     ]
   },
   "audit": {

@@ -456,7 +456,7 @@ async function main() {
           messageId: sendRes.messageId,
         });
         try {
-          await generateExcelCrm();
+          await generateExcelCrm({ syncNotion: false });
         } catch (syncErr) {
           console.warn(`    [WARN] Sync Excel: ${syncErr.message}`);
         }
@@ -598,7 +598,7 @@ async function main() {
           messageId: sendRes.messageId,
         });
         try {
-          await generateExcelCrm();
+          await generateExcelCrm({ syncNotion: false });
         } catch (syncErr) {
           console.warn(`    [WARN] Sync Excel: ${syncErr.message}`);
         }
@@ -629,15 +629,15 @@ async function main() {
           `    [NEW] Demo creata: [${d.slug}] ${d.companyName} (${d.city}) - LCP ${d.lcp}s - ${d.targetEmail}`
         );
       }
-      await generateExcelCrm();
+      await generateExcelCrm({ syncNotion: false });
     } catch (err) {
       console.warn(`    [WARN] Scouting su "${kw}": ${err.message}`);
     }
   }
 
-  console.log(`\nFASE 3/4 · Aggiornamento file Excel CRM e sincronizzazione Google Drive...`);
-  const excelSummary = await generateExcelCrm();
-  console.log("  Excel aggiornato:", JSON.stringify(excelSummary));
+  console.log(`\nFASE 3/4 · Aggiornamento file Excel CRM, Google Drive e Notion...`);
+  const excelSummary = await generateExcelCrm({ syncNotion: true });
+  console.log("  CRM aggiornato:", JSON.stringify(excelSummary));
 
   console.log(`\nFASE 4/4 · Commit e push su GitHub (origin/main) per rendere live le nuove demo...`);
   try {
@@ -682,6 +682,8 @@ async function main() {
         excelFile: excelSummary.outputPath,
         googleDriveUrl: excelSummary.googleDriveUrl,
         googleDriveSynced: excelSummary.googleDriveSynced,
+        notionSynced: excelSummary.notionSynced,
+        notionHubUrl: excelSummary.notionHubUrl,
         sentStep1Report,
         sentStep2Report,
         sentStep3Report,

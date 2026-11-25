@@ -14,13 +14,14 @@
     "emailScore": 15,
     "decisionMakerFirstName": null,
     "decisionMakerRole": "Direzione Aziendale",
-    "lastSentMessageId": "<c27514ea-0baa-afd9-6b09-8e18776187fc@techpyre.eu>",
+    "lastSentMessageId": "<244b5a64-7894-9e8b-84b1-21103288483c@techpyre.eu>",
     "threadMessageIds": [
       "<0db03da8-b261-812a-fb38-5907dab1ad0d@techpyre.eu>",
       "<fcfbdeb2-0d2b-81e4-52cd-9797d13da467@techpyre.eu>",
-      "<c27514ea-0baa-afd9-6b09-8e18776187fc@techpyre.eu>"
+      "<c27514ea-0baa-afd9-6b09-8e18776187fc@techpyre.eu>",
+      "<244b5a64-7894-9e8b-84b1-21103288483c@techpyre.eu>"
     ],
-    "status": "CONTACTED_STEP_3"
+    "status": "CONTACTED_STEP_4"
   },
   "audit": {
     "originalLcpSeconds": 8.9,

@@ -14,7 +14,9 @@
     "dryrun": "node scripts/test-scout-dryrun.mjs",
     "scout": "node scripts/scout-ad-library.mjs",
     "preflight": "node scripts/preflight.mjs",
-    "outreach": "node scripts/send-outreach.mjs"
+    "outreach": "node scripts/send-outreach.mjs",
+    "crm:export": "node scripts/export-excel-crm.mjs",
+    "crm:sync": "node scripts/sync-notion-crm.mjs"
   },
   "dependencies": {
     "clsx": "^2.1.1",

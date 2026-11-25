@@ -14,10 +14,11 @@
     "vatNumber": "02430640397",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=TORNERIA%20MONTESI%20srl%20A%20SOCIO%20UNICO",
     "originalLandingUrl": "http://www.montesi.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<c8a209ad-27ad-8777-7682-f697137f573f@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<e8a96345-7cc6-5803-b137-a3ca9d7dad49@techpyre.eu>",
     "threadMessageIds": [
-      "<c8a209ad-27ad-8777-7682-f697137f573f@techpyre.eu>"
+      "<c8a209ad-27ad-8777-7682-f697137f573f@techpyre.eu>",
+      "<e8a96345-7cc6-5803-b137-a3ca9d7dad49@techpyre.eu>"
     ]
   },
   "audit": {

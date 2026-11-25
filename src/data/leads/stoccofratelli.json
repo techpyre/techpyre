@@ -14,10 +14,11 @@
     "vatNumber": "03326040262",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=STOCCO%20F.lli%20S.r.l.",
     "originalLandingUrl": "https://www.stoccofratelli.eu",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<3a2b717e-54c6-3ac0-9a87-bf11494c7d61@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<8c6c78be-7efc-5b0e-0143-db13186f1255@techpyre.eu>",
     "threadMessageIds": [
-      "<3a2b717e-54c6-3ac0-9a87-bf11494c7d61@techpyre.eu>"
+      "<3a2b717e-54c6-3ac0-9a87-bf11494c7d61@techpyre.eu>",
+      "<8c6c78be-7efc-5b0e-0143-db13186f1255@techpyre.eu>"
     ]
   },
   "audit": {

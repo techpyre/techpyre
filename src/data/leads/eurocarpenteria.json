@@ -14,10 +14,11 @@
     "vatNumber": "04120530045",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Eurocarpenteria",
     "originalLandingUrl": "https://eurocarpenteria.com",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<e6037775-23be-4bc7-9e8a-618a40b27bb1@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<9ad49c13-e883-5ff7-81b6-6925ba03ad32@techpyre.eu>",
     "threadMessageIds": [
-      "<e6037775-23be-4bc7-9e8a-618a40b27bb1@techpyre.eu>"
+      "<e6037775-23be-4bc7-9e8a-618a40b27bb1@techpyre.eu>",
+      "<9ad49c13-e883-5ff7-81b6-6925ba03ad32@techpyre.eu>"
     ]
   },
   "audit": {

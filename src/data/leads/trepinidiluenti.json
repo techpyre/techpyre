@@ -14,10 +14,11 @@
     "vatNumber": "02396980423",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Tre%20Pini%20Solventi%20e%20Diluenti",
     "originalLandingUrl": "http://www.trepinidiluenti.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<1f080b25-4c66-e29c-05fe-522c265dd992@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<885ab181-e1ea-fce5-79ea-a91655a2bd45@techpyre.eu>",
     "threadMessageIds": [
-      "<1f080b25-4c66-e29c-05fe-522c265dd992@techpyre.eu>"
+      "<1f080b25-4c66-e29c-05fe-522c265dd992@techpyre.eu>",
+      "<885ab181-e1ea-fce5-79ea-a91655a2bd45@techpyre.eu>"
     ]
   },
   "audit": {

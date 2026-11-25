@@ -14,10 +14,11 @@
     "vatNumber": "01855710933",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Officina%20Cicuto%20Ettore%20di%20Cicuto%20Antonello",
     "originalLandingUrl": "https://www.officinacicuto.com",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<803ab7ea-5c03-a9fd-c3b9-02714b938cd0@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<c4b58780-4e17-b24b-e2ea-5c31be9874bd@techpyre.eu>",
     "threadMessageIds": [
-      "<803ab7ea-5c03-a9fd-c3b9-02714b938cd0@techpyre.eu>"
+      "<803ab7ea-5c03-a9fd-c3b9-02714b938cd0@techpyre.eu>",
+      "<c4b58780-4e17-b24b-e2ea-5c31be9874bd@techpyre.eu>"
     ]
   },
   "audit": {

@@ -20,6 +20,29 @@ import { fileURLToPath } from "url";
 
 const __filename = fileURLToPath(import.meta.url);
 
+// Fast path: `sync-crm` usa solo moduli `.mjs` nativi e non richiede compilazione `npx tsx`
+if (process.argv[2] === "sync-crm") {
+  const dryRun = process.argv.includes("--dry-run");
+  const fullHistory = process.argv.includes("--full");
+  const skipExcel = process.argv.includes("--skip-excel");
+  const { loadEnvLocal, syncNotionCrm } = await import("./sync-notion-crm.mjs");
+  loadEnvLocal(process.cwd());
+  if (skipExcel) {
+    const res = await syncNotionCrm(null, { dryRun, fullHistory });
+    console.log("\nSYNC NOTION CRM:");
+    console.log(JSON.stringify(res, null, 2));
+  } else {
+    const { generateExcelCrm } = await import("./export-excel-crm.mjs");
+    const res = await generateExcelCrm({ syncNotion: !dryRun });
+    if (dryRun) {
+      res.notionSummary = await syncNotionCrm(null, { dryRun: true, fullHistory });
+    }
+    console.log("\nCRM EXCEL + DRIVE + NOTION AGGIORNATO:");
+    console.log(JSON.stringify(res, null, 2));
+  }
+  process.exit(0);
+}
+
 // Auto-bootstrap con `npx tsx` per supportare import TypeScript e path alias `@/*`
 if (!process.env.__TECHPYRE_CLI_TSX) {
   const res = spawnSync("npx", ["tsx", __filename, ...process.argv.slice(2)], {
@@ -169,6 +192,11 @@ COMANDI DISPONIBILI:
      (assistenza@, privacy@, pec@) e rigenera i 4 step Zero-Fluff:
 
      npm run tp -- migrate
+
+  8. SINCRONIZZAZIONE EXCEL CRM, GOOGLE DRIVE E NOTION
+     Rigenera TechPyre_Outbound_CRM.xlsx (WCAG AA), sincronizza Drive e Notion:
+
+     npm run tp -- sync-crm [--full] [--dry-run] [--skip-excel]
 
 ================================================================================
 `);
@@ -672,6 +700,29 @@ async function cmdClassifyReply(positional, flags) {
   console.log(JSON.stringify(result, null, 2));
 }
 
+async function cmdSyncCrm(flags) {
+  const dryRun = Boolean(flags["dry-run"]);
+  const fullHistory = Boolean(flags.full);
+  const skipExcel = Boolean(flags["skip-excel"]);
+
+  if (skipExcel) {
+    const { syncNotionCrm } = await import("./sync-notion-crm.mjs");
+    const res = await syncNotionCrm(null, { dryRun, fullHistory });
+    console.log("\nSYNC NOTION CRM:");
+    console.log(JSON.stringify(res, null, 2));
+    return;
+  }
+
+  const { generateExcelCrm } = await import("./export-excel-crm.mjs");
+  const res = await generateExcelCrm({ syncNotion: !dryRun });
+  if (dryRun) {
+    const { syncNotionCrm } = await import("./sync-notion-crm.mjs");
+    res.notionSummary = await syncNotionCrm(null, { dryRun: true, fullHistory });
+  }
+  console.log("\nCRM EXCEL + DRIVE + NOTION AGGIORNATO:");
+  console.log(JSON.stringify(res, null, 2));
+}
+
 const { command, positional, flags } = parseArgs(process.argv.slice(2));
 
 switch (command) {
@@ -682,6 +733,9 @@ switch (command) {
     break;
   case "migrate":
     await cmdMigrate();
+    break;
+  case "sync-crm":
+    await cmdSyncCrm(flags);
     break;
   case "list":
     await cmdList(flags);

@@ -14,10 +14,11 @@
     "vatNumber": "04410280160",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Colorificio%20Migliavacca",
     "originalLandingUrl": "http://www.colorificiomigliavacca.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<9c6f2e72-dc54-19b8-0faa-362bde99c904@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<be61f1f4-d5db-84c8-c653-c01f6bcaa12b@techpyre.eu>",
     "threadMessageIds": [
-      "<9c6f2e72-dc54-19b8-0faa-362bde99c904@techpyre.eu>"
+      "<9c6f2e72-dc54-19b8-0faa-362bde99c904@techpyre.eu>",
+      "<be61f1f4-d5db-84c8-c653-c01f6bcaa12b@techpyre.eu>"
     ]
   },
   "audit": {

@@ -14,10 +14,11 @@
     "vatNumber": "03343930040",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Cmc",
     "originalLandingUrl": "https://www.cmccaraglio.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<165ee128-a966-7d14-a137-56faa707f065@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<dd62db38-9f09-23f0-b879-f9f0f693543b@techpyre.eu>",
     "threadMessageIds": [
-      "<165ee128-a966-7d14-a137-56faa707f065@techpyre.eu>"
+      "<165ee128-a966-7d14-a137-56faa707f065@techpyre.eu>",
+      "<dd62db38-9f09-23f0-b879-f9f0f693543b@techpyre.eu>"
     ]
   },
   "audit": {

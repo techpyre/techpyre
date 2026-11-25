@@ -14,10 +14,11 @@
     "vatNumber": "02574160046",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=DUTTO%20SEBASTIANO%20%26%20C.%20SNC",
     "originalLandingUrl": "https://www.multiwire.net",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<17c65427-c54d-a559-2fda-e77b6d53319a@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<7677a256-de09-f01e-7ac5-05741b909211@techpyre.eu>",
     "threadMessageIds": [
-      "<17c65427-c54d-a559-2fda-e77b6d53319a@techpyre.eu>"
+      "<17c65427-c54d-a559-2fda-e77b6d53319a@techpyre.eu>",
+      "<7677a256-de09-f01e-7ac5-05741b909211@techpyre.eu>"
     ]
   },
   "audit": {
