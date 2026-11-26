@@ -7,14 +7,14 @@
     "decisionMakerFirstName": null,
     "decisionMakerRole": "Direzione Aziendale",
     "isGenericInbox": true,
-    "emailScore": -2,
+    "emailScore": 0,
     "targetEmail": "falegnameria.rino@gmail.com",
     "phone": "+390376468261",
     "city": "Gonzaga",
     "vatNumber": "01660380203",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Falegnameria%20Artigiana%20Rinoldi",
     "originalLandingUrl": "https://www.rinoldisnc.it",
-    "status": "CONTACTED_STEP_1",
+    "status": "INVALID_TICKET_INBOX",
     "lastSentMessageId": "<e67f6456-9380-ebc1-e06c-87f33c7ca930@techpyre.eu>",
     "threadMessageIds": [
       "<e67f6456-9380-ebc1-e06c-87f33c7ca930@techpyre.eu>"

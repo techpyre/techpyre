@@ -14,10 +14,11 @@
     "vatNumber": "11208251006",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=EMME%20Antincendio%20S.r.l.%20unipersonale.",
     "originalLandingUrl": "https://www.emme-italia.com",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<4ac04be9-28c3-f9fa-7a82-ff1c651ed3ac@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<19861a40-87f2-4ff6-9168-6e71b9b51295@techpyre.eu>",
     "threadMessageIds": [
-      "<4ac04be9-28c3-f9fa-7a82-ff1c651ed3ac@techpyre.eu>"
+      "<4ac04be9-28c3-f9fa-7a82-ff1c651ed3ac@techpyre.eu>",
+      "<19861a40-87f2-4ff6-9168-6e71b9b51295@techpyre.eu>"
     ]
   },
   "audit": {

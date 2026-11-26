@@ -14,10 +14,11 @@
     "vatNumber": "01807190168",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=O.M.S.%20S.r.l.",
     "originalLandingUrl": "https://www.oms-stampi.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<84173d43-6207-5cf4-49d0-45d52ca8a3cf@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<ead552d0-c3c9-0d98-6973-a293bacc38ac@techpyre.eu>",
     "threadMessageIds": [
-      "<84173d43-6207-5cf4-49d0-45d52ca8a3cf@techpyre.eu>"
+      "<84173d43-6207-5cf4-49d0-45d52ca8a3cf@techpyre.eu>",
+      "<ead552d0-c3c9-0d98-6973-a293bacc38ac@techpyre.eu>"
     ]
   },
   "audit": {

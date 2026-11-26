@@ -89,8 +89,9 @@ Ogni lead in `src/data/leads/[slug].json` contiene i 4 step in `outreach`:
 - **Classificatore Inbound (`classifyInboundReply`):**
   1. `AUTO_REPLY_OR_TICKET`: se contiene *"abbiamo preso in carico"*, *"ticket #"*, *"non rispondere"*, marca il lead come `INVALID_TICKET_INBOX` e ferma la sequenza.
   2. `POSITIVE_REQUEST_LINK`: segna come `HOT_LEAD`, ferma la sequenza automatica e prepara lo Step 2 col link demo.
-  3. `SKEPTICAL_OR_OBJECTION`: (*"Quanto costa?"*, *"Siamo già seguiti da un'agenzia"*, *"Non so se ci serve"*): segna come `HOT_LEAD`, ferma la sequenza e genera una risposta consultiva che valida l'obiezione, invia il link della demo e propone 10 minuti di condivisione schermo o un video Loom di 2 minuti (senza mai inviare listini prezzi).
-  4. `UNSUBSCRIBE_OR_NO`: segna come `BLACKLISTED` e interrompe ogni contatto.
+  3. `SKEPTICAL_OR_OBJECTION`: (*"Quanto costa?"*, *"Non so se ci serve"*): segna come `HOT_LEAD`, ferma la sequenza e genera una risposta consultiva che valida l'obiezione, invia il link della demo e propone 10 minuti di condivisione schermo o un video Loom di 2 minuti (senza mai inviare listini prezzi).
+  4. `AGENCY_WHITELABEL_OPPORTUNITY`: se una web agency risponde direttamente a nome di un proprio cliente (es. richiesta di rimozione per conto cliente), segna subito il cliente come `BLACKLISTED` (rimuovendone l'email se richiesto) e genera una risposta verso l'agenzia che conferma la cancellazione e propone una collaborazione tecnica in White-Label (`Next.js < 0.4s`, `GTM Server-Side`, `CRM Webhook`).
+  5. `UNSUBSCRIBE_OR_NO`: segna come `BLACKLISTED` e interrompe ogni contatto (incluso il cliente finale che scarica su *"siamo già seguiti / avviserò chi ci cura il sito"*).
 
 ---
 

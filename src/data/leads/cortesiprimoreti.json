@@ -14,10 +14,11 @@
     "vatNumber": "00181550401",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Cortesi%20Primo%20Reti",
     "originalLandingUrl": "https://www.cortesiprimoreti.com",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<4c0c9fc1-cdfa-fb19-cf29-5ad83dd6fcf7@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<28c43bc0-9051-eaac-2e3b-d61a6bdf8e88@techpyre.eu>",
     "threadMessageIds": [
-      "<4c0c9fc1-cdfa-fb19-cf29-5ad83dd6fcf7@techpyre.eu>"
+      "<4c0c9fc1-cdfa-fb19-cf29-5ad83dd6fcf7@techpyre.eu>",
+      "<28c43bc0-9051-eaac-2e3b-d61a6bdf8e88@techpyre.eu>"
     ]
   },
   "audit": {

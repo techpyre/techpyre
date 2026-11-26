@@ -7,18 +7,17 @@
     "decisionMakerFirstName": null,
     "decisionMakerRole": "Direzione Aziendale",
     "isGenericInbox": true,
-    "emailScore": -37,
-    "targetEmail": "tua@email.com",
+    "emailScore": 35,
+    "targetEmail": "info@zumerleserramenti.it",
     "phone": "+39 045 528145",
     "city": "Verona",
     "vatNumber": "05047760235",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Serramenti%20Zumerle",
     "originalLandingUrl": "https://serramentizumerle.it",
     "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<e8d1dd44-2dda-93a1-fd55-57346c52fa3a@techpyre.eu>",
-    "threadMessageIds": [
-      "<e8d1dd44-2dda-93a1-fd55-57346c52fa3a@techpyre.eu>"
-    ]
+    "lastSentMessageId": "",
+    "threadMessageIds": [],
+    "notes": "Sostituita email placeholder tua@email.com con info@zumerleserramenti.it (MX verificato)."
   },
   "audit": {
     "originalLcpSeconds": 13.2,

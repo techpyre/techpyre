@@ -14,11 +14,12 @@
     "vatNumber": "06020750151",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Beretta",
     "originalLandingUrl": "https://berettapvc.it",
-    "status": "CONTACTED_STEP_1",
+    "status": "INVALID_TICKET_INBOX",
     "lastSentMessageId": "<5a1f722d-58e9-3194-10de-507ed173acb7@techpyre.eu>",
     "threadMessageIds": [
       "<5a1f722d-58e9-3194-10de-507ed173acb7@techpyre.eu>"
-    ]
+    ],
+    "notes": "Bounce 552 5.2.0 spam detected su info@berettapvc.it (23/11); nessuna email alternativa in preflight."
   },
   "audit": {
     "originalLcpSeconds": 5,

@@ -14,10 +14,11 @@
     "vatNumber": "01378090391",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Nuova%20Pretolani",
     "originalLandingUrl": "https://www.nuovapretolani.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<3c9c8a53-14c4-f67b-775d-2b66ef47f6ad@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<817267aa-9799-dcc7-ce56-629c21126f96@techpyre.eu>",
     "threadMessageIds": [
-      "<3c9c8a53-14c4-f67b-775d-2b66ef47f6ad@techpyre.eu>"
+      "<3c9c8a53-14c4-f67b-775d-2b66ef47f6ad@techpyre.eu>",
+      "<817267aa-9799-dcc7-ce56-629c21126f96@techpyre.eu>"
     ]
   },
   "audit": {

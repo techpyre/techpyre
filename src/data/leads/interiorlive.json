@@ -10,15 +10,16 @@
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&media_type=all&q=ristrutturazione%20casa%20firenze&search_type=keyword_unordered",
     "originalLandingUrl": "http://www.interiorlive.it/",
     "isGenericInbox": true,
-    "emailScore": -2,
+    "emailScore": 0,
     "decisionMakerFirstName": null,
     "decisionMakerRole": "Direzione Aziendale",
-    "lastSentMessageId": "<20b77d4f-1af3-520d-2d41-7fd2f1fb48f3@techpyre.eu>",
+    "lastSentMessageId": "<b7cb214a-e839-8674-3d51-f41c125f68a8@techpyre.eu>",
     "threadMessageIds": [
       "<e5a48436-9b12-0d9c-4e3e-ffab457c6097@techpyre.eu>",
-      "<20b77d4f-1af3-520d-2d41-7fd2f1fb48f3@techpyre.eu>"
+      "<20b77d4f-1af3-520d-2d41-7fd2f1fb48f3@techpyre.eu>",
+      "<b7cb214a-e839-8674-3d51-f41c125f68a8@techpyre.eu>"
     ],
-    "status": "CONTACTED_STEP_2"
+    "status": "INVALID_TICKET_INBOX"
   },
   "audit": {
     "originalLcpSeconds": 14,

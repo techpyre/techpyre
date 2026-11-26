@@ -1,9 +1,9 @@
 import fs from "fs";
 import path from "path";
 import tls from "tls";
-import nodemailer, { SendMailOptions } from "nodemailer";
-import { InboundReplyClassification, LeadConfig } from "@/types/lead";
-import { UserProfile } from "./adminAuth";
+import nodemailer, { type SendMailOptions } from "nodemailer";
+import type { InboundReplyClassification, LeadConfig } from "@/types/lead";
+import type { UserProfile } from "./adminAuth";
 import { statusAfterStepSent } from "./leadLifecycle";
 import { getUserSmtp } from "./userSmtpStorage";
 import { loadLeadConfig, saveLeadConfig } from "./leadsStorage";
@@ -222,13 +222,79 @@ export async function applyDeliverabilityJitter(
   return delay;
 }
 
+function isExplicitRemovalRequest(combinedText: string): boolean {
+  return /\b(cancellami|cancellate|cancellare|cancellazione|eliminare|elimina|rimuovete|rimuovere|rimozione|rimuovi|unsubscribe|non contattateci|basta mail|diffida|gdpr|dal vostro archivio)\b/i.test(
+    combinedText
+  );
+}
+
+function detectAgencyWritingForClient(
+  combinedText: string,
+  lead?: LeadConfig,
+  senderEmail?: string
+): boolean {
+  const explicitlyOnBehalfOfClient =
+    /\b(rispondo\s+(?:a|in)\s+nome\s+del\s+(?:nostro\s+)?cliente|per\s+conto\s+del\s+(?:nostro\s+)?cliente|a\s+nome\s+del\s+(?:nostro\s+)?cliente|il\s+nostro\s+cliente|nostro\s+cliente|la\s+nostra\s+agenzia|siamo\s+l['’]?agenzia|siamo\s+lo\s+studio\s+che\s+(?:segue|gestisce)|seguiamo\s+noi\s+il\s+(?:sito|cliente|marketing)|gestiamo\s+noi\s+il\s+(?:sito|cliente|marketing)|in\s+qualit[àa]\s+di\s+(?:agenzia|web\s+agency|studio))\b/i.test(
+      combinedText
+    );
+  if (explicitlyOnBehalfOfClient) return true;
+
+  if (!senderEmail || !senderEmail.includes("@")) return false;
+  const senderDomain = senderEmail.split("@")[1]?.toLowerCase() || "";
+  const leadDomain = (lead?.meta?.originalLandingUrl || "")
+    .replace(/^https?:\/\//i, "")
+    .replace(/^www\./i, "")
+    .split("/")[0]
+    .toLowerCase();
+
+  const looksLikeAgencyDomain =
+    /\.(agency)$/i.test(senderDomain) ||
+    /(studio|agency|digital|communication|marketing|media|webdesign|creative)/i.test(senderDomain);
+  const isDifferentFromLeadDomain = Boolean(leadDomain && senderDomain && senderDomain !== leadDomain);
+  const mentionsClientOrRemoval =
+    /\b(cliente|assistito|archivio|cancellazione|rimozione)\b/i.test(combinedText);
+
+  return looksLikeAgencyDomain && isDifferentFromLeadDomain && mentionsClientOrRemoval;
+}
+
+export function buildAgencyWhiteLabelReply({
+  agencyGreetingName,
+  clientCompanyName,
+  removedEmail,
+}: {
+  agencyGreetingName?: string | null;
+  clientCompanyName?: string | null;
+  removedEmail?: string | null;
+}): string {
+  const greeting = agencyGreetingName ? `Buongiorno ${agencyGreetingName},` : `Buongiorno,`;
+  const clientLabel = clientCompanyName ? `del vostro cliente ${clientCompanyName}` : "del vostro cliente";
+  const emailDetail = removedEmail ? ` (${removedEmail})` : "";
+
+  return [
+    greeting,
+    ``,
+    `Le confermo di aver provveduto immediatamente a eliminare l'indirizzo ${clientLabel}${emailDetail} dal nostro archivio e a inserirlo in blacklist permanente, cosi che non riceva alcuna ulteriore comunicazione da parte nostra.`,
+    ``,
+    `Approfitto del Suo messaggio tra addetti ai lavori per una breve domanda senza impegno:`,
+    `quando vi capita di gestire clienti o campagne su siti CMS lenti che frenano le conversioni (o richieste di landing Next.js sotto i 0.4s, tracciamento Server-Side GTM/Meta CAPI, portali custom o integrazioni CRM via API), vi capita mai di affiancarvi un partner tecnico in white-label?`,
+    ``,
+    `Come TechPyre Studio lavoriamo dietro le quinte sotto il brand dell'agenzia partner, con codice sorgente proprietario, tempi/costi chiusi e zero interferenza sul rapporto con il cliente finale.`,
+    ``,
+    `Se dovesse servirvi un supporto tecnico su un picco di lavoro o un progetto dedicato, trovate qualche architettura dimostrativa qui: https://www.techpyre.eu (https://headless-demo.techpyre.eu · https://b2b-demo.techpyre.eu).`,
+    ``,
+    `Grazie per la segnalazione e buon lavoro,`,
+    ...buildOutreachSignatureLines({ includeWebsite: true, whatsappLabel: true }),
+  ].join("\n");
+}
+
 /**
  * Classificatore automatico risposte outbound (IMAP / Webhook)
  */
 export function classifyInboundReply(
   replyText: string,
   replySubject = "",
-  lead?: LeadConfig
+  lead?: LeadConfig,
+  options?: { senderEmail?: string; senderName?: string }
 ): InboundClassificationResult {
   const combined = `${replySubject || ""}\n${replyText || ""}`.toLowerCase();
   const slug = lead?.slug || "azienda-demo";
@@ -275,9 +341,51 @@ export function classifyInboundReply(
     };
   }
 
-  // 2. UNSUBSCRIBE_OR_NO (Incluso chi scarica la segnalazione al proprio webmaster/agenzia o rifiuta la collaborazione)
+  // 2A. AGENCY_WHITELABEL_OPPORTUNITY: Un'agenzia risponde a nome del proprio cliente (es. richiesta rimozione)
+  if (detectAgencyWritingForClient(combined, lead, options?.senderEmail)) {
+    const originalEmailBeforeWipe = lead?.meta?.targetEmail || "";
+    const shouldWipeEmail = isExplicitRemovalRequest(combined);
+    if (lead) {
+      lead.meta.status = "BLACKLISTED";
+      if (shouldWipeEmail) {
+        lead.meta.targetEmail = "";
+        lead.meta.emailScore = 0;
+      }
+      lead.meta.notes = `Rimozione/contatto da agenzia partner (${options?.senderEmail || "mittente agenzia"}): cliente inserito in BLACKLISTED e proposta partnership white-label.`;
+      saveLeadConfig(lead.slug, lead);
+    }
+
+    const agencyGreetingName =
+      options?.senderName?.trim().split(/\s+/)[0] ||
+      (options?.senderEmail?.split("@")[0]?.split(".")[0]
+        ? options.senderEmail.split("@")[0].split(".")[0].charAt(0).toUpperCase() +
+          options.senderEmail.split("@")[0].split(".")[0].slice(1)
+        : null);
+
+    const cleanReplySubject = replySubject
+      ? `Re: ${replySubject.replace(/^Re:\s*/i, "").trim()}`
+      : baseSubject;
+
+    return {
+      classification: "AGENCY_WHITELABEL_OPPORTUNITY",
+      isHotLead: false,
+      stopAutomatedSequence: true,
+      nextLeadStatus: "BLACKLISTED",
+      operatorActionRequired:
+        "AGENZIA RILEVATA SU CLIENTE: Cliente rimosso e marcato BLACKLISTED. Invia la proposta White-Label qui sotto all'agenzia mittente.",
+      suggestedReplySubject: cleanReplySubject,
+      suggestedReplyBody: buildAgencyWhiteLabelReply({
+        agencyGreetingName,
+        clientCompanyName: lead?.meta?.companyName || null,
+        removedEmail: originalEmailBeforeWipe || null,
+      }),
+    };
+  }
+
+  // 2B. UNSUBSCRIBE_OR_NO (Cliente finale che scarica sul proprio fornitore o chiede disiscrizione)
   if (
-    /\b(cancellami|cancellate|rimuovete|rimuovere|unsubscribe|non siamo interessati|non mi interessa|non ci interessa|non contattateci|basta mail|diffida|gdpr cancellazione|non valutiamo|non abbiamo richiesto nulla|chi ci cura il sito|avvisero chi|avviserò chi|nostro webmaster|nostro tecnico|siamo gia seguiti|siamo già seguiti|ci segue gia|ci segue già|abbiamo gia un'agenzia|abbiamo già un'agenzia)\b/i.test(
+    isExplicitRemovalRequest(combined) ||
+    /\b(non siamo interessati|non mi interessa|non ci interessa|non valutiamo|non abbiamo richiesto nulla|chi ci cura il sito|avvisero chi|avviserò chi|nostro webmaster|nostro tecnico|siamo gia seguiti|siamo già seguiti|ci segue gia|ci segue già|abbiamo gia un'agenzia|abbiamo già un'agenzia)\b/i.test(
       combined
     )
   ) {

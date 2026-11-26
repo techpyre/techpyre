@@ -14,10 +14,11 @@
     "vatNumber": "00552900987",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=PEL%20PINTOSSI%20EMILIO%20SPA",
     "originalLandingUrl": "http://www.pel.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<6ebb1a66-ce30-2167-9e32-a59c3e7b2c5b@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<933b3aaa-49e7-5b91-2b15-88b6019415d3@techpyre.eu>",
     "threadMessageIds": [
-      "<6ebb1a66-ce30-2167-9e32-a59c3e7b2c5b@techpyre.eu>"
+      "<6ebb1a66-ce30-2167-9e32-a59c3e7b2c5b@techpyre.eu>",
+      "<933b3aaa-49e7-5b91-2b15-88b6019415d3@techpyre.eu>"
     ]
   },
   "audit": {

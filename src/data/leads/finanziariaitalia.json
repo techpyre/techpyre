@@ -1,0 +1,170 @@
+{
+  "slug": "finanziariaitalia",
+  "archetype": "b2b-authority",
+  "meta": {
+    "companyName": "Finanziaria Italia - Prestiti Rho",
+    "decisionMakerName": "Direzione Finanziaria Italia - Prestiti Rho",
+    "decisionMakerFirstName": null,
+    "decisionMakerRole": "Direzione Aziendale",
+    "isGenericInbox": true,
+    "emailScore": 35,
+    "targetEmail": "info@finanziariaitalia.it",
+    "phone": "+3902 44 08 714",
+    "city": "Rho",
+    "vatNumber": "13103681006",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Finanziaria%20Italia%20-%20Prestiti%20Rho",
+    "originalLandingUrl": "https://www.finanziariaitalia.it",
+    "status": "CONTACTED_STEP_1",
+    "lastSentMessageId": "<d77e7a4a-d06e-5050-4345-c4e9dfafd92d@techpyre.eu>",
+    "threadMessageIds": [
+      "<d77e7a4a-d06e-5050-4345-c4e9dfafd92d@techpyre.eu>"
+    ]
+  },
+  "audit": {
+    "originalLcpSeconds": 11.5,
+    "mobileScore": 15,
+    "renderBlockingCount": 19,
+    "runsAds": false,
+    "detectedTrackingSignals": [],
+    "threeCriticalFlaws": [
+      "Perdita di richieste di preventivo su mobile: caricamento di 11.5s (19 risorse bloccanti) che spinge i visitatori da smartphone ad abbandonare la pagina prima di contattare l'ufficio commerciale.",
+      "Assenza di pre-qualifica automatica: il sito non filtra le richieste per tipologia di intervento, budget o tempistiche prima di inviarle ai referenti tecnici di Finanziaria Italia - Prestiti Rho.",
+      "Colli di bottiglia commerciali: le richieste arrivano come semplici email isolate senza instradamento automatico e senza tracciamento strutturato della trattativa."
+    ],
+    "activeAdHeadline": "Agenzia in attività Finanziaria",
+    "activeAdCopySummary": "Dal 2015 Finanziaria Italia Aiuta le famiglie ad ottenere il prestito di cui hanno bisogno per realizzare i loro progetti."
+  },
+  "theme": {
+    "primaryHex": "#0B1E36",
+    "accentHex": "#B8860B",
+    "darkBgHex": "#0B1E36",
+    "borderRadius": "8px",
+    "headerBgMode": "dark",
+    "headerBgHex": "#0E1013",
+    "logoBrightness": "light"
+  },
+  "content": {
+    "badgeTop": "Finanziaria Italia - Prestiti Rho · Divisione Tecnica e Commesse B2B (Rho)",
+    "heroHeadline": "Agenzia in attività Finanziaria",
+    "heroSubheadline": "Dal 2015 Finanziaria Italia Aiuta le famiglie ad ottenere il prestito di cui hanno bisogno per realizzare i loro progetti.",
+    "heroBullets": [
+      "Studio di fattibilita tecnica e capitolato con tempi di consegna certi",
+      "Qualifica immediata della richiesta e assegnazione diretta all'Ufficio Tecnico",
+      "Produzione e assistenza certificata con referente unico dedicato"
+    ],
+    "ctaButtonText": "Richiedi Studio di Fattibilita",
+    "trustMicrocopy": "Riservatezza industriale garantita (NDA) · Risposta tecnica entro la giornata lavorativa",
+    "logoLocalPath": "/leads/finanziariaitalia/logo.png",
+    "heroImageLocalPath": "/leads/finanziariaitalia/hero.jpg",
+    "heroImageCaption": "Finanziaria Italia - Prestiti Rho · Sede operativa e realizzazioni (Rho)",
+    "quiz": {
+      "question1": {
+        "title": "Quale ambito operativo o di commessa desiderate approfondire?",
+        "options": [
+          "Fornitura industriale, impianti o commessa su specifica",
+          "Integrazione tecnica, automazione di reparto o accordo quadro",
+          "Studio di fattibilita, capitolato e quotazione riservata"
+        ]
+      },
+      "question2": {
+        "title": "Qual e l'orizzonte temporale previsto per il progetto?",
+        "options": [
+          "Avvio operativo urgente (entro 30 giorni)",
+          "Pianificazione nel trimestre in corso",
+          "Valutazione tecnica e di budget preliminare"
+        ]
+      },
+      "finalStepTitle": "Specifiche registrate. Inserisci i riferimenti aziendali per il colloquio con l'Ufficio Tecnico:"
+    },
+    "valueProps": [
+      {
+        "title": "Ingegneria e Progettazione su Specifica",
+        "description": "Analizziamo i requisiti produttivi della commessa a Rho, definendo specifiche tecniche, tempi di consegna e costi prima dell'avvio.",
+        "metric": "Capitolato Chiuso"
+      },
+      {
+        "title": "Controllo Qualita e Conformita Normativa",
+        "description": "Ogni fornitura di Finanziaria Italia - Prestiti Rho viene collaudata secondo gli standard di sicurezza e qualita vigenti, con documentazione tecnica completa.",
+        "metric": "100% Certificato"
+      },
+      {
+        "title": "Continuita Operativa e Assistenza Post-Vendita",
+        "description": "Affianchiamo il reparto tecnico e acquisti dal collaudo in stabilimento fino alla manutenzione programmata.",
+        "metric": "SLA Garantito"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "99.4%",
+      "mainStatLabel": "Commesse B2B consegnate entro i tempi contrattuali",
+      "reviewsSummary": "Partner tecnico di riferimento per imprese e stabilimenti a Rho",
+      "clientReferenceWall": [
+        "Qualita Certificata ISO 9001",
+        "Conformita Tecnica CE",
+        "Integrazione Gestionale / ERP",
+        "Capitolato e Preventivo Chiuso",
+        "Assistenza Tecnica Diretta"
+      ],
+      "secondaryStats": [
+        {
+          "value": "99.4%",
+          "label": "Commesse consegnate nel pieno rispetto dei tempi contrattuali"
+        },
+        {
+          "value": "< 0.4s",
+          "label": "Caricamento istantaneo dell'infrastruttura digitale su mobile"
+        },
+        {
+          "value": "24h",
+          "label": "Presa in carico tecnica e invio automatico della richiesta al CRM"
+        }
+      ],
+      "testimonials": [
+        {
+          "name": "Direzione Tecnica e Produzione",
+          "location": "Rho · Commessa Industriale",
+          "quote": "Abbiamo affidato a Finanziaria Italia - Prestiti Rho una commessa strategica per il nostro reparto: rispetto rigoroso delle specifiche tecniche e collaudo impeccabile.",
+          "roleOrContext": "Fornitura e collaudo B2B"
+        },
+        {
+          "name": "Responsabile Ufficio Acquisti",
+          "location": "Rho e provincia",
+          "quote": "Partner strutturato e affidabile: preventivazione trasparente, documentazione tecnica completa e supporto post-vendita immediato.",
+          "roleOrContext": "Accordo quadro di fornitura"
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "Alla c.a. Direzione Finanziaria Italia - Prestiti Rho - tempi di apertura mobile (11.5s) e qualifica commesse B2B",
+    "emailPlainTextBody": "Buongiorno,\n\nda una verifica sul sito di Finanziaria Italia - Prestiti Rho, aprendolo da smartphone passano 11.5 secondi prima che la pagina sia utilizzabile, rallentando le richieste di offerta e commessa dei clienti aziendali.\n\nAbbiamo gia preparato per Finanziaria Italia - Prestiti Rho una bozza su misura che si apre in 0.3 secondi da telefono e pre-qualifica in automatico le richieste di commessa.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre Studio\nTel/WhatsApp: +39 379 115 9352\nriccardo.granza@techpyre.eu",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della bozza da 0.3 secondi preparata per Finanziaria Italia - Prestiti Rho, con simulatore di pre-qualifica richieste integrato in pagina:\n\nhttps://www.techpyre.eu/demo/finanziariaitalia\n\nPotete provarla direttamente dal telefono: se l'impostazione vi piace, scrivetemi pure su WhatsApp (o in risposta a questa email) per vedere come adattarla al vostro flusso commerciale.\n\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu\n\nNota: la demo è una bozza privata visibile solo da questo link (non indicizzata su Google), creata su misura a solo scopo dimostrativo (art. 21 D.Lgs. 30/2005; Reg. UE 2016/679). Rimozione immediata su richiesta.",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "Alla c.a. Direzione Finanziaria Italia - Prestiti Rho - tempi di apertura mobile (11.5s) e qualifica commesse B2B",
+      "body": "Buongiorno,\n\nda una verifica sul sito di Finanziaria Italia - Prestiti Rho, aprendolo da smartphone passano 11.5 secondi prima che la pagina sia utilizzabile, rallentando le richieste di offerta e commessa dei clienti aziendali.\n\nAbbiamo gia preparato per Finanziaria Italia - Prestiti Rho una bozza su misura che si apre in 0.3 secondi da telefono e pre-qualifica in automatico le richieste di commessa.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre Studio\nTel/WhatsApp: +39 379 115 9352\nriccardo.granza@techpyre.eu",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: Alla c.a. Direzione Finanziaria Italia - Prestiti Rho - tempi di apertura mobile (11.5s) e qualifica commesse B2B",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della bozza da 0.3 secondi preparata per Finanziaria Italia - Prestiti Rho, con simulatore di pre-qualifica richieste integrato in pagina:\n\nhttps://www.techpyre.eu/demo/finanziariaitalia\n\nPotete provarla direttamente dal telefono: se l'impostazione vi piace, scrivetemi pure su WhatsApp (o in risposta a questa email) per vedere come adattarla al vostro flusso commerciale.\n\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu\n\nNota: la demo è una bozza privata visibile solo da questo link (non indicizzata su Google), creata su misura a solo scopo dimostrativo (art. 21 D.Lgs. 30/2005; Reg. UE 2016/679). Rimozione immediata su richiesta.",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: Alla c.a. Direzione Finanziaria Italia - Prestiti Rho - tempi di apertura mobile (11.5s) e qualifica commesse B2B",
+      "body": "Buongiorno,\n\nOltre ad azzerare i 11.5 secondi di attesa su mobile, il sistema qualifica ogni richiesta per tipologia di lavorazione o fornitura prima di inviarla al vostro ufficio commerciale.\n\nPer non disturbarvi con chiamate a freddo, se mi mandate anche solo un veloce messaggio su WhatsApp al +39 379 115 9352 (o rispondete qui sotto) vi giro subito in chat i dettagli per Finanziaria Italia - Prestiti Rho.\n\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: Alla c.a. Direzione Finanziaria Italia - Prestiti Rho - tempi di apertura mobile (11.5s) e qualifica commesse B2B",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Finanziaria Italia - Prestiti Rho non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/finanziariaitalia) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione su WhatsApp o via email se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

@@ -11,7 +11,7 @@
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Bancali%20Coibentati%20in%20Gres%20Porcellanato",
     "originalLandingUrl": "https://www.systemposa.com/prodotti/bancali-coibentati-gres-porcellanato/",
     "isGenericInbox": false,
-    "emailScore": 50,
+    "emailScore": 0,
     "decisionMakerFirstName": "Systemposa",
     "decisionMakerRole": "Direzione",
     "lastSentMessageId": "<f823fbf2-c963-d4d3-4cf6-0836beebf842@techpyre.eu>",
@@ -19,7 +19,7 @@
       "<dee02b73-5b2a-e06f-6960-1366229a10e2@techpyre.eu>",
       "<f823fbf2-c963-d4d3-4cf6-0836beebf842@techpyre.eu>"
     ],
-    "status": "CONTACTED_STEP_2"
+    "status": "INVALID_TICKET_INBOX"
   },
   "audit": {
     "originalLcpSeconds": 5.5,

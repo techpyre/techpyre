@@ -11,10 +11,10 @@
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Muratori%20Morianesi%20Societa%20cooperativa",
     "originalLandingUrl": "https://muratorimorianesi.it/",
     "isGenericInbox": false,
-    "emailScore": 65,
+    "emailScore": 0,
     "decisionMakerFirstName": "Federico",
     "decisionMakerRole": "Titolare",
-    "status": "CONTACTED_STEP_2",
+    "status": "INVALID_TICKET_INBOX",
     "lastSentMessageId": "<da32d890-60ea-212f-ab4a-58ea29a47660@techpyre.eu>",
     "threadMessageIds": [
       "<15ff9ddc-de03-108a-6f71-7c41f7a38520@techpyre.eu>",

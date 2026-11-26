@@ -7,14 +7,14 @@
     "decisionMakerFirstName": null,
     "decisionMakerRole": "Direzione Aziendale",
     "isGenericInbox": true,
-    "emailScore": 18,
+    "emailScore": 0,
     "targetEmail": "itfisolamenti@gmail.com",
     "phone": "+39080626270",
     "city": "Palo del Colle",
     "vatNumber": "05058490722",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=ITF%20Isolamenti",
     "originalLandingUrl": "https://www.itfisolamenti.it",
-    "status": "CONTACTED_STEP_1",
+    "status": "INVALID_TICKET_INBOX",
     "lastSentMessageId": "<7e4cd8ab-7e54-5e30-ca52-c456c1c12ef2@techpyre.eu>",
     "threadMessageIds": [
       "<7e4cd8ab-7e54-5e30-ca52-c456c1c12ef2@techpyre.eu>"

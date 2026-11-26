@@ -14,11 +14,12 @@
     "vatNumber": "Non trovata",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Infissi%20Padova",
     "originalLandingUrl": "https://www.infissipadova.it",
-    "status": "CONTACTED_STEP_1",
+    "status": "INVALID_TICKET_INBOX",
     "lastSentMessageId": "<5d1ee41a-bff6-8ae9-8405-b3734cce4835@techpyre.eu>",
     "threadMessageIds": [
       "<5d1ee41a-bff6-8ae9-8405-b3734cce4835@techpyre.eu>"
-    ]
+    ],
+    "notes": "Auto-responder ticketing rilevato su preventivi@infissipadova.it il 25/11."
   },
   "audit": {
     "originalLcpSeconds": 5.5,

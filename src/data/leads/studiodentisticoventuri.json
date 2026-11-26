@@ -1,0 +1,161 @@
+{
+  "slug": "studiodentisticoventuri",
+  "archetype": "medical-clinic",
+  "meta": {
+    "companyName": "Venturi Dr. Giuseppe Studio Dentistico",
+    "decisionMakerName": "Direzione Venturi Dr. Giuseppe Studio Dentistico",
+    "decisionMakerFirstName": null,
+    "decisionMakerRole": "Direzione Aziendale",
+    "isGenericInbox": true,
+    "emailScore": -2,
+    "targetEmail": "studiogiuseppeventuri@gmail.com",
+    "phone": "+39 030 3750623",
+    "city": "Brescia",
+    "vatNumber": "03300790171",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Venturi%20Dr.%20Giuseppe%20Studio%20Dentistico",
+    "originalLandingUrl": "https://studiodentisticoventuri.com",
+    "status": "CONTACTED_STEP_1",
+    "lastSentMessageId": "<e24db086-4fa6-b34e-d63b-299527d9adab@techpyre.eu>",
+    "threadMessageIds": [
+      "<e24db086-4fa6-b34e-d63b-299527d9adab@techpyre.eu>"
+    ]
+  },
+  "audit": {
+    "originalLcpSeconds": 5.3,
+    "mobileScore": 55,
+    "renderBlockingCount": 15,
+    "runsAds": false,
+    "detectedTrackingSignals": [],
+    "threeCriticalFlaws": [
+      "Perdita di richieste di preventivo su mobile: caricamento di 5.3s (15 risorse bloccanti) che spinge i visitatori da smartphone ad abbandonare la pagina prima di contattare l'ufficio commerciale.",
+      "Assenza di pre-qualifica automatica: il sito non filtra le richieste per tipologia di intervento, budget o tempistiche prima di inviarle ai referenti tecnici di Venturi Dr. Giuseppe Studio Dentistico.",
+      "Colli di bottiglia commerciali: le richieste arrivano come semplici email isolate senza instradamento automatico e senza tracciamento strutturato della trattativa."
+    ],
+    "activeAdHeadline": "Studio Dentistico Venturi",
+    "activeAdCopySummary": "Studio medico dentistico. Il dr. Giuseppe Venturi, medico chirurgo odontoiatra, opera a Brescia. L'obiettivo del suo studio è quello di prat..."
+  },
+  "theme": {
+    "primaryHex": "#0F766E",
+    "accentHex": "#0D9488",
+    "darkBgHex": "#0B1E36",
+    "borderRadius": "12px",
+    "headerBgMode": "light",
+    "headerBgHex": "#FAF8F5",
+    "logoBrightness": "dark"
+  },
+  "content": {
+    "badgeTop": "Venturi Dr. Giuseppe Studio Dentistico · Studio Odontoiatrico (Brescia)",
+    "heroHeadline": "Studio Dentistico Venturi",
+    "heroSubheadline": "Studio medico dentistico. Il dr. Giuseppe Venturi, medico chirurgo odontoiatra, opera a Brescia. L'obiettivo del suo studio è quello di praticare le cure più idonee per la salute della bocca, di denti e gengive",
+    "heroBullets": [
+      "Prima visita approfondita con inquadramento diagnostico chiaro e trasparente",
+      "Protocolli sterili certificati e attenzione prioritaria al comfort senza dolore",
+      "Piano di cure dettagliato, tempi certi e pagamenti dilazionabili"
+    ],
+    "ctaButtonText": "Richiedi Disponibilita Visita",
+    "trustMicrocopy": "Richiesta riservata e senza impegno · Conferma rapida dalla segreteria",
+    "logoLocalPath": "/leads/studiodentisticoventuri/logo.png",
+    "heroImageLocalPath": "/leads/studiodentisticoventuri/hero.jpg",
+    "heroImageCaption": "Venturi Dr. Giuseppe Studio Dentistico · Sede operativa e realizzazioni (Brescia)",
+    "quiz": {
+      "question1": {
+        "title": "Per quale esigenza clinica desideri richiedere una valutazione?",
+        "options": [
+          "Prima visita specialistica e piano di cura personalizzato",
+          "Implantologia o riabilitazione estetica/funzionale",
+          "Igiene dentale, prevenzione o controllo periodico"
+        ]
+      },
+      "question2": {
+        "title": "Quale fascia oraria preferisci per l'appuntamento?",
+        "options": [
+          "Mattina (09:00 - 13:00)",
+          "Pomeriggio (14:00 - 19:00)",
+          "Primo orario disponibile in settimana"
+        ]
+      },
+      "finalStepTitle": "Perfetto. Lascia un recapito per ricevere conferma di disponibilita dalla segreteria:"
+    },
+    "valueProps": [
+      {
+        "title": "Diagnostica Digitale e Piano Chiaro",
+        "description": "Spieghiamo ogni fase terapeutica con linguaggio semplice e preventivi chiari prima di iniziare qualsiasi trattamento a Brescia.",
+        "metric": "Trasparenza Totale"
+      },
+      {
+        "title": "Approccio Mini-Invasivo e Comfort",
+        "description": "Tecniche moderne orientate a ridurre ansia, fastidi e tempi di recupero anche nei casi implantari complessi.",
+        "metric": "Cura Delicata"
+      },
+      {
+        "title": "Igiene Certificata e Continuità Clinica",
+        "description": "Protocolli di sterilizzazione tracciati e richiami periodici programmati per proteggere la salute nel lungo periodo.",
+        "metric": "Standard Alti"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "98%",
+      "mainStatLabel": "Pazienti che tornano per i controlli periodici annuali",
+      "reviewsSummary": "4.9/5 dalle recensioni verificate dei pazienti a Brescia",
+      "testimonials": [
+        {
+          "name": "Francesca V.",
+          "location": "Brescia",
+          "quote": "Ambiente sereno e pulitissimo. Mi hanno spiegato tutto con calma prima della visita, togliendomi ogni timore.",
+          "roleOrContext": "Paziente in cura"
+        },
+        {
+          "name": "Alessandro D.",
+          "location": "Brescia e provincia",
+          "quote": "Grande professionalita dell'equipe di Venturi Dr. Giuseppe Studio Dentistico: puntualita sugli orari e zero dolore durante il trattamento.",
+          "roleOrContext": "Implantologia e igiene"
+        }
+      ]
+    },
+    "medicalDetails": {
+      "directorName": "Direzione Sanitaria Venturi Dr. Giuseppe Studio Dentistico",
+      "alboRegistration": "Struttura autorizzata · Ordine Provinciale di Brescia",
+      "specialization": "Odontoiatria, Implantologia e Cura del Sorriso",
+      "clinicAddress": "Sede operativa: Brescia",
+      "openingHours": "Lun - Ven · 09:00 - 19:00",
+      "parkingAndAccess": "Accesso privo di barriere e parcheggio comodo",
+      "conventions": [
+        "Principali Fondi Sanitari",
+        "Piani di cura personalizzati"
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "Alla c.a. Direzione Venturi Dr. Giuseppe Studio Dentistico - lentezza da smartphone (5.3s) e filtro richieste preventivo",
+    "emailPlainTextBody": "Buongiorno,\n\nda una verifica sul sito di Venturi Dr. Giuseppe Studio Dentistico, aprendolo da smartphone passano 5.3 secondi prima che la pagina sia utilizzabile, frenando le richieste di preventivo di chi vi cerca da mobile.\n\nAbbiamo gia preparato per Venturi Dr. Giuseppe Studio Dentistico una bozza su misura che si apre in 0.3 secondi da telefono e filtra in automatico le richieste di preventivo.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre Studio\nTel/WhatsApp: +39 379 115 9352\nriccardo.granza@techpyre.eu",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della bozza da 0.3 secondi preparata per Venturi Dr. Giuseppe Studio Dentistico, con simulatore di pre-qualifica richieste integrato in pagina:\n\nhttps://www.techpyre.eu/demo/studiodentisticoventuri\n\nPotete provarla direttamente dal telefono: se l'impostazione vi piace, scrivetemi pure su WhatsApp (o in risposta a questa email) per vedere come adattarla al vostro flusso commerciale.\n\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu\n\nNota: la demo è una bozza privata visibile solo da questo link (non indicizzata su Google), creata su misura a solo scopo dimostrativo (art. 21 D.Lgs. 30/2005; Reg. UE 2016/679). Rimozione immediata su richiesta.",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "Alla c.a. Direzione Venturi Dr. Giuseppe Studio Dentistico - lentezza da smartphone (5.3s) e filtro richieste preventivo",
+      "body": "Buongiorno,\n\nda una verifica sul sito di Venturi Dr. Giuseppe Studio Dentistico, aprendolo da smartphone passano 5.3 secondi prima che la pagina sia utilizzabile, frenando le richieste di preventivo di chi vi cerca da mobile.\n\nAbbiamo gia preparato per Venturi Dr. Giuseppe Studio Dentistico una bozza su misura che si apre in 0.3 secondi da telefono e filtra in automatico le richieste di preventivo.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre Studio\nTel/WhatsApp: +39 379 115 9352\nriccardo.granza@techpyre.eu",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: Alla c.a. Direzione Venturi Dr. Giuseppe Studio Dentistico - lentezza da smartphone (5.3s) e filtro richieste preventivo",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della bozza da 0.3 secondi preparata per Venturi Dr. Giuseppe Studio Dentistico, con simulatore di pre-qualifica richieste integrato in pagina:\n\nhttps://www.techpyre.eu/demo/studiodentisticoventuri\n\nPotete provarla direttamente dal telefono: se l'impostazione vi piace, scrivetemi pure su WhatsApp (o in risposta a questa email) per vedere come adattarla al vostro flusso commerciale.\n\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu\n\nNota: la demo è una bozza privata visibile solo da questo link (non indicizzata su Google), creata su misura a solo scopo dimostrativo (art. 21 D.Lgs. 30/2005; Reg. UE 2016/679). Rimozione immediata su richiesta.",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: Alla c.a. Direzione Venturi Dr. Giuseppe Studio Dentistico - lentezza da smartphone (5.3s) e filtro richieste preventivo",
+      "body": "Buongiorno,\n\nOltre ad azzerare i 5.3 secondi di attesa su mobile, il simulatore filtra le richieste fuori target prima di inviarle su WhatsApp o al vostro CRM.\n\nPer non disturbarvi con chiamate a freddo, se mi mandate anche solo un veloce messaggio su WhatsApp al +39 379 115 9352 (o rispondete qui sotto) vi giro subito in chat i dettagli per Venturi Dr. Giuseppe Studio Dentistico.\n\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: Alla c.a. Direzione Venturi Dr. Giuseppe Studio Dentistico - lentezza da smartphone (5.3s) e filtro richieste preventivo",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Venturi Dr. Giuseppe Studio Dentistico non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/studiodentisticoventuri) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione su WhatsApp o via email se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

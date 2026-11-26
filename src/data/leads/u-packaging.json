@@ -14,10 +14,11 @@
     "vatNumber": "03381871205",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=U%20Packaging",
     "originalLandingUrl": "https://www.u-packaging.com",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<eee86047-f18a-b019-bed5-5dcd1634dcae@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<a5dffe78-5d0b-aae5-04da-77c0c629b907@techpyre.eu>",
     "threadMessageIds": [
-      "<eee86047-f18a-b019-bed5-5dcd1634dcae@techpyre.eu>"
+      "<eee86047-f18a-b019-bed5-5dcd1634dcae@techpyre.eu>",
+      "<a5dffe78-5d0b-aae5-04da-77c0c629b907@techpyre.eu>"
     ]
   },
   "audit": {

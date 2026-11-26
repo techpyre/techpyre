@@ -14,10 +14,11 @@
     "vatNumber": "01872940307",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Officina%20del%20Carrello",
     "originalLandingUrl": "http://www.officinadelcarrello.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<08248f3e-c4b9-099d-5188-f5be88c2b3db@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<c0a2c4c6-c87e-a4ef-80e1-06d30575fd66@techpyre.eu>",
     "threadMessageIds": [
-      "<08248f3e-c4b9-099d-5188-f5be88c2b3db@techpyre.eu>"
+      "<08248f3e-c4b9-099d-5188-f5be88c2b3db@techpyre.eu>",
+      "<c0a2c4c6-c87e-a4ef-80e1-06d30575fd66@techpyre.eu>"
     ]
   },
   "audit": {

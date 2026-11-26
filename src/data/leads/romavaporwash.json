@@ -11,7 +11,7 @@
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Roma%20Vapor%20Wash",
     "originalLandingUrl": "http://www.romavaporwash.it/pulizia-sanificazione-auto-roma",
     "isGenericInbox": false,
-    "emailScore": 40,
+    "emailScore": 0,
     "decisionMakerFirstName": null,
     "decisionMakerRole": "Direzione Aziendale",
     "lastSentMessageId": "<008752c4-f5aa-cf2c-a82a-bd5eff5d2147@techpyre.eu>",
@@ -19,7 +19,7 @@
       "<b2d4190f-6764-628f-fc79-544bc2eef674@techpyre.eu>",
       "<008752c4-f5aa-cf2c-a82a-bd5eff5d2147@techpyre.eu>"
     ],
-    "status": "CONTACTED_STEP_2"
+    "status": "INVALID_TICKET_INBOX"
   },
   "audit": {
     "originalLcpSeconds": 17.7,

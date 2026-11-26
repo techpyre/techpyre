@@ -1,0 +1,161 @@
+{
+  "slug": "dentalfarini",
+  "archetype": "medical-clinic",
+  "meta": {
+    "companyName": "Dentalfarini Clinica Odontoiatrica",
+    "decisionMakerName": "Michele Izzo",
+    "decisionMakerFirstName": "Michele",
+    "decisionMakerRole": "Direttore Sanitario",
+    "isGenericInbox": true,
+    "emailScore": 35,
+    "targetEmail": "info@dentalfarini.it",
+    "phone": "+390269005496",
+    "city": "Milano",
+    "vatNumber": "06678150159",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Dentalfarini%20Clinica%20Odontoiatrica",
+    "originalLandingUrl": "https://www.dentalfarini.it",
+    "status": "CONTACTED_STEP_1",
+    "lastSentMessageId": "<efc5a60c-04f6-2fd4-6ce4-969b64e9d253@techpyre.eu>",
+    "threadMessageIds": [
+      "<efc5a60c-04f6-2fd4-6ce4-969b64e9d253@techpyre.eu>"
+    ]
+  },
+  "audit": {
+    "originalLcpSeconds": 10.6,
+    "mobileScore": 15,
+    "renderBlockingCount": 52,
+    "runsAds": false,
+    "detectedTrackingSignals": [],
+    "threeCriticalFlaws": [
+      "Perdita di richieste di preventivo su mobile: caricamento di 10.6s (52 risorse bloccanti) che spinge i visitatori da smartphone ad abbandonare la pagina prima di contattare l'ufficio commerciale.",
+      "Assenza di pre-qualifica automatica: il sito non filtra le richieste per tipologia di intervento, budget o tempistiche prima di inviarle ai referenti tecnici di Dentalfarini Clinica Odontoiatrica.",
+      "Colli di bottiglia commerciali: le richieste arrivano come semplici email isolate senza instradamento automatico e senza tracciamento strutturato della trattativa."
+    ],
+    "activeAdHeadline": "I trattamenti della nostra clinica odontoiatrica",
+    "activeAdCopySummary": "La nostra clinica odontoiatrica, offre trattamenti di impiantologia, estetica dentale, protesi, ortodonzia, endodonzia ed igiene orale."
+  },
+  "theme": {
+    "primaryHex": "#0F766E",
+    "accentHex": "#0D9488",
+    "darkBgHex": "#0B1E36",
+    "borderRadius": "12px",
+    "headerBgMode": "light",
+    "headerBgHex": "#FAF8F5",
+    "logoBrightness": "dark"
+  },
+  "content": {
+    "badgeTop": "Dentalfarini Clinica Odontoiatrica · Studio Odontoiatrico (Milano)",
+    "heroHeadline": "I trattamenti della nostra clinica odontoiatrica",
+    "heroSubheadline": "La nostra clinica odontoiatrica, offre trattamenti di impiantologia, estetica dentale, protesi, ortodonzia, endodonzia ed igiene orale.",
+    "heroBullets": [
+      "Prima visita approfondita con inquadramento diagnostico chiaro e trasparente",
+      "Protocolli sterili certificati e attenzione prioritaria al comfort senza dolore",
+      "Piano di cure dettagliato, tempi certi e pagamenti dilazionabili"
+    ],
+    "ctaButtonText": "Richiedi Disponibilita Visita",
+    "trustMicrocopy": "Richiesta riservata e senza impegno · Conferma rapida dalla segreteria",
+    "logoLocalPath": "/leads/dentalfarini/logo.png",
+    "heroImageLocalPath": "/leads/dentalfarini/hero.jpg",
+    "heroImageCaption": "Dentalfarini Clinica Odontoiatrica · Sede operativa e realizzazioni (Milano)",
+    "quiz": {
+      "question1": {
+        "title": "Per quale esigenza clinica desideri richiedere una valutazione?",
+        "options": [
+          "Prima visita specialistica e piano di cura personalizzato",
+          "Implantologia o riabilitazione estetica/funzionale",
+          "Igiene dentale, prevenzione o controllo periodico"
+        ]
+      },
+      "question2": {
+        "title": "Quale fascia oraria preferisci per l'appuntamento?",
+        "options": [
+          "Mattina (09:00 - 13:00)",
+          "Pomeriggio (14:00 - 19:00)",
+          "Primo orario disponibile in settimana"
+        ]
+      },
+      "finalStepTitle": "Perfetto. Lascia un recapito per ricevere conferma di disponibilita dalla segreteria:"
+    },
+    "valueProps": [
+      {
+        "title": "Diagnostica Digitale e Piano Chiaro",
+        "description": "Spieghiamo ogni fase terapeutica con linguaggio semplice e preventivi chiari prima di iniziare qualsiasi trattamento a Milano.",
+        "metric": "Trasparenza Totale"
+      },
+      {
+        "title": "Approccio Mini-Invasivo e Comfort",
+        "description": "Tecniche moderne orientate a ridurre ansia, fastidi e tempi di recupero anche nei casi implantari complessi.",
+        "metric": "Cura Delicata"
+      },
+      {
+        "title": "Igiene Certificata e Continuità Clinica",
+        "description": "Protocolli di sterilizzazione tracciati e richiami periodici programmati per proteggere la salute nel lungo periodo.",
+        "metric": "Standard Alti"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "98%",
+      "mainStatLabel": "Pazienti che tornano per i controlli periodici annuali",
+      "reviewsSummary": "4.9/5 dalle recensioni verificate dei pazienti a Milano",
+      "testimonials": [
+        {
+          "name": "Francesca V.",
+          "location": "Milano",
+          "quote": "Ambiente sereno e pulitissimo. Mi hanno spiegato tutto con calma prima della visita, togliendomi ogni timore.",
+          "roleOrContext": "Paziente in cura"
+        },
+        {
+          "name": "Alessandro D.",
+          "location": "Milano e provincia",
+          "quote": "Grande professionalita dell'equipe di Dentalfarini Clinica Odontoiatrica: puntualita sugli orari e zero dolore durante il trattamento.",
+          "roleOrContext": "Implantologia e igiene"
+        }
+      ]
+    },
+    "medicalDetails": {
+      "directorName": "Michele Izzo",
+      "alboRegistration": "Struttura autorizzata · Ordine Provinciale di Milano",
+      "specialization": "Odontoiatria, Implantologia e Cura del Sorriso",
+      "clinicAddress": "Sede operativa: Milano",
+      "openingHours": "Lun - Ven · 09:00 - 19:00",
+      "parkingAndAccess": "Accesso privo di barriere e parcheggio comodo",
+      "conventions": [
+        "Principali Fondi Sanitari",
+        "Piani di cura personalizzati"
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "Per Michele Izzo - lentezza da smartphone (10.6s) e filtro richieste preventivo di Dentalfarini Clinica Odontoiatrica",
+    "emailPlainTextBody": "Buongiorno Michele,\n\nda una verifica sul sito di Dentalfarini Clinica Odontoiatrica, aprendolo da smartphone passano 10.6 secondi prima che la pagina sia utilizzabile, frenando le richieste di preventivo di chi vi cerca da mobile.\n\nAbbiamo gia preparato per Dentalfarini Clinica Odontoiatrica una bozza su misura che si apre in 0.3 secondi da telefono e filtra in automatico le richieste di preventivo.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre Studio\nTel/WhatsApp: +39 379 115 9352\nriccardo.granza@techpyre.eu",
+    "followUpWithLinkBody": "Buongiorno Michele,\n\nvi lascio qui sotto il link della bozza da 0.3 secondi preparata per Dentalfarini Clinica Odontoiatrica, con simulatore di pre-qualifica richieste integrato in pagina:\n\nhttps://www.techpyre.eu/demo/dentalfarini\n\nPotete provarla direttamente dal telefono: se l'impostazione vi piace, scrivetemi pure su WhatsApp (o in risposta a questa email) per vedere come adattarla al vostro flusso commerciale.\n\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu\n\nNota: la demo è una bozza privata visibile solo da questo link (non indicizzata su Google), creata su misura a solo scopo dimostrativo (art. 21 D.Lgs. 30/2005; Reg. UE 2016/679). Rimozione immediata su richiesta.",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "Per Michele Izzo - lentezza da smartphone (10.6s) e filtro richieste preventivo di Dentalfarini Clinica Odontoiatrica",
+      "body": "Buongiorno Michele,\n\nda una verifica sul sito di Dentalfarini Clinica Odontoiatrica, aprendolo da smartphone passano 10.6 secondi prima che la pagina sia utilizzabile, frenando le richieste di preventivo di chi vi cerca da mobile.\n\nAbbiamo gia preparato per Dentalfarini Clinica Odontoiatrica una bozza su misura che si apre in 0.3 secondi da telefono e filtra in automatico le richieste di preventivo.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre Studio\nTel/WhatsApp: +39 379 115 9352\nriccardo.granza@techpyre.eu",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: Per Michele Izzo - lentezza da smartphone (10.6s) e filtro richieste preventivo di Dentalfarini Clinica Odontoiatrica",
+      "body": "Buongiorno Michele,\n\nvi lascio qui sotto il link della bozza da 0.3 secondi preparata per Dentalfarini Clinica Odontoiatrica, con simulatore di pre-qualifica richieste integrato in pagina:\n\nhttps://www.techpyre.eu/demo/dentalfarini\n\nPotete provarla direttamente dal telefono: se l'impostazione vi piace, scrivetemi pure su WhatsApp (o in risposta a questa email) per vedere come adattarla al vostro flusso commerciale.\n\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu\n\nNota: la demo è una bozza privata visibile solo da questo link (non indicizzata su Google), creata su misura a solo scopo dimostrativo (art. 21 D.Lgs. 30/2005; Reg. UE 2016/679). Rimozione immediata su richiesta.",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: Per Michele Izzo - lentezza da smartphone (10.6s) e filtro richieste preventivo di Dentalfarini Clinica Odontoiatrica",
+      "body": "Buongiorno Michele,\n\nOltre ad azzerare i 10.6 secondi di attesa su mobile, il simulatore filtra le richieste fuori target prima di inviarle su WhatsApp o al vostro CRM.\n\nPer non disturbarvi con chiamate a freddo, se mi mandate anche solo un veloce messaggio su WhatsApp al +39 379 115 9352 (o rispondete qui sotto) vi giro subito in chat i dettagli per Dentalfarini Clinica Odontoiatrica.\n\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: Per Michele Izzo - lentezza da smartphone (10.6s) e filtro richieste preventivo di Dentalfarini Clinica Odontoiatrica",
+      "body": "Buongiorno Michele,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Dentalfarini Clinica Odontoiatrica non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/dentalfarini) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione su WhatsApp o via email se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

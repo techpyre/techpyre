@@ -14,10 +14,11 @@
     "vatNumber": "Non trovata",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Ferri%20Srl",
     "originalLandingUrl": "https://www.ferriserramenti.com",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<2f51b19e-74af-d207-fe0a-fd6e1fd52e5d@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<cadd7379-20e1-e5da-4e50-19b0313f1bbb@techpyre.eu>",
     "threadMessageIds": [
-      "<2f51b19e-74af-d207-fe0a-fd6e1fd52e5d@techpyre.eu>"
+      "<2f51b19e-74af-d207-fe0a-fd6e1fd52e5d@techpyre.eu>",
+      "<cadd7379-20e1-e5da-4e50-19b0313f1bbb@techpyre.eu>"
     ]
   },
   "audit": {

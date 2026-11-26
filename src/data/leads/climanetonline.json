@@ -4,13 +4,13 @@
   "meta": {
     "companyName": "Climanet Online",
     "decisionMakerName": "Direzione Climanet Online",
-    "targetEmail": "info@climanetonline.it",
-    "phone": "3935194800",
+    "targetEmail": "",
+    "phone": "",
     "city": "Roma",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&media_type=all&q=condizionatori%20padova&search_type=keyword_unordered",
     "originalLandingUrl": "http://www.climanetonline.it/",
     "isGenericInbox": true,
-    "emailScore": 35,
+    "emailScore": 0,
     "decisionMakerFirstName": null,
     "decisionMakerRole": "Direzione Aziendale",
     "lastSentMessageId": "<59198bd7-e2d4-6749-5c32-13a76f34512b@techpyre.eu>",
@@ -20,7 +20,8 @@
       "<b2bba57c-0419-4857-92ce-13d6b8d12050@techpyre.eu>",
       "<59198bd7-e2d4-6749-5c32-13a76f34512b@techpyre.eu>"
     ],
-    "status": "CONTACTED_STEP_4"
+    "status": "BLACKLISTED",
+    "notes": "Rimozione/contatto da agenzia partner (andrea.direttore@plumastudio.com): cliente inserito in BLACKLISTED e proposta partnership white-label."
   },
   "audit": {
     "originalLcpSeconds": 8.3,

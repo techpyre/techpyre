@@ -671,37 +671,111 @@ export const HARD_BLOCKED_EMAIL_PREFIXES = [
 
 const EMAIL_LOCAL_PART_BLACKLIST = HARD_BLOCKED_EMAIL_PREFIXES;
 
+const PLACEHOLDER_EMAIL_DOMAINS = [
+  "pec.",
+  "legalmail.",
+  "arubapec.",
+  "postecert.",
+  "paginegialle.",
+  "esempio.",
+  "example.",
+  "domain.",
+  "dominio.",
+  "azienda.",
+  "tuodominio.",
+  "tuosito.",
+  "sito.",
+  "yourcompany.",
+  "test.com",
+  "rossi.com",
+  "doe.com",
+  "mailservice.",
+  "email.com",
+  "email.it",
+  "mail.it",
+  "mail.com",
+  "miamail.",
+  "tuamail",
+  "sentry",
+  "wix",
+  "prestashop",
+];
+
+const PLACEHOLDER_EMAIL_LOCALS = new Set([
+  "test",
+  "mymail",
+  "nome",
+  "your",
+  "you",
+  "tua",
+  "tuo",
+  "user",
+  "username",
+  "email",
+  "mail",
+  "infoemail",
+  "john",
+  "nome.cognome",
+  "name.surname",
+]);
+
+/**
+ * Normalizza una stringa email candidata decodificando eventuali spazi URL-encoded.
+ */
+export function normalizeEmailCandidate(rawEmail: string): string {
+  if (!rawEmail) return "";
+  let decoded = rawEmail;
+  try {
+    decoded = decodeURIComponent(rawEmail);
+  } catch {
+    decoded = rawEmail.replace(/%20/gi, " ");
+  }
+  return decoded
+    .trim()
+    .replace(/^(?:[-_+.:\s])+/gi, "")
+    .replace(/^[0-9]+(?=[a-zA-Z])/, "")
+    .toLowerCase();
+}
+
 export function isHardBlockedEmail(rawEmail: string): boolean {
   if (!rawEmail || !rawEmail.includes("@")) return true;
-  let email = rawEmail.trim().toLowerCase();
-  try {
-    email = decodeURIComponent(email);
-  } catch {}
-  email = email.replace(/^[\s%20]+/gi, "");
-  const [localPart, rawDomain] = email.split("@");
-  if (!localPart || !rawDomain) return true;
+  if (/[\r\n,;]|u00|\\u00/i.test(rawEmail)) return true;
+
+  const email = normalizeEmailCandidate(rawEmail);
+  const parts = email.split("@");
+  if (parts.length !== 2) return true;
+  const [localPart, rawDomain] = parts;
+  if (!localPart || !rawDomain || localPart.length < 2) return true;
+
   const domainPart = rawDomain.replace(/^www\./i, "");
 
+  // Scarta file asset (es. Risorsa-1@3x.png) e TLD non validi
   if (
-    domainPart.includes("pec.") ||
-    domainPart.includes("legalmail.") ||
-    domainPart.includes("arubapec.") ||
-    domainPart.includes("postecert.") ||
-    domainPart.includes("paginegialle.") ||
-    domainPart.includes("esempio.") ||
-    domainPart.includes("example.") ||
-    domainPart.includes("test.com") ||
-    domainPart.includes("rossi.com") ||
-    domainPart.includes("doe.com") ||
-    domainPart.includes("mailservice.") ||
-    localPart === "test" ||
-    localPart === "mymail" ||
-    localPart === "nome" ||
-    localPart === "your" ||
-    (localPart === "mario" && (domainPart.includes("rossi") || domainPart.includes("esempio")))
+    /\.(png|jpe?g|webp|svg|gif|ico|css|js|woff2?|ttf|pdf)$/i.test(domainPart) ||
+    !/^[a-z0-9.-]+\.(it|com|eu|net|org|info|srl|biz|co|io|tech|pro|agency)$/i.test(domainPart) ||
+    !/^[a-z0-9._%+-]+$/.test(localPart)
   ) {
     return true;
   }
+
+  const isPublicOrPlaceholderDomain =
+    PLACEHOLDER_EMAIL_DOMAINS.some((bad) => domainPart.includes(bad)) ||
+    FREE_MAIL_DOMAINS.has(domainPart);
+  const isFictionalMarioRossi =
+    (localPart === "mario.rossi" ||
+      localPart === "mario-rossi" ||
+      localPart === "mariorossi" ||
+      localPart === "mario") &&
+    isPublicOrPlaceholderDomain;
+
+  if (
+    PLACEHOLDER_EMAIL_DOMAINS.some((bad) => domainPart.includes(bad)) ||
+    PLACEHOLDER_EMAIL_LOCALS.has(localPart) ||
+    isFictionalMarioRossi
+  ) {
+    return true;
+  }
+
   return HARD_BLOCKED_EMAIL_PREFIXES.some(
     (bad) =>
       localPart === bad ||
@@ -838,18 +912,7 @@ export function selectBestDecisionMakerEmail(
   const scoredCandidates: Array<{ email: string; score: number; isGeneric: boolean }> = [];
 
   for (const raw of rawEmails) {
-    let decodedRaw = raw;
-    try {
-      decodedRaw = decodeURIComponent(raw);
-    } catch {
-      decodedRaw = raw.replace(/%20/gi, "");
-    }
-    const email = decodedRaw
-      .trim()
-      .replace(/^(?:%20|[-_+.:\s])+/gi, "")
-      .replace(/^[0-9]+(?=[a-zA-Z])/, "")
-      .toLowerCase();
-
+    const email = normalizeEmailCandidate(raw);
     if (!email.includes("@")) continue;
 
     const [localPart, rawDomainPart] = email.split("@");
@@ -860,50 +923,9 @@ export function selectBestDecisionMakerEmail(
     if (seen.has(normalizedEmail)) continue;
     seen.add(normalizedEmail);
 
-    // Scarta file statici, placeholder e TLD non validi
-    if (
-      /\.(png|jpg|jpeg|webp|svg|gif|css|js|woff|ttf)$/i.test(domainPart) ||
-      !/\.(it|com|eu|net|org|info|srl|biz|co|io|tech|pro)$/i.test(domainPart) ||
-      domainPart.includes("sentry") ||
-      domainPart.includes("wix") ||
-      domainPart.includes("prestashop") ||
-      domainPart.includes("example.") ||
-      domainPart.includes("esempio.") ||
-      domainPart.includes("azienda.it") ||
-      domainPart.includes("test.com") ||
-      domainPart.includes("rossi.com") ||
-      domainPart.includes("doe.com") ||
-      domainPart.includes("mailservice.") ||
-      domainPart.includes("mail.it") ||
-      domainPart.includes("email.it") ||
-      domainPart.includes("tuamail") ||
-      domainPart.includes("pec.") ||
-      domainPart.includes("legalmail.") ||
-      domainPart.includes("arubapec.") ||
-      domainPart.includes("postecert.") ||
-      localPart === "your" ||
-      localPart === "mymail" ||
-      localPart === "email" ||
-      localPart === "nome" ||
-      localPart === "john" ||
-      localPart === "test" ||
-      localPart === "user" ||
-      (localPart === "mario" && (domainPart.includes("rossi") || domainPart.includes("esempio"))) ||
-      localPart.includes("u00")
-    ) {
+    if (isHardBlockedEmail(normalizedEmail)) {
       continue;
     }
-
-    // Hard Blacklist sul local-part o dominio PEC
-    const hitsHardBlacklist = EMAIL_LOCAL_PART_BLACKLIST.some(
-      (bad) =>
-        localPart === bad ||
-        localPart.startsWith(`${bad}.`) ||
-        localPart.startsWith(`${bad}_`) ||
-        localPart.startsWith(`${bad}-`) ||
-        localPart.includes(bad)
-    );
-    if (hitsHardBlacklist) continue;
 
     let score = 0;
     let isGeneric = false;
@@ -1201,11 +1223,88 @@ function isValidItalianFullName(first: string, last: string): boolean {
   return true;
 }
 
+function isFictionalPlaceholderName(fullName: string): boolean {
+  const clean = fullName.trim().toLowerCase().replace(/\s+/g, " ");
+  return (
+    clean === "marco rossi" ||
+    clean === "mario rossi" ||
+    clean === "john doe" ||
+    clean === "jane doe" ||
+    clean === "nome cognome"
+  );
+}
+
+/**
+ * Ricava nome e cognome reali da un'email nominale (es. giulia.cecchi@archa.it).
+ */
+export function extractNominalPersonFromEmail(
+  bestEmail: string
+): { fullName: string; firstName: string; role: string } | null {
+  if (!bestEmail || !bestEmail.includes("@") || isHardBlockedEmail(bestEmail)) {
+    return null;
+  }
+  const localPart = normalizeEmailCandidate(bestEmail).split("@")[0];
+  const dotMatch = localPart.match(/^([a-z]{3,14})\.([a-z]{3,15})$/);
+  if (!dotMatch) return null;
+
+  const firstRaw = dotMatch[1];
+  const lastRaw = dotMatch[2];
+  const firstCap = capitalizeWord(firstRaw);
+  const lastCap = capitalizeWord(lastRaw);
+  const firstIsKnown = ITALIAN_FIRST_NAMES.has(firstRaw);
+  const lastIsKnownFirst = ITALIAN_FIRST_NAMES.has(lastRaw);
+
+  // Gestisce anche il formato cognome.nome@ (es. bottaini.federico@)
+  const resolvedFirst = !firstIsKnown && lastIsKnownFirst ? lastCap : firstCap;
+  const resolvedLast = !firstIsKnown && lastIsKnownFirst ? firstCap : lastCap;
+  const partsValid =
+    !GENERIC_INBOX_PREFIXES.has(firstRaw) &&
+    !GENERIC_INBOX_PREFIXES.has(lastRaw) &&
+    (firstIsKnown || lastIsKnownFirst) &&
+    isValidItalianFullName(resolvedFirst, resolvedLast) &&
+    !isFictionalPlaceholderName(`${resolvedFirst} ${resolvedLast}`);
+
+  if (!partsValid) return null;
+  return {
+    fullName: `${resolvedFirst} ${resolvedLast}`,
+    firstName: resolvedFirst,
+    role: "Direzione",
+  };
+}
+
+/**
+ * Verifica che un nominativo estratto dall'HTML non contraddica l'intestatario di un'email personale.
+ */
+export function doesNameMatchEmailLocalPart(fullName: string, email: string): boolean {
+  if (!fullName || !email || !email.includes("@")) return true;
+  const local = normalizeEmailCandidate(email).split("@")[0];
+  const tokens = fullName
+    .toLowerCase()
+    .replace(/^(?:ing\.|dott\.ssa|dott\.|arch\.|geom\.|sig\.ra|sig\.|avv\.)\s*/i, "")
+    .trim()
+    .split(/\s+/);
+  if (tokens.length < 2) return true;
+  const first = tokens[0];
+  const last = tokens[tokens.length - 1];
+
+  const nominalDot = local.match(/^([a-z]{2,15})\.([a-z]{2,18})$/);
+  if (nominalDot) {
+    const [, p1, p2] = nominalDot;
+    if (GENERIC_INBOX_PREFIXES.has(p1) || GENERIC_INBOX_PREFIXES.has(p2)) return true;
+    if (p1.length === 1) {
+      return first.startsWith(p1) && last === p2;
+    }
+    return (p1 === first && p2 === last) || (p1 === last && p2 === first);
+  }
+  return true;
+}
+
 export function extractDecisionMakerFromHtml(
   combinedHtml: string,
   bestEmail: string
 ): { fullName: string | null; firstName: string | null; role: string | null } {
   const cleanText = stripTags(combinedHtml);
+  const nominalFromEmail = extractNominalPersonFromEmail(bestEmail);
 
   const rolePatterns: Array<{ regex: RegExp; defaultRole: string }> = [
     {
@@ -1240,40 +1339,39 @@ export function extractDecisionMakerFromHtml(
     },
   ];
 
+  let firstGenericHtmlMatch: { fullName: string; firstName: string; role: string } | null = null;
+
   for (const { regex, defaultRole } of rolePatterns) {
     const matches = [...cleanText.matchAll(regex)];
     for (const m of matches) {
       const first = capitalizeWord(m[1]);
       const last = capitalizeWord(m[2]);
-      if (isValidItalianFullName(first, last)) {
-        return {
-          fullName: `${first} ${last}`,
-          firstName: first,
-          role: defaultRole,
-        };
+      const fullName = `${first} ${last}`;
+      if (!isValidItalianFullName(first, last) || isFictionalPlaceholderName(fullName)) {
+        continue;
+      }
+      if (nominalFromEmail) {
+        if (doesNameMatchEmailLocalPart(fullName, bestEmail)) {
+          return { fullName, firstName: first, role: defaultRole };
+        }
+        continue;
+      }
+      if (!doesNameMatchEmailLocalPart(fullName, bestEmail)) {
+        continue;
+      }
+      if (!firstGenericHtmlMatch) {
+        firstGenericHtmlMatch = { fullName, firstName: first, role: defaultRole };
       }
     }
   }
 
-  // Fallback da Email Nominale (es. nome.cognome@dominio.it)
-  if (bestEmail && bestEmail.includes("@")) {
-    const localPart = bestEmail.split("@")[0].toLowerCase();
-    const dotMatch = localPart.match(/^([a-z]{3,14})\.([a-z]{3,15})$/);
-    if (dotMatch) {
-      const f = capitalizeWord(dotMatch[1]);
-      const l = capitalizeWord(dotMatch[2]);
-      if (
-        !GENERIC_INBOX_PREFIXES.has(dotMatch[1]) &&
-        !GENERIC_INBOX_PREFIXES.has(dotMatch[2]) &&
-        isValidItalianFullName(f, l)
-      ) {
-        return {
-          fullName: `${f} ${l}`,
-          firstName: f,
-          role: "Direzione",
-        };
-      }
-    }
+  // Se l'email è nominale personale (es. giulia.cecchi@), usa sempre il nome reale del destinatario
+  if (nominalFromEmail) {
+    return nominalFromEmail;
+  }
+
+  if (firstGenericHtmlMatch) {
+    return firstGenericHtmlMatch;
   }
 
   return { fullName: null, firstName: null, role: null };
@@ -1758,12 +1856,13 @@ export function migrateOldLeadConfig(
     }
   }
 
-  // 3. Pulizia e re-scoring del Decision Maker Name (stop a falsi positivi o vecchi placeholder)
+  // 3. Pulizia e re-scoring del Decision Maker Name (stop a falsi positivi, placeholder o nomi discordanti da email nominale)
   const currentDm = (lead.meta.decisionMakerName || "").trim();
   const isPlaceholderDm =
     !currentDm ||
     currentDm.startsWith("Direzione ") ||
-    currentDm.startsWith("Titolare ");
+    currentDm.startsWith("Titolare ") ||
+    isFictionalPlaceholderName(currentDm);
 
   let hasStopwordInDm = false;
   if (!isPlaceholderDm) {
@@ -1780,14 +1879,25 @@ export function migrateOldLeadConfig(
     }
   }
 
-  if (isPlaceholderDm || hasStopwordInDm || lead.meta.decisionMakerFirstName === undefined) {
-    const extractedFromEmail = extractDecisionMakerFromHtml("", lead.meta.targetEmail);
+  const nominalFromEmail = extractNominalPersonFromEmail(lead.meta.targetEmail || "");
+  const mismatchesNominalEmail =
+    Boolean(nominalFromEmail) &&
+    !isPlaceholderDm &&
+    !doesNameMatchEmailLocalPart(currentDm, lead.meta.targetEmail || "");
+
+  if (
+    isPlaceholderDm ||
+    hasStopwordInDm ||
+    mismatchesNominalEmail ||
+    lead.meta.decisionMakerFirstName === undefined
+  ) {
+    const extractedFromEmail = nominalFromEmail || extractDecisionMakerFromHtml("", lead.meta.targetEmail);
     if (extractedFromEmail.fullName) {
       lead.meta.decisionMakerName = extractedFromEmail.fullName;
       lead.meta.decisionMakerFirstName = extractedFromEmail.firstName;
       lead.meta.decisionMakerRole = extractedFromEmail.role || "Direzione";
       changed = true;
-    } else if (!isPlaceholderDm && !hasStopwordInDm) {
+    } else if (!isPlaceholderDm && !hasStopwordInDm && !mismatchesNominalEmail) {
       const cleanParts = currentDm
         .replace(/^(?:Ing\.|Dott\.ssa|Dott\.|Arch\.|Geom\.|Sig\.|Avv\.)\s*/i, "")
         .trim()

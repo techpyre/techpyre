@@ -2,7 +2,8 @@ export type InboundReplyClassification =
   | 'AUTO_REPLY_OR_TICKET'
   | 'POSITIVE_REQUEST_LINK'
   | 'SKEPTICAL_OR_OBJECTION'
-  | 'UNSUBSCRIBE_OR_NO';
+  | 'UNSUBSCRIBE_OR_NO'
+  | 'AGENCY_WHITELABEL_OPPORTUNITY';
 
 export interface OutreachStep {
   dayOffset: number;
@@ -30,6 +31,7 @@ export interface LeadConfig {
     originalLandingUrl: string;
     lastSentMessageId?: string;
     threadMessageIds?: string[];
+    notes?: string;
     status?:
       | 'NEW'
       | 'CONTACTED_STEP_1'

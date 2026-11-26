@@ -14,10 +14,11 @@
     "vatNumber": "02397341203",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Tecnocart%20Imballaggi",
     "originalLandingUrl": "http://www.tecnocart.net",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<7c4e5040-8f2c-6cb6-72b6-5eb92200c2c8@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<ea33db05-73aa-401d-33d3-96ca4079b6c9@techpyre.eu>",
     "threadMessageIds": [
-      "<7c4e5040-8f2c-6cb6-72b6-5eb92200c2c8@techpyre.eu>"
+      "<7c4e5040-8f2c-6cb6-72b6-5eb92200c2c8@techpyre.eu>",
+      "<ea33db05-73aa-401d-33d3-96ca4079b6c9@techpyre.eu>"
     ]
   },
   "audit": {

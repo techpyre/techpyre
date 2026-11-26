@@ -7,14 +7,14 @@
     "decisionMakerFirstName": "Stefano",
     "decisionMakerRole": "Direzione",
     "isGenericInbox": false,
-    "emailScore": 50,
+    "emailScore": 0,
     "targetEmail": "stefano.golovei@gmail.com",
     "phone": "+393513686896",
     "city": "Monza",
     "vatNumber": "Non trovata",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Serramenti%20e%20Vetrate%20Panoramiche",
     "originalLandingUrl": "https://www.serramentievetrate.it",
-    "status": "CONTACTED_STEP_1",
+    "status": "INVALID_TICKET_INBOX",
     "lastSentMessageId": "<c8772822-f68f-ef91-9c59-308d37804ea5@techpyre.eu>",
     "threadMessageIds": [
       "<c8772822-f68f-ef91-9c59-308d37804ea5@techpyre.eu>"

@@ -11,7 +11,7 @@
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&media_type=all&q=dentista%20palermo&search_type=keyword_unordered",
     "originalLandingUrl": "http://www.dottdugo.it/",
     "isGenericInbox": false,
-    "emailScore": 50,
+    "emailScore": 0,
     "decisionMakerFirstName": "Dott",
     "decisionMakerRole": "Direzione",
     "lastSentMessageId": "<58908082-b257-8d4f-ec5f-7c4bf0c46d00@techpyre.eu>",
@@ -21,7 +21,7 @@
       "<7e1a0928-0e73-2727-c5b6-f49f3aa1e28c@techpyre.eu>",
       "<58908082-b257-8d4f-ec5f-7c4bf0c46d00@techpyre.eu>"
     ],
-    "status": "CONTACTED_STEP_4"
+    "status": "INVALID_TICKET_INBOX"
   },
   "audit": {
     "originalLcpSeconds": 7.5,

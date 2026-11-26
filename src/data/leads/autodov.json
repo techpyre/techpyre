@@ -11,7 +11,7 @@
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Autodov%20%26%238211%3B%20Oscuramento%20vetri",
     "originalLandingUrl": "http://autodov.com/",
     "isGenericInbox": false,
-    "emailScore": 50,
+    "emailScore": 0,
     "decisionMakerFirstName": null,
     "decisionMakerRole": "Direzione Aziendale",
     "lastSentMessageId": "<7ff680d7-60bd-4a87-1e89-1dd93eaf40d7@techpyre.eu>",
@@ -19,7 +19,7 @@
       "<5d815502-ee89-bfeb-18c6-12b35aad82e5@techpyre.eu>",
       "<7ff680d7-60bd-4a87-1e89-1dd93eaf40d7@techpyre.eu>"
     ],
-    "status": "CONTACTED_STEP_2"
+    "status": "INVALID_TICKET_INBOX"
   },
   "audit": {
     "originalLcpSeconds": 15.6,

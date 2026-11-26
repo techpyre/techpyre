@@ -10,7 +10,7 @@
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&media_type=all&q=ristrutturazione%20bagno%20verona&search_type=keyword_unordered",
     "originalLandingUrl": "http://www.ilmattonesrl.it/",
     "isGenericInbox": true,
-    "emailScore": -2,
+    "emailScore": 0,
     "decisionMakerFirstName": null,
     "decisionMakerRole": "Direzione Aziendale",
     "lastSentMessageId": "<cc7b2438-0311-94b4-16b7-7b6fdd75d8f5@techpyre.eu>",
@@ -20,7 +20,7 @@
       "<0a989a0e-8d89-5be0-8aa2-4eb71cda504e@techpyre.eu>",
       "<cc7b2438-0311-94b4-16b7-7b6fdd75d8f5@techpyre.eu>"
     ],
-    "status": "CONTACTED_STEP_4"
+    "status": "INVALID_TICKET_INBOX"
   },
   "audit": {
     "originalLcpSeconds": 14.6,

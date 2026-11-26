@@ -14,10 +14,11 @@
     "vatNumber": "01390370227",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Loss%20Traslochi",
     "originalLandingUrl": "http://www.losstraslochi.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<93e530a9-a7fe-4d75-0141-96c37b2cad56@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<19584335-a3ac-52b4-7d62-8479c600a7a4@techpyre.eu>",
     "threadMessageIds": [
-      "<93e530a9-a7fe-4d75-0141-96c37b2cad56@techpyre.eu>"
+      "<93e530a9-a7fe-4d75-0141-96c37b2cad56@techpyre.eu>",
+      "<19584335-a3ac-52b4-7d62-8479c600a7a4@techpyre.eu>"
     ]
   },
   "audit": {

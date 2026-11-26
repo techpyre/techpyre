@@ -14,10 +14,11 @@
     "vatNumber": "Non trovata",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=packaging",
     "originalLandingUrl": "https://www.lp-packaging.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<c8f2cf98-2c52-e80c-4bff-2f02ec1a5d30@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<d87ecb89-d439-b427-1f3e-66ddc99d49c6@techpyre.eu>",
     "threadMessageIds": [
-      "<c8f2cf98-2c52-e80c-4bff-2f02ec1a5d30@techpyre.eu>"
+      "<c8f2cf98-2c52-e80c-4bff-2f02ec1a5d30@techpyre.eu>",
+      "<d87ecb89-d439-b427-1f3e-66ddc99d49c6@techpyre.eu>"
     ]
   },
   "audit": {

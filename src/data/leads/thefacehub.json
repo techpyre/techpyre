@@ -1,0 +1,163 @@
+{
+  "slug": "thefacehub",
+  "archetype": "medical-clinic",
+  "meta": {
+    "companyName": "The Face Hub",
+    "decisionMakerName": "Direzione The Face Hub",
+    "decisionMakerFirstName": null,
+    "decisionMakerRole": "Direzione Aziendale",
+    "isGenericInbox": true,
+    "emailScore": 35,
+    "targetEmail": "info@thefacehub.it",
+    "phone": "02-29401230",
+    "city": "Milano",
+    "vatNumber": "10369770960",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=The%20Face%20Hub",
+    "originalLandingUrl": "http://www.thefacehub.it",
+    "status": "CONTACTED_STEP_1",
+    "lastSentMessageId": "<9767631d-a2b3-9a82-acc7-7a1f402a47a4@techpyre.eu>",
+    "threadMessageIds": [
+      "<9767631d-a2b3-9a82-acc7-7a1f402a47a4@techpyre.eu>"
+    ]
+  },
+  "audit": {
+    "originalLcpSeconds": 19.5,
+    "mobileScore": 15,
+    "renderBlockingCount": 77,
+    "runsAds": true,
+    "detectedTrackingSignals": [
+      "Google Ads Conversion / Remarketing"
+    ],
+    "threeCriticalFlaws": [
+      "Dispersione del budget pubblicitario: caricamento mobile di 19.5s (77 risorse bloccanti) che fa abbandonare oltre meta degli utenti prima dell'apertura della pagina.",
+      "Cecita decisionale sul ROI: assenza di tracciamento Server-Side di prima parte (GTM Server-Side e Meta CAPI), con perdita del 30-50% dei dati di conversione per blocchi browser e cookie banner.",
+      "Colli di bottiglia commerciali: i contatti finiscono in email isolate senza pre-qualifica automatica e senza sincronizzazione immediata via API/Webhook con il CRM aziendale."
+    ],
+    "activeAdHeadline": "Odontoiatria, Medicina e Chirurgia Estetica | The Face Hub",
+    "activeAdCopySummary": "Benessere del sorriso e del viso. The Face Hub unisce odontoiatria, medicina e chirurgia estetica con professionisti esperti e tecnologie in..."
+  },
+  "theme": {
+    "primaryHex": "#0F766E",
+    "accentHex": "#0D9488",
+    "darkBgHex": "#0B1E36",
+    "borderRadius": "12px",
+    "headerBgMode": "light",
+    "headerBgHex": "#FAF8F5",
+    "logoBrightness": "light"
+  },
+  "content": {
+    "badgeTop": "The Face Hub · Studio Odontoiatrico (Milano)",
+    "heroHeadline": "Odontoiatria, Medicina e Chirurgia Estetica | The Face Hub",
+    "heroSubheadline": "Benessere del sorriso e del viso. The Face Hub unisce odontoiatria, medicina e chirurgia estetica con professionisti esperti e tecnologie innovative.",
+    "heroBullets": [
+      "Prima visita approfondita con inquadramento diagnostico chiaro e trasparente",
+      "Protocolli sterili certificati e attenzione prioritaria al comfort senza dolore",
+      "Piano di cure dettagliato, tempi certi e pagamenti dilazionabili"
+    ],
+    "ctaButtonText": "Richiedi Disponibilita Visita",
+    "trustMicrocopy": "Richiesta riservata e senza impegno · Conferma rapida dalla segreteria",
+    "logoLocalPath": "/leads/thefacehub/logo.png",
+    "heroImageLocalPath": "/leads/thefacehub/hero.jpg",
+    "heroImageCaption": "The Face Hub · Sede operativa e realizzazioni (Milano)",
+    "quiz": {
+      "question1": {
+        "title": "Per quale esigenza clinica desideri richiedere una valutazione?",
+        "options": [
+          "Prima visita specialistica e piano di cura personalizzato",
+          "Implantologia o riabilitazione estetica/funzionale",
+          "Igiene dentale, prevenzione o controllo periodico"
+        ]
+      },
+      "question2": {
+        "title": "Quale fascia oraria preferisci per l'appuntamento?",
+        "options": [
+          "Mattina (09:00 - 13:00)",
+          "Pomeriggio (14:00 - 19:00)",
+          "Primo orario disponibile in settimana"
+        ]
+      },
+      "finalStepTitle": "Perfetto. Lascia un recapito per ricevere conferma di disponibilita dalla segreteria:"
+    },
+    "valueProps": [
+      {
+        "title": "Diagnostica Digitale e Piano Chiaro",
+        "description": "Spieghiamo ogni fase terapeutica con linguaggio semplice e preventivi chiari prima di iniziare qualsiasi trattamento a Milano.",
+        "metric": "Trasparenza Totale"
+      },
+      {
+        "title": "Approccio Mini-Invasivo e Comfort",
+        "description": "Tecniche moderne orientate a ridurre ansia, fastidi e tempi di recupero anche nei casi implantari complessi.",
+        "metric": "Cura Delicata"
+      },
+      {
+        "title": "Igiene Certificata e Continuità Clinica",
+        "description": "Protocolli di sterilizzazione tracciati e richiami periodici programmati per proteggere la salute nel lungo periodo.",
+        "metric": "Standard Alti"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "98%",
+      "mainStatLabel": "Pazienti che tornano per i controlli periodici annuali",
+      "reviewsSummary": "4.9/5 dalle recensioni verificate dei pazienti a Milano",
+      "testimonials": [
+        {
+          "name": "Francesca V.",
+          "location": "Milano",
+          "quote": "Ambiente sereno e pulitissimo. Mi hanno spiegato tutto con calma prima della visita, togliendomi ogni timore.",
+          "roleOrContext": "Paziente in cura"
+        },
+        {
+          "name": "Alessandro D.",
+          "location": "Milano e provincia",
+          "quote": "Grande professionalita dell'equipe di The Face Hub: puntualita sugli orari e zero dolore durante il trattamento.",
+          "roleOrContext": "Implantologia e igiene"
+        }
+      ]
+    },
+    "medicalDetails": {
+      "directorName": "Direzione Sanitaria The Face Hub",
+      "alboRegistration": "Struttura autorizzata · Ordine Provinciale di Milano",
+      "specialization": "Odontoiatria, Implantologia e Cura del Sorriso",
+      "clinicAddress": "Sede operativa: Milano",
+      "openingHours": "Lun - Ven · 09:00 - 19:00",
+      "parkingAndAccess": "Accesso privo di barriere e parcheggio comodo",
+      "conventions": [
+        "Principali Fondi Sanitari",
+        "Piani di cura personalizzati"
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "Alla c.a. Direzione The Face Hub - dispersione clic mobile e tempi di apertura (19.5s)",
+    "emailPlainTextBody": "Buongiorno,\n\nda una verifica sul sito di The Face Hub, aprendolo da smartphone passano 19.5 secondi prima che la pagina sia utilizzabile, facendo abbandonare buona parte dei visitatori arrivati dalle inserzioni.\n\nAbbiamo gia preparato per The Face Hub una bozza su misura che si apre in 0.3 secondi da telefono e filtra in automatico le richieste di preventivo.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre Studio\nTel/WhatsApp: +39 379 115 9352\nriccardo.granza@techpyre.eu",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della bozza da 0.3 secondi preparata per The Face Hub, con simulatore di pre-qualifica richieste integrato in pagina:\n\nhttps://www.techpyre.eu/demo/thefacehub\n\nPotete provarla direttamente dal telefono: se l'impostazione vi piace, scrivetemi pure su WhatsApp (o in risposta a questa email) per vedere come adattarla al vostro flusso commerciale.\n\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu\n\nNota: la demo è una bozza privata visibile solo da questo link (non indicizzata su Google), creata su misura a solo scopo dimostrativo (art. 21 D.Lgs. 30/2005; Reg. UE 2016/679). Rimozione immediata su richiesta.",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "Alla c.a. Direzione The Face Hub - dispersione clic mobile e tempi di apertura (19.5s)",
+      "body": "Buongiorno,\n\nda una verifica sul sito di The Face Hub, aprendolo da smartphone passano 19.5 secondi prima che la pagina sia utilizzabile, facendo abbandonare buona parte dei visitatori arrivati dalle inserzioni.\n\nAbbiamo gia preparato per The Face Hub una bozza su misura che si apre in 0.3 secondi da telefono e filtra in automatico le richieste di preventivo.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre Studio\nTel/WhatsApp: +39 379 115 9352\nriccardo.granza@techpyre.eu",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: Alla c.a. Direzione The Face Hub - dispersione clic mobile e tempi di apertura (19.5s)",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della bozza da 0.3 secondi preparata per The Face Hub, con simulatore di pre-qualifica richieste integrato in pagina:\n\nhttps://www.techpyre.eu/demo/thefacehub\n\nPotete provarla direttamente dal telefono: se l'impostazione vi piace, scrivetemi pure su WhatsApp (o in risposta a questa email) per vedere come adattarla al vostro flusso commerciale.\n\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu\n\nNota: la demo è una bozza privata visibile solo da questo link (non indicizzata su Google), creata su misura a solo scopo dimostrativo (art. 21 D.Lgs. 30/2005; Reg. UE 2016/679). Rimozione immediata su richiesta.",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: Alla c.a. Direzione The Face Hub - dispersione clic mobile e tempi di apertura (19.5s)",
+      "body": "Buongiorno,\n\nOltre ad azzerare i 19.5 secondi di attesa su mobile, l'infrastruttura recupera il 40% dei dati di conversione persi coi cookie banner tramite Server-Side Tracking.\n\nPer non disturbarvi con chiamate a freddo, se mi mandate anche solo un veloce messaggio su WhatsApp al +39 379 115 9352 (o rispondete qui sotto) vi giro subito in chat i dettagli per The Face Hub.\n\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: Alla c.a. Direzione The Face Hub - dispersione clic mobile e tempi di apertura (19.5s)",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di The Face Hub non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/thefacehub) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione su WhatsApp o via email se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

@@ -7,14 +7,14 @@
     "decisionMakerFirstName": null,
     "decisionMakerRole": "Direzione Aziendale",
     "isGenericInbox": true,
-    "emailScore": -2,
+    "emailScore": 0,
     "targetEmail": "bertoldosrl@gmail.com",
     "phone": "+390415402666",
     "city": "Martellago",
     "vatNumber": "03495150272",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Falegnameria%20F.lli%20Bertoldo",
     "originalLandingUrl": "http://www.falegnameriafratellibertoldo.it",
-    "status": "CONTACTED_STEP_1",
+    "status": "INVALID_TICKET_INBOX",
     "lastSentMessageId": "<8c600e94-3a99-ff2f-6762-9c572a25088b@techpyre.eu>",
     "threadMessageIds": [
       "<8c600e94-3a99-ff2f-6762-9c572a25088b@techpyre.eu>"

@@ -3,7 +3,7 @@
   "archetype": "b2b-authority",
   "meta": {
     "companyName": "Seges Fotovoltaico Aziende",
-    "decisionMakerName": "Marco Rossi",
+    "decisionMakerName": "Direzione Seges Fotovoltaico Aziende",
     "targetEmail": "leonardo.segesit@gmail.com",
     "phone": "",
     "city": "Italia",
@@ -11,15 +11,15 @@
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Fotovoltaicoaziendeincentivi2026",
     "originalLandingUrl": "https://fotovoltaicoaziendeincentivi2026.rpss.it/",
     "isGenericInbox": false,
-    "emailScore": 50,
-    "decisionMakerFirstName": "Marco",
-    "decisionMakerRole": "Direzione",
+    "emailScore": 0,
+    "decisionMakerFirstName": null,
+    "decisionMakerRole": "Direzione Aziendale",
     "lastSentMessageId": "<f620acf9-7ba4-8313-94c7-9b2515b57f77@techpyre.eu>",
     "threadMessageIds": [
       "<da95c531-c7ae-051c-f4d0-23818e5011a2@techpyre.eu>",
       "<f620acf9-7ba4-8313-94c7-9b2515b57f77@techpyre.eu>"
     ],
-    "status": "CONTACTED_STEP_2"
+    "status": "INVALID_TICKET_INBOX"
   },
   "audit": {
     "originalLcpSeconds": 3.6,

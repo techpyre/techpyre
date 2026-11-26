@@ -3,22 +3,26 @@
   "archetype": "local-leadgen",
   "meta": {
     "companyName": "FIUMAROLI NICHOLAS",
-    "decisionMakerName": "Direzione FIUMAROLI NICHOLAS",
-    "decisionMakerFirstName": null,
+    "decisionMakerName": "Nicholas Fiumaroli",
+    "decisionMakerFirstName": "Nicholas",
     "decisionMakerRole": "Direzione Aziendale",
-    "isGenericInbox": true,
-    "emailScore": -2,
+    "isGenericInbox": false,
+    "emailScore": 0,
     "targetEmail": "fiumaroli.work@gmail.com",
     "phone": "+393895832307",
     "city": "Varedo",
     "vatNumber": "13014320967",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=FIUMAROLI%20NICHOLAS",
     "originalLandingUrl": "https://fiumarolicoperturesolari.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<8332962b-e0d6-a5c5-2337-6beaf2193479@techpyre.eu>",
+    "status": "HOT_LEAD",
+    "lastSentMessageId": "<1a82e019-aeab-46e6-9ad9-821a335dd3c8@techpyre.eu>",
     "threadMessageIds": [
-      "<8332962b-e0d6-a5c5-2337-6beaf2193479@techpyre.eu>"
-    ]
+      "<8332962b-e0d6-a5c5-2337-6beaf2193479@techpyre.eu>",
+      "<CANr2S4KceqJ30hA3Wk6iKAqeHP8UkY9+_+4Gu=y5AkGqYN-azA@mail.gmail.com>",
+      "<1a82e019-aeab-46e6-9ad9-821a335dd3c8@techpyre.eu>"
+    ],
+    "lastContactedAt": "2026-11-26T09:16:03.266Z",
+    "notes": "Ha risposto 'Si, grazie mille' il 25/11; inviata proposta commerciale + demo live 0.3s il 26/11."
   },
   "audit": {
     "originalLcpSeconds": 6.1,

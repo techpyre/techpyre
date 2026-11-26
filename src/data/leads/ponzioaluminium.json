@@ -14,10 +14,11 @@
     "vatNumber": "00061490678",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Ponzio",
     "originalLandingUrl": "https://ponzioaluminium.com",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<84f44a29-0742-941c-b68a-90ec9c7f9e0f@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<ea6ff9f5-5c78-e7e9-27d9-1328b474ca3f@techpyre.eu>",
     "threadMessageIds": [
-      "<84f44a29-0742-941c-b68a-90ec9c7f9e0f@techpyre.eu>"
+      "<84f44a29-0742-941c-b68a-90ec9c7f9e0f@techpyre.eu>",
+      "<ea6ff9f5-5c78-e7e9-27d9-1328b474ca3f@techpyre.eu>"
     ]
   },
   "audit": {

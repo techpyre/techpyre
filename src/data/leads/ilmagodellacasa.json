@@ -7,14 +7,14 @@
     "decisionMakerFirstName": null,
     "decisionMakerRole": "Direzione Aziendale",
     "isGenericInbox": true,
-    "emailScore": 18,
+    "emailScore": 0,
     "targetEmail": "ilmagodellacasa@gmail.com",
     "phone": "+39 392 2009322",
     "city": "Bologna",
     "vatNumber": "03275831208",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Il%20Mago%20della%20Casa",
     "originalLandingUrl": "https://ilmagodellacasa.it",
-    "status": "CONTACTED_STEP_1",
+    "status": "INVALID_TICKET_INBOX",
     "lastSentMessageId": "<4129ed35-4bb8-3bc1-6604-d35abb31f7ac@techpyre.eu>",
     "threadMessageIds": [
       "<4129ed35-4bb8-3bc1-6604-d35abb31f7ac@techpyre.eu>"

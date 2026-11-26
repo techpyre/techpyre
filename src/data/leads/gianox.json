@@ -11,7 +11,7 @@
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Gianox%20Srls%20Attrezzature%20per%20Ristorazione",
     "originalLandingUrl": "https://gianox.it",
     "isGenericInbox": false,
-    "emailScore": 40,
+    "emailScore": 0,
     "decisionMakerFirstName": null,
     "decisionMakerRole": "Direzione Aziendale",
     "lastSentMessageId": "<82cc3e5f-7240-67ef-f3f7-83ff597ba78b@techpyre.eu>",
@@ -19,7 +19,7 @@
       "<12dd2a30-d891-10f6-62c1-6751d4b1075c@techpyre.eu>",
       "<82cc3e5f-7240-67ef-f3f7-83ff597ba78b@techpyre.eu>"
     ],
-    "status": "CONTACTED_STEP_2"
+    "status": "INVALID_TICKET_INBOX"
   },
   "audit": {
     "originalLcpSeconds": 12.8,

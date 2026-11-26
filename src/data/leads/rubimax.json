@@ -7,17 +7,18 @@
     "decisionMakerFirstName": null,
     "decisionMakerRole": "Direzione Aziendale",
     "isGenericInbox": true,
-    "emailScore": 18,
+    "emailScore": 0,
     "targetEmail": "rubimax.ricambi@gmail.com",
     "phone": "+39 02 09957747",
     "city": "Milano",
     "vatNumber": "11142400966",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Rivendita%20accessori%20bagno",
     "originalLandingUrl": "https://www.rubimax.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<1560ef4f-7a8e-d3bd-c162-928314e0e212@techpyre.eu>",
+    "status": "INVALID_TICKET_INBOX",
+    "lastSentMessageId": "<d7f5cd22-24fc-7157-6450-59e5be953ad3@techpyre.eu>",
     "threadMessageIds": [
-      "<1560ef4f-7a8e-d3bd-c162-928314e0e212@techpyre.eu>"
+      "<1560ef4f-7a8e-d3bd-c162-928314e0e212@techpyre.eu>",
+      "<d7f5cd22-24fc-7157-6450-59e5be953ad3@techpyre.eu>"
     ]
   },
   "audit": {

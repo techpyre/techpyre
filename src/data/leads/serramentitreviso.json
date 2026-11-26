@@ -3,9 +3,9 @@
   "archetype": "local-leadgen",
   "meta": {
     "companyName": "Serramenti",
-    "decisionMakerName": "Titolare Serramenti",
+    "decisionMakerName": "Direzione Serramenti",
     "decisionMakerFirstName": null,
-    "decisionMakerRole": null,
+    "decisionMakerRole": "Direzione Aziendale",
     "isGenericInbox": true,
     "emailScore": -40,
     "targetEmail": "info@br1infissi.it",

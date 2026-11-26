@@ -14,10 +14,11 @@
     "vatNumber": "01711570364",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Emiliana%20Imballaggi%20Spa",
     "originalLandingUrl": "https://www.emilianaimballaggi.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<578d1676-e4af-0954-2452-4ce15012fe63@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<68a71984-ff6e-b04f-c836-6f6d3c9b2c98@techpyre.eu>",
     "threadMessageIds": [
-      "<578d1676-e4af-0954-2452-4ce15012fe63@techpyre.eu>"
+      "<578d1676-e4af-0954-2452-4ce15012fe63@techpyre.eu>",
+      "<68a71984-ff6e-b04f-c836-6f6d3c9b2c98@techpyre.eu>"
     ]
   },
   "audit": {

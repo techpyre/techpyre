@@ -14,10 +14,11 @@
     "vatNumber": "00653341206",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=s%202026",
     "originalLandingUrl": "https://www.gnasrl.com",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<7c2fe785-d6d3-5231-2074-a29b784167e5@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<44b80903-1f0d-83e7-6a56-2f718982afc3@techpyre.eu>",
     "threadMessageIds": [
-      "<7c2fe785-d6d3-5231-2074-a29b784167e5@techpyre.eu>"
+      "<7c2fe785-d6d3-5231-2074-a29b784167e5@techpyre.eu>",
+      "<44b80903-1f0d-83e7-6a56-2f718982afc3@techpyre.eu>"
     ]
   },
   "audit": {

@@ -7,18 +7,19 @@
     "decisionMakerFirstName": null,
     "decisionMakerRole": "Direzione Aziendale",
     "isGenericInbox": true,
-    "emailScore": 18,
-    "targetEmail": "fandescompany@gmail.com",
+    "emailScore": -2,
+    "targetEmail": "contabilita.fandes@libero.it",
     "phone": "0289776865",
     "city": "Milano",
     "vatNumber": "02363260189",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Fandes%20Company",
     "originalLandingUrl": "https://www.fandescompany.com",
-    "status": "CONTACTED_STEP_1",
+    "status": "BLACKLISTED",
     "lastSentMessageId": "<baf39a22-cf5a-9bd8-f7d0-6650f41f3b89@techpyre.eu>",
     "threadMessageIds": [
       "<baf39a22-cf5a-9bd8-f7d0-6650f41f3b89@techpyre.eu>"
-    ]
+    ],
+    "notes": "Rifiuto cortese ricevuto il 23/11 ('Al momento non valutiamo la collaborazione')."
   },
   "audit": {
     "originalLcpSeconds": 7.7,

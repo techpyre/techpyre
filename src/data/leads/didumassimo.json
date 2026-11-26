@@ -7,14 +7,14 @@
     "decisionMakerFirstName": null,
     "decisionMakerRole": "Direzione Aziendale",
     "isGenericInbox": true,
-    "emailScore": -2,
+    "emailScore": 0,
     "targetEmail": "diduportefinestre@gmail.com",
     "phone": "024039522",
     "city": "Milano",
     "vatNumber": "12684000966",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Didu%20Porte%20%26%20Finestre",
     "originalLandingUrl": "http://www.didumassimo.com",
-    "status": "CONTACTED_STEP_1",
+    "status": "INVALID_TICKET_INBOX",
     "lastSentMessageId": "<3ea75b71-b0d7-d477-d899-db41a836075e@techpyre.eu>",
     "threadMessageIds": [
       "<3ea75b71-b0d7-d477-d899-db41a836075e@techpyre.eu>"

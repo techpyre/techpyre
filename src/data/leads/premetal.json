@@ -14,10 +14,11 @@
     "vatNumber": "Non trovata",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=PREMETAL%20SRL",
     "originalLandingUrl": "https://www.premetal.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<37298718-cbae-85e5-8f51-c79c8e38809c@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<cc692792-c5c0-ab2e-e138-b34004a27236@techpyre.eu>",
     "threadMessageIds": [
-      "<37298718-cbae-85e5-8f51-c79c8e38809c@techpyre.eu>"
+      "<37298718-cbae-85e5-8f51-c79c8e38809c@techpyre.eu>",
+      "<cc692792-c5c0-ab2e-e138-b34004a27236@techpyre.eu>"
     ]
   },
   "audit": {

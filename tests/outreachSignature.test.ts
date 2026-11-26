@@ -3,9 +3,12 @@ import assert from "node:assert/strict";
 import {
   buildMultiStepOutreach,
   buildOutreachSignatureLines,
+  extractDecisionMakerFromHtml,
   getOutreachSignatureConfig,
+  isHardBlockedEmail,
   migrateOldLeadConfig,
 } from "@/lib/scoutService";
+import { classifyInboundReply } from "@/lib/emailService";
 import type { LeadConfig } from "@/types/lead";
 
 function withEnv(vars: Record<string, string | undefined>, fn: () => void) {
@@ -174,4 +177,97 @@ test("migrateOldLeadConfig upgrades outreach lacking contact details while prese
       assert.ok(migrated.outreach.step3ValueDropAndCallTrigger?.body.includes("+39 333 000 0000"));
     }
   );
+});
+
+test("isHardBlockedEmail blocks placeholder emails, asset filenames and fictional Mario Rossi while allowing valid domains", () => {
+  assert.equal(isHardBlockedEmail("you@domain.com"), true);
+  assert.equal(isHardBlockedEmail("tua@email.com"), true);
+  assert.equal(isHardBlockedEmail("mario.rossi@gmail.com"), true);
+  assert.equal(isHardBlockedEmail("Risorsa-1@3x.png"), true);
+  assert.equal(isHardBlockedEmail("info@bertocchiverniciature.it"), false);
+  assert.equal(isHardBlockedEmail("giulia.cecchi@archa.it"), false);
+});
+
+test("extractDecisionMakerFromHtml prioritizes nominal email recipient over mismatched HTML names", () => {
+  const html = "<p>Titolare del trattamento dei dati: Valeria Bevilacqua</p>";
+  const res = extractDecisionMakerFromHtml(html, "giulia.cecchi@archa.it");
+  assert.equal(res.fullName, "Giulia Cecchi");
+  assert.equal(res.firstName, "Giulia");
+});
+
+test("classifyInboundReply handles agency client removal as BLACKLISTED + AGENCY_WHITELABEL_OPPORTUNITY while keeping client brush-offs in UNSUBSCRIBE_OR_NO", () => {
+  const mkLead = (slug: string, companyName: string, targetEmail: string): LeadConfig => ({
+    slug,
+    archetype: "local-leadgen",
+    meta: {
+      companyName,
+      decisionMakerName: `Direzione ${companyName}`,
+      targetEmail,
+      phone: "081000000",
+      city: "Napoli",
+      adLibraryUrl: "https://www.facebook.com/ads/library/",
+      originalLandingUrl: "https://www.climanetonline.it",
+      status: "CONTACTED_STEP_4",
+    },
+    audit: {
+      originalLcpSeconds: 8.3,
+      mobileScore: 38,
+      activeAdHeadline: companyName,
+      activeAdCopySummary: companyName,
+      threeCriticalFlaws: ["a", "b", "c"],
+    },
+    theme: {
+      primaryHex: "#1E3A8A",
+      accentHex: "#2563EB",
+      darkBgHex: "#0B1E36",
+      borderRadius: "12px",
+    },
+    content: {
+      badgeTop: companyName,
+      heroHeadline: companyName,
+      heroSubheadline: companyName,
+      ctaButtonText: "Contatta",
+      trustMicrocopy: "GDPR",
+      logoLocalPath: "/logo.png",
+      heroImageLocalPath: "/hero.jpg",
+      quiz: {
+        question1: { title: "Q1", options: ["A", "B", "C"] },
+        question2: { title: "Q2", options: ["A", "B", "C"] },
+        finalStepTitle: "Final",
+      },
+      valueProps: [],
+      socialProof: { mainStatValue: "99%", mainStatLabel: "OK", reviewsSummary: "OK", testimonials: [] },
+    },
+    outreach: {
+      emailSubject: "Test",
+      emailPlainTextBody: "Test",
+      followUpWithLinkBody: "Test",
+    },
+  });
+
+  const clientBrushOff = classifyInboundReply(
+    "Buongiorno, grazie avvisero chi ci cura il sito cosi sistema.",
+    "Re: R.M. srl"
+  );
+  assert.equal(clientBrushOff.classification, "UNSUBSCRIBE_OR_NO");
+  assert.equal(clientBrushOff.isHotLead, false);
+  assert.equal(clientBrushOff.nextLeadStatus, "BLACKLISTED");
+
+  // Evita side effect su disco passando cloni e verificando solo se non persistiamo in test temp dir
+  const agencyRes = classifyInboundReply(
+    "Salve rispondo a nome del cliente CLIMANET. Puo eliminare la sua email dal vostro archivio email? grazie Andrea Direttore Pluma Studio srl",
+    "Rimozione Cliente Climanet - Archivio",
+    undefined,
+    { senderEmail: "andrea.direttore@plumastudio.com", senderName: "Andrea Direttore" }
+  );
+  assert.equal(agencyRes.classification, "AGENCY_WHITELABEL_OPPORTUNITY");
+  assert.equal(agencyRes.isHotLead, false);
+  assert.equal(agencyRes.stopAutomatedSequence, true);
+  assert.equal(agencyRes.nextLeadStatus, "BLACKLISTED");
+  assert.ok(agencyRes.suggestedReplyBody?.includes("white-label"));
+  assert.ok(agencyRes.suggestedReplyBody?.includes("Andrea"));
+
+  // Verifica anche il tipo LeadConfig in-memory helper compilato senza errori
+  const sampleLead = mkLead("demo-test", "Demo Test", "info@example.com");
+  assert.equal(sampleLead.meta.status, "CONTACTED_STEP_4");
 });

@@ -7,14 +7,14 @@
     "decisionMakerFirstName": null,
     "decisionMakerRole": "Direzione Aziendale",
     "isGenericInbox": true,
-    "emailScore": 18,
+    "emailScore": 0,
     "targetEmail": "fcmappanoimpianti@gmail.com",
     "phone": "+393381165725",
     "city": "Mappano",
     "vatNumber": "07985380018",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=F.C.%20MAPPANO%20IMPIANTI",
     "originalLandingUrl": "http://www.fcmappanoimpianti.it",
-    "status": "CONTACTED_STEP_1",
+    "status": "INVALID_TICKET_INBOX",
     "lastSentMessageId": "<f1fb7c51-411d-82e8-1e39-8e23e90affc1@techpyre.eu>",
     "threadMessageIds": [
       "<f1fb7c51-411d-82e8-1e39-8e23e90affc1@techpyre.eu>"

@@ -14,10 +14,11 @@
     "vatNumber": "01281130110",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Metallica%20Srl",
     "originalLandingUrl": "https://www.metallicasrl.net",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<ee9e92ea-e9c7-1ae5-632d-ec0aa5b178ba@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<ddf9608f-fa63-e800-7092-6d3a4695f84c@techpyre.eu>",
     "threadMessageIds": [
-      "<ee9e92ea-e9c7-1ae5-632d-ec0aa5b178ba@techpyre.eu>"
+      "<ee9e92ea-e9c7-1ae5-632d-ec0aa5b178ba@techpyre.eu>",
+      "<ddf9608f-fa63-e800-7092-6d3a4695f84c@techpyre.eu>"
     ]
   },
   "audit": {

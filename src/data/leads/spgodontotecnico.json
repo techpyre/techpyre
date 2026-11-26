@@ -1,0 +1,161 @@
+{
+  "slug": "spgodontotecnico",
+  "archetype": "medical-clinic",
+  "meta": {
+    "companyName": "SPG Laboratorio Odontotecnico a Brescia",
+    "decisionMakerName": "Paolo Giacomini",
+    "decisionMakerFirstName": "Paolo",
+    "decisionMakerRole": "Direzione",
+    "isGenericInbox": false,
+    "emailScore": 90,
+    "targetEmail": "paolo.giacomini@spgodontotecnico.it",
+    "phone": "+393395608962",
+    "city": "Brescia",
+    "vatNumber": "02165300175",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=SPG%20Laboratorio%20Odontotecnico%20a%20Brescia",
+    "originalLandingUrl": "https://www.spgodontotecnico.it",
+    "status": "CONTACTED_STEP_1",
+    "lastSentMessageId": "<de8a2555-6662-f82d-d9f3-f9d462d12e69@techpyre.eu>",
+    "threadMessageIds": [
+      "<de8a2555-6662-f82d-d9f3-f9d462d12e69@techpyre.eu>"
+    ]
+  },
+  "audit": {
+    "originalLcpSeconds": 8,
+    "mobileScore": 32,
+    "renderBlockingCount": 33,
+    "runsAds": false,
+    "detectedTrackingSignals": [],
+    "threeCriticalFlaws": [
+      "Perdita di richieste di preventivo su mobile: caricamento di 8s (33 risorse bloccanti) che spinge i visitatori da smartphone ad abbandonare la pagina prima di contattare l'ufficio commerciale.",
+      "Assenza di pre-qualifica automatica: il sito non filtra le richieste per tipologia di intervento, budget o tempistiche prima di inviarle ai referenti tecnici di SPG Laboratorio Odontotecnico a Brescia.",
+      "Colli di bottiglia commerciali: le richieste arrivano come semplici email isolate senza instradamento automatico e senza tracciamento strutturato della trattativa."
+    ],
+    "activeAdHeadline": "Laboratorio Odontotecnico SPG",
+    "activeAdCopySummary": "Realizziamo prodotti odontoiatrici di alta qualità: corone dentali, protesi, impianti dentali Toronto, Deflex e faccette. Ci rivolgiamo a de..."
+  },
+  "theme": {
+    "primaryHex": "#0F766E",
+    "accentHex": "#0D9488",
+    "darkBgHex": "#0B1E36",
+    "borderRadius": "12px",
+    "headerBgMode": "light",
+    "headerBgHex": "#FAF8F5",
+    "logoBrightness": "dark"
+  },
+  "content": {
+    "badgeTop": "SPG Laboratorio Odontotecnico a Brescia · Studio Odontoiatrico (Brescia)",
+    "heroHeadline": "Laboratorio Odontotecnico SPG",
+    "heroSubheadline": "Realizziamo prodotti odontoiatrici di alta qualità: corone dentali, protesi, impianti dentali Toronto, Deflex e faccette. Ci rivolgiamo a dentisti e professionisti.",
+    "heroBullets": [
+      "Prima visita approfondita con inquadramento diagnostico chiaro e trasparente",
+      "Protocolli sterili certificati e attenzione prioritaria al comfort senza dolore",
+      "Piano di cure dettagliato, tempi certi e pagamenti dilazionabili"
+    ],
+    "ctaButtonText": "Richiedi Disponibilita Visita",
+    "trustMicrocopy": "Richiesta riservata e senza impegno · Conferma rapida dalla segreteria",
+    "logoLocalPath": "/leads/spgodontotecnico/logo.png",
+    "heroImageLocalPath": "/leads/spgodontotecnico/hero.jpg",
+    "heroImageCaption": "SPG Laboratorio Odontotecnico a Brescia · Sede operativa e realizzazioni (Brescia)",
+    "quiz": {
+      "question1": {
+        "title": "Per quale esigenza clinica desideri richiedere una valutazione?",
+        "options": [
+          "Prima visita specialistica e piano di cura personalizzato",
+          "Implantologia o riabilitazione estetica/funzionale",
+          "Igiene dentale, prevenzione o controllo periodico"
+        ]
+      },
+      "question2": {
+        "title": "Quale fascia oraria preferisci per l'appuntamento?",
+        "options": [
+          "Mattina (09:00 - 13:00)",
+          "Pomeriggio (14:00 - 19:00)",
+          "Primo orario disponibile in settimana"
+        ]
+      },
+      "finalStepTitle": "Perfetto. Lascia un recapito per ricevere conferma di disponibilita dalla segreteria:"
+    },
+    "valueProps": [
+      {
+        "title": "Diagnostica Digitale e Piano Chiaro",
+        "description": "Spieghiamo ogni fase terapeutica con linguaggio semplice e preventivi chiari prima di iniziare qualsiasi trattamento a Brescia.",
+        "metric": "Trasparenza Totale"
+      },
+      {
+        "title": "Approccio Mini-Invasivo e Comfort",
+        "description": "Tecniche moderne orientate a ridurre ansia, fastidi e tempi di recupero anche nei casi implantari complessi.",
+        "metric": "Cura Delicata"
+      },
+      {
+        "title": "Igiene Certificata e Continuità Clinica",
+        "description": "Protocolli di sterilizzazione tracciati e richiami periodici programmati per proteggere la salute nel lungo periodo.",
+        "metric": "Standard Alti"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "98%",
+      "mainStatLabel": "Pazienti che tornano per i controlli periodici annuali",
+      "reviewsSummary": "4.9/5 dalle recensioni verificate dei pazienti a Brescia",
+      "testimonials": [
+        {
+          "name": "Francesca V.",
+          "location": "Brescia",
+          "quote": "Ambiente sereno e pulitissimo. Mi hanno spiegato tutto con calma prima della visita, togliendomi ogni timore.",
+          "roleOrContext": "Paziente in cura"
+        },
+        {
+          "name": "Alessandro D.",
+          "location": "Brescia e provincia",
+          "quote": "Grande professionalita dell'equipe di SPG Laboratorio Odontotecnico a Brescia: puntualita sugli orari e zero dolore durante il trattamento.",
+          "roleOrContext": "Implantologia e igiene"
+        }
+      ]
+    },
+    "medicalDetails": {
+      "directorName": "Paolo Giacomini",
+      "alboRegistration": "Struttura autorizzata · Ordine Provinciale di Brescia",
+      "specialization": "Odontoiatria, Implantologia e Cura del Sorriso",
+      "clinicAddress": "Sede operativa: Brescia",
+      "openingHours": "Lun - Ven · 09:00 - 19:00",
+      "parkingAndAccess": "Accesso privo di barriere e parcheggio comodo",
+      "conventions": [
+        "Principali Fondi Sanitari",
+        "Piani di cura personalizzati"
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "SPG Laboratorio Odontotecnico a Brescia - lentezza da smartphone (8s) e filtro richieste preventivo",
+    "emailPlainTextBody": "Buongiorno Paolo,\n\nda una verifica sul sito di SPG Laboratorio Odontotecnico a Brescia, aprendolo da smartphone passano 8 secondi prima che la pagina sia utilizzabile, frenando le richieste di preventivo di chi vi cerca da mobile.\n\nAbbiamo gia preparato per SPG Laboratorio Odontotecnico a Brescia una bozza su misura che si apre in 0.3 secondi da telefono e filtra in automatico le richieste di preventivo.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre Studio\nTel/WhatsApp: +39 379 115 9352\nriccardo.granza@techpyre.eu",
+    "followUpWithLinkBody": "Buongiorno Paolo,\n\nvi lascio qui sotto il link della bozza da 0.3 secondi preparata per SPG Laboratorio Odontotecnico a Brescia, con simulatore di pre-qualifica richieste integrato in pagina:\n\nhttps://www.techpyre.eu/demo/spgodontotecnico\n\nPotete provarla direttamente dal telefono: se l'impostazione vi piace, scrivetemi pure su WhatsApp (o in risposta a questa email) per vedere come adattarla al vostro flusso commerciale.\n\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu\n\nNota: la demo è una bozza privata visibile solo da questo link (non indicizzata su Google), creata su misura a solo scopo dimostrativo (art. 21 D.Lgs. 30/2005; Reg. UE 2016/679). Rimozione immediata su richiesta.",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "SPG Laboratorio Odontotecnico a Brescia - lentezza da smartphone (8s) e filtro richieste preventivo",
+      "body": "Buongiorno Paolo,\n\nda una verifica sul sito di SPG Laboratorio Odontotecnico a Brescia, aprendolo da smartphone passano 8 secondi prima che la pagina sia utilizzabile, frenando le richieste di preventivo di chi vi cerca da mobile.\n\nAbbiamo gia preparato per SPG Laboratorio Odontotecnico a Brescia una bozza su misura che si apre in 0.3 secondi da telefono e filtra in automatico le richieste di preventivo.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre Studio\nTel/WhatsApp: +39 379 115 9352\nriccardo.granza@techpyre.eu",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: SPG Laboratorio Odontotecnico a Brescia - lentezza da smartphone (8s) e filtro richieste preventivo",
+      "body": "Buongiorno Paolo,\n\nvi lascio qui sotto il link della bozza da 0.3 secondi preparata per SPG Laboratorio Odontotecnico a Brescia, con simulatore di pre-qualifica richieste integrato in pagina:\n\nhttps://www.techpyre.eu/demo/spgodontotecnico\n\nPotete provarla direttamente dal telefono: se l'impostazione vi piace, scrivetemi pure su WhatsApp (o in risposta a questa email) per vedere come adattarla al vostro flusso commerciale.\n\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu\n\nNota: la demo è una bozza privata visibile solo da questo link (non indicizzata su Google), creata su misura a solo scopo dimostrativo (art. 21 D.Lgs. 30/2005; Reg. UE 2016/679). Rimozione immediata su richiesta.",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: SPG Laboratorio Odontotecnico a Brescia - lentezza da smartphone (8s) e filtro richieste preventivo",
+      "body": "Buongiorno Paolo,\n\nOltre ad azzerare i 8 secondi di attesa su mobile, il simulatore filtra le richieste fuori target prima di inviarle su WhatsApp o al vostro CRM.\n\nPer non disturbarvi con chiamate a freddo, se mi mandate anche solo un veloce messaggio su WhatsApp al +39 379 115 9352 (o rispondete qui sotto) vi giro subito in chat i dettagli per SPG Laboratorio Odontotecnico a Brescia.\n\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: SPG Laboratorio Odontotecnico a Brescia - lentezza da smartphone (8s) e filtro richieste preventivo",
+      "body": "Buongiorno Paolo,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di SPG Laboratorio Odontotecnico a Brescia non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/spgodontotecnico) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione su WhatsApp o via email se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

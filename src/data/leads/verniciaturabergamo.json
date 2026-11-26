@@ -7,18 +7,17 @@
     "decisionMakerFirstName": null,
     "decisionMakerRole": "Direzione Aziendale",
     "isGenericInbox": true,
-    "emailScore": -37,
-    "targetEmail": "you@domain.com",
+    "emailScore": 5,
+    "targetEmail": "info@bertocchiverniciature.it",
     "phone": "035731850",
     "city": "Bergamo",
     "vatNumber": "04340330168",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=V.I.B.%20srl",
     "originalLandingUrl": "https://www.verniciaturabergamo.it",
     "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<9c237d8a-a37a-4ef3-7599-a3121daf96b5@techpyre.eu>",
-    "threadMessageIds": [
-      "<9c237d8a-a37a-4ef3-7599-a3121daf96b5@techpyre.eu>"
-    ]
+    "lastSentMessageId": "",
+    "threadMessageIds": [],
+    "notes": "Sostituita email placeholder you@domain.com con info@bertocchiverniciature.it (MX verificato)."
   },
   "audit": {
     "originalLcpSeconds": 9.5,

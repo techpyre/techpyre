@@ -14,10 +14,11 @@
     "vatNumber": "01969730181",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Fantauzzi%20S.r.l.",
     "originalLandingUrl": "http://www.fantauzzisrl.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<bb0bca72-8e33-283e-8589-596a08ae1554@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<a8dbe602-771e-3eb8-6828-c874f5f82f52@techpyre.eu>",
     "threadMessageIds": [
-      "<bb0bca72-8e33-283e-8589-596a08ae1554@techpyre.eu>"
+      "<bb0bca72-8e33-283e-8589-596a08ae1554@techpyre.eu>",
+      "<a8dbe602-771e-3eb8-6828-c874f5f82f52@techpyre.eu>"
     ]
   },
   "audit": {

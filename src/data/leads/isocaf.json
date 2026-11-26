@@ -1,0 +1,170 @@
+{
+  "slug": "isocaf",
+  "archetype": "b2b-authority",
+  "meta": {
+    "companyName": "Isocaf",
+    "decisionMakerName": "Direzione Isocaf",
+    "decisionMakerFirstName": null,
+    "decisionMakerRole": "Direzione Aziendale",
+    "isGenericInbox": true,
+    "emailScore": 58,
+    "targetEmail": "isocaftn@isocaf.it",
+    "phone": "+39 049 628177",
+    "city": "Vigonza",
+    "vatNumber": "00775490287",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Isocaf",
+    "originalLandingUrl": "http://www.isocaf.it",
+    "status": "CONTACTED_STEP_1",
+    "lastSentMessageId": "<9b55da19-910a-41ad-b779-8febd9270e55@techpyre.eu>",
+    "threadMessageIds": [
+      "<9b55da19-910a-41ad-b779-8febd9270e55@techpyre.eu>"
+    ]
+  },
+  "audit": {
+    "originalLcpSeconds": 19,
+    "mobileScore": 15,
+    "renderBlockingCount": 63,
+    "runsAds": false,
+    "detectedTrackingSignals": [],
+    "threeCriticalFlaws": [
+      "Perdita di richieste di preventivo su mobile: caricamento di 19s (63 risorse bloccanti) che spinge i visitatori da smartphone ad abbandonare la pagina prima di contattare l'ufficio commerciale.",
+      "Assenza di pre-qualifica automatica: il sito non filtra le richieste per tipologia di intervento, budget o tempistiche prima di inviarle ai referenti tecnici di Isocaf.",
+      "Colli di bottiglia commerciali: le richieste arrivano come semplici email isolate senza instradamento automatico e senza tracciamento strutturato della trattativa."
+    ],
+    "activeAdHeadline": "Impermeabilizzazioni, Progetti e Servizi",
+    "activeAdCopySummary": "Isocaf reinterpreta un’attività in un settore tradizionalmente artigianale, come quello dell’impermeabilizzazione, adottando un approccio in..."
+  },
+  "theme": {
+    "primaryHex": "#2060b0",
+    "accentHex": "#B8860B",
+    "darkBgHex": "#0B1E36",
+    "borderRadius": "8px",
+    "headerBgMode": "dark",
+    "headerBgHex": "#0E1013",
+    "logoBrightness": "light"
+  },
+  "content": {
+    "badgeTop": "Isocaf · Servizi Tecnici e Infrastrutture B2B (Vigonza)",
+    "heroHeadline": "Impermeabilizzazioni, Progetti e Servizi",
+    "heroSubheadline": "Isocaf reinterpreta un’attività in un settore tradizionalmente artigianale, come quello dell’impermeabilizzazione, adottando un approccio industriale avanzato, finalizzato a fornire un supporto di alta qualità",
+    "heroBullets": [
+      "Sopralluogo tecnico in stabilimento e piano operativo senza fermo attivita",
+      "Gestione completa pratiche autorizzative, certificazioni e conformita ambientale",
+      "Garanzie scritte su sicurezza, rendimento e assistenza post-intervento"
+    ],
+    "ctaButtonText": "Richiedi Studio di Fattibilita",
+    "trustMicrocopy": "Riservatezza industriale garantita (NDA) · Risposta tecnica entro la giornata lavorativa",
+    "logoLocalPath": "/leads/isocaf/logo.png",
+    "heroImageLocalPath": "/leads/isocaf/hero.jpg",
+    "heroImageCaption": "Isocaf · Sede operativa e realizzazioni (Vigonza)",
+    "quiz": {
+      "question1": {
+        "title": "Quale intervento tecnico per il vostro stabilimento state pianificando?",
+        "options": [
+          "Bonifiche ambientali, depurazione acque o gestione rifiuti industriali",
+          "Coperture industriali, impianti fotovoltaici aziendali o efficienza energetica",
+          "Sopralluogo tecnico in stabilimento, perizia e capitolato chiavi in mano"
+        ]
+      },
+      "question2": {
+        "title": "Qual e l'orizzonte temporale previsto per il progetto?",
+        "options": [
+          "Avvio operativo urgente (entro 30 giorni)",
+          "Pianificazione nel trimestre in corso",
+          "Valutazione tecnica e di budget preliminare"
+        ]
+      },
+      "finalStepTitle": "Specifiche registrate. Inserisci i riferimenti aziendali per il colloquio con l'Ufficio Tecnico:"
+    },
+    "valueProps": [
+      {
+        "title": "Perizia Tecnica e Piano Esecutivo Chiaro",
+        "description": "Analizziamo lo stato reale dell'impianto o della copertura a Vigonza definendo costi, tempistiche e ritorni operativi prima del cantiere.",
+        "metric": "Progetto Chiuso"
+      },
+      {
+        "title": "Piena Conformita Normativa e Ambientale",
+        "description": "Isocaf gestisce interventi complessi in sicurezza, rilasciando tutta la documentazione tecnica e le certificazioni richieste.",
+        "metric": "100% A Norma"
+      },
+      {
+        "title": "Manutenzione Programmata e Assistenza Diretta",
+        "description": "Un referente tecnico dedicato segue l'azienda dalla realizzazione fino ai controlli periodici e all'assistenza continua.",
+        "metric": "SLA Garantito"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "99.4%",
+      "mainStatLabel": "Commesse industriali chiuse in sicurezza e nei tempi concordati",
+      "reviewsSummary": "Partner tecnico specializzato per aziende e capannoni a Vigonza",
+      "clientReferenceWall": [
+        "Conformita Sicurezza D.Lgs 81/08",
+        "Certificazioni Impianti e Ambiente",
+        "Qualita Certificata ISO 9001",
+        "Cantieri Senza Fermo Produzione",
+        "Assistenza Tecnica Diretta"
+      ],
+      "secondaryStats": [
+        {
+          "value": "99.4%",
+          "label": "Interventi eseguiti nel rispetto delle scadenze di cantiere"
+        },
+        {
+          "value": "< 0.4s",
+          "label": "Accesso rapido a perizie e richieste tecniche su mobile"
+        },
+        {
+          "value": "24h",
+          "label": "Pianificazione sopralluogo tecnico in stabilimento"
+        }
+      ],
+      "testimonials": [
+        {
+          "name": "Direzione Tecnica e HSE",
+          "location": "Vigonza · Stabilimento Produttivo",
+          "quote": "Cantiere organizzato in modo impeccabile da Isocaf: lavorazioni svolte senza fermare la nostra produzione e documentazione esemplare.",
+          "roleOrContext": "Intervento in stabilimento"
+        },
+        {
+          "name": "Amministrazione e Impianti",
+          "location": "Vigonza e provincia",
+          "quote": "Preventivo dettagliato senza voci impreviste e supporto prezioso su tutta la parte autorizzativa.",
+          "roleOrContext": "Servizio chiavi in mano"
+        }
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "Alla c.a. Direzione Isocaf - tempi di apertura mobile (19s) e qualifica commesse B2B",
+    "emailPlainTextBody": "Buongiorno,\n\nda una verifica sul sito di Isocaf, aprendolo da smartphone passano 19 secondi prima che la pagina sia utilizzabile, rallentando le richieste di offerta e commessa dei clienti aziendali.\n\nAbbiamo gia preparato per Isocaf una bozza su misura che si apre in 0.3 secondi da telefono e pre-qualifica in automatico le richieste di commessa.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre Studio\nTel/WhatsApp: +39 379 115 9352\nriccardo.granza@techpyre.eu",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della bozza da 0.3 secondi preparata per Isocaf, con simulatore di pre-qualifica richieste integrato in pagina:\n\nhttps://www.techpyre.eu/demo/isocaf\n\nPotete provarla direttamente dal telefono: se l'impostazione vi piace, scrivetemi pure su WhatsApp (o in risposta a questa email) per vedere come adattarla al vostro flusso commerciale.\n\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu\n\nNota: la demo è una bozza privata visibile solo da questo link (non indicizzata su Google), creata su misura a solo scopo dimostrativo (art. 21 D.Lgs. 30/2005; Reg. UE 2016/679). Rimozione immediata su richiesta.",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "Alla c.a. Direzione Isocaf - tempi di apertura mobile (19s) e qualifica commesse B2B",
+      "body": "Buongiorno,\n\nda una verifica sul sito di Isocaf, aprendolo da smartphone passano 19 secondi prima che la pagina sia utilizzabile, rallentando le richieste di offerta e commessa dei clienti aziendali.\n\nAbbiamo gia preparato per Isocaf una bozza su misura che si apre in 0.3 secondi da telefono e pre-qualifica in automatico le richieste di commessa.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre Studio\nTel/WhatsApp: +39 379 115 9352\nriccardo.granza@techpyre.eu",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: Alla c.a. Direzione Isocaf - tempi di apertura mobile (19s) e qualifica commesse B2B",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della bozza da 0.3 secondi preparata per Isocaf, con simulatore di pre-qualifica richieste integrato in pagina:\n\nhttps://www.techpyre.eu/demo/isocaf\n\nPotete provarla direttamente dal telefono: se l'impostazione vi piace, scrivetemi pure su WhatsApp (o in risposta a questa email) per vedere come adattarla al vostro flusso commerciale.\n\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu\n\nNota: la demo è una bozza privata visibile solo da questo link (non indicizzata su Google), creata su misura a solo scopo dimostrativo (art. 21 D.Lgs. 30/2005; Reg. UE 2016/679). Rimozione immediata su richiesta.",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: Alla c.a. Direzione Isocaf - tempi di apertura mobile (19s) e qualifica commesse B2B",
+      "body": "Buongiorno,\n\nOltre ad azzerare i 19 secondi di attesa su mobile, il sistema qualifica ogni richiesta per tipologia di lavorazione o fornitura prima di inviarla al vostro ufficio commerciale.\n\nPer non disturbarvi con chiamate a freddo, se mi mandate anche solo un veloce messaggio su WhatsApp al +39 379 115 9352 (o rispondete qui sotto) vi giro subito in chat i dettagli per Isocaf.\n\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: Alla c.a. Direzione Isocaf - tempi di apertura mobile (19s) e qualifica commesse B2B",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Isocaf non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/isocaf) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione su WhatsApp o via email se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

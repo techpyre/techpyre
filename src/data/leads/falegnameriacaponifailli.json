@@ -6,19 +6,18 @@
     "decisionMakerName": "Direzione Falegnameria Artigiana",
     "decisionMakerFirstName": null,
     "decisionMakerRole": "Direzione Aziendale",
-    "isGenericInbox": true,
+    "isGenericInbox": false,
     "emailScore": 35,
-    "targetEmail": "info@falegnameriacaponifailli.com",
+    "targetEmail": "falegnameriacaponifailli@gmail.com",
     "phone": "055 984781",
     "city": "Montevarchi",
     "vatNumber": "01194170518",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Falegnameria%20Artigiana",
     "originalLandingUrl": "https://falegnameriacaponifailli.com",
     "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<53029759-dac3-2b1c-3b5c-57fc470afbec@techpyre.eu>",
-    "threadMessageIds": [
-      "<53029759-dac3-2b1c-3b5c-57fc470afbec@techpyre.eu>"
-    ]
+    "lastSentMessageId": "",
+    "threadMessageIds": [],
+    "notes": "Sostituita email in bounce info@falegnameriacaponifailli.com con falegnameriacaponifailli@gmail.com (MX Gmail verificato)."
   },
   "audit": {
     "originalLcpSeconds": 6.9,

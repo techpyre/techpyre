@@ -11,7 +11,7 @@
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Ma.Tra.",
     "originalLandingUrl": "https://www.matrapadova.it",
     "isGenericInbox": true,
-    "emailScore": -2,
+    "emailScore": 0,
     "decisionMakerFirstName": "Giulio",
     "decisionMakerRole": "Direzione",
     "lastSentMessageId": "<3afcc3f2-94eb-7787-6ac4-36ad7b4d88dd@techpyre.eu>",
@@ -19,7 +19,7 @@
       "<f012b370-c665-3be6-f1a2-0e8b06b19109@techpyre.eu>",
       "<3afcc3f2-94eb-7787-6ac4-36ad7b4d88dd@techpyre.eu>"
     ],
-    "status": "CONTACTED_STEP_2"
+    "status": "INVALID_TICKET_INBOX"
   },
   "audit": {
     "originalLcpSeconds": 12.8,

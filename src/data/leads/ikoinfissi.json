@@ -14,10 +14,11 @@
     "vatNumber": "05158570233",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Iko%20Infissi%20%7C%20Verona",
     "originalLandingUrl": "https://ikoinfissi.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<0bf01505-0e37-8789-8b88-bc1bc6b2267e@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<150b14d1-8eca-fe3a-01d6-2da5d92f4ea0@techpyre.eu>",
     "threadMessageIds": [
-      "<0bf01505-0e37-8789-8b88-bc1bc6b2267e@techpyre.eu>"
+      "<0bf01505-0e37-8789-8b88-bc1bc6b2267e@techpyre.eu>",
+      "<150b14d1-8eca-fe3a-01d6-2da5d92f4ea0@techpyre.eu>"
     ]
   },
   "audit": {

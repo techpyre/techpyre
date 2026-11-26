@@ -14,10 +14,11 @@
     "vatNumber": "00143350346",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Cremona%20Fratelli%20-%20Parquet%20e%20Legnami",
     "originalLandingUrl": "https://www.cremonalegnami.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<ddcd29f9-7b4d-b44b-bc9b-51cce5e3b418@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<9a607212-36c5-62f1-3af0-e77e02dddacd@techpyre.eu>",
     "threadMessageIds": [
-      "<ddcd29f9-7b4d-b44b-bc9b-51cce5e3b418@techpyre.eu>"
+      "<ddcd29f9-7b4d-b44b-bc9b-51cce5e3b418@techpyre.eu>",
+      "<9a607212-36c5-62f1-3af0-e77e02dddacd@techpyre.eu>"
     ]
   },
   "audit": {

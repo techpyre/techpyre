@@ -14,10 +14,11 @@
     "vatNumber": "00717940969",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Fratelli%20Gaiani%20Macchine%20Utensili",
     "originalLandingUrl": "https://www.gaianifratelli.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<05762d26-ab81-7d83-958a-9a996713c93a@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<155ca129-5615-e25a-7aa8-647219764632@techpyre.eu>",
     "threadMessageIds": [
-      "<05762d26-ab81-7d83-958a-9a996713c93a@techpyre.eu>"
+      "<05762d26-ab81-7d83-958a-9a996713c93a@techpyre.eu>",
+      "<155ca129-5615-e25a-7aa8-647219764632@techpyre.eu>"
     ]
   },
   "audit": {

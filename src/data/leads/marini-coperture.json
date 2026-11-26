@@ -14,10 +14,11 @@
     "vatNumber": "01588570349",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Marini%202018",
     "originalLandingUrl": "http://www.marini-coperture.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<08b79da7-f7c3-43ab-44d0-2068db1858c5@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<265bbe8a-2c91-ab8e-873f-03600349a174@techpyre.eu>",
     "threadMessageIds": [
-      "<08b79da7-f7c3-43ab-44d0-2068db1858c5@techpyre.eu>"
+      "<08b79da7-f7c3-43ab-44d0-2068db1858c5@techpyre.eu>",
+      "<265bbe8a-2c91-ab8e-873f-03600349a174@techpyre.eu>"
     ]
   },
   "audit": {

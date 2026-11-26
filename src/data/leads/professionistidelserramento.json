@@ -13,13 +13,17 @@
     "emailScore": 35,
     "decisionMakerFirstName": null,
     "decisionMakerRole": "Direzione Aziendale",
-    "lastSentMessageId": "<73a7f0f4-a854-c0f4-689f-b7ba060b6997@techpyre.eu>",
+    "lastSentMessageId": "<fb36feae-b1a5-4b4c-8d37-0c04527bb4c6@techpyre.eu>",
     "threadMessageIds": [
       "<db028838-7140-ff26-7da2-c23654b8e3ba@techpyre.eu>",
-      "<73a7f0f4-a854-c0f4-689f-b7ba060b6997@techpyre.eu>"
+      "<73a7f0f4-a854-c0f4-689f-b7ba060b6997@techpyre.eu>",
+      "<ce09d225-6748-12a4-355c-ff8b8714ec08@techpyre.eu>",
+      "<CAOC-KtmLG-3vrc-Xq2FQSHVn1UCphMGKKjZwQZpHQsXvUBJb8w@mail.gmail.com>",
+      "<fb36feae-b1a5-4b4c-8d37-0c04527bb4c6@techpyre.eu>"
     ],
     "status": "HOT_LEAD",
-    "notes": "Ha risposto il 29/10 chiedendo dati aziendali e portfolio di lavori realizzati."
+    "notes": "Ricontattato in-thread il 26/11 con riferimenti verificabili (techpyre.eu/studio, progetti, GitHub), bozza 0.3s dedicata e garanzia zero anticipo.",
+    "lastContactedAt": "2026-11-26T09:16:04.541Z"
   },
   "audit": {
     "originalLcpSeconds": 6.5,

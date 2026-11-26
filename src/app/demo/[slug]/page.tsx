@@ -37,9 +37,15 @@ export async function generateStaticParams() {
   const leadsDir = path.join(process.cwd(), "src", "data", "leads");
   if (!fs.existsSync(leadsDir)) return [];
   const files = fs.readdirSync(leadsDir).filter((f) => f.endsWith(".json"));
-  return files.map((file) => ({
-    slug: file.replace(/\.json$/, ""),
-  }));
+  const activeSlugs: Array<{ slug: string }> = [];
+  for (const file of files) {
+    const slug = file.replace(/\.json$/, "");
+    const lead = getLeadData(slug);
+    if (lead && lead.meta?.status !== "BLACKLISTED") {
+      activeSlugs.push({ slug });
+    }
+  }
+  return activeSlugs;
 }
 
 export async function generateMetadata({
@@ -49,7 +55,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const data = getLeadData(slug);
-  if (!data) {
+  if (!data || data.meta?.status === "BLACKLISTED") {
     return {
       title: "Demo Non Trovata",
       robots: { index: false, follow: false },
@@ -78,7 +84,7 @@ export default async function DemoPage({
   const { slug } = await params;
   const data = getLeadData(slug);
 
-  if (!data) return notFound();
+  if (!data || data.meta?.status === "BLACKLISTED") return notFound();
 
   return (
     <div

@@ -14,10 +14,11 @@
     "vatNumber": "00152520409",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Cofert%20S.r.l.",
     "originalLandingUrl": "https://www.cofert.com",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<e41844d0-7cf7-e77e-53c5-f2282fd16220@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<e4394240-d60a-eab2-4c3f-27fbd42de560@techpyre.eu>",
     "threadMessageIds": [
-      "<e41844d0-7cf7-e77e-53c5-f2282fd16220@techpyre.eu>"
+      "<e41844d0-7cf7-e77e-53c5-f2282fd16220@techpyre.eu>",
+      "<e4394240-d60a-eab2-4c3f-27fbd42de560@techpyre.eu>"
     ]
   },
   "audit": {

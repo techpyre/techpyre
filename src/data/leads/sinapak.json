@@ -14,10 +14,11 @@
     "vatNumber": "00228370185",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Sinapak%20.",
     "originalLandingUrl": "http://www.sinapak.com",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<5e234923-9735-fee4-75b0-72aec3d37d85@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<6cb31856-5e7c-b3ac-76aa-e18df0ef6b6f@techpyre.eu>",
     "threadMessageIds": [
-      "<5e234923-9735-fee4-75b0-72aec3d37d85@techpyre.eu>"
+      "<5e234923-9735-fee4-75b0-72aec3d37d85@techpyre.eu>",
+      "<6cb31856-5e7c-b3ac-76aa-e18df0ef6b6f@techpyre.eu>"
     ]
   },
   "audit": {

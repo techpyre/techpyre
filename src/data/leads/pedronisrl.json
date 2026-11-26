@@ -7,14 +7,14 @@
     "decisionMakerFirstName": "Miriam",
     "decisionMakerRole": "Direzione Tecnica",
     "isGenericInbox": true,
-    "emailScore": -2,
+    "emailScore": 0,
     "targetEmail": "impiantipedroni@gmail.com",
     "phone": "+39 051 940081",
     "city": "Castel San Pietro Terme",
     "vatNumber": "00576201206",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Pedroni%20Srl",
     "originalLandingUrl": "https://www.pedronisrl.com",
-    "status": "CONTACTED_STEP_1",
+    "status": "INVALID_TICKET_INBOX",
     "lastSentMessageId": "<630e6477-0899-6cff-3b44-339bd65b6ef2@techpyre.eu>",
     "threadMessageIds": [
       "<630e6477-0899-6cff-3b44-339bd65b6ef2@techpyre.eu>"

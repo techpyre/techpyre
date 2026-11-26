@@ -14,10 +14,11 @@
     "vatNumber": "01611640382",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Autoluce",
     "originalLandingUrl": "http://www.autoluce.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<954f5c0c-6752-5141-bd98-1bad8c5afe20@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<96fc4b2d-6e97-9c5d-8366-d9003af847c9@techpyre.eu>",
     "threadMessageIds": [
-      "<954f5c0c-6752-5141-bd98-1bad8c5afe20@techpyre.eu>"
+      "<954f5c0c-6752-5141-bd98-1bad8c5afe20@techpyre.eu>",
+      "<96fc4b2d-6e97-9c5d-8366-d9003af847c9@techpyre.eu>"
     ]
   },
   "audit": {

@@ -8,17 +8,16 @@
     "decisionMakerRole": "Direzione Aziendale",
     "isGenericInbox": true,
     "emailScore": 45,
-    "targetEmail": "commerciale@mongodi.com",
+    "targetEmail": "info@mongodi.com",
     "phone": "+39035928546",
     "city": "Villongo",
     "vatNumber": "02179660168",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Autotrasporti%20Mongodi",
     "originalLandingUrl": "https://www.mongodi.com",
     "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<91ca609e-e471-4d82-f4d6-e45ebb6f3027@techpyre.eu>",
-    "threadMessageIds": [
-      "<91ca609e-e471-4d82-f4d6-e45ebb6f3027@techpyre.eu>"
-    ]
+    "lastSentMessageId": "",
+    "threadMessageIds": [],
+    "notes": "Sostituita email in bounce commerciale@mongodi.com con info@mongodi.com (MX Outlook verificato)."
   },
   "audit": {
     "originalLcpSeconds": 6,

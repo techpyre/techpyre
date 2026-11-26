@@ -11,7 +11,7 @@
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=resinempire",
     "originalLandingUrl": "https://resinempire.com/products/kit-resina-acrilica-per-pavimenti-catalizzata-livello-1-opaca-fai-da-te-5-kg?variant=42437008949405",
     "isGenericInbox": false,
-    "emailScore": 40,
+    "emailScore": 0,
     "decisionMakerFirstName": null,
     "decisionMakerRole": "Direzione Aziendale",
     "lastSentMessageId": "<03ac5861-01dc-ffb0-72c6-3dcc7b9d735e@techpyre.eu>",
@@ -19,7 +19,7 @@
       "<c0f02c0d-82ed-2fe8-d777-9eeac171db7c@techpyre.eu>",
       "<03ac5861-01dc-ffb0-72c6-3dcc7b9d735e@techpyre.eu>"
     ],
-    "status": "CONTACTED_STEP_2"
+    "status": "INVALID_TICKET_INBOX"
   },
   "audit": {
     "originalLcpSeconds": 15.9,

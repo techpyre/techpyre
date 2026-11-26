@@ -7,14 +7,14 @@
     "decisionMakerFirstName": null,
     "decisionMakerRole": "Direzione Aziendale",
     "isGenericInbox": true,
-    "emailScore": 18,
+    "emailScore": 0,
     "targetEmail": "puntodichiusura@gmail.com",
     "phone": "+390586769133",
     "city": "Rosignano Solvay",
     "vatNumber": "01541530497",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Tutti%20i%20diritti%20riservati",
     "originalLandingUrl": "https://puntodichiusura.it",
-    "status": "CONTACTED_STEP_1",
+    "status": "INVALID_TICKET_INBOX",
     "lastSentMessageId": "<21b5bb34-6895-79f6-332a-59a99acb4fd8@techpyre.eu>",
     "threadMessageIds": [
       "<21b5bb34-6895-79f6-332a-59a99acb4fd8@techpyre.eu>"

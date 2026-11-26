@@ -686,6 +686,7 @@ async function cmdClassifyReply(positional, flags) {
   const slug = positional[0];
   const replyText = String(flags.text || "");
   const replySubject = String(flags.subject || "");
+  const senderEmail = flags.from ? String(flags.from) : undefined;
 
   if (!replyText) {
     console.error(
@@ -695,7 +696,9 @@ async function cmdClassifyReply(positional, flags) {
   }
 
   const lead = slug ? loadLeadConfig(slug) : undefined;
-  const result = classifyInboundReply(replyText, replySubject, lead || undefined);
+  const result = classifyInboundReply(replyText, replySubject, lead || undefined, {
+    senderEmail,
+  });
   console.log("\nCLASSIFICAZIONE RISPOSTA INBOUND:");
   console.log(JSON.stringify(result, null, 2));
 }

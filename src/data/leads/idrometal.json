@@ -14,10 +14,11 @@
     "vatNumber": "Non trovata",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Idrometal",
     "originalLandingUrl": "https://www.idrometal.net",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<34cf2c46-ac8c-7d72-b15b-32950c80c90d@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<ab5916ba-fc79-1f59-3be9-702dbd1485e9@techpyre.eu>",
     "threadMessageIds": [
-      "<34cf2c46-ac8c-7d72-b15b-32950c80c90d@techpyre.eu>"
+      "<34cf2c46-ac8c-7d72-b15b-32950c80c90d@techpyre.eu>",
+      "<ab5916ba-fc79-1f59-3be9-702dbd1485e9@techpyre.eu>"
     ]
   },
   "audit": {

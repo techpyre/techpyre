@@ -14,10 +14,11 @@
     "vatNumber": "02523740187",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Costruzioni%20Cesario",
     "originalLandingUrl": "https://www.costruzionicesario.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<40d48f86-9824-8070-f3d6-50c571f74038@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<7d290304-e0a2-4dd6-1118-42c6dd048814@techpyre.eu>",
     "threadMessageIds": [
-      "<40d48f86-9824-8070-f3d6-50c571f74038@techpyre.eu>"
+      "<40d48f86-9824-8070-f3d6-50c571f74038@techpyre.eu>",
+      "<7d290304-e0a2-4dd6-1118-42c6dd048814@techpyre.eu>"
     ]
   },
   "audit": {

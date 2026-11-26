@@ -11,7 +11,7 @@
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Poeta%20Costruzione%20Serrande",
     "originalLandingUrl": "https://www.poetaserrande.com",
     "isGenericInbox": false,
-    "emailScore": 50,
+    "emailScore": 0,
     "decisionMakerFirstName": "Poeta",
     "decisionMakerRole": "Direzione",
     "lastSentMessageId": "<f2bbee15-dd56-0f0c-ee5e-2246771996e5@techpyre.eu>",
@@ -19,7 +19,7 @@
       "<9baff7af-cd7c-6652-aad3-2fa7d404b8dc@techpyre.eu>",
       "<f2bbee15-dd56-0f0c-ee5e-2246771996e5@techpyre.eu>"
     ],
-    "status": "CONTACTED_STEP_2"
+    "status": "INVALID_TICKET_INBOX"
   },
   "audit": {
     "originalLcpSeconds": 4.1,

@@ -14,10 +14,11 @@
     "vatNumber": "00625230032",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Ripamonti%20Dr.%20Gianni",
     "originalLandingUrl": "http://www.ripamonti.net",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<1fb02376-40f3-383f-d3f3-1e15c92877a1@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<563a5cfa-5f59-642f-2bf7-0ef54447db6c@techpyre.eu>",
     "threadMessageIds": [
-      "<1fb02376-40f3-383f-d3f3-1e15c92877a1@techpyre.eu>"
+      "<1fb02376-40f3-383f-d3f3-1e15c92877a1@techpyre.eu>",
+      "<563a5cfa-5f59-642f-2bf7-0ef54447db6c@techpyre.eu>"
     ]
   },
   "audit": {

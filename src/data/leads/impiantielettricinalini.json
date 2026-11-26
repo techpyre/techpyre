@@ -7,14 +7,14 @@
     "decisionMakerFirstName": null,
     "decisionMakerRole": "Direzione Aziendale",
     "isGenericInbox": true,
-    "emailScore": -2,
+    "emailScore": 0,
     "targetEmail": "info.elettricanalini@gmail.com",
     "phone": "+393356305397",
     "city": "Bovolone",
     "vatNumber": "02730570237",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Nalini%20Impianti%20Elettrici",
     "originalLandingUrl": "http://impiantielettricinalini.it",
-    "status": "CONTACTED_STEP_1",
+    "status": "INVALID_TICKET_INBOX",
     "lastSentMessageId": "<0fe123d3-0dfd-a922-6d0e-8cb8980dc053@techpyre.eu>",
     "threadMessageIds": [
       "<0fe123d3-0dfd-a922-6d0e-8cb8980dc053@techpyre.eu>"

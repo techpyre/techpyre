@@ -14,10 +14,11 @@
     "vatNumber": "00509890356",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=SORA%20S.r.l.",
     "originalLandingUrl": "http://www.soragualtieri.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<1bd88814-3af2-f0cd-3f9c-cd6de4d0db92@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<28cccb2c-08e0-2705-3919-5b99c7ed372c@techpyre.eu>",
     "threadMessageIds": [
-      "<1bd88814-3af2-f0cd-3f9c-cd6de4d0db92@techpyre.eu>"
+      "<1bd88814-3af2-f0cd-3f9c-cd6de4d0db92@techpyre.eu>",
+      "<28cccb2c-08e0-2705-3919-5b99c7ed372c@techpyre.eu>"
     ]
   },
   "audit": {

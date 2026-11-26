@@ -11,7 +11,7 @@
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&media_type=all&q=infissi%20milano%20preventivo&search_type=keyword_unordered",
     "originalLandingUrl": "https://omniamultiservizi.it/privati",
     "isGenericInbox": true,
-    "emailScore": -2,
+    "emailScore": 0,
     "decisionMakerFirstName": null,
     "decisionMakerRole": "Direzione Aziendale",
     "lastSentMessageId": "<4e3c61f4-6fe8-494c-4a2f-50553925a512@techpyre.eu>",
@@ -20,7 +20,7 @@
       "<9b43ade9-737b-f17d-ec73-8abcaf16f828@techpyre.eu>",
       "<4e3c61f4-6fe8-494c-4a2f-50553925a512@techpyre.eu>"
     ],
-    "status": "CONTACTED_STEP_3"
+    "status": "INVALID_TICKET_INBOX"
   },
   "audit": {
     "originalLcpSeconds": 6,

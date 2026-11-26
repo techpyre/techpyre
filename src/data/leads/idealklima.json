@@ -19,7 +19,8 @@
       "<98b117a8-90cd-cf77-e52e-3b5c88363833@techpyre.eu>",
       "<42acd64b-1341-1535-e6bc-a5e5e0b5b031@techpyre.eu>"
     ],
-    "status": "CONTACTED_STEP_3"
+    "status": "INVALID_TICKET_INBOX",
+    "notes": "Bounce 552 Quota exceeded su info@idealklima.it (23/11); nessuna email alternativa in preflight."
   },
   "audit": {
     "originalLcpSeconds": 7,

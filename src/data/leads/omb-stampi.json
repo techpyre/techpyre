@@ -14,10 +14,11 @@
     "vatNumber": "02589120167",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=O.M.B.",
     "originalLandingUrl": "https://omb-stampi.com",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<6bfe6601-94f6-2bb6-f271-ff18aee045a7@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<53820fb4-12ff-2d7e-d0e8-10f63fedf422@techpyre.eu>",
     "threadMessageIds": [
-      "<6bfe6601-94f6-2bb6-f271-ff18aee045a7@techpyre.eu>"
+      "<6bfe6601-94f6-2bb6-f271-ff18aee045a7@techpyre.eu>",
+      "<53820fb4-12ff-2d7e-d0e8-10f63fedf422@techpyre.eu>"
     ]
   },
   "audit": {
