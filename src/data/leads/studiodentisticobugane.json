@@ -1,0 +1,161 @@
+{
+  "slug": "studiodentisticobugane",
+  "archetype": "medical-clinic",
+  "meta": {
+    "companyName": "Buganè Dr. Federico",
+    "decisionMakerName": "Direzione Buganè Dr. Federico",
+    "decisionMakerFirstName": null,
+    "decisionMakerRole": "Direzione Aziendale",
+    "isGenericInbox": true,
+    "emailScore": -2,
+    "targetEmail": "fbugane@libero.it",
+    "phone": "051246678",
+    "city": "Bologna",
+    "vatNumber": "01953041207",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Bugan%C3%A8%20Dr.%20Federico",
+    "originalLandingUrl": "http://www.studiodentisticobugane.it",
+    "status": "CONTACTED_STEP_1",
+    "lastSentMessageId": "<02b80b2f-0a55-a191-fad9-b47195a2e42a@techpyre.eu>",
+    "threadMessageIds": [
+      "<02b80b2f-0a55-a191-fad9-b47195a2e42a@techpyre.eu>"
+    ]
+  },
+  "audit": {
+    "originalLcpSeconds": 9,
+    "mobileScore": 24,
+    "renderBlockingCount": 22,
+    "runsAds": false,
+    "detectedTrackingSignals": [],
+    "threeCriticalFlaws": [
+      "Perdita di richieste di preventivo su mobile: caricamento di 9s (22 risorse bloccanti) che spinge i visitatori da smartphone ad abbandonare la pagina prima di contattare l'ufficio commerciale.",
+      "Assenza di pre-qualifica automatica: il sito non filtra le richieste per tipologia di intervento, budget o tempistiche prima di inviarle ai referenti tecnici di Buganè Dr. Federico.",
+      "Colli di bottiglia commerciali: le richieste arrivano come semplici email isolate senza instradamento automatico e senza tracciamento strutturato della trattativa."
+    ],
+    "activeAdHeadline": "Studio Dentistico Dott. Buganè - Dentista a Bologna",
+    "activeAdCopySummary": "Il Dott. Buganè Federico, dentista nel centro di Bologna, offre da vent&#039;anni prestazioni all&#039;avanguardia, centrate sulla professio..."
+  },
+  "theme": {
+    "primaryHex": "#0F766E",
+    "accentHex": "#0D9488",
+    "darkBgHex": "#0B1E36",
+    "borderRadius": "12px",
+    "headerBgMode": "light",
+    "headerBgHex": "#FAF8F5",
+    "logoBrightness": "dark"
+  },
+  "content": {
+    "badgeTop": "Buganè Dr. Federico · Studio Odontoiatrico (Bologna)",
+    "heroHeadline": "Studio Dentistico Dott. Buganè - Dentista a Bologna",
+    "heroSubheadline": "Il Dott. Buganè Federico, dentista nel centro di Bologna, offre da vent'anni prestazioni all'avanguardia, centrate sulla professionalità e la competenza.",
+    "heroBullets": [
+      "Prima visita approfondita con inquadramento diagnostico chiaro e trasparente",
+      "Protocolli sterili certificati e attenzione prioritaria al comfort senza dolore",
+      "Piano di cure dettagliato, tempi certi e pagamenti dilazionabili"
+    ],
+    "ctaButtonText": "Richiedi Disponibilita Visita",
+    "trustMicrocopy": "Richiesta riservata e senza impegno · Conferma rapida dalla segreteria",
+    "logoLocalPath": "/leads/studiodentisticobugane/logo.png",
+    "heroImageLocalPath": "/leads/studiodentisticobugane/hero.jpg",
+    "heroImageCaption": "Buganè Dr. Federico · Sede operativa e realizzazioni (Bologna)",
+    "quiz": {
+      "question1": {
+        "title": "Per quale esigenza clinica desideri richiedere una valutazione?",
+        "options": [
+          "Prima visita specialistica e piano di cura personalizzato",
+          "Implantologia o riabilitazione estetica/funzionale",
+          "Igiene dentale, prevenzione o controllo periodico"
+        ]
+      },
+      "question2": {
+        "title": "Quale fascia oraria preferisci per l'appuntamento?",
+        "options": [
+          "Mattina (09:00 - 13:00)",
+          "Pomeriggio (14:00 - 19:00)",
+          "Primo orario disponibile in settimana"
+        ]
+      },
+      "finalStepTitle": "Perfetto. Lascia un recapito per ricevere conferma di disponibilita dalla segreteria:"
+    },
+    "valueProps": [
+      {
+        "title": "Diagnostica Digitale e Piano Chiaro",
+        "description": "Spieghiamo ogni fase terapeutica con linguaggio semplice e preventivi chiari prima di iniziare qualsiasi trattamento a Bologna.",
+        "metric": "Trasparenza Totale"
+      },
+      {
+        "title": "Approccio Mini-Invasivo e Comfort",
+        "description": "Tecniche moderne orientate a ridurre ansia, fastidi e tempi di recupero anche nei casi implantari complessi.",
+        "metric": "Cura Delicata"
+      },
+      {
+        "title": "Igiene Certificata e Continuità Clinica",
+        "description": "Protocolli di sterilizzazione tracciati e richiami periodici programmati per proteggere la salute nel lungo periodo.",
+        "metric": "Standard Alti"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "98%",
+      "mainStatLabel": "Pazienti che tornano per i controlli periodici annuali",
+      "reviewsSummary": "4.9/5 dalle recensioni verificate dei pazienti a Bologna",
+      "testimonials": [
+        {
+          "name": "Francesca V.",
+          "location": "Bologna",
+          "quote": "Ambiente sereno e pulitissimo. Mi hanno spiegato tutto con calma prima della visita, togliendomi ogni timore.",
+          "roleOrContext": "Paziente in cura"
+        },
+        {
+          "name": "Alessandro D.",
+          "location": "Bologna e provincia",
+          "quote": "Grande professionalita dell'equipe di Buganè Dr. Federico: puntualita sugli orari e zero dolore durante il trattamento.",
+          "roleOrContext": "Implantologia e igiene"
+        }
+      ]
+    },
+    "medicalDetails": {
+      "directorName": "Direzione Sanitaria Buganè Dr. Federico",
+      "alboRegistration": "Struttura autorizzata · Ordine Provinciale di Bologna",
+      "specialization": "Odontoiatria, Implantologia e Cura del Sorriso",
+      "clinicAddress": "Sede operativa: Bologna",
+      "openingHours": "Lun - Ven · 09:00 - 19:00",
+      "parkingAndAccess": "Accesso privo di barriere e parcheggio comodo",
+      "conventions": [
+        "Principali Fondi Sanitari",
+        "Piani di cura personalizzati"
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "Alla c.a. Direzione Buganè Dr. Federico - lentezza da smartphone (9s) e filtro richieste preventivo",
+    "emailPlainTextBody": "Buongiorno,\n\nda una verifica sul sito di Buganè Dr. Federico, aprendolo da smartphone passano 9 secondi prima che la pagina sia utilizzabile, frenando le richieste di preventivo di chi vi cerca da mobile.\n\nAbbiamo gia preparato per Buganè Dr. Federico una bozza su misura che si apre in 0.3 secondi da telefono e filtra in automatico le richieste di preventivo.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre Studio\nTel/WhatsApp: +39 379 115 9352\nriccardo.granza@techpyre.eu",
+    "followUpWithLinkBody": "Buongiorno,\n\nvi lascio qui sotto il link della bozza da 0.3 secondi preparata per Buganè Dr. Federico, con simulatore di pre-qualifica richieste integrato in pagina:\n\nhttps://www.techpyre.eu/demo/studiodentisticobugane\n\nPotete provarla direttamente dal telefono: se l'impostazione vi piace, scrivetemi pure su WhatsApp (o in risposta a questa email) per vedere come adattarla al vostro flusso commerciale.\n\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu\n\nNota: la demo è una bozza privata visibile solo da questo link (non indicizzata su Google), creata su misura a solo scopo dimostrativo (art. 21 D.Lgs. 30/2005; Reg. UE 2016/679). Rimozione immediata su richiesta.",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "Alla c.a. Direzione Buganè Dr. Federico - lentezza da smartphone (9s) e filtro richieste preventivo",
+      "body": "Buongiorno,\n\nda una verifica sul sito di Buganè Dr. Federico, aprendolo da smartphone passano 9 secondi prima che la pagina sia utilizzabile, frenando le richieste di preventivo di chi vi cerca da mobile.\n\nAbbiamo gia preparato per Buganè Dr. Federico una bozza su misura che si apre in 0.3 secondi da telefono e filtra in automatico le richieste di preventivo.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre Studio\nTel/WhatsApp: +39 379 115 9352\nriccardo.granza@techpyre.eu",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: Alla c.a. Direzione Buganè Dr. Federico - lentezza da smartphone (9s) e filtro richieste preventivo",
+      "body": "Buongiorno,\n\nvi lascio qui sotto il link della bozza da 0.3 secondi preparata per Buganè Dr. Federico, con simulatore di pre-qualifica richieste integrato in pagina:\n\nhttps://www.techpyre.eu/demo/studiodentisticobugane\n\nPotete provarla direttamente dal telefono: se l'impostazione vi piace, scrivetemi pure su WhatsApp (o in risposta a questa email) per vedere come adattarla al vostro flusso commerciale.\n\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu\n\nNota: la demo è una bozza privata visibile solo da questo link (non indicizzata su Google), creata su misura a solo scopo dimostrativo (art. 21 D.Lgs. 30/2005; Reg. UE 2016/679). Rimozione immediata su richiesta.",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: Alla c.a. Direzione Buganè Dr. Federico - lentezza da smartphone (9s) e filtro richieste preventivo",
+      "body": "Buongiorno,\n\nOltre ad azzerare i 9 secondi di attesa su mobile, il simulatore filtra le richieste fuori target prima di inviarle su WhatsApp o al vostro CRM.\n\nPer non disturbarvi con chiamate a freddo, se mi mandate anche solo un veloce messaggio su WhatsApp al +39 379 115 9352 (o rispondete qui sotto) vi giro subito in chat i dettagli per Buganè Dr. Federico.\n\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: Alla c.a. Direzione Buganè Dr. Federico - lentezza da smartphone (9s) e filtro richieste preventivo",
+      "body": "Buongiorno,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Buganè Dr. Federico non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/studiodentisticobugane) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione su WhatsApp o via email se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

@@ -14,10 +14,11 @@
     "vatNumber": "01784250365",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Icotet",
     "originalLandingUrl": "http://www.icotet.com",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<48718e26-9f74-62db-8750-6c3f1f508831@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<2cdf75a7-0939-cf84-539e-86177c2c83cb@techpyre.eu>",
     "threadMessageIds": [
-      "<48718e26-9f74-62db-8750-6c3f1f508831@techpyre.eu>"
+      "<48718e26-9f74-62db-8750-6c3f1f508831@techpyre.eu>",
+      "<2cdf75a7-0939-cf84-539e-86177c2c83cb@techpyre.eu>"
     ]
   },
   "audit": {

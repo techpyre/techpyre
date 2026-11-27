@@ -14,10 +14,11 @@
     "vatNumber": "03966450128",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=2EMME%20IMBALLO%20SRL",
     "originalLandingUrl": "https://www.imballo10.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<db7d39ec-12c1-5f91-da58-c32341e53f82@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<71cb0919-b29e-a0ef-ebda-6c4005fc28fa@techpyre.eu>",
     "threadMessageIds": [
-      "<db7d39ec-12c1-5f91-da58-c32341e53f82@techpyre.eu>"
+      "<db7d39ec-12c1-5f91-da58-c32341e53f82@techpyre.eu>",
+      "<71cb0919-b29e-a0ef-ebda-6c4005fc28fa@techpyre.eu>"
     ]
   },
   "audit": {

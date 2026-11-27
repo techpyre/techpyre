@@ -14,10 +14,11 @@
     "vatNumber": "06039850158",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Intercom",
     "originalLandingUrl": "http://www.intercomonline.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<69c2082a-d6f0-138e-0333-30f7042c8673@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<7086fb1a-1673-d710-3fdb-235e64a18590@techpyre.eu>",
     "threadMessageIds": [
-      "<69c2082a-d6f0-138e-0333-30f7042c8673@techpyre.eu>"
+      "<69c2082a-d6f0-138e-0333-30f7042c8673@techpyre.eu>",
+      "<7086fb1a-1673-d710-3fdb-235e64a18590@techpyre.eu>"
     ]
   },
   "audit": {

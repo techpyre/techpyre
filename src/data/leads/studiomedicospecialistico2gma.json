@@ -1,0 +1,161 @@
+{
+  "slug": "studiomedicospecialistico2gma",
+  "archetype": "medical-clinic",
+  "meta": {
+    "companyName": "Studio Medico Specialistico 2 G.M.A.",
+    "decisionMakerName": "Giuseppe Pantaleo",
+    "decisionMakerFirstName": "Giuseppe",
+    "decisionMakerRole": "Direzione Tecnica",
+    "isGenericInbox": true,
+    "emailScore": 35,
+    "targetEmail": "info@studiomedicospecialistico2gma.it",
+    "phone": "3343571704",
+    "city": "Città Sant'Angelo",
+    "vatNumber": "02080130681",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Studio%20Medico%20Specialistico%202%20G.M.A.",
+    "originalLandingUrl": "https://www.studiomedicospecialistico2gma.it",
+    "status": "CONTACTED_STEP_1",
+    "lastSentMessageId": "<a38413e5-a677-958e-e4da-562f1a4b1b75@techpyre.eu>",
+    "threadMessageIds": [
+      "<a38413e5-a677-958e-e4da-562f1a4b1b75@techpyre.eu>"
+    ]
+  },
+  "audit": {
+    "originalLcpSeconds": 16,
+    "mobileScore": 15,
+    "renderBlockingCount": 62,
+    "runsAds": false,
+    "detectedTrackingSignals": [],
+    "threeCriticalFlaws": [
+      "Perdita di richieste di preventivo su mobile: caricamento di 16s (62 risorse bloccanti) che spinge i visitatori da smartphone ad abbandonare la pagina prima di contattare l'ufficio commerciale.",
+      "Assenza di pre-qualifica automatica: il sito non filtra le richieste per tipologia di intervento, budget o tempistiche prima di inviarle ai referenti tecnici di Studio Medico Specialistico 2 G.M.A..",
+      "Colli di bottiglia commerciali: le richieste arrivano come semplici email isolate senza instradamento automatico e senza tracciamento strutturato della trattativa."
+    ],
+    "activeAdHeadline": "Studio Medico Specialistico 2 G.M.A.: Centro Medico e Visite Specialistiche a Città Sant'Angelo",
+    "activeAdCopySummary": "I nostri specialisti effettuano visite specialistiche in diversi ambiti della medicina, incluse: Cardiologia, Senologia, Chirurgia, Dietolog..."
+  },
+  "theme": {
+    "primaryHex": "#0F766E",
+    "accentHex": "#0D9488",
+    "darkBgHex": "#0B1E36",
+    "borderRadius": "12px",
+    "headerBgMode": "light",
+    "headerBgHex": "#FAF8F5",
+    "logoBrightness": "light"
+  },
+  "content": {
+    "badgeTop": "Studio Medico Specialistico 2 G.M.A. · Poliambulatorio Specialistico (Città Sant'Angelo)",
+    "heroHeadline": "Studio Medico Specialistico 2 G.M.A.: Centro Medico e Visite Specialistiche a Città Sant'Angelo",
+    "heroSubheadline": "I nostri specialisti effettuano visite specialistiche in diversi ambiti della medicina, incluse: Cardiologia, Senologia, Chirurgia, Dietologia, ...",
+    "heroBullets": [
+      "Prenotazione rapida senza lunghe liste d'attesa con segreteria dedicata",
+      "Equipe multidisciplinare coordinata e refertazione chiara",
+      "Ambiente accogliente, accessibile e orientato al benessere del paziente"
+    ],
+    "ctaButtonText": "Richiedi Disponibilita Visita",
+    "trustMicrocopy": "Richiesta riservata e senza impegno · Conferma rapida dalla segreteria",
+    "logoLocalPath": "/leads/studiomedicospecialistico2gma/logo.png",
+    "heroImageLocalPath": "/leads/studiomedicospecialistico2gma/hero.jpg",
+    "heroImageCaption": "Studio Medico Specialistico 2 G.M.A. · Sede operativa e realizzazioni (Città Sant'Angelo)",
+    "quiz": {
+      "question1": {
+        "title": "Per quale esigenza clinica desideri richiedere una valutazione?",
+        "options": [
+          "Prima visita specialistica e inquadramento diagnostico",
+          "Percorso terapeutico, riabilitazione o esami strumentali",
+          "Controllo periodico o seconda opinione medica"
+        ]
+      },
+      "question2": {
+        "title": "Quale fascia oraria preferisci per l'appuntamento?",
+        "options": [
+          "Mattina (09:00 - 13:00)",
+          "Pomeriggio (14:00 - 19:00)",
+          "Primo orario disponibile in settimana"
+        ]
+      },
+      "finalStepTitle": "Perfetto. Lascia un recapito per ricevere conferma di disponibilita dalla segreteria:"
+    },
+    "valueProps": [
+      {
+        "title": "Visite Specialistiche Senza Attese",
+        "description": "Accesso rapido a visite ed esami diagnostici a Città Sant'Angelo con orari flessibili adatti anche a chi lavora.",
+        "metric": "Tempi Rapidi"
+      },
+      {
+        "title": "Percorso Coordinato Tra Specialisti",
+        "description": "Un approccio integrato che mette in comunicazione i medici del centro per evitare esami ripetuti e diagnosi frammentate.",
+        "metric": "Equipe Unita"
+      },
+      {
+        "title": "Accoglienza e Chiarezza Clinica",
+        "description": "Dalla prima accoglienza fino ai controlli di follow-up seguiamo il paziente con ascolto e massima riservatezza.",
+        "metric": "98% Soddisfatti"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "98%",
+      "mainStatLabel": "Pazienti soddisfatti di puntualita e qualita clinica",
+      "reviewsSummary": "4.9/5 dai pazienti seguiti presso il centro a Città Sant'Angelo",
+      "testimonials": [
+        {
+          "name": "Valentina M.",
+          "location": "Città Sant'Angelo",
+          "quote": "Prenotato la visita in giornata, zero attesa in sala e medico attentissimo nell'ascoltare tutta la mia storia clinica.",
+          "roleOrContext": "Visita specialistica"
+        },
+        {
+          "name": "Giovanni P.",
+          "location": "Città Sant'Angelo e provincia",
+          "quote": "Struttura moderna e personale gentilissimo in segreteria. Un punto di riferimento serio a Città Sant'Angelo.",
+          "roleOrContext": "Diagnostica e controlli"
+        }
+      ]
+    },
+    "medicalDetails": {
+      "directorName": "Giuseppe Pantaleo",
+      "alboRegistration": "Struttura autorizzata · Ordine Provinciale di Città Sant'Angelo",
+      "specialization": "Medicina Specialistica, Diagnostica e Prevenzione",
+      "clinicAddress": "Sede operativa: Città Sant'Angelo",
+      "openingHours": "Lun - Ven · 09:00 - 19:00",
+      "parkingAndAccess": "Accesso privo di barriere e parcheggio comodo",
+      "conventions": [
+        "Principali Fondi Sanitari",
+        "Piani di cura personalizzati"
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "Per Giuseppe Pantaleo - lentezza da smartphone (16s) e filtro richieste preventivo di Studio Medico Specialistico 2 G.M.A.",
+    "emailPlainTextBody": "Buongiorno Giuseppe,\n\nda una verifica sul sito di Studio Medico Specialistico 2 G.M.A., aprendolo da smartphone passano 16 secondi prima che la pagina sia utilizzabile, frenando le richieste di preventivo di chi vi cerca da mobile.\n\nAbbiamo gia preparato per Studio Medico Specialistico 2 G.M.A. una bozza su misura che si apre in 0.3 secondi da telefono e filtra in automatico le richieste di preventivo.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre Studio\nTel/WhatsApp: +39 379 115 9352\nriccardo.granza@techpyre.eu",
+    "followUpWithLinkBody": "Buongiorno Giuseppe,\n\nvi lascio qui sotto il link della bozza da 0.3 secondi preparata per Studio Medico Specialistico 2 G.M.A., con simulatore di pre-qualifica richieste integrato in pagina:\n\nhttps://www.techpyre.eu/demo/studiomedicospecialistico2gma\n\nPotete provarla direttamente dal telefono: se l'impostazione vi piace, scrivetemi pure su WhatsApp (o in risposta a questa email) per vedere come adattarla al vostro flusso commerciale.\n\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu\n\nNota: la demo è una bozza privata visibile solo da questo link (non indicizzata su Google), creata su misura a solo scopo dimostrativo (art. 21 D.Lgs. 30/2005; Reg. UE 2016/679). Rimozione immediata su richiesta.",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "Per Giuseppe Pantaleo - lentezza da smartphone (16s) e filtro richieste preventivo di Studio Medico Specialistico 2 G.M.A.",
+      "body": "Buongiorno Giuseppe,\n\nda una verifica sul sito di Studio Medico Specialistico 2 G.M.A., aprendolo da smartphone passano 16 secondi prima che la pagina sia utilizzabile, frenando le richieste di preventivo di chi vi cerca da mobile.\n\nAbbiamo gia preparato per Studio Medico Specialistico 2 G.M.A. una bozza su misura che si apre in 0.3 secondi da telefono e filtra in automatico le richieste di preventivo.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre Studio\nTel/WhatsApp: +39 379 115 9352\nriccardo.granza@techpyre.eu",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: Per Giuseppe Pantaleo - lentezza da smartphone (16s) e filtro richieste preventivo di Studio Medico Specialistico 2 G.M.A.",
+      "body": "Buongiorno Giuseppe,\n\nvi lascio qui sotto il link della bozza da 0.3 secondi preparata per Studio Medico Specialistico 2 G.M.A., con simulatore di pre-qualifica richieste integrato in pagina:\n\nhttps://www.techpyre.eu/demo/studiomedicospecialistico2gma\n\nPotete provarla direttamente dal telefono: se l'impostazione vi piace, scrivetemi pure su WhatsApp (o in risposta a questa email) per vedere come adattarla al vostro flusso commerciale.\n\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu\n\nNota: la demo è una bozza privata visibile solo da questo link (non indicizzata su Google), creata su misura a solo scopo dimostrativo (art. 21 D.Lgs. 30/2005; Reg. UE 2016/679). Rimozione immediata su richiesta.",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: Per Giuseppe Pantaleo - lentezza da smartphone (16s) e filtro richieste preventivo di Studio Medico Specialistico 2 G.M.A.",
+      "body": "Buongiorno Giuseppe,\n\nOltre ad azzerare i 16 secondi di attesa su mobile, il simulatore filtra le richieste fuori target prima di inviarle su WhatsApp o al vostro CRM.\n\nPer non disturbarvi con chiamate a freddo, se mi mandate anche solo un veloce messaggio su WhatsApp al +39 379 115 9352 (o rispondete qui sotto) vi giro subito in chat i dettagli per Studio Medico Specialistico 2 G.M.A..\n\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: Per Giuseppe Pantaleo - lentezza da smartphone (16s) e filtro richieste preventivo di Studio Medico Specialistico 2 G.M.A.",
+      "body": "Buongiorno Giuseppe,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Studio Medico Specialistico 2 G.M.A. non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/studiomedicospecialistico2gma) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione su WhatsApp o via email se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

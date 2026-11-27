@@ -14,10 +14,11 @@
     "vatNumber": "03818130233",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=GR-IMPIANTI%20srl",
     "originalLandingUrl": "http://gr-impianti.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<d5defc73-398f-c4a9-457f-b679361748b6@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<ec515e9a-906c-ceba-9bcc-b63722b362e7@techpyre.eu>",
     "threadMessageIds": [
-      "<d5defc73-398f-c4a9-457f-b679361748b6@techpyre.eu>"
+      "<d5defc73-398f-c4a9-457f-b679361748b6@techpyre.eu>",
+      "<ec515e9a-906c-ceba-9bcc-b63722b362e7@techpyre.eu>"
     ]
   },
   "audit": {

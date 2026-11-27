@@ -14,10 +14,11 @@
     "vatNumber": "01429760125",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Alva%20Srl",
     "originalLandingUrl": "http://www.alva-srl.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<48dc6981-0895-bcad-bec2-52efacbcde47@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<8777e60d-d572-8947-550f-a9995be6092f@techpyre.eu>",
     "threadMessageIds": [
-      "<48dc6981-0895-bcad-bec2-52efacbcde47@techpyre.eu>"
+      "<48dc6981-0895-bcad-bec2-52efacbcde47@techpyre.eu>",
+      "<8777e60d-d572-8947-550f-a9995be6092f@techpyre.eu>"
     ]
   },
   "audit": {

@@ -14,10 +14,11 @@
     "vatNumber": "00636840985",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Eurocosmec",
     "originalLandingUrl": "http://www.eurocosmec.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<c009a639-2f66-b6da-f999-12c43e74c00a@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<6a307daa-8b97-7685-296d-dcf7ceb122b5@techpyre.eu>",
     "threadMessageIds": [
-      "<c009a639-2f66-b6da-f999-12c43e74c00a@techpyre.eu>"
+      "<c009a639-2f66-b6da-f999-12c43e74c00a@techpyre.eu>",
+      "<6a307daa-8b97-7685-296d-dcf7ceb122b5@techpyre.eu>"
     ]
   },
   "audit": {

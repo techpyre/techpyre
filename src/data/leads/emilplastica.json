@@ -14,10 +14,11 @@
     "vatNumber": "00682711205",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Emilplastica",
     "originalLandingUrl": "https://www.emilplastica.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<21eee86e-d221-2f43-61aa-d3371a9c6434@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<074215da-9925-5308-baff-b2825cc0fcf3@techpyre.eu>",
     "threadMessageIds": [
-      "<21eee86e-d221-2f43-61aa-d3371a9c6434@techpyre.eu>"
+      "<21eee86e-d221-2f43-61aa-d3371a9c6434@techpyre.eu>",
+      "<074215da-9925-5308-baff-b2825cc0fcf3@techpyre.eu>"
     ]
   },
   "audit": {

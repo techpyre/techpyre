@@ -14,10 +14,11 @@
     "vatNumber": "01580210985",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Brescia%20Carrelli",
     "originalLandingUrl": "https://www.bresciacarrelli.com",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<a374b0f6-e605-e4e4-2e17-1918e11d8e61@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<a8f5b8fc-5422-f137-4f11-047a69702121@techpyre.eu>",
     "threadMessageIds": [
-      "<a374b0f6-e605-e4e4-2e17-1918e11d8e61@techpyre.eu>"
+      "<a374b0f6-e605-e4e4-2e17-1918e11d8e61@techpyre.eu>",
+      "<a8f5b8fc-5422-f137-4f11-047a69702121@techpyre.eu>"
     ]
   },
   "audit": {

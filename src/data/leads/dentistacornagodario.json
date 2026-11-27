@@ -7,14 +7,14 @@
     "decisionMakerFirstName": "Dario",
     "decisionMakerRole": "Direzione Tecnica",
     "isGenericInbox": true,
-    "emailScore": -2,
+    "emailScore": 0,
     "targetEmail": "vedadentsrl@gmail.com",
     "phone": "+39035544522",
     "city": "Almè",
     "vatNumber": "01028500161",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Vedadent%20Cornago%20Dott.%20Dario",
     "originalLandingUrl": "http://www.dentistacornagodario.it",
-    "status": "NEW"
+    "status": "INVALID_TICKET_INBOX"
   },
   "audit": {
     "originalLcpSeconds": 9,

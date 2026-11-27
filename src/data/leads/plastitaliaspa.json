@@ -14,10 +14,11 @@
     "vatNumber": "Non trovata",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Plastitalia%20Spa",
     "originalLandingUrl": "https://www.plastitaliaspa.com",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<5f5a4897-38de-8eb6-572e-76e5de3e1bf9@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<354e390f-61e1-40a1-c180-5cad065107ca@techpyre.eu>",
     "threadMessageIds": [
-      "<5f5a4897-38de-8eb6-572e-76e5de3e1bf9@techpyre.eu>"
+      "<5f5a4897-38de-8eb6-572e-76e5de3e1bf9@techpyre.eu>",
+      "<354e390f-61e1-40a1-c180-5cad065107ca@techpyre.eu>"
     ]
   },
   "audit": {

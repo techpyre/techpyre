@@ -14,10 +14,11 @@
     "vatNumber": "01985520012",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=CO.R.I.",
     "originalLandingUrl": "https://www.corisnc.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<12ed92c3-e3e6-796b-0873-f6bd4adf0bbf@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<ad2257a5-44c0-e2a7-4953-a9d450833113@techpyre.eu>",
     "threadMessageIds": [
-      "<12ed92c3-e3e6-796b-0873-f6bd4adf0bbf@techpyre.eu>"
+      "<12ed92c3-e3e6-796b-0873-f6bd4adf0bbf@techpyre.eu>",
+      "<ad2257a5-44c0-e2a7-4953-a9d450833113@techpyre.eu>"
     ]
   },
   "audit": {

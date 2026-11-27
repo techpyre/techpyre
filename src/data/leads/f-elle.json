@@ -14,10 +14,11 @@
     "vatNumber": "02292740988",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=F.%20Elle%20Service%20di%20Agnelli%20Fabio",
     "originalLandingUrl": "https://www.f-elle.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<a0c87a43-8a7f-2bce-e13e-ff74e0aeb00d@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<5270bc02-3d08-57b1-623d-e2f75b57cb51@techpyre.eu>",
     "threadMessageIds": [
-      "<a0c87a43-8a7f-2bce-e13e-ff74e0aeb00d@techpyre.eu>"
+      "<a0c87a43-8a7f-2bce-e13e-ff74e0aeb00d@techpyre.eu>",
+      "<5270bc02-3d08-57b1-623d-e2f75b57cb51@techpyre.eu>"
     ]
   },
   "audit": {

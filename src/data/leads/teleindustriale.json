@@ -14,10 +14,11 @@
     "vatNumber": "00840270235",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Teleindustriale%20Srl",
     "originalLandingUrl": "http://www.teleindustriale.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<3aa73c96-f87d-dee8-1d5a-ef0054cd87d5@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<e70bc91b-a541-6eb3-5317-441e22c03d71@techpyre.eu>",
     "threadMessageIds": [
-      "<3aa73c96-f87d-dee8-1d5a-ef0054cd87d5@techpyre.eu>"
+      "<3aa73c96-f87d-dee8-1d5a-ef0054cd87d5@techpyre.eu>",
+      "<e70bc91b-a541-6eb3-5317-441e22c03d71@techpyre.eu>"
     ]
   },
   "audit": {

@@ -14,10 +14,11 @@
     "vatNumber": "00878260298",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Bellucco%20Luca%20Spurgo%20Pozzi%20Neri",
     "originalLandingUrl": "http://www.bellucco-spurghi.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<183897f4-96bb-7fc9-bec9-27c575558e36@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<93bd9c5e-25bf-57a3-6058-1ac47c25b1ef@techpyre.eu>",
     "threadMessageIds": [
-      "<183897f4-96bb-7fc9-bec9-27c575558e36@techpyre.eu>"
+      "<183897f4-96bb-7fc9-bec9-27c575558e36@techpyre.eu>",
+      "<93bd9c5e-25bf-57a3-6058-1ac47c25b1ef@techpyre.eu>"
     ]
   },
   "audit": {

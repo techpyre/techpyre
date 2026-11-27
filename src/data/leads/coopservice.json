@@ -14,10 +14,11 @@
     "vatNumber": "00310180351",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=COOPSERVICE%20S.COOP.P.A.",
     "originalLandingUrl": "https://www.coopservice.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<26080f5a-53f6-ddf5-29f9-b6a71df27e40@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<de7141b9-5142-3413-2003-f2b4524d1792@techpyre.eu>",
     "threadMessageIds": [
-      "<26080f5a-53f6-ddf5-29f9-b6a71df27e40@techpyre.eu>"
+      "<26080f5a-53f6-ddf5-29f9-b6a71df27e40@techpyre.eu>",
+      "<de7141b9-5142-3413-2003-f2b4524d1792@techpyre.eu>"
     ]
   },
   "audit": {

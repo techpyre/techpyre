@@ -14,10 +14,11 @@
     "vatNumber": "00267530921",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Aurelio%20Porcu%20e%20Figli",
     "originalLandingUrl": "https://www.impresaporcu.com",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<20670019-adaa-03ae-a92f-395e7330dd28@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<c04ad07e-defc-7236-e6e5-8c5cbf093d9e@techpyre.eu>",
     "threadMessageIds": [
-      "<20670019-adaa-03ae-a92f-395e7330dd28@techpyre.eu>"
+      "<20670019-adaa-03ae-a92f-395e7330dd28@techpyre.eu>",
+      "<c04ad07e-defc-7236-e6e5-8c5cbf093d9e@techpyre.eu>"
     ]
   },
   "audit": {

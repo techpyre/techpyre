@@ -14,10 +14,11 @@
     "vatNumber": "09758110010",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=A.I.T.%20Automazione%20srl",
     "originalLandingUrl": "https://aitautomazione.com",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<e5af1fb0-b3cd-7f89-96b8-6211cc09505d@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<bbc3bb71-a56c-e787-553f-f5c446de1e9a@techpyre.eu>",
     "threadMessageIds": [
-      "<e5af1fb0-b3cd-7f89-96b8-6211cc09505d@techpyre.eu>"
+      "<e5af1fb0-b3cd-7f89-96b8-6211cc09505d@techpyre.eu>",
+      "<bbc3bb71-a56c-e787-553f-f5c446de1e9a@techpyre.eu>"
     ]
   },
   "audit": {

@@ -14,10 +14,11 @@
     "vatNumber": "04078640267",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Merotto%20Bau%20S.r.l.",
     "originalLandingUrl": "http://www.impresamerotto.com",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<ef17dc22-b070-7f09-d3e2-2fcd1ac88551@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<b180cfb5-b2a0-0dc5-b269-8994de1f5c33@techpyre.eu>",
     "threadMessageIds": [
-      "<ef17dc22-b070-7f09-d3e2-2fcd1ac88551@techpyre.eu>"
+      "<ef17dc22-b070-7f09-d3e2-2fcd1ac88551@techpyre.eu>",
+      "<b180cfb5-b2a0-0dc5-b269-8994de1f5c33@techpyre.eu>"
     ]
   },
   "audit": {

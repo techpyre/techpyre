@@ -14,11 +14,12 @@
     "emailScore": 35,
     "decisionMakerFirstName": null,
     "decisionMakerRole": "Direzione Aziendale",
-    "status": "CONTACTED_STEP_1",
+    "status": "CONTACTED_STEP_2",
     "notes": "Autoresponder da valmosnc@libero.it: indirizzo mail non piu valido.",
-    "lastSentMessageId": "<9578471b-c12c-fcdc-19d1-7863ec3b22c4@techpyre.eu>",
+    "lastSentMessageId": "<5c85a7f3-3ac8-8877-840a-c9bec773198b@techpyre.eu>",
     "threadMessageIds": [
-      "<9578471b-c12c-fcdc-19d1-7863ec3b22c4@techpyre.eu>"
+      "<9578471b-c12c-fcdc-19d1-7863ec3b22c4@techpyre.eu>",
+      "<5c85a7f3-3ac8-8877-840a-c9bec773198b@techpyre.eu>"
     ]
   },
   "audit": {

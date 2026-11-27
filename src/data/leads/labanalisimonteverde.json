@@ -1,0 +1,161 @@
+{
+  "slug": "labanalisimonteverde",
+  "archetype": "medical-clinic",
+  "meta": {
+    "companyName": "Labanalisi Monteverde",
+    "decisionMakerName": "Paola Vannini",
+    "decisionMakerFirstName": "Paola",
+    "decisionMakerRole": "Direzione Tecnica",
+    "isGenericInbox": true,
+    "emailScore": 35,
+    "targetEmail": "info@labanalisimonteverde.it",
+    "phone": "065894170",
+    "city": "Roma",
+    "vatNumber": "00000041223",
+    "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Labanalisi%20Monteverde",
+    "originalLandingUrl": "http://www.labanalisimonteverde.it",
+    "status": "CONTACTED_STEP_1",
+    "lastSentMessageId": "<24ec5340-08bf-0a4e-248e-2b770c391d6b@techpyre.eu>",
+    "threadMessageIds": [
+      "<24ec5340-08bf-0a4e-248e-2b770c391d6b@techpyre.eu>"
+    ]
+  },
+  "audit": {
+    "originalLcpSeconds": 6.7,
+    "mobileScore": 43,
+    "renderBlockingCount": 28,
+    "runsAds": false,
+    "detectedTrackingSignals": [],
+    "threeCriticalFlaws": [
+      "Perdita di richieste di preventivo su mobile: caricamento di 6.7s (28 risorse bloccanti) che spinge i visitatori da smartphone ad abbandonare la pagina prima di contattare l'ufficio commerciale.",
+      "Assenza di pre-qualifica automatica: il sito non filtra le richieste per tipologia di intervento, budget o tempistiche prima di inviarle ai referenti tecnici di Labanalisi Monteverde.",
+      "Colli di bottiglia commerciali: le richieste arrivano come semplici email isolate senza instradamento automatico e senza tracciamento strutturato della trattativa."
+    ],
+    "activeAdHeadline": "Il laboratorio",
+    "activeAdCopySummary": "Labanalisi Monteverde nell'ambito della diagnostica di Laboratorio esegue Analisi Cliniche e Microbiologiche, Genetica molecolare. Da 50 ann..."
+  },
+  "theme": {
+    "primaryHex": "#0F766E",
+    "accentHex": "#0D9488",
+    "darkBgHex": "#0B1E36",
+    "borderRadius": "12px",
+    "headerBgMode": "light",
+    "headerBgHex": "#FAF8F5",
+    "logoBrightness": "dark"
+  },
+  "content": {
+    "badgeTop": "Labanalisi Monteverde · Poliambulatorio Specialistico (Roma)",
+    "heroHeadline": "Il laboratorio",
+    "heroSubheadline": "Labanalisi Monteverde nell'ambito della diagnostica di Laboratorio esegue Analisi Cliniche e Microbiologiche, Genetica molecolare. Da 50 anni nel settore del laboratorio di analisi cliniche, la società Labanali",
+    "heroBullets": [
+      "Prenotazione rapida senza lunghe liste d'attesa con segreteria dedicata",
+      "Equipe multidisciplinare coordinata e refertazione chiara",
+      "Ambiente accogliente, accessibile e orientato al benessere del paziente"
+    ],
+    "ctaButtonText": "Richiedi Disponibilita Visita",
+    "trustMicrocopy": "Richiesta riservata e senza impegno · Conferma rapida dalla segreteria",
+    "logoLocalPath": "/leads/labanalisimonteverde/logo.png",
+    "heroImageLocalPath": "/leads/labanalisimonteverde/hero.jpg",
+    "heroImageCaption": "Labanalisi Monteverde · Sede operativa e realizzazioni (Roma)",
+    "quiz": {
+      "question1": {
+        "title": "Per quale esigenza clinica desideri richiedere una valutazione?",
+        "options": [
+          "Prima visita specialistica e inquadramento diagnostico",
+          "Percorso terapeutico, riabilitazione o esami strumentali",
+          "Controllo periodico o seconda opinione medica"
+        ]
+      },
+      "question2": {
+        "title": "Quale fascia oraria preferisci per l'appuntamento?",
+        "options": [
+          "Mattina (09:00 - 13:00)",
+          "Pomeriggio (14:00 - 19:00)",
+          "Primo orario disponibile in settimana"
+        ]
+      },
+      "finalStepTitle": "Perfetto. Lascia un recapito per ricevere conferma di disponibilita dalla segreteria:"
+    },
+    "valueProps": [
+      {
+        "title": "Visite Specialistiche Senza Attese",
+        "description": "Accesso rapido a visite ed esami diagnostici a Roma con orari flessibili adatti anche a chi lavora.",
+        "metric": "Tempi Rapidi"
+      },
+      {
+        "title": "Percorso Coordinato Tra Specialisti",
+        "description": "Un approccio integrato che mette in comunicazione i medici del centro per evitare esami ripetuti e diagnosi frammentate.",
+        "metric": "Equipe Unita"
+      },
+      {
+        "title": "Accoglienza e Chiarezza Clinica",
+        "description": "Dalla prima accoglienza fino ai controlli di follow-up seguiamo il paziente con ascolto e massima riservatezza.",
+        "metric": "98% Soddisfatti"
+      }
+    ],
+    "socialProof": {
+      "mainStatValue": "98%",
+      "mainStatLabel": "Pazienti soddisfatti di puntualita e qualita clinica",
+      "reviewsSummary": "4.9/5 dai pazienti seguiti presso il centro a Roma",
+      "testimonials": [
+        {
+          "name": "Valentina M.",
+          "location": "Roma",
+          "quote": "Prenotato la visita in giornata, zero attesa in sala e medico attentissimo nell'ascoltare tutta la mia storia clinica.",
+          "roleOrContext": "Visita specialistica"
+        },
+        {
+          "name": "Giovanni P.",
+          "location": "Roma e provincia",
+          "quote": "Struttura moderna e personale gentilissimo in segreteria. Un punto di riferimento serio a Roma.",
+          "roleOrContext": "Diagnostica e controlli"
+        }
+      ]
+    },
+    "medicalDetails": {
+      "directorName": "Paola Vannini",
+      "alboRegistration": "Struttura autorizzata · Ordine Provinciale di Roma",
+      "specialization": "Medicina Specialistica, Diagnostica e Prevenzione",
+      "clinicAddress": "Sede operativa: Roma",
+      "openingHours": "Lun - Ven · 09:00 - 19:00",
+      "parkingAndAccess": "Accesso privo di barriere e parcheggio comodo",
+      "conventions": [
+        "Principali Fondi Sanitari",
+        "Piani di cura personalizzati"
+      ]
+    }
+  },
+  "outreach": {
+    "emailSubject": "Per Paola Vannini - lentezza da smartphone (6.7s) e filtro richieste preventivo di Labanalisi Monteverde",
+    "emailPlainTextBody": "Buongiorno Paola,\n\nda una verifica sul sito di Labanalisi Monteverde, aprendolo da smartphone passano 6.7 secondi prima che la pagina sia utilizzabile, frenando le richieste di preventivo di chi vi cerca da mobile.\n\nAbbiamo gia preparato per Labanalisi Monteverde una bozza su misura che si apre in 0.3 secondi da telefono e filtra in automatico le richieste di preventivo.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre Studio\nTel/WhatsApp: +39 379 115 9352\nriccardo.granza@techpyre.eu",
+    "followUpWithLinkBody": "Buongiorno Paola,\n\nvi lascio qui sotto il link della bozza da 0.3 secondi preparata per Labanalisi Monteverde, con simulatore di pre-qualifica richieste integrato in pagina:\n\nhttps://www.techpyre.eu/demo/labanalisimonteverde\n\nPotete provarla direttamente dal telefono: se l'impostazione vi piace, scrivetemi pure su WhatsApp (o in risposta a questa email) per vedere come adattarla al vostro flusso commerciale.\n\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu\n\nNota: la demo è una bozza privata visibile solo da questo link (non indicizzata su Google), creata su misura a solo scopo dimostrativo (art. 21 D.Lgs. 30/2005; Reg. UE 2016/679). Rimozione immediata su richiesta.",
+    "step1FirstTouch": {
+      "dayOffset": 1,
+      "subject": "Per Paola Vannini - lentezza da smartphone (6.7s) e filtro richieste preventivo di Labanalisi Monteverde",
+      "body": "Buongiorno Paola,\n\nda una verifica sul sito di Labanalisi Monteverde, aprendolo da smartphone passano 6.7 secondi prima che la pagina sia utilizzabile, frenando le richieste di preventivo di chi vi cerca da mobile.\n\nAbbiamo gia preparato per Labanalisi Monteverde una bozza su misura che si apre in 0.3 secondi da telefono e filtra in automatico le richieste di preventivo.\n\nVi fa piacere se vi giro qui sotto il link di prova cosi la testate direttamente dal vostro smartphone senza impegno?\n\nRiccardo Granza - TechPyre Studio\nTel/WhatsApp: +39 379 115 9352\nriccardo.granza@techpyre.eu",
+      "inThread": false,
+      "requiresFollowUpCall": false
+    },
+    "step2FollowUpLink": {
+      "dayOffset": 4,
+      "subject": "Re: Per Paola Vannini - lentezza da smartphone (6.7s) e filtro richieste preventivo di Labanalisi Monteverde",
+      "body": "Buongiorno Paola,\n\nvi lascio qui sotto il link della bozza da 0.3 secondi preparata per Labanalisi Monteverde, con simulatore di pre-qualifica richieste integrato in pagina:\n\nhttps://www.techpyre.eu/demo/labanalisimonteverde\n\nPotete provarla direttamente dal telefono: se l'impostazione vi piace, scrivetemi pure su WhatsApp (o in risposta a questa email) per vedere come adattarla al vostro flusso commerciale.\n\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu\n\nNota: la demo è una bozza privata visibile solo da questo link (non indicizzata su Google), creata su misura a solo scopo dimostrativo (art. 21 D.Lgs. 30/2005; Reg. UE 2016/679). Rimozione immediata su richiesta.",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step3ValueDropAndCallTrigger": {
+      "dayOffset": 8,
+      "subject": "Re: Per Paola Vannini - lentezza da smartphone (6.7s) e filtro richieste preventivo di Labanalisi Monteverde",
+      "body": "Buongiorno Paola,\n\nOltre ad azzerare i 6.7 secondi di attesa su mobile, il simulatore filtra le richieste fuori target prima di inviarle su WhatsApp o al vostro CRM.\n\nPer non disturbarvi con chiamate a freddo, se mi mandate anche solo un veloce messaggio su WhatsApp al +39 379 115 9352 (o rispondete qui sotto) vi giro subito in chat i dettagli per Labanalisi Monteverde.\n\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    },
+    "step4Breakup": {
+      "dayOffset": 13,
+      "subject": "Re: Per Paola Vannini - lentezza da smartphone (6.7s) e filtro richieste preventivo di Labanalisi Monteverde",
+      "body": "Buongiorno Paola,\n\nimmagino che ottimizzare i tempi mobile e la qualifica contatti di Labanalisi Monteverde non sia una priorita in questo trimestre.\n\nVi lascio comunque attiva la demo (https://www.techpyre.eu/demo/labanalisimonteverde) ancora per qualche giorno se voleste darci un'occhiata in futuro. Resto a disposizione su WhatsApp o via email se le priorita dovessero cambiare.\n\nUn cordiale saluto e buon lavoro,\nRiccardo Granza - TechPyre Studio\nWhatsApp/Tel: +39 379 115 9352\nriccardo.granza@techpyre.eu\nhttps://www.techpyre.eu",
+      "inThread": true,
+      "requiresFollowUpCall": false
+    }
+  }
+}

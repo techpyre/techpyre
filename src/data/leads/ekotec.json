@@ -14,10 +14,11 @@
     "vatNumber": "00719080343",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=EKOTEC%20SISTEMI%20srl",
     "originalLandingUrl": "http://www.ekotec.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<3a2a8343-7034-098c-2b7e-f9217191d4c1@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<793e2b57-0d96-a066-b583-ae9a06a8c305@techpyre.eu>",
     "threadMessageIds": [
-      "<3a2a8343-7034-098c-2b7e-f9217191d4c1@techpyre.eu>"
+      "<3a2a8343-7034-098c-2b7e-f9217191d4c1@techpyre.eu>",
+      "<793e2b57-0d96-a066-b583-ae9a06a8c305@techpyre.eu>"
     ]
   },
   "audit": {

@@ -14,10 +14,11 @@
     "vatNumber": "Non trovata",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Comunicattivi%20Srls",
     "originalLandingUrl": "https://plastifur.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<4a9abd9b-4c84-216a-7ba0-9f5daf7cd29d@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<0c1d66ea-ae34-5597-982d-4a0bbfe8cd5b@techpyre.eu>",
     "threadMessageIds": [
-      "<4a9abd9b-4c84-216a-7ba0-9f5daf7cd29d@techpyre.eu>"
+      "<4a9abd9b-4c84-216a-7ba0-9f5daf7cd29d@techpyre.eu>",
+      "<0c1d66ea-ae34-5597-982d-4a0bbfe8cd5b@techpyre.eu>"
     ]
   },
   "audit": {

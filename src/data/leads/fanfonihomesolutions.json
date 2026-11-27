@@ -14,10 +14,11 @@
     "vatNumber": "02923630343",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Fanfoni%20Home%20Solutions",
     "originalLandingUrl": "https://www.fanfonihomesolutions.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<900336fa-1512-6eb8-f312-d0c851d05090@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<6f04b591-5011-77f4-fffe-9b64090275ed@techpyre.eu>",
     "threadMessageIds": [
-      "<900336fa-1512-6eb8-f312-d0c851d05090@techpyre.eu>"
+      "<900336fa-1512-6eb8-f312-d0c851d05090@techpyre.eu>",
+      "<6f04b591-5011-77f4-fffe-9b64090275ed@techpyre.eu>"
     ]
   },
   "audit": {

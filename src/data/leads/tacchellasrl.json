@@ -14,10 +14,11 @@
     "vatNumber": "02654120233",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Tacchella%20S.R.L.",
     "originalLandingUrl": "https://www.tacchellasrl.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<581de777-3ab4-8ccd-01cd-454c37ba07ed@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<be20d822-4969-8f75-c2a4-807cdf97c607@techpyre.eu>",
     "threadMessageIds": [
-      "<581de777-3ab4-8ccd-01cd-454c37ba07ed@techpyre.eu>"
+      "<581de777-3ab4-8ccd-01cd-454c37ba07ed@techpyre.eu>",
+      "<be20d822-4969-8f75-c2a4-807cdf97c607@techpyre.eu>"
     ]
   },
   "audit": {

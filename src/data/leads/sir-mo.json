@@ -14,10 +14,11 @@
     "vatNumber": "02690180365",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Sir%20Spa",
     "originalLandingUrl": "http://www.sir-mo.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<6603bd9e-6e84-197a-1861-9e0b436cfddb@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<42c554f0-8dd3-fe7c-4f2d-80fde70cc1df@techpyre.eu>",
     "threadMessageIds": [
-      "<6603bd9e-6e84-197a-1861-9e0b436cfddb@techpyre.eu>"
+      "<6603bd9e-6e84-197a-1861-9e0b436cfddb@techpyre.eu>",
+      "<42c554f0-8dd3-fe7c-4f2d-80fde70cc1df@techpyre.eu>"
     ]
   },
   "audit": {

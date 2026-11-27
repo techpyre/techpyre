@@ -14,10 +14,11 @@
     "vatNumber": "01305980243",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Frigo%20System%20S.p.A.",
     "originalLandingUrl": "http://www.frigosystem.com",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<28beafbf-e36c-5e8a-c09c-baef0e69759a@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<b8574bf3-50d6-eef6-2cd1-2097ae698844@techpyre.eu>",
     "threadMessageIds": [
-      "<28beafbf-e36c-5e8a-c09c-baef0e69759a@techpyre.eu>"
+      "<28beafbf-e36c-5e8a-c09c-baef0e69759a@techpyre.eu>",
+      "<b8574bf3-50d6-eef6-2cd1-2097ae698844@techpyre.eu>"
     ]
   },
   "audit": {

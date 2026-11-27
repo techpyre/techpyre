@@ -14,10 +14,11 @@
     "vatNumber": "11035860011",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Esse%20S.r.l.",
     "originalLandingUrl": "https://www.esseweb.net",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<937b5711-35ad-16ea-f30d-3b9573da7061@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<55c2537f-02a8-d60c-5588-8c5e16dce20a@techpyre.eu>",
     "threadMessageIds": [
-      "<937b5711-35ad-16ea-f30d-3b9573da7061@techpyre.eu>"
+      "<937b5711-35ad-16ea-f30d-3b9573da7061@techpyre.eu>",
+      "<55c2537f-02a8-d60c-5588-8c5e16dce20a@techpyre.eu>"
     ]
   },
   "audit": {

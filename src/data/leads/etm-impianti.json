@@ -14,10 +14,11 @@
     "vatNumber": "02584690982",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Elettrotecnica%20Manerbiese",
     "originalLandingUrl": "http://www.etm-impianti.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<60b1cfc7-ac0f-989c-6d06-647181485471@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<33aad720-076d-18b1-df10-04d1b2cb2e45@techpyre.eu>",
     "threadMessageIds": [
-      "<60b1cfc7-ac0f-989c-6d06-647181485471@techpyre.eu>"
+      "<60b1cfc7-ac0f-989c-6d06-647181485471@techpyre.eu>",
+      "<33aad720-076d-18b1-df10-04d1b2cb2e45@techpyre.eu>"
     ]
   },
   "audit": {

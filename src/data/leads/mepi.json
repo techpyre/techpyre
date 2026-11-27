@@ -14,10 +14,11 @@
     "vatNumber": "01032670018",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=M.e.p.i.%20S.r.l.",
     "originalLandingUrl": "http://www.mepi.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<4f87a10e-9fca-59f0-db47-ca3934f81602@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<3294c749-a78b-920a-1b40-b2499190c0e4@techpyre.eu>",
     "threadMessageIds": [
-      "<4f87a10e-9fca-59f0-db47-ca3934f81602@techpyre.eu>"
+      "<4f87a10e-9fca-59f0-db47-ca3934f81602@techpyre.eu>",
+      "<3294c749-a78b-920a-1b40-b2499190c0e4@techpyre.eu>"
     ]
   },
   "audit": {

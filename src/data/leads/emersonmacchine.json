@@ -14,10 +14,11 @@
     "vatNumber": "06467420011",
     "adLibraryUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=IT&q=Torino%20Macchine",
     "originalLandingUrl": "https://www.emersonmacchine.it",
-    "status": "CONTACTED_STEP_1",
-    "lastSentMessageId": "<31d0ebca-d476-bafd-3fd8-bb2a8236858d@techpyre.eu>",
+    "status": "CONTACTED_STEP_2",
+    "lastSentMessageId": "<f2a0e0c9-abee-e1de-dda7-52449381003d@techpyre.eu>",
     "threadMessageIds": [
-      "<31d0ebca-d476-bafd-3fd8-bb2a8236858d@techpyre.eu>"
+      "<31d0ebca-d476-bafd-3fd8-bb2a8236858d@techpyre.eu>",
+      "<f2a0e0c9-abee-e1de-dda7-52449381003d@techpyre.eu>"
     ]
   },
   "audit": {
